@@ -73,7 +73,7 @@
           "name": "Pratos Principais — Almoço",
           "description": "Servido todos os dias, das 12h às 17h",
           "hasMenuItem": [
-            {"@type":"MenuItem","name":"Feijoada da Academia da Cachaça","description":"Premiada como melhor do Brasil pela Revista Prazeres da Mesa. Charque, costela, lombo, paio e linguiça fina em panela de barro. Servida sex/sáb/dom.","offers":{"@type":"Offer","price":"189.70","priceCurrency":"BRL"}},
+            {"@type":"MenuItem","name":"Feijoada da Academia da Cachaça","description":"Premiada como melhor do Brasil pela Revista Prazeres da Mesa. Charque, costela, lombo, paio e linguiça fina em panela de barro. Servida todos os dias.","offers":{"@type":"Offer","price":"189.70","priceCurrency":"BRL"}},
             {"@type":"MenuItem","name":"Picanha à brasileira (individual)","description":"Picanha grelhada no ponto, acompanhada de arroz, farofa e vinagrete.","offers":{"@type":"Offer","price":"134.70","priceCurrency":"BRL"}},
             {"@type":"MenuItem","name":"Picanha à brasileira (para 2)","description":"Picanha grelhada para duas pessoas, acompanhada de arroz, farofa e vinagrete.","offers":{"@type":"Offer","price":"204.70","priceCurrency":"BRL"}},
             {"@type":"MenuItem","name":"Picadinho carioca","description":"Carne em cubos refogada, acompanhada de arroz, ovo, banana e farofa.","offers":{"@type":"Offer","price":"74.70","priceCurrency":"BRL"}},
@@ -294,9 +294,9 @@
       </div>
       <div class="menu-items">
         <article class="menu-item">
-          <div class="menu-item-badge">Premiada · Sex · Sáb · Dom</div>
+          <div class="menu-item-badge">Premiada · Todos os dias</div>
           <h3 class="menu-item-name">Feijoada da Academia da Cachaça</h3>
-          <p class="menu-item-desc">Eleita <strong>melhor feijoada do Brasil</strong> pela Revista Prazeres da Mesa. Charque, costela, lombo, paio e linguiça fina em panela de barro. Servida às sextas, sábados e domingos, das 11h30 às 17h.</p>
+          <p class="menu-item-desc">Eleita <strong>melhor feijoada do Brasil</strong> pela Revista Prazeres da Mesa. Charque, costela, lombo, paio e linguiça fina em panela de barro. Servida todos os dias, das 11h30 às 17h.</p>
           <span class="menu-item-price">R$ 189,70 (serve 2)</span>
         </article>
         <article class="menu-item">
@@ -421,7 +421,48 @@
 </aside>
 
 <!-- FOOTER -->
-<footer class="foot">
+
+  <!-- Sobremesas com Fotos Reais -->
+  <section class="section" style="background:#f8f5f0;padding:60px 0;">
+    <div class="container" style="max-width:1100px;margin:0 auto;padding:0 24px;">
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:2rem;color:#335d4a;text-align:center;margin-bottom:40px;">
+        Sobremesas Brasileiras
+      </h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;">
+        
+        <figure style="margin:0;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.1);background:#fff;">
+          <picture>
+            <source srcset="assets/fabio-sobremesa-pudim.webp" type="image/webp">
+            <img src="assets/fabio-sobremesa-pudim.jpg"
+                 alt="Pudim de leite condensado — sobremesa clássica brasileira na Embaixada Carioca, Morro da Urca"
+                 loading="lazy" width="1400" height="945"
+                 style="width:100%;height:220px;object-fit:cover;display:block;">
+          </picture>
+          <div style="padding:20px;">
+            <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:#1a2e22;margin:0 0 8px;">Pudim de Leite</h3>
+            <p style="color:#666;font-size:.9rem;margin:0;">Receita clássica com calda de caramelo</p>
+          </div>
+        </figure>
+
+        <figure style="margin:0;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.1);background:#fff;">
+          <picture>
+            <source srcset="assets/fabio-sobremesa-canjica.webp" type="image/webp">
+            <img src="assets/fabio-sobremesa-canjica.jpg"
+                 alt="Canjica cremosa com hortelã — sobremesa típica brasileira na Embaixada Carioca"
+                 loading="lazy" width="900" height="1467"
+                 style="width:100%;height:220px;object-fit:cover;display:block;">
+          </picture>
+          <div style="padding:20px;">
+            <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:#1a2e22;margin:0 0 8px;">Canjica Cremosa</h3>
+            <p style="color:#666;font-size:.9rem;margin:0;">Milho branco com leite de coco e hortelã</p>
+          </div>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
