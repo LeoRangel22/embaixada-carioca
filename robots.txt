@@ -1,0 +1,84 @@
+# ─────────────────────────────────────────────────
+# Embaixada Carioca — robots.txt
+# Atualizado: maio 2026
+# Site: https://www.embaixadacarioca.com
+# ─────────────────────────────────────────────────
+
+# Permitir todos os crawlers em todo o site
+User-agent: *
+Allow: /
+Crawl-delay: 1
+
+# Google — sem crawl-delay (Google ignora e usa o do GSC)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /assets/
+
+User-agent: Googlebot-News
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Bots de redes sociais (preview de cards)
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Bots de IA — permitir indexação (visibilidade em LLMs)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Bloquear parâmetros de tracking (evita conteúdo duplicado)
+User-agent: *
+Disallow: /*?utm_*
+Disallow: /*?ref=*
+Disallow: /*?fbclid=*
+Disallow: /*?gclid=*
+Disallow: /*?msclkid=*
+Disallow: /*?mc_cid=*
+Disallow: /*?mc_eid=*
+Disallow: /*?_ga=*
+
+# Bloquear áreas privadas e administrativas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /wp-admin/
+Disallow: /*?preview=
+Disallow: /*?draft=
+
+# Bloquear assets desnecessários ao SEO
+Disallow: /*.json$
+Disallow: /tweaks-panel.jsx$
+Disallow: /image-slot.js$
+
+# Sitemaps
+Sitemap: https://www.embaixadacarioca.com/sitemap.xml
+Sitemap: https://www.embaixadacarioca.com/sitemap-images.xml
+
+# Host preferencial (canonical)
+Host: https://www.embaixadacarioca.com

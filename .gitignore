@@ -1,0 +1,21 @@
+# Arquivos temporários do Wix
+leorangel22-embaixadacarioca2022.editor.wix.com*.html
+claude.ai_design*.html
+
+# Arquivos de versão antiga
+Home v1.html
+Home v2.html
+_render-logo.html
+
+# Node modules
+node_modules/
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Deploy files
+deploy/
+scraps/
+uploads/
