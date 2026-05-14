@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
 <!-- ── SEO ── -->
 <title>Almuerzo con Vista en el Pan de Azúcar | Embaixada Carioca</title>
@@ -281,6 +281,417 @@
     .feijoada-feature .feature-grid { grid-template-columns: 1fr; gap: 40px; }
     .feijoada-info { grid-template-columns: 1fr; }
   }
+
+/* ══════════════════════════════════════════
+   MENU MOBILE — HAMBÚRGUER + DRAWER
+   6 Estrelas · Mobile-First para Turistas
+══════════════════════════════════════════ */
+
+/* Botão hambúrguer */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  z-index: 200;
+}
+.nav-hamburger:hover { background: rgba(255,255,255,0.1); }
+nav.top.scrolled .nav-hamburger:hover { background: rgba(0,64,90,0.08); }
+.nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease, width 0.3s ease;
+  transform-origin: center;
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; width: 0; }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Overlay escuro */
+.nav-drawer-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 150;
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.nav-drawer-overlay.open {
+  display: block;
+  opacity: 1;
+}
+
+/* Drawer lateral */
+.nav-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(320px, 88vw);
+  background: var(--azul1, #00405A);
+  z-index: 160;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.nav-drawer.open {
+  transform: translateX(0);
+}
+.nav-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+.nav-drawer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--areia-pale, #F5EFE6);
+}
+.nav-drawer-logo img {
+  width: 40px;
+  height: 40px;
+}
+.nav-drawer-logo-text {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: var(--areia-pale, #F5EFE6);
+  opacity: 0.85;
+}
+.nav-drawer-close {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.08);
+  border: none;
+  border-radius: 50%;
+  color: var(--areia-pale, #F5EFE6);
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+.nav-drawer-close:hover { background: rgba(255,255,255,0.16); }
+
+/* Links do drawer */
+.nav-drawer-links {
+  list-style: none;
+  padding: 16px 0;
+  margin: 0;
+  flex: 1;
+}
+.nav-drawer-links li {
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.nav-drawer-links a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 24px;
+  text-decoration: none;
+  color: var(--areia-pale, #F5EFE6);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: background 0.2s, padding-left 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  min-height: 56px;
+}
+.nav-drawer-links a:hover,
+.nav-drawer-links a:active {
+  background: rgba(255,255,255,0.08);
+  padding-left: 32px;
+}
+.nav-drawer-links .drawer-icon {
+  font-size: 18px;
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* CTA no drawer */
+.nav-drawer-cta {
+  padding: 24px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+.nav-drawer-cta a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 24px;
+  background: var(--amarelo, #E8C547);
+  color: var(--azul1, #00405A);
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: transform 0.2s, box-shadow 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+.nav-drawer-cta a:active { transform: scale(0.97); }
+
+/* Info de contato no drawer */
+.nav-drawer-contact {
+  padding: 16px 24px 24px;
+  color: rgba(245,239,230,0.6);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.nav-drawer-contact a {
+  color: rgba(245,239,230,0.8);
+  text-decoration: none;
+}
+
+/* ══════════════════════════════════════════
+   BOTTOM NAV BAR — Ação rápida para turistas
+══════════════════════════════════════════ */
+.mobile-bottom-nav {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: var(--azul1, #00405A);
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding: 0;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.mobile-bottom-nav-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 60px;
+}
+.mobile-bottom-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  text-decoration: none;
+  color: rgba(245,239,230,0.65);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: color 0.2s, background 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  padding: 8px 4px;
+}
+.mobile-bottom-nav a:hover,
+.mobile-bottom-nav a:active {
+  color: var(--amarelo, #E8C547);
+  background: rgba(255,255,255,0.06);
+}
+.mobile-bottom-nav .bnav-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+.mobile-bottom-nav .bnav-reservar {
+  background: var(--amarelo, #E8C547);
+  color: var(--azul1, #00405A);
+}
+.mobile-bottom-nav .bnav-reservar:hover,
+.mobile-bottom-nav .bnav-reservar:active {
+  background: #d4b03a;
+  color: var(--azul1, #00405A);
+}
+
+/* ══════════════════════════════════════════
+   WHATSAPP — Apenas ícone em mobile
+   Preview só ao clicar, nunca automático
+══════════════════════════════════════════ */
+@media (max-width: 720px) {
+  /* Empurrar conteúdo acima da bottom nav */
+  body { padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px)); }
+  
+  /* Mostrar hambúrguer, esconder links */
+  .nav-hamburger { display: flex; }
+  .nav-links { display: none !important; }
+  .nav-inner > .btn { display: none; } /* esconder botão reservar do nav em mobile */
+  
+  /* Mostrar bottom nav */
+  .mobile-bottom-nav { display: block; }
+  
+  /* WA widget: subir acima da bottom nav */
+  .wa-widget {
+    bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+    right: 16px;
+  }
+  .wa-btn {
+    width: 52px;
+    height: 52px;
+  }
+  /* Preview menor em mobile */
+  .wa-preview {
+    max-width: calc(100vw - 40px);
+    right: 0;
+    bottom: 64px;
+  }
+}
+
+/* Garantir que o drawer não apareça em desktop */
+@media (min-width: 721px) {
+  .nav-hamburger { display: none !important; }
+  .nav-drawer { display: none !important; }
+  .nav-drawer-overlay { display: none !important; }
+  .mobile-bottom-nav { display: none !important; }
+  body { padding-bottom: 0 !important; }
+}
+
+
+/* ══════════════════════════════════════════
+   MOBILE-FIRST ADVANCED — 6 Estrelas
+   Turistas · 95%+ Mobile Traffic
+══════════════════════════════════════════ */
+
+/* Prevenir overflow horizontal */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Touch targets mínimos 48x48px (Google Lighthouse) */
+a, button, [role="button"], input, select, textarea,
+.nav-drawer-links a, .mobile-bottom-nav a {
+  min-height: 44px;
+}
+
+/* Inputs: font-size 16px evita zoom automático no iOS */
+input, select, textarea {
+  font-size: 16px !important;
+}
+
+/* Smooth scroll nativo */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Melhorar legibilidade em mobile */
+@media (max-width: 720px) {
+  body { font-size: 16px; line-height: 1.65; }
+  h1 { font-size: clamp(32px, 9vw, 56px) !important; }
+  h2 { font-size: clamp(24px, 7vw, 40px) !important; }
+  h3 { font-size: clamp(18px, 5vw, 28px) !important; }
+  
+  /* Padding seguro para notch/safe area */
+  .nav-inner {
+    padding-left: max(var(--gutter, 24px), env(safe-area-inset-left));
+    padding-right: max(var(--gutter, 24px), env(safe-area-inset-right));
+  }
+  
+  /* Seções com padding menor em mobile */
+  section { padding: 64px 0 !important; }
+  .wrap { padding: 0 20px !important; }
+  
+  /* Cards em coluna única */
+  .grid, [class*="-grid"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Imagens responsivas */
+  img { max-width: 100%; height: auto; }
+  
+  /* Tabelas responsivas */
+  table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  
+  /* Botões com área de toque adequada */
+  .btn, .btn-reservar, .wa-btn {
+    min-height: 48px;
+    min-width: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Hero mobile otimizado */
+  .hero { min-height: 100svh; }
+  .hero h1 { font-size: clamp(36px, 10vw, 64px) !important; }
+  
+  /* FAQ legível em mobile */
+  .faq-question { font-size: 15px !important; padding: 18px 16px !important; }
+  .faq-answer { font-size: 14px !important; padding: 0 16px 16px !important; }
+  
+  /* Reviews em coluna */
+  .reviews-grid { grid-template-columns: 1fr !important; gap: 16px !important; }
+  
+  /* Footer em coluna */
+  footer .wrap > div { flex-direction: column !important; gap: 24px !important; }
+  
+  /* Cardápio mobile */
+  .menu-grid, .cardapio-grid { grid-template-columns: 1fr !important; }
+  
+  /* Esconder elementos decorativos pesados em mobile */
+  .decorative-only { display: none !important; }
+}
+
+/* Extra small screens (< 380px) */
+@media (max-width: 380px) {
+  :root { --gutter: 16px; }
+  body { font-size: 15px; }
+  .hero h1 { font-size: clamp(28px, 8vw, 44px) !important; }
+  .mobile-bottom-nav-inner { height: 56px; }
+  .mobile-bottom-nav a { font-size: 9px; }
+}
+
+/* Landscape mobile */
+@media (max-width: 720px) and (orientation: landscape) {
+  .hero { min-height: 100vw; }
+  .mobile-bottom-nav { display: none; }
+  body { padding-bottom: 0; }
+}
+
+/* ── PERFORMANCE: content-visibility para seções abaixo do fold ── */
+@media (max-width: 720px) {
+  .section-below-fold {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 400px;
+  }
+}
+
+/* ── ACESSIBILIDADE MOBILE ── */
+:focus-visible {
+  outline: 3px solid var(--amarelo, #E8C547);
+  outline-offset: 2px;
+}
+
+/* Remover outline padrão em touch */
+@media (hover: none) {
+  :focus:not(:focus-visible) { outline: none; }
+}
+
 </style>
 <link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high" />
   <!-- PWA & Mobile Optimization -->  <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -340,6 +751,11 @@
       <li><a href="/es/cardapio.html">Menú</a></li>
       <li><a href="/es/guia-do-rio.html">Guía de Río</a></li>
     </ul>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-drawer">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <a href="https://go.tagme.com.br/embaixadacarioca" class="btn">Reservar →</a>
   </div>
 </nav>
@@ -934,5 +1350,80 @@
       });
     }
   </script>
+
+<!-- MOBILE NAV DRAWER -->
+<div class="nav-drawer-overlay" id="nav-drawer-overlay" aria-hidden="true"></div>
+<nav class="nav-drawer" id="nav-drawer" aria-label="Menú de navegación" aria-hidden="true">
+  <div class="nav-drawer-header">
+    <a href="/es/" class="nav-drawer-logo" aria-label="Embaixada Carioca · início">
+      <img src="/assets/logo-areia.svg" alt="Embaixada Carioca" width="40" height="40" />
+      <span class="nav-drawer-logo-text">Embaixada<br/>Carioca</span>
+    </a>
+    <button class="nav-drawer-close" id="nav-drawer-close" aria-label="Cerrar menú">✕</button>
+  </div>
+  <ul class="nav-drawer-links">
+      <li><a href="/es/cafe-da-manha.html"><span class="drawer-icon">☀️</span>Desayuno</a></li>
+      <li><a href="/es/almoco.html"><span class="drawer-icon">🍽️</span>Almuerzo</a></li>
+      <li><a href="/es/entardecer.html"><span class="drawer-icon">🌅</span>Atardecer</a></li>
+      <li><a href="/es/eventos.html"><span class="drawer-icon">🎉</span>Eventos</a></li>
+      <li><a href="/es/cardapio.html"><span class="drawer-icon">📋</span>Menú</a></li>
+      <li><a href="/es/guia-do-rio.html"><span class="drawer-icon">🗺️</span>Guía de Río</a></li>
+  </ul>
+  <div class="nav-drawer-cta">
+    <a href="https://go.tagme.com.br/embaixadacarioca" target="_blank" rel="noopener">Reservar Mesa →</a>
+  </div>
+  <div class="nav-drawer-contact">Abierto todos los días · 8:30 – 21:00<br/><a href="https://wa.me/5521966837556">WhatsApp: +55 21 96683-7556</a></div>
+</nav>
+<!-- /MOBILE NAV DRAWER -->
+<!-- MOBILE BOTTOM NAV -->
+<nav class="mobile-bottom-nav" aria-label="Navegação rápida mobile">
+  <div class="mobile-bottom-nav-inner">
+    <a href="/es/almoco.html" class="" aria-label="Almuerzo"><span class="bnav-icon">🍽️</span>Almuerzo</a>
+    <a href="/es/entardecer.html" class="" aria-label="Atardecer"><span class="bnav-icon">🌅</span>Atardecer</a>
+    <a href="/es/cardapio.html" class="" aria-label="Menú"><span class="bnav-icon">📋</span>Menú</a>
+    <a href="https://go.tagme.com.br/embaixadacarioca" class="bnav-reservar" aria-label="Reservar"><span class="bnav-icon">📅</span>Reservar</a>
+  </div>
+</nav>
+<!-- /MOBILE BOTTOM NAV -->
+<script>
+(function() {
+  var hamburger = document.getElementById('nav-hamburger');
+  var drawer = document.getElementById('nav-drawer');
+  var overlay = document.getElementById('nav-drawer-overlay');
+  var closeBtn = document.getElementById('nav-drawer-close');
+  if (!hamburger || !drawer) return;
+  function openDrawer() {
+    hamburger.classList.add('open');
+    hamburger.setAttribute('aria-expanded', 'true');
+    drawer.classList.add('open');
+    drawer.setAttribute('aria-hidden', 'false');
+    if (overlay) { overlay.classList.add('open'); }
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDrawer() {
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    drawer.classList.remove('open');
+    drawer.setAttribute('aria-hidden', 'true');
+    if (overlay) { overlay.classList.remove('open'); }
+    document.body.style.overflow = '';
+  }
+  hamburger.addEventListener('click', function() {
+    drawer.classList.contains('open') ? closeDrawer() : openDrawer();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  if (overlay) overlay.addEventListener('click', closeDrawer);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && drawer.classList.contains('open')) closeDrawer();
+  });
+  drawer.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', closeDrawer);
+  });
+  // WA Mobile Fix: desabilitar preview automático em mobile
+  if (window.innerWidth <= 720) {
+    sessionStorage.setItem('wa_preview_shown', '1');
+  }
+})();
+</script>
 </body>
 </html>
