@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página não encontrada — Embaixada Carioca</title>
+  <meta name="description" content="A página que você procura não foi encontrada. Explore o cardápio, faça uma reserva ou conheça a Embaixada Carioca no Morro da Urca." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://www.embaixadacarioca.com/" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#00405a" />
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;600;700&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --azul: #00405a;
+      --amarelo: #d4a843;
+      --areia: #ede2c9;
+      --branco: #ffffff;
+    }
+    body {
+      font-family: 'Catamaran', sans-serif;
+      background: var(--azul);
+      color: var(--branco);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .logo { font-size: 1rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--amarelo); margin-bottom: 2rem; }
+    .code { font-size: 8rem; font-weight: 700; color: var(--amarelo); line-height: 1; opacity: 0.3; }
+    h1 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-style: italic; margin: 1rem 0; color: var(--areia); }
+    p { font-size: 1rem; opacity: 0.8; max-width: 480px; line-height: 1.6; margin-bottom: 2.5rem; }
+    .links { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.8rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: all 0.2s;
+    }
+    .btn-primary { background: var(--amarelo); color: var(--azul); }
+    .btn-secondary { border: 1px solid rgba(255,255,255,0.3); color: var(--branco); }
+    .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+    @media (max-width: 480px) {
+      .code { font-size: 5rem; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">Embaixada Carioca</div>
+  <div class="code">404</div>
+  <h1>Esta página se perdeu no bondinho</h1>
+  <p>A página que você procura não foi encontrada. Mas o restaurante com a melhor vista do Rio de Janeiro está esperando por você.</p>
+  <div class="links">
+    <a href="/" class="btn btn-primary">Ir para o início</a>
+    <a href="/cardapio.html" class="btn btn-secondary">Ver cardápio</a>
+    <a href="https://go.tagme.com.br/embaixadacarioca" class="btn btn-secondary" target="_blank" rel="noopener">Reservar mesa</a>
+    <a href="https://wa.me/5521966837556" class="btn btn-secondary" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</body>
+</html>

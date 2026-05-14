@@ -1333,7 +1333,7 @@
       "name": "Como fazer reserva no restaurante do Bondinho?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "As reservas podem ser feitas pelo site oficial em https://go.tagme.com.br/embaixadacarioca ou pelo WhatsApp <a href="https://wa.me/5521966837556" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;" title="WhatsApp">(21) 96683-7556</a>."
+        "text": "As reservas podem ser feitas pelo site oficial em https://go.tagme.com.br/embaixadacarioca ou pelo WhatsApp (21) 96683-7556."
       }
     },
     {
@@ -1348,6 +1348,14 @@
 }
   </script>
 <link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high" />
+  <!-- PWA & Mobile Optimization -->
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/assets/icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Embaixada Carioca" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=yes" />
 </head>
 <body data-screen-label="Home">
 
@@ -2309,5 +2317,15 @@ start();
 </script>
 <!-- ═══════════════════════════════════════════════════════════ -->
 
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(reg => console.log('SW registrado:', reg.scope))
+          .catch(err => console.log('SW erro:', err));
+      });
+    }
+  </script>
 </body>
 </html>
