@@ -7,7 +7,7 @@
 <!-- ── SEO ── -->
 <title>Café da Manhã com Vista para o Pão de Açúcar | Embaixada Carioca – Urca, RJ</title>
 <meta name="description" content="Café da manhã com vista para o Pão de Açúcar todos os dias no Morro da Urca, Rio de Janeiro. Das 8h30 às 11h30. Pães artesanais, frutas tropicais e café especial com a vista mais bonita do Rio. Reserve sua mesa." />
-<meta name="keywords" content="café da manhã com vista Rio de Janeiro, café da manhã Urca, melhor café da manhã Rio de Janeiro, brunch com vista Rio, café da manhã Pão de Açúcar, Breakfast Weekend Rio" />
+<meta name="keywords" content="café da manhã com vista Rio de Janeiro, café da manhã Urca, melhor café da manhã Rio de Janeiro, brunch com vista Rio, café da manhã Pão de Açúcar" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <link rel="canonical" href="https://www.embaixadacarioca.com/cafe-da-manha" />
 
@@ -38,7 +38,6 @@
 <!-- ── Hreflang ── -->
 <link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha" />
 <link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/desayuno" />
-<link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/breakfast" />
 <link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha" />
 
 <!-- ── JSON-LD ── -->
@@ -105,7 +104,7 @@
         {
           "@type": "Question",
           "name": "O café da manhã é servido todos os dias?",
-          "acceptedAnswer": {"@type":"Answer","text":"Sim. O café da manhã com vista para o Pão de Açúcar é servido todos os dias da semana, das 8h30 às 11h30. Aos fins de semana, há o Breakfast Weekend especial com carrinho de pães e brioches."}
+          "acceptedAnswer": {"@type":"Answer","text":"Sim. O café da manhã com vista para o Pão de Açúcar é servido todos os dias da semana, das 8h30 às 11h30."}
         },
         {
           "@type": "Question",
@@ -393,7 +392,6 @@
         <h3>Horário &amp; <span class="serif">acesso.</span></h3>
         <ul>
           <li>Servido todos os dias · 8h30 às 11h30</li>
-          <li>Fins de semana: Breakfast Weekend especial</li>
           <li>Vista do Pão de Açúcar à mesa</li>
           <li>Morro da Urca · primeira parada do Bondinho</li>
           <li>Reserve com antecedência</li>
@@ -403,16 +401,15 @@
   </div>
 </section>
 
-<!-- BREAKFAST WEEKEND -->
 <section class="feature-row">
   <div class="wrap">
     <div class="feature-grid">
       <div class="photo-ph cafe-photo tall" data-label="Foto · Café da manhã mesa posta · banco DSC06880–06940"></div>
       <div class="feature-text">
-        <div class="eyebrow" style="margin-bottom: 24px;">Programação especial</div>
-        <h2>Breakfast Weekend <span class="serif">no Morro da Urca</span> — café da manhã Pão de Açúcar.</h2>
+        <div class="eyebrow" style="margin-bottom: 24px;">O café da manhã mais bonito do Rio</div>
+        <h2>Café da manhã <span class="serif">todos os dias</span> — com vista para o Pão de Açúcar.</h2>
         <p>
-          Todos os dias, a Embaixada Carioca serve o <strong>café da manhã com vista para o Pão de Açúcar</strong> mais especial do Rio. Aos fins de semana, o programa se transforma no <strong>Breakfast Weekend</strong> — uma das experiências gastronômicas mais marcantes entre os <strong>cafés da manhã no Rio de Janeiro</strong>.
+          Todos os dias, a Embaixada Carioca serve o <strong>café da manhã com vista para o Pão de Açúcar</strong> mais especial do Rio — uma das experiências gastronômicas mais marcantes entre os <strong>cafés da manhã no Rio de Janeiro</strong>.
         </p>
         <p>
           Carrinho de pães e brioches direto do forno, banca de frutas tropicais, ovos preparados na hora e drinks de despertar — tudo com a vista do Pão de Açúcar e da Baía de Guanabara em primeiro plano. Um dos <strong>melhores brunchs do Rio de Janeiro</strong>, no alto do Morro da Urca, a 227 metros de altitude.
@@ -450,7 +447,7 @@
         <h3 class="serif" style="font-style: italic; font-size: 32px; font-weight: 500; color: var(--verde); margin: 0 0 20px;">Quando estamos abertos</h3>
         <div class="hours-list">
           <span class="d">Café da manhã</span><span class="h">Todos os dias · 8h30 → 11h30</span>
-          <span class="d">Breakfast Weekend</span><span class="h">Sáb · Dom</span>
+
         </div>
         <p style="margin-top: 22px; color: var(--cinza1); font-size: 15px; line-height: 1.6;">
           Reservas são fortemente recomendadas, especialmente aos fins de
@@ -584,6 +581,258 @@
     onScroll();
   })();
 </script>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     WHATSAPP FLUTUANTE — Bot de Atendimento Embaixada Carioca
+     ═══════════════════════════════════════════════════════════ -->
+<style>
+/* ── WhatsApp Floating Widget ── */
+.wa-widget {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Botão principal */
+.wa-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+.wa-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 28px rgba(37,211,102,0.6);
+}
+.wa-btn svg {
+  width: 32px;
+  height: 32px;
+  fill: white;
+}
+
+/* Animação pulse */
+.wa-btn::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: rgba(37,211,102,0.3);
+  animation: wa-pulse 2.2s ease-out infinite;
+}
+@keyframes wa-pulse {
+  0%   { transform: scale(0.9); opacity: 0.8; }
+  70%  { transform: scale(1.4); opacity: 0; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+/* Preview da mensagem do bot */
+.wa-preview {
+  background: white;
+  border-radius: 16px 16px 4px 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 14px 16px;
+  max-width: 280px;
+  opacity: 0;
+  transform: translateY(10px) scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  display: none;
+}
+.wa-preview.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+  display: block;
+}
+.wa-preview-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.wa-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a2e44, #2d5a8e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 18px;
+}
+.wa-preview-name {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+.wa-preview-status {
+  font-size: 0.75rem;
+  color: #25D366;
+  font-weight: 500;
+}
+.wa-preview-msg {
+  font-size: 0.82rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.wa-preview-msg strong {
+  color: #1a1a1a;
+}
+.wa-preview-cta {
+  display: block;
+  background: #25D366;
+  color: white !important;
+  text-align: center;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.wa-preview-cta:hover {
+  background: #1ebe5d;
+  color: white !important;
+}
+.wa-close {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #888;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  opacity: 0.8;
+}
+.wa-close:hover { opacity: 1; }
+
+/* Notificação de mensagem nova */
+.wa-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 18px;
+  height: 18px;
+  background: #FF3B30;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+}
+
+@media (max-width: 480px) {
+  .wa-widget {
+    bottom: 20px;
+    right: 16px;
+  }
+  .wa-preview {
+    max-width: 240px;
+  }
+}
+</style>
+
+<div class="wa-widget" id="wa-widget">
+  <!-- Preview do bot (aparece ao hover/clique) -->
+  <div class="wa-preview" id="wa-preview" role="dialog" aria-label="Chat WhatsApp Embaixada Carioca">
+    <button class="wa-close" id="wa-close" aria-label="Fechar chat">✕</button>
+    <div class="wa-preview-header">
+      <div class="wa-avatar" aria-hidden="true">🏖️</div>
+      <div>
+        <div class="wa-preview-name">Embaixada Carioca</div>
+        <div class="wa-preview-status">● Online agora</div>
+      </div>
+    </div>
+    <div class="wa-preview-msg">
+      Olá! Bem-vindo à <strong>Embaixada Carioca</strong> — o sabor do Rio com vista para o <strong>Pão de Açúcar</strong>! 🚡<br/><br/>
+      Posso te ajudar com reservas, cardápio, eventos ou informações sobre horários.
+    </div>
+    <a href="https://wa.me/5521966837556?text=Olá%21%20Vim%20pelo%20site%20da%20Embaixada%20Carioca%20e%20gostaria%20de%20mais%20informa%C3%A7ões." class="wa-preview-cta" target="_blank" rel="noopener"
+       aria-label="Iniciar conversa no WhatsApp com a Embaixada Carioca">
+      💬 Iniciar conversa
+    </a>
+  </div>
+
+  <!-- Botão principal -->
+  <a href="https://wa.me/5521966837556?text=Olá%21%20Vim%20pelo%20site%20da%20Embaixada%20Carioca%20e%20gostaria%20de%20mais%20informa%C3%A7ões." class="wa-btn" id="wa-btn" target="_blank" rel="noopener"
+     aria-label="Falar com a Embaixada Carioca no WhatsApp"
+     title="WhatsApp · +55 21 96683-7556">
+    <span class="wa-badge" aria-hidden="true">1</span>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+</div>
+
+<script>
+(function() {
+  var btn = document.getElementById('wa-btn');
+  var preview = document.getElementById('wa-preview');
+  var closeBtn = document.getElementById('wa-close');
+  var shown = false;
+
+  // Mostrar preview após 3 segundos automaticamente (uma vez por sessão)
+  if (!sessionStorage.getItem('wa_preview_shown')) {
+    setTimeout(function() {
+      if (!shown) {
+        preview.classList.add('visible');
+        shown = true;
+        sessionStorage.setItem('wa_preview_shown', '1');
+      }
+    }, 3000);
+  }
+
+  // Clique no botão abre preview (se fechado) ou segue o link
+  btn.addEventListener('click', function(e) {
+    if (!shown) {
+      e.preventDefault();
+      preview.classList.add('visible');
+      shown = true;
+    }
+  });
+
+  // Fechar preview
+  closeBtn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    preview.classList.remove('visible');
+    shown = false;
+  });
+})();
+</script>
+<!-- ═══════════════════════════════════════════════════════════ -->
 
 </body>
 </html>
