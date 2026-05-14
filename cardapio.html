@@ -40,6 +40,17 @@
   "@graph": [
     {
       "@type": "Restaurant",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "08:30",
+      "closes": "21:00"
+    }
+  ],
+  "servesCuisine": ["Brasileira", "Gastronomia Carioca", "Frutos do Mar"],
+  "priceRange": "$$$",
+  "hasMap": "https://maps.google.com/?q=Embaixada+Carioca+Morro+da+Urca+Rio+de+Janeiro",
       "@id": "https://www.embaixadacarioca.com/#restaurant",
       "name": "Embaixada Carioca",
       "url": "https://www.embaixadacarioca.com",
@@ -215,6 +226,61 @@
       ".menu-item-name"
     ]
   }
+}
+</script>
+
+<!-- ── ASO / Mobile ── -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/icon-180.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/icon-16.png" />
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#335d4a" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Embaixada Carioca" />
+<meta name="application-name" content="Embaixada Carioca" />
+<meta name="msapplication-TileColor" content="#335d4a" />
+<meta name="msapplication-TileImage" content="/assets/icon-192.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qual o preço da feijoada na Embaixada Carioca?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A feijoada premiada da Embaixada Carioca custa R$ 189,70 e serve 2 pessoas. Inclui charque, costela, lombo, paio e linguiça fina, acompanhados de arroz, couve refogada, farofa tostada e fatias de laranja. Servida todos os dias das 11h30 às 17h."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual o preço do café da manhã na Embaixada Carioca?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O café da manhã na Embaixada Carioca é servido todos os dias das 8h30 às 11h30, com vista panorâmica para o Pão de Açúcar. O cardápio inclui pães artesanais, frutas frescas, ovos, frios e bebidas. Consulte o cardápio completo no site ou reserve pelo TagMe."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O restaurante fica no Pão de Açúcar ou no Morro da Urca?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Embaixada Carioca fica no Morro da Urca, a 227 metros de altitude — a primeira parada do teleférico do Bondinho Pão de Açúcar. O restaurante tem vista de frente para o Pão de Açúcar, a Baía de Guanabara e o Cristo Redentor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Precisa comprar ingresso do Bondinho para ir ao restaurante?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, para acessar a Embaixada Carioca é necessário adquirir o ingresso do Parque Bondinho Pão de Açúcar, pois o restaurante está localizado dentro do parque, no Morro da Urca. O ingresso pode ser comprado no site do Bondinho. Clientes do restaurante têm acesso ao bondinho incluso."
+      }
+    }
+  ]
 }
 </script>
 </head>
@@ -462,7 +528,34 @@
     </div>
   </section>
 
-  <footer class="foot">
+  
+<!-- ── FAQ Cardápio ── -->
+<section class="faq-section" style="background:#f9f5ef;padding:60px 20px;">
+  <div style="max-width:800px;margin:0 auto;">
+    <h2 style="font-family:'Playfair Display',serif;font-size:2rem;color:#335d4a;margin-bottom:40px;text-align:center;">Perguntas Frequentes sobre o Cardápio</h2>
+
+    <div class="faq-item" style="border-bottom:1px solid #d4c5a9;padding:20px 0;">
+      <h3 class="faq-question" style="font-size:1.1rem;color:#1a1a1a;font-weight:600;margin-bottom:10px;">A feijoada é servida todos os dias?</h3>
+      <p class="faq-answer" style="color:#555;line-height:1.7;">Sim! A feijoada premiada da Embaixada Carioca é servida <strong>todos os dias das 11h30 às 17h</strong>. Eleita uma das melhores feijoadas do Brasil pela Revista Prazeres da Mesa, é preparada com charque, costela, lombo, paio e linguiça fina, acompanhada de arroz, couve refogada, farofa tostada e fatias de laranja. Serve 2 pessoas por R$ 189,70.</p>
+    </div>
+
+    <div class="faq-item" style="border-bottom:1px solid #d4c5a9;padding:20px 0;">
+      <h3 class="faq-question" style="font-size:1.1rem;color:#1a1a1a;font-weight:600;margin-bottom:10px;">Qual o horário do café da manhã?</h3>
+      <p class="faq-answer" style="color:#555;line-height:1.7;">O café da manhã é servido <strong>todos os dias das 8h30 às 11h30</strong>, com vista panorâmica para o Pão de Açúcar. É a única experiência de café da manhã com vista para o Pão de Açúcar no Rio de Janeiro.</p>
+    </div>
+
+    <div class="faq-item" style="border-bottom:1px solid #d4c5a9;padding:20px 0;">
+      <h3 class="faq-question" style="font-size:1.1rem;color:#1a1a1a;font-weight:600;margin-bottom:10px;">O restaurante aceita reservas?</h3>
+      <p class="faq-answer" style="color:#555;line-height:1.7;">Sim, recomendamos reservar com antecedência pelo <a href="https://go.tagme.com.br/embaixadacarioca" style="color:#335d4a;font-weight:600;">TagMe</a> ou pelo WhatsApp <a href="https://wa.me/5521966837556" style="color:#335d4a;font-weight:600;">+55 21 96683-7556</a>. Especialmente nos fins de semana e feriados, o restaurante costuma lotar.</p>
+    </div>
+
+    <div class="faq-item" style="padding:20px 0;">
+      <h3 class="faq-question" style="font-size:1.1rem;color:#1a1a1a;font-weight:600;margin-bottom:10px;">O cardápio inclui opções vegetarianas?</h3>
+      <p class="faq-answer" style="color:#555;line-height:1.7;">Sim, o cardápio da Embaixada Carioca inclui opções vegetarianas nas entradas, saladas e acompanhamentos. Para necessidades alimentares específicas, recomendamos entrar em contato pelo WhatsApp antes da visita.</p>
+    </div>
+  </div>
+</section>
+<footer class="foot">
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">

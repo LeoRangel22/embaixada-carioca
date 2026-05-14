@@ -1,28 +1,69 @@
 {
-  "name": "Embaixada Carioca",
-  "short_name": "Embaixada",
-  "description": "Restaurante no Morro da Urca com vista para o Pão de Açúcar. Café da manhã, almoço, entardecer e eventos no Rio de Janeiro.",
+  "name": "Embaixada Carioca — Restaurante no Morro da Urca",
+  "short_name": "Embaixada Carioca",
+  "description": "Restaurante brasileiro premium com vista para o Pão de Açúcar. Café da manhã, almoço e entardecer todos os dias no Morro da Urca.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#00405a",
-  "theme_color": "#25D366",
   "orientation": "portrait-primary",
+  "background_color": "#335d4a",
+  "theme_color": "#335d4a",
   "lang": "pt-BR",
-  "categories": ["food", "travel", "lifestyle"],
+  "dir": "ltr",
+  "categories": [
+    "food",
+    "lifestyle",
+    "travel"
+  ],
   "icons": [
     {
-      "src": "/assets/favicon-16.png",
+      "src": "/assets/icon-16.png",
       "sizes": "16x16",
       "type": "image/png"
     },
     {
-      "src": "/assets/favicon-32.png",
+      "src": "/assets/icon-32.png",
       "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "/assets/apple-touch-icon.png",
+      "src": "/assets/icon-48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-180.png",
       "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
@@ -30,44 +71,81 @@
       "src": "/assets/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png"
     },
     {
       "src": "/assets/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "shortcuts": [
     {
       "name": "Reservar Mesa",
       "short_name": "Reservar",
-      "description": "Faça sua reserva via TagMe",
+      "description": "Faça sua reserva pelo TagMe",
       "url": "https://go.tagme.com.br/embaixadacarioca",
-      "icons": [{"src": "/assets/icon-192.png", "sizes": "192x192"}]
+      "icons": [
+        {
+          "src": "/assets/icon-96.png",
+          "sizes": "96x96"
+        }
+      ]
     },
     {
-      "name": "Cardápio",
+      "name": "Ver Cardápio",
       "short_name": "Cardápio",
-      "description": "Ver o cardápio completo",
+      "description": "Cardápio completo da Embaixada Carioca",
       "url": "/cardapio.html",
-      "icons": [{"src": "/assets/icon-192.png", "sizes": "192x192"}]
+      "icons": [
+        {
+          "src": "/assets/icon-96.png",
+          "sizes": "96x96"
+        }
+      ]
     },
     {
       "name": "WhatsApp",
       "short_name": "WhatsApp",
       "description": "Fale conosco pelo WhatsApp",
       "url": "https://wa.me/5521966837556",
-      "icons": [{"src": "/assets/whatsapp-logo-icon.png", "sizes": "120x120"}]
+      "icons": [
+        {
+          "src": "/assets/icon-96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Eventos",
+      "short_name": "Eventos",
+      "description": "Eventos e espaços privativos",
+      "url": "/eventos.html",
+      "icons": [
+        {
+          "src": "/assets/icon-96.png",
+          "sizes": "96x96"
+        }
+      ]
     }
   ],
-  "screenshots": [
-    {
-      "src": "/assets/hero.webp",
-      "sizes": "1200x800",
-      "type": "image/webp",
-      "label": "Embaixada Carioca — Vista para o Pão de Açúcar"
-    }
-  ]
+  "related_applications": [],
+  "prefer_related_applications": false
 }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sem conexão — Embaixada Carioca</title>
+  <meta name="robots" content="noindex" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Georgia', serif;
+      background: #335d4a;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .container { max-width: 480px; }
+    .logo { width: 120px; margin-bottom: 30px; filter: brightness(0) invert(1); }
+    h1 { font-size: 1.8rem; margin-bottom: 15px; font-weight: normal; }
+    p { font-size: 1rem; opacity: 0.85; line-height: 1.7; margin-bottom: 30px; }
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #335d4a;
+      padding: 14px 32px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+      margin: 8px;
+    }
+    .btn-wa {
+      background: #25D366;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/assets/logo-branco.svg" alt="Embaixada Carioca" class="logo" />
+    <h1>Você está sem conexão</h1>
+    <p>Parece que você está sem internet no momento. Quando a conexão voltar, poderá explorar o cardápio completo e fazer sua reserva.</p>
+    <a href="/" class="btn">Tentar novamente</a>
+    <a href="https://wa.me/5521966837556" class="btn btn-wa">Reservar pelo WhatsApp</a>
+  </div>
+</body>
+</html>
