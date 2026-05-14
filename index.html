@@ -567,7 +567,7 @@
   }
   .momento:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(0,64,90,0.16); }
 
-  image-slot.momento-photo {
+  picture.momento-photo, image-slot.momento-photo {
     display: block;
     aspect-ratio: 4/3;
     --image-slot-bg: var(--verde2);
@@ -676,7 +676,7 @@
     gap: 96px;
     align-items: center;
   }
-  image-slot.visao-photo {
+  picture.visao-photo, image-slot.visao-photo {
     display: block;
     aspect-ratio: 5/6;
     border: 1px solid var(--rule);
@@ -739,7 +739,7 @@
   .feijoada-photo-wrap {
     position: relative;
   }
-  image-slot.feijoada-photo {
+  picture.feijoada-photo, image-slot.feijoada-photo {
     display: block;
     aspect-ratio: 1/1;
     --image-slot-bg: rgba(237,226,201,0.06);
@@ -1455,7 +1455,10 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
     <div class="momentos-grid">
 
       <article class="momento">
-        <image-slot id="m-cafe" class="momento-photo" shape="rect" placeholder="Café da manhã com vista do Pão de Açúcar · Embaixada Carioca, Morro da Urca"></image-slot>
+        <picture class="momento-photo" style="display:block; aspect-ratio:4/3; overflow:hidden;">
+          <source type="image/webp" srcset="assets/cafe-da-manha-mesa-opt-mobile.webp 600w, assets/cafe-da-manha-mesa-opt.webp 1200w" sizes="(max-width:720px) 600px, 1200px" />
+          <img src="assets/cafe-da-manha-mesa-opt.webp" alt="Café da manhã com vista para o Pão de Açúcar na Embaixada Carioca, Morro da Urca, Rio de Janeiro — o melhor café da manhã com vista do Rio" style="width:100%; height:100%; object-fit:cover; display:block;" width="800" height="600" loading="lazy" decoding="async" />
+        </picture>
         <div class="momento-body">
           <div class="momento-meta">
             <span class="momento-time">Todos os dias · até 11h30</span>
@@ -1474,7 +1477,10 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
       </article>
 
       <article class="momento">
-        <image-slot id="m-almoco" class="momento-photo" shape="rect" placeholder="Almoço brasileiro com vista panorâmica · picanha e feijoada premiada · Embaixada Carioca, Urca"></image-slot>
+        <picture class="momento-photo" style="display:block; aspect-ratio:4/3; overflow:hidden;">
+          <source type="image/webp" srcset="assets/carne-seca-mandioca.webp" />
+          <img src="assets/carne-seca-mandioca.webp" alt="Carne seca com mandioca frita e Pão de Açúcar ao fundo — gastronomia brasileira no restaurante com melhor vista do Rio de Janeiro, Morro da Urca" style="width:100%; height:100%; object-fit:cover; display:block;" width="800" height="600" loading="lazy" decoding="async" />
+        </picture>
         <div class="momento-body">
           <div class="momento-meta">
             <span class="momento-time">Todos os dias · 12h – 17h</span>
@@ -1493,7 +1499,10 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
       </article>
 
       <article class="momento">
-        <image-slot id="m-entardecer" class="momento-photo" shape="rect" placeholder="Entardecer com sol descendo atrás do Pão de Açúcar · drinks e caipirinhas · Embaixada Carioca, Morro da Urca"></image-slot>
+        <picture class="momento-photo" style="display:block; aspect-ratio:4/3; overflow:hidden;">
+          <source type="image/webp" srcset="assets/gin-tonic-vista.webp" />
+          <img src="assets/gin-tonic-vista.webp" alt="Drinks com vista para a Baía de Guanabara no entardecer — Embaixada Carioca, Morro da Urca, Rio de Janeiro" style="width:100%; height:100%; object-fit:cover; display:block;" width="800" height="600" loading="lazy" decoding="async" />
+        </picture>
         <div class="momento-body">
           <div class="momento-meta">
             <span class="momento-time">Todos os dias · 17h – 21h</span>
@@ -1519,7 +1528,10 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
 <section id="visao" class="visao">
   <div class="wrap">
     <div class="visao-grid">
-      <image-slot id="v-photo" class="visao-photo" shape="rect" placeholder="Salão da Embaixada Carioca com janelão para o Pão de Açúcar · Morro da Urca, Rio de Janeiro"></image-slot>
+      <picture class="visao-photo" style="display:block; aspect-ratio:5/6; overflow:hidden; border:1px solid var(--rule);">
+          <source type="image/webp" srcset="assets/hero-silhueta-opt-mobile.webp 600w, assets/hero-silhueta-opt.webp 1200w" sizes="(max-width:720px) 600px, 1200px" />
+          <img src="assets/hero-silhueta-opt.webp" alt="Vista panorâmica do Rio de Janeiro do alto do Morro da Urca — Embaixada Carioca, restaurante com a melhor vista do Rio" style="width:100%; height:100%; object-fit:cover; display:block;" width="800" height="960" loading="lazy" decoding="async" />
+        </picture>
       <div class="visao-text">
         <div class="eyebrow">Nossa história</div>
         <h2>
@@ -1561,7 +1573,10 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
   <div class="wrap">
     <div class="feijoada-grid">
       <div class="feijoada-photo-wrap">
-        <image-slot id="f-photo" class="feijoada-photo" shape="rect" placeholder="Feijoada premiada em panela de barro · melhor feijoada do Brasil · Embaixada Carioca, Urca"></image-slot>
+        <picture class="feijoada-photo" style="display:block; aspect-ratio:1/1; overflow:hidden; border:1px solid rgba(237,226,201,0.2);">
+          <source type="image/webp" srcset="assets/almoco-mesa-opt-mobile.webp 600w, assets/almoco-mesa-opt.webp 1200w" sizes="(max-width:720px) 600px, 1200px" />
+          <img src="assets/almoco-mesa-opt.webp" alt="Mesa de almoço com gastronomia brasileira e vista para o Pão de Açúcar — feijoada premiada e picanha na Embaixada Carioca, Urca" style="width:100%; height:100%; object-fit:cover; display:block;" width="800" height="800" loading="lazy" decoding="async" />
+        </picture>
         <span class="pp feijoada-medalha" aria-hidden="true">
           <span class="pp-arc-top">★ melhor feijoada ★</span>
           <span class="pp-core">PRÊMIO<br/>2024</span>
@@ -1866,9 +1881,9 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
       <figure style="margin:0; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.4);">
         <picture>
-          <source type="image/webp" srcset="/assets/hero-silhueta-opt-mobile.webp 600w, /assets/hero-silhueta-opt.webp 1200w" sizes="(max-width: 720px) 600px, 1200px" />
-          <source type="image/jpg" srcset="/assets/hero-silhueta-opt.jpg" />
-          <img src="/assets/hero-silhueta-opt.jpg" alt="Pessoa contemplando a vista panorâmica do Rio de Janeiro do alto do Morro da Urca — Embaixada Carioca, o restaurante com a melhor vista do Rio" style="width:100%; height:300px; object-fit:cover; display:block;" width="600" height="450" loading="lazy" decoding="async" />
+          <source type="image/webp" srcset="assets/hero-silhueta-opt-mobile.webp 600w, assets/hero-silhueta-opt.webp 1200w" sizes="(max-width: 720px) 600px, 1200px" />
+          
+          <img src="assets/hero-silhueta-opt.webp" alt="Pessoa contemplando a vista panorâmica do Rio de Janeiro do alto do Morro da Urca — Embaixada Carioca, o restaurante com a melhor vista do Rio" style="width:100%; height:300px; object-fit:cover; display:block;" width="600" height="450" loading="lazy" decoding="async" />
         </picture>
         <figcaption style="padding: 1rem 1.25rem; background: #111827; color: #c0a882; font-size: 0.9rem;">
           A vista mais bonita do Rio de Janeiro
@@ -1877,7 +1892,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
       <figure style="margin:0; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.4);">
         <picture>
           <source type="image/webp" srcset="/assets/gin-tonic-vista.webp" />
-          <img src="/assets/gin-tonic-vista.jpg" alt="Drinks com vista para a Baía de Guanabara na Embaixada Carioca — onde comer no Rio de Janeiro com vista incrível, Morro da Urca" style="width:100%; height:300px; object-fit:cover; display:block;" width="600" height="450" loading="lazy" decoding="async" />
+          <img src="assets/gin-tonic-vista.webp" alt="Drinks com vista para a Baía de Guanabara na Embaixada Carioca — onde comer no Rio de Janeiro com vista incrível, Morro da Urca" style="width:100%; height:300px; object-fit:cover; display:block;" width="600" height="450" loading="lazy" decoding="async" />
         </picture>
         <figcaption style="padding: 1rem 1.25rem; background: #111827; color: #c0a882; font-size: 0.9rem;">
           Drinks com vista para a Baía de Guanabara
@@ -1886,7 +1901,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
       <figure style="margin:0; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.4);">
         <picture>
           <source type="image/webp" srcset="/assets/carne-seca-mandioca.webp" />
-          <img src="/assets/carne-seca-mandioca.jpg" alt="Carne seca com mandioca frita e Pão de Açúcar ao fundo — gastronomia brasileira no melhor restaurante com vista do Rio de Janeiro" style="width:100%; height:300px; object-fit:cover; display:block;" width="600" height="450" loading="lazy" decoding="async" />
+          <img src="assets/carne-seca-mandioca.webp" alt="Carne seca com mandioca frita e Pão de Açúcar ao fundo — gastronomia brasileira no melhor restaurante com vista do Rio de Janeiro" style="width:100%; height:300px; object-fit:cover; display:block;" width="600" height="450" loading="lazy" decoding="async" />
         </picture>
         <figcaption style="padding: 1rem 1.25rem; background: #111827; color: #c0a882; font-size: 0.9rem;">
           Gastronomia brasileira com o Pão de Açúcar ao fundo

@@ -1,0 +1,32 @@
+{
+  "m-cafe": {
+    "src": "assets/cafe-da-manha-mesa-opt.webp",
+    "alt": "Café da manhã com vista para o Pão de Açúcar na Embaixada Carioca, Morro da Urca, Rio de Janeiro",
+    "position": { "x": 50, "y": 50 },
+    "scale": 1.0
+  },
+  "m-almoco": {
+    "src": "assets/carne-seca-mandioca.webp",
+    "alt": "Almoço com gastronomia brasileira e vista para o Pão de Açúcar — Embaixada Carioca, Morro da Urca",
+    "position": { "x": 50, "y": 50 },
+    "scale": 1.0
+  },
+  "m-entardecer": {
+    "src": "assets/gin-tonic-vista.webp",
+    "alt": "Drinks e entardecer com vista para a Baía de Guanabara — Embaixada Carioca, Morro da Urca, Rio de Janeiro",
+    "position": { "x": 50, "y": 50 },
+    "scale": 1.0
+  },
+  "v-photo": {
+    "src": "assets/hero-silhueta-opt.webp",
+    "alt": "Vista panorâmica do Rio de Janeiro do alto do Morro da Urca — Embaixada Carioca, o restaurante com a melhor vista do Rio",
+    "position": { "x": 50, "y": 50 },
+    "scale": 1.0
+  },
+  "f-photo": {
+    "src": "assets/almoco-mesa-opt.webp",
+    "alt": "Mesa de almoço com gastronomia brasileira e vista para o Pão de Açúcar — Embaixada Carioca, Urca, Rio de Janeiro",
+    "position": { "x": 50, "y": 50 },
+    "scale": 1.0
+  }
+}
