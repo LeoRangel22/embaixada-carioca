@@ -18,6 +18,8 @@
 <meta property="og:title" content="Café da Manhã com Vista para o Pão de Açúcar | Embaixada Carioca" />
 <meta property="og:description" content="O café da manhã mais bonito do Rio de Janeiro. Vista de frente para o Pão de Açúcar no Morro da Urca. Todos os dias das 8h30 às 11h30." />
 <meta property="og:image" content="https://www.embaixadacarioca.com/assets/hero.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content="Café da manhã na Embaixada Carioca, Morro da Urca, com vista para o Pão de Açúcar" />
 <meta property="og:site_name" content="Embaixada Carioca" />
 
@@ -60,13 +62,61 @@
         "postalCode": "22290-240", "addressCountry": "BR"
       },
       "geo": {"@type":"GeoCoordinates","latitude":-22.9494,"longitude":-43.1654},
-      "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"48"}
+      "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"48"},
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "08:30",
+          "closes": "11:30",
+          "name": "Café da Manhã"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "12:00",
+          "closes": "17:00",
+          "name": "Almoço"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "17:00",
+          "closes": "21:00",
+          "name": "Entardecer"
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type":"ListItem","position":1,"name":"Home","item":"https://www.embaixadacarioca.com/"},
         {"@type":"ListItem","position":2,"name":"Café da Manhã","item":"https://www.embaixadacarioca.com/cafe-da-manha"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual o horário do café da manhã com vista para o Pão de Açúcar?",
+          "acceptedAnswer": {"@type":"Answer","text":"O café da manhã na Embaixada Carioca é servido todos os dias, das 8h30 às 11h30, com vista panorâmica para o Pão de Açúcar no alto do Morro da Urca."}
+        },
+        {
+          "@type": "Question",
+          "name": "O café da manhã é servido todos os dias?",
+          "acceptedAnswer": {"@type":"Answer","text":"Sim. O café da manhã com vista para o Pão de Açúcar é servido todos os dias da semana, das 8h30 às 11h30. Aos fins de semana, há o Breakfast Weekend especial com carrinho de pães e brioches."}
+        },
+        {
+          "@type": "Question",
+          "name": "Como chegar ao café da manhã no Morro da Urca?",
+          "acceptedAnswer": {"@type":"Answer","text":"O acesso é pelo Parque Bondinho Pão de Açúcar (Av. Pasteur, 520, Urca) — via teleférico (1ª parada, Morro da Urca) ou pela trilha gratuita da Praia Vermelha. Reservas recomendadas."}
+        },
+        {
+          "@type": "Question",
+          "name": "É necessário reservar o café da manhã?",
+          "acceptedAnswer": {"@type":"Answer","text":"Reservas são recomendadas, especialmente aos fins de semana. Faça sua reserva pelo Tagme: https://go.tagme.com.br/embaixadacarioca"}
+        }
       ]
     },
     {
@@ -254,6 +304,7 @@
     .feature-stats { grid-template-columns: 1fr 1fr; }
   }
 </style>
+<link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high" />
 </head>
 <body data-screen-label="Café da Manhã">
 
@@ -261,8 +312,8 @@
 <nav class="top" id="topnav">
   <div class="nav-inner">
     <a href="/" class="brand-mark" aria-label="Embaixada Carioca · início">
-      <img src="assets/logo-areia.svg" class="brand-logo light" alt="Café da manhã com vista para o Pão de Açúcar na Embaixada Carioca, Morro da Urca, Rio de Janeiro" />
-      <img src="assets/logo-azul.svg"  class="brand-logo dark"  alt="Embaixada Carioca · Restaurante no Morro da Urca" />
+      <img src="assets/logo-areia.svg" class="brand-logo light" loading="lazy" alt="Café da manhã com vista para o Pão de Açúcar na Embaixada Carioca, Morro da Urca, Rio de Janeiro" />
+      <img src="assets/logo-azul.svg"  class="brand-logo dark" loading="lazy"  alt="Embaixada Carioca · Restaurante no Morro da Urca" />
       <span class="brand-word"><b>Morro da Urca</b><br/>Rio de Janeiro</span>
     </a>
     <ul class="nav-links">
@@ -278,7 +329,7 @@
 
 <!-- HERO -->
 <header class="page-hero">
-  <img src="assets/hero.jpg" alt="Salão de café da manhã na Embaixada Carioca com vista para o Pão de Açúcar · Morro da Urca, Rio de Janeiro" class="page-hero-photo" fetchpriority="high" decoding="async" />
+  <img src="assets/hero.jpg" alt="Salão de café da manhã na Embaixada Carioca com vista para o Pão de Açúcar · Morro da Urca, Rio de Janeiro" class="page-hero-photo" fetchpriority="high" loading="eager" decoding="async" />
   <div class="page-hero-overlay" aria-hidden="true"></div>
 
   <div class="page-hero-content">
@@ -428,7 +479,7 @@
   <p>Sua reserva inclui mesa com vista garantida para o Pão de Açúcar e acesso ao salão panorâmico da Embaixada Carioca.</p>
   <div class="row">
     <a href="https://go.tagme.com.br/embaixadacarioca" class="btn lg">Reservar via Tagme →</a>
-    <a href="almoco.html" class="btn lg ghost" style="border-color: var(--areia-pale); color: var(--areia-pale);">Ver também: Almoço →</a>
+    <a href="almoco.html" class="btn lg ghost" style="border-color: var(--areia-pale); color: var(--areia-pale);">Almoço com vista no Morro da Urca →</a>
   </div>
 </aside>
 
@@ -473,7 +524,7 @@
     </div>
     <div class="foot-bottom">
       <div class="crest">
-        <img src="assets/logo-amarelo.svg" class="crest-logo" alt="" />
+        <img src="assets/logo-amarelo.svg" class="crest-logo" alt="Logo da Embaixada Carioca — Café da Manhã com Vista no Morro da Urca, Rio de Janeiro" />
         <span>Embaixada Carioca · MMXXVI</span>
       </div>
       <div>Parque Bondinho Pão de Açúcar · Rio de Janeiro</div>

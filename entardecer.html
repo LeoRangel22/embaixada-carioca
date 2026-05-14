@@ -17,6 +17,8 @@
 <meta property="og:title" content="Restaurante Romântico no Rio de Janeiro | Entardecer – Embaixada Carioca" />
 <meta property="og:description" content="Pôr do sol sobre o Pão de Açúcar com caipirinha Magnífica e chope premiado. O entardecer mais bonito do Rio. Morro da Urca." />
 <meta property="og:image" content="https://www.embaixadacarioca.com/assets/hero.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content="Pôr do sol atrás do Pão de Açúcar visto da Embaixada Carioca, Morro da Urca" />
 <meta property="og:site_name" content="Embaixada Carioca" />
 
@@ -52,6 +54,29 @@
       "address": {"@type":"PostalAddress","streetAddress":"Av. Pasteur, 520 — Morro da Urca","addressLocality":"Urca","addressRegion":"RJ","postalCode":"22290-240","addressCountry":"BR"},
       "geo": {"@type":"GeoCoordinates","latitude":-22.9494,"longitude":-43.1654},
       "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"48"},
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "08:30",
+          "closes": "11:30",
+          "name": "Café da Manhã"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "12:00",
+          "closes": "17:00",
+          "name": "Almoço"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "17:00",
+          "closes": "21:00",
+          "name": "Entardecer"
+        }
+      ],
       "award": ["Chope Heineken Premiado"]
     },
     {
@@ -67,6 +92,27 @@
       "datePublished": "2024-10-01",
       "reviewBody": "Para um final de tarde mais descontraído, visite o Embaixada Carioca para um happy hour e assista ao pôr do sol sobre a cidade enquanto desfruta de deliciosos petiscos locais e coquetéis.",
       "itemReviewed": {"@id":"https://www.embaixadacarioca.com/#restaurant"}
+    }
+,
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual o horário do entardecer na Embaixada Carioca?",
+          "acceptedAnswer": {"@type":"Answer","text":"O entardecer na Embaixada Carioca acontece todos os dias, das 17h às 21h, no alto do Morro da Urca. O pôr do sol atrás do Pão de Açúcar ocorre entre 17h30 e 18h30, dependendo da época do ano."}
+        },
+        {
+          "@type": "Question",
+          "name": "É um bom programa romântico no Rio de Janeiro?",
+          "acceptedAnswer": {"@type":"Answer","text":"Sim. O entardecer da Embaixada Carioca é considerado um dos programas românticos mais bonitos do Rio de Janeiro — pôr do sol sobre o Pão de Açúcar, drinks autorais e vista 360° da Baía de Guanabara."}
+        },
+        {
+          "@type": "Question",
+          "name": "Quais drinks são servidos no entardecer?",
+          "acceptedAnswer": {"@type":"Answer","text":"Caipirinha com cachaça Magnífica premiada, Bossa Sour, caipirinhas da estação, chope Heineken (2º melhor do Brasil), cervejas fluminenses, coquetelaria brasileira e água de coco in natura."}
+        }
+      ]
     }
   ]
 }
@@ -246,6 +292,7 @@
     .sunset-times-grid { grid-template-columns: 1fr 1fr; }
   }
 </style>
+<link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high" />
 </head>
 <body data-screen-label="Entardecer">
 
@@ -253,8 +300,8 @@
 <nav class="top" id="topnav">
   <div class="nav-inner">
     <a href="/" class="brand-mark" aria-label="Embaixada Carioca · início">
-      <img src="assets/logo-areia.svg" class="brand-logo light" alt="Entardecer com pôr do sol sobre o Pão de Açúcar na Embaixada Carioca, Rio de Janeiro" />
-      <img src="assets/logo-azul.svg"  class="brand-logo dark"  alt="Embaixada Carioca · Restaurante no Morro da Urca" />
+      <img src="assets/logo-areia.svg" class="brand-logo light" loading="lazy" alt="Entardecer com pôr do sol sobre o Pão de Açúcar na Embaixada Carioca, Rio de Janeiro" />
+      <img src="assets/logo-azul.svg"  class="brand-logo dark" loading="lazy"  alt="Embaixada Carioca · Restaurante no Morro da Urca" />
       <span class="brand-word"><b>Morro da Urca</b><br/>Rio de Janeiro</span>
     </a>
     <ul class="nav-links">
@@ -270,7 +317,7 @@
 
 <!-- HERO -->
 <header class="page-hero">
-  <img src="assets/hero.jpg" alt="Pôr do sol atrás do Pão de Açúcar visto do salão da Embaixada Carioca, no Morro da Urca, Rio de Janeiro" class="page-hero-photo" fetchpriority="high" decoding="async" />
+  <img src="assets/hero.jpg" alt="Pôr do sol atrás do Pão de Açúcar visto do salão da Embaixada Carioca, no Morro da Urca, Rio de Janeiro" class="page-hero-photo" fetchpriority="high" loading="eager" decoding="async" />
   <div class="page-hero-overlay" aria-hidden="true"></div>
 
   <div class="page-hero-content">
@@ -429,7 +476,7 @@
   <p>Reserve sua mesa com vista para o Pão de Açúcar e acompanhe o sol descendo sobre a baía — todos os dias até 21h.</p>
   <div class="row">
     <a href="https://go.tagme.com.br/embaixadacarioca" class="btn lg">Reservar via Tagme →</a>
-    <a href="eventos.html" class="btn lg ghost" style="border-color: var(--areia-pale); color: var(--areia-pale);">Continue: Eventos →</a>
+    <a href="eventos.html" class="btn lg ghost" style="border-color: var(--areia-pale); color: var(--areia-pale);">Eventos no Morro da Urca →</a>
   </div>
 </aside>
 
@@ -471,7 +518,7 @@
     </div>
     <div class="foot-bottom">
       <div class="crest">
-        <img src="assets/logo-amarelo.svg" class="crest-logo" alt="" />
+        <img src="assets/logo-amarelo.svg" class="crest-logo" alt="Logo da Embaixada Carioca — Entardecer e Pôr do Sol no Morro da Urca, Rio de Janeiro" />
         <span>Embaixada Carioca · MMXXVI</span>
       </div>
       <div>Parque Bondinho Pão de Açúcar · Rio de Janeiro</div>

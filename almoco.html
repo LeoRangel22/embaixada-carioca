@@ -17,6 +17,8 @@
 <meta property="og:title" content="Almoço com Vista no Bondinho do Pão de Açúcar | Embaixada Carioca" />
 <meta property="og:description" content="Gastronomia brasileira premiada a 227m de frente para o Pão de Açúcar. Picanha, feijoada e frutos do mar. Todos os dias 12h–17h." />
 <meta property="og:image" content="https://www.embaixadacarioca.com/assets/hero.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content="Almoço brasileiro com vista do Pão de Açúcar na Embaixada Carioca, Morro da Urca" />
 <meta property="og:site_name" content="Embaixada Carioca" />
 
@@ -53,6 +55,29 @@
       "address": {"@type":"PostalAddress","streetAddress":"Av. Pasteur, 520 — Morro da Urca","addressLocality":"Urca","addressRegion":"RJ","postalCode":"22290-240","addressCountry":"BR"},
       "geo": {"@type":"GeoCoordinates","latitude":-22.9494,"longitude":-43.1654},
       "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"48"},
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "08:30",
+          "closes": "11:30",
+          "name": "Café da Manhã"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "12:00",
+          "closes": "17:00",
+          "name": "Almoço"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "17:00",
+          "closes": "21:00",
+          "name": "Entardecer"
+        }
+      ],
       "award": ["Melhor Feijoada do Brasil — Revista Prazeres da Mesa"]
     },
     {
@@ -72,8 +97,38 @@
           "hasMenuItem": [
             {"@type":"MenuItem","name":"Feijoada da Academia da Cachaça","description":"Premiada como melhor do Brasil pela Revista Prazeres da Mesa. Charque, costela, lombo, paio e linguiça fina em panela de barro. Servida sex/sáb/dom.","offers":{"@type":"Offer","price":"189.70","priceCurrency":"BRL"}},
             {"@type":"MenuItem","name":"Picanha à brasileira","description":"Picanha grelhada no ponto, acompanhada de arroz, farofa e vinagrete."},
-            {"@type":"MenuItem","name":"Picadinho carioca","description":"Carne em cubos refogada, acompanhada de arroz, ovo, banana e farofa."}
+            {"@type":"MenuItem","name":"Picadinho carioca","description":"Carne em cubos refogada, acompanhada de arroz, ovo, banana e farofa.","offers":{"@type":"Offer","price":"74.70","priceCurrency":"BRL"}},
+            {"@type":"MenuItem","name":"Bobó de camarão","description":"Camarão em creme de mandioca com azeite de dendê e coentro.","offers":{"@type":"Offer","price":"114.70","priceCurrency":"BRL"}},
+            {"@type":"MenuItem","name":"Salmão com molho de maracujá","description":"Filé de salmão grelhado com molho de maracujá, arroz e legumes.","offers":{"@type":"Offer","price":"114.70","priceCurrency":"BRL"}},
+            {"@type":"MenuItem","name":"Picanha à brasileira (individual)","description":"Picanha grelhada no ponto, acompanhada de arroz, farofa e vinagrete.","offers":{"@type":"Offer","price":"134.70","priceCurrency":"BRL"}},
+            {"@type":"MenuItem","name":"Picanha à brasileira (para 2)","description":"Picanha grelhada no ponto para duas pessoas, acompanhada de arroz, farofa e vinagrete.","offers":{"@type":"Offer","price":"204.70","priceCurrency":"BRL"}},
+            {"@type":"MenuItem","name":"Feijoada da Academia da Cachaça (para 2)","description":"Premiada como melhor do Brasil pela Revista Prazeres da Mesa. Charque, costela, lombo, paio e linguiça fina em panela de barro. Servida sex/sáb/dom, 11h30–17h.","offers":{"@type":"Offer","price":"189.70","priceCurrency":"BRL"}}
           ]
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual o horário do almoço no Restaurante Morro da Urca?",
+          "acceptedAnswer": {"@type":"Answer","text":"O almoço na Embaixada Carioca é servido todos os dias, das 12h às 17h, com vista para o Pão de Açúcar no alto do Morro da Urca."}
+        },
+        {
+          "@type": "Question",
+          "name": "Quando é servida a feijoada premiada?",
+          "acceptedAnswer": {"@type":"Answer","text":"A feijoada da Academia da Cachaça — eleita melhor do Brasil pela Revista Prazeres da Mesa — é servida às sextas, sábados e domingos, das 11h30 às 17h. Porção de R$ 189,70 serve 2 pessoas."}
+        },
+        {
+          "@type": "Question",
+          "name": "Precisa pagar o bondinho para almoçar no Restaurante Morro da Urca?",
+          "acceptedAnswer": {"@type":"Answer","text":"Sim. O acesso ao restaurante é pelo Parque Bondinho Pão de Açúcar (Av. Pasteur, 520, Urca). O teleférico leva até o Morro da Urca, 1ª parada, onde fica a Embaixada Carioca."}
+        },
+        {
+          "@type": "Question",
+          "name": "Qual o melhor prato do Restaurante do Bondinho?",
+          "acceptedAnswer": {"@type":"Answer","text":"A feijoada da Academia da Cachaça é o prato mais premiado — eleita melhor do Brasil pela Revista Prazeres da Mesa. A picanha à brasileira é o prato mais pedido no almoço diário."}
         }
       ]
     }
@@ -231,6 +286,7 @@
     .feijoada-info { grid-template-columns: 1fr; }
   }
 </style>
+<link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high" />
 </head>
 <body data-screen-label="Almoço">
 
@@ -238,8 +294,8 @@
 <nav class="top" id="topnav">
   <div class="nav-inner">
     <a href="/" class="brand-mark" aria-label="Embaixada Carioca · início">
-      <img src="assets/logo-areia.svg" class="brand-logo light" alt="Almoço com vista para o Pão de Açúcar na Embaixada Carioca, Urca, Rio de Janeiro" />
-      <img src="assets/logo-azul.svg"  class="brand-logo dark"  alt="Embaixada Carioca · Restaurante no Morro da Urca" />
+      <img src="assets/logo-areia.svg" class="brand-logo light" loading="lazy" alt="Almoço com vista para o Pão de Açúcar na Embaixada Carioca, Urca, Rio de Janeiro" />
+      <img src="assets/logo-azul.svg"  class="brand-logo dark" loading="lazy"  alt="Embaixada Carioca · Restaurante no Morro da Urca" />
       <span class="brand-word"><b>Morro da Urca</b><br/>Rio de Janeiro</span>
     </a>
     <ul class="nav-links">
@@ -255,7 +311,7 @@
 
 <!-- HERO -->
 <header class="page-hero">
-  <img src="assets/hero.jpg" alt="Almoço brasileiro com vista do Pão de Açúcar na Embaixada Carioca, Morro da Urca, Rio de Janeiro" class="page-hero-photo" fetchpriority="high" decoding="async" />
+  <img src="assets/hero.jpg" alt="Almoço brasileiro com vista do Pão de Açúcar na Embaixada Carioca, Morro da Urca, Rio de Janeiro" class="page-hero-photo" fetchpriority="high" loading="eager" decoding="async" />
   <div class="page-hero-overlay" aria-hidden="true"></div>
 
   <div class="page-hero-content">
@@ -406,7 +462,7 @@
   <p>Garanta sua mesa com vista para o Pão de Açúcar no <strong>Restaurante do Bondinho</strong>. Reservas pela plataforma Tagme — confirmação imediata. O único <strong>almoço com vista no Morro da Urca</strong>, aberto todos os dias das 12h às 17h.</p>
   <div class="row">
     <a href="https://go.tagme.com.br/embaixadacarioca" class="btn lg">Reservar via Tagme →</a>
-    <a href="entardecer.html" class="btn lg ghost" style="border-color: var(--areia-pale); color: var(--areia-pale);">Continue: Entardecer →</a>
+    <a href="entardecer.html" class="btn lg ghost" style="border-color: var(--areia-pale); color: var(--areia-pale);">Entardecer — pôr do sol no Morro da Urca →</a>
   </div>
 </aside>
 
@@ -448,7 +504,7 @@
     </div>
     <div class="foot-bottom">
       <div class="crest">
-        <img src="assets/logo-amarelo.svg" class="crest-logo" alt="" />
+        <img src="assets/logo-amarelo.svg" class="crest-logo" alt="Logo da Embaixada Carioca — Restaurante Morro da Urca, Rio de Janeiro" />
         <span>Embaixada Carioca · MMXXVI</span>
       </div>
       <div>Parque Bondinho Pão de Açúcar · Rio de Janeiro</div>
