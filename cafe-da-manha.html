@@ -10,6 +10,10 @@
 <meta name="keywords" content="café da manhã com vista Rio de Janeiro, café da manhã Urca, melhor café da manhã Rio de Janeiro, brunch com vista Rio, café da manhã Pão de Açúcar" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <link rel="canonical" href="https://www.embaixadacarioca.com/cafe-da-manha" />
+  <link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha.html" />
+  <link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/index.html" />
+  <link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/index.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha.html" />
 
 <!-- ── Open Graph ── -->
 <meta property="og:type" content="website" />
@@ -31,15 +35,7 @@
 
 <meta name="geo.region" content="BR-RJ" />
 <meta name="geo.placename" content="Morro da Urca, Rio de Janeiro" />
-<meta name="geo.position" content="-22.9494;-43.1654" />
-<meta name="theme-color" content="#00405a" />
-<link rel="icon" type="image/svg+xml" href="assets/logo-verde.svg" />
-
-<!-- ── Hreflang ── -->
-<link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha" />
-<link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/desayuno" />
-<link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha" />
-
+<meta name="geo.position" content="-22.9494;-43.1654" /><!-- ── Hreflang ── -->
 <!-- ── JSON-LD ── -->
 <script type="application/ld+json">
 {
@@ -304,14 +300,30 @@
   }
 </style>
 <link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high" />
-  <!-- PWA & Mobile Optimization -->
-  <link rel="manifest" href="/manifest.json" />
-  <link rel="apple-touch-icon" href="/assets/icon-192.png" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- PWA & Mobile Optimization -->  <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Embaixada Carioca" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="format-detection" content="telephone=yes" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Café da Manhã com Vista — Embaixada Carioca",
+  "description": "Café da manhã todos os dias das 8h30 às 11h30 no Morro da Urca, com vista para o Pão de Açúcar.",
+  "url": "https://www.embaixadacarioca.com/cafe-da-manha.html",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      "h1",
+      ".hero-sub",
+      ".intro-text",
+      ".faq-answer"
+    ]
+  }
+}
+</script>
 </head>
 <body data-screen-label="Café da Manhã">
 
@@ -337,7 +349,11 @@
 
 <!-- HERO -->
 <header class="page-hero">
-  <img src="assets/hero.jpg" alt="Salão de café da manhã na Embaixada Carioca com vista para o Pão de Açúcar · Morro da Urca, Rio de Janeiro" class="page-hero-photo" fetchpriority="high" loading="eager" decoding="async" />
+  <picture>
+          <source type="image/webp" srcset="/assets/hero-mobile.webp 600w, /assets/hero.webp 1200w" sizes="(max-width: 720px) 600px, 1200px" />
+          <source type="image/jpg" srcset="/assets/hero.jpg" />
+          <img src="/assets/hero.jpg" alt="Salão de café da manhã na Embaixada Carioca com vista para o Pão de Açúcar · Morro da Urca, Rio de Janeiro" class="page-hero-photo" loading="eager" decoding="async" />
+        </picture>
   <div class="page-hero-overlay" aria-hidden="true"></div>
 
   <div class="page-hero-content">
@@ -502,25 +518,29 @@
     </p>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
       <figure style="margin:0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-        <img src="assets/cafe-da-manha-mesa-opt.jpg"
-             alt="Mesa farta de café da manhã com vista para o Pão de Açúcar na Embaixada Carioca — o melhor café da manhã com vista no Rio de Janeiro, Morro da Urca"
-             loading="lazy" width="560" height="420" style="width:100%; height:280px; object-fit:cover; display:block;" />
+        <picture>
+          <source type="image/webp" srcset="/assets/cafe-da-manha-mesa-opt-mobile.webp 600w, /assets/cafe-da-manha-mesa-opt.webp 1200w" sizes="(max-width: 720px) 600px, 1200px" />
+          <source type="image/jpg" srcset="/assets/cafe-da-manha-mesa-opt.jpg" />
+          <img src="/assets/cafe-da-manha-mesa-opt.jpg" alt="Mesa farta de café da manhã com vista para o Pão de Açúcar na Embaixada Carioca — o melhor café da manhã com vista no Rio de Janeiro, Morro da Urca" style="width:100%; height:280px; object-fit:cover; display:block;" width="560" height="420" loading="lazy" decoding="async" />
+        </picture>
         <figcaption style="padding: 0.75rem 1rem; background: white; font-size: 0.85rem; color: #555;">
           Mesa posta com vista para o Pão de Açúcar
         </figcaption>
       </figure>
       <figure style="margin:0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-        <img src="assets/sanduiche-vista.jpg"
-             alt="Sanduíche artesanal com o Pão de Açúcar ao fundo na Embaixada Carioca — café da manhã e brunch com vista no Morro da Urca, Rio de Janeiro"
-             loading="lazy" width="560" height="420" style="width:100%; height:280px; object-fit:cover; display:block;" />
+        <picture>
+          <source type="image/webp" srcset="/assets/sanduiche-vista.webp" />
+          <img src="/assets/sanduiche-vista.jpg" alt="Sanduíche artesanal com o Pão de Açúcar ao fundo na Embaixada Carioca — café da manhã e brunch com vista no Morro da Urca, Rio de Janeiro" style="width:100%; height:280px; object-fit:cover; display:block;" width="560" height="420" loading="lazy" decoding="async" />
+        </picture>
         <figcaption style="padding: 0.75rem 1rem; background: white; font-size: 0.85rem; color: #555;">
           Sanduíche artesanal com o Pão de Açúcar ao fundo
         </figcaption>
       </figure>
       <figure style="margin:0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-        <img src="assets/casal-romantico-opt.jpg"
-             alt="Casal em café da manhã romântico com vista para o Rio de Janeiro na Embaixada Carioca — programa especial para casais no Morro da Urca"
-             loading="lazy" width="560" height="420" style="width:100%; height:280px; object-fit:cover; display:block;" />
+        <picture>
+          <source type="image/webp" srcset="/assets/casal-romantico-opt.webp" />
+          <img src="/assets/casal-romantico-opt.jpg" alt="Casal em café da manhã romântico com vista para o Rio de Janeiro na Embaixada Carioca — programa especial para casais no Morro da Urca" style="width:100%; height:280px; object-fit:cover; display:block;" width="560" height="420" loading="lazy" decoding="async" />
+        </picture>
         <figcaption style="padding: 0.75rem 1rem; background: white; font-size: 0.85rem; color: #555;">
           Café da manhã romântico com vista para o Rio
         </figcaption>
@@ -562,14 +582,14 @@
         <ul>
           <li>Av. Pasteur, 520<br/>Urca · Rio de Janeiro · RJ</li>
           <li><a href="tel:+5521966837556">+55 21 96683-7556</a></li>
-          <li><a href="mailto:eventos@embaixadacarioca.com.br">eventos@embaixadacarioca.com.br</a></li>
+          <li><a href="mailto:eventos@embaixadacarioca.com">eventos@embaixadacarioca.com</a></li>
           <li><a href="https://instagram.com/embaixadacarioca">Instagram · 84K</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
       <div class="crest">
-        <img src="assets/logo-amarelo.svg" class="crest-logo" alt="Logo da Embaixada Carioca — Café da Manhã com Vista no Morro da Urca, Rio de Janeiro" />
+        <img src="assets/logo-amarelo.svg" class="crest-logo" alt="Logo da Embaixada Carioca — Café da Manhã com Vista no Morro da Urca, Rio de Janeiro" / loading="lazy" decoding="async">
         <span>Embaixada Carioca · MMXXVI</span>
       </div>
       <div>Parque Bondinho Pão de Açúcar · Rio de Janeiro</div>
@@ -778,7 +798,7 @@
   <div class="wa-preview" id="wa-preview" role="dialog" aria-label="Chat WhatsApp Embaixada Carioca">
     <button class="wa-close" id="wa-close" aria-label="Fechar chat">✕</button>
     <div class="wa-preview-header">
-      <div class="wa-avatar" aria-hidden="true">🏖️</div>
+      <div class="wa-avatar" style="width:44px;height:44px;border-radius:50%;overflow:hidden;flex-shrink:0;"><img src="/assets/whatsapp-logo-icon.png" alt="Embaixada Carioca" width="44" height="44" style="width:100%;height:100%;object-fit:cover;" /></div>
       <div>
         <div class="wa-preview-name">Embaixada Carioca</div>
         <div class="wa-preview-status">● Online agora</div>
@@ -799,9 +819,7 @@
      aria-label="Falar com a Embaixada Carioca no WhatsApp"
      title="WhatsApp · +55 21 96683-7556">
     <span class="wa-badge" aria-hidden="true">1</span>
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
+    <img src="/assets/whatsapp-logo-icon.png" alt="WhatsApp Embaixada Carioca" width="60" height="60" style="border-radius:50%;display:block;width:60px;height:60px;object-fit:cover;" />
   </a>
 </div>
 

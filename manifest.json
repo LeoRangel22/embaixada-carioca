@@ -1,19 +1,31 @@
 {
-  "name": "Embaixada Carioca — Restaurante no Morro da Urca",
-  "short_name": "Embaixada Carioca",
-  "description": "Restaurante com vista para o Pão de Açúcar. Café da manhã, almoço e entardecer todos os dias no Parque Bondinho.",
+  "name": "Embaixada Carioca",
+  "short_name": "Embaixada",
+  "description": "Restaurante no Morro da Urca com vista para o Pão de Açúcar. Café da manhã, almoço, entardecer e eventos no Rio de Janeiro.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#00405a",
-  "theme_color": "#00405a",
+  "theme_color": "#25D366",
   "orientation": "portrait-primary",
   "lang": "pt-BR",
-  "categories": [
-    "food",
-    "travel",
-    "lifestyle"
-  ],
+  "categories": ["food", "travel", "lifestyle"],
   "icons": [
+    {
+      "src": "/assets/favicon-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "/assets/icon-192.png",
       "sizes": "192x192",
@@ -27,52 +39,35 @@
       "purpose": "any maskable"
     }
   ],
-  "screenshots": [
-    {
-      "src": "/assets/hero.jpg",
-      "sizes": "1200x800",
-      "type": "image/jpeg",
-      "label": "Vista panorâmica do Morro da Urca"
-    }
-  ],
   "shortcuts": [
     {
       "name": "Reservar Mesa",
       "short_name": "Reservar",
       "description": "Faça sua reserva via TagMe",
       "url": "https://go.tagme.com.br/embaixadacarioca",
-      "icons": [
-        {
-          "src": "/assets/icon-192.png",
-          "sizes": "192x192"
-        }
-      ]
+      "icons": [{"src": "/assets/icon-192.png", "sizes": "192x192"}]
     },
     {
       "name": "Cardápio",
       "short_name": "Cardápio",
       "description": "Ver o cardápio completo",
-      "url": "/cardapio",
-      "icons": [
-        {
-          "src": "/assets/icon-192.png",
-          "sizes": "192x192"
-        }
-      ]
+      "url": "/cardapio.html",
+      "icons": [{"src": "/assets/icon-192.png", "sizes": "192x192"}]
     },
     {
       "name": "WhatsApp",
       "short_name": "WhatsApp",
-      "description": "Falar com o restaurante",
+      "description": "Fale conosco pelo WhatsApp",
       "url": "https://wa.me/5521966837556",
-      "icons": [
-        {
-          "src": "/assets/icon-192.png",
-          "sizes": "192x192"
-        }
-      ]
+      "icons": [{"src": "/assets/whatsapp-logo-icon.png", "sizes": "120x120"}]
     }
   ],
-  "related_applications": [],
-  "prefer_related_applications": false
+  "screenshots": [
+    {
+      "src": "/assets/hero.webp",
+      "sizes": "1200x800",
+      "type": "image/webp",
+      "label": "Embaixada Carioca — Vista para o Pão de Açúcar"
+    }
+  ]
 }

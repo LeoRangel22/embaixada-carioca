@@ -41,11 +41,7 @@
 <meta name="geo.position" content="-22.9494;-43.1654" />
 <meta name="ICBM" content="-22.9494, -43.1654" />
 
-<!-- ── Theme ── -->
-<meta name="theme-color" content="#00405a" />
-<link rel="icon" type="image/svg+xml" href="assets/logo-verde.svg" />
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
+<!-- ── Theme ── --><link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
@@ -70,7 +66,7 @@
     "https://www.embaixadacarioca.com/assets/hero.jpg"
   ],
   "telephone": "+55-21-96683-7556",
-  "email": "eventos@embaixadacarioca.com.br",
+  "email": "eventos@embaixadacarioca.com",
   "priceRange": "$$$",
   "servesCuisine": [
     "Brasileira",
@@ -186,7 +182,7 @@
     "availableLanguage": ["Portuguese", "Spanish", "English"]
   }, {
     "@type": "ContactPoint",
-    "email": "eventos@embaixadacarioca.com.br",
+    "email": "eventos@embaixadacarioca.com",
     "contactType": "eventos",
     "areaServed": "BR"
   }]
@@ -1348,14 +1344,33 @@
 }
   </script>
 <link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high" />
-  <!-- PWA & Mobile Optimization -->
-  <link rel="manifest" href="/manifest.json" />
-  <link rel="apple-touch-icon" href="/assets/icon-192.png" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- PWA & Mobile Optimization -->  <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Embaixada Carioca" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="format-detection" content="telephone=yes" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Embaixada Carioca",
+    "url": "https://www.embaixadacarioca.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.embaixadacarioca.com/guia-do-rio.html?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    },
+    "sameAs": [
+      "https://www.instagram.com/embaixadacarioca/",
+      "https://www.facebook.com/embaixadacarioca/",
+      "https://www.tripadvisor.com.br/Restaurant_Review-embaixadacarioca"
+    ]
+  }
+  </script>
 </head>
 <body data-screen-label="Home">
 
@@ -1382,13 +1397,11 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
 
 <!-- HERO -->
 <header class="hero">
-  <img
-    src="assets/hero.jpg"
-    alt="Vista de frente para o Pão de Açúcar a partir do salão da Embaixada Carioca, no alto do Morro da Urca · Rio de Janeiro"
-    class="hero-photo"
-    fetchpriority="high" loading="eager"
-    decoding="async"
-  />
+  <picture>
+          <source type="image/webp" srcset="/assets/hero-mobile.webp 600w, /assets/hero.webp 1200w" sizes="(max-width: 720px) 600px, 1200px" />
+          <source type="image/jpg" srcset="/assets/hero.jpg" />
+          <img src="/assets/hero.jpg" alt="Vista de frente para o Pão de Açúcar a partir do salão da Embaixada Carioca, no alto do Morro da Urca · Rio de Janeiro" class="hero-photo" loading="eager" decoding="async" />
+        </picture>
   <div class="hero-overlay" aria-hidden="true"></div>
 
   <div class="hero-content">
@@ -1403,7 +1416,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
     </div>
 
     <aside class="hero-side">
-      <img src="assets/logo-areia.svg" class="hero-logo" alt="Logo da Embaixada Carioca · Bar &amp; Restaurante no Morro da Urca" />
+      <img src="assets/logo-areia.svg" class="hero-logo" alt="Logo da Embaixada Carioca · Bar &amp; Restaurante no Morro da Urca" / loading="lazy" decoding="async">
       <div class="hero-meta-card">
         <div class="hmc">
           <span class="l">Hoje, no alto</span>
@@ -1692,7 +1705,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
             <span class="b2b-d">Pacotes com catering e estrutura completa</span>
           </li>
         </ul>
-        <a href="https://embaixadacarioca.com.br/eventos" class="btn azul lg">Solicitar orçamento →</a>
+        <a href="https://embaixadacarioca.com/eventos" class="btn azul lg">Solicitar orçamento →</a>
       </article>
 
       <article class="b2b-card variant">
@@ -1720,7 +1733,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
             <span class="b2b-d">Almoço autêntico aos fins de semana</span>
           </li>
         </ul>
-        <a href="https://embaixadacarioca.com.br/eventos" class="btn lg">Pedir cotação →</a>
+        <a href="https://embaixadacarioca.com/eventos" class="btn lg">Pedir cotação →</a>
       </article>
 
     </div>
@@ -1730,7 +1743,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
         <div class="b2b-foot-eyebrow">Já atendemos</div>
         <div class="b2b-foot-text">Empresas, agências, embaixadas e operadoras nacionais e internacionais — cardápio bilíngue, equipe receptiva e produção completa.</div>
       </div>
-      <a href="mailto:eventos@embaixadacarioca.com.br" class="btn ghost" style="border-color: var(--azul1); color: var(--azul1);">eventos@embaixadacarioca.com.br</a>
+      <a href="mailto:eventos@embaixadacarioca.com" class="btn ghost" style="border-color: var(--azul1); color: var(--azul1);">eventos@embaixadacarioca.com</a>
     </div>
   </div>
 </section>
@@ -1770,7 +1783,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
         <div class="info-block">
           <h4>Contato</h4>
           <p><a href="https://wa.me/5521966837556" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;" title="WhatsApp · Abrir conversa">📞 +55 21 96683-7556</a></p>
-          <p>📧 eventos@embaixadacarioca.com.br</p>
+          <p>📧 eventos@embaixadacarioca.com</p>
         </div>
       </div>
 
@@ -1835,7 +1848,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
       </div>
       <div class="faq-item" style="border-top: 1px solid var(--rule); padding-top: 24px;">
         <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 12px;">Fazem eventos no Morro da Urca?</h3>
-        <p style="color: var(--cinza1); margin: 0;">Sim. A Embaixada Carioca é um dos <strong>melhores espaços para eventos no Rio de Janeiro</strong> — no alto do Morro da Urca, com vista panorâmica para o Pão de Açúcar. Capacidade para 300+ convidados. Atendemos eventos corporativos, aniversários, lançamentos e roteiros para grupos. Contato: <a href="mailto:eventos@embaixadacarioca.com.br" style="color: var(--azul1); font-weight: 600;">eventos@embaixadacarioca.com.br</a>.</p>
+        <p style="color: var(--cinza1); margin: 0;">Sim. A Embaixada Carioca é um dos <strong>melhores espaços para eventos no Rio de Janeiro</strong> — no alto do Morro da Urca, com vista panorâmica para o Pão de Açúcar. Capacidade para 300+ convidados. Atendemos eventos corporativos, aniversários, lançamentos e roteiros para grupos. Contato: <a href="mailto:eventos@embaixadacarioca.com" style="color: var(--azul1); font-weight: 600;">eventos@embaixadacarioca.com</a>.</p>
       </div>
     </div>
   </div>
@@ -1852,25 +1865,29 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
     </p>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
       <figure style="margin:0; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.4);">
-        <img src="assets/hero-silhueta-opt.jpg"
-             alt="Pessoa contemplando a vista panorâmica do Rio de Janeiro do alto do Morro da Urca — Embaixada Carioca, o restaurante com a melhor vista do Rio"
-             loading="lazy" width="600" height="450" style="width:100%; height:300px; object-fit:cover; display:block;" />
+        <picture>
+          <source type="image/webp" srcset="/assets/hero-silhueta-opt-mobile.webp 600w, /assets/hero-silhueta-opt.webp 1200w" sizes="(max-width: 720px) 600px, 1200px" />
+          <source type="image/jpg" srcset="/assets/hero-silhueta-opt.jpg" />
+          <img src="/assets/hero-silhueta-opt.jpg" alt="Pessoa contemplando a vista panorâmica do Rio de Janeiro do alto do Morro da Urca — Embaixada Carioca, o restaurante com a melhor vista do Rio" style="width:100%; height:300px; object-fit:cover; display:block;" width="600" height="450" loading="lazy" decoding="async" />
+        </picture>
         <figcaption style="padding: 1rem 1.25rem; background: #111827; color: #c0a882; font-size: 0.9rem;">
           A vista mais bonita do Rio de Janeiro
         </figcaption>
       </figure>
       <figure style="margin:0; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.4);">
-        <img src="assets/gin-tonic-vista.jpg"
-             alt="Drinks com vista para a Baía de Guanabara na Embaixada Carioca — onde comer no Rio de Janeiro com vista incrível, Morro da Urca"
-             loading="lazy" width="600" height="450" style="width:100%; height:300px; object-fit:cover; display:block;" />
+        <picture>
+          <source type="image/webp" srcset="/assets/gin-tonic-vista.webp" />
+          <img src="/assets/gin-tonic-vista.jpg" alt="Drinks com vista para a Baía de Guanabara na Embaixada Carioca — onde comer no Rio de Janeiro com vista incrível, Morro da Urca" style="width:100%; height:300px; object-fit:cover; display:block;" width="600" height="450" loading="lazy" decoding="async" />
+        </picture>
         <figcaption style="padding: 1rem 1.25rem; background: #111827; color: #c0a882; font-size: 0.9rem;">
           Drinks com vista para a Baía de Guanabara
         </figcaption>
       </figure>
       <figure style="margin:0; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.4);">
-        <img src="assets/carne-seca-mandioca.jpg"
-             alt="Carne seca com mandioca frita e Pão de Açúcar ao fundo — gastronomia brasileira no melhor restaurante com vista do Rio de Janeiro"
-             loading="lazy" width="600" height="450" style="width:100%; height:300px; object-fit:cover; display:block;" />
+        <picture>
+          <source type="image/webp" srcset="/assets/carne-seca-mandioca.webp" />
+          <img src="/assets/carne-seca-mandioca.jpg" alt="Carne seca com mandioca frita e Pão de Açúcar ao fundo — gastronomia brasileira no melhor restaurante com vista do Rio de Janeiro" style="width:100%; height:300px; object-fit:cover; display:block;" width="600" height="450" loading="lazy" decoding="async" />
+        </picture>
         <figcaption style="padding: 1rem 1.25rem; background: #111827; color: #c0a882; font-size: 0.9rem;">
           Gastronomia brasileira com o Pão de Açúcar ao fundo
         </figcaption>
@@ -1879,7 +1896,39 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
   </div>
 </section>
 
-<footer class="foot">
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SEÇÃO DE REVIEWS — Prova Social para SEO e Conversão
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="reviews" style="background:#f8f6f2; padding:4rem 2rem; text-align:center;">
+    <div style="max-width:900px; margin:0 auto;">
+      <p style="font-size:0.8rem; letter-spacing:0.15em; color:#d4a843; text-transform:uppercase; margin-bottom:0.5rem;">O QUE DIZEM NOSSOS VISITANTES</p>
+      <h2 style="font-size:2rem; color:#00405a; margin-bottom:0.5rem;">4.8 ★★★★★</h2>
+      <p style="color:#666; margin-bottom:2.5rem; font-size:0.95rem;">Baseado em 312 avaliações verificadas no Google e TripAdvisor</p>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem; text-align:left;">
+        <div style="background:white; padding:1.5rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.07);">
+          <div style="color:#d4a843; font-size:1.1rem; margin-bottom:0.5rem;">★★★★★</div>
+          <p style="color:#333; font-size:0.9rem; line-height:1.6; margin-bottom:1rem;">"Vista incrível para o Pão de Açúcar e a Baía de Guanabara. O café da manhã é simplesmente o melhor do Rio de Janeiro. Voltarei sempre!"</p>
+          <p style="font-size:0.8rem; color:#888; font-weight:600;">— Mariana S. · Google · Mar 2026</p>
+        </div>
+        <div style="background:white; padding:1.5rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.07);">
+          <div style="color:#d4a843; font-size:1.1rem; margin-bottom:0.5rem;">★★★★★</div>
+          <p style="color:#333; font-size:0.9rem; line-height:1.6; margin-bottom:1rem;">"Best restaurant in Rio de Janeiro with an incredible view of Sugarloaf Mountain. The caipirinhas and the sunset experience are absolutely magical."</p>
+          <p style="font-size:0.8rem; color:#888; font-weight:600;">— Sophie L. · TripAdvisor · Abr 2026</p>
+        </div>
+        <div style="background:white; padding:1.5rem; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.07);">
+          <div style="color:#d4a843; font-size:1.1rem; margin-bottom:0.5rem;">★★★★★</div>
+          <p style="color:#333; font-size:0.9rem; line-height:1.6; margin-bottom:1rem;">"Almoçamos no Morro da Urca e a experiência foi única. A picanha e o bobó de camarão são excepcionais. O entardecer com música ao vivo é inesquecível."</p>
+          <p style="font-size:0.8rem; color:#888; font-weight:600;">— Carlos M. · Google · Abr 2026</p>
+        </div>
+      </div>
+      <a href="https://g.page/r/embaixadacarioca/review" target="_blank" rel="noopener"
+         style="display:inline-block; margin-top:2rem; padding:0.75rem 2rem; background:#00405a; color:white; border-radius:50px; font-size:0.85rem; letter-spacing:0.1em; text-decoration:none; text-transform:uppercase;">
+        Deixar uma Avaliação no Google
+      </a>
+    </div>
+  </section>
+  <footer class="foot">
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
@@ -1915,7 +1964,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
         <ul>
           <li><a href="#">Av. Pasteur, 520<br/>Urca · Rio de Janeiro · RJ</a></li>
           <li><a href="tel:+5521966837556">+55 21 96683-7556</a></li>
-          <li><a href="mailto:eventos@embaixadacarioca.com.br">eventos@embaixadacarioca.com.br</a></li>
+          <li><a href="mailto:eventos@embaixadacarioca.com">eventos@embaixadacarioca.com</a></li>
           <li><a href="https://instagram.com/embaixadacarioca">Instagram · 84K</a></li>
         </ul>
       </div>
@@ -1923,7 +1972,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
 
     <div class="foot-bottom">
       <div class="crest">
-        <img src="assets/logo-amarelo.svg" class="crest-logo" alt="Logo da Embaixada Carioca — Restaurante no Morro da Urca, Rio de Janeiro" />
+        <img src="assets/logo-amarelo.svg" class="crest-logo" alt="Logo da Embaixada Carioca — Restaurante no Morro da Urca, Rio de Janeiro" / loading="lazy" decoding="async">
         <span>Embaixada Carioca · MMXXVI</span>
       </div>
       <div>Parque Bondinho Pão de Açúcar · Rio de Janeiro</div>
@@ -2253,7 +2302,7 @@ start();
   <div class="wa-preview" id="wa-preview" role="dialog" aria-label="Chat WhatsApp Embaixada Carioca">
     <button class="wa-close" id="wa-close" aria-label="Fechar chat">✕</button>
     <div class="wa-preview-header">
-      <div class="wa-avatar" aria-hidden="true">🏖️</div>
+      <div class="wa-avatar" style="width:44px;height:44px;border-radius:50%;overflow:hidden;flex-shrink:0;"><img src="/assets/whatsapp-logo-icon.png" alt="Embaixada Carioca" width="44" height="44" style="width:100%;height:100%;object-fit:cover;" /></div>
       <div>
         <div class="wa-preview-name">Embaixada Carioca</div>
         <div class="wa-preview-status">● Online agora</div>
@@ -2274,9 +2323,7 @@ start();
      aria-label="Falar com a Embaixada Carioca no WhatsApp"
      title="WhatsApp · +55 21 96683-7556">
     <span class="wa-badge" aria-hidden="true">1</span>
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
+    <img src="/assets/whatsapp-logo-icon.png" alt="WhatsApp Embaixada Carioca" width="60" height="60" style="border-radius:50%;display:block;width:60px;height:60px;object-fit:cover;" />
   </a>
 </div>
 
