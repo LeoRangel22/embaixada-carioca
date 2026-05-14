@@ -135,22 +135,59 @@
   </url>
 
 
+  <!-- ───────── TOPICAL AUTHORITY MAP ───────── -->
   <url>
-    <loc>https://www.embaixadacarioca.com/morro-da-urca</loc>
+    <loc>https://www.embaixadacarioca.com/morro-da-urca.html</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/morro-da-urca.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/morro-da-urca.html"/>
   </url>
   <url>
-    <loc>https://www.embaixadacarioca.com/parque-bondinho</loc>
+    <loc>https://www.embaixadacarioca.com/parque-bondinho.html</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/parque-bondinho.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/parque-bondinho.html"/>
   </url>
   <url>
-    <loc>https://www.embaixadacarioca.com/gastronomia-carioca</loc>
+    <loc>https://www.embaixadacarioca.com/gastronomia-carioca.html</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/gastronomia-carioca.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/gastronomia-carioca.html"/>
+  </url>
+
+  <!-- ───────── VERSÕES MULTILINGUÊS ───────── -->
+  <url>
+    <loc>https://www.embaixadacarioca.com/en/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.embaixadacarioca.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es"    href="https://www.embaixadacarioca.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/"/>
+    <image:image>
+      <image:loc>https://www.embaixadacarioca.com/assets/hero.webp</image:loc>
+      <image:title>Embaixada Carioca — Best Restaurant near Sugarloaf Mountain, Rio de Janeiro</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.embaixadacarioca.com/es/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.embaixadacarioca.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es"    href="https://www.embaixadacarioca.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/"/>
+    <image:image>
+      <image:loc>https://www.embaixadacarioca.com/assets/hero.webp</image:loc>
+      <image:title>Embaixada Carioca — Mejor Restaurante cerca del Pan de Azúcar, Río de Janeiro</image:title>
+    </image:image>
   </url>
 </urlset>
