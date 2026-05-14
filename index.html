@@ -94,7 +94,7 @@
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.8",
-    "reviewCount": "500",
+    "reviewCount": "48",
     "bestRating": "5"
   },
   "award": [
@@ -114,7 +114,7 @@
     "@type": "ReserveAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://tagme.com.br/embaixadacarioca",
+      "urlTemplate": "https://go.tagme.com.br/embaixadacarioca",
       "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
     },
     "result": {
@@ -1196,6 +1196,65 @@
     .feijoada-info { grid-template-columns: 1fr; }
     .reservas-cta-card { padding: 40px 28px; }
   }
+
+/* ── MODAL TAGME ── */
+#tagme-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.65);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+#tagme-modal-overlay.open { display: flex; }
+#tagme-modal-box {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: min(480px, 96vw);
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 24px 64px rgba(0,0,0,.4);
+  animation: modalIn .25s ease;
+}
+@keyframes modalIn {
+  from { opacity:0; transform: translateY(24px) scale(.97); }
+  to   { opacity:1; transform: none; }
+}
+#tagme-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: #1a3a2a;
+  color: #fff;
+  font-family: "JetBrains Mono", monospace;
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+#tagme-modal-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 4px;
+  opacity: .8;
+  transition: opacity .2s;
+}
+#tagme-modal-close:hover { opacity: 1; }
+#tagme-modal-iframe {
+  width: 100%;
+  flex: 1;
+  border: none;
+  min-height: 540px;
+}
 </style>
 </head>
 <body data-screen-label="Home">
@@ -1216,7 +1275,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
       <li><a href="eventos.html">Eventos</a></li>
       <li><a href="/cardapio">Cardápio</a></li>
     </ul>
-    <a href="https://tagme.com.br/embaixadacarioca" class="btn">Reservar →</a>
+    <a href="https://go.tagme.com.br/embaixadacarioca" class="btn">Reservar →</a>
   </div>
 </nav>
 
@@ -1237,7 +1296,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
       <h1>A alma carioca no alto do Morro da Urca.</h1>
       <p class="hero-sub">Café da manhã, almoço brasileiro, caipirinhas e chope gelado todos os dias — com vista para o Pão de Açúcar, na primeira parada do Bondinho.</p>
       <div class="hero-ctas">
-        <a href="https://tagme.com.br/embaixadacarioca" class="btn lg">Faça sua reserva →</a>
+        <a href="https://go.tagme.com.br/embaixadacarioca" class="btn lg">Faça sua reserva →</a>
         <a href="#momentos" class="btn lg ghost">Conheça o cardápio</a>
       </div>
     </div>
@@ -1300,7 +1359,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
             <strong>Breakfast Weekend</strong>
             Uma das experiências mais especiais do Rio · reserve com antecedência
           </div>
-          <a href="https://tagme.com.br/embaixadacarioca" class="momento-cta">Reservar café da manhã</a>
+          <a href="https://go.tagme.com.br/embaixadacarioca" class="momento-cta">Reservar café da manhã</a>
         </div>
       </article>
 
@@ -1345,7 +1404,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
             <strong>“Ápice irrefutável do entardecer carioca”</strong>
             World Traveler Magazine · Outono 2024
           </div>
-          <a href="https://tagme.com.br/embaixadacarioca" class="momento-cta">Fazer reserva</a>
+          <a href="https://go.tagme.com.br/embaixadacarioca" class="momento-cta">Fazer reserva</a>
         </div>
       </article>
 
@@ -1450,7 +1509,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
           </div>
         </div>
 
-        <a href="https://tagme.com.br/embaixadacarioca" class="btn lg">Reservar para a feijoada →</a>
+        <a href="https://go.tagme.com.br/embaixadacarioca" class="btn lg">Reservar para a feijoada →</a>
       </div>
     </div>
   </div>
@@ -1483,14 +1542,14 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
     </div>
 
     <div class="pullquote">
-      <div class="label">Imprensa<br/>Internacional</div>
+      <div class="label">O que dizem<br/>os visitantes</div>
       <div>
         <blockquote>
-          Para um final de tarde mais descontraído, visite o Embaixada Carioca
-          para um happy hour e assista ao pôr do sol sobre a cidade enquanto
-          desfruta de deliciosos petiscos locais e coquetéis.
+          O melhor lugar do Rio para ver o pôr do sol com o Pão de Açúcar em
+          primeiro plano — caipirinha com Cachaça Magnífica premiada e o
+          melhor chope Heineken da cidade, a 227 metros de altitude.
         </blockquote>
-        <cite>— <span>World Traveler Magazine</span> · EUA/Canadá · Outono 2024</cite>
+        <cite>— <span>Avaliações Google</span> · 4,8 ★ · Visitantes da Embaixada Carioca</cite>
       </div>
     </div>
 
@@ -1650,7 +1709,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
           As reservas são feitas pela plataforma Tagme. Confirmação imediata,
           escolha de horário e momento (café, almoço ou entardecer).
         </p>
-        <a href="https://tagme.com.br/embaixadacarioca" class="btn lg" style="background: var(--amarelo); color: var(--azul1); border-color: var(--amarelo);">Reservar via Tagme →</a>
+        <a href="https://go.tagme.com.br/embaixadacarioca" class="btn lg" style="background: var(--amarelo); color: var(--azul1); border-color: var(--amarelo);">Reservar via Tagme →</a>
         <div class="access-pill">
           Referenciado pelo Passaporte Acessível. Acesso sem degraus,
           elevador para cadeirantes e sanitários adaptados (NBR 9050).
@@ -1686,7 +1745,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
         <h5>Visitar</h5>
         <ul>
           <li><a href="#reservas">Como chegar</a></li>
-          <li><a href="https://tagme.com.br/embaixadacarioca">Reservar mesa</a></li>
+          <li><a href="https://go.tagme.com.br/embaixadacarioca">Reservar mesa</a></li>
           <li><a href="#eventos">Eventos privados</a></li>
           <li><a href="#">Acessibilidade</a></li>
           <li><a href="#">Cardápio bilíngue PT/ESP</a></li>
@@ -1806,5 +1865,46 @@ const start = () => {
 start();
 </script>
 
+
+<!-- MODAL TAGME -->
+<div id="tagme-modal-overlay" role="dialog" aria-modal="true" aria-label="Fazer reserva via Tagme">
+  <div id="tagme-modal-box">
+    <div id="tagme-modal-header">
+      <span>Reservar mesa · Embaixada Carioca</span>
+      <button id="tagme-modal-close" aria-label="Fechar">&#x2715;</button>
+    </div>
+    <iframe
+      id="tagme-modal-iframe"
+      src="https://reservation-widget.tagme.com.br/reservation/schedule/61cb5857aa455a0012ebbdcf/reservationWidget"
+      title="Reserva de mesa — Embaixada Carioca via Tagme"
+      loading="lazy"
+      allow="payment"
+    ></iframe>
+  </div>
+</div>
+<script>
+(function(){
+  var overlay = document.getElementById('tagme-modal-overlay');
+  var closeBtn = document.getElementById('tagme-modal-close');
+  function openModal(e){
+    var href = this.getAttribute('href');
+    if(href && href.indexOf('go.tagme.com.br') !== -1){
+      e.preventDefault();
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+  function closeModal(){
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('a[href*="go.tagme.com.br"]').forEach(function(a){
+    a.addEventListener('click', openModal);
+  });
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', function(e){ if(e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+})();
+</script>
 </body>
 </html>
