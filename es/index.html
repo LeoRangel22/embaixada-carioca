@@ -2896,6 +2896,249 @@ img[loading="lazy"].loaded {
   }
 }
 
+
+
+/* ═══════════════════════════════════════════════════════════
+   SEÇÃO INSTAGRAM FEED — Design 6 Estrelas
+   Mobile-first, touch-optimized, SEO-ready
+═══════════════════════════════════════════════════════════ */
+.ig-section {
+  background: #0d1b2a;
+  padding: 80px 0;
+  overflow: hidden;
+}
+.ig-section .wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.ig-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.ig-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #c9a96e;
+  margin-bottom: 12px;
+}
+.ig-eyebrow svg { flex-shrink: 0; }
+.ig-title {
+  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: #fff;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+.ig-subtitle {
+  color: rgba(255,255,255,0.65);
+  font-size: 0.95rem;
+  margin: 0 0 24px;
+}
+.ig-follow-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 48px;
+}
+.ig-follow-btn:hover,
+.ig-follow-btn:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(253,29,29,0.35);
+}
+.ig-follow-btn:focus { outline: 3px solid #fcb045; outline-offset: 3px; }
+.ig-followers-count {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  font-weight: 400;
+}
+
+/* Grid de cards */
+.ig-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Card individual */
+.ig-card {
+  border-radius: 16px;
+  overflow: hidden;
+  background: #1a2e44;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
+}
+.ig-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+}
+.ig-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+.ig-card-link:focus {
+  outline: 3px solid #c9a96e;
+  outline-offset: 2px;
+  border-radius: 16px;
+}
+
+/* Thumbnail */
+.ig-thumb {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.ig-thumb-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 1;
+}
+.ig-emoji {
+  font-size: 3rem;
+  line-height: 1;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+}
+.ig-type-badge {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(8px);
+  color: rgba(255,255,255,0.9);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.ig-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.25s ease;
+  opacity: 0;
+}
+.ig-card:hover .ig-overlay,
+.ig-card:focus-within .ig-overlay {
+  background: rgba(0,0,0,0.45);
+  opacity: 1;
+}
+
+/* Corpo do card */
+.ig-card-body {
+  padding: 16px;
+}
+.ig-caption {
+  color: rgba(255,255,255,0.85);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 0 0 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.ig-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.ig-likes,
+.ig-comments {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: rgba(255,255,255,0.6);
+  font-size: 0.8rem;
+}
+.ig-likes svg { color: #e0245e; fill: #e0245e; }
+.ig-comments svg { color: rgba(255,255,255,0.6); }
+.ig-date {
+  color: rgba(255,255,255,0.4);
+  font-size: 0.75rem;
+  margin-left: auto;
+}
+
+/* CTA final */
+.ig-cta-row {
+  text-align: center;
+  margin-top: 40px;
+}
+.ig-view-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #c9a96e;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1.5px solid rgba(201,169,110,0.4);
+  padding: 12px 28px;
+  border-radius: 50px;
+  transition: all 0.2s ease;
+  min-height: 48px;
+}
+.ig-view-more:hover,
+.ig-view-more:focus {
+  background: rgba(201,169,110,0.1);
+  border-color: #c9a96e;
+  color: #fff;
+}
+.ig-view-more:focus { outline: 3px solid #c9a96e; outline-offset: 3px; }
+
+/* ── Mobile: scroll horizontal ── */
+@media (max-width: 767px) {
+  .ig-section { padding: 56px 0; }
+  .ig-grid {
+    grid-template-columns: repeat(6, calc(75vw - 32px));
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 12px;
+    padding: 0 24px 16px;
+    /* Compensar o padding do wrap */
+    margin: 0 -24px;
+  }
+  .ig-grid::-webkit-scrollbar { display: none; }
+  .ig-card {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+  .ig-follow-btn { font-size: 0.85rem; padding: 11px 22px; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .ig-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .ig-card, .ig-follow-btn, .ig-view-more { transition: none; }
+}
+
 </style>
 </head>
 <body data-screen-label="Home">
@@ -3649,7 +3892,221 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
 
 
   <!-- SECCIÓN RESPUESTAS RÁPIDAS — Optimizada para AI Overview y Google Featured Snippets -->
-  <section class="quick-answers-section" aria-label="Respuestas Rápidas">
+  
+<!-- ═══════════════════════════════════════════════════════════
+     SECCIÓN INSTAGRAM — Feed Real @embaixadacarioca
+     Datos via Meta Graph API · 6 publicaciones recientes
+     Schema: SocialMediaPosting · Mobile-first · SEO 6 Estrellas
+═══════════════════════════════════════════════════════════ -->
+<section id="instagram" class="ig-section" aria-label="Feed de Instagram @embaixadacarioca" itemscope itemtype="https://schema.org/SocialMediaPosting">
+  <meta itemprop="author" content="@embaixadacarioca" />
+  <div class="wrap">
+    <div class="ig-header">
+      <div class="ig-eyebrow">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="#c9a96e"/></svg>
+        En Instagram
+      </div>
+      <h2 class="ig-title">@embaixadacarioca</h2>
+      <p class="ig-subtitle">El restaurante más hermoso de Río de Janeiro, directo en tu feed.</p>
+      <a href="https://www.instagram.com/embaixadacarioca/" target="_blank" rel="noopener noreferrer" class="ig-follow-btn" aria-label="Seguir @embaixadacarioca en Instagram — 100.716 seguidores">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        Seguir en Instagram
+        <span class="ig-followers-count">· 100.716 seguidores</span>
+      </a>
+    </div>
+    <div class="ig-grid" role="list" aria-label="Publicaciones recientes de Instagram de Embaixada Carioca">
+      <!-- Instagram Post 1 -->
+      <article class="ig-card" itemscope itemtype="https://schema.org/SocialMediaPosting" role="article">
+        <meta itemprop="url" content="https://www.instagram.com/p/DXuYxXBEQxa/" />
+        <meta itemprop="datePublished" content="2026-04-29" />
+        <a href="https://www.instagram.com/p/DXuYxXBEQxa/" target="_blank" rel="noopener noreferrer" class="ig-card-link" aria-label="Ver publicación en Instagram: Todo el mundo sube el teleférico, pero pocos saben qué hacer después de llegar arriba 👀">
+          <div class="ig-thumb" style="background: linear-gradient(145deg, #1a3a5c 0%, #0d1b2a 100%);" aria-hidden="true">
+            <div class="ig-thumb-inner">
+              <span class="ig-emoji" aria-hidden="true">🌅</span>
+              <div class="ig-type-badge">Carrusel</div>
+            </div>
+            <div class="ig-overlay">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="white"/></svg>
+            </div>
+          </div>
+          <div class="ig-card-body">
+            <p class="ig-caption" itemprop="description">Todo el mundo sube el teleférico, pero pocos saben qué hacer después de llegar arriba 👀</p>
+            <div class="ig-meta">
+              <span class="ig-likes" aria-label="169 me gusta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                169
+              </span>
+              <span class="ig-comments" aria-label="7 comentarios">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                7
+              </span>
+              <span class="ig-date">29 abr 2026</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      <!-- Instagram Post 2 -->
+      <article class="ig-card" itemscope itemtype="https://schema.org/SocialMediaPosting" role="article">
+        <meta itemprop="url" content="https://www.instagram.com/p/DXjbAXKkeqm/" />
+        <meta itemprop="datePublished" content="2026-04-25" />
+        <a href="https://www.instagram.com/p/DXjbAXKkeqm/" target="_blank" rel="noopener noreferrer" class="ig-card-link" aria-label="Ver publicación en Instagram: ¡100 mil seguidores! 💛">
+          <div class="ig-thumb" style="background: linear-gradient(145deg, #2d5a27 0%, #0d1b2a 100%);" aria-hidden="true">
+            <div class="ig-thumb-inner">
+              <span class="ig-emoji" aria-hidden="true">🏆</span>
+              <div class="ig-type-badge">Foto</div>
+            </div>
+            <div class="ig-overlay">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="white"/></svg>
+            </div>
+          </div>
+          <div class="ig-card-body">
+            <p class="ig-caption" itemprop="description">¡100 mil seguidores! 💛</p>
+            <div class="ig-meta">
+              <span class="ig-likes" aria-label="134 me gusta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                134
+              </span>
+              <span class="ig-comments" aria-label="29 comentarios">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                29
+              </span>
+              <span class="ig-date">25 abr 2026</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      <!-- Instagram Post 3 -->
+      <article class="ig-card" itemscope itemtype="https://schema.org/SocialMediaPosting" role="article">
+        <meta itemprop="url" content="https://www.instagram.com/p/DXMyVq2EXq3/" />
+        <meta itemprop="datePublished" content="2026-04-16" />
+        <a href="https://www.instagram.com/p/DXMyVq2EXq3/" target="_blank" rel="noopener noreferrer" class="ig-card-link" aria-label="Ver publicación en Instagram: ¿Hay algo mejor que un almuerzo con vista en la cima de Río? 🌊">
+          <div class="ig-thumb" style="background: linear-gradient(145deg, #00405a 0%, #0d1b2a 100%);" aria-hidden="true">
+            <div class="ig-thumb-inner">
+              <span class="ig-emoji" aria-hidden="true">🌊</span>
+              <div class="ig-type-badge">Carrusel</div>
+            </div>
+            <div class="ig-overlay">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="white"/></svg>
+            </div>
+          </div>
+          <div class="ig-card-body">
+            <p class="ig-caption" itemprop="description">¿Hay algo mejor que un almuerzo con vista en la cima de Río? 🌊</p>
+            <div class="ig-meta">
+              <span class="ig-likes" aria-label="655 me gusta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                655
+              </span>
+              <span class="ig-comments" aria-label="12 comentarios">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                12
+              </span>
+              <span class="ig-date">16 abr 2026</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      <!-- Instagram Post 4 -->
+      <article class="ig-card" itemscope itemtype="https://schema.org/SocialMediaPosting" role="article">
+        <meta itemprop="url" content="https://www.instagram.com/p/DWpqTlPDltR/" />
+        <meta itemprop="datePublished" content="2026-04-03" />
+        <a href="https://www.instagram.com/p/DWpqTlPDltR/" target="_blank" rel="noopener noreferrer" class="ig-card-link" aria-label="Ver publicación en Instagram: El mar llega a tu mesa. 🌊✝️">
+          <div class="ig-thumb" style="background: linear-gradient(145deg, #3a2a1a 0%, #0d1b2a 100%);" aria-hidden="true">
+            <div class="ig-thumb-inner">
+              <span class="ig-emoji" aria-hidden="true">🐟</span>
+              <div class="ig-type-badge">Carrusel</div>
+            </div>
+            <div class="ig-overlay">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="white"/></svg>
+            </div>
+          </div>
+          <div class="ig-card-body">
+            <p class="ig-caption" itemprop="description">El mar llega a tu mesa. 🌊✝️</p>
+            <div class="ig-meta">
+              <span class="ig-likes" aria-label="11 me gusta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                11
+              </span>
+              <span class="ig-comments" aria-label="2 comentarios">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                2
+              </span>
+              <span class="ig-date">03 abr 2026</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      <!-- Instagram Post 5 -->
+      <article class="ig-card" itemscope itemtype="https://schema.org/SocialMediaPosting" role="article">
+        <meta itemprop="url" content="https://www.instagram.com/p/DWeKVPDkeXA/" />
+        <meta itemprop="datePublished" content="2026-03-29" />
+        <a href="https://www.instagram.com/p/DWeKVPDkeXA/" target="_blank" rel="noopener noreferrer" class="ig-card-link" aria-label="Ver publicación en Instagram: ¿Ya probaste nuestro Bossa Nova Sour? ¡Una bebida deliciosa y perfecta para un día soleado…">
+          <div class="ig-thumb" style="background: linear-gradient(145deg, #5a1a2a 0%, #0d1b2a 100%);" aria-hidden="true">
+            <div class="ig-thumb-inner">
+              <span class="ig-emoji" aria-hidden="true">🍹</span>
+              <div class="ig-type-badge">Carrusel</div>
+            </div>
+            <div class="ig-overlay">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="white"/></svg>
+            </div>
+          </div>
+          <div class="ig-card-body">
+            <p class="ig-caption" itemprop="description">¿Ya probaste nuestro Bossa Nova Sour? ¡Una bebida deliciosa y perfecta para un día soleado…</p>
+            <div class="ig-meta">
+              <span class="ig-likes" aria-label="38 me gusta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                38
+              </span>
+              <span class="ig-comments" aria-label="7 comentarios">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                7
+              </span>
+              <span class="ig-date">29 mar 2026</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      <!-- Instagram Post 6 -->
+      <article class="ig-card" itemscope itemtype="https://schema.org/SocialMediaPosting" role="article">
+        <meta itemprop="url" content="https://www.instagram.com/p/DWbmsi2kdKy/" />
+        <meta itemprop="datePublished" content="2026-03-28" />
+        <a href="https://www.instagram.com/p/DWbmsi2kdKy/" target="_blank" rel="noopener noreferrer" class="ig-card-link" aria-label="Ver publicación en Instagram: Ven a disfrutar tu día de sol ☀️ en el Parque Bondinho y las delicias de la Embaixada Cari…">
+          <div class="ig-thumb" style="background: linear-gradient(145deg, #1a3a2a 0%, #0d1b2a 100%);" aria-hidden="true">
+            <div class="ig-thumb-inner">
+              <span class="ig-emoji" aria-hidden="true">☀️</span>
+              <div class="ig-type-badge">Carrusel</div>
+            </div>
+            <div class="ig-overlay">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="white"/></svg>
+            </div>
+          </div>
+          <div class="ig-card-body">
+            <p class="ig-caption" itemprop="description">Ven a disfrutar tu día de sol ☀️ en el Parque Bondinho y las delicias de la Embaixada Cari…</p>
+            <div class="ig-meta">
+              <span class="ig-likes" aria-label="145 me gusta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                145
+              </span>
+              <span class="ig-comments" aria-label="4 comentarios">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                4
+              </span>
+              <span class="ig-date">28 mar 2026</span>
+            </div>
+          </div>
+        </a>
+      </article>
+    </div>
+    <div class="ig-cta-row">
+      <a href="https://www.instagram.com/embaixadacarioca/" target="_blank" rel="noopener noreferrer" class="ig-view-more" aria-label="Ver todas las publicaciones en Instagram @embaixadacarioca">
+        Ver todas las publicaciones
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="quick-answers-section" aria-label="Respuestas Rápidas">
     <div class="container">
       <h2 class="section-title">Respuestas Rápidas</h2>
       <div class="qa-grid">
