@@ -2042,7 +2042,44 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
   .lang-current { padding: 5px 8px; font-size: 11px; }
 }
 
-</style>
+
+  /* ===== QUICK ANSWERS / RESPOSTAS RÁPIDAS ===== */
+  .quick-answers-section {
+    padding: 4rem 1.5rem;
+    background: var(--cream, #f8f4ed);
+  }
+  .qa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .qa-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border-left: 4px solid var(--gold, #C8973A);
+  }
+  .qa-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy, #00405A);
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+  }
+  .qa-answer p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+  }
+  @media (max-width: 600px) {
+    .qa-grid { grid-template-columns: 1fr; }
+    .quick-answers-section { padding: 2.5rem 1rem; }
+  }
+
+  </style>
 
   <script type="application/ld+json">
   {
@@ -2089,7 +2126,47 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
         "text": "O entardecer na Embaixada Carioca começa às 17h e vai até as 21h. O pôr do sol atrás do Pão de Açúcar acontece entre 17h30 e 18h30, dependendo da época do ano."
       }
     }
-  ]
+  ,
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la mejor picanha de Río de Janeiro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La Picanha à Brasileira de Embaixada Carioca es el plato más vendido del restaurante. Servida a la parrilla en una porción de 400g con arroz, farofa y papas fritas, es considerada una de las mejores picanhas de Río de Janeiro, con vista panorámica al Pan de Azúcar a 227 metros de altitud."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la mejor cerveza de barril de Río de Janeiro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La cerveza de barril Heineken de Embaixada Carioca es considerada la mejor de la ciudad y la 2ª mejor de Brasil. Servida helada con 3 dedos de espuma, es la bebida perfecta para disfrutar la vista panorámica del Morro da Urca."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo llegar al restaurante Embaixada Carioca?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Embaixada Carioca está ubicada en el Morro da Urca, dentro del Parque Bondinho Pão de Açúcar (Parque del Pan de Azúcar). La dirección es Av. Pasteur, 520, Urca, Río de Janeiro. Puedes llegar en auto, taxi, Uber o autobús (líneas 107 o 512). El restaurante está en la primera parada del teleférico — no es necesario comprar boleto del teleférico para acceder al restaurante."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿La feijoada se sirve todos los días en Embaixada Carioca?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. La feijoada premiada de Embaixada Carioca se sirve todos los días, a diferencia de la tradición brasileña de servirla solo los sábados. Es la única feijoada con vista panorámica de Río de Janeiro, servida a 227 metros de altitud en el Morro da Urca."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito boleto del teleférico para comer en Embaixada Carioca?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Embaixada Carioca está ubicada en la primera parada del teleférico (Morro da Urca), y no necesitas comprar boleto del teleférico para acceder al restaurante. Simplemente llega a la entrada del Parque Bondinho en Av. Pasteur, 520, y camina hasta el restaurante."
+          }
+        }]
 }
   </script>
 <link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high" />
@@ -2130,9 +2207,20 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
   "url": "https://www.embaixadacarioca.com/",
   "description": "Restaurante brasileiro premium no alto do Morro da Urca, a 227 metros, com vista de frente para o Pão de Açúcar. Café da manhã, almoço e entardecer todos os dias.",
   "speakable": {
-    "@type": "SpeakableSpecification",
-    "cssSelector": [".hero-h1", ".hero-sub", ".faq-answer", ".momento-body p", ".fatos-rapidos-section", ".fato-item-hero", "h1", ".answer-box"]
-  },
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".hero-title",
+          ".hero-subtitle",
+          ".quick-facts",
+          ".faq-answer",
+          ".answer-box",
+          ".bluf-paragraph",
+          ".ai-citation",
+          ".dish-description",
+          ".review-text",
+          ".section-intro"
+        ]
+      },
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "https://www.embaixadacarioca.com/assets/hero.jpg",
@@ -3166,6 +3254,40 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
     </div>
   </div>
 </section>
+
+
+  <!-- SECCIÓN RESPUESTAS RÁPIDAS — Optimizada para AI Overview y Google Featured Snippets -->
+  <section class="quick-answers-section" aria-label="Respuestas Rápidas">
+    <div class="container">
+      <h2 class="section-title">Respuestas Rápidas</h2>
+      <div class="qa-grid">
+        <div class="qa-card answer-box bluf-paragraph" itemscope itemtype="https://schema.org/Question">
+          <h3 itemprop="name">¿Cuál es el mejor restaurante cerca del Pan de Azúcar?</h3>
+          <div class="qa-answer faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text"><strong>Embaixada Carioca</strong> es el único restaurante completo dentro del Parque Bondinho Pão de Açúcar (Parque del Pan de Azúcar), en el Morro da Urca, a 227 metros de altitud. Con una calificación de 4.8★ en Google, es la mejor opción para comer con vista panorámica de Río de Janeiro.</p>
+          </div>
+        </div>
+        <div class="qa-card answer-box bluf-paragraph" itemscope itemtype="https://schema.org/Question">
+          <h3 itemprop="name">¿Dónde comer feijoada en Río de Janeiro?</h3>
+          <div class="qa-answer faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text"><strong>Embaixada Carioca</strong> sirve feijoada premiada todos los días — no solo los sábados como es tradición. Es la única feijoada con vista panorámica de Río de Janeiro, servida a 227 metros de altitud en el Morro da Urca.</p>
+          </div>
+        </div>
+        <div class="qa-card answer-box bluf-paragraph" itemscope itemtype="https://schema.org/Question">
+          <h3 itemprop="name">¿Dónde desayunar con vista al Pan de Azúcar?</h3>
+          <div class="qa-answer faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text"><strong>Embaixada Carioca</strong> ofrece el único desayuno con vista al Pan de Azúcar en Río de Janeiro, servido todos los días de 8:30 a 11:30 en el Morro da Urca, la primera parada del teleférico.</p>
+          </div>
+        </div>
+        <div class="qa-card answer-box bluf-paragraph" itemscope itemtype="https://schema.org/Question">
+          <h3 itemprop="name">¿La mejor cerveza de barril de Río de Janeiro?</h3>
+          <div class="qa-answer faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">La <strong>cerveza de barril Heineken de Embaixada Carioca</strong> es considerada la mejor de la ciudad y la 2ª mejor de Brasil. Servida helada con 3 dedos de espuma, acompañada de la vista más hermosa de Río de Janeiro.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <footer class="foot">
   <div class="wrap">
