@@ -2749,12 +2749,19 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
 }
 
 /* 15. Skeleton loader para imagens (evita CLS) */
-img[loading="lazy"] {
+/* Skeleton loader apenas para imagens de conteúdo (não SVGs, logos ou ícones) */
+img[loading="lazy"]:not([src*=".svg"]):not(.brand-logo):not(.hero-logo):not(.crest-logo):not(.nav-drawer-logo img):not([src*="logo"]):not([src*="icon"]) {
   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
   background-size: 200% 100%;
 }
 img[loading="lazy"].loaded {
   background: none;
+}
+/* Garantir que logos SVG nunca tenham fundo */
+.hero-logo, .brand-logo, .crest-logo, img[src*=".svg"] {
+  background: none !important;
+  background-image: none !important;
+  animation: none !important;
 }
 
 </style>
