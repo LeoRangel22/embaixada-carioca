@@ -349,4 +349,22 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://www.embaixadacarioca.com/en/cafe-da-manha-com-vista-rio</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel='alternate' hreflang='pt-BR' href='https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio.html'/>
+    <xhtml:link rel='alternate' hreflang='en' href='https://www.embaixadacarioca.com/en/cafe-da-manha-com-vista-rio'/>
+    <xhtml:link rel='alternate' hreflang='es' href='https://www.embaixadacarioca.com/es/cafe-da-manha-com-vista-rio'/>
+  </url>
+  <url>
+    <loc>https://www.embaixadacarioca.com/es/cafe-da-manha-com-vista-rio</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel='alternate' hreflang='pt-BR' href='https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio.html'/>
+    <xhtml:link rel='alternate' hreflang='en' href='https://www.embaixadacarioca.com/en/cafe-da-manha-com-vista-rio'/>
+    <xhtml:link rel='alternate' hreflang='es' href='https://www.embaixadacarioca.com/es/cafe-da-manha-com-vista-rio'/>
+  </url>
 </urlset>
