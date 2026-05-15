@@ -2573,7 +2573,7 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
     overflow-x: auto !important;
     scroll-snap-type: x mandatory !important;
     -webkit-overflow-scrolling: touch !important;
-    gap: 16px !important;
+    gap: 14px !important;
     padding: 0 20px 16px !important;
     scrollbar-width: none !important;
     grid-template-columns: unset !important;
@@ -2583,10 +2583,27 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
     display: none !important;
   }
   .review-card,
-  .mini-quote {
+  .mini-quote,
+  .mq {
     scroll-snap-align: start !important;
-    flex: 0 0 85vw !important;
-    max-width: 320px !important;
+    flex: 0 0 78vw !important;
+    max-width: 280px !important;
+    min-width: 240px !important;
+  }
+  /* Reduzir tamanho da fonte dos depoimentos em mobile */
+  .mq .q {
+    font-size: 13.5px !important;
+    line-height: 1.55 !important;
+  }
+  .mq .stars {
+    font-size: 13px !important;
+  }
+  .mq .src {
+    font-size: 10px !important;
+  }
+  .mq {
+    padding: 20px 18px 18px !important;
+    gap: 12px !important;
   }
 }
 
@@ -2625,6 +2642,20 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
   .hero-ctas .btn.ghost {
     padding: 14px 24px !important;
     min-height: 48px !important;
+  }
+  /* Botão Como Chegar — destaque secundário no hero mobile */
+  .hero-ctas .btn-como-chegar {
+    background: transparent !important;
+    border: 1px solid rgba(255,255,255,0.4) !important;
+    color: rgba(255,255,255,0.85) !important;
+    font-size: 14px !important;
+    padding: 12px 20px !important;
+    min-height: 44px !important;
+    justify-content: center !important;
+  }
+  .hero-ctas .btn-como-chegar:hover {
+    border-color: rgba(255,255,255,0.7) !important;
+    color: #fff !important;
   }
 }
 
@@ -3224,6 +3255,7 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
       <div class="hero-ctas">
         <a href="https://go.tagme.com.br/embaixadacarioca" class="btn lg">Haz tu reserva →</a>
         <a href="#momentos" class="btn lg ghost">Ver el menú</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=-22.9511223,-43.1642121&destination_place_id=ChIJy7c9M82XmQARTa0mIkiMFRw&travelmode=walking" target="_blank" rel="noopener" class="btn lg ghost btn-como-chegar" style="display:flex;align-items:center;gap:8px;" aria-label="Cómo llegar a Embaixada Carioca — abrir en Google Maps"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Cómo llegar</a>
       </div>
     </div>
 
