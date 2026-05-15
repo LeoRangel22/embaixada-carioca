@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /_api/
+Disallow: /_partials/
+Disallow: /api/
 
 User-agent: GPTBot
 Allow: /
@@ -15,6 +18,9 @@ Allow: /llms.txt
 
 User-agent: Googlebot
 Allow: /
+Disallow: /_api/
+Disallow: /_partials/
+Disallow: /api/
 
 Sitemap: https://www.embaixadacarioca.com/sitemap.xml
 Sitemap: https://www.embaixadacarioca.com/sitemap-images.xml
