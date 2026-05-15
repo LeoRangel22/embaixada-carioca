@@ -79,6 +79,7 @@
   "mentions": [
     {
       "@type": "Restaurant",
+      "sameAs": ["https://www.wikidata.org/wiki/Q117523456","https://www.instagram.com/embaixadacarioca/","https://www.facebook.com/embaixadacarioca","https://www.tripadvisor.com.br/Restaurant_Review-g303506-d6502345"],
       "@id": "https://www.embaixadacarioca.com/#restaurant",
       "name": "Embaixada Carioca",
       "url": "https://www.embaixadacarioca.com"
@@ -911,7 +912,17 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
   .lang-current { padding: 5px 8px; font-size: 11px; }
 }
 
+
+/* Touch Action — Mobile 6 Estrelas */
+a, button, [role="button"], .btn, .nav-hamburger, .bottom-nav-item, .lang-btn {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+input, select, textarea {
+  touch-action: pan-y;
+}
 </style>
+  <link rel="preload" as="image" href="/assets/hero-bg.webp" fetchpriority="high">
 </head>
 <body>
 

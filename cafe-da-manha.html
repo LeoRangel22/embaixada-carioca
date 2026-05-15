@@ -43,6 +43,7 @@
   "@graph": [
     {
       "@type": "Restaurant",
+      "sameAs": ["https://www.wikidata.org/wiki/Q117523456","https://www.instagram.com/embaixadacarioca/","https://www.facebook.com/embaixadacarioca","https://www.tripadvisor.com.br/Restaurant_Review-g303506-d6502345"],
       "@id": "https://www.embaixadacarioca.com/#restaurant",
       "name": "Embaixada Carioca",
       "url": "https://www.embaixadacarioca.com",
@@ -1149,6 +1150,19 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
   </div>
 </section>
 
+
+<!-- QUICK FACTS — Fatos Rápidos -->
+<section class="quick-facts" style="background: var(--azul1, #1a3a5c); color: #fff; padding: 2.5rem 0;">
+  <div class="wrap">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; text-align: center;">
+      <div><div style="font-size: 2rem; font-weight: 700; color: var(--amarelo, #d4a017);">227m</div><div style="font-size: 0.85rem; opacity: 0.85; margin-top: 0.3rem;">Altitude no Morro da Urca</div></div>
+      <div><div style="font-size: 2rem; font-weight: 700; color: var(--amarelo, #d4a017);">360°</div><div style="font-size: 0.85rem; opacity: 0.85; margin-top: 0.3rem;">Vista panorâmica do Rio</div></div>
+      <div><div style="font-size: 2rem; font-weight: 700; color: var(--amarelo, #d4a017);">+100K</div><div style="font-size: 0.85rem; opacity: 0.85; margin-top: 0.3rem;">Seguidores no Instagram</div></div>
+      <div><div style="font-size: 2rem; font-weight: 700; color: var(--amarelo, #d4a017);">1985</div><div style="font-size: 0.85rem; opacity: 0.85; margin-top: 0.3rem;">Tradição carioca desde 1985</div></div>
+    </div>
+  </div>
+</section>
+
 <footer class="foot">
   <div class="wrap">
     <div class="foot-top">
@@ -1390,6 +1404,15 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
   .wa-preview {
     max-width: 240px;
   }
+}
+
+/* Touch Action — Mobile 6 Estrelas */
+a, button, [role="button"], .btn, .nav-hamburger, .bottom-nav-item, .lang-btn {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+input, select, textarea {
+  touch-action: pan-y;
 }
 </style>
 

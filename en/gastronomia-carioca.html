@@ -675,7 +675,17 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
   .lang-current { padding: 5px 8px; font-size: 11px; }
 }
 
+
+/* Touch Action — Mobile 6 Estrelas */
+a, button, [role="button"], .btn, .nav-hamburger, .bottom-nav-item, .lang-btn {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+input, select, textarea {
+  touch-action: pan-y;
+}
 </style>
+  <link rel="preload" as="image" href="/assets/hero-bg.webp" fetchpriority="high">
 </head>
 <body>
 
@@ -867,6 +877,19 @@ Rio de Janeiro</span>
   <h2 class="serif">Viva a Carioca Gastronomy na Embaixada Carioca</h2>
   <p>Feijoada premiada, salmão grelhado e drinks com cachaça artesanal — com o Pão de Açúcar de frente, a 227 metros de altitude. Todos os dias, das 8h30 às 21h.</p>
   <a href="https://go.tagme.com.br/embaixadacarioca" class="btn-white">Reservar Mesa →</a>
+</section>
+
+
+<!-- QUICK FACTS -->
+<section class="quick-facts" style="background: var(--azul1, #1a3a5c); color: #fff; padding: 2.5rem 0;">
+  <div class="wrap">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; text-align: center;">
+      <div><div style="font-size: 2rem; font-weight: 700; color: var(--amarelo, #d4a017);">745ft</div><div style="font-size: 0.85rem; opacity: 0.85; margin-top: 0.3rem;">Above sea level at Morro da Urca</div></div>
+      <div><div style="font-size: 2rem; font-weight: 700; color: var(--amarelo, #d4a017);">360°</div><div style="font-size: 0.85rem; opacity: 0.85; margin-top: 0.3rem;">Panoramic view of Rio</div></div>
+      <div><div style="font-size: 2rem; font-weight: 700; color: var(--amarelo, #d4a017);">+100K</div><div style="font-size: 0.85rem; opacity: 0.85; margin-top: 0.3rem;">Instagram followers</div></div>
+      <div><div style="font-size: 2rem; font-weight: 700; color: var(--amarelo, #d4a017);">1985</div><div style="font-size: 0.85rem; opacity: 0.85; margin-top: 0.3rem;">Rio tradition since 1985</div></div>
+    </div>
+  </div>
 </section>
 
 <footer class="foot">
