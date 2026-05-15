@@ -1777,6 +1777,12 @@ nav.top.scrolled .nav-hamburger:hover { background: rgba(0,64,90,0.08); }
   .nav-hamburger { display: flex; }
   .nav-links { display: none !important; }
   .nav-inner > .btn { display: none; } /* esconder botão reservar do nav em mobile */
+  /* Ocultar tagline em mobile — evita quebra de linha no header */
+  .brand-word { display: none !important; }
+  /* Logo menor em mobile */
+  .brand-logo { width: 44px !important; height: 44px !important; }
+  /* Reduzir padding do nav em mobile */
+  .nav-inner { padding-top: 12px !important; padding-bottom: 12px !important; gap: 12px !important; }
   
   /* Mostrar bottom nav */
   .mobile-bottom-nav { display: block; }
@@ -2550,7 +2556,8 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
     display: none !important;
   }
   .prato-estrela-card,
-  .momento-card {
+  .momento-card,
+  .momento {
     scroll-snap-align: start !important;
     flex: 0 0 85vw !important;
     max-width: 320px !important;
