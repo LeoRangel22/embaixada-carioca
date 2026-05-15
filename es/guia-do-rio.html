@@ -783,6 +783,398 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
   ]
 }
 </script>
+
+<style>
+
+/* ══════════════════════════════════════════
+   MOBILE 95+ — UX 6 ESTRELAS
+   Performance · Acessibilidade · Conversão
+══════════════════════════════════════════ */
+
+/* 1. Respeitar preferência de animação reduzida */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 2. Content-visibility para seções off-screen (melhora LCP) */
+@media (max-width: 720px) {
+  section:not(.hero):not(:first-of-type) {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 500px;
+  }
+}
+
+/* 3. Scroll snap nos cards de pratos (swipe nativo mobile) */
+@media (max-width: 720px) {
+  .pratos-estrela-grid,
+  .momentos-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 16px !important;
+    padding: 0 20px 16px !important;
+    scrollbar-width: none !important;
+    grid-template-columns: unset !important;
+  }
+  .pratos-estrela-grid::-webkit-scrollbar,
+  .momentos-grid::-webkit-scrollbar {
+    display: none !important;
+  }
+  .prato-estrela-card,
+  .momento-card {
+    scroll-snap-align: start !important;
+    flex: 0 0 85vw !important;
+    max-width: 320px !important;
+  }
+}
+
+/* 4. Scroll snap nas reviews (swipe nativo mobile) */
+@media (max-width: 720px) {
+  .reviews-grid,
+  .mini-quotes {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 16px !important;
+    padding: 0 20px 16px !important;
+    scrollbar-width: none !important;
+    grid-template-columns: unset !important;
+  }
+  .reviews-grid::-webkit-scrollbar,
+  .mini-quotes::-webkit-scrollbar {
+    display: none !important;
+  }
+  .review-card,
+  .mini-quote {
+    scroll-snap-align: start !important;
+    flex: 0 0 85vw !important;
+    max-width: 320px !important;
+  }
+}
+
+/* 5. Microinterações: feedback tátil ao tocar */
+@media (hover: none) and (pointer: coarse) {
+  .btn:active,
+  .momento-cta:active,
+  .mobile-bottom-nav a:active,
+  .nav-drawer-links a:active {
+    transform: scale(0.96) !important;
+    opacity: 0.85 !important;
+    transition: transform 0.1s ease, opacity 0.1s ease !important;
+  }
+  /* Ripple effect nos botões principais */
+  .btn, .momento-cta {
+    position: relative !important;
+    overflow: hidden !important;
+  }
+}
+
+/* 6. Hero mobile: CTA único e grande */
+@media (max-width: 720px) {
+  .hero-ctas {
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+  .hero-ctas .btn {
+    width: 100% !important;
+    max-width: 340px !important;
+    font-size: 16px !important;
+    padding: 18px 24px !important;
+    min-height: 56px !important;
+    border-radius: 8px !important;
+  }
+  .hero-ctas .btn.ghost {
+    padding: 14px 24px !important;
+    min-height: 48px !important;
+  }
+}
+
+/* 7. Sticky CTA bar (aparece após scroll do hero) */
+.sticky-cta-bar {
+  display: none;
+  position: fixed;
+  bottom: calc(60px + env(safe-area-inset-bottom, 0px));
+  left: 0;
+  right: 0;
+  z-index: 45;
+  background: var(--azul1, #00405A);
+  padding: 10px 20px;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.3);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+.sticky-cta-bar.visible {
+  transform: translateY(0);
+}
+.sticky-cta-bar a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  background: var(--amarelo, #C8973A) !important;
+  color: var(--azul1, #00405A) !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  padding: 12px 24px !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+  min-height: 48px !important;
+  width: 100% !important;
+}
+@media (max-width: 720px) {
+  .sticky-cta-bar { display: block; }
+}
+
+/* 8. Indicador de swipe (hint visual) */
+@media (max-width: 720px) {
+  .swipe-hint {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--azul2, #5a7a8a);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    padding-left: 20px;
+  }
+  .swipe-hint::before {
+    content: "← →";
+    font-size: 13px;
+  }
+}
+
+/* 9. FAQ accordion animação suave */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              padding 0.35s ease !important;
+}
+.faq-item.open .faq-answer {
+  max-height: 600px;
+}
+
+/* 10. Melhorar legibilidade do eyebrow em mobile */
+@media (max-width: 720px) {
+  .eyebrow {
+    font-size: 10px !important;
+    letter-spacing: 0.2em !important;
+  }
+  /* Seções com padding adequado */
+  section {
+    padding: 72px 0 !important;
+  }
+  /* Hero sem padding extra */
+  .hero {
+    padding: 0 !important;
+  }
+}
+
+/* 11. Imagens com aspect-ratio para evitar CLS */
+.hero-photo, .momento-photo img, .chef-photo {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+/* 12. Melhorar contraste dos textos em mobile */
+@media (max-width: 720px) {
+  .faq-question {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    padding: 20px 16px !important;
+  }
+  .faq-answer p, .faq-answer li {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+  }
+  /* Menu items mais legíveis */
+  .menu-item-name {
+    font-size: 16px !important;
+  }
+  .menu-item-desc {
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+  }
+  .menu-item-price {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+  }
+}
+
+/* 13. Scroll suave com momentum no iOS */
+.pratos-estrela-grid,
+.momentos-grid,
+.reviews-grid,
+.mini-quotes {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 14. Focus visible para acessibilidade */
+:focus-visible {
+  outline: 3px solid var(--amarelo, #C8973A) !important;
+  outline-offset: 2px !important;
+  border-radius: 4px !important;
+}
+
+/* 15. Skeleton loader para imagens (evita CLS) */
+img[loading="lazy"] {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+}
+img[loading="lazy"].loaded {
+  background: none;
+}
+
+</style>
+
+<style>
+
+/* ══════════════════════════════════════════
+   UX FIXES — Legibilidade e Acessibilidade
+══════════════════════════════════════════ */
+
+/* Hero bottom bar: legível em mobile */
+@media (max-width: 720px) {
+  .hero-bottom-bar {
+    font-size: 11px !important;
+    letter-spacing: 0.18em !important;
+    gap: 12px !important;
+    padding: 12px 20px !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  /* Separadores do hero-bottom-bar */
+  .hero-bottom-bar .sep {
+    display: none !important;
+  }
+}
+
+/* Melhorar contraste do hero overlay */
+@media (max-width: 720px) {
+  .hero::before,
+  .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 40, 58, 0.35) 0%,
+      rgba(0, 40, 58, 0.55) 50%,
+      rgba(0, 40, 58, 0.75) 100%
+    ) !important;
+  }
+}
+
+/* Cards de menu: melhor espaçamento mobile */
+@media (max-width: 720px) {
+  .menu-item {
+    padding: 16px !important;
+    border-radius: 8px !important;
+  }
+  .menu-item-badge {
+    font-size: 9px !important;
+    padding: 3px 8px !important;
+    letter-spacing: 0.12em !important;
+  }
+  /* Preço alinhado à direita */
+  .menu-item-footer {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-top: 8px !important;
+  }
+}
+
+/* Skip navigation (acessibilidade) */
+.skip-nav {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: var(--amarelo, #C8973A);
+  color: var(--azul1, #00405A);
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  z-index: 9999;
+  text-decoration: none;
+  border-radius: 0 0 8px 0;
+}
+.skip-nav:focus {
+  top: 0;
+}
+
+/* Melhorar tap highlight em iOS */
+* {
+  -webkit-tap-highlight-color: rgba(200, 151, 58, 0.2);
+}
+
+/* Botões do drawer: melhor espaçamento */
+@media (max-width: 720px) {
+  .nav-drawer-links a {
+    padding: 14px 20px !important;
+    font-size: 16px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+  }
+  .nav-drawer-links a:last-child {
+    border-bottom: none !important;
+  }
+}
+
+/* Melhorar legibilidade das stats */
+@media (max-width: 720px) {
+  .stat-number {
+    font-size: clamp(40px, 12vw, 64px) !important;
+  }
+  .stat-label {
+    font-size: 12px !important;
+    letter-spacing: 0.15em !important;
+  }
+}
+
+/* Seção de pratos estrela: padding lateral adequado */
+@media (max-width: 720px) {
+  .pratos-estrela-section .wrap {
+    padding: 0 !important;
+  }
+  .pratos-estrela-section h2,
+  .pratos-estrela-section .eyebrow {
+    padding: 0 20px !important;
+  }
+}
+
+/* Reviews: padding lateral adequado */
+@media (max-width: 720px) {
+  .reviews-section .wrap,
+  .mini-quotes-section .wrap {
+    padding: 0 !important;
+  }
+  .reviews-section h2,
+  .reviews-section .eyebrow,
+  .mini-quotes-section h2,
+  .mini-quotes-section .eyebrow {
+    padding: 0 20px !important;
+  }
+}
+
+/* Melhorar visibilidade do seletor de idioma */
+@media (max-width: 720px) {
+  .lang-switcher {
+    font-size: 12px !important;
+  }
+  .lang-switcher-btn {
+    padding: 6px 10px !important;
+    min-height: 36px !important;
+  }
+}
+
+</style>
 </head>
 <body data-screen-label="Guía de Río">
 
@@ -858,7 +1250,7 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
 </header>
 
 <!-- CONTEÚDO EDITORIAL -->
-<main>
+<main id="main-content">
   <section style="padding: 96px 0;">
     <div class="wrap">
       <article class="article-body">
