@@ -1274,6 +1274,75 @@ img[loading="lazy"].loaded {
   .page-hero-content h1 { font-size: clamp(36px, 10vw, 64px) !important; }
 }
 </style>
+
+<style>
+/* ══════════════════════════════════════════
+   NAVBAR CSS — Injetado via fix_nav_css.py
+   (Páginas internas não carregam style.css)
+══════════════════════════════════════════ */
+/* Brand / Logo */
+.brand-mark {
+  display: flex; align-items: center; gap: 18px;
+  text-decoration: none; color: inherit;
+}
+.brand-logo {
+  width: 56px; height: 56px; display: block;
+  flex-shrink: 0;
+  transition: opacity .2s;
+}
+.brand-logo.dark { display: none; }
+nav.top.scrolled .brand-logo.light { display: none; }
+nav.top.scrolled .brand-logo.dark  { display: block; }
+.brand-word {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  line-height: 1.3;
+  font-size: 10px;
+  padding-left: 18px;
+  border-left: 1px solid currentColor;
+  opacity: 0.85;
+}
+.brand-word b {
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  font-size: 11px;
+}
+/* Nav links */
+.nav-links {
+  display: flex; gap: 36px; list-style: none; padding: 0; margin: 0;
+}
+.nav-links a {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px; letter-spacing: 0.22em;
+  text-transform: uppercase; font-weight: 500;
+  text-decoration: none; color: inherit; opacity: 0.85;
+  transition: opacity .2s;
+}
+.nav-links a:hover { opacity: 1; }
+/* Nav inner layout */
+.nav-inner {
+  max-width: var(--max, 1440px);
+  margin: 0 auto;
+  padding: 0 var(--gutter, 64px);
+  display: flex; align-items: center;
+  gap: 48px; height: 100%;
+}
+/* Topnav */
+nav.top {
+  position: fixed; top: 0; left: 0; right: 0;
+  height: 72px; z-index: 900;
+  transition: background .3s, backdrop-filter .3s;
+}
+nav.top.scrolled {
+  background: rgba(246, 239, 222, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,64,90,0.12);
+  color: var(--azul1, #00405a);
+}
+</style>
 </head>
 <body data-screen-label="Guía de Río">
 
