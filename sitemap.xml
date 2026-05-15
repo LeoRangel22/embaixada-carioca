@@ -325,4 +325,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/gastronomia-carioca.html"/>
   </url>
 
+  <url>
+    <loc>https://www.embaixadacarioca.com/feijoada</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.embaixadacarioca.com/en/feijoada</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.embaixadacarioca.com/es/feijoada</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
