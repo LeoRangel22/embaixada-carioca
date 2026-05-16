@@ -147,5 +147,33 @@
     }
   ],
   "related_applications": [],
-  "prefer_related_applications": false
+  "prefer_related_applications": false,
+  "id": "/",
+  "screenshots": [
+    {
+      "src": "/images/screenshot-mobile-1.webp",
+      "sizes": "390x844",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Embaixada Carioca — Vista do Pão de Açúcar"
+    },
+    {
+      "src": "/images/screenshot-mobile-2.webp",
+      "sizes": "390x844",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Cardápio — Picanha e Feijoada Premiada"
+    },
+    {
+      "src": "/images/screenshot-desktop-1.webp",
+      "sizes": "1280x800",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Embaixada Carioca — Restaurante no Pão de Açúcar"
+    }
+  ],
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
 }
