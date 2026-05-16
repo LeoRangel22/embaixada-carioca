@@ -8,6 +8,8 @@
 <link rel="preload" as="image" href="assets/hero-mobile.webp" type="image/webp" imagesrcset="/assets/hero-400w.webp 400w, /assets/hero-mobile.webp 600w, /assets/hero-800w.webp 800w, /assets/hero-1200w.webp 1200w, /assets/hero.webp 1920w" imagesizes="(max-width: 480px) 400px, (max-width: 720px) 600px, (max-width: 1024px) 800px, (max-width: 1440px) 1200px, 1920px" fetchpriority="high" />
 <link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high" />
 <link rel="preconnect" href="https://go.tagme.com.br" />
+<link rel="preconnect" href="https://maps.googleapis.com" />
+<link rel="preconnect" href="https://maps.gstatic.com" crossorigin />
 <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 <link rel="prefetch" href="cafe-da-manha.html" as="document" />
 <link rel="prefetch" href="almoco.html" as="document" />
@@ -69,10 +71,17 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["Restaurant", "FoodEstablishment", "LocalBusiness"],
+  "@type": [
+    "Restaurant",
+    "FoodEstablishment",
+    "LocalBusiness"
+  ],
   "@id": "https://www.embaixadacarioca.com/#restaurant",
   "name": "Embaixada Carioca",
-  "alternateName": ["Embaixada Carioca Bar & Restaurante", "Embaixada Carioca Morro da Urca"],
+  "alternateName": [
+    "Embaixada Carioca Bar & Restaurante",
+    "Embaixada Carioca Morro da Urca"
+  ],
   "description": "Restaurante brasileiro premium no alto do Morro da Urca, a 227 metros de altitude, com vista de frente para o Pão de Açúcar. Café da manhã panorâmico todos os dias (8h30–11h30), almoço brasileiro com feijoada premiada pela Revista Prazeres da Mesa e entardecer com o sol descendo atrás do Pão de Açúcar. Localizado no Parque Bondinho Pão de Açúcar, um dos 10 pontos turísticos mais visitados da América Latina.",
   "slogan": "O restaurante com a melhor vista do Rio de Janeiro",
   "url": "https://www.embaixadacarioca.com",
@@ -101,7 +110,12 @@
   "telephone": "+55-21-96683-7556",
   "email": "eventos@embaixadacarioca.com",
   "priceRange": "$$$",
-  "servesCuisine": ["Brasileira", "Contemporânea", "Frutos do Mar", "Cozinha Carioca"],
+  "servesCuisine": [
+    "Brasileira",
+    "Contemporânea",
+    "Frutos do Mar",
+    "Cozinha Carioca"
+  ],
   "acceptsReservations": "True",
   "hasMenu": "https://www.embaixadacarioca.com/cardapio",
   "currenciesAccepted": "BRL",
@@ -215,7 +229,15 @@
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
       "opens": "08:30",
       "closes": "21:00"
     }
@@ -235,13 +257,41 @@
   "publicAccess": "True",
   "isAccessibleForFree": "False",
   "amenityFeature": [
-    {"@type": "LocationFeatureSpecification", "name": "Acesso para cadeirantes (NBR 9050)", "value": true},
-    {"@type": "LocationFeatureSpecification", "name": "Sanitários adaptados", "value": true},
-    {"@type": "LocationFeatureSpecification", "name": "Menú bilíngue PT/EN/ES", "value": true},
-    {"@type": "LocationFeatureSpecification", "name": "Vista de frente para o Pão de Açúcar", "value": true},
-    {"@type": "LocationFeatureSpecification", "name": "Terraço panorâmico a 227m de altitude", "value": true},
-    {"@type": "LocationFeatureSpecification", "name": "Estacionamento no Parque Bondinho", "value": true},
-    {"@type": "LocationFeatureSpecification", "name": "Reservas online via Tagme", "value": true}
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Acesso para cadeirantes (NBR 9050)",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Sanitários adaptados",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Menú bilíngue PT/EN/ES",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Vista de frente para o Pão de Açúcar",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Terraço panorâmico a 227m de altitude",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Estacionamento no Parque Bondinho",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Reservas online via Tagme",
+      "value": true
+    }
   ],
   "potentialAction": {
     "@type": "ReserveAction",
@@ -288,7 +338,75 @@
       }
     ]
   },
-  "keywords": "restaurante Morro da Urca, restaurante Bondinho Pão de Açúcar, café da manhã com vista Rio de Janeiro, almoço Urca, entardecer Rio de Janeiro, restaurante romântico Rio, feijoada premiada Rio de Janeiro, melhor vista Rio de Janeiro, restaurante turístico Rio, onde comer no Rio de Janeiro"
+  "keywords": "restaurante Morro da Urca, restaurante Bondinho Pão de Açúcar, café da manhã com vista Rio de Janeiro, almoço Urca, entardecer Rio de Janeiro, restaurante romântico Rio, feijoada premiada Rio de Janeiro, melhor vista Rio de Janeiro, restaurante turístico Rio, onde comer no Rio de Janeiro",
+  "maximumAttendeeCapacity": 180,
+  "touristType": [
+    "Turistas internacionais",
+    "Turistas nacionais",
+    "Casais",
+    "Famílias",
+    "Grupos corporativos"
+  ],
+  "containsPlace": [
+    {
+      "@type": "Place",
+      "name": "Terraço com Vista para o Pão de Açúcar",
+      "description": "Terraço aberto com vista panorâmica de 360° para o Pão de Açúcar e a Baía de Guanabara"
+    },
+    {
+      "@type": "Place",
+      "name": "Salão Privativo para Eventos",
+      "description": "Espaço privativo para eventos corporativos e celebrações com capacidade para até 80 pessoas"
+    }
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "altitude",
+      "value": "227 metros acima do nível do mar"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "bairro",
+      "value": "Urca"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "zona",
+      "value": "Zona Sul do Rio de Janeiro"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ponto_de_referencia",
+      "value": "Parque Bondinho Pão de Açúcar — primeira parada do teleférico"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distancia_centro",
+      "value": "8 km do Centro do Rio de Janeiro"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distancia_ipanema",
+      "value": "5 km de Ipanema"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distancia_copacabana",
+      "value": "4 km de Copacabana"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "como_chegar",
+      "value": "Acesso exclusivo pelo teleférico do Parque Bondinho Pão de Açúcar (Av. Pasteur, 520, Urca)"
+    }
+  ],
+  "smokingAllowed": false,
+  "starRating": {
+    "@type": "Rating",
+    "ratingValue": "4",
+    "description": "Restaurante premium com vista panorâmica"
+  }
 }
 </script>
 
@@ -1847,7 +1965,132 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
 <!-- ═══════════════════════════════════════════════════════════
      WHATSAPP FLUTUANTE — Bot de Atendimento Embaixada Carioca
      ═══════════════════════════════════════════════════════════ -->
-<style>.wa-widget{position:fixed;bottom:28px;right:28px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:12px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.wa-btn{width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 20px rgba(37,211,102,0.45);transition:transform 0.2s ease,box-shadow 0.2s ease;position:relative;text-decoration:none;border:none;outline:none}.wa-btn:hover{transform:scale(1.08);box-shadow:0 6px 28px rgba(37,211,102,0.6)}.wa-btn svg{width:32px;height:32px;fill:white}.wa-btn::before{content:'';position:absolute;inset:-6px;border-radius:50%;background:rgba(37,211,102,0.3);animation:wa-pulse 2.2s ease-out infinite}@keyframes wa-pulse{0%{transform:scale(0.9);opacity:0.8}70%{transform:scale(1.4);opacity:0}100%{transform:scale(1.4);opacity:0}}.wa-preview{background:white;border-radius:16px 16px 4px 16px;box-shadow:0 8px 32px rgba(0,0,0,0.18);padding:14px 16px;max-width:280px;opacity:0;transform:translateY(10px) scale(0.95);transition:opacity 0.3s ease,transform 0.3s ease;pointer-events:none;display:none}.wa-preview.visible{opacity:1;transform:translateY(0) scale(1);pointer-events:auto;display:block}.wa-preview-header{display:flex;align-items:center;gap:10px;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0}.wa-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#1a2e44,#2d5a8e);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px}.wa-preview-name{font-weight:700;font-size:0.88rem;color:#1a1a1a;line-height:1.2}.wa-preview-status{font-size:0.75rem;color:#25D366;font-weight:500}.wa-preview-msg{font-size:0.82rem;color:#333;line-height:1.5;margin-bottom:12px}.wa-preview-msg strong{color:#1a1a1a}.wa-preview-cta{display:block;background:#25D366;color:white !important;text-align:center;padding:10px 16px;border-radius:10px;font-weight:700;font-size:0.85rem;text-decoration:none;transition:background 0.2s}.wa-preview-cta:hover{background:#1ebe5d;color:white !important}.wa-close{position:absolute;top:-8px;right:-8px;width:22px;height:22px;border-radius:50%;background:#888;color:white;border:none;cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center;line-height:1;opacity:0.8}.wa-close:hover{opacity:1}.wa-badge{position:absolute;top:-4px;right:-4px;width:18px;height:18px;background:#FF3B30;border-radius:50%;font-size:11px;font-weight:700;color:white;display:flex;align-items:center;justify-content:center;border:2px solid white}@media (max-width:480px){.wa-widget{bottom:20px;right:16px}.wa-preview{max-width:240px}}</style>
+<style>.wa-widget{position:fixed;bottom:28px;right:28px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:12px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.wa-btn{width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 20px rgba(37,211,102,0.45);transition:transform 0.2s ease,box-shadow 0.2s ease;position:relative;text-decoration:none;border:none;outline:none}.wa-btn:hover{transform:scale(1.08);box-shadow:0 6px 28px rgba(37,211,102,0.6)}.wa-btn svg{width:32px;height:32px;fill:white}.wa-btn::before{content:'';position:absolute;inset:-6px;border-radius:50%;background:rgba(37,211,102,0.3);animation:wa-pulse 2.2s ease-out infinite}@keyframes wa-pulse{0%{transform:scale(0.9);opacity:0.8}70%{transform:scale(1.4);opacity:0}100%{transform:scale(1.4);opacity:0}}.wa-preview{background:white;border-radius:16px 16px 4px 16px;box-shadow:0 8px 32px rgba(0,0,0,0.18);padding:14px 16px;max-width:280px;opacity:0;transform:translateY(10px) scale(0.95);transition:opacity 0.3s ease,transform 0.3s ease;pointer-events:none;display:none}.wa-preview.visible{opacity:1;transform:translateY(0) scale(1);pointer-events:auto;display:block}.wa-preview-header{display:flex;align-items:center;gap:10px;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0}.wa-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#1a2e44,#2d5a8e);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px}.wa-preview-name{font-weight:700;font-size:0.88rem;color:#1a1a1a;line-height:1.2}.wa-preview-status{font-size:0.75rem;color:#25D366;font-weight:500}.wa-preview-msg{font-size:0.82rem;color:#333;line-height:1.5;margin-bottom:12px}.wa-preview-msg strong{color:#1a1a1a}.wa-preview-cta{display:block;background:#25D366;color:white !important;text-align:center;padding:10px 16px;border-radius:10px;font-weight:700;font-size:0.85rem;text-decoration:none;transition:background 0.2s}.wa-preview-cta:hover{background:#1ebe5d;color:white !important}.wa-close{position:absolute;top:-8px;right:-8px;width:22px;height:22px;border-radius:50%;background:#888;color:white;border:none;cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center;line-height:1;opacity:0.8}.wa-close:hover{opacity:1}.wa-badge{position:absolute;top:-4px;right:-4px;width:18px;height:18px;background:#FF3B30;border-radius:50%;font-size:11px;font-weight:700;color:white;display:flex;align-items:center;justify-content:center;border:2px solid white}@media (max-width:480px){.wa-widget{bottom:20px;right:16px}.wa-preview{max-width:240px}}
+/* ── MOBILE OPTIMIZATIONS PATCH ──────────────────────────────────────── */
+/* Tap targets mínimos 48px (WCAG 2.5.5 / Google CWV) */
+@media (max-width:720px){
+  .btn,.btn-reservar,.wa-btn,.mobile-bottom-nav a,.nav-hamburger{
+    min-height:48px !important;
+  }
+  /* Hero h1 — mínimo legível em 360px */
+  .hero h1{
+    font-size:clamp(32px,8.5vw,56px) !important;
+    line-height:1.15 !important;
+  }
+  /* Hero sub — mínimo legível */
+  .hero-sub{
+    font-size:clamp(15px,3.8vw,19px) !important;
+    max-width:100% !important;
+  }
+  /* Hero ctas — empilhar em telas muito pequenas */
+  .hero-ctas{
+    flex-wrap:wrap !important;
+    gap:10px !important;
+  }
+  .hero-ctas .btn{
+    flex:1 1 auto !important;
+    min-width:140px !important;
+    text-align:center !important;
+    justify-content:center !important;
+  }
+  /* Mobile bottom nav — legibilidade */
+  .mobile-bottom-nav a{
+    font-size:11px !important;
+    gap:4px !important;
+  }
+  .mobile-bottom-nav .bnav-icon{
+    font-size:22px !important;
+  }
+  /* Seção de fatos rápidos — 2 colunas em mobile */
+  .fatos-rapidos-grid{
+    grid-template-columns:repeat(2,1fr) !important;
+    gap:12px !important;
+  }
+  /* Cards de review — 1 coluna */
+  .reviews-grid{
+    grid-template-columns:1fr !important;
+  }
+  /* Seção Instagram — 2 colunas em mobile */
+  .ig-grid{
+    grid-template-columns:repeat(2,1fr) !important;
+    gap:12px !important;
+  }
+  /* Padding geral das seções em mobile */
+  .section,.sec,.momentos-section,.feijoada-section,.reservas-section{
+    padding-left:16px !important;
+    padding-right:16px !important;
+  }
+  /* Hero content padding reduzido em mobile */
+  .hero-content{
+    padding-top:80px !important;
+    padding-bottom:100px !important;
+  }
+}
+
+/* ── BREAKPOINT 360px (Android mais comum) ─────────────────────────── */
+@media (max-width:380px){
+  .hero h1{
+    font-size:28px !important;
+    line-height:1.2 !important;
+  }
+  .hero-sub{
+    font-size:14px !important;
+  }
+  .btn{
+    font-size:13px !important;
+    padding:12px 16px !important;
+  }
+  .hero-ctas{
+    flex-direction:column !important;
+    align-items:stretch !important;
+  }
+  .hero-ctas .btn{
+    width:100% !important;
+    min-width:unset !important;
+  }
+  .fatos-rapidos-grid{
+    grid-template-columns:1fr 1fr !important;
+  }
+  .mobile-bottom-nav-inner{
+    height:58px !important;
+  }
+}
+
+/* ── LANDSCAPE MOBILE ───────────────────────────────────────────────── */
+@media (max-width:720px) and (orientation:landscape){
+  .hero{
+    min-height:100svh !important;
+  }
+  .hero-content{
+    padding-top:60px !important;
+    padding-bottom:80px !important;
+  }
+  .hero h1{
+    font-size:clamp(24px,5vw,40px) !important;
+  }
+}
+
+/* ── SAFE AREA (iPhone notch / Dynamic Island) ──────────────────────── */
+@supports (padding-bottom: env(safe-area-inset-bottom)){
+  .mobile-bottom-nav{
+    padding-bottom:env(safe-area-inset-bottom) !important;
+  }
+  .mobile-bottom-nav-inner{
+    height:calc(60px + env(safe-area-inset-bottom)) !important;
+  }
+}
+
+/* ── FOCUS VISIBLE (acessibilidade teclado/touch) ───────────────────── */
+:focus-visible{
+  outline:3px solid #E8C547 !important;
+  outline-offset:3px !important;
+}
+.btn:focus-visible,.wa-btn:focus-visible{
+  outline:3px solid #E8C547 !important;
+  outline-offset:2px !important;
+}
+/* ── FIM MOBILE OPTIMIZATIONS PATCH ─────────────────────────────────── */
+</style>
 
 <div class="wa-widget" id="wa-widget">
   <!-- Preview do bot (aparece ao hover/clique) -->
@@ -1923,5 +2166,12 @@ PARQUE BONDINHO PÃO DE AÇÚCAR</b><br/>Rio de Janeiro</span>
 <script>!function(){var e=document.querySelector(".lang-switcher");if(e){var n=e.querySelector(".lang-current"),t=e.querySelector(".lang-dropdown");n.addEventListener("click",function(n){n.stopPropagation(),e.classList.toggle("open")}),document.addEventListener("click",function(){e.classList.remove("open")}),t.addEventListener("click",function(e){e.stopPropagation()})}}();</script>
 
 <script src="/assets/geo-proximity.js" defer></script>
+
+<!-- SEO: palabras clave de proximidad y búsqueda local -->
+<section class="seo-local-section" aria-hidden="true" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
+  <h2>Restaurante cerca del teleférico del Pan de Azúcar</h2>
+  <p>El único restaurante dentro del Parque Bondinho Pão de Açúcar, cerca del teleférico, en el barrio Urca, Zona Sur de Río de Janeiro. Restaurante cerca del Pan de Azúcar, dónde comer en el Morro da Urca, qué hacer en el Morro da Urca. Restaurante próximo al teleférico del Pan de Azúcar. Dónde comer cerca del Pan de Azúcar. Restaurante con vista al Pan de Azúcar. Almuerzo en el Morro da Urca. Desayuno cerca del Pan de Azúcar. Dónde comer en Urca. Restaurante barrio Urca Río de Janeiro.</p>
+</section>
+
 </body>
 </html>
