@@ -852,7 +852,137 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
   .lang-current { padding: 5px 8px; font-size: 11px; }
 }
 
-</style>
+
+    /* ═══════════════════════════════════════════
+       CARDÁPIO CAFÉ DA MANHÃ — ESTILOS COMPLETOS
+    ═══════════════════════════════════════════ */
+    .cardapio-destaque-card {
+      background: linear-gradient(135deg, #1a3a2a 0%, #2d5a3d 100%);
+      color: #fff;
+      border-radius: 16px;
+      padding: 2rem 2.5rem;
+      margin-bottom: 2.5rem;
+      border-left: 6px solid #b8860b;
+    }
+    .cardapio-destaque-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .cardapio-destaque-header h3 {
+      font-size: 1.6rem;
+      color: #f5c842;
+      margin: 0;
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 400;
+    }
+    .cardapio-destaque-badge {
+      background: #b8860b;
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .cardapio-destaque-preco {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #f5c842;
+      margin-left: auto;
+    }
+    .cardapio-destaque-desc {
+      color: #e8f0e8;
+      line-height: 1.7;
+      margin-bottom: 0.8rem;
+    }
+    .cardapio-destaque-bebidas {
+      color: #c8e6c8;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    .cardapio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .cardapio-card {
+      border-radius: 12px;
+      padding: 1.5rem;
+      border: 1px solid rgba(0,0,0,0.08);
+    }
+    .cardapio-card--amarelo       { background: #fff8e1; border-top: 4px solid #f5c842; }
+    .cardapio-card--verde         { background: #e8f5e9; border-top: 4px solid #2d7a3d; }
+    .cardapio-card--escuro        { background: #1a3a2a; color: #e8f0e8; border-top: 4px solid #b8860b; }
+    .cardapio-card--verde-escuro  { background: #2d5a3d; color: #e8f0e8; border-top: 4px solid #f5c842; }
+    .cardapio-card--roxo          { background: #3d1a5a; color: #e8d8f8; border-top: 4px solid #b060e0; }
+    .cardapio-card--amarelo-escuro{ background: #3a2a00; color: #fff8e1; border-top: 4px solid #f5c842; }
+    .cardapio-card--cafe          { background: #2a1a0a; color: #f5e6c8; border-top: 4px solid #b8860b; }
+    .cardapio-card--verde-agua    { background: #e0f4f4; border-top: 4px solid #00897b; }
+    .cardapio-card-header { margin-bottom: 0.8rem; }
+    .cardapio-card-header h3 { font-size: 1.2rem; margin: 0 0 0.2rem; color: inherit; }
+    .cardapio-card-nota { font-size: 0.8rem; opacity: 0.8; margin-bottom: 0.8rem; line-height: 1.4; }
+    .cardapio-subsecao { font-size: 0.85rem; margin: 1rem 0 0.4rem; opacity: 0.9; }
+    .cardapio-lista { list-style: none; padding: 0; margin: 0; }
+    .cardapio-lista li {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.3rem;
+      padding: 0.45rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    .cardapio-card--amarelo .cardapio-lista li,
+    .cardapio-card--verde .cardapio-lista li,
+    .cardapio-card--verde-agua .cardapio-lista li { border-bottom-color: rgba(0,0,0,0.06); }
+    .item-nome { font-weight: 600; flex: 1; }
+    .item-preco{ font-weight: 700; color: #b8860b; white-space: nowrap; }
+    .cardapio-card--escuro .item-preco,
+    .cardapio-card--verde-escuro .item-preco,
+    .cardapio-card--roxo .item-preco,
+    .cardapio-card--amarelo-escuro .item-preco,
+    .cardapio-card--cafe .item-preco { color: #f5c842; }
+    .item-sub  { font-size: 0.78rem; opacity: 0.75; width: 100%; }
+    .item-desc { font-size: 0.8rem; opacity: 0.8; width: 100%; line-height: 1.4; }
+    .item-add  { opacity: 0.85; }
+    .cardapio-lista--metodos li { align-items: flex-start; gap: 0.8rem; }
+    .metodo-icone { font-size: 1.4rem; flex-shrink: 0; }
+    .cardapio-lista--2col { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+    .cardapio-lista--2col li { border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .cardapio-destaque-mini {
+      margin-top: 1rem; padding-top: 0.8rem;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      font-size: 0.9rem;
+    }
+    .cardapio-card--verde-agua .cardapio-destaque-mini { border-top-color: rgba(0,0,0,0.1); }
+    .cardapio-cafe-cta { text-align: center; padding-top: 1rem; }
+    .btn-reservar-cafe {
+      display: inline-block;
+      background: linear-gradient(135deg, #b8860b, #d4a017);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(184,134,11,0.35);
+    }
+    .btn-reservar-cafe:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(184,134,11,0.5); }
+    .cardapio-cafe-nota { font-size: 0.78rem; color: #888; margin-top: 1rem; }
+    @media (max-width: 600px) {
+      .cardapio-grid { grid-template-columns: 1fr; }
+      .cardapio-lista--2col { grid-template-columns: 1fr; }
+      .cardapio-destaque-preco { font-size: 1.4rem; }
+    }
+
+    </style>
 <link rel="preload" as="image" href="/assets/hero.jpg" fetchpriority="high" />
   <!-- PWA & Mobile Optimization -->  <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -1536,49 +1666,111 @@ nav.top.scrolled {
 <section id="o-que-servimos">
   <div class="wrap">
     <div class="sec-head">
-      <div class="num"><b>01</b> O que servimos</div>
-      <h2>A day that starts <span class="serif">at the top</span> — the best breakfast with a view in Rio de Janeiro.</h2>
-      <p class="lede">
-        Buffet farto, à la carte preparado na hora e curadoria de cafés especiais —
-        servido todos os dias com a vista do Pão de Açúcar à mesa.
-      </p>
+      <div class="num"><b>01</b> Breakfast Menu</div>
+      <h2>Everything you can <span class="serif">order</span> — with a view of Sugarloaf Mountain.</h2>
+      <p class="lede">From the Embaixada Breakfast for 2 to organic açaí, grilled eggs and specialty coffees — served every day from 8:30am to 11:30am at the top of Morro da Urca.</p>
     </div>
-
-    <div class="menu-grid">
-      <article class="menu-card">
-        <span class="tag">Embaixada Breakfast · Individual · R$ 79.90 per person</span>
-        <h3>O que <span class="serif">inclui.</span></h3>
-        <ul>
-          <li>Seleção de pães de fermentação natural</li>
-          <li>Frios, mini açaí e granola especial</li>
-          <li>Manteiga, geleia e mel</li>
-          <li>Fruta do dia e fatia de bolo do dia</li>
-          <li>Iogurte natural</li>
+    <div class="cardapio-destaque-card">
+      <div class="cardapio-destaque-header">
+        <h3>Embaixada Breakfast</h3>
+        <span class="cardapio-destaque-badge">For 2 people</span>
+        <span class="cardapio-destaque-preco">R$ 98.70</span>
+      </div>
+      <p class="cardapio-destaque-desc">Selection of naturally fermented breads, cold cuts, mini açaí, natural yogurt, special granola, butter, jam, honey, fruit of the day and a slice of the daily cake.</p>
+      <p class="cardapio-destaque-bebidas"><strong>Choose 2 hot drinks:</strong> double espresso, macchiato, cappuccino, hot chocolate, café au lait.</p>
+    </div>
+    <div class="cardapio-grid">
+      <div class="cardapio-card cardapio-card--amarelo">
+        <div class="cardapio-card-header"><h3>Eggs &amp; Omelettes</h3></div>
+        <p class="cardapio-card-nota">Served with a slice of grilled toast</p>
+        <ul class="cardapio-lista">
+          <li><span class="item-nome">Cheese and ham omelette</span><span class="item-preco">R$ 29.00</span></li>
+          <li><span class="item-nome">Minas cheese and tomato omelette</span><span class="item-preco">R$ 32.00</span></li>
+          <li><span class="item-nome">Fresh shiitake omelette</span><span class="item-preco">R$ 34.00</span></li>
+          <li><span class="item-nome">Scrambled eggs with bacon</span><span class="item-preco">R$ 23.00</span></li>
+          <li><span class="item-nome">Fried eggs</span><span class="item-preco">R$ 19.00</span></li>
         </ul>
-      </article>
-
-      <article class="menu-card">
-        <span class="tag">Escolha 2 bebidas quentes</span>
-        <h3>Cafés &amp; <span class="serif">bebidas.</span></h3>
-        <ul>
-          <li>Espresso duplo</li>
-          <li>Macchiato</li>
-          <li>Cappuccino</li>
-          <li>Chocolate quente</li>
-          <li>Café com leite</li>
+      </div>
+      <div class="cardapio-card cardapio-card--verde">
+        <div class="cardapio-card-header"><h3>Tapiocas</h3></div>
+        <ul class="cardapio-lista">
+          <li><span class="item-nome">Cheese and ham</span><span class="item-preco">R$ 20.00</span></li>
+          <li><span class="item-nome">Minas cheese and tomato</span><span class="item-preco">R$ 22.00</span></li>
+          <li><span class="item-nome">Tapioca with butter</span><span class="item-preco">R$ 12.00</span></li>
         </ul>
-      </article>
-
-      <article class="menu-card">
-        <span class="tag">Every day · 8:30am – 11:30am</span>
-        <h3>Horário &amp; <span class="serif">acesso.</span></h3>
-        <ul>
-          <li>Servido todos os dias · 8h30 às 11h30</li>
-          <li>Vista do Pão de Açúcar à mesa</li>
-          <li>Morro da Urca · primeira parada do Bondinho</li>
-          <li>Reserve com antecedência</li>
+      </div>
+      <div class="cardapio-card cardapio-card--escuro">
+        <div class="cardapio-card-header"><h3>Grilled Sandwiches</h3></div>
+        <ul class="cardapio-lista">
+          <li><span class="item-nome">Grilled ham &amp; cheese or grilled cheese</span><span class="item-preco">R$ 16.00</span></li>
+          <li><span class="item-nome">Turkey breast with Minas cheese</span><span class="item-preco">R$ 19.00</span></li>
+          <li><span class="item-nome">Grilled bread</span><span class="item-preco">R$ 9.00</span></li>
         </ul>
-      </article>
+      </div>
+      <div class="cardapio-card cardapio-card--verde-escuro">
+        <div class="cardapio-card-header"><h3>Extras</h3></div>
+        <ul class="cardapio-lista">
+          <li><span class="item-nome">Bread basket</span><span class="item-preco">R$ 18.00</span></li>
+          <li><span class="item-nome">Mini rustic baguette (unit)</span><span class="item-preco">R$ 8.00</span></li>
+          <li><span class="item-nome">Extra cheese or cold cuts (2 slices)</span><span class="item-preco">R$ 8.00</span></li>
+          <li><span class="item-nome">Fruit or yogurt portion (each)</span><span class="item-preco">R$ 11.00</span></li>
+          <li><span class="item-nome">Jam, honey or butter portion</span><span class="item-preco">R$ 4.00</span></li>
+          <li><span class="item-nome">Slice of daily cake</span><span class="item-preco">R$ 12.00</span></li>
+        </ul>
+      </div>
+      <div class="cardapio-card cardapio-card--roxo">
+        <div class="cardapio-card-header"><h3>Organic Açaí</h3></div>
+        <ul class="cardapio-lista">
+          <li><span class="item-nome">Açaí baby</span><span class="item-preco">R$ 19.50</span></li>
+          <li><span class="item-nome">Açaí cup</span><span class="item-preco">R$ 23.00</span></li>
+          <li><span class="item-nome item-add">+ With banana</span><span class="item-preco">R$ 3.00</span></li>
+          <li><span class="item-nome item-add">+ With strawberry</span><span class="item-preco">R$ 5.00</span></li>
+          <li><span class="item-nome item-add">+ Granola portion</span><span class="item-preco">R$ 3.00</span></li>
+        </ul>
+        <div class="cardapio-destaque-mini"><strong>Chilled Coconut</strong> (unit) — 100% natural <span class="item-preco">R$ 15.00</span></div>
+      </div>
+      <div class="cardapio-card cardapio-card--amarelo-escuro">
+        <div class="cardapio-card-header"><h3>Coffee Bar</h3></div>
+        <p class="cardapio-card-nota"><strong>Brazilian Specialty Coffee, 100% Arabica</strong></p>
+        <ul class="cardapio-lista">
+          <li><span class="item-nome">Espresso</span> — short, standard, long<br><span class="item-sub">small R$ 7.00 | large R$ 10.50</span></li>
+          <li><span class="item-nome">Carioca</span> — diluted in 30ml water<br><span class="item-sub">small R$ 8.00</span></li>
+          <li><span class="item-nome">Americano</span> — diluted in 120ml water<br><span class="item-sub">large R$ 8.00</span></li>
+          <li><span class="item-nome">Café au lait</span><br><span class="item-sub">small R$ 9.00 | large R$ 12.50</span></li>
+          <li><span class="item-nome">Cappuccino</span><br><span class="item-sub">large R$ 16.50</span></li>
+          <li><span class="item-nome">Macchiato</span><br><span class="item-sub">small R$ 9.00 | large R$ 13.50</span></li>
+          <li><span class="item-nome">Hot chocolate</span><br><span class="item-sub">large R$ 15.50</span></li>
+          <li><span class="item-nome">Teas — iced or hot</span><br><span class="item-sub">Ask for flavors — R$ 9.50</span></li>
+          <li><span class="item-nome">Espresso tonic</span><br><span class="item-sub">R$ 14.50</span></li>
+        </ul>
+      </div>
+      <div class="cardapio-card cardapio-card--cafe">
+        <div class="cardapio-card-header"><h3>Filter Methods</h3></div>
+        <ul class="cardapio-lista cardapio-lista--metodos">
+          <li><span class="metodo-icone">☕</span><div><span class="item-nome">Hario V60</span><span class="item-desc">Produces a clean, smooth brew that highlights the coffee nuances</span><span class="item-sub">150ml R$ 14.50 | 300ml R$ 19.50</span></div></li>
+          <li><span class="metodo-icone">🫖</span><div><span class="item-nome">French Press</span><span class="item-desc">Enhances body and preserves essential oils</span><span class="item-sub">150ml R$ 14.50 | 300ml R$ 19.50</span></div></li>
+        </ul>
+      </div>
+      <div class="cardapio-card cardapio-card--verde-agua">
+        <div class="cardapio-card-header"><h3>Fresh Juices</h3></div>
+        <p class="cardapio-card-nota">Fresh fruits — 380ml</p>
+        <ul class="cardapio-lista cardapio-lista--2col">
+          <li><span class="item-nome">Orange</span><span class="item-preco">R$ 18.00</span></li>
+          <li><span class="item-nome">Watermelon</span><span class="item-preco">R$ 20.00</span></li>
+          <li><span class="item-nome">Pineapple</span><span class="item-preco">R$ 20.00</span></li>
+          <li><span class="item-nome">Pineapple &amp; mint</span><span class="item-preco">R$ 21.00</span></li>
+          <li><span class="item-nome">Mango</span><span class="item-preco">R$ 22.00</span></li>
+          <li><span class="item-nome">Swiss lemonade</span><span class="item-preco">R$ 23.00</span></li>
+          <li><span class="item-nome">Passion fruit</span><span class="item-preco">R$ 20.00</span></li>
+          <li><span class="item-nome">Strawberry milk</span><span class="item-preco">R$ 23.00</span></li>
+          <li><span class="item-nome">Mixed juice (2–3 fruits)</span><span class="item-preco">R$ 24.00</span></li>
+          <li><span class="item-nome">Seasoned tomato juice</span><span class="item-preco">R$ 24.00</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="cardapio-cafe-cta">
+      <a href="https://www.tagme.com.br/embaixadacarioca" target="_blank" rel="noopener" class="btn-reservar-cafe">Book a table for Breakfast →</a>
+      <p class="cardapio-cafe-nota">Menu subject to seasonal changes. Prices in Brazilian Reais (R$), taxes included. Ask our team for gluten-free or lactose-free options.</p>
     </div>
   </div>
 </section>
