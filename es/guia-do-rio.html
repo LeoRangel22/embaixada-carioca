@@ -694,7 +694,190 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
     color: var(--verde);
     text-decoration: underline;
   }
-</style>
+
+    /* ═══ GUIA DO RIO — estilos premium ═══ */
+    .guia-intro-box {
+      background: linear-gradient(135deg, #0d2a3a 0%, #1a3a5c 100%);
+      border-radius: 16px;
+      padding: 2rem 2.5rem;
+      margin-bottom: 2.5rem;
+      border-left: 4px solid var(--amarelo, #f5c842);
+      color: #e8f0e8;
+    }
+    .guia-intro-box p { color: #c8dce8; line-height: 1.7; margin: 0; }
+    .guia-intro-box .guia-dica-copy {
+      font-size: 0.82rem;
+      color: rgba(200,220,232,0.7);
+      margin-top: 0.8rem;
+      font-style: italic;
+    }
+    .guia-section-title {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 3rem 0 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid rgba(0,64,90,0.12);
+    }
+    .guia-section-title h2 {
+      font-size: 1.6rem;
+      margin: 0;
+      color: #0d2a3a;
+    }
+    .guia-section-title-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(0,64,90,0.2), transparent);
+    }
+    .guia-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(0,64,90,0.1);
+      border-top: 4px solid var(--verde, #2d7a3d);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .guia-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .guia-card h3 { font-size: 1.15rem; color: #0d2a3a; margin: 0 0 0.6rem; }
+    .guia-card p { color: #444; line-height: 1.7; margin: 0 0 0.8rem; font-size: 0.95rem; }
+    .guia-card .guia-roteiro {
+      background: #f0faf2;
+      border-radius: 10px;
+      padding: 0.8rem 1rem;
+      font-size: 0.88rem;
+      color: #1a3a2a;
+      line-height: 1.6;
+      margin-top: 0.8rem;
+    }
+    .guia-card .guia-roteiro strong { color: #2d7a3d; }
+    .guia-card .guia-endereco {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.8rem;
+      font-size: 0.82rem;
+      color: #666;
+    }
+    .guia-card .guia-endereco code {
+      background: #f0f4f8;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      color: #0d2a3a;
+    }
+    .guia-copy-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      background: var(--amarelo, #f5c842);
+      color: #0d2a3a;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.25rem 0.6rem;
+      border-radius: 20px;
+      cursor: pointer;
+      border: none;
+      transition: background 0.2s;
+      text-decoration: none;
+    }
+    .guia-copy-btn:hover { background: #d4a017; }
+    .guia-destaque-ouro {
+      background: linear-gradient(135deg, #1a3a2a 0%, #0d2218 100%);
+      border-radius: 14px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+      border-left: 4px solid #f5c842;
+    }
+    .guia-destaque-ouro p { color: #c8e6c8; font-size: 0.92rem; line-height: 1.6; margin: 0; }
+    .guia-destaque-ouro strong { color: #f5c842; }
+    .guia-destaque-ouro a {
+      display: inline-block;
+      margin-top: 0.8rem;
+      background: linear-gradient(135deg, #b8860b, #d4a017);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.6rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+    .guia-destaque-ouro a:hover { transform: translateY(-2px); }
+    .guia-lista-numerada {
+      counter-reset: guia-counter;
+      list-style: none;
+      padding: 0;
+    }
+    .guia-lista-numerada li {
+      counter-increment: guia-counter;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(0,64,90,0.08);
+      font-size: 0.95rem;
+      color: #333;
+      line-height: 1.6;
+    }
+    .guia-lista-numerada li::before {
+      content: counter(guia-counter);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 28px;
+      height: 28px;
+      background: var(--verde, #2d7a3d);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.8rem;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+    .guia-lista-numerada li strong { color: #0d2a3a; }
+    .guia-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .guia-cta-final {
+      background: linear-gradient(135deg, #0d2a3a 0%, #1a3a5c 100%);
+      border-radius: 20px;
+      padding: 3rem 2.5rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .guia-cta-final h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 2rem;
+      font-weight: 400;
+      color: #fff;
+      margin: 0 0 0.8rem;
+    }
+    .guia-cta-final p { color: #c8dce8; margin-bottom: 1.5rem; }
+    .guia-cta-final a {
+      display: inline-block;
+      background: linear-gradient(135deg, #b8860b, #d4a017);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(184,134,11,0.4);
+      transition: transform 0.2s;
+    }
+    .guia-cta-final a:hover { transform: translateY(-2px); }
+    @media (max-width: 700px) {
+      .guia-grid-2 { grid-template-columns: 1fr; }
+      .guia-intro-box { padding: 1.5rem; }
+      .guia-cta-final { padding: 2rem 1.5rem; }
+      .guia-cta-final h3 { font-size: 1.5rem; }
+    }
+
+    </style>
   <!-- PWA & Mobile Optimization -->  <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Embaixada Carioca" />
@@ -1477,79 +1660,140 @@ nav.top.scrolled {
   <section style="padding: 96px 0;">
     <div class="wrap">
       <article class="article-body">
+        <p>¿Planeando un viaje a la Ciudad Maravillosa? Armar el itinerario perfecto requiere equilibrar las visitas a los grandes íconos mundiales con ese estilo de vida desenfadado que solo el carioca sabe tener. El verdadero secreto para aprovechar al máximo Río de Janeiro es saber el mejor horario para caminar por la orilla, descubrir miradores escondidos en medio del bosque y sumergirse en la cultura bohemia de sus calles.</p>
 
-        <p>Planejar <strong>o que fazer no Rio de Janeiro</strong> exige um roteiro que equilibre os cartões-postais mundiais com a autêntica gastronomia local. Para garantir que sua experiência seja inesquecível e livre de armadilhas para turistas, criamos este guia definitivo focando no que realmente importa: as melhores praias, os passeios imperdíveis e, claro, <strong>onde comer no Rio de Janeiro</strong> com a melhor vista da cidade.</p>
+<p>Para garantizar que tu experiencia sea inolvidable y libre de trampas para turistas, creamos esta guía llena de consejos prácticos, itinerarios inteligentes y curiosidades históricas. Te mostraremos los paseos fuera de la ruta obvia, las playas que realmente valen la pena y, de forma natural a lo largo de tu día, indicaremos <strong>dónde comer en Río de Janeiro</strong>. Al fin y al cabo, conocer los <strong>mejores restaurantes de Río de Janeiro</strong> entre un baño y un museo es parte de disfrutar el viaje como un habitante local.</p>
 
-        <h2>🍽️ Onde Comer no Rio de Janeiro: A Experiência Definitiva</h2>
+<div class="guia-intro-box">
+  <p><strong>💡 Consejo práctico:</strong> A lo largo de esta guía, cada atracción tiene la dirección exacta lista para que la copies directamente en el mapa de tu teléfono. ¡Solo haz clic en <strong>[📋 Copiar]</strong> y pégala en Google Maps o Waze!</p>
+</div>
 
-        <p>A busca pelos <strong>melhores restaurantes do Rio de Janeiro</strong> quase sempre esbarra no mesmo desejo: aliar a alta gastronomia a um cenário deslumbrante. Se você procura <strong>restaurantes no Rio de Janeiro com vista</strong>, o Morro da Urca é o destino definitivo.</p>
+<div class="guia-section-title">
+  <h2>🏖️ Las Mejores Playas de Río de Janeiro</h2>
+  <div class="guia-section-title-line"></div>
+</div>
+<p>El secreto de un día de playa inolvidable está en lo que planeas justo después.</p>
 
-        <h3>1. Embaixada Carioca (Morro da Urca)</h3>
-        <p>Localizado dentro do Parque Bondinho Pão de Açúcar, a Embaixada Carioca é a resposta definitiva para quem busca <strong>lugares bonitos para almoçar no Rio de Janeiro</strong>. É o único restaurante que oferece uma vista panorâmica 360° da Baía de Guanabara, do Cristo Redentor e do próprio Pão de Açúcar em primeiro plano.</p>
-        
-        <div class="highlight">
-          <strong>🏆 A Experiência Completa:</strong>
-          <ul>
-            <li><strong>Desayuno:</strong> El mejor <strong>desayuno con vista en Río de Janeiro</strong>. Panes de masa madre y frutas frescas servidos a 227 metros de altura.</li>
-            <li><strong>Almuerzo:</strong> La auténtica gastronomía brasileña. Pruebe la picanha a la plancha o la feijoada premiada (vie–dom).</li>
-            <li><strong>Atardecer:</strong> El <strong>restaurante romántico</strong> perfecto. Caipirinhas premiadas y la 2ª mejor cerveza Heineken de barril de Brasil mientras el sol se pone detrás del Pan de Azúcar.</li>
-          </ul>
-          <br>
-          <a href="https://go.tagme.com.br/embaixadacarioca" style="display:inline-block; background:var(--verde); color:white; padding:10px 20px; text-decoration:none; border-radius:4px; font-weight:bold;">Reservar Mesa en la Embaixada Carioca</a>
-        </div>
+<div class="guia-card">
+  <h3>1. Ipanema, Leblon y Pedra do Arpoador</h3>
+  <p>La franja de arena más vibrante de la Zona Sur. Ipanema lanzó la moda del bikini al mundo y Leblon mantuvo el encanto exclusivo con el visual del Morro Dois Irmãos. En el extremo izquierdo está el Arpoador, donde locales y turistas mantienen viva la tradición de aplaudir el sol al sumergirse en el mar.</p>
+  <div class="guia-roteiro">
+    <strong>💡 Itinerario del Día:</strong> Tras la puesta de sol, el clásico paseo por el barrio pide una parada en la <strong>Academia da Cachaça en Leblon</strong> — el refugio con aires bohemios para probar <strong>la caipirinha más premiada de Brasil</strong> y bocados de raíz.
+  </div>
+  <div class="guia-endereco">📍 <code>Av. Vieira Souto / Av. Delfim Moreira, Rio de Janeiro - RJ</code>
+    <button class="guia-copy-btn" onclick="navigator.clipboard.writeText('Av. Vieira Souto, Ipanema, Rio de Janeiro - RJ')">📋 Copiar</button>
+  </div>
+</div>
 
-        <h2>🏖️ Melhores Praias do Rio de Janeiro</h2>
+<div class="guia-card">
+  <h3>2. Praia Vermelha (Urca)</h3>
+  <p>Una joya enclavada en una pequeña ensenada protegida a los pies del Pan de Azúcar. Famosa por no tener olas y por su arena de tono rojizo que brilla al atardecer.</p>
+  <div class="guia-roteiro">
+    <strong>💡 Itinerario del Día:</strong> El itinerario matutino definitivo: un baño en las aguas tranquilas de la Praia Vermelha, seguido del viaje en teleférico y un almuerzo con vista espectacular en la <strong>Embaixada Carioca</strong>.
+  </div>
+  <div class="guia-endereco">📍 <code>Praça General Tibúrcio, Urca, Rio de Janeiro - RJ</code>
+    <button class="guia-copy-btn" onclick="navigator.clipboard.writeText('Praça General Tibúrcio, Urca, Rio de Janeiro - RJ')">📋 Copiar</button>
+  </div>
+</div>
 
-        <p>A orla carioca é o principal destino de quem busca turismo de sol e mar no Brasil. Mas o segredo de um bom dia de praia está no que você faz logo depois dela.</p>
+<div class="guia-card">
+  <h3>3. Playa de Copacabana</h3>
+  <p>La "Princesita del Mar" es una leyenda urbana con su famoso paseo marítimo en ondas de piedras portuguesas, diseñado por Burle Marx. La playa que presentó Río al mundo aún preserva la colonia de pescadores artesanales en el Posto 6.</p>
+  <div class="guia-roteiro">
+    <strong>💡 Itinerario del Día:</strong> Para evitar los restaurantes abarrotados y genéricos de la orla, haz el corto trayecto hasta Urca y toma el teleférico para vivir una experiencia gastronómica premium en el auténtico <strong>Restaurante Morro da Urca</strong>, la <strong>Embaixada Carioca</strong>.
+  </div>
+  <div class="guia-endereco">📍 <code>Av. Atlântica, Copacabana, Rio de Janeiro - RJ</code>
+    <button class="guia-copy-btn" onclick="navigator.clipboard.writeText('Av. Atlântica, Copacabana, Rio de Janeiro - RJ')">📋 Copiar</button>
+  </div>
+</div>
 
-        <h3>1. Praia de Ipanema</h3>
-        <p>O verdadeiro berço da cultura de praia carioca e da Bossa Nova. Famosa pelo calçadão charmoso, ditar tendências mundiais e por ter o pôr do sol mais aplaudido do país na Pedra do Arpoador.</p>
-        <ul>
-          <li>📍 <strong>Endereço:</strong> <code>Av. Vieira Souto, Ipanema, Rio de Janeiro - RJ</code></li>
-        </ul>
+<div class="guia-section-title">
+  <h2>⚽ Deportes, Eventos y Vida Nocturna</h2>
+  <div class="guia-section-title-line"></div>
+</div>
 
-        <h3>2. Praia de Copacabana</h3>
-        <p>A "Princesinha do Mar" é a praia mais famosa do mundo e parada obrigatória. O calçadão em pedras portuguesas concentra a essência do turismo no Brasil.</p>
-        <ul>
-          <li><strong>💡 A Dica de Ouro:</strong> A região tem muitas armadilhas para turistas. Após curtir a areia, a melhor pedida é fazer o curto trajeto até o charmoso bairro da Urca e pegar o bondinho para viver uma experiência gastronômica nas alturas na <strong>Embaixada Carioca</strong>.</li>
-          <li>📍 <strong>Endereço:</strong> <code>Av. Atlântica, Copacabana, Rio de Janeiro - RJ</code></li>
-        </ul>
+<div class="guia-card">
+  <h3>1. Maracanã — El Templo del Fútbol</h3>
+  <p>Hasta quien no sigue el deporte se estremece al entrar al Maracanã. Sede de dos finales de Copa del Mundo, asistir a un partido local (o hacer el tour guiado) es sentir el pulso del pueblo carioca en su forma más pura.</p>
+  <div class="guia-endereco">📍 <code>Av. Pres. Castelo Branco, Portão 3 - Maracanã, RJ</code>
+    <button class="guia-copy-btn" onclick="navigator.clipboard.writeText('Av. Pres. Castelo Branco, Portão 3 - Maracanã, RJ')">📋 Copiar</button>
+  </div>
+</div>
 
-        <h3>3. Praia Vermelha (Urca)</h3>
-        <p>Uma praia pequena, de águas calmas e areia avermelhada, localizada exatamente aos pés do Pão de Açúcar. É uma das praias mais seguras e charmosas da cidade.</p>
-        <ul>
-          <li><strong>💡 A Dica de Ouro:</strong> É o ponto de partida perfeito. Curta a manhã na Praia Vermelha e depois suba o bondinho para um <strong>almoço com vista</strong> inesquecível na Embaixada Carioca.</li>
-          <li>📍 <strong>Endereço:</strong> <code>Praça Gen. Tibúrcio, Urca, Rio de Janeiro - RJ</code></li>
-        </ul>
+<div class="guia-card">
+  <h3>2. Los Arcos y La Lapa</h3>
+  <p>Los monumentales arcos blancos (un antiguo acueducto colonial) marcan la entrada al barrio más bohemio de Brasil. Por la noche, las casonas históricas de Lapa albergan ruedas de samba que se prolongan hasta el amanecer y atraen personas de todo el planeta.</p>
+  <div class="guia-endereco">📍 <code>Praça Cardeal Câmara - Centro, RJ</code>
+    <button class="guia-copy-btn" onclick="navigator.clipboard.writeText('Praça Cardeal Câmara - Centro, Rio de Janeiro - RJ')">📋 Copiar</button>
+  </div>
+</div>
 
-        <h2>👨‍👩‍👧 O Que Fazer no Rio de Janeiro com Crianças</h2>
+<div class="guia-section-title">
+  <h2>👨‍👩‍👧 Qué Hacer en Río con Niños</h2>
+  <div class="guia-section-title-line"></div>
+</div>
 
-        <h3>1. Parque Bondinho Pão de Açúcar</h3>
-        <p>O passeio de teleférico é mágico para crianças de todas as idades. A infraestrutura é excelente, segura e acessível para carrinhos de bebê.</p>
-        <ul>
-          <li><strong>💡 A Dica de Ouro:</strong> Faça uma pausa estratégica na <strong>Embaixada Carioca</strong> no Morro da Urca. O restaurante tem opções que agradam o paladar infantil (como o clássico picadinho ou sanduíches artesanais) enquanto os pais relaxam com a vista.</li>
-        </ul>
+<div class="guia-card">
+  <h3>1. Teleférico del Pan de Azúcar</h3>
+  <p>Un viaje en la clásica "burbuja de vidrio" que conecta los cerros fascina a los más pequeños. Muchos turistas buscan en internet: "¿hay <strong>restaurante en el teleférico Pan de Azúcar</strong>?". ¡La respuesta es sí!</p>
+  <div class="guia-roteiro">
+    <strong>💡 Itinerario del Día:</strong> Si es temprano, aprovecha el <strong>desayuno con vista en Río</strong> en el Morro da Urca. Si es más tarde, la <strong>Embaixada Carioca</strong> garantiza la tranquilidad de los padres: ambiente completamente seguro, climatizado y un menú con excelente plato infantil, además de carnes nobles para los adultos.
+  </div>
+  <div class="guia-endereco">📍 <code>Av. Pasteur, 520 - Urca, Rio de Janeiro - RJ</code>
+    <button class="guia-copy-btn" onclick="navigator.clipboard.writeText('Av. Pasteur, 520 - Urca, Rio de Janeiro - RJ')">📋 Copiar</button>
+  </div>
+</div>
 
-        <h3>2. AquaRio</h3>
-        <p>O maior aquário marinho da América do Sul. O túnel de vidro com tubarões é o passeio número um das famílias na região do Porto Maravilha.</p>
+<div class="guia-section-title">
+  <h2>🏛️ Museos y Cultura Carioca</h2>
+  <div class="guia-section-title-line"></div>
+</div>
 
-        <h3>3. Jardim Botânico</h3>
-        <p>Refúgio de paz seguro para carrinhos de bebê, famoso por suas Palmeiras Imperiais, orquidário e espaço amplo para as crianças correrem.</p>
+<div class="guia-card">
+  <h3>1. Museo de Arte Moderno (MAM)</h3>
+  <p>Un ícono de la arquitectura brutalista flotando sobre pilotes. El museo alberga no solo obras de arte, sino que está enmarcado por jardines espectaculares proyectados por Roberto Burle Marx.</p>
+  <div class="guia-destaque-ouro">
+    <p><strong>🏆 El Consejo de Oro:</strong> La visita alcanza otro nivel con un almuerzo en la <strong>Cantina do MAM</strong>. Dentro de los propios jardines, el espacio ofrece excelencia culinaria en un ambiente donde arquitectura y gastronomía se encuentran.</p>
+  </div>
+  <div class="guia-endereco">📍 <code>Av. Infante Dom Henrique, 85 - Parque do Flamengo, RJ</code>
+    <button class="guia-copy-btn" onclick="navigator.clipboard.writeText('Av. Infante Dom Henrique, 85 - Parque do Flamengo, RJ')">📋 Copiar</button>
+  </div>
+</div>
 
-        <h2>🏛️ Museus e Cultura Carioca</h2>
+<div class="guia-section-title">
+  <h2>📸 Miradores: Las Mejores Vistas de Río</h2>
+  <div class="guia-section-title-line"></div>
+</div>
 
-        <h3>1. Museu do Amanhã</h3>
-        <p>Ícone da revitalização da zona portuária, com arquitetura de Santiago Calatrava. Uma experiência imersiva sobre sustentabilidade e o futuro do planeta.</p>
+<div class="guia-card">
+  <h3>1. Pan de Azúcar (Urca)</h3>
+  <p>A 396 metros de altura, la vista abraza toda la orla, Niterói y las montañas. El paseo en teleférico es un evento memorable.</p>
+  <div class="guia-destaque-ouro">
+    <p><strong>🏆 El Consejo de Oro:</strong> El codiciado <strong>Restaurante del Teleférico</strong> es la <strong>Embaixada Carioca</strong>. Valorado con nota excelente en Google, este espacio entrega una experiencia premium — para el desayuno, un bello almuerzo de carnes o un brindis al atardecer.</p>
+    <a href="../es/index.html" target="_blank" rel="noopener">Reservar mesa en Embaixada Carioca →</a>
+  </div>
+  <div class="guia-endereco">📍 <code>Av. Pasteur, 520 - Urca, RJ</code>
+    <button class="guia-copy-btn" onclick="navigator.clipboard.writeText('Av. Pasteur, 520 - Urca, Rio de Janeiro - RJ')">📋 Copiar</button>
+  </div>
+</div>
 
-        <h3>2. Forte de Copacabana</h3>
-        <p>História militar brasileira combinada com uma das vistas mais clássicas da curva de Copacabana. Excelente para caminhadas matinais.</p>
+<div class="guia-section-title">
+  <h2>🥘 Gastronomía Brasileña: Los Platos Esenciales</h2>
+  <div class="guia-section-title-line"></div>
+</div>
 
-        <div class="highlight" style="margin-top: 60px; text-align: center; background: var(--azul1); color: white; border-left: none; border-radius: 12px;">
-          <h3 style="color: var(--amarelo); margin-top: 0;">Pronto para viver o melhor do Rio?</h3>
-          <p style="color: #f5e6c8;">Sua viagem não está completa sem uma refeição no restaurante com a melhor vista da cidade.</p>
-          <a href="https://go.tagme.com.br/embaixadacarioca" style="display:inline-block; background:var(--amarelo); color:var(--azul1); padding:12px 24px; text-decoration:none; border-radius:4px; font-weight:bold; margin-top: 10px;">Reservar Mesa en la Embaixada Carioca</a>
-        </div>
+<ol class="guia-lista-numerada">
+  <li><strong>La Picanha Perfecta:</strong> La reina del asado brasileño. En la <strong>Embaixada Carioca</strong>, el corte técnico y el sellado riguroso garantizan la terneza que el turista tanto busca.</li>
+  <li><strong>El Escondidinho Original:</strong> La versión definitiva de la ciudad está en la <strong>Academia da Cachaça</strong> — un puré de mandioca extremadamente cremoso, gratinado con queso coalho, escondiendo carne seca sazonada.</li>
+  <li><strong>Picadinho Carioca:</strong> Cubos de carne en salsa, farofa, banana y huevo pochado. Es un abrazo en forma de comida. Servido diariamente en <strong>Embaixada</strong>, <strong>Cantina do MAM</strong> y <strong>Academia da Cachaça</strong>.</li>
+  <li><strong>La Auténtica Feijoada:</strong> Rito de paso en las tardes de sábado, acompañada de chicharrón, farofa y col, preparada a la perfección en la <strong>Academia da Cachaça</strong> y la <strong>Embaixada Carioca</strong>.</li>
+</ol>
 
+<div class="guia-cta-final">
+  <h3>¿Listo para vivir lo mejor de Río?</h3>
+  <p>Tu viaje no está completo sin una comida en el único restaurante dentro del Parque Bondinho — con vista 360° al Pan de Azúcar.</p>
+  <a href="https://go.tagme.com.br/embaixadacarioca" target="_blank" rel="noopener">Reservar Mesa en Embaixada Carioca →</a>
+</div>
       </article>
     </div>
   </section>
