@@ -965,6 +965,51 @@ nav .nav-links a:visited,
 nav .lang-dropdown a:visited {
   color: inherit !important;
 }
+
+/* ── MOBILE NAV FIX: fundo escuro no mobile (scrolled ou não) ── */
+@media (max-width: 720px) {
+  /* No mobile, o nav sempre tem fundo escuro (independente do scroll) */
+  nav.top,
+  nav.top.scrolled {
+    background: rgba(0, 20, 30, 0.88) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-bottom-color: rgba(255,255,255,0.08) !important;
+  }
+  nav.top .nav-inner,
+  nav.top.scrolled .nav-inner {
+    color: var(--areia-pale, #F5EDD6) !important;
+  }
+  nav.top .nav-links a,
+  nav.top.scrolled .nav-links a,
+  nav.top .lang-current,
+  nav.top.scrolled .lang-current,
+  nav.top .lang-current span,
+  nav.top.scrolled .lang-current span {
+    color: var(--areia-pale, #F5EDD6) !important;
+  }
+  nav.top .brand-logo.light,
+  nav.top.scrolled .brand-logo.light {
+    display: block !important;
+  }
+  nav.top .brand-logo.dark,
+  nav.top.scrolled .brand-logo.dark {
+    display: none !important;
+  }
+  /* Badge de avaliações no mobile: cor clara */
+  nav.top .nav-rating-badge,
+  nav.top.scrolled .nav-rating-badge {
+    color: var(--areia-pale, #F5EDD6) !important;
+    background: rgba(255,255,255,0.12) !important;
+    border-color: rgba(255,255,255,0.25) !important;
+  }
+  /* Seletor de idioma no mobile: cor clara */
+  nav.top .lang-current,
+  nav.top.scrolled .lang-current {
+    background: rgba(255,255,255,0.12) !important;
+    border-color: rgba(255,255,255,0.25) !important;
+  }
+}
 </style>
 
 <link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high" />
