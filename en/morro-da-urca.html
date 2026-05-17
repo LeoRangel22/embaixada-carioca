@@ -209,12 +209,22 @@
 
   /* NAV */
   nav.top {
-    position: fixed; top: 0; left: 0; right: 0;
-    z-index: 50;
-    background: rgba(246,239,222,0.97);
-    border-bottom: 1px solid rgba(0,64,90,0.12);
-    backdrop-filter: blur(8px);
-  }
+  position: fixed; top: 0; left: 0; right: 0;
+  z-index: 900;
+  transition: background .3s, border-color .3s, backdrop-filter .3s;
+  border-bottom: 1px solid transparent;
+  background: rgba(0,0,0,0.35);
+}
+nav.top .nav-inner {
+  color: var(--areia-pale, #F5EDD6);
+}
+nav.top .nav-links a {
+  color: inherit;
+}
+nav.top .btn {
+  background: var(--laranja, #E8672A);
+  color: #fff;
+}
   .nav-inner {
     max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter);
     height: 64px; display: flex; align-items: center; justify-content: space-between;

@@ -1467,15 +1467,36 @@ nav.top.scrolled .brand-logo.dark  { display: block; }
 /* Topnav */
 nav.top {
   position: fixed; top: 0; left: 0; right: 0;
-  height: 72px; z-index: 900;
-  transition: background .3s, backdrop-filter .3s;
+  z-index: 900;
+  transition: background .3s, border-color .3s, backdrop-filter .3s;
+  border-bottom: 1px solid transparent;
+  background: rgba(0,0,0,0.35);
+}
+nav.top .nav-inner {
+  color: var(--areia-pale, #F5EDD6);
+}
+nav.top .nav-links a {
+  color: inherit;
+}
+nav.top .btn {
+  background: var(--laranja, #E8672A);
+  color: #fff;
 }
 nav.top.scrolled {
   background: rgba(246, 239, 222, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(0,64,90,0.12);
+}
+nav.top.scrolled .nav-inner {
   color: var(--azul1, #00405a);
+}
+nav.top.scrolled .nav-links a {
+  color: var(--azul1, #00405a);
+}
+nav.top.scrolled .btn {
+  background: var(--laranja, #E8672A);
+  color: #fff;
 }
 </style>
 </head>
