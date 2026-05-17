@@ -1102,6 +1102,429 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
   .sticky-cta-bar a:first-child{font-size:13px !important}
 }
 </style>
+
+<style id="sunset-dj-css-old">
+/* ===== SUNSET DJ TOMMAX SECTION ===== */
+.sunset-dj-section {
+  padding: 5rem 1.5rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.sunset-dj-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(ellipse at 70% 30%, rgba(255,140,0,0.15) 0%, transparent 60%),
+              radial-gradient(ellipse at 30% 80%, rgba(255,69,0,0.10) 0%, transparent 50%);
+  pointer-events: none;
+}
+.sunset-dj-section .sec-head {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.sunset-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff8c00, #ff4500);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+.sunset-dj-section h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.sunset-dj-section .lede {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.85);
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+.sunset-dicas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.sunset-dica {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+  padding: 1.75rem 1.5rem;
+  transition: transform 0.2s, background 0.2s;
+}
+.sunset-dica:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.11);
+}
+.sunset-dica-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+.sunset-dica h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffd700;
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+}
+.sunset-dica p {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.82);
+  line-height: 1.65;
+  margin: 0;
+}
+.sunset-cta-block {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,140,0,0.3);
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  position: relative;
+}
+.sunset-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 2rem;
+  margin-bottom: 1.75rem;
+}
+.sunset-info-item {
+  font-size: 0.92rem;
+  color: rgba(255,255,255,0.9);
+  font-weight: 500;
+}
+.sunset-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+.sunset-ctas .btn-primary {
+  background: linear-gradient(135deg, #ff8c00, #ff4500);
+  color: #fff;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+  display: inline-block;
+}
+.sunset-ctas .btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+.sunset-ctas .btn-secondary {
+  background: transparent;
+  color: #ffd700;
+  border: 2px solid #ffd700;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  display: inline-block;
+}
+.sunset-ctas .btn-secondary:hover {
+  background: #ffd700;
+  color: #1a1a2e;
+  transform: translateY(-2px);
+}
+.sunset-disclaimer {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.55);
+  margin: 0;
+  line-height: 1.5;
+}
+.sunset-disclaimer a {
+  color: rgba(255,255,255,0.75);
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .sunset-dj-section { padding: 3rem 1rem; }
+  .sunset-cta-block { padding: 1.5rem 1rem; }
+  .sunset-info { flex-direction: column; align-items: center; gap: 0.5rem; }
+  .sunset-ctas { flex-direction: column; align-items: center; }
+  .sunset-ctas .btn-primary,
+  .sunset-ctas .btn-secondary { width: 100%; text-align: center; }
+}
+</style>
+
+<style id="sunset-dj-css">
+/* ===== SUNSET NO PARQUE — DJ TOMMAX ===== */
+.sunset-dj-section {
+  padding: 5rem 1.5rem;
+  background: linear-gradient(160deg, #0d1b2a 0%, #1a2e45 45%, #0f3460 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.sunset-dj-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 75% 20%, rgba(255,120,0,0.18) 0%, transparent 55%),
+    radial-gradient(ellipse at 25% 85%, rgba(255,60,0,0.10) 0%, transparent 50%);
+  pointer-events: none;
+}
+.sunset-dj-section .wrap { position: relative; }
+.sunset-dj-section .sec-head { text-align: center; margin-bottom: 3rem; }
+.sunset-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff8c00, #e84000);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.38rem 1.1rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+.sunset-dj-section h2 {
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
+  color: #fff;
+  margin-bottom: 0.9rem;
+  line-height: 1.2;
+}
+.sunset-dj-section .lede {
+  font-size: 1.08rem;
+  color: rgba(255,255,255,0.82);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+/* Hero foto + info */
+.sunset-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+.sunset-hero-photo {
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+.sunset-hero-photo img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+.sunset-info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.sunset-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+  padding: 1.1rem 1.25rem;
+}
+.sunset-info-icon { font-size: 1.5rem; flex-shrink: 0; margin-top: 2px; }
+.sunset-info-text h4 {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffd700;
+  margin: 0 0 0.3rem;
+}
+.sunset-info-text p {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.85);
+  margin: 0;
+  line-height: 1.5;
+}
+/* Dicas grid */
+.sunset-dicas-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffd700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.03em;
+}
+.sunset-dicas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+.sunset-dica {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.11);
+  border-radius: 16px;
+  padding: 1.6rem 1.4rem;
+  transition: transform 0.2s, background 0.2s;
+}
+.sunset-dica:hover { transform: translateY(-4px); background: rgba(255,255,255,0.10); }
+.sunset-dica-icon { font-size: 1.9rem; margin-bottom: 0.7rem; }
+.sunset-dica h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffd700;
+  margin-bottom: 0.55rem;
+  line-height: 1.3;
+}
+.sunset-dica p {
+  font-size: 0.93rem;
+  color: rgba(255,255,255,0.80);
+  line-height: 1.65;
+  margin: 0;
+}
+/* Galeria de fotos */
+.sunset-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.sunset-gallery-item {
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+.sunset-gallery-item img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform 0.4s;
+}
+.sunset-gallery-item:hover img { transform: scale(1.05); }
+/* CTA block */
+.sunset-cta-block {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,140,0,0.35);
+  border-radius: 20px;
+  padding: 2.25rem 2.5rem;
+  text-align: center;
+}
+.sunset-cta-block p.sunset-intro {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.85);
+  margin: 0 0 1.5rem;
+  line-height: 1.65;
+}
+.sunset-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+.sunset-ctas .btn-sunset-primary {
+  background: linear-gradient(135deg, #ff8c00, #e84000);
+  color: #fff;
+  padding: 0.9rem 2.2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.97rem;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+  display: inline-block;
+  box-shadow: 0 4px 20px rgba(255,100,0,0.4);
+}
+.sunset-ctas .btn-sunset-primary:hover { opacity: 0.9; transform: translateY(-2px); }
+.sunset-ctas .btn-sunset-secondary {
+  background: transparent;
+  color: #ffd700;
+  border: 2px solid #ffd700;
+  padding: 0.9rem 2.2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.97rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  display: inline-block;
+}
+.sunset-ctas .btn-sunset-secondary:hover { background: #ffd700; color: #0d1b2a; transform: translateY(-2px); }
+.sunset-disclaimer {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  margin: 0;
+  line-height: 1.6;
+}
+.sunset-disclaimer a { color: rgba(255,255,255,0.7); text-decoration: underline; }
+@media (max-width: 768px) {
+  .sunset-hero-grid { grid-template-columns: 1fr; }
+  .sunset-gallery { grid-template-columns: repeat(2, 1fr); }
+  .sunset-gallery-item:last-child { display: none; }
+}
+@media (max-width: 600px) {
+  .sunset-dj-section { padding: 3rem 1rem; }
+  .sunset-cta-block { padding: 1.5rem 1rem; }
+  .sunset-ctas { flex-direction: column; align-items: center; }
+  .sunset-ctas .btn-sunset-primary,
+  .sunset-ctas .btn-sunset-secondary { width: 100%; text-align: center; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Sunset at the Park with DJ Tommax — Parque Bondinho Sugarloaf Mountain",
+  "description": "Live DJ set by DJ Tommax at Jardim dos Discos, Morro da Urca, Parque Bondinho Sugarloaf Mountain. Panoramic sunset, included in the ticket. Embaixada Carioca is steps from the stage, serving Picanha Cheeseburger, award-winning caipirinhas and Heineken draught.",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "startDate": "2026-05-06T15:30:00-03:00",
+  "endDate": "2026-05-06T17:00:00-03:00",
+  "location": {
+    "@type": "Place",
+    "name": "Jardim dos Discos — Parque Bondinho Sugarloaf Mountain, Morro da Urca",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Pasteur, 520 — Morro da Urca",
+      "addressLocality": "Rio de Janeiro",
+      "addressRegion": "RJ",
+      "postalCode": "22291-100",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -22.9487,
+      "longitude": -43.1571
+    }
+  },
+  "performer": {
+    "@type": "Person",
+    "name": "DJ Tommax",
+    "sameAs": "https://www.instagram.com/iamtommax/"
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "Parque Bondinho Pão de Açúcar",
+    "url": "https://www.bondinho.com.br",
+    "sameAs": "https://www.instagram.com/parquebondinho/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "name": "Included in the Bondinho ticket",
+    "description": "Sunset at the Park with DJ Tommax is included in the regular Parque Bondinho Sugarloaf Mountain ticket",
+    "url": "https://www.bondinho.com.br",
+    "availability": "https://schema.org/InStock"
+  },
+  "image": "https://www.embaixadacarioca.com/assets/sunset-dj-tommax-drink.webp",
+  "url": "https://www.embaixadacarioca.com/en/#sunset-dj"
+}
+</script>
 </head>
 <body data-screen-label="Home">
 <a href="#main-content" class="skip-nav">Skip to main content</a>
@@ -1475,6 +1898,155 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
     </div>
   </div>
 </section>
+
+
+<!-- SUNSET AT THE PARK WITH DJ TOMMAX -->
+<section id="sunset-dj" class="sunset-dj-section">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num"><span class="sunset-badge">🎶 Special Event · Included in the Ticket</span></div>
+      <h2>Sunset at the Park <span class="serif">with DJ Tommax</span></h2>
+      <p class="lede">
+        The late afternoon at the top of <strong>Morro da Urca</strong> became an event.
+        <strong>DJ Tommax</strong> takes over the decks at the <em>Jardim dos Discos</em> with
+        panoramic views of Sugarloaf Mountain — and Embaixada Carioca is just steps from the stage,
+        with tables, drinks and the best Picanha Cheeseburger in Rio.
+      </p>
+    </div>
+
+    <!-- Hero: main photo + essential info -->
+    <div class="sunset-hero-grid">
+      <div class="sunset-hero-photo">
+        <img
+          src="/assets/sunset-dj-tommax-drink.webp"
+          alt="DJ Tommax at the Embaixada Carioca booth with a drink during Sunset at Parque Bondinho Sugarloaf Mountain, Morro da Urca, Rio de Janeiro"
+          width="825" height="1100"
+          loading="lazy" decoding="async"
+        />
+      </div>
+      <div class="sunset-info-box">
+        <div class="sunset-info-item">
+          <div class="sunset-info-icon">📍</div>
+          <div class="sunset-info-text">
+            <h4>Where</h4>
+            <p>Jardim dos Discos, Morro da Urca<br>Parque Bondinho Sugarloaf Mountain<br>Av. Pasteur, 520 — Urca, Rio de Janeiro</p>
+          </div>
+        </div>
+        <div class="sunset-info-item">
+          <div class="sunset-info-icon">🕒</div>
+          <div class="sunset-info-text">
+            <h4>Time</h4>
+            <p>From <strong>3:30–5:00 PM</strong> or <strong>4:30–6:00 PM</strong><br>depending on the monthly schedule</p>
+          </div>
+        </div>
+        <div class="sunset-info-item">
+          <div class="sunset-info-icon">🎟️</div>
+          <div class="sunset-info-text">
+            <h4>Ticket</h4>
+            <p><strong>Included in the regular Bondinho ticket.</strong><br>Discounts available for Rio residents (Bilhete Carioca Maravilha).</p>
+          </div>
+        </div>
+        <div class="sunset-info-item">
+          <div class="sunset-info-icon">🎧</div>
+          <div class="sunset-info-text">
+            <h4>Artist</h4>
+            <p><strong>DJ and producer TOMMAX</strong> — a regular presence on the decks with electronic music and 360° views.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tips -->
+    <p class="sunset-dicas-title">🍔 Embaixada tips to make the most of the Sunset</p>
+    <div class="sunset-dicas-grid">
+      <div class="sunset-dica">
+        <div class="sunset-dica-icon">⏰</div>
+        <h3>Arrive early — skip the queue</h3>
+        <p>
+          On DJ Sunset days, the park fills up fast. Arrive at least
+          <strong>1h30 before the show</strong> to go up without waiting,
+          secure the best table with a view and enjoy the sunset at your own pace.
+        </p>
+      </div>
+      <div class="sunset-dica">
+        <div class="sunset-dica-icon">🍔</div>
+        <h3>Picanha Cheeseburger</h3>
+        <p>
+          Order the <strong>Embaixada Picanha Cheeseburger</strong>: made with
+          Brazil's noblest cut of beef, grilled to order, melted cheese and
+          artisan bread. The perfect dish to enjoy the show.
+        </p>
+      </div>
+      <div class="sunset-dica">
+        <div class="sunset-dica-icon">🍹</div>
+        <h3>Award-winning caipirinha</h3>
+        <p>
+          Our <strong>caipirinha with award-winning Magnífica cachaça</strong> is
+          made fresh with squeezed lime. Paired with DJ Tommax's set and the
+          front-row view of Sugarloaf, it's Rio's most complete experience.
+        </p>
+      </div>
+      <div class="sunset-dica">
+        <div class="sunset-dica-icon">🍺</div>
+        <h3>Heineken draught — 2nd best in Brazil</h3>
+        <p>
+          Prefer beer? Our <strong>Heineken draught</strong> is ranked
+          <em>2nd best in Brazil</em> and the best in the city — ice-cold,
+          creamy and served at the perfect temperature for the show.
+        </p>
+      </div>
+    </div>
+
+    <!-- Photo gallery -->
+    <div class="sunset-gallery">
+      <div class="sunset-gallery-item">
+        <img
+          src="/assets/sunset-dj-tommax-cabine.webp"
+          alt="DJ Tommax at the decks during Sunset at Parque Bondinho, Morro da Urca, Rio de Janeiro"
+          width="825" height="1100" loading="lazy" decoding="async"
+        />
+      </div>
+      <div class="sunset-gallery-item">
+        <img
+          src="/assets/sunset-dj-tommax-multidao.webp"
+          alt="Crowd enjoying Sunset at the Park with DJ Tommax at Morro da Urca, Parque Bondinho Sugarloaf Mountain"
+          width="619" height="1100" loading="lazy" decoding="async"
+        />
+      </div>
+      <div class="sunset-gallery-item">
+        <img
+          src="/assets/sunset-parque-por-do-sol.webp"
+          alt="Orange sunset at Parque Bondinho Sugarloaf Mountain, Morro da Urca, Rio de Janeiro"
+          width="619" height="1100" loading="lazy" decoding="async"
+        />
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="sunset-cta-block">
+      <p class="sunset-intro">
+        Book your table at Embaixada Carioca before the show. Arrive early, eat well
+        and enjoy the best sunset in Rio de Janeiro with DJ Tommax's soundtrack.
+      </p>
+      <div class="sunset-ctas">
+        <a href="https://go.tagme.com.br/embaixadacarioca" class="btn-sunset-primary" target="_blank" rel="noopener">
+          Book a table for the Sunset →
+        </a>
+        <a href="https://www.instagram.com/iamtommax/" class="btn-sunset-secondary" target="_blank" rel="noopener">
+          See DJ Tommax's schedule
+        </a>
+      </div>
+      <p class="sunset-disclaimer">
+        * Schedule subject to change. Always check
+        <a href="https://www.instagram.com/parquebondinho/" target="_blank" rel="noopener">@parquebondinho</a>
+        and <a href="https://www.instagram.com/iamtommax/" target="_blank" rel="noopener">@iamtommax</a>
+        for updated dates and times. Tickets available at the
+        <a href="https://www.bondinho.com.br" target="_blank" rel="noopener">official Bondinho website</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
 
 <!-- EVENTOS PRIVADOS B2B -->
 <section id="eventos" class="eventos">
