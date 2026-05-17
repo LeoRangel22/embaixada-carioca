@@ -223,7 +223,296 @@ section:nth-child(even) { background: rgba(0,64,90,0.03); }
 .mobile-bottom-nav a.bnav-reservar { background: var(--amarelo); color: var(--azul1); }
 .bnav-icon { font-size: 20px; line-height: 1; }
 @media (max-width: 720px) { .mobile-bottom-nav { display: block; } body { padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px)); } :root { --gutter: 20px; } section { padding: 64px 0; } .feijoada-hero-card { grid-template-columns: 1fr; gap: 40px; } .faq-question { padding: 18px 20px; font-size: 15px; } .faq-answer p { padding: 16px 20px; } }
-</style>
+
+    /* ── PARCERIA ACADEMIA DA CACHAÇA ── */
+    .parceria-hero {
+      background: linear-gradient(135deg, #0d2218 0%, #1a3a2a 60%, #0f2a1e 100%);
+      padding: 96px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .parceria-hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(201,169,39,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .parceria-hero .wrap { position: relative; z-index: 1; }
+    .parceria-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(201,169,39,0.15);
+      border: 1px solid rgba(201,169,39,0.4);
+      color: #f0c040;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 28px;
+    }
+    .parceria-badge::before {
+      content: '★';
+      font-size: 10px;
+    }
+    .parceria-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .parceria-split-text h2 {
+      font-size: clamp(28px, 4vw, 44px);
+      color: #fff;
+      line-height: 1.2;
+      margin: 0 0 20px;
+    }
+    .parceria-split-text h2 em {
+      font-style: normal;
+      color: #f0c040;
+    }
+    .parceria-split-text p {
+      color: rgba(255,255,255,0.8);
+      font-size: 17px;
+      line-height: 1.75;
+      margin: 0 0 20px;
+    }
+    .parceria-split-text p:last-of-type { margin-bottom: 32px; }
+    .parceria-premios {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .parceria-premio {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.9);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 6px;
+    }
+    .parceria-premio .icon { font-size: 14px; }
+    .parceria-split-img {
+      position: relative;
+    }
+    .parceria-split-img img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      border-radius: 16px;
+      display: block;
+    }
+    .parceria-split-img-caption {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      right: 16px;
+      background: rgba(0,0,0,0.65);
+      backdrop-filter: blur(8px);
+      color: rgba(255,255,255,0.9);
+      font-size: 12px;
+      padding: 8px 14px;
+      border-radius: 8px;
+    }
+    /* Galeria de fotos Academia */
+    .academia-galeria {
+      padding: 80px 0;
+      background: var(--areia-pale);
+    }
+    .academia-galeria .sec-head { margin-bottom: 48px; }
+    .galeria-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto auto;
+      gap: 12px;
+    }
+    .galeria-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .galeria-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .galeria-item:hover img { transform: scale(1.05); }
+    .galeria-item.tall img { height: 452px; }
+    .galeria-item.wide {
+      grid-column: span 2;
+    }
+    .galeria-item.wide img { height: 280px; }
+    .galeria-overlay {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.7));
+      color: #fff;
+      font-size: 12px;
+      padding: 24px 14px 12px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .galeria-item:hover .galeria-overlay { opacity: 1; }
+    /* Cards de unidades */
+    .academia-unidades {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .unidades-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 48px;
+    }
+    .unidade-card {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--rule);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .unidade-card:hover {
+      box-shadow: 0 16px 48px rgba(0,64,90,0.12);
+      transform: translateY(-4px);
+    }
+    .unidade-card-img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+    }
+    .unidade-card-body {
+      padding: 28px;
+    }
+    .unidade-badge {
+      display: inline-block;
+      background: var(--areia);
+      color: var(--azul1);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 4px;
+      margin-bottom: 14px;
+    }
+    .unidade-card-body h3 {
+      font-size: 20px;
+      color: var(--azul1);
+      margin: 0 0 8px;
+    }
+    .unidade-card-body .unidade-endereco {
+      font-size: 14px;
+      color: var(--cinza1);
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .unidade-info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px;
+    }
+    .unidade-info-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--cinza1);
+      padding: 7px 0;
+      border-bottom: 1px solid rgba(0,64,90,0.06);
+      line-height: 1.5;
+    }
+    .unidade-info-list li:last-child { border-bottom: none; }
+    .unidade-info-list .info-icon {
+      font-size: 15px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .unidade-info-list strong { color: var(--azul1); }
+    .unidade-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .unidade-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--azul1);
+      border: 1.5px solid var(--rule);
+      padding: 7px 14px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .unidade-link:hover {
+      background: var(--areia-pale);
+      border-color: var(--azul2);
+    }
+    .unidade-link.wa {
+      background: #25d366;
+      border-color: #25d366;
+      color: #fff;
+    }
+    .unidade-link.wa:hover { background: #1ebe5d; }
+    /* Convite final */
+    .parceria-cta-banner {
+      background: var(--azul1);
+      padding: 72px 0;
+      text-align: center;
+    }
+    .parceria-cta-banner h2 {
+      color: #fff;
+      font-size: clamp(22px, 3.5vw, 38px);
+      margin: 0 0 16px;
+    }
+    .parceria-cta-banner h2 em {
+      font-style: normal;
+      color: var(--amarelo);
+    }
+    .parceria-cta-banner p {
+      color: rgba(255,255,255,0.75);
+      font-size: 17px;
+      max-width: 560px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+    .parceria-cta-banner .btn-group {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    /* Responsivo */
+    @media (max-width: 900px) {
+      .parceria-split { grid-template-columns: 1fr; gap: 40px; }
+      .parceria-split-img { order: -1; }
+      .parceria-split-img img { height: 300px; }
+      .galeria-grid { grid-template-columns: repeat(2, 1fr); }
+      .galeria-item.tall img { height: 220px; }
+      .galeria-item.wide { grid-column: span 1; }
+      .unidades-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .galeria-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+      .galeria-item img { height: 160px; }
+      .galeria-item.wide img { height: 160px; }
+    }
+
+  </style>
 </head>
 <body>
 
@@ -350,6 +639,209 @@ section:nth-child(even) { background: rgba(0,64,90,0.03); }
     </div>
   </section>
 
+  <!-- SECCIÓN 4.5: ASOCIACIÓN CON ACADEMIA DA CACHAÇA -->
+  <section class="parceria-hero" id="academia-cachaca" aria-label="Parceria com a Academia da Cachaça">
+    <div class="wrap">
+      <div class="parceria-badge">Asociación Exclusiva</div>
+      <div class="parceria-split">
+        <div class="parceria-split-text">
+          <h2>La Feijoada Más Premiada de Río,<br><em>Ahora en la Postal de la Ciudad.</em></h2>
+          <p>La legendaria feijoada de <strong style="color:#f0c040;">Academia da Cachaça</strong> — coronada como la Mejor Feijoada de Río por el premio <em>Veja Rio Comer &amp; Beber</em> y consagrada por <em>Prazeres da Mesa</em> — subió el Morro da Urca. A través de una asociación exclusiva, ahora puedes saborear esta verdadera institución carioca aquí en Embaixada Carioca, a 227 metros de altitud con una vista deslumbrante frente al Pan de Azúcar.</p>
+          <p>El banquete llega en una olla humeante con carnes nobles seleccionadas: carne seca, costillas, lomo de cerdo, paio y chorizo fino. Para completar la perfección, los acompañamientos clásicos: arroz blanco, col salteada, farofa crujiente, rodajas de naranja y el famoso <strong style="color:#f0c040;">"melzinho"</strong> — nuestro irresistible shot de cachaça con miel para abrir el apetito.</p>
+          <div class="parceria-premios">
+            <span class="parceria-premio"><span class="icon">🏆</span> Veja Rio Comer &amp; Beber</span>
+            <span class="parceria-premio"><span class="icon">🥇</span> Prazeres da Mesa</span>
+            <span class="parceria-premio"><span class="icon">📅</span> Todos os dias</span>
+            <span class="parceria-premio"><span class="icon">👥</span> Para 2 pessoas — R$ 189,70</span>
+          </div>
+          <a href="https://go.tagme.com.br/embaixadacarioca" class="btn" rel="noopener" target="_blank">Reservar mesa →</a>
+        </div>
+        <div class="parceria-split-img">
+          <img
+            src="assets/academia/academia-cachaca-feijoada-panela-barro.jpg"
+            alt="Feijoada da Academia da Cachaça em panela de barro — a melhor feijoada do Rio de Janeiro, servida na Embaixada Carioca no Morro da Urca"
+            width="1200" height="799"
+            loading="lazy"
+          >
+          <div class="parceria-split-img-caption">Feijoada da Academia da Cachaça — foto: Rodrigo Azevedo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 4.6: GALERÍA ACADEMIA DA CACHAÇA -->
+  <section class="academia-galeria" aria-label="Galeria Academia da Cachaça">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="num"><b>05</b> Academia da Cachaça</div>
+        <h2>40 años de tradición <span class="serif">carioca.</span></h2>
+        <p class="lede">Una institución gastronómica que celebra la cultura brasileña con la mayor carta de destilados de la ciudad y la coctelería más premiada de Río.</p>
+      </div>
+      <div class="galeria-grid">
+        <!-- Linha 1: 1 tall + 3 normais -->
+        <div class="galeria-item tall" style="grid-row: span 2;">
+          <img
+            src="assets/academia/academia-cachaca-feijoada-acompanhamentos.jpg"
+            alt="Feijoada da Academia da Cachaça com acompanhamentos completos — arroz, couve, farofa e laranja"
+            width="800" height="1200" loading="lazy"
+          >
+          <div class="galeria-overlay">Feijoada completa con acompañamientos</div>
+        </div>
+        <div class="galeria-item">
+          <img
+            src="assets/academia/academia-cachaca-varias-caipirinhas.jpg"
+            alt="Várias caipirinhas da Academia da Cachaça — a caipirinha mais premiada do Brasil"
+            width="1200" height="744" loading="lazy"
+          >
+          <div class="galeria-overlay">Caipirinhas premiadas</div>
+        </div>
+        <div class="galeria-item">
+          <img
+            src="assets/academia/academia-cachaca-leblon-varanda.jpg"
+            alt="Academia da Cachaça Leblon — varanda e ambiente externo"
+            width="1200" height="799" loading="lazy"
+          >
+          <div class="galeria-overlay">Local Leblon — terraza</div>
+        </div>
+        <div class="galeria-item">
+          <img
+            src="assets/academia/academia-cachaca-garrafas-destilados.jpg"
+            alt="Garrafas de cachaça artesanal da Academia da Cachaça — maior carta de destilados do Rio"
+            width="1200" height="670" loading="lazy"
+          >
+          <div class="galeria-overlay">Mayor carta de destilados de Río</div>
+        </div>
+        <!-- Linha 2: 3 normais (a tall já ocupa) -->
+        <div class="galeria-item">
+          <img
+            src="assets/academia/academia-cachaca-trio-caipirinhas.jpg"
+            alt="Trío de caipirinhas da Academia da Cachaça — sabores clássicos e especiais"
+            width="800" height="1200" loading="lazy"
+          >
+          <div class="galeria-overlay">Trío de caipirinhas</div>
+        </div>
+        <div class="galeria-item">
+          <img
+            src="assets/academia/academia-cachaca-batidas-bandeja.jpg"
+            alt="Batidas en bandeja da Academia da Cachaça — coquetelaria brasileira premiada"
+            width="800" height="1200" loading="lazy"
+          >
+          <div class="galeria-overlay">Batidas en bandeja</div>
+        </div>
+        <div class="galeria-item">
+          <img
+            src="assets/academia/academia-cachaca-leblon-salao.jpg"
+            alt="Academia da Cachaça Leblon — salão principal com clientes"
+            width="1200" height="799" loading="lazy"
+          >
+          <div class="galeria-overlay">Salón Leblon</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 4.7: LOCALES DE ACADEMIA DA CACHAÇA -->
+  <section class="academia-unidades" id="visite-academia" aria-label="Unidades da Academia da Cachaça">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="num"><b>06</b> Visita Academia da Cachaça</div>
+        <h2>Dos cimas de la <span class="serif">gastronomía carioca.</span></h2>
+        <p class="lede">Después de disfrutar la feijoada premiada aquí en Embaixada Carioca, recomendamos visitar las unidades de Academia da Cachaça — para celebrar cuatro décadas de tradición con una coctelería fantástica y la mayor carta de destilados de la ciudad.</p>
+      </div>
+      <div class="unidades-grid">
+        <!-- Unidade Leblon -->
+        <div class="unidade-card">
+          <img
+            class="unidade-card-img"
+            src="assets/academia/academia-cachaca-leblon-ambiente-interno.jpg"
+            alt="Academia da Cachaça Leblon — ambiente interno com decoração carioca, a unidade matriz histórica"
+            width="1000" height="750" loading="lazy"
+          >
+          <div class="unidade-card-body">
+            <span class="unidade-badge">📍 Leblon</span>
+            <h3>La Matriz Histórica</h3>
+            <p class="unidade-endereco">Rua Conde de Bernadotte, 26 — Lojas E a G, Leblon, Rio de Janeiro</p>
+            <ul class="unidade-info-list">
+              <li>
+                <span class="info-icon">🕐</span>
+                <span><strong>Horario:</strong> Seg–Qui 12h–00h · Sex–Sáb 12h–01h · Dom 12h–22h</span>
+              </li>
+              <li>
+                <span class="info-icon">📞</span>
+                <span><strong>Teléfono:</strong> (21) 2529-2680 / (21) 2239-1542</span>
+              </li>
+              <li>
+                <span class="info-icon">💬</span>
+                <span><strong>WhatsApp / Entregas:</strong> (21) 98450-1695</span>
+              </li>
+              <li>
+                <span class="info-icon">📸</span>
+                <span><strong>Instagram:</strong> @academiadacachaca</span>
+              </li>
+            </ul>
+            <div class="unidade-links">
+              <a href="https://www.academiadacachaca.com.br" class="unidade-link" target="_blank" rel="noopener">🌐 Sitio oficial</a>
+              <a href="https://wa.me/5521984501695" class="unidade-link wa" target="_blank" rel="noopener">💬 WhatsApp</a>
+              <a href="https://maps.google.com/?q=Rua+Conde+de+Bernadotte+26+Leblon+Rio+de+Janeiro" class="unidade-link" target="_blank" rel="noopener">📍 Ver en el mapa</a>
+            </div>
+          </div>
+        </div>
+        <!-- Unidade Barra -->
+        <div class="unidade-card">
+          <img
+            class="unidade-card-img"
+            src="assets/academia/academia-cachaca-barra-area-externa-noite.jpg"
+            alt="Academia da Cachaça Barra da Tijuca — área externa à noite, o Museu da Cachaça"
+            width="1200" height="799" loading="lazy"
+          >
+          <div class="unidade-card-body">
+            <span class="unidade-badge">📍 Barra da Tijuca</span>
+            <h3>El Museo de la Cachaça</h3>
+            <p class="unidade-endereco">Condado de Cascais — Av. Armando Lombardi, 800 (Av. Nuta James, 65 L), Barra da Tijuca, Rio de Janeiro</p>
+            <ul class="unidade-info-list">
+              <li>
+                <span class="info-icon">🕐</span>
+                <span><strong>Horario:</strong> Ter–Qui 12h–23h · Sex–Sáb 12h–00h · Dom 12h–19h <em>(Fechado às segundas)</em></span>
+              </li>
+              <li>
+                <span class="info-icon">📞</span>
+                <span><strong>Teléfono:</strong> (21) 2492-1159</span>
+              </li>
+              <li>
+                <span class="info-icon">💬</span>
+                <span><strong>WhatsApp / Entregas:</strong> (21) 98450-1711</span>
+              </li>
+              <li>
+                <span class="info-icon">📸</span>
+                <span><strong>Instagram:</strong> @academiadacachaca</span>
+              </li>
+            </ul>
+            <div class="unidade-links">
+              <a href="https://www.academiadacachaca.com.br" class="unidade-link" target="_blank" rel="noopener">🌐 Sitio oficial</a>
+              <a href="https://wa.me/5521984501711" class="unidade-link wa" target="_blank" rel="noopener">💬 WhatsApp</a>
+              <a href="https://maps.google.com/?q=Av+Armando+Lombardi+800+Barra+da+Tijuca+Rio+de+Janeiro" class="unidade-link" target="_blank" rel="noopener">📍 Ver en el mapa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 4.8: BANNER DE INVITACIÓN FINAL -->
+  <section class="parceria-cta-banner" aria-label="Convite para a experiência completa">
+    <div class="wrap">
+      <h2>Vive la <em>Experiencia Carioca Completa.</em></h2>
+      <p>Aprovecha el paseo en teleférico para almorzar en las alturas en Embaixada Carioca — y luego sumérgete aún más en la cultura nacional visitando Academia da Cachaça. Dos cimas de la gastronomía carioca esperándote.</p>
+      <div class="btn-group">
+        <a href="https://go.tagme.com.br/embaixadacarioca" class="btn" target="_blank" rel="noopener">Reservar en Embaixada →</a>
+        <a href="https://www.academiadacachaca.com.br" class="btn ghost" target="_blank" rel="noopener">Conocer Academia da Cachaça →</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
   <!-- SECCIÓN 4: INSTAGRAM REEL -->
   <section style="background: var(--azul1); padding: 80px 0; text-align: center;">
     <div class="wrap">
@@ -383,6 +875,11 @@ section:nth-child(even) { background: rgba(0,64,90,0.03); }
         <h2>Todo sobre la <span class="serif">feijoada premiada.</span></h2>
       </div>
       <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-question">¿Cuál es la relación entre Embaixada Carioca y Academia da Cachaça?<span class="faq-icon">+</span></div>
+          <div class="faq-answer"><p>Embaixada Carioca sirve la feijoada de <strong>Academia da Cachaça</strong> a través de una asociación exclusiva. Academia da Cachaça es una institución gastronómica carioca con más de 40 años de tradición, elegida por el premio <em>Veja Rio Comer &amp; Beber</em> como la mejor feijoada de Río y consagrada por la revista <em>Prazeres da Mesa</em> como la mejor de Brasil. Sus unidades están en Leblon (la matriz histórica) y en Barra da Tijuca (el Museo de la Cachaça).</p></div>
+        </div>
+
         <div class="faq-item"><div class="faq-question">¿La feijoada se sirve todos los días?<span class="faq-icon">+</span></div><div class="faq-answer"><p>Sí. La feijoada premiada de Embaixada Carioca se sirve <strong>todos los días</strong>, de 11:30 a 17:00 — a diferencia de la tradición brasileña de servirla solo los sábados. Es la única feijoada con vista panorámica al Pan de Azúcar, a 227 metros de altitud en el Morro da Urca.</p></div></div>
         <div class="faq-item"><div class="faq-question">¿Cuál es la mejor feijoada de Río de Janeiro?<span class="faq-icon">+</span></div><div class="faq-answer"><p>La feijoada de la Academia da Cachaça, servida en Embaixada Carioca, fue elegida la <strong>mejor feijoada de Brasil</strong> por la Revista Prazeres da Mesa. Se prepara con charque, costilla de cerdo, lomo de cerdo, chorizo y salchicha ahumada en una olla de barro.</p></div></div>
         <div class="faq-item"><div class="faq-question">¿Cuánto cuesta la feijoada?<span class="faq-icon">+</span></div><div class="faq-answer"><p>La feijoada de la Academia da Cachaça cuesta <strong>R$ 189,70</strong> y es para 2 personas. Incluye charque, costilla, lomo, chorizo y salchicha, servidos con arroz, col rizada, harina de mandioca, naranja y la miel de la casa.</p></div></div>
