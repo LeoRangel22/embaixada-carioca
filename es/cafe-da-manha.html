@@ -2960,11 +2960,14 @@ footer.foot {
 <script src="/assets/geo-proximity.js" defer></script>
 
 <style id="bnav-color-fix">
-/* ── BOTTOM NAV: cor final garantida ─────────────────────────────────── */
+/* ── BOTTOM NAV: cor final garantida (inclui :visited) ─────────────── */
 body .mobile-bottom-nav { background: #00405A !important; }
-body .mobile-bottom-nav a { color: rgba(245,237,214,0.82) !important; }
+body .mobile-bottom-nav a,
+body .mobile-bottom-nav a:visited,
+body .mobile-bottom-nav a:link { color: rgba(245,237,214,0.82) !important; }
 body .mobile-bottom-nav .bnav-icon { color: rgba(245,237,214,0.82) !important; }
 body .mobile-bottom-nav a.bnav-reservar,
+body .mobile-bottom-nav a.bnav-reservar:visited,
 body .mobile-bottom-nav .bnav-reservar { background: #E8C547 !important; color: #00405A !important; }
 body .mobile-bottom-nav a.bnav-reservar .bnav-icon,
 body .mobile-bottom-nav .bnav-reservar .bnav-icon { color: #00405A !important; }
