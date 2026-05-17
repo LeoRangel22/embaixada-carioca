@@ -836,6 +836,11 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
   .lang-current { padding: 5px 8px; font-size: 11px; }
 }
 
+
+/* Fix: links visitados não devem mudar de cor no menu */
+a:visited { color: inherit; }
+.nav-links a:visited { color: inherit; opacity: 0.85; }
+nav .lang-dropdown a:visited { color: var(--azul1, #00405A); }
 </style>
 <link rel="preload" as="image" href="/assets/hero.jpg" fetchpriority="high" />
   <!-- PWA & Mobile Optimization -->  <meta name="apple-mobile-web-app-capable" content="yes" />

@@ -300,6 +300,11 @@ nav.top { position: fixed; top: 0; left: 0; right: 0; height: 72px; z-index: 900
 .related-card .tag { font-family: "JetBrains Mono", monospace; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--azul2); margin-bottom: 10px; display: block; }
 .related-card h3 { font-size: 16px; font-weight: 700; margin: 0 0 8px; color: var(--azul1); line-height: 1.3; }
 .related-card p { font-size: 13px; color: var(--cinza2); margin: 0; line-height: 1.5; }
+
+/* Fix: links visitados não devem mudar de cor no menu */
+a:visited { color: inherit; }
+.nav-links a:visited { color: inherit; opacity: 0.85; }
+nav .lang-dropdown a:visited { color: var(--azul1, #00405A); }
 </style>
 </head>
 <body>

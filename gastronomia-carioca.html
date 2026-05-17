@@ -705,6 +705,11 @@ a, button, [role="button"], .btn, .nav-hamburger, .bottom-nav-item, .lang-btn {
 input, select, textarea {
   touch-action: pan-y;
 }
+
+/* Fix: links visitados não devem mudar de cor no menu */
+a:visited { color: inherit; }
+.nav-links a:visited { color: inherit; opacity: 0.85; }
+nav .lang-dropdown a:visited { color: var(--azul1, #00405A); }
 </style>
   <link rel="preload" as="image" href="/assets/hero-bg.webp" fetchpriority="high">
 
