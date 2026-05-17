@@ -63,7 +63,7 @@
     {
       "@type": "Service",
       "name": "Eventos Corporativos com Vista Panorâmica",
-      "provider": {"@id":"https://www.embaixadacarioca.com/#restaurant"},
+      "provider": {"@type":"Restaurant","@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca"},
       "areaServed": "Rio de Janeiro",
       "serviceType": "Corporate event venue",
       "description": "Reuniões executivas, almoços corporativos, lançamentos de marca, treinamentos e workshops com vista para o Pão de Açúcar."
@@ -71,7 +71,7 @@
     {
       "@type": "Service",
       "name": "Roteiros e Experiências para Agências de Viagens",
-      "provider": {"@id":"https://www.embaixadacarioca.com/#restaurant"},
+      "provider": {"@type":"Restaurant","@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca"},
       "areaServed": "Rio de Janeiro",
       "serviceType": "Travel agency partnership",
       "description": "Desayuno para grupos, entardecer premium, experiência VIP e feijoada premiada para grupos turísticos. Cardápio bilíngue PT/ESP."
@@ -966,6 +966,15 @@ nav .nav-links a:visited,
 nav .lang-dropdown a:visited {
   color: inherit !important;
 }
+
+/* ── NAV RATING BADGE: cor garantida após nav a:visited ── */
+nav.top .nav-rating-badge,
+nav.top .nav-rating-badge:visited,
+nav.top .nav-rating-badge:link,
+nav.top .nav-rating-badge:any-link { color: var(--areia-pale, #f6efde) !important; text-decoration: none !important; }
+nav.top.scrolled .nav-rating-badge,
+nav.top.scrolled .nav-rating-badge:visited,
+nav.top.scrolled .nav-rating-badge:link { color: var(--azul1, #00405a) !important; }
 
 /* ── MOBILE NAV FIX v2: cores corretas no mobile (nav superior + bottom nav) ── */
 @media (max-width: 720px) {
