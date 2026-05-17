@@ -2563,17 +2563,46 @@ footer.foot {
 <script src="/assets/geo-proximity.js" defer></script>
 
 <style id="bnav-color-fix">
-/* ── BOTTOM NAV: cor final garantida (inclui :visited) ─────────────── */
-body .mobile-bottom-nav { background: #00405A !important; }
-body .mobile-bottom-nav a,
-body .mobile-bottom-nav a:visited,
-body .mobile-bottom-nav a:link { color: rgba(245,237,214,0.82) !important; }
-body .mobile-bottom-nav .bnav-icon { color: rgba(245,237,214,0.82) !important; }
-body .mobile-bottom-nav a.bnav-reservar,
-body .mobile-bottom-nav a.bnav-reservar:visited,
-body .mobile-bottom-nav .bnav-reservar { background: #E8C547 !important; color: #00405A !important; }
-body .mobile-bottom-nav a.bnav-reservar .bnav-icon,
-body .mobile-bottom-nav .bnav-reservar .bnav-icon { color: #00405A !important; }
+/* ── BOTTOM NAV: cor final garantida (inclui :visited, forced-colors) ── */
+@layer bnav-override {
+  body .mobile-bottom-nav { background: #00405A !important; color-scheme: dark !important; }
+  body .mobile-bottom-nav a,
+  body .mobile-bottom-nav a:link,
+  body .mobile-bottom-nav a:visited,
+  body .mobile-bottom-nav a:active,
+  body .mobile-bottom-nav a:any-link { color: rgba(245,237,214,0.82) !important; -webkit-text-fill-color: rgba(245,237,214,0.82) !important; }
+  body .mobile-bottom-nav span.bnav-icon { color: rgba(245,237,214,0.82) !important; -webkit-text-fill-color: rgba(245,237,214,0.82) !important; }
+  body .mobile-bottom-nav a.bnav-reservar,
+  body .mobile-bottom-nav a.bnav-reservar:link,
+  body .mobile-bottom-nav a.bnav-reservar:visited { background: #E8C547 !important; color: #00405A !important; -webkit-text-fill-color: #00405A !important; }
+  body .mobile-bottom-nav a.bnav-reservar span.bnav-icon { color: #00405A !important; -webkit-text-fill-color: #00405A !important; }
+}
 </style>
+<script>
+(function(){
+  function fixBnav(){
+    var nav=document.querySelector('.mobile-bottom-nav');
+    if(!nav)return;
+    nav.style.setProperty('background','#00405A','important');
+    var links=nav.querySelectorAll('a:not(.bnav-reservar)');
+    links.forEach(function(a){
+      a.style.setProperty('color','rgba(245,237,214,0.82)','important');
+      a.style.setProperty('-webkit-text-fill-color','rgba(245,237,214,0.82)','important');
+      var icon=a.querySelector('.bnav-icon');
+      if(icon){icon.style.setProperty('color','rgba(245,237,214,0.82)','important');icon.style.setProperty('-webkit-text-fill-color','rgba(245,237,214,0.82)','important');}
+    });
+    var res=nav.querySelector('.bnav-reservar');
+    if(res){
+      res.style.setProperty('background','#E8C547','important');
+      res.style.setProperty('color','#00405A','important');
+      res.style.setProperty('-webkit-text-fill-color','#00405A','important');
+      var icon=res.querySelector('.bnav-icon');
+      if(icon){icon.style.setProperty('color','#00405A','important');icon.style.setProperty('-webkit-text-fill-color','#00405A','important');}
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',fixBnav);}else{fixBnav();}
+  window.addEventListener('load',fixBnav);
+})();
+</script>
 </body>
 </html>
