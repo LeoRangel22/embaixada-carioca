@@ -783,58 +783,85 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
     }
     .guia-copy-btn:hover { background: #d4a017; }
     .guia-destaque-ouro {
-      background: linear-gradient(135deg, #1a3a2a 0%, #0d2218 100%);
-      border-radius: 14px;
-      padding: 1.5rem;
+      background: linear-gradient(135deg, #0f2a1e 0%, #1a3a2a 100%);
+      border-radius: 16px;
+      padding: 1.6rem 1.8rem;
       margin-top: 1rem;
-      border-left: 4px solid #f5c842;
+      border: 1px solid rgba(245,200,66,0.25);
+      border-left: 4px solid #c9a227;
+      position: relative;
+      overflow: hidden;
     }
-    .guia-destaque-ouro p { color: #c8e6c8; font-size: 0.92rem; line-height: 1.6; margin: 0; }
-    .guia-destaque-ouro strong { color: #f5c842; }
+    .guia-destaque-ouro::before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 120px; height: 120px;
+      background: radial-gradient(circle at top right, rgba(201,162,39,0.12), transparent 70%);
+      pointer-events: none;
+    }
+    .guia-destaque-ouro p {
+      color: #d4e8d4;
+      font-size: 0.93rem;
+      line-height: 1.7;
+      margin: 0;
+      font-weight: 400;
+    }
+    .guia-destaque-ouro strong { color: #f0c040; font-weight: 600; }
     .guia-destaque-ouro a {
-      display: inline-block;
-      margin-top: 0.8rem;
-      background: linear-gradient(135deg, #b8860b, #d4a017);
-      color: #fff;
-      font-weight: 700;
-      font-size: 0.9rem;
-      padding: 0.6rem 1.5rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1.1rem;
+      background: transparent;
+      color: #f0c040;
+      font-weight: 600;
+      font-size: 0.88rem;
+      padding: 0.55rem 1.3rem;
       border-radius: 50px;
+      border: 1.5px solid rgba(240,192,64,0.6);
       text-decoration: none;
-      transition: transform 0.2s;
+      letter-spacing: 0.02em;
+      transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
     }
-    .guia-destaque-ouro a:hover { transform: translateY(-2px); }
+    .guia-destaque-ouro a:hover {
+      background: rgba(240,192,64,0.12);
+      border-color: #f0c040;
+      transform: translateY(-1px);
+    }
     .guia-lista-numerada {
-      counter-reset: guia-counter;
       list-style: none;
       padding: 0;
+      margin: 0;
     }
     .guia-lista-numerada li {
-      counter-increment: guia-counter;
-      display: flex;
+      display: grid;
+      grid-template-columns: 36px 1fr;
       gap: 1rem;
       align-items: flex-start;
-      padding: 1rem 0;
+      padding: 1.1rem 0;
       border-bottom: 1px solid rgba(0,64,90,0.08);
       font-size: 0.95rem;
       color: #333;
       line-height: 1.6;
     }
-    .guia-lista-numerada li::before {
-      content: counter(guia-counter);
+    .guia-lista-numerada li:last-child { border-bottom: none; }
+    .guia-lista-numerada li .guia-num {
       display: flex;
       align-items: center;
       justify-content: center;
-      min-width: 28px;
-      height: 28px;
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
       background: var(--verde, #2d7a3d);
       color: #fff;
       font-weight: 700;
-      font-size: 0.8rem;
+      font-size: 0.82rem;
       border-radius: 50%;
       flex-shrink: 0;
-      margin-top: 0.1rem;
+      margin-top: 0.15rem;
     }
+    .guia-lista-numerada li .guia-li-body { flex: 1; }
     .guia-lista-numerada li strong { color: #0d2a3a; }
     .guia-grid-2 {
       display: grid;
@@ -1862,11 +1889,11 @@ nav.top.scrolled {
 <p>Seja para comprar lembranças, fugir do calor com o ar-condicionado ou aproveitar o comércio de luxo, o Rio tem excelentes shoppings:</p>
 
 <ol class="guia-lista-numerada">
-  <li><strong>RioSul:</strong> O mais tradicional da cidade. Pela sua localização estratégica em Botafogo, é a opção mais prática para quem está hospedado na Zona Sul.</li>
-  <li><strong>Shopping Leblon:</strong> Super elegante, iluminado por claraboias naturais, conta com uma curadoria refinada de marcas, um teatro e fica colado ao polo gastronômico do bairro.</li>
-  <li><strong>BarraShopping:</strong> Um colosso na Zona Oeste. Muito mais que um shopping, é um complexo gigantesco de entretenimento, moda e serviços. Se você quer variedade absoluta, este é o lugar.</li>
-  <li><strong>VillageMall:</strong> Foco total no mercado de luxo e grifes internacionais, também localizado na Barra da Tijuca.</li>
-  <li><strong>Botafogo Praia Shopping:</strong> Conhecido carinhosamente como o shopping da vista. Suas janelas e escadas rolantes entregam uma visão espetacular da Enseada de Botafogo e do Pão de Açúcar.</li>
+  <li><span class="guia-num">1</span><div class="guia-li-body"><strong>RioSul:</strong> O mais tradicional da cidade. Pela sua localização estratégica em Botafogo, é a opção mais prática para quem está hospedado na Zona Sul.</div></li>
+  <li><span class="guia-num">2</span><div class="guia-li-body"><strong>Shopping Leblon:</strong> Super elegante, iluminado por claraboias naturais, conta com uma curadoria refinada de marcas, um teatro e fica colado ao polo gastronômico do bairro.</div></li>
+  <li><span class="guia-num">3</span><div class="guia-li-body"><strong>BarraShopping:</strong> Um colosso na Zona Oeste. Muito mais que um shopping, é um complexo gigantesco de entretenimento, moda e serviços. Se você quer variedade absoluta, este é o lugar.</div></li>
+  <li><span class="guia-num">4</span><div class="guia-li-body"><strong>VillageMall:</strong> Foco total no mercado de luxo e grifes internacionais, também localizado na Barra da Tijuca.</div></li>
+  <li><span class="guia-num">5</span><div class="guia-li-body"><strong>Botafogo Praia Shopping:</strong> Conhecido carinhosamente como o shopping da vista. Suas janelas e escadas rolantes entregam uma visão espetacular da Enseada de Botafogo e do Pão de Açúcar.</div></li>
 </ol>
 
 <!-- MIRANTES -->
@@ -1920,12 +1947,12 @@ nav.top.scrolled {
 <p>Os <strong>melhores restaurantes do RJ</strong> se diferenciam por executar os grandes clássicos nacionais com perfeição:</p>
 
 <ol class="guia-lista-numerada">
-  <li><strong>A Picanha Perfeita:</strong> A rainha do churrasco. Na <strong>Embaixada Carioca</strong>, o corte técnico e a rigorosa selagem garantem a maciez que o turista tanto procura.</li>
-  <li><strong>O Escondidinho Original:</strong> A versão definitiva da cidade está na <strong>Academia da Cachaça</strong>. Um purê de mandioca extremamente cremoso, gratinado com queijo de coalho, escondendo carne-seca temperada.</li>
-  <li><strong>Picadinho Carioca:</strong> Cubos de carne no molho, farofa, banana e ovo poché. É um abraço em forma de comida. Servido diariamente na <strong>Embaixada</strong>, <strong>Cantina do MAM</strong> e <strong>Academia da Cachaça</strong>.</li>
-  <li><strong>Caldinho de Feijão:</strong> Servido bem quente, espesso e incrivelmente temperado na <strong>Academia da Cachaça</strong>. É a melhor forma de iniciar uma refeição.</li>
-  <li><strong>A Autêntica Feijoada:</strong> Rito de passagem nas tardes de sábado, acompanhada de torresmo, farofa e couve, preparada à perfeição na <strong>Academia da Cachaça</strong> e na <strong>Embaixada Carioca</strong>.</li>
-  <li><strong>Bolinho de Bacalhau &amp; Filé à Oswaldo Aranha:</strong> O primeiro é a herança de boteco portuguesa (frito sequinho e crocante). O segundo é a estrela carioca com muito alho frito na manteiga.</li>
+  <li><span class="guia-num">1</span><div class="guia-li-body"><strong>A Picanha Perfeita:</strong> A rainha do churrasco. Na <strong>Embaixada Carioca</strong>, o corte técnico e a rigorosa selagem garantem a maciez que o turista tanto procura.</div></li>
+  <li><span class="guia-num">2</span><div class="guia-li-body"><strong>O Escondidinho Original:</strong> A versão definitiva da cidade está na <strong>Academia da Cachaça</strong>. Um purê de mandioca extremamente cremoso, gratinado com queijo de coalho, escondendo carne-seca temperada.</div></li>
+  <li><span class="guia-num">3</span><div class="guia-li-body"><strong>Picadinho Carioca:</strong> Cubos de carne no molho, farofa, banana e ovo poché. É um abraço em forma de comida. Servido diariamente na <strong>Embaixada</strong>, <strong>Cantina do MAM</strong> e <strong>Academia da Cachaça</strong>.</div></li>
+  <li><span class="guia-num">4</span><div class="guia-li-body"><strong>Caldinho de Feijão:</strong> Servido bem quente, espesso e incrivelmente temperado na <strong>Academia da Cachaça</strong>. É a melhor forma de iniciar uma refeição.</div></li>
+  <li><span class="guia-num">5</span><div class="guia-li-body"><strong>A Autêntica Feijoada:</strong> Rito de passagem nas tardes de sábado, acompanhada de torresmo, farofa e couve, preparada à perfeição na <strong>Academia da Cachaça</strong> e na <strong>Embaixada Carioca</strong>.</div></li>
+  <li><span class="guia-num">6</span><div class="guia-li-body"><strong>Bolinho de Bacalhau &amp; Filé à Oswaldo Aranha:</strong> O primeiro é a herança de boteco portuguesa (frito sequinho e crocante). O segundo é a estrela carioca com muito alho frito na manteiga.</div></li>
 </ol>
 
 <!-- BEBIDAS -->
@@ -1935,12 +1962,12 @@ nav.top.scrolled {
 </div>
 
 <ol class="guia-lista-numerada">
-  <li><strong>Caipirinha (A Mais Premiada do Brasil):</strong> A verdadeira caipirinha brasileira exige técnica: limão macerado sem a casca amarga e muito gelo. A <strong>Academia da Cachaça</strong> ostenta com orgulho o título de ter a caipirinha mais premiada de todo o país.</li>
-  <li><strong>Chopp Estupidamente Gelado:</strong> Tirado na pressão e servido em pesadas canecas de 500ml, com aquele colarinho denso que protege a temperatura. A marca registrada da <strong>Embaixada Carioca</strong>.</li>
-  <li><strong>Vinhos Nacionais Premiados:</strong> A produção de vinhos no Brasil ganhou prêmios no mundo todo. Na <strong>Cantina do MAM</strong> e na <strong>Embaixada Carioca</strong>, as cartas focam em rótulos nacionais espetaculares.</li>
-  <li><strong>Batida de Coco:</strong> A alma doce do samba. Na <strong>Academia da Cachaça</strong>, a mistura da cachaça branca, leite condensado e coco batido atinge um equilíbrio perfeito.</li>
-  <li><strong>Água de Coco Gelada:</strong> A hidratação natural e obrigatória. Deguste-a perfeitamente resfriada nas alturas do Morro da Urca, apreciando a vista na <strong>Embaixada Carioca</strong>.</li>
-  <li><strong>Degustação de Cachaças:</strong> A <strong>Academia da Cachaça</strong> oferece verdadeiras viagens sensoriais através de suas réguas de degustação, com cachaças raras envelhecidas em barris de madeiras nativas.</li>
+  <li><span class="guia-num">1</span><div class="guia-li-body"><strong>Caipirinha (A Mais Premiada do Brasil):</strong> A verdadeira caipirinha brasileira exige técnica: limão macerado sem a casca amarga e muito gelo. A <strong>Academia da Cachaça</strong> ostenta com orgulho o título de ter a caipirinha mais premiada de todo o país.</div></li>
+  <li><span class="guia-num">2</span><div class="guia-li-body"><strong>Chopp Estupidamente Gelado:</strong> Tirado na pressão e servido em pesadas canecas de 500ml, com aquele colarinho denso que protege a temperatura. A marca registrada da <strong>Embaixada Carioca</strong>.</div></li>
+  <li><span class="guia-num">3</span><div class="guia-li-body"><strong>Vinhos Nacionais Premiados:</strong> A produção de vinhos no Brasil ganhou prêmios no mundo todo. Na <strong>Cantina do MAM</strong> e na <strong>Embaixada Carioca</strong>, as cartas focam em rótulos nacionais espetaculares.</div></li>
+  <li><span class="guia-num">4</span><div class="guia-li-body"><strong>Batida de Coco:</strong> A alma doce do samba. Na <strong>Academia da Cachaça</strong>, a mistura da cachaça branca, leite condensado e coco batido atinge um equilíbrio perfeito.</div></li>
+  <li><span class="guia-num">5</span><div class="guia-li-body"><strong>Água de Coco Gelada:</strong> A hidratação natural e obrigatória. Deguste-a perfeitamente resfriada nas alturas do Morro da Urca, apreciando a vista na <strong>Embaixada Carioca</strong>.</div></li>
+  <li><span class="guia-num">6</span><div class="guia-li-body"><strong>Degustação de Cachaças:</strong> A <strong>Academia da Cachaça</strong> oferece verdadeiras viagens sensoriais através de suas réguas de degustação, com cachaças raras envelhecidas em barris de madeiras nativas.</div></li>
 </ol>
 
 <!-- TOP RESTAURANTES -->
@@ -1951,34 +1978,34 @@ nav.top.scrolled {
 <p>As escolhas indispensáveis entre os <strong>Restaurantes no Rio de Janeiro</strong>:</p>
 
 <ol class="guia-lista-numerada">
-  <li>
+  <li><span class="guia-num">1</span><div class="guia-li-body">
     <div>
       <strong>Embaixada Carioca (Morro da Urca):</strong> Para quem busca o clássico <strong>Restaurante Morro da Urca</strong> com a vista mais deslumbrante do Rio. Carnes nobres, qualidade impecável e o cenário perfeito no cartão-postal da cidade.
       <div class="guia-endereco" style="margin-top:0.5rem;">📍 <code>Morro da Urca (Acesso pelo Bondinho) - Av. Pasteur, 520, RJ</code>
         <button class="guia-copy-btn" onclick="navigator.clipboard.writeText('Av. Pasteur, 520 - Urca, Rio de Janeiro - RJ')">📋 Copiar</button>
       </div>
     </div>
-  </li>
-  <li>
+  </div></li>
+  <li><span class="guia-num">2</span><div class="guia-li-body">
     <div>
       <strong>Academia da Cachaça (Leblon e Barra):</strong> O patrimônio cultural e afetivo do Rio. A autêntica culinária de raiz com a caipirinha mais prestigiada da nação. O roteiro obrigatório pós-praia.
       <div class="guia-endereco" style="margin-top:0.5rem;">📍 <code>Leblon: Rua Conde de Bernadotte, 26, RJ</code>
         <button class="guia-copy-btn" onclick="navigator.clipboard.writeText('Rua Conde de Bernadotte, 26 - Leblon, Rio de Janeiro - RJ')">📋 Copiar</button>
       </div>
     </div>
-  </li>
-  <li>
+  </div></li>
+  <li><span class="guia-num">3</span><div class="guia-li-body">
     <div>
       <strong>Cantina do MAM (Aterro do Flamengo):</strong> Excelência gastronômica envolta por arte e cultura. Uma joia localizada dentro dos jardins projetados por Burle Marx no complexo do Museu de Arte Moderna.
       <div class="guia-endereco" style="margin-top:0.5rem;">📍 <code>Av. Infante Dom Henrique, 85 - Parque do Flamengo, RJ</code>
         <button class="guia-copy-btn" onclick="navigator.clipboard.writeText('Av. Infante Dom Henrique, 85 - Parque do Flamengo, RJ')">📋 Copiar</button>
       </div>
     </div>
-  </li>
-  <li><strong>Confeitaria Colombo:</strong> Símbolo vivo da Belle Époque carioca, com seus imensos espelhos belgas. Famosa pelo seu chá da tarde no coração do Centro.</li>
-  <li><strong>Churrascaria Palace:</strong> O destino sagrado e tradicionalíssimo em Copacabana para a autêntica experiência do rodízio de carnes ininterrupto.</li>
-  <li><strong>Café Lamas:</strong> Patrimônio histórico de portas abertas desde 1874 no Flamengo. Reduto noturno de intelectuais, famoso pelos seus fartos e deliciosos filés servidos na madrugada.</li>
-  <li><strong>Garota de Ipanema:</strong> O bar de esquina imortalizado por Tom Jobim e Vinicius de Moraes. O lugar onde o Brasil exportou a Bossa Nova para o resto do mundo.</li>
+  </div></li>
+  <li><span class="guia-num">4</span><div class="guia-li-body"><strong>Confeitaria Colombo:</strong> Símbolo vivo da Belle Époque carioca, com seus imensos espelhos belgas. Famosa pelo seu chá da tarde no coração do Centro.</div></li>
+  <li><span class="guia-num">5</span><div class="guia-li-body"><strong>Churrascaria Palace:</strong> O destino sagrado e tradicionalíssimo em Copacabana para a autêntica experiência do rodízio de carnes ininterrupto.</div></li>
+  <li><span class="guia-num">6</span><div class="guia-li-body"><strong>Café Lamas:</strong> Patrimônio histórico de portas abertas desde 1874 no Flamengo. Reduto noturno de intelectuais, famoso pelos seus fartos e deliciosos filés servidos na madrugada.</div></li>
+  <li><span class="guia-num">7</span><div class="guia-li-body"><strong>Garota de Ipanema:</strong> O bar de esquina imortalizado por Tom Jobim e Vinicius de Moraes. O lugar onde o Brasil exportou a Bossa Nova para o resto do mundo.</div></li>
 </ol>
 
 <!-- CTA FINAL -->

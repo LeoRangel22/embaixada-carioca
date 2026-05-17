@@ -783,58 +783,85 @@ nav.top.scrolled .lang-current:hover { background: rgba(0,64,90,0.14); }
     }
     .guia-copy-btn:hover { background: #d4a017; }
     .guia-destaque-ouro {
-      background: linear-gradient(135deg, #1a3a2a 0%, #0d2218 100%);
-      border-radius: 14px;
-      padding: 1.5rem;
+      background: linear-gradient(135deg, #0f2a1e 0%, #1a3a2a 100%);
+      border-radius: 16px;
+      padding: 1.6rem 1.8rem;
       margin-top: 1rem;
-      border-left: 4px solid #f5c842;
+      border: 1px solid rgba(245,200,66,0.25);
+      border-left: 4px solid #c9a227;
+      position: relative;
+      overflow: hidden;
     }
-    .guia-destaque-ouro p { color: #c8e6c8; font-size: 0.92rem; line-height: 1.6; margin: 0; }
-    .guia-destaque-ouro strong { color: #f5c842; }
+    .guia-destaque-ouro::before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 120px; height: 120px;
+      background: radial-gradient(circle at top right, rgba(201,162,39,0.12), transparent 70%);
+      pointer-events: none;
+    }
+    .guia-destaque-ouro p {
+      color: #d4e8d4;
+      font-size: 0.93rem;
+      line-height: 1.7;
+      margin: 0;
+      font-weight: 400;
+    }
+    .guia-destaque-ouro strong { color: #f0c040; font-weight: 600; }
     .guia-destaque-ouro a {
-      display: inline-block;
-      margin-top: 0.8rem;
-      background: linear-gradient(135deg, #b8860b, #d4a017);
-      color: #fff;
-      font-weight: 700;
-      font-size: 0.9rem;
-      padding: 0.6rem 1.5rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1.1rem;
+      background: transparent;
+      color: #f0c040;
+      font-weight: 600;
+      font-size: 0.88rem;
+      padding: 0.55rem 1.3rem;
       border-radius: 50px;
+      border: 1.5px solid rgba(240,192,64,0.6);
       text-decoration: none;
-      transition: transform 0.2s;
+      letter-spacing: 0.02em;
+      transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
     }
-    .guia-destaque-ouro a:hover { transform: translateY(-2px); }
+    .guia-destaque-ouro a:hover {
+      background: rgba(240,192,64,0.12);
+      border-color: #f0c040;
+      transform: translateY(-1px);
+    }
     .guia-lista-numerada {
-      counter-reset: guia-counter;
       list-style: none;
       padding: 0;
+      margin: 0;
     }
     .guia-lista-numerada li {
-      counter-increment: guia-counter;
-      display: flex;
+      display: grid;
+      grid-template-columns: 36px 1fr;
       gap: 1rem;
       align-items: flex-start;
-      padding: 1rem 0;
+      padding: 1.1rem 0;
       border-bottom: 1px solid rgba(0,64,90,0.08);
       font-size: 0.95rem;
       color: #333;
       line-height: 1.6;
     }
-    .guia-lista-numerada li::before {
-      content: counter(guia-counter);
+    .guia-lista-numerada li:last-child { border-bottom: none; }
+    .guia-lista-numerada li .guia-num {
       display: flex;
       align-items: center;
       justify-content: center;
-      min-width: 28px;
-      height: 28px;
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
       background: var(--verde, #2d7a3d);
       color: #fff;
       font-weight: 700;
-      font-size: 0.8rem;
+      font-size: 0.82rem;
       border-radius: 50%;
       flex-shrink: 0;
-      margin-top: 0.1rem;
+      margin-top: 0.15rem;
     }
+    .guia-lista-numerada li .guia-li-body { flex: 1; }
     .guia-lista-numerada li strong { color: #0d2a3a; }
     .guia-grid-2 {
       display: grid;
@@ -1805,11 +1832,11 @@ nav.top.scrolled {
 </div>
 
 <ol class="guia-lista-numerada">
-  <li><strong>The Perfect Picanha:</strong> The queen of Brazilian BBQ. At <strong>Embaixada Carioca</strong>, the technical cut and rigorous searing guarantee the tenderness tourists seek.</li>
-  <li><strong>The Original Escondidinho:</strong> The city's definitive version is at <strong>Academia da Cachaça</strong> — an extremely creamy cassava purée, gratinated with coalho cheese, hiding seasoned dried beef.</li>
-  <li><strong>Picadinho Carioca:</strong> Beef cubes in sauce, farofa, banana and poached egg. It's a hug in food form. Served daily at <strong>Embaixada</strong>, <strong>Cantina do MAM</strong> and <strong>Academia da Cachaça</strong>.</li>
-  <li><strong>Caldinho de Feijão:</strong> Served piping hot, thick and incredibly seasoned at <strong>Academia da Cachaça</strong>. The best way to start a meal.</li>
-  <li><strong>Authentic Feijoada:</strong> A rite of passage on Saturday afternoons, with crackling, farofa and collard greens, prepared to perfection at <strong>Academia da Cachaça</strong> and <strong>Embaixada Carioca</strong>.</li>
+  <li><span class="guia-num">1</span><div class="guia-li-body"><strong>The Perfect Picanha:</strong> The queen of Brazilian BBQ. At <strong>Embaixada Carioca</strong>, the technical cut and rigorous searing guarantee the tenderness tourists seek.</div></li>
+  <li><span class="guia-num">2</span><div class="guia-li-body"><strong>The Original Escondidinho:</strong> The city's definitive version is at <strong>Academia da Cachaça</strong> — an extremely creamy cassava purée, gratinated with coalho cheese, hiding seasoned dried beef.</div></li>
+  <li><span class="guia-num">3</span><div class="guia-li-body"><strong>Picadinho Carioca:</strong> Beef cubes in sauce, farofa, banana and poached egg. It's a hug in food form. Served daily at <strong>Embaixada</strong>, <strong>Cantina do MAM</strong> and <strong>Academia da Cachaça</strong>.</div></li>
+  <li><span class="guia-num">4</span><div class="guia-li-body"><strong>Caldinho de Feijão:</strong> Served piping hot, thick and incredibly seasoned at <strong>Academia da Cachaça</strong>. The best way to start a meal.</div></li>
+  <li><span class="guia-num">5</span><div class="guia-li-body"><strong>Authentic Feijoada:</strong> A rite of passage on Saturday afternoons, with crackling, farofa and collard greens, prepared to perfection at <strong>Academia da Cachaça</strong> and <strong>Embaixada Carioca</strong>.</div></li>
 </ol>
 
 <div class="guia-cta-final">
