@@ -155,28 +155,39 @@ nav.top.scrolled .btn {
   border-color: var(--amarelo, #E8C547) !important;
 }
 
-/* ── MOBILE NAV FIX: fundo escuro no mobile (scrolled ou não) ── */
+/* ── MOBILE NAV FIX v2: cores corretas no mobile (nav superior + bottom nav) ── */
 @media (max-width: 720px) {
-  /* No mobile, o nav sempre tem fundo escuro (independente do scroll) */
+  /* ── NAV SUPERIOR: fundo escuro + texto claro ── */
   nav.top,
   nav.top.scrolled {
-    background: rgba(0, 20, 30, 0.88) !important;
+    background: rgba(0, 20, 30, 0.92) !important;
     backdrop-filter: blur(12px) !important;
     -webkit-backdrop-filter: blur(12px) !important;
     border-bottom-color: rgba(255,255,255,0.08) !important;
+    color-scheme: dark !important;
   }
-  nav.top .nav-inner,
-  nav.top.scrolled .nav-inner {
-    color: var(--areia-pale, #F5EDD6) !important;
+  /* Todos os textos dentro do nav superior: cor clara */
+  nav.top *,
+  nav.top.scrolled * {
+    color: #F5EDD6 !important;
   }
-  nav.top .nav-links a,
-  nav.top.scrolled .nav-links a,
+  /* Exceção: botão RESERVAR mantém cor escura no texto */
+  nav.top .btn,
+  nav.top.scrolled .btn,
+  nav.top .btn-reservar,
+  nav.top.scrolled .btn-reservar {
+    color: #00405A !important;
+    background: #E8C547 !important;
+    border-color: #E8C547 !important;
+  }
+  /* Seletor de idioma: fundo semitransparente claro */
   nav.top .lang-current,
-  nav.top.scrolled .lang-current,
-  nav.top .lang-current span,
-  nav.top.scrolled .lang-current span {
-    color: var(--areia-pale, #F5EDD6) !important;
+  nav.top.scrolled .lang-current {
+    background: rgba(255,255,255,0.15) !important;
+    border-color: rgba(255,255,255,0.3) !important;
+    color: #F5EDD6 !important;
   }
+  /* Logo: mostrar versão clara */
   nav.top .brand-logo.light,
   nav.top.scrolled .brand-logo.light {
     display: block !important;
@@ -185,18 +196,49 @@ nav.top.scrolled .btn {
   nav.top.scrolled .brand-logo.dark {
     display: none !important;
   }
-  /* Badge de avaliações no mobile: cor clara */
-  nav.top .nav-rating-badge,
-  nav.top.scrolled .nav-rating-badge {
-    color: var(--areia-pale, #F5EDD6) !important;
-    background: rgba(255,255,255,0.12) !important;
-    border-color: rgba(255,255,255,0.25) !important;
+  /* Hamburguer: cor clara */
+  .nav-hamburger,
+  .nav-hamburger span,
+  .nav-hamburger::before,
+  .nav-hamburger::after {
+    color: #F5EDD6 !important;
+    background-color: #F5EDD6 !important;
+    border-color: #F5EDD6 !important;
   }
-  /* Seletor de idioma no mobile: cor clara */
-  nav.top .lang-current,
-  nav.top.scrolled .lang-current {
-    background: rgba(255,255,255,0.12) !important;
-    border-color: rgba(255,255,255,0.25) !important;
+
+  /* ── BOTTOM NAV: fundo azul escuro + texto claro ── */
+  .mobile-bottom-nav {
+    background: #00405A !important;
+    border-top-color: rgba(255,255,255,0.15) !important;
+    color-scheme: dark !important;
+  }
+  .mobile-bottom-nav a {
+    color: rgba(245, 237, 214, 0.75) !important;
+    background: transparent !important;
+  }
+  .mobile-bottom-nav a:hover,
+  .mobile-bottom-nav a:active,
+  .mobile-bottom-nav a:focus {
+    color: #E8C547 !important;
+    background: rgba(255,255,255,0.06) !important;
+  }
+  .mobile-bottom-nav .bnav-icon {
+    color: rgba(245, 237, 214, 0.75) !important;
+  }
+  /* Botão RESERVAR no bottom nav: fundo amarelo + texto azul */
+  .mobile-bottom-nav .bnav-reservar,
+  .mobile-bottom-nav a.bnav-reservar {
+    background: #E8C547 !important;
+    color: #00405A !important;
+  }
+  .mobile-bottom-nav .bnav-reservar .bnav-icon,
+  .mobile-bottom-nav a.bnav-reservar .bnav-icon {
+    color: #00405A !important;
+  }
+  .mobile-bottom-nav .bnav-reservar:hover,
+  .mobile-bottom-nav .bnav-reservar:active {
+    background: #d4b03a !important;
+    color: #00405A !important;
   }
 }
 </style>
