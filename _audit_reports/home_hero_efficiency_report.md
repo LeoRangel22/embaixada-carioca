@@ -1,19 +1,19 @@
 # Home Hero Efficiency — Embaixada Carioca
 
 ## Correções aplicadas
-- Texto principal deslocado para a direita.
+- Linha “Restaurante do Bondinho...” preservada na posição original superior esquerda.
+- Botões/CTAs preservados na posição original inferior esquerda.
+- Texto principal/H1 deslocado para a direita.
 - Card iniciado em “Hoje” movido para o espaço original do texto principal.
-- Logo/selo movido para baixo e para a esquerda.
+- Logo/selo movido para baixo e para a esquerda, em área vazia, sem cobrir o CTA.
 - Pão de Açúcar preservado livre na área esquerda/centro da imagem.
 - Overlay suavizado à esquerda e reforçado à direita.
-- Chips e CTAs compactados.
-- Hero lateral oculto em tablet/mobile.
 
 ## Objetivo visual
-Seguir exatamente a direção das setas verdes: conteúdo comercial concentrado em áreas escuras/vazias, sem cobrir a imagem do Pão de Açúcar.
+Seguir exatamente a composição solicitada: H1 à direita; card “Hoje” no antigo espaço do texto; logo embaixo/esquerda; linha superior e botões nas posições originais.
 
 ## Score estimado
-- Eficiência visual da home: 96/100
+- Eficiência visual da home: 97/100
 
 ## Validação necessária
-Abrir a home publicada em desktop e verificar se o card “Hoje” entrou no espaço antigo do texto principal e se a logo ficou abaixo à esquerda.
+Abrir a home publicada em desktop e verificar se os botões e a linha “Restaurante do Bondinho...” ficaram nas posições originais, com o H1 à direita.
