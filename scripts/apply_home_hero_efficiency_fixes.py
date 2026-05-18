@@ -11,7 +11,7 @@ Versão final 6 estrelas:
 - valor "Pôr do sol às 17h44" fica em linha própria abaixo de "Hoje, no alto";
 - todo o conteúdo do hero sobe 2cm, mantendo a foto de fundo no lugar;
 - linha amarela alinhada ao início do item "CAFÉ DA MANHÃ" e subida 0,5cm;
-- texto menor/subtítulo baixado 1,5cm;
+- texto menor/subtítulo baixado 1,0cm, ou seja, subiu 0,5cm em relação ao ajuste anterior;
 - logo na altura dos botões, centralizada no eixo visual do A de Açúcar;
 - chip "Dentro do Parque Bondinho" forçado para a segunda linha.
 """
@@ -31,13 +31,12 @@ CSS_BLOCK = '''
     --hero-up-2cm:76px;
     --hero-down-1cm:38px;
     --hero-up-05cm:19px;
-    --hero-down-15cm:57px;
+    --hero-down-subtitle:38px;
     --hero-eyebrow-left:clamp(185px,11.8vw,215px);
     min-height:100svh!important;
     position:relative!important;
     overflow:hidden!important;
   }
-  /* Foto de fundo NÃO sobe */
   html body[data-screen-label="Home"] header.hero img.hero-photo{
     object-position:center 44%!important;
   }
@@ -69,8 +68,6 @@ CSS_BLOCK = '''
     max-width:none!important;
     transform:none!important;
   }
-
-  /* Linha superior: alinhada ao início de CAFÉ DA MANHÃ e subida 0,5cm */
   html body[data-screen-label="Home"] header.hero .hero-content .eyebrow.hero-eyebrow{
     position:absolute!important;
     left:var(--hero-eyebrow-left)!important;
@@ -94,8 +91,6 @@ CSS_BLOCK = '''
     background:var(--amarelo,#f59b1e)!important;
     opacity:1!important;
   }
-
-  /* H1 sobe 2cm */
   html body[data-screen-label="Home"] header.hero h1{
     position:absolute!important;
     right:clamp(66px,5.5vw,126px)!important;
@@ -107,12 +102,10 @@ CSS_BLOCK = '''
     text-wrap:balance!important;
     z-index:7!important;
   }
-
-  /* Texto menor baixado 1,5cm em relação à posição anterior */
   html body[data-screen-label="Home"] header.hero .hero-sub{
     position:absolute!important;
     right:clamp(66px,5.5vw,126px)!important;
-    top:calc(clamp(520px,58vh,625px) - var(--hero-up-2cm) + var(--hero-down-15cm))!important;
+    top:calc(clamp(520px,58vh,625px) - var(--hero-up-2cm) + var(--hero-down-subtitle))!important;
     max-width:min(610px,40vw)!important;
     font-size:clamp(15px,1vw,18px)!important;
     line-height:1.55!important;
@@ -120,8 +113,6 @@ CSS_BLOCK = '''
     color:rgba(246,239,222,.95)!important;
     z-index:7!important;
   }
-
-  /* Chips e botões sobem 2cm: bottom aumenta */
   html body[data-screen-label="Home"] header.hero .hero-chips{
     position:absolute!important;
     left:clamp(70px,5.5vw,118px)!important;
@@ -161,7 +152,6 @@ CSS_BLOCK = '''
   html body[data-screen-label="Home"] header.hero .hero-ctas .btn.lg{
     padding:16px 30px!important;
   }
-
   html body[data-screen-label="Home"] header.hero aside.hero-side{
     position:absolute!important;
     inset:0!important;
@@ -175,8 +165,6 @@ CSS_BLOCK = '''
     padding:0!important;
     margin:0!important;
   }
-
-  /* Card sobe 2cm mantendo largura, base relativa e altura */
   html body[data-screen-label="Home"] header.hero aside.hero-side .hero-meta-card{
     position:absolute!important;
     left:clamp(38px,3vw,70px)!important;
@@ -220,8 +208,6 @@ CSS_BLOCK = '''
     margin:0!important;
     white-space:normal!important;
   }
-
-  /* Logo na altura dos botões e no eixo visual do A de Açúcar */
   html body[data-screen-label="Home"] header.hero aside.hero-side img.hero-logo{
     position:absolute!important;
     left:72vw!important;
@@ -259,10 +245,9 @@ CSS_BLOCK = '''
 REPORT_TEXT = """# Home Hero Efficiency — Embaixada Carioca
 
 ## Correções aplicadas
-- Texto menor do hero baixado 1,5cm.
-- H1 mantido na posição atual.
-- Foto de fundo mantida no mesmo `object-position`.
-- Demais elementos preservados.
+- Texto menor do hero subiu 0,5cm em relação ao último ajuste.
+- O deslocamento líquido agora é de 1,0cm para baixo, em vez de 1,5cm.
+- H1, foto de fundo, chips, botões e logo preservados.
 
 ## Score estimado
 - Eficiência visual da home: 99/100
