@@ -14,6 +14,7 @@ on:
       - 'scripts/apply_design_performance_fixes.py'
       - 'scripts/apply_topic_authority_clusters.py'
       - 'scripts/apply_gsc_ctr_optimization.py'
+      - 'scripts/apply_home_hero_efficiency_fixes.py'
       - 'data/gsc_click_magnet_queries.json'
       - '.github/workflows/apply-aaa-fixes.yml'
 
@@ -53,6 +54,9 @@ jobs:
       - name: Run GSC CTR optimization script
         run: python3 scripts/apply_gsc_ctr_optimization.py
 
+      - name: Run home hero efficiency fixes script
+        run: python3 scripts/apply_home_hero_efficiency_fixes.py
+
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
@@ -61,6 +65,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "fix: apply AAA GSC CTR SEO corrections"
+            git commit -m "fix: apply AAA efficiency and conversion corrections"
             git push origin HEAD:${{ github.ref_name }}
           fi
