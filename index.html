@@ -29,6 +29,7 @@
 
 
 
+
 <link rel="canonical" href="https://www.embaixadacarioca.com/">
 <meta charset="utf-8"/>
 <link as="style" href="/assets/fonts/fonts.css" rel="preload"/>
@@ -1066,6 +1067,7 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
     --hero-up-2cm:76px;
     --hero-down-1cm:38px;
     --hero-up-05cm:19px;
+    --hero-down-15cm:57px;
     --hero-eyebrow-left:clamp(185px,11.8vw,215px);
     min-height:100svh!important;
     position:relative!important;
@@ -1129,7 +1131,7 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
     opacity:1!important;
   }
 
-  /* H1 e subtítulo sobem 2cm */
+  /* H1 sobe 2cm */
   html body[data-screen-label="Home"] header.hero h1{
     position:absolute!important;
     right:clamp(66px,5.5vw,126px)!important;
@@ -1141,10 +1143,12 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
     text-wrap:balance!important;
     z-index:7!important;
   }
+
+  /* Texto menor baixado 1,5cm em relação à posição anterior */
   html body[data-screen-label="Home"] header.hero .hero-sub{
     position:absolute!important;
     right:clamp(66px,5.5vw,126px)!important;
-    top:calc(clamp(520px,58vh,625px) - var(--hero-up-2cm))!important;
+    top:calc(clamp(520px,58vh,625px) - var(--hero-up-2cm) + var(--hero-down-15cm))!important;
     max-width:min(610px,40vw)!important;
     font-size:clamp(15px,1vw,18px)!important;
     line-height:1.55!important;
