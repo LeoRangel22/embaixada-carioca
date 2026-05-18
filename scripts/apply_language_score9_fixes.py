@@ -2,8 +2,13 @@
 """
 Auditoria e polimento de idiomas — meta > 90 / preparação para 95.
 
+Princípio factual:
+- O Cristo Redentor é uma atração essencial do Rio e pode ser citado no site.
+- A Embaixada Carioca não deve afirmar que tem vista para o Cristo Redentor.
+- Quando citar Cristo, deixar claro que a vista aparece em outra direção/área do Morro da Urca ou como parte do roteiro turístico do Rio.
+
 Prioridades:
-- zerar qualquer menção de vista para Cristo Redentor;
+- remover falsas promessas de vista do Cristo a partir da Embaixada;
 - remover misturas PT/EN/ES;
 - ajustar entardecer/sunset à experiência real da Embaixada Carioca;
 - preservar layout, HTML e CSS;
@@ -24,27 +29,29 @@ PRIORITY_FILES = {
 }
 
 REPLACEMENTS = {
-    # Vista real — remover Cristo de listas de vista
-    "Pão de Açúcar, Baía de Guanabara e Cristo Redentor": "Pão de Açúcar e Baía de Guanabara",
-    "Pão de Açúcar, a Baía de Guanabara e o Cristo Redentor": "Pão de Açúcar e a Baía de Guanabara",
-    "Pão de Açúcar, Baía de Guanabara, Cristo Redentor": "Pão de Açúcar e Baía de Guanabara",
-    "Sugarloaf Mountain, Guanabara Bay and Christ the Redeemer": "Sugarloaf Mountain and Guanabara Bay",
-    "Sugarloaf Mountain, Guanabara Bay, Christ the Redeemer": "Sugarloaf Mountain and Guanabara Bay",
-    "Pan de Azúcar, Bahía de Guanabara y Cristo Redentor": "Pan de Azúcar y Bahía de Guanabara",
-    "Pan de Azúcar, la Bahía de Guanabara y el Cristo Redentor": "Pan de Azúcar y la Bahía de Guanabara",
-    "Pão de Açúcar e Cristo Redentor": "Pão de Açúcar",
-    "Sugarloaf Mountain and Christ the Redeemer": "Sugarloaf Mountain",
-    "Pan de Azúcar y Cristo Redentor": "Pan de Azúcar",
+    # =========================
+    # CRISTO REDENTOR — PERMITIDO COMO ATRAÇÃO, PROIBIDO COMO VISTA DA EMBAIXADA
+    # =========================
+    "vista para o Pão de Açúcar, Baía de Guanabara e Cristo Redentor": "vista para o Pão de Açúcar e a Baía de Guanabara",
+    "vista panorâmica para o Pão de Açúcar, Baía de Guanabara e Cristo Redentor": "vista panorâmica para o Pão de Açúcar e a Baía de Guanabara",
+    "vista 360° para o Pão de Açúcar, Baía de Guanabara e Cristo Redentor": "vista para o Pão de Açúcar e a Baía de Guanabara",
+    "com vista para o Pão de Açúcar, Baía de Guanabara e Cristo Redentor": "com vista para o Pão de Açúcar e a Baía de Guanabara",
+    "with views of Sugarloaf Mountain, Guanabara Bay and Christ the Redeemer": "with views of Sugarloaf Mountain and Guanabara Bay",
+    "with views to Sugarloaf Mountain, Guanabara Bay and Christ the Redeemer": "with views of Sugarloaf Mountain and Guanabara Bay",
+    "with a view of Sugarloaf Mountain, Guanabara Bay and Christ the Redeemer": "with a view of Sugarloaf Mountain and Guanabara Bay",
+    "con vista al Pan de Azúcar, la Bahía de Guanabara y el Cristo Redentor": "con vista al Pan de Azúcar y la Bahía de Guanabara",
+    "con vistas al Pan de Azúcar, la Bahía de Guanabara y el Cristo Redentor": "con vistas al Pan de Azúcar y la Bahía de Guanabara",
     "Cristo Redentor ao fundo": "Pão de Açúcar em primeiro plano",
     "Christ the Redeemer in the background": "Sugarloaf Mountain in the foreground",
     "Cristo Redentor de fondo": "Pan de Azúcar en primer plano",
-    "e o Cristo Redentor": "",
-    "and Christ the Redeemer": "",
-    "y el Cristo Redentor": "",
-    "Cristo Redentor": "Pão de Açúcar",
-    "Christ the Redeemer": "Sugarloaf Mountain",
 
-    # Entardecer real — não confundir com DJ do Parque
+    # Citações corretas do Cristo como atração do Morro/Rio
+    "Pão de Açúcar e Baía de Guanabara": "Pão de Açúcar e Baía de Guanabara",
+    "Do outro lado do Morro da Urca, também é possível apreciar a vista do Cristo Redentor em uma das áreas panorâmicas do Parque Bondinho.": "Do outro lado do Morro da Urca, também é possível apreciar a vista do Cristo Redentor em áreas panorâmicas do Parque Bondinho.",
+
+    # =========================
+    # ENTARDECER / SUNSET — EXPERIÊNCIA REAL DA EMBAIXADA
+    # =========================
     "pôr do sol atrás do Pão de Açúcar": "entardecer no Morro da Urca com o Pão de Açúcar em primeiro plano",
     "pôr do sol sobre o Pão de Açúcar": "entardecer no Morro da Urca com o Pão de Açúcar em primeiro plano",
     "sunset behind Sugarloaf Mountain": "sunset-style visit on Urca Hill with Sugarloaf Mountain in the foreground",
@@ -58,12 +65,16 @@ REPLACEMENTS = {
     "SUNSET NO PARQUE — DJ TOMMAX": "ENTARDECER NO MORRO DA URCA",
     "DJ TOMMAX": "Entardecer no Morro da Urca",
 
-    # Acesso correto
+    # =========================
+    # ACESSO CORRETO
+    # =========================
     "não é necessário comprar ingresso para o bondinho para acessar o restaurante": "o acesso pode ser feito pelo bondinho, com ingresso regular do Parque Bondinho Pão de Açúcar, ou pela trilha da Praia Vermelha, quando aberta",
     "You do not need to buy a cable car ticket to access the restaurant": "Access is by cable car with a regular Bondinho Pão de Açúcar Park ticket, or by the Praia Vermelha trail when open",
     "No necesitas comprar entrada del teleférico para acceder al restaurante": "El acceso es por teleférico con entrada regular del Parque Bondinho Pão de Açúcar, o por el sendero de Praia Vermelha cuando esté abierto",
 
-    # PT contaminado por ES
+    # =========================
+    # IDIOMA — PT CONTAMINADO POR ES
+    # =========================
     "en lo alto del Morro da Urca": "no alto do Morro da Urca",
     "del Morro da Urca": "do Morro da Urca",
     "más bonito": "mais bonito",
@@ -72,7 +83,9 @@ REPLACEMENTS = {
     "para quién": "para quem",
     "vista panorâmica del Morro da Urca": "vista panorâmica do Morro da Urca",
 
-    # EN contaminado por PT
+    # =========================
+    # IDIOMA — EN CONTAMINADO POR PT
+    # =========================
     "Eventos corporativos": "Corporate events",
     "Roteiros & grupos": "Itineraries & groups",
     "Quando Every day": "When Every day",
@@ -84,7 +97,9 @@ REPLACEMENTS = {
     "a Baía de Guanabara": "Guanabara Bay",
     "O <strong>lugar para comemorar aniversário no Rio de Janeiro</strong> mais especial da cidade": "A scenic place for private celebrations in Rio de Janeiro",
 
-    # ES contaminado por PT
+    # =========================
+    # IDIOMA — ES CONTAMINADO POR PT
+    # =========================
     "Eventos no <span": "Eventos en el <span",
     "Dois universos": "Dos universos",
     "Do evento corporativo": "Del evento corporativo",
@@ -105,14 +120,18 @@ REPLACEMENTS = {
     "os lugares": "los lugares",
     "comemorar": "celebrar",
 
-    # Capacidade/eventos sem promessa absoluta
+    # =========================
+    # EVENTOS — CAPACIDADE SEM PROMESSA ABSOLUTA
+    # =========================
     "300<sup>+</sup>": "Capacidade variável",
     "300+ convidados": "capacidade variável conforme formato",
     "300+ guests": "capacity varies by format",
     "300+ invitados": "capacidad variable según formato",
     "standing guests": "by format and setup",
 
-    # Feijoada — origem correta
+    # =========================
+    # FEIJOADA — ORIGEM CORRETA
+    # =========================
     "Melhor Feijoada do Rio — Veja Rio 2025/2026": "Feijoada premiada da Academia da Cachaça — servida na Embaixada Carioca",
     "Best Feijoada in Rio — Veja Rio 2025/2026": "Award-winning feijoada from Academia da Cachaça — served at Embaixada Carioca",
     "Mejor Feijoada de Río — Veja Rio 2025/2026": "Feijoada premiada de Academia da Cachaça — servida en Embaixada Carioca",
@@ -122,8 +141,16 @@ REPLACEMENTS = {
     "conquistou o país": "marca a tradição carioca",
 }
 
+# Termos proibidos agora são frases falsas ou contaminadas, não a entidade Cristo Redentor em si.
 FORBIDDEN = [
-    "Cristo Redentor", "Christ the Redeemer",
+    "vista para o Cristo Redentor",
+    "vista panorâmica para o Cristo Redentor",
+    "view of Christ the Redeemer from Embaixada",
+    "views of Christ the Redeemer from Embaixada",
+    "vista al Cristo Redentor desde Embaixada",
+    "Cristo Redentor ao fundo",
+    "Christ the Redeemer in the background",
+    "Cristo Redentor de fondo",
     "BondinhSugarloaf", "Bondinhel",
     "Quando Every day", "Harmonização", "Roteiros & grupos",
     "Fale com nossa equipe", "A/V e equipe",
@@ -135,17 +162,37 @@ FORBIDDEN = [
     "melhor do Brasil pela Revista Veja Rio",
 ]
 
-# Regexes para limpar frases recorrentes que variam por pontuação/HTML.
+# Regexes: limpam apenas afirmações falsas de vista a partir da Embaixada/restaurante/terraço/mesa.
 REGEX_REPLACEMENTS = [
-    (re.compile(r"([^.!?<>]{0,180})(Cristo Redentor|Christ the Redeemer)([^.!?<>]{0,180})", re.I), "Pão de Açúcar e Baía de Guanabara"),
-    (re.compile(r"([^.!?<>]{0,120})(pôr do sol atrás do Pão de Açúcar|pôr do sol sobre o Pão de Açúcar)([^.!?<>]{0,120})", re.I), "entardecer no Morro da Urca com o Pão de Açúcar em primeiro plano"),
-    (re.compile(r"([^.!?<>]{0,120})(sunset behind Sugarloaf Mountain|sunset over Sugarloaf Mountain)([^.!?<>]{0,120})", re.I), "sunset-style visit on Urca Hill with Sugarloaf Mountain in the foreground"),
-    (re.compile(r"([^.!?<>]{0,120})(atardecer detrás del Pan de Azúcar|atardecer sobre el Pan de Azúcar)([^.!?<>]{0,120})", re.I), "atardecer en el Morro da Urca con el Pan de Azúcar en primer plano"),
+    (
+        re.compile(r"(vista(?:\s+panorâmica)?\s+(?:para|do|da|de)\s+[^.!?<>]{0,120})(Cristo Redentor)([^.!?<>]{0,120})(Embaixada|restaurante|terraço|mesa|salão)", re.I),
+        "vista para o Pão de Açúcar e a Baía de Guanabara na Embaixada Carioca"
+    ),
+    (
+        re.compile(r"((?:view|views)\s+(?:of|to)\s+[^.!?<>]{0,120})(Christ the Redeemer)([^.!?<>]{0,120})(Embaixada|restaurant|terrace|table|dining room)", re.I),
+        "view of Sugarloaf Mountain and Guanabara Bay at Embaixada Carioca"
+    ),
+    (
+        re.compile(r"(vista(?:s)?\s+(?:al|del|de)\s+[^.!?<>]{0,120})(Cristo Redentor)([^.!?<>]{0,120})(Embaixada|restaurante|terraza|mesa|salón)", re.I),
+        "vista al Pan de Azúcar y la Bahía de Guanabara en Embaixada Carioca"
+    ),
+    (
+        re.compile(r"([^.!?<>]{0,120})(pôr do sol atrás do Pão de Açúcar|pôr do sol sobre o Pão de Açúcar)([^.!?<>]{0,120})", re.I),
+        "entardecer no Morro da Urca com o Pão de Açúcar em primeiro plano"
+    ),
+    (
+        re.compile(r"([^.!?<>]{0,120})(sunset behind Sugarloaf Mountain|sunset over Sugarloaf Mountain)([^.!?<>]{0,120})", re.I),
+        "sunset-style visit on Urca Hill with Sugarloaf Mountain in the foreground"
+    ),
+    (
+        re.compile(r"([^.!?<>]{0,120})(atardecer detrás del Pan de Azúcar|atardecer sobre el Pan de Azúcar)([^.!?<>]{0,120})", re.I),
+        "atardecer en el Morro da Urca con el Pan de Azúcar en primer plano"
+    ),
 ]
 
 KEYWORD_CLUSTERS = {
     "home": ["Restaurante Morro da Urca", "Restaurante do Bondinho", "restaurante Pão de Açúcar", "restaurante com vista Rio de Janeiro"],
-    "guia": ["onde comer no Rio de Janeiro", "restaurantes Rio de Janeiro com vista", "melhores restaurantes Rio de Janeiro"],
+    "guia": ["onde comer no Rio de Janeiro", "restaurantes Rio de Janeiro com vista", "melhores restaurantes Rio de Janeiro", "Cristo Redentor", "Pão de Açúcar"],
     "cafe": ["café da manhã com vista", "café da manhã Pão de Açúcar", "café da manhã Morro da Urca"],
     "almoco": ["almoço com vista", "restaurante no Pão de Açúcar", "almoço Morro da Urca"],
     "entardecer": ["restaurante romântico RJ", "drinks com vista", "caipirinha Pão de Açúcar"],
@@ -207,6 +254,9 @@ def main() -> int:
         "# Auditoria de Idiomas e Factualidade — Meta > 90\n\n"
         "## Escopo prioritário\n"
         "- Home PT/EN/ES\n- Café da manhã\n- Almoço\n- Entardecer / Sunset / Atardecer\n- Eventos\n- Cardápio\n- Guia do Rio\n\n"
+        "## Princípio factual sobre o Cristo Redentor\n"
+        "- O Cristo Redentor pode e deve ser citado como atração essencial do Rio e como vista possível em outras áreas panorâmicas do Morro da Urca/Parque Bondinho.\n"
+        "- A Embaixada Carioca não deve afirmar que suas mesas, terraço ou salão têm vista para o Cristo Redentor.\n\n"
         "## Alterações aplicadas\n"
         + ("\n".join(f"- {line}" for line in REPORT) if REPORT else "- Nenhuma alteração aplicada")
         + "\n\n## Pendências críticas\n"
@@ -222,7 +272,8 @@ def main() -> int:
         "## Clusters de maior impacto\n"
         + "\n".join(f"- **{cluster}**: " + ", ".join(words) for cluster, words in KEYWORD_CLUSTERS.items())
         + "\n\n## Regras para manter nota acima de 90\n"
-        "- Zero menções a vista para Cristo Redentor.\n"
+        "- Cristo Redentor pode ser citado como atração do Rio e do roteiro do Morro da Urca.\n"
+        "- A Embaixada não deve prometer vista para o Cristo a partir de suas mesas, terraço ou salão.\n"
         "- Zero mistura de português, inglês e espanhol na mesma frase.\n"
         "- Entardecer deve ser descrito como experiência da Embaixada com sanduíches, petiscos, caipirinhas e drinks bem feitos.\n"
         "- Evento de DJ do Parque não deve ser apresentado como produto próprio da Embaixada.\n"
