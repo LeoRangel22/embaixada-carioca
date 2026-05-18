@@ -12,6 +12,7 @@ on:
       - 'scripts/apply_seo_geo_ai_95_polish.py'
       - 'scripts/apply_home_high_intent_95_fixes.py'
       - 'scripts/apply_design_performance_fixes.py'
+      - 'scripts/apply_topic_authority_clusters.py'
       - '.github/workflows/apply-aaa-fixes.yml'
 
 permissions:
@@ -44,6 +45,9 @@ jobs:
       - name: Run design performance fixes script
         run: python3 scripts/apply_design_performance_fixes.py
 
+      - name: Run topic authority monopoly script
+        run: python3 scripts/apply_topic_authority_clusters.py
+
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
@@ -52,6 +56,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "fix: apply AAA design performance SEO corrections"
+            git commit -m "fix: apply AAA topic authority SEO corrections"
             git push origin HEAD:${{ github.ref_name }}
           fi
