@@ -1,0 +1,82 @@
+# Auditoria de Idiomas — Meta > 9
+
+## Alterações aplicadas
+- UPDATED: almoco-morro-da-urca.html | replacements=2
+- UPDATED: almoco.html | replacements=10
+- UPDATED: cafe-da-manha-pao-de-acucar.html | replacements=2
+- UPDATED: cafe-da-manha.html | replacements=14
+- UPDATED: caipirinha-com-vista-rio.html | replacements=3
+- UPDATED: cardapio.html | replacements=8
+- UPDATED: en/almoco-morro-da-urca.html | replacements=3
+- UPDATED: en/almoco.html | replacements=5
+- UPDATED: en/cafe-da-manha-pao-de-acucar.html | replacements=3
+- UPDATED: en/cafe-da-manha.html | replacements=6
+- UPDATED: en/caipirinha-com-vista-rio.html | replacements=3
+- UPDATED: en/cardapio.html | replacements=4
+- UPDATED: en/contato.html | replacements=2
+- UPDATED: en/entardecer.html | replacements=9
+- UPDATED: en/eventos.html | replacements=15
+- UPDATED: en/feijoada-com-vista-rio-de-janeiro.html | replacements=5
+- UPDATED: en/feijoada.html | replacements=28
+- UPDATED: en/gastronomia-carioca.html | replacements=2
+- UPDATED: en/guia-do-rio.html | replacements=8
+- UPDATED: en/index.html | replacements=18
+- UPDATED: en/morro-da-urca.html | replacements=5
+- UPDATED: en/nossa-visao.html | replacements=8
+- UPDATED: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=4
+- UPDATED: en/parque-bondinho.html | replacements=2
+- UPDATED: en/por-do-sol-morro-da-urca.html | replacements=3
+- UPDATED: en/roteiro-meio-dia-urca-pao-de-acucar.html | replacements=4
+- UPDATED: en/sunset.html | replacements=9
+- UPDATED: entardecer.html | replacements=15
+- UPDATED: es/almoco-morro-da-urca.html | replacements=4
+- UPDATED: es/almoco.html | replacements=10
+- UPDATED: es/atardecer.html | replacements=14
+- UPDATED: es/cafe-da-manha-pao-de-acucar.html | replacements=4
+- UPDATED: es/cafe-da-manha.html | replacements=9
+- UPDATED: es/caipirinha-com-vista-rio.html | replacements=4
+- UPDATED: es/cardapio.html | replacements=8
+- UPDATED: es/contato.html | replacements=7
+- UPDATED: es/entardecer.html | replacements=14
+- UPDATED: es/eventos.html | replacements=32
+- UPDATED: es/feijoada-com-vista-rio-de-janeiro.html | replacements=6
+- UPDATED: es/feijoada.html | replacements=29
+- UPDATED: es/gastronomia-carioca.html | replacements=5
+- UPDATED: es/guia-do-rio.html | replacements=11
+- UPDATED: es/index.html | replacements=20
+- UPDATED: es/morro-da-urca.html | replacements=19
+- UPDATED: es/nossa-visao.html | replacements=11
+- UPDATED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=6
+- UPDATED: es/parque-bondinho.html | replacements=5
+- UPDATED: es/por-do-sol-morro-da-urca.html | replacements=4
+- UPDATED: es/roteiro-meio-dia-urca-pao-de-acucar.html | replacements=6
+- UPDATED: eventos.html | replacements=35
+- UPDATED: feijoada-com-vista-rio-de-janeiro.html | replacements=3
+- UPDATED: feijoada.html | replacements=5
+- UPDATED: gastronomia-carioca.html | replacements=3
+- UPDATED: guia-do-rio.html | replacements=14
+- UPDATED: index.html | replacements=36
+- UPDATED: morro-da-urca.html | replacements=26
+- UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=8
+- UPDATED: parque-bondinho.html | replacements=8
+- UPDATED: por-do-sol-morro-da-urca.html | replacements=3
+- UPDATED: roteiro-meio-dia-urca-pao-de-acucar.html | replacements=8
+
+## Pendências críticas
+- almoco.html: residual: Harmonização
+- cardapio.html: residual: a Baía de Guanabara e o Cristo Redentor
+- en/cardapio.html: residual: a Baía de Guanabara e o Cristo Redentor
+- es/eventos.html: residual: Eventos corporativos
+- es/eventos.html: residual: salão principal
+- es/eventos.html: residual: terraços panorâmicos
+- es/feijoada.html: residual: salão principal
+- eventos.html: residual: Eventos corporativos
+- eventos.html: residual: a Baía de Guanabara e o Cristo Redentor
+- eventos.html: residual: salão principal
+- eventos.html: residual: terraços panorâmicos
+- eventos.html: residual: Dois universos
+- eventos.html: residual: Do evento corporativo
+- feijoada.html: residual: a Baía de Guanabara e o Cristo Redentor
+- feijoada.html: residual: salão principal
+- index.html: residual: Harmonização
+- index.html: residual: a Baía de Guanabara e o Cristo Redentor
