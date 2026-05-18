@@ -566,6 +566,27 @@ nav.top .lang-current,
 nav.top .lang-current span {
   color: var(--areia-pale, #F5EDD6) !important;
 }
+.nav-rating-badge{
+  display:flex;align-items:center;gap:6px;
+  background:rgba(255,255,255,0.13);
+  border:1px solid rgba(255,255,255,0.28);
+  border-radius:20px;
+  padding:5px 12px;
+  text-decoration:none;
+  color:inherit;
+  transition:background 0.2s,border-color 0.2s;
+}
+.nav-rating-badge:hover{background:rgba(255,255,255,0.22);}
+nav.top.scrolled .nav-rating-badge{
+  background:rgba(0,64,90,0.08);
+  border-color:rgba(0,64,90,0.2);
+  color:var(--azul1,#00405A);
+}
+nav.top.scrolled .nav-rating-badge:hover{background:rgba(0,64,90,0.14);}
+.nav-rating-stars{font-size:13px;font-weight:800;letter-spacing:-0.02em;color:#f5a623;}
+nav.top.scrolled .nav-rating-stars{color:#c8830a;}
+.nav-rating-count{font-size:10px;font-weight:600;opacity:0.75;letter-spacing:0.04em;}
+@media(max-width:900px){.nav-rating-badge{display:none;}}
 nav.top .nav-rating-badge,
 nav.top .nav-rating-badge:visited,
 nav.top .nav-rating-badge:link {
