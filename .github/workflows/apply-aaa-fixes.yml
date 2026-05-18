@@ -2,6 +2,12 @@ name: Apply AAA site fixes
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - fix/site-aaa-6-estrelas
+    paths:
+      - 'scripts/apply_aaa_site_fixes.py'
+      - '.github/workflows/apply-aaa-fixes.yml'
 
 permissions:
   contents: write
