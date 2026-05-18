@@ -6,11 +6,12 @@ Versão final 6 estrelas:
 - remove TODAS as camadas antigas Home Hero Green Arrows do index.html;
 - insere uma única camada final antes do </head>;
 - usa seletor ultra específico para vencer CSS anterior;
-- posiciona logo embaixo, não atrás do H1;
 - preserva H1 à direita, card à esquerda, botões embaixo/esquerda e linha superior em uma linha amarela;
 - quadro "Hoje / Premiada / Vista" 25% mais estreito, com base fixa e altura maior;
 - valor "Pôr do sol às 17h44" fica em linha própria abaixo de "Hoje, no alto";
-- todo o conteúdo do hero sobe 2cm, mantendo a foto de fundo no lugar.
+- todo o conteúdo do hero sobe 2cm, mantendo a foto de fundo no lugar;
+- linha amarela desce 1cm em relação ao ajuste anterior;
+- logo centralizada na faixa dos botões, maior, sem encostar na barra azul inferior.
 """
 from __future__ import annotations
 
@@ -26,6 +27,7 @@ CSS_BLOCK = '''
 @media (min-width: 961px){
   html body[data-screen-label="Home"] header.hero{
     --hero-up-2cm:76px;
+    --hero-down-1cm:38px;
     min-height:100svh!important;
     position:relative!important;
     overflow:hidden!important;
@@ -63,11 +65,11 @@ CSS_BLOCK = '''
     transform:none!important;
   }
 
-  /* Linha superior: sobe 2cm */
+  /* Linha superior: conteúdo sobe 2cm, mas a linha amarela desce 1cm */
   html body[data-screen-label="Home"] header.hero .hero-content .eyebrow.hero-eyebrow{
     position:absolute!important;
     left:clamp(78px,5.8vw,118px)!important;
-    top:calc(clamp(136px,16vh,172px) - var(--hero-up-2cm))!important;
+    top:calc(clamp(136px,16vh,172px) - var(--hero-up-2cm) + var(--hero-down-1cm))!important;
     width:calc(100vw - clamp(210px,16vw,300px))!important;
     max-width:none!important;
     white-space:nowrap!important;
@@ -199,17 +201,17 @@ CSS_BLOCK = '''
     white-space:normal!important;
   }
 
-  /* Logo sobe 2cm sem mexer na foto */
+  /* Logo centralizada na faixa dos botões, maior e sem encostar na barra azul */
   html body[data-screen-label="Home"] header.hero aside.hero-side img.hero-logo{
     position:absolute!important;
-    left:62vw!important;
-    top:calc(77vh - var(--hero-up-2cm))!important;
+    left:calc(clamp(70px,5.5vw,118px) + min(450px,31vw))!important;
+    top:auto!important;
     right:auto!important;
-    bottom:auto!important;
-    transform:translate(-50%,-50%)!important;
-    width:clamp(112px,8.2vw,138px)!important;
-    height:clamp(112px,8.2vw,138px)!important;
-    opacity:.78!important;
+    bottom:calc(clamp(54px,7.2vh,82px) + var(--hero-up-2cm) + 18px)!important;
+    transform:translateX(-50%)!important;
+    width:clamp(132px,9.4vw,158px)!important;
+    height:clamp(132px,9.4vw,158px)!important;
+    opacity:.80!important;
     z-index:6!important;
     filter:drop-shadow(0 14px 34px rgba(0,32,46,.58))!important;
     mix-blend-mode:normal!important;
@@ -237,11 +239,11 @@ CSS_BLOCK = '''
 REPORT_TEXT = """# Home Hero Efficiency — Embaixada Carioca
 
 ## Correções aplicadas
-- Todo o conteúdo do hero subiu 2cm, usando `--hero-up-2cm:76px`.
-- A foto de fundo foi preservada no mesmo `object-position`.
-- Linha superior, H1, subtítulo, chips, botões, card e logo sobem juntos.
-- Card mantém largura 25% menor, base relativa e altura ampliada.
-- Valor “Pôr do sol às 17h44” permanece abaixo do rótulo.
+- Linha superior amarela desceu 1cm em relação ao ajuste anterior.
+- Logo centralizada horizontalmente na faixa dos botões.
+- Logo aumentada para `clamp(132px, 9.4vw, 158px)`.
+- Logo posicionada acima da barra azul inferior, sem encostar na base.
+- Foto de fundo preservada no mesmo `object-position`.
 
 ## Score estimado
 - Eficiência visual da home: 99/100
