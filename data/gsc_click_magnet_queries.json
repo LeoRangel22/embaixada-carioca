@@ -1,0 +1,41 @@
+{
+  "source": "Google Search Console screenshot",
+  "period": "last_24_hours",
+  "updated_context": "Queries captured from user-provided screenshot in ChatGPT conversation.",
+  "queries": [
+    {"query": "embaixada carioca", "clicks": 2, "impressions": 41, "cluster": "brand"},
+    {"query": "avaliações sobre embaixada carioca", "clicks": 0, "impressions": 16, "cluster": "reviews"},
+    {"query": "restaurante morro da urca", "clicks": 0, "impressions": 12, "cluster": "morro_da_urca"},
+    {"query": "restaurante pão de açúcar", "clicks": 0, "impressions": 11, "cluster": "pao_de_acucar"},
+    {"query": "restaurante no pão de açucar", "clicks": 0, "impressions": 9, "cluster": "pao_de_acucar"},
+    {"query": "restaurantes pao de acucar", "clicks": 0, "impressions": 6, "cluster": "pao_de_acucar_no_accent"},
+    {"query": "avenida pasteur 520", "clicks": 0, "impressions": 6, "cluster": "access"},
+    {"query": "imagens de embaixada carioca", "clicks": 0, "impressions": 5, "cluster": "images"},
+    {"query": "pão de açúcar restaurante", "clicks": 0, "impressions": 5, "cluster": "pao_de_acucar"},
+    {"query": "restaurante no pao de acucar", "clicks": 0, "impressions": 5, "cluster": "pao_de_acucar_no_accent"},
+    {"query": "restaurante no morro da urca", "clicks": 0, "impressions": 4, "cluster": "morro_da_urca"},
+    {"query": "restaurant pao de acucar", "clicks": 0, "impressions": 4, "cluster": "english_tourist"},
+    {"query": "cafe da manha pao de acucar", "clicks": 0, "impressions": 4, "cluster": "breakfast"},
+    {"query": "carioca restaurante", "clicks": 0, "impressions": 4, "cluster": "brand_generic"},
+    {"query": "restaurante embaixada carioca", "clicks": 1, "impressions": 3, "cluster": "brand_restaurant"},
+    {"query": "embaixada carioca fotos", "clicks": 0, "impressions": 3, "cluster": "images"}
+  ],
+  "priority_clusters": [
+    "pao_de_acucar",
+    "morro_da_urca",
+    "breakfast",
+    "reviews",
+    "access",
+    "images",
+    "brand"
+  ],
+  "click_strategy": {
+    "brand": "Defender title/description with rating, reservation and official site.",
+    "reviews": "Use 4.8 stars and 7779 reviews near CTAs and FAQ.",
+    "morro_da_urca": "Make home and Morro da Urca page answer directly: restaurant on Urca Hill, first cable car stop.",
+    "pao_de_acucar": "Use restaurant with direct view of Sugarloaf Mountain, inside Bondinho Park, without overclaiming location on second stop.",
+    "breakfast": "Expose breakfast every day, 8:30 to 11:30, direct view to Sugarloaf Mountain.",
+    "access": "Answer Avenida Pasteur 520, cable car and Praia Vermelha trail clearly.",
+    "images": "Improve image alt, OG image and image sitemap/metadata in future stage."
+  }
+}
