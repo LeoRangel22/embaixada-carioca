@@ -1653,13 +1653,11 @@ nav.top.scrolled .btn {
 </script>
 </link></head>
 <body>
-<nav class="top">
+<nav class="top" id="topnav">
 <div class="nav-inner">
-<a class="brand-mark" href="/">
-<img alt="Embaixada Carioca" class="brand-logo" loading="lazy" src="assets/logo-azul.svg"/>
-<span class="brand-word"><b style="font-size:10.5px">MORRO DA URCA
-PARQUE BONDINHO PÃO DE AÇÚCAR</b>
-Rio de Janeiro</span>
+<a aria-label="Embaixada Carioca · início" class="brand-mark" href="/">
+<img alt="Embaixada Carioca — Restaurante com Vista para o Pão de Açúcar, Morro da Urca, Rio de Janeiro" class="brand-logo light" loading="eager" src="assets/logo-areia.svg"/>
+<img alt="Embaixada Carioca · Restaurante no Morro da Urca, Rio de Janeiro" class="brand-logo dark" loading="eager" src="assets/logo-azul.svg"/>
 </a>
 <ul class="nav-links">
 <li><a href="cafe-da-manha.html">Café da Manhã</a></li>
@@ -1669,8 +1667,8 @@ Rio de Janeiro</span>
 <li><a href="cardapio.html">Cardápio</a></li>
 <li><a href="guia-do-rio.html">Guia do Rio</a></li>
 </ul>
-<a aria-label="WhatsApp Embaixada Carioca" class="nav-wa-btn" href="https://wa.me/5521966837556?text=Olá%21%20Vim%20pelo%20site%20da%20Embaixada%20Carioca%20e%20gostaria%20de%20mais%20informações." rel="noopener" target="_blank" title="WhatsApp · +55 21 96683-7556">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.779 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.779-.767.779-.94 1.164-.173.199-.347.779-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.779-.52.149-.174.198-.298.298-.497.779-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.779.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.779h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+<a aria-label="WhatsApp Embaixada Carioca" class="nav-wa-btn" href="https://wa.me/5521966837556?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Embaixada%20Carioca%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." rel="noopener" target="_blank" title="WhatsApp · +55 21 96683-7556">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.779 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.779-.767.779-.94 1.164-.173.199-.347.779-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.779-.52.149-.174.198-.298.298-.497.779-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.779.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.779h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
 </a>
 <a aria-label="4.8 estrelas · mais de 7.779 avaliações no Google" class="nav-rating-badge" href="https://www.google.com/maps/place/Embaixada+Carioca" rel="noopener" target="_blank" title="Ver avaliações no Google"><span class="nav-rating-stars">4.8★</span><span class="nav-rating-count">7.779 avaliações</span></a>
 <div aria-label="Selecionar idioma" class="lang-switcher" role="navigation">
@@ -1680,7 +1678,7 @@ Rio de Janeiro</span>
 <span class="lang-arrow">▼</span>
 </button>
 <div class="lang-dropdown" role="menu">
-<a class="active" href="parque-bondinho.html" hreflang="pt-BR" role="menuitem">
+<a class="active" href="" hreflang="pt-BR" role="menuitem">
 <span class="lang-flag">🇧🇷</span>
 <span class="lang-name">Português</span> <span class="lang-check">✓</span>
 </a>
@@ -1695,9 +1693,7 @@ Rio de Janeiro</span>
 </div>
 </div>
 <button aria-controls="nav-drawer" aria-expanded="false" aria-label="Abrir menu de navegação" class="nav-hamburger" id="nav-hamburger">
-<span></span>
-<span></span>
-<span></span>
+<span></span><span></span><span></span>
 </button>
 <a class="btn" href="https://go.tagme.com.br/embaixadacarioca">Reservar →</a>
 </div>
@@ -1714,6 +1710,7 @@ Rio de Janeiro</span>
 <div class="page-hero">
 <div class="wrap-narrow">
 <span class="eyebrow">Guia Completo 2026</span>
+<div class="eyebrow hero-eyebrow">Restaurante Brasileiro do Bondinho · Restaurante Carioca Tradicional de Qualidade · Morro da Urca · Parque Bondinho Pão de Açúcar · Rio de Janeiro · Brasil</div>
 <h1>Parque Bondinho Pão de Açúcar: Ingressos, Horários e Onde Comer</h1>
 <p class="lead speakable-intro">O <strong>Parque Bondinho Pão de Açúcar</strong> é um dos pontos turísticos mais visitados da América Latina, localizado na Av. Pasteur, 520, no bairro da Urca, Rio de Janeiro. Além do famoso teleférico, o Parque abriga a <strong>Embaixada Carioca</strong>, o restaurante premium com a melhor vista do Rio de Janeiro.</p>
 </div>
