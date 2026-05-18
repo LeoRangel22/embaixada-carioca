@@ -1534,12 +1534,19 @@ img[loading="lazy"].loaded {
   isolation: isolate;
   padding-bottom: 88px;
 }
-.page-hero-photo {
+.page-hero-photo,
+picture.page-hero-photo {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
   object-fit: cover;
   object-position: center 45%;
   z-index: -2;
+}
+picture.page-hero-photo img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 45%;
 }
 .page-hero-overlay {
   position: absolute; inset: 0;
@@ -1603,6 +1610,24 @@ img[loading="lazy"].loaded {
 @media (max-width: 960px) {
 }
 @media (max-width: 720px) {
+}
+
+/* Foto de fundo do hero — sem skeleton loading */
+picture.page-hero-photo {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  z-index: -2;
+  display: block;
+}
+picture.page-hero-photo img,
+.page-hero-photo {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  z-index: -2;
+  background: none !important;
+  animation: none !important;
 }
 </style>
 <style>
@@ -1814,11 +1839,7 @@ nav.top.scrolled .btn {
 </nav>
 <!-- HERO -->
 <header class="page-hero">
-<picture>
-<source media="(max-width: 720px)" srcset="/assets/hero-mobile.webp" type="image/webp"/>
-<source srcset="/assets/hero.jpg" type="image/jpg"/>
-<img alt="Espaço panorâmico para eventos na Embaixada Carioca, Urca Hill, com vista to Sugarloaf Mountain" class="page-hero-photo" decoding="async" loading="eager" src="/assets/hero.webp"/>
-</picture>
+<img alt="Espaço panorâmico para eventos na Embaixada Carioca, Urca Hill, com vista to Sugarloaf Mountain" class="page-hero-photo" decoding="async" fetchpriority="high" src="/assets/hero.webp">
 <div aria-hidden="true" class="page-hero-overlay"></div>
 <div class="page-hero-content">
 <div class="eyebrow hero-eyebrow">Cable Car Restaurant · Traditional Carioca Restaurant · Morro da Urca · Parque Bondinho Sugarloaf Mountain · Rio de Janeiro · Brazil</div>
