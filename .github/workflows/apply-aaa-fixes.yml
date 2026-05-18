@@ -10,6 +10,7 @@ on:
       - 'scripts/apply_aaa_editorial_fixes.py'
       - 'scripts/apply_language_score9_fixes.py'
       - 'scripts/apply_seo_geo_ai_95_polish.py'
+      - 'scripts/apply_home_high_intent_95_fixes.py'
       - '.github/workflows/apply-aaa-fixes.yml'
 
 permissions:
@@ -36,6 +37,9 @@ jobs:
       - name: Run SEO GEO AI 95 polish script
         run: python3 scripts/apply_seo_geo_ai_95_polish.py
 
+      - name: Run high-intent home cleanup script
+        run: python3 scripts/apply_home_high_intent_95_fixes.py
+
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
@@ -44,6 +48,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "fix: apply AAA SEO GEO AI 95 corrections"
+            git commit -m "fix: apply AAA SEO GEO AI 95 high-intent corrections"
             git push origin HEAD:${{ github.ref_name }}
           fi
