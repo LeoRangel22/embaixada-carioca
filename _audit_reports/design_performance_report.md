@@ -1,22 +1,7 @@
 # Auditoria Design + Performance — Embaixada Carioca
 
 ## Correções aplicadas
-- UPDATED: cafe-da-manha.html | changes=1
-- UPDATED: almoco.html | changes=1
-- UPDATED: entardecer.html | changes=7
-- UPDATED: eventos.html | changes=1
-- UPDATED: cardapio.html | changes=1
-- UPDATED: guia-do-rio.html | changes=1
-- UPDATED: en/cafe-da-manha.html | changes=1
-- UPDATED: en/almoco.html | changes=1
-- UPDATED: en/entardecer.html | changes=1
-- UPDATED: en/sunset.html | changes=1
-- UPDATED: en/eventos.html | changes=1
-- UPDATED: es/cafe-da-manha.html | changes=1
-- UPDATED: es/almoco.html | changes=1
-- UPDATED: es/entardecer.html | changes=1
-- UPDATED: es/atardecer.html | changes=1
-- UPDATED: es/eventos.html | changes=1
+- Nenhuma correção automática necessária
 
 ## Alertas de design/performance
 - index.html: excesso de blocos <style> inline (13). Impacta manutenção e performance percebida.
