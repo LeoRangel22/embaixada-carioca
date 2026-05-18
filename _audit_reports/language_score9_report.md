@@ -21,7 +21,7 @@
 - PRIORITY: UPDATED: es/eventos.html | replacements=7
 - PRIORITY: UPDATED: eventos.html | replacements=15
 - PRIORITY: UPDATED: guia-do-rio.html | replacements=13
-- PRIORITY: UPDATED: index.html | replacements=36
+- PRIORITY: UPDATED: index.html | replacements=35
 - SECONDARY: UPDATED: morro-da-urca.html | replacements=24
 - SECONDARY: UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=7
 - SECONDARY: UPDATED: parque-bondinho.html | replacements=7

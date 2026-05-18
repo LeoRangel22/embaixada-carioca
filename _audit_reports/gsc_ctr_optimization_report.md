@@ -5,9 +5,7 @@
 - Período: last_24_hours
 
 ## Alterações aplicadas
-- UPDATED: index.html | changes=4
-- UPDATED: cafe-da-manha.html | changes=3
-- UPDATED: cardapio.html | changes=1
+- Nenhuma alteração necessária
 
 ## Clusters com CTR baixo
 - brand: CTR 4.88% | 41 impressões | embaixada carioca
