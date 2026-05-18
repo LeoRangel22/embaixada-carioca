@@ -27,6 +27,7 @@
 
 
 
+
 <link rel="canonical" href="https://www.embaixadacarioca.com/">
 <meta charset="utf-8"/>
 <link as="style" href="/assets/fonts/fonts.css" rel="preload"/>
@@ -1158,6 +1159,15 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
     margin:0!important;
     gap:8px!important;
     z-index:8!important;
+    display:flex!important;
+    flex-wrap:wrap!important;
+    align-items:center!important;
+  }
+  html body[data-screen-label="Home"] header.hero .hero-chips::before{
+    content:""!important;
+    flex:0 0 100%!important;
+    height:0!important;
+    order:3!important;
   }
   html body[data-screen-label="Home"] header.hero .hero-chips span{
     font-size:.82rem!important;
@@ -1165,6 +1175,10 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
     background:rgba(0,32,46,.42)!important;
     border-color:rgba(246,239,222,.28)!important;
   }
+  html body[data-screen-label="Home"] header.hero .hero-chips span:nth-child(1){order:1!important;}
+  html body[data-screen-label="Home"] header.hero .hero-chips span:nth-child(2){order:2!important;}
+  html body[data-screen-label="Home"] header.hero .hero-chips span:nth-child(3){order:4!important;}
+  html body[data-screen-label="Home"] header.hero .hero-chips span:nth-child(4){order:5!important;}
   html body[data-screen-label="Home"] header.hero .hero-ctas{
     position:absolute!important;
     left:clamp(70px,5.5vw,118px)!important;

@@ -1,11 +1,10 @@
 # Home Hero Efficiency — Embaixada Carioca
 
 ## Correções aplicadas
-- Logo posicionada na altura da faixa dos botões.
-- Logo centralizada horizontalmente no eixo visual do “A” de “Açúcar”.
-- Logo ajustada para `left:72vw` e `width:clamp(140px,10vw,166px)`.
-- Logo mantida acima da barra azul inferior.
-- Linha superior amarela mantida 1cm abaixo do ajuste anterior.
+- Chip “Dentro do Parque Bondinho” forçado para a segunda linha.
+- Primeira linha dos chips: avaliação + feijoada premiada.
+- Segunda linha dos chips: Dentro do Parque Bondinho + aberto todos os dias.
+- Mantida a posição geral dos chips e dos botões.
 
 ## Score estimado
 - Eficiência visual da home: 99/100
