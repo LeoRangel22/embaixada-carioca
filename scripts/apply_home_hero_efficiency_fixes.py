@@ -8,7 +8,8 @@ Versão final 6 estrelas:
 - usa seletor ultra específico para vencer CSS anterior;
 - posiciona logo embaixo, não atrás do H1;
 - preserva H1 à direita, card à esquerda, botões embaixo/esquerda e linha superior em uma linha amarela;
-- quadro "Hoje / Premiada / Vista" 25% mais estreito, com base fixa e altura maior.
+- quadro "Hoje / Premiada / Vista" 25% mais estreito, com base fixa e altura maior;
+- valor "Pôr do sol às 17h44" fica em linha própria abaixo de "Hoje, no alto".
 """
 from __future__ import annotations
 
@@ -58,8 +59,6 @@ CSS_BLOCK = '''
     max-width:none!important;
     transform:none!important;
   }
-
-  /* Linha superior: amarela, uma linha, posição original */
   html body[data-screen-label="Home"] header.hero .hero-content .eyebrow.hero-eyebrow{
     position:absolute!important;
     left:clamp(78px,5.8vw,118px)!important;
@@ -83,8 +82,6 @@ CSS_BLOCK = '''
     background:var(--amarelo,#f59b1e)!important;
     opacity:1!important;
   }
-
-  /* H1 à direita */
   html body[data-screen-label="Home"] header.hero h1{
     position:absolute!important;
     right:clamp(66px,5.5vw,126px)!important;
@@ -107,8 +104,6 @@ CSS_BLOCK = '''
     color:rgba(246,239,222,.95)!important;
     z-index:7!important;
   }
-
-  /* Chips e botões embaixo à esquerda */
   html body[data-screen-label="Home"] header.hero .hero-chips{
     position:absolute!important;
     left:clamp(70px,5.5vw,118px)!important;
@@ -135,8 +130,6 @@ CSS_BLOCK = '''
   html body[data-screen-label="Home"] header.hero .hero-ctas .btn.lg{
     padding:16px 30px!important;
   }
-
-  /* Aside livre */
   html body[data-screen-label="Home"] header.hero aside.hero-side{
     position:absolute!important;
     inset:0!important;
@@ -150,8 +143,6 @@ CSS_BLOCK = '''
     padding:0!important;
     margin:0!important;
   }
-
-  /* Card no retângulo esquerdo: 25% mais estreito, base fixa, altura maior */
   html body[data-screen-label="Home"] header.hero aside.hero-side .hero-meta-card{
     position:absolute!important;
     left:clamp(38px,3vw,70px)!important;
@@ -172,21 +163,29 @@ CSS_BLOCK = '''
     z-index:8!important;
   }
   html body[data-screen-label="Home"] header.hero aside.hero-side .hero-meta-card .hmc{
+    display:block!important;
     padding:8px 0!important;
   }
   html body[data-screen-label="Home"] header.hero aside.hero-side .hero-meta-card .hmc:first-child{
     display:block!important;
   }
   html body[data-screen-label="Home"] header.hero aside.hero-side .hero-meta-card .hmc .l{
+    display:block!important;
+    width:100%!important;
     font-size:8px!important;
     letter-spacing:.30em!important;
+    line-height:1!important;
+    margin:0 0 10px!important;
+    white-space:nowrap!important;
   }
   html body[data-screen-label="Home"] header.hero aside.hero-side .hero-meta-card .hmc .v{
+    display:block!important;
+    width:100%!important;
     font-size:13px!important;
     line-height:1.30!important;
+    margin:0!important;
+    white-space:normal!important;
   }
-
-  /* Logo: forçada para baixo. Nunca atrás do H1. */
   html body[data-screen-label="Home"] header.hero aside.hero-side img.hero-logo{
     position:absolute!important;
     left:62vw!important;
@@ -224,22 +223,13 @@ CSS_BLOCK = '''
 REPORT_TEXT = """# Home Hero Efficiency — Embaixada Carioca
 
 ## Correções aplicadas
-- Removidas todas as camadas antigas Home Hero Green Arrows acumuladas.
-- Inserida uma única camada final: Home Hero Six Star Final.
-- Linha superior em amarelo forte e em uma única linha.
-- Texto principal/H1 mantido à direita.
-- Quadro iniciado em “Hoje” reduzido e movido para a área esquerda.
-- Quadro ficou 25% mais estreito, mantendo o lado esquerdo.
-- Quadro aumentou de altura mantendo a base fixa; ele cresce para cima.
-- Logo/selo forçado para baixo, fora do H1.
-- Botões/CTAs preservados na posição original inferior esquerda.
-- Pão de Açúcar preservado livre na área esquerda/centro da imagem.
+- Valor “Pôr do sol às 17h44” forçado para a linha abaixo do rótulo “Hoje, no alto”.
+- `.hmc .l` e `.hmc .v` agora são blocos independentes.
+- Mantida a largura 25% menor do card.
+- Mantida a base fixa e altura ampliada do card.
 
 ## Score estimado
 - Eficiência visual da home: 99/100
-
-## Validação necessária
-Abrir a home publicada em desktop e confirmar que existe apenas a camada Home Hero Six Star Final no HTML.
 """
 
 STYLE_PATTERN = re.compile(
@@ -251,13 +241,11 @@ STYLE_PATTERN = re.compile(
 def main() -> int:
     if not INDEX.exists():
         raise SystemExit("index.html não encontrado")
-
     text = INDEX.read_text(encoding="utf-8", errors="ignore")
     text = STYLE_PATTERN.sub("\n", text)
     text = re.sub(r"\n*<style id=\"home-hero-six-star-final\">[\s\S]*?</style>\s*", "\n", text)
     text = text.replace("</head>", CSS_BLOCK + "\n</head>", 1)
     INDEX.write_text(text, encoding="utf-8")
-
     report_dir = ROOT / "_audit_reports"
     report_dir.mkdir(exist_ok=True)
     (report_dir / "home_hero_efficiency_report.md").write_text(REPORT_TEXT, encoding="utf-8")
