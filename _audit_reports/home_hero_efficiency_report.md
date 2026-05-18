@@ -1,18 +1,17 @@
 # Home Hero Efficiency — Embaixada Carioca
 
 ## Correções aplicadas
+- Removidas todas as camadas antigas Home Hero Green Arrows acumuladas.
+- Inserida uma única camada final: Home Hero Six Star Final.
 - Linha superior em amarelo forte e em uma única linha.
 - Texto principal/H1 mantido à direita.
-- Quadro iniciado em “Hoje” reduzido e movido para a área azul à esquerda.
-- Logo/selo removido de trás do título e posicionado no círculo inferior indicado.
+- Quadro iniciado em “Hoje” reduzido e movido para a área esquerda.
+- Logo/selo forçado para baixo, fora do H1.
 - Botões/CTAs preservados na posição original inferior esquerda.
 - Pão de Açúcar preservado livre na área esquerda/centro da imagem.
 
-## Objetivo visual
-Seguir exatamente a marcação do print: 1 linha no topo, quadro à esquerda, logo embaixo na área marcada, H1 à direita e botões no lugar original.
-
 ## Score estimado
-- Eficiência visual da home: 98/100
+- Eficiência visual da home: 99/100
 
 ## Validação necessária
-Abrir a home publicada em desktop e verificar: linha única, quadro menor à esquerda e logo no círculo inferior.
+Abrir a home publicada em desktop e confirmar que existe apenas a camada Home Hero Six Star Final no HTML.
