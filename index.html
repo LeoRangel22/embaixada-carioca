@@ -23,6 +23,7 @@
 
 
 
+
 <link rel="canonical" href="https://www.embaixadacarioca.com/">
 <meta charset="utf-8"/>
 <link as="style" href="/assets/fonts/fonts.css" rel="preload"/>
@@ -1092,8 +1093,6 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
     max-width:none!important;
     transform:none!important;
   }
-
-  /* Linha superior: amarela, uma linha, posição original */
   html body[data-screen-label="Home"] header.hero .hero-content .eyebrow.hero-eyebrow{
     position:absolute!important;
     left:clamp(78px,5.8vw,118px)!important;
@@ -1117,8 +1116,6 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
     background:var(--amarelo,#f59b1e)!important;
     opacity:1!important;
   }
-
-  /* H1 à direita */
   html body[data-screen-label="Home"] header.hero h1{
     position:absolute!important;
     right:clamp(66px,5.5vw,126px)!important;
@@ -1141,8 +1138,6 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
     color:rgba(246,239,222,.95)!important;
     z-index:7!important;
   }
-
-  /* Chips e botões embaixo à esquerda */
   html body[data-screen-label="Home"] header.hero .hero-chips{
     position:absolute!important;
     left:clamp(70px,5.5vw,118px)!important;
@@ -1169,8 +1164,6 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
   html body[data-screen-label="Home"] header.hero .hero-ctas .btn.lg{
     padding:16px 30px!important;
   }
-
-  /* Aside livre */
   html body[data-screen-label="Home"] header.hero aside.hero-side{
     position:absolute!important;
     inset:0!important;
@@ -1184,8 +1177,6 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
     padding:0!important;
     margin:0!important;
   }
-
-  /* Card no retângulo esquerdo: 25% mais estreito, base fixa, altura maior */
   html body[data-screen-label="Home"] header.hero aside.hero-side .hero-meta-card{
     position:absolute!important;
     left:clamp(38px,3vw,70px)!important;
@@ -1206,21 +1197,29 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
     z-index:8!important;
   }
   html body[data-screen-label="Home"] header.hero aside.hero-side .hero-meta-card .hmc{
+    display:block!important;
     padding:8px 0!important;
   }
   html body[data-screen-label="Home"] header.hero aside.hero-side .hero-meta-card .hmc:first-child{
     display:block!important;
   }
   html body[data-screen-label="Home"] header.hero aside.hero-side .hero-meta-card .hmc .l{
+    display:block!important;
+    width:100%!important;
     font-size:8px!important;
     letter-spacing:.30em!important;
+    line-height:1!important;
+    margin:0 0 10px!important;
+    white-space:nowrap!important;
   }
   html body[data-screen-label="Home"] header.hero aside.hero-side .hero-meta-card .hmc .v{
+    display:block!important;
+    width:100%!important;
     font-size:13px!important;
     line-height:1.30!important;
+    margin:0!important;
+    white-space:normal!important;
   }
-
-  /* Logo: forçada para baixo. Nunca atrás do H1. */
   html body[data-screen-label="Home"] header.hero aside.hero-side img.hero-logo{
     position:absolute!important;
     left:62vw!important;
