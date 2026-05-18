@@ -4,16 +4,16 @@
 - Nenhuma correção automática necessária
 
 ## Alertas de design/performance
-- index.html: excesso de blocos <style> inline (13). Impacta manutenção e performance percebida.
-- cafe-da-manha.html: excesso de blocos <style> inline (10). Impacta manutenção e performance percebida.
+- index.html: excesso de blocos <style> inline (14). Impacta manutenção e performance percebida.
+- cafe-da-manha.html: excesso de blocos <style> inline (11). Impacta manutenção e performance percebida.
 - cafe-da-manha.html: possível FAQ/schema duplicado.
-- almoco.html: excesso de blocos <style> inline (11). Impacta manutenção e performance percebida.
+- almoco.html: excesso de blocos <style> inline (12). Impacta manutenção e performance percebida.
 - almoco.html: possível FAQ/schema duplicado.
-- entardecer.html: excesso de blocos <style> inline (11). Impacta manutenção e performance percebida.
+- entardecer.html: excesso de blocos <style> inline (12). Impacta manutenção e performance percebida.
 - entardecer.html: possível FAQ/schema duplicado.
 - eventos.html: excesso de blocos <style> inline (11). Impacta manutenção e performance percebida.
-- cardapio.html: excesso de blocos <style> inline (11). Impacta manutenção e performance percebida.
-- guia-do-rio.html: excesso de blocos <style> inline (11). Impacta manutenção e performance percebida.
+- cardapio.html: excesso de blocos <style> inline (12). Impacta manutenção e performance percebida.
+- guia-do-rio.html: excesso de blocos <style> inline (12). Impacta manutenção e performance percebida.
 - en/index.html: excesso de blocos <style> inline (12). Impacta manutenção e performance percebida.
 - en/cafe-da-manha.html: excesso de blocos <style> inline (10). Impacta manutenção e performance percebida.
 - en/almoco.html: excesso de blocos <style> inline (10). Impacta manutenção e performance percebida.

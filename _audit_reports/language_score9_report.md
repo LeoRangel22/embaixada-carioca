@@ -17,7 +17,7 @@
 - PRIORITY: UPDATED: almoco.html | replacements=8
 - PRIORITY: UPDATED: cafe-da-manha.html | replacements=13
 - PRIORITY: UPDATED: cardapio.html | replacements=8
-- PRIORITY: UPDATED: entardecer.html | replacements=14
+- PRIORITY: UPDATED: entardecer.html | replacements=13
 - PRIORITY: UPDATED: es/eventos.html | replacements=7
 - PRIORITY: UPDATED: eventos.html | replacements=15
 - PRIORITY: UPDATED: guia-do-rio.html | replacements=13

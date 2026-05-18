@@ -13,12 +13,7 @@
 - **chope_heineken** → cardapio.html | termos: chope Heineken, chope Heineken premiado, melhor chope Heineken do Rio, Heineken Masters
 
 ## Alterações aplicadas
-- UPDATED: index.html | bloco de autoridade temática inserido
-- UPDATED: cafe-da-manha.html | bloco de autoridade temática inserido
-- UPDATED: almoco.html | bloco de autoridade temática inserido
-- UPDATED: entardecer.html | bloco de autoridade temática inserido
-- UPDATED: cardapio.html | bloco de autoridade temática inserido
-- UPDATED: guia-do-rio.html | bloco de autoridade temática inserido
+- Nenhuma alteração estrutural necessária
 
 ## Alertas de cluster
 - cafe_da_manha: termos ausentes ou fracos em cafe-da-manha.html: café da manhã na Urca

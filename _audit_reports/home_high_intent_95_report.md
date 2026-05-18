@@ -4,7 +4,7 @@
 - UPDATED: index.html | replacements=28
 - UPDATED: cafe-da-manha.html | replacements=12
 - UPDATED: almoco.html | replacements=8
-- UPDATED: entardecer.html | replacements=13
+- UPDATED: entardecer.html | replacements=12
 - UPDATED: eventos.html | replacements=10
 - UPDATED: cardapio.html | replacements=7
 - UPDATED: guia-do-rio.html | replacements=11
