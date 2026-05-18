@@ -10,7 +10,7 @@ Versão final 6 estrelas:
 - quadro "Hoje / Premiada / Vista" 25% mais estreito, com base fixa e altura maior;
 - valor "Pôr do sol às 17h44" fica em linha própria abaixo de "Hoje, no alto";
 - todo o conteúdo do hero sobe 2cm, mantendo a foto de fundo no lugar;
-- linha amarela desce 1cm em relação ao ajuste anterior;
+- linha amarela alinhada ao início do item "CAFÉ DA MANHÃ" e subida 0,5cm;
 - logo na altura dos botões, centralizada no eixo visual do A de Açúcar;
 - chip "Dentro do Parque Bondinho" forçado para a segunda linha.
 """
@@ -29,6 +29,8 @@ CSS_BLOCK = '''
   html body[data-screen-label="Home"] header.hero{
     --hero-up-2cm:76px;
     --hero-down-1cm:38px;
+    --hero-up-05cm:19px;
+    --hero-eyebrow-left:clamp(185px,11.8vw,215px);
     min-height:100svh!important;
     position:relative!important;
     overflow:hidden!important;
@@ -66,12 +68,12 @@ CSS_BLOCK = '''
     transform:none!important;
   }
 
-  /* Linha superior: conteúdo sobe 2cm, mas a linha amarela desce 1cm */
+  /* Linha superior: alinhada ao início de CAFÉ DA MANHÃ e subida 0,5cm */
   html body[data-screen-label="Home"] header.hero .hero-content .eyebrow.hero-eyebrow{
     position:absolute!important;
-    left:clamp(78px,5.8vw,118px)!important;
-    top:calc(clamp(136px,16vh,172px) - var(--hero-up-2cm) + var(--hero-down-1cm))!important;
-    width:calc(100vw - clamp(210px,16vw,300px))!important;
+    left:var(--hero-eyebrow-left)!important;
+    top:calc(clamp(136px,16vh,172px) - var(--hero-up-2cm) + var(--hero-down-1cm) - var(--hero-up-05cm))!important;
+    width:calc(100vw - var(--hero-eyebrow-left) - clamp(210px,16vw,300px))!important;
     max-width:none!important;
     white-space:nowrap!important;
     overflow:hidden!important;
@@ -253,10 +255,10 @@ CSS_BLOCK = '''
 REPORT_TEXT = """# Home Hero Efficiency — Embaixada Carioca
 
 ## Correções aplicadas
-- Chip “Dentro do Parque Bondinho” forçado para a segunda linha.
-- Primeira linha dos chips: avaliação + feijoada premiada.
-- Segunda linha dos chips: Dentro do Parque Bondinho + aberto todos os dias.
-- Mantida a posição geral dos chips e dos botões.
+- Linha amarela alinhada horizontalmente ao início do item “CAFÉ DA MANHÃ”.
+- Linha amarela subida 0,5cm em relação à posição anterior.
+- Mantida uma única linha amarela, sem quebra.
+- Mantida a organização dos chips com “Dentro do Parque Bondinho” na segunda linha.
 
 ## Score estimado
 - Eficiência visual da home: 99/100
