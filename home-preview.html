@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Preview A/B/C da Home | Embaixada Carioca</title>
+  <link rel="canonical" href="https://www.embaixadacarioca.com/home-preview.html" />
+  <link rel="preload" as="image" href="/assets/hero.webp" />
+  <link rel="stylesheet" href="/assets/fonts/fonts.css" />
+  <style>
+    :root{
+      --azul:#00202e;
+      --azul2:#00405a;
+      --amarelo:#f59b1e;
+      --areia:#f6efde;
+      --verde:#335d4a;
+      --shadow:0 22px 70px rgba(0,0,0,.38);
+      --mono:"JetBrains Mono",ui-monospace,monospace;
+      --sans:"Catamaran",system-ui,sans-serif;
+      --serif:"Cormorant Garamond",Georgia,serif;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:#001822;color:var(--areia);font-family:var(--sans);}
+    body{overflow:hidden}
+    a{color:inherit;text-decoration:none}
+
+    .preview-toolbar{
+      position:fixed;z-index:50;left:18px;right:18px;bottom:18px;
+      display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;
+      font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+      pointer-events:none;
+    }
+    .preview-toolbar a,.preview-toolbar span{
+      pointer-events:auto;border:1px solid rgba(246,239,222,.22);border-radius:999px;
+      padding:9px 13px;background:rgba(0,32,46,.74);backdrop-filter:blur(10px);
+      box-shadow:0 10px 30px rgba(0,0,0,.20);
+    }
+    .preview-toolbar a.active{background:var(--amarelo);color:var(--azul);border-color:var(--amarelo);font-weight:800}
+    .preview-toolbar .label{color:rgba(246,239,222,.72)}
+
+    .topnav{position:fixed;z-index:20;top:0;left:0;right:0;height:82px;display:flex;align-items:center;justify-content:space-between;padding:12px clamp(28px,5vw,76px);color:var(--areia);background:linear-gradient(180deg,rgba(0,18,26,.58),rgba(0,18,26,0));}
+    .topnav img{width:58px;height:58px;object-fit:contain;opacity:.92}
+    .menu{display:flex;align-items:center;gap:clamp(18px,2.5vw,34px);font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;white-space:nowrap}
+    .badge{padding:8px 17px;border:1px solid rgba(246,239,222,.22);border-radius:999px;background:rgba(0,32,46,.45)}
+    .reserve{background:var(--amarelo);color:var(--azul);border-radius:999px;padding:14px 28px;font-weight:900;letter-spacing:.10em}
+
+    .hero{position:relative;width:100vw;height:100svh;overflow:hidden;isolation:isolate;background:var(--azul)}
+    .hero::before{content:"";position:absolute;inset:0;background:url('/assets/hero.webp') center 44%/cover no-repeat;z-index:-3;}
+    .hero::after{content:"";position:absolute;inset:0;z-index:-2;}
+    .institutional{font-family:var(--mono);font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--amarelo);text-shadow:0 2px 12px rgba(0,0,0,.72);white-space:nowrap;overflow:hidden;}
+    .institutional::before{content:"";display:inline-block;width:36px;height:1px;background:var(--amarelo);vertical-align:middle;margin-right:18px;}
+    .headline{font-weight:200;letter-spacing:-.035em;line-height:.94;margin:0;color:var(--areia);}
+    .headline .soul{font-family:var(--serif);font-style:italic;font-weight:600;color:var(--amarelo);letter-spacing:-.04em;}
+    .sub{font-weight:500;letter-spacing:.01em;line-height:1.45;color:rgba(246,239,222,.96);text-shadow:0 2px 16px rgba(0,0,0,.55)}
+    .actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;border-radius:999px;padding:0 26px;border:1.3px solid rgba(246,239,222,.72);font-family:var(--mono);font-weight:900;font-size:13px;letter-spacing:.08em;text-transform:uppercase;background:rgba(0,32,46,.28);backdrop-filter:blur(8px);}
+    .btn.primary{background:var(--amarelo);border-color:var(--amarelo);color:var(--azul)}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+    .chip{border:1px solid rgba(246,239,222,.28);border-radius:999px;padding:6px 13px;background:rgba(0,32,46,.45);font-weight:600;line-height:1.1;white-space:nowrap}
+    .card{border:1px solid rgba(245,155,30,.24);background:rgba(0,32,46,.56);box-shadow:var(--shadow);backdrop-filter:blur(8px);border-radius:18px;padding:18px 17px;}
+    .card-row{padding:10px 0}.card-row+.card-row{border-top:1px solid rgba(246,239,222,.08)}
+    .card .label{font-family:var(--mono);font-size:8px;letter-spacing:.30em;text-transform:uppercase;color:var(--amarelo);display:block;margin-bottom:10px}
+    .card .value{font-size:16px;line-height:1.26;font-weight:700;display:block}
+    .logo-mark{position:absolute;display:block;opacity:.78;filter:drop-shadow(0 14px 34px rgba(0,32,46,.58));}
+    .bottom-info{position:absolute;left:0;right:0;bottom:0;height:44px;background:rgba(0,32,46,.72);border-top:1px solid rgba(245,155,30,.35);font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--amarelo);display:flex;align-items:center;justify-content:space-between;padding:0 clamp(28px,5vw,76px);z-index:10}
+
+    /* A — layout atual refinado */
+    body.layout-a .hero::after{background:linear-gradient(90deg,rgba(0,32,46,.10) 0%,rgba(0,32,46,.14) 34%,rgba(0,32,46,.44) 56%,rgba(0,32,46,.84) 100%),linear-gradient(180deg,rgba(0,32,46,.12),rgba(0,32,46,.22) 48%,rgba(0,32,46,.78));}
+    body.layout-a .institutional{position:absolute;top:95px;left:clamp(185px,11.8vw,215px);right:220px;}
+    body.layout-a .headline{position:absolute;right:clamp(66px,5.5vw,126px);top:132px;max-width:min(610px,39vw);font-size:clamp(42px,4.5vw,76px);}
+    body.layout-a .sub{position:absolute;right:clamp(66px,5.5vw,126px);top:430px;max-width:min(610px,40vw);font-size:clamp(16px,1.08vw,19px)}
+    body.layout-a .card{position:absolute;left:clamp(38px,3vw,70px);bottom:300px;width:min(214px,15vw);min-height:340px;display:flex;flex-direction:column;justify-content:space-between;}
+    body.layout-a .chips{position:absolute;left:clamp(70px,5.5vw,118px);bottom:210px;max-width:760px;}
+    body.layout-a .chips::before{content:"";flex:0 0 100%;height:0;order:3}.layout-a .chip:nth-child(1){order:1}.layout-a .chip:nth-child(2){order:2}.layout-a .chip:nth-child(3){order:4}.layout-a .chip:nth-child(4){order:5}
+    body.layout-a .actions{position:absolute;left:clamp(70px,5.5vw,118px);bottom:134px;}
+    body.layout-a .logo-mark{left:72vw;bottom:88px;transform:translateX(-50%);width:clamp(140px,10vw,166px);}
+
+    /* B — grid 6 estrelas limpo */
+    body.layout-b .hero{display:grid;grid-template-columns:minmax(48vw,1fr) minmax(420px,610px);grid-template-rows:90px auto auto auto 120px;column-gap:52px;padding:0 clamp(44px,6vw,96px)}
+    body.layout-b .hero::after{background:linear-gradient(90deg,rgba(0,32,46,.06) 0%,rgba(0,32,46,.12) 42%,rgba(0,32,46,.72) 100%),linear-gradient(180deg,rgba(0,32,46,.10),rgba(0,32,46,.18) 60%,rgba(0,32,46,.76));}
+    body.layout-b .institutional{grid-column:1 / -1;grid-row:2;align-self:start;margin-top:24px}
+    body.layout-b .headline{grid-column:2;grid-row:3;align-self:end;font-size:clamp(38px,4vw,66px);max-width:560px;margin-top:60px}.layout-b .headline .soul{display:block;margin:.08em 0}
+    body.layout-b .sub{grid-column:2;grid-row:4;font-size:clamp(16px,1.05vw,18px);max-width:520px;margin-top:24px}
+    body.layout-b .card{grid-column:1;grid-row:4;align-self:end;justify-self:start;width:270px;min-height:290px;margin-bottom:12px}
+    body.layout-b .chips{grid-column:1 / 2;grid-row:5;align-self:start;max-width:680px;margin-top:18px}.layout-b .chip:nth-child(2){display:none}
+    body.layout-b .actions{grid-column:2;grid-row:5;align-self:start;margin-top:16px}.layout-b .logo-mark{display:none}
+
+    /* C — editorial premium */
+    body.layout-c .hero::after{background:radial-gradient(circle at 23% 44%,rgba(0,32,46,.02) 0%,rgba(0,32,46,.06) 28%,rgba(0,32,46,.28) 48%,rgba(0,32,46,.82) 100%),linear-gradient(180deg,rgba(0,32,46,.10),rgba(0,32,46,.16) 45%,rgba(0,32,46,.78));}
+    body.layout-c .institutional{position:absolute;left:clamp(110px,9vw,170px);top:108px;right:80px;text-align:left}
+    body.layout-c .headline{position:absolute;right:clamp(78px,7vw,136px);top:150px;max-width:620px;font-size:clamp(40px,4.6vw,76px)}.layout-c .headline .soul{display:block;font-size:.86em;margin:.10em 0 .03em}
+    body.layout-c .sub{position:absolute;right:clamp(78px,7vw,136px);top:455px;max-width:460px;font-size:18px}.layout-c .sub .long{display:none}
+    body.layout-c .card{position:absolute;right:clamp(78px,7vw,136px);bottom:198px;width:390px;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;padding:18px 22px}.layout-c .card-row{padding:4px 0}.layout-c .card-row+.card-row{border-top:0}.layout-c .card-row:nth-child(3){grid-column:1 / -1;border-top:1px solid rgba(246,239,222,.10);padding-top:12px}
+    body.layout-c .chips{position:absolute;left:clamp(78px,7vw,136px);bottom:155px;max-width:560px}.layout-c .chip:nth-child(2),.layout-c .chip:nth-child(4){display:none}
+    body.layout-c .actions{position:absolute;left:clamp(78px,7vw,136px);bottom:82px}.layout-c .logo-mark{position:absolute;right:clamp(82px,7vw,138px);bottom:78px;width:116px;opacity:.50}
+
+    .variant-title{position:fixed;z-index:40;top:92px;right:22px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--amarelo);background:rgba(0,32,46,.54);border:1px solid rgba(245,155,30,.22);border-radius:999px;padding:10px 14px;backdrop-filter:blur(8px)}
+
+    @media(max-width:960px){body{overflow:auto}.topnav{height:auto}.menu a:nth-child(n+4),.badge{display:none}.hero{height:auto;min-height:100svh;padding:110px 24px 140px!important;display:block!important}.institutional,.headline,.sub,.card,.chips,.actions,.logo-mark{position:static!important;max-width:none!important;margin:0 0 22px!important;transform:none!important}.headline{font-size:clamp(38px,12vw,62px)!important}.card{width:100%!important;min-height:auto!important;display:block!important}.logo-mark{display:none!important}.bottom-info{font-size:9px;letter-spacing:.12em;gap:12px}.preview-toolbar{bottom:10px;left:8px;right:8px}.variant-title{display:none}}
+  </style>
+</head>
+<body class="layout-a">
+  <nav class="topnav" aria-label="Navegação de preview">
+    <img src="/assets/logo-branco.svg" alt="Embaixada Carioca" />
+    <div class="menu">
+      <a href="cafe-da-manha.html">Café da manhã</a>
+      <a href="almoco.html">Almoço</a>
+      <a href="entardecer.html">Entardecer</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="cardapio.html">Cardápio</a>
+      <a href="guia-do-rio.html">Guia do Rio</a>
+    </div>
+    <a class="badge" href="https://g.page/r/CU-tJiJIjBUcEAE/review">4.8★ 7.779 avaliações</a>
+    <a class="reserve" href="https://go.tagme.com.br/embaixadacarioca">Reservar →</a>
+  </nav>
+
+  <div class="variant-title" id="variantTitle">Layout A · Atual refinado</div>
+
+  <header class="hero">
+    <div class="institutional">Restaurante do Bondinho · Morro da Urca · Parque Bondinho Pão de Açúcar · Rio de Janeiro · Brasil</div>
+
+    <h1 class="headline">Restaurante no<br/>Morro da Urca<br/><span class="soul">a alma carioca</span><br/>em frente ao<br/>Pão de Açúcar.</h1>
+
+    <p class="sub"><span class="long">A Embaixada Carioca fica no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, na primeira parada do teleférico. </span>Café da manhã, almoço brasileiro, caipirinhas e chope gelado todos os dias, com vista direta para o Pão de Açúcar.</p>
+
+    <aside class="card" aria-label="Informações rápidas">
+      <div class="card-row"><span class="label">Hoje, no alto</span><span class="value">Pôr do sol às 17h44</span></div>
+      <div class="card-row"><span class="label">Premiada</span><span class="value">Melhor feijoada do Rio<br/>Veja Rio Comer & Beber 2025/2026</span></div>
+      <div class="card-row"><span class="label">Vista</span><span class="value">Pão de Açúcar em primeiro plano</span></div>
+    </aside>
+
+    <div class="chips" aria-label="Provas rápidas">
+      <span class="chip">4.8★ · 7.779 avaliações</span>
+      <span class="chip">🏆 Feijoada premiada da Academia da Cachaça</span>
+      <span class="chip">Dentro do Parque Bondinho</span>
+      <span class="chip">Aberto todos os dias · 8h30–21h</span>
+    </div>
+
+    <div class="actions">
+      <a class="btn primary" href="https://go.tagme.com.br/embaixadacarioca">Faça sua reserva →</a>
+      <a class="btn" href="cardapio.html">Conheça o cardápio</a>
+      <a class="btn" href="https://maps.app.goo.gl/">Como chegar</a>
+    </div>
+
+    <img class="logo-mark" src="/assets/logo-branco.svg" alt="" aria-hidden="true" />
+
+    <div class="bottom-info"><span>22°56′58″S · 43°9′55″W · Morro da Urca</span><span>Reservas via Tagme · +55 21 96683-7556</span></div>
+  </header>
+
+  <div class="preview-toolbar" aria-label="Alternar versões">
+    <span class="label">Preview noindex</span>
+    <a href="?layout=a" data-layout="a">A · Atual</a>
+    <a href="?layout=b" data-layout="b">B · Grid 6 estrelas</a>
+    <a href="?layout=c" data-layout="c">C · Premium</a>
+    <a href="/">Home oficial</a>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const layout = ['a','b','c'].includes(params.get('layout')) ? params.get('layout') : 'a';
+    document.body.className = 'layout-' + layout;
+    const titles = {
+      a: 'Layout A · Atual refinado',
+      b: 'Layout B · Hero AAA Grid',
+      c: 'Layout C · Editorial Premium'
+    };
+    document.getElementById('variantTitle').textContent = titles[layout];
+    document.querySelectorAll('[data-layout]').forEach(a => {
+      a.classList.toggle('active', a.dataset.layout === layout);
+    });
+  </script>
+</body>
+</html>
