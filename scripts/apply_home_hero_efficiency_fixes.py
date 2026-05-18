@@ -11,7 +11,7 @@ Versão final 6 estrelas:
 - valor "Pôr do sol às 17h44" fica em linha própria abaixo de "Hoje, no alto";
 - todo o conteúdo do hero sobe 2cm, mantendo a foto de fundo no lugar;
 - linha amarela desce 1cm em relação ao ajuste anterior;
-- logo centralizada na faixa dos botões, maior, sem encostar na barra azul inferior.
+- logo na altura dos botões, centralizada no eixo visual do A de Açúcar.
 """
 from __future__ import annotations
 
@@ -201,16 +201,16 @@ CSS_BLOCK = '''
     white-space:normal!important;
   }
 
-  /* Logo centralizada na faixa dos botões, maior e sem encostar na barra azul */
+  /* Logo na altura dos botões e no eixo visual do A de Açúcar */
   html body[data-screen-label="Home"] header.hero aside.hero-side img.hero-logo{
     position:absolute!important;
-    left:calc(clamp(70px,5.5vw,118px) + min(450px,31vw))!important;
+    left:72vw!important;
     top:auto!important;
     right:auto!important;
-    bottom:calc(clamp(54px,7.2vh,82px) + var(--hero-up-2cm) + 18px)!important;
+    bottom:calc(clamp(54px,7.2vh,82px) + var(--hero-up-2cm) - 46px)!important;
     transform:translateX(-50%)!important;
-    width:clamp(132px,9.4vw,158px)!important;
-    height:clamp(132px,9.4vw,158px)!important;
+    width:clamp(140px,10vw,166px)!important;
+    height:clamp(140px,10vw,166px)!important;
     opacity:.80!important;
     z-index:6!important;
     filter:drop-shadow(0 14px 34px rgba(0,32,46,.58))!important;
@@ -239,11 +239,11 @@ CSS_BLOCK = '''
 REPORT_TEXT = """# Home Hero Efficiency — Embaixada Carioca
 
 ## Correções aplicadas
-- Linha superior amarela desceu 1cm em relação ao ajuste anterior.
-- Logo centralizada horizontalmente na faixa dos botões.
-- Logo aumentada para `clamp(132px, 9.4vw, 158px)`.
-- Logo posicionada acima da barra azul inferior, sem encostar na base.
-- Foto de fundo preservada no mesmo `object-position`.
+- Logo posicionada na altura da faixa dos botões.
+- Logo centralizada horizontalmente no eixo visual do “A” de “Açúcar”.
+- Logo ajustada para `left:72vw` e `width:clamp(140px,10vw,166px)`.
+- Logo mantida acima da barra azul inferior.
+- Linha superior amarela mantida 1cm abaixo do ajuste anterior.
 
 ## Score estimado
 - Eficiência visual da home: 99/100
