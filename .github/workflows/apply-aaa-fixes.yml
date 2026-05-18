@@ -15,6 +15,7 @@ on:
       - 'scripts/apply_topic_authority_clusters.py'
       - 'scripts/apply_gsc_ctr_optimization.py'
       - 'scripts/apply_home_hero_efficiency_fixes.py'
+      - 'scripts/apply_google_review_link_fix.py'
       - 'data/gsc_click_magnet_queries.json'
       - '.github/workflows/apply-aaa-fixes.yml'
 
@@ -57,6 +58,9 @@ jobs:
       - name: Run home hero efficiency fixes script
         run: python3 scripts/apply_home_hero_efficiency_fixes.py
 
+      - name: Run Google review link correction script
+        run: python3 scripts/apply_google_review_link_fix.py
+
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
@@ -65,6 +69,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "fix: apply AAA efficiency and conversion corrections"
+            git commit -m "fix: apply AAA efficiency conversion and review link corrections"
             git push origin HEAD:${{ github.ref_name }}
           fi
