@@ -11,6 +11,7 @@ Versão final 6 estrelas:
 - valor "Pôr do sol às 17h44" fica em linha própria abaixo de "Hoje, no alto";
 - todo o conteúdo do hero sobe 2cm, mantendo a foto de fundo no lugar;
 - linha amarela alinhada ao início do item "CAFÉ DA MANHÃ" e subida 0,5cm;
+- texto menor/subtítulo baixado 1,5cm;
 - logo na altura dos botões, centralizada no eixo visual do A de Açúcar;
 - chip "Dentro do Parque Bondinho" forçado para a segunda linha.
 """
@@ -30,6 +31,7 @@ CSS_BLOCK = '''
     --hero-up-2cm:76px;
     --hero-down-1cm:38px;
     --hero-up-05cm:19px;
+    --hero-down-15cm:57px;
     --hero-eyebrow-left:clamp(185px,11.8vw,215px);
     min-height:100svh!important;
     position:relative!important;
@@ -93,7 +95,7 @@ CSS_BLOCK = '''
     opacity:1!important;
   }
 
-  /* H1 e subtítulo sobem 2cm */
+  /* H1 sobe 2cm */
   html body[data-screen-label="Home"] header.hero h1{
     position:absolute!important;
     right:clamp(66px,5.5vw,126px)!important;
@@ -105,10 +107,12 @@ CSS_BLOCK = '''
     text-wrap:balance!important;
     z-index:7!important;
   }
+
+  /* Texto menor baixado 1,5cm em relação à posição anterior */
   html body[data-screen-label="Home"] header.hero .hero-sub{
     position:absolute!important;
     right:clamp(66px,5.5vw,126px)!important;
-    top:calc(clamp(520px,58vh,625px) - var(--hero-up-2cm))!important;
+    top:calc(clamp(520px,58vh,625px) - var(--hero-up-2cm) + var(--hero-down-15cm))!important;
     max-width:min(610px,40vw)!important;
     font-size:clamp(15px,1vw,18px)!important;
     line-height:1.55!important;
@@ -255,10 +259,10 @@ CSS_BLOCK = '''
 REPORT_TEXT = """# Home Hero Efficiency — Embaixada Carioca
 
 ## Correções aplicadas
-- Linha amarela alinhada horizontalmente ao início do item “CAFÉ DA MANHÃ”.
-- Linha amarela subida 0,5cm em relação à posição anterior.
-- Mantida uma única linha amarela, sem quebra.
-- Mantida a organização dos chips com “Dentro do Parque Bondinho” na segunda linha.
+- Texto menor do hero baixado 1,5cm.
+- H1 mantido na posição atual.
+- Foto de fundo mantida no mesmo `object-position`.
+- Demais elementos preservados.
 
 ## Score estimado
 - Eficiência visual da home: 99/100
