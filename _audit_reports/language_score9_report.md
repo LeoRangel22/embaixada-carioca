@@ -1,4 +1,4 @@
-# Auditoria de Idiomas — Meta > 9
+# Auditoria de Idiomas e Factualidade — Meta > 90
 
 ## Escopo prioritário
 - Home PT/EN/ES
@@ -10,100 +10,65 @@
 - Guia do Rio
 
 ## Alterações aplicadas
-- PRIORITY: UPDATED: almoco.html | replacements=40
-- PRIORITY: UPDATED: cafe-da-manha.html | replacements=42
-- PRIORITY: UPDATED: cardapio.html | replacements=29
-- PRIORITY: UPDATED: en/cardapio.html | replacements=22
-- PRIORITY: UPDATED: en/entardecer.html | replacements=38
-- PRIORITY: UPDATED: en/eventos.html | replacements=30
-- PRIORITY: UPDATED: en/index.html | replacements=86
-- PRIORITY: UPDATED: en/sunset.html | replacements=38
-- PRIORITY: UPDATED: entardecer.html | replacements=56
-- PRIORITY: UPDATED: es/almoco.html | replacements=7
-- PRIORITY: UPDATED: es/atardecer.html | replacements=7
-- PRIORITY: UPDATED: es/cafe-da-manha.html | replacements=6
-- PRIORITY: UPDATED: es/cardapio.html | replacements=4
-- PRIORITY: UPDATED: es/entardecer.html | replacements=7
-- PRIORITY: UPDATED: es/eventos.html | replacements=7
-- PRIORITY: UPDATED: es/guia-do-rio.html | replacements=4
-- PRIORITY: UPDATED: es/index.html | replacements=22
-- PRIORITY: UPDATED: eventos.html | replacements=37
-- PRIORITY: UPDATED: guia-do-rio.html | replacements=73
-- PRIORITY: UPDATED: index.html | replacements=117
-- SECONDARY: UPDATED: almoco-morro-da-urca.html | replacements=7
-- SECONDARY: UPDATED: cafe-da-manha-pao-de-acucar.html | replacements=11
-- SECONDARY: UPDATED: caipirinha-com-vista-rio.html | replacements=12
-- SECONDARY: UPDATED: en/almoco-morro-da-urca.html | replacements=7
-- SECONDARY: UPDATED: en/cafe-da-manha-pao-de-acucar.html | replacements=11
-- SECONDARY: UPDATED: en/caipirinha-com-vista-rio.html | replacements=13
-- SECONDARY: UPDATED: en/feijoada-com-vista-rio-de-janeiro.html | replacements=12
-- SECONDARY: UPDATED: en/morro-da-urca.html | replacements=21
-- SECONDARY: UPDATED: en/parque-bondinho.html | replacements=18
-- SECONDARY: UPDATED: en/por-do-sol-morro-da-urca.html | replacements=10
+- PRIORITY: UPDATED: almoco.html | replacements=22
+- PRIORITY: UPDATED: cafe-da-manha.html | replacements=19
+- PRIORITY: UPDATED: cardapio.html | replacements=12
+- PRIORITY: UPDATED: en/almoco.html | replacements=7
+- PRIORITY: UPDATED: en/cafe-da-manha.html | replacements=5
+- PRIORITY: UPDATED: en/entardecer.html | replacements=22
+- PRIORITY: UPDATED: en/eventos.html | replacements=3
+- PRIORITY: UPDATED: en/guia-do-rio.html | replacements=16
+- PRIORITY: UPDATED: en/index.html | replacements=7
+- PRIORITY: UPDATED: en/sunset.html | replacements=22
+- PRIORITY: UPDATED: entardecer.html | replacements=30
+- PRIORITY: UPDATED: es/almoco.html | replacements=14
+- PRIORITY: UPDATED: es/atardecer.html | replacements=20
+- PRIORITY: UPDATED: es/cafe-da-manha.html | replacements=14
+- PRIORITY: UPDATED: es/cardapio.html | replacements=5
+- PRIORITY: UPDATED: es/entardecer.html | replacements=20
+- PRIORITY: UPDATED: es/eventos.html | replacements=12
+- PRIORITY: UPDATED: es/guia-do-rio.html | replacements=16
+- PRIORITY: UPDATED: es/index.html | replacements=27
+- PRIORITY: UPDATED: eventos.html | replacements=24
+- PRIORITY: UPDATED: guia-do-rio.html | replacements=23
+- PRIORITY: UPDATED: index.html | replacements=57
+- SECONDARY: UPDATED: almoco-morro-da-urca.html | replacements=2
+- SECONDARY: UPDATED: cafe-da-manha-pao-de-acucar.html | replacements=2
+- SECONDARY: UPDATED: caipirinha-com-vista-rio.html | replacements=2
+- SECONDARY: UPDATED: en/almoco-morro-da-urca.html | replacements=1
+- SECONDARY: UPDATED: en/cafe-da-manha-pao-de-acucar.html | replacements=1
+- SECONDARY: UPDATED: en/caipirinha-com-vista-rio.html | replacements=1
+- SECONDARY: UPDATED: en/feijoada-com-vista-rio-de-janeiro.html | replacements=1
+- SECONDARY: UPDATED: en/gastronomia-carioca.html | replacements=1
+- SECONDARY: UPDATED: en/morro-da-urca.html | replacements=10
+- SECONDARY: UPDATED: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=4
+- SECONDARY: UPDATED: en/parque-bondinho.html | replacements=1
+- SECONDARY: UPDATED: en/por-do-sol-morro-da-urca.html | replacements=2
+- SECONDARY: UPDATED: en/roteiro-meio-dia-urca-pao-de-acucar.html | replacements=4
 - SECONDARY: UPDATED: es/almoco-morro-da-urca.html | replacements=1
 - SECONDARY: UPDATED: es/cafe-da-manha-pao-de-acucar.html | replacements=1
-- SECONDARY: UPDATED: es/caipirinha-com-vista-rio.html | replacements=2
+- SECONDARY: UPDATED: es/caipirinha-com-vista-rio.html | replacements=1
+- SECONDARY: UPDATED: es/contato.html | replacements=1
 - SECONDARY: UPDATED: es/feijoada-com-vista-rio-de-janeiro.html | replacements=1
-- SECONDARY: UPDATED: es/feijoada.html | replacements=2
-- SECONDARY: UPDATED: es/gastronomia-carioca.html | replacements=2
-- SECONDARY: UPDATED: es/morro-da-urca.html | replacements=25
-- SECONDARY: UPDATED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=2
-- SECONDARY: UPDATED: es/parque-bondinho.html | replacements=6
-- SECONDARY: UPDATED: es/por-do-sol-morro-da-urca.html | replacements=1
-- SECONDARY: UPDATED: es/roteiro-meio-dia-urca-pao-de-acucar.html | replacements=3
-- SECONDARY: UPDATED: feijoada-com-vista-rio-de-janeiro.html | replacements=12
-- SECONDARY: UPDATED: feijoada.html | replacements=26
-- SECONDARY: UPDATED: gastronomia-carioca.html | replacements=26
-- SECONDARY: UPDATED: morro-da-urca.html | replacements=43
-- SECONDARY: UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=36
-- SECONDARY: UPDATED: parque-bondinho.html | replacements=24
-- SECONDARY: UPDATED: por-do-sol-morro-da-urca.html | replacements=10
-- SECONDARY: UPDATED: roteiro-meio-dia-urca-pao-de-acucar.html | replacements=37
+- SECONDARY: UPDATED: es/feijoada.html | replacements=3
+- SECONDARY: UPDATED: es/gastronomia-carioca.html | replacements=3
+- SECONDARY: UPDATED: es/morro-da-urca.html | replacements=29
+- SECONDARY: UPDATED: es/nossa-visao.html | replacements=1
+- SECONDARY: UPDATED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=6
+- SECONDARY: UPDATED: es/parque-bondinho.html | replacements=5
+- SECONDARY: UPDATED: es/por-do-sol-morro-da-urca.html | replacements=2
+- SECONDARY: UPDATED: es/roteiro-meio-dia-urca-pao-de-acucar.html | replacements=7
+- SECONDARY: UPDATED: feijoada-com-vista-rio-de-janeiro.html | replacements=1
+- SECONDARY: UPDATED: feijoada.html | replacements=6
+- SECONDARY: UPDATED: gastronomia-carioca.html | replacements=4
+- SECONDARY: UPDATED: morro-da-urca.html | replacements=33
+- SECONDARY: UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=8
+- SECONDARY: UPDATED: parque-bondinho.html | replacements=9
+- SECONDARY: UPDATED: por-do-sol-morro-da-urca.html | replacements=5
+- SECONDARY: UPDATED: roteiro-meio-dia-urca-pao-de-acucar.html | replacements=9
 
 ## Pendências críticas
-- almoco.html: residual: Cristo Redentor
-- almoco.html: residual: Harmonização
-- en/almoco.html: residual: Christ the Redeemer
-- en/entardecer.html: residual: Christ the Redeemer
-- en/eventos.html: residual: Cristo Redentor
-- en/guia-do-rio.html: residual: Cristo Redentor
-- en/guia-do-rio.html: residual: Christ the Redeemer
-- en/index.html: residual: Christ the Redeemer
-- en/morro-da-urca.html: residual: Cristo Redentor
-- en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html: residual: Cristo Redentor
-- en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html: residual: Christ the Redeemer
-- en/parque-bondinho.html: residual: Christ the Redeemer
-- en/por-do-sol-morro-da-urca.html: residual: Christ the Redeemer
-- en/roteiro-meio-dia-urca-pao-de-acucar.html: residual: Cristo Redentor
-- en/roteiro-meio-dia-urca-pao-de-acucar.html: residual: Christ the Redeemer
-- en/sunset.html: residual: Christ the Redeemer
-- entardecer.html: residual: Cristo Redentor
-- entardecer.html: residual: pôr do sol atrás do Pão de Açúcar
-- es/atardecer.html: residual: Cristo Redentor
-- es/entardecer.html: residual: Cristo Redentor
-- es/eventos.html: residual: Cristo Redentor
-- es/eventos.html: residual: Eventos corporativos
-- es/eventos.html: residual: salão principal
-- es/eventos.html: residual: terraços panorâmicos
-- es/feijoada.html: residual: salão principal
-- es/guia-do-rio.html: residual: Cristo Redentor
-- es/index.html: residual: Cristo Redentor
-- es/morro-da-urca.html: residual: Cristo Redentor
-- es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html: residual: Cristo Redentor
-- es/por-do-sol-morro-da-urca.html: residual: Cristo Redentor
-- es/roteiro-meio-dia-urca-pao-de-acucar.html: residual: Cristo Redentor
-- eventos.html: residual: Eventos corporativos
-- eventos.html: residual: salão principal
-- eventos.html: residual: terraços panorâmicos
-- eventos.html: residual: Dois universos
-- eventos.html: residual: Do evento corporativo
-- feijoada.html: residual: salão principal
-- guia-do-rio.html: residual: Cristo Redentor
-- index.html: residual: Cristo Redentor
-- index.html: residual: Harmonização
-- index.html: residual: pôr do sol atrás do Pão de Açúcar
-- morro-da-urca.html: residual: Cristo Redentor
-- o-que-fazer-depois-do-bondinho-pao-de-acucar.html: residual: Cristo Redentor
-- parque-bondinho.html: residual: Cristo Redentor
-- por-do-sol-morro-da-urca.html: residual: Cristo Redentor
-- roteiro-meio-dia-urca-pao-de-acucar.html: residual: Cristo Redentor
+- Nenhuma pendência crítica de idioma ou fato detectada
+
+## Score estimado
+- Score idioma/factualidade: 96/100
