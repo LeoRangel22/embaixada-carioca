@@ -28,6 +28,7 @@
 
 
 
+
 <link rel="canonical" href="https://www.embaixadacarioca.com/">
 <meta charset="utf-8"/>
 <link as="style" href="/assets/fonts/fonts.css" rel="preload"/>
@@ -1064,6 +1065,8 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
   html body[data-screen-label="Home"] header.hero{
     --hero-up-2cm:76px;
     --hero-down-1cm:38px;
+    --hero-up-05cm:19px;
+    --hero-eyebrow-left:clamp(185px,11.8vw,215px);
     min-height:100svh!important;
     position:relative!important;
     overflow:hidden!important;
@@ -1101,12 +1104,12 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
     transform:none!important;
   }
 
-  /* Linha superior: conteúdo sobe 2cm, mas a linha amarela desce 1cm */
+  /* Linha superior: alinhada ao início de CAFÉ DA MANHÃ e subida 0,5cm */
   html body[data-screen-label="Home"] header.hero .hero-content .eyebrow.hero-eyebrow{
     position:absolute!important;
-    left:clamp(78px,5.8vw,118px)!important;
-    top:calc(clamp(136px,16vh,172px) - var(--hero-up-2cm) + var(--hero-down-1cm))!important;
-    width:calc(100vw - clamp(210px,16vw,300px))!important;
+    left:var(--hero-eyebrow-left)!important;
+    top:calc(clamp(136px,16vh,172px) - var(--hero-up-2cm) + var(--hero-down-1cm) - var(--hero-up-05cm))!important;
+    width:calc(100vw - var(--hero-eyebrow-left) - clamp(210px,16vw,300px))!important;
     max-width:none!important;
     white-space:nowrap!important;
     overflow:hidden!important;

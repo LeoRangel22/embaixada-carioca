@@ -1,10 +1,10 @@
 # Home Hero Efficiency — Embaixada Carioca
 
 ## Correções aplicadas
-- Chip “Dentro do Parque Bondinho” forçado para a segunda linha.
-- Primeira linha dos chips: avaliação + feijoada premiada.
-- Segunda linha dos chips: Dentro do Parque Bondinho + aberto todos os dias.
-- Mantida a posição geral dos chips e dos botões.
+- Linha amarela alinhada horizontalmente ao início do item “CAFÉ DA MANHÃ”.
+- Linha amarela subida 0,5cm em relação à posição anterior.
+- Mantida uma única linha amarela, sem quebra.
+- Mantida a organização dos chips com “Dentro do Parque Bondinho” na segunda linha.
 
 ## Score estimado
 - Eficiência visual da home: 99/100
