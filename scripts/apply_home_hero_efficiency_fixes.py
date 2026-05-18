@@ -2,13 +2,13 @@
 """
 Home Hero Efficiency Fixes — Embaixada Carioca.
 
-Versão setas verdes v5:
-- linha "Restaurante do Bondinho..." em amarelo forte;
-- botões/CTAs permanecem na posição original inferior esquerda;
-- texto principal/H1 permanece à direita;
-- card iniciado em "Hoje" ocupa o espaço original do bloco de texto principal;
-- logo/selo centralizado no bloco do título "Restaurante no Morro da Urca";
-- Pão de Açúcar fica livre na área esquerda/centro.
+Versão setas verdes v6:
+- linha superior em amarelo, em uma linha só;
+- card iniciado em "Hoje" menor e mais à esquerda, dentro da área marcada;
+- logo/selo fora do título, posicionado no círculo inferior indicado;
+- botões/CTAs preservados na posição original inferior esquerda;
+- H1 permanece à direita;
+- Pão de Açúcar livre na área esquerda/centro.
 """
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ INDEX = ROOT / "index.html"
 
 CSS_BLOCK = '''
 <style>
-/* Home Hero Green Arrows v5 — eyebrow amarelo e logo centralizada no título */
+/* Home Hero Green Arrows v6 — alvo visual anotado */
 @media (min-width: 961px){
   body[data-screen-label="Home"] .hero{
     min-height:100svh;
@@ -32,13 +32,13 @@ CSS_BLOCK = '''
   body[data-screen-label="Home"] .hero-overlay{
     background:
       linear-gradient(90deg,
-        rgba(0,32,46,.14) 0%,
-        rgba(0,32,46,.16) 34%,
+        rgba(0,32,46,.12) 0%,
+        rgba(0,32,46,.15) 34%,
         rgba(0,32,46,.43) 56%,
         rgba(0,32,46,.82) 100%),
       linear-gradient(180deg,
-        rgba(0,32,46,.15) 0%,
-        rgba(0,32,46,.26) 48%,
+        rgba(0,32,46,.14) 0%,
+        rgba(0,32,46,.25) 48%,
         rgba(0,32,46,.75) 100%);
   }
 
@@ -58,26 +58,32 @@ CSS_BLOCK = '''
     transform:none!important;
   }
 
-  /* Linha superior em amarelo forte, conforme referência */
+  /* 1 linha: sem quebra, amarelo, ocupando a faixa superior marcada */
   body[data-screen-label="Home"] .hero .eyebrow.hero-eyebrow{
     position:absolute;
-    left:clamp(70px,5.5vw,118px);
-    top:clamp(138px,16.5vh,178px);
-    max-width:min(760px,48vw);
-    font-size:10px;
-    letter-spacing:.34em;
-    line-height:1.8;
+    left:clamp(78px,5.8vw,118px);
+    top:clamp(136px,16vh,172px);
+    width:calc(100vw - clamp(210px,16vw,300px));
+    max-width:none!important;
+    white-space:nowrap!important;
+    overflow:hidden;
+    text-overflow:clip;
+    font-size:9px;
+    letter-spacing:.31em;
+    line-height:1;
     color:var(--amarelo,#f59b1e)!important;
     opacity:1!important;
-    text-shadow:0 2px 12px rgba(0,32,46,.62);
-    z-index:6;
+    text-shadow:0 2px 12px rgba(0,32,46,.66);
+    z-index:7;
   }
   body[data-screen-label="Home"] .hero .eyebrow.hero-eyebrow::before{
+    width:32px!important;
+    min-width:32px!important;
     background:var(--amarelo,#f59b1e)!important;
     opacity:1!important;
   }
 
-  /* H1 à direita */
+  /* H1 à direita, sem cobrir o Pão de Açúcar */
   body[data-screen-label="Home"] .hero h1{
     position:absolute;
     right:clamp(66px,5.5vw,126px);
@@ -101,7 +107,7 @@ CSS_BLOCK = '''
     z-index:5;
   }
 
-  /* Chips e botões preservados na parte inferior esquerda */
+  /* Chips e botões originais embaixo/esquerda */
   body[data-screen-label="Home"] .hero-chips{
     position:absolute!important;
     left:clamp(70px,5.5vw,118px);
@@ -129,7 +135,6 @@ CSS_BLOCK = '''
     padding:16px 30px!important;
   }
 
-  /* Aside como camada livre */
   body[data-screen-label="Home"] .hero-side{
     position:absolute;
     inset:0;
@@ -144,46 +149,46 @@ CSS_BLOCK = '''
     margin:0;
   }
 
-  /* Card "Hoje / Premiada / Vista" no espaço antigo do texto principal */
+  /* Quadro no retângulo azul: menor, mais à esquerda, sem invadir o H1 */
   body[data-screen-label="Home"] .hero-meta-card{
     position:absolute;
-    left:clamp(70px,5.5vw,118px);
-    top:clamp(355px,39vh,455px);
-    width:min(345px,27vw);
-    padding:18px 20px;
-    border-radius:18px;
-    background:rgba(0,32,46,.54);
-    border:1px solid rgba(245,155,30,.26);
-    box-shadow:0 18px 46px rgba(0,0,0,.22);
+    left:clamp(38px,3vw,70px);
+    top:clamp(330px,37vh,430px);
+    width:min(285px,20vw);
+    padding:15px 16px;
+    border-radius:16px;
+    background:rgba(0,32,46,.55);
+    border:1px solid rgba(245,155,30,.24);
+    box-shadow:0 16px 40px rgba(0,0,0,.22);
     backdrop-filter:blur(8px);
     -webkit-backdrop-filter:blur(8px);
   }
   body[data-screen-label="Home"] .hero-meta-card .hmc{
-    padding:10px 0;
+    padding:8px 0;
   }
   body[data-screen-label="Home"] .hero-meta-card .hmc:first-child{
     display:block;
   }
   body[data-screen-label="Home"] .hmc .l{
-    font-size:9px;
-    letter-spacing:.32em;
+    font-size:8px;
+    letter-spacing:.30em;
   }
   body[data-screen-label="Home"] .hmc .v{
-    font-size:14px;
-    line-height:1.34;
+    font-size:13px;
+    line-height:1.30;
   }
 
-  /* Logo centralizada no bloco do título "Restaurante no Morro da Urca" */
+  /* Logo no círculo inferior indicado, não atrás do título */
   body[data-screen-label="Home"] .hero-logo{
     position:absolute;
-    right:clamp(285px,23vw,380px);
-    top:clamp(214px,25vh,292px);
-    width:clamp(118px,9.6vw,158px);
-    height:clamp(118px,9.6vw,158px);
-    opacity:.48;
-    z-index:4;
-    filter:drop-shadow(0 14px 34px rgba(0,32,46,.55));
-    mix-blend-mode:screen;
+    left:clamp(980px,67vw,1120px);
+    bottom:clamp(72px,8.5vh,98px);
+    width:clamp(112px,8.2vw,138px);
+    height:clamp(112px,8.2vw,138px);
+    opacity:.76;
+    z-index:5;
+    filter:drop-shadow(0 14px 34px rgba(0,32,46,.58));
+    mix-blend-mode:normal;
   }
 
   body[data-screen-label="Home"] .hero-bottom-bar{
@@ -195,7 +200,7 @@ CSS_BLOCK = '''
 }
 @media (min-width: 1500px){
   body[data-screen-label="Home"] .hero-logo{
-    right:clamp(320px,24vw,430px);
+    left:clamp(1040px,68vw,1180px);
   }
 }
 @media (max-width: 960px){
@@ -213,6 +218,8 @@ CSS_BLOCK = '''
   body[data-screen-label="Home"] .hero-chips,
   body[data-screen-label="Home"] .hero-ctas{
     position:static!important;
+    white-space:normal!important;
+    width:auto!important;
   }
 }
 </style>
@@ -221,22 +228,21 @@ CSS_BLOCK = '''
 REPORT_TEXT = """# Home Hero Efficiency — Embaixada Carioca
 
 ## Correções aplicadas
-- Linha “Restaurante do Bondinho...” em amarelo forte.
+- Linha superior em amarelo forte e em uma única linha.
+- Texto principal/H1 mantido à direita.
+- Quadro iniciado em “Hoje” reduzido e movido para a área azul à esquerda.
+- Logo/selo removido de trás do título e posicionado no círculo inferior indicado.
 - Botões/CTAs preservados na posição original inferior esquerda.
-- Texto principal/H1 deslocado para a direita.
-- Card iniciado em “Hoje” mantido no espaço original do texto principal.
-- Logo/selo centralizado no bloco do título “Restaurante no Morro da Urca”.
 - Pão de Açúcar preservado livre na área esquerda/centro da imagem.
-- Overlay suavizado à esquerda e reforçado à direita.
 
 ## Objetivo visual
-Manter a composição solicitada: linha superior amarela; H1 à direita; logo centralizada no título; card “Hoje” no antigo espaço do texto; botões nas posições originais.
+Seguir exatamente a marcação do print: 1 linha no topo, quadro à esquerda, logo embaixo na área marcada, H1 à direita e botões no lugar original.
 
 ## Score estimado
-- Eficiência visual da home: 97/100
+- Eficiência visual da home: 98/100
 
 ## Validação necessária
-Abrir a home publicada em desktop e verificar se a linha superior está amarela e se o selo ficou centralizado no bloco do título.
+Abrir a home publicada em desktop e verificar: linha única, quadro menor à esquerda e logo no círculo inferior.
 """
 
 
@@ -246,7 +252,7 @@ def main() -> int:
     text = INDEX.read_text(encoding="utf-8", errors="ignore")
     original = text
 
-    if "Home Hero Green Arrows v5" not in text:
+    if "Home Hero Green Arrows v6" not in text:
         text = text.replace("</head>", CSS_BLOCK + "\n</head>", 1)
 
     if text != original:
