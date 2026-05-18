@@ -2,12 +2,12 @@
 """
 Home Hero Efficiency Fixes — Embaixada Carioca.
 
-Versão setas verdes v4:
-- linha "Restaurante do Bondinho..." permanece na posição original;
+Versão setas verdes v5:
+- linha "Restaurante do Bondinho..." em amarelo forte;
 - botões/CTAs permanecem na posição original inferior esquerda;
-- texto principal/H1 vai para a direita;
+- texto principal/H1 permanece à direita;
 - card iniciado em "Hoje" ocupa o espaço original do bloco de texto principal;
-- logo/selo grande desce e vai para a esquerda, em área vazia;
+- logo/selo centralizado no bloco do título "Restaurante no Morro da Urca";
 - Pão de Açúcar fica livre na área esquerda/centro.
 """
 from __future__ import annotations
@@ -19,7 +19,7 @@ INDEX = ROOT / "index.html"
 
 CSS_BLOCK = '''
 <style>
-/* Home Hero Green Arrows v4 — eyebrow e botões originais, H1 à direita */
+/* Home Hero Green Arrows v5 — eyebrow amarelo e logo centralizada no título */
 @media (min-width: 961px){
   body[data-screen-label="Home"] .hero{
     min-height:100svh;
@@ -58,18 +58,26 @@ CSS_BLOCK = '''
     transform:none!important;
   }
 
+  /* Linha superior em amarelo forte, conforme referência */
   body[data-screen-label="Home"] .hero .eyebrow.hero-eyebrow{
     position:absolute;
     left:clamp(70px,5.5vw,118px);
     top:clamp(138px,16.5vh,178px);
     max-width:min(760px,48vw);
     font-size:10px;
-    letter-spacing:.32em;
+    letter-spacing:.34em;
     line-height:1.8;
-    opacity:.92;
-    z-index:4;
+    color:var(--amarelo,#f59b1e)!important;
+    opacity:1!important;
+    text-shadow:0 2px 12px rgba(0,32,46,.62);
+    z-index:6;
+  }
+  body[data-screen-label="Home"] .hero .eyebrow.hero-eyebrow::before{
+    background:var(--amarelo,#f59b1e)!important;
+    opacity:1!important;
   }
 
+  /* H1 à direita */
   body[data-screen-label="Home"] .hero h1{
     position:absolute;
     right:clamp(66px,5.5vw,126px);
@@ -79,7 +87,7 @@ CSS_BLOCK = '''
     line-height:.98;
     margin:0;
     text-wrap:balance;
-    z-index:4;
+    z-index:5;
   }
   body[data-screen-label="Home"] .hero-sub{
     position:absolute;
@@ -90,8 +98,10 @@ CSS_BLOCK = '''
     line-height:1.55;
     margin:0;
     color:rgba(246,239,222,.95);
-    z-index:4;
+    z-index:5;
   }
+
+  /* Chips e botões preservados na parte inferior esquerda */
   body[data-screen-label="Home"] .hero-chips{
     position:absolute!important;
     left:clamp(70px,5.5vw,118px);
@@ -99,7 +109,7 @@ CSS_BLOCK = '''
     max-width:min(760px,56vw);
     margin:0!important;
     gap:8px!important;
-    z-index:5;
+    z-index:6;
   }
   body[data-screen-label="Home"] .hero-chips span{
     font-size:.82rem!important;
@@ -107,19 +117,19 @@ CSS_BLOCK = '''
     background:rgba(0,32,46,.42)!important;
     border-color:rgba(246,239,222,.28)!important;
   }
-
   body[data-screen-label="Home"] .hero-ctas{
     position:absolute;
     left:clamp(70px,5.5vw,118px);
     bottom:clamp(54px,7.2vh,82px);
     max-width:min(900px,62vw);
     gap:12px;
-    z-index:5;
+    z-index:6;
   }
   body[data-screen-label="Home"] .hero-ctas .btn.lg{
     padding:16px 30px!important;
   }
 
+  /* Aside como camada livre */
   body[data-screen-label="Home"] .hero-side{
     position:absolute;
     inset:0;
@@ -134,6 +144,7 @@ CSS_BLOCK = '''
     margin:0;
   }
 
+  /* Card "Hoje / Premiada / Vista" no espaço antigo do texto principal */
   body[data-screen-label="Home"] .hero-meta-card{
     position:absolute;
     left:clamp(70px,5.5vw,118px);
@@ -162,26 +173,29 @@ CSS_BLOCK = '''
     line-height:1.34;
   }
 
+  /* Logo centralizada no bloco do título "Restaurante no Morro da Urca" */
   body[data-screen-label="Home"] .hero-logo{
     position:absolute;
-    left:clamp(520px,35vw,720px);
-    bottom:clamp(86px,10vh,118px);
-    width:122px;
-    height:122px;
-    opacity:.72;
-    filter:drop-shadow(0 12px 30px rgba(0,32,46,.48));
+    right:clamp(285px,23vw,380px);
+    top:clamp(214px,25vh,292px);
+    width:clamp(118px,9.6vw,158px);
+    height:clamp(118px,9.6vw,158px);
+    opacity:.48;
+    z-index:4;
+    filter:drop-shadow(0 14px 34px rgba(0,32,46,.55));
+    mix-blend-mode:screen;
   }
 
   body[data-screen-label="Home"] .hero-bottom-bar{
     background:rgba(0,32,46,.58);
     backdrop-filter:blur(8px);
     -webkit-backdrop-filter:blur(8px);
-    z-index:6;
+    z-index:7;
   }
 }
 @media (min-width: 1500px){
   body[data-screen-label="Home"] .hero-logo{
-    left:clamp(610px,38vw,790px);
+    right:clamp(320px,24vw,430px);
   }
 }
 @media (max-width: 960px){
@@ -207,22 +221,22 @@ CSS_BLOCK = '''
 REPORT_TEXT = """# Home Hero Efficiency — Embaixada Carioca
 
 ## Correções aplicadas
-- Linha “Restaurante do Bondinho...” preservada na posição original superior esquerda.
+- Linha “Restaurante do Bondinho...” em amarelo forte.
 - Botões/CTAs preservados na posição original inferior esquerda.
 - Texto principal/H1 deslocado para a direita.
-- Card iniciado em “Hoje” movido para o espaço original do texto principal.
-- Logo/selo movido para baixo e para a esquerda, em área vazia, sem cobrir o CTA.
+- Card iniciado em “Hoje” mantido no espaço original do texto principal.
+- Logo/selo centralizado no bloco do título “Restaurante no Morro da Urca”.
 - Pão de Açúcar preservado livre na área esquerda/centro da imagem.
 - Overlay suavizado à esquerda e reforçado à direita.
 
 ## Objetivo visual
-Seguir exatamente a composição solicitada: H1 à direita; card “Hoje” no antigo espaço do texto; logo embaixo/esquerda; linha superior e botões nas posições originais.
+Manter a composição solicitada: linha superior amarela; H1 à direita; logo centralizada no título; card “Hoje” no antigo espaço do texto; botões nas posições originais.
 
 ## Score estimado
 - Eficiência visual da home: 97/100
 
 ## Validação necessária
-Abrir a home publicada em desktop e verificar se os botões e a linha “Restaurante do Bondinho...” ficaram nas posições originais, com o H1 à direita.
+Abrir a home publicada em desktop e verificar se a linha superior está amarela e se o selo ficou centralizado no bloco do título.
 """
 
 
@@ -232,7 +246,7 @@ def main() -> int:
     text = INDEX.read_text(encoding="utf-8", errors="ignore")
     original = text
 
-    if "Home Hero Green Arrows v4" not in text:
+    if "Home Hero Green Arrows v5" not in text:
         text = text.replace("</head>", CSS_BLOCK + "\n</head>", 1)
 
     if text != original:
