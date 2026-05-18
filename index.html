@@ -22,6 +22,7 @@
 
 
 
+
 <link rel="canonical" href="https://www.embaixadacarioca.com/">
 <meta charset="utf-8"/>
 <link as="style" href="/assets/fonts/fonts.css" rel="preload"/>
@@ -1052,10 +1053,6 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
 }
 </style>
 
-
-
-
-
 <style id="home-hero-six-star-final">
 /* Home Hero Six Star Final — única fonte de verdade */
 @media (min-width: 961px){
@@ -1188,13 +1185,18 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
     margin:0!important;
   }
 
-  /* Card no retângulo esquerdo */
+  /* Card no retângulo esquerdo: 25% mais estreito, base fixa, altura maior */
   html body[data-screen-label="Home"] header.hero aside.hero-side .hero-meta-card{
     position:absolute!important;
     left:clamp(38px,3vw,70px)!important;
-    top:clamp(330px,37vh,430px)!important;
-    width:min(285px,20vw)!important;
-    padding:15px 16px!important;
+    top:auto!important;
+    bottom:clamp(246px,28.5vh,315px)!important;
+    width:min(214px,15vw)!important;
+    min-height:clamp(310px,38vh,390px)!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:space-between!important;
+    padding:18px 16px!important;
     border-radius:16px!important;
     background:rgba(0,32,46,.55)!important;
     border:1px solid rgba(245,155,30,.24)!important;

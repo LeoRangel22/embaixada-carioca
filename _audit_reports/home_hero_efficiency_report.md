@@ -6,6 +6,8 @@
 - Linha superior em amarelo forte e em uma única linha.
 - Texto principal/H1 mantido à direita.
 - Quadro iniciado em “Hoje” reduzido e movido para a área esquerda.
+- Quadro ficou 25% mais estreito, mantendo o lado esquerdo.
+- Quadro aumentou de altura mantendo a base fixa; ele cresce para cima.
 - Logo/selo forçado para baixo, fora do H1.
 - Botões/CTAs preservados na posição original inferior esquerda.
 - Pão de Açúcar preservado livre na área esquerda/centro da imagem.
