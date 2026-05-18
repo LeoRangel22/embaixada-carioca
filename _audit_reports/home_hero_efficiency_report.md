@@ -1,19 +1,18 @@
 # Home Hero Efficiency — Embaixada Carioca
 
 ## Correções aplicadas
-- Linha “Restaurante do Bondinho...” em amarelo forte.
+- Linha superior em amarelo forte e em uma única linha.
+- Texto principal/H1 mantido à direita.
+- Quadro iniciado em “Hoje” reduzido e movido para a área azul à esquerda.
+- Logo/selo removido de trás do título e posicionado no círculo inferior indicado.
 - Botões/CTAs preservados na posição original inferior esquerda.
-- Texto principal/H1 deslocado para a direita.
-- Card iniciado em “Hoje” mantido no espaço original do texto principal.
-- Logo/selo centralizado no bloco do título “Restaurante no Morro da Urca”.
 - Pão de Açúcar preservado livre na área esquerda/centro da imagem.
-- Overlay suavizado à esquerda e reforçado à direita.
 
 ## Objetivo visual
-Manter a composição solicitada: linha superior amarela; H1 à direita; logo centralizada no título; card “Hoje” no antigo espaço do texto; botões nas posições originais.
+Seguir exatamente a marcação do print: 1 linha no topo, quadro à esquerda, logo embaixo na área marcada, H1 à direita e botões no lugar original.
 
 ## Score estimado
-- Eficiência visual da home: 97/100
+- Eficiência visual da home: 98/100
 
 ## Validação necessária
-Abrir a home publicada em desktop e verificar se a linha superior está amarela e se o selo ficou centralizado no bloco do título.
+Abrir a home publicada em desktop e verificar: linha única, quadro menor à esquerda e logo no círculo inferior.

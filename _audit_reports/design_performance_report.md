@@ -4,7 +4,7 @@
 - Nenhuma correção automática necessária
 
 ## Alertas de design/performance
-- index.html: excesso de blocos <style> inline (18). Impacta manutenção e performance percebida.
+- index.html: excesso de blocos <style> inline (19). Impacta manutenção e performance percebida.
 - cafe-da-manha.html: excesso de blocos <style> inline (11). Impacta manutenção e performance percebida.
 - cafe-da-manha.html: possível FAQ/schema duplicado.
 - almoco.html: excesso de blocos <style> inline (12). Impacta manutenção e performance percebida.
