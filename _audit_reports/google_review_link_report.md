@@ -1,0 +1,62 @@
+# Correção do Link de Avaliação Google
+
+## Link correto
+- https://g.page/r/CU-tJiJIjBUcEAE/review
+
+## Alterações aplicadas
+- UPDATED: almoco-morro-da-urca.html | changes=3
+- UPDATED: almoco.html | changes=3
+- UPDATED: cafe-da-manha-pao-de-acucar.html | changes=3
+- UPDATED: cafe-da-manha.html | changes=3
+- UPDATED: caipirinha-com-vista-rio.html | changes=3
+- UPDATED: cardapio.html | changes=3
+- UPDATED: en/almoco-morro-da-urca.html | changes=1
+- UPDATED: en/almoco.html | changes=1
+- UPDATED: en/cafe-da-manha-pao-de-acucar.html | changes=1
+- UPDATED: en/cafe-da-manha.html | changes=1
+- UPDATED: en/caipirinha-com-vista-rio.html | changes=1
+- UPDATED: en/cardapio.html | changes=1
+- UPDATED: en/entardecer.html | changes=1
+- UPDATED: en/eventos.html | changes=1
+- UPDATED: en/feijoada-com-vista-rio-de-janeiro.html | changes=1
+- UPDATED: en/feijoada.html | changes=1
+- UPDATED: en/gastronomia-carioca.html | changes=1
+- UPDATED: en/guia-do-rio.html | changes=1
+- UPDATED: en/index.html | changes=2
+- UPDATED: en/morro-da-urca.html | changes=1
+- UPDATED: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | changes=1
+- UPDATED: en/parque-bondinho.html | changes=1
+- UPDATED: en/por-do-sol-morro-da-urca.html | changes=1
+- UPDATED: en/roteiro-meio-dia-urca-pao-de-acucar.html | changes=1
+- UPDATED: en/sunset.html | changes=1
+- UPDATED: entardecer.html | changes=3
+- UPDATED: es/almoco-morro-da-urca.html | changes=3
+- UPDATED: es/almoco.html | changes=3
+- UPDATED: es/atardecer.html | changes=3
+- UPDATED: es/cafe-da-manha-pao-de-acucar.html | changes=3
+- UPDATED: es/cafe-da-manha.html | changes=3
+- UPDATED: es/caipirinha-com-vista-rio.html | changes=3
+- UPDATED: es/cardapio.html | changes=3
+- UPDATED: es/entardecer.html | changes=3
+- UPDATED: es/eventos.html | changes=3
+- UPDATED: es/feijoada-com-vista-rio-de-janeiro.html | changes=3
+- UPDATED: es/feijoada.html | changes=3
+- UPDATED: es/gastronomia-carioca.html | changes=3
+- UPDATED: es/guia-do-rio.html | changes=3
+- UPDATED: es/index.html | changes=3
+- UPDATED: es/morro-da-urca.html | changes=3
+- UPDATED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | changes=3
+- UPDATED: es/parque-bondinho.html | changes=3
+- UPDATED: es/por-do-sol-morro-da-urca.html | changes=3
+- UPDATED: es/roteiro-meio-dia-urca-pao-de-acucar.html | changes=3
+- UPDATED: eventos.html | changes=3
+- UPDATED: feijoada-com-vista-rio-de-janeiro.html | changes=3
+- UPDATED: feijoada.html | changes=3
+- UPDATED: gastronomia-carioca.html | changes=3
+- UPDATED: guia-do-rio.html | changes=3
+- UPDATED: index.html | changes=4
+- UPDATED: morro-da-urca.html | changes=3
+- UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | changes=3
+- UPDATED: parque-bondinho.html | changes=3
+- UPDATED: por-do-sol-morro-da-urca.html | changes=3
+- UPDATED: roteiro-meio-dia-urca-pao-de-acucar.html | changes=3
