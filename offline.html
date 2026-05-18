@@ -138,35 +138,6 @@ nav.top.scrolled .btn {
   border-color: var(--amarelo, #E8C547) !important;
 }
 
-/* ── NAV RATING BADGE: cor garantida após nav a:visited ── */
-.nav-rating-badge{
-  display:flex !important;align-items:center !important;gap:6px !important;
-  background:rgba(255,255,255,0.13) !important;
-  border:1px solid rgba(255,255,255,0.28) !important;
-  border-radius:20px !important;
-  padding:5px 12px !important;
-  text-decoration:none !important;
-  color:var(--areia-pale,#f6efde) !important;
-  transition:background 0.2s,border-color 0.2s;
-}
-.nav-rating-badge:hover{background:rgba(255,255,255,0.22);}
-nav.top.scrolled .nav-rating-badge{
-  background:rgba(0,64,90,0.08);
-  border-color:rgba(0,64,90,0.2);
-  color:var(--azul1,#00405A);
-}
-nav.top.scrolled .nav-rating-badge:hover{background:rgba(0,64,90,0.14);}
-.nav-rating-stars{font-size:13px;font-weight:800;letter-spacing:-0.02em;color:#f5a623;}
-nav.top.scrolled .nav-rating-stars{color:#c8830a;}
-.nav-rating-count{font-size:10px;font-weight:600;opacity:0.75;letter-spacing:0.04em;}
-@media(max-width:900px){.nav-rating-badge{display:none;}}
-nav.top .nav-rating-badge,
-nav.top .nav-rating-badge:visited,
-nav.top .nav-rating-badge:link,
-nav.top .nav-rating-badge:any-link { color: var(--areia-pale, #f6efde) !important; text-decoration: none !important; }
-nav.top.scrolled .nav-rating-badge,
-nav.top.scrolled .nav-rating-badge:visited,
-nav.top.scrolled .nav-rating-badge:link { color: var(--azul1, #00405a) !important; }
 /* ── NAV DRAWER: cor clara garantida ── */
 .nav-drawer-links a,
 .nav-drawer-links a:visited,
@@ -291,6 +262,39 @@ nav.top.scrolled .nav-rating-badge:link { color: var(--azul1, #00405a) !importan
   body .mobile-bottom-nav a.bnav-reservar:visited { background: #E8C547 !important; color: #00405A !important; -webkit-text-fill-color: #00405A !important; }
   body .mobile-bottom-nav a.bnav-reservar span.bnav-icon { color: #00405A !important; -webkit-text-fill-color: #00405A !important; }
 }
+
+/* ── NAV RATING BADGE: override definitivo ── */
+a.nav-rating-badge,
+a.nav-rating-badge:link,
+a.nav-rating-badge:visited,
+a.nav-rating-badge:hover,
+a.nav-rating-badge:any-link {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  background: rgba(255,255,255,0.13) !important;
+  border: 1px solid rgba(255,255,255,0.28) !important;
+  border-radius: 20px !important;
+  padding: 5px 14px !important;
+  color: #f6efde !important;
+  text-decoration: none !important;
+  font-family: var(--font-mono, monospace) !important;
+  font-size: 12px !important;
+  letter-spacing: 0.04em !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+}
+a.nav-rating-badge:hover {
+  background: rgba(255,255,255,0.22) !important;
+}
+nav.top.scrolled a.nav-rating-badge,
+nav.top.scrolled a.nav-rating-badge:link,
+nav.top.scrolled a.nav-rating-badge:visited {
+  background: rgba(0,64,90,0.08) !important;
+  border-color: rgba(0,64,90,0.2) !important;
+  color: var(--azul1, #00405a) !important;
+}
+@media(max-width:900px){ a.nav-rating-badge { display: none !important; } }
 </style>
 <script>
 (function(){
