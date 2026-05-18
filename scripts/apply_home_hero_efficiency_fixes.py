@@ -7,7 +7,8 @@ Versão final 6 estrelas:
 - insere uma única camada final antes do </head>;
 - usa seletor ultra específico para vencer CSS anterior;
 - posiciona logo embaixo, não atrás do H1;
-- preserva H1 à direita, card à esquerda, botões embaixo/esquerda e linha superior em uma linha amarela.
+- preserva H1 à direita, card à esquerda, botões embaixo/esquerda e linha superior em uma linha amarela;
+- quadro "Hoje / Premiada / Vista" 25% mais estreito, com base fixa e altura maior.
 """
 from __future__ import annotations
 
@@ -150,13 +151,18 @@ CSS_BLOCK = '''
     margin:0!important;
   }
 
-  /* Card no retângulo esquerdo */
+  /* Card no retângulo esquerdo: 25% mais estreito, base fixa, altura maior */
   html body[data-screen-label="Home"] header.hero aside.hero-side .hero-meta-card{
     position:absolute!important;
     left:clamp(38px,3vw,70px)!important;
-    top:clamp(330px,37vh,430px)!important;
-    width:min(285px,20vw)!important;
-    padding:15px 16px!important;
+    top:auto!important;
+    bottom:clamp(246px,28.5vh,315px)!important;
+    width:min(214px,15vw)!important;
+    min-height:clamp(310px,38vh,390px)!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:space-between!important;
+    padding:18px 16px!important;
     border-radius:16px!important;
     background:rgba(0,32,46,.55)!important;
     border:1px solid rgba(245,155,30,.24)!important;
@@ -223,6 +229,8 @@ REPORT_TEXT = """# Home Hero Efficiency — Embaixada Carioca
 - Linha superior em amarelo forte e em uma única linha.
 - Texto principal/H1 mantido à direita.
 - Quadro iniciado em “Hoje” reduzido e movido para a área esquerda.
+- Quadro ficou 25% mais estreito, mantendo o lado esquerdo.
+- Quadro aumentou de altura mantendo a base fixa; ele cresce para cima.
 - Logo/selo forçado para baixo, fora do H1.
 - Botões/CTAs preservados na posição original inferior esquerda.
 - Pão de Açúcar preservado livre na área esquerda/centro da imagem.
