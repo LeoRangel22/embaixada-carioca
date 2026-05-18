@@ -1,0 +1,40 @@
+name: Apply AAA site fixes
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - fix/site-aaa-6-estrelas
+    paths:
+      - '**.html'
+      - 'scripts/apply_aaa_site_fixes.py'
+      - '.github/workflows/apply-aaa-fixes.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  apply-fixes:
+    runs-on: ubuntu-latest
+    if: ${{ !contains(github.event.head_commit.message, 'fix: apply AAA multilingual SEO and conversion corrections') }}
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Run correction script
+        run: python3 scripts/apply_aaa_site_fixes.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "fix: apply AAA multilingual SEO and conversion corrections"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
