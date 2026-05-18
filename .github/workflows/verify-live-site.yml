@@ -1,0 +1,60 @@
+name: Verify live site
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '*/30 * * * *'
+
+jobs:
+  verify-live-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check live version sentinel
+        run: |
+          set -e
+          curl -fsSL --max-time 20 "https://www.embaixadacarioca.com/version.json?ts=$(date +%s)" -o /tmp/version.json
+          cat /tmp/version.json
+          grep -q "2026-05-18-aaa-academia-feijoada" /tmp/version.json
+          grep -q "Academia da Cachaca" /tmp/version.json
+
+      - name: Check EN home is not stale
+        run: |
+          set -e
+          curl -fsSL --max-time 20 "https://www.embaixadacarioca.com/en/?ts=$(date +%s)" -o /tmp/en.html
+          ! grep -q "BondinhSugarloaf" /tmp/en.html
+          ! grep -q "Bondinhel" /tmp/en.html
+          ! grep -q "Private events up to 300" /tmp/en.html
+          ! grep -q "Quando Every day" /tmp/en.html
+          ! grep -q "Harmonização" /tmp/en.html
+          ! grep -q "Roteiros & grupos" /tmp/en.html
+          grep -q "Bondinho Pão de Açúcar Park" /tmp/en.html
+          grep -q "breakfast, Brazilian lunch and sunset drinks" /tmp/en.html
+
+      - name: Check ES home is not stale
+        run: |
+          set -e
+          curl -fsSL --max-time 20 "https://www.embaixadacarioca.com/es/?ts=$(date +%s)" -o /tmp/es.html
+          ! grep -q "Bondinhel" /tmp/es.html
+          ! grep -q "PRÊMIO" /tmp/es.html
+          ! grep -q "Quando" /tmp/es.html
+          ! grep -q "Harmonização" /tmp/es.html
+          grep -q "Parque Bondinho" /tmp/es.html
+
+      - name: Check key public pages
+        run: |
+          set -e
+          for url in \
+            "https://www.embaixadacarioca.com/" \
+            "https://www.embaixadacarioca.com/almoco" \
+            "https://www.embaixadacarioca.com/cafe-da-manha" \
+            "https://www.embaixadacarioca.com/eventos" \
+            "https://www.embaixadacarioca.com/en/" \
+            "https://www.embaixadacarioca.com/es/"; do
+            echo "Checking $url"
+            curl -fsSL --max-time 20 "$url?ts=$(date +%s)" -o /tmp/page.html
+            ! grep -q "BondinhSugarloaf" /tmp/page.html
+            ! grep -q "Bondinhel" /tmp/page.html
+          done
