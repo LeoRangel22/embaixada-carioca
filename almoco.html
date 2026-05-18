@@ -6,8 +6,8 @@
   <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
 <!-- ── SEO ── -->
-<title>Almoço com Vista no Bondinho do Pão de Açúcar | Embaixada Carioca – Urca</title>
-<meta content="Um dos restaurantes com melhor vista do Rio de Janeiro. Gastronomia brasileira premiada no Morro da Urca, dentro do Bondinho Pão de Açúcar. Seg–Sex 12h–16h, Sáb–Dom 12h–17h. Reservas online." name="description"/>
+<title>Almoço com Vista no Bondinho | Embaixada Carioca</title>
+<meta content="Gastronomia brasileira premiada no Morro da Urca com vista para o Pão de Açúcar. Picanha, feijoada e frutos do mar. Reservas via Tagme." name="description"/>
 <meta content="almoço com vista Rio de Janeiro, restaurante Morro da Urca, feijoada Urca Rio de Janeiro, picanha Rio de Janeiro restaurante, almoço Urca, restaurante brasileiro Urca, Melhor Feijoada do Rio" name="keywords"/>
 <meta content="index, follow, max-image-preview:large" name="robots"/>
 <link href="https://www.embaixadacarioca.com/almoco" rel="canonical"/>
@@ -38,7 +38,12 @@
   "@graph": [
     {
       "@type": "Restaurant",
-      "sameAs": ["https://www.wikidata.org/wiki/Q117523456","https://www.instagram.com/embaixadacarioca/","https://www.facebook.com/embaixadacarioca","https://www.tripadvisor.com.br/Restaurant_Review-g303506-d6502345"],
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q117523456",
+        "https://www.instagram.com/embaixadacarioca/",
+        "https://www.facebook.com/embaixadacarioca",
+        "https://www.tripadvisor.com.br/Restaurant_Review-g303506-d6502345"
+      ],
       "@id": "https://www.embaixadacarioca.com/#restaurant",
       "name": "Embaixada Carioca",
       "url": "https://www.embaixadacarioca.com",
@@ -46,41 +51,95 @@
       "telephone": "+55-21-96683-7556",
       "priceRange": "$$$",
       "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJy7c9M82XmQARTa0mIkiMFRw",
-      "servesCuisine": ["Brasileira", "Contemporânea"],
+      "servesCuisine": [
+        "Brasileira",
+        "Contemporânea"
+      ],
       "menu": "https://www.embaixadacarioca.com/cardapio",
-      "address": {"@type":"PostalAddress","streetAddress":"Av. Pasteur, 520 — Morro da Urca","addressLocality":"Urca","addressRegion":"RJ","postalCode":"22290-255","addressCountry":"BR"},
-      "geo": {"@type":"GeoCoordinates","latitude":-22.9511223,"longitude":-43.1642121},
-      "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"7752"},
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Pasteur, 520 — Morro da Urca",
+        "addressLocality": "Urca",
+        "addressRegion": "RJ",
+        "postalCode": "22290-255",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -22.9511223,
+        "longitude": -43.1642121
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "7752"
+      },
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
           "opens": "08:30",
           "closes": "11:30",
           "name": "Café da Manhã"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
           "opens": "12:00",
           "closes": "17:00",
           "name": "Almoço"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
           "opens": "17:00",
           "closes": "21:00",
           "name": "Entardecer"
         }
       ],
-      "award": ["Melhor Feijoada do Rio — Revista Veja Rio 2025/2026"]
+      "award": [
+        "Melhor Feijoada do Rio — Revista Veja Rio 2025/2026"
+      ]
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.embaixadacarioca.com/"},
-        {"@type":"ListItem","position":2,"name":"Almoço","item":"https://www.embaixadacarioca.com/almoco"}
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.embaixadacarioca.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Almoço",
+          "item": "https://www.embaixadacarioca.com/almoco"
+        }
       ]
     },
     {
@@ -91,14 +150,81 @@
           "@type": "MenuSection",
           "name": "Pratos Principais",
           "hasMenuItem": [
-            {"@type":"MenuItem","name":"Feijoada da Academia da Cachaça","description":"Premiada como melhor do Brasil pela Revista Veja Rio 2025/2026. Charque, costela, lombo, paio e linguiça fina em panela de barro. Servida todos os dias.","offers":{"@type":"Offer","price":"189.70","priceCurrency":"BRL"}},
-            {"@type":"MenuItem","name":"Picanha à brasileira","description":"Picanha grelhada no ponto, acompanhada de arroz, farofa e vinagrete."},
-            {"@type":"MenuItem","name":"Picadinho carioca","description":"Carne em cubos refogada, acompanhada de arroz, ovo, banana e farofa.","offers":{"@type":"Offer","price":"74.70","priceCurrency":"BRL"}},
-            {"@type":"MenuItem","name":"Bobó de camarão","description":"Camarão em creme de mandioca com azeite de dendê e coentro.","offers":{"@type":"Offer","price":"114.70","priceCurrency":"BRL"}},
-            {"@type":"MenuItem","name":"Salmão com molho de maracujá","description":"Filé de salmão grelhado com molho de maracujá, arroz e legumes.","offers":{"@type":"Offer","price":"114.70","priceCurrency":"BRL"}},
-            {"@type":"MenuItem","name":"Picanha à brasileira (individual)","description":"Picanha grelhada no ponto, acompanhada de arroz, farofa e vinagrete.","offers":{"@type":"Offer","price":"134.70","priceCurrency":"BRL"}},
-            {"@type":"MenuItem","name":"Picanha à brasileira (para 2)","description":"Picanha grelhada no ponto para duas pessoas, acompanhada de arroz, farofa e vinagrete.","offers":{"@type":"Offer","price":"204.70","priceCurrency":"BRL"}},
-            {"@type":"MenuItem","name":"Feijoada da Academia da Cachaça (para 2)","description":"Premiada como melhor do Brasil pela Revista Veja Rio 2025/2026. Charque, costela, lombo, paio e linguiça fina em panela de barro. Servida todos os dias, 11h30–17h.","offers":{"@type":"Offer","price":"189.70","priceCurrency":"BRL"}}
+            {
+              "@type": "MenuItem",
+              "name": "Feijoada da Academia da Cachaça",
+              "description": "Premiada como melhor do Brasil pela Revista Veja Rio 2025/2026. Charque, costela, lombo, paio e linguiça fina em panela de barro. Servida todos os dias.",
+              "offers": {
+                "@type": "Offer",
+                "price": "189.70",
+                "priceCurrency": "BRL"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Picanha à brasileira",
+              "description": "Picanha grelhada no ponto, acompanhada de arroz, farofa e vinagrete."
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Picadinho carioca",
+              "description": "Carne em cubos refogada, acompanhada de arroz, ovo, banana e farofa.",
+              "offers": {
+                "@type": "Offer",
+                "price": "74.70",
+                "priceCurrency": "BRL"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Bobó de camarão",
+              "description": "Camarão em creme de mandioca com azeite de dendê e coentro.",
+              "offers": {
+                "@type": "Offer",
+                "price": "114.70",
+                "priceCurrency": "BRL"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Salmão com molho de maracujá",
+              "description": "Filé de salmão grelhado com molho de maracujá, arroz e legumes.",
+              "offers": {
+                "@type": "Offer",
+                "price": "114.70",
+                "priceCurrency": "BRL"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Picanha à brasileira (individual)",
+              "description": "Picanha grelhada no ponto, acompanhada de arroz, farofa e vinagrete.",
+              "offers": {
+                "@type": "Offer",
+                "price": "134.70",
+                "priceCurrency": "BRL"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Picanha à brasileira (para 2)",
+              "description": "Picanha grelhada no ponto para duas pessoas, acompanhada de arroz, farofa e vinagrete.",
+              "offers": {
+                "@type": "Offer",
+                "price": "204.70",
+                "priceCurrency": "BRL"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Feijoada da Academia da Cachaça (para 2)",
+              "description": "Premiada como melhor do Brasil pela Revista Veja Rio 2025/2026. Charque, costela, lombo, paio e linguiça fina em panela de barro. Servida todos os dias, 11h30–17h.",
+              "offers": {
+                "@type": "Offer",
+                "price": "189.70",
+                "priceCurrency": "BRL"
+              }
+            }
           ]
         }
       ]
@@ -109,24 +235,35 @@
         {
           "@type": "Question",
           "name": "Qual o horário do almoço no Restaurante Morro da Urca?",
-          "acceptedAnswer": {"@type":"Answer","text":"O almoço na Embaixada Carioca é servido todos os dias, das 11h30 às 17h, com vista para o Pão de Açúcar no alto do Morro da Urca."}
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O almoço na Embaixada Carioca é servido todos os dias, das 11h30 às 17h, com vista para o Pão de Açúcar no alto do Morro da Urca."
+          }
         },
         {
           "@type": "Question",
           "name": "Quando é servida a feijoada premiada?",
-          "acceptedAnswer": {"@type":"Answer","text":"A feijoada da Academia da Cachaça — eleita melhor do Brasil pela Revista Veja Rio 2025/2026 — é servida todos os dias, das 11h30 às 17h. Porção de R$ 189,70 serve 2 pessoas."}
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A feijoada da Academia da Cachaça — eleita melhor do Brasil pela Revista Veja Rio 2025/2026 — é servida todos os dias, das 11h30 às 17h. Porção de R$ 189,70 serve 2 pessoas."
+          }
         },
         {
           "@type": "Question",
           "name": "Precisa pagar o bondinho para almoçar no Restaurante Morro da Urca?",
-          "acceptedAnswer": {"@type":"Answer","text":"Sim. O acesso ao restaurante é pelo Parque Bondinho Pão de Açúcar (Av. Pasteur, 520, Urca). o Bondinho leva até o Morro da Urca, 1ª parada, onde fica a Embaixada Carioca."}
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. O acesso ao restaurante é pelo Parque Bondinho Pão de Açúcar (Av. Pasteur, 520, Urca). o Bondinho leva até o Morro da Urca, 1ª parada, onde fica a Embaixada Carioca."
+          }
         },
         {
           "@type": "Question",
           "name": "Qual o melhor prato do Restaurante do Bondinho?",
-          "acceptedAnswer": {"@type":"Answer","text":"A feijoada da Academia da Cachaça é o prato mais premiado — eleita melhor do Brasil pela Revista Veja Rio 2025/2026. A picanha à brasileira é o prato mais pedido no almoço diário."}
-        }
-      ,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A feijoada da Academia da Cachaça é o prato mais premiado — eleita melhor do Brasil pela Revista Veja Rio 2025/2026. A picanha à brasileira é o prato mais pedido no almoço diário."
+          }
+        },
         {
           "@type": "Question",
           "name": "Qual a picanha mais vendida do Rio de Janeiro?",
@@ -166,9 +303,11 @@
             "@type": "Answer",
             "text": "A caipirinha com cachaça Magnífica da Embaixada Carioca é premiada e considerada uma das melhores da cidade. A cachaça Magnífica é um destilado artesanal de qualidade superior, que eleva o coquetel nacional a um nível de excelência."
           }
-        }]
+        }
+      ]
     }
-  ]
+  ],
+  "inLanguage": "pt-BR"
 }
 </script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -1085,7 +1224,8 @@ nav .lang-dropdown a:visited {
       ".intro-text",
       ".faq-answer"
     ]
-  }
+  },
+  "inLanguage": "pt-BR"
 }
 </script>
 <!-- ── ASO / Mobile ── -->
@@ -1723,7 +1863,8 @@ nav.top.scrolled .btn {
   border-color: var(--amarelo, #E8C547) !important;
 }
 </style>
-<style id="seo-vh">.seo-vh{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style><script type="application/ld+json">{
+<style id="seo-vh">.seo-vh{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style><script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
@@ -1751,8 +1892,10 @@ nav.top.scrolled .btn {
         "text": "A Embaixada Carioca, no Morro da Urca, oferece tanto opções de almoço completo quanto petiscos e pratos rápidos para quem está de passagem. O cardápio inclui empadas, bolinhos de bacalhau, espetinhos, sanduíches e pratos executivos. Ideal para uma pausa rápida entre as baldeações do bondinho sem perder a vista panorâmica do Pão de Açúcar."
       }
     }
-  ]
-}</script><style>
+  ],
+  "inLanguage": "pt-BR"
+}
+</script><style>
 /* ── Hero Eyebrow nas subpáginas ── */
 .page-hero-content .eyebrow.hero-eyebrow {
   color: rgba(246, 239, 222, 0.75);
@@ -1828,6 +1971,12 @@ nav.top.scrolled .btn {
 <p class="lede">
       O único <strong>almoço dentro do Parque Bondinho Pão de Açúcar</strong>, a 227 metros de altitude no Morro da Urca. Gastronomia brasileira premiada: picanha à brasileira e a feijoada eleita melhor do Brasil pela Revista Veja Rio 2025/2026. Para quem busca <strong>onde almoçar no Rio de Janeiro</strong> com a vista mais bonita da cidade — entre os <strong>restaurantes com vista no Rio de Janeiro</strong>, este é o único no alto do Morro da Urca.
     </p>
+<div class="hero-chips" style="display:flex;flex-wrap:wrap;gap:8px;margin:0.8rem 0 1.6rem;" aria-label="Destaques da Embaixada Carioca">
+<span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:5px 14px;font-size:0.85rem;color:#f5f0e8;white-space:nowrap;">4.8★ · 7.779 avaliações</span>
+<span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:5px 14px;font-size:0.85rem;color:#f5f0e8;white-space:nowrap;">🏆 Melhor Feijoada do Rio — Veja Rio 2025/2026</span>
+<span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:5px 14px;font-size:0.85rem;color:#f5f0e8;white-space:nowrap;">Dentro do Parque Bondinho</span>
+<span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:5px 14px;font-size:0.85rem;color:#f5f0e8;white-space:nowrap;">Aberto todos os dias · 8h30–21h</span>
+</div>
 <div class="ctas">
 <a class="btn lg" href="https://go.tagme.com.br/embaixadacarioca">Reservar almoço →</a>
 <a class="btn lg ghost" href="cardapio.html">Ver cardápio completo</a>
@@ -2085,7 +2234,7 @@ nav.top.scrolled .btn {
 <div class="wrap">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; text-align: center;">
 <div><div style="font-size: 2rem; font-weight: 700; color: var(--amarelo, #d4a017);">227m</div><div style="font-size: 0.85rem; opacity: 0.85; margin-top: 0.3rem;">Altitude no Morro da Urca</div></div>
-<div><div style="font-size: 2rem; font-weight: 700; color: var(--amarelo, #d4a017);">Vista panorâmica</div><div style="font-size: 0.85rem; opacity: 0.85; margin-top: 0.3rem;">Mais bonita do mundo</div></div>
+<div><div style="font-size: 2rem; font-weight: 700; color: var(--amarelo, #d4a017);">Vista panorâmica</div><div style="font-size: 0.85rem; opacity: 0.85; margin-top: 0.3rem;">Vista panorâmica do Pão de Açúcar</div></div>
 <div><div style="font-size: 2rem; font-weight: 700; color: var(--amarelo, #d4a017);">+100 mil</div><div style="font-size: 0.85rem; opacity: 0.85; margin-top: 0.3rem;">Seguidores no Instagram</div></div>
 <div><div style="font-size: 2rem; font-weight: 700; color: var(--amarelo, #d4a017);">2010</div><div style="font-size: 0.85rem; opacity: 0.85; margin-top: 0.3rem;">Tradição carioca desde 2010</div></div>
 </div>
