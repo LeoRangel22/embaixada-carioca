@@ -19,7 +19,7 @@
 <meta content="https://www.embaixadacarioca.com/assets/hero.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
-<meta content="Cardápio da Embaixada Carioca — Restaurante no Morro da Urca com vista al Pan de Azúcar" property="og:image:alt"/>
+<meta content="Menú da Embaixada Carioca — Restaurante no Morro da Urca com vista al Pan de Azúcar" property="og:image:alt"/>
 <meta content="Embaixada Carioca" property="og:site_name"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Carta | Restaurante en el Teleférico Pan de Azúcar – Embaixada Carioca" name="twitter:title"/>
@@ -56,7 +56,7 @@
       "image": "https://www.embaixadacarioca.com/assets/hero.jpg",
       "telephone": "+55-21-96683-7556",
       "priceRange": "$$$",
-      "servesCuisine": ["Brasileira", "Contemporânea", "Café da Manhã", "Bar"],
+      "servesCuisine": ["Brasileira", "Contemporânea", "Desayuno", "Bar"],
       "menu": "https://www.embaixadacarioca.com/cardapio",
       "hasMenu": "https://www.embaixadacarioca.com/cardapio",
       "address": {"@type":"PostalAddress","streetAddress":"Av. Pasteur, 520 — Morro da Urca","addressLocality":"Urca","addressRegion":"RJ","postalCode":"22290-255","addressCountry":"BR"},
@@ -65,22 +65,22 @@
       "award": ["Melhor Feijoada do Brasil — Revista Veja Rio 2025/2026", "2º Melhor Chope Heineken do Brasil"]
     },
     {
-      "@type": "Menu",
-      "name": "Cardápio Completo — Embaixada Carioca",
+      "@type": "Menú",
+      "name": "Menú Completo — Embaixada Carioca",
       "url": "https://www.embaixadacarioca.com/cardapio",
       "inLanguage": ["pt-BR","es"],
       "hasMenuSection": [
         {
           "@type": "MenuSection",
-          "name": "Café da Manhã",
+          "name": "Desayuno",
           "description": "Servido todos os dias, das 8h30 às 11h30",
           "hasMenuItem": [
-            {"@type":"MenuItem","name":"Café da Manhã Individual","description":"Buffet de pães artesanais de fermentação natural, frios, queijos, frutas tropicais, tapioca, bolo de rolo e café especial.","offers":{"@type":"Offer","price":"79.90","priceCurrency":"BRL"}}
+            {"@type":"MenuItem","name":"Desayuno Individual","description":"Buffet de pães artesanais de fermentação natural, frios, queijos, frutas tropicais, tapioca, bolo de rolo e café especial.","offers":{"@type":"Offer","price":"79.90","priceCurrency":"BRL"}}
           ]
         },
         {
           "@type": "MenuSection",
-          "name": "Pratos Principais — Almoço",
+          "name": "Pratos Principais — Almuerzo",
           "description": "Servido todos os dias, das 12h às 17h",
           "hasMenuItem": [
             {"@type":"MenuItem","name":"Feijoada completa para dos personas","description":"Premiada como melhor do Brasil pela Revista Veja Rio 2025/2026. Charque, costela, lombo, paio e linguiça fina em panela de barro. Servida todos os dias.","offers":{"@type":"Offer","price":"189.70","priceCurrency":"BRL"}},
@@ -116,7 +116,7 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type":"ListItem","position":1,"name":"Home","item":"https://www.embaixadacarioca.com/"},
-        {"@type":"ListItem","position":2,"name":"Cardápio","item":"https://www.embaixadacarioca.com/cardapio"}
+        {"@type":"ListItem","position":2,"name":"Menú","item":"https://www.embaixadacarioca.com/cardapio"}
       ]
     }
   ]
@@ -585,7 +585,7 @@ html {
   /* Footer em coluna */
   footer .wrap > div { flex-direction: column !important; gap: 24px !important; }
   
-  /* Cardápio mobile */
+  /* Menú mobile */
   .menu-grid, .cardapio-grid { grid-template-columns: 1fr !important; }
   
   /* Esconder elementos decorativos pesados em mobile */
@@ -964,8 +964,8 @@ nav.top.scrolled .nav-rating-badge:link { color: var(--azul1, #00405a) !importan
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Cardápio — Embaixada Carioca",
-  "description": "Cardápio completo da Embaixada Carioca: café da manhã, almoço, drinks e entardecer no Morro da Urca.",
+  "name": "Menú — Embaixada Carioca",
+  "description": "Menú completo da Embaixada Carioca: café da manhã, almoço, drinks e entardecer no Morro da Urca.",
   "url": "https://www.embaixadacarioca.com/cardapio.html",
   "speakable": {
     "@type": "SpeakableSpecification",
@@ -1034,7 +1034,7 @@ nav.top.scrolled .nav-rating-badge:link { color: var(--azul1, #00405a) !importan
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Menu",
+  "@type": "Menú",
   "name": "Menú Embaixada Carioca",
   "description": "Los platos más vendidos y premiados del mejor restaurante del Morro de Urca.",
   "hasMenuSection": [
@@ -1371,7 +1371,7 @@ nav.top.scrolled .nav-rating-badge:link { color: var(--azul1, #00405a) !importan
     font-size: 14px !important;
     line-height: 1.7 !important;
   }
-  /* Menu items mais legíveis */
+  /* Menú items mais legíveis */
   .menu-item-name {
     font-size: 16px !important;
   }
@@ -1792,12 +1792,12 @@ nav.top.scrolled .btn {
 }
 </style>
 </head>
-<body data-screen-label="Cardápio">
+<body data-screen-label="Menú">
 <!-- NAV -->
 <nav class="top" id="topnav">
 <div class="nav-inner">
 <a aria-label="Embaixada Carioca · início" class="brand-mark" href="/es/">
-<img alt="Cardápio da Embaixada Carioca — Restaurante no Morro da Urca, Rio de Janeiro" class="brand-logo light" loading="lazy" src="/assets/logo-areia.svg"/>
+<img alt="Menú da Embaixada Carioca — Restaurante no Morro da Urca, Rio de Janeiro" class="brand-logo light" loading="lazy" src="/assets/logo-areia.svg"/>
 <img alt="Embaixada Carioca · Restaurante no Morro da Urca" class="brand-logo dark" loading="lazy" src="/assets/logo-azul.svg"/>
 <span class="brand-word"><b>Morro da Urca</b><br/>Rio de Janeiro</span>
 </a>
@@ -1844,7 +1844,7 @@ nav.top.scrolled .btn {
 </nav>
 <!-- HERO SIMPLES -->
 <header class="page-hero" style="min-height: 50vh;">
-<img alt="Cardápio da Embaixada Carioca — Restaurante no Morro da Urca com vista al Pan de Azúcar, Rio de Janeiro" class="page-hero-photo" decoding="async" fetchpriority="high" src="/assets/hero.webp">
+<img alt="Menú da Embaixada Carioca — Restaurante no Morro da Urca com vista al Pan de Azúcar, Rio de Janeiro" class="page-hero-photo" decoding="async" fetchpriority="high" src="/assets/hero.webp">
 <div aria-hidden="true" class="page-hero-overlay"></div>
 <div class="page-hero-content">
 <div class="eyebrow hero-eyebrow">Restaurante del Teleférico · Restaurante Carioca Tradicional de Calidad · Morro da Urca · Parque Bondinho Pan de Azúcar · Río de Janeiro · Brasil</div>
@@ -1852,7 +1852,7 @@ nav.top.scrolled .btn {
 <a href="../index.html">Home</a> <span class="sep">/</span> <span class="here">Menú</span>
 </div>
 <h1>
-      Cardápio <span class="serif">completo</span><br/>
+      Menú <span class="serif">completo</span><br/>
       — Embaixada Carioca, Morro da Urca.
     </h1>
 <p class="lede">
@@ -1873,7 +1873,7 @@ nav.top.scrolled .btn {
 <div class="menu-items">
 <article class="menu-item">
 <div class="menu-item-badge">Todos los días</div>
-<h3 class="menu-item-name">Café da Manhã Individual</h3>
+<h3 class="menu-item-name">Desayuno Individual</h3>
 <p class="menu-item-desc">Buffet de pães artesanais de fermentação natural, frios, queijos, frutas tropicais, tapioca, bolo de rolo e café especial. O <strong>café da manhã com vista al Pan de Azúcar</strong> mais especial do Rio de Janeiro.</p>
 <span class="menu-item-price">R$ 79,90 por pessoa</span>
 </article>
@@ -1991,14 +1991,14 @@ nav.top.scrolled .btn {
 </article>
 </div>
 <div style="margin-top: 32px;">
-<a class="btn" href="/es/entardecer.html">Ver página do Entardecer →</a>
+<a class="btn" href="/es/entardecer.html">Ver página do Atardecer →</a>
 </div>
 </div>
 </section>
 </main>
 <!-- CTA BAND -->
 <aside style="background: var(--azul1); color: var(--areia-pale); text-align: center; padding: 80px var(--gutter);">
-<div class="eyebrow" style="color: var(--amarelo); margin-bottom: 24px;">Reserve sua mesa</div>
+<div class="eyebrow" style="color: var(--amarelo); margin-bottom: 24px;">Reserva tu mesa</div>
 <h2 style="font-family: 'Catamaran', sans-serif; font-weight: 300; font-size: clamp(32px, 4vw, 60px); line-height: 1.0; margin: 0 0 20px; letter-spacing: -0.02em; color: var(--areia-pale);">
     O <em style="font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--amarelo);">melhor restaurante</em><br/>com vista do Rio de Janeiro.
   </h2>
@@ -2041,10 +2041,10 @@ nav.top.scrolled .btn {
 </div>
 </div>
 </section>
-<!-- ── FAQ Cardápio ── -->
+<!-- ── FAQ Menú ── -->
 <section class="faq-section" style="background:#f9f5ef;padding:60px 20px;">
 <div style="max-width:800px;margin:0 auto;">
-<h2 style="font-family:'Playfair Display',serif;font-size:2rem;color:#335d4a;margin-bottom:40px;text-align:center;">Perguntas Frequentes sobre o Cardápio</h2>
+<h2 style="font-family:'Playfair Display',serif;font-size:2rem;color:#335d4a;margin-bottom:40px;text-align:center;">Perguntas Frequentes sobre o Menú</h2>
 <div class="faq-item" style="border-bottom:1px solid #d4c5a9;padding:20px 0;">
 <h3 class="faq-question" style="font-size:1.1rem;color:#1a1a1a;font-weight:600;margin-bottom:10px;">A feijoada é servida todos os dias?</h3>
 <p class="faq-answer" style="color:#555;line-height:1.7;">Sim! A feijoada da <strong>Academia da Cachaça</strong> — eleita melhor do Brasil pela Revista Veja Rio 2025/2026 — é servida <strong>todos os dias das 11h30 às 17h</strong>. Preparada pela Academia da Cachaça e servida na Embaixada Carioca com a mesma qualidade premiada. Charque, costela, lombo, paio e linguiça fina, acompanhada de arroz, couve refogada, farofa tostada e fatias de laranja. Serve 2 pessoas por R$ 189,70.</p>
@@ -2118,7 +2118,7 @@ nav.top.scrolled .btn {
 <li><a href="/es/cafe-da-manha.html">Desayuno</a></li>
 <li><a href="/es/almoco.html">Almuerzo</a></li>
 <li><a href="/es/entardecer.html">Atardecer</a></li>
-<li><a href="/es/cardapio.html">Cardápio completo</a></li>
+<li><a href="/es/cardapio.html">Menú completo</a></li>
 </ul>
 </div>
 <div class="foot-col">
@@ -2142,7 +2142,7 @@ nav.top.scrolled .btn {
 </div>
 <div class="foot-bottom">
 <div class="crest">
-<img alt="Logo da Embaixada Carioca — Cardápio do Restaurante no Morro da Urca, Rio de Janeiro" class="crest-logo" loading="lazy" src="/assets/logo-amarelo.svg">
+<img alt="Logo da Embaixada Carioca — Menú do Restaurante no Morro da Urca, Rio de Janeiro" class="crest-logo" loading="lazy" src="/assets/logo-amarelo.svg">
 <span>Embaixada Carioca · MMXXVI</span>
 </img></div>
 <div>Parque Pan de Azúcar · Rio de Janeiro</div>
@@ -2440,7 +2440,7 @@ footer.foot {
 </div>
 </div>
 <div class="wa-preview-msg">
-      Olá! Bem-vindo à <strong>Embaixada Carioca</strong> — o sabor do Rio com vista para o <strong>Pão de Açúcar</strong>! 🚡<br/><br/>
+      Olá! Bem-vindo à <strong>Embaixada Carioca</strong> — o sabor do Rio com vista para o <strong>Pan de Azúcar</strong>! 🚡<br/><br/>
       Posso te ajudar com reservas, cardápio, eventos ou informações sobre horários.
     </div>
 <a aria-label="Iniciar conversa no WhatsApp com a Embaixada Carioca" class="wa-preview-cta" href="https://wa.me/5521966837556?text=Olá%21%20Vim%20pelo%20site%20da%20Embaixada%20Carioca%20e%20gostaria%20de%20mais%20informa%C3%A7ões." rel="noopener" target="_blank">
