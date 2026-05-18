@@ -8,6 +8,7 @@ on:
     paths:
       - 'scripts/apply_aaa_site_fixes.py'
       - 'scripts/apply_aaa_editorial_fixes.py'
+      - 'scripts/apply_language_score9_fixes.py'
       - '.github/workflows/apply-aaa-fixes.yml'
 
 permissions:
@@ -28,6 +29,9 @@ jobs:
       - name: Run editorial polish script
         run: python3 scripts/apply_aaa_editorial_fixes.py
 
+      - name: Run language score 9 polish script
+        run: python3 scripts/apply_language_score9_fixes.py
+
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
@@ -36,6 +40,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "fix: apply AAA technical and editorial site corrections"
+            git commit -m "fix: apply AAA technical editorial and language corrections"
             git push origin HEAD:${{ github.ref_name }}
           fi
