@@ -38,7 +38,7 @@
 - UPDATED: es/cafe-da-manha.html | replacements=0
 - UPDATED: es/caipirinha-com-vista-rio.html | replacements=0
 - UPDATED: es/cardapio.html | replacements=0
-- UPDATED: es/contato.html | replacements=1
+- UPDATED: es/contato.html | replacements=0
 - UPDATED: es/entardecer.html | replacements=0
 - UPDATED: es/eventos.html | replacements=0
 - UPDATED: es/feijoada-com-vista-rio-de-janeiro.html | replacements=0
@@ -47,7 +47,7 @@
 - UPDATED: es/guia-do-rio.html | replacements=0
 - UPDATED: es/index.html | replacements=0
 - UPDATED: es/morro-da-urca.html | replacements=0
-- UPDATED: es/nossa-visao.html | replacements=1
+- UPDATED: es/nossa-visao.html | replacements=0
 - UPDATED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=0
 - UPDATED: es/parque-bondinho.html | replacements=0
 - UPDATED: es/por-do-sol-morro-da-urca.html | replacements=0
