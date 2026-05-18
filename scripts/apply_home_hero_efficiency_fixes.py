@@ -9,7 +9,8 @@ Versão final 6 estrelas:
 - posiciona logo embaixo, não atrás do H1;
 - preserva H1 à direita, card à esquerda, botões embaixo/esquerda e linha superior em uma linha amarela;
 - quadro "Hoje / Premiada / Vista" 25% mais estreito, com base fixa e altura maior;
-- valor "Pôr do sol às 17h44" fica em linha própria abaixo de "Hoje, no alto".
+- valor "Pôr do sol às 17h44" fica em linha própria abaixo de "Hoje, no alto";
+- todo o conteúdo do hero sobe 2cm, mantendo a foto de fundo no lugar.
 """
 from __future__ import annotations
 
@@ -24,10 +25,12 @@ CSS_BLOCK = '''
 /* Home Hero Six Star Final — única fonte de verdade */
 @media (min-width: 961px){
   html body[data-screen-label="Home"] header.hero{
+    --hero-up-2cm:76px;
     min-height:100svh!important;
     position:relative!important;
     overflow:hidden!important;
   }
+  /* Foto de fundo NÃO sobe */
   html body[data-screen-label="Home"] header.hero img.hero-photo{
     object-position:center 44%!important;
   }
@@ -59,10 +62,12 @@ CSS_BLOCK = '''
     max-width:none!important;
     transform:none!important;
   }
+
+  /* Linha superior: sobe 2cm */
   html body[data-screen-label="Home"] header.hero .hero-content .eyebrow.hero-eyebrow{
     position:absolute!important;
     left:clamp(78px,5.8vw,118px)!important;
-    top:clamp(136px,16vh,172px)!important;
+    top:calc(clamp(136px,16vh,172px) - var(--hero-up-2cm))!important;
     width:calc(100vw - clamp(210px,16vw,300px))!important;
     max-width:none!important;
     white-space:nowrap!important;
@@ -82,10 +87,12 @@ CSS_BLOCK = '''
     background:var(--amarelo,#f59b1e)!important;
     opacity:1!important;
   }
+
+  /* H1 e subtítulo sobem 2cm */
   html body[data-screen-label="Home"] header.hero h1{
     position:absolute!important;
     right:clamp(66px,5.5vw,126px)!important;
-    top:clamp(205px,23vh,270px)!important;
+    top:calc(clamp(205px,23vh,270px) - var(--hero-up-2cm))!important;
     max-width:min(610px,39vw)!important;
     font-size:clamp(38px,4.35vw,70px)!important;
     line-height:.98!important;
@@ -96,7 +103,7 @@ CSS_BLOCK = '''
   html body[data-screen-label="Home"] header.hero .hero-sub{
     position:absolute!important;
     right:clamp(66px,5.5vw,126px)!important;
-    top:clamp(520px,58vh,625px)!important;
+    top:calc(clamp(520px,58vh,625px) - var(--hero-up-2cm))!important;
     max-width:min(610px,40vw)!important;
     font-size:clamp(15px,1vw,18px)!important;
     line-height:1.55!important;
@@ -104,10 +111,12 @@ CSS_BLOCK = '''
     color:rgba(246,239,222,.95)!important;
     z-index:7!important;
   }
+
+  /* Chips e botões sobem 2cm: bottom aumenta */
   html body[data-screen-label="Home"] header.hero .hero-chips{
     position:absolute!important;
     left:clamp(70px,5.5vw,118px)!important;
-    bottom:clamp(132px,15.8vh,172px)!important;
+    bottom:calc(clamp(132px,15.8vh,172px) + var(--hero-up-2cm))!important;
     max-width:min(760px,56vw)!important;
     margin:0!important;
     gap:8px!important;
@@ -122,7 +131,7 @@ CSS_BLOCK = '''
   html body[data-screen-label="Home"] header.hero .hero-ctas{
     position:absolute!important;
     left:clamp(70px,5.5vw,118px)!important;
-    bottom:clamp(54px,7.2vh,82px)!important;
+    bottom:calc(clamp(54px,7.2vh,82px) + var(--hero-up-2cm))!important;
     max-width:min(900px,62vw)!important;
     gap:12px!important;
     z-index:8!important;
@@ -130,6 +139,7 @@ CSS_BLOCK = '''
   html body[data-screen-label="Home"] header.hero .hero-ctas .btn.lg{
     padding:16px 30px!important;
   }
+
   html body[data-screen-label="Home"] header.hero aside.hero-side{
     position:absolute!important;
     inset:0!important;
@@ -143,11 +153,13 @@ CSS_BLOCK = '''
     padding:0!important;
     margin:0!important;
   }
+
+  /* Card sobe 2cm mantendo largura, base relativa e altura */
   html body[data-screen-label="Home"] header.hero aside.hero-side .hero-meta-card{
     position:absolute!important;
     left:clamp(38px,3vw,70px)!important;
     top:auto!important;
-    bottom:clamp(246px,28.5vh,315px)!important;
+    bottom:calc(clamp(246px,28.5vh,315px) + var(--hero-up-2cm))!important;
     width:min(214px,15vw)!important;
     min-height:clamp(310px,38vh,390px)!important;
     display:flex!important;
@@ -186,10 +198,12 @@ CSS_BLOCK = '''
     margin:0!important;
     white-space:normal!important;
   }
+
+  /* Logo sobe 2cm sem mexer na foto */
   html body[data-screen-label="Home"] header.hero aside.hero-side img.hero-logo{
     position:absolute!important;
     left:62vw!important;
-    top:77vh!important;
+    top:calc(77vh - var(--hero-up-2cm))!important;
     right:auto!important;
     bottom:auto!important;
     transform:translate(-50%,-50%)!important;
@@ -223,10 +237,11 @@ CSS_BLOCK = '''
 REPORT_TEXT = """# Home Hero Efficiency — Embaixada Carioca
 
 ## Correções aplicadas
-- Valor “Pôr do sol às 17h44” forçado para a linha abaixo do rótulo “Hoje, no alto”.
-- `.hmc .l` e `.hmc .v` agora são blocos independentes.
-- Mantida a largura 25% menor do card.
-- Mantida a base fixa e altura ampliada do card.
+- Todo o conteúdo do hero subiu 2cm, usando `--hero-up-2cm:76px`.
+- A foto de fundo foi preservada no mesmo `object-position`.
+- Linha superior, H1, subtítulo, chips, botões, card e logo sobem juntos.
+- Card mantém largura 25% menor, base relativa e altura ampliada.
+- Valor “Pôr do sol às 17h44” permanece abaixo do rótulo.
 
 ## Score estimado
 - Eficiência visual da home: 99/100
