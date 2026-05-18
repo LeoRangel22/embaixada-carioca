@@ -1737,7 +1737,19 @@ nav.top.scrolled .btn {
   border-color: var(--amarelo, #E8C547) !important;
 }
 </style>
-</link></head>
+</link><style>
+/* ── Hero Eyebrow nas subpáginas ── */
+.page-hero-content .eyebrow.hero-eyebrow {
+  color: rgba(246, 239, 222, 0.75);
+  margin-bottom: 20px;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+}
+.page-hero-content .eyebrow.hero-eyebrow::before {
+  background: var(--amarelo, #d4a017);
+}
+</style>
+</head>
 <body data-screen-label="Cardápio">
 <!-- NAV -->
 <nav class="top" id="topnav">
@@ -1797,6 +1809,7 @@ nav.top.scrolled .btn {
 </picture>
 <div aria-hidden="true" class="page-hero-overlay"></div>
 <div class="page-hero-content">
+<div class="eyebrow hero-eyebrow">Cable Car Restaurant · Traditional Carioca Restaurant · Morro da Urca · Parque Bondinho Sugarloaf Mountain · Rio de Janeiro · Brazil</div>
 <div class="crumbs">
 <a href="../index.html">Home</a> <span class="sep">/</span> <span class="here">Menu</span>
 </div>
