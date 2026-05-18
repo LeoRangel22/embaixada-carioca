@@ -11,7 +11,8 @@ Versão final 6 estrelas:
 - valor "Pôr do sol às 17h44" fica em linha própria abaixo de "Hoje, no alto";
 - todo o conteúdo do hero sobe 2cm, mantendo a foto de fundo no lugar;
 - linha amarela desce 1cm em relação ao ajuste anterior;
-- logo na altura dos botões, centralizada no eixo visual do A de Açúcar.
+- logo na altura dos botões, centralizada no eixo visual do A de Açúcar;
+- chip "Dentro do Parque Bondinho" forçado para a segunda linha.
 """
 from __future__ import annotations
 
@@ -123,6 +124,15 @@ CSS_BLOCK = '''
     margin:0!important;
     gap:8px!important;
     z-index:8!important;
+    display:flex!important;
+    flex-wrap:wrap!important;
+    align-items:center!important;
+  }
+  html body[data-screen-label="Home"] header.hero .hero-chips::before{
+    content:""!important;
+    flex:0 0 100%!important;
+    height:0!important;
+    order:3!important;
   }
   html body[data-screen-label="Home"] header.hero .hero-chips span{
     font-size:.82rem!important;
@@ -130,6 +140,10 @@ CSS_BLOCK = '''
     background:rgba(0,32,46,.42)!important;
     border-color:rgba(246,239,222,.28)!important;
   }
+  html body[data-screen-label="Home"] header.hero .hero-chips span:nth-child(1){order:1!important;}
+  html body[data-screen-label="Home"] header.hero .hero-chips span:nth-child(2){order:2!important;}
+  html body[data-screen-label="Home"] header.hero .hero-chips span:nth-child(3){order:4!important;}
+  html body[data-screen-label="Home"] header.hero .hero-chips span:nth-child(4){order:5!important;}
   html body[data-screen-label="Home"] header.hero .hero-ctas{
     position:absolute!important;
     left:clamp(70px,5.5vw,118px)!important;
@@ -239,11 +253,10 @@ CSS_BLOCK = '''
 REPORT_TEXT = """# Home Hero Efficiency — Embaixada Carioca
 
 ## Correções aplicadas
-- Logo posicionada na altura da faixa dos botões.
-- Logo centralizada horizontalmente no eixo visual do “A” de “Açúcar”.
-- Logo ajustada para `left:72vw` e `width:clamp(140px,10vw,166px)`.
-- Logo mantida acima da barra azul inferior.
-- Linha superior amarela mantida 1cm abaixo do ajuste anterior.
+- Chip “Dentro do Parque Bondinho” forçado para a segunda linha.
+- Primeira linha dos chips: avaliação + feijoada premiada.
+- Segunda linha dos chips: Dentro do Parque Bondinho + aberto todos os dias.
+- Mantida a posição geral dos chips e dos botões.
 
 ## Score estimado
 - Eficiência visual da home: 99/100
