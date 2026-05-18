@@ -38,3 +38,5 @@ jobs:
             git commit -m "fix: apply AAA multilingual SEO and conversion corrections"
             git push origin HEAD:${{ github.ref_name }}
           fi
+
+# trigger: 2026-05-18-aaa-site-fixes
