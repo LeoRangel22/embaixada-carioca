@@ -1,228 +1,40 @@
 # Language Integrity Guard — Embaixada Carioca
 
-## Escopo
-- Home e páginas diretamente ligadas à home.
-- Páginas PT, EN e ES.
-- Correção automática de contaminação PT por espanhol/inglês.
-- Relatório de alertas remanescentes para revisão manual.
-
 ## Contadores
 - html_scanned: 80
 - html_updated: 3
-- pt_replacements: 21
+- safe_replacements: 0
 - targeted_blocks_fixed: 0
-- warnings: 204
+- technical_repairs: 3
+- warnings: 21
 
 ## Correções aplicadas
-- PT_REPLACE: 404.html | 'view' -> 'vista' | 4
+- TECH_REPAIR: 404.html | 'name="vistaport"' -> 'name="viewport"' | 1
 - UPDATED: 404.html
-- PT_REPLACE: home-preview.html | 'view' -> 'vista' | 14
+- TECH_REPAIR: home-preview.html | 'name="vistaport"' -> 'name="viewport"' | 1
 - UPDATED: home-preview.html
-- PT_REPLACE: offline.html | 'view' -> 'vista' | 3
+- TECH_REPAIR: offline.html | 'name="vistaport"' -> 'name="viewport"' | 1
 - UPDATED: offline.html
 
 ## Alertas remanescentes
-- LANG_WARNING: almoco-morro-da-urca.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: almoco-morro-da-urca.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: almoco-morro-da-urca.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: almoco.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: almoco.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: almoco.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: cafe-da-manha-pao-de-acucar.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: cafe-da-manha-pao-de-acucar.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: cafe-da-manha-pao-de-acucar.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: cafe-da-manha.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: cafe-da-manha.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: cafe-da-manha.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: caipirinha-com-vista-rio.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: caipirinha-com-vista-rio.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: caipirinha-com-vista-rio.html [en] contém padrão suspeito: \bAlmoço\b
+- LANG_WARNING: almoco-morro-da-urca.html [en] contém padrão suspeito: \bAberto todos os dias\b
+- LANG_WARNING: almoco.html [en] contém padrão suspeito: \bAberto todos os dias\b
+- LANG_WARNING: cafe-da-manha-pao-de-acucar.html [en] contém padrão suspeito: \bAberto todos os dias\b
+- LANG_WARNING: cafe-da-manha.html [en] contém padrão suspeito: \bAberto todos os dias\b
+- LANG_WARNING: caipirinha-com-vista-rio.html [en] contém padrão suspeito: \bAberto todos os dias\b
 - LANG_WARNING: cardapio.html [en] contém padrão suspeito: \bSolicitar orçamento\b
-- LANG_WARNING: cardapio.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: cardapio.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: cardapio.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: contato.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: contato.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/almoco-morro-da-urca.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/almoco-morro-da-urca.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/almoco.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/almoco.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/cafe-da-manha-pao-de-acucar.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/cafe-da-manha-pao-de-acucar.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/cafe-da-manha.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/cafe-da-manha.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/caipirinha-com-vista-rio.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/caipirinha-com-vista-rio.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/cardapio.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/cardapio.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/contato.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/contato.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/entardecer.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/entardecer.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/eventos.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/eventos.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/feijoada-com-vista-rio-de-janeiro.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/feijoada-com-vista-rio-de-janeiro.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/feijoada.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/feijoada.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/gastronomia-carioca.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/gastronomia-carioca.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/guia-do-rio.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/guia-do-rio.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/index.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/index.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/morro-da-urca.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/morro-da-urca.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/nossa-visao.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/nossa-visao.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/parque-bondinho.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/parque-bondinho.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/por-do-sol-morro-da-urca.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/por-do-sol-morro-da-urca.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/restaurant-at-urca-hill.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/restaurant-at-urca-hill.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/restaurants-near-sugarloaf-mountain.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/restaurants-near-sugarloaf-mountain.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/roteiro-meio-dia-urca-pao-de-acucar.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/roteiro-meio-dia-urca-pao-de-acucar.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/sugarloaf-cable-car-park.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/sugarloaf-cable-car-park.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/sugarloaf-cable-car-restaurant.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/sugarloaf-cable-car-restaurant.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/sunset.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/sunset.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: en/where-to-eat-near-sugarloaf.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: en/where-to-eat-near-sugarloaf.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: entardecer.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: entardecer.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: entardecer.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/almoco-morro-da-urca.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/almoco-morro-da-urca.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/almoco-morro-da-urca.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/almoco.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/almoco.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/almoco.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/atardecer.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/atardecer.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/atardecer.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/cafe-da-manha-pao-de-acucar.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/cafe-da-manha-pao-de-acucar.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/cafe-da-manha-pao-de-acucar.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/cafe-da-manha.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/cafe-da-manha.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/cafe-da-manha.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/caipirinha-com-vista-rio.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/caipirinha-com-vista-rio.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/caipirinha-com-vista-rio.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/cardapio.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/cardapio.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/cardapio.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/contato.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/contato.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/donde-comer-cerca-del-pan-de-azucar.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/donde-comer-cerca-del-pan-de-azucar.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/donde-comer-cerca-del-pan-de-azucar.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/entardecer.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/entardecer.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/entardecer.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/eventos.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/eventos.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/eventos.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/feijoada-com-vista-rio-de-janeiro.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/feijoada-com-vista-rio-de-janeiro.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/feijoada-com-vista-rio-de-janeiro.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/feijoada.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/feijoada.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/feijoada.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/gastronomia-carioca.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/gastronomia-carioca.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/gastronomia-carioca.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/guia-do-rio.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/guia-do-rio.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/guia-do-rio.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/index.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/index.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/index.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/morro-da-urca.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/morro-da-urca.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/morro-da-urca.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/nossa-visao.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/nossa-visao.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/parque-bondinho-pan-de-azucar.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/parque-bondinho-pan-de-azucar.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/parque-bondinho-pan-de-azucar.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/parque-bondinho.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/parque-bondinho.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/parque-bondinho.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/por-do-sol-morro-da-urca.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/por-do-sol-morro-da-urca.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/por-do-sol-morro-da-urca.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/restaurante-bondinho-pan-de-azucar.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/restaurante-bondinho-pan-de-azucar.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/restaurante-bondinho-pan-de-azucar.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/restaurante-morro-da-urca.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/restaurante-morro-da-urca.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/restaurante-morro-da-urca.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/restaurantes-cerca-del-pan-de-azucar.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/restaurantes-cerca-del-pan-de-azucar.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/restaurantes-cerca-del-pan-de-azucar.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: es/roteiro-meio-dia-urca-pao-de-acucar.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: es/roteiro-meio-dia-urca-pao-de-acucar.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: es/roteiro-meio-dia-urca-pao-de-acucar.html [en] contém padrão suspeito: \bAlmoço\b
+- LANG_WARNING: cardapio.html [en] contém padrão suspeito: \bAberto todos os dias\b
+- LANG_WARNING: entardecer.html [en] contém padrão suspeito: \bAberto todos os dias\b
 - LANG_WARNING: eventos.html [en] contém padrão suspeito: \bSolicitar orçamento\b
-- LANG_WARNING: eventos.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: eventos.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: eventos.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: feijoada-com-vista-rio-de-janeiro.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: feijoada-com-vista-rio-de-janeiro.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: feijoada-com-vista-rio-de-janeiro.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: feijoada.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: feijoada.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: feijoada.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: gastronomia-carioca.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: gastronomia-carioca.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: gastronomia-carioca.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: guia-do-rio.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: guia-do-rio.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: guia-do-rio.html [en] contém padrão suspeito: \bAlmoço\b
+- LANG_WARNING: eventos.html [en] contém padrão suspeito: \bAberto todos os dias\b
+- LANG_WARNING: feijoada-com-vista-rio-de-janeiro.html [en] contém padrão suspeito: \bAberto todos os dias\b
+- LANG_WARNING: feijoada.html [en] contém padrão suspeito: \bAberto todos os dias\b
+- LANG_WARNING: gastronomia-carioca.html [en] contém padrão suspeito: \bAberto todos os dias\b
+- LANG_WARNING: guia-do-rio.html [en] contém padrão suspeito: \bAberto todos os dias\b
 - LANG_WARNING: index.html [en] contém padrão suspeito: \bSolicitar orçamento\b
-- LANG_WARNING: index.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: index.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: index.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: morro-da-urca.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: morro-da-urca.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: morro-da-urca.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: nossa-visao.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: nossa-visao.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: o-que-fazer-depois-do-bondinho-pao-de-acucar.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: o-que-fazer-depois-do-bondinho-pao-de-acucar.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: o-que-fazer-depois-do-bondinho-pao-de-acucar.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: onde-comer-no-pao-de-acucar.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: onde-comer-no-pao-de-acucar.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: onde-comer-no-pao-de-acucar.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: parque-bondinho-pao-de-acucar.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: parque-bondinho-pao-de-acucar.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: parque-bondinho-pao-de-acucar.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: parque-bondinho.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: parque-bondinho.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: parque-bondinho.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: por-do-sol-morro-da-urca.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: por-do-sol-morro-da-urca.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: por-do-sol-morro-da-urca.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: restaurante-bondinho-pao-de-acucar.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: restaurante-bondinho-pao-de-acucar.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: restaurante-bondinho-pao-de-acucar.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: restaurante-morro-da-urca.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: restaurante-morro-da-urca.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: restaurante-morro-da-urca.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: restaurantes-perto-do-pao-de-acucar.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: restaurantes-perto-do-pao-de-acucar.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: restaurantes-perto-do-pao-de-acucar.html [en] contém padrão suspeito: \bAlmoço\b
-- LANG_WARNING: roteiro-meio-dia-urca-pao-de-acucar.html [en] contém padrão suspeito: \bReservar mesa\b
-- LANG_WARNING: roteiro-meio-dia-urca-pao-de-acucar.html [en] contém padrão suspeito: \bCafé da manhã\b
-- LANG_WARNING: roteiro-meio-dia-urca-pao-de-acucar.html [en] contém padrão suspeito: \bAlmoço\b
+- LANG_WARNING: index.html [en] contém padrão suspeito: \bAberto todos os dias\b
+- LANG_WARNING: morro-da-urca.html [en] contém padrão suspeito: \bAberto todos os dias\b
+- LANG_WARNING: o-que-fazer-depois-do-bondinho-pao-de-acucar.html [en] contém padrão suspeito: \bAberto todos os dias\b
+- LANG_WARNING: parque-bondinho.html [en] contém padrão suspeito: \bAberto todos os dias\b
+- LANG_WARNING: por-do-sol-morro-da-urca.html [en] contém padrão suspeito: \bAberto todos os dias\b
+- LANG_WARNING: roteiro-meio-dia-urca-pao-de-acucar.html [en] contém padrão suspeito: \bAberto todos os dias\b
