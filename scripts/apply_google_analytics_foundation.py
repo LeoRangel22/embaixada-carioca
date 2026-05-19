@@ -36,7 +36,7 @@ GA_HEAD_BLOCK = f'''<!-- EC Analytics Foundation v1 -->
 </script>
 <!-- /EC Analytics Foundation v1 -->'''
 
-GA_EVENTS_BLOCK = '''<!-- EC Analytics Events v1 -->
+GA_EVENTS_BLOCK = r'''<!-- EC Analytics Events v1 -->
 <script id="ec-ga4-events">
 (function(){
   'use strict';
@@ -151,13 +151,13 @@ def inject_blocks(text: str, rel: str) -> str:
     text = EVENTS_BLOCK_RE.sub('\n', text)
 
     if HEAD_OPEN_RE.search(text):
-        text = HEAD_OPEN_RE.sub(r'\1\n' + GA_HEAD_BLOCK, text, count=1)
+        text = HEAD_OPEN_RE.sub(lambda m: m.group(1) + '\n' + GA_HEAD_BLOCK, text, count=1)
         COUNTERS['ga_head_installed'] += 1
     else:
         REPORT.append(f'WARN: {rel} sem <head>; GA não inserido no head')
 
     if BODY_CLOSE_RE.search(text):
-        text = BODY_CLOSE_RE.sub(GA_EVENTS_BLOCK + '\n</body>', text, count=1)
+        text = BODY_CLOSE_RE.sub(lambda m: GA_EVENTS_BLOCK + '\n' + m.group(0), text, count=1)
         COUNTERS['event_layer_installed'] += 1
     else:
         REPORT.append(f'WARN: {rel} sem </body>; eventos não inseridos')
@@ -191,7 +191,7 @@ def write_report() -> None:
     lines = [
         '# Google Analytics Foundation — Embaixada Carioca',
         '',
-        f'## Measurement ID',
+        '## Measurement ID',
         f'- {GA_MEASUREMENT_ID}',
         '',
         '## Eventos configurados',
