@@ -48,8 +48,8 @@ OLD_REVIEW_URLS = {
 }
 
 TEXT_REPLACEMENTS = {
-    "parBaía": "para a Baía",
     "parBaía de Guanabara": "para a Baía de Guanabara",
+    "parBaía": "para a Baía",
     "paraBaía": "para a Baía",
     "referência em café da manhã no Rio de Janeiro com vista é o da": "A referência em café da manhã no Rio de Janeiro com vista é o da",
     "o mais premiado restaurante com vista no Rio de Janeiro é a": "A Embaixada Carioca é uma das principais referências de restaurante com vista no Rio de Janeiro:",
@@ -164,9 +164,9 @@ def process_html(path: Path) -> None:
             COUNTERS["text_typos_fixed"] += n
             REPORT.append(f"TEXT_FIX: {rel} | {old!r} -> {new!r} | {n}")
 
-    n = text.count('https://maps.app.goo.gl/')
+    n = text.count("https://maps.app.goo.gl/")
     if n:
-        text = text.replace('https://maps.app.goo.gl/', MAPS_URL)
+        text = text.replace("https://maps.app.goo.gl/", MAPS_URL)
         COUNTERS["placeholder_maps_fixed"] += n
         REPORT.append(f"MAPS_PLACEHOLDER: {rel} | {n} ocorrência(s)")
 
@@ -178,8 +178,6 @@ def process_html(path: Path) -> None:
         return match.group("prefix") + fixed + match.group("suffix")
 
     text = HTML_ATTR_URL_RE.sub(attr_repl, text)
-
-    # Limpeza leve: excesso de linhas vazias no head causado por rodadas anteriores.
     text = re.sub(r'(<head>)\s{6,}', r'\1\n', text, count=1)
 
     if text != original:
@@ -234,7 +232,7 @@ def audit_sizes() -> list[str]:
     out = []
     for size, rel in rows[:15]:
         kb = size / 1024
-        flag = " ⚠️" if kb > 500 else ""
+        flag = " [ACIMA DE 500 KB]" if kb > 500 else ""
         out.append(f"- {rel}: {kb:.1f} KB{flag}")
     return out
 
@@ -251,7 +249,7 @@ def audit_assets() -> list[str]:
     out = []
     for size, rel in rows[:20]:
         kb = size / 1024
-        flag = " ⚠️" if kb > 300 else ""
+        flag = " [ACIMA DE 300 KB]" if kb > 300 else ""
         out.append(f"- {rel}: {kb:.1f} KB{flag}")
     return out
 
@@ -260,7 +258,8 @@ def write_report() -> None:
     report_dir = ROOT / "_audit_reports"
     report_dir.mkdir(exist_ok=True)
     report = report_dir / "site_integrity_performance_audit.md"
-    body = [
+
+    body: list[str] = [
         "# Auditoria Técnica Global — Embaixada Carioca",
         "",
         "## Escopo",
@@ -273,30 +272,39 @@ def write_report() -> None:
         "",
         "## Contadores",
     ]
+
     for key, value in COUNTERS.items():
         body.append(f"- {key}: {value}")
+
+    body.extend(["", "## Correções aplicadas"])
+    if REPORT:
+        body.extend(f"- {line}" for line in REPORT)
+    else:
+        body.append("- Nenhuma correção necessária nesta rodada")
+
+    body.extend(["", "## Alertas encontrados"])
+    if WARNINGS:
+        body.extend(f"- {line}" for line in WARNINGS)
+    else:
+        body.append("- Nenhum alerta crítico encontrado")
+
+    body.extend(["", "## Maiores páginas HTML"])
+    body.extend(audit_sizes())
+
+    body.extend(["", "## Maiores assets de imagem"])
+    body.extend(audit_assets())
+
     body.extend([
-        "",
-        "## Correções aplicadas",
-        *(f"- {line}" for line in REPORT) if REPORT else "- Nenhuma correção necessária nesta rodada",
-        "",
-        "## Alertas encontrados",
-        *(f"- {line}" for line in WARNINGS) if WARNINGS else "- Nenhum alerta crítico encontrado",
-        "",
-        "## Maiores páginas HTML",
-        *audit_sizes(),
-        "",
-        "## Maiores assets de imagem",
-        *audit_assets(),
         "",
         "## Diagnóstico executivo",
         "- O principal risco técnico estava na inconsistência entre URLs com e sem `.html`, especialmente em sitemap, canonical e hreflang.",
         "- URLs no sitemap que não correspondem a arquivos reais foram removidas para evitar rastreamento desperdiçado e sinais ruins ao Google.",
-        "- Links de avaliação e placeholders foram normalizados para reduzir caminho quebrado em CTAs.",
+        "- Links de avaliação e placeholders foram normalizados para reduzir caminhos quebrados em CTAs.",
         "- A lentidão percebida tende a vir de três fatores: HTML muito grande em algumas páginas, muitas camadas de CSS inline acumuladas e assets de imagem grandes.",
         "- Próxima etapa segura: dividir CSS global, reduzir HTML duplicado e revisar imagens acima de 300 KB sem alterar o layout vencedor da home.",
         "",
     ])
+
     report.write_text("\n".join(body), encoding="utf-8")
     print(report.read_text(encoding="utf-8"))
 
@@ -307,6 +315,7 @@ def main() -> int:
     fix_sitemap()
     write_report()
     return 0
+
 
 if __name__ == "__main__":
     raise SystemExit(main())
