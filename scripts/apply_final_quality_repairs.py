@@ -79,7 +79,7 @@ LINK_REPAIRS = {
 
 HTML_LANG_RE = re.compile(r"<html\b[^>]*\blang=[\"']([^\"']+)[\"']", re.IGNORECASE)
 HERO_JPG_PRELOAD_RE = re.compile(r'\n?\s*<link\b(?=[^>]*rel=["\']preload["\'])(?=[^>]*as=["\']image["\'])(?=[^>]*href=["\']/assets/hero\.jpg["\'])[^>]*>\s*', re.IGNORECASE)
-A_SPAM_RE = re.compile(r'\bA(?:\s+A){3,}\s+referência', re.IGNORECASE)
+A_SPAM_RE = re.compile(r'\bA(?:\s+A)+\s+referência', re.IGNORECASE)
 
 
 def detect_lang(rel: str, text: str) -> str:
@@ -140,7 +140,7 @@ def process_html(path: Path) -> None:
         text, spam_count = A_SPAM_RE.subn("A referência", text)
         if spam_count:
             COUNTERS["text_repairs"] += spam_count
-            REPORT.append(f"PT_TEXT: {rel} | sequência 'A A A...' corrigida | {spam_count}")
+            REPORT.append(f"PT_TEXT: {rel} | sequência duplicada de 'A' corrigida | {spam_count}")
 
     for old, new in LINK_REPAIRS.items():
         count = text.count(old)
