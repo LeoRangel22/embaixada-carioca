@@ -1,78 +1,44 @@
-// Embaixada Carioca — Service Worker v2.0
-const CACHE_NAME = 'embaixada-carioca-v2';
-const OFFLINE_URL = '/offline.html';
-
-const PRECACHE_URLS = [
+/* Embaixada Carioca Service Worker — performance cache */
+const EC_CACHE = 'ec-static-2026-05-19.1';
+const EC_ASSETS = [
   '/',
-  '/index.html',
-  '/cafe-da-manha.html',
-  '/almoco.html',
-  '/entardecer.html',
-  '/eventos.html',
-  '/cardapio.html',
-  '/guia-do-rio.html',
-  '/offline.html',
-  '/manifest.json',
+  '/assets/fonts/fonts.css',
   '/assets/logo-branco.svg',
-  '/assets/icon-192.png',
-  '/assets/icon-512.png',
+  '/assets/hero-400w.webp',
+  '/assets/hero-mobile.webp',
+  '/assets/hero-800w.webp',
+  '/assets/hero-1200w.webp',
+  '/assets/hero.webp'
 ];
 
-// Instalar e pré-cachear recursos essenciais
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => {
-      return cache.addAll(PRECACHE_URLS);
-    }).then(() => self.skipWaiting())
+    caches.open(EC_CACHE).then(cache => cache.addAll(EC_ASSETS)).catch(() => null)
   );
+  self.skipWaiting();
 });
 
-// Ativar e limpar caches antigos
 self.addEventListener('activate', event => {
   event.waitUntil(
-    caches.keys().then(cacheNames => {
-      return Promise.all(
-        cacheNames
-          .filter(name => name !== CACHE_NAME)
-          .map(name => caches.delete(name))
-      );
-    }).then(() => self.clients.claim())
+    caches.keys().then(keys => Promise.all(keys.filter(k => k.startsWith('ec-static-') && k !== EC_CACHE).map(k => caches.delete(k))))
   );
+  self.clients.claim();
 });
 
-// Estratégia: Network First para HTML, Cache First para assets
 self.addEventListener('fetch', event => {
-  if (event.request.mode === 'navigate') {
-    // Para navegação: tenta rede, fallback para cache, fallback para offline
+  const req = event.request;
+  if (req.method !== 'GET') return;
+  const url = new URL(req.url);
+  if (url.origin !== self.location.origin) return;
+
+  const isStatic = /\.(?:webp|jpg|jpeg|png|svg|css|js|woff2?)$/i.test(url.pathname);
+  if (isStatic) {
     event.respondWith(
-      fetch(event.request)
-        .then(response => {
-          const responseClone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, responseClone));
-          return response;
-        })
-        .catch(() => {
-          return caches.match(event.request)
-            .then(cached => cached || caches.match(OFFLINE_URL));
-        })
-    );
-  } else if (
-    event.request.url.includes('/assets/') ||
-    event.request.url.includes('.webp') ||
-    event.request.url.includes('.png') ||
-    event.request.url.includes('.svg') ||
-    event.request.url.includes('.css') ||
-    event.request.url.includes('.js')
-  ) {
-    // Para assets: Cache First
-    event.respondWith(
-      caches.match(event.request).then(cached => {
-        return cached || fetch(event.request).then(response => {
-          const responseClone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, responseClone));
-          return response;
-        });
-      })
+      caches.match(req).then(cached => cached || fetch(req).then(resp => {
+        const copy = resp.clone();
+        caches.open(EC_CACHE).then(cache => cache.put(req, copy)).catch(() => null);
+        return resp;
+      }).catch(() => cached))
     );
   }
 });

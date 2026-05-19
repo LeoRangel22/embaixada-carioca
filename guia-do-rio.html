@@ -3260,7 +3260,7 @@ footer.foot {
 <div aria-label="Chat WhatsApp Embaixada Carioca" class="wa-preview" id="wa-preview" role="dialog">
 <button aria-label="Fechar chat" class="wa-close" id="wa-close">✕</button>
 <div class="wa-preview-header">
-<div class="wa-avatar" style="width:44px;height:44px;border-radius:50%;overflow:hidden;flex-shrink:0;"><img alt="Embaixada Carioca" height="44" src="/assets/whatsapp-logo-icon.png" style="width:100%;height:100%;object-fit:cover;" width="44"/></div>
+<div class="wa-avatar" style="width:44px;height:44px;border-radius:50%;overflow:hidden;flex-shrink:0;"><img alt="Embaixada Carioca" height="44" src="/assets/whatsapp-logo-icon.png" style="width:100%;height:100%;object-fit:cover;" width="44"/ loading="lazy" decoding="async"></div>
 <div>
 <div class="wa-preview-name">Embaixada Carioca</div>
 <div class="wa-preview-status">● Online agora</div>
@@ -3277,7 +3277,7 @@ footer.foot {
 <!-- Botão principal -->
 <a aria-label="Falar com a Embaixada Carioca no WhatsApp" class="wa-btn" href="https://wa.me/5521966837556?text=Olá%21%20Vim%20pelo%20site%20da%20Embaixada%20Carioca%20e%20gostaria%20de%20mais%20informa%C3%A7ões." id="wa-btn" rel="noopener" target="_blank" title="WhatsApp · +55 21 96683-7556">
 <span aria-hidden="true" class="wa-badge">1</span>
-<img alt="WhatsApp Embaixada Carioca" height="60" src="/assets/whatsapp-logo-icon.png" style="border-radius:50%;display:block;width:60px;height:60px;object-fit:cover;" width="60"/>
+<img alt="WhatsApp Embaixada Carioca" height="60" src="/assets/whatsapp-logo-icon.png" style="border-radius:50%;display:block;width:60px;height:60px;object-fit:cover;" width="60"/ loading="lazy" decoding="async">
 </a>
 </div>
 <script>
@@ -3331,7 +3331,7 @@ footer.foot {
 <nav aria-hidden="true" aria-label="Menu de navegação" class="nav-drawer" id="nav-drawer">
 <div class="nav-drawer-header">
 <a aria-label="Embaixada Carioca · início" class="nav-drawer-logo" href="/">
-<img alt="Embaixada Carioca" height="40" src="/assets/logo-areia.svg" width="40"/>
+<img alt="Embaixada Carioca" height="40" src="/assets/logo-areia.svg" width="40"/ loading="lazy" decoding="async">
 <span class="nav-drawer-logo-text">Embaixada<br/>Carioca</span>
 </a>
 <button aria-label="Fechar menu" class="nav-drawer-close" id="nav-drawer-close">✕</button>
@@ -3577,5 +3577,15 @@ nav.top.scrolled a.nav-rating-badge:visited {
 })();
 </script>
 <!-- /EC Analytics Events v1 -->
+<!-- EC Performance Cache v1 -->
+<script id="ec-service-worker-register">
+(function(){
+  if (!('serviceWorker' in navigator)) return;
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('/sw.js').catch(function(){});
+  });
+})();
+</script>
+<!-- /EC Performance Cache v1 -->
 </body>
 </html>

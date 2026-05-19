@@ -2264,7 +2264,7 @@ body[data-screen-label] nav.top,body[data-screen-label] nav.top *{box-sizing:bor
 <nav class="nav-drawer" id="nav-drawer" aria-label="Menú de navegación" aria-hidden="true">
   <div class="nav-drawer-header">
     <a href="/es/" class="nav-drawer-logo" aria-label="Embaixada Carioca · início">
-      <img src="/assets/logo-areia.svg" alt="Embaixada Carioca" width="40" height="40" />
+      <img src="/assets/logo-areia.svg" alt="Embaixada Carioca" width="40" height="40" / loading="lazy" decoding="async">
       <span class="nav-drawer-logo-text">Embaixada<br/>Carioca</span>
     </a>
     <button class="nav-drawer-close" id="nav-drawer-close" aria-label="Cerrar menú">✕</button>
@@ -2517,5 +2517,15 @@ nav.top.scrolled a.nav-rating-badge:visited {
 })();
 </script>
 <!-- /EC Analytics Events v1 -->
+<!-- EC Performance Cache v1 -->
+<script id="ec-service-worker-register">
+(function(){
+  if (!('serviceWorker' in navigator)) return;
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('/sw.js').catch(function(){});
+  });
+})();
+</script>
+<!-- /EC Performance Cache v1 -->
 </body>
 </html>

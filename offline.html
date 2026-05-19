@@ -3,6 +3,7 @@
 <head>
 
 
+
 <link rel="canonical" href="https://www.embaixadacarioca.com/offline.html">
 <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -240,7 +241,7 @@ nav.top.scrolled .btn {
 </head>
 <body>
   <div class="container">
-    <img src="/assets/logo-branco.svg" alt="Embaixada Carioca" class="logo" />
+    <img src="/assets/logo-branco.svg" alt="Embaixada Carioca" class="logo" / loading="lazy" decoding="async">
     <h1>Você está sem conexão</h1>
     <p>Parece que você está sem internet no momento. Quando a conexão voltar, poderá explorar o cardápio completo e fazer sua reserva.</p>
     <a href="/" class="btn">Tentar novamente</a>
@@ -324,5 +325,15 @@ nav.top.scrolled a.nav-rating-badge:visited {
   window.addEventListener('load',fixBnav);
 })();
 </script>
+<!-- EC Performance Cache v1 -->
+<script id="ec-service-worker-register">
+(function(){
+  if (!('serviceWorker' in navigator)) return;
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('/sw.js').catch(function(){});
+  });
+})();
+</script>
+<!-- /EC Performance Cache v1 -->
 </body>
 </html>

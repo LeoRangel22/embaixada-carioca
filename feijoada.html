@@ -2013,7 +2013,7 @@ body[data-screen-label] nav.top,body[data-screen-label] nav.top *{box-sizing:bor
 <div aria-hidden="true" class="nav-drawer-overlay" id="nav-drawer-overlay"></div>
 <nav aria-hidden="true" aria-label="Menu de navegação" class="nav-drawer" id="nav-drawer">
 <div class="nav-drawer-header">
-<a class="nav-drawer-logo" href="/"><img alt="Embaixada Carioca" height="40" src="/assets/logo-areia.svg" width="40"/><span class="nav-drawer-logo-text">Embaixada<br/>Carioca</span></a>
+<a class="nav-drawer-logo" href="/"><img alt="Embaixada Carioca" height="40" src="/assets/logo-areia.svg" width="40"/ loading="lazy" decoding="async"><span class="nav-drawer-logo-text">Embaixada<br/>Carioca</span></a>
 <button aria-label="Fechar menu" class="nav-drawer-close" id="nav-drawer-close">✕</button>
 </div>
 <ul class="nav-drawer-links">
@@ -2234,5 +2234,15 @@ nav.top.scrolled a.nav-rating-badge:visited {
 })();
 </script>
 <!-- /EC Analytics Events v1 -->
+<!-- EC Performance Cache v1 -->
+<script id="ec-service-worker-register">
+(function(){
+  if (!('serviceWorker' in navigator)) return;
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('/sw.js').catch(function(){});
+  });
+})();
+</script>
+<!-- /EC Performance Cache v1 -->
 </body>
 </html>

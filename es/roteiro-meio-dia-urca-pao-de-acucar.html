@@ -2646,5 +2646,15 @@ body[data-screen-label] nav.top,body[data-screen-label] nav.top *{box-sizing:bor
 })();
 </script>
 <!-- /EC Analytics Events v1 -->
+<!-- EC Performance Cache v1 -->
+<script id="ec-service-worker-register">
+(function(){
+  if (!('serviceWorker' in navigator)) return;
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('/sw.js').catch(function(){});
+  });
+})();
+</script>
+<!-- /EC Performance Cache v1 -->
 </body>
 </html>
