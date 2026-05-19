@@ -1,8 +1,7 @@
 # Auditoria Design + Performance — Embaixada Carioca
 
 ## Correções aplicadas
-- UPDATED: en/index.html | changes=1
-- UPDATED: es/index.html | changes=1
+- Nenhuma correção automática necessária
 
 ## Alertas de design/performance
 - index.html: excesso de blocos <style> inline (16). Impacta manutenção e performance percebida.
