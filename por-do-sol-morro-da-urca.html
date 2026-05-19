@@ -14,7 +14,6 @@
 </script>
 <!-- /EC Analytics Foundation v1 -->
 
-
 <link rel="canonical" href="https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html">
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -46,6 +45,281 @@
   <meta property="og:image:width" content="1920" />
   <meta property="og:image:height" content="1267" />
   <meta property="og:site_name" content="Embaixada Carioca" />
+
+<style id="subpage-home-top-sync">
+/* Topo das subpáginas — clone visual da home vencedora */
+html,body{
+  margin:0!important;
+  padding:0!important;
+  overflow-x:hidden!important;
+}
+body[data-screen-label]{
+  max-width:100vw!important;
+  overflow-x:hidden!important;
+  background:#00202e!important;
+}
+body[data-screen-label] nav.top,
+body[data-screen-label] .page-hero,
+body[data-screen-label] header.page-hero{
+  width:100%!important;
+  max-width:100%!important;
+  margin-left:0!important;
+  margin-right:0!important;
+}
+body[data-screen-label] nav.top,
+body[data-screen-label] nav.top *{
+  box-sizing:border-box!important;
+}
+@media (min-width:901px){
+  body[data-screen-label] nav.top:not(.scrolled){
+    height:112px!important;
+    min-height:112px!important;
+    background:linear-gradient(180deg,rgba(0,32,46,.42) 0%,rgba(0,32,46,.30) 54%,rgba(0,32,46,0) 100%)!important;
+    border:0!important;
+    box-shadow:none!important;
+    backdrop-filter:none!important;
+    -webkit-backdrop-filter:none!important;
+  }
+  body[data-screen-label] nav.top .nav-inner{
+    width:100%!important;
+    max-width:100%!important;
+    height:82px!important;
+    margin:0!important;
+    padding:10px clamp(54px,3.7vw,70px) 0!important;
+    display:grid!important;
+    grid-template-columns:140px minmax(650px,1fr) 205px 94px 190px!important;
+    column-gap:26px!important;
+    align-items:center!important;
+    justify-content:normal!important;
+    color:var(--areia-pale,#f6efde)!important;
+  }
+  body[data-screen-label] nav.top .brand-mark{
+    grid-column:1!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-start!important;
+    width:140px!important;
+    min-width:0!important;
+    flex:initial!important;
+    gap:0!important;
+    color:inherit!important;
+    text-decoration:none!important;
+  }
+  body[data-screen-label] nav.top .brand-logo{
+    width:68px!important;
+    height:68px!important;
+    object-fit:contain!important;
+    display:block!important;
+  }
+  body[data-screen-label] nav.top .brand-logo.light{display:block!important;}
+  body[data-screen-label] nav.top .brand-logo.dark{display:none!important;}
+  body[data-screen-label] nav.top .brand-word{display:none!important;}
+  body[data-screen-label] nav.top .nav-links{
+    grid-column:2!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-start!important;
+    gap:clamp(24px,2vw,36px)!important;
+    min-width:0!important;
+    width:auto!important;
+    margin:0!important;
+    padding:0!important;
+    list-style:none!important;
+    overflow:visible!important;
+  }
+  body[data-screen-label] nav.top .nav-links a,
+  body[data-screen-label] nav.top .nav-links a:link,
+  body[data-screen-label] nav.top .nav-links a:visited{
+    font-family:"JetBrains Mono",ui-monospace,monospace!important;
+    font-size:12px!important;
+    line-height:1!important;
+    letter-spacing:.145em!important;
+    font-weight:800!important;
+    text-transform:uppercase!important;
+    color:rgba(246,239,222,.94)!important;
+    opacity:1!important;
+    text-decoration:none!important;
+    white-space:nowrap!important;
+    padding:6px 0!important;
+  }
+  body[data-screen-label] nav.top .nav-links a::after{
+    bottom:-13px!important;
+    height:2px!important;
+    background:var(--amarelo,#f59b1e)!important;
+  }
+  body[data-screen-label] nav.top .nav-wa-btn{display:none!important;}
+  body[data-screen-label] nav.top .nav-rating-badge,
+  body[data-screen-label] nav.top .nav-rating-badge:link,
+  body[data-screen-label] nav.top .nav-rating-badge:visited{
+    grid-column:3!important;
+    width:205px!important;
+    min-width:0!important;
+    height:39px!important;
+    margin:0!important;
+    padding:0 16px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:7px!important;
+    border-radius:999px!important;
+    background:rgba(246,239,222,.14)!important;
+    border:1px solid rgba(246,239,222,.30)!important;
+    color:var(--areia-pale,#f6efde)!important;
+    text-decoration:none!important;
+    box-shadow:0 8px 22px rgba(0,32,46,.12)!important;
+    overflow:hidden!important;
+  }
+  body[data-screen-label] nav.top .nav-rating-stars{
+    color:var(--amarelo,#f59b1e)!important;
+    font-size:15px!important;
+    font-weight:900!important;
+    letter-spacing:.01em!important;
+    white-space:nowrap!important;
+  }
+  body[data-screen-label] nav.top .nav-rating-count{
+    color:rgba(246,239,222,.78)!important;
+    font-size:11px!important;
+    font-weight:800!important;
+    letter-spacing:.08em!important;
+    white-space:nowrap!important;
+  }
+  body[data-screen-label] nav.top .lang-switcher{
+    grid-column:4!important;
+    width:94px!important;
+    min-width:0!important;
+    margin:0!important;
+    display:block!important;
+    flex:initial!important;
+  }
+  body[data-screen-label] nav.top .lang-current{
+    width:94px!important;
+    height:36px!important;
+    padding:0 12px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:6px!important;
+    border-radius:12px!important;
+    background:rgba(246,239,222,.14)!important;
+    border:1px solid rgba(246,239,222,.30)!important;
+    color:var(--areia-pale,#f6efde)!important;
+    font-family:"JetBrains Mono",ui-monospace,monospace!important;
+    font-size:12px!important;
+    font-weight:900!important;
+    letter-spacing:.06em!important;
+    white-space:nowrap!important;
+  }
+  body[data-screen-label] nav.top .lang-current span{color:inherit!important;}
+  body[data-screen-label] nav.top .btn,
+  body[data-screen-label] nav.top .btn:link,
+  body[data-screen-label] nav.top .btn:visited{
+    grid-column:5!important;
+    width:190px!important;
+    min-width:0!important;
+    height:60px!important;
+    min-height:0!important;
+    padding:0!important;
+    margin:0!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    border-radius:999px!important;
+    background:var(--amarelo,#f59b1e)!important;
+    border:1px solid var(--amarelo,#f59b1e)!important;
+    color:#fff!important;
+    font-family:"JetBrains Mono",ui-monospace,monospace!important;
+    font-size:14px!important;
+    line-height:1!important;
+    font-weight:900!important;
+    letter-spacing:.16em!important;
+    text-transform:uppercase!important;
+    text-decoration:none!important;
+    box-shadow:none!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+  body[data-screen-label] nav.top .btn:hover{
+    background:var(--amarelo,#f59b1e)!important;
+    color:#fff!important;
+    filter:brightness(1.04)!important;
+  }
+  body[data-screen-label] nav.top .nav-hamburger{display:none!important;}
+
+  /* Linha institucional exatamente abaixo do menu, como na home */
+  body[data-screen-label] .page-hero-content .eyebrow.hero-eyebrow{
+    position:absolute!important;
+    top:98px!important;
+    left:clamp(214px,11.7vw,244px)!important;
+    right:clamp(320px,23vw,430px)!important;
+    width:auto!important;
+    max-width:none!important;
+    margin:0!important;
+    white-space:nowrap!important;
+    overflow:hidden!important;
+    text-overflow:clip!important;
+    font-family:"JetBrains Mono",ui-monospace,monospace!important;
+    font-size:10px!important;
+    line-height:1!important;
+    letter-spacing:.34em!important;
+    font-weight:500!important;
+    text-transform:uppercase!important;
+    color:var(--amarelo,#f59b1e)!important;
+    opacity:1!important;
+    text-shadow:0 2px 12px rgba(0,32,46,.66)!important;
+    z-index:8!important;
+  }
+  body[data-screen-label] .page-hero-content .eyebrow.hero-eyebrow::before{
+    width:34px!important;
+    min-width:34px!important;
+    height:1px!important;
+    margin-right:18px!important;
+    background:var(--amarelo,#f59b1e)!important;
+    opacity:1!important;
+  }
+  body[data-screen-label] .page-hero-content{padding-top:168px!important;}
+}
+@media (min-width:901px) and (max-width:1460px){
+  body[data-screen-label] nav.top .nav-inner{
+    padding-left:34px!important;
+    padding-right:34px!important;
+    grid-template-columns:108px minmax(520px,1fr) 188px 84px 174px!important;
+    column-gap:18px!important;
+  }
+  body[data-screen-label] nav.top .brand-mark{width:108px!important;}
+  body[data-screen-label] nav.top .brand-logo{width:62px!important;height:62px!important;}
+  body[data-screen-label] nav.top .nav-links{gap:18px!important;}
+  body[data-screen-label] nav.top .nav-links a{font-size:10.5px!important;letter-spacing:.115em!important;}
+  body[data-screen-label] nav.top .nav-rating-badge{width:188px!important;height:38px!important;}
+  body[data-screen-label] nav.top .nav-rating-stars{font-size:14px!important;}
+  body[data-screen-label] nav.top .nav-rating-count{font-size:10px!important;letter-spacing:.06em!important;}
+  body[data-screen-label] nav.top .lang-switcher,
+  body[data-screen-label] nav.top .lang-current{width:84px!important;}
+  body[data-screen-label] nav.top .btn{width:174px!important;height:58px!important;font-size:12.5px!important;letter-spacing:.14em!important;}
+  body[data-screen-label] .page-hero-content .eyebrow.hero-eyebrow{left:214px!important;right:280px!important;font-size:9.5px!important;letter-spacing:.30em!important;}
+}
+@media (min-width:901px) and (max-width:1180px){
+  body[data-screen-label] nav.top .nav-inner{
+    grid-template-columns:88px minmax(380px,1fr) 154px 74px 142px!important;
+    column-gap:12px!important;
+    padding-left:24px!important;
+    padding-right:24px!important;
+  }
+  body[data-screen-label] nav.top .brand-mark{width:88px!important;}
+  body[data-screen-label] nav.top .brand-logo{width:56px!important;height:56px!important;}
+  body[data-screen-label] nav.top .nav-links{gap:12px!important;}
+  body[data-screen-label] nav.top .nav-links a{font-size:9.2px!important;letter-spacing:.08em!important;}
+  body[data-screen-label] nav.top .nav-rating-badge{width:154px!important;padding:0 8px!important;}
+  body[data-screen-label] nav.top .nav-rating-count{font-size:9px!important;}
+  body[data-screen-label] nav.top .lang-switcher,
+  body[data-screen-label] nav.top .lang-current{width:74px!important;}
+  body[data-screen-label] nav.top .btn{width:142px!important;height:54px!important;font-size:11px!important;letter-spacing:.10em!important;}
+}
+@media (max-width:900px){
+  body[data-screen-label]{overflow-x:hidden!important;}
+  body[data-screen-label] nav.top{max-width:100vw!important;}
+}
+</style>
+
 </head>
 <body>
     <a href="#conteudo-principal" class="skip-nav">Pular para o conteúdo principal</a>
@@ -100,7 +374,7 @@
         <img alt="Pôr do Sol no Pão de Açúcar" class="page-hero-photo" decoding="async" fetchpriority="high" src="assets/hero.webp">
         <div class="page-hero-overlay" aria-hidden="true"></div>
         <div class="page-hero-content">
-            <div class="eyebrow hero-eyebrow">Restaurante Brasileiro do Bondinho · Restaurante Carioca Tradicional de Qualidade · Morro da Urca · Parque Bondinho Pão de Açúcar · Rio de Janeiro · Brasil</div>
+            <div class="eyebrow hero-eyebrow">Restaurante do Bondinho · Morro da Urca · Parque Bondinho Pão de Açúcar · Rio de Janeiro · Brasil</div>
             <div class="crumbs">
                 <a href="index.html">Home</a> <span class="sep">/</span> <span class="here">Pôr do Sol no Pão de Açúcar</span>
             </div>

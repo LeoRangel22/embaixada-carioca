@@ -5,42 +5,50 @@
 - canonicals, hreflang e sitemap
 - links externos críticos
 - limpeza leve de HTML
-- sincronização do topo das principais subpáginas com a home
+- sincronização do topo das subpáginas com a home
+- remoção de overflow/moldura lateral em desktop
 - performance percebida e peso de páginas/assets
 - sem alteração da composição principal da home
 
 ## Contadores
 - html_files_scanned: 65
-- html_files_updated: 63
+- html_files_updated: 65
 - canonical_fixed: 62
 - og_url_fixed: 0
 - absolute_urls_fixed: 112
 - review_links_fixed: 0
 - placeholder_maps_fixed: 0
-- text_typos_fixed: 7
+- text_typos_fixed: 1
 - sitemap_urls_fixed: 0
 - sitemap_blocks_removed: 0
-- subpage_top_synced: 18
+- subpage_top_synced: 55
+- subpage_eyebrow_synced: 55
 
 ## Correções aplicadas
 - CANONICAL: 404.html -> https://www.embaixadacarioca.com/404.html
 - CANONICAL: almoco-morro-da-urca.html -> https://www.embaixadacarioca.com/almoco-morro-da-urca.html
+- TOP_SYNC: almoco-morro-da-urca.html | topo sincronizado com a home
 - CANONICAL: almoco.html -> https://www.embaixadacarioca.com/almoco.html
 - TOP_SYNC: almoco.html | topo sincronizado com a home
 - CANONICAL: cafe-da-manha-pao-de-acucar.html -> https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html
+- TOP_SYNC: cafe-da-manha-pao-de-acucar.html | topo sincronizado com a home
 - CANONICAL: cafe-da-manha.html -> https://www.embaixadacarioca.com/cafe-da-manha.html
 - TOP_SYNC: cafe-da-manha.html | topo sincronizado com a home
 - CANONICAL: caipirinha-com-vista-rio.html -> https://www.embaixadacarioca.com/caipirinha-com-vista-rio.html
+- TOP_SYNC: caipirinha-com-vista-rio.html | topo sincronizado com a home
 - CANONICAL: cardapio.html -> https://www.embaixadacarioca.com/cardapio.html
 - TOP_SYNC: cardapio.html | topo sincronizado com a home
 - CANONICAL: contato.html -> https://www.embaixadacarioca.com/contato.html
 - CANONICAL: en/almoco-morro-da-urca.html -> https://www.embaixadacarioca.com/en/almoco-morro-da-urca.html
+- TOP_SYNC: en/almoco-morro-da-urca.html | topo sincronizado com a home
 - CANONICAL: en/almoco.html -> https://www.embaixadacarioca.com/en/almoco.html
 - TOP_SYNC: en/almoco.html | topo sincronizado com a home
 - CANONICAL: en/cafe-da-manha-pao-de-acucar.html -> https://www.embaixadacarioca.com/en/cafe-da-manha-pao-de-acucar.html
+- TOP_SYNC: en/cafe-da-manha-pao-de-acucar.html | topo sincronizado com a home
 - CANONICAL: en/cafe-da-manha.html -> https://www.embaixadacarioca.com/en/cafe-da-manha.html
 - TOP_SYNC: en/cafe-da-manha.html | topo sincronizado com a home
 - CANONICAL: en/caipirinha-com-vista-rio.html -> https://www.embaixadacarioca.com/en/caipirinha-com-vista-rio.html
+- TOP_SYNC: en/caipirinha-com-vista-rio.html | topo sincronizado com a home
 - CANONICAL: en/cardapio.html -> https://www.embaixadacarioca.com/en/cardapio.html
 - TOP_SYNC: en/cardapio.html | topo sincronizado com a home
 - CANONICAL: en/contato.html -> https://www.embaixadacarioca.com/en/contato.html
@@ -49,28 +57,41 @@
 - CANONICAL: en/eventos.html -> https://www.embaixadacarioca.com/en/eventos.html
 - TOP_SYNC: en/eventos.html | topo sincronizado com a home
 - CANONICAL: en/feijoada-com-vista-rio-de-janeiro.html -> https://www.embaixadacarioca.com/en/feijoada-com-vista-rio-de-janeiro.html
+- TOP_SYNC: en/feijoada-com-vista-rio-de-janeiro.html | topo sincronizado com a home
 - CANONICAL: en/feijoada.html -> https://www.embaixadacarioca.com/en/feijoada.html
+- TOP_SYNC: en/feijoada.html | topo sincronizado com a home
 - CANONICAL: en/gastronomia-carioca.html -> https://www.embaixadacarioca.com/en/gastronomia-carioca.html
+- TOP_SYNC: en/gastronomia-carioca.html | topo sincronizado com a home
 - CANONICAL: en/guia-do-rio.html -> https://www.embaixadacarioca.com/en/guia-do-rio.html
 - TOP_SYNC: en/guia-do-rio.html | topo sincronizado com a home
+- TOP_SYNC: en/index.html | topo sincronizado com a home
 - CANONICAL: en/morro-da-urca.html -> https://www.embaixadacarioca.com/en/morro-da-urca.html
+- TOP_SYNC: en/morro-da-urca.html | topo sincronizado com a home
 - CANONICAL: en/nossa-visao.html -> https://www.embaixadacarioca.com/en/nossa-visao.html
 - CANONICAL: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html -> https://www.embaixadacarioca.com/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- TOP_SYNC: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | topo sincronizado com a home
 - CANONICAL: en/parque-bondinho.html -> https://www.embaixadacarioca.com/en/parque-bondinho.html
+- TOP_SYNC: en/parque-bondinho.html | topo sincronizado com a home
 - CANONICAL: en/por-do-sol-morro-da-urca.html -> https://www.embaixadacarioca.com/en/por-do-sol-morro-da-urca.html
+- TOP_SYNC: en/por-do-sol-morro-da-urca.html | topo sincronizado com a home
 - CANONICAL: en/roteiro-meio-dia-urca-pao-de-acucar.html -> https://www.embaixadacarioca.com/en/roteiro-meio-dia-urca-pao-de-acucar.html
+- TOP_SYNC: en/roteiro-meio-dia-urca-pao-de-acucar.html | topo sincronizado com a home
 - CANONICAL: en/sunset.html -> https://www.embaixadacarioca.com/en/sunset.html
+- TOP_SYNC: en/sunset.html | topo sincronizado com a home
 - CANONICAL: entardecer.html -> https://www.embaixadacarioca.com/entardecer.html
-- TEXT_FIX: entardecer.html | 'parBaía de Guanabara' -> 'para a Baía de Guanabara' | 2
 - TOP_SYNC: entardecer.html | topo sincronizado com a home
 - CANONICAL: es/almoco-morro-da-urca.html -> https://www.embaixadacarioca.com/es/almoco-morro-da-urca.html
+- TOP_SYNC: es/almoco-morro-da-urca.html | topo sincronizado com a home
 - CANONICAL: es/almoco.html -> https://www.embaixadacarioca.com/es/almoco.html
 - TOP_SYNC: es/almoco.html | topo sincronizado com a home
 - CANONICAL: es/atardecer.html -> https://www.embaixadacarioca.com/es/atardecer.html
+- TOP_SYNC: es/atardecer.html | topo sincronizado com a home
 - CANONICAL: es/cafe-da-manha-pao-de-acucar.html -> https://www.embaixadacarioca.com/es/cafe-da-manha-pao-de-acucar.html
+- TOP_SYNC: es/cafe-da-manha-pao-de-acucar.html | topo sincronizado com a home
 - CANONICAL: es/cafe-da-manha.html -> https://www.embaixadacarioca.com/es/cafe-da-manha.html
 - TOP_SYNC: es/cafe-da-manha.html | topo sincronizado com a home
 - CANONICAL: es/caipirinha-com-vista-rio.html -> https://www.embaixadacarioca.com/es/caipirinha-com-vista-rio.html
+- TOP_SYNC: es/caipirinha-com-vista-rio.html | topo sincronizado com a home
 - CANONICAL: es/cardapio.html -> https://www.embaixadacarioca.com/es/cardapio.html
 - TOP_SYNC: es/cardapio.html | topo sincronizado com a home
 - CANONICAL: es/contato.html -> https://www.embaixadacarioca.com/es/contato.html
@@ -79,53 +100,69 @@
 - CANONICAL: es/eventos.html -> https://www.embaixadacarioca.com/es/eventos.html
 - TOP_SYNC: es/eventos.html | topo sincronizado com a home
 - CANONICAL: es/feijoada-com-vista-rio-de-janeiro.html -> https://www.embaixadacarioca.com/es/feijoada-com-vista-rio-de-janeiro.html
+- TOP_SYNC: es/feijoada-com-vista-rio-de-janeiro.html | topo sincronizado com a home
 - CANONICAL: es/feijoada.html -> https://www.embaixadacarioca.com/es/feijoada.html
+- TOP_SYNC: es/feijoada.html | topo sincronizado com a home
 - CANONICAL: es/gastronomia-carioca.html -> https://www.embaixadacarioca.com/es/gastronomia-carioca.html
+- TOP_SYNC: es/gastronomia-carioca.html | topo sincronizado com a home
 - CANONICAL: es/guia-do-rio.html -> https://www.embaixadacarioca.com/es/guia-do-rio.html
 - TOP_SYNC: es/guia-do-rio.html | topo sincronizado com a home
+- TOP_SYNC: es/index.html | topo sincronizado com a home
 - CANONICAL: es/morro-da-urca.html -> https://www.embaixadacarioca.com/es/morro-da-urca.html
+- TOP_SYNC: es/morro-da-urca.html | topo sincronizado com a home
 - CANONICAL: es/nossa-visao.html -> https://www.embaixadacarioca.com/es/nossa-visao.html
 - CANONICAL: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html -> https://www.embaixadacarioca.com/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- TOP_SYNC: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | topo sincronizado com a home
 - CANONICAL: es/parque-bondinho.html -> https://www.embaixadacarioca.com/es/parque-bondinho.html
+- TOP_SYNC: es/parque-bondinho.html | topo sincronizado com a home
 - CANONICAL: es/por-do-sol-morro-da-urca.html -> https://www.embaixadacarioca.com/es/por-do-sol-morro-da-urca.html
+- TOP_SYNC: es/por-do-sol-morro-da-urca.html | topo sincronizado com a home
 - CANONICAL: es/roteiro-meio-dia-urca-pao-de-acucar.html -> https://www.embaixadacarioca.com/es/roteiro-meio-dia-urca-pao-de-acucar.html
+- TOP_SYNC: es/roteiro-meio-dia-urca-pao-de-acucar.html | topo sincronizado com a home
 - CANONICAL: eventos.html -> https://www.embaixadacarioca.com/eventos.html
 - TOP_SYNC: eventos.html | topo sincronizado com a home
 - CANONICAL: feijoada-com-vista-rio-de-janeiro.html -> https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro.html
+- TOP_SYNC: feijoada-com-vista-rio-de-janeiro.html | topo sincronizado com a home
 - CANONICAL: feijoada.html -> https://www.embaixadacarioca.com/feijoada.html
+- TOP_SYNC: feijoada.html | topo sincronizado com a home
 - CANONICAL: gastronomia-carioca.html -> https://www.embaixadacarioca.com/gastronomia-carioca.html
+- TOP_SYNC: gastronomia-carioca.html | topo sincronizado com a home
 - CANONICAL: guia-do-rio.html -> https://www.embaixadacarioca.com/guia-do-rio.html
 - TOP_SYNC: guia-do-rio.html | topo sincronizado com a home
 - CANONICAL: home-preview.html -> https://www.embaixadacarioca.com/home-preview.html
-- TEXT_FIX: index.html | 'parBaía de Guanabara' -> 'para a Baía de Guanabara' | 4
 - TEXT_FIX: index.html | 'referência em café da manhã no Rio de Janeiro com vista é o da' -> 'A referência em café da manhã no Rio de Janeiro com vista é o da' | 1
 - CANONICAL: morro-da-urca.html -> https://www.embaixadacarioca.com/morro-da-urca.html
+- TOP_SYNC: morro-da-urca.html | topo sincronizado com a home
 - CANONICAL: nossa-visao.html -> https://www.embaixadacarioca.com/nossa-visao.html
 - CANONICAL: o-que-fazer-depois-do-bondinho-pao-de-acucar.html -> https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- TOP_SYNC: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | topo sincronizado com a home
 - CANONICAL: offline.html -> https://www.embaixadacarioca.com/offline.html
 - CANONICAL: parque-bondinho.html -> https://www.embaixadacarioca.com/parque-bondinho.html
+- TOP_SYNC: parque-bondinho.html | topo sincronizado com a home
 - CANONICAL: por-do-sol-morro-da-urca.html -> https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html
+- TOP_SYNC: por-do-sol-morro-da-urca.html | topo sincronizado com a home
 - CANONICAL: roteiro-meio-dia-urca-pao-de-acucar.html -> https://www.embaixadacarioca.com/roteiro-meio-dia-urca-pao-de-acucar.html
+- TOP_SYNC: roteiro-meio-dia-urca-pao-de-acucar.html | topo sincronizado com a home
 
 ## Alertas encontrados
 - Nenhum alerta crítico encontrado
 
 ## Maiores páginas HTML
-- index.html: 264.0 KB
-- es/index.html: 230.3 KB
-- en/index.html: 227.4 KB
-- es/guia-do-rio.html: 157.1 KB
-- en/guia-do-rio.html: 156.5 KB
-- guia-do-rio.html: 156.3 KB
-- cafe-da-manha.html: 155.7 KB
-- es/cafe-da-manha.html: 149.0 KB
-- en/cafe-da-manha.html: 148.8 KB
-- almoco.html: 143.7 KB
-- cardapio.html: 141.2 KB
-- entardecer.html: 138.3 KB
-- es/cardapio.html: 136.9 KB
-- en/cardapio.html: 136.3 KB
-- en/almoco.html: 135.8 KB
+- index.html: 267.6 KB
+- es/index.html: 244.2 KB
+- en/index.html: 241.4 KB
+- es/guia-do-rio.html: 164.8 KB
+- en/guia-do-rio.html: 164.2 KB
+- guia-do-rio.html: 163.9 KB
+- cafe-da-manha.html: 163.3 KB
+- es/cafe-da-manha.html: 156.6 KB
+- en/cafe-da-manha.html: 156.4 KB
+- almoco.html: 151.3 KB
+- cardapio.html: 148.8 KB
+- entardecer.html: 145.9 KB
+- es/cardapio.html: 144.6 KB
+- en/cardapio.html: 143.9 KB
+- en/almoco.html: 143.5 KB
 
 ## Maiores assets de imagem
 - assets/sunset-dj-cabine-pao-acucar.png: 573.2 KB [ACIMA DE 300 KB]
@@ -150,9 +187,7 @@
 - assets/fabio-almoco-feijoada-jardim.jpg: 223.3 KB
 
 ## Diagnóstico executivo
-- O principal risco técnico estava na inconsistência entre URLs com e sem `.html`, especialmente em sitemap, canonical e hreflang.
-- URLs no sitemap que não correspondem a arquivos reais foram removidas para evitar rastreamento desperdiçado e sinais ruins ao Google.
-- Links de avaliação e placeholders foram normalizados para reduzir caminhos quebrados em CTAs.
-- O topo das páginas principais foi sincronizado visualmente com a home, mantendo a estrutura de navegação, avaliação, idioma e botão de reserva.
-- A lentidão percebida tende a vir de três fatores: HTML muito grande em algumas páginas, muitas camadas de CSS inline acumuladas e assets de imagem grandes.
-- Próxima etapa segura: dividir CSS global, reduzir HTML duplicado e revisar imagens acima de 300 KB sem alterar o layout vencedor da home.
+- O topo das subpáginas foi forçado a seguir o grid visual da home: logo, menu, avaliações, idioma e botão de reserva.
+- O botão de reserva passou a usar largura fechada e box-sizing border-box para não estourar a lateral direita.
+- O body e o hero receberam bloqueio de overflow horizontal para eliminar moldura cinza e scroll lateral indesejado.
+- O principal risco técnico segue sendo HTML grande, CSS inline acumulado e imagens acima de 300 KB.
