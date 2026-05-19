@@ -5,10 +5,14 @@ Final Quality Repairs — Embaixada Carioca.
 Correções finais antes da auditoria estrutural:
 - repara tokens técnicos quebrados;
 - remove preload duplicado de hero.jpg quando já existe WebP;
-- corrige portunhol/inglês residual seguro em páginas PT;
+- corrige portunhol/inglês residual seguro APENAS em páginas PT;
 - corrige links internos recorrentes quebrados;
 - cria fallback assets/style.css para páginas legadas;
 - normaliza referências de hero-bg/hero.jpg para assets existentes.
+
+Importante:
+- Nunca traduzir texto de páginas /en/ ou /es/ neste script.
+- Restauração de idioma fica em apply_locale_restore_after_repairs.py.
 """
 from __future__ import annotations
 
@@ -35,7 +39,8 @@ TECH_REPAIRS = {
     "name='vistaport'": "name='viewport'",
 }
 
-TEXT_REPAIRS = {
+# Apenas páginas em português raiz. Não aplicar em /en/ nem /es/.
+PT_TEXT_REPAIRS = {
     "Eventos en el ": "Eventos no ",
     "Hablar con nuestro equipo": "Falar com nossa equipe",
     "todos recibidos con": "todos recebidos com",
@@ -72,8 +77,24 @@ LINK_REPAIRS = {
     "href='../en/atardecer.html'": "href='/en/entardecer.html'",
 }
 
+HTML_LANG_RE = re.compile(r"<html\b[^>]*\blang=[\"']([^\"']+)[\"']", re.IGNORECASE)
 HERO_JPG_PRELOAD_RE = re.compile(r'\n?\s*<link\b(?=[^>]*rel=["\']preload["\'])(?=[^>]*as=["\']image["\'])(?=[^>]*href=["\']/assets/hero\.jpg["\'])[^>]*>\s*', re.IGNORECASE)
 A_SPAM_RE = re.compile(r'\bA(?:\s+A){3,}\s+referência', re.IGNORECASE)
+
+
+def detect_lang(rel: str, text: str) -> str:
+    match = HTML_LANG_RE.search(text)
+    if match:
+        value = match.group(1).lower()
+        if value.startswith("en"):
+            return "en"
+        if value.startswith("es"):
+            return "es"
+    if rel.startswith("en/"):
+        return "en"
+    if rel.startswith("es/"):
+        return "es"
+    return "pt"
 
 
 def create_fallback_assets() -> None:
@@ -93,6 +114,7 @@ def process_html(path: Path) -> None:
     COUNTERS["html_scanned"] += 1
     original = path.read_text(encoding="utf-8", errors="ignore")
     text = original
+    lang = detect_lang(rel, text)
 
     for old, new in TECH_REPAIRS.items():
         count = text.count(old)
@@ -108,17 +130,17 @@ def process_html(path: Path) -> None:
         COUNTERS["duplicate_preloads_removed"] += removed
         REPORT.append(f"PRELOAD: {rel} | hero.jpg preload removido | {removed}")
 
-    for old, new in TEXT_REPAIRS.items():
-        count = text.count(old)
-        if count:
-            text = text.replace(old, new)
-            COUNTERS["text_repairs"] += count
-            REPORT.append(f"TEXT: {rel} | {old!r} -> {new!r} | {count}")
-
-    text, spam_count = A_SPAM_RE.subn("A referência", text)
-    if spam_count:
-        COUNTERS["text_repairs"] += spam_count
-        REPORT.append(f"TEXT: {rel} | sequência 'A A A...' corrigida | {spam_count}")
+    if lang == "pt":
+        for old, new in PT_TEXT_REPAIRS.items():
+            count = text.count(old)
+            if count:
+                text = text.replace(old, new)
+                COUNTERS["text_repairs"] += count
+                REPORT.append(f"PT_TEXT: {rel} | {old!r} -> {new!r} | {count}")
+        text, spam_count = A_SPAM_RE.subn("A referência", text)
+        if spam_count:
+            COUNTERS["text_repairs"] += spam_count
+            REPORT.append(f"PT_TEXT: {rel} | sequência 'A A A...' corrigida | {spam_count}")
 
     for old, new in LINK_REPAIRS.items():
         count = text.count(old)
