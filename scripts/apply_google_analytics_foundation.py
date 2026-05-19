@@ -5,8 +5,9 @@ Google Analytics Foundation — Embaixada Carioca.
 Objetivo:
 - instalar Google tag GA4 em todas as páginas HTML relevantes;
 - evitar duplicidade;
-- criar uma camada inicial de eventos para botões e links estratégicos;
-- deixar base limpa para Google Ads, remarketing, públicos e conversões futuras.
+- criar camada inicial de eventos para botões e links estratégicos;
+- reduzir trabalho inicial da main thread carregando o gtag após idle/interação;
+- manter base para Google Ads, remarketing, públicos e conversões futuras.
 
 Medição GA4: G-9GRXVZ55CB
 """
@@ -23,25 +24,41 @@ SKIP_FILES = {
     "offline.html",
 }
 
-GA_HEAD_BLOCK = f'''<!-- EC Analytics Foundation v1 -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>
+GA_HEAD_BLOCK = f'''<!-- EC Analytics Foundation v2 -->
 <script id="ec-ga4-base">
   window.dataLayer = window.dataLayer || [];
   function gtag(){{dataLayer.push(arguments);}}
-  gtag('js', new Date());
-  gtag('config', '{GA_MEASUREMENT_ID}', {{
-    send_page_view: true
-  }});
+  window.ecLoadGA4 = window.ecLoadGA4 || function(){{
+    if (window.ecGA4Loaded) return;
+    window.ecGA4Loaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}';
+    document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag('config', '{GA_MEASUREMENT_ID}', {{ send_page_view: true }});
+  }};
+  (function(){{
+    var load = window.ecLoadGA4;
+    var idle = function(){{
+      if ('requestIdleCallback' in window) requestIdleCallback(load, {{ timeout: 2600 }});
+      else setTimeout(load, 1800);
+    }};
+    ['pointerdown','keydown','touchstart','scroll'].forEach(function(evt){{
+      window.addEventListener(evt, load, {{ once:true, passive:true }});
+    }});
+    if (document.readyState === 'complete') idle();
+    else window.addEventListener('load', idle, {{ once:true }});
+  }})();
 </script>
-<!-- /EC Analytics Foundation v1 -->'''
+<!-- /EC Analytics Foundation v2 -->'''
 
 GA_EVENTS_BLOCK = r'''<!-- EC Analytics Events v1 -->
 <script id="ec-ga4-events">
 (function(){
   'use strict';
 
-  var EVENT_VERSION = '2026-05-19.1';
+  var EVENT_VERSION = '2026-05-19.2';
 
   function textOf(el){
     if (!el) return '';
@@ -90,6 +107,8 @@ GA_EVENTS_BLOCK = r'''<!-- EC Analytics Events v1 -->
   function sendAnalyticsEvent(name, el){
     if (!name || typeof window.gtag !== 'function') return;
 
+    if (typeof window.ecLoadGA4 === 'function') window.ecLoadGA4();
+
     var href = String(el.href || el.getAttribute('href') || '');
     var label = textOf(el);
 
@@ -123,7 +142,8 @@ GA_EVENTS_BLOCK = r'''<!-- EC Analytics Events v1 -->
 
 HEAD_OPEN_RE = re.compile(r'(<head[^>]*>)', re.IGNORECASE)
 BODY_CLOSE_RE = re.compile(r'</body>', re.IGNORECASE)
-GA_BLOCK_RE = re.compile(r'\n*<!-- EC Analytics Foundation v1 -->[\s\S]*?<!-- /EC Analytics Foundation v1 -->\s*', re.IGNORECASE)
+GA_BLOCK_RE = re.compile(r'\n*<!-- EC Analytics Foundation v[12] -->[\s\S]*?<!-- /EC Analytics Foundation v[12] -->\s*', re.IGNORECASE)
+LEGACY_GTAG_RE = re.compile(r'\n*<!-- Google tag \(gtag\.js\) -->\s*<script\s+async\s+src=["\']https://www\.googletagmanager\.com/gtag/js\?id=G-9GRXVZ55CB["\']></script>\s*<script id=["\']ec-ga4-base["\']>[\s\S]*?</script>\s*', re.IGNORECASE)
 EVENTS_BLOCK_RE = re.compile(r'\n*<!-- EC Analytics Events v1 -->[\s\S]*?<!-- /EC Analytics Events v1 -->\s*', re.IGNORECASE)
 
 REPORT: list[str] = []
@@ -148,6 +168,7 @@ def should_skip(path: Path) -> bool:
 def inject_blocks(text: str, rel: str) -> str:
     original = text
     text = GA_BLOCK_RE.sub('\n', text)
+    text = LEGACY_GTAG_RE.sub('\n', text)
     text = EVENTS_BLOCK_RE.sub('\n', text)
 
     if HEAD_OPEN_RE.search(text):
@@ -193,6 +214,10 @@ def write_report() -> None:
         '',
         '## Measurement ID',
         f'- {GA_MEASUREMENT_ID}',
+        '',
+        '## Estratégia de performance',
+        '- GA4 carrega após idle/interação para reduzir trabalho inicial da main thread.',
+        '- Eventos de clique forçam carregamento antes de enviar a conversão, preservando medição de CTAs.',
         '',
         '## Eventos configurados',
         '- click_reservar',
