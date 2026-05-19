@@ -17,11 +17,11 @@
 - PRIORITY: UPDATED: almoco.html | replacements=8
 - PRIORITY: UPDATED: cafe-da-manha.html | replacements=13
 - PRIORITY: UPDATED: cardapio.html | replacements=8
-- PRIORITY: UPDATED: entardecer.html | replacements=13
+- PRIORITY: UPDATED: entardecer.html | replacements=15
 - PRIORITY: UPDATED: es/eventos.html | replacements=7
 - PRIORITY: UPDATED: eventos.html | replacements=15
 - PRIORITY: UPDATED: guia-do-rio.html | replacements=13
-- PRIORITY: UPDATED: index.html | replacements=35
+- PRIORITY: UPDATED: index.html | replacements=39
 - SECONDARY: UPDATED: morro-da-urca.html | replacements=24
 - SECONDARY: UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=7
 - SECONDARY: UPDATED: parque-bondinho.html | replacements=7
