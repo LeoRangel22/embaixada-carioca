@@ -20,7 +20,7 @@
 - en/restaurants-near-sugarloaf-mountain.html
 - es/restaurantes-cerca-del-pan-de-azucar.html
 
-## URLs adicionadas ao sitemap: 15
+## URLs adicionadas ao sitemap: 0
 
 ## Território
 - Parque Bondinho Pão de Açúcar

@@ -28,8 +28,13 @@
 - UPDATED: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=0
 - UPDATED: en/parque-bondinho.html | replacements=0
 - UPDATED: en/por-do-sol-morro-da-urca.html | replacements=0
+- UPDATED: en/restaurant-at-urca-hill.html | replacements=0
+- UPDATED: en/restaurants-near-sugarloaf-mountain.html | replacements=0
 - UPDATED: en/roteiro-meio-dia-urca-pao-de-acucar.html | replacements=0
+- UPDATED: en/sugarloaf-cable-car-park.html | replacements=0
+- UPDATED: en/sugarloaf-cable-car-restaurant.html | replacements=0
 - UPDATED: en/sunset.html | replacements=0
+- UPDATED: en/where-to-eat-near-sugarloaf.html | replacements=0
 - UPDATED: entardecer.html | replacements=0
 - UPDATED: es/almoco-morro-da-urca.html | replacements=0
 - UPDATED: es/almoco.html | replacements=0
@@ -39,6 +44,7 @@
 - UPDATED: es/caipirinha-com-vista-rio.html | replacements=0
 - UPDATED: es/cardapio.html | replacements=0
 - UPDATED: es/contato.html | replacements=0
+- UPDATED: es/donde-comer-cerca-del-pan-de-azucar.html | replacements=0
 - UPDATED: es/entardecer.html | replacements=0
 - UPDATED: es/eventos.html | replacements=0
 - UPDATED: es/feijoada-com-vista-rio-de-janeiro.html | replacements=0
@@ -49,8 +55,12 @@
 - UPDATED: es/morro-da-urca.html | replacements=0
 - UPDATED: es/nossa-visao.html | replacements=0
 - UPDATED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=0
+- UPDATED: es/parque-bondinho-pan-de-azucar.html | replacements=0
 - UPDATED: es/parque-bondinho.html | replacements=0
 - UPDATED: es/por-do-sol-morro-da-urca.html | replacements=0
+- UPDATED: es/restaurante-bondinho-pan-de-azucar.html | replacements=0
+- UPDATED: es/restaurante-morro-da-urca.html | replacements=0
+- UPDATED: es/restaurantes-cerca-del-pan-de-azucar.html | replacements=0
 - UPDATED: es/roteiro-meio-dia-urca-pao-de-acucar.html | replacements=0
 - UPDATED: eventos.html | replacements=0
 - UPDATED: feijoada-com-vista-rio-de-janeiro.html | replacements=0
@@ -63,8 +73,13 @@
 - UPDATED: nossa-visao.html | replacements=0
 - UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=0
 - UPDATED: offline.html | replacements=0
+- UPDATED: onde-comer-no-pao-de-acucar.html | replacements=0
+- UPDATED: parque-bondinho-pao-de-acucar.html | replacements=0
 - UPDATED: parque-bondinho.html | replacements=0
 - UPDATED: por-do-sol-morro-da-urca.html | replacements=0
+- UPDATED: restaurante-bondinho-pao-de-acucar.html | replacements=0
+- UPDATED: restaurante-morro-da-urca.html | replacements=0
+- UPDATED: restaurantes-perto-do-pao-de-acucar.html | replacements=0
 - UPDATED: roteiro-meio-dia-urca-pao-de-acucar.html | replacements=0
 
 ## Pendências automatizadas

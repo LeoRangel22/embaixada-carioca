@@ -24,7 +24,12 @@
 - PRIORITY: UPDATED: index.html | replacements=39
 - SECONDARY: UPDATED: morro-da-urca.html | replacements=24
 - SECONDARY: UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=7
+- SECONDARY: UPDATED: onde-comer-no-pao-de-acucar.html | replacements=4
+- SECONDARY: UPDATED: parque-bondinho-pao-de-acucar.html | replacements=3
 - SECONDARY: UPDATED: parque-bondinho.html | replacements=7
+- SECONDARY: UPDATED: restaurante-bondinho-pao-de-acucar.html | replacements=5
+- SECONDARY: UPDATED: restaurante-morro-da-urca.html | replacements=3
+- SECONDARY: UPDATED: restaurantes-perto-do-pao-de-acucar.html | replacements=3
 - SECONDARY: UPDATED: roteiro-meio-dia-urca-pao-de-acucar.html | replacements=8
 
 ## Pendências críticas

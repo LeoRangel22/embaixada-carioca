@@ -6,10 +6,10 @@
 - Deixar a pedra do Pão de Açúcar sem textos sobrepostos.
 
 ## Contadores
-- scanned: 65
-- updated: 55
+- scanned: 80
+- updated: 70
 - skipped: 10
-- eyebrows_synced: 55
+- eyebrows_synced: 70
 
 ## Arquivos
 - UPDATED: almoco-morro-da-urca.html
@@ -35,8 +35,13 @@
 - UPDATED: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - UPDATED: en/parque-bondinho.html
 - UPDATED: en/por-do-sol-morro-da-urca.html
+- UPDATED: en/restaurant-at-urca-hill.html
+- UPDATED: en/restaurants-near-sugarloaf-mountain.html
 - UPDATED: en/roteiro-meio-dia-urca-pao-de-acucar.html
+- UPDATED: en/sugarloaf-cable-car-park.html
+- UPDATED: en/sugarloaf-cable-car-restaurant.html
 - UPDATED: en/sunset.html
+- UPDATED: en/where-to-eat-near-sugarloaf.html
 - UPDATED: entardecer.html
 - UPDATED: es/almoco-morro-da-urca.html
 - UPDATED: es/almoco.html
@@ -45,6 +50,7 @@
 - UPDATED: es/cafe-da-manha.html
 - UPDATED: es/caipirinha-com-vista-rio.html
 - UPDATED: es/cardapio.html
+- UPDATED: es/donde-comer-cerca-del-pan-de-azucar.html
 - UPDATED: es/entardecer.html
 - UPDATED: es/eventos.html
 - UPDATED: es/feijoada-com-vista-rio-de-janeiro.html
@@ -54,8 +60,12 @@
 - UPDATED: es/index.html
 - UPDATED: es/morro-da-urca.html
 - UPDATED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- UPDATED: es/parque-bondinho-pan-de-azucar.html
 - UPDATED: es/parque-bondinho.html
 - UPDATED: es/por-do-sol-morro-da-urca.html
+- UPDATED: es/restaurante-bondinho-pan-de-azucar.html
+- UPDATED: es/restaurante-morro-da-urca.html
+- UPDATED: es/restaurantes-cerca-del-pan-de-azucar.html
 - UPDATED: es/roteiro-meio-dia-urca-pao-de-acucar.html
 - UPDATED: eventos.html
 - UPDATED: feijoada-com-vista-rio-de-janeiro.html
@@ -64,6 +74,11 @@
 - UPDATED: guia-do-rio.html
 - UPDATED: morro-da-urca.html
 - UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- UPDATED: onde-comer-no-pao-de-acucar.html
+- UPDATED: parque-bondinho-pao-de-acucar.html
 - UPDATED: parque-bondinho.html
 - UPDATED: por-do-sol-morro-da-urca.html
+- UPDATED: restaurante-bondinho-pao-de-acucar.html
+- UPDATED: restaurante-morro-da-urca.html
+- UPDATED: restaurantes-perto-do-pao-de-acucar.html
 - UPDATED: roteiro-meio-dia-urca-pao-de-acucar.html

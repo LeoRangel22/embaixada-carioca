@@ -11,18 +11,18 @@
 - sem alteração da composição principal da home
 
 ## Contadores
-- html_files_scanned: 65
-- html_files_updated: 65
+- html_files_scanned: 80
+- html_files_updated: 80
 - canonical_fixed: 62
-- og_url_fixed: 0
+- og_url_fixed: 15
 - absolute_urls_fixed: 112
 - review_links_fixed: 0
 - placeholder_maps_fixed: 0
-- text_typos_fixed: 7
+- text_typos_fixed: 1
 - sitemap_urls_fixed: 0
 - sitemap_blocks_removed: 0
-- subpage_top_synced: 55
-- subpage_eyebrow_synced: 55
+- subpage_top_synced: 70
+- subpage_eyebrow_synced: 70
 
 ## Correções aplicadas
 - CANONICAL: 404.html -> https://www.embaixadacarioca.com/404.html
@@ -74,12 +74,21 @@
 - TOP_SYNC: en/parque-bondinho.html | topo sincronizado com a home
 - CANONICAL: en/por-do-sol-morro-da-urca.html -> https://www.embaixadacarioca.com/en/por-do-sol-morro-da-urca.html
 - TOP_SYNC: en/por-do-sol-morro-da-urca.html | topo sincronizado com a home
+- OG_URL: en/restaurant-at-urca-hill.html -> https://www.embaixadacarioca.com/en/restaurant-at-urca-hill.html
+- TOP_SYNC: en/restaurant-at-urca-hill.html | topo sincronizado com a home
+- OG_URL: en/restaurants-near-sugarloaf-mountain.html -> https://www.embaixadacarioca.com/en/restaurants-near-sugarloaf-mountain.html
+- TOP_SYNC: en/restaurants-near-sugarloaf-mountain.html | topo sincronizado com a home
 - CANONICAL: en/roteiro-meio-dia-urca-pao-de-acucar.html -> https://www.embaixadacarioca.com/en/roteiro-meio-dia-urca-pao-de-acucar.html
 - TOP_SYNC: en/roteiro-meio-dia-urca-pao-de-acucar.html | topo sincronizado com a home
+- OG_URL: en/sugarloaf-cable-car-park.html -> https://www.embaixadacarioca.com/en/sugarloaf-cable-car-park.html
+- TOP_SYNC: en/sugarloaf-cable-car-park.html | topo sincronizado com a home
+- OG_URL: en/sugarloaf-cable-car-restaurant.html -> https://www.embaixadacarioca.com/en/sugarloaf-cable-car-restaurant.html
+- TOP_SYNC: en/sugarloaf-cable-car-restaurant.html | topo sincronizado com a home
 - CANONICAL: en/sunset.html -> https://www.embaixadacarioca.com/en/sunset.html
 - TOP_SYNC: en/sunset.html | topo sincronizado com a home
+- OG_URL: en/where-to-eat-near-sugarloaf.html -> https://www.embaixadacarioca.com/en/where-to-eat-near-sugarloaf.html
+- TOP_SYNC: en/where-to-eat-near-sugarloaf.html | topo sincronizado com a home
 - CANONICAL: entardecer.html -> https://www.embaixadacarioca.com/entardecer.html
-- TEXT_FIX: entardecer.html | 'parBaía de Guanabara' -> 'para a Baía de Guanabara' | 2
 - TOP_SYNC: entardecer.html | topo sincronizado com a home
 - CANONICAL: es/almoco-morro-da-urca.html -> https://www.embaixadacarioca.com/es/almoco-morro-da-urca.html
 - TOP_SYNC: es/almoco-morro-da-urca.html | topo sincronizado com a home
@@ -96,6 +105,8 @@
 - CANONICAL: es/cardapio.html -> https://www.embaixadacarioca.com/es/cardapio.html
 - TOP_SYNC: es/cardapio.html | topo sincronizado com a home
 - CANONICAL: es/contato.html -> https://www.embaixadacarioca.com/es/contato.html
+- OG_URL: es/donde-comer-cerca-del-pan-de-azucar.html -> https://www.embaixadacarioca.com/es/donde-comer-cerca-del-pan-de-azucar.html
+- TOP_SYNC: es/donde-comer-cerca-del-pan-de-azucar.html | topo sincronizado com a home
 - CANONICAL: es/entardecer.html -> https://www.embaixadacarioca.com/es/entardecer.html
 - TOP_SYNC: es/entardecer.html | topo sincronizado com a home
 - CANONICAL: es/eventos.html -> https://www.embaixadacarioca.com/es/eventos.html
@@ -114,10 +125,18 @@
 - CANONICAL: es/nossa-visao.html -> https://www.embaixadacarioca.com/es/nossa-visao.html
 - CANONICAL: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html -> https://www.embaixadacarioca.com/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - TOP_SYNC: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | topo sincronizado com a home
+- OG_URL: es/parque-bondinho-pan-de-azucar.html -> https://www.embaixadacarioca.com/es/parque-bondinho-pan-de-azucar.html
+- TOP_SYNC: es/parque-bondinho-pan-de-azucar.html | topo sincronizado com a home
 - CANONICAL: es/parque-bondinho.html -> https://www.embaixadacarioca.com/es/parque-bondinho.html
 - TOP_SYNC: es/parque-bondinho.html | topo sincronizado com a home
 - CANONICAL: es/por-do-sol-morro-da-urca.html -> https://www.embaixadacarioca.com/es/por-do-sol-morro-da-urca.html
 - TOP_SYNC: es/por-do-sol-morro-da-urca.html | topo sincronizado com a home
+- OG_URL: es/restaurante-bondinho-pan-de-azucar.html -> https://www.embaixadacarioca.com/es/restaurante-bondinho-pan-de-azucar.html
+- TOP_SYNC: es/restaurante-bondinho-pan-de-azucar.html | topo sincronizado com a home
+- OG_URL: es/restaurante-morro-da-urca.html -> https://www.embaixadacarioca.com/es/restaurante-morro-da-urca.html
+- TOP_SYNC: es/restaurante-morro-da-urca.html | topo sincronizado com a home
+- OG_URL: es/restaurantes-cerca-del-pan-de-azucar.html -> https://www.embaixadacarioca.com/es/restaurantes-cerca-del-pan-de-azucar.html
+- TOP_SYNC: es/restaurantes-cerca-del-pan-de-azucar.html | topo sincronizado com a home
 - CANONICAL: es/roteiro-meio-dia-urca-pao-de-acucar.html -> https://www.embaixadacarioca.com/es/roteiro-meio-dia-urca-pao-de-acucar.html
 - TOP_SYNC: es/roteiro-meio-dia-urca-pao-de-acucar.html | topo sincronizado com a home
 - CANONICAL: eventos.html -> https://www.embaixadacarioca.com/eventos.html
@@ -131,7 +150,6 @@
 - CANONICAL: guia-do-rio.html -> https://www.embaixadacarioca.com/guia-do-rio.html
 - TOP_SYNC: guia-do-rio.html | topo sincronizado com a home
 - CANONICAL: home-preview.html -> https://www.embaixadacarioca.com/home-preview.html
-- TEXT_FIX: index.html | 'parBaía de Guanabara' -> 'para a Baía de Guanabara' | 4
 - TEXT_FIX: index.html | 'referência em café da manhã no Rio de Janeiro com vista é o da' -> 'A referência em café da manhã no Rio de Janeiro com vista é o da' | 1
 - CANONICAL: morro-da-urca.html -> https://www.embaixadacarioca.com/morro-da-urca.html
 - TOP_SYNC: morro-da-urca.html | topo sincronizado com a home
@@ -139,10 +157,20 @@
 - CANONICAL: o-que-fazer-depois-do-bondinho-pao-de-acucar.html -> https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - TOP_SYNC: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | topo sincronizado com a home
 - CANONICAL: offline.html -> https://www.embaixadacarioca.com/offline.html
+- OG_URL: onde-comer-no-pao-de-acucar.html -> https://www.embaixadacarioca.com/onde-comer-no-pao-de-acucar.html
+- TOP_SYNC: onde-comer-no-pao-de-acucar.html | topo sincronizado com a home
+- OG_URL: parque-bondinho-pao-de-acucar.html -> https://www.embaixadacarioca.com/parque-bondinho-pao-de-acucar.html
+- TOP_SYNC: parque-bondinho-pao-de-acucar.html | topo sincronizado com a home
 - CANONICAL: parque-bondinho.html -> https://www.embaixadacarioca.com/parque-bondinho.html
 - TOP_SYNC: parque-bondinho.html | topo sincronizado com a home
 - CANONICAL: por-do-sol-morro-da-urca.html -> https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html
 - TOP_SYNC: por-do-sol-morro-da-urca.html | topo sincronizado com a home
+- OG_URL: restaurante-bondinho-pao-de-acucar.html -> https://www.embaixadacarioca.com/restaurante-bondinho-pao-de-acucar.html
+- TOP_SYNC: restaurante-bondinho-pao-de-acucar.html | topo sincronizado com a home
+- OG_URL: restaurante-morro-da-urca.html -> https://www.embaixadacarioca.com/restaurante-morro-da-urca.html
+- TOP_SYNC: restaurante-morro-da-urca.html | topo sincronizado com a home
+- OG_URL: restaurantes-perto-do-pao-de-acucar.html -> https://www.embaixadacarioca.com/restaurantes-perto-do-pao-de-acucar.html
+- TOP_SYNC: restaurantes-perto-do-pao-de-acucar.html | topo sincronizado com a home
 - CANONICAL: roteiro-meio-dia-urca-pao-de-acucar.html -> https://www.embaixadacarioca.com/roteiro-meio-dia-urca-pao-de-acucar.html
 - TOP_SYNC: roteiro-meio-dia-urca-pao-de-acucar.html | topo sincronizado com a home
 
