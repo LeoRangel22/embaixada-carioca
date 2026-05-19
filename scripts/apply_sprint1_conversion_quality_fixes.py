@@ -16,7 +16,6 @@ Observação:
 """
 from __future__ import annotations
 
-from html import escape
 from pathlib import Path
 from urllib.parse import quote
 import json
@@ -105,6 +104,30 @@ LANG_LABELS = {
     "es": {"reserve": "Reservar mesa", "whatsapp": "Hola. Vi Embaixada Carioca en el sitio web y me gustaría hacer una reserva.", "site_name": "Embaixada Carioca"},
 }
 
+SCHEMA_I18N = {
+    "pt": {
+        "inLanguage": "pt-BR",
+        "description": "Restaurante brasileiro no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com café da manhã, almoço, caipirinhas, chope e eventos com vista.",
+        "servesCuisine": ["Brasileira", "Carioca", "Café da manhã", "Bar"],
+        "features": ["Vista para o Pão de Açúcar", "Dentro do Parque Bondinho Pão de Açúcar", "Mesas ao ar livre"],
+        "keywords": ["restaurante no Pão de Açúcar", "restaurante Morro da Urca", "restaurante no Bondinho", "café da manhã com vista", "caipirinha no Rio de Janeiro"],
+    },
+    "en": {
+        "inLanguage": "en",
+        "description": "Brazilian restaurant at Urca Hill, inside Sugarloaf Cable Car Park, serving breakfast, lunch, caipirinhas, draft beer and events with a view.",
+        "servesCuisine": ["Brazilian", "Carioca", "Breakfast", "Bar"],
+        "features": ["Sugarloaf Mountain view", "Inside Sugarloaf Cable Car Park", "Outdoor seating"],
+        "keywords": ["restaurant near Sugarloaf Mountain", "restaurant at Urca Hill", "Sugarloaf Cable Car restaurant", "breakfast with a view", "caipirinha in Rio de Janeiro"],
+    },
+    "es": {
+        "inLanguage": "es",
+        "description": "Restaurante brasileño en el Morro da Urca, dentro del Parque Bondinho Pan de Azúcar, con desayuno, almuerzo, caipirinhas, cerveza de barril y eventos con vista.",
+        "servesCuisine": ["Brasileña", "Carioca", "Desayuno", "Bar"],
+        "features": ["Vista al Pan de Azúcar", "Dentro del Parque Bondinho Pan de Azúcar", "Mesas al aire libre"],
+        "keywords": ["restaurante cerca del Pan de Azúcar", "restaurante en el Morro da Urca", "restaurante en el Bondinho", "desayuno con vista", "caipirinha en Río de Janeiro"],
+    },
+}
+
 SUSPICIOUS_BY_LANG = {
     "pt": ["Para quién", " en el ", "Hablar con nuestro", "recibidos con", "más impresionante", "main dining room", "panoramic terraces", "hospitality team"],
     "en": ["Solicitar orçamento", "Falar com nossa equipe", "Capacidade variável", "salão principal", "terraços panorâmicos"],
@@ -161,7 +184,6 @@ def apply_language_and_duplication_fixes(text: str, rel: str, lang: str) -> str:
             COUNTERS["language_fixes"] += count
             REPORT.append(f"LANG_FIX: {rel} [{lang}] | {old!r} -> {new!r} | {count}")
 
-    # Duplicações editoriais frequentes em PT.
     if lang == "pt":
         patterns = [
             (re.compile(r"\bA\s+A\s+referência", re.IGNORECASE), "A referência"),
@@ -243,6 +265,7 @@ def fix_whatsapp_ctas(text: str, rel: str, lang: str) -> str:
 def build_schema(rel: str, text: str, lang: str) -> str:
     canonical = canonical_for(rel, text)
     title = title_for(text)
+    cfg = SCHEMA_I18N.get(lang, SCHEMA_I18N["pt"])
     restaurant = {
         "@context": "https://schema.org",
         "@type": "Restaurant",
@@ -252,19 +275,15 @@ def build_schema(rel: str, text: str, lang: str) -> str:
         "url": BASE + "/",
         "logo": f"{BASE}/assets/logo-azul.svg",
         "image": [f"{BASE}/assets/hero.webp", f"{BASE}/assets/hero-1200w.webp"],
-        "description": "Restaurante brasileiro no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com café da manhã, almoço, caipirinhas, chope e eventos com vista.",
+        "description": cfg["description"],
         "telephone": PHONE_E164,
         "priceRange": "$$",
-        "servesCuisine": ["Brazilian", "Carioca", "Breakfast", "Bar"],
+        "servesCuisine": cfg["servesCuisine"],
         "acceptsReservations": True,
         "hasMenu": f"{BASE}/cardapio.html",
         "hasMap": MAPS_URL,
         "isAccessibleForFree": False,
-        "amenityFeature": [
-            {"@type": "LocationFeatureSpecification", "name": "Vista para o Pão de Açúcar", "value": True},
-            {"@type": "LocationFeatureSpecification", "name": "Dentro do Parque Bondinho Pão de Açúcar", "value": True},
-            {"@type": "LocationFeatureSpecification", "name": "Mesas ao ar livre", "value": True},
-        ],
+        "amenityFeature": [{"@type": "LocationFeatureSpecification", "name": name, "value": True} for name in cfg["features"]],
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Av. Pasteur, 520 — Morro da Urca",
@@ -280,7 +299,8 @@ def build_schema(rel: str, text: str, lang: str) -> str:
         "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "7779", "bestRating": "5", "worstRating": "1"},
         "sameAs": ["https://www.instagram.com/embaixadacarioca/", REVIEW_URL, MAPS_URL],
         "potentialAction": {"@type": "ReserveAction", "target": RESERVE_URL, "name": LANG_LABELS[lang]["reserve"]},
-        "keywords": ["restaurante no Pão de Açúcar", "restaurante Morro da Urca", "restaurante no Bondinho", "café da manhã com vista", "caipirinha no Rio de Janeiro"],
+        "keywords": cfg["keywords"],
+        "inLanguage": cfg["inLanguage"],
     }
     website = {
         "@context": "https://schema.org",
@@ -288,7 +308,7 @@ def build_schema(rel: str, text: str, lang: str) -> str:
         "@id": f"{BASE}/#website",
         "name": "Embaixada Carioca",
         "url": BASE + "/",
-        "inLanguage": "pt-BR",
+        "inLanguage": cfg["inLanguage"],
         "publisher": {"@id": f"{BASE}/#restaurant"},
     }
     breadcrumb = {
@@ -321,8 +341,9 @@ def inject_schema(text: str, rel: str, lang: str) -> str:
 
 
 def audit_remaining_language(text: str, rel: str, lang: str) -> None:
+    visible_like = SCHEMA_BLOCK_RE.sub("", text)
     for token in SUSPICIOUS_BY_LANG.get(lang, []):
-        if token in text:
+        if token in visible_like:
             WARNINGS.append(f"LANG_WARNING: {rel} [{lang}] ainda contém {token!r}")
 
 
@@ -357,7 +378,7 @@ def write_reports() -> None:
         "## Itens executados",
         "1. Correção de idioma e duplicações visíveis.",
         "2. Correção da meta description de `en/entardecer.html`.",
-        "3. Validação/injeção do schema principal.",
+        "3. Validação/injeção do schema principal por idioma.",
         "4. Normalização de telefone e `hasMap`.",
         "5. Localização de CTAs de WhatsApp por idioma.",
         "6. Preparação dos eventos GA4 para marcação como key events.",
