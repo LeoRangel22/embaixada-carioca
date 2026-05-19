@@ -5,7 +5,7 @@
 - html_updated: 4
 - technical_repairs: 0
 - duplicate_preloads_removed: 0
-- text_repairs: 21
+- text_repairs: 22
 - link_repairs: 0
 - fallback_assets_created: 0
 
@@ -23,4 +23,5 @@
 - UPDATED: feijoada.html
 - PT_TEXT: index.html | 'hospitality team' -> 'equipe receptiva' | 1
 - PT_TEXT: index.html | 'para Baía de Guanabara' -> 'para a Baía de Guanabara' | 4
+- PT_TEXT: index.html | sequência 'A A A...' corrigida | 1
 - UPDATED: index.html
