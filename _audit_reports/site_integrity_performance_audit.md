@@ -18,7 +18,7 @@
 - absolute_urls_fixed: 112
 - review_links_fixed: 0
 - placeholder_maps_fixed: 0
-- text_typos_fixed: 7
+- text_typos_fixed: 1
 - sitemap_urls_fixed: 0
 - sitemap_blocks_removed: 0
 - subpage_top_synced: 70
@@ -89,7 +89,6 @@
 - OG_URL: en/where-to-eat-near-sugarloaf.html -> https://www.embaixadacarioca.com/en/where-to-eat-near-sugarloaf.html
 - TOP_SYNC: en/where-to-eat-near-sugarloaf.html | topo sincronizado com a home
 - CANONICAL: entardecer.html -> https://www.embaixadacarioca.com/entardecer.html
-- TEXT_FIX: entardecer.html | 'parBaía de Guanabara' -> 'para a Baía de Guanabara' | 2
 - TOP_SYNC: entardecer.html | topo sincronizado com a home
 - CANONICAL: es/almoco-morro-da-urca.html -> https://www.embaixadacarioca.com/es/almoco-morro-da-urca.html
 - TOP_SYNC: es/almoco-morro-da-urca.html | topo sincronizado com a home
@@ -151,7 +150,6 @@
 - CANONICAL: guia-do-rio.html -> https://www.embaixadacarioca.com/guia-do-rio.html
 - TOP_SYNC: guia-do-rio.html | topo sincronizado com a home
 - CANONICAL: home-preview.html -> https://www.embaixadacarioca.com/home-preview.html
-- TEXT_FIX: index.html | 'parBaía de Guanabara' -> 'para a Baía de Guanabara' | 4
 - TEXT_FIX: index.html | 'referência em café da manhã no Rio de Janeiro com vista é o da' -> 'A referência em café da manhã no Rio de Janeiro com vista é o da' | 1
 - CANONICAL: morro-da-urca.html -> https://www.embaixadacarioca.com/morro-da-urca.html
 - TOP_SYNC: morro-da-urca.html | topo sincronizado com a home
@@ -180,21 +178,21 @@
 - Nenhum alerta crítico encontrado
 
 ## Maiores páginas HTML
-- index.html: 267.6 KB
-- es/index.html: 257.6 KB
-- en/index.html: 254.7 KB
-- es/guia-do-rio.html: 177.8 KB
-- en/guia-do-rio.html: 177.2 KB
-- guia-do-rio.html: 177.0 KB
-- cafe-da-manha.html: 176.3 KB
-- es/cafe-da-manha.html: 169.7 KB
-- en/cafe-da-manha.html: 169.5 KB
-- almoco.html: 164.3 KB
-- cardapio.html: 161.9 KB
-- entardecer.html: 158.9 KB
-- es/cardapio.html: 157.6 KB
-- en/cardapio.html: 157.0 KB
-- en/almoco.html: 156.5 KB
+- index.html: 268.0 KB
+- es/index.html: 258.0 KB
+- en/index.html: 255.1 KB
+- es/guia-do-rio.html: 178.2 KB
+- en/guia-do-rio.html: 177.6 KB
+- guia-do-rio.html: 177.4 KB
+- cafe-da-manha.html: 176.7 KB
+- es/cafe-da-manha.html: 170.1 KB
+- en/cafe-da-manha.html: 169.9 KB
+- almoco.html: 164.7 KB
+- cardapio.html: 162.3 KB
+- entardecer.html: 159.3 KB
+- es/cardapio.html: 158.0 KB
+- en/cardapio.html: 157.4 KB
+- en/almoco.html: 156.9 KB
 
 ## Maiores assets de imagem
 - assets/sunset-dj-cabine-pao-acucar.png: 573.2 KB [ACIMA DE 300 KB]
