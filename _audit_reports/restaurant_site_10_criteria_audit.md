@@ -6,8 +6,8 @@
 | Critério | Nota | Alertas |
 |---|---:|---:|
 | Integridade técnica de tokens | 10.0/10 | 0 |
-| Integridade linguística PT/EN/ES | 7.0/10 | 58 |
-| SEO técnico | 9.8/10 | 1 |
+| Integridade linguística PT/EN/ES | 7.0/10 | 53 |
+| SEO técnico | 10.0/10 | 0 |
 | SEO local / entidade | 10.0/10 | 0 |
 | GEO / respostas para IA | 10.0/10 | 0 |
 | Reserva e contato | 10.0/10 | 0 |
@@ -23,11 +23,6 @@
 - Nenhum alerta encontrado.
 
 ### Integridade linguística PT/EN/ES
-- guia-do-rio.html: padrão suspeito de idioma `\bPara qui[eé]n\b`
-- index.html: padrão suspeito de idioma `\bPara qui[eé]n\b`
-- almoco.html: padrão suspeito de idioma `\bPara qui[eé]n\b`
-- eventos.html: padrão suspeito de idioma `\bPara qui[eé]n\b`
-- roteiro-meio-dia-urca-pao-de-acucar.html: padrão suspeito de idioma `\bPara qui[eé]n\b`
 - es/almoco-morro-da-urca.html: padrão suspeito de idioma `\bBreakfast\b`
 - es/almoco-morro-da-urca.html: padrão suspeito de idioma `\bLunch\b`
 - es/guia-do-rio.html: padrão suspeito de idioma `\bBreakfast\b`
@@ -83,7 +78,7 @@
 - es/contato.html: padrão suspeito de idioma `\bLunch\b`
 
 ### SEO técnico
-- en/entardecer.html: description ausente ou fora do tamanho ideal
+- Nenhum alerta encontrado.
 
 ### SEO local / entidade
 - Nenhum alerta encontrado.
