@@ -57,6 +57,7 @@
 - UPDATED: feijoada.html | replacements=0
 - UPDATED: gastronomia-carioca.html | replacements=0
 - UPDATED: guia-do-rio.html | replacements=0
+- UPDATED: home-preview.html | replacements=0
 - UPDATED: index.html | replacements=0
 - UPDATED: morro-da-urca.html | replacements=0
 - UPDATED: nossa-visao.html | replacements=0

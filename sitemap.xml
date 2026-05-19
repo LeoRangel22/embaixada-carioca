@@ -343,118 +343,97 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio.html</loc>
-    <lastmod>2026-05-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.embaixadacarioca.com/en/cafe-da-manha-com-vista-rio</loc>
-    <lastmod>2026-05-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel='alternate' hreflang='pt-BR' href='https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio.html'/>
-    <xhtml:link rel='alternate' hreflang='en' href='https://www.embaixadacarioca.com/en/cafe-da-manha-com-vista-rio'/>
-    <xhtml:link rel='alternate' hreflang='es' href='https://www.embaixadacarioca.com/es/cafe-da-manha-com-vista-rio'/>
-  </url>
-  <url>
-    <loc>https://www.embaixadacarioca.com/es/cafe-da-manha-com-vista-rio</loc>
-    <lastmod>2026-05-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel='alternate' hreflang='pt-BR' href='https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio.html'/>
-    <xhtml:link rel='alternate' hreflang='en' href='https://www.embaixadacarioca.com/en/cafe-da-manha-com-vista-rio'/>
-    <xhtml:link rel='alternate' hreflang='es' href='https://www.embaixadacarioca.com/es/cafe-da-manha-com-vista-rio'/>
-  </url>
+  
+  
+  
 
   <url>
-    <loc>https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cafe-da-manha-pao-de-acucar"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cafe-da-manha-pao-de-acucar"/>
+    <loc>https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cafe-da-manha-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cafe-da-manha-pao-de-acucar.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.embaixadacarioca.com/en/cafe-da-manha-pao-de-acucar</loc>
+    <loc>https://www.embaixadacarioca.com/en/cafe-da-manha-pao-de-acucar.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.embaixadacarioca.com/es/cafe-da-manha-pao-de-acucar</loc>
+    <loc>https://www.embaixadacarioca.com/es/cafe-da-manha-pao-de-acucar.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.embaixadacarioca.com/almoco-morro-da-urca</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/almoco-morro-da-urca"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/almoco-morro-da-urca"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/almoco-morro-da-urca"/>
+    <loc>https://www.embaixadacarioca.com/almoco-morro-da-urca.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/almoco-morro-da-urca.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/almoco-morro-da-urca.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/almoco-morro-da-urca.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.embaixadacarioca.com/en/almoco-morro-da-urca</loc>
+    <loc>https://www.embaixadacarioca.com/en/almoco-morro-da-urca.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.embaixadacarioca.com/es/almoco-morro-da-urca</loc>
+    <loc>https://www.embaixadacarioca.com/es/almoco-morro-da-urca.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/feijoada-com-vista-rio-de-janeiro"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/feijoada-com-vista-rio-de-janeiro"/>
+    <loc>https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/feijoada-com-vista-rio-de-janeiro.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/feijoada-com-vista-rio-de-janeiro.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.embaixadacarioca.com/en/feijoada-com-vista-rio-de-janeiro</loc>
+    <loc>https://www.embaixadacarioca.com/en/feijoada-com-vista-rio-de-janeiro.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.embaixadacarioca.com/es/feijoada-com-vista-rio-de-janeiro</loc>
+    <loc>https://www.embaixadacarioca.com/es/feijoada-com-vista-rio-de-janeiro.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.embaixadacarioca.com/caipirinha-com-vista-rio</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/caipirinha-com-vista-rio"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/caipirinha-com-vista-rio"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/caipirinha-com-vista-rio"/>
+    <loc>https://www.embaixadacarioca.com/caipirinha-com-vista-rio.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/caipirinha-com-vista-rio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/caipirinha-com-vista-rio.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/caipirinha-com-vista-rio.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.embaixadacarioca.com/en/caipirinha-com-vista-rio</loc>
+    <loc>https://www.embaixadacarioca.com/en/caipirinha-com-vista-rio.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.embaixadacarioca.com/es/caipirinha-com-vista-rio</loc>
+    <loc>https://www.embaixadacarioca.com/es/caipirinha-com-vista-rio.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.embaixadacarioca.com/por-do-sol-morro-da-urca</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/por-do-sol-morro-da-urca"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/por-do-sol-morro-da-urca"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/por-do-sol-morro-da-urca"/>
+    <loc>https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/por-do-sol-morro-da-urca.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/por-do-sol-morro-da-urca.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.embaixadacarioca.com/en/por-do-sol-morro-da-urca</loc>
+    <loc>https://www.embaixadacarioca.com/en/por-do-sol-morro-da-urca.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.embaixadacarioca.com/es/por-do-sol-morro-da-urca</loc>
+    <loc>https://www.embaixadacarioca.com/es/por-do-sol-morro-da-urca.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

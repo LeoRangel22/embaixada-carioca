@@ -1,0 +1,157 @@
+# Auditoria Técnica Global — Embaixada Carioca
+
+## Escopo
+- PT / EN / ES
+- canonicals, hreflang e sitemap
+- links externos críticos
+- limpeza leve de HTML
+- performance percebida e peso de páginas/assets
+- sem alteração de layout da home
+
+## Contadores
+- html_files_scanned: 65
+- html_files_updated: 65
+- canonical_fixed: 62
+- og_url_fixed: 12
+- absolute_urls_fixed: 208
+- review_links_fixed: 3
+- placeholder_maps_fixed: 1
+- text_typos_fixed: 8
+- sitemap_urls_fixed: 30
+- sitemap_blocks_removed: 3
+
+## Correções aplicadas
+- CANONICAL: 404.html -> https://www.embaixadacarioca.com/404.html
+- CANONICAL: almoco-morro-da-urca.html -> https://www.embaixadacarioca.com/almoco-morro-da-urca.html
+- CANONICAL: almoco.html -> https://www.embaixadacarioca.com/almoco.html
+- CANONICAL: cafe-da-manha-pao-de-acucar.html -> https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html
+- CANONICAL: cafe-da-manha.html -> https://www.embaixadacarioca.com/cafe-da-manha.html
+- CANONICAL: caipirinha-com-vista-rio.html -> https://www.embaixadacarioca.com/caipirinha-com-vista-rio.html
+- CANONICAL: cardapio.html -> https://www.embaixadacarioca.com/cardapio.html
+- CANONICAL: contato.html -> https://www.embaixadacarioca.com/contato.html
+- OG_URL: contato.html -> https://www.embaixadacarioca.com/contato.html
+- CANONICAL: en/almoco-morro-da-urca.html -> https://www.embaixadacarioca.com/en/almoco-morro-da-urca.html
+- CANONICAL: en/almoco.html -> https://www.embaixadacarioca.com/en/almoco.html
+- CANONICAL: en/cafe-da-manha-pao-de-acucar.html -> https://www.embaixadacarioca.com/en/cafe-da-manha-pao-de-acucar.html
+- CANONICAL: en/cafe-da-manha.html -> https://www.embaixadacarioca.com/en/cafe-da-manha.html
+- CANONICAL: en/caipirinha-com-vista-rio.html -> https://www.embaixadacarioca.com/en/caipirinha-com-vista-rio.html
+- CANONICAL: en/cardapio.html -> https://www.embaixadacarioca.com/en/cardapio.html
+- CANONICAL: en/contato.html -> https://www.embaixadacarioca.com/en/contato.html
+- OG_URL: en/contato.html -> https://www.embaixadacarioca.com/en/contato.html
+- CANONICAL: en/entardecer.html -> https://www.embaixadacarioca.com/en/entardecer.html
+- CANONICAL: en/eventos.html -> https://www.embaixadacarioca.com/en/eventos.html
+- CANONICAL: en/feijoada-com-vista-rio-de-janeiro.html -> https://www.embaixadacarioca.com/en/feijoada-com-vista-rio-de-janeiro.html
+- CANONICAL: en/feijoada.html -> https://www.embaixadacarioca.com/en/feijoada.html
+- CANONICAL: en/gastronomia-carioca.html -> https://www.embaixadacarioca.com/en/gastronomia-carioca.html
+- OG_URL: en/gastronomia-carioca.html -> https://www.embaixadacarioca.com/en/gastronomia-carioca.html
+- CANONICAL: en/guia-do-rio.html -> https://www.embaixadacarioca.com/en/guia-do-rio.html
+- REVIEW_LINK: en/index.html | 1 ocorrência(s)
+- CANONICAL: en/morro-da-urca.html -> https://www.embaixadacarioca.com/en/morro-da-urca.html
+- OG_URL: en/morro-da-urca.html -> https://www.embaixadacarioca.com/en/morro-da-urca.html
+- CANONICAL: en/nossa-visao.html -> https://www.embaixadacarioca.com/en/nossa-visao.html
+- OG_URL: en/nossa-visao.html -> https://www.embaixadacarioca.com/en/nossa-visao.html
+- CANONICAL: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html -> https://www.embaixadacarioca.com/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- CANONICAL: en/parque-bondinho.html -> https://www.embaixadacarioca.com/en/parque-bondinho.html
+- CANONICAL: en/por-do-sol-morro-da-urca.html -> https://www.embaixadacarioca.com/en/por-do-sol-morro-da-urca.html
+- CANONICAL: en/roteiro-meio-dia-urca-pao-de-acucar.html -> https://www.embaixadacarioca.com/en/roteiro-meio-dia-urca-pao-de-acucar.html
+- CANONICAL: en/sunset.html -> https://www.embaixadacarioca.com/en/sunset.html
+- CANONICAL: entardecer.html -> https://www.embaixadacarioca.com/entardecer.html
+- TEXT_FIX: entardecer.html | 'parBaía de Guanabara' -> 'para a Baía de Guanabara' | 2
+- CANONICAL: es/almoco-morro-da-urca.html -> https://www.embaixadacarioca.com/es/almoco-morro-da-urca.html
+- CANONICAL: es/almoco.html -> https://www.embaixadacarioca.com/es/almoco.html
+- CANONICAL: es/atardecer.html -> https://www.embaixadacarioca.com/es/atardecer.html
+- CANONICAL: es/cafe-da-manha-pao-de-acucar.html -> https://www.embaixadacarioca.com/es/cafe-da-manha-pao-de-acucar.html
+- CANONICAL: es/cafe-da-manha.html -> https://www.embaixadacarioca.com/es/cafe-da-manha.html
+- CANONICAL: es/caipirinha-com-vista-rio.html -> https://www.embaixadacarioca.com/es/caipirinha-com-vista-rio.html
+- CANONICAL: es/cardapio.html -> https://www.embaixadacarioca.com/es/cardapio.html
+- CANONICAL: es/contato.html -> https://www.embaixadacarioca.com/es/contato.html
+- OG_URL: es/contato.html -> https://www.embaixadacarioca.com/es/contato.html
+- CANONICAL: es/entardecer.html -> https://www.embaixadacarioca.com/es/entardecer.html
+- CANONICAL: es/eventos.html -> https://www.embaixadacarioca.com/es/eventos.html
+- CANONICAL: es/feijoada-com-vista-rio-de-janeiro.html -> https://www.embaixadacarioca.com/es/feijoada-com-vista-rio-de-janeiro.html
+- CANONICAL: es/feijoada.html -> https://www.embaixadacarioca.com/es/feijoada.html
+- CANONICAL: es/gastronomia-carioca.html -> https://www.embaixadacarioca.com/es/gastronomia-carioca.html
+- OG_URL: es/gastronomia-carioca.html -> https://www.embaixadacarioca.com/es/gastronomia-carioca.html
+- CANONICAL: es/guia-do-rio.html -> https://www.embaixadacarioca.com/es/guia-do-rio.html
+- REVIEW_LINK: es/index.html | 1 ocorrência(s)
+- CANONICAL: es/morro-da-urca.html -> https://www.embaixadacarioca.com/es/morro-da-urca.html
+- OG_URL: es/morro-da-urca.html -> https://www.embaixadacarioca.com/es/morro-da-urca.html
+- CANONICAL: es/nossa-visao.html -> https://www.embaixadacarioca.com/es/nossa-visao.html
+- OG_URL: es/nossa-visao.html -> https://www.embaixadacarioca.com/es/nossa-visao.html
+- CANONICAL: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html -> https://www.embaixadacarioca.com/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- CANONICAL: es/parque-bondinho.html -> https://www.embaixadacarioca.com/es/parque-bondinho.html
+- CANONICAL: es/por-do-sol-morro-da-urca.html -> https://www.embaixadacarioca.com/es/por-do-sol-morro-da-urca.html
+- CANONICAL: es/roteiro-meio-dia-urca-pao-de-acucar.html -> https://www.embaixadacarioca.com/es/roteiro-meio-dia-urca-pao-de-acucar.html
+- CANONICAL: eventos.html -> https://www.embaixadacarioca.com/eventos.html
+- CANONICAL: feijoada-com-vista-rio-de-janeiro.html -> https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro.html
+- CANONICAL: feijoada.html -> https://www.embaixadacarioca.com/feijoada.html
+- CANONICAL: gastronomia-carioca.html -> https://www.embaixadacarioca.com/gastronomia-carioca.html
+- OG_URL: gastronomia-carioca.html -> https://www.embaixadacarioca.com/gastronomia-carioca.html
+- CANONICAL: guia-do-rio.html -> https://www.embaixadacarioca.com/guia-do-rio.html
+- CANONICAL: home-preview.html -> https://www.embaixadacarioca.com/home-preview.html
+- MAPS_PLACEHOLDER: home-preview.html | 1 ocorrência(s)
+- REVIEW_LINK: index.html | 1 ocorrência(s)
+- TEXT_FIX: index.html | 'parBaía de Guanabara' -> 'para a Baía de Guanabara' | 4
+- TEXT_FIX: index.html | 'referência em café da manhã no Rio de Janeiro com vista é o da' -> 'A referência em café da manhã no Rio de Janeiro com vista é o da' | 1
+- TEXT_FIX: index.html | 'o mais premiado restaurante com vista no Rio de Janeiro é a' -> 'A Embaixada Carioca é uma das principais referências de restaurante com vista no Rio de Janeiro:' | 1
+- CANONICAL: morro-da-urca.html -> https://www.embaixadacarioca.com/morro-da-urca.html
+- OG_URL: morro-da-urca.html -> https://www.embaixadacarioca.com/morro-da-urca.html
+- CANONICAL: nossa-visao.html -> https://www.embaixadacarioca.com/nossa-visao.html
+- OG_URL: nossa-visao.html -> https://www.embaixadacarioca.com/nossa-visao.html
+- CANONICAL: o-que-fazer-depois-do-bondinho-pao-de-acucar.html -> https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- CANONICAL: offline.html -> https://www.embaixadacarioca.com/offline.html
+- CANONICAL: parque-bondinho.html -> https://www.embaixadacarioca.com/parque-bondinho.html
+- CANONICAL: por-do-sol-morro-da-urca.html -> https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html
+- CANONICAL: roteiro-meio-dia-urca-pao-de-acucar.html -> https://www.embaixadacarioca.com/roteiro-meio-dia-urca-pao-de-acucar.html
+- SITEMAP: URLs sem .html corrigidas e blocos quebrados removidos
+
+## Alertas encontrados
+- SITEMAP_REMOVED_BROKEN_URL: https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio.html
+- SITEMAP_REMOVED_BROKEN_URL: https://www.embaixadacarioca.com/en/cafe-da-manha-com-vista-rio
+- SITEMAP_REMOVED_BROKEN_URL: https://www.embaixadacarioca.com/es/cafe-da-manha-com-vista-rio
+
+## Maiores páginas HTML
+- index.html: 263.9 KB
+- es/index.html: 230.3 KB
+- en/index.html: 227.4 KB
+- es/guia-do-rio.html: 150.9 KB
+- en/guia-do-rio.html: 150.3 KB
+- guia-do-rio.html: 150.1 KB
+- cafe-da-manha.html: 149.4 KB
+- es/cafe-da-manha.html: 142.7 KB
+- en/cafe-da-manha.html: 142.5 KB
+- almoco.html: 137.4 KB
+- cardapio.html: 135.0 KB
+- entardecer.html: 132.0 KB
+- es/cardapio.html: 130.7 KB
+- en/cardapio.html: 130.1 KB
+- en/almoco.html: 129.6 KB
+
+## Maiores assets de imagem
+- assets/sunset-dj-cabine-pao-acucar.png: 573.2 KB [ACIMA DE 300 KB]
+- assets/fotos/bolinho-bacalhau.jpg: 360.4 KB [ACIMA DE 300 KB]
+- assets/fabio-almoco-salmao-pao-acucar.jpg: 313.7 KB [ACIMA DE 300 KB]
+- assets/fotos/salao-almoco-02.jpg: 308.6 KB [ACIMA DE 300 KB]
+- assets/hero-silhueta-opt.jpg: 306.5 KB [ACIMA DE 300 KB]
+- assets/casal-romantico-opt.jpg: 290.1 KB
+- assets/terraco-cheio-almoco.jpg: 264.5 KB
+- assets/fotos/salao-almoco-03.jpg: 264.0 KB
+- assets/fotos/banda-pao-de-acucar-02.jpg: 256.1 KB
+- assets/fotos/salao-pao-de-acucar.jpg: 254.0 KB
+- assets/fotos/salao-entardecer-vista.jpg: 253.3 KB
+- assets/hero.jpg: 250.9 KB
+- assets/fotos/salao-almoco-02.webp: 242.8 KB
+- assets/fotos/banda-pao-de-acucar-03.jpg: 239.8 KB
+- assets/fotos/salao-almoco-01.jpg: 238.0 KB
+- assets/cafe/cafe-mesa-cima-spread.jpg: 233.0 KB
+- assets/musicos-ao-vivo-opt.jpg: 227.1 KB
+- assets/fabio-almoco-mesa-completa.jpg: 224.9 KB
+- assets/terraco-movimento-entardecer.jpg: 223.6 KB
+- assets/fabio-almoco-feijoada-jardim.jpg: 223.3 KB
+
+## Diagnóstico executivo
+- O principal risco técnico estava na inconsistência entre URLs com e sem `.html`, especialmente em sitemap, canonical e hreflang.
+- URLs no sitemap que não correspondem a arquivos reais foram removidas para evitar rastreamento desperdiçado e sinais ruins ao Google.
+- Links de avaliação e placeholders foram normalizados para reduzir caminhos quebrados em CTAs.
+- A lentidão percebida tende a vir de três fatores: HTML muito grande em algumas páginas, muitas camadas de CSS inline acumuladas e assets de imagem grandes.
+- Próxima etapa segura: dividir CSS global, reduzir HTML duplicado e revisar imagens acima de 300 KB sem alterar o layout vencedor da home.
