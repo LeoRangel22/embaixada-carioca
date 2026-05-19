@@ -19,6 +19,7 @@ on:
       - 'scripts/apply_site_integrity_refinements.py'
       - 'scripts/apply_google_analytics_foundation.py'
       - 'scripts/apply_subpage_home_header_clone.py'
+      - 'scripts/apply_subpage_home_header_final_override.py'
       - 'data/gsc_click_magnet_queries.json'
       - '.github/workflows/apply-aaa-fixes.yml'
 
@@ -59,6 +60,8 @@ jobs:
         run: python3 scripts/apply_google_analytics_foundation.py
       - name: Run strict subpage home header clone script
         run: python3 scripts/apply_subpage_home_header_clone.py
+      - name: Run final subpage header override script
+        run: python3 scripts/apply_subpage_home_header_final_override.py
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
