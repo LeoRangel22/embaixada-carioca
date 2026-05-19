@@ -2,19 +2,14 @@
 
 ## Contadores
 - html_scanned: 80
-- html_updated: 3
+- html_updated: 0
 - safe_replacements: 0
 - targeted_blocks_fixed: 0
-- technical_repairs: 3
+- technical_repairs: 0
 - warnings: 21
 
 ## Correções aplicadas
-- TECH_REPAIR: 404.html | 'name="vistaport"' -> 'name="viewport"' | 1
-- UPDATED: 404.html
-- TECH_REPAIR: home-preview.html | 'name="vistaport"' -> 'name="viewport"' | 1
-- UPDATED: home-preview.html
-- TECH_REPAIR: offline.html | 'name="vistaport"' -> 'name="viewport"' | 1
-- UPDATED: offline.html
+- Nenhuma correção automática necessária.
 
 ## Alertas remanescentes
 - LANG_WARNING: almoco-morro-da-urca.html [en] contém padrão suspeito: \bAberto todos os dias\b

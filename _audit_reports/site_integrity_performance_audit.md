@@ -18,7 +18,7 @@
 - absolute_urls_fixed: 112
 - review_links_fixed: 0
 - placeholder_maps_fixed: 0
-- text_typos_fixed: 7
+- text_typos_fixed: 1
 - sitemap_urls_fixed: 0
 - sitemap_blocks_removed: 0
 - subpage_top_synced: 70
@@ -89,7 +89,6 @@
 - OG_URL: en/where-to-eat-near-sugarloaf.html -> https://www.embaixadacarioca.com/en/where-to-eat-near-sugarloaf.html
 - TOP_SYNC: en/where-to-eat-near-sugarloaf.html | topo sincronizado com a home
 - CANONICAL: entardecer.html -> https://www.embaixadacarioca.com/entardecer.html
-- TEXT_FIX: entardecer.html | 'parBaía de Guanabara' -> 'para a Baía de Guanabara' | 2
 - TOP_SYNC: entardecer.html | topo sincronizado com a home
 - CANONICAL: es/almoco-morro-da-urca.html -> https://www.embaixadacarioca.com/es/almoco-morro-da-urca.html
 - TOP_SYNC: es/almoco-morro-da-urca.html | topo sincronizado com a home
@@ -151,7 +150,6 @@
 - CANONICAL: guia-do-rio.html -> https://www.embaixadacarioca.com/guia-do-rio.html
 - TOP_SYNC: guia-do-rio.html | topo sincronizado com a home
 - CANONICAL: home-preview.html -> https://www.embaixadacarioca.com/home-preview.html
-- TEXT_FIX: index.html | 'parBaía de Guanabara' -> 'para a Baía de Guanabara' | 4
 - TEXT_FIX: index.html | 'referência em café da manhã no Rio de Janeiro com vista é o da' -> 'A referência em café da manhã no Rio de Janeiro com vista é o da' | 1
 - CANONICAL: morro-da-urca.html -> https://www.embaixadacarioca.com/morro-da-urca.html
 - TOP_SYNC: morro-da-urca.html | topo sincronizado com a home
