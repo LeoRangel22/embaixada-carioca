@@ -2,21 +2,63 @@
 
 ## Contadores
 - html_scanned: 80
-- html_updated: 5
+- html_updated: 26
 - en_restored: 0
-- es_restored: 5
+- es_restored: 26
 - pt_repaired: 0
 - tech_repaired: 0
 - link_repaired: 0
 
 ## Ações
+- ES_RESTORED: es/almoco-morro-da-urca.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/almoco-morro-da-urca.html
+- ES_RESTORED: es/almoco.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/almoco.html
+- ES_RESTORED: es/atardecer.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/atardecer.html
+- ES_RESTORED: es/cafe-da-manha-pao-de-acucar.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/cafe-da-manha-pao-de-acucar.html
+- ES_RESTORED: es/cafe-da-manha.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/cafe-da-manha.html
+- ES_RESTORED: es/caipirinha-com-vista-rio.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/caipirinha-com-vista-rio.html
+- ES_RESTORED: es/cardapio.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/cardapio.html
+- ES_RESTORED: es/contato.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/contato.html
 - ES_RESTORED: es/donde-comer-cerca-del-pan-de-azucar.html | 'Breakfast' -> 'Desayuno' | 1
 - UPDATED: es/donde-comer-cerca-del-pan-de-azucar.html
+- ES_RESTORED: es/entardecer.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/entardecer.html
+- ES_RESTORED: es/eventos.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/eventos.html
+- ES_RESTORED: es/feijoada-com-vista-rio-de-janeiro.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/feijoada-com-vista-rio-de-janeiro.html
+- ES_RESTORED: es/feijoada.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/feijoada.html
+- ES_RESTORED: es/gastronomia-carioca.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/gastronomia-carioca.html
+- ES_RESTORED: es/guia-do-rio.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/guia-do-rio.html
+- ES_RESTORED: es/index.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/index.html
+- ES_RESTORED: es/morro-da-urca.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/morro-da-urca.html
+- ES_RESTORED: es/nossa-visao.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/nossa-visao.html
+- ES_RESTORED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - ES_RESTORED: es/parque-bondinho-pan-de-azucar.html | 'Breakfast' -> 'Desayuno' | 1
 - UPDATED: es/parque-bondinho-pan-de-azucar.html
+- ES_RESTORED: es/parque-bondinho.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/parque-bondinho.html
+- ES_RESTORED: es/por-do-sol-morro-da-urca.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/por-do-sol-morro-da-urca.html
 - ES_RESTORED: es/restaurante-bondinho-pan-de-azucar.html | 'Breakfast' -> 'Desayuno' | 1
 - UPDATED: es/restaurante-bondinho-pan-de-azucar.html
 - ES_RESTORED: es/restaurante-morro-da-urca.html | 'Breakfast' -> 'Desayuno' | 1
 - UPDATED: es/restaurante-morro-da-urca.html
 - ES_RESTORED: es/restaurantes-cerca-del-pan-de-azucar.html | 'Breakfast' -> 'Desayuno' | 1
 - UPDATED: es/restaurantes-cerca-del-pan-de-azucar.html
+- ES_RESTORED: es/roteiro-meio-dia-urca-pao-de-acucar.html | 'Breakfast' -> 'Desayuno' | 1
+- UPDATED: es/roteiro-meio-dia-urca-pao-de-acucar.html

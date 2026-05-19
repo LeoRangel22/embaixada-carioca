@@ -178,21 +178,21 @@
 - Nenhum alerta crítico encontrado
 
 ## Maiores páginas HTML
-- index.html: 268.6 KB
-- es/index.html: 258.6 KB
-- en/index.html: 255.7 KB
-- es/guia-do-rio.html: 178.8 KB
-- en/guia-do-rio.html: 178.2 KB
-- guia-do-rio.html: 178.1 KB
-- cafe-da-manha.html: 177.4 KB
-- es/cafe-da-manha.html: 170.7 KB
-- en/cafe-da-manha.html: 170.5 KB
-- almoco.html: 165.5 KB
-- cardapio.html: 163.0 KB
-- entardecer.html: 160.0 KB
-- es/cardapio.html: 158.7 KB
-- en/cardapio.html: 158.0 KB
-- en/almoco.html: 157.6 KB
+- index.html: 272.4 KB
+- es/index.html: 262.3 KB
+- en/index.html: 259.5 KB
+- es/guia-do-rio.html: 182.0 KB
+- en/guia-do-rio.html: 181.4 KB
+- guia-do-rio.html: 181.2 KB
+- cafe-da-manha.html: 180.6 KB
+- es/cafe-da-manha.html: 173.8 KB
+- en/cafe-da-manha.html: 173.6 KB
+- almoco.html: 168.5 KB
+- cardapio.html: 166.2 KB
+- entardecer.html: 163.1 KB
+- es/cardapio.html: 161.9 KB
+- en/cardapio.html: 161.3 KB
+- en/almoco.html: 160.7 KB
 
 ## Maiores assets de imagem
 - assets/sunset-dj-cabine-pao-acucar.png: 573.2 KB [ACIMA DE 300 KB]
