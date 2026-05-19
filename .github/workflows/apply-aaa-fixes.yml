@@ -16,6 +16,7 @@ on:
       - 'scripts/apply_gsc_ctr_optimization.py'
       - 'scripts/apply_home_hero_efficiency_fixes.py'
       - 'scripts/apply_google_review_link_fix.py'
+      - 'scripts/apply_site_integrity_refinements.py'
       - 'data/gsc_click_magnet_queries.json'
       - '.github/workflows/apply-aaa-fixes.yml'
 
@@ -30,37 +31,28 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
-
       - name: Run technical correction script
         run: python3 scripts/apply_aaa_site_fixes.py
-
       - name: Run editorial polish script
         run: python3 scripts/apply_aaa_editorial_fixes.py
-
       - name: Run language score 9 polish script
         run: python3 scripts/apply_language_score9_fixes.py
-
       - name: Run SEO GEO AI 95 polish script
         run: python3 scripts/apply_seo_geo_ai_95_polish.py
-
       - name: Run high-intent home cleanup script
         run: python3 scripts/apply_home_high_intent_95_fixes.py
-
       - name: Run design performance fixes script
         run: python3 scripts/apply_design_performance_fixes.py
-
       - name: Run topic authority monopoly script
         run: python3 scripts/apply_topic_authority_clusters.py
-
       - name: Run GSC CTR optimization script
         run: python3 scripts/apply_gsc_ctr_optimization.py
-
       - name: Run home hero efficiency fixes script
         run: python3 scripts/apply_home_hero_efficiency_fixes.py
-
       - name: Run Google review link correction script
         run: python3 scripts/apply_google_review_link_fix.py
-
+      - name: Run site integrity audit script
+        run: python3 scripts/apply_site_integrity_refinements.py
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
@@ -69,6 +61,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "fix: apply AAA efficiency conversion and review link corrections"
+            git commit -m "fix: apply AAA site fixes"
             git push origin HEAD:${{ github.ref_name }}
           fi
