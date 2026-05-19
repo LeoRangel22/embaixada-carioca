@@ -18,7 +18,7 @@
 - absolute_urls_fixed: 112
 - review_links_fixed: 0
 - placeholder_maps_fixed: 0
-- text_typos_fixed: 1
+- text_typos_fixed: 7
 - sitemap_urls_fixed: 0
 - sitemap_blocks_removed: 0
 - subpage_top_synced: 55
@@ -79,6 +79,7 @@
 - CANONICAL: en/sunset.html -> https://www.embaixadacarioca.com/en/sunset.html
 - TOP_SYNC: en/sunset.html | topo sincronizado com a home
 - CANONICAL: entardecer.html -> https://www.embaixadacarioca.com/entardecer.html
+- TEXT_FIX: entardecer.html | 'parBaía de Guanabara' -> 'para a Baía de Guanabara' | 2
 - TOP_SYNC: entardecer.html | topo sincronizado com a home
 - CANONICAL: es/almoco-morro-da-urca.html -> https://www.embaixadacarioca.com/es/almoco-morro-da-urca.html
 - TOP_SYNC: es/almoco-morro-da-urca.html | topo sincronizado com a home
@@ -130,6 +131,7 @@
 - CANONICAL: guia-do-rio.html -> https://www.embaixadacarioca.com/guia-do-rio.html
 - TOP_SYNC: guia-do-rio.html | topo sincronizado com a home
 - CANONICAL: home-preview.html -> https://www.embaixadacarioca.com/home-preview.html
+- TEXT_FIX: index.html | 'parBaía de Guanabara' -> 'para a Baía de Guanabara' | 4
 - TEXT_FIX: index.html | 'referência em café da manhã no Rio de Janeiro com vista é o da' -> 'A referência em café da manhã no Rio de Janeiro com vista é o da' | 1
 - CANONICAL: morro-da-urca.html -> https://www.embaixadacarioca.com/morro-da-urca.html
 - TOP_SYNC: morro-da-urca.html | topo sincronizado com a home
@@ -149,8 +151,8 @@
 
 ## Maiores páginas HTML
 - index.html: 267.6 KB
-- es/index.html: 244.2 KB
-- en/index.html: 241.4 KB
+- es/index.html: 244.5 KB
+- en/index.html: 241.6 KB
 - es/guia-do-rio.html: 164.8 KB
 - en/guia-do-rio.html: 164.2 KB
 - guia-do-rio.html: 163.9 KB

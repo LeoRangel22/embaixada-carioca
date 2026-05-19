@@ -1,7 +1,8 @@
 # Auditoria Design + Performance — Embaixada Carioca
 
 ## Correções aplicadas
-- Nenhuma correção automática necessária
+- UPDATED: en/index.html | changes=1
+- UPDATED: es/index.html | changes=1
 
 ## Alertas de design/performance
 - index.html: excesso de blocos <style> inline (16). Impacta manutenção e performance percebida.
@@ -14,21 +15,21 @@
 - eventos.html: excesso de blocos <style> inline (12). Impacta manutenção e performance percebida.
 - cardapio.html: excesso de blocos <style> inline (13). Impacta manutenção e performance percebida.
 - guia-do-rio.html: excesso de blocos <style> inline (13). Impacta manutenção e performance percebida.
-- en/index.html: excesso de blocos <style> inline (12). Impacta manutenção e performance percebida.
+- en/index.html: excesso de blocos <style> inline (14). Impacta manutenção e performance percebida.
 - en/cafe-da-manha.html: excesso de blocos <style> inline (11). Impacta manutenção e performance percebida.
 - en/almoco.html: excesso de blocos <style> inline (11). Impacta manutenção e performance percebida.
 - en/almoco.html: possível FAQ/schema duplicado.
 - en/entardecer.html: excesso de blocos <style> inline (11). Impacta manutenção e performance percebida.
 - en/entardecer.html: possível FAQ/schema duplicado.
-- en/sunset.html: excesso de blocos <style> inline (10). Impacta manutenção e performance percebida.
+- en/sunset.html: excesso de blocos <style> inline (11). Impacta manutenção e performance percebida.
 - en/sunset.html: possível FAQ/schema duplicado.
 - en/eventos.html: excesso de blocos <style> inline (11). Impacta manutenção e performance percebida.
-- es/index.html: excesso de blocos <style> inline (12). Impacta manutenção e performance percebida.
+- es/index.html: excesso de blocos <style> inline (14). Impacta manutenção e performance percebida.
 - es/cafe-da-manha.html: excesso de blocos <style> inline (11). Impacta manutenção e performance percebida.
 - es/almoco.html: excesso de blocos <style> inline (11). Impacta manutenção e performance percebida.
 - es/entardecer.html: excesso de blocos <style> inline (11). Impacta manutenção e performance percebida.
 - es/entardecer.html: possível FAQ/schema duplicado.
-- es/atardecer.html: excesso de blocos <style> inline (10). Impacta manutenção e performance percebida.
+- es/atardecer.html: excesso de blocos <style> inline (11). Impacta manutenção e performance percebida.
 - es/atardecer.html: possível FAQ/schema duplicado.
 - es/eventos.html: excesso de blocos <style> inline (11). Impacta manutenção e performance percebida.
 
