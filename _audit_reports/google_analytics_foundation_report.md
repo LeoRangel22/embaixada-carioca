@@ -3,6 +3,10 @@
 ## Measurement ID
 - G-9GRXVZ55CB
 
+## Estratégia de performance
+- GA4 carrega após idle/interação para reduzir trabalho inicial da main thread.
+- Eventos de clique forçam carregamento antes de enviar a conversão, preservando medição de CTAs.
+
 ## Eventos configurados
 - click_reservar
 - click_whatsapp

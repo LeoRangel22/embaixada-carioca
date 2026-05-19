@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<!-- EC Analytics Foundation v1 -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9GRXVZ55CB"></script>
+<!-- EC Analytics Foundation v2 -->
 <script id="ec-ga4-base">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-9GRXVZ55CB', {
-    send_page_view: true
-  });
+  window.ecLoadGA4 = window.ecLoadGA4 || function(){
+    if (window.ecGA4Loaded) return;
+    window.ecGA4Loaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-9GRXVZ55CB';
+    document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag('config', 'G-9GRXVZ55CB', { send_page_view: true });
+  };
+  (function(){
+    var load = window.ecLoadGA4;
+    var idle = function(){
+      if ('requestIdleCallback' in window) requestIdleCallback(load, { timeout: 2600 });
+      else setTimeout(load, 1800);
+    };
+    ['pointerdown','keydown','touchstart','scroll'].forEach(function(evt){
+      window.addEventListener(evt, load, { once:true, passive:true });
+    });
+    if (document.readyState === 'complete') idle();
+    else window.addEventListener('load', idle, { once:true });
+  })();
 </script>
-<!-- /EC Analytics Foundation v1 -->
+<!-- /EC Analytics Foundation v2 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="canonical" href="https://www.embaixadacarioca.com/restaurantes-perto-do-pao-de-acucar.html">
@@ -540,7 +556,7 @@ body[data-screen-label] nav.top,body[data-screen-label] nav.top *{box-sizing:bor
 (function(){
   'use strict';
 
-  var EVENT_VERSION = '2026-05-19.1';
+  var EVENT_VERSION = '2026-05-19.2';
 
   function textOf(el){
     if (!el) return '';
@@ -588,6 +604,8 @@ body[data-screen-label] nav.top,body[data-screen-label] nav.top *{box-sizing:bor
 
   function sendAnalyticsEvent(name, el){
     if (!name || typeof window.gtag !== 'function') return;
+
+    if (typeof window.ecLoadGA4 === 'function') window.ecLoadGA4();
 
     var href = String(el.href || el.getAttribute('href') || '');
     var label = textOf(el);
