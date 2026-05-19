@@ -6,7 +6,7 @@
 | Critério | Nota | Alertas |
 |---|---:|---:|
 | Integridade técnica de tokens | 10.0/10 | 0 |
-| Integridade linguística PT/EN/ES | 7.0/10 | 23 |
+| Integridade linguística PT/EN/ES | 7.0/10 | 22 |
 | SEO técnico | 6.5/10 | 42 |
 | SEO local / entidade | 10.0/10 | 0 |
 | GEO / respostas para IA | 10.0/10 | 0 |
@@ -15,7 +15,7 @@
 | Performance básica | 7.5/10 | 18 |
 | Acessibilidade básica | 10.0/10 | 0 |
 | Dados estruturados | 10.0/10 | 0 |
-| Integridade de links/páginas | 9.8/10 | 2 |
+| Integridade de links/páginas | 10.0/10 | 0 |
 
 ## Alertas detalhados
 
@@ -45,7 +45,6 @@
 - caipirinha-com-vista-rio.html: padrão suspeito de idioma `\bAberto todos os dias\b`
 - gastronomia-carioca.html: padrão suspeito de idioma `\bAberto todos os dias\b`
 - cafe-da-manha-pao-de-acucar.html: padrão suspeito de idioma `\bAberto todos os dias\b`
-- es/eventos.html: padrão suspeito de idioma `\bFalar com nossa equipe\b`
 
 ### SEO técnico
 - index.html: description ausente ou fora do tamanho ideal
@@ -130,8 +129,7 @@
 - Nenhum alerta encontrado.
 
 ### Integridade de links/páginas
-- en/sunset.html: link interno possivelmente quebrado -> ../es/sunset.html
-- en/entardecer.html: link interno possivelmente quebrado -> ../es/sunset.html
+- Nenhum alerta encontrado.
 
 ## Veredito
 - Nota 9+ só deve ser considerada confirmada se todos os critérios críticos estiverem sem alertas técnicos e linguísticos.

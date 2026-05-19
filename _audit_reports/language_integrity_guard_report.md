@@ -6,7 +6,7 @@
 - safe_replacements: 0
 - targeted_blocks_fixed: 0
 - technical_repairs: 0
-- warnings: 21
+- warnings: 23
 
 ## Correções aplicadas
 - Nenhuma correção automática necessária.
@@ -20,7 +20,9 @@
 - LANG_WARNING: cardapio.html [en] contém padrão suspeito: \bSolicitar orçamento\b
 - LANG_WARNING: cardapio.html [en] contém padrão suspeito: \bAberto todos os dias\b
 - LANG_WARNING: entardecer.html [en] contém padrão suspeito: \bAberto todos os dias\b
+- LANG_WARNING: es/eventos.html [en] contém padrão suspeito: \bFalar com nossa equipe\b
 - LANG_WARNING: eventos.html [en] contém padrão suspeito: \bSolicitar orçamento\b
+- LANG_WARNING: eventos.html [en] contém padrão suspeito: \bFalar com nossa equipe\b
 - LANG_WARNING: eventos.html [en] contém padrão suspeito: \bAberto todos os dias\b
 - LANG_WARNING: feijoada-com-vista-rio-de-janeiro.html [en] contém padrão suspeito: \bAberto todos os dias\b
 - LANG_WARNING: feijoada.html [en] contém padrão suspeito: \bAberto todos os dias\b
