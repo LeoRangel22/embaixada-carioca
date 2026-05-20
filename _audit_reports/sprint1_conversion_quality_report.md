@@ -11,13 +11,13 @@
 ## Contadores
 - html_scanned: 86
 - html_updated: 86
-- language_fixes: 42
+- language_fixes: 46
 - duplication_fixes: 0
 - meta_fixes: 0
 - schema_injected: 86
 - phone_fixes: 15
 - hasmap_fixes: 3
-- whatsapp_fixes: 21
+- whatsapp_fixes: 24
 - reports_written: 0
 
 ## Ações aplicadas
@@ -29,6 +29,8 @@
 - LANG_FIX: almoco.html [pt] | 'Para quién' -> 'Para quem' | 1
 - SCHEMA: almoco.html | schema principal validado/injetado
 - UPDATED: almoco.html
+- LANG_FIX: cafe-da-manha-com-vista-rio-de-janeiro.html [pt] | 'Para quién' -> 'Para quem' | 1
+- LANG_FIX: cafe-da-manha-com-vista-rio-de-janeiro.html [pt] | 'para quién' -> 'para quem' | 3
 - LANG_FIX: cafe-da-manha-com-vista-rio-de-janeiro.html [pt] | 'Breakfast' -> 'Café da manhã' | 2
 - SCHEMA: cafe-da-manha-com-vista-rio-de-janeiro.html | schema principal validado/injetado
 - UPDATED: cafe-da-manha-com-vista-rio-de-janeiro.html
@@ -140,8 +142,10 @@
 - WHATSAPP_FIX: es/como-llegar.html [es] | CTA localizado
 - SCHEMA: es/como-llegar.html | schema principal validado/injetado
 - UPDATED: es/como-llegar.html
+- WHATSAPP_FIX: es/contato.html [es] | CTA localizado
 - SCHEMA: es/contato.html | schema principal validado/injetado
 - UPDATED: es/contato.html
+- WHATSAPP_FIX: es/desayuno-con-vista-rio-de-janeiro.html [es] | CTA localizado
 - SCHEMA: es/desayuno-con-vista-rio-de-janeiro.html | schema principal validado/injetado
 - UPDATED: es/desayuno-con-vista-rio-de-janeiro.html
 - PHONE_FIX: es/donde-comer-cerca-del-pan-de-azucar.html | +55-21-96683-7556 -> +55 21 96683-7556 | 1
@@ -171,6 +175,7 @@
 - WHATSAPP_FIX: es/morro-da-urca.html [es] | CTA localizado
 - SCHEMA: es/morro-da-urca.html | schema principal validado/injetado
 - UPDATED: es/morro-da-urca.html
+- WHATSAPP_FIX: es/nossa-visao.html [es] | CTA localizado
 - SCHEMA: es/nossa-visao.html | schema principal validado/injetado
 - UPDATED: es/nossa-visao.html
 - WHATSAPP_FIX: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html [es] | CTA localizado

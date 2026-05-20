@@ -5,24 +5,27 @@ Corrigir problemas encontrados na validação real pós-deploy: coordenadas vis�
 
 ## Contadores
 - html_scanned: 86
-- html_updated: 38
+- html_updated: 44
 - coordinate_fixes: 0
 - top_button_arrow_fixes: 0
-- menu_fixes: 38
+- menu_fixes: 44
 - language_visual_fixes: 0
 
 ## Ações
 - MENU: almoco-morro-da-urca.html
 - MENU: cafe-da-manha-pao-de-acucar.html
 - MENU: caipirinha-com-vista-rio.html
+- MENU: contato.html
 - MENU: en/almoco-morro-da-urca.html
 - MENU: en/cafe-da-manha-pao-de-acucar.html
 - MENU: en/caipirinha-com-vista-rio.html
+- MENU: en/contato.html
 - MENU: en/entardecer.html
 - MENU: en/feijoada-com-vista-rio-de-janeiro.html
 - MENU: en/feijoada.html
 - MENU: en/gastronomia-carioca.html
 - MENU: en/morro-da-urca.html
+- MENU: en/nossa-visao.html
 - MENU: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - MENU: en/parque-bondinho.html
 - MENU: en/por-do-sol-morro-da-urca.html
@@ -33,11 +36,13 @@ Corrigir problemas encontrados na validação real pós-deploy: coordenadas vis�
 - MENU: es/atardecer.html
 - MENU: es/cafe-da-manha-pao-de-acucar.html
 - MENU: es/caipirinha-com-vista-rio.html
+- MENU: es/contato.html
 - MENU: es/entardecer.html
 - MENU: es/feijoada-com-vista-rio-de-janeiro.html
 - MENU: es/feijoada.html
 - MENU: es/gastronomia-carioca.html
 - MENU: es/morro-da-urca.html
+- MENU: es/nossa-visao.html
 - MENU: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - MENU: es/parque-bondinho.html
 - MENU: es/por-do-sol-morro-da-urca.html
@@ -46,6 +51,7 @@ Corrigir problemas encontrados na validação real pós-deploy: coordenadas vis�
 - MENU: feijoada.html
 - MENU: gastronomia-carioca.html
 - MENU: morro-da-urca.html
+- MENU: nossa-visao.html
 - MENU: o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - MENU: parque-bondinho.html
 - MENU: por-do-sol-morro-da-urca.html

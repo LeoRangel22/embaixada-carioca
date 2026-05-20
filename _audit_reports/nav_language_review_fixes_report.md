@@ -7,8 +7,8 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - html_scanned: 86
 - html_updated: 86
 - css_injected: 86
-- pins_removed: 56
-- rating_badges_replaced: 74
+- pins_removed: 62
+- rating_badges_replaced: 80
 
 ## Ações
 - CSS: 404.html
@@ -33,6 +33,8 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - CSS: cardapio.html
 - RATING: como-chegar.html | 1
 - CSS: como-chegar.html
+- PIN: contato.html | 1
+- RATING: contato.html | 1
 - CSS: contato.html
 - PIN: en/almoco-morro-da-urca.html | 1
 - RATING: en/almoco-morro-da-urca.html | 1
@@ -53,6 +55,8 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - PIN: en/cardapio.html | 1
 - RATING: en/cardapio.html | 1
 - CSS: en/cardapio.html
+- PIN: en/contato.html | 1
+- RATING: en/contato.html | 1
 - CSS: en/contato.html
 - PIN: en/entardecer.html | 1
 - RATING: en/entardecer.html | 1
@@ -80,6 +84,8 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - PIN: en/morro-da-urca.html | 1
 - RATING: en/morro-da-urca.html | 1
 - CSS: en/morro-da-urca.html
+- PIN: en/nossa-visao.html | 1
+- RATING: en/nossa-visao.html | 1
 - CSS: en/nossa-visao.html
 - PIN: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | 1
 - RATING: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | 1
@@ -132,6 +138,8 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - CSS: es/cardapio.html
 - RATING: es/como-llegar.html | 1
 - CSS: es/como-llegar.html
+- PIN: es/contato.html | 1
+- RATING: es/contato.html | 1
 - CSS: es/contato.html
 - CSS: es/desayuno-con-vista-rio-de-janeiro.html
 - RATING: es/donde-comer-cerca-del-pan-de-azucar.html | 1
@@ -160,6 +168,8 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - PIN: es/morro-da-urca.html | 1
 - RATING: es/morro-da-urca.html | 1
 - CSS: es/morro-da-urca.html
+- PIN: es/nossa-visao.html | 1
+- RATING: es/nossa-visao.html | 1
 - CSS: es/nossa-visao.html
 - PIN: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | 1
 - RATING: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | 1
@@ -203,6 +213,8 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - PIN: morro-da-urca.html | 1
 - RATING: morro-da-urca.html | 1
 - CSS: morro-da-urca.html
+- PIN: nossa-visao.html | 1
+- RATING: nossa-visao.html | 1
 - CSS: nossa-visao.html
 - PIN: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | 1
 - RATING: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | 1

@@ -21,7 +21,7 @@
 - text_typos_fixed: 1
 - sitemap_urls_fixed: 0
 - sitemap_blocks_removed: 0
-- subpage_top_synced: 76
+- subpage_top_synced: 82
 - subpage_eyebrow_synced: 73
 
 ## Correções aplicadas
@@ -44,6 +44,7 @@
 - OG_URL: como-chegar.html -> https://www.embaixadacarioca.com/como-chegar.html
 - TOP_SYNC: como-chegar.html | topo sincronizado com a home
 - CANONICAL: contato.html -> https://www.embaixadacarioca.com/contato.html
+- TOP_SYNC: contato.html | topo sincronizado com a home
 - CANONICAL: en/almoco-morro-da-urca.html -> https://www.embaixadacarioca.com/en/almoco-morro-da-urca.html
 - TOP_SYNC: en/almoco-morro-da-urca.html | topo sincronizado com a home
 - CANONICAL: en/almoco.html -> https://www.embaixadacarioca.com/en/almoco.html
@@ -59,6 +60,7 @@
 - CANONICAL: en/cardapio.html -> https://www.embaixadacarioca.com/en/cardapio.html
 - TOP_SYNC: en/cardapio.html | topo sincronizado com a home
 - CANONICAL: en/contato.html -> https://www.embaixadacarioca.com/en/contato.html
+- TOP_SYNC: en/contato.html | topo sincronizado com a home
 - CANONICAL: en/entardecer.html -> https://www.embaixadacarioca.com/en/entardecer.html
 - TOP_SYNC: en/entardecer.html | topo sincronizado com a home
 - CANONICAL: en/eventos.html -> https://www.embaixadacarioca.com/en/eventos.html
@@ -78,6 +80,7 @@
 - CANONICAL: en/morro-da-urca.html -> https://www.embaixadacarioca.com/en/morro-da-urca.html
 - TOP_SYNC: en/morro-da-urca.html | topo sincronizado com a home
 - CANONICAL: en/nossa-visao.html -> https://www.embaixadacarioca.com/en/nossa-visao.html
+- TOP_SYNC: en/nossa-visao.html | topo sincronizado com a home
 - CANONICAL: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html -> https://www.embaixadacarioca.com/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - TOP_SYNC: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | topo sincronizado com a home
 - CANONICAL: en/parque-bondinho.html -> https://www.embaixadacarioca.com/en/parque-bondinho.html
@@ -118,6 +121,7 @@
 - OG_URL: es/como-llegar.html -> https://www.embaixadacarioca.com/es/como-llegar.html
 - TOP_SYNC: es/como-llegar.html | topo sincronizado com a home
 - CANONICAL: es/contato.html -> https://www.embaixadacarioca.com/es/contato.html
+- TOP_SYNC: es/contato.html | topo sincronizado com a home
 - CANONICAL: es/desayuno-con-vista-rio-de-janeiro.html -> https://www.embaixadacarioca.com/es/desayuno-con-vista-rio-de-janeiro.html
 - TOP_SYNC: es/desayuno-con-vista-rio-de-janeiro.html | topo sincronizado com a home
 - OG_URL: es/donde-comer-cerca-del-pan-de-azucar.html -> https://www.embaixadacarioca.com/es/donde-comer-cerca-del-pan-de-azucar.html
@@ -138,6 +142,7 @@
 - CANONICAL: es/morro-da-urca.html -> https://www.embaixadacarioca.com/es/morro-da-urca.html
 - TOP_SYNC: es/morro-da-urca.html | topo sincronizado com a home
 - CANONICAL: es/nossa-visao.html -> https://www.embaixadacarioca.com/es/nossa-visao.html
+- TOP_SYNC: es/nossa-visao.html | topo sincronizado com a home
 - CANONICAL: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html -> https://www.embaixadacarioca.com/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - TOP_SYNC: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | topo sincronizado com a home
 - OG_URL: es/parque-bondinho-pan-de-azucar.html -> https://www.embaixadacarioca.com/es/parque-bondinho-pan-de-azucar.html
@@ -169,6 +174,7 @@
 - CANONICAL: morro-da-urca.html -> https://www.embaixadacarioca.com/morro-da-urca.html
 - TOP_SYNC: morro-da-urca.html | topo sincronizado com a home
 - CANONICAL: nossa-visao.html -> https://www.embaixadacarioca.com/nossa-visao.html
+- TOP_SYNC: nossa-visao.html | topo sincronizado com a home
 - CANONICAL: o-que-fazer-depois-do-bondinho-pao-de-acucar.html -> https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - TOP_SYNC: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | topo sincronizado com a home
 - CANONICAL: offline.html -> https://www.embaixadacarioca.com/offline.html
@@ -193,21 +199,21 @@
 - Nenhum alerta crítico encontrado
 
 ## Maiores páginas HTML
-- index.html: 286.9 KB
-- es/index.html: 263.6 KB
-- en/index.html: 260.9 KB
-- cafe-da-manha.html: 185.7 KB
-- es/guia-do-rio.html: 184.3 KB
-- en/guia-do-rio.html: 183.9 KB
-- guia-do-rio.html: 183.1 KB
-- en/cafe-da-manha.html: 182.1 KB
-- es/cafe-da-manha.html: 181.9 KB
-- cardapio.html: 168.8 KB
-- eventos.html: 165.2 KB
-- almoco.html: 165.2 KB
-- es/eventos.html: 165.0 KB
-- en/almoco.html: 163.8 KB
-- es/cardapio.html: 162.4 KB
+- index.html: 287.1 KB
+- es/index.html: 263.8 KB
+- en/index.html: 261.1 KB
+- cafe-da-manha.html: 185.9 KB
+- es/guia-do-rio.html: 184.5 KB
+- en/guia-do-rio.html: 184.1 KB
+- guia-do-rio.html: 183.3 KB
+- en/cafe-da-manha.html: 182.3 KB
+- es/cafe-da-manha.html: 182.2 KB
+- cardapio.html: 169.0 KB
+- eventos.html: 165.5 KB
+- almoco.html: 165.4 KB
+- es/eventos.html: 165.2 KB
+- en/almoco.html: 164.0 KB
+- es/cardapio.html: 162.6 KB
 
 ## Maiores assets de imagem
 - assets/sunset-dj-cabine-pao-acucar.png: 573.2 KB [ACIMA DE 300 KB]

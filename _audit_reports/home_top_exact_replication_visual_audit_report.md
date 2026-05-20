@@ -12,9 +12,9 @@ Replicar o topo da home em todas as páginas e auditar por código os elementos:
 ## Contadores
 - html_scanned: 83
 - html_updated: 83
-- nav_replaced: 74
-- nav_inserted: 9
-- old_overrides_removed: 140
+- nav_replaced: 80
+- nav_inserted: 3
+- old_overrides_removed: 152
 - css_lock_injected: 83
 - eyebrow_synced: 74
 - audit_pass: 83
@@ -38,7 +38,8 @@ Replicar o topo da home em todas as páginas e auditar por código os elementos:
 - OLD_OVERRIDE_REMOVED: cardapio.html (2)
 - NAV_REPLACED: cardapio.html
 - NAV_REPLACED: como-chegar.html
-- NAV_INSERTED: contato.html
+- OLD_OVERRIDE_REMOVED: contato.html (2)
+- NAV_REPLACED: contato.html
 - OLD_OVERRIDE_REMOVED: en/almoco-morro-da-urca.html (2)
 - NAV_REPLACED: en/almoco-morro-da-urca.html
 - OLD_OVERRIDE_REMOVED: en/almoco.html (2)
@@ -52,7 +53,8 @@ Replicar o topo da home em todas as páginas e auditar por código os elementos:
 - NAV_REPLACED: en/caipirinha-com-vista-rio.html
 - OLD_OVERRIDE_REMOVED: en/cardapio.html (2)
 - NAV_REPLACED: en/cardapio.html
-- NAV_INSERTED: en/contato.html
+- OLD_OVERRIDE_REMOVED: en/contato.html (2)
+- NAV_REPLACED: en/contato.html
 - OLD_OVERRIDE_REMOVED: en/entardecer.html (2)
 - NAV_REPLACED: en/entardecer.html
 - OLD_OVERRIDE_REMOVED: en/eventos.html (2)
@@ -70,7 +72,8 @@ Replicar o topo da home em todas as páginas e auditar por código os elementos:
 - NAV_REPLACED: en/index.html
 - OLD_OVERRIDE_REMOVED: en/morro-da-urca.html (2)
 - NAV_REPLACED: en/morro-da-urca.html
-- NAV_INSERTED: en/nossa-visao.html
+- OLD_OVERRIDE_REMOVED: en/nossa-visao.html (2)
+- NAV_REPLACED: en/nossa-visao.html
 - OLD_OVERRIDE_REMOVED: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html (2)
 - NAV_REPLACED: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - OLD_OVERRIDE_REMOVED: en/parque-bondinho.html (2)
@@ -108,7 +111,8 @@ Replicar o topo da home em todas as páginas e auditar por código os elementos:
 - OLD_OVERRIDE_REMOVED: es/cardapio.html (2)
 - NAV_REPLACED: es/cardapio.html
 - NAV_REPLACED: es/como-llegar.html
-- NAV_INSERTED: es/contato.html
+- OLD_OVERRIDE_REMOVED: es/contato.html (2)
+- NAV_REPLACED: es/contato.html
 - NAV_INSERTED: es/desayuno-con-vista-rio-de-janeiro.html
 - OLD_OVERRIDE_REMOVED: es/donde-comer-cerca-del-pan-de-azucar.html (2)
 - NAV_REPLACED: es/donde-comer-cerca-del-pan-de-azucar.html
@@ -128,7 +132,8 @@ Replicar o topo da home em todas as páginas e auditar por código os elementos:
 - NAV_REPLACED: es/index.html
 - OLD_OVERRIDE_REMOVED: es/morro-da-urca.html (2)
 - NAV_REPLACED: es/morro-da-urca.html
-- NAV_INSERTED: es/nossa-visao.html
+- OLD_OVERRIDE_REMOVED: es/nossa-visao.html (2)
+- NAV_REPLACED: es/nossa-visao.html
 - OLD_OVERRIDE_REMOVED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html (2)
 - NAV_REPLACED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - OLD_OVERRIDE_REMOVED: es/parque-bondinho-pan-de-azucar.html (2)
@@ -158,7 +163,8 @@ Replicar o topo da home em todas as páginas e auditar por código os elementos:
 - NAV_REPLACED: index.html
 - OLD_OVERRIDE_REMOVED: morro-da-urca.html (2)
 - NAV_REPLACED: morro-da-urca.html
-- NAV_INSERTED: nossa-visao.html
+- OLD_OVERRIDE_REMOVED: nossa-visao.html (2)
+- NAV_REPLACED: nossa-visao.html
 - OLD_OVERRIDE_REMOVED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html (2)
 - NAV_REPLACED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - OLD_OVERRIDE_REMOVED: onde-comer-no-pao-de-acucar.html (2)

@@ -2,16 +2,14 @@
 
 ## Contadores
 - html_scanned: 86
-- html_updated: 1
-- safe_replacements: 4
+- html_updated: 0
+- safe_replacements: 0
 - targeted_blocks_fixed: 0
 - technical_repairs: 0
-- warnings: 24
+- warnings: 22
 
 ## Correções aplicadas
-- PT_SAFE_REPLACE: cafe-da-manha-com-vista-rio-de-janeiro.html | 'Para quién' -> 'Para quem' | 1
-- PT_SAFE_REPLACE: cafe-da-manha-com-vista-rio-de-janeiro.html | 'para quién' -> 'para quem' | 3
-- UPDATED: cafe-da-manha-com-vista-rio-de-janeiro.html
+- Nenhuma correção automática necessária.
 
 ## Alertas remanescentes
 - LANG_WARNING: almoco-morro-da-urca.html [en] contém padrão suspeito: \bAberto todos os dias\b
@@ -22,8 +20,6 @@
 - LANG_WARNING: cardapio.html [en] contém padrão suspeito: \bSolicitar orçamento\b
 - LANG_WARNING: cardapio.html [en] contém padrão suspeito: \bAberto todos os dias\b
 - LANG_WARNING: entardecer.html [en] contém padrão suspeito: \bAberto todos os dias\b
-- LANG_WARNING: es/desayuno-con-vista-rio-de-janeiro.html [es] contém padrão suspeito: \bBreakfast\b
-- LANG_WARNING: es/desayuno-con-vista-rio-de-janeiro.html [es] contém padrão suspeito: \bLunch\b
 - LANG_WARNING: eventos.html [en] contém padrão suspeito: \bSolicitar orçamento\b
 - LANG_WARNING: eventos.html [en] contém padrão suspeito: \bFalar com nossa equipe\b
 - LANG_WARNING: eventos.html [en] contém padrão suspeito: \bAberto todos os dias\b
