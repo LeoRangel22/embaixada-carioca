@@ -1,0 +1,34 @@
+name: Lunch photos and global readability hardfix
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'scripts/apply_lunch_photos_and_global_readability_hardfix.py'
+      - '.github/workflows/lunch-photos-global-readability-hardfix.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  apply-lunch-photos-readability-hardfix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Run lunch photos and global readability hardfix
+        run: python3 scripts/apply_lunch_photos_and_global_readability_hardfix.py
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "fix: apply lunch photos and readability hardfix"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
