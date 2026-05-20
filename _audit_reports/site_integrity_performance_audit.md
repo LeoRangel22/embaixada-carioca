@@ -11,17 +11,17 @@
 - sem alteração da composição principal da home
 
 ## Contadores
-- html_files_scanned: 83
-- html_files_updated: 83
-- canonical_fixed: 65
-- og_url_fixed: 15
+- html_files_scanned: 86
+- html_files_updated: 86
+- canonical_fixed: 68
+- og_url_fixed: 18
 - absolute_urls_fixed: 112
 - review_links_fixed: 0
 - placeholder_maps_fixed: 0
 - text_typos_fixed: 1
 - sitemap_urls_fixed: 0
 - sitemap_blocks_removed: 0
-- subpage_top_synced: 73
+- subpage_top_synced: 76
 - subpage_eyebrow_synced: 70
 
 ## Correções aplicadas
@@ -40,6 +40,9 @@
 - TOP_SYNC: caipirinha-com-vista-rio.html | topo sincronizado com a home
 - CANONICAL: cardapio.html -> https://www.embaixadacarioca.com/cardapio.html
 - TOP_SYNC: cardapio.html | topo sincronizado com a home
+- CANONICAL: como-chegar.html -> https://www.embaixadacarioca.com/como-chegar.html
+- OG_URL: como-chegar.html -> https://www.embaixadacarioca.com/como-chegar.html
+- TOP_SYNC: como-chegar.html | topo sincronizado com a home
 - CANONICAL: contato.html -> https://www.embaixadacarioca.com/contato.html
 - CANONICAL: en/almoco-morro-da-urca.html -> https://www.embaixadacarioca.com/en/almoco-morro-da-urca.html
 - TOP_SYNC: en/almoco-morro-da-urca.html | topo sincronizado com a home
@@ -68,6 +71,9 @@
 - TOP_SYNC: en/gastronomia-carioca.html | topo sincronizado com a home
 - CANONICAL: en/guia-do-rio.html -> https://www.embaixadacarioca.com/en/guia-do-rio.html
 - TOP_SYNC: en/guia-do-rio.html | topo sincronizado com a home
+- CANONICAL: en/how-to-get-there.html -> https://www.embaixadacarioca.com/en/how-to-get-there.html
+- OG_URL: en/how-to-get-there.html -> https://www.embaixadacarioca.com/en/how-to-get-there.html
+- TOP_SYNC: en/how-to-get-there.html | topo sincronizado com a home
 - TOP_SYNC: en/index.html | topo sincronizado com a home
 - CANONICAL: en/morro-da-urca.html -> https://www.embaixadacarioca.com/en/morro-da-urca.html
 - TOP_SYNC: en/morro-da-urca.html | topo sincronizado com a home
@@ -108,6 +114,9 @@
 - TOP_SYNC: es/caipirinha-com-vista-rio.html | topo sincronizado com a home
 - CANONICAL: es/cardapio.html -> https://www.embaixadacarioca.com/es/cardapio.html
 - TOP_SYNC: es/cardapio.html | topo sincronizado com a home
+- CANONICAL: es/como-llegar.html -> https://www.embaixadacarioca.com/es/como-llegar.html
+- OG_URL: es/como-llegar.html -> https://www.embaixadacarioca.com/es/como-llegar.html
+- TOP_SYNC: es/como-llegar.html | topo sincronizado com a home
 - CANONICAL: es/contato.html -> https://www.embaixadacarioca.com/es/contato.html
 - CANONICAL: es/desayuno-con-vista-rio-de-janeiro.html -> https://www.embaixadacarioca.com/es/desayuno-con-vista-rio-de-janeiro.html
 - TOP_SYNC: es/desayuno-con-vista-rio-de-janeiro.html | topo sincronizado com a home
@@ -185,17 +194,17 @@
 
 ## Maiores páginas HTML
 - index.html: 274.7 KB
-- es/index.html: 264.5 KB
+- es/index.html: 264.4 KB
 - en/index.html: 261.6 KB
 - es/guia-do-rio.html: 184.1 KB
 - en/guia-do-rio.html: 183.6 KB
-- guia-do-rio.html: 183.5 KB
-- cafe-da-manha.html: 182.7 KB
+- guia-do-rio.html: 183.4 KB
+- cafe-da-manha.html: 182.6 KB
 - es/cafe-da-manha.html: 176.0 KB
 - en/cafe-da-manha.html: 175.7 KB
 - almoco.html: 170.7 KB
-- cardapio.html: 168.3 KB
-- entardecer.html: 165.3 KB
+- cardapio.html: 168.2 KB
+- entardecer.html: 165.1 KB
 - es/cardapio.html: 161.9 KB
 - en/cardapio.html: 161.3 KB
 - en/almoco.html: 160.7 KB

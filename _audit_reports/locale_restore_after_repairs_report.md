@@ -1,7 +1,7 @@
 # Locale Restore After Repairs
 
 ## Contadores
-- html_scanned: 83
+- html_scanned: 86
 - html_updated: 6
 - en_restored: 0
 - es_restored: 6

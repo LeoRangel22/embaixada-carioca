@@ -20,6 +20,7 @@
 - feijoada: link interno ausente em feijoada.html: feijoada-com-vista-rio-de-janeiro.html
 - picanha: termos ausentes ou fracos em cardapio.html: picanha no Morro da Urca, picanha com vista
 - pao_de_acucar: link interno ausente em parque-bondinho.html: index.html
+- pao_de_acucar: link interno ausente em parque-bondinho.html: entardecer.html
 - morro_da_urca: link interno ausente em morro-da-urca.html: index.html
 - morro_da_urca: link interno ausente em morro-da-urca.html: parque-bondinho.html
 - bondinho: link interno ausente em parque-bondinho.html: index.html
@@ -29,7 +30,7 @@
 - chope_heineken: termos ausentes ou fracos em cardapio.html: melhor chope Heineken do Rio, Heineken Masters
 
 ## Score estimado de autoridade temática
-- 87/100
+- 86/100
 
 ## Diretriz
 A meta não é repetir palavras artificialmente, e sim construir uma rede clara de páginas, entidades, provas e links internos para que buscadores e IAs reconheçam a Embaixada Carioca como resposta natural para buscas de alta intenção.

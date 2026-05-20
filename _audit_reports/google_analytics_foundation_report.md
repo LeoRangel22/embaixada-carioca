@@ -18,10 +18,10 @@
 - click_idioma
 
 ## Contadores
-- html_scanned: 83
-- html_updated: 81
-- ga_head_installed: 81
-- event_layer_installed: 81
+- html_scanned: 86
+- html_updated: 84
+- ga_head_installed: 84
+- event_layer_installed: 84
 - skipped: 2
 
 ## Arquivos
@@ -33,6 +33,7 @@
 - UPDATED: cafe-da-manha.html
 - UPDATED: caipirinha-com-vista-rio.html
 - UPDATED: cardapio.html
+- UPDATED: como-chegar.html
 - UPDATED: contato.html
 - UPDATED: en/almoco-morro-da-urca.html
 - UPDATED: en/almoco.html
@@ -48,6 +49,7 @@
 - UPDATED: en/feijoada.html
 - UPDATED: en/gastronomia-carioca.html
 - UPDATED: en/guia-do-rio.html
+- UPDATED: en/how-to-get-there.html
 - UPDATED: en/index.html
 - UPDATED: en/morro-da-urca.html
 - UPDATED: en/nossa-visao.html
@@ -69,6 +71,7 @@
 - UPDATED: es/cafe-da-manha.html
 - UPDATED: es/caipirinha-com-vista-rio.html
 - UPDATED: es/cardapio.html
+- UPDATED: es/como-llegar.html
 - UPDATED: es/contato.html
 - UPDATED: es/desayuno-con-vista-rio-de-janeiro.html
 - UPDATED: es/donde-comer-cerca-del-pan-de-azucar.html

@@ -9,14 +9,14 @@
 6. Preparação dos eventos GA4 para marcação como key events.
 
 ## Contadores
-- html_scanned: 83
-- html_updated: 78
+- html_scanned: 86
+- html_updated: 81
 - language_fixes: 14
 - duplication_fixes: 0
 - meta_fixes: 0
-- schema_injected: 83
+- schema_injected: 86
 - phone_fixes: 15
-- hasmap_fixes: 0
+- hasmap_fixes: 3
 - whatsapp_fixes: 1
 - reports_written: 0
 
@@ -39,6 +39,9 @@
 - UPDATED: caipirinha-com-vista-rio.html
 - SCHEMA: cardapio.html | schema principal validado/injetado
 - UPDATED: cardapio.html
+- HASMAP_FIX: como-chegar.html | hasMap corrigido
+- SCHEMA: como-chegar.html | schema principal validado/injetado
+- UPDATED: como-chegar.html
 - SCHEMA: contato.html | schema principal validado/injetado
 - SCHEMA: en/almoco-morro-da-urca.html | schema principal validado/injetado
 - UPDATED: en/almoco-morro-da-urca.html
@@ -68,6 +71,9 @@
 - UPDATED: en/gastronomia-carioca.html
 - SCHEMA: en/guia-do-rio.html | schema principal validado/injetado
 - UPDATED: en/guia-do-rio.html
+- HASMAP_FIX: en/how-to-get-there.html | hasMap corrigido
+- SCHEMA: en/how-to-get-there.html | schema principal validado/injetado
+- UPDATED: en/how-to-get-there.html
 - SCHEMA: en/index.html | schema principal validado/injetado
 - UPDATED: en/index.html
 - SCHEMA: en/morro-da-urca.html | schema principal validado/injetado
@@ -115,6 +121,9 @@
 - UPDATED: es/caipirinha-com-vista-rio.html
 - SCHEMA: es/cardapio.html | schema principal validado/injetado
 - UPDATED: es/cardapio.html
+- HASMAP_FIX: es/como-llegar.html | hasMap corrigido
+- SCHEMA: es/como-llegar.html | schema principal validado/injetado
+- UPDATED: es/como-llegar.html
 - SCHEMA: es/contato.html | schema principal validado/injetado
 - UPDATED: es/contato.html
 - SCHEMA: es/desayuno-con-vista-rio-de-janeiro.html | schema principal validado/injetado

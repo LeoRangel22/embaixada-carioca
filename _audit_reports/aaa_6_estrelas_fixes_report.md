@@ -9,6 +9,7 @@
 - UPDATED: cafe-da-manha.html | replacements=0
 - UPDATED: caipirinha-com-vista-rio.html | replacements=0
 - UPDATED: cardapio.html | replacements=0
+- UPDATED: como-chegar.html | replacements=0
 - UPDATED: contato.html | replacements=0
 - UPDATED: en/almoco-morro-da-urca.html | replacements=0
 - UPDATED: en/almoco.html | replacements=0
@@ -24,6 +25,7 @@
 - UPDATED: en/feijoada.html | replacements=0
 - UPDATED: en/gastronomia-carioca.html | replacements=0
 - UPDATED: en/guia-do-rio.html | replacements=0
+- UPDATED: en/how-to-get-there.html | replacements=0
 - UPDATED: en/index.html | replacements=0
 - UPDATED: en/morro-da-urca.html | replacements=0
 - UPDATED: en/nossa-visao.html | replacements=0
@@ -45,6 +47,7 @@
 - UPDATED: es/cafe-da-manha.html | replacements=1
 - UPDATED: es/caipirinha-com-vista-rio.html | replacements=1
 - UPDATED: es/cardapio.html | replacements=1
+- UPDATED: es/como-llegar.html | replacements=5
 - UPDATED: es/contato.html | replacements=1
 - UPDATED: es/desayuno-con-vista-rio-de-janeiro.html | replacements=1
 - UPDATED: es/donde-comer-cerca-del-pan-de-azucar.html | replacements=1

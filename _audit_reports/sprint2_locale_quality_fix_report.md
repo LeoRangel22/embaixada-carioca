@@ -4,10 +4,10 @@
 Corrigir rótulos visíveis em PT que vazaram para páginas EN/ES nos blocos GEO e landings de café da manhã.
 
 ## Contadores
-- html_scanned: 83
-- html_updated: 18
-- en_fixes: 32
-- es_fixes: 32
+- html_scanned: 86
+- html_updated: 20
+- en_fixes: 33
+- es_fixes: 33
 - pt_fixes: 0
 - warnings: 10
 
@@ -34,6 +34,8 @@ Corrigir rótulos visíveis em PT que vazaram para páginas EN/ES nos blocos GEO
 - EN_FIXES: en/guia-do-rio.html | 'aria-label="Resposta direta para busca e IA"' -> 'aria-label="Direct answer for search and AI"' | 1
 - EN_FIXES: en/guia-do-rio.html | 'Resposta direta · SEO + GEO' -> 'Direct answer · SEO + GEO' | 1
 - UPDATED: en/guia-do-rio.html
+- EN_FIXES: en/how-to-get-there.html | 'Morro da Urca · Parque Bondinho Pão de Açúcar' -> 'Urca Hill · Sugarloaf Cable Car Park' | 1
+- UPDATED: en/how-to-get-there.html
 - EN_FIXES: en/index.html | 'aria-label="Resposta direta para busca e IA"' -> 'aria-label="Direct answer for search and AI"' | 1
 - EN_FIXES: en/index.html | 'Resposta direta · SEO + GEO' -> 'Direct answer · SEO + GEO' | 1
 - UPDATED: en/index.html
@@ -55,6 +57,8 @@ Corrigir rótulos visíveis em PT que vazaram para páginas EN/ES nos blocos GEO
 - ES_FIXES: es/cafe-da-manha.html | 'aria-label="Resposta direta para busca e IA"' -> 'aria-label="Respuesta directa para búsqueda e IA"' | 1
 - ES_FIXES: es/cafe-da-manha.html | 'Resposta direta · SEO + GEO' -> 'Respuesta directa · SEO + GEO' | 1
 - UPDATED: es/cafe-da-manha.html
+- ES_FIXES: es/como-llegar.html | 'Morro da Urca · Parque Bondinho Pão de Açúcar' -> 'Morro da Urca · Parque Bondinho Pan de Azúcar' | 1
+- UPDATED: es/como-llegar.html
 - ES_FIXES: es/desayuno-con-vista-rio-de-janeiro.html | 'Resposta direta · SEO + GEO' -> 'Respuesta directa · SEO + GEO' | 1
 - ES_FIXES: es/desayuno-con-vista-rio-de-janeiro.html | '>Café<' -> '>Desayuno<' | 1
 - ES_FIXES: es/desayuno-con-vista-rio-de-janeiro.html | '>Almoço<' -> '>Almuerzo<' | 1

@@ -6,8 +6,8 @@
 - Remover overflow/moldura lateral.
 
 ## Contadores
-- scanned: 83
-- updated: 73
+- scanned: 86
+- updated: 76
 - skipped: 10
 - eyebrows_synced: 70
 
@@ -19,6 +19,7 @@
 - UPDATED: cafe-da-manha.html
 - UPDATED: caipirinha-com-vista-rio.html
 - UPDATED: cardapio.html
+- UPDATED: como-chegar.html
 - UPDATED: en/almoco-morro-da-urca.html
 - UPDATED: en/almoco.html
 - UPDATED: en/breakfast-with-a-view-rio-de-janeiro.html
@@ -32,6 +33,7 @@
 - UPDATED: en/feijoada.html
 - UPDATED: en/gastronomia-carioca.html
 - UPDATED: en/guia-do-rio.html
+- UPDATED: en/how-to-get-there.html
 - UPDATED: en/index.html
 - UPDATED: en/morro-da-urca.html
 - UPDATED: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
@@ -52,6 +54,7 @@
 - UPDATED: es/cafe-da-manha.html
 - UPDATED: es/caipirinha-com-vista-rio.html
 - UPDATED: es/cardapio.html
+- UPDATED: es/como-llegar.html
 - UPDATED: es/desayuno-con-vista-rio-de-janeiro.html
 - UPDATED: es/donde-comer-cerca-del-pan-de-azucar.html
 - UPDATED: es/entardecer.html
