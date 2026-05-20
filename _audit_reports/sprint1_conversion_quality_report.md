@@ -11,13 +11,13 @@
 ## Contadores
 - html_scanned: 86
 - html_updated: 86
-- language_fixes: 15
+- language_fixes: 20
 - duplication_fixes: 0
 - meta_fixes: 0
 - schema_injected: 86
 - phone_fixes: 15
 - hasmap_fixes: 3
-- whatsapp_fixes: 1
+- whatsapp_fixes: 7
 - reports_written: 0
 
 ## Ações aplicadas
@@ -34,6 +34,7 @@
 - LANG_FIX: cafe-da-manha-pao-de-acucar.html [pt] | 'para quién' -> 'para quem' | 1
 - SCHEMA: cafe-da-manha-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: cafe-da-manha-pao-de-acucar.html
+- LANG_FIX: cafe-da-manha.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: cafe-da-manha.html | schema principal validado/injetado
 - UPDATED: cafe-da-manha.html
 - SCHEMA: caipirinha-com-vista-rio.html | schema principal validado/injetado
@@ -68,6 +69,8 @@
 - UPDATED: en/eventos.html
 - SCHEMA: en/feijoada-com-vista-rio-de-janeiro.html | schema principal validado/injetado
 - UPDATED: en/feijoada-com-vista-rio-de-janeiro.html
+- WHATSAPP_FIX: en/feijoada.html [en] | CTA localizado
+- WHATSAPP_FIX: en/feijoada.html [en] | CTA localizado
 - SCHEMA: en/feijoada.html | schema principal validado/injetado
 - UPDATED: en/feijoada.html
 - SCHEMA: en/gastronomia-carioca.html | schema principal validado/injetado
@@ -140,6 +143,8 @@
 - UPDATED: es/eventos.html
 - SCHEMA: es/feijoada-com-vista-rio-de-janeiro.html | schema principal validado/injetado
 - UPDATED: es/feijoada-com-vista-rio-de-janeiro.html
+- WHATSAPP_FIX: es/feijoada.html [es] | CTA localizado
+- WHATSAPP_FIX: es/feijoada.html [es] | CTA localizado
 - SCHEMA: es/feijoada.html | schema principal validado/injetado
 - UPDATED: es/feijoada.html
 - SCHEMA: es/gastronomia-carioca.html | schema principal validado/injetado
@@ -173,11 +178,16 @@
 - SCHEMA: es/roteiro-meio-dia-urca-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: es/roteiro-meio-dia-urca-pao-de-acucar.html
 - LANG_FIX: eventos.html [pt] | 'Para quién' -> 'Para quem' | 1
+- LANG_FIX: eventos.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - WHATSAPP_FIX: eventos.html [pt] | CTA localizado
 - SCHEMA: eventos.html | schema principal validado/injetado
 - UPDATED: eventos.html
 - SCHEMA: feijoada-com-vista-rio-de-janeiro.html | schema principal validado/injetado
 - UPDATED: feijoada-com-vista-rio-de-janeiro.html
+- LANG_FIX: feijoada.html [pt] | 'Para quién' -> 'Para quem' | 2
+- LANG_FIX: feijoada.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
+- WHATSAPP_FIX: feijoada.html [pt] | CTA localizado
+- WHATSAPP_FIX: feijoada.html [pt] | CTA localizado
 - SCHEMA: feijoada.html | schema principal validado/injetado
 - UPDATED: feijoada.html
 - SCHEMA: gastronomia-carioca.html | schema principal validado/injetado

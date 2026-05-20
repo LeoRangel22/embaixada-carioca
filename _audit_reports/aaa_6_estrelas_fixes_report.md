@@ -44,7 +44,7 @@
 - UPDATED: es/almoco.html | replacements=1
 - UPDATED: es/atardecer.html | replacements=1
 - UPDATED: es/cafe-da-manha-pao-de-acucar.html | replacements=1
-- UPDATED: es/cafe-da-manha.html | replacements=1
+- UPDATED: es/cafe-da-manha.html | replacements=3
 - UPDATED: es/caipirinha-com-vista-rio.html | replacements=1
 - UPDATED: es/cardapio.html | replacements=1
 - UPDATED: es/como-llegar.html | replacements=5
@@ -52,9 +52,9 @@
 - UPDATED: es/desayuno-con-vista-rio-de-janeiro.html | replacements=1
 - UPDATED: es/donde-comer-cerca-del-pan-de-azucar.html | replacements=1
 - UPDATED: es/entardecer.html | replacements=1
-- UPDATED: es/eventos.html | replacements=1
+- UPDATED: es/eventos.html | replacements=3
 - UPDATED: es/feijoada-com-vista-rio-de-janeiro.html | replacements=1
-- UPDATED: es/feijoada.html | replacements=1
+- UPDATED: es/feijoada.html | replacements=3
 - UPDATED: es/gastronomia-carioca.html | replacements=1
 - UPDATED: es/guia-do-rio.html | replacements=1
 - UPDATED: es/index.html | replacements=1

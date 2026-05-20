@@ -2,7 +2,7 @@
 
 ## Alterações aplicadas
 - UPDATED: index.html | replacements=33
-- UPDATED: cafe-da-manha.html | replacements=11
+- UPDATED: cafe-da-manha.html | replacements=21
 - UPDATED: almoco.html | replacements=9
 - UPDATED: entardecer.html | replacements=15
 - UPDATED: eventos.html | replacements=10
