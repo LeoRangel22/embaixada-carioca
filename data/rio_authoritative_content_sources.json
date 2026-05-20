@@ -1,0 +1,91 @@
+{
+  "purpose": "Registro de fontes editoriais para produzir conteúdo de alta qualidade, verificável e útil sobre Rio de Janeiro, Urca, Pão de Açúcar, gastronomia, turismo e imagens.",
+  "editorial_rule": "Não publicar texto turístico novo apenas para aumentar word count. Cada página estratégica deve ser revisada com fontes oficiais, guias reconhecidos ou acervo próprio da Embaixada Carioca.",
+  "source_tiers": {
+    "tier_1_official": [
+      {
+        "name": "Parque Bondinho Pão de Açúcar",
+        "url": "https://bondinho.com.br/",
+        "use_for": ["acesso", "ingressos", "Bondinho", "Morro da Urca", "experiência dentro do parque"],
+        "notes": "Fonte primária para informações de acesso ao Parque Bondinho. Confirmar horários, tickets e regras diretamente no site oficial antes de publicar detalhes operacionais."
+      },
+      {
+        "name": "Visit Rio / Rio Convention & Visitors Bureau",
+        "url": "https://visitrio.com.br/",
+        "use_for": ["roteiros", "onde comer", "eventos", "planejamento de viagem", "gastronomia", "turismo do Rio"],
+        "notes": "Fonte institucional do destino, útil para linguagem e curadoria turística."
+      },
+      {
+        "name": "Riotur / Prefeitura do Rio",
+        "url": "https://riotur.rio/",
+        "use_for": ["turismo municipal", "eventos oficiais", "imagens e campanhas da cidade"],
+        "notes": "Verificar disponibilidade e licença de imagens antes do uso."
+      },
+      {
+        "name": "TurisRio / Governo do Estado do Rio de Janeiro",
+        "url": "https://www.turisrio.rj.gov.br/",
+        "use_for": ["turismo estadual", "destino Rio de Janeiro", "fomento turístico", "imagens institucionais"],
+        "notes": "Útil como referência institucional; verificar licença de imagem antes de publicar."
+      },
+      {
+        "name": "Visit Brasil / Embratur",
+        "url": "https://visitbrasil.com/",
+        "use_for": ["posicionamento internacional do Brasil", "conteúdo em inglês/espanhol", "turismo internacional"],
+        "notes": "Fonte oficial para linguagem orientada ao turista estrangeiro."
+      }
+    ],
+    "tier_2_recognized_guides": [
+      {
+        "name": "Time Out Rio de Janeiro",
+        "url": "https://www.timeout.com/rio-de-janeiro",
+        "use_for": ["curadoria de cidade", "restaurantes", "atrações", "coisas para fazer", "benchmark editorial"],
+        "notes": "Usar como referência editorial e benchmark, não copiar texto."
+      },
+      {
+        "name": "Guias internacionais reconhecidos",
+        "examples": ["Lonely Planet", "Condé Nast Traveler", "The New York Times Travel", "El País Viajes"],
+        "use_for": ["benchmark de linguagem", "rotas turísticas", "expectativas do viajante estrangeiro"],
+        "notes": "Usar apenas para entendimento de intenção de busca e tom editorial. Não copiar texto."
+      }
+    ],
+    "tier_3_open_media_candidates": [
+      {
+        "name": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/",
+        "use_for": ["imagens públicas com licença explícita", "paisagens do Rio", "Pão de Açúcar", "Urca"],
+        "notes": "Usar somente arquivos com licença compatível, atribuição correta e qualidade visual adequada."
+      },
+      {
+        "name": "Acervos públicos e institucionais",
+        "examples": ["Arquivo Nacional", "Instituto Moreira Salles", "Prefeitura do Rio", "Governo do Estado"],
+        "use_for": ["imagens históricas", "contexto cultural", "conteúdo institucional"],
+        "notes": "Verificar autorização, licença e se o uso comercial é permitido."
+      }
+    ],
+    "tier_4_internal_sources": [
+      {
+        "name": "Acervo próprio Embaixada Carioca",
+        "use_for": ["comida", "ambiente", "vista real da casa", "eventos", "equipe", "experiência do cliente"],
+        "notes": "Fonte preferencial para imagens de conversão e autenticidade."
+      },
+      {
+        "name": "Dados internos da operação",
+        "use_for": ["horário real", "produto mais vendido", "eventos", "reservas", "perguntas frequentes", "objeções de clientes"],
+        "notes": "Usar para conteúdo comercial e FAQ; manter consistência com operação real."
+      }
+    ]
+  },
+  "image_policy": {
+    "priority_order": ["Acervo próprio", "Banco oficial com licença explícita", "Wikimedia Commons com licença compatível", "Imagem comprada/licenciada"],
+    "forbidden": ["baixar imagem sem licença", "usar foto institucional sem autorização", "usar imagem de terceiros sem atribuição quando exigida"],
+    "required_fields_for_each_image": ["source_url", "author_or_institution", "license", "permission_status", "alt_text", "caption", "page_target"]
+  },
+  "content_quality_requirements": {
+    "minimum_for_strategic_pages": {
+      "word_count_target": "900 a 1500 palavras quando a intenção for guia/roteiro/captação orgânica",
+      "must_have": ["resposta direta", "informação de acesso", "CTA coerente", "FAQ", "schema", "ligação com a operação real", "fontes verificáveis"],
+      "must_not_have": ["enchimento genérico", "promessas não verificadas", "informação operacional instável sem ressalva", "mistura de idioma", "texto copiado de guia externo"]
+    },
+    "review_process": ["validar fonte", "reescrever com voz da Embaixada Carioca", "conferir idioma", "conferir operação real", "validar SEO/AIO", "validar visual e performance"]
+  }
+}
