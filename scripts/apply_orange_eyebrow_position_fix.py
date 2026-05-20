@@ -3,10 +3,10 @@
 Orange Eyebrow Position Fix — Embaixada Carioca
 
 Move a linha laranja do hero conforme ajuste visual fino:
-- base anterior: 1cm para cima e 1cm para a direita;
-- ajuste atual: 3px para a esquerda e 7px para baixo.
+- base anterior: translate(35px, -31px);
+- ajuste atual solicitado: 16px para baixo e 6px para a direita.
 
-Resultado final: translate(35px, -31px).
+Resultado final: translate(41px, -15px).
 Aplica como override final para não ser sobrescrito pelos demais scripts.
 """
 from __future__ import annotations
@@ -26,7 +26,7 @@ CSS_BLOCK = f"""{CSS_START}
   .hero .hero-eyebrow,
   .page-hero .hero-eyebrow {{
     position: relative !important;
-    transform: translate(35px, -31px) !important;
+    transform: translate(41px, -15px) !important;
     will-change: transform;
   }}
 }}
@@ -61,7 +61,10 @@ def write_report() -> None:
         "# Orange Eyebrow Position Fix",
         "",
         "## Objetivo",
-        "Mover a linha laranja do hero 3px para a esquerda e 7px para baixo em relação ao ajuste anterior, preservando o conjunto linha + texto.",
+        "Mover a linha laranja do hero 16px para baixo e 6px para a direita em relação ao ajuste anterior.",
+        "",
+        "## Resultado técnico",
+        "- transform: translate(41px, -15px)",
         "",
         "## Contadores",
     ]
