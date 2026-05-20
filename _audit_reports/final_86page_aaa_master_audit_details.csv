@@ -1,0 +1,87 @@
+page,kind,status,overall_score,score_language,score_seo,score_geo_aio_sai,score_ux_conversion,score_design_brand,score_contrast_readability,score_images_performance,score_technical_integrity,failures
+404.html,utility,WARN,7.6,10.0,10.0,10.0,8.6,5.7,0.0,8.0,8.3,ux_conversion:top_nav_present | design_brand:brand_manual_lock;final_design_lock;brand_palette_present | contrast_readability:legibility_lock_present;readability_emergency_lock;hard_readability_lock;webkit_reset;dark_background_light_text;light_cards_dark_text | images_performance:cache_or_perf_report_lock | technical_integrity:no_broken_template_tokens
+almoco-morro-da-urca.html,lunch,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+almoco.html,lunch,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+cafe-da-manha-com-vista-rio-de-janeiro.html,breakfast,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+cafe-da-manha-pao-de-acucar.html,breakfast,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+cafe-da-manha.html,breakfast,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+caipirinha-com-vista-rio.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+cardapio.html,menu,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+como-chegar.html,access,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+contato.html,territory,WARN,9.7,10.0,8.9,10.0,10.0,10.0,10.0,10.0,8.3,seo:viewport_present | technical_integrity:no_broken_template_tokens
+en/almoco-morro-da-urca.html,lunch,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/almoco.html,lunch,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/breakfast-with-a-view-rio-de-janeiro.html,breakfast,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+en/cafe-da-manha-pao-de-acucar.html,breakfast,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/cafe-da-manha.html,breakfast,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/caipirinha-com-vista-rio.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/cardapio.html,menu,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/contato.html,territory,WARN,9.7,10.0,8.9,10.0,10.0,10.0,10.0,10.0,8.3,seo:viewport_present | technical_integrity:no_broken_template_tokens
+en/entardecer.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/eventos.html,events,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/feijoada-com-vista-rio-de-janeiro.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/feijoada.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/gastronomia-carioca.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/guia-do-rio.html,guide,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/how-to-get-there.html,access,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+en/index.html,home,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/morro-da-urca.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/nossa-visao.html,territory,WARN,9.7,10.0,8.9,10.0,10.0,10.0,10.0,10.0,8.3,seo:viewport_present | technical_integrity:no_broken_template_tokens
+en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/parque-bondinho.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/por-do-sol-morro-da-urca.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/restaurant-at-urca-hill.html,territory,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+en/restaurants-near-sugarloaf-mountain.html,territory,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+en/roteiro-meio-dia-urca-pao-de-acucar.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+en/sugarloaf-cable-car-park.html,territory,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+en/sugarloaf-cable-car-restaurant.html,territory,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+en/sunset.html,territory,WARN,9.7,10.0,8.9,10.0,10.0,10.0,10.0,10.0,8.3,seo:description_length_ok | technical_integrity:no_broken_template_tokens
+en/where-to-eat-near-sugarloaf.html,territory,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+entardecer.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/almoco-morro-da-urca.html,lunch,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/almoco.html,lunch,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/atardecer.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/cafe-da-manha-pao-de-acucar.html,breakfast,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/cafe-da-manha.html,breakfast,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/caipirinha-com-vista-rio.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/cardapio.html,menu,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/como-llegar.html,access,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+es/contato.html,territory,WARN,9.7,10.0,8.9,10.0,10.0,10.0,10.0,10.0,8.3,seo:viewport_present | technical_integrity:no_broken_template_tokens
+es/desayuno-con-vista-rio-de-janeiro.html,breakfast,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+es/donde-comer-cerca-del-pan-de-azucar.html,territory,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+es/entardecer.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/eventos.html,events,WARN,9.7,10.0,8.9,10.0,10.0,10.0,10.0,10.0,8.3,seo:description_length_ok | technical_integrity:no_broken_template_tokens
+es/feijoada-com-vista-rio-de-janeiro.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/feijoada.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/gastronomia-carioca.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/guia-do-rio.html,guide,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/index.html,home,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/morro-da-urca.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/nossa-visao.html,territory,WARN,9.7,10.0,8.9,10.0,10.0,10.0,10.0,10.0,8.3,seo:viewport_present | technical_integrity:no_broken_template_tokens
+es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/parque-bondinho-pan-de-azucar.html,territory,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+es/parque-bondinho.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/por-do-sol-morro-da-urca.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+es/restaurante-bondinho-pan-de-azucar.html,territory,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+es/restaurante-morro-da-urca.html,territory,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+es/restaurantes-cerca-del-pan-de-azucar.html,territory,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+es/roteiro-meio-dia-urca-pao-de-acucar.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+eventos.html,events,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+feijoada-com-vista-rio-de-janeiro.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+feijoada.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+gastronomia-carioca.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+guia-do-rio.html,guide,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+home-preview.html,utility,WARN,7.6,10.0,8.9,10.0,10.0,5.7,0.0,8.0,8.3,seo:description_present | design_brand:brand_manual_lock;final_design_lock;brand_palette_present | contrast_readability:legibility_lock_present;readability_emergency_lock;hard_readability_lock;webkit_reset;dark_background_light_text;light_cards_dark_text | images_performance:cache_or_perf_report_lock | technical_integrity:no_broken_template_tokens
+index.html,home,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+morro-da-urca.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+nossa-visao.html,territory,WARN,9.7,10.0,8.9,10.0,10.0,10.0,10.0,10.0,8.3,seo:viewport_present | technical_integrity:no_broken_template_tokens
+o-que-fazer-depois-do-bondinho-pao-de-acucar.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+offline.html,utility,WARN,7.4,10.0,8.9,10.0,8.6,5.7,0.0,8.0,8.3,seo:description_present | ux_conversion:top_nav_present | design_brand:brand_manual_lock;final_design_lock;brand_palette_present | contrast_readability:legibility_lock_present;readability_emergency_lock;hard_readability_lock;webkit_reset;dark_background_light_text;light_cards_dark_text | images_performance:cache_or_perf_report_lock | technical_integrity:no_broken_template_tokens
+onde-comer-no-pao-de-acucar.html,territory,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+parque-bondinho-pao-de-acucar.html,territory,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+parque-bondinho.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+por-do-sol-morro-da-urca.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
+restaurante-bondinho-pao-de-acucar.html,territory,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+restaurante-morro-da-urca.html,territory,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+restaurantes-perto-do-pao-de-acucar.html,territory,WARN,9.4,10.0,10.0,10.0,10.0,7.1,10.0,10.0,8.3,design_brand:final_design_lock;button_hierarchy_lock | technical_integrity:no_broken_template_tokens
+roteiro-meio-dia-urca-pao-de-acucar.html,territory,WARN,9.8,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3,technical_integrity:no_broken_template_tokens
