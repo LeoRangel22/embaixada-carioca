@@ -39,6 +39,7 @@ on:
       - 'scripts/apply_sprint51_access_openinghours_fix.py'
       - 'scripts/apply_sprint1_5_excellence_audit.py'
       - 'scripts/apply_live_visual_postdeploy_fixes.py'
+      - 'scripts/apply_rich_results_performance_fixes.py'
       - 'scripts/apply_structural_restaurant_site_audit.py'
       - 'data/gsc_click_magnet_queries.json'
       - 'data/rio_authoritative_content_sources.json'
@@ -119,6 +120,8 @@ jobs:
         run: python3 scripts/apply_sprint1_5_excellence_audit.py
       - name: Run live visual post-deploy fixes script
         run: python3 scripts/apply_live_visual_postdeploy_fixes.py
+      - name: Run rich results and performance fixes script
+        run: python3 scripts/apply_rich_results_performance_fixes.py
       - name: Run deep restaurant site audit script
         run: python3 scripts/apply_structural_restaurant_site_audit.py
       - name: Commit changes
