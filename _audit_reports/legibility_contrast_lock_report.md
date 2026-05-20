@@ -11,7 +11,7 @@ Aumentar a legibilidade do menu e do corpo em áreas escuras, preservando seçõ
 
 ## Contadores
 - html_scanned: 83
-- html_updated: 83
+- html_updated: 0
 - css_injected: 83
 - audit_pass: 83
 - audit_warn: 0
