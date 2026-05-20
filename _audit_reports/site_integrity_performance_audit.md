@@ -22,7 +22,7 @@
 - sitemap_urls_fixed: 0
 - sitemap_blocks_removed: 0
 - subpage_top_synced: 76
-- subpage_eyebrow_synced: 70
+- subpage_eyebrow_synced: 73
 
 ## Correções aplicadas
 - CANONICAL: 404.html -> https://www.embaixadacarioca.com/404.html
@@ -194,20 +194,20 @@
 
 ## Maiores páginas HTML
 - index.html: 274.7 KB
-- es/index.html: 264.4 KB
-- en/index.html: 261.6 KB
-- es/guia-do-rio.html: 184.1 KB
+- es/index.html: 264.5 KB
+- en/index.html: 261.7 KB
+- es/guia-do-rio.html: 184.2 KB
 - en/guia-do-rio.html: 183.6 KB
-- guia-do-rio.html: 183.4 KB
-- cafe-da-manha.html: 182.6 KB
+- guia-do-rio.html: 183.5 KB
+- cafe-da-manha.html: 182.7 KB
 - es/cafe-da-manha.html: 176.0 KB
-- en/cafe-da-manha.html: 175.7 KB
+- en/cafe-da-manha.html: 175.8 KB
 - almoco.html: 170.7 KB
-- cardapio.html: 168.2 KB
-- entardecer.html: 165.1 KB
+- cardapio.html: 168.3 KB
+- entardecer.html: 165.2 KB
 - es/cardapio.html: 161.9 KB
-- en/cardapio.html: 161.3 KB
-- en/almoco.html: 160.7 KB
+- en/cardapio.html: 161.4 KB
+- en/almoco.html: 160.8 KB
 
 ## Maiores assets de imagem
 - assets/sunset-dj-cabine-pao-acucar.png: 573.2 KB [ACIMA DE 300 KB]

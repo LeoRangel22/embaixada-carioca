@@ -16,7 +16,7 @@
 - sw_registered: 85
 - hero_preload_optimized: 15
 - hero_picture_optimized: 15
-- lazy_images_marked: 0
+- lazy_images_marked: 3
 
 ## Arquivos
 - STATIC: _headers criado para Cloudflare/Netlify

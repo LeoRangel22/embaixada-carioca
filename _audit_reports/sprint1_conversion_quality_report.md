@@ -11,7 +11,7 @@
 ## Contadores
 - html_scanned: 86
 - html_updated: 81
-- language_fixes: 14
+- language_fixes: 15
 - duplication_fixes: 0
 - meta_fixes: 0
 - schema_injected: 86
@@ -39,6 +39,7 @@
 - UPDATED: caipirinha-com-vista-rio.html
 - SCHEMA: cardapio.html | schema principal validado/injetado
 - UPDATED: cardapio.html
+- LANG_FIX: como-chegar.html [pt] | 'para quién' -> 'para quem' | 1
 - HASMAP_FIX: como-chegar.html | hasMap corrigido
 - SCHEMA: como-chegar.html | schema principal validado/injetado
 - UPDATED: como-chegar.html

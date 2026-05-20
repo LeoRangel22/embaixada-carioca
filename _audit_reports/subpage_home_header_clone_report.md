@@ -9,7 +9,7 @@
 - scanned: 86
 - updated: 76
 - skipped: 10
-- eyebrows_synced: 70
+- eyebrows_synced: 73
 
 ## Arquivos
 - UPDATED: almoco-morro-da-urca.html
