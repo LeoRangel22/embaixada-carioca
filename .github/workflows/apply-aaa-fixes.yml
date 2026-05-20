@@ -1,4 +1,4 @@
-# Updated 2026-05-20: Node.js 24 forced (Node.js 20 deprecated June 2026)
+# Updated 2026-05-20: actions/checkout upgraded to v6 (Node.js 24 native support)
 name: Apply AAA site fixes
 
 on:
@@ -42,6 +42,71 @@ permissions:
 jobs:
   apply-fixes:
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Run technical correction script
+        run: python3 scripts/apply_aaa_site_fixes.py
+      - name: Run editorial polish script
+        run: python3 scripts/apply_aaa_editorial_fixes.py
+      - name: Run language score 9 polish script
+        run: python3 scripts/apply_language_score9_fixes.py
+      - name: Run SEO GEO AI 95 polish script
+        run: python3 scripts/apply_seo_geo_ai_95_polish.py
+      - name: Run high-intent home cleanup script
+        run: python3 scripts/apply_home_high_intent_95_fixes.py
+      - name: Run design performance fixes script
+        run: python3 scripts/apply_design_performance_fixes.py
+      - name: Run topic authority monopoly script
+        run: python3 scripts/apply_topic_authority_clusters.py
+      - name: Run GSC CTR optimization script
+        run: python3 scripts/apply_gsc_ctr_optimization.py
+      - name: Run search territory phase one script
+        run: python3 scripts/apply_search_territory_phase1.py
+      - name: Run home hero efficiency fixes script
+        run: python3 scripts/apply_home_hero_efficiency_fixes.py
+      - name: Run Google review link correction script
+        run: python3 scripts/apply_google_review_link_fix.py
+      - name: Run site integrity audit script
+        run: python3 scripts/apply_site_integrity_refinements.py
+      - name: Run GA4 analytics foundation script
+        run: python3 scripts/apply_google_analytics_foundation.py
+      - name: Run strict subpage home header clone script
+        run: python3 scripts/apply_subpage_home_header_clone.py
+      - name: Run final subpage header override script
+        run: python3 scripts/apply_subpage_home_header_final_override.py
+      - name: Run performance cache image refinements script
+        run: python3 scripts/apply_performance_cache_image_refinements.py
+      - name: Run final language integrity guard script
+        run: python3 scripts/apply_language_integrity_guard.py
+      - name: Run final quality repairs script
+        run: python3 scripts/apply_final_quality_repairs.py
+      - name: Restore locale-specific copy after repairs
+        run: python3 scripts/apply_locale_restore_after_repairs.py
+      - name: Run sprint 1 conversion quality fixes script
+        run: python3 scripts/apply_sprint1_conversion_quality_fixes.py
+      - name: Run sprint 2 keyword GEO growth script
+        run: python3 scripts/apply_sprint2_keyword_geo_growth.py
+      - name: Run sprint 2 locale quality gate script
+        run: python3 scripts/apply_sprint2_locale_quality_fix.py
+      - name: Run sprint 3 how to get there access cluster script
+        run: python3 scripts/apply_sprint3_como_chegar_access_cluster.py
+      - name: Run sprint 3 design consistency gate script
+        run: python3 scripts/apply_sprint3_design_consistency_gate.py
+      - name: Run sprint 1 2 3 final visual validation script
+        run: python3 scripts/apply_sprint123_final_visual_validation.py
+      - name: Run deep restaurant site audit script
+        run: python3 scripts/apply_structural_restaurant_site_audit.py
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "fix: apply AAA site fixes"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
