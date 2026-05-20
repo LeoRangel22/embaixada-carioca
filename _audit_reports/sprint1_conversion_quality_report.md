@@ -10,8 +10,8 @@
 
 ## Contadores
 - html_scanned: 80
-- html_updated: 80
-- language_fixes: 34
+- html_updated: 75
+- language_fixes: 11
 - duplication_fixes: 0
 - meta_fixes: 0
 - schema_injected: 80
@@ -21,31 +21,21 @@
 - reports_written: 0
 
 ## Ações aplicadas
-- LANG_FIX: 404.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: 404.html | schema principal validado/injetado
-- UPDATED: 404.html
-- LANG_FIX: almoco-morro-da-urca.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: almoco-morro-da-urca.html | schema principal validado/injetado
 - UPDATED: almoco-morro-da-urca.html
 - LANG_FIX: almoco.html [pt] | 'Para quién' -> 'Para quem' | 1
-- LANG_FIX: almoco.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: almoco.html | schema principal validado/injetado
 - UPDATED: almoco.html
-- LANG_FIX: cafe-da-manha-pao-de-acucar.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: cafe-da-manha-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: cafe-da-manha-pao-de-acucar.html
-- LANG_FIX: cafe-da-manha.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: cafe-da-manha.html | schema principal validado/injetado
 - UPDATED: cafe-da-manha.html
-- LANG_FIX: caipirinha-com-vista-rio.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: caipirinha-com-vista-rio.html | schema principal validado/injetado
 - UPDATED: caipirinha-com-vista-rio.html
-- LANG_FIX: cardapio.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: cardapio.html | schema principal validado/injetado
 - UPDATED: cardapio.html
-- LANG_FIX: contato.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: contato.html | schema principal validado/injetado
-- UPDATED: contato.html
 - SCHEMA: en/almoco-morro-da-urca.html | schema principal validado/injetado
 - UPDATED: en/almoco-morro-da-urca.html
 - SCHEMA: en/almoco.html | schema principal validado/injetado
@@ -103,7 +93,6 @@
 - PHONE_FIX: en/where-to-eat-near-sugarloaf.html | +55-21-96683-7556 -> +55 21 96683-7556 | 1
 - SCHEMA: en/where-to-eat-near-sugarloaf.html | schema principal validado/injetado
 - UPDATED: en/where-to-eat-near-sugarloaf.html
-- LANG_FIX: entardecer.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: entardecer.html | schema principal validado/injetado
 - UPDATED: entardecer.html
 - SCHEMA: es/almoco-morro-da-urca.html | schema principal validado/injetado
@@ -164,41 +153,27 @@
 - SCHEMA: es/roteiro-meio-dia-urca-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: es/roteiro-meio-dia-urca-pao-de-acucar.html
 - LANG_FIX: eventos.html [pt] | 'Para quién' -> 'Para quem' | 1
-- LANG_FIX: eventos.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: eventos.html | schema principal validado/injetado
 - UPDATED: eventos.html
-- LANG_FIX: feijoada-com-vista-rio-de-janeiro.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: feijoada-com-vista-rio-de-janeiro.html | schema principal validado/injetado
 - UPDATED: feijoada-com-vista-rio-de-janeiro.html
-- LANG_FIX: feijoada.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: feijoada.html | schema principal validado/injetado
 - UPDATED: feijoada.html
-- LANG_FIX: gastronomia-carioca.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: gastronomia-carioca.html | schema principal validado/injetado
 - UPDATED: gastronomia-carioca.html
 - LANG_FIX: guia-do-rio.html [pt] | 'Para quién' -> 'Para quem' | 1
-- LANG_FIX: guia-do-rio.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: guia-do-rio.html | schema principal validado/injetado
 - UPDATED: guia-do-rio.html
-- LANG_FIX: home-preview.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: home-preview.html | schema principal validado/injetado
-- UPDATED: home-preview.html
 - LANG_FIX: index.html [pt] | 'Para quién' -> 'Para quem' | 2
-- LANG_FIX: index.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: index.html | schema principal validado/injetado
 - UPDATED: index.html
-- LANG_FIX: morro-da-urca.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: morro-da-urca.html | schema principal validado/injetado
 - UPDATED: morro-da-urca.html
-- LANG_FIX: nossa-visao.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: nossa-visao.html | schema principal validado/injetado
-- UPDATED: nossa-visao.html
-- LANG_FIX: o-que-fazer-depois-do-bondinho-pao-de-acucar.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html
-- LANG_FIX: offline.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: offline.html | schema principal validado/injetado
-- UPDATED: offline.html
 - LANG_FIX: onde-comer-no-pao-de-acucar.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - PHONE_FIX: onde-comer-no-pao-de-acucar.html | +55-21-96683-7556 -> +55 21 96683-7556 | 1
 - SCHEMA: onde-comer-no-pao-de-acucar.html | schema principal validado/injetado
@@ -207,10 +182,8 @@
 - PHONE_FIX: parque-bondinho-pao-de-acucar.html | +55-21-96683-7556 -> +55 21 96683-7556 | 1
 - SCHEMA: parque-bondinho-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: parque-bondinho-pao-de-acucar.html
-- LANG_FIX: parque-bondinho.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: parque-bondinho.html | schema principal validado/injetado
 - UPDATED: parque-bondinho.html
-- LANG_FIX: por-do-sol-morro-da-urca.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: por-do-sol-morro-da-urca.html | schema principal validado/injetado
 - UPDATED: por-do-sol-morro-da-urca.html
 - LANG_FIX: restaurante-bondinho-pao-de-acucar.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
@@ -226,7 +199,6 @@
 - SCHEMA: restaurantes-perto-do-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: restaurantes-perto-do-pao-de-acucar.html
 - LANG_FIX: roteiro-meio-dia-urca-pao-de-acucar.html [pt] | 'Para quién' -> 'Para quem' | 1
-- LANG_FIX: roteiro-meio-dia-urca-pao-de-acucar.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: roteiro-meio-dia-urca-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: roteiro-meio-dia-urca-pao-de-acucar.html
 
