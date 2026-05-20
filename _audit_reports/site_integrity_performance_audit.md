@@ -207,7 +207,7 @@
 - es/eventos.html: 172.9 KB
 - eventos.html: 172.7 KB
 - entardecer.html: 172.3 KB
-- en/eventos.html: 169.3 KB
+- en/almoco.html: 171.1 KB
 
 ## Maiores assets de imagem
 - assets/sunset-dj-cabine-pao-acucar.png: 573.2 KB [ACIMA DE 300 KB]

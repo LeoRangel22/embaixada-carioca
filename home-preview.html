@@ -4,6 +4,7 @@
 
 
 
+
 <link rel="canonical" href="https://www.embaixadacarioca.com/home-preview.html">
 <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -307,7 +308,7 @@ nav.top .nav-inner > .btn::after{content:none!important;display:none!important}
 </head>
 <body class="layout-a">
   <nav class="topnav" aria-label="Navegação de prevista">
-    <img src="/assets/logo-branco.svg" alt="Embaixada Carioca" />
+    <img src="/assets/logo-branco.svg" alt="Embaixada Carioca" / loading="lazy" decoding="async">
     <div class="menu">
       <a href="cafe-da-manha.html">Café da manhã</a>
       <a href="almoco.html">Almoço</a>
@@ -348,7 +349,7 @@ nav.top .nav-inner > .btn::after{content:none!important;display:none!important}
       <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Embaixada+Carioca+Morro+da+Urca">Como chegar</a>
     </div>
 
-    <img class="logo-mark" src="/assets/logo-branco.svg" alt="" aria-hidden="true" />
+    <img class="logo-mark" src="/assets/logo-branco.svg" alt="" aria-hidden="true" / loading="lazy" decoding="async">
 
     <div class="bottom-info"><span>22°56′58″S · 43°9′55″W · Morro da Urca</span><span>Reservas via Tagme · +55 21 96683-7556</span></div>
   </header>
@@ -375,5 +376,14 @@ nav.top .nav-inner > .btn::after{content:none!important;display:none!important}
       a.classList.toggle('active', a.dataset.layout === layout);
     });
   </script>
+<!-- EC Performance Service Worker -->
+<script>
+(function(){
+  if(!('serviceWorker' in navigator) || location.protocol !== 'https:') return;
+  var run=function(){navigator.serviceWorker.register('/sw.js').catch(function(){});};
+  if('requestIdleCallback' in window) requestIdleCallback(run, {timeout: 3500}); else window.addEventListener('load', run);
+})();
+</script>
+<!-- /EC Performance Service Worker -->
 </body>
 </html>

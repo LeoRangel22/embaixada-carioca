@@ -7,22 +7,25 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - html_scanned: 86
 - html_updated: 86
 - css_injected: 86
-- pins_removed: 18
+- pins_removed: 56
 - rating_badges_replaced: 74
 
 ## Ações
 - CSS: 404.html
+- PIN: almoco-morro-da-urca.html | 1
 - RATING: almoco-morro-da-urca.html | 1
 - CSS: almoco-morro-da-urca.html
 - PIN: almoco.html | 1
 - RATING: almoco.html | 1
 - CSS: almoco.html
 - CSS: cafe-da-manha-com-vista-rio-de-janeiro.html
+- PIN: cafe-da-manha-pao-de-acucar.html | 1
 - RATING: cafe-da-manha-pao-de-acucar.html | 1
 - CSS: cafe-da-manha-pao-de-acucar.html
 - PIN: cafe-da-manha.html | 1
 - RATING: cafe-da-manha.html | 1
 - CSS: cafe-da-manha.html
+- PIN: caipirinha-com-vista-rio.html | 1
 - RATING: caipirinha-com-vista-rio.html | 1
 - CSS: caipirinha-com-vista-rio.html
 - PIN: cardapio.html | 1
@@ -31,32 +34,39 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - RATING: como-chegar.html | 1
 - CSS: como-chegar.html
 - CSS: contato.html
+- PIN: en/almoco-morro-da-urca.html | 1
 - RATING: en/almoco-morro-da-urca.html | 1
 - CSS: en/almoco-morro-da-urca.html
 - PIN: en/almoco.html | 1
 - RATING: en/almoco.html | 1
 - CSS: en/almoco.html
 - CSS: en/breakfast-with-a-view-rio-de-janeiro.html
+- PIN: en/cafe-da-manha-pao-de-acucar.html | 1
 - RATING: en/cafe-da-manha-pao-de-acucar.html | 1
 - CSS: en/cafe-da-manha-pao-de-acucar.html
 - PIN: en/cafe-da-manha.html | 1
 - RATING: en/cafe-da-manha.html | 1
 - CSS: en/cafe-da-manha.html
+- PIN: en/caipirinha-com-vista-rio.html | 1
 - RATING: en/caipirinha-com-vista-rio.html | 1
 - CSS: en/caipirinha-com-vista-rio.html
 - PIN: en/cardapio.html | 1
 - RATING: en/cardapio.html | 1
 - CSS: en/cardapio.html
 - CSS: en/contato.html
+- PIN: en/entardecer.html | 1
 - RATING: en/entardecer.html | 1
 - CSS: en/entardecer.html
 - PIN: en/eventos.html | 1
 - RATING: en/eventos.html | 1
 - CSS: en/eventos.html
+- PIN: en/feijoada-com-vista-rio-de-janeiro.html | 1
 - RATING: en/feijoada-com-vista-rio-de-janeiro.html | 1
 - CSS: en/feijoada-com-vista-rio-de-janeiro.html
+- PIN: en/feijoada.html | 1
 - RATING: en/feijoada.html | 1
 - CSS: en/feijoada.html
+- PIN: en/gastronomia-carioca.html | 1
 - RATING: en/gastronomia-carioca.html | 1
 - CSS: en/gastronomia-carioca.html
 - PIN: en/guia-do-rio.html | 1
@@ -67,43 +77,54 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - PIN: en/index.html | 1
 - RATING: en/index.html | 1
 - CSS: en/index.html
+- PIN: en/morro-da-urca.html | 1
 - RATING: en/morro-da-urca.html | 1
 - CSS: en/morro-da-urca.html
 - CSS: en/nossa-visao.html
+- PIN: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | 1
 - RATING: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | 1
 - CSS: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- PIN: en/parque-bondinho.html | 1
 - RATING: en/parque-bondinho.html | 1
 - CSS: en/parque-bondinho.html
+- PIN: en/por-do-sol-morro-da-urca.html | 1
 - RATING: en/por-do-sol-morro-da-urca.html | 1
 - CSS: en/por-do-sol-morro-da-urca.html
 - RATING: en/restaurant-at-urca-hill.html | 1
 - CSS: en/restaurant-at-urca-hill.html
 - RATING: en/restaurants-near-sugarloaf-mountain.html | 1
 - CSS: en/restaurants-near-sugarloaf-mountain.html
+- PIN: en/roteiro-meio-dia-urca-pao-de-acucar.html | 1
 - RATING: en/roteiro-meio-dia-urca-pao-de-acucar.html | 1
 - CSS: en/roteiro-meio-dia-urca-pao-de-acucar.html
 - RATING: en/sugarloaf-cable-car-park.html | 1
 - CSS: en/sugarloaf-cable-car-park.html
 - RATING: en/sugarloaf-cable-car-restaurant.html | 1
 - CSS: en/sugarloaf-cable-car-restaurant.html
+- PIN: en/sunset.html | 1
 - RATING: en/sunset.html | 1
 - CSS: en/sunset.html
 - RATING: en/where-to-eat-near-sugarloaf.html | 1
 - CSS: en/where-to-eat-near-sugarloaf.html
+- PIN: entardecer.html | 1
 - RATING: entardecer.html | 1
 - CSS: entardecer.html
+- PIN: es/almoco-morro-da-urca.html | 1
 - RATING: es/almoco-morro-da-urca.html | 1
 - CSS: es/almoco-morro-da-urca.html
 - PIN: es/almoco.html | 1
 - RATING: es/almoco.html | 1
 - CSS: es/almoco.html
+- PIN: es/atardecer.html | 1
 - RATING: es/atardecer.html | 1
 - CSS: es/atardecer.html
+- PIN: es/cafe-da-manha-pao-de-acucar.html | 1
 - RATING: es/cafe-da-manha-pao-de-acucar.html | 1
 - CSS: es/cafe-da-manha-pao-de-acucar.html
 - PIN: es/cafe-da-manha.html | 1
 - RATING: es/cafe-da-manha.html | 1
 - CSS: es/cafe-da-manha.html
+- PIN: es/caipirinha-com-vista-rio.html | 1
 - RATING: es/caipirinha-com-vista-rio.html | 1
 - CSS: es/caipirinha-com-vista-rio.html
 - PIN: es/cardapio.html | 1
@@ -115,15 +136,19 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - CSS: es/desayuno-con-vista-rio-de-janeiro.html
 - RATING: es/donde-comer-cerca-del-pan-de-azucar.html | 1
 - CSS: es/donde-comer-cerca-del-pan-de-azucar.html
+- PIN: es/entardecer.html | 1
 - RATING: es/entardecer.html | 1
 - CSS: es/entardecer.html
 - PIN: es/eventos.html | 1
 - RATING: es/eventos.html | 1
 - CSS: es/eventos.html
+- PIN: es/feijoada-com-vista-rio-de-janeiro.html | 1
 - RATING: es/feijoada-com-vista-rio-de-janeiro.html | 1
 - CSS: es/feijoada-com-vista-rio-de-janeiro.html
+- PIN: es/feijoada.html | 1
 - RATING: es/feijoada.html | 1
 - CSS: es/feijoada.html
+- PIN: es/gastronomia-carioca.html | 1
 - RATING: es/gastronomia-carioca.html | 1
 - CSS: es/gastronomia-carioca.html
 - PIN: es/guia-do-rio.html | 1
@@ -132,15 +157,19 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - PIN: es/index.html | 1
 - RATING: es/index.html | 1
 - CSS: es/index.html
+- PIN: es/morro-da-urca.html | 1
 - RATING: es/morro-da-urca.html | 1
 - CSS: es/morro-da-urca.html
 - CSS: es/nossa-visao.html
+- PIN: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | 1
 - RATING: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | 1
 - CSS: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - RATING: es/parque-bondinho-pan-de-azucar.html | 1
 - CSS: es/parque-bondinho-pan-de-azucar.html
+- PIN: es/parque-bondinho.html | 1
 - RATING: es/parque-bondinho.html | 1
 - CSS: es/parque-bondinho.html
+- PIN: es/por-do-sol-morro-da-urca.html | 1
 - RATING: es/por-do-sol-morro-da-urca.html | 1
 - CSS: es/por-do-sol-morro-da-urca.html
 - RATING: es/restaurante-bondinho-pan-de-azucar.html | 1
@@ -149,15 +178,19 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - CSS: es/restaurante-morro-da-urca.html
 - RATING: es/restaurantes-cerca-del-pan-de-azucar.html | 1
 - CSS: es/restaurantes-cerca-del-pan-de-azucar.html
+- PIN: es/roteiro-meio-dia-urca-pao-de-acucar.html | 1
 - RATING: es/roteiro-meio-dia-urca-pao-de-acucar.html | 1
 - CSS: es/roteiro-meio-dia-urca-pao-de-acucar.html
 - PIN: eventos.html | 1
 - RATING: eventos.html | 1
 - CSS: eventos.html
+- PIN: feijoada-com-vista-rio-de-janeiro.html | 1
 - RATING: feijoada-com-vista-rio-de-janeiro.html | 1
 - CSS: feijoada-com-vista-rio-de-janeiro.html
+- PIN: feijoada.html | 1
 - RATING: feijoada.html | 1
 - CSS: feijoada.html
+- PIN: gastronomia-carioca.html | 1
 - RATING: gastronomia-carioca.html | 1
 - CSS: gastronomia-carioca.html
 - PIN: guia-do-rio.html | 1
@@ -167,9 +200,11 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - PIN: index.html | 1
 - RATING: index.html | 1
 - CSS: index.html
+- PIN: morro-da-urca.html | 1
 - RATING: morro-da-urca.html | 1
 - CSS: morro-da-urca.html
 - CSS: nossa-visao.html
+- PIN: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | 1
 - RATING: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | 1
 - CSS: o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - CSS: offline.html
@@ -177,8 +212,10 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - CSS: onde-comer-no-pao-de-acucar.html
 - RATING: parque-bondinho-pao-de-acucar.html | 1
 - CSS: parque-bondinho-pao-de-acucar.html
+- PIN: parque-bondinho.html | 1
 - RATING: parque-bondinho.html | 1
 - CSS: parque-bondinho.html
+- PIN: por-do-sol-morro-da-urca.html | 1
 - RATING: por-do-sol-morro-da-urca.html | 1
 - CSS: por-do-sol-morro-da-urca.html
 - RATING: restaurante-bondinho-pao-de-acucar.html | 1
@@ -187,5 +224,6 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - CSS: restaurante-morro-da-urca.html
 - RATING: restaurantes-perto-do-pao-de-acucar.html | 1
 - CSS: restaurantes-perto-do-pao-de-acucar.html
+- PIN: roteiro-meio-dia-urca-pao-de-acucar.html | 1
 - RATING: roteiro-meio-dia-urca-pao-de-acucar.html | 1
 - CSS: roteiro-meio-dia-urca-pao-de-acucar.html

@@ -669,5 +669,14 @@ nav.top.scrolled a.nav-rating-badge:visited {
 })();
 </script>
 <!-- /EC Performance Cache v1 -->
+<!-- EC Performance Service Worker -->
+<script>
+(function(){
+  if(!('serviceWorker' in navigator) || location.protocol !== 'https:') return;
+  var run=function(){navigator.serviceWorker.register('/sw.js').catch(function(){});};
+  if('requestIdleCallback' in window) requestIdleCallback(run, {timeout: 3500}); else window.addEventListener('load', run);
+})();
+</script>
+<!-- /EC Performance Service Worker -->
 </body>
 </html>

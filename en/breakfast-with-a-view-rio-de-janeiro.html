@@ -227,7 +227,7 @@ nav.top .nav-inner > .btn::after{content:none!important;display:none!important}
 </style>
 <!-- /EC Sprint 5 Quality Consolidation CSS -->
 <!-- EC Sprint 5 Quality Schema -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.embaixadacarioca.com/en/breakfast-with-a-view-rio-de-janeiro.html#webpage","url":"https://www.embaixadacarioca.com/en/breakfast-with-a-view-rio-de-janeiro.html","name":"Embaixada Carioca","inLanguage":"en","isPartOf":{"@id":"https://www.embaixadacarioca.com/#website"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Embaixada Carioca inside Sugarloaf Cable Car Park?","acceptedAnswer":{"@type":"Answer","text":"Yes. It is located at Urca Hill, the first stop of Sugarloaf Cable Car Park, which makes it practical for visitors already planning the attraction."}},{"@type":"Question","name":"Do I need to plan access before visiting?","acceptedAnswer":{"@type":"Answer","text":"Yes. Most visitors arrive by cable car with a park ticket. The Urca Hill trail can be a free alternative when open and suitable for the visitor."}},{"@type":"Question","name":"Is it better for breakfast, lunch or drinks?","acceptedAnswer":{"@type":"Answer","text":"It works for all three moments. Breakfast is best for an early scenic start, lunch for Brazilian food and afternoon for caipirinhas, draft beer and a slower view experience."}},{"@type":"Question","name":"Should groups reserve?","acceptedAnswer":{"@type":"Answer","text":"Yes. Reservations are recommended for groups, weekends, holidays and high-traffic tourism days to reduce waiting time and organize the visit."}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.embaixadacarioca.com/en/breakfast-with-a-view-rio-de-janeiro.html#webpage","url":"https://www.embaixadacarioca.com/en/breakfast-with-a-view-rio-de-janeiro.html","name":"Embaixada Carioca","inLanguage":"en","isPartOf":{"@id":"https://www.embaixadacarioca.com/#website"}}]}</script>
 <!-- /EC Sprint 5 Quality Schema -->
 <!-- EC Sprint 5.1 Excellence CSS -->
 <style id="ec-sprint51-excellence-css">
@@ -247,6 +247,9 @@ nav.top .nav-inner > .btn::after{content:none!important;display:none!important}
 <!-- EC Sprint 5.1 Excellence Schema -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Restaurant","@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca","url":"https://www.embaixadacarioca.com/","telephone":"+55 21 96683-7556","servesCuisine":["Brazilian","Carioca","Breakfast","Bar"],"acceptsReservations":true,"hasMenu":"https://www.embaixadacarioca.com/cardapio.html","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:30","closes":"21:00"}],"address":{"@type":"PostalAddress","streetAddress":"Av. Pasteur, 520 — Morro da Urca","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-22.9508333,"longitude":-43.1641667}},{"@type":"WebPage","@id":"https://www.embaixadacarioca.com/en/breakfast-with-a-view-rio-de-janeiro.html#webpage","url":"https://www.embaixadacarioca.com/en/breakfast-with-a-view-rio-de-janeiro.html","inLanguage":"en","isPartOf":{"@id":"https://www.embaixadacarioca.com/#website"}}]}</script>
 <!-- /EC Sprint 5.1 Excellence Schema -->
+<!-- EC Rich Results Consolidated FAQ -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://www.embaixadacarioca.com/en/breakfast-with-a-view-rio-de-janeiro.html#faq","mainEntity":[{"@type":"Question","name":"Is Embaixada Carioca inside Sugarloaf Cable Car Park?","acceptedAnswer":{"@type":"Answer","text":"Yes. It is located at Urca Hill, the first stop of Sugarloaf Cable Car Park, which makes it practical for visitors already planning the attraction."}},{"@type":"Question","name":"Do I need to plan access before visiting?","acceptedAnswer":{"@type":"Answer","text":"Yes. Most visitors arrive by cable car with a park ticket. The Urca Hill trail can be a free alternative when open and suitable for the visitor."}},{"@type":"Question","name":"Is it better for breakfast, lunch or drinks?","acceptedAnswer":{"@type":"Answer","text":"It works for all three moments. Breakfast is best for an early scenic start, lunch for Brazilian food and afternoon for caipirinhas, draft beer and a slower view experience."}},{"@type":"Question","name":"Should groups reserve?","acceptedAnswer":{"@type":"Answer","text":"Yes. Reservations are recommended for groups, weekends, holidays and high-traffic tourism days to reduce waiting time and organize the visit."}}]}</script>
+<!-- /EC Rich Results Consolidated FAQ -->
 </head>
 <body>
 <header class="top"><a class="brand" href="/en/">Embaixada Carioca</a><nav class="nav"><a href="/en/cafe-da-manha.html">Breakfast</a><a href="/en/almoco.html">Lunch</a><a href="/en/how-to-get-there.html">HOW TO GET THERE</a><a href="/en/cardapio.html">Menu</a></nav></header>
@@ -265,5 +268,14 @@ nav.top .nav-inner > .btn::after{content:none!important;display:none!important}
 <!-- /EC Sprint 5.1 Source-Based Excellence Block -->
 </main>
 <footer>Embaixada Carioca · Urca Hill · Sugarloaf Cable Car Park</footer>
+<!-- EC Performance Service Worker -->
+<script>
+(function(){
+  if(!('serviceWorker' in navigator) || location.protocol !== 'https:') return;
+  var run=function(){navigator.serviceWorker.register('/sw.js').catch(function(){});};
+  if('requestIdleCallback' in window) requestIdleCallback(run, {timeout: 3500}); else window.addEventListener('load', run);
+})();
+</script>
+<!-- /EC Performance Service Worker -->
 </body>
 </html>

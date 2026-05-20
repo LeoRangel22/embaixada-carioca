@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
 <link rel="canonical" href="https://www.embaixadacarioca.com/offline.html">
 <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -532,5 +533,14 @@ nav.top.scrolled a.nav-rating-badge:visited {
 })();
 </script>
 <!-- /EC Performance Cache v1 -->
+<!-- EC Performance Service Worker -->
+<script>
+(function(){
+  if(!('serviceWorker' in navigator) || location.protocol !== 'https:') return;
+  var run=function(){navigator.serviceWorker.register('/sw.js').catch(function(){});};
+  if('requestIdleCallback' in window) requestIdleCallback(run, {timeout: 3500}); else window.addEventListener('load', run);
+})();
+</script>
+<!-- /EC Performance Service Worker -->
 </body>
 </html>
