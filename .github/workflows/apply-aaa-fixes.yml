@@ -1,4 +1,4 @@
-# Manual trigger: 2026-05-19 sprint 1 conversion quality run
+# Manual trigger: 2026-05-19 sprint 2 keyword GEO growth run
 name: Apply AAA site fixes
 
 on:
@@ -27,6 +27,7 @@ on:
       - 'scripts/apply_final_quality_repairs.py'
       - 'scripts/apply_locale_restore_after_repairs.py'
       - 'scripts/apply_sprint1_conversion_quality_fixes.py'
+      - 'scripts/apply_sprint2_keyword_geo_growth.py'
       - 'scripts/apply_structural_restaurant_site_audit.py'
       - 'data/gsc_click_magnet_queries.json'
       - '.github/workflows/apply-aaa-fixes.yml'
@@ -82,6 +83,8 @@ jobs:
         run: python3 scripts/apply_locale_restore_after_repairs.py
       - name: Run sprint 1 conversion quality fixes script
         run: python3 scripts/apply_sprint1_conversion_quality_fixes.py
+      - name: Run sprint 2 keyword GEO growth script
+        run: python3 scripts/apply_sprint2_keyword_geo_growth.py
       - name: Run deep restaurant site audit script
         run: python3 scripts/apply_structural_restaurant_site_audit.py
       - name: Commit changes
