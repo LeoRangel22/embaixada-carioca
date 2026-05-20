@@ -8,11 +8,16 @@ Move a linha laranja do hero conforme ajuste visual fino:
 
 Resultado final: translate(37px, -6px).
 Aplica como override final para não ser sobrescrito pelos demais scripts.
+
+Também dispara a correção de link de cotação/eventos e e-mail .com.br porque este
+script já faz parte do workflow principal AAA.
 """
 from __future__ import annotations
 
 from pathlib import Path
 import re
+import subprocess
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 CSS_START = "<!-- EC Orange Eyebrow Position Fix -->"
@@ -34,7 +39,7 @@ CSS_BLOCK = f"""{CSS_START}
 {CSS_END}"""
 
 REPORT: list[str] = []
-COUNTERS = {"html_scanned": 0, "html_updated": 0, "css_injected": 0}
+COUNTERS = {"html_scanned": 0, "html_updated": 0, "css_injected": 0, "event_quote_email_fix_triggered": 0}
 
 
 def process(path: Path) -> None:
@@ -51,6 +56,16 @@ def process(path: Path) -> None:
         COUNTERS["html_updated"] += 1
         COUNTERS["css_injected"] += 1
         REPORT.append(f"UPDATED: {rel}")
+
+
+def run_event_quote_email_fix() -> None:
+    script = ROOT / "scripts" / "apply_event_quote_link_email_fix.py"
+    if not script.exists():
+        REPORT.append("EVENT_QUOTE_EMAIL_FIX: script not found")
+        return
+    subprocess.run([sys.executable, str(script)], check=True)
+    COUNTERS["event_quote_email_fix_triggered"] += 1
+    REPORT.append("EVENT_QUOTE_EMAIL_FIX: triggered")
 
 
 def write_report() -> None:
@@ -80,6 +95,7 @@ def write_report() -> None:
 def main() -> int:
     for path in sorted(ROOT.rglob("*.html")):
         process(path)
+    run_event_quote_email_fix()
     write_report()
     return 0
 
