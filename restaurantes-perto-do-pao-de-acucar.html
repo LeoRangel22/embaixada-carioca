@@ -363,11 +363,16 @@ nav.top,nav.top *{box-sizing:border-box!important;}
 <style id="ec-hero-pao-de-acucar-visual-lock">
 /* HERO VISUAL LOCK — pedra do Pão de Açúcar livre no centro */
 html,body{background:#00202e!important;overflow-x:hidden!important;}
-header.hero,.hero,.page-hero,.hero-photo,.hero-overlay,.hero-content{border:0!important;outline:0!important;box-shadow:none!important;}
-header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:none!important;}
+header.hero,.hero,.page-hero,.hero-photo,.page-hero-photo,.hero-overlay,.page-hero-overlay,.hero-content,.page-hero-content{
+  border:0!important;outline:0!important;box-shadow:none!important;
+}
+header.hero::before,header.hero::after,.hero::before,.hero::after,.page-hero::before,.page-hero::after{
+  box-shadow:none!important;border:0!important;outline:0!important;
+}
 
 @media (min-width:961px){
-  html body header.hero{
+  html body header.hero,
+  html body header.page-hero{
     --ec-hero-up-2cm:76px;
     --ec-hero-down-1cm:38px;
     --ec-hero-up-05cm:19px;
@@ -378,14 +383,21 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     overflow:hidden!important;
     isolation:isolate!important;
     background:#00202e!important;
+    padding:0!important;
   }
+
   html body header.hero img.hero-photo,
-  html body header.hero .hero-photo{
+  html body header.hero .hero-photo,
+  html body header.page-hero img.page-hero-photo,
+  html body header.page-hero .page-hero-photo,
+  html body header.page-hero picture.page-hero-photo img{
     position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
     object-fit:cover!important;object-position:center 44%!important;z-index:-2!important;
-    border:0!important;outline:0!important;box-shadow:none!important;
+    border:0!important;outline:0!important;box-shadow:none!important;background:transparent!important;
   }
-  html body header.hero .hero-overlay{
+
+  html body header.hero .hero-overlay,
+  html body header.page-hero .page-hero-overlay{
     position:absolute!important;inset:0!important;z-index:-1!important;
     background:
       linear-gradient(90deg,
@@ -399,14 +411,18 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
         rgba(0,32,46,.18) 46%,
         rgba(0,32,46,.76) 100%)!important;
   }
-  html body header.hero .hero-content{
+
+  html body header.hero .hero-content,
+  html body header.page-hero .page-hero-content{
     position:absolute!important;inset:0!important;z-index:3!important;display:block!important;
     width:100%!important;height:100%!important;max-width:none!important;margin:0!important;padding:0!important;
+    border:0!important;outline:0!important;box-shadow:none!important;
   }
   html body header.hero .hero-content>div:first-child{position:static!important;max-width:none!important;transform:none!important;}
 
-  /* Linha laranja: uma única posição para home e internas */
-  html body header.hero .hero-content .eyebrow.hero-eyebrow{
+  /* Linha laranja — posição única */
+  html body header.hero .hero-content .eyebrow.hero-eyebrow,
+  html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow{
     position:absolute!important;
     left:var(--ec-hero-eyebrow-left)!important;
     top:calc(clamp(136px,16vh,172px) - var(--ec-hero-up-2cm) + var(--ec-hero-down-1cm) - var(--ec-hero-up-05cm))!important;
@@ -417,12 +433,14 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     opacity:1!important;text-shadow:0 2px 12px rgba(0,32,46,.66)!important;z-index:10!important;
     margin:0!important;border:0!important;outline:0!important;
   }
-  html body header.hero .hero-content .eyebrow.hero-eyebrow::before{
+  html body header.hero .hero-content .eyebrow.hero-eyebrow::before,
+  html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow::before{
     width:32px!important;min-width:32px!important;height:2px!important;background:var(--amarelo,#f59b1e)!important;opacity:1!important;
   }
 
-  /* Título sempre à direita da pedra */
-  html body header.hero h1{
+  /* Título grande sempre à direita da pedra */
+  html body header.hero h1,
+  html body header.page-hero .page-hero-content h1{
     position:absolute!important;right:clamp(66px,5.5vw,126px)!important;
     top:calc(clamp(205px,23vh,270px) - var(--ec-hero-up-2cm))!important;
     max-width:min(610px,39vw)!important;font-size:clamp(38px,4.35vw,70px)!important;
@@ -430,8 +448,9 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     border:0!important;outline:0!important;box-shadow:none!important;
   }
 
-  /* Nas páginas internas, o texto pequeno sai do centro e fica no frame lateral */
-  html body:not([data-screen-label="Home"]) header.hero .hero-sub{
+  /* Páginas internas: texto pequeno sai do centro e vai para o frame lateral */
+  html body:not([data-screen-label="Home"]) header.hero .hero-sub,
+  html body header.page-hero .page-hero-content .lede{
     display:none!important;
   }
   html body[data-screen-label="Home"] header.hero .hero-sub{
@@ -440,14 +459,20 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     max-width:min(610px,40vw)!important;font-size:clamp(15px,1vw,18px)!important;line-height:1.55!important;margin:0!important;color:rgba(246,239,222,.95)!important;z-index:7!important;
   }
 
-  html body header.hero .hero-chips{
+  html body header.page-hero .page-hero-content .crumbs{display:none!important;}
+
+  html body header.hero .hero-chips,
+  html body header.page-hero .hero-chips{
     position:absolute!important;left:clamp(70px,5.5vw,118px)!important;
     bottom:calc(clamp(132px,15.8vh,172px) + var(--ec-hero-up-2cm))!important;
     max-width:min(760px,56vw)!important;margin:0!important;gap:8px!important;z-index:8!important;
     display:flex!important;flex-wrap:wrap!important;align-items:center!important;
   }
-  html body header.hero .hero-chips span{font-size:.82rem!important;padding:5px 13px!important;background:rgba(0,32,46,.42)!important;border-color:rgba(246,239,222,.28)!important;}
-  html body header.hero .hero-ctas{
+  html body header.hero .hero-chips span,
+  html body header.page-hero .hero-chips span{font-size:.82rem!important;padding:5px 13px!important;background:rgba(0,32,46,.42)!important;border-color:rgba(246,239,222,.28)!important;}
+
+  html body header.hero .hero-ctas,
+  html body header.page-hero .ctas{
     position:absolute!important;left:clamp(70px,5.5vw,118px)!important;
     bottom:calc(clamp(54px,7.2vh,82px) + var(--ec-hero-up-2cm))!important;
     max-width:min(900px,62vw)!important;gap:12px!important;z-index:8!important;
@@ -457,7 +482,8 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     position:absolute!important;inset:0!important;z-index:6!important;max-width:none!important;width:100%!important;height:100%!important;
     display:block!important;pointer-events:none!important;transform:none!important;padding:0!important;margin:0!important;
   }
-  html body header.hero aside.hero-side .hero-meta-card{
+  html body header.hero aside.hero-side .hero-meta-card,
+  html body header.page-hero .ec-page-hero-side-frame{
     position:absolute!important;left:clamp(38px,3vw,70px)!important;top:auto!important;
     bottom:calc(clamp(246px,28.5vh,315px) + var(--ec-hero-up-2cm))!important;
     width:min(214px,15vw)!important;min-height:clamp(310px,38vh,390px)!important;
@@ -466,10 +492,13 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     border:1px solid rgba(245,155,30,.24)!important;box-shadow:0 16px 40px rgba(0,0,0,.22)!important;
     backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important;z-index:8!important;overflow:hidden!important;
   }
-  html body header.hero aside.hero-side .hero-meta-card .hmc{display:block!important;padding:8px 0!important;}
-  html body header.hero aside.hero-side .hero-meta-card .hmc .l{display:block!important;width:100%!important;font-size:8px!important;letter-spacing:.30em!important;line-height:1!important;margin:0 0 10px!important;white-space:nowrap!important;color:var(--amarelo,#f59b1e)!important;}
-  html body header.hero aside.hero-side .hero-meta-card .hmc .v{display:block!important;width:100%!important;font-size:13px!important;line-height:1.30!important;margin:0!important;white-space:normal!important;color:var(--areia-pale,#f6efde)!important;}
-  html body:not([data-screen-label="Home"]) header.hero aside.hero-side .hero-meta-card .hmc.hero-summary-card .v{font-size:12.2px!important;line-height:1.26!important;}
+  html body header.hero aside.hero-side .hero-meta-card .hmc,
+  html body header.page-hero .ec-page-hero-side-frame .hmc{display:block!important;padding:8px 0!important;}
+  html body header.hero aside.hero-side .hero-meta-card .hmc .l,
+  html body header.page-hero .ec-page-hero-side-frame .hmc .l{display:block!important;width:100%!important;font-size:8px!important;letter-spacing:.30em!important;line-height:1!important;margin:0 0 10px!important;white-space:nowrap!important;color:var(--amarelo,#f59b1e)!important;text-transform:uppercase!important;font-family:"JetBrains Mono",monospace!important;}
+  html body header.hero aside.hero-side .hero-meta-card .hmc .v,
+  html body header.page-hero .ec-page-hero-side-frame .hmc .v{display:block!important;width:100%!important;font-size:13px!important;line-height:1.30!important;margin:0!important;white-space:normal!important;color:var(--areia-pale,#f6efde)!important;}
+  html body header.page-hero .ec-page-hero-side-frame .hmc.hero-summary-card .v{font-size:12.2px!important;line-height:1.26!important;}
 
   html body header.hero aside.hero-side img.hero-logo{
     position:absolute!important;left:72vw!important;top:auto!important;right:auto!important;
@@ -484,14 +513,19 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
 }
 
 @media (max-width:960px){
-  html body header.hero{border:0!important;outline:0!important;box-shadow:none!important;}
-  html body header.hero aside.hero-side{display:none!important;}
-  html body header.hero .hero-content{position:relative!important;display:grid!important;grid-template-columns:1fr!important;}
+  html body header.hero,html body header.page-hero{border:0!important;outline:0!important;box-shadow:none!important;}
+  html body header.hero aside.hero-side,html body header.page-hero .ec-page-hero-side-frame{display:none!important;}
+  html body header.hero .hero-content,html body header.page-hero .page-hero-content{position:relative!important;display:grid!important;grid-template-columns:1fr!important;}
   html body header.hero .hero-content .eyebrow.hero-eyebrow,
   html body header.hero h1,
   html body header.hero .hero-sub,
   html body header.hero .hero-chips,
-  html body header.hero .hero-ctas{position:static!important;white-space:normal!important;width:auto!important;}
+  html body header.hero .hero-ctas,
+  html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow,
+  html body header.page-hero .page-hero-content h1,
+  html body header.page-hero .page-hero-content .lede,
+  html body header.page-hero .hero-chips,
+  html body header.page-hero .ctas{position:static!important;white-space:normal!important;width:auto!important;display:revert!important;}
 }
 </style>
 <!-- /EC Hero Pao de Acucar Visual Lock -->
@@ -545,7 +579,15 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
 <a class="btn" href="https://go.tagme.com.br/embaixadacarioca">Reservar</a>
 </div>
 </nav>
-<header class="page-hero"><picture class="page-hero-photo"><source type="image/webp" srcset="/assets/hero-400w.webp 400w, /assets/hero-mobile.webp 600w, /assets/hero-800w.webp 800w, /assets/hero-1200w.webp 1200w, /assets/hero.webp 1920w" sizes="100vw"><img src="/assets/hero-1200w.webp" alt="Restaurantes perto do Pão de Açúcar — Embaixada Carioca" width="1920" height="1267" fetchpriority="high" decoding="async" loading="lazy"></picture><div class="page-hero-overlay"></div><div class="page-hero-content"><div class="eyebrow hero-eyebrow">Restaurante do Bondinho · Morro da Urca · Parque Bondinho Pão de Açúcar · Rio de Janeiro · Brasil</div><h1>Restaurantes perto do Pão de Açúcar</h1><p class="lede">Uma página para capturar quem compara Araá, Clássico Sunset Club, Terra Brasilis, Bar Urca, Flutuante, Fogo de Chão, Assador e opções do Parque Bondinho.</p><div class="hero-chips"><span>4.8★ · 7.779 avaliações</span><span>Parque Bondinho</span><span>Morro da Urca</span><span>Pão de Açúcar</span></div><div class="ctas"><a class="btn" href="https://go.tagme.com.br/embaixadacarioca">Reservar mesa</a><a class="btn ghost" href="/cardapio.html">Ver cardápio</a></div></div></header>
+<header class="page-hero"><picture class="page-hero-photo"><source type="image/webp" srcset="/assets/hero-400w.webp 400w, /assets/hero-mobile.webp 600w, /assets/hero-800w.webp 800w, /assets/hero-1200w.webp 1200w, /assets/hero.webp 1920w" sizes="100vw"><img src="/assets/hero-1200w.webp" alt="Restaurantes perto do Pão de Açúcar — Embaixada Carioca" width="1920" height="1267" fetchpriority="high" decoding="async" loading="lazy"></picture><div class="page-hero-overlay"></div><div class="page-hero-content"><div class="eyebrow hero-eyebrow">Restaurante do Bondinho · Morro da Urca · Parque Bondinho Pão de Açúcar · Rio de Janeiro · Brasil</div><h1>Restaurantes perto do Pão de Açúcar</h1><p class="lede">Uma página para capturar quem compara Araá, Clássico Sunset Club, Terra Brasilis, Bar Urca, Flutuante, Fogo de Chão, Assador e opções do Parque Bondinho.</p><div class="hero-chips"><span>4.8★ · 7.779 avaliações</span><span>Parque Bondinho</span><span>Morro da Urca</span><span>Pão de Açúcar</span></div><div class="ctas"><a class="btn" href="https://go.tagme.com.br/embaixadacarioca">Reservar mesa</a><a class="btn ghost" href="/cardapio.html">Ver cardápio</a></div></div>
+<!-- EC Hero Summary In Side Frame -->
+<aside class="ec-page-hero-side-frame" aria-label="Resumo">
+<div class="hmc"><span class="l">Hoje</span><span class="v">Por do sol às 17h44</span></div>
+<div class="hmc hero-summary-card"><span class="l">Resumo</span><span class="v">Uma página para capturar quem compara Araá, Clássico Sunset Club, Terra Brasilis, Bar Urca, Flutuante, Fogo de Chão, Assador e opções do Parque Bondinho.</span></div>
+<div class="hmc"><span class="l">Vista</span><span class="v">Pão de Açúcar em primeiro plano</span></div>
+</aside>
+<!-- /EC Hero Summary In Side Frame -->
+</header>
 <main><div class="wrap"><section class="direct-answer"><strong class="mono">Resposta direta</strong><p>Quem procura restaurantes perto do Pão de Açúcar pode comparar opções na Praia Vermelha, Urca, Botafogo e Morro da Urca. A Embaixada Carioca se posiciona como a opção dentro do Parque Bondinho, no Morro da Urca.</p></section><section class="section"><h2>Por que essa busca importa</h2><p>A busca local tem alta intenção: a pessoa está planejando o passeio, já está na região ou comparando onde comer.</p><p>O objetivo é responder de forma clara e mostrar quando a Embaixada Carioca é a opção mais natural: dentro do Parque Bondinho, no alto do Morro da Urca, com vista direta para o Pão de Açúcar.</p></section><section class="section"><h2>Quando escolher a Embaixada Carioca</h2><ul><li>Quando quiser comer dentro do circuito do Bondinho.</li><li>Quando a vista para o Pão de Açúcar for parte da experiência.</li><li>Quando quiser café da manhã, almoço brasileiro, caipirinha, chope ou evento no Morro da Urca.</li></ul></section><section class="section"><h2>Opções da região e como decidir</h2><div class="grid"><article class='card'><h3>Araá</h3><p>Busca relacionada ao ecossistema gastronômico do Bondinho.</p></article><article class='card'><h3>Clássico Sunset Club</h3><p>Busca associada a sunset e experiências no alto.</p></article><article class='card'><h3>Terra Brasilis</h3><p>Opção pesquisada por quem está na Praia Vermelha e Urca.</p></article><article class='card'><h3>Bar Urca</h3><p>Referência pesquisada por quem busca tradição na Urca.</p></article><article class='card'><h3>Flutuante</h3><p>Busca ligada a vista e Baía de Guanabara.</p></article><article class='card'><h3>Fogo de Chão e Assador</h3><p>Buscas comuns para quem pesquisa carne, grupos e vista no Rio.</p></article><article class='card'><h3>Embaixada Carioca</h3><p>Opção no Morro da Urca, dentro do Parque Bondinho, com café da manhã, almoço, drinks e eventos.</p></article></div><p><small>Guia editorial. As marcas citadas pertencem aos seus respectivos titulares.</small></p></section><section class="section faq"><h2>Perguntas frequentes</h2><details><summary>A Embaixada Carioca fica dentro do Parque Bondinho?</summary><p>Sim. Fica no Morro da Urca, na primeira parada do bondinho.</p></details><details><summary>Precisa comprar ingresso do Bondinho?</summary><p>Sim. O acesso ao Morro da Urca é feito pelo Parque Bondinho.</p></details><details><summary>Serve café da manhã e almoço?</summary><p>Sim. A casa serve café da manhã, almoço brasileiro, caipirinhas, chope e eventos.</p></details><details><summary>Esta página é uma comparação oficial com concorrentes?</summary><p>Não. É um guia editorial para ajudar o visitante a decidir onde comer na região.</p></details></section><section class="section"><h2>Continue explorando</h2><div class="territory-links"><a class="territory-link" href="/parque-bondinho-pao-de-acucar.html">Onde comer no Parque Bondinho Pão de Açúcar</a><a class="territory-link" href="/restaurante-bondinho-pao-de-acucar.html">Restaurante no Bondinho Pão de Açúcar</a><a class="territory-link" href="/onde-comer-no-pao-de-acucar.html">Onde comer no Pão de Açúcar</a><a class="territory-link" href="/restaurante-morro-da-urca.html">Restaurante no Morro da Urca</a></div></section></div><!-- EC Sprint 5 Quality Consolidation Block -->
 <section class="ec-sprint5-quality" aria-label="Quality guide"><div class="wrap"><h2>Guia prático para planejar a visita</h2><p>Esta página foi consolidada para responder às dúvidas que realmente influenciam a decisão do visitante: acesso, horário, tipo de experiência, vista, reserva e encaixe no roteiro do Pão de Açúcar. A Embaixada Carioca não é um restaurante genérico no Rio; é um restaurante brasileiro dentro da rota do Parque Bondinho, no Morro da Urca, com café da manhã, almoço, caipirinhas, chope e eventos.</p><div class="ec-sprint5-grid"><article class="ec-sprint5-card"><strong>Por que importa</strong>A localização reduz atrito para quem já está visitando o Pão de Açúcar e quer comer bem sem sair do atrativo.</article><article class="ec-sprint5-card"><strong>Melhor horário</strong>A manhã funciona para café com vista; o almoço para pratos brasileiros; o fim da tarde para drinks e uma pausa carioca.</article><article class="ec-sprint5-card"><strong>Lógica de acesso</strong>A maioria chega de Bondinho pela Praia Vermelha. A trilha do Morro da Urca pode ser alternativa quando aberta.</article><article class="ec-sprint5-card"><strong>Fator de decisão</strong>Escolha essa parada quando quiser unir vista icônica, comida brasileira e rota prática dentro do ponto turístico.</article></div><h3>Como usar esta página</h3><ol><li>Confirme se o acesso será pelo Bondinho ou pela trilha.</li><li>Escolha o melhor momento: café, almoço, drinks ou evento.</li><li>Use a reserva em fins de semana, feriados ou grupos.</li><li>Depois da refeição, continue pelo Morro da Urca ou pelo próximo trecho do Bondinho.</li></ol></div></section>
 <!-- /EC Sprint 5 Quality Consolidation Block -->

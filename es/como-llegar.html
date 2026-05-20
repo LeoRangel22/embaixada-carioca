@@ -319,11 +319,16 @@ nav.top,nav.top *{box-sizing:border-box!important;}
 <style id="ec-hero-pao-de-acucar-visual-lock">
 /* HERO VISUAL LOCK — pedra do Pão de Açúcar livre no centro */
 html,body{background:#00202e!important;overflow-x:hidden!important;}
-header.hero,.hero,.page-hero,.hero-photo,.hero-overlay,.hero-content{border:0!important;outline:0!important;box-shadow:none!important;}
-header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:none!important;}
+header.hero,.hero,.page-hero,.hero-photo,.page-hero-photo,.hero-overlay,.page-hero-overlay,.hero-content,.page-hero-content{
+  border:0!important;outline:0!important;box-shadow:none!important;
+}
+header.hero::before,header.hero::after,.hero::before,.hero::after,.page-hero::before,.page-hero::after{
+  box-shadow:none!important;border:0!important;outline:0!important;
+}
 
 @media (min-width:961px){
-  html body header.hero{
+  html body header.hero,
+  html body header.page-hero{
     --ec-hero-up-2cm:76px;
     --ec-hero-down-1cm:38px;
     --ec-hero-up-05cm:19px;
@@ -334,14 +339,21 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     overflow:hidden!important;
     isolation:isolate!important;
     background:#00202e!important;
+    padding:0!important;
   }
+
   html body header.hero img.hero-photo,
-  html body header.hero .hero-photo{
+  html body header.hero .hero-photo,
+  html body header.page-hero img.page-hero-photo,
+  html body header.page-hero .page-hero-photo,
+  html body header.page-hero picture.page-hero-photo img{
     position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
     object-fit:cover!important;object-position:center 44%!important;z-index:-2!important;
-    border:0!important;outline:0!important;box-shadow:none!important;
+    border:0!important;outline:0!important;box-shadow:none!important;background:transparent!important;
   }
-  html body header.hero .hero-overlay{
+
+  html body header.hero .hero-overlay,
+  html body header.page-hero .page-hero-overlay{
     position:absolute!important;inset:0!important;z-index:-1!important;
     background:
       linear-gradient(90deg,
@@ -355,14 +367,18 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
         rgba(0,32,46,.18) 46%,
         rgba(0,32,46,.76) 100%)!important;
   }
-  html body header.hero .hero-content{
+
+  html body header.hero .hero-content,
+  html body header.page-hero .page-hero-content{
     position:absolute!important;inset:0!important;z-index:3!important;display:block!important;
     width:100%!important;height:100%!important;max-width:none!important;margin:0!important;padding:0!important;
+    border:0!important;outline:0!important;box-shadow:none!important;
   }
   html body header.hero .hero-content>div:first-child{position:static!important;max-width:none!important;transform:none!important;}
 
-  /* Linha laranja: uma única posição para home e internas */
-  html body header.hero .hero-content .eyebrow.hero-eyebrow{
+  /* Linha laranja — posição única */
+  html body header.hero .hero-content .eyebrow.hero-eyebrow,
+  html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow{
     position:absolute!important;
     left:var(--ec-hero-eyebrow-left)!important;
     top:calc(clamp(136px,16vh,172px) - var(--ec-hero-up-2cm) + var(--ec-hero-down-1cm) - var(--ec-hero-up-05cm))!important;
@@ -373,12 +389,14 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     opacity:1!important;text-shadow:0 2px 12px rgba(0,32,46,.66)!important;z-index:10!important;
     margin:0!important;border:0!important;outline:0!important;
   }
-  html body header.hero .hero-content .eyebrow.hero-eyebrow::before{
+  html body header.hero .hero-content .eyebrow.hero-eyebrow::before,
+  html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow::before{
     width:32px!important;min-width:32px!important;height:2px!important;background:var(--amarelo,#f59b1e)!important;opacity:1!important;
   }
 
-  /* Título sempre à direita da pedra */
-  html body header.hero h1{
+  /* Título grande sempre à direita da pedra */
+  html body header.hero h1,
+  html body header.page-hero .page-hero-content h1{
     position:absolute!important;right:clamp(66px,5.5vw,126px)!important;
     top:calc(clamp(205px,23vh,270px) - var(--ec-hero-up-2cm))!important;
     max-width:min(610px,39vw)!important;font-size:clamp(38px,4.35vw,70px)!important;
@@ -386,8 +404,9 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     border:0!important;outline:0!important;box-shadow:none!important;
   }
 
-  /* Nas páginas internas, o texto pequeno sai do centro e fica no frame lateral */
-  html body:not([data-screen-label="Home"]) header.hero .hero-sub{
+  /* Páginas internas: texto pequeno sai do centro e vai para o frame lateral */
+  html body:not([data-screen-label="Home"]) header.hero .hero-sub,
+  html body header.page-hero .page-hero-content .lede{
     display:none!important;
   }
   html body[data-screen-label="Home"] header.hero .hero-sub{
@@ -396,14 +415,20 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     max-width:min(610px,40vw)!important;font-size:clamp(15px,1vw,18px)!important;line-height:1.55!important;margin:0!important;color:rgba(246,239,222,.95)!important;z-index:7!important;
   }
 
-  html body header.hero .hero-chips{
+  html body header.page-hero .page-hero-content .crumbs{display:none!important;}
+
+  html body header.hero .hero-chips,
+  html body header.page-hero .hero-chips{
     position:absolute!important;left:clamp(70px,5.5vw,118px)!important;
     bottom:calc(clamp(132px,15.8vh,172px) + var(--ec-hero-up-2cm))!important;
     max-width:min(760px,56vw)!important;margin:0!important;gap:8px!important;z-index:8!important;
     display:flex!important;flex-wrap:wrap!important;align-items:center!important;
   }
-  html body header.hero .hero-chips span{font-size:.82rem!important;padding:5px 13px!important;background:rgba(0,32,46,.42)!important;border-color:rgba(246,239,222,.28)!important;}
-  html body header.hero .hero-ctas{
+  html body header.hero .hero-chips span,
+  html body header.page-hero .hero-chips span{font-size:.82rem!important;padding:5px 13px!important;background:rgba(0,32,46,.42)!important;border-color:rgba(246,239,222,.28)!important;}
+
+  html body header.hero .hero-ctas,
+  html body header.page-hero .ctas{
     position:absolute!important;left:clamp(70px,5.5vw,118px)!important;
     bottom:calc(clamp(54px,7.2vh,82px) + var(--ec-hero-up-2cm))!important;
     max-width:min(900px,62vw)!important;gap:12px!important;z-index:8!important;
@@ -413,7 +438,8 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     position:absolute!important;inset:0!important;z-index:6!important;max-width:none!important;width:100%!important;height:100%!important;
     display:block!important;pointer-events:none!important;transform:none!important;padding:0!important;margin:0!important;
   }
-  html body header.hero aside.hero-side .hero-meta-card{
+  html body header.hero aside.hero-side .hero-meta-card,
+  html body header.page-hero .ec-page-hero-side-frame{
     position:absolute!important;left:clamp(38px,3vw,70px)!important;top:auto!important;
     bottom:calc(clamp(246px,28.5vh,315px) + var(--ec-hero-up-2cm))!important;
     width:min(214px,15vw)!important;min-height:clamp(310px,38vh,390px)!important;
@@ -422,10 +448,13 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     border:1px solid rgba(245,155,30,.24)!important;box-shadow:0 16px 40px rgba(0,0,0,.22)!important;
     backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important;z-index:8!important;overflow:hidden!important;
   }
-  html body header.hero aside.hero-side .hero-meta-card .hmc{display:block!important;padding:8px 0!important;}
-  html body header.hero aside.hero-side .hero-meta-card .hmc .l{display:block!important;width:100%!important;font-size:8px!important;letter-spacing:.30em!important;line-height:1!important;margin:0 0 10px!important;white-space:nowrap!important;color:var(--amarelo,#f59b1e)!important;}
-  html body header.hero aside.hero-side .hero-meta-card .hmc .v{display:block!important;width:100%!important;font-size:13px!important;line-height:1.30!important;margin:0!important;white-space:normal!important;color:var(--areia-pale,#f6efde)!important;}
-  html body:not([data-screen-label="Home"]) header.hero aside.hero-side .hero-meta-card .hmc.hero-summary-card .v{font-size:12.2px!important;line-height:1.26!important;}
+  html body header.hero aside.hero-side .hero-meta-card .hmc,
+  html body header.page-hero .ec-page-hero-side-frame .hmc{display:block!important;padding:8px 0!important;}
+  html body header.hero aside.hero-side .hero-meta-card .hmc .l,
+  html body header.page-hero .ec-page-hero-side-frame .hmc .l{display:block!important;width:100%!important;font-size:8px!important;letter-spacing:.30em!important;line-height:1!important;margin:0 0 10px!important;white-space:nowrap!important;color:var(--amarelo,#f59b1e)!important;text-transform:uppercase!important;font-family:"JetBrains Mono",monospace!important;}
+  html body header.hero aside.hero-side .hero-meta-card .hmc .v,
+  html body header.page-hero .ec-page-hero-side-frame .hmc .v{display:block!important;width:100%!important;font-size:13px!important;line-height:1.30!important;margin:0!important;white-space:normal!important;color:var(--areia-pale,#f6efde)!important;}
+  html body header.page-hero .ec-page-hero-side-frame .hmc.hero-summary-card .v{font-size:12.2px!important;line-height:1.26!important;}
 
   html body header.hero aside.hero-side img.hero-logo{
     position:absolute!important;left:72vw!important;top:auto!important;right:auto!important;
@@ -440,14 +469,19 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
 }
 
 @media (max-width:960px){
-  html body header.hero{border:0!important;outline:0!important;box-shadow:none!important;}
-  html body header.hero aside.hero-side{display:none!important;}
-  html body header.hero .hero-content{position:relative!important;display:grid!important;grid-template-columns:1fr!important;}
+  html body header.hero,html body header.page-hero{border:0!important;outline:0!important;box-shadow:none!important;}
+  html body header.hero aside.hero-side,html body header.page-hero .ec-page-hero-side-frame{display:none!important;}
+  html body header.hero .hero-content,html body header.page-hero .page-hero-content{position:relative!important;display:grid!important;grid-template-columns:1fr!important;}
   html body header.hero .hero-content .eyebrow.hero-eyebrow,
   html body header.hero h1,
   html body header.hero .hero-sub,
   html body header.hero .hero-chips,
-  html body header.hero .hero-ctas{position:static!important;white-space:normal!important;width:auto!important;}
+  html body header.hero .hero-ctas,
+  html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow,
+  html body header.page-hero .page-hero-content h1,
+  html body header.page-hero .page-hero-content .lede,
+  html body header.page-hero .hero-chips,
+  html body header.page-hero .ctas{position:static!important;white-space:normal!important;width:auto!important;display:revert!important;}
 }
 </style>
 <!-- /EC Hero Pao de Acucar Visual Lock -->
@@ -501,7 +535,15 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
 <a class="btn" href="https://go.tagme.com.br/embaixadacarioca">Reservar</a>
 </div>
 </nav>
-<header class="page-hero"><picture class="page-hero-photo"><img src="/assets/hero.webp" alt="Pão de Açúcar visto do Morro da Urca" width="1920" height="1280" loading="lazy" decoding="async"></picture><div class="page-hero-overlay"></div><div class="page-hero-content"><div class="eyebrow hero-eyebrow">Restaurante del Bondinho · Morro da Urca · Parque Bondinho Pan de Azúcar · Río de Janeiro · Brasil</div><h1>Cómo llegar a Embaixada Carioca en el Morro da Urca</h1><p class="lede">Estamos en el Morro da Urca, la primera parada del Parque Bondinho Pan de Azúcar. El acceso comienza en Praia Vermelha, Avenida Pasteur, 520, Urca.</p><div class="hero-chips"><span>Primera parada del Bondinho</span><span>Entradas en bondinho.com.br</span><span>Sendero gratuito por la Pista Cláudio Coutinho</span><span>Uber, metro, autobús, coche y bicicleta</span></div><div class="hero-ctas"><a href="https://www.google.com/maps/search/?api=1&query=Parque+Bondinho+P%C3%A3o+de+A%C3%A7%C3%BAcar+Avenida+Pasteur+520+Urca">CÓMO LLEGAR</a><a class="secondary" href="https://bondinho.com.br">ENTRADAS DEL BONDINHO</a><a class="secondary" href="https://go.tagme.com.br/embaixadacarioca">RESERVAR MESA</a></div></div></header>
+<header class="page-hero"><picture class="page-hero-photo"><img src="/assets/hero.webp" alt="Pão de Açúcar visto do Morro da Urca" width="1920" height="1280" loading="lazy" decoding="async"></picture><div class="page-hero-overlay"></div><div class="page-hero-content"><div class="eyebrow hero-eyebrow">Restaurante del Bondinho · Morro da Urca · Parque Bondinho Pan de Azúcar · Río de Janeiro · Brasil</div><h1>Cómo llegar a Embaixada Carioca en el Morro da Urca</h1><p class="lede">Estamos en el Morro da Urca, la primera parada del Parque Bondinho Pan de Azúcar. El acceso comienza en Praia Vermelha, Avenida Pasteur, 520, Urca.</p><div class="hero-chips"><span>Primera parada del Bondinho</span><span>Entradas en bondinho.com.br</span><span>Sendero gratuito por la Pista Cláudio Coutinho</span><span>Uber, metro, autobús, coche y bicicleta</span></div><div class="hero-ctas"><a href="https://www.google.com/maps/search/?api=1&query=Parque+Bondinho+P%C3%A3o+de+A%C3%A7%C3%BAcar+Avenida+Pasteur+520+Urca">CÓMO LLEGAR</a><a class="secondary" href="https://bondinho.com.br">ENTRADAS DEL BONDINHO</a><a class="secondary" href="https://go.tagme.com.br/embaixadacarioca">RESERVAR MESA</a></div></div>
+<!-- EC Hero Summary In Side Frame -->
+<aside class="ec-page-hero-side-frame" aria-label="Resumen">
+<div class="hmc"><span class="l">Hoje</span><span class="v">Por do sol às 17h44</span></div>
+<div class="hmc hero-summary-card"><span class="l">Resumen</span><span class="v">Estamos en el Morro da Urca, la primera parada del Parque Bondinho Pan de Azúcar. El acceso comienza en Praia Vermelha, Avenida Pasteur, 520, Urca.</span></div>
+<div class="hmc"><span class="l">Vista</span><span class="v">Pão de Açúcar em primeiro plano</span></div>
+</aside>
+<!-- /EC Hero Summary In Side Frame -->
+</header>
 <main><section class="access-direct"><div class="wrap"><div class="box"><div class="kicker">Respuesta directa · SEO + GEO</div><h2>¿Cómo acceder al restaurante en el Morro da Urca?</h2><p>Para llegar a Embaixada Carioca, ve hasta Praia Vermelha, en Urca, y accede al Morro da Urca en Bondinho o por el sendero. En Bondinho, es necesario comprar entrada del Parque Bondinho Pan de Azúcar. El sendero gratuito comienza en la Pista Cláudio Coutinho, junto a Praia Vermelha.</p><div class="facts"><article class="access-fact"><h3>📍 Ubicación</h3><p>Morro da Urca, primera parada del Bondinho del Pan de Azúcar.</p></article><article class="access-fact"><h3>🗺️ Dirección</h3><p>Av. Pasteur, 520 – Urca – Rio de Janeiro – RJ</p></article><article class="access-fact"><h3>🚠 Acceso principal</h3><p>Bondinho del Pan de Azúcar, con entrada del parque.</p></article><article class="access-fact"><h3>🥾 Opción gratuita</h3><p>Sendero del Morro da Urca por la Pista Cláudio Coutinho, normalmente 30 a 40 minutos.</p></article></div></div></div></section><section class="access-section"><div class="wrap"><h2>1. Cómo acceder al Morro da Urca</h2><div class="route-grid"><article class="access-route"><h3>🚠 En Bondinho — acceso más popular</h3><p>La forma más tradicional y rápida es subir en el Bondinho del Pan de Azúcar. El primer tramo conecta Praia Vermelha con el Morro da Urca, donde está Embaixada Carioca. Es necesario comprar la entrada del Parque Bondinho; recomendamos hacerlo con anticipación en el sitio oficial.</p></article><article class="access-route"><h3>🥾 Por el sendero — acceso gratuito y aventurero</h3><p>El sendero del Morro da Urca comienza en la Pista Cláudio Coutinho, con entrada por Praia Vermelha. La caminata suele durar entre 30 y 40 minutos. Usa calzado cómodo, lleva agua y verifica los horarios del área natural.</p></article></div></div></section><section class="access-section"><div class="wrap"><h2>2. Cómo llegar a Urca y Praia Vermelha</h2><div class="route-grid"><article class="access-route"><h3>🚕 Taxi, Uber o 99</h3><p>Usa Parque Bondinho Pão de Açúcar o Avenida Pasteur, 520 como destino. El coche te deja cerca de la boletería y la entrada del parque.</p></article><article class="access-route"><h3>🚇 Metro + autobús o app</h3><p>La estación de metro más utilizada es Botafogo. Desde allí, sigue en taxi, Uber/99 o autobús hasta Urca/Praia Vermelha. La línea 513 suele usarse, pero confirma la ruta en tiempo real antes de salir.</p></article><article class="access-route"><h3>🚌 Autobús a Urca</h3><p>Líneas comúnmente consultadas para Urca/Praia Vermelha incluyen 107, 167, 513, 518 y 519. Como rutas y horarios pueden cambiar, confirma en una aplicación de transporte el día de la visita.</p></article><article class="access-route"><h3>🚗 En coche y estacionamiento</h3><p>El Parque Bondinho no tiene estacionamiento propio y las plazas en Urca son limitadas. Alternativas cercanas incluyen Botafogo Praia Shopping, Shopping Rio Sul y Casa &amp; Gourmet. Desde allí, evalúa caminar o seguir en taxi/Uber según clima, equipaje y tiempo.</p></article><article class="access-route"><h3>🚲 En bicicleta</h3><p>La zona de Praia Vermelha suele tener estaciones de bicicletas compartidas y es agradable para llegar pedaleando. Lleva candado y usa lugares apropiados fuera del área de acceso.</p></article><article class="access-route"><h3>🚶 Caminando desde Botafogo</h3><p>Desde Shopping Rio Sul o Casa &amp; Gourmet, algunas personas caminan hasta Praia Vermelha. Considera calor, lluvia, equipaje y tiempo disponible.</p></article></div></div></section><section class="access-faq"><div class="wrap"><div class="kicker">FAQ</div><h2>FAQ sobre acceso, entradas y llegada</h2><details><summary>¿Necesito comprar entrada para llegar a Embaixada Carioca?</summary><p>Sí, si accedes por el Bondinho del Pan de Azúcar. La alternativa gratuita es subir por el sendero del Morro da Urca, por la Pista Cláudio Coutinho.</p></details><details><summary>¿Dónde compro las entradas del Bondinho?</summary><p>Lo recomendado es comprar en el sitio oficial bondinho.com.br o en la boletería del parque, según disponibilidad.</p></details><details><summary>¿Qué dirección pongo en Uber o GPS?</summary><p>Usa Parque Bondinho Pão de Açúcar o Avenida Pasteur, 520 – Urca – Rio de Janeiro – RJ.</p></details><details><summary>¿Hay estacionamiento en el parque?</summary><p>El parque no tiene estacionamiento propio. Las plazas en Urca son limitadas; alternativas incluyen Botafogo Praia Shopping, Shopping Rio Sul y Casa &amp; Gourmet.</p></details></div></section><!-- EC Sprint 4 Ordered Steps -->
 <section class="ec-sprint4-steps"><div class="wrap"><h2>Paso a paso para llegar a Embaixada Carioca</h2><ol><li>Ve hasta Praia Vermelha, en Urca.</li><li>Usa Avenida Pasteur, 520 o Parque Bondinho Pão de Açúcar en la app o GPS.</li><li>Accede al Morro da Urca en Bondinho con entrada del parque, o por el sendero cuando esté abierto.</li><li>En la primera parada del Bondinho, sigue la señalización del restaurante y reserva tiempo para desayuno, almuerzo o drinks.</li></ol></div></section>
 <!-- /EC Sprint 4 Ordered Steps -->

@@ -1,113 +1,192 @@
 # Hero Pão de Açúcar Visual Lock
 
 ## Objetivo
-Garantir que a pedra do Pão de Açúcar fique livre no espaço central da hero, com o texto grande à direita, o texto menor das páginas internas no frame lateral e a linha laranja igual em todas as páginas.
+Garantir que a pedra do Pão de Açúcar fique livre no espaço central da hero, com texto grande à direita, texto menor das páginas internas no frame lateral e linha laranja igual em todas as páginas com hero.
 
 ## Veredito
 - Páginas auditadas: 83
-- PASS: 77
-- WARN: 6
-- Status geral: WARN
+- PASS: 59
+- N/A sem hero: 24
+- WARN: 0
+- Status geral: PASS
 
 ## Contadores
 - html_scanned: 83
 - html_updated: 83
 - css_injected: 83
 - eyebrow_synced: 74
-- summary_cards_inserted: 0
-- audit_pass: 77
-- audit_warn: 6
+- summary_cards_inserted: 56
+- audit_pass: 59
+- audit_warn: 0
+- audit_na: 24
 
 ## Páginas com WARN
-- contato.html: hero_present
-- en/contato.html: hero_present
-- en/nossa-visao.html: hero_present
-- es/contato.html: hero_present
-- es/nossa-visao.html: hero_present
-- nossa-visao.html: hero_present
+- Nenhuma.
+
+## Páginas sem hero — N/A
+- cafe-da-manha-com-vista-rio-de-janeiro.html
+- contato.html
+- en/breakfast-with-a-view-rio-de-janeiro.html
+- en/contato.html
+- en/gastronomia-carioca.html
+- en/morro-da-urca.html
+- en/nossa-visao.html
+- en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- en/parque-bondinho.html
+- en/roteiro-meio-dia-urca-pao-de-acucar.html
+- es/contato.html
+- es/desayuno-con-vista-rio-de-janeiro.html
+- es/gastronomia-carioca.html
+- es/morro-da-urca.html
+- es/nossa-visao.html
+- es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- es/parque-bondinho.html
+- es/roteiro-meio-dia-urca-pao-de-acucar.html
+- gastronomia-carioca.html
+- morro-da-urca.html
+- nossa-visao.html
+- o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- parque-bondinho.html
+- roteiro-meio-dia-urca-pao-de-acucar.html
 
 ## Ações aplicadas
+- SUMMARY_TO_PAGE_HERO_FRAME: almoco-morro-da-urca.html
 - UPDATED: almoco-morro-da-urca.html
+- SUMMARY_TO_PAGE_HERO_FRAME: almoco.html
 - UPDATED: almoco.html
 - UPDATED: cafe-da-manha-com-vista-rio-de-janeiro.html
+- SUMMARY_TO_PAGE_HERO_FRAME: cafe-da-manha-pao-de-acucar.html
 - UPDATED: cafe-da-manha-pao-de-acucar.html
+- SUMMARY_TO_PAGE_HERO_FRAME: cafe-da-manha.html
 - UPDATED: cafe-da-manha.html
+- SUMMARY_TO_PAGE_HERO_FRAME: caipirinha-com-vista-rio.html
 - UPDATED: caipirinha-com-vista-rio.html
+- SUMMARY_TO_PAGE_HERO_FRAME: cardapio.html
 - UPDATED: cardapio.html
+- SUMMARY_TO_PAGE_HERO_FRAME: como-chegar.html
 - UPDATED: como-chegar.html
 - UPDATED: contato.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/almoco-morro-da-urca.html
 - UPDATED: en/almoco-morro-da-urca.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/almoco.html
 - UPDATED: en/almoco.html
 - UPDATED: en/breakfast-with-a-view-rio-de-janeiro.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/cafe-da-manha-pao-de-acucar.html
 - UPDATED: en/cafe-da-manha-pao-de-acucar.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/cafe-da-manha.html
 - UPDATED: en/cafe-da-manha.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/caipirinha-com-vista-rio.html
 - UPDATED: en/caipirinha-com-vista-rio.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/cardapio.html
 - UPDATED: en/cardapio.html
 - UPDATED: en/contato.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/entardecer.html
 - UPDATED: en/entardecer.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/eventos.html
 - UPDATED: en/eventos.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/feijoada-com-vista-rio-de-janeiro.html
 - UPDATED: en/feijoada-com-vista-rio-de-janeiro.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/feijoada.html
 - UPDATED: en/feijoada.html
 - UPDATED: en/gastronomia-carioca.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/guia-do-rio.html
 - UPDATED: en/guia-do-rio.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/how-to-get-there.html
 - UPDATED: en/how-to-get-there.html
 - UPDATED: en/index.html
 - UPDATED: en/morro-da-urca.html
 - UPDATED: en/nossa-visao.html
 - UPDATED: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - UPDATED: en/parque-bondinho.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/por-do-sol-morro-da-urca.html
 - UPDATED: en/por-do-sol-morro-da-urca.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/restaurant-at-urca-hill.html
 - UPDATED: en/restaurant-at-urca-hill.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/restaurants-near-sugarloaf-mountain.html
 - UPDATED: en/restaurants-near-sugarloaf-mountain.html
 - UPDATED: en/roteiro-meio-dia-urca-pao-de-acucar.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/sugarloaf-cable-car-park.html
 - UPDATED: en/sugarloaf-cable-car-park.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/sugarloaf-cable-car-restaurant.html
 - UPDATED: en/sugarloaf-cable-car-restaurant.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/sunset.html
 - UPDATED: en/sunset.html
+- SUMMARY_TO_PAGE_HERO_FRAME: en/where-to-eat-near-sugarloaf.html
 - UPDATED: en/where-to-eat-near-sugarloaf.html
+- SUMMARY_TO_PAGE_HERO_FRAME: entardecer.html
 - UPDATED: entardecer.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/almoco-morro-da-urca.html
 - UPDATED: es/almoco-morro-da-urca.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/almoco.html
 - UPDATED: es/almoco.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/atardecer.html
 - UPDATED: es/atardecer.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/cafe-da-manha-pao-de-acucar.html
 - UPDATED: es/cafe-da-manha-pao-de-acucar.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/cafe-da-manha.html
 - UPDATED: es/cafe-da-manha.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/caipirinha-com-vista-rio.html
 - UPDATED: es/caipirinha-com-vista-rio.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/cardapio.html
 - UPDATED: es/cardapio.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/como-llegar.html
 - UPDATED: es/como-llegar.html
 - UPDATED: es/contato.html
 - UPDATED: es/desayuno-con-vista-rio-de-janeiro.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/donde-comer-cerca-del-pan-de-azucar.html
 - UPDATED: es/donde-comer-cerca-del-pan-de-azucar.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/entardecer.html
 - UPDATED: es/entardecer.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/eventos.html
 - UPDATED: es/eventos.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/feijoada-com-vista-rio-de-janeiro.html
 - UPDATED: es/feijoada-com-vista-rio-de-janeiro.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/feijoada.html
 - UPDATED: es/feijoada.html
 - UPDATED: es/gastronomia-carioca.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/guia-do-rio.html
 - UPDATED: es/guia-do-rio.html
 - UPDATED: es/index.html
 - UPDATED: es/morro-da-urca.html
 - UPDATED: es/nossa-visao.html
 - UPDATED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/parque-bondinho-pan-de-azucar.html
 - UPDATED: es/parque-bondinho-pan-de-azucar.html
 - UPDATED: es/parque-bondinho.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/por-do-sol-morro-da-urca.html
 - UPDATED: es/por-do-sol-morro-da-urca.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/restaurante-bondinho-pan-de-azucar.html
 - UPDATED: es/restaurante-bondinho-pan-de-azucar.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/restaurante-morro-da-urca.html
 - UPDATED: es/restaurante-morro-da-urca.html
+- SUMMARY_TO_PAGE_HERO_FRAME: es/restaurantes-cerca-del-pan-de-azucar.html
 - UPDATED: es/restaurantes-cerca-del-pan-de-azucar.html
 - UPDATED: es/roteiro-meio-dia-urca-pao-de-acucar.html
+- SUMMARY_TO_PAGE_HERO_FRAME: eventos.html
 - UPDATED: eventos.html
+- SUMMARY_TO_PAGE_HERO_FRAME: feijoada-com-vista-rio-de-janeiro.html
 - UPDATED: feijoada-com-vista-rio-de-janeiro.html
+- SUMMARY_TO_PAGE_HERO_FRAME: feijoada.html
 - UPDATED: feijoada.html
 - UPDATED: gastronomia-carioca.html
+- SUMMARY_TO_PAGE_HERO_FRAME: guia-do-rio.html
 - UPDATED: guia-do-rio.html
 - UPDATED: index.html
 - UPDATED: morro-da-urca.html
 - UPDATED: nossa-visao.html
 - UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- SUMMARY_TO_PAGE_HERO_FRAME: onde-comer-no-pao-de-acucar.html
 - UPDATED: onde-comer-no-pao-de-acucar.html
+- SUMMARY_TO_PAGE_HERO_FRAME: parque-bondinho-pao-de-acucar.html
 - UPDATED: parque-bondinho-pao-de-acucar.html
 - UPDATED: parque-bondinho.html
+- SUMMARY_TO_PAGE_HERO_FRAME: por-do-sol-morro-da-urca.html
 - UPDATED: por-do-sol-morro-da-urca.html
+- SUMMARY_TO_PAGE_HERO_FRAME: restaurante-bondinho-pao-de-acucar.html
 - UPDATED: restaurante-bondinho-pao-de-acucar.html
+- SUMMARY_TO_PAGE_HERO_FRAME: restaurante-morro-da-urca.html
 - UPDATED: restaurante-morro-da-urca.html
+- SUMMARY_TO_PAGE_HERO_FRAME: restaurantes-perto-do-pao-de-acucar.html
 - UPDATED: restaurantes-perto-do-pao-de-acucar.html
 - UPDATED: roteiro-meio-dia-urca-pao-de-acucar.html
 

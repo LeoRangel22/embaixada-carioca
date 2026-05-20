@@ -1941,11 +1941,16 @@ nav.top,nav.top *{box-sizing:border-box!important;}
 <style id="ec-hero-pao-de-acucar-visual-lock">
 /* HERO VISUAL LOCK — pedra do Pão de Açúcar livre no centro */
 html,body{background:#00202e!important;overflow-x:hidden!important;}
-header.hero,.hero,.page-hero,.hero-photo,.hero-overlay,.hero-content{border:0!important;outline:0!important;box-shadow:none!important;}
-header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:none!important;}
+header.hero,.hero,.page-hero,.hero-photo,.page-hero-photo,.hero-overlay,.page-hero-overlay,.hero-content,.page-hero-content{
+  border:0!important;outline:0!important;box-shadow:none!important;
+}
+header.hero::before,header.hero::after,.hero::before,.hero::after,.page-hero::before,.page-hero::after{
+  box-shadow:none!important;border:0!important;outline:0!important;
+}
 
 @media (min-width:961px){
-  html body header.hero{
+  html body header.hero,
+  html body header.page-hero{
     --ec-hero-up-2cm:76px;
     --ec-hero-down-1cm:38px;
     --ec-hero-up-05cm:19px;
@@ -1956,14 +1961,21 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     overflow:hidden!important;
     isolation:isolate!important;
     background:#00202e!important;
+    padding:0!important;
   }
+
   html body header.hero img.hero-photo,
-  html body header.hero .hero-photo{
+  html body header.hero .hero-photo,
+  html body header.page-hero img.page-hero-photo,
+  html body header.page-hero .page-hero-photo,
+  html body header.page-hero picture.page-hero-photo img{
     position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
     object-fit:cover!important;object-position:center 44%!important;z-index:-2!important;
-    border:0!important;outline:0!important;box-shadow:none!important;
+    border:0!important;outline:0!important;box-shadow:none!important;background:transparent!important;
   }
-  html body header.hero .hero-overlay{
+
+  html body header.hero .hero-overlay,
+  html body header.page-hero .page-hero-overlay{
     position:absolute!important;inset:0!important;z-index:-1!important;
     background:
       linear-gradient(90deg,
@@ -1977,14 +1989,18 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
         rgba(0,32,46,.18) 46%,
         rgba(0,32,46,.76) 100%)!important;
   }
-  html body header.hero .hero-content{
+
+  html body header.hero .hero-content,
+  html body header.page-hero .page-hero-content{
     position:absolute!important;inset:0!important;z-index:3!important;display:block!important;
     width:100%!important;height:100%!important;max-width:none!important;margin:0!important;padding:0!important;
+    border:0!important;outline:0!important;box-shadow:none!important;
   }
   html body header.hero .hero-content>div:first-child{position:static!important;max-width:none!important;transform:none!important;}
 
-  /* Linha laranja: uma única posição para home e internas */
-  html body header.hero .hero-content .eyebrow.hero-eyebrow{
+  /* Linha laranja — posição única */
+  html body header.hero .hero-content .eyebrow.hero-eyebrow,
+  html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow{
     position:absolute!important;
     left:var(--ec-hero-eyebrow-left)!important;
     top:calc(clamp(136px,16vh,172px) - var(--ec-hero-up-2cm) + var(--ec-hero-down-1cm) - var(--ec-hero-up-05cm))!important;
@@ -1995,12 +2011,14 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     opacity:1!important;text-shadow:0 2px 12px rgba(0,32,46,.66)!important;z-index:10!important;
     margin:0!important;border:0!important;outline:0!important;
   }
-  html body header.hero .hero-content .eyebrow.hero-eyebrow::before{
+  html body header.hero .hero-content .eyebrow.hero-eyebrow::before,
+  html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow::before{
     width:32px!important;min-width:32px!important;height:2px!important;background:var(--amarelo,#f59b1e)!important;opacity:1!important;
   }
 
-  /* Título sempre à direita da pedra */
-  html body header.hero h1{
+  /* Título grande sempre à direita da pedra */
+  html body header.hero h1,
+  html body header.page-hero .page-hero-content h1{
     position:absolute!important;right:clamp(66px,5.5vw,126px)!important;
     top:calc(clamp(205px,23vh,270px) - var(--ec-hero-up-2cm))!important;
     max-width:min(610px,39vw)!important;font-size:clamp(38px,4.35vw,70px)!important;
@@ -2008,8 +2026,9 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     border:0!important;outline:0!important;box-shadow:none!important;
   }
 
-  /* Nas páginas internas, o texto pequeno sai do centro e fica no frame lateral */
-  html body:not([data-screen-label="Home"]) header.hero .hero-sub{
+  /* Páginas internas: texto pequeno sai do centro e vai para o frame lateral */
+  html body:not([data-screen-label="Home"]) header.hero .hero-sub,
+  html body header.page-hero .page-hero-content .lede{
     display:none!important;
   }
   html body[data-screen-label="Home"] header.hero .hero-sub{
@@ -2018,14 +2037,20 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     max-width:min(610px,40vw)!important;font-size:clamp(15px,1vw,18px)!important;line-height:1.55!important;margin:0!important;color:rgba(246,239,222,.95)!important;z-index:7!important;
   }
 
-  html body header.hero .hero-chips{
+  html body header.page-hero .page-hero-content .crumbs{display:none!important;}
+
+  html body header.hero .hero-chips,
+  html body header.page-hero .hero-chips{
     position:absolute!important;left:clamp(70px,5.5vw,118px)!important;
     bottom:calc(clamp(132px,15.8vh,172px) + var(--ec-hero-up-2cm))!important;
     max-width:min(760px,56vw)!important;margin:0!important;gap:8px!important;z-index:8!important;
     display:flex!important;flex-wrap:wrap!important;align-items:center!important;
   }
-  html body header.hero .hero-chips span{font-size:.82rem!important;padding:5px 13px!important;background:rgba(0,32,46,.42)!important;border-color:rgba(246,239,222,.28)!important;}
-  html body header.hero .hero-ctas{
+  html body header.hero .hero-chips span,
+  html body header.page-hero .hero-chips span{font-size:.82rem!important;padding:5px 13px!important;background:rgba(0,32,46,.42)!important;border-color:rgba(246,239,222,.28)!important;}
+
+  html body header.hero .hero-ctas,
+  html body header.page-hero .ctas{
     position:absolute!important;left:clamp(70px,5.5vw,118px)!important;
     bottom:calc(clamp(54px,7.2vh,82px) + var(--ec-hero-up-2cm))!important;
     max-width:min(900px,62vw)!important;gap:12px!important;z-index:8!important;
@@ -2035,7 +2060,8 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     position:absolute!important;inset:0!important;z-index:6!important;max-width:none!important;width:100%!important;height:100%!important;
     display:block!important;pointer-events:none!important;transform:none!important;padding:0!important;margin:0!important;
   }
-  html body header.hero aside.hero-side .hero-meta-card{
+  html body header.hero aside.hero-side .hero-meta-card,
+  html body header.page-hero .ec-page-hero-side-frame{
     position:absolute!important;left:clamp(38px,3vw,70px)!important;top:auto!important;
     bottom:calc(clamp(246px,28.5vh,315px) + var(--ec-hero-up-2cm))!important;
     width:min(214px,15vw)!important;min-height:clamp(310px,38vh,390px)!important;
@@ -2044,10 +2070,13 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
     border:1px solid rgba(245,155,30,.24)!important;box-shadow:0 16px 40px rgba(0,0,0,.22)!important;
     backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important;z-index:8!important;overflow:hidden!important;
   }
-  html body header.hero aside.hero-side .hero-meta-card .hmc{display:block!important;padding:8px 0!important;}
-  html body header.hero aside.hero-side .hero-meta-card .hmc .l{display:block!important;width:100%!important;font-size:8px!important;letter-spacing:.30em!important;line-height:1!important;margin:0 0 10px!important;white-space:nowrap!important;color:var(--amarelo,#f59b1e)!important;}
-  html body header.hero aside.hero-side .hero-meta-card .hmc .v{display:block!important;width:100%!important;font-size:13px!important;line-height:1.30!important;margin:0!important;white-space:normal!important;color:var(--areia-pale,#f6efde)!important;}
-  html body:not([data-screen-label="Home"]) header.hero aside.hero-side .hero-meta-card .hmc.hero-summary-card .v{font-size:12.2px!important;line-height:1.26!important;}
+  html body header.hero aside.hero-side .hero-meta-card .hmc,
+  html body header.page-hero .ec-page-hero-side-frame .hmc{display:block!important;padding:8px 0!important;}
+  html body header.hero aside.hero-side .hero-meta-card .hmc .l,
+  html body header.page-hero .ec-page-hero-side-frame .hmc .l{display:block!important;width:100%!important;font-size:8px!important;letter-spacing:.30em!important;line-height:1!important;margin:0 0 10px!important;white-space:nowrap!important;color:var(--amarelo,#f59b1e)!important;text-transform:uppercase!important;font-family:"JetBrains Mono",monospace!important;}
+  html body header.hero aside.hero-side .hero-meta-card .hmc .v,
+  html body header.page-hero .ec-page-hero-side-frame .hmc .v{display:block!important;width:100%!important;font-size:13px!important;line-height:1.30!important;margin:0!important;white-space:normal!important;color:var(--areia-pale,#f6efde)!important;}
+  html body header.page-hero .ec-page-hero-side-frame .hmc.hero-summary-card .v{font-size:12.2px!important;line-height:1.26!important;}
 
   html body header.hero aside.hero-side img.hero-logo{
     position:absolute!important;left:72vw!important;top:auto!important;right:auto!important;
@@ -2062,14 +2091,19 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
 }
 
 @media (max-width:960px){
-  html body header.hero{border:0!important;outline:0!important;box-shadow:none!important;}
-  html body header.hero aside.hero-side{display:none!important;}
-  html body header.hero .hero-content{position:relative!important;display:grid!important;grid-template-columns:1fr!important;}
+  html body header.hero,html body header.page-hero{border:0!important;outline:0!important;box-shadow:none!important;}
+  html body header.hero aside.hero-side,html body header.page-hero .ec-page-hero-side-frame{display:none!important;}
+  html body header.hero .hero-content,html body header.page-hero .page-hero-content{position:relative!important;display:grid!important;grid-template-columns:1fr!important;}
   html body header.hero .hero-content .eyebrow.hero-eyebrow,
   html body header.hero h1,
   html body header.hero .hero-sub,
   html body header.hero .hero-chips,
-  html body header.hero .hero-ctas{position:static!important;white-space:normal!important;width:auto!important;}
+  html body header.hero .hero-ctas,
+  html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow,
+  html body header.page-hero .page-hero-content h1,
+  html body header.page-hero .page-hero-content .lede,
+  html body header.page-hero .hero-chips,
+  html body header.page-hero .ctas{position:static!important;white-space:normal!important;width:auto!important;display:revert!important;}
 }
 </style>
 <!-- /EC Hero Pao de Acucar Visual Lock -->
@@ -2166,6 +2200,14 @@ header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:non
 <a class="btn lg ghost" href="/es/cardapio.html" style="border-color: var(--areia-pale); color: var(--areia-pale);">Ver menú completo</a>
 </div>
 </div>
+
+<!-- EC Hero Summary In Side Frame -->
+<aside class="ec-page-hero-side-frame" aria-label="Resumen">
+<div class="hmc"><span class="l">Hoje</span><span class="v">Por do sol às 17h44</span></div>
+<div class="hmc hero-summary-card"><span class="l">Resumen</span><span class="v">O atardecer más bonito do Río de Janeiro — puesta de sol atrás del Pan de Azúcar, visto do alto del Morro da Urca. Caipirinha com cachaça Magnífica premiada e chopp Heineken…</span></div>
+<div class="hmc"><span class="l">Vista</span><span class="v">Pão de Açúcar em primeiro plano</span></div>
+</aside>
+<!-- /EC Hero Summary In Side Frame -->
 </header>
 <!-- DRINKS -->
 <section id="drinks">
