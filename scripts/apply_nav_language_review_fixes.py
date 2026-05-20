@@ -5,9 +5,10 @@ Nav UX Fixes — Embaixada Carioca
 Corrige pontos visuais do topo:
 1. Dropdown de idiomas sempre abrindo para baixo e dentro da tela.
 2. Remove o pin/ícone antes de Como Chegar no menu principal/drawer.
-3. Ajusta o badge de avaliação para padrão compacto Google Reviews:
-   sem G, 4.8 menor, estrelas próximas/maiores e contagem leve sem negrito.
+3. Ajusta o badge de avaliação para padrão compacto Google Reviews.
 4. Iguala a altura do frame de reviews à altura do frame de idioma.
+5. Aproxima Reviews + Idioma entre si e do botão Reservar, sem mover o botão.
+6. Aplica efeito pulsante no botão Reservar do topo.
 
 Roda após os gates dos Sprints 1/2/3 para não ser sobrescrito.
 """
@@ -157,6 +158,52 @@ nav.top.scrolled .nav-rating-badge.google-review-badge{{
   letter-spacing:0!important;
   margin-left:1px!important;
 }}
+
+/* Ajuste visual pedido: Reviews + Idioma mais próximos entre si e do Reservar, sem mover o botão */
+@media(min-width:1181px){{
+  nav.top .nav-rating-badge.google-review-badge{{
+    transform:translateX(28px)!important;
+  }}
+  nav.top .lang-switcher{{
+    transform:translateX(16px)!important;
+  }}
+}}
+
+/* Botão Reservar do topo: efeito pulsante semelhante ao CTA principal */
+@keyframes ecTopReservePulse{{
+  0%,100%{{box-shadow:0 9px 0 rgba(0,64,90,.22),0 16px 30px rgba(0,32,46,.22),0 0 0 rgba(232,160,32,0)}}
+  45%{{box-shadow:0 9px 0 rgba(0,64,90,.18),0 18px 34px rgba(0,32,46,.26),0 0 0 8px rgba(232,160,32,.16)}}
+  70%{{box-shadow:0 9px 0 rgba(0,64,90,.18),0 18px 34px rgba(0,32,46,.22),0 0 0 14px rgba(232,160,32,0)}}
+}}
+nav.top .btn,
+nav.top a.btn[href*="tagme"]{{
+  position:relative!important;
+  overflow:hidden!important;
+  animation:ecTopReservePulse 2.8s ease-in-out infinite!important;
+}}
+nav.top .btn::before,
+nav.top a.btn[href*="tagme"]::before{{
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  border-radius:inherit!important;
+  background:linear-gradient(110deg,transparent 0%,rgba(255,255,255,.28) 42%,transparent 68%)!important;
+  transform:translateX(-130%)!important;
+  animation:ecTopReserveShine 3.4s ease-in-out infinite!important;
+  pointer-events:none!important;
+}}
+@keyframes ecTopReserveShine{{
+  0%,45%{{transform:translateX(-130%)}}
+  70%{{transform:translateX(130%)}}
+  100%{{transform:translateX(130%)}}
+}}
+@media(prefers-reduced-motion:reduce){{
+  nav.top .btn,
+  nav.top a.btn[href*="tagme"],
+  nav.top .btn::before,
+  nav.top a.btn[href*="tagme"]::before{{animation:none!important}}
+}}
+
 @media(max-width:1180px){{
   nav.top .nav-rating-badge.google-review-badge{{
     min-width:72px!important;
@@ -242,7 +289,7 @@ def write_report() -> None:
         "# Nav Language + Google Review Fixes",
         "",
         "## Objetivo",
-        "Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google Reviews e igualar a altura do frame ao idioma.",
+        "Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google Reviews, aproximar reviews/idioma do botão e aplicar efeito pulsante no Reservar.",
         "",
         "## Contadores",
     ]
