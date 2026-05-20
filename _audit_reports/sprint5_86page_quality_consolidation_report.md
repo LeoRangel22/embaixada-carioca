@@ -92,11 +92,11 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - en/guia-do-rio.html: 201.0 KB, 76 estilos inline
 - guia-do-rio.html: 200.3 KB, 73 estilos inline
 - cardapio.html: 185.9 KB, 100 estilos inline
+- en/almoco.html: 184.7 KB, 79 estilos inline
 - eventos.html: 184.7 KB, 41 estilos inline
 - es/eventos.html: 184.3 KB, 41 estilos inline
-- almoco.html: 182.4 KB, 90 estilos inline
-- en/eventos.html: 181.2 KB, 41 estilos inline
-- en/almoco.html: 180.9 KB, 79 estilos inline
+- es/cardapio.html: 183.3 KB, 83 estilos inline
+- en/cardapio.html: 182.7 KB, 82 estilos inline
 
 ## Ações aplicadas
 - CONSOLIDATION_BLOCK: almoco-morro-da-urca.html (611 words before)

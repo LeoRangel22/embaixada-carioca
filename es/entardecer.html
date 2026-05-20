@@ -1906,6 +1906,9 @@ nav.top .nav-inner > .btn::after{content:none!important;display:none!important}
 @media(max-width:760px){.ec-r2d2-depth,.ec-sprint4-faq,.ec-sprint4-steps{padding:42px 0}}
 </style>
 <!-- /EC Sprint 4 R2D2 AIO Conversion CSS -->
+<!-- EC Rich Results Consolidated FAQ -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://www.embaixadacarioca.com/es/entardecer.html#faq","mainEntity":[{"@type":"Question","name":"¿Puedo ver el atardecer desde Embaixada Carioca?","acceptedAnswer":{"@type":"Answer","text":"El restaurante está en el Morro da Urca y ofrece un entorno escénico al final de la tarde, sujeto al clima y a la operación del parque."}},{"@type":"Question","name":"¿Qué pedir al atardecer?","acceptedAnswer":{"@type":"Answer","text":"Caipirinhas, chopp frío, petiscos brasileños y platos para compartir son opciones naturales para este momento."}},{"@type":"Question","name":"¿Conviene reservar?","acceptedAnswer":{"@type":"Answer","text":"La reserva es recomendable para grupos y días de mayor movimiento turístico."}}]}</script>
+<!-- /EC Rich Results Consolidated FAQ -->
 <!-- EC Home Top Exact Replication Lock -->
 <style id="ec-home-top-exact-replication-lock">
 /* Home top exact replication lock — mesma base visual em home e subpáginas */
@@ -1934,6 +1937,142 @@ nav.top,nav.top *{box-sizing:border-box!important;}
 @media (max-width:960px){nav.top .nav-rating-badge.google-review-badge{display:none!important;}}
 </style>
 <!-- /EC Home Top Exact Replication Lock -->
+<!-- EC Hero Pao de Acucar Visual Lock -->
+<style id="ec-hero-pao-de-acucar-visual-lock">
+/* HERO VISUAL LOCK — pedra do Pão de Açúcar livre no centro */
+html,body{background:#00202e!important;overflow-x:hidden!important;}
+header.hero,.hero,.page-hero,.hero-photo,.hero-overlay,.hero-content{border:0!important;outline:0!important;box-shadow:none!important;}
+header.hero::before,header.hero::after,.hero::before,.hero::after{box-shadow:none!important;}
+
+@media (min-width:961px){
+  html body header.hero{
+    --ec-hero-up-2cm:76px;
+    --ec-hero-down-1cm:38px;
+    --ec-hero-up-05cm:19px;
+    --ec-hero-down-subtitle:38px;
+    --ec-hero-eyebrow-left:clamp(185px,11.8vw,215px);
+    min-height:100svh!important;
+    position:relative!important;
+    overflow:hidden!important;
+    isolation:isolate!important;
+    background:#00202e!important;
+  }
+  html body header.hero img.hero-photo,
+  html body header.hero .hero-photo{
+    position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
+    object-fit:cover!important;object-position:center 44%!important;z-index:-2!important;
+    border:0!important;outline:0!important;box-shadow:none!important;
+  }
+  html body header.hero .hero-overlay{
+    position:absolute!important;inset:0!important;z-index:-1!important;
+    background:
+      linear-gradient(90deg,
+        rgba(0,32,46,.06) 0%,
+        rgba(0,32,46,.08) 32%,
+        rgba(0,32,46,.24) 48%,
+        rgba(0,32,46,.62) 70%,
+        rgba(0,32,46,.88) 100%),
+      linear-gradient(180deg,
+        rgba(0,32,46,.14) 0%,
+        rgba(0,32,46,.18) 46%,
+        rgba(0,32,46,.76) 100%)!important;
+  }
+  html body header.hero .hero-content{
+    position:absolute!important;inset:0!important;z-index:3!important;display:block!important;
+    width:100%!important;height:100%!important;max-width:none!important;margin:0!important;padding:0!important;
+  }
+  html body header.hero .hero-content>div:first-child{position:static!important;max-width:none!important;transform:none!important;}
+
+  /* Linha laranja: uma única posição para home e internas */
+  html body header.hero .hero-content .eyebrow.hero-eyebrow{
+    position:absolute!important;
+    left:var(--ec-hero-eyebrow-left)!important;
+    top:calc(clamp(136px,16vh,172px) - var(--ec-hero-up-2cm) + var(--ec-hero-down-1cm) - var(--ec-hero-up-05cm))!important;
+    transform:translate(37px,-6px)!important;
+    width:calc(100vw - var(--ec-hero-eyebrow-left) - clamp(210px,16vw,300px))!important;
+    max-width:none!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:clip!important;
+    font-size:9px!important;letter-spacing:.31em!important;line-height:1!important;color:var(--amarelo,#f59b1e)!important;
+    opacity:1!important;text-shadow:0 2px 12px rgba(0,32,46,.66)!important;z-index:10!important;
+    margin:0!important;border:0!important;outline:0!important;
+  }
+  html body header.hero .hero-content .eyebrow.hero-eyebrow::before{
+    width:32px!important;min-width:32px!important;height:2px!important;background:var(--amarelo,#f59b1e)!important;opacity:1!important;
+  }
+
+  /* Título sempre à direita da pedra */
+  html body header.hero h1{
+    position:absolute!important;right:clamp(66px,5.5vw,126px)!important;
+    top:calc(clamp(205px,23vh,270px) - var(--ec-hero-up-2cm))!important;
+    max-width:min(610px,39vw)!important;font-size:clamp(38px,4.35vw,70px)!important;
+    line-height:.98!important;margin:0!important;text-wrap:balance!important;z-index:7!important;
+    border:0!important;outline:0!important;box-shadow:none!important;
+  }
+
+  /* Nas páginas internas, o texto pequeno sai do centro e fica no frame lateral */
+  html body:not([data-screen-label="Home"]) header.hero .hero-sub{
+    display:none!important;
+  }
+  html body[data-screen-label="Home"] header.hero .hero-sub{
+    position:absolute!important;right:clamp(66px,5.5vw,126px)!important;
+    top:calc(clamp(520px,58vh,625px) - var(--ec-hero-up-2cm) + var(--ec-hero-down-subtitle))!important;
+    max-width:min(610px,40vw)!important;font-size:clamp(15px,1vw,18px)!important;line-height:1.55!important;margin:0!important;color:rgba(246,239,222,.95)!important;z-index:7!important;
+  }
+
+  html body header.hero .hero-chips{
+    position:absolute!important;left:clamp(70px,5.5vw,118px)!important;
+    bottom:calc(clamp(132px,15.8vh,172px) + var(--ec-hero-up-2cm))!important;
+    max-width:min(760px,56vw)!important;margin:0!important;gap:8px!important;z-index:8!important;
+    display:flex!important;flex-wrap:wrap!important;align-items:center!important;
+  }
+  html body header.hero .hero-chips span{font-size:.82rem!important;padding:5px 13px!important;background:rgba(0,32,46,.42)!important;border-color:rgba(246,239,222,.28)!important;}
+  html body header.hero .hero-ctas{
+    position:absolute!important;left:clamp(70px,5.5vw,118px)!important;
+    bottom:calc(clamp(54px,7.2vh,82px) + var(--ec-hero-up-2cm))!important;
+    max-width:min(900px,62vw)!important;gap:12px!important;z-index:8!important;
+  }
+
+  html body header.hero aside.hero-side{
+    position:absolute!important;inset:0!important;z-index:6!important;max-width:none!important;width:100%!important;height:100%!important;
+    display:block!important;pointer-events:none!important;transform:none!important;padding:0!important;margin:0!important;
+  }
+  html body header.hero aside.hero-side .hero-meta-card{
+    position:absolute!important;left:clamp(38px,3vw,70px)!important;top:auto!important;
+    bottom:calc(clamp(246px,28.5vh,315px) + var(--ec-hero-up-2cm))!important;
+    width:min(214px,15vw)!important;min-height:clamp(310px,38vh,390px)!important;
+    display:flex!important;flex-direction:column!important;justify-content:space-between!important;
+    padding:18px 16px!important;border-radius:16px!important;background:rgba(0,32,46,.55)!important;
+    border:1px solid rgba(245,155,30,.24)!important;box-shadow:0 16px 40px rgba(0,0,0,.22)!important;
+    backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important;z-index:8!important;overflow:hidden!important;
+  }
+  html body header.hero aside.hero-side .hero-meta-card .hmc{display:block!important;padding:8px 0!important;}
+  html body header.hero aside.hero-side .hero-meta-card .hmc .l{display:block!important;width:100%!important;font-size:8px!important;letter-spacing:.30em!important;line-height:1!important;margin:0 0 10px!important;white-space:nowrap!important;color:var(--amarelo,#f59b1e)!important;}
+  html body header.hero aside.hero-side .hero-meta-card .hmc .v{display:block!important;width:100%!important;font-size:13px!important;line-height:1.30!important;margin:0!important;white-space:normal!important;color:var(--areia-pale,#f6efde)!important;}
+  html body:not([data-screen-label="Home"]) header.hero aside.hero-side .hero-meta-card .hmc.hero-summary-card .v{font-size:12.2px!important;line-height:1.26!important;}
+
+  html body header.hero aside.hero-side img.hero-logo{
+    position:absolute!important;left:72vw!important;top:auto!important;right:auto!important;
+    bottom:calc(clamp(54px,7.2vh,82px) + var(--ec-hero-up-2cm) - 46px)!important;
+    transform:translateX(-50%)!important;width:clamp(140px,10vw,166px)!important;height:clamp(140px,10vw,166px)!important;
+    opacity:.80!important;z-index:6!important;filter:drop-shadow(0 14px 34px rgba(0,32,46,.58))!important;pointer-events:none!important;
+  }
+  html body header.hero .hero-bottom-bar{
+    background:rgba(0,32,46,.58)!important;backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important;z-index:9!important;
+    border-top:1px solid rgba(245,155,30,.30)!important;box-shadow:none!important;outline:0!important;
+  }
+}
+
+@media (max-width:960px){
+  html body header.hero{border:0!important;outline:0!important;box-shadow:none!important;}
+  html body header.hero aside.hero-side{display:none!important;}
+  html body header.hero .hero-content{position:relative!important;display:grid!important;grid-template-columns:1fr!important;}
+  html body header.hero .hero-content .eyebrow.hero-eyebrow,
+  html body header.hero h1,
+  html body header.hero .hero-sub,
+  html body header.hero .hero-chips,
+  html body header.hero .hero-ctas{position:static!important;white-space:normal!important;width:auto!important;}
+}
+</style>
+<!-- /EC Hero Pao de Acucar Visual Lock -->
 <!-- EC Final GEO Direct Answer CSS -->
 <style id="ec-final-geo-direct-answer-css">
 .ec-final-geo-answer{background:#f6efde;color:#00405a;padding:58px 0;border-top:1px solid rgba(0,64,90,.10)}
