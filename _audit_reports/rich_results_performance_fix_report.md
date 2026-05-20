@@ -7,10 +7,10 @@ Corrigir os problemas apontados pelo Search Console/PSI: FAQ duplicado, author/d
 - html_scanned: 86
 - html_updated: 85
 - jsonld_scripts_parsed: 370
-- jsonld_scripts_rewritten: 38
+- jsonld_scripts_rewritten: 33
 - jsonld_scripts_removed: 15
-- faq_pages_consolidated: 35
-- faq_entities_merged: 176
+- faq_pages_consolidated: 30
+- faq_entities_merged: 156
 - articles_fixed: 18
 - dates_fixed: 0
 - offers_fixed_or_removed: 0

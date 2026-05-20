@@ -10,8 +10,8 @@
 - UPDATED: guia-do-rio.html | replacements=10
 - UPDATED: morro-da-urca.html | replacements=19
 - UPDATED: parque-bondinho.html | replacements=5
-- UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=9
-- UPDATED: roteiro-meio-dia-urca-pao-de-acucar.html | replacements=10
+- UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=7
+- UPDATED: roteiro-meio-dia-urca-pao-de-acucar.html | replacements=8
 
 ## Pendências visíveis
 - cafe-da-manha.html: residual: equipo

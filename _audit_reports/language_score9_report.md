@@ -34,7 +34,7 @@
 - SECONDARY: UPDATED: feijoada.html | replacements=11
 - SECONDARY: UPDATED: morro-da-urca.html | replacements=19
 - SECONDARY: UPDATED: nossa-visao.html | replacements=6
-- SECONDARY: UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=10
+- SECONDARY: UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=8
 - SECONDARY: UPDATED: onde-comer-no-pao-de-acucar.html | replacements=6
 - SECONDARY: UPDATED: parque-bondinho-pao-de-acucar.html | replacements=5
 - SECONDARY: UPDATED: parque-bondinho.html | replacements=5
@@ -42,7 +42,7 @@
 - SECONDARY: UPDATED: restaurante-bondinho-pao-de-acucar.html | replacements=7
 - SECONDARY: UPDATED: restaurante-morro-da-urca.html | replacements=5
 - SECONDARY: UPDATED: restaurantes-perto-do-pao-de-acucar.html | replacements=5
-- SECONDARY: UPDATED: roteiro-meio-dia-urca-pao-de-acucar.html | replacements=12
+- SECONDARY: UPDATED: roteiro-meio-dia-urca-pao-de-acucar.html | replacements=10
 
 ## Pendências críticas
 - Nenhuma pendência crítica de idioma ou fato detectada

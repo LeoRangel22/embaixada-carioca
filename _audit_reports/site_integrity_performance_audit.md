@@ -205,9 +205,9 @@
 - cardapio.html: 175.7 KB
 - eventos.html: 172.2 KB
 - almoco.html: 172.2 KB
+- en/almoco.html: 172.1 KB
 - es/eventos.html: 172.0 KB
 - es/cardapio.html: 169.4 KB
-- en/eventos.html: 168.9 KB
 
 ## Maiores assets de imagem
 - assets/sunset-dj-cabine-pao-acucar.png: 573.2 KB [ACIMA DE 300 KB]

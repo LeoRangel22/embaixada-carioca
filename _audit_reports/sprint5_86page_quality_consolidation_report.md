@@ -10,9 +10,9 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - pages_updated: 71
 - thin_before: 20
 - thin_after_estimated: 19
-- consolidation_blocks_added: 50
-- faq_blocks_added: 8
-- schema_blocks_added: 8
+- consolidation_blocks_added: 45
+- faq_blocks_added: 3
+- schema_blocks_added: 3
 - language_fixes_applied: 56
 - anchor_targets_added: 0
 - sitemap_missing: 0
@@ -38,8 +38,8 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 | es/nossa-visao.html | es | 81 | 595 | 0 | True | True | False | 29.1 |
 | es/contato.html | es | 81 | 597 | 0 | True | True | False | 29.0 |
 | en/contato.html | en | 81 | 604 | 0 | True | True | False | 28.9 |
-| en/roteiro-meio-dia-urca-pao-de-acucar.html | en | 82 | 807 | 0 | True | True | True | 146.7 |
-| es/roteiro-meio-dia-urca-pao-de-acucar.html | es | 82 | 816 | 0 | True | True | True | 147.0 |
+| en/roteiro-meio-dia-urca-pao-de-acucar.html | en | 82 | 807 | 0 | True | True | False | 145.4 |
+| es/roteiro-meio-dia-urca-pao-de-acucar.html | es | 82 | 816 | 0 | True | True | False | 145.7 |
 | nossa-visao.html | pt-BR | 84 | 535 | 0 | True | True | False | 28.8 |
 | contato.html | pt-BR | 84 | 550 | 0 | True | True | False | 28.7 |
 | parque-bondinho-pao-de-acucar.html | pt-BR | 84 | 595 | 0 | True | True | True | 61.6 |
@@ -95,7 +95,7 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - eventos.html: 178.4 KB, 41 estilos inline
 - es/eventos.html: 178.0 KB, 41 estilos inline
 - almoco.html: 176.1 KB, 90 estilos inline
-- en/almoco.html: 175.7 KB, 79 estilos inline
+- en/almoco.html: 176.0 KB, 79 estilos inline
 - en/eventos.html: 174.9 KB, 41 estilos inline
 
 ## Ações aplicadas
@@ -109,8 +109,6 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - LANG_FIX: en/almoco-morro-da-urca.html
 - CONSOLIDATION_BLOCK: en/almoco-morro-da-urca.html (702 words before)
 - LANG_FIX: en/almoco.html
-- CONSOLIDATION_BLOCK: en/almoco.html (887 words before)
-- SPRINT5_FAQ_SCHEMA: en/almoco.html
 - LANG_FIX: en/breakfast-with-a-view-rio-de-janeiro.html
 - CONSOLIDATION_BLOCK: en/breakfast-with-a-view-rio-de-janeiro.html (145 words before)
 - SPRINT5_FAQ_SCHEMA: en/breakfast-with-a-view-rio-de-janeiro.html
@@ -123,8 +121,6 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - LANG_FIX: en/contato.html
 - CONSOLIDATION_BLOCK: en/contato.html (604 words before)
 - LANG_FIX: en/entardecer.html
-- CONSOLIDATION_BLOCK: en/entardecer.html (833 words before)
-- SPRINT5_FAQ_SCHEMA: en/entardecer.html
 - LANG_FIX: en/eventos.html
 - LANG_FIX: en/feijoada-com-vista-rio-de-janeiro.html
 - CONSOLIDATION_BLOCK: en/feijoada-com-vista-rio-de-janeiro.html (704 words before)
@@ -152,16 +148,12 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - LANG_FIX: en/sugarloaf-cable-car-restaurant.html
 - CONSOLIDATION_BLOCK: en/sugarloaf-cable-car-restaurant.html (798 words before)
 - LANG_FIX: en/sunset.html
-- CONSOLIDATION_BLOCK: en/sunset.html (833 words before)
-- SPRINT5_FAQ_SCHEMA: en/sunset.html
 - LANG_FIX: en/where-to-eat-near-sugarloaf.html
 - CONSOLIDATION_BLOCK: en/where-to-eat-near-sugarloaf.html (791 words before)
 - LANG_FIX: es/almoco-morro-da-urca.html
 - CONSOLIDATION_BLOCK: es/almoco-morro-da-urca.html (675 words before)
 - LANG_FIX: es/almoco.html
 - LANG_FIX: es/atardecer.html
-- CONSOLIDATION_BLOCK: es/atardecer.html (855 words before)
-- SPRINT5_FAQ_SCHEMA: es/atardecer.html
 - LANG_FIX: es/cafe-da-manha-pao-de-acucar.html
 - CONSOLIDATION_BLOCK: es/cafe-da-manha-pao-de-acucar.html (688 words before)
 - LANG_FIX: es/cafe-da-manha.html
@@ -178,8 +170,6 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - LANG_FIX: es/donde-comer-cerca-del-pan-de-azucar.html
 - CONSOLIDATION_BLOCK: es/donde-comer-cerca-del-pan-de-azucar.html (791 words before)
 - LANG_FIX: es/entardecer.html
-- CONSOLIDATION_BLOCK: es/entardecer.html (855 words before)
-- SPRINT5_FAQ_SCHEMA: es/entardecer.html
 - LANG_FIX: es/eventos.html
 - LANG_FIX: es/feijoada-com-vista-rio-de-janeiro.html
 - CONSOLIDATION_BLOCK: es/feijoada-com-vista-rio-de-janeiro.html (687 words before)
