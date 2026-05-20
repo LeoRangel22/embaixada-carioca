@@ -1,0 +1,36 @@
+name: Visual readability reality fix
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'scripts/apply_visual_readability_reality_fix.py'
+      - '.github/workflows/visual-readability-reality-fix.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  apply-visual-readability-reality-fix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Run visual readability reality fix
+        run: python3 scripts/apply_visual_readability_reality_fix.py
+      - name: Run final 86-page AAA master audit
+        run: python3 scripts/apply_final_86page_aaa_master_audit.py
+      - name: Commit changes and reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "fix: apply visual readability reality corrections"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
