@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
 
+
 <link rel="canonical" href="https://www.embaixadacarioca.com/offline.html">
 <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -370,6 +371,18 @@ nav.top.scrolled .nav-rating-badge.google-review-badge{
 }
 </style>
 <!-- /EC Nav UX Fixes -->
+<!-- EC Orange Eyebrow Position Fix -->
+<style id="ec-orange-eyebrow-position-fix">
+@media (min-width: 961px) {
+  .hero .hero-eyebrow,
+  .page-hero .hero-eyebrow {
+    position: relative !important;
+    transform: translate(38px, -38px) !important;
+    will-change: transform;
+  }
+}
+</style>
+<!-- /EC Orange Eyebrow Position Fix -->
 </head>
 <body>
   <div class="container">
