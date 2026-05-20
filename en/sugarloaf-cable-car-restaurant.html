@@ -548,9 +548,152 @@ body[data-screen-label] nav.top,body[data-screen-label] nav.top *{box-sizing:bor
 <!-- EC Sprint 1 Structured Data -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"Restaurant","@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca","alternateName":["Restaurante do Bondinho","Restaurante Morro da Urca","Restaurant at Sugarloaf Cable Car Park"],"url":"https://www.embaixadacarioca.com/","logo":"https://www.embaixadacarioca.com/assets/logo-azul.svg","image":["https://www.embaixadacarioca.com/assets/hero.webp","https://www.embaixadacarioca.com/assets/hero-1200w.webp"],"description":"Brazilian restaurant at Urca Hill, inside Sugarloaf Cable Car Park, serving breakfast, lunch, caipirinhas, draft beer and events with a view.","telephone":"+5521966837556","priceRange":"$$","servesCuisine":["Brazilian","Carioca","Breakfast","Bar"],"acceptsReservations":true,"hasMenu":"https://www.embaixadacarioca.com/cardapio.html","hasMap":"https://www.google.com/maps/search/?api=1&query=Embaixada+Carioca+Morro+da+Urca","isAccessibleForFree":false,"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Sugarloaf Mountain view","value":true},{"@type":"LocationFeatureSpecification","name":"Inside Sugarloaf Cable Car Park","value":true},{"@type":"LocationFeatureSpecification","name":"Outdoor seating","value":true}],"address":{"@type":"PostalAddress","streetAddress":"Av. Pasteur, 520 — Morro da Urca","addressLocality":"Rio de Janeiro","addressRegion":"RJ","postalCode":"22290-240","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-22.9511223,"longitude":-43.1642121},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:30","closes":"21:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"7779","bestRating":"5","worstRating":"1"},"sameAs":["https://www.instagram.com/embaixadacarioca/","https://g.page/r/CU-tJiJIjBUcEAE/review","https://www.google.com/maps/search/?api=1&query=Embaixada+Carioca+Morro+da+Urca"],"potentialAction":{"@type":"ReserveAction","target":"https://go.tagme.com.br/embaixadacarioca","name":"Reserve a table"},"keywords":["restaurant near Sugarloaf Mountain","restaurant at Urca Hill","Sugarloaf Cable Car restaurant","breakfast with a view","caipirinha in Rio de Janeiro"],"inLanguage":"en"},{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.embaixadacarioca.com/#website","name":"Embaixada Carioca","url":"https://www.embaixadacarioca.com/","inLanguage":"en","publisher":{"@id":"https://www.embaixadacarioca.com/#restaurant"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Embaixada Carioca","item":"https://www.embaixadacarioca.com/"},{"@type":"ListItem","position":2,"name":"Sugarloaf Cable Car Restaurant | Embaixada Carioca","item":"https://www.embaixadacarioca.com/en/sugarloaf-cable-car-restaurant.html"}]}]}</script>
 <!-- /EC Sprint 1 Structured Data -->
+<!-- EC Nav UX Fixes -->
+<style id="ec-nav-ux-fixes">
+/* Idiomas: abre para baixo, sem cortar fora da página */
+nav.top,
+nav.top .nav-inner,
+nav.top .lang-switcher{
+  overflow:visible!important;
+}
+nav.top .lang-switcher{
+  position:relative!important;
+  z-index:4000!important;
+}
+nav.top .lang-dropdown{
+  position:absolute!important;
+  top:calc(100% + 8px)!important;
+  bottom:auto!important;
+  right:0!important;
+  left:auto!important;
+  transform:none!important;
+  min-width:190px!important;
+  max-width:min(240px,calc(100vw - 24px))!important;
+  max-height:calc(100vh - 96px)!important;
+  overflow-y:auto!important;
+  z-index:99999!important;
+  border-radius:0 0 16px 16px!important;
+  box-shadow:0 18px 42px rgba(0,32,46,.26)!important;
+}
+nav.top .lang-switcher:hover .lang-dropdown,
+nav.top .lang-switcher:focus-within .lang-dropdown{
+  transform:none!important;
+}
+@media(max-width:960px){
+  nav.top .lang-dropdown{
+    right:auto!important;
+    left:0!important;
+    top:calc(100% + 6px)!important;
+    max-width:calc(100vw - 24px)!important;
+  }
+}
+
+/* Como Chegar: sem pin no menu principal */
+nav.top .nav-links .drawer-icon,
+nav.top a[href*="como-chegar"] .drawer-icon,
+nav.top a[href*="how-to-get-there"] .drawer-icon,
+nav.top a[href*="como-llegar"] .drawer-icon{
+  display:none!important;
+}
+
+/* Google Reviews compacto no topo */
+nav.top .nav-rating-badge.google-review-badge{
+  width:auto!important;
+  min-width:154px!important;
+  height:42px!important;
+  padding:5px 11px!important;
+  border-radius:14px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:8px!important;
+  text-decoration:none!important;
+  background:rgba(246,239,222,.13)!important;
+  border:1px solid rgba(246,239,222,.30)!important;
+  color:rgba(246,239,222,.94)!important;
+  backdrop-filter:blur(9px)!important;
+  -webkit-backdrop-filter:blur(9px)!important;
+}
+nav.top.scrolled .nav-rating-badge.google-review-badge{
+  background:rgba(0,64,90,.06)!important;
+  border-color:rgba(0,64,90,.18)!important;
+  color:#00405a!important;
+}
+.google-review-badge .google-g{
+  flex:0 0 17px!important;
+  width:17px!important;
+  height:17px!important;
+  border-radius:50%!important;
+  display:inline-grid!important;
+  place-items:center!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:17px!important;
+  line-height:1!important;
+  font-weight:700!important;
+  color:#4285f4!important;
+  background:transparent!important;
+}
+.google-review-badge .gr-copy{
+  display:flex!important;
+  flex-direction:column!important;
+  gap:1px!important;
+  min-width:0!important;
+}
+.google-review-badge .gr-label{
+  font-family:Catamaran,Verdana,system-ui,sans-serif!important;
+  font-size:9px!important;
+  line-height:1!important;
+  font-weight:700!important;
+  letter-spacing:.01em!important;
+  text-transform:none!important;
+  opacity:.88!important;
+  white-space:nowrap!important;
+}
+.google-review-badge .gr-row{
+  display:flex!important;
+  align-items:center!important;
+  gap:5px!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+}
+.google-review-badge .gr-score{
+  font-family:Catamaran,Verdana,system-ui,sans-serif!important;
+  font-size:16px!important;
+  line-height:.95!important;
+  font-weight:800!important;
+  letter-spacing:.01em!important;
+}
+.google-review-badge .gr-stars{
+  color:#fbbc04!important;
+  font-size:8px!important;
+  letter-spacing:.02em!important;
+  line-height:1!important;
+}
+.google-review-badge .gr-count{
+  font-size:8.5px!important;
+  line-height:1!important;
+  opacity:.78!important;
+  letter-spacing:.01em!important;
+}
+@media(max-width:1180px){
+  nav.top .nav-rating-badge.google-review-badge{
+    min-width:86px!important;
+    width:86px!important;
+    padding:5px 7px!important;
+    gap:5px!important;
+  }
+  .google-review-badge .gr-label,
+  .google-review-badge .gr-count{display:none!important;}
+  .google-review-badge .gr-score{font-size:14px!important;}
+}
+</style>
+<!-- /EC Nav UX Fixes -->
 </head>
 <body data-screen-label="Territory">
-<nav class="top"><div class="nav-inner"><a class="brand-mark" href="/"><img class="brand-logo light" src="/assets/logo-branco.svg" alt="Embaixada Carioca"><img class="brand-logo dark" src="/assets/logo-branco.svg" alt=""></a><div class="nav-links"><a href="/en/cafe-da-manha.html">Breakfast</a><a href="/en/almoco.html">Lunch</a><a href="/en/how-to-get-there.html">HOW TO GET THERE</a><a href="/en/eventos.html">Events</a><a href="/en/cardapio.html">Menu</a><a href="/en/guia-do-rio.html">Rio Guide</a></div><a class="nav-rating-badge" href="https://g.page/r/CU-tJiJIjBUcEAE/review"><span class="nav-rating-stars">4.8★</span> <span class="nav-rating-count">7.779 avaliações</span></a><div class="lang-switcher"><button class="lang-current" type="button">BR&nbsp;PT</button></div><a class="btn" href="https://go.tagme.com.br/embaixadacarioca">Reservar →</a></div></nav>
+<nav class="top"><div class="nav-inner"><a class="brand-mark" href="/"><img class="brand-logo light" src="/assets/logo-branco.svg" alt="Embaixada Carioca"><img class="brand-logo dark" src="/assets/logo-branco.svg" alt=""></a><div class="nav-links"><a href="/en/cafe-da-manha.html">Breakfast</a><a href="/en/almoco.html">Lunch</a><a href="/en/how-to-get-there.html">HOW TO GET THERE</a><a href="/en/eventos.html">Events</a><a href="/en/cardapio.html">Menu</a><a href="/en/guia-do-rio.html">Rio Guide</a></div><a aria-label="Google Reviews: 4.8 estrelas · 7.779 avaliações" class="nav-rating-badge google-review-badge" href="https://g.page/r/CU-tJiJIjBUcEAE/review" rel="noopener" target="_blank" title="Google Reviews · 4.8 estrelas">
+<span class="google-g" aria-hidden="true">G</span>
+<span class="gr-copy"><span class="gr-label">Google Reviews</span><span class="gr-row"><strong class="gr-score">4.8</strong><span class="gr-stars" aria-hidden="true">★★★★★</span><span class="gr-count">7.779 avaliações</span></span></span>
+</a><div class="lang-switcher"><button class="lang-current" type="button">BR&nbsp;PT</button></div><a class="btn" href="https://go.tagme.com.br/embaixadacarioca">Reservar →</a></div></nav>
 <header class="page-hero"><picture class="page-hero-photo"><source type="image/webp" srcset="/assets/hero-400w.webp 400w, /assets/hero-mobile.webp 600w, /assets/hero-800w.webp 800w, /assets/hero-1200w.webp 1200w, /assets/hero.webp 1920w" sizes="100vw"><img src="/assets/hero-1200w.webp" alt="Sugarloaf Cable Car restaurant — Embaixada Carioca" width="1920" height="1267" fetchpriority="high" decoding="async"></picture><div class="page-hero-overlay"></div><div class="page-hero-content"><div class="eyebrow hero-eyebrow">Restaurant at the Cable Car · Morro da Urca · Sugarloaf Cable Car Park · Rio de Janeiro · Brazil</div><h1>Sugarloaf Cable Car restaurant</h1><p class="lede">For visitors looking for a restaurant at the Sugarloaf Cable Car, Embaixada Carioca is located at Urca Hill inside the park.</p><div class="hero-chips"><span>4.8★ · 7.779 avaliações</span><span>Parque Bondinho</span><span>Morro da Urca</span><span>Pão de Açúcar</span></div><div class="ctas"><a class="btn" href="https://go.tagme.com.br/embaixadacarioca">Reserve a table →</a><a class="btn ghost" href="/en/cardapio.html">See menu</a></div></div></header>
 <main><div class="wrap"><section class="direct-answer"><strong class="mono">Direct answer</strong><p>Yes. Embaixada Carioca is located inside Sugarloaf Cable Car Park, at Urca Hill, and serves visitors looking for where to eat on the cable car route.</p></section><section class="section"><h2>Why this search matters</h2><p>Local search has strong intent: the visitor is planning the attraction, is already nearby or is comparing where to eat.</p><p>The goal is to answer clearly and show when Embaixada Carioca is the natural option: inside the Cable Car Park, at Urca Hill, with a direct Sugarloaf view.</p></section><section class="section"><h2>When to choose Embaixada Carioca</h2><ul><li>When you want to eat inside the Cable Car circuit.</li><li>When the Sugarloaf view is part of the experience.</li><li>When you want breakfast, Brazilian lunch, caipirinhas, draft beer or events at Urca Hill.</li></ul></section><section class="section"><h2>Nearby options and how to decide</h2><div class="grid"><article class='card'><h3>Araá</h3><p>Search related to the Cable Car food ecosystem.</p></article><article class='card'><h3>Clássico Sunset Club</h3><p>Search related to sunset and hilltop experiences.</p></article><article class='card'><h3>Terra Brasilis</h3><p>An option searched by people around Praia Vermelha and Urca.</p></article><article class='card'><h3>Bar Urca</h3><p>A reference searched by people looking for tradition in Urca.</p></article><article class='card'><h3>Flutuante</h3><p>Search linked to views and Guanabara Bay.</p></article><article class='card'><h3>Fogo de Chão and Assador</h3><p>Common searches for meat-focused restaurants, groups and views in Rio.</p></article><article class='card'><h3>Embaixada Carioca</h3><p>Option at Urca Hill, inside Sugarloaf Cable Car Park, with breakfast, lunch, drinks and events.</p></article></div><p><small>Editorial guide. Mentioned brands belong to their respective owners.</small></p></section><section class="section faq"><h2>Frequently asked questions</h2><details><summary>Is Embaixada Carioca inside Sugarloaf Cable Car Park?</summary><p>Yes. It is at Urca Hill, at the first cable car stop.</p></details><details><summary>Do I need a cable car ticket?</summary><p>Yes. Access to Urca Hill is through Sugarloaf Cable Car Park.</p></details><details><summary>Does it serve breakfast and lunch?</summary><p>Yes. The restaurant serves breakfast, Brazilian lunch, caipirinhas, draft beer and events.</p></details><details><summary>Is this an official comparison with competitors?</summary><p>No. This is an editorial guide to help visitors decide where to eat in the area.</p></details></section><section class="section"><h2>Keep exploring</h2><div class="territory-links"><a class="territory-link" href="/en/sugarloaf-cable-car-park.html">Where to eat at Sugarloaf Cable Car Park</a><a class="territory-link" href="/en/where-to-eat-near-sugarloaf.html">Where to eat near Sugarloaf Mountain</a><a class="territory-link" href="/en/restaurant-at-urca-hill.html">Restaurant at Urca Hill</a><a class="territory-link" href="/en/restaurants-near-sugarloaf-mountain.html">Restaurants near Sugarloaf Mountain</a></div></section></div></main>
 <footer class="footer"><p>Embaixada Carioca · Urca Hill · Sugarloaf Cable Car Park</p><p><a class="btn" href="https://go.tagme.com.br/embaixadacarioca">Reserve a table →</a></p></footer>
