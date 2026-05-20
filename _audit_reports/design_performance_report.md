@@ -13,15 +13,15 @@
 - guia-do-rio.html: excesso de blocos <style> inline (18). Impacta manutenção e performance percebida.
 - en/index.html: excesso de blocos <style> inline (19). Impacta manutenção e performance percebida.
 - en/cafe-da-manha.html: excesso de blocos <style> inline (16). Impacta manutenção e performance percebida.
-- en/almoco.html: excesso de blocos <style> inline (16). Impacta manutenção e performance percebida.
-- en/entardecer.html: excesso de blocos <style> inline (16). Impacta manutenção e performance percebida.
-- en/sunset.html: excesso de blocos <style> inline (16). Impacta manutenção e performance percebida.
+- en/almoco.html: excesso de blocos <style> inline (15). Impacta manutenção e performance percebida.
+- en/entardecer.html: excesso de blocos <style> inline (15). Impacta manutenção e performance percebida.
+- en/sunset.html: excesso de blocos <style> inline (15). Impacta manutenção e performance percebida.
 - en/eventos.html: excesso de blocos <style> inline (15). Impacta manutenção e performance percebida.
 - es/index.html: excesso de blocos <style> inline (19). Impacta manutenção e performance percebida.
 - es/cafe-da-manha.html: excesso de blocos <style> inline (16). Impacta manutenção e performance percebida.
 - es/almoco.html: excesso de blocos <style> inline (15). Impacta manutenção e performance percebida.
-- es/entardecer.html: excesso de blocos <style> inline (16). Impacta manutenção e performance percebida.
-- es/atardecer.html: excesso de blocos <style> inline (16). Impacta manutenção e performance percebida.
+- es/entardecer.html: excesso de blocos <style> inline (15). Impacta manutenção e performance percebida.
+- es/atardecer.html: excesso de blocos <style> inline (15). Impacta manutenção e performance percebida.
 - es/eventos.html: excesso de blocos <style> inline (15). Impacta manutenção e performance percebida.
 
 ## Score estimado Design/Performance
