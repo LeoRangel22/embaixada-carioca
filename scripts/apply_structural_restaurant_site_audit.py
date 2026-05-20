@@ -48,11 +48,24 @@ HTML_LANG_RE = re.compile(r"<html\b[^>]*\blang=[\"']([^\"']+)[\"']", re.IGNORECA
 META_DESC_RE = re.compile(r'<meta\b(?=[^>]*\bname=["\']description["\'])(?=[^>]*\bcontent=["\']([^"\']{50,220})["\'])[^>]*>', re.IGNORECASE)
 VIEWPORT_RE = re.compile(r'<meta\b(?=[^>]*\bname=["\']viewport["\'])(?=[^>]*\bcontent=)[^>]*>', re.IGNORECASE)
 TITLE_RE = re.compile(r"<title>\s*([^<]{12,85})\s*</title>", re.IGNORECASE)
+NON_VISIBLE_RE = re.compile(r"<script\b[\s\S]*?</script>|<style\b[\s\S]*?</style>|<!-- EC Sprint 1 Structured Data -->[\s\S]*?<!-- /EC Sprint 1 Structured Data -->", re.IGNORECASE)
+TAG_RE = re.compile(r"<[^>]+>")
 
 
 def read(rel: str) -> str:
     path = ROOT / rel
     return path.read_text(encoding="utf-8", errors="ignore") if path.exists() else ""
+
+
+def visible_text(html: str) -> str:
+    """Return approximate user-visible text for language QA.
+
+    This intentionally ignores script/style/JSON-LD. Structured data may contain
+    technical English tokens, but it should not count as visible language leakage.
+    """
+    cleaned = NON_VISIBLE_RE.sub(" ", html)
+    cleaned = TAG_RE.sub(" ", cleaned)
+    return re.sub(r"\s+", " ", cleaned)
 
 
 def lang_for(rel: str, text: str) -> str:
@@ -82,11 +95,12 @@ def audit_language() -> tuple[float, list[str]]:
     issues = []
     for path in html_files():
         rel = path.relative_to(ROOT).as_posix()
-        text = path.read_text(encoding="utf-8", errors="ignore")
-        lang = lang_for(rel, text)
+        raw = path.read_text(encoding="utf-8", errors="ignore")
+        lang = lang_for(rel, raw)
+        text = visible_text(raw)
         for pattern in LANG_PATTERNS.get(lang, []):
             if re.search(pattern, text, re.IGNORECASE):
-                issues.append(f"{rel}: padrão suspeito de idioma `{pattern}`")
+                issues.append(f"{rel}: texto visível contém padrão suspeito de idioma `{pattern}`")
     return score_from_issues(10, 0.5, len(issues), 7.0), issues
 
 
