@@ -193,7 +193,7 @@
 - Nenhum alerta crítico encontrado
 
 ## Maiores páginas HTML
-- index.html: 274.7 KB
+- index.html: 274.6 KB
 - es/index.html: 264.5 KB
 - en/index.html: 261.7 KB
 - es/guia-do-rio.html: 184.2 KB

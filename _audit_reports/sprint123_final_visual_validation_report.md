@@ -6,7 +6,7 @@ Validar menu principal, botões, idioma, duplicações editoriais e padrão visu
 ## Contadores
 - html_scanned: 86
 - html_updated: 2
-- editorial_fixes: 1
+- editorial_fixes: 0
 - language_fixes: 2
 - nav_fixes: 0
 - visual_checks_passed: 21
@@ -15,7 +15,6 @@ Validar menu principal, botões, idioma, duplicações editoriais e padrão visu
 ## Correções aplicadas
 - LANG: eventos.html | 'Reuniones matinais' -> 'Reuniões matinais' | 1
 - UPDATED: eventos.html
-- EDITORIAL: index.html | duplicate story paragraph fixed | 1
 - LANG: index.html | 'Reuniones matinais' -> 'Reuniões matinais' | 1
 - UPDATED: index.html
 

@@ -19,7 +19,7 @@
 - PRIORITY: UPDATED: cardapio.html | replacements=8
 - PRIORITY: UPDATED: entardecer.html | replacements=16
 - PRIORITY: UPDATED: es/eventos.html | replacements=7
-- PRIORITY: UPDATED: eventos.html | replacements=32
+- PRIORITY: UPDATED: eventos.html | replacements=33
 - PRIORITY: UPDATED: guia-do-rio.html | replacements=16
 - PRIORITY: UPDATED: index.html | replacements=42
 - SECONDARY: UPDATED: cafe-da-manha-com-vista-rio-de-janeiro.html | replacements=2
