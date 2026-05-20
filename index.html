@@ -1059,6 +1059,13 @@ img[loading="lazy"]:not(.loaded):not([src*=".svg"]){
   }
 }
 </style>
+<style>
+/* Design fallback 95 */
+.page-hero{background:linear-gradient(135deg,#071a23 0%,#0d1f29 48%,#123241 100%);}
+.page-hero-photo img,.page-hero-photo{filter:saturate(1.02) contrast(1.02);}
+@media (min-width: 961px){.page-hero{min-height:72vh}.page-hero-content{padding-top:160px}}
+</style>
+
 <style id="home-hero-six-star-final">
 /* Home Hero Six Star Final — única fonte de verdade */
 @media (min-width: 961px){
@@ -1431,7 +1438,7 @@ nav.top.scrolled .nav-rating-badge.google-review-badge{
   .hero .hero-eyebrow,
   .page-hero .hero-eyebrow {
     position: relative !important;
-    transform: translate(38px, -38px) !important;
+    transform: translate(35px, -31px) !important;
     will-change: transform;
   }
 }
