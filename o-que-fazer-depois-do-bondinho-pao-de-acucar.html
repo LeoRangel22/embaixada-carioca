@@ -1777,6 +1777,41 @@ nav.top.scrolled a.nav-rating-badge:visited {
 <!-- EC Sprint 5 Quality Schema -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html#webpage","url":"https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html","name":"Embaixada Carioca","inLanguage":"pt-BR","isPartOf":{"@id":"https://www.embaixadacarioca.com/#website"}}]}</script>
 <!-- /EC Sprint 5 Quality Schema -->
+<!-- EC Final Design Consistency Lock -->
+<style id="ec-final-design-consistency-lock">
+/* FINAL DESIGN LOCK — linha laranja, botões e frames no padrão visual da home */
+@media (min-width:961px){
+  header.hero .hero-content .eyebrow.hero-eyebrow,
+  header.page-hero .page-hero-content .eyebrow.hero-eyebrow{position:absolute!important;top:96px!important;left:clamp(78px,5.5vw,112px)!important;transform:none!important;margin:0!important;width:calc(100vw - clamp(78px,5.5vw,112px) - 250px)!important;max-width:none!important;white-space:nowrap!important;overflow:hidden!important;display:flex!important;align-items:center!important;gap:14px!important;font-family:"JetBrains Mono",ui-monospace,monospace!important;font-size:9px!important;line-height:1!important;letter-spacing:.31em!important;font-weight:700!important;text-transform:uppercase!important;color:var(--amarelo,#f59b1e)!important;z-index:20!important;border:0!important;outline:0!important;box-shadow:none!important;}
+  header.hero .hero-content .eyebrow.hero-eyebrow:before,
+  header.page-hero .page-hero-content .eyebrow.hero-eyebrow:before{content:""!important;display:inline-block!important;flex:0 0 34px!important;width:34px!important;height:2px!important;background:var(--amarelo,#f59b1e)!important;}
+}
+
+/* Base comum dos botões da hero */
+.hero-ctas a,.hero-ctas button,.ctas a,.ctas button,.btn,a.btn,button.btn,.btn-secondary,a.btn-secondary{min-height:60px!important;height:60px!important;padding:0 36px!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0!important;font-family:"JetBrains Mono",ui-monospace,monospace!important;font-size:14px!important;line-height:1!important;font-weight:900!important;letter-spacing:.13em!important;text-transform:uppercase!important;text-align:center!important;text-decoration:none!important;white-space:nowrap!important;overflow:hidden!important;}
+.btn:after,.btn:before,a.btn:after,button.btn:after,.btn-secondary:after,.btn-secondary:before,.hero-ctas a:after,.ctas a:after{content:none!important;display:none!important;}
+
+/* Somente reserva / TagMe fica laranja */
+.hero-ctas a[href*="tagme"],.hero-ctas a[href*="reserv"],.ctas a[href*="tagme"],.ctas a[href*="reserv"],a.btn[href*="tagme"],a.btn[href*="reserv"],.bnav-reservar{border:1px solid var(--amarelo,#f59b1e)!important;background:var(--amarelo,#f59b1e)!important;color:#fff!important;box-shadow:0 9px 0 rgba(0,64,90,.20),0 16px 30px rgba(0,32,46,.18)!important;}
+
+/* Demais botões ficam vazados; no hover invertem */
+.hero-ctas a:not([href*="tagme"]):not([href*="reserv"]),.ctas a:not([href*="tagme"]):not([href*="reserv"]),.hero-ctas button:not([data-primary]),.ctas button:not([data-primary]),.btn-secondary,a.btn-secondary{color:var(--areia-pale,#f6efde)!important;border:1px solid rgba(246,239,222,.82)!important;background:rgba(0,32,46,.18)!important;box-shadow:inset 0 0 0 1px rgba(246,239,222,.08),0 10px 26px rgba(0,32,46,.18)!important;backdrop-filter:blur(6px)!important;-webkit-backdrop-filter:blur(6px)!important;}
+.hero-ctas a:not([href*="tagme"]):not([href*="reserv"]):hover,.ctas a:not([href*="tagme"]):not([href*="reserv"]):hover,.btn-secondary:hover,a.btn-secondary:hover{background:rgba(246,239,222,.94)!important;border-color:rgba(246,239,222,.98)!important;color:var(--azul1,#00405a)!important;box-shadow:0 12px 28px rgba(0,32,46,.24)!important;}
+
+/* Topo: reservar permanece laranja, sem seta */
+nav.top .btn,nav.top a.btn[href*="tagme"]{min-height:60px!important;height:60px!important;width:188px!important;min-width:188px!important;padding:0!important;letter-spacing:.16em!important;border:1px solid var(--amarelo,#f59b1e)!important;background:var(--amarelo,#f59b1e)!important;color:#fff!important;}
+
+/* Frames/pílulas acima dos botões no padrão home */
+header.hero .hero-chips,header.page-hero .hero-chips{display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:8px!important;margin:0!important;border:0!important;outline:0!important;box-shadow:none!important;}
+header.hero .hero-chips span,header.hero .hero-chips a,header.page-hero .hero-chips span,header.page-hero .hero-chips a{min-height:36px!important;height:36px!important;padding:0 17px!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;background:rgba(0,32,46,.46)!important;border:1px solid rgba(246,239,222,.30)!important;color:var(--areia-pale,#f6efde)!important;box-shadow:0 8px 22px rgba(0,32,46,.14)!important;backdrop-filter:blur(7px)!important;-webkit-backdrop-filter:blur(7px)!important;font-family:Catamaran,Verdana,system-ui,sans-serif!important;font-size:14px!important;line-height:1!important;font-weight:700!important;text-decoration:none!important;white-space:nowrap!important;}
+
+/* Blindagem contra molduras cinzas */
+header.hero,header.page-hero,header.hero .hero-content,header.page-hero .page-hero-content,header.hero .hero-photo,header.page-hero .page-hero-photo,header.hero .hero-overlay,header.page-hero .page-hero-overlay{border:0!important;outline:0!important;box-shadow:none!important;}
+
+@media(max-width:960px){.hero-ctas a,.hero-ctas button,.ctas a,.ctas button,.btn,a.btn,button.btn,.btn-secondary,a.btn-secondary{min-height:54px!important;height:54px!important;padding:0 24px!important;font-size:12px!important;letter-spacing:.10em!important;}nav.top .btn,nav.top a.btn[href*="tagme"]{width:auto!important;min-width:124px!important;height:46px!important;min-height:46px!important;font-size:9.5px!important;}header.hero .hero-chips span,header.hero .hero-chips a,header.page-hero .hero-chips span,header.page-hero .hero-chips a{height:34px!important;min-height:34px!important;padding:0 13px!important;font-size:12px!important;}}
+</style>
+<!-- /EC Final Design Consistency Lock -->
+
 <!-- EC Sprint 1 Structured Data -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"Restaurant","@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca","alternateName":["Restaurante do Bondinho","Restaurante Morro da Urca","Restaurant at Sugarloaf Cable Car Park"],"url":"https://www.embaixadacarioca.com/","logo":"https://www.embaixadacarioca.com/assets/logo-azul.svg","image":["https://www.embaixadacarioca.com/assets/hero.webp","https://www.embaixadacarioca.com/assets/hero-1200w.webp"],"description":"Restaurante brasileiro no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com café da manhã, almoço, caipirinhas, chope e eventos com vista.","telephone":"+5521966837556","priceRange":"$$","servesCuisine":["Brasileira","Carioca","Café da manhã","Bar"],"acceptsReservations":true,"hasMenu":"https://www.embaixadacarioca.com/cardapio.html","hasMap":"https://www.google.com/maps/search/?api=1&query=Embaixada+Carioca+Morro+da+Urca","isAccessibleForFree":false,"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Vista para o Pão de Açúcar","value":true},{"@type":"LocationFeatureSpecification","name":"Dentro do Parque Bondinho Pão de Açúcar","value":true},{"@type":"LocationFeatureSpecification","name":"Mesas ao ar livre","value":true}],"address":{"@type":"PostalAddress","streetAddress":"Av. Pasteur, 520 — Morro da Urca","addressLocality":"Rio de Janeiro","addressRegion":"RJ","postalCode":"22290-240","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-22.9508333,"longitude":-43.1641667},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:30","closes":"21:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"7779","bestRating":"5","worstRating":"1"},"sameAs":["https://www.instagram.com/embaixadacarioca/","https://g.page/r/CU-tJiJIjBUcEAE/review","https://www.google.com/maps/search/?api=1&query=Embaixada+Carioca+Morro+da+Urca"],"potentialAction":{"@type":"ReserveAction","target":"https://go.tagme.com.br/embaixadacarioca","name":"Reservar mesa"},"keywords":["restaurante no Pão de Açúcar","restaurante Morro da Urca","restaurante no Bondinho","café da manhã com vista","caipirinha no Rio de Janeiro"],"inLanguage":"pt-BR"},{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.embaixadacarioca.com/#website","name":"Embaixada Carioca","url":"https://www.embaixadacarioca.com/","inLanguage":"pt-BR","publisher":{"@id":"https://www.embaixadacarioca.com/#restaurant"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Embaixada Carioca","item":"https://www.embaixadacarioca.com/"},{"@type":"ListItem","position":2,"name":"O Que Fazer Depois do Bondinho | Embaixada Carioca","item":"https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html"}]}]}</script>
 <!-- /EC Sprint 1 Structured Data -->
@@ -2256,40 +2291,6 @@ header.hero::before,header.hero::after,.hero::before,.hero::after,.page-hero::be
 }
 </style>
 <!-- /EC Hero Pao de Acucar Visual Lock -->
-<!-- EC Final Design Consistency Lock -->
-<style id="ec-final-design-consistency-lock">
-/* FINAL DESIGN LOCK — linha laranja, botões e frames no padrão visual da home */
-@media (min-width:961px){
-  header.hero .hero-content .eyebrow.hero-eyebrow,
-  header.page-hero .page-hero-content .eyebrow.hero-eyebrow{position:absolute!important;top:96px!important;left:clamp(78px,5.5vw,112px)!important;transform:none!important;margin:0!important;width:calc(100vw - clamp(78px,5.5vw,112px) - 250px)!important;max-width:none!important;white-space:nowrap!important;overflow:hidden!important;display:flex!important;align-items:center!important;gap:14px!important;font-family:"JetBrains Mono",ui-monospace,monospace!important;font-size:9px!important;line-height:1!important;letter-spacing:.31em!important;font-weight:700!important;text-transform:uppercase!important;color:var(--amarelo,#f59b1e)!important;z-index:20!important;border:0!important;outline:0!important;box-shadow:none!important;}
-  header.hero .hero-content .eyebrow.hero-eyebrow:before,
-  header.page-hero .page-hero-content .eyebrow.hero-eyebrow:before{content:""!important;display:inline-block!important;flex:0 0 34px!important;width:34px!important;height:2px!important;background:var(--amarelo,#f59b1e)!important;}
-}
-
-/* Base comum dos botões da hero */
-.hero-ctas a,.hero-ctas button,.ctas a,.ctas button,.btn,a.btn,button.btn,.btn-secondary,a.btn-secondary{min-height:60px!important;height:60px!important;padding:0 36px!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0!important;font-family:"JetBrains Mono",ui-monospace,monospace!important;font-size:14px!important;line-height:1!important;font-weight:900!important;letter-spacing:.13em!important;text-transform:uppercase!important;text-align:center!important;text-decoration:none!important;white-space:nowrap!important;overflow:hidden!important;}
-.btn:after,.btn:before,a.btn:after,button.btn:after,.btn-secondary:after,.btn-secondary:before,.hero-ctas a:after,.ctas a:after{content:none!important;display:none!important;}
-
-/* Somente reserva / TagMe fica laranja */
-.hero-ctas a[href*="tagme"],.hero-ctas a[href*="reserv"],.ctas a[href*="tagme"],.ctas a[href*="reserv"],a.btn[href*="tagme"],a.btn[href*="reserv"],.bnav-reservar{border:1px solid var(--amarelo,#f59b1e)!important;background:var(--amarelo,#f59b1e)!important;color:#fff!important;box-shadow:0 9px 0 rgba(0,64,90,.20),0 16px 30px rgba(0,32,46,.18)!important;}
-
-/* Demais botões ficam vazados; no hover invertem */
-.hero-ctas a:not([href*="tagme"]):not([href*="reserv"]),.ctas a:not([href*="tagme"]):not([href*="reserv"]),.hero-ctas button:not([data-primary]),.ctas button:not([data-primary]),.btn-secondary,a.btn-secondary{color:var(--areia-pale,#f6efde)!important;border:1px solid rgba(246,239,222,.82)!important;background:rgba(0,32,46,.18)!important;box-shadow:inset 0 0 0 1px rgba(246,239,222,.08),0 10px 26px rgba(0,32,46,.18)!important;backdrop-filter:blur(6px)!important;-webkit-backdrop-filter:blur(6px)!important;}
-.hero-ctas a:not([href*="tagme"]):not([href*="reserv"]):hover,.ctas a:not([href*="tagme"]):not([href*="reserv"]):hover,.btn-secondary:hover,a.btn-secondary:hover{background:rgba(246,239,222,.94)!important;border-color:rgba(246,239,222,.98)!important;color:var(--azul1,#00405a)!important;box-shadow:0 12px 28px rgba(0,32,46,.24)!important;}
-
-/* Topo: reservar permanece laranja, sem seta */
-nav.top .btn,nav.top a.btn[href*="tagme"]{min-height:60px!important;height:60px!important;width:188px!important;min-width:188px!important;padding:0!important;letter-spacing:.16em!important;border:1px solid var(--amarelo,#f59b1e)!important;background:var(--amarelo,#f59b1e)!important;color:#fff!important;}
-
-/* Frames/pílulas acima dos botões no padrão home */
-header.hero .hero-chips,header.page-hero .hero-chips{display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:8px!important;margin:0!important;border:0!important;outline:0!important;box-shadow:none!important;}
-header.hero .hero-chips span,header.hero .hero-chips a,header.page-hero .hero-chips span,header.page-hero .hero-chips a{min-height:36px!important;height:36px!important;padding:0 17px!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;background:rgba(0,32,46,.46)!important;border:1px solid rgba(246,239,222,.30)!important;color:var(--areia-pale,#f6efde)!important;box-shadow:0 8px 22px rgba(0,32,46,.14)!important;backdrop-filter:blur(7px)!important;-webkit-backdrop-filter:blur(7px)!important;font-family:Catamaran,Verdana,system-ui,sans-serif!important;font-size:14px!important;line-height:1!important;font-weight:700!important;text-decoration:none!important;white-space:nowrap!important;}
-
-/* Blindagem contra molduras cinzas */
-header.hero,header.page-hero,header.hero .hero-content,header.page-hero .page-hero-content,header.hero .hero-photo,header.page-hero .page-hero-photo,header.hero .hero-overlay,header.page-hero .page-hero-overlay{border:0!important;outline:0!important;box-shadow:none!important;}
-
-@media(max-width:960px){.hero-ctas a,.hero-ctas button,.ctas a,.ctas button,.btn,a.btn,button.btn,.btn-secondary,a.btn-secondary{min-height:54px!important;height:54px!important;padding:0 24px!important;font-size:12px!important;letter-spacing:.10em!important;}nav.top .btn,nav.top a.btn[href*="tagme"]{width:auto!important;min-width:124px!important;height:46px!important;min-height:46px!important;font-size:9.5px!important;}header.hero .hero-chips span,header.hero .hero-chips a,header.page-hero .hero-chips span,header.page-hero .hero-chips a{height:34px!important;min-height:34px!important;padding:0 13px!important;font-size:12px!important;}}
-</style>
-<!-- /EC Final Design Consistency Lock -->
 </head>
 <body><!-- NAV -->
 <nav class="top" id="topnav">
@@ -2306,7 +2307,9 @@ header.hero,header.page-hero,header.hero .hero-content,header.page-hero .page-he
 <li><a href="/cardapio.html">Cardápio</a></li>
 <li><a href="/guia-do-rio.html">Guia do Rio</a></li>
 </ul>
-<a aria-label="WhatsApp Embaixada Carioca" class="nav-wa-btn" href="https://wa.me/5521966837556?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Embaixada%20Carioca%20e%20gostaria%20de%20fazer%20uma%20reserva." rel="noopener" target="_blank" title="WhatsApp · +55 21 96683-7556"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.779 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.779-.767.779-.94 1.164-.173.199-.347.779-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.779-.52.149-.174.198-.298.298-.497.779-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.779.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.779h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg></a>
+<a aria-label="WhatsApp Embaixada Carioca" class="nav-wa-btn" href="https://wa.me/5521966837556?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Embaixada%20Carioca%20e%20gostaria%20de%20fazer%20uma%20reserva." rel="noopener" target="_blank" title="WhatsApp · +55 21 96683-7556">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.779 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.779-.767.779-.94 1.164-.173.199-.347.779-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.779-.52.149-.174.198-.298.298-.497.779-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.779.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.779h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</a>
 <a aria-label="Google Reviews: 4.8 estrelas · 7.779 avaliações" class="nav-rating-badge google-review-badge" href="https://g.page/r/CU-tJiJIjBUcEAE/review" rel="noopener" target="_blank" title="Google Reviews · 4.8 estrelas">
 <span class="gr-copy"><span class="gr-label">Google Reviews</span><span class="gr-row"><strong class="gr-score">4.8</strong><span class="gr-stars" aria-hidden="true">★★★★★</span><span class="gr-count">7.779 avaliações</span></span></span>
 </a>
@@ -2424,7 +2427,7 @@ header.hero,header.page-hero,header.hero .hero-content,header.page-hero .page-he
 <ul>
 <li>Av. Pasteur, 520<br/>Urca · Rio de Janeiro · RJ</li>
 <li><a href="tel:+5521966837556">+55 21 96683-7556</a></li>
-<li><a href="mailto:eventos@embaixadacarioca.com">eventos@embaixadacarioca.com</a></li>
+<li><a href="mailto:eventos@embaixadacarioca.com.br">eventos@embaixadacarioca.com.br</a></li>
 <li><a href="https://instagram.com/embaixadacarioca">Instagram · +100 mil</a></li>
 </ul>
 </div>

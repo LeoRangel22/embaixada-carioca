@@ -2,10 +2,10 @@
 
 ## Alterações aplicadas
 - UPDATED: index.html | replacements=32
-- UPDATED: cafe-da-manha.html | replacements=19
+- UPDATED: cafe-da-manha.html | replacements=20
 - UPDATED: almoco.html | replacements=6
-- UPDATED: entardecer.html | replacements=13
-- UPDATED: eventos.html | replacements=9
+- UPDATED: entardecer.html | replacements=16
+- UPDATED: eventos.html | replacements=11
 - UPDATED: cardapio.html | replacements=7
 - UPDATED: guia-do-rio.html | replacements=10
 - UPDATED: morro-da-urca.html | replacements=19

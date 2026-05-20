@@ -10,6 +10,7 @@ Mover a linha laranja do hero 9px para baixo e 4px para a esquerda em relação 
 - html_scanned: 86
 - html_updated: 86
 - css_injected: 86
+- event_quote_email_fix_triggered: 1
 
 ## Ações
 - UPDATED: 404.html
@@ -98,3 +99,4 @@ Mover a linha laranja do hero 9px para baixo e 4px para a esquerda em relação 
 - UPDATED: restaurante-morro-da-urca.html
 - UPDATED: restaurantes-perto-do-pao-de-acucar.html
 - UPDATED: roteiro-meio-dia-urca-pao-de-acucar.html
+- EVENT_QUOTE_EMAIL_FIX: triggered

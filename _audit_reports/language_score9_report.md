@@ -15,11 +15,11 @@
 
 ## Alterações aplicadas
 - PRIORITY: UPDATED: almoco.html | replacements=7
-- PRIORITY: UPDATED: cafe-da-manha.html | replacements=20
+- PRIORITY: UPDATED: cafe-da-manha.html | replacements=21
 - PRIORITY: UPDATED: cardapio.html | replacements=7
-- PRIORITY: UPDATED: entardecer.html | replacements=14
-- PRIORITY: UPDATED: es/eventos.html | replacements=7
-- PRIORITY: UPDATED: eventos.html | replacements=32
+- PRIORITY: UPDATED: entardecer.html | replacements=16
+- PRIORITY: UPDATED: es/eventos.html | replacements=9
+- PRIORITY: UPDATED: eventos.html | replacements=36
 - PRIORITY: UPDATED: guia-do-rio.html | replacements=13
 - PRIORITY: UPDATED: index.html | replacements=41
 - SECONDARY: UPDATED: almoco-morro-da-urca.html | replacements=7
@@ -35,11 +35,11 @@
 - SECONDARY: UPDATED: morro-da-urca.html | replacements=19
 - SECONDARY: UPDATED: nossa-visao.html | replacements=6
 - SECONDARY: UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=8
-- SECONDARY: UPDATED: onde-comer-no-pao-de-acucar.html | replacements=6
+- SECONDARY: UPDATED: onde-comer-no-pao-de-acucar.html | replacements=7
 - SECONDARY: UPDATED: parque-bondinho-pao-de-acucar.html | replacements=5
 - SECONDARY: UPDATED: parque-bondinho.html | replacements=5
 - SECONDARY: UPDATED: por-do-sol-morro-da-urca.html | replacements=9
-- SECONDARY: UPDATED: restaurante-bondinho-pao-de-acucar.html | replacements=7
+- SECONDARY: UPDATED: restaurante-bondinho-pao-de-acucar.html | replacements=8
 - SECONDARY: UPDATED: restaurante-morro-da-urca.html | replacements=5
 - SECONDARY: UPDATED: restaurantes-perto-do-pao-de-acucar.html | replacements=5
 - SECONDARY: UPDATED: roteiro-meio-dia-urca-pao-de-acucar.html | replacements=10
