@@ -1,4 +1,4 @@
-# Manual trigger: 2026-05-19 sprint 3 como chegar access cluster
+# Manual trigger: 2026-05-19 sprint 3 design consistency gate
 name: Apply AAA site fixes
 
 on:
@@ -30,6 +30,7 @@ on:
       - 'scripts/apply_sprint2_keyword_geo_growth.py'
       - 'scripts/apply_sprint2_locale_quality_fix.py'
       - 'scripts/apply_sprint3_como_chegar_access_cluster.py'
+      - 'scripts/apply_sprint3_design_consistency_gate.py'
       - 'scripts/apply_structural_restaurant_site_audit.py'
       - 'data/gsc_click_magnet_queries.json'
       - '.github/workflows/apply-aaa-fixes.yml'
@@ -91,6 +92,8 @@ jobs:
         run: python3 scripts/apply_sprint2_locale_quality_fix.py
       - name: Run sprint 3 how to get there access cluster script
         run: python3 scripts/apply_sprint3_como_chegar_access_cluster.py
+      - name: Run sprint 3 design consistency gate script
+        run: python3 scripts/apply_sprint3_design_consistency_gate.py
       - name: Run deep restaurant site audit script
         run: python3 scripts/apply_structural_restaurant_site_audit.py
       - name: Commit changes
