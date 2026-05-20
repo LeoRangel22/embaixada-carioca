@@ -1,0 +1,34 @@
+name: Final design consistency lock
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'scripts/apply_final_design_consistency_lock.py'
+      - '.github/workflows/final-design-consistency-lock.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  apply-final-design-lock:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Run final design consistency lock
+        run: python3 scripts/apply_final_design_consistency_lock.py
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "fix: apply final design consistency lock"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
