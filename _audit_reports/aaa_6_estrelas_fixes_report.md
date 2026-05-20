@@ -47,7 +47,7 @@
 - UPDATED: es/cafe-da-manha.html | replacements=3
 - UPDATED: es/caipirinha-com-vista-rio.html | replacements=1
 - UPDATED: es/cardapio.html | replacements=1
-- UPDATED: es/como-llegar.html | replacements=5
+- UPDATED: es/como-llegar.html | replacements=6
 - UPDATED: es/contato.html | replacements=3
 - UPDATED: es/desayuno-con-vista-rio-de-janeiro.html | replacements=3
 - UPDATED: es/donde-comer-cerca-del-pan-de-azucar.html | replacements=1

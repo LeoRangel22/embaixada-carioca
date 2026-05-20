@@ -10,7 +10,7 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - pages_updated: 72
 - thin_before: 20
 - thin_after_estimated: 19
-- consolidation_blocks_added: 48
+- consolidation_blocks_added: 53
 - faq_blocks_added: 3
 - schema_blocks_added: 3
 - language_fixes_applied: 56
@@ -40,10 +40,6 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 | en/contato.html | en | 81 | 604 | 0 | True | True | True | 28.1 |
 | en/roteiro-meio-dia-urca-pao-de-acucar.html | en | 82 | 679 | 0 | True | True | True | 144.3 |
 | es/roteiro-meio-dia-urca-pao-de-acucar.html | es | 82 | 684 | 0 | True | True | True | 144.6 |
-| en/sunset.html | en | 82 | 833 | 0 | True | True | True | 168.2 |
-| es/atardecer.html | es | 82 | 855 | 0 | True | True | True | 168.3 |
-| es/entardecer.html | es | 82 | 855 | 0 | True | True | True | 168.3 |
-| en/almoco.html | en | 82 | 887 | 0 | True | True | True | 171.9 |
 | nossa-visao.html | pt-BR | 84 | 535 | 0 | True | True | True | 27.9 |
 | contato.html | pt-BR | 84 | 550 | 0 | True | True | True | 27.9 |
 | parque-bondinho-pao-de-acucar.html | pt-BR | 84 | 595 | 0 | True | True | True | 60.0 |
@@ -56,6 +52,10 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 | en/sugarloaf-cable-car-park.html | en | 84 | 630 | 0 | True | True | True | 59.8 |
 | onde-comer-no-pao-de-acucar.html | pt-BR | 84 | 632 | 0 | True | True | True | 61.9 |
 | por-do-sol-morro-da-urca.html | pt-BR | 84 | 633 | 0 | True | True | True | 63.2 |
+| es/como-llegar.html | es | 87 | 885 | 0 | True | True | True | 27.4 |
+| como-chegar.html | pt-BR | 87 | 896 | 0 | True | True | True | 27.7 |
+| offline.html | pt-BR | 90 | 31 | 0 | True | True | False | 53.1 |
+| home-preview.html | pt-BR | 90 | 160 | 0 | True | True | False | 23.7 |
 
 ## Páginas ainda rasas após consolidação estimada
 - cafe-da-manha-com-vista-rio-de-janeiro.html — 475 palavras — score 79
@@ -96,7 +96,7 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - es/eventos.html: 176.8 KB, 41 estilos inline
 - eventos.html: 176.7 KB, 41 estilos inline
 - entardecer.html: 176.3 KB, 74 estilos inline
-- en/eventos.html: 173.2 KB, 41 estilos inline
+- en/almoco.html: 175.0 KB, 79 estilos inline
 
 ## Ações aplicadas
 - CONSOLIDATION_BLOCK: almoco-morro-da-urca.html (611 words before)
@@ -109,6 +109,7 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - LANG_FIX: en/almoco-morro-da-urca.html
 - CONSOLIDATION_BLOCK: en/almoco-morro-da-urca.html (702 words before)
 - LANG_FIX: en/almoco.html
+- CONSOLIDATION_BLOCK: en/almoco.html (887 words before)
 - LANG_FIX: en/breakfast-with-a-view-rio-de-janeiro.html
 - CONSOLIDATION_BLOCK: en/breakfast-with-a-view-rio-de-janeiro.html (145 words before)
 - SPRINT5_FAQ_SCHEMA: en/breakfast-with-a-view-rio-de-janeiro.html
@@ -121,6 +122,7 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - LANG_FIX: en/contato.html
 - CONSOLIDATION_BLOCK: en/contato.html (604 words before)
 - LANG_FIX: en/entardecer.html
+- CONSOLIDATION_BLOCK: en/entardecer.html (833 words before)
 - LANG_FIX: en/eventos.html
 - LANG_FIX: en/feijoada-com-vista-rio-de-janeiro.html
 - CONSOLIDATION_BLOCK: en/feijoada-com-vista-rio-de-janeiro.html (704 words before)
@@ -149,12 +151,14 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - LANG_FIX: en/sugarloaf-cable-car-restaurant.html
 - CONSOLIDATION_BLOCK: en/sugarloaf-cable-car-restaurant.html (798 words before)
 - LANG_FIX: en/sunset.html
+- CONSOLIDATION_BLOCK: en/sunset.html (833 words before)
 - LANG_FIX: en/where-to-eat-near-sugarloaf.html
 - CONSOLIDATION_BLOCK: en/where-to-eat-near-sugarloaf.html (791 words before)
 - LANG_FIX: es/almoco-morro-da-urca.html
 - CONSOLIDATION_BLOCK: es/almoco-morro-da-urca.html (675 words before)
 - LANG_FIX: es/almoco.html
 - LANG_FIX: es/atardecer.html
+- CONSOLIDATION_BLOCK: es/atardecer.html (855 words before)
 - LANG_FIX: es/cafe-da-manha-pao-de-acucar.html
 - CONSOLIDATION_BLOCK: es/cafe-da-manha-pao-de-acucar.html (688 words before)
 - LANG_FIX: es/cafe-da-manha.html
@@ -171,6 +175,7 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - LANG_FIX: es/donde-comer-cerca-del-pan-de-azucar.html
 - CONSOLIDATION_BLOCK: es/donde-comer-cerca-del-pan-de-azucar.html (791 words before)
 - LANG_FIX: es/entardecer.html
+- CONSOLIDATION_BLOCK: es/entardecer.html (855 words before)
 - LANG_FIX: es/eventos.html
 - LANG_FIX: es/feijoada-com-vista-rio-de-janeiro.html
 - CONSOLIDATION_BLOCK: es/feijoada-com-vista-rio-de-janeiro.html (687 words before)
