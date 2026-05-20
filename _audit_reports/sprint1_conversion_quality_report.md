@@ -17,7 +17,7 @@
 - schema_injected: 86
 - phone_fixes: 15
 - hasmap_fixes: 3
-- whatsapp_fixes: 1
+- whatsapp_fixes: 21
 - reports_written: 0
 
 ## Ações aplicadas
@@ -115,21 +115,29 @@
 - UPDATED: en/where-to-eat-near-sugarloaf.html
 - SCHEMA: entardecer.html | schema principal validado/injetado
 - UPDATED: entardecer.html
+- WHATSAPP_FIX: es/almoco-morro-da-urca.html [es] | CTA localizado
 - SCHEMA: es/almoco-morro-da-urca.html | schema principal validado/injetado
 - UPDATED: es/almoco-morro-da-urca.html
+- WHATSAPP_FIX: es/almoco.html [es] | CTA localizado
 - SCHEMA: es/almoco.html | schema principal validado/injetado
 - UPDATED: es/almoco.html
+- WHATSAPP_FIX: es/atardecer.html [es] | CTA localizado
 - SCHEMA: es/atardecer.html | schema principal validado/injetado
 - UPDATED: es/atardecer.html
+- WHATSAPP_FIX: es/cafe-da-manha-pao-de-acucar.html [es] | CTA localizado
 - SCHEMA: es/cafe-da-manha-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: es/cafe-da-manha-pao-de-acucar.html
+- WHATSAPP_FIX: es/cafe-da-manha.html [es] | CTA localizado
 - SCHEMA: es/cafe-da-manha.html | schema principal validado/injetado
 - UPDATED: es/cafe-da-manha.html
+- WHATSAPP_FIX: es/caipirinha-com-vista-rio.html [es] | CTA localizado
 - SCHEMA: es/caipirinha-com-vista-rio.html | schema principal validado/injetado
 - UPDATED: es/caipirinha-com-vista-rio.html
+- WHATSAPP_FIX: es/cardapio.html [es] | CTA localizado
 - SCHEMA: es/cardapio.html | schema principal validado/injetado
 - UPDATED: es/cardapio.html
 - HASMAP_FIX: es/como-llegar.html | hasMap corrigido
+- WHATSAPP_FIX: es/como-llegar.html [es] | CTA localizado
 - SCHEMA: es/como-llegar.html | schema principal validado/injetado
 - UPDATED: es/como-llegar.html
 - SCHEMA: es/contato.html | schema principal validado/injetado
@@ -139,31 +147,42 @@
 - PHONE_FIX: es/donde-comer-cerca-del-pan-de-azucar.html | +55-21-96683-7556 -> +55 21 96683-7556 | 1
 - SCHEMA: es/donde-comer-cerca-del-pan-de-azucar.html | schema principal validado/injetado
 - UPDATED: es/donde-comer-cerca-del-pan-de-azucar.html
+- WHATSAPP_FIX: es/entardecer.html [es] | CTA localizado
 - SCHEMA: es/entardecer.html | schema principal validado/injetado
 - UPDATED: es/entardecer.html
+- WHATSAPP_FIX: es/eventos.html [es] | CTA localizado
 - SCHEMA: es/eventos.html | schema principal validado/injetado
 - UPDATED: es/eventos.html
+- WHATSAPP_FIX: es/feijoada-com-vista-rio-de-janeiro.html [es] | CTA localizado
 - SCHEMA: es/feijoada-com-vista-rio-de-janeiro.html | schema principal validado/injetado
 - UPDATED: es/feijoada-com-vista-rio-de-janeiro.html
+- WHATSAPP_FIX: es/feijoada.html [es] | CTA localizado
 - SCHEMA: es/feijoada.html | schema principal validado/injetado
 - UPDATED: es/feijoada.html
+- WHATSAPP_FIX: es/gastronomia-carioca.html [es] | CTA localizado
 - SCHEMA: es/gastronomia-carioca.html | schema principal validado/injetado
 - UPDATED: es/gastronomia-carioca.html
+- WHATSAPP_FIX: es/guia-do-rio.html [es] | CTA localizado
 - SCHEMA: es/guia-do-rio.html | schema principal validado/injetado
 - UPDATED: es/guia-do-rio.html
+- WHATSAPP_FIX: es/index.html [es] | CTA localizado
 - SCHEMA: es/index.html | schema principal validado/injetado
 - UPDATED: es/index.html
+- WHATSAPP_FIX: es/morro-da-urca.html [es] | CTA localizado
 - SCHEMA: es/morro-da-urca.html | schema principal validado/injetado
 - UPDATED: es/morro-da-urca.html
 - SCHEMA: es/nossa-visao.html | schema principal validado/injetado
 - UPDATED: es/nossa-visao.html
+- WHATSAPP_FIX: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html [es] | CTA localizado
 - SCHEMA: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - PHONE_FIX: es/parque-bondinho-pan-de-azucar.html | +55-21-96683-7556 -> +55 21 96683-7556 | 1
 - SCHEMA: es/parque-bondinho-pan-de-azucar.html | schema principal validado/injetado
 - UPDATED: es/parque-bondinho-pan-de-azucar.html
+- WHATSAPP_FIX: es/parque-bondinho.html [es] | CTA localizado
 - SCHEMA: es/parque-bondinho.html | schema principal validado/injetado
 - UPDATED: es/parque-bondinho.html
+- WHATSAPP_FIX: es/por-do-sol-morro-da-urca.html [es] | CTA localizado
 - SCHEMA: es/por-do-sol-morro-da-urca.html | schema principal validado/injetado
 - UPDATED: es/por-do-sol-morro-da-urca.html
 - PHONE_FIX: es/restaurante-bondinho-pan-de-azucar.html | +55-21-96683-7556 -> +55 21 96683-7556 | 1
@@ -175,6 +194,7 @@
 - PHONE_FIX: es/restaurantes-cerca-del-pan-de-azucar.html | +55-21-96683-7556 -> +55 21 96683-7556 | 1
 - SCHEMA: es/restaurantes-cerca-del-pan-de-azucar.html | schema principal validado/injetado
 - UPDATED: es/restaurantes-cerca-del-pan-de-azucar.html
+- WHATSAPP_FIX: es/roteiro-meio-dia-urca-pao-de-acucar.html [es] | CTA localizado
 - SCHEMA: es/roteiro-meio-dia-urca-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: es/roteiro-meio-dia-urca-pao-de-acucar.html
 - LANG_FIX: eventos.html [pt] | 'Para quién' -> 'Para quem' | 1

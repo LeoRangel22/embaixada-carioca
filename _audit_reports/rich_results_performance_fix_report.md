@@ -41,7 +41,6 @@ O alerta de cache TTL em GitHub Pages tende a continuar enquanto a origem for Gi
 - SERVICE_WORKER: como-chegar.html
 - SERVICE_WORKER: contato.html
 - SERVICE_WORKER: en/almoco-morro-da-urca.html
-- RICH_RESULTS: en/almoco.html
 - SERVICE_WORKER: en/almoco.html
 - RICH_RESULTS: en/breakfast-with-a-view-rio-de-janeiro.html
 - SERVICE_WORKER: en/breakfast-with-a-view-rio-de-janeiro.html
@@ -51,7 +50,6 @@ O alerta de cache TTL em GitHub Pages tende a continuar enquanto a origem for Gi
 - SERVICE_WORKER: en/caipirinha-com-vista-rio.html
 - SERVICE_WORKER: en/cardapio.html
 - SERVICE_WORKER: en/contato.html
-- RICH_RESULTS: en/entardecer.html
 - SERVICE_WORKER: en/entardecer.html
 - RICH_RESULTS: en/eventos.html
 - SERVICE_WORKER: en/eventos.html
@@ -88,7 +86,6 @@ O alerta de cache TTL em GitHub Pages tende a continuar enquanto a origem for Gi
 - RICH_RESULTS: en/sugarloaf-cable-car-restaurant.html
 - IMAGES: en/sugarloaf-cable-car-restaurant.html
 - SERVICE_WORKER: en/sugarloaf-cable-car-restaurant.html
-- RICH_RESULTS: en/sunset.html
 - SERVICE_WORKER: en/sunset.html
 - RICH_RESULTS: en/where-to-eat-near-sugarloaf.html
 - IMAGES: en/where-to-eat-near-sugarloaf.html
@@ -96,7 +93,6 @@ O alerta de cache TTL em GitHub Pages tende a continuar enquanto a origem for Gi
 - SERVICE_WORKER: entardecer.html
 - SERVICE_WORKER: es/almoco-morro-da-urca.html
 - SERVICE_WORKER: es/almoco.html
-- RICH_RESULTS: es/atardecer.html
 - SERVICE_WORKER: es/atardecer.html
 - SERVICE_WORKER: es/cafe-da-manha-pao-de-acucar.html
 - RICH_RESULTS: es/cafe-da-manha.html
@@ -112,7 +108,6 @@ O alerta de cache TTL em GitHub Pages tende a continuar enquanto a origem for Gi
 - RICH_RESULTS: es/donde-comer-cerca-del-pan-de-azucar.html
 - IMAGES: es/donde-comer-cerca-del-pan-de-azucar.html
 - SERVICE_WORKER: es/donde-comer-cerca-del-pan-de-azucar.html
-- RICH_RESULTS: es/entardecer.html
 - SERVICE_WORKER: es/entardecer.html
 - RICH_RESULTS: es/eventos.html
 - SERVICE_WORKER: es/eventos.html

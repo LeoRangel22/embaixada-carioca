@@ -1,125 +1,34 @@
 # Home Top Exact Replication + Visual Audit
 
 ## Objetivo
-Replicar o topo da home em todas as páginas e auditar por código/fingerprint visual estático os elementos: logo, menu, linha laranja, Google Reviews, idioma e botão Reservar.
+Replicar o topo da home em todas as páginas e auditar por código os elementos: logo, menu, linha laranja, Google Reviews, idioma e botão Reservar.
 
 ## Veredito
 - Páginas auditadas: 83
-- PASS: 0
-- WARN: 83
-- Status geral: WARN
+- PASS: 83
+- WARN: 0
+- Status geral: PASS
 
 ## Contadores
 - html_scanned: 83
 - html_updated: 83
 - nav_replaced: 74
+- nav_inserted: 9
 - old_overrides_removed: 140
 - css_lock_injected: 83
 - eyebrow_synced: 74
-- audit_pass: 0
-- audit_warn: 83
-
-## Critérios auditados
-- NAV estrutural igual ao padrão da home, com variação apenas de idioma/links.
-- Logo light/dark presente e com a mesma classe.
-- Menu principal com a mesma ordem visual.
-- Badge Google Reviews presente na mesma posição lógica.
-- Seletor de idioma presente após reviews e antes do Reservar.
-- Botão Reservar presente no final do topo.
-- Linha laranja travada em transform: translate(37px, -6px).
-- Overrides antigos de subpágina removidos.
+- audit_pass: 83
+- audit_warn: 0
 
 ## Páginas com WARN
-- almoco-morro-da-urca.html [pt-BR]: nav_structure_matches
-- almoco.html [pt-BR]: nav_structure_matches
-- cafe-da-manha-com-vista-rio-de-janeiro.html [pt-BR]: nav_exists, nav_structure_matches, logo_present, menu_present, review_present, language_present, reserve_present
-- cafe-da-manha-pao-de-acucar.html [pt-BR]: nav_structure_matches
-- cafe-da-manha.html [pt-BR]: nav_structure_matches
-- caipirinha-com-vista-rio.html [pt-BR]: nav_structure_matches
-- cardapio.html [pt-BR]: nav_structure_matches
-- como-chegar.html [pt-BR]: nav_structure_matches
-- contato.html [pt-BR]: nav_exists, nav_structure_matches, logo_present, menu_present, review_present, language_present, reserve_present
-- en/almoco-morro-da-urca.html [en]: nav_structure_matches
-- en/almoco.html [en]: nav_structure_matches
-- en/breakfast-with-a-view-rio-de-janeiro.html [en]: nav_exists, nav_structure_matches, logo_present, menu_present, review_present, language_present, reserve_present
-- en/cafe-da-manha-pao-de-acucar.html [en]: nav_structure_matches
-- en/cafe-da-manha.html [en]: nav_structure_matches
-- en/caipirinha-com-vista-rio.html [en]: nav_structure_matches
-- en/cardapio.html [en]: nav_structure_matches
-- en/contato.html [en]: nav_exists, nav_structure_matches, logo_present, menu_present, review_present, language_present, reserve_present
-- en/entardecer.html [en]: nav_structure_matches
-- en/eventos.html [en]: nav_structure_matches
-- en/feijoada-com-vista-rio-de-janeiro.html [en]: nav_structure_matches
-- en/feijoada.html [en]: nav_structure_matches
-- en/gastronomia-carioca.html [en]: nav_structure_matches
-- en/guia-do-rio.html [en]: nav_structure_matches
-- en/how-to-get-there.html [en]: nav_structure_matches
-- en/index.html [en]: nav_structure_matches
-- en/morro-da-urca.html [en]: nav_structure_matches
-- en/nossa-visao.html [en]: nav_exists, nav_structure_matches, logo_present, menu_present, review_present, language_present, reserve_present
-- en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html [en]: nav_structure_matches
-- en/parque-bondinho.html [en]: nav_structure_matches
-- en/por-do-sol-morro-da-urca.html [en]: nav_structure_matches
-- en/restaurant-at-urca-hill.html [en]: nav_structure_matches
-- en/restaurants-near-sugarloaf-mountain.html [en]: nav_structure_matches
-- en/roteiro-meio-dia-urca-pao-de-acucar.html [en]: nav_structure_matches
-- en/sugarloaf-cable-car-park.html [en]: nav_structure_matches
-- en/sugarloaf-cable-car-restaurant.html [en]: nav_structure_matches
-- en/sunset.html [en]: nav_structure_matches
-- en/where-to-eat-near-sugarloaf.html [en]: nav_structure_matches
-- entardecer.html [pt-BR]: nav_structure_matches
-- es/almoco-morro-da-urca.html [es]: nav_structure_matches
-- es/almoco.html [es]: nav_structure_matches
-- es/atardecer.html [es]: nav_structure_matches
-- es/cafe-da-manha-pao-de-acucar.html [es]: nav_structure_matches
-- es/cafe-da-manha.html [es]: nav_structure_matches
-- es/caipirinha-com-vista-rio.html [es]: nav_structure_matches
-- es/cardapio.html [es]: nav_structure_matches
-- es/como-llegar.html [es]: nav_structure_matches
-- es/contato.html [es]: nav_exists, nav_structure_matches, logo_present, menu_present, review_present, language_present, reserve_present
-- es/desayuno-con-vista-rio-de-janeiro.html [es]: nav_exists, nav_structure_matches, logo_present, menu_present, review_present, language_present, reserve_present
-- es/donde-comer-cerca-del-pan-de-azucar.html [es]: nav_structure_matches
-- es/entardecer.html [es]: nav_structure_matches
-- es/eventos.html [es]: nav_structure_matches
-- es/feijoada-com-vista-rio-de-janeiro.html [es]: nav_structure_matches
-- es/feijoada.html [es]: nav_structure_matches
-- es/gastronomia-carioca.html [es]: nav_structure_matches
-- es/guia-do-rio.html [es]: nav_structure_matches
-- es/index.html [es]: nav_structure_matches
-- es/morro-da-urca.html [es]: nav_structure_matches
-- es/nossa-visao.html [es]: nav_exists, nav_structure_matches, logo_present, menu_present, review_present, language_present, reserve_present
-- es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html [es]: nav_structure_matches
-- es/parque-bondinho-pan-de-azucar.html [es]: nav_structure_matches
-- es/parque-bondinho.html [es]: nav_structure_matches
-- es/por-do-sol-morro-da-urca.html [es]: nav_structure_matches
-- es/restaurante-bondinho-pan-de-azucar.html [es]: nav_structure_matches
-- es/restaurante-morro-da-urca.html [es]: nav_structure_matches
-- es/restaurantes-cerca-del-pan-de-azucar.html [es]: nav_structure_matches
-- es/roteiro-meio-dia-urca-pao-de-acucar.html [es]: nav_structure_matches
-- eventos.html [pt-BR]: nav_structure_matches
-- feijoada-com-vista-rio-de-janeiro.html [pt-BR]: nav_structure_matches
-- feijoada.html [pt-BR]: nav_structure_matches
-- gastronomia-carioca.html [pt-BR]: nav_structure_matches
-- guia-do-rio.html [pt-BR]: nav_structure_matches
-- index.html [pt-BR]: nav_structure_matches
-- morro-da-urca.html [pt-BR]: nav_structure_matches
-- nossa-visao.html [pt-BR]: nav_exists, nav_structure_matches, logo_present, menu_present, review_present, language_present, reserve_present
-- o-que-fazer-depois-do-bondinho-pao-de-acucar.html [pt-BR]: nav_structure_matches
-- onde-comer-no-pao-de-acucar.html [pt-BR]: nav_structure_matches
-- parque-bondinho-pao-de-acucar.html [pt-BR]: nav_structure_matches
-- parque-bondinho.html [pt-BR]: nav_structure_matches
-- por-do-sol-morro-da-urca.html [pt-BR]: nav_structure_matches
-- restaurante-bondinho-pao-de-acucar.html [pt-BR]: nav_structure_matches
-- restaurante-morro-da-urca.html [pt-BR]: nav_structure_matches
-- restaurantes-perto-do-pao-de-acucar.html [pt-BR]: nav_structure_matches
-- roteiro-meio-dia-urca-pao-de-acucar.html [pt-BR]: nav_structure_matches
+- Nenhuma.
 
 ## Ações aplicadas
 - OLD_OVERRIDE_REMOVED: almoco-morro-da-urca.html (2)
 - NAV_REPLACED: almoco-morro-da-urca.html
 - OLD_OVERRIDE_REMOVED: almoco.html (2)
 - NAV_REPLACED: almoco.html
-- WARN_NO_NAV: cafe-da-manha-com-vista-rio-de-janeiro.html
+- NAV_INSERTED: cafe-da-manha-com-vista-rio-de-janeiro.html
 - OLD_OVERRIDE_REMOVED: cafe-da-manha-pao-de-acucar.html (2)
 - NAV_REPLACED: cafe-da-manha-pao-de-acucar.html
 - OLD_OVERRIDE_REMOVED: cafe-da-manha.html (2)
@@ -129,12 +38,12 @@ Replicar o topo da home em todas as páginas e auditar por código/fingerprint v
 - OLD_OVERRIDE_REMOVED: cardapio.html (2)
 - NAV_REPLACED: cardapio.html
 - NAV_REPLACED: como-chegar.html
-- WARN_NO_NAV: contato.html
+- NAV_INSERTED: contato.html
 - OLD_OVERRIDE_REMOVED: en/almoco-morro-da-urca.html (2)
 - NAV_REPLACED: en/almoco-morro-da-urca.html
 - OLD_OVERRIDE_REMOVED: en/almoco.html (2)
 - NAV_REPLACED: en/almoco.html
-- WARN_NO_NAV: en/breakfast-with-a-view-rio-de-janeiro.html
+- NAV_INSERTED: en/breakfast-with-a-view-rio-de-janeiro.html
 - OLD_OVERRIDE_REMOVED: en/cafe-da-manha-pao-de-acucar.html (2)
 - NAV_REPLACED: en/cafe-da-manha-pao-de-acucar.html
 - OLD_OVERRIDE_REMOVED: en/cafe-da-manha.html (2)
@@ -143,7 +52,7 @@ Replicar o topo da home em todas as páginas e auditar por código/fingerprint v
 - NAV_REPLACED: en/caipirinha-com-vista-rio.html
 - OLD_OVERRIDE_REMOVED: en/cardapio.html (2)
 - NAV_REPLACED: en/cardapio.html
-- WARN_NO_NAV: en/contato.html
+- NAV_INSERTED: en/contato.html
 - OLD_OVERRIDE_REMOVED: en/entardecer.html (2)
 - NAV_REPLACED: en/entardecer.html
 - OLD_OVERRIDE_REMOVED: en/eventos.html (2)
@@ -161,7 +70,7 @@ Replicar o topo da home em todas as páginas e auditar por código/fingerprint v
 - NAV_REPLACED: en/index.html
 - OLD_OVERRIDE_REMOVED: en/morro-da-urca.html (2)
 - NAV_REPLACED: en/morro-da-urca.html
-- WARN_NO_NAV: en/nossa-visao.html
+- NAV_INSERTED: en/nossa-visao.html
 - OLD_OVERRIDE_REMOVED: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html (2)
 - NAV_REPLACED: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - OLD_OVERRIDE_REMOVED: en/parque-bondinho.html (2)
@@ -199,8 +108,8 @@ Replicar o topo da home em todas as páginas e auditar por código/fingerprint v
 - OLD_OVERRIDE_REMOVED: es/cardapio.html (2)
 - NAV_REPLACED: es/cardapio.html
 - NAV_REPLACED: es/como-llegar.html
-- WARN_NO_NAV: es/contato.html
-- WARN_NO_NAV: es/desayuno-con-vista-rio-de-janeiro.html
+- NAV_INSERTED: es/contato.html
+- NAV_INSERTED: es/desayuno-con-vista-rio-de-janeiro.html
 - OLD_OVERRIDE_REMOVED: es/donde-comer-cerca-del-pan-de-azucar.html (2)
 - NAV_REPLACED: es/donde-comer-cerca-del-pan-de-azucar.html
 - OLD_OVERRIDE_REMOVED: es/entardecer.html (2)
@@ -219,7 +128,7 @@ Replicar o topo da home em todas as páginas e auditar por código/fingerprint v
 - NAV_REPLACED: es/index.html
 - OLD_OVERRIDE_REMOVED: es/morro-da-urca.html (2)
 - NAV_REPLACED: es/morro-da-urca.html
-- WARN_NO_NAV: es/nossa-visao.html
+- NAV_INSERTED: es/nossa-visao.html
 - OLD_OVERRIDE_REMOVED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html (2)
 - NAV_REPLACED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - OLD_OVERRIDE_REMOVED: es/parque-bondinho-pan-de-azucar.html (2)
@@ -249,7 +158,7 @@ Replicar o topo da home em todas as páginas e auditar por código/fingerprint v
 - NAV_REPLACED: index.html
 - OLD_OVERRIDE_REMOVED: morro-da-urca.html (2)
 - NAV_REPLACED: morro-da-urca.html
-- WARN_NO_NAV: nossa-visao.html
+- NAV_INSERTED: nossa-visao.html
 - OLD_OVERRIDE_REMOVED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html (2)
 - NAV_REPLACED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - OLD_OVERRIDE_REMOVED: onde-comer-no-pao-de-acucar.html (2)
@@ -269,5 +178,5 @@ Replicar o topo da home em todas as páginas e auditar por código/fingerprint v
 - OLD_OVERRIDE_REMOVED: roteiro-meio-dia-urca-pao-de-acucar.html (2)
 - NAV_REPLACED: roteiro-meio-dia-urca-pao-de-acucar.html
 
-## Observação sobre auditoria visual
-Esta auditoria garante igualdade estrutural e de CSS/fingerprint no repositório. A conferência final de pixels deve ser feita no navegador após o deploy, com cache limpo, porque PageSpeed/Chrome podem usar cache e largura de viewport diferentes.
+## Observação
+Esta auditoria confirma igualdade estrutural/CSS do topo no repositório. A conferência de pixel deve ser feita no navegador após deploy e cache limpo.
