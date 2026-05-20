@@ -2699,5 +2699,66 @@ html body main .btn-secondary:hover,html body main a.btn-secondary:hover,html bo
 })();
 </script>
 <!-- /EC Performance Service Worker -->
+<!-- EC Lunch Photos + Global Readability Hardfix -->
+<style id="ec-lunch-photos-global-readability-hardfix">
+/* HARD READABILITY FIX — deve ficar no fim do body para vencer CSS anterior */
+:root{--ec-blue:#00405a;--ec-green:#335d4a;--ec-yellow:#f59b1e;--ec-sand:#ede2c9;--ec-paper:#f6efde;--ec-gray:#485156;--ec-gray2:#6b7377;}
+
+/* Reset de herança que deixou texto claro em fundo claro */
+html body main *{-webkit-text-fill-color:currentColor!important;text-shadow:none!important;}
+
+/* Fundo escuro: texto claro de verdade */
+html body main{background-color:var(--ec-blue);color:rgba(246,239,222,.92)!important;}
+html body main section:not(.gallery-section):not(.ec-final-geo-answer):not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section){color:rgba(246,239,222,.92)!important;}
+html body main section:not(.gallery-section):not(.ec-final-geo-answer):not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section) :where(p,li,span,small,dd,dt,summary,.lede,.copy,.description){color:rgba(246,239,222,.88)!important;}
+html body main section:not(.gallery-section):not(.ec-final-geo-answer):not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section) :where(h1,h2,h3,h4,h5,h6){color:var(--ec-paper)!important;}
+html body main section:not(.gallery-section):not(.ec-final-geo-answer):not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section) :where(strong,b){color:var(--ec-yellow)!important;}
+
+/* Cards/caixas claras: texto escuro obrigatório */
+html body main :where(.card,.box,.guide-card,.place-card,.beach-card,.route-card,.access-card,.access-fact,.access-route,.faq-card,.faq-item,.info-card,.content-card,.copy-card,.menu-item,.menu-card,.dish-card,.ec-final-geo-card,.ec-final-geo-faq details,.ec-r2d2-card,.ec-sprint4-faq details,.direct-answer-card,.geo-card){background:var(--ec-paper)!important;color:var(--ec-blue)!important;border-color:rgba(0,64,90,.16)!important;}
+html body main :where(.card,.box,.guide-card,.place-card,.beach-card,.route-card,.access-card,.access-fact,.access-route,.faq-card,.faq-item,.info-card,.content-card,.copy-card,.menu-item,.menu-card,.dish-card,.ec-final-geo-card,.ec-final-geo-faq details,.ec-r2d2-card,.ec-sprint4-faq details,.direct-answer-card,.geo-card) :where(h1,h2,h3,h4,h5,h6,.title,.card-title,.menu-item-name){color:var(--ec-blue)!important;}
+html body main :where(.card,.box,.guide-card,.place-card,.beach-card,.route-card,.access-card,.access-fact,.access-route,.faq-card,.faq-item,.info-card,.content-card,.copy-card,.menu-item,.menu-card,.dish-card,.ec-final-geo-card,.ec-final-geo-faq details,.ec-r2d2-card,.ec-sprint4-faq details,.direct-answer-card,.geo-card) :where(p,li,span,small,dd,dt,summary,.copy,.description,.menu-item-desc){color:var(--ec-gray)!important;}
+html body main :where(.card,.box,.guide-card,.place-card,.beach-card,.route-card,.access-card,.access-fact,.access-route,.faq-card,.faq-item,.info-card,.content-card,.copy-card,.menu-item,.menu-card,.dish-card,.ec-final-geo-card,.ec-final-geo-faq details,.ec-r2d2-card,.ec-sprint4-faq details,.direct-answer-card,.geo-card) :where(strong,b,.tag,.kicker,.menu-item-price){color:var(--ec-green)!important;}
+html body main :where(.card,.box,.guide-card,.place-card,.beach-card,.route-card,.access-card,.access-fact,.access-route,.faq-card,.faq-item,.info-card,.content-card,.copy-card,.menu-item,.menu-card,.dish-card,.ec-final-geo-card,.ec-final-geo-faq details,.ec-r2d2-card,.ec-sprint4-faq details,.direct-answer-card,.geo-card) a:not(.btn):not(.btn-secondary){color:#b76f00!important;}
+
+/* Seções claras completas */
+html body main :where(.menu-section,.gallery-section,.ec-final-geo-answer,.light-section,.paper-section,.section-paper,.bg-paper,.access-direct,.access-section,.access-faq){background:var(--ec-paper)!important;color:var(--ec-blue)!important;}
+html body main :where(.menu-section,.gallery-section,.ec-final-geo-answer,.light-section,.paper-section,.section-paper,.bg-paper,.access-direct,.access-section,.access-faq) :where(h1,h2,h3,h4,h5,h6){color:var(--ec-blue)!important;}
+html body main :where(.menu-section,.gallery-section,.ec-final-geo-answer,.light-section,.paper-section,.section-paper,.bg-paper,.access-direct,.access-section,.access-faq) :where(p,li,span,small,dd,dt,summary){color:var(--ec-gray)!important;}
+
+/* Página almoço: fotos reais nos placeholders */
+html body main .dish-card .photo-ph,html body main .feijoada-feature .photo-ph{position:relative;min-height:260px;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;border:0!important;overflow:hidden;}
+html body main .dish-card.featured .photo-ph{min-height:360px;}
+html body main .photo-ph:before{display:none!important;content:none!important;}
+html body main .photo-ph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,64,90,0) 46%,rgba(0,64,90,.22) 100%);pointer-events:none;}
+html body main .photo-ph[data-label*="Feijoada"],html body main .photo-ph[data-label*="feijoada"]{background-image:linear-gradient(180deg,rgba(0,64,90,.06),rgba(0,64,90,.06)),url('/assets/fabio-almoco-mesa-completa.webp')!important;}
+html body main .photo-ph[data-label*="Picanha"],html body main .photo-ph[data-label*="picanha"]{background-image:linear-gradient(180deg,rgba(0,64,90,.06),rgba(0,64,90,.06)),url('/assets/fabio-almoco-mesa-completa.webp')!important;}
+html body main .photo-ph[data-label*="Picadinho"],html body main .photo-ph[data-label*="picadinho"]{background-image:linear-gradient(180deg,rgba(0,64,90,.06),rgba(0,64,90,.06)),url('/assets/carne-seca-mandioca.webp')!important;}
+html body main .photo-ph[data-label*="Bobó"],html body main .photo-ph[data-label*="Bobo"],html body main .photo-ph[data-label*="camarão"],html body main .photo-ph[data-label*="camarao"]{background-image:linear-gradient(180deg,rgba(0,64,90,.06),rgba(0,64,90,.06)),url('/assets/bobo-camarao-real.webp')!important;}
+html body main .photo-ph[data-label*="Salmão"],html body main .photo-ph[data-label*="Salmao"],html body main .photo-ph[data-label*="salmão"],html body main .photo-ph[data-label*="salmao"]{background-image:linear-gradient(180deg,rgba(0,64,90,.06),rgba(0,64,90,.06)),url('/assets/fabio-almoco-salmao-pao-acucar.webp')!important;}
+html body main .photo-ph[data-label*="Cheeseburger"],html body main .photo-ph[data-label*="cheeseburger"]{background-image:linear-gradient(180deg,rgba(0,64,90,.06),rgba(0,64,90,.06)),url('/assets/almoco-mesa-opt-mobile.webp')!important;}
+
+/* Cardápio: cards de produto legíveis */
+html body main .menu-item{background:var(--ec-sand)!important;color:var(--ec-blue)!important;}
+html body main .menu-item *{text-shadow:none!important;}
+html body main .menu-item :where(h3,h4,.menu-item-name){color:var(--ec-blue)!important;}
+html body main .menu-item :where(p,.menu-item-desc,span,small){color:var(--ec-gray)!important;}
+html body main .menu-item :where(.price,.menu-item-price,strong){color:#b76f00!important;}
+
+/* Blocos de FAQ em fundo azul: melhora contraste sem virar card branco */
+html body main :where(.faq,.faq-section,.faq-list,.questions,.qa-grid,.event-faq,.events-faq) :where(h2,h3,h4,summary){color:var(--ec-paper)!important;}
+html body main :where(.faq,.faq-section,.faq-list,.questions,.qa-grid,.event-faq,.events-faq) :where(p,li,span){color:rgba(246,239,222,.86)!important;}
+
+/* Galerias e captions */
+html body main .gallery-section figure,html body main .gallery-section figcaption{background:#fff!important;color:var(--ec-gray)!important;}
+html body main .gallery-section figcaption{color:var(--ec-gray)!important;}
+
+/* Botões */
+html body main a.btn[href*="tagme"],html body main a.btn[href*="reserv"],nav.top a.btn[href*="tagme"]{background:var(--ec-yellow)!important;border-color:var(--ec-yellow)!important;color:var(--ec-blue)!important;}
+html body main .btn-secondary,html body main a.btn-secondary,html body main .hero-ctas a:not([href*="tagme"]):not([href*="reserv"]),html body main .ctas a:not([href*="tagme"]):not([href*="reserv"]){color:var(--ec-paper)!important;}
+html body main .btn-secondary:hover,html body main a.btn-secondary:hover,html body main .hero-ctas a:not([href*="tagme"]):not([href*="reserv"]):hover,html body main .ctas a:not([href*="tagme"]):not([href*="reserv"]):hover{background:var(--ec-paper)!important;color:var(--ec-blue)!important;}
+@media(max-width:760px){html body main .dish-card .photo-ph{min-height:230px;}html body main .dish-card.featured .photo-ph{min-height:270px;}}
+</style>
+<!-- /EC Lunch Photos + Global Readability Hardfix -->
 </body>
 </html>
