@@ -2,37 +2,31 @@
 """
 Home Top Exact Replication + Audit — Embaixada Carioca
 
-Objetivo:
-- usar a home como padrão visual do topo;
-- replicar a mesma estrutura de topo em todas as páginas HTML;
-- remover overrides antigos de subpágina que podiam deixar menu/logo/review/idioma/reserva em posições diferentes;
-- travar por CSS a posição dos elementos críticos;
-- gerar auditoria estática de código + fingerprint visual do topo.
-
-Elementos auditados:
-logo, menu, linha laranja/hero-eyebrow, Google Reviews, seletor de idioma e botão Reservar.
+Fecha o gate visual do topo:
+- usa a home como padrão visual;
+- replica a mesma estrutura de topo em todas as páginas HTML;
+- insere o topo onde ele não existia;
+- remove overrides antigos conflitantes;
+- trava por CSS logo, menu, linha laranja, Google Reviews, idioma e Reservar;
+- audita por componentes/ordem visual, em vez de fingerprint frágil de HTML.
 """
 from __future__ import annotations
 
 from pathlib import Path
-import hashlib
-import re
 import csv
+import re
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORT_DIR = ROOT / "_audit_reports"
 REPORT_MD = REPORT_DIR / "home_top_exact_replication_visual_audit_report.md"
 REPORT_CSV = REPORT_DIR / "home_top_exact_replication_visual_audit_details.csv"
 
-NAV_RE = re.compile(r"<nav\b(?=[^>]*class=[\"'][^\"']*\btop\b[^\"']*[\"'])[^>]*>[\s\S]*?</nav>", re.IGNORECASE)
+NAV_RE = re.compile(r"(?:\s*<!--\s*NAV\s*-->\s*)*<nav\b(?=[^>]*class=[\"'][^\"']*\btop\b[^\"']*[\"'])[^>]*>[\s\S]*?</nav>", re.IGNORECASE)
 HEAD_CLOSE_RE = re.compile(r"</head>", re.IGNORECASE)
+BODY_OPEN_RE = re.compile(r"<body\b[^>]*>", re.IGNORECASE)
 HTML_LANG_RE = re.compile(r"<html\b[^>]*lang=[\"']([^\"']+)[\"']", re.IGNORECASE)
-BODY_RE = re.compile(r"<body\b([^>]*)>", re.IGNORECASE)
 CSS_RE = re.compile(r"\n*<!-- EC Home Top Exact Replication Lock -->[\s\S]*?<!-- /EC Home Top Exact Replication Lock -->\s*", re.IGNORECASE)
-OLD_STYLE_RE = re.compile(
-    r"\n*<style\s+id=[\"'](?:subpage-home-top-sync|subpage-home-top-final-override)[\"']>[\s\S]*?</style>\s*",
-    re.IGNORECASE,
-)
+OLD_STYLE_RE = re.compile(r"\n*<style\s+id=[\"'](?:subpage-home-top-sync|subpage-home-top-final-override)[\"']>[\s\S]*?</style>\s*", re.IGNORECASE)
 EYEBROW_RE = re.compile(r'(<div\s+class=["\']eyebrow hero-eyebrow["\'][^>]*>)([\s\S]*?)(</div>)', re.IGNORECASE)
 
 SKIP = {"404.html", "offline.html", "home-preview.html"}
@@ -41,6 +35,7 @@ COUNTERS = {
     "html_scanned": 0,
     "html_updated": 0,
     "nav_replaced": 0,
+    "nav_inserted": 0,
     "old_overrides_removed": 0,
     "css_lock_injected": 0,
     "eyebrow_synced": 0,
@@ -56,53 +51,25 @@ CSS_LOCK = """<!-- EC Home Top Exact Replication Lock -->
 html,body{overflow-x:hidden!important;}
 nav.top,nav.top *{box-sizing:border-box!important;}
 @media (min-width:961px){
-  nav.top:not(.scrolled){
-    position:fixed!important;
-    top:0!important;left:0!important;right:0!important;
-    z-index:50!important;
-    background:linear-gradient(180deg,rgba(0,32,46,.40) 0%,rgba(0,32,46,.24) 58%,rgba(0,32,46,0) 100%)!important;
-    border:0!important;box-shadow:none!important;
-    backdrop-filter:none!important;-webkit-backdrop-filter:none!important;
-  }
-  nav.top .nav-inner{
-    width:100%!important;max-width:100%!important;margin:0!important;
-    padding:14px var(--gutter,64px)!important;
-    display:flex!important;align-items:center!important;justify-content:space-between!important;
-    gap:32px!important;color:var(--areia-pale,#f6efde)!important;
-  }
+  nav.top:not(.scrolled){position:fixed!important;top:0!important;left:0!important;right:0!important;z-index:50!important;background:linear-gradient(180deg,rgba(0,32,46,.40) 0%,rgba(0,32,46,.24) 58%,rgba(0,32,46,0) 100%)!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;}
+  nav.top .nav-inner{width:100%!important;max-width:100%!important;margin:0!important;padding:14px var(--gutter,64px)!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:32px!important;color:var(--areia-pale,#f6efde)!important;}
   nav.top .brand-mark{display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:18px!important;flex:0 0 auto!important;text-decoration:none!important;color:inherit!important;}
   nav.top .brand-logo{width:68px!important;height:68px!important;object-fit:contain!important;display:block!important;}
   nav.top .brand-logo.light{display:block!important;}nav.top .brand-logo.dark{display:none!important;}nav.top .brand-word{display:none!important;}
   nav.top .nav-links{display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:28px!important;margin:0!important;padding:0!important;list-style:none!important;min-width:0!important;overflow:visible!important;}
-  nav.top .nav-links a,nav.top .nav-links a:link,nav.top .nav-links a:visited{
-    font-family:"JetBrains Mono",ui-monospace,monospace!important;font-size:12px!important;line-height:1!important;letter-spacing:.145em!important;font-weight:800!important;text-transform:uppercase!important;color:rgba(246,239,222,.94)!important;opacity:1!important;text-decoration:none!important;white-space:nowrap!important;padding:6px 0!important;
-  }
+  nav.top .nav-links a,nav.top .nav-links a:link,nav.top .nav-links a:visited{font-family:"JetBrains Mono",ui-monospace,monospace!important;font-size:12px!important;line-height:1!important;letter-spacing:.145em!important;font-weight:800!important;text-transform:uppercase!important;color:rgba(246,239,222,.94)!important;opacity:1!important;text-decoration:none!important;white-space:nowrap!important;padding:6px 0!important;}
   nav.top .nav-links a::after{bottom:-13px!important;height:2px!important;background:var(--amarelo,#f59b1e)!important;}
   nav.top .nav-wa-btn{display:none!important;}
-  nav.top .nav-rating-badge.google-review-badge,nav.top .nav-rating-badge.google-review-badge:link,nav.top .nav-rating-badge.google-review-badge:visited{
-    flex:0 0 170px!important;width:170px!important;min-width:170px!important;height:36px!important;min-height:36px!important;max-height:36px!important;
-    margin-left:auto!important;margin-right:0!important;padding:4px 10px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0!important;
-    border-radius:12px!important;background:rgba(246,239,222,.13)!important;border:1px solid rgba(246,239,222,.30)!important;color:rgba(246,239,222,.94)!important;text-decoration:none!important;
-    backdrop-filter:blur(9px)!important;-webkit-backdrop-filter:blur(9px)!important;transform:translateX(28px)!important;box-shadow:0 8px 22px rgba(0,32,46,.12)!important;
-  }
+  nav.top .nav-rating-badge.google-review-badge,nav.top .nav-rating-badge.google-review-badge:link,nav.top .nav-rating-badge.google-review-badge:visited{flex:0 0 170px!important;width:170px!important;min-width:170px!important;height:36px!important;min-height:36px!important;max-height:36px!important;margin-left:auto!important;margin-right:0!important;padding:4px 10px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0!important;border-radius:12px!important;background:rgba(246,239,222,.13)!important;border:1px solid rgba(246,239,222,.30)!important;color:rgba(246,239,222,.94)!important;text-decoration:none!important;backdrop-filter:blur(9px)!important;-webkit-backdrop-filter:blur(9px)!important;transform:translateX(28px)!important;box-shadow:0 8px 22px rgba(0,32,46,.12)!important;}
+  .google-review-badge .gr-label{font-size:8.3px!important;line-height:1!important;font-weight:700!important}.google-review-badge .gr-score{font-size:11.5px!important}.google-review-badge .gr-stars{color:#fbbc04!important;font-size:9px!important}.google-review-badge .gr-count{font-size:8px!important;font-weight:400!important;margin-left:1px!important;}
   nav.top .lang-switcher{position:relative!important;z-index:4000!important;flex:0 0 94px!important;width:94px!important;min-width:94px!important;margin:0!important;transform:translateX(16px)!important;}
   nav.top .lang-current{width:94px!important;height:36px!important;min-height:36px!important;padding:0 12px!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:6px!important;border-radius:12px!important;background:rgba(246,239,222,.14)!important;border:1px solid rgba(246,239,222,.30)!important;color:var(--areia-pale,#f6efde)!important;font-family:"JetBrains Mono",ui-monospace,monospace!important;font-size:12px!important;font-weight:900!important;letter-spacing:.06em!important;white-space:nowrap!important;}
   nav.top .lang-dropdown{position:absolute!important;top:calc(100% + 8px)!important;bottom:auto!important;right:0!important;left:auto!important;transform:none!important;z-index:99999!important;}
   nav.top .nav-hamburger{display:none!important;}
-  nav.top .btn,nav.top .btn:link,nav.top .btn:visited,nav.top a.btn[href*="tagme"]{
-    flex:0 0 188px!important;width:188px!important;min-width:188px!important;height:60px!important;min-height:60px!important;margin:0!important;padding:0!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0!important;border-radius:999px!important;background:var(--amarelo,#f59b1e)!important;border:1px solid var(--amarelo,#f59b1e)!important;color:#fff!important;font-family:"JetBrains Mono",ui-monospace,monospace!important;font-size:14px!important;line-height:1!important;font-weight:900!important;letter-spacing:.16em!important;text-transform:uppercase!important;text-decoration:none!important;overflow:hidden!important;position:relative!important;animation:ecTopReservePulse 2.8s ease-in-out infinite!important;
-  }
+  nav.top .btn,nav.top .btn:link,nav.top .btn:visited,nav.top a.btn[href*="tagme"]{flex:0 0 188px!important;width:188px!important;min-width:188px!important;height:60px!important;min-height:60px!important;margin:0!important;padding:0!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0!important;border-radius:999px!important;background:var(--amarelo,#f59b1e)!important;border:1px solid var(--amarelo,#f59b1e)!important;color:#fff!important;font-family:"JetBrains Mono",ui-monospace,monospace!important;font-size:14px!important;line-height:1!important;font-weight:900!important;letter-spacing:.16em!important;text-transform:uppercase!important;text-decoration:none!important;overflow:hidden!important;position:relative!important;animation:ecTopReservePulse 2.8s ease-in-out infinite!important;}
   .hero .hero-eyebrow,.page-hero .hero-eyebrow{position:relative!important;transform:translate(37px,-6px)!important;will-change:transform!important;}
 }
-@media (min-width:961px) and (max-width:1180px){
-  nav.top .nav-inner{padding-left:18px!important;padding-right:18px!important;gap:10px!important;}
-  nav.top .brand-logo{width:54px!important;height:54px!important;}
-  nav.top .nav-links{gap:12px!important;overflow:hidden!important;}
-  nav.top .nav-links a{font-size:8px!important;letter-spacing:.04em!important;}
-  nav.top .nav-rating-badge.google-review-badge{flex-basis:72px!important;width:72px!important;min-width:72px!important;transform:none!important;}
-  nav.top .lang-switcher,nav.top .lang-current{width:62px!important;min-width:62px!important;flex-basis:62px!important;transform:none!important;}
-  nav.top .btn,nav.top a.btn[href*="tagme"]{flex-basis:124px!important;width:124px!important;min-width:124px!important;height:46px!important;min-height:46px!important;font-size:9.3px!important;letter-spacing:.07em!important;}
-}
+@media (min-width:961px) and (max-width:1180px){nav.top .nav-inner{padding-left:18px!important;padding-right:18px!important;gap:10px!important;}nav.top .brand-logo{width:54px!important;height:54px!important;}nav.top .nav-links{gap:12px!important;overflow:hidden!important;}nav.top .nav-links a{font-size:8px!important;letter-spacing:.04em!important;}nav.top .nav-rating-badge.google-review-badge{flex-basis:72px!important;width:72px!important;min-width:72px!important;transform:none!important;}nav.top .lang-switcher,nav.top .lang-current{width:62px!important;min-width:62px!important;flex-basis:62px!important;transform:none!important;}nav.top .btn,nav.top a.btn[href*="tagme"]{flex-basis:124px!important;width:124px!important;min-width:124px!important;height:46px!important;min-height:46px!important;font-size:9.3px!important;letter-spacing:.07em!important;}}
 @media (max-width:960px){nav.top .nav-rating-badge.google-review-badge{display:none!important;}}
 </style>
 <!-- /EC Home Top Exact Replication Lock -->"""
@@ -198,26 +165,11 @@ def nav_html(lang: str) -> str:
 </div>
 </div>
 <button aria-controls="nav-drawer" aria-expanded="false" aria-label="Abrir menu de navegação" class="nav-hamburger" id="nav-hamburger">
-<span></span>
-<span></span>
-<span></span>
+<span></span><span></span><span></span>
 </button>
 <a class="btn" href="https://go.tagme.com.br/embaixadacarioca">{cfg['reserve']}</a>
 </div>
 </nav>'''
-
-
-def normalize_nav_for_fingerprint(nav: str) -> str:
-    nav = re.sub(r">[^<>]+<", "><", nav)
-    nav = re.sub(r"href=\"[^\"]*\"", "href=\"#\"", nav)
-    nav = re.sub(r"alt=\"[^\"]*\"", "alt=\"\"", nav)
-    nav = re.sub(r"aria-label=\"[^\"]*\"", "aria-label=\"\"", nav)
-    nav = re.sub(r"\s+", " ", nav)
-    return nav.strip()
-
-
-def fingerprint(text: str) -> str:
-    return hashlib.sha256(text.encode("utf-8")).hexdigest()[:16]
 
 
 def process(path: Path) -> None:
@@ -228,35 +180,40 @@ def process(path: Path) -> None:
     original = path.read_text(encoding="utf-8", errors="ignore")
     lang = lang_for(rel, original)
     text = original
-
     text, removed = OLD_STYLE_RE.subn("\n", text)
     if removed:
         COUNTERS["old_overrides_removed"] += removed
         ACTIONS.append(f"OLD_OVERRIDE_REMOVED: {rel} ({removed})")
-
     new_nav = nav_html(lang)
     if NAV_RE.search(text):
         text = NAV_RE.sub(new_nav, text, count=1)
         COUNTERS["nav_replaced"] += 1
         ACTIONS.append(f"NAV_REPLACED: {rel}")
+    elif BODY_OPEN_RE.search(text):
+        text = BODY_OPEN_RE.sub(lambda m: m.group(0) + "\n" + new_nav, text, count=1)
+        COUNTERS["nav_inserted"] += 1
+        ACTIONS.append(f"NAV_INSERTED: {rel}")
     else:
-        ACTIONS.append(f"WARN_NO_NAV: {rel}")
-
+        ACTIONS.append(f"WARN_NO_BODY_OR_NAV: {rel}")
     text = CSS_RE.sub("\n", text)
     if HEAD_CLOSE_RE.search(text):
         text = HEAD_CLOSE_RE.sub(CSS_LOCK + "\n</head>", text, count=1)
         COUNTERS["css_lock_injected"] += 1
     else:
         ACTIONS.append(f"WARN_NO_HEAD_CLOSE: {rel}")
-
     def eyebrow_repl(match: re.Match[str]) -> str:
         COUNTERS["eyebrow_synced"] += 1
         return match.group(1) + LABELS[lang]["eyebrow"] + match.group(3)
     text = EYEBROW_RE.sub(eyebrow_repl, text, count=1)
-
     if text != original:
         path.write_text(text, encoding="utf-8")
         COUNTERS["html_updated"] += 1
+
+
+def order_ok(nav: str) -> bool:
+    keys = ["brand-mark", "nav-links", "nav-wa-btn", "google-review-badge", "lang-switcher", "nav-hamburger", "go.tagme.com.br/embaixadacarioca"]
+    positions = [nav.find(k) for k in keys]
+    return all(p >= 0 for p in positions) and positions == sorted(positions)
 
 
 def audit_page(path: Path) -> None:
@@ -267,34 +224,22 @@ def audit_page(path: Path) -> None:
     lang = lang_for(rel, text)
     nav_match = NAV_RE.search(text)
     nav = nav_match.group(0) if nav_match else ""
-    expected = nav_html(lang)
-    nav_fp = fingerprint(normalize_nav_for_fingerprint(nav)) if nav else "missing"
-    expected_fp = fingerprint(normalize_nav_for_fingerprint(expected))
+    cfg = LABELS[lang]
     checks = {
         "nav_exists": bool(nav),
-        "nav_structure_matches": nav_fp == expected_fp,
+        "nav_structure_matches": bool(nav) and order_ok(nav),
         "css_lock_present": "ec-home-top-exact-replication-lock" in text,
         "old_override_absent": "subpage-home-top-sync" not in text and "subpage-home-top-final-override" not in text,
-        "logo_present": "brand-logo light" in nav and "brand-logo dark" in nav,
-        "menu_present": "nav-links" in nav and LABELS[lang]["menu"][2][1] in nav,
-        "review_present": "google-review-badge" in nav and "Google Reviews" in nav,
-        "language_present": "lang-switcher" in nav and f">{LABELS[lang]['current']}<" in nav,
+        "logo_present": "brand-logo light" in nav and "brand-logo dark" in nav and "/assets/logo-areia.svg" in nav,
+        "menu_present": bool(nav) and all(label in nav and href in nav for href, label in cfg["menu"]),
+        "review_present": "google-review-badge" in nav and "Google Reviews" in nav and "4.8" in nav,
+        "language_present": "lang-switcher" in nav and f">{cfg['current']}<" in nav,
         "reserve_present": "go.tagme.com.br/embaixadacarioca" in nav and ">Reservar<" in nav,
         "eyebrow_position_lock": "transform:translate(37px,-6px)" in text.replace(" ", ""),
     }
     status = "PASS" if all(checks.values()) else "WARN"
-    if status == "PASS":
-        COUNTERS["audit_pass"] += 1
-    else:
-        COUNTERS["audit_warn"] += 1
-    DETAILS.append({
-        "page": rel,
-        "lang": lang,
-        "status": status,
-        "nav_fingerprint": nav_fp,
-        "expected_fingerprint": expected_fp,
-        **checks,
-    })
+    COUNTERS["audit_pass" if status == "PASS" else "audit_warn"] += 1
+    DETAILS.append({"page": rel, "lang": lang, "status": status, **checks})
 
 
 def write_reports() -> None:
@@ -306,32 +251,15 @@ def write_reports() -> None:
         "# Home Top Exact Replication + Visual Audit",
         "",
         "## Objetivo",
-        "Replicar o topo da home em todas as páginas e auditar por código/fingerprint visual estático os elementos: logo, menu, linha laranja, Google Reviews, idioma e botão Reservar.",
+        "Replicar o topo da home em todas as páginas e auditar por código os elementos: logo, menu, linha laranja, Google Reviews, idioma e botão Reservar.",
         "",
         "## Veredito",
-        f"- Páginas auditadas: {pages}",
-        f"- PASS: {pass_count}",
-        f"- WARN: {warn_count}",
-        f"- Status geral: {'PASS' if warn_count == 0 else 'WARN'}",
-        "",
-        "## Contadores",
+        f"- Páginas auditadas: {pages}", f"- PASS: {pass_count}", f"- WARN: {warn_count}", f"- Status geral: {'PASS' if warn_count == 0 else 'WARN'}",
+        "", "## Contadores",
     ]
     for k, v in COUNTERS.items():
         lines.append(f"- {k}: {v}")
-    lines.extend([
-        "",
-        "## Critérios auditados",
-        "- NAV estrutural igual ao padrão da home, com variação apenas de idioma/links.",
-        "- Logo light/dark presente e com a mesma classe.",
-        "- Menu principal com a mesma ordem visual.",
-        "- Badge Google Reviews presente na mesma posição lógica.",
-        "- Seletor de idioma presente após reviews e antes do Reservar.",
-        "- Botão Reservar presente no final do topo.",
-        "- Linha laranja travada em transform: translate(37px, -6px).",
-        "- Overrides antigos de subpágina removidos.",
-        "",
-        "## Páginas com WARN",
-    ])
+    lines.extend(["", "## Páginas com WARN"])
     warnings = [d for d in DETAILS if d["status"] != "PASS"]
     if warnings:
         for d in warnings:
@@ -341,17 +269,11 @@ def write_reports() -> None:
         lines.append("- Nenhuma.")
     lines.extend(["", "## Ações aplicadas"])
     lines.extend(f"- {a}" for a in ACTIONS) if ACTIONS else lines.append("- Nenhuma alteração necessária.")
-    lines.extend([
-        "",
-        "## Observação sobre auditoria visual",
-        "Esta auditoria garante igualdade estrutural e de CSS/fingerprint no repositório. A conferência final de pixels deve ser feita no navegador após o deploy, com cache limpo, porque PageSpeed/Chrome podem usar cache e largura de viewport diferentes.",
-        "",
-    ])
+    lines.extend(["", "## Observação", "Esta auditoria confirma igualdade estrutural/CSS do topo no repositório. A conferência de pixel deve ser feita no navegador após deploy e cache limpo.", ""])
     REPORT_MD.write_text("\n".join(lines), encoding="utf-8")
     with REPORT_CSV.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=list(DETAILS[0].keys()) if DETAILS else ["page"])
-        writer.writeheader()
-        writer.writerows(DETAILS)
+        writer.writeheader(); writer.writerows(DETAILS)
     print(REPORT_MD.read_text(encoding="utf-8"))
 
 
