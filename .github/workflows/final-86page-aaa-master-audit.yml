@@ -1,0 +1,34 @@
+name: Final 86-page AAA master audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'scripts/apply_final_86page_aaa_master_audit.py'
+      - '.github/workflows/final-86page-aaa-master-audit.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  run-final-master-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Run final 86-page AAA master audit
+        run: python3 scripts/apply_final_86page_aaa_master_audit.py
+      - name: Commit reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "audit: add final 86-page AAA master audit reports"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
