@@ -8,11 +8,11 @@ Apontar os CTAs de cotação de eventos para `https://leorangel22.github.io/main
 - Warnings: 0
 
 ## Contadores
-- files_scanned: 142
-- files_updated: 30
-- email_replacements: 90
+- files_scanned: 143
+- files_updated: 1
+- email_replacements: 0
 - event_quote_links_updated: 10
-- event_quote_texts_updated: 6
+- event_quote_texts_updated: 1
 - form_buttons_updated: 2
 - warnings: 0
 
@@ -20,36 +20,4 @@ Apontar os CTAs de cotação de eventos para `https://leorangel22.github.io/main
 - Nenhum.
 
 ## Ações
-- almoco.html: email_replaced (2)
-- cafe-da-manha.html: email_replaced (2)
-- cardapio.html: email_replaced (2)
-- en/almoco.html: email_replaced (2)
-- en/cafe-da-manha.html: email_replaced (2)
-- en/cardapio.html: email_replaced (2)
-- en/entardecer.html: email_replaced (2)
-- en/eventos.html: email_replaced (6)
-- en/eventos.html: quote_cta_updated (1)
-- en/guia-do-rio.html: email_replaced (2)
-- en/index.html: email_replaced (8)
-- en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html: email_replaced (2)
-- en/roteiro-meio-dia-urca-pao-de-acucar.html: email_replaced (2)
-- en/sunset.html: email_replaced (2)
-- entardecer.html: email_replaced (2)
-- es/almoco.html: email_replaced (2)
-- es/atardecer.html: email_replaced (2)
-- es/cafe-da-manha.html: email_replaced (2)
-- es/cardapio.html: email_replaced (2)
-- es/entardecer.html: email_replaced (2)
-- es/eventos.html: email_replaced (6)
-- es/eventos.html: quote_cta_updated (1)
-- es/guia-do-rio.html: email_replaced (2)
-- es/index.html: email_replaced (8)
-- es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html: email_replaced (2)
-- es/roteiro-meio-dia-urca-pao-de-acucar.html: email_replaced (2)
-- eventos.html: email_replaced (6)
 - eventos.html: quote_cta_updated (1)
-- guia-do-rio.html: email_replaced (2)
-- index.html: email_replaced (8)
-- llms.txt: email_replaced (2)
-- o-que-fazer-depois-do-bondinho-pao-de-acucar.html: email_replaced (2)
-- roteiro-meio-dia-urca-pao-de-acucar.html: email_replaced (2)

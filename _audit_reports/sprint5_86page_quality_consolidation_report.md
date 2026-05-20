@@ -54,7 +54,7 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 | es/como-llegar.html | es | 87 | 885 | 0 | True | True | True | 29.0 |
 | como-chegar.html | pt-BR | 87 | 896 | 0 | True | True | True | 29.3 |
 | offline.html | pt-BR | 90 | 31 | 0 | True | True | False | 55.0 |
-| home-preview.html | pt-BR | 90 | 160 | 0 | True | True | False | 25.7 |
+| home-preview.html | pt-BR | 90 | 160 | 0 | True | True | False | 25.8 |
 | parque-bondinho.html | pt-BR | 90 | 1110 | 0 | True | True | False | 174.1 |
 
 ## Páginas ainda rasas após consolidação estimada

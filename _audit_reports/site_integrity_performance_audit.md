@@ -200,7 +200,7 @@
 
 ## Maiores páginas HTML
 - index.html: 302.5 KB
-- es/index.html: 279.2 KB
+- es/index.html: 279.3 KB
 - en/index.html: 276.5 KB
 - cafe-da-manha.html: 202.0 KB
 - es/guia-do-rio.html: 200.6 KB
@@ -212,8 +212,8 @@
 - en/almoco.html: 184.7 KB
 - es/cardapio.html: 183.3 KB
 - en/cardapio.html: 182.7 KB
-- eventos.html: 181.5 KB
-- almoco.html: 181.5 KB
+- eventos.html: 181.8 KB
+- es/eventos.html: 181.5 KB
 
 ## Maiores assets de imagem
 - assets/sunset-dj-cabine-pao-acucar.png: 573.2 KB [ACIMA DE 300 KB]
