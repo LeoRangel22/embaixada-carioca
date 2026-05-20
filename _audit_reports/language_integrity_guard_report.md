@@ -1,15 +1,16 @@
 # Language Integrity Guard — Embaixada Carioca
 
 ## Contadores
-- html_scanned: 80
-- html_updated: 0
-- safe_replacements: 0
+- html_scanned: 83
+- html_updated: 1
+- safe_replacements: 1
 - targeted_blocks_fixed: 0
 - technical_repairs: 0
-- warnings: 22
+- warnings: 24
 
 ## Correções aplicadas
-- Nenhuma correção automática necessária.
+- PT_SAFE_REPLACE: cafe-da-manha-com-vista-rio-de-janeiro.html | 'Para quién' -> 'Para quem' | 1
+- UPDATED: cafe-da-manha-com-vista-rio-de-janeiro.html
 
 ## Alertas remanescentes
 - LANG_WARNING: almoco-morro-da-urca.html [en] contém padrão suspeito: \bAberto todos os dias\b
@@ -20,6 +21,8 @@
 - LANG_WARNING: cardapio.html [en] contém padrão suspeito: \bSolicitar orçamento\b
 - LANG_WARNING: cardapio.html [en] contém padrão suspeito: \bAberto todos os dias\b
 - LANG_WARNING: entardecer.html [en] contém padrão suspeito: \bAberto todos os dias\b
+- LANG_WARNING: es/desayuno-con-vista-rio-de-janeiro.html [es] contém padrão suspeito: \bBreakfast\b
+- LANG_WARNING: es/desayuno-con-vista-rio-de-janeiro.html [es] contém padrão suspeito: \bLunch\b
 - LANG_WARNING: eventos.html [en] contém padrão suspeito: \bSolicitar orçamento\b
 - LANG_WARNING: eventos.html [en] contém padrão suspeito: \bFalar com nossa equipe\b
 - LANG_WARNING: eventos.html [en] contém padrão suspeito: \bAberto todos os dias\b

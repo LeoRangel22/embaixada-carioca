@@ -18,16 +18,17 @@
 - click_idioma
 
 ## Contadores
-- html_scanned: 80
-- html_updated: 78
-- ga_head_installed: 78
-- event_layer_installed: 78
+- html_scanned: 83
+- html_updated: 81
+- ga_head_installed: 81
+- event_layer_installed: 81
 - skipped: 2
 
 ## Arquivos
 - UPDATED: 404.html
 - UPDATED: almoco-morro-da-urca.html
 - UPDATED: almoco.html
+- UPDATED: cafe-da-manha-com-vista-rio-de-janeiro.html
 - UPDATED: cafe-da-manha-pao-de-acucar.html
 - UPDATED: cafe-da-manha.html
 - UPDATED: caipirinha-com-vista-rio.html
@@ -35,6 +36,7 @@
 - UPDATED: contato.html
 - UPDATED: en/almoco-morro-da-urca.html
 - UPDATED: en/almoco.html
+- UPDATED: en/breakfast-with-a-view-rio-de-janeiro.html
 - UPDATED: en/cafe-da-manha-pao-de-acucar.html
 - UPDATED: en/cafe-da-manha.html
 - UPDATED: en/caipirinha-com-vista-rio.html
@@ -68,6 +70,7 @@
 - UPDATED: es/caipirinha-com-vista-rio.html
 - UPDATED: es/cardapio.html
 - UPDATED: es/contato.html
+- UPDATED: es/desayuno-con-vista-rio-de-janeiro.html
 - UPDATED: es/donde-comer-cerca-del-pan-de-azucar.html
 - UPDATED: es/entardecer.html
 - UPDATED: es/eventos.html

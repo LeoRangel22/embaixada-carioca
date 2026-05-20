@@ -14,14 +14,16 @@
 - A Embaixada Carioca não deve afirmar que suas mesas, terraço ou salão têm vista para o Cristo Redentor.
 
 ## Alterações aplicadas
-- PRIORITY: UPDATED: almoco.html | replacements=9
-- PRIORITY: UPDATED: cafe-da-manha.html | replacements=13
+- PRIORITY: UPDATED: almoco.html | replacements=10
+- PRIORITY: UPDATED: cafe-da-manha.html | replacements=12
 - PRIORITY: UPDATED: cardapio.html | replacements=8
-- PRIORITY: UPDATED: entardecer.html | replacements=15
+- PRIORITY: UPDATED: entardecer.html | replacements=16
 - PRIORITY: UPDATED: es/eventos.html | replacements=7
-- PRIORITY: UPDATED: eventos.html | replacements=29
-- PRIORITY: UPDATED: guia-do-rio.html | replacements=14
+- PRIORITY: UPDATED: eventos.html | replacements=32
+- PRIORITY: UPDATED: guia-do-rio.html | replacements=16
 - PRIORITY: UPDATED: index.html | replacements=42
+- SECONDARY: UPDATED: cafe-da-manha-com-vista-rio-de-janeiro.html | replacements=2
+- SECONDARY: UPDATED: cafe-da-manha-pao-de-acucar.html | replacements=3
 - SECONDARY: UPDATED: feijoada.html | replacements=5
 - SECONDARY: UPDATED: morro-da-urca.html | replacements=24
 - SECONDARY: UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=7

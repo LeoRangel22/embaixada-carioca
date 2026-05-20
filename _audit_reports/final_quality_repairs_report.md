@@ -1,7 +1,7 @@
 # Final Quality Repairs
 
 ## Contadores
-- html_scanned: 80
+- html_scanned: 83
 - html_updated: 4
 - technical_repairs: 0
 - duplicate_preloads_removed: 0

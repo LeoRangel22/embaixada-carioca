@@ -11,9 +11,9 @@
 - Se o site estiver em GitHub Pages puro, o TTL de 10 minutos dos assets pode continuar aparecendo no Lighthouse. Para resolver totalmente, usar Cloudflare/CDN com regra de cache para `/assets/*`.
 
 ## Contadores
-- html_scanned: 79
-- html_updated: 78
-- sw_registered: 79
+- html_scanned: 82
+- html_updated: 81
+- sw_registered: 82
 - hero_preload_optimized: 15
 - hero_picture_optimized: 15
 - lazy_images_marked: 0
@@ -24,6 +24,7 @@
 - UPDATED: 404.html
 - UPDATED: almoco-morro-da-urca.html
 - UPDATED: almoco.html
+- UPDATED: cafe-da-manha-com-vista-rio-de-janeiro.html
 - UPDATED: cafe-da-manha-pao-de-acucar.html
 - UPDATED: cafe-da-manha.html
 - UPDATED: caipirinha-com-vista-rio.html
@@ -31,6 +32,7 @@
 - UPDATED: contato.html
 - UPDATED: en/almoco-morro-da-urca.html
 - UPDATED: en/almoco.html
+- UPDATED: en/breakfast-with-a-view-rio-de-janeiro.html
 - UPDATED: en/cafe-da-manha-pao-de-acucar.html
 - UPDATED: en/cafe-da-manha.html
 - UPDATED: en/caipirinha-com-vista-rio.html
@@ -64,6 +66,7 @@
 - UPDATED: es/caipirinha-com-vista-rio.html
 - UPDATED: es/cardapio.html
 - UPDATED: es/contato.html
+- UPDATED: es/desayuno-con-vista-rio-de-janeiro.html
 - UPDATED: es/donde-comer-cerca-del-pan-de-azucar.html
 - UPDATED: es/entardecer.html
 - UPDATED: es/eventos.html

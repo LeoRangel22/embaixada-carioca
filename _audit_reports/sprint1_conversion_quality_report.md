@@ -9,15 +9,15 @@
 6. Preparação dos eventos GA4 para marcação como key events.
 
 ## Contadores
-- html_scanned: 80
-- html_updated: 75
-- language_fixes: 11
+- html_scanned: 83
+- html_updated: 78
+- language_fixes: 14
 - duplication_fixes: 0
 - meta_fixes: 0
-- schema_injected: 80
+- schema_injected: 83
 - phone_fixes: 15
 - hasmap_fixes: 0
-- whatsapp_fixes: 0
+- whatsapp_fixes: 1
 - reports_written: 0
 
 ## Ações aplicadas
@@ -27,6 +27,10 @@
 - LANG_FIX: almoco.html [pt] | 'Para quién' -> 'Para quem' | 1
 - SCHEMA: almoco.html | schema principal validado/injetado
 - UPDATED: almoco.html
+- LANG_FIX: cafe-da-manha-com-vista-rio-de-janeiro.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
+- SCHEMA: cafe-da-manha-com-vista-rio-de-janeiro.html | schema principal validado/injetado
+- UPDATED: cafe-da-manha-com-vista-rio-de-janeiro.html
+- LANG_FIX: cafe-da-manha-pao-de-acucar.html [pt] | 'para quién' -> 'para quem' | 1
 - SCHEMA: cafe-da-manha-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: cafe-da-manha-pao-de-acucar.html
 - SCHEMA: cafe-da-manha.html | schema principal validado/injetado
@@ -40,6 +44,8 @@
 - UPDATED: en/almoco-morro-da-urca.html
 - SCHEMA: en/almoco.html | schema principal validado/injetado
 - UPDATED: en/almoco.html
+- SCHEMA: en/breakfast-with-a-view-rio-de-janeiro.html | schema principal validado/injetado
+- UPDATED: en/breakfast-with-a-view-rio-de-janeiro.html
 - SCHEMA: en/cafe-da-manha-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: en/cafe-da-manha-pao-de-acucar.html
 - SCHEMA: en/cafe-da-manha.html | schema principal validado/injetado
@@ -111,6 +117,8 @@
 - UPDATED: es/cardapio.html
 - SCHEMA: es/contato.html | schema principal validado/injetado
 - UPDATED: es/contato.html
+- SCHEMA: es/desayuno-con-vista-rio-de-janeiro.html | schema principal validado/injetado
+- UPDATED: es/desayuno-con-vista-rio-de-janeiro.html
 - PHONE_FIX: es/donde-comer-cerca-del-pan-de-azucar.html | +55-21-96683-7556 -> +55 21 96683-7556 | 1
 - SCHEMA: es/donde-comer-cerca-del-pan-de-azucar.html | schema principal validado/injetado
 - UPDATED: es/donde-comer-cerca-del-pan-de-azucar.html
@@ -153,6 +161,7 @@
 - SCHEMA: es/roteiro-meio-dia-urca-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: es/roteiro-meio-dia-urca-pao-de-acucar.html
 - LANG_FIX: eventos.html [pt] | 'Para quién' -> 'Para quem' | 1
+- WHATSAPP_FIX: eventos.html [pt] | CTA localizado
 - SCHEMA: eventos.html | schema principal validado/injetado
 - UPDATED: eventos.html
 - SCHEMA: feijoada-com-vista-rio-de-janeiro.html | schema principal validado/injetado
@@ -161,7 +170,7 @@
 - UPDATED: feijoada.html
 - SCHEMA: gastronomia-carioca.html | schema principal validado/injetado
 - UPDATED: gastronomia-carioca.html
-- LANG_FIX: guia-do-rio.html [pt] | 'Para quién' -> 'Para quem' | 1
+- LANG_FIX: guia-do-rio.html [pt] | 'Para quién' -> 'Para quem' | 2
 - SCHEMA: guia-do-rio.html | schema principal validado/injetado
 - UPDATED: guia-do-rio.html
 - SCHEMA: home-preview.html | schema principal validado/injetado

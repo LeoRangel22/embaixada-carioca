@@ -4,6 +4,7 @@
 - UPDATED: 404.html | replacements=0
 - UPDATED: almoco-morro-da-urca.html | replacements=0
 - UPDATED: almoco.html | replacements=0
+- UPDATED: cafe-da-manha-com-vista-rio-de-janeiro.html | replacements=0
 - UPDATED: cafe-da-manha-pao-de-acucar.html | replacements=0
 - UPDATED: cafe-da-manha.html | replacements=0
 - UPDATED: caipirinha-com-vista-rio.html | replacements=0
@@ -11,6 +12,7 @@
 - UPDATED: contato.html | replacements=0
 - UPDATED: en/almoco-morro-da-urca.html | replacements=0
 - UPDATED: en/almoco.html | replacements=0
+- UPDATED: en/breakfast-with-a-view-rio-de-janeiro.html | replacements=0
 - UPDATED: en/cafe-da-manha-pao-de-acucar.html | replacements=0
 - UPDATED: en/cafe-da-manha.html | replacements=0
 - UPDATED: en/caipirinha-com-vista-rio.html | replacements=0
@@ -44,6 +46,7 @@
 - UPDATED: es/caipirinha-com-vista-rio.html | replacements=1
 - UPDATED: es/cardapio.html | replacements=1
 - UPDATED: es/contato.html | replacements=1
+- UPDATED: es/desayuno-con-vista-rio-de-janeiro.html | replacements=2
 - UPDATED: es/donde-comer-cerca-del-pan-de-azucar.html | replacements=1
 - UPDATED: es/entardecer.html | replacements=1
 - UPDATED: es/eventos.html | replacements=1

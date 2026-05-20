@@ -11,9 +11,9 @@
 - sem alteração da composição principal da home
 
 ## Contadores
-- html_files_scanned: 80
-- html_files_updated: 80
-- canonical_fixed: 62
+- html_files_scanned: 83
+- html_files_updated: 83
+- canonical_fixed: 65
 - og_url_fixed: 15
 - absolute_urls_fixed: 112
 - review_links_fixed: 0
@@ -21,7 +21,7 @@
 - text_typos_fixed: 1
 - sitemap_urls_fixed: 0
 - sitemap_blocks_removed: 0
-- subpage_top_synced: 70
+- subpage_top_synced: 73
 - subpage_eyebrow_synced: 70
 
 ## Correções aplicadas
@@ -30,6 +30,8 @@
 - TOP_SYNC: almoco-morro-da-urca.html | topo sincronizado com a home
 - CANONICAL: almoco.html -> https://www.embaixadacarioca.com/almoco.html
 - TOP_SYNC: almoco.html | topo sincronizado com a home
+- CANONICAL: cafe-da-manha-com-vista-rio-de-janeiro.html -> https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html
+- TOP_SYNC: cafe-da-manha-com-vista-rio-de-janeiro.html | topo sincronizado com a home
 - CANONICAL: cafe-da-manha-pao-de-acucar.html -> https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html
 - TOP_SYNC: cafe-da-manha-pao-de-acucar.html | topo sincronizado com a home
 - CANONICAL: cafe-da-manha.html -> https://www.embaixadacarioca.com/cafe-da-manha.html
@@ -43,6 +45,8 @@
 - TOP_SYNC: en/almoco-morro-da-urca.html | topo sincronizado com a home
 - CANONICAL: en/almoco.html -> https://www.embaixadacarioca.com/en/almoco.html
 - TOP_SYNC: en/almoco.html | topo sincronizado com a home
+- CANONICAL: en/breakfast-with-a-view-rio-de-janeiro.html -> https://www.embaixadacarioca.com/en/breakfast-with-a-view-rio-de-janeiro.html
+- TOP_SYNC: en/breakfast-with-a-view-rio-de-janeiro.html | topo sincronizado com a home
 - CANONICAL: en/cafe-da-manha-pao-de-acucar.html -> https://www.embaixadacarioca.com/en/cafe-da-manha-pao-de-acucar.html
 - TOP_SYNC: en/cafe-da-manha-pao-de-acucar.html | topo sincronizado com a home
 - CANONICAL: en/cafe-da-manha.html -> https://www.embaixadacarioca.com/en/cafe-da-manha.html
@@ -105,6 +109,8 @@
 - CANONICAL: es/cardapio.html -> https://www.embaixadacarioca.com/es/cardapio.html
 - TOP_SYNC: es/cardapio.html | topo sincronizado com a home
 - CANONICAL: es/contato.html -> https://www.embaixadacarioca.com/es/contato.html
+- CANONICAL: es/desayuno-con-vista-rio-de-janeiro.html -> https://www.embaixadacarioca.com/es/desayuno-con-vista-rio-de-janeiro.html
+- TOP_SYNC: es/desayuno-con-vista-rio-de-janeiro.html | topo sincronizado com a home
 - OG_URL: es/donde-comer-cerca-del-pan-de-azucar.html -> https://www.embaixadacarioca.com/es/donde-comer-cerca-del-pan-de-azucar.html
 - TOP_SYNC: es/donde-comer-cerca-del-pan-de-azucar.html | topo sincronizado com a home
 - CANONICAL: es/entardecer.html -> https://www.embaixadacarioca.com/es/entardecer.html
@@ -178,18 +184,18 @@
 - Nenhum alerta crítico encontrado
 
 ## Maiores páginas HTML
-- index.html: 272.4 KB
-- es/index.html: 262.3 KB
-- en/index.html: 259.5 KB
-- es/guia-do-rio.html: 182.0 KB
-- en/guia-do-rio.html: 181.4 KB
-- guia-do-rio.html: 181.2 KB
-- cafe-da-manha.html: 180.6 KB
-- es/cafe-da-manha.html: 173.9 KB
-- en/cafe-da-manha.html: 173.7 KB
-- almoco.html: 168.6 KB
-- cardapio.html: 166.2 KB
-- entardecer.html: 163.2 KB
+- index.html: 274.7 KB
+- es/index.html: 264.4 KB
+- en/index.html: 261.6 KB
+- es/guia-do-rio.html: 184.1 KB
+- en/guia-do-rio.html: 183.6 KB
+- guia-do-rio.html: 183.5 KB
+- cafe-da-manha.html: 182.7 KB
+- es/cafe-da-manha.html: 176.0 KB
+- en/cafe-da-manha.html: 175.7 KB
+- almoco.html: 170.7 KB
+- cardapio.html: 168.3 KB
+- entardecer.html: 165.3 KB
 - es/cardapio.html: 161.9 KB
 - en/cardapio.html: 161.3 KB
 - en/almoco.html: 160.7 KB
