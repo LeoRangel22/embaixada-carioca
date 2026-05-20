@@ -7,22 +7,25 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - html_scanned: 86
 - html_updated: 86
 - css_injected: 86
-- pins_removed: 0
+- pins_removed: 18
 - rating_badges_replaced: 74
 
 ## Ações
 - CSS: 404.html
 - RATING: almoco-morro-da-urca.html | 1
 - CSS: almoco-morro-da-urca.html
+- PIN: almoco.html | 1
 - RATING: almoco.html | 1
 - CSS: almoco.html
 - CSS: cafe-da-manha-com-vista-rio-de-janeiro.html
 - RATING: cafe-da-manha-pao-de-acucar.html | 1
 - CSS: cafe-da-manha-pao-de-acucar.html
+- PIN: cafe-da-manha.html | 1
 - RATING: cafe-da-manha.html | 1
 - CSS: cafe-da-manha.html
 - RATING: caipirinha-com-vista-rio.html | 1
 - CSS: caipirinha-com-vista-rio.html
+- PIN: cardapio.html | 1
 - RATING: cardapio.html | 1
 - CSS: cardapio.html
 - RATING: como-chegar.html | 1
@@ -30,20 +33,24 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - CSS: contato.html
 - RATING: en/almoco-morro-da-urca.html | 1
 - CSS: en/almoco-morro-da-urca.html
+- PIN: en/almoco.html | 1
 - RATING: en/almoco.html | 1
 - CSS: en/almoco.html
 - CSS: en/breakfast-with-a-view-rio-de-janeiro.html
 - RATING: en/cafe-da-manha-pao-de-acucar.html | 1
 - CSS: en/cafe-da-manha-pao-de-acucar.html
+- PIN: en/cafe-da-manha.html | 1
 - RATING: en/cafe-da-manha.html | 1
 - CSS: en/cafe-da-manha.html
 - RATING: en/caipirinha-com-vista-rio.html | 1
 - CSS: en/caipirinha-com-vista-rio.html
+- PIN: en/cardapio.html | 1
 - RATING: en/cardapio.html | 1
 - CSS: en/cardapio.html
 - CSS: en/contato.html
 - RATING: en/entardecer.html | 1
 - CSS: en/entardecer.html
+- PIN: en/eventos.html | 1
 - RATING: en/eventos.html | 1
 - CSS: en/eventos.html
 - RATING: en/feijoada-com-vista-rio-de-janeiro.html | 1
@@ -52,10 +59,12 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - CSS: en/feijoada.html
 - RATING: en/gastronomia-carioca.html | 1
 - CSS: en/gastronomia-carioca.html
+- PIN: en/guia-do-rio.html | 1
 - RATING: en/guia-do-rio.html | 1
 - CSS: en/guia-do-rio.html
 - RATING: en/how-to-get-there.html | 1
 - CSS: en/how-to-get-there.html
+- PIN: en/index.html | 1
 - RATING: en/index.html | 1
 - CSS: en/index.html
 - RATING: en/morro-da-urca.html | 1
@@ -85,16 +94,19 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - CSS: entardecer.html
 - RATING: es/almoco-morro-da-urca.html | 1
 - CSS: es/almoco-morro-da-urca.html
+- PIN: es/almoco.html | 1
 - RATING: es/almoco.html | 1
 - CSS: es/almoco.html
 - RATING: es/atardecer.html | 1
 - CSS: es/atardecer.html
 - RATING: es/cafe-da-manha-pao-de-acucar.html | 1
 - CSS: es/cafe-da-manha-pao-de-acucar.html
+- PIN: es/cafe-da-manha.html | 1
 - RATING: es/cafe-da-manha.html | 1
 - CSS: es/cafe-da-manha.html
 - RATING: es/caipirinha-com-vista-rio.html | 1
 - CSS: es/caipirinha-com-vista-rio.html
+- PIN: es/cardapio.html | 1
 - RATING: es/cardapio.html | 1
 - CSS: es/cardapio.html
 - RATING: es/como-llegar.html | 1
@@ -105,6 +117,7 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - CSS: es/donde-comer-cerca-del-pan-de-azucar.html
 - RATING: es/entardecer.html | 1
 - CSS: es/entardecer.html
+- PIN: es/eventos.html | 1
 - RATING: es/eventos.html | 1
 - CSS: es/eventos.html
 - RATING: es/feijoada-com-vista-rio-de-janeiro.html | 1
@@ -113,8 +126,10 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - CSS: es/feijoada.html
 - RATING: es/gastronomia-carioca.html | 1
 - CSS: es/gastronomia-carioca.html
+- PIN: es/guia-do-rio.html | 1
 - RATING: es/guia-do-rio.html | 1
 - CSS: es/guia-do-rio.html
+- PIN: es/index.html | 1
 - RATING: es/index.html | 1
 - CSS: es/index.html
 - RATING: es/morro-da-urca.html | 1
@@ -136,6 +151,7 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - CSS: es/restaurantes-cerca-del-pan-de-azucar.html
 - RATING: es/roteiro-meio-dia-urca-pao-de-acucar.html | 1
 - CSS: es/roteiro-meio-dia-urca-pao-de-acucar.html
+- PIN: eventos.html | 1
 - RATING: eventos.html | 1
 - CSS: eventos.html
 - RATING: feijoada-com-vista-rio-de-janeiro.html | 1
@@ -144,9 +160,11 @@ Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google
 - CSS: feijoada.html
 - RATING: gastronomia-carioca.html | 1
 - CSS: gastronomia-carioca.html
+- PIN: guia-do-rio.html | 1
 - RATING: guia-do-rio.html | 1
 - CSS: guia-do-rio.html
 - CSS: home-preview.html
+- PIN: index.html | 1
 - RATING: index.html | 1
 - CSS: index.html
 - RATING: morro-da-urca.html | 1

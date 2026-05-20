@@ -9,7 +9,7 @@ Corrigir rótulos visíveis em PT que vazaram para páginas EN/ES nos blocos GEO
 - en_fixes: 32
 - es_fixes: 32
 - pt_fixes: 0
-- warnings: 10
+- warnings: 4
 
 ## Correções
 - EN_FIXES: en/breakfast-with-a-view-rio-de-janeiro.html | 'Resposta direta · SEO + GEO' -> 'Direct answer · SEO + GEO' | 1
@@ -95,12 +95,6 @@ Corrigir rótulos visíveis em PT que vazaram para páginas EN/ES nos blocos GEO
 
 ## Alertas remanescentes
 - VISIBLE_LANG_WARNING: en/cafe-da-manha.html [en] contém 'Café'
-- VISIBLE_LANG_WARNING: en/gastronomia-carioca.html [en] contém 'Resposta direta'
 - VISIBLE_LANG_WARNING: en/guia-do-rio.html [en] contém 'Café'
-- VISIBLE_LANG_WARNING: en/morro-da-urca.html [en] contém 'Resposta direta'
-- VISIBLE_LANG_WARNING: en/parque-bondinho.html [en] contém 'Resposta direta'
 - VISIBLE_LANG_WARNING: es/cafe-da-manha.html [es] contém 'Café'
-- VISIBLE_LANG_WARNING: es/gastronomia-carioca.html [es] contém 'Resposta direta'
 - VISIBLE_LANG_WARNING: es/guia-do-rio.html [es] contém 'Café'
-- VISIBLE_LANG_WARNING: es/morro-da-urca.html [es] contém 'Resposta direta'
-- VISIBLE_LANG_WARNING: es/parque-bondinho.html [es] contém 'Resposta direta'

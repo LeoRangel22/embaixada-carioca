@@ -48,8 +48,8 @@
 - UPDATED: es/caipirinha-com-vista-rio.html | replacements=1
 - UPDATED: es/cardapio.html | replacements=1
 - UPDATED: es/como-llegar.html | replacements=5
-- UPDATED: es/contato.html | replacements=1
-- UPDATED: es/desayuno-con-vista-rio-de-janeiro.html | replacements=1
+- UPDATED: es/contato.html | replacements=3
+- UPDATED: es/desayuno-con-vista-rio-de-janeiro.html | replacements=3
 - UPDATED: es/donde-comer-cerca-del-pan-de-azucar.html | replacements=1
 - UPDATED: es/entardecer.html | replacements=1
 - UPDATED: es/eventos.html | replacements=3
@@ -59,8 +59,8 @@
 - UPDATED: es/guia-do-rio.html | replacements=1
 - UPDATED: es/index.html | replacements=1
 - UPDATED: es/morro-da-urca.html | replacements=1
-- UPDATED: es/nossa-visao.html | replacements=1
-- UPDATED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=1
+- UPDATED: es/nossa-visao.html | replacements=3
+- UPDATED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=3
 - UPDATED: es/parque-bondinho-pan-de-azucar.html | replacements=1
 - UPDATED: es/parque-bondinho.html | replacements=1
 - UPDATED: es/por-do-sol-morro-da-urca.html | replacements=1

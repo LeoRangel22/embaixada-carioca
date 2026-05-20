@@ -11,7 +11,7 @@
 ## Contadores
 - html_scanned: 86
 - html_updated: 86
-- language_fixes: 42
+- language_fixes: 49
 - duplication_fixes: 0
 - meta_fixes: 0
 - schema_injected: 86
@@ -29,7 +29,7 @@
 - LANG_FIX: almoco.html [pt] | 'Para quién' -> 'Para quem' | 1
 - SCHEMA: almoco.html | schema principal validado/injetado
 - UPDATED: almoco.html
-- LANG_FIX: cafe-da-manha-com-vista-rio-de-janeiro.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
+- LANG_FIX: cafe-da-manha-com-vista-rio-de-janeiro.html [pt] | 'Breakfast' -> 'Café da manhã' | 2
 - SCHEMA: cafe-da-manha-com-vista-rio-de-janeiro.html | schema principal validado/injetado
 - UPDATED: cafe-da-manha-com-vista-rio-de-janeiro.html
 - LANG_FIX: cafe-da-manha-pao-de-acucar.html [pt] | 'para quién' -> 'para quem' | 4
@@ -47,7 +47,8 @@
 - HASMAP_FIX: como-chegar.html | hasMap corrigido
 - SCHEMA: como-chegar.html | schema principal validado/injetado
 - UPDATED: como-chegar.html
-- LANG_FIX: contato.html [pt] | 'para quién' -> 'para quem' | 3
+- LANG_FIX: contato.html [pt] | 'para quién' -> 'para quem' | 4
+- LANG_FIX: contato.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: contato.html | schema principal validado/injetado
 - UPDATED: contato.html
 - SCHEMA: en/almoco-morro-da-urca.html | schema principal validado/injetado
@@ -200,9 +201,11 @@
 - UPDATED: index.html
 - SCHEMA: morro-da-urca.html | schema principal validado/injetado
 - UPDATED: morro-da-urca.html
-- LANG_FIX: nossa-visao.html [pt] | 'para quién' -> 'para quem' | 3
+- LANG_FIX: nossa-visao.html [pt] | 'para quién' -> 'para quem' | 4
+- LANG_FIX: nossa-visao.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: nossa-visao.html | schema principal validado/injetado
 - UPDATED: nossa-visao.html
+- LANG_FIX: o-que-fazer-depois-do-bondinho-pao-de-acucar.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - SCHEMA: offline.html | schema principal validado/injetado
@@ -233,6 +236,7 @@
 - SCHEMA: restaurantes-perto-do-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: restaurantes-perto-do-pao-de-acucar.html
 - LANG_FIX: roteiro-meio-dia-urca-pao-de-acucar.html [pt] | 'Para quién' -> 'Para quem' | 1
+- LANG_FIX: roteiro-meio-dia-urca-pao-de-acucar.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: roteiro-meio-dia-urca-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: roteiro-meio-dia-urca-pao-de-acucar.html
 

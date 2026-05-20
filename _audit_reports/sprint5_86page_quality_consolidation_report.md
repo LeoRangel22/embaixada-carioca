@@ -8,44 +8,44 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - content_pages: 83
 - utility_pages: 3
 - pages_updated: 72
-- thin_before: 24
-- thin_after_estimated: 23
-- consolidation_blocks_added: 53
+- thin_before: 20
+- thin_after_estimated: 19
+- consolidation_blocks_added: 48
 - faq_blocks_added: 3
 - schema_blocks_added: 3
 - language_fixes_applied: 56
 - anchor_targets_added: 0
 - sitemap_missing: 0
-- pages_score_80_plus_estimated: 73
+- pages_score_80_plus_estimated: 83
 - warnings: 0
 
 ## Veredito técnico estimado
 - Páginas auditadas: 86
 - Páginas de conteúdo: 83
 - Páginas utilitárias: 3
-- Páginas estimadas com score ≥ 80: 73/86
-- Páginas ainda abaixo de 650 palavras: 23
-- Páginas com possível vazamento de idioma: 8
-- Páginas abaixo de score 80 estimado: 13
+- Páginas estimadas com score ≥ 80: 83/86
+- Páginas ainda abaixo de 650 palavras: 19
+- Páginas com possível vazamento de idioma: 0
+- Páginas abaixo de score 80 estimado: 3
 
 ## Piores páginas por score estimado
 | Página | Idioma | Score | Palavras | Vazamentos | Sitemap | Schema | FAQ | KB |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| es/contato.html | es | 65 | 344 | 0 | True | True | True | 23.1 |
-| es/nossa-visao.html | es | 65 | 345 | 0 | True | True | True | 23.2 |
-| en/contato.html | en | 65 | 358 | 0 | True | True | True | 23.1 |
-| en/nossa-visao.html | en | 65 | 361 | 0 | True | True | True | 23.2 |
-| contato.html | pt-BR | 68 | 315 | 0 | True | True | True | 22.8 |
-| nossa-visao.html | pt-BR | 68 | 316 | 0 | True | True | True | 23.0 |
-| o-que-fazer-depois-do-bondinho-pao-de-acucar.html | pt-BR | 74 | 577 | 0 | True | True | True | 143.9 |
-| es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | es | 74 | 620 | 0 | True | True | True | 144.1 |
-| en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html | en | 74 | 627 | 0 | True | True | True | 143.9 |
-| roteiro-meio-dia-urca-pao-de-acucar.html | pt-BR | 74 | 642 | 0 | True | True | True | 144.4 |
 | cafe-da-manha-com-vista-rio-de-janeiro.html | pt-BR | 79 | 475 | 0 | True | True | True | 18.0 |
 | es/desayuno-con-vista-rio-de-janeiro.html | es | 79 | 492 | 0 | True | True | True | 18.0 |
 | en/breakfast-with-a-view-rio-de-janeiro.html | en | 79 | 493 | 0 | True | True | True | 17.9 |
+| en/nossa-visao.html | en | 81 | 593 | 0 | True | True | True | 28.1 |
+| es/nossa-visao.html | es | 81 | 595 | 0 | True | True | True | 28.3 |
+| es/contato.html | es | 81 | 597 | 0 | True | True | True | 28.2 |
+| en/contato.html | en | 81 | 604 | 0 | True | True | True | 28.1 |
 | en/roteiro-meio-dia-urca-pao-de-acucar.html | en | 82 | 679 | 0 | True | True | True | 144.3 |
 | es/roteiro-meio-dia-urca-pao-de-acucar.html | es | 82 | 684 | 0 | True | True | True | 144.6 |
+| en/sunset.html | en | 82 | 833 | 0 | True | True | True | 168.2 |
+| es/atardecer.html | es | 82 | 855 | 0 | True | True | True | 168.3 |
+| es/entardecer.html | es | 82 | 855 | 0 | True | True | True | 168.3 |
+| en/almoco.html | en | 82 | 887 | 0 | True | True | True | 171.9 |
+| nossa-visao.html | pt-BR | 84 | 535 | 0 | True | True | True | 27.9 |
+| contato.html | pt-BR | 84 | 550 | 0 | True | True | True | 27.9 |
 | parque-bondinho-pao-de-acucar.html | pt-BR | 84 | 595 | 0 | True | True | True | 60.0 |
 | almoco-morro-da-urca.html | pt-BR | 84 | 611 | 0 | True | True | True | 63.1 |
 | caipirinha-com-vista-rio.html | pt-BR | 84 | 619 | 0 | True | True | True | 64.3 |
@@ -58,19 +58,15 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 | por-do-sol-morro-da-urca.html | pt-BR | 84 | 633 | 0 | True | True | True | 63.2 |
 
 ## Páginas ainda rasas após consolidação estimada
-- es/contato.html — 344 palavras — score 65
-- es/nossa-visao.html — 345 palavras — score 65
-- en/contato.html — 358 palavras — score 65
-- en/nossa-visao.html — 361 palavras — score 65
-- contato.html — 315 palavras — score 68
-- nossa-visao.html — 316 palavras — score 68
-- o-que-fazer-depois-do-bondinho-pao-de-acucar.html — 577 palavras — score 74
-- es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html — 620 palavras — score 74
-- en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html — 627 palavras — score 74
-- roteiro-meio-dia-urca-pao-de-acucar.html — 642 palavras — score 74
 - cafe-da-manha-com-vista-rio-de-janeiro.html — 475 palavras — score 79
 - es/desayuno-con-vista-rio-de-janeiro.html — 492 palavras — score 79
 - en/breakfast-with-a-view-rio-de-janeiro.html — 493 palavras — score 79
+- en/nossa-visao.html — 593 palavras — score 81
+- es/nossa-visao.html — 595 palavras — score 81
+- es/contato.html — 597 palavras — score 81
+- en/contato.html — 604 palavras — score 81
+- nossa-visao.html — 535 palavras — score 84
+- contato.html — 550 palavras — score 84
 - parque-bondinho-pao-de-acucar.html — 595 palavras — score 84
 - almoco-morro-da-urca.html — 611 palavras — score 84
 - caipirinha-com-vista-rio.html — 619 palavras — score 84
@@ -83,14 +79,7 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - por-do-sol-morro-da-urca.html — 633 palavras — score 84
 
 ## Possíveis vazamentos de idioma remanescentes
-- en/parque-bondinho.html [en]: resposta direta
-- es/parque-bondinho.html [es]: resposta direta
-- en/gastronomia-carioca.html [en]: resposta direta
-- es/gastronomia-carioca.html [es]: resposta direta
-- en/morro-da-urca.html [en]: resposta direta
-- es/morro-da-urca.html [es]: resposta direta
-- en/guia-do-rio.html [en]: como chegar
-- es/guia-do-rio.html [es]: como chegar
+- Nenhum vazamento de idioma detectado pelos tokens críticos.
 
 ## Maiores páginas HTML
 - index.html: 282.0 KB, 518 estilos inline
@@ -107,7 +96,7 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - es/eventos.html: 176.8 KB, 41 estilos inline
 - eventos.html: 176.7 KB, 41 estilos inline
 - entardecer.html: 176.3 KB, 74 estilos inline
-- en/almoco.html: 175.0 KB, 79 estilos inline
+- en/eventos.html: 173.2 KB, 41 estilos inline
 
 ## Ações aplicadas
 - CONSOLIDATION_BLOCK: almoco-morro-da-urca.html (611 words before)
@@ -116,11 +105,10 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - CONSOLIDATION_BLOCK: cafe-da-manha-pao-de-acucar.html (709 words before)
 - CONSOLIDATION_BLOCK: caipirinha-com-vista-rio.html (619 words before)
 - CONSOLIDATION_BLOCK: como-chegar.html (710 words before)
-- CONSOLIDATION_BLOCK: contato.html (315 words before)
+- CONSOLIDATION_BLOCK: contato.html (550 words before)
 - LANG_FIX: en/almoco-morro-da-urca.html
 - CONSOLIDATION_BLOCK: en/almoco-morro-da-urca.html (702 words before)
 - LANG_FIX: en/almoco.html
-- CONSOLIDATION_BLOCK: en/almoco.html (887 words before)
 - LANG_FIX: en/breakfast-with-a-view-rio-de-janeiro.html
 - CONSOLIDATION_BLOCK: en/breakfast-with-a-view-rio-de-janeiro.html (145 words before)
 - SPRINT5_FAQ_SCHEMA: en/breakfast-with-a-view-rio-de-janeiro.html
@@ -131,9 +119,8 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - CONSOLIDATION_BLOCK: en/caipirinha-com-vista-rio.html (696 words before)
 - LANG_FIX: en/cardapio.html
 - LANG_FIX: en/contato.html
-- CONSOLIDATION_BLOCK: en/contato.html (358 words before)
+- CONSOLIDATION_BLOCK: en/contato.html (604 words before)
 - LANG_FIX: en/entardecer.html
-- CONSOLIDATION_BLOCK: en/entardecer.html (833 words before)
 - LANG_FIX: en/eventos.html
 - LANG_FIX: en/feijoada-com-vista-rio-de-janeiro.html
 - CONSOLIDATION_BLOCK: en/feijoada-com-vista-rio-de-janeiro.html (704 words before)
@@ -145,9 +132,9 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - LANG_FIX: en/index.html
 - LANG_FIX: en/morro-da-urca.html
 - LANG_FIX: en/nossa-visao.html
-- CONSOLIDATION_BLOCK: en/nossa-visao.html (361 words before)
+- CONSOLIDATION_BLOCK: en/nossa-visao.html (593 words before)
 - LANG_FIX: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
-- CONSOLIDATION_BLOCK: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html (627 words before)
+- CONSOLIDATION_BLOCK: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html (833 words before)
 - LANG_FIX: en/parque-bondinho.html
 - LANG_FIX: en/por-do-sol-morro-da-urca.html
 - CONSOLIDATION_BLOCK: en/por-do-sol-morro-da-urca.html (682 words before)
@@ -162,14 +149,12 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - LANG_FIX: en/sugarloaf-cable-car-restaurant.html
 - CONSOLIDATION_BLOCK: en/sugarloaf-cable-car-restaurant.html (798 words before)
 - LANG_FIX: en/sunset.html
-- CONSOLIDATION_BLOCK: en/sunset.html (833 words before)
 - LANG_FIX: en/where-to-eat-near-sugarloaf.html
 - CONSOLIDATION_BLOCK: en/where-to-eat-near-sugarloaf.html (791 words before)
 - LANG_FIX: es/almoco-morro-da-urca.html
 - CONSOLIDATION_BLOCK: es/almoco-morro-da-urca.html (675 words before)
 - LANG_FIX: es/almoco.html
 - LANG_FIX: es/atardecer.html
-- CONSOLIDATION_BLOCK: es/atardecer.html (855 words before)
 - LANG_FIX: es/cafe-da-manha-pao-de-acucar.html
 - CONSOLIDATION_BLOCK: es/cafe-da-manha-pao-de-acucar.html (688 words before)
 - LANG_FIX: es/cafe-da-manha.html
@@ -179,14 +164,13 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - LANG_FIX: es/como-llegar.html
 - CONSOLIDATION_BLOCK: es/como-llegar.html (684 words before)
 - LANG_FIX: es/contato.html
-- CONSOLIDATION_BLOCK: es/contato.html (344 words before)
+- CONSOLIDATION_BLOCK: es/contato.html (597 words before)
 - LANG_FIX: es/desayuno-con-vista-rio-de-janeiro.html
 - CONSOLIDATION_BLOCK: es/desayuno-con-vista-rio-de-janeiro.html (159 words before)
 - SPRINT5_FAQ_SCHEMA: es/desayuno-con-vista-rio-de-janeiro.html
 - LANG_FIX: es/donde-comer-cerca-del-pan-de-azucar.html
 - CONSOLIDATION_BLOCK: es/donde-comer-cerca-del-pan-de-azucar.html (791 words before)
 - LANG_FIX: es/entardecer.html
-- CONSOLIDATION_BLOCK: es/entardecer.html (855 words before)
 - LANG_FIX: es/eventos.html
 - LANG_FIX: es/feijoada-com-vista-rio-de-janeiro.html
 - CONSOLIDATION_BLOCK: es/feijoada-com-vista-rio-de-janeiro.html (687 words before)
@@ -196,9 +180,9 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - LANG_FIX: es/index.html
 - LANG_FIX: es/morro-da-urca.html
 - LANG_FIX: es/nossa-visao.html
-- CONSOLIDATION_BLOCK: es/nossa-visao.html (345 words before)
+- CONSOLIDATION_BLOCK: es/nossa-visao.html (595 words before)
 - LANG_FIX: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
-- CONSOLIDATION_BLOCK: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html (620 words before)
+- CONSOLIDATION_BLOCK: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html (824 words before)
 - LANG_FIX: es/parque-bondinho-pan-de-azucar.html
 - CONSOLIDATION_BLOCK: es/parque-bondinho-pan-de-azucar.html (426 words before)
 - LANG_FIX: es/parque-bondinho.html
@@ -213,15 +197,15 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - LANG_FIX: es/roteiro-meio-dia-urca-pao-de-acucar.html
 - CONSOLIDATION_BLOCK: es/roteiro-meio-dia-urca-pao-de-acucar.html (684 words before)
 - CONSOLIDATION_BLOCK: feijoada-com-vista-rio-de-janeiro.html (624 words before)
-- CONSOLIDATION_BLOCK: nossa-visao.html (316 words before)
-- CONSOLIDATION_BLOCK: o-que-fazer-depois-do-bondinho-pao-de-acucar.html (577 words before)
+- CONSOLIDATION_BLOCK: nossa-visao.html (535 words before)
+- CONSOLIDATION_BLOCK: o-que-fazer-depois-do-bondinho-pao-de-acucar.html (759 words before)
 - CONSOLIDATION_BLOCK: onde-comer-no-pao-de-acucar.html (446 words before)
 - CONSOLIDATION_BLOCK: parque-bondinho-pao-de-acucar.html (409 words before)
 - CONSOLIDATION_BLOCK: por-do-sol-morro-da-urca.html (633 words before)
 - CONSOLIDATION_BLOCK: restaurante-bondinho-pao-de-acucar.html (443 words before)
 - CONSOLIDATION_BLOCK: restaurante-morro-da-urca.html (442 words before)
 - CONSOLIDATION_BLOCK: restaurantes-perto-do-pao-de-acucar.html (469 words before)
-- CONSOLIDATION_BLOCK: roteiro-meio-dia-urca-pao-de-acucar.html (642 words before)
+- CONSOLIDATION_BLOCK: roteiro-meio-dia-urca-pao-de-acucar.html (825 words before)
 
 ## Próxima ação recomendada
 - Separar CSS global em arquivo externo e reduzir peso da home/guia/café quando a validação visual estiver estável.

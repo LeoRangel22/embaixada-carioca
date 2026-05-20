@@ -27,13 +27,13 @@
 - SECONDARY: UPDATED: cafe-da-manha-pao-de-acucar.html | replacements=11
 - SECONDARY: UPDATED: caipirinha-com-vista-rio.html | replacements=10
 - SECONDARY: UPDATED: como-chegar.html | replacements=8
-- SECONDARY: UPDATED: contato.html | replacements=8
+- SECONDARY: UPDATED: contato.html | replacements=10
 - SECONDARY: UPDATED: en/how-to-get-there.html | replacements=1
 - SECONDARY: UPDATED: es/como-llegar.html | replacements=11
 - SECONDARY: UPDATED: feijoada-com-vista-rio-de-janeiro.html | replacements=10
 - SECONDARY: UPDATED: feijoada.html | replacements=11
 - SECONDARY: UPDATED: morro-da-urca.html | replacements=24
-- SECONDARY: UPDATED: nossa-visao.html | replacements=8
+- SECONDARY: UPDATED: nossa-visao.html | replacements=9
 - SECONDARY: UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | replacements=9
 - SECONDARY: UPDATED: onde-comer-no-pao-de-acucar.html | replacements=6
 - SECONDARY: UPDATED: parque-bondinho-pao-de-acucar.html | replacements=5
