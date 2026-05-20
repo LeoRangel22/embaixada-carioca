@@ -2121,6 +2121,52 @@ body{background:#00202e!important;}
 @media(max-width:960px){.article-body,.article-content,.longform,.story,.guide-content,.rio-guide{font-size:16px!important;line-height:1.64!important;}}
 </style>
 <!-- /EC Legibility Contrast Lock -->
+<!-- EC AAA Readability Emergency Fix -->
+<style id="ec-aaa-readability-emergency-fix">
+/* AAA READABILITY EMERGENCY FIX
+   Corrige o problema real visto no navegador: textos herdando -webkit-text-fill-color claro em cards claros
+   e textos escuros em fundos azul-escuro. Este bloco deve ficar por último no <head>. */
+:root{--ec-readable-blue:#00405a;--ec-readable-green:#335d4a;--ec-readable-yellow:#f59b1e;--ec-readable-sand:#ede2c9;--ec-readable-sand-soft:#f6efde;--ec-readable-gray:#485156;--ec-readable-gray-2:#6b7377;}
+
+/* 1) Zera herança problemática de -webkit-text-fill-color */
+html body main :where(h1,h2,h3,h4,h5,h6,p,li,span,strong,em,a,small,summary,details,div,td,th,dd,dt,label){-webkit-text-fill-color:currentColor!important;}
+
+/* 2) Padrão em áreas escuras: texto claro, legível */
+html body main{color:rgba(237,226,201,.90)!important;}
+html body main :where(p,li,small,summary,dd,dt){color:rgba(237,226,201,.88)!important;}
+html body main :where(h1,h2,h3,h4,h5,h6){color:var(--ec-readable-sand-soft)!important;text-shadow:none!important;}
+html body main :where(strong,b){color:var(--ec-readable-yellow)!important;}
+html body main :where(a:not(.btn):not(.btn-secondary)){color:var(--ec-readable-yellow)!important;text-decoration-color:rgba(245,155,30,.55)!important;text-underline-offset:3px!important;}
+
+/* 3) Cards, boxes, rotas, menu e blocos claros: texto escuro obrigatório */
+html body main :where(.box,.card,.card-light,.menu-item,.menu-card,.menu-section,.menu-items,.access-direct,.access-section,.access-faq,.access-fact,.access-route,.access-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.faq-card,.faq-item,.faq-block,.faq-grid,.info-card,.content-card,.copy-card,.direct-answer-card,.geo-card,.ec-r2d2-card,.ec-final-geo-card,.ec-final-geo-faq details,.ec-sprint4-faq details,.ec-sprint4-steps,.ec-r2d2-depth,.ec-final-geo-answer,.light-section,.paper-section,.section-paper,.bg-paper){color:var(--ec-readable-blue)!important;-webkit-text-fill-color:var(--ec-readable-blue)!important;text-shadow:none!important;}
+html body main :where(.box,.card,.card-light,.menu-item,.menu-card,.access-fact,.access-route,.access-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.faq-card,.faq-item,.info-card,.content-card,.copy-card,.direct-answer-card,.geo-card,.ec-r2d2-card,.ec-final-geo-card,.ec-final-geo-faq details,.ec-sprint4-faq details){background-color:var(--ec-readable-sand-soft);}
+html body main :where(.box,.card,.card-light,.menu-item,.menu-card,.access-fact,.access-route,.access-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.faq-card,.faq-item,.info-card,.content-card,.copy-card,.direct-answer-card,.geo-card,.ec-r2d2-card,.ec-final-geo-card,.ec-final-geo-faq details,.ec-sprint4-faq details) :where(h1,h2,h3,h4,h5,h6,.menu-item-name,.title,.card-title){color:var(--ec-readable-blue)!important;-webkit-text-fill-color:var(--ec-readable-blue)!important;text-shadow:none!important;}
+html body main :where(.box,.card,.card-light,.menu-item,.menu-card,.access-fact,.access-route,.access-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.faq-card,.faq-item,.info-card,.content-card,.copy-card,.direct-answer-card,.geo-card,.ec-r2d2-card,.ec-final-geo-card,.ec-final-geo-faq details,.ec-sprint4-faq details) :where(p,li,span,small,summary,dd,dt,.menu-item-desc,.description,.copy){color:var(--ec-readable-gray)!important;-webkit-text-fill-color:var(--ec-readable-gray)!important;text-shadow:none!important;}
+html body main :where(.box,.card,.card-light,.menu-item,.menu-card,.access-fact,.access-route,.access-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.faq-card,.faq-item,.info-card,.content-card,.copy-card,.direct-answer-card,.geo-card,.ec-r2d2-card,.ec-final-geo-card,.ec-final-geo-faq details,.ec-sprint4-faq details) :where(strong,b,.menu-item-price,.tag,.kicker){color:var(--ec-readable-green)!important;-webkit-text-fill-color:var(--ec-readable-green)!important;text-shadow:none!important;}
+html body main :where(.box,.card,.card-light,.menu-item,.menu-card,.access-fact,.access-route,.access-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.faq-card,.faq-item,.info-card,.content-card,.copy-card,.direct-answer-card,.geo-card,.ec-r2d2-card,.ec-final-geo-card,.ec-final-geo-faq details,.ec-sprint4-faq details) a:not(.btn):not(.btn-secondary){color:#b76f00!important;-webkit-text-fill-color:#b76f00!important;text-shadow:none!important;}
+
+/* 4) Seções claras completas: fundo areia/off-white com textos azuis/cinza */
+html body main :where(.access-direct,.access-section,.access-faq,.menu-section,.ec-final-geo-answer,.ec-r2d2-depth,.ec-sprint4-faq,.ec-sprint4-steps,.light-section,.paper-section,.section-paper,.bg-paper){background-color:var(--ec-readable-sand-soft)!important;color:var(--ec-readable-blue)!important;-webkit-text-fill-color:var(--ec-readable-blue)!important;}
+html body main :where(.access-direct,.access-section,.access-faq,.menu-section,.ec-final-geo-answer,.ec-r2d2-depth,.ec-sprint4-faq,.ec-sprint4-steps,.light-section,.paper-section,.section-paper,.bg-paper) :where(h1,h2,h3,h4,h5,h6){color:var(--ec-readable-blue)!important;-webkit-text-fill-color:var(--ec-readable-blue)!important;text-shadow:none!important;}
+html body main :where(.access-direct,.access-section,.access-faq,.menu-section,.ec-final-geo-answer,.ec-r2d2-depth,.ec-sprint4-faq,.ec-sprint4-steps,.light-section,.paper-section,.section-paper,.bg-paper) :where(p,li,span,small,summary,dd,dt){color:var(--ec-readable-gray)!important;-webkit-text-fill-color:var(--ec-readable-gray)!important;text-shadow:none!important;}
+
+/* 5) Cardápio: garante leitura em todos os cards de produto */
+html body main .menu-section-head h2,html body main .menu-section-head .hours,html body main .menu-section-head .tag{color:var(--ec-readable-blue)!important;-webkit-text-fill-color:var(--ec-readable-blue)!important;text-shadow:none!important;}
+html body main .menu-item{background:var(--ec-readable-sand)!important;border-color:rgba(0,64,90,.16)!important;}
+html body main .menu-item:hover{background:var(--ec-readable-sand-soft)!important;}
+html body main .menu-item-badge{background:var(--ec-readable-yellow)!important;color:var(--ec-readable-blue)!important;-webkit-text-fill-color:var(--ec-readable-blue)!important;}
+
+/* 6) FAQ/eventos em fundo escuro: perguntas claras, respostas claras */
+html body main :where(.faq,.faq-section,.faq-list,.questions,.qa-grid,.event-faq,.events-faq) :where(h2,h3,h4,summary){color:var(--ec-readable-sand-soft)!important;-webkit-text-fill-color:var(--ec-readable-sand-soft)!important;}
+html body main :where(.faq,.faq-section,.faq-list,.questions,.qa-grid,.event-faq,.events-faq) :where(p,li,span){color:rgba(237,226,201,.84)!important;-webkit-text-fill-color:rgba(237,226,201,.84)!important;}
+
+/* 7) Botões preservam hierarquia de marca */
+html body main a.btn[href*="tagme"],html body main a.btn[href*="reserv"],html body main .hero-ctas a[href*="tagme"],html body main .hero-ctas a[href*="reserv"],nav.top a.btn[href*="tagme"]{background:var(--ec-readable-yellow)!important;border-color:var(--ec-readable-yellow)!important;color:var(--ec-readable-blue)!important;-webkit-text-fill-color:var(--ec-readable-blue)!important;}
+html body main .btn-secondary,html body main a.btn-secondary,html body main .hero-ctas a:not([href*="tagme"]):not([href*="reserv"]),html body main .ctas a:not([href*="tagme"]):not([href*="reserv"]){color:var(--ec-readable-sand-soft)!important;-webkit-text-fill-color:var(--ec-readable-sand-soft)!important;}
+html body main .btn-secondary:hover,html body main a.btn-secondary:hover,html body main .hero-ctas a:not([href*="tagme"]):not([href*="reserv"]):hover,html body main .ctas a:not([href*="tagme"]):not([href*="reserv"]):hover{background:var(--ec-readable-sand-soft)!important;color:var(--ec-readable-blue)!important;-webkit-text-fill-color:var(--ec-readable-blue)!important;}
+</style>
+<!-- /EC AAA Readability Emergency Fix -->
 </head>
 <body data-screen-label="Menu"><!-- NAV -->
 <nav class="top" id="topnav">
