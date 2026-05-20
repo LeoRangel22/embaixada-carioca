@@ -1,0 +1,52 @@
+# Final AAA Closeout Fixes
+
+## Objetivo
+Fechar os pontos da auditoria mestre: viewport/meta description, design lock em páginas de território, botão hierarchy lock e correção de marcação órfã.
+
+## Contadores
+- html_scanned: 86
+- html_updated: 33
+- viewport_added: 6
+- description_added: 2
+- description_rewritten: 3
+- closeout_design_lock_added: 24
+- orphan_markup_fixed: 2
+
+## Ações aplicadas
+- 404.html: description_rewritten — Página não encontrada no site da Embaixada Carioca. Volte para a home, consulte o cardápio ou faça sua reserva.
+- 404.html: closeout_design_lock_added — button hierarchy + design marker
+- cafe-da-manha-com-vista-rio-de-janeiro.html: closeout_design_lock_added — button hierarchy + design marker
+- como-chegar.html: closeout_design_lock_added — button hierarchy + design marker
+- contato.html: viewport_added — responsive viewport inserted
+- en/breakfast-with-a-view-rio-de-janeiro.html: closeout_design_lock_added — button hierarchy + design marker
+- en/contato.html: viewport_added — responsive viewport inserted
+- en/entardecer.html: orphan_markup_fixed — sunset image alt meta restored
+- en/how-to-get-there.html: closeout_design_lock_added — button hierarchy + design marker
+- en/nossa-visao.html: viewport_added — responsive viewport inserted
+- en/restaurant-at-urca-hill.html: closeout_design_lock_added — button hierarchy + design marker
+- en/restaurants-near-sugarloaf-mountain.html: closeout_design_lock_added — button hierarchy + design marker
+- en/sugarloaf-cable-car-park.html: closeout_design_lock_added — button hierarchy + design marker
+- en/sugarloaf-cable-car-restaurant.html: closeout_design_lock_added — button hierarchy + design marker
+- en/sunset.html: orphan_markup_fixed — sunset image alt meta restored
+- en/sunset.html: description_rewritten — Sunset drinks and romantic views on Urca Hill, inside Sugarloaf Cable Car Park. Caipirinhas, snacks and tables with Rio scenery.
+- en/where-to-eat-near-sugarloaf.html: closeout_design_lock_added — button hierarchy + design marker
+- es/como-llegar.html: closeout_design_lock_added — button hierarchy + design marker
+- es/contato.html: viewport_added — responsive viewport inserted
+- es/desayuno-con-vista-rio-de-janeiro.html: closeout_design_lock_added — button hierarchy + design marker
+- es/donde-comer-cerca-del-pan-de-azucar.html: closeout_design_lock_added — button hierarchy + design marker
+- es/eventos.html: description_rewritten — Eventos en el Morro da Urca, dentro del Parque Bondinho Pan de Azúcar, con vista, gastronomía brasileña y atención para grupos.
+- es/nossa-visao.html: viewport_added — responsive viewport inserted
+- es/parque-bondinho-pan-de-azucar.html: closeout_design_lock_added — button hierarchy + design marker
+- es/restaurante-bondinho-pan-de-azucar.html: closeout_design_lock_added — button hierarchy + design marker
+- es/restaurante-morro-da-urca.html: closeout_design_lock_added — button hierarchy + design marker
+- es/restaurantes-cerca-del-pan-de-azucar.html: closeout_design_lock_added — button hierarchy + design marker
+- home-preview.html: description_added — Prévia interna da home da Embaixada Carioca para validação visual de design, conteúdo, reservas e experiência do visitante.
+- home-preview.html: closeout_design_lock_added — button hierarchy + design marker
+- nossa-visao.html: viewport_added — responsive viewport inserted
+- offline.html: description_added — Você está offline. A Embaixada Carioca carrega informações essenciais para reserva, cardápio e como chegar quando a conexão voltar.
+- offline.html: closeout_design_lock_added — button hierarchy + design marker
+- onde-comer-no-pao-de-acucar.html: closeout_design_lock_added — button hierarchy + design marker
+- parque-bondinho-pao-de-acucar.html: closeout_design_lock_added — button hierarchy + design marker
+- restaurante-bondinho-pao-de-acucar.html: closeout_design_lock_added — button hierarchy + design marker
+- restaurante-morro-da-urca.html: closeout_design_lock_added — button hierarchy + design marker
+- restaurantes-perto-do-pao-de-acucar.html: closeout_design_lock_added — button hierarchy + design marker

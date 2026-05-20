@@ -614,6 +614,16 @@ html body main .btn-secondary,html body main a.btn-secondary,html body main .her
 html body main .btn-secondary:hover,html body main a.btn-secondary:hover,html body main .hero-ctas a:not([href*="tagme"]):not([href*="reserv"]):hover,html body main .ctas a:not([href*="tagme"]):not([href*="reserv"]):hover{background:var(--ec-readable-sand-soft)!important;color:var(--ec-readable-blue)!important;-webkit-text-fill-color:var(--ec-readable-blue)!important;}
 </style>
 <!-- /EC AAA Readability Emergency Fix -->
+<!-- EC AAA Closeout Design Lock -->
+<style id="ec-aaa-closeout-design-lock">
+/* Final AAA closeout — Somente reserva / TagMe fica laranja; botões secundários são vazados e invertem no hover. */
+:root{--ec-blue:#00405a;--ec-green:#335d4a;--ec-yellow:#f59b1e;--ec-sand:#ede2c9;--ec-paper:#f6efde;--ec-gray:#485156;}
+html body nav.top .nav-links a{color:var(--ec-blue);}
+html body nav.top a.btn[href*="tagme"],html body a.btn[href*="tagme"],html body a.btn[href*="reserv"],html body .ctas a[href*="tagme"],html body .hero-ctas a[href*="tagme"]{background:var(--ec-yellow)!important;border-color:var(--ec-yellow)!important;color:var(--ec-blue)!important;-webkit-text-fill-color:var(--ec-blue)!important;}
+html body .btn-secondary,html body a.btn-secondary,html body .ctas a:not([href*="tagme"]):not([href*="reserv"]),html body .hero-ctas a:not([href*="tagme"]):not([href*="reserv"]){background:rgba(0,64,90,.18)!important;border:1px solid rgba(246,239,222,.82)!important;color:var(--ec-paper)!important;-webkit-text-fill-color:var(--ec-paper)!important;}
+html body .btn-secondary:hover,html body a.btn-secondary:hover,html body .ctas a:not([href*="tagme"]):not([href*="reserv"]):hover,html body .hero-ctas a:not([href*="tagme"]):not([href*="reserv"]):hover{background:var(--ec-paper)!important;color:var(--ec-blue)!important;-webkit-text-fill-color:var(--ec-blue)!important;}
+</style>
+<!-- /EC AAA Closeout Design Lock -->
 </head>
 <body data-screen-label="Como Chegar">
 <!-- NAV -->
