@@ -12,11 +12,11 @@
 
 ## Contadores
 - html_scanned: 85
-- html_updated: 84
+- html_updated: 85
 - sw_registered: 85
 - hero_preload_optimized: 15
 - hero_picture_optimized: 15
-- lazy_images_marked: 3
+- lazy_images_marked: 0
 
 ## Arquivos
 - STATIC: _headers criado para Cloudflare/Netlify
@@ -97,6 +97,7 @@
 - UPDATED: morro-da-urca.html
 - UPDATED: nossa-visao.html
 - UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- UPDATED: offline.html
 - UPDATED: onde-comer-no-pao-de-acucar.html
 - UPDATED: parque-bondinho-pao-de-acucar.html
 - UPDATED: parque-bondinho.html

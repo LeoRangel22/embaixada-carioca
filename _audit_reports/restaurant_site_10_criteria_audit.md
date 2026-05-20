@@ -1,6 +1,6 @@
 # Auditoria Profunda — Site de Restaurante Embaixada Carioca
 
-## Nota geral estimada: 10.0/10
+## Nota geral estimada: 9.9/10
 
 ## Score por critério
 | Critério | Nota | Alertas |
@@ -9,7 +9,7 @@
 | Integridade linguística PT/EN/ES | 10.0/10 | 0 |
 | SEO técnico | 10.0/10 | 0 |
 | SEO local / entidade | 10.0/10 | 0 |
-| GEO / respostas para IA | 10.0/10 | 0 |
+| GEO / respostas para IA | 9.0/10 | 6 |
 | Reserva e contato | 10.0/10 | 0 |
 | Cardápio e oferta gastronômica | 10.0/10 | 0 |
 | Performance básica | 10.0/10 | 0 |
@@ -32,7 +32,12 @@
 - Nenhum alerta encontrado.
 
 ### GEO / respostas para IA
-- Nenhum alerta encontrado.
+- en/almoco.html: falta bloco claro de resposta direta/FAQ
+- en/entardecer.html: falta bloco claro de resposta direta/FAQ
+- en/cardapio.html: falta bloco claro de resposta direta/FAQ
+- es/almoco.html: falta bloco claro de resposta direta/FAQ
+- es/entardecer.html: falta bloco claro de resposta direta/FAQ
+- es/cardapio.html: falta bloco claro de resposta direta/FAQ
 
 ### Reserva e contato
 - Nenhum alerta encontrado.

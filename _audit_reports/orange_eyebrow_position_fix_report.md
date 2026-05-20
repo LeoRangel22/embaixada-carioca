@@ -1,7 +1,10 @@
 # Orange Eyebrow Position Fix
 
 ## Objetivo
-Mover a linha laranja do hero 3px para a esquerda e 7px para baixo em relação ao ajuste anterior, preservando o conjunto linha + texto.
+Mover a linha laranja do hero 16px para baixo e 6px para a direita em relação ao ajuste anterior.
+
+## Resultado técnico
+- transform: translate(41px, -15px)
 
 ## Contadores
 - html_scanned: 86
