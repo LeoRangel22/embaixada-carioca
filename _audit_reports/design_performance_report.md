@@ -18,11 +18,11 @@
 - en/index.html: excesso de blocos <style> inline (19). Impacta manutenção e performance percebida.
 - en/cafe-da-manha.html: excesso de blocos <style> inline (16). Impacta manutenção e performance percebida.
 - en/cafe-da-manha.html: possível FAQ/schema duplicado.
-- en/almoco.html: excesso de blocos <style> inline (16). Impacta manutenção e performance percebida.
+- en/almoco.html: excesso de blocos <style> inline (15). Impacta manutenção e performance percebida.
 - en/almoco.html: possível FAQ/schema duplicado.
-- en/entardecer.html: excesso de blocos <style> inline (16). Impacta manutenção e performance percebida.
+- en/entardecer.html: excesso de blocos <style> inline (15). Impacta manutenção e performance percebida.
 - en/entardecer.html: possível FAQ/schema duplicado.
-- en/sunset.html: excesso de blocos <style> inline (16). Impacta manutenção e performance percebida.
+- en/sunset.html: excesso de blocos <style> inline (15). Impacta manutenção e performance percebida.
 - en/sunset.html: possível FAQ/schema duplicado.
 - en/eventos.html: excesso de blocos <style> inline (15). Impacta manutenção e performance percebida.
 - en/eventos.html: possível FAQ/schema duplicado.
@@ -30,9 +30,9 @@
 - es/cafe-da-manha.html: excesso de blocos <style> inline (16). Impacta manutenção e performance percebida.
 - es/cafe-da-manha.html: possível FAQ/schema duplicado.
 - es/almoco.html: excesso de blocos <style> inline (15). Impacta manutenção e performance percebida.
-- es/entardecer.html: excesso de blocos <style> inline (16). Impacta manutenção e performance percebida.
+- es/entardecer.html: excesso de blocos <style> inline (15). Impacta manutenção e performance percebida.
 - es/entardecer.html: possível FAQ/schema duplicado.
-- es/atardecer.html: excesso de blocos <style> inline (16). Impacta manutenção e performance percebida.
+- es/atardecer.html: excesso de blocos <style> inline (15). Impacta manutenção e performance percebida.
 - es/atardecer.html: possível FAQ/schema duplicado.
 - es/eventos.html: excesso de blocos <style> inline (15). Impacta manutenção e performance percebida.
 - es/eventos.html: possível FAQ/schema duplicado.
