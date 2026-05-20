@@ -3,13 +3,14 @@
 ## Contadores
 - html_scanned: 86
 - html_updated: 1
-- safe_replacements: 1
+- safe_replacements: 4
 - targeted_blocks_fixed: 0
 - technical_repairs: 0
 - warnings: 24
 
 ## Correções aplicadas
 - PT_SAFE_REPLACE: cafe-da-manha-com-vista-rio-de-janeiro.html | 'Para quién' -> 'Para quem' | 1
+- PT_SAFE_REPLACE: cafe-da-manha-com-vista-rio-de-janeiro.html | 'para quién' -> 'para quem' | 3
 - UPDATED: cafe-da-manha-com-vista-rio-de-janeiro.html
 
 ## Alertas remanescentes

@@ -8,13 +8,13 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - content_pages: 83
 - utility_pages: 3
 - pages_updated: 72
-- thin_before: 37
+- thin_before: 24
 - thin_after_estimated: 23
-- consolidation_blocks_added: 53
-- faq_blocks_added: 24
-- schema_blocks_added: 24
+- consolidation_blocks_added: 48
+- faq_blocks_added: 3
+- schema_blocks_added: 3
 - language_fixes_applied: 56
-- anchor_targets_added: 3
+- anchor_targets_added: 0
 - sitemap_missing: 0
 - pages_score_80_plus_estimated: 73
 - warnings: 0
@@ -46,16 +46,16 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 | en/breakfast-with-a-view-rio-de-janeiro.html | en | 79 | 493 | 0 | True | True | True | 17.9 |
 | en/roteiro-meio-dia-urca-pao-de-acucar.html | en | 82 | 679 | 0 | True | True | True | 144.3 |
 | es/roteiro-meio-dia-urca-pao-de-acucar.html | es | 82 | 684 | 0 | True | True | True | 144.6 |
+| en/sunset.html | en | 82 | 833 | 0 | True | True | True | 168.2 |
+| es/atardecer.html | es | 82 | 855 | 0 | True | True | True | 168.3 |
+| es/entardecer.html | es | 82 | 855 | 0 | True | True | True | 168.3 |
+| en/almoco.html | en | 82 | 887 | 0 | True | True | True | 171.9 |
 | parque-bondinho-pao-de-acucar.html | pt-BR | 84 | 595 | 0 | True | True | True | 60.0 |
 | almoco-morro-da-urca.html | pt-BR | 84 | 611 | 0 | True | True | True | 63.1 |
 | caipirinha-com-vista-rio.html | pt-BR | 84 | 619 | 0 | True | True | True | 64.3 |
 | feijoada-com-vista-rio-de-janeiro.html | pt-BR | 84 | 624 | 0 | True | True | True | 63.3 |
 | es/parque-bondinho-pan-de-azucar.html | es | 84 | 627 | 0 | True | True | True | 60.2 |
 | restaurante-morro-da-urca.html | pt-BR | 84 | 628 | 0 | True | True | True | 61.9 |
-| restaurante-bondinho-pao-de-acucar.html | pt-BR | 84 | 629 | 0 | True | True | True | 62.0 |
-| en/sugarloaf-cable-car-park.html | en | 84 | 630 | 0 | True | True | True | 59.8 |
-| onde-comer-no-pao-de-acucar.html | pt-BR | 84 | 632 | 0 | True | True | True | 61.9 |
-| por-do-sol-morro-da-urca.html | pt-BR | 84 | 633 | 0 | True | True | True | 63.2 |
 
 ## Páginas ainda rasas após consolidação estimada
 - es/contato.html — 344 palavras — score 65
@@ -107,45 +107,34 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - es/eventos.html: 176.8 KB, 41 estilos inline
 - eventos.html: 176.7 KB, 41 estilos inline
 - entardecer.html: 176.3 KB, 74 estilos inline
-- en/almoco.html: 175.0 KB, 79 estilos inline
+- en/eventos.html: 173.2 KB, 41 estilos inline
 
 ## Ações aplicadas
-- CONSOLIDATION_BLOCK: almoco-morro-da-urca.html (307 words before)
-- SPRINT5_FAQ_SCHEMA: almoco-morro-da-urca.html
+- CONSOLIDATION_BLOCK: almoco-morro-da-urca.html (611 words before)
 - CONSOLIDATION_BLOCK: cafe-da-manha-com-vista-rio-de-janeiro.html (171 words before)
 - SPRINT5_FAQ_SCHEMA: cafe-da-manha-com-vista-rio-de-janeiro.html
-- CONSOLIDATION_BLOCK: cafe-da-manha-pao-de-acucar.html (405 words before)
-- SPRINT5_FAQ_SCHEMA: cafe-da-manha-pao-de-acucar.html
-- CONSOLIDATION_BLOCK: caipirinha-com-vista-rio.html (315 words before)
-- SPRINT5_FAQ_SCHEMA: caipirinha-com-vista-rio.html
+- CONSOLIDATION_BLOCK: cafe-da-manha-pao-de-acucar.html (709 words before)
+- CONSOLIDATION_BLOCK: caipirinha-com-vista-rio.html (619 words before)
 - CONSOLIDATION_BLOCK: como-chegar.html (710 words before)
-- CONSOLIDATION_BLOCK: contato.html (11 words before)
-- SPRINT5_FAQ_SCHEMA: contato.html
+- CONSOLIDATION_BLOCK: contato.html (315 words before)
 - LANG_FIX: en/almoco-morro-da-urca.html
-- CONSOLIDATION_BLOCK: en/almoco-morro-da-urca.html (354 words before)
-- SPRINT5_FAQ_SCHEMA: en/almoco-morro-da-urca.html
+- CONSOLIDATION_BLOCK: en/almoco-morro-da-urca.html (702 words before)
 - LANG_FIX: en/almoco.html
-- CONSOLIDATION_BLOCK: en/almoco.html (887 words before)
 - LANG_FIX: en/breakfast-with-a-view-rio-de-janeiro.html
 - CONSOLIDATION_BLOCK: en/breakfast-with-a-view-rio-de-janeiro.html (145 words before)
 - SPRINT5_FAQ_SCHEMA: en/breakfast-with-a-view-rio-de-janeiro.html
 - LANG_FIX: en/cafe-da-manha-pao-de-acucar.html
-- CONSOLIDATION_BLOCK: en/cafe-da-manha-pao-de-acucar.html (358 words before)
-- SPRINT5_FAQ_SCHEMA: en/cafe-da-manha-pao-de-acucar.html
+- CONSOLIDATION_BLOCK: en/cafe-da-manha-pao-de-acucar.html (706 words before)
 - LANG_FIX: en/cafe-da-manha.html
 - LANG_FIX: en/caipirinha-com-vista-rio.html
-- CONSOLIDATION_BLOCK: en/caipirinha-com-vista-rio.html (348 words before)
-- SPRINT5_FAQ_SCHEMA: en/caipirinha-com-vista-rio.html
+- CONSOLIDATION_BLOCK: en/caipirinha-com-vista-rio.html (696 words before)
 - LANG_FIX: en/cardapio.html
 - LANG_FIX: en/contato.html
-- CONSOLIDATION_BLOCK: en/contato.html (10 words before)
-- SPRINT5_FAQ_SCHEMA: en/contato.html
+- CONSOLIDATION_BLOCK: en/contato.html (358 words before)
 - LANG_FIX: en/entardecer.html
-- CONSOLIDATION_BLOCK: en/entardecer.html (833 words before)
 - LANG_FIX: en/eventos.html
 - LANG_FIX: en/feijoada-com-vista-rio-de-janeiro.html
-- CONSOLIDATION_BLOCK: en/feijoada-com-vista-rio-de-janeiro.html (336 words before)
-- SPRINT5_FAQ_SCHEMA: en/feijoada-com-vista-rio-de-janeiro.html
+- CONSOLIDATION_BLOCK: en/feijoada-com-vista-rio-de-janeiro.html (704 words before)
 - LANG_FIX: en/feijoada.html
 - LANG_FIX: en/gastronomia-carioca.html
 - LANG_FIX: en/guia-do-rio.html
@@ -154,74 +143,62 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - LANG_FIX: en/index.html
 - LANG_FIX: en/morro-da-urca.html
 - LANG_FIX: en/nossa-visao.html
-- CONSOLIDATION_BLOCK: en/nossa-visao.html (13 words before)
-- SPRINT5_FAQ_SCHEMA: en/nossa-visao.html
+- CONSOLIDATION_BLOCK: en/nossa-visao.html (361 words before)
 - LANG_FIX: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
-- CONSOLIDATION_BLOCK: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html (407 words before)
+- CONSOLIDATION_BLOCK: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html (627 words before)
 - LANG_FIX: en/parque-bondinho.html
 - LANG_FIX: en/por-do-sol-morro-da-urca.html
-- CONSOLIDATION_BLOCK: en/por-do-sol-morro-da-urca.html (334 words before)
-- SPRINT5_FAQ_SCHEMA: en/por-do-sol-morro-da-urca.html
+- CONSOLIDATION_BLOCK: en/por-do-sol-morro-da-urca.html (682 words before)
 - LANG_FIX: en/restaurant-at-urca-hill.html
 - CONSOLIDATION_BLOCK: en/restaurant-at-urca-hill.html (795 words before)
 - LANG_FIX: en/restaurants-near-sugarloaf-mountain.html
 - CONSOLIDATION_BLOCK: en/restaurants-near-sugarloaf-mountain.html (805 words before)
 - LANG_FIX: en/roteiro-meio-dia-urca-pao-de-acucar.html
-- CONSOLIDATION_BLOCK: en/roteiro-meio-dia-urca-pao-de-acucar.html (459 words before)
+- CONSOLIDATION_BLOCK: en/roteiro-meio-dia-urca-pao-de-acucar.html (679 words before)
 - LANG_FIX: en/sugarloaf-cable-car-park.html
 - CONSOLIDATION_BLOCK: en/sugarloaf-cable-car-park.html (410 words before)
 - LANG_FIX: en/sugarloaf-cable-car-restaurant.html
 - CONSOLIDATION_BLOCK: en/sugarloaf-cable-car-restaurant.html (798 words before)
 - LANG_FIX: en/sunset.html
-- CONSOLIDATION_BLOCK: en/sunset.html (833 words before)
 - LANG_FIX: en/where-to-eat-near-sugarloaf.html
 - CONSOLIDATION_BLOCK: en/where-to-eat-near-sugarloaf.html (791 words before)
 - LANG_FIX: es/almoco-morro-da-urca.html
-- CONSOLIDATION_BLOCK: es/almoco-morro-da-urca.html (342 words before)
-- SPRINT5_FAQ_SCHEMA: es/almoco-morro-da-urca.html
+- CONSOLIDATION_BLOCK: es/almoco-morro-da-urca.html (675 words before)
 - LANG_FIX: es/almoco.html
 - LANG_FIX: es/atardecer.html
-- CONSOLIDATION_BLOCK: es/atardecer.html (855 words before)
 - LANG_FIX: es/cafe-da-manha-pao-de-acucar.html
-- CONSOLIDATION_BLOCK: es/cafe-da-manha-pao-de-acucar.html (355 words before)
-- SPRINT5_FAQ_SCHEMA: es/cafe-da-manha-pao-de-acucar.html
+- CONSOLIDATION_BLOCK: es/cafe-da-manha-pao-de-acucar.html (688 words before)
 - LANG_FIX: es/cafe-da-manha.html
 - LANG_FIX: es/caipirinha-com-vista-rio.html
-- CONSOLIDATION_BLOCK: es/caipirinha-com-vista-rio.html (341 words before)
-- SPRINT5_FAQ_SCHEMA: es/caipirinha-com-vista-rio.html
+- CONSOLIDATION_BLOCK: es/caipirinha-com-vista-rio.html (674 words before)
 - LANG_FIX: es/cardapio.html
 - LANG_FIX: es/como-llegar.html
 - CONSOLIDATION_BLOCK: es/como-llegar.html (684 words before)
 - LANG_FIX: es/contato.html
-- CONSOLIDATION_BLOCK: es/contato.html (11 words before)
-- SPRINT5_FAQ_SCHEMA: es/contato.html
+- CONSOLIDATION_BLOCK: es/contato.html (344 words before)
 - LANG_FIX: es/desayuno-con-vista-rio-de-janeiro.html
 - CONSOLIDATION_BLOCK: es/desayuno-con-vista-rio-de-janeiro.html (159 words before)
 - SPRINT5_FAQ_SCHEMA: es/desayuno-con-vista-rio-de-janeiro.html
 - LANG_FIX: es/donde-comer-cerca-del-pan-de-azucar.html
 - CONSOLIDATION_BLOCK: es/donde-comer-cerca-del-pan-de-azucar.html (791 words before)
 - LANG_FIX: es/entardecer.html
-- CONSOLIDATION_BLOCK: es/entardecer.html (855 words before)
 - LANG_FIX: es/eventos.html
 - LANG_FIX: es/feijoada-com-vista-rio-de-janeiro.html
-- CONSOLIDATION_BLOCK: es/feijoada-com-vista-rio-de-janeiro.html (335 words before)
-- SPRINT5_FAQ_SCHEMA: es/feijoada-com-vista-rio-de-janeiro.html
+- CONSOLIDATION_BLOCK: es/feijoada-com-vista-rio-de-janeiro.html (687 words before)
 - LANG_FIX: es/feijoada.html
 - LANG_FIX: es/gastronomia-carioca.html
 - LANG_FIX: es/guia-do-rio.html
 - LANG_FIX: es/index.html
 - LANG_FIX: es/morro-da-urca.html
 - LANG_FIX: es/nossa-visao.html
-- CONSOLIDATION_BLOCK: es/nossa-visao.html (12 words before)
-- SPRINT5_FAQ_SCHEMA: es/nossa-visao.html
+- CONSOLIDATION_BLOCK: es/nossa-visao.html (345 words before)
 - LANG_FIX: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
-- CONSOLIDATION_BLOCK: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html (419 words before)
+- CONSOLIDATION_BLOCK: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html (620 words before)
 - LANG_FIX: es/parque-bondinho-pan-de-azucar.html
 - CONSOLIDATION_BLOCK: es/parque-bondinho-pan-de-azucar.html (426 words before)
 - LANG_FIX: es/parque-bondinho.html
 - LANG_FIX: es/por-do-sol-morro-da-urca.html
-- CONSOLIDATION_BLOCK: es/por-do-sol-morro-da-urca.html (353 words before)
-- SPRINT5_FAQ_SCHEMA: es/por-do-sol-morro-da-urca.html
+- CONSOLIDATION_BLOCK: es/por-do-sol-morro-da-urca.html (686 words before)
 - LANG_FIX: es/restaurante-bondinho-pan-de-azucar.html
 - CONSOLIDATION_BLOCK: es/restaurante-bondinho-pan-de-azucar.html (796 words before)
 - LANG_FIX: es/restaurante-morro-da-urca.html
@@ -229,23 +206,17 @@ Auditar e consolidar a qualidade das páginas existentes, sem criar novas págin
 - LANG_FIX: es/restaurantes-cerca-del-pan-de-azucar.html
 - CONSOLIDATION_BLOCK: es/restaurantes-cerca-del-pan-de-azucar.html (803 words before)
 - LANG_FIX: es/roteiro-meio-dia-urca-pao-de-acucar.html
-- CONSOLIDATION_BLOCK: es/roteiro-meio-dia-urca-pao-de-acucar.html (483 words before)
-- CONSOLIDATION_BLOCK: feijoada-com-vista-rio-de-janeiro.html (303 words before)
-- SPRINT5_FAQ_SCHEMA: feijoada-com-vista-rio-de-janeiro.html
-- CONSOLIDATION_BLOCK: nossa-visao.html (12 words before)
-- SPRINT5_FAQ_SCHEMA: nossa-visao.html
-- CONSOLIDATION_BLOCK: o-que-fazer-depois-do-bondinho-pao-de-acucar.html (391 words before)
+- CONSOLIDATION_BLOCK: es/roteiro-meio-dia-urca-pao-de-acucar.html (684 words before)
+- CONSOLIDATION_BLOCK: feijoada-com-vista-rio-de-janeiro.html (624 words before)
+- CONSOLIDATION_BLOCK: nossa-visao.html (316 words before)
+- CONSOLIDATION_BLOCK: o-que-fazer-depois-do-bondinho-pao-de-acucar.html (577 words before)
 - CONSOLIDATION_BLOCK: onde-comer-no-pao-de-acucar.html (446 words before)
 - CONSOLIDATION_BLOCK: parque-bondinho-pao-de-acucar.html (409 words before)
-- CONSOLIDATION_BLOCK: por-do-sol-morro-da-urca.html (329 words before)
-- SPRINT5_FAQ_SCHEMA: por-do-sol-morro-da-urca.html
+- CONSOLIDATION_BLOCK: por-do-sol-morro-da-urca.html (633 words before)
 - CONSOLIDATION_BLOCK: restaurante-bondinho-pao-de-acucar.html (443 words before)
 - CONSOLIDATION_BLOCK: restaurante-morro-da-urca.html (442 words before)
 - CONSOLIDATION_BLOCK: restaurantes-perto-do-pao-de-acucar.html (469 words before)
-- CONSOLIDATION_BLOCK: roteiro-meio-dia-urca-pao-de-acucar.html (456 words before)
-- ANCHOR_TARGETS: eventos.html -> orcamento
-- ANCHOR_TARGETS: en/eventos.html -> orcamento
-- ANCHOR_TARGETS: es/eventos.html -> orcamento
+- CONSOLIDATION_BLOCK: roteiro-meio-dia-urca-pao-de-acucar.html (642 words before)
 
 ## Próxima ação recomendada
 - Separar CSS global em arquivo externo e reduzir peso da home/guia/café quando a validação visual estiver estável.
