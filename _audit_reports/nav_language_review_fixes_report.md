@@ -1,7 +1,7 @@
 # Nav Language + Google Review Fixes
 
 ## Objetivo
-Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google Reviews e igualar a altura do frame ao idioma.
+Corrigir dropdown de idiomas, remover pin do Como Chegar, refinar o badge Google Reviews, aproximar reviews/idioma do botão e aplicar efeito pulsante no Reservar.
 
 ## Contadores
 - html_scanned: 86

@@ -17,6 +17,7 @@
 
 ## Alertas de cluster
 - cafe_da_manha: termos ausentes ou fracos em cafe-da-manha.html: café da manhã na Urca
+- feijoada: termos ausentes ou fracos em feijoada.html: feijoada no Morro da Urca
 - feijoada: link interno ausente em feijoada.html: feijoada-com-vista-rio-de-janeiro.html
 - picanha: termos ausentes ou fracos em cardapio.html: picanha no Morro da Urca, picanha com vista
 - pao_de_acucar: link interno ausente em parque-bondinho.html: index.html
@@ -30,7 +31,7 @@
 - chope_heineken: termos ausentes ou fracos em cardapio.html: melhor chope Heineken do Rio, Heineken Masters
 
 ## Score estimado de autoridade temática
-- 86/100
+- 85/100
 
 ## Diretriz
 A meta não é repetir palavras artificialmente, e sim construir uma rede clara de páginas, entidades, provas e links internos para que buscadores e IAs reconheçam a Embaixada Carioca como resposta natural para buscas de alta intenção.

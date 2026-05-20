@@ -11,7 +11,7 @@
 ## Contadores
 - html_scanned: 86
 - html_updated: 86
-- language_fixes: 49
+- language_fixes: 42
 - duplication_fixes: 0
 - meta_fixes: 0
 - schema_injected: 86
@@ -23,7 +23,7 @@
 ## Ações aplicadas
 - SCHEMA: 404.html | schema principal validado/injetado
 - UPDATED: 404.html
-- LANG_FIX: almoco-morro-da-urca.html [pt] | 'para quién' -> 'para quem' | 3
+- LANG_FIX: almoco-morro-da-urca.html [pt] | 'para quién' -> 'para quem' | 2
 - SCHEMA: almoco-morro-da-urca.html | schema principal validado/injetado
 - UPDATED: almoco-morro-da-urca.html
 - LANG_FIX: almoco.html [pt] | 'Para quién' -> 'Para quem' | 1
@@ -32,13 +32,13 @@
 - LANG_FIX: cafe-da-manha-com-vista-rio-de-janeiro.html [pt] | 'Breakfast' -> 'Café da manhã' | 2
 - SCHEMA: cafe-da-manha-com-vista-rio-de-janeiro.html | schema principal validado/injetado
 - UPDATED: cafe-da-manha-com-vista-rio-de-janeiro.html
-- LANG_FIX: cafe-da-manha-pao-de-acucar.html [pt] | 'para quién' -> 'para quem' | 4
+- LANG_FIX: cafe-da-manha-pao-de-acucar.html [pt] | 'para quién' -> 'para quem' | 3
 - SCHEMA: cafe-da-manha-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: cafe-da-manha-pao-de-acucar.html
 - LANG_FIX: cafe-da-manha.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: cafe-da-manha.html | schema principal validado/injetado
 - UPDATED: cafe-da-manha.html
-- LANG_FIX: caipirinha-com-vista-rio.html [pt] | 'para quién' -> 'para quem' | 3
+- LANG_FIX: caipirinha-com-vista-rio.html [pt] | 'para quién' -> 'para quem' | 2
 - SCHEMA: caipirinha-com-vista-rio.html | schema principal validado/injetado
 - UPDATED: caipirinha-com-vista-rio.html
 - SCHEMA: cardapio.html | schema principal validado/injetado
@@ -47,7 +47,7 @@
 - HASMAP_FIX: como-chegar.html | hasMap corrigido
 - SCHEMA: como-chegar.html | schema principal validado/injetado
 - UPDATED: como-chegar.html
-- LANG_FIX: contato.html [pt] | 'para quién' -> 'para quem' | 4
+- LANG_FIX: contato.html [pt] | 'para quién' -> 'para quem' | 3
 - LANG_FIX: contato.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: contato.html | schema principal validado/injetado
 - UPDATED: contato.html
@@ -182,7 +182,7 @@
 - WHATSAPP_FIX: eventos.html [pt] | CTA localizado
 - SCHEMA: eventos.html | schema principal validado/injetado
 - UPDATED: eventos.html
-- LANG_FIX: feijoada-com-vista-rio-de-janeiro.html [pt] | 'para quién' -> 'para quem' | 3
+- LANG_FIX: feijoada-com-vista-rio-de-janeiro.html [pt] | 'para quién' -> 'para quem' | 2
 - SCHEMA: feijoada-com-vista-rio-de-janeiro.html | schema principal validado/injetado
 - UPDATED: feijoada-com-vista-rio-de-janeiro.html
 - LANG_FIX: feijoada.html [pt] | 'Para quién' -> 'Para quem' | 2
@@ -201,7 +201,7 @@
 - UPDATED: index.html
 - SCHEMA: morro-da-urca.html | schema principal validado/injetado
 - UPDATED: morro-da-urca.html
-- LANG_FIX: nossa-visao.html [pt] | 'para quién' -> 'para quem' | 4
+- LANG_FIX: nossa-visao.html [pt] | 'para quién' -> 'para quem' | 3
 - LANG_FIX: nossa-visao.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - SCHEMA: nossa-visao.html | schema principal validado/injetado
 - UPDATED: nossa-visao.html
@@ -220,7 +220,7 @@
 - UPDATED: parque-bondinho-pao-de-acucar.html
 - SCHEMA: parque-bondinho.html | schema principal validado/injetado
 - UPDATED: parque-bondinho.html
-- LANG_FIX: por-do-sol-morro-da-urca.html [pt] | 'para quién' -> 'para quem' | 3
+- LANG_FIX: por-do-sol-morro-da-urca.html [pt] | 'para quién' -> 'para quem' | 2
 - SCHEMA: por-do-sol-morro-da-urca.html | schema principal validado/injetado
 - UPDATED: por-do-sol-morro-da-urca.html
 - LANG_FIX: restaurante-bondinho-pao-de-acucar.html [pt] | 'Breakfast' -> 'Café da manhã' | 1

@@ -2396,6 +2396,52 @@ nav.top.scrolled .nav-rating-badge.google-review-badge{
   letter-spacing:0!important;
   margin-left:1px!important;
 }
+
+/* Ajuste visual pedido: Reviews + Idioma mais próximos entre si e do Reservar, sem mover o botão */
+@media(min-width:1181px){
+  nav.top .nav-rating-badge.google-review-badge{
+    transform:translateX(28px)!important;
+  }
+  nav.top .lang-switcher{
+    transform:translateX(16px)!important;
+  }
+}
+
+/* Botão Reservar do topo: efeito pulsante semelhante ao CTA principal */
+@keyframes ecTopReservePulse{
+  0%,100%{box-shadow:0 9px 0 rgba(0,64,90,.22),0 16px 30px rgba(0,32,46,.22),0 0 0 rgba(232,160,32,0)}
+  45%{box-shadow:0 9px 0 rgba(0,64,90,.18),0 18px 34px rgba(0,32,46,.26),0 0 0 8px rgba(232,160,32,.16)}
+  70%{box-shadow:0 9px 0 rgba(0,64,90,.18),0 18px 34px rgba(0,32,46,.22),0 0 0 14px rgba(232,160,32,0)}
+}
+nav.top .btn,
+nav.top a.btn[href*="tagme"]{
+  position:relative!important;
+  overflow:hidden!important;
+  animation:ecTopReservePulse 2.8s ease-in-out infinite!important;
+}
+nav.top .btn::before,
+nav.top a.btn[href*="tagme"]::before{
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  border-radius:inherit!important;
+  background:linear-gradient(110deg,transparent 0%,rgba(255,255,255,.28) 42%,transparent 68%)!important;
+  transform:translateX(-130%)!important;
+  animation:ecTopReserveShine 3.4s ease-in-out infinite!important;
+  pointer-events:none!important;
+}
+@keyframes ecTopReserveShine{
+  0%,45%{transform:translateX(-130%)}
+  70%{transform:translateX(130%)}
+  100%{transform:translateX(130%)}
+}
+@media(prefers-reduced-motion:reduce){
+  nav.top .btn,
+  nav.top a.btn[href*="tagme"],
+  nav.top .btn::before,
+  nav.top a.btn[href*="tagme"]::before{animation:none!important}
+}
+
 @media(max-width:1180px){
   nav.top .nav-rating-badge.google-review-badge{
     min-width:72px!important;
@@ -2485,6 +2531,9 @@ nav.top .nav-inner > .btn::after{content:none!important;display:none!important}
 @media(max-width:760px){.ec-sprint5-quality,.ec-sprint5-faq{padding:42px 0}}
 </style>
 <!-- /EC Sprint 5 Quality Consolidation CSS -->
+<!-- EC Sprint 5 Quality Schema -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.embaixadacarioca.com/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html#webpage","url":"https://www.embaixadacarioca.com/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html","name":"Embaixada Carioca","inLanguage":"en","isPartOf":{"@id":"https://www.embaixadacarioca.com/#website"}}]}</script>
+<!-- /EC Sprint 5 Quality Schema -->
 <!-- EC Sprint 5.1 Excellence CSS -->
 <style id="ec-sprint51-excellence-css">
 .ec-sprint51-source-quality{background:#f6efde;color:#00405a;padding:64px 0;border-top:1px solid rgba(0,64,90,.10)}
@@ -2503,6 +2552,9 @@ nav.top .nav-inner > .btn::after{content:none!important;display:none!important}
 <!-- EC Sprint 5.1 Excellence Schema -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Restaurant","@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca","url":"https://www.embaixadacarioca.com/","telephone":"+55 21 96683-7556","servesCuisine":["Brazilian","Carioca","Breakfast","Bar"],"acceptsReservations":true,"hasMenu":"https://www.embaixadacarioca.com/cardapio.html","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:30","closes":"21:00"}],"address":{"@type":"PostalAddress","streetAddress":"Av. Pasteur, 520 — Morro da Urca","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-22.9508333,"longitude":-43.1641667}},{"@type":"WebPage","@id":"https://www.embaixadacarioca.com/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html#webpage","url":"https://www.embaixadacarioca.com/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html","inLanguage":"en","isPartOf":{"@id":"https://www.embaixadacarioca.com/#website"}}]}</script>
 <!-- /EC Sprint 5.1 Excellence Schema -->
+<!-- EC Rich Results Consolidated FAQ -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://www.embaixadacarioca.com/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html#faq","mainEntity":[{"@type":"Question","name":"Is Embaixada Carioca inside Sugarloaf Cable Car Park?","acceptedAnswer":{"@type":"Answer","text":"Yes. It is located at Urca Hill, the first stop of Sugarloaf Cable Car Park, which makes it practical for visitors already planning the attraction."}},{"@type":"Question","name":"Do I need to plan access before visiting?","acceptedAnswer":{"@type":"Answer","text":"Yes. Most visitors arrive by cable car with a park ticket. The Urca Hill trail can be a free alternative when open and suitable for the visitor."}},{"@type":"Question","name":"Is it better for breakfast, lunch or drinks?","acceptedAnswer":{"@type":"Answer","text":"It works for all three moments. Breakfast is best for an early scenic start, lunch for Brazilian food and afternoon for caipirinhas, draft beer and a slower view experience."}},{"@type":"Question","name":"Should groups reserve?","acceptedAnswer":{"@type":"Answer","text":"Yes. Reservations are recommended for groups, weekends, holidays and high-traffic tourism days to reduce waiting time and organize the visit."}}]}</script>
+<!-- /EC Rich Results Consolidated FAQ -->
 </head>
 <body>
 <nav class="top" id="topnav">
@@ -2601,6 +2653,9 @@ nav.top .nav-inner > .btn::after{content:none!important;display:none!important}
 <!-- EC Sprint 5 Quality Consolidation Block -->
 <section class="ec-sprint5-quality" aria-label="Quality guide"><div class="wrap"><h2>Practical guide for planning this visit</h2><p>This page is designed to answer the questions visitors usually have before deciding where to eat during a Sugarloaf visit: access, timing, food style, view, reservation and how the stop fits into the day. Embaixada Carioca is not positioned as a generic restaurant in Rio; it is a Brazilian restaurant inside the Sugarloaf Cable Car Park route, at Urca Hill, with breakfast, lunch, caipirinhas, draft beer and event options.</p><div class="ec-sprint5-grid"><article class="ec-sprint5-card"><strong>Why it matters</strong>The location reduces friction for travelers who are already visiting Sugarloaf and want a reliable place to eat without leaving the attraction.</article><article class="ec-sprint5-card"><strong>Best timing</strong>Morning works well for breakfast with a view; lunch is ideal for Brazilian dishes; late afternoon is useful for drinks and a slower Rio-style pause.</article><article class="ec-sprint5-card"><strong>Access logic</strong>Most visitors reach the restaurant by cable car from Praia Vermelha. The Urca Hill trail can be an alternative when open.</article><article class="ec-sprint5-card"><strong>Decision factor</strong>Choose this stop when the goal is to combine a landmark view, Brazilian food and a practical route inside the tourist attraction.</article></div><h3>How to use this page</h3><ol><li>Confirm whether your visit will be by cable car or trail.</li><li>Check the best meal moment for your itinerary: breakfast, lunch, drinks or event.</li><li>Use the reservation link when visiting on weekends, holidays or with a group.</li><li>Continue exploring Urca Hill or the next cable car stage after the meal.</li></ol></div></section>
 <!-- /EC Sprint 5 Quality Consolidation Block -->
+<!-- EC Sprint 5 Quality FAQ -->
+<section class="ec-sprint5-faq"><div class="wrap"><h2>Useful questions before visiting</h2><details><summary>Is Embaixada Carioca inside Sugarloaf Cable Car Park?</summary><p>Yes. It is located at Urca Hill, the first stop of Sugarloaf Cable Car Park, which makes it practical for visitors already planning the attraction.</p></details><details><summary>Do I need to plan access before visiting?</summary><p>Yes. Most visitors arrive by cable car with a park ticket. The Urca Hill trail can be a free alternative when open and suitable for the visitor.</p></details><details><summary>Is it better for breakfast, lunch or drinks?</summary><p>It works for all three moments. Breakfast is best for an early scenic start, lunch for Brazilian food and afternoon for caipirinhas, draft beer and a slower view experience.</p></details><details><summary>Should groups reserve?</summary><p>Yes. Reservations are recommended for groups, weekends, holidays and high-traffic tourism days to reduce waiting time and organize the visit.</p></details></div></section>
+<!-- /EC Sprint 5 Quality FAQ -->
 <!-- EC Sprint 5.1 Source-Based Excellence Block -->
 <section class="ec-sprint51-source-quality" aria-label="Source-based editorial content"><div class="wrap"><h2>What to do after the Sugarloaf Cable Car</h2><p>This itinerary page should help visitors decide what to do before and after the Sugarloaf Cable Car without creating a generic city guide. The most useful approach is to connect official destination information, practical access and the real visitor flow around Urca, Praia Vermelha, Urca Hill and the restaurant.</p><div class="ec-sprint51-grid"><article class="ec-sprint51-card"><strong>Before the ride</strong>Praia Vermelha and Urca help visitors understand the geography and pace of the neighborhood.</article><article class="ec-sprint51-card"><strong>During the ride</strong>Urca Hill is the natural pause for views, photos and a meal without leaving the route.</article><article class="ec-sprint51-card"><strong>After the meal</strong>Visitors can continue the cable car route, stay longer for the view or return to explore Urca.</article><article class="ec-sprint51-card"><strong>Editorial value</strong>The page should guide decisions, not only list attractions.</article></div><h3>How to decide with confidence</h3><ol><li>Start with access planning.</li><li>Choose whether the meal happens before, during or after the cable car route.</li><li>Keep the itinerary flexible for weather, light and crowds.</li><li>Use official destination sources to avoid outdated operational details.</li></ol><div class="ec-sprint51-sources"><h3>Editorial sources consulted</h3><p>This section was written using official tourism sources and recognized travel guides as references, without copying third-party text, and checked against Embaixada Carioca’s real operation.</p><ul><li><a href="https://bondinho.com.br/" target="_blank" rel="noopener">Parque Bondinho Pão de Açúcar</a></li><li><a href="https://visitrio.com.br/" target="_blank" rel="noopener">Visit Rio</a></li><li><a href="https://riotur.rio/" target="_blank" rel="noopener">Riotur</a></li><li><a href="https://www.turisrio.rj.gov.br/" target="_blank" rel="noopener">TurisRio</a></li><li><a href="https://visitbrasil.com/" target="_blank" rel="noopener">Visit Brasil</a></li><li><a href="https://www.timeout.com/rio-de-janeiro" target="_blank" rel="noopener">Time Out Rio de Janeiro</a></li></ul></div></div></section>
 <!-- /EC Sprint 5.1 Source-Based Excellence Block -->

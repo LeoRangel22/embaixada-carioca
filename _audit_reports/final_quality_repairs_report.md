@@ -5,7 +5,7 @@
 - html_updated: 4
 - technical_repairs: 0
 - duplicate_preloads_removed: 0
-- text_repairs: 22
+- text_repairs: 20
 - link_repairs: 0
 - fallback_assets_created: 0
 
@@ -15,8 +15,8 @@
 - PT_TEXT: eventos.html | 'Eventos en el ' -> 'Eventos no ' | 1
 - PT_TEXT: eventos.html | 'todos recibidos con' -> 'todos recebidos com' | 1
 - PT_TEXT: eventos.html | 'vista más impresionante' -> 'vista mais impressionante' | 1
-- PT_TEXT: eventos.html | 'main dining room' -> 'salão principal' | 3
-- PT_TEXT: eventos.html | 'panoramic terraces' -> 'terraços panorâmicos' | 4
+- PT_TEXT: eventos.html | 'main dining room' -> 'salão principal' | 2
+- PT_TEXT: eventos.html | 'panoramic terraces' -> 'terraços panorâmicos' | 3
 - PT_TEXT: eventos.html | 'hospitality team' -> 'equipe receptiva' | 3
 - UPDATED: eventos.html
 - PT_TEXT: feijoada.html | 'main dining room' -> 'salão principal' | 1
