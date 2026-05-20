@@ -513,4 +513,23 @@
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
+
+  <url>
+    <loc>https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.86</priority>
+  </url>
+  <url>
+    <loc>https://www.embaixadacarioca.com/en/breakfast-with-a-view-rio-de-janeiro.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.86</priority>
+  </url>
+  <url>
+    <loc>https://www.embaixadacarioca.com/es/desayuno-con-vista-rio-de-janeiro.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.86</priority>
+  </url>
 </urlset>
