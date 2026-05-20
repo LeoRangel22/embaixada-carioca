@@ -532,4 +532,27 @@
     <changefreq>weekly</changefreq>
     <priority>0.86</priority>
   </url>
+
+  <url>
+    <loc>https://www.embaixadacarioca.com/como-chegar.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/como-chegar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/how-to-get-there.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/como-llegar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/como-chegar.html"/>
+  </url>
+  <url>
+    <loc>https://www.embaixadacarioca.com/en/how-to-get-there.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+  </url>
+  <url>
+    <loc>https://www.embaixadacarioca.com/es/como-llegar.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+  </url>
 </urlset>

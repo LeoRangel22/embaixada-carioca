@@ -46,7 +46,7 @@
 - UPDATED: es/caipirinha-com-vista-rio.html | replacements=1
 - UPDATED: es/cardapio.html | replacements=1
 - UPDATED: es/contato.html | replacements=1
-- UPDATED: es/desayuno-con-vista-rio-de-janeiro.html | replacements=2
+- UPDATED: es/desayuno-con-vista-rio-de-janeiro.html | replacements=1
 - UPDATED: es/donde-comer-cerca-del-pan-de-azucar.html | replacements=1
 - UPDATED: es/entardecer.html | replacements=1
 - UPDATED: es/eventos.html | replacements=1

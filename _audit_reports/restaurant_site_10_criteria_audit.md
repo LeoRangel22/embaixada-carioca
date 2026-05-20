@@ -15,7 +15,7 @@
 | Performance básica | 10.0/10 | 0 |
 | Acessibilidade básica | 10.0/10 | 0 |
 | Dados estruturados | 10.0/10 | 0 |
-| Integridade de links/páginas | 10.0/10 | 0 |
+| Integridade de links/páginas | 9.8/10 | 2 |
 
 ## Alertas detalhados
 
@@ -50,7 +50,8 @@
 - Nenhum alerta encontrado.
 
 ### Integridade de links/páginas
-- Nenhum alerta encontrado.
+- en/how-to-get-there.html: link interno possivelmente quebrado -> /en/como-chegar.html
+- es/como-llegar.html: link interno possivelmente quebrado -> /es/como-chegar.html
 
 ## Veredito
 - Nota 9+ só deve ser considerada confirmada se todos os critérios críticos estiverem sem alertas técnicos e linguísticos reais.

@@ -7,7 +7,7 @@ Corrigir rótulos visíveis em PT que vazaram para páginas EN/ES nos blocos GEO
 - html_scanned: 83
 - html_updated: 18
 - en_fixes: 32
-- es_fixes: 33
+- es_fixes: 32
 - pt_fixes: 0
 - warnings: 10
 
@@ -79,7 +79,6 @@ Corrigir rótulos visíveis em PT que vazaram para páginas EN/ES nos blocos GEO
 - UPDATED: es/guia-do-rio.html
 - ES_FIXES: es/index.html | 'aria-label="Resposta direta para busca e IA"' -> 'aria-label="Respuesta directa para búsqueda e IA"' | 1
 - ES_FIXES: es/index.html | 'Resposta direta · SEO + GEO' -> 'Respuesta directa · SEO + GEO' | 1
-- ES_FIXES: es/index.html | 'Morro da Urca · Parque Bondinho Pão de Açúcar' -> 'Morro da Urca · Parque Bondinho Pan de Azúcar' | 1
 - UPDATED: es/index.html
 - ES_FIXES: es/parque-bondinho-pan-de-azucar.html | 'href="/cardapio.html"' -> 'href="/es/cardapio.html"' | 1
 - ES_FIXES: es/parque-bondinho-pan-de-azucar.html | 'Morro da Urca · Parque Bondinho Pão de Açúcar' -> 'Morro da Urca · Parque Bondinho Pan de Azúcar' | 1
