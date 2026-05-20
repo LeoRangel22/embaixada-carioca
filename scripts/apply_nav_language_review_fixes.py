@@ -6,7 +6,7 @@ Corrige pontos visuais do topo:
 1. Dropdown de idiomas sempre abrindo para baixo e dentro da tela.
 2. Remove o pin/ícone antes de Como Chegar no menu principal/drawer.
 3. Ajusta o badge de avaliação para padrão compacto Google Reviews:
-   sem G, 4.8 menor, estrelas próximas e contagem leve sem negrito.
+   sem G, 4.8 menor, estrelas próximas/maiores e contagem leve sem negrito.
 
 Roda após os gates dos Sprints 1/2/3 para não ser sobrescrito.
 """
@@ -130,15 +130,15 @@ nav.top.scrolled .nav-rating-badge.google-review-badge{{
 }}
 .google-review-badge .gr-score{{
   font-family:Catamaran,Verdana,system-ui,sans-serif!important;
-  font-size:13.5px!important;
+  font-size:11.5px!important;
   line-height:.95!important;
   font-weight:700!important;
-  letter-spacing:.005em!important;
+  letter-spacing:0!important;
 }}
 .google-review-badge .gr-stars{{
   color:#fbbc04!important;
-  font-size:7.5px!important;
-  letter-spacing:-.02em!important;
+  font-size:9px!important;
+  letter-spacing:-.015em!important;
   line-height:1!important;
 }}
 .google-review-badge .gr-count{{
@@ -158,7 +158,8 @@ nav.top.scrolled .nav-rating-badge.google-review-badge{{
   }}
   .google-review-badge .gr-label,
   .google-review-badge .gr-count{{display:none!important;}}
-  .google-review-badge .gr-score{{font-size:13px!important;}}
+  .google-review-badge .gr-score{{font-size:11.5px!important;}}
+  .google-review-badge .gr-stars{{font-size:9px!important;}}
 }}
 </style>
 {CSS_END}"""
