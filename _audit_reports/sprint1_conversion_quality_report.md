@@ -10,7 +10,7 @@
 
 ## Contadores
 - html_scanned: 86
-- html_updated: 81
+- html_updated: 86
 - language_fixes: 15
 - duplication_fixes: 0
 - meta_fixes: 0
@@ -22,6 +22,7 @@
 
 ## Ações aplicadas
 - SCHEMA: 404.html | schema principal validado/injetado
+- UPDATED: 404.html
 - SCHEMA: almoco-morro-da-urca.html | schema principal validado/injetado
 - UPDATED: almoco-morro-da-urca.html
 - LANG_FIX: almoco.html [pt] | 'Para quién' -> 'Para quem' | 1
@@ -44,6 +45,7 @@
 - SCHEMA: como-chegar.html | schema principal validado/injetado
 - UPDATED: como-chegar.html
 - SCHEMA: contato.html | schema principal validado/injetado
+- UPDATED: contato.html
 - SCHEMA: en/almoco-morro-da-urca.html | schema principal validado/injetado
 - UPDATED: en/almoco-morro-da-urca.html
 - SCHEMA: en/almoco.html | schema principal validado/injetado
@@ -184,15 +186,18 @@
 - SCHEMA: guia-do-rio.html | schema principal validado/injetado
 - UPDATED: guia-do-rio.html
 - SCHEMA: home-preview.html | schema principal validado/injetado
+- UPDATED: home-preview.html
 - LANG_FIX: index.html [pt] | 'Para quién' -> 'Para quem' | 2
 - SCHEMA: index.html | schema principal validado/injetado
 - UPDATED: index.html
 - SCHEMA: morro-da-urca.html | schema principal validado/injetado
 - UPDATED: morro-da-urca.html
 - SCHEMA: nossa-visao.html | schema principal validado/injetado
+- UPDATED: nossa-visao.html
 - SCHEMA: o-que-fazer-depois-do-bondinho-pao-de-acucar.html | schema principal validado/injetado
 - UPDATED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html
 - SCHEMA: offline.html | schema principal validado/injetado
+- UPDATED: offline.html
 - LANG_FIX: onde-comer-no-pao-de-acucar.html [pt] | 'Breakfast' -> 'Café da manhã' | 1
 - PHONE_FIX: onde-comer-no-pao-de-acucar.html | +55-21-96683-7556 -> +55 21 96683-7556 | 1
 - SCHEMA: onde-comer-no-pao-de-acucar.html | schema principal validado/injetado

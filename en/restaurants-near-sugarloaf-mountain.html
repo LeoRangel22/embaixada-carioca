@@ -596,17 +596,17 @@ nav.top a[href*="como-llegar"] .drawer-icon{
   display:none!important;
 }
 
-/* Google Reviews compacto no topo */
+/* Google Reviews compacto no topo — sem G */
 nav.top .nav-rating-badge.google-review-badge{
   width:auto!important;
-  min-width:154px!important;
-  height:42px!important;
-  padding:5px 11px!important;
-  border-radius:14px!important;
+  min-width:136px!important;
+  height:38px!important;
+  padding:5px 10px!important;
+  border-radius:13px!important;
   display:inline-flex!important;
   align-items:center!important;
   justify-content:center!important;
-  gap:8px!important;
+  gap:0!important;
   text-decoration:none!important;
   background:rgba(246,239,222,.13)!important;
   border:1px solid rgba(246,239,222,.30)!important;
@@ -619,79 +619,69 @@ nav.top.scrolled .nav-rating-badge.google-review-badge{
   border-color:rgba(0,64,90,.18)!important;
   color:#00405a!important;
 }
-.google-review-badge .google-g{
-  flex:0 0 17px!important;
-  width:17px!important;
-  height:17px!important;
-  border-radius:50%!important;
-  display:inline-grid!important;
-  place-items:center!important;
-  font-family:Arial,Helvetica,sans-serif!important;
-  font-size:17px!important;
-  line-height:1!important;
-  font-weight:700!important;
-  color:#4285f4!important;
-  background:transparent!important;
-}
+.google-review-badge .google-g{display:none!important;}
 .google-review-badge .gr-copy{
   display:flex!important;
   flex-direction:column!important;
-  gap:1px!important;
+  align-items:flex-start!important;
+  justify-content:center!important;
+  gap:2px!important;
   min-width:0!important;
 }
 .google-review-badge .gr-label{
   font-family:Catamaran,Verdana,system-ui,sans-serif!important;
-  font-size:9px!important;
+  font-size:8.5px!important;
   line-height:1!important;
   font-weight:700!important;
-  letter-spacing:.01em!important;
+  letter-spacing:.015em!important;
   text-transform:none!important;
-  opacity:.88!important;
+  opacity:.90!important;
   white-space:nowrap!important;
 }
 .google-review-badge .gr-row{
   display:flex!important;
   align-items:center!important;
-  gap:5px!important;
+  gap:3px!important;
   line-height:1!important;
   white-space:nowrap!important;
 }
 .google-review-badge .gr-score{
   font-family:Catamaran,Verdana,system-ui,sans-serif!important;
-  font-size:16px!important;
+  font-size:13.5px!important;
   line-height:.95!important;
-  font-weight:800!important;
-  letter-spacing:.01em!important;
+  font-weight:700!important;
+  letter-spacing:.005em!important;
 }
 .google-review-badge .gr-stars{
   color:#fbbc04!important;
-  font-size:8px!important;
-  letter-spacing:.02em!important;
+  font-size:7.5px!important;
+  letter-spacing:-.02em!important;
   line-height:1!important;
 }
 .google-review-badge .gr-count{
-  font-size:8.5px!important;
+  font-family:Catamaran,Verdana,system-ui,sans-serif!important;
+  font-size:8px!important;
   line-height:1!important;
-  opacity:.78!important;
-  letter-spacing:.01em!important;
+  font-weight:400!important;
+  opacity:.84!important;
+  letter-spacing:0!important;
+  margin-left:1px!important;
 }
 @media(max-width:1180px){
   nav.top .nav-rating-badge.google-review-badge{
-    min-width:86px!important;
-    width:86px!important;
+    min-width:72px!important;
+    width:72px!important;
     padding:5px 7px!important;
-    gap:5px!important;
   }
   .google-review-badge .gr-label,
   .google-review-badge .gr-count{display:none!important;}
-  .google-review-badge .gr-score{font-size:14px!important;}
+  .google-review-badge .gr-score{font-size:13px!important;}
 }
 </style>
 <!-- /EC Nav UX Fixes -->
 </head>
 <body data-screen-label="Territory">
 <nav class="top"><div class="nav-inner"><a class="brand-mark" href="/"><img class="brand-logo light" src="/assets/logo-branco.svg" alt="Embaixada Carioca"><img class="brand-logo dark" src="/assets/logo-branco.svg" alt=""></a><div class="nav-links"><a href="/en/cafe-da-manha.html">Breakfast</a><a href="/en/almoco.html">Lunch</a><a href="/en/how-to-get-there.html">HOW TO GET THERE</a><a href="/en/eventos.html">Events</a><a href="/en/cardapio.html">Menu</a><a href="/en/guia-do-rio.html">Rio Guide</a></div><a aria-label="Google Reviews: 4.8 estrelas · 7.779 avaliações" class="nav-rating-badge google-review-badge" href="https://g.page/r/CU-tJiJIjBUcEAE/review" rel="noopener" target="_blank" title="Google Reviews · 4.8 estrelas">
-<span class="google-g" aria-hidden="true">G</span>
 <span class="gr-copy"><span class="gr-label">Google Reviews</span><span class="gr-row"><strong class="gr-score">4.8</strong><span class="gr-stars" aria-hidden="true">★★★★★</span><span class="gr-count">7.779 avaliações</span></span></span>
 </a><div class="lang-switcher"><button class="lang-current" type="button">BR&nbsp;PT</button></div><a class="btn" href="https://go.tagme.com.br/embaixadacarioca">Reservar →</a></div></nav>
 <header class="page-hero"><picture class="page-hero-photo"><source type="image/webp" srcset="/assets/hero-400w.webp 400w, /assets/hero-mobile.webp 600w, /assets/hero-800w.webp 800w, /assets/hero-1200w.webp 1200w, /assets/hero.webp 1920w" sizes="100vw"><img src="/assets/hero-1200w.webp" alt="Restaurants near Sugarloaf Mountain — Embaixada Carioca" width="1920" height="1267" fetchpriority="high" decoding="async"></picture><div class="page-hero-overlay"></div><div class="page-hero-content"><div class="eyebrow hero-eyebrow">Restaurant at the Cable Car · Morro da Urca · Sugarloaf Cable Car Park · Rio de Janeiro · Brazil</div><h1>Restaurants near Sugarloaf Mountain</h1><p class="lede">A guide for searches comparing Araá, Clássico Sunset Club, Terra Brasilis, Bar Urca, Flutuante, Fogo de Chão, Assador and options inside the Cable Car Park.</p><div class="hero-chips"><span>4.8★ · 7.779 avaliações</span><span>Parque Bondinho</span><span>Morro da Urca</span><span>Pão de Açúcar</span></div><div class="ctas"><a class="btn" href="https://go.tagme.com.br/embaixadacarioca">Reserve a table →</a><a class="btn ghost" href="/en/cardapio.html">See menu</a></div></div></header>
