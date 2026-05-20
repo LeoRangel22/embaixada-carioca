@@ -1,0 +1,275 @@
+# Final Design Consistency Lock
+
+## Objetivo
+Padronizar linha laranja, botões, frames/pílulas acima dos botões e remover setas/pins residuais.
+
+## Veredito
+- Páginas auditadas: 83
+- PASS: 0
+- WARN: 83
+- Status geral: WARN
+
+## Contadores
+- html_scanned: 83
+- html_updated: 83
+- css_injected: 83
+- button_arrows_removed: 298
+- pins_removed: 0
+- audit_pass: 0
+- audit_warn: 83
+
+## Páginas com WARN
+- almoco-morro-da-urca.html: no_pin_in_nav_or_buttons
+- almoco.html: no_pin_in_nav_or_buttons
+- cafe-da-manha-com-vista-rio-de-janeiro.html: has_hero, no_pin_in_nav_or_buttons
+- cafe-da-manha-pao-de-acucar.html: no_pin_in_nav_or_buttons
+- cafe-da-manha.html: no_pin_in_nav_or_buttons
+- caipirinha-com-vista-rio.html: no_pin_in_nav_or_buttons
+- cardapio.html: no_pin_in_nav_or_buttons
+- como-chegar.html: no_pin_in_nav_or_buttons
+- contato.html: has_hero, no_pin_in_nav_or_buttons
+- en/almoco-morro-da-urca.html: no_pin_in_nav_or_buttons
+- en/almoco.html: no_pin_in_nav_or_buttons
+- en/breakfast-with-a-view-rio-de-janeiro.html: has_hero, no_pin_in_nav_or_buttons
+- en/cafe-da-manha-pao-de-acucar.html: no_pin_in_nav_or_buttons
+- en/cafe-da-manha.html: no_pin_in_nav_or_buttons
+- en/caipirinha-com-vista-rio.html: no_pin_in_nav_or_buttons
+- en/cardapio.html: no_pin_in_nav_or_buttons
+- en/contato.html: has_hero, no_pin_in_nav_or_buttons
+- en/entardecer.html: no_pin_in_nav_or_buttons
+- en/eventos.html: no_pin_in_nav_or_buttons
+- en/feijoada-com-vista-rio-de-janeiro.html: no_pin_in_nav_or_buttons
+- en/feijoada.html: no_pin_in_nav_or_buttons
+- en/gastronomia-carioca.html: has_hero, no_pin_in_nav_or_buttons
+- en/guia-do-rio.html: no_pin_in_nav_or_buttons
+- en/how-to-get-there.html: no_pin_in_nav_or_buttons
+- en/index.html: no_pin_in_nav_or_buttons
+- en/morro-da-urca.html: has_hero, no_pin_in_nav_or_buttons
+- en/nossa-visao.html: has_hero, no_pin_in_nav_or_buttons
+- en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html: has_hero, no_pin_in_nav_or_buttons
+- en/parque-bondinho.html: has_hero, no_pin_in_nav_or_buttons
+- en/por-do-sol-morro-da-urca.html: no_pin_in_nav_or_buttons
+- en/restaurant-at-urca-hill.html: no_pin_in_nav_or_buttons
+- en/restaurants-near-sugarloaf-mountain.html: no_pin_in_nav_or_buttons
+- en/roteiro-meio-dia-urca-pao-de-acucar.html: has_hero, no_pin_in_nav_or_buttons
+- en/sugarloaf-cable-car-park.html: no_pin_in_nav_or_buttons
+- en/sugarloaf-cable-car-restaurant.html: no_pin_in_nav_or_buttons
+- en/sunset.html: no_pin_in_nav_or_buttons
+- en/where-to-eat-near-sugarloaf.html: no_pin_in_nav_or_buttons
+- entardecer.html: no_pin_in_nav_or_buttons
+- es/almoco-morro-da-urca.html: no_pin_in_nav_or_buttons
+- es/almoco.html: no_pin_in_nav_or_buttons
+- es/atardecer.html: no_pin_in_nav_or_buttons
+- es/cafe-da-manha-pao-de-acucar.html: no_pin_in_nav_or_buttons
+- es/cafe-da-manha.html: no_pin_in_nav_or_buttons
+- es/caipirinha-com-vista-rio.html: no_pin_in_nav_or_buttons
+- es/cardapio.html: no_pin_in_nav_or_buttons
+- es/como-llegar.html: no_pin_in_nav_or_buttons
+- es/contato.html: has_hero, no_pin_in_nav_or_buttons
+- es/desayuno-con-vista-rio-de-janeiro.html: has_hero, no_pin_in_nav_or_buttons
+- es/donde-comer-cerca-del-pan-de-azucar.html: no_pin_in_nav_or_buttons
+- es/entardecer.html: no_pin_in_nav_or_buttons
+- es/eventos.html: no_pin_in_nav_or_buttons
+- es/feijoada-com-vista-rio-de-janeiro.html: no_pin_in_nav_or_buttons
+- es/feijoada.html: no_pin_in_nav_or_buttons
+- es/gastronomia-carioca.html: has_hero, no_pin_in_nav_or_buttons
+- es/guia-do-rio.html: no_pin_in_nav_or_buttons
+- es/index.html: no_pin_in_nav_or_buttons
+- es/morro-da-urca.html: has_hero, no_pin_in_nav_or_buttons
+- es/nossa-visao.html: has_hero, no_pin_in_nav_or_buttons
+- es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html: has_hero, no_pin_in_nav_or_buttons
+- es/parque-bondinho-pan-de-azucar.html: no_pin_in_nav_or_buttons
+- es/parque-bondinho.html: has_hero, no_pin_in_nav_or_buttons
+- es/por-do-sol-morro-da-urca.html: no_pin_in_nav_or_buttons
+- es/restaurante-bondinho-pan-de-azucar.html: no_pin_in_nav_or_buttons
+- es/restaurante-morro-da-urca.html: no_pin_in_nav_or_buttons
+- es/restaurantes-cerca-del-pan-de-azucar.html: no_pin_in_nav_or_buttons
+- es/roteiro-meio-dia-urca-pao-de-acucar.html: has_hero, no_pin_in_nav_or_buttons
+- eventos.html: no_pin_in_nav_or_buttons
+- feijoada-com-vista-rio-de-janeiro.html: no_pin_in_nav_or_buttons
+- feijoada.html: no_pin_in_nav_or_buttons
+- gastronomia-carioca.html: has_hero, no_pin_in_nav_or_buttons
+- guia-do-rio.html: no_pin_in_nav_or_buttons
+- index.html: no_pin_in_nav_or_buttons
+- morro-da-urca.html: has_hero, no_pin_in_nav_or_buttons
+- nossa-visao.html: has_hero, no_pin_in_nav_or_buttons
+- o-que-fazer-depois-do-bondinho-pao-de-acucar.html: has_hero, no_pin_in_nav_or_buttons
+- onde-comer-no-pao-de-acucar.html: no_pin_in_nav_or_buttons
+- parque-bondinho-pao-de-acucar.html: no_pin_in_nav_or_buttons
+- parque-bondinho.html: has_hero, no_pin_in_nav_or_buttons
+- por-do-sol-morro-da-urca.html: no_pin_in_nav_or_buttons
+- restaurante-bondinho-pao-de-acucar.html: no_pin_in_nav_or_buttons
+- restaurante-morro-da-urca.html: no_pin_in_nav_or_buttons
+- restaurantes-perto-do-pao-de-acucar.html: no_pin_in_nav_or_buttons
+- roteiro-meio-dia-urca-pao-de-acucar.html: has_hero, no_pin_in_nav_or_buttons
+
+## Ações aplicadas
+- BUTTON_ARROWS_REMOVED: almoco-morro-da-urca.html (2)
+- CSS_LOCK: almoco-morro-da-urca.html
+- BUTTON_ARROWS_REMOVED: almoco.html (7)
+- CSS_LOCK: almoco.html
+- BUTTON_ARROWS_REMOVED: cafe-da-manha-com-vista-rio-de-janeiro.html (1)
+- CSS_LOCK: cafe-da-manha-com-vista-rio-de-janeiro.html
+- BUTTON_ARROWS_REMOVED: cafe-da-manha-pao-de-acucar.html (2)
+- CSS_LOCK: cafe-da-manha-pao-de-acucar.html
+- BUTTON_ARROWS_REMOVED: cafe-da-manha.html (8)
+- CSS_LOCK: cafe-da-manha.html
+- BUTTON_ARROWS_REMOVED: caipirinha-com-vista-rio.html (1)
+- CSS_LOCK: caipirinha-com-vista-rio.html
+- BUTTON_ARROWS_REMOVED: cardapio.html (7)
+- CSS_LOCK: cardapio.html
+- BUTTON_ARROWS_REMOVED: como-chegar.html (1)
+- CSS_LOCK: como-chegar.html
+- BUTTON_ARROWS_REMOVED: contato.html (1)
+- CSS_LOCK: contato.html
+- BUTTON_ARROWS_REMOVED: en/almoco-morro-da-urca.html (2)
+- CSS_LOCK: en/almoco-morro-da-urca.html
+- BUTTON_ARROWS_REMOVED: en/almoco.html (7)
+- CSS_LOCK: en/almoco.html
+- BUTTON_ARROWS_REMOVED: en/breakfast-with-a-view-rio-de-janeiro.html (1)
+- CSS_LOCK: en/breakfast-with-a-view-rio-de-janeiro.html
+- BUTTON_ARROWS_REMOVED: en/cafe-da-manha-pao-de-acucar.html (2)
+- CSS_LOCK: en/cafe-da-manha-pao-de-acucar.html
+- BUTTON_ARROWS_REMOVED: en/cafe-da-manha.html (8)
+- CSS_LOCK: en/cafe-da-manha.html
+- BUTTON_ARROWS_REMOVED: en/caipirinha-com-vista-rio.html (2)
+- CSS_LOCK: en/caipirinha-com-vista-rio.html
+- BUTTON_ARROWS_REMOVED: en/cardapio.html (8)
+- CSS_LOCK: en/cardapio.html
+- BUTTON_ARROWS_REMOVED: en/contato.html (1)
+- CSS_LOCK: en/contato.html
+- BUTTON_ARROWS_REMOVED: en/entardecer.html (6)
+- CSS_LOCK: en/entardecer.html
+- BUTTON_ARROWS_REMOVED: en/eventos.html (6)
+- CSS_LOCK: en/eventos.html
+- BUTTON_ARROWS_REMOVED: en/feijoada-com-vista-rio-de-janeiro.html (2)
+- CSS_LOCK: en/feijoada-com-vista-rio-de-janeiro.html
+- BUTTON_ARROWS_REMOVED: en/feijoada.html (8)
+- CSS_LOCK: en/feijoada.html
+- BUTTON_ARROWS_REMOVED: en/gastronomia-carioca.html (5)
+- CSS_LOCK: en/gastronomia-carioca.html
+- BUTTON_ARROWS_REMOVED: en/guia-do-rio.html (6)
+- CSS_LOCK: en/guia-do-rio.html
+- BUTTON_ARROWS_REMOVED: en/how-to-get-there.html (1)
+- CSS_LOCK: en/how-to-get-there.html
+- BUTTON_ARROWS_REMOVED: en/index.html (12)
+- CSS_LOCK: en/index.html
+- BUTTON_ARROWS_REMOVED: en/morro-da-urca.html (5)
+- CSS_LOCK: en/morro-da-urca.html
+- BUTTON_ARROWS_REMOVED: en/nossa-visao.html (1)
+- CSS_LOCK: en/nossa-visao.html
+- BUTTON_ARROWS_REMOVED: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html (2)
+- CSS_LOCK: en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- BUTTON_ARROWS_REMOVED: en/parque-bondinho.html (5)
+- CSS_LOCK: en/parque-bondinho.html
+- BUTTON_ARROWS_REMOVED: en/por-do-sol-morro-da-urca.html (2)
+- CSS_LOCK: en/por-do-sol-morro-da-urca.html
+- BUTTON_ARROWS_REMOVED: en/restaurant-at-urca-hill.html (3)
+- CSS_LOCK: en/restaurant-at-urca-hill.html
+- BUTTON_ARROWS_REMOVED: en/restaurants-near-sugarloaf-mountain.html (3)
+- CSS_LOCK: en/restaurants-near-sugarloaf-mountain.html
+- BUTTON_ARROWS_REMOVED: en/roteiro-meio-dia-urca-pao-de-acucar.html (2)
+- CSS_LOCK: en/roteiro-meio-dia-urca-pao-de-acucar.html
+- BUTTON_ARROWS_REMOVED: en/sugarloaf-cable-car-park.html (3)
+- CSS_LOCK: en/sugarloaf-cable-car-park.html
+- BUTTON_ARROWS_REMOVED: en/sugarloaf-cable-car-restaurant.html (3)
+- CSS_LOCK: en/sugarloaf-cable-car-restaurant.html
+- BUTTON_ARROWS_REMOVED: en/sunset.html (6)
+- CSS_LOCK: en/sunset.html
+- BUTTON_ARROWS_REMOVED: en/where-to-eat-near-sugarloaf.html (3)
+- CSS_LOCK: en/where-to-eat-near-sugarloaf.html
+- BUTTON_ARROWS_REMOVED: entardecer.html (6)
+- CSS_LOCK: entardecer.html
+- BUTTON_ARROWS_REMOVED: es/almoco-morro-da-urca.html (2)
+- CSS_LOCK: es/almoco-morro-da-urca.html
+- BUTTON_ARROWS_REMOVED: es/almoco.html (7)
+- CSS_LOCK: es/almoco.html
+- BUTTON_ARROWS_REMOVED: es/atardecer.html (6)
+- CSS_LOCK: es/atardecer.html
+- BUTTON_ARROWS_REMOVED: es/cafe-da-manha-pao-de-acucar.html (2)
+- CSS_LOCK: es/cafe-da-manha-pao-de-acucar.html
+- BUTTON_ARROWS_REMOVED: es/cafe-da-manha.html (8)
+- CSS_LOCK: es/cafe-da-manha.html
+- BUTTON_ARROWS_REMOVED: es/caipirinha-com-vista-rio.html (1)
+- CSS_LOCK: es/caipirinha-com-vista-rio.html
+- BUTTON_ARROWS_REMOVED: es/cardapio.html (7)
+- CSS_LOCK: es/cardapio.html
+- BUTTON_ARROWS_REMOVED: es/como-llegar.html (1)
+- CSS_LOCK: es/como-llegar.html
+- BUTTON_ARROWS_REMOVED: es/contato.html (1)
+- CSS_LOCK: es/contato.html
+- BUTTON_ARROWS_REMOVED: es/desayuno-con-vista-rio-de-janeiro.html (1)
+- CSS_LOCK: es/desayuno-con-vista-rio-de-janeiro.html
+- BUTTON_ARROWS_REMOVED: es/donde-comer-cerca-del-pan-de-azucar.html (1)
+- CSS_LOCK: es/donde-comer-cerca-del-pan-de-azucar.html
+- BUTTON_ARROWS_REMOVED: es/entardecer.html (6)
+- CSS_LOCK: es/entardecer.html
+- BUTTON_ARROWS_REMOVED: es/eventos.html (6)
+- CSS_LOCK: es/eventos.html
+- BUTTON_ARROWS_REMOVED: es/feijoada-com-vista-rio-de-janeiro.html (2)
+- CSS_LOCK: es/feijoada-com-vista-rio-de-janeiro.html
+- BUTTON_ARROWS_REMOVED: es/feijoada.html (7)
+- CSS_LOCK: es/feijoada.html
+- BUTTON_ARROWS_REMOVED: es/gastronomia-carioca.html (3)
+- CSS_LOCK: es/gastronomia-carioca.html
+- BUTTON_ARROWS_REMOVED: es/guia-do-rio.html (6)
+- CSS_LOCK: es/guia-do-rio.html
+- BUTTON_ARROWS_REMOVED: es/index.html (12)
+- CSS_LOCK: es/index.html
+- BUTTON_ARROWS_REMOVED: es/morro-da-urca.html (3)
+- CSS_LOCK: es/morro-da-urca.html
+- BUTTON_ARROWS_REMOVED: es/nossa-visao.html (1)
+- CSS_LOCK: es/nossa-visao.html
+- BUTTON_ARROWS_REMOVED: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html (1)
+- CSS_LOCK: es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- BUTTON_ARROWS_REMOVED: es/parque-bondinho-pan-de-azucar.html (1)
+- CSS_LOCK: es/parque-bondinho-pan-de-azucar.html
+- BUTTON_ARROWS_REMOVED: es/parque-bondinho.html (3)
+- CSS_LOCK: es/parque-bondinho.html
+- BUTTON_ARROWS_REMOVED: es/por-do-sol-morro-da-urca.html (2)
+- CSS_LOCK: es/por-do-sol-morro-da-urca.html
+- BUTTON_ARROWS_REMOVED: es/restaurante-bondinho-pan-de-azucar.html (1)
+- CSS_LOCK: es/restaurante-bondinho-pan-de-azucar.html
+- BUTTON_ARROWS_REMOVED: es/restaurante-morro-da-urca.html (1)
+- CSS_LOCK: es/restaurante-morro-da-urca.html
+- BUTTON_ARROWS_REMOVED: es/restaurantes-cerca-del-pan-de-azucar.html (1)
+- CSS_LOCK: es/restaurantes-cerca-del-pan-de-azucar.html
+- BUTTON_ARROWS_REMOVED: es/roteiro-meio-dia-urca-pao-de-acucar.html (1)
+- CSS_LOCK: es/roteiro-meio-dia-urca-pao-de-acucar.html
+- BUTTON_ARROWS_REMOVED: eventos.html (6)
+- CSS_LOCK: eventos.html
+- BUTTON_ARROWS_REMOVED: feijoada-com-vista-rio-de-janeiro.html (2)
+- CSS_LOCK: feijoada-com-vista-rio-de-janeiro.html
+- BUTTON_ARROWS_REMOVED: feijoada.html (8)
+- CSS_LOCK: feijoada.html
+- BUTTON_ARROWS_REMOVED: gastronomia-carioca.html (3)
+- CSS_LOCK: gastronomia-carioca.html
+- BUTTON_ARROWS_REMOVED: guia-do-rio.html (6)
+- CSS_LOCK: guia-do-rio.html
+- BUTTON_ARROWS_REMOVED: index.html (12)
+- CSS_LOCK: index.html
+- BUTTON_ARROWS_REMOVED: morro-da-urca.html (3)
+- CSS_LOCK: morro-da-urca.html
+- BUTTON_ARROWS_REMOVED: nossa-visao.html (1)
+- CSS_LOCK: nossa-visao.html
+- BUTTON_ARROWS_REMOVED: o-que-fazer-depois-do-bondinho-pao-de-acucar.html (1)
+- CSS_LOCK: o-que-fazer-depois-do-bondinho-pao-de-acucar.html
+- BUTTON_ARROWS_REMOVED: onde-comer-no-pao-de-acucar.html (1)
+- CSS_LOCK: onde-comer-no-pao-de-acucar.html
+- BUTTON_ARROWS_REMOVED: parque-bondinho-pao-de-acucar.html (1)
+- CSS_LOCK: parque-bondinho-pao-de-acucar.html
+- BUTTON_ARROWS_REMOVED: parque-bondinho.html (3)
+- CSS_LOCK: parque-bondinho.html
+- BUTTON_ARROWS_REMOVED: por-do-sol-morro-da-urca.html (2)
+- CSS_LOCK: por-do-sol-morro-da-urca.html
+- BUTTON_ARROWS_REMOVED: restaurante-bondinho-pao-de-acucar.html (1)
+- CSS_LOCK: restaurante-bondinho-pao-de-acucar.html
+- BUTTON_ARROWS_REMOVED: restaurante-morro-da-urca.html (1)
+- CSS_LOCK: restaurante-morro-da-urca.html
+- BUTTON_ARROWS_REMOVED: restaurantes-perto-do-pao-de-acucar.html (1)
+- CSS_LOCK: restaurantes-perto-do-pao-de-acucar.html
+- BUTTON_ARROWS_REMOVED: roteiro-meio-dia-urca-pao-de-acucar.html (1)
+- CSS_LOCK: roteiro-meio-dia-urca-pao-de-acucar.html
+
+## Observação
+Auditoria estática; validar pixels no navegador pós-deploy com cache limpo.

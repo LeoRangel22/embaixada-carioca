@@ -1188,6 +1188,24 @@ header.hero::before,header.hero::after,.hero::before,.hero::after,.page-hero::be
 }
 </style>
 <!-- /EC Hero Pao de Acucar Visual Lock -->
+<!-- EC Final Design Consistency Lock -->
+<style id="ec-final-design-consistency-lock">
+@media (min-width:961px){
+  header.hero .hero-content .eyebrow.hero-eyebrow,
+  header.page-hero .page-hero-content .eyebrow.hero-eyebrow{position:absolute!important;top:96px!important;left:clamp(78px,5.5vw,112px)!important;transform:none!important;margin:0!important;width:calc(100vw - clamp(78px,5.5vw,112px) - 250px)!important;max-width:none!important;white-space:nowrap!important;overflow:hidden!important;display:flex!important;align-items:center!important;gap:14px!important;font-family:"JetBrains Mono",ui-monospace,monospace!important;font-size:9px!important;line-height:1!important;letter-spacing:.31em!important;font-weight:700!important;text-transform:uppercase!important;color:var(--amarelo,#f59b1e)!important;z-index:20!important;border:0!important;outline:0!important;box-shadow:none!important;}
+  header.hero .hero-content .eyebrow.hero-eyebrow:before,
+  header.page-hero .page-hero-content .eyebrow.hero-eyebrow:before{content:""!important;display:inline-block!important;flex:0 0 34px!important;width:34px!important;height:2px!important;background:var(--amarelo,#f59b1e)!important;}
+}
+.btn,a.btn,button.btn,.hero-ctas .btn,.ctas .btn{min-height:60px!important;height:60px!important;padding:0 36px!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0!important;font-family:"JetBrains Mono",ui-monospace,monospace!important;font-size:14px!important;line-height:1!important;font-weight:900!important;letter-spacing:.13em!important;text-transform:uppercase!important;text-align:center!important;text-decoration:none!important;white-space:nowrap!important;border:1px solid var(--amarelo,#f59b1e)!important;background:var(--amarelo,#f59b1e)!important;color:#fff!important;box-shadow:0 9px 0 rgba(0,64,90,.20),0 16px 30px rgba(0,32,46,.18)!important;overflow:hidden!important;}
+.btn:after,.btn:before,a.btn:after,button.btn:after,.btn-secondary:after,.btn-secondary:before,.hero-ctas a:after,.ctas a:after{content:none!important;display:none!important;}
+.btn-secondary,a.btn-secondary,.hero-ctas .btn-secondary,.hero-ctas a.btn-secondary,.ctas .btn-secondary,.ctas a.btn-secondary,.hero-ctas a:not(.btn):not(.nav-wa-btn),.ctas a:not(.btn):not(.nav-wa-btn){min-height:60px!important;height:60px!important;padding:0 36px!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0!important;font-family:"JetBrains Mono",ui-monospace,monospace!important;font-size:14px!important;line-height:1!important;font-weight:900!important;letter-spacing:.13em!important;text-transform:uppercase!important;text-align:center!important;text-decoration:none!important;white-space:nowrap!important;color:var(--areia-pale,#f6efde)!important;border:1px solid rgba(246,239,222,.82)!important;background:rgba(0,32,46,.18)!important;box-shadow:inset 0 0 0 1px rgba(246,239,222,.08),0 10px 26px rgba(0,32,46,.18)!important;backdrop-filter:blur(6px)!important;}
+nav.top .btn,nav.top a.btn[href*="tagme"]{min-height:60px!important;height:60px!important;width:188px!important;min-width:188px!important;padding:0!important;letter-spacing:.16em!important;}
+header.hero .hero-chips,header.page-hero .hero-chips{display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:8px!important;margin:0!important;border:0!important;outline:0!important;box-shadow:none!important;}
+header.hero .hero-chips span,header.hero .hero-chips a,header.page-hero .hero-chips span,header.page-hero .hero-chips a{min-height:36px!important;height:36px!important;padding:0 17px!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;background:rgba(0,32,46,.46)!important;border:1px solid rgba(246,239,222,.30)!important;color:var(--areia-pale,#f6efde)!important;box-shadow:0 8px 22px rgba(0,32,46,.14)!important;backdrop-filter:blur(7px)!important;font-family:Catamaran,Verdana,system-ui,sans-serif!important;font-size:14px!important;line-height:1!important;font-weight:700!important;text-decoration:none!important;white-space:nowrap!important;}
+header.hero,header.page-hero,header.hero .hero-content,header.page-hero .page-hero-content,header.hero .hero-photo,header.page-hero .page-hero-photo,header.hero .hero-overlay,header.page-hero .page-hero-overlay{border:0!important;outline:0!important;box-shadow:none!important;}
+@media(max-width:960px){.btn,a.btn,button.btn,.btn-secondary,a.btn-secondary,.hero-ctas a,.ctas a{min-height:54px!important;height:54px!important;padding:0 24px!important;font-size:12px!important;letter-spacing:.10em!important;}nav.top .btn,nav.top a.btn[href*="tagme"]{width:auto!important;min-width:124px!important;height:46px!important;min-height:46px!important;font-size:9.5px!important;}header.hero .hero-chips span,header.hero .hero-chips a,header.page-hero .hero-chips span,header.page-hero .hero-chips a{height:34px!important;min-height:34px!important;padding:0 13px!important;font-size:12px!important;}}
+</style>
+<!-- /EC Final Design Consistency Lock -->
 </head>
 <body><!-- NAV -->
 <nav class="top" id="topnav">
@@ -1204,9 +1222,7 @@ header.hero::before,header.hero::after,.hero::before,.hero::after,.page-hero::be
 <li><a href="/es/cardapio.html">Menú</a></li>
 <li><a href="/es/guia-do-rio.html">Guía de Río</a></li>
 </ul>
-<a aria-label="WhatsApp Embaixada Carioca" class="nav-wa-btn" href="https://wa.me/5521966837556?text=Hola%21%20Vi%20Embaixada%20Carioca%20en%20el%20sitio%20web%20y%20me%20gustar%C3%ADa%20hacer%20una%20reserva." rel="noopener" target="_blank" title="WhatsApp · +55 21 96683-7556">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.779 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.779-.767.779-.94 1.164-.173.199-.347.779-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.779-.52.149-.174.198-.298.298-.497.779-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.779.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.779h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
-</a>
+<a aria-label="WhatsApp Embaixada Carioca" class="nav-wa-btn" href="https://wa.me/5521966837556?text=Hola%21%20Vi%20Embaixada%20Carioca%20en%20el%20sitio%20web%20y%20me%20gustar%C3%ADa%20hacer%20una%20reserva." rel="noopener" target="_blank" title="WhatsApp · +55 21 96683-7556"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.779 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.779-.767.779-.94 1.164-.173.199-.347.779-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.779-.52.149-.174.198-.298.298-.497.779-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.779.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.779h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg></a>
 <a aria-label="Google Reviews: 4.8 estrelas · 7.779 avaliações" class="nav-rating-badge google-review-badge" href="https://g.page/r/CU-tJiJIjBUcEAE/review" rel="noopener" target="_blank" title="Google Reviews · 4.8 estrelas">
 <span class="gr-copy"><span class="gr-label">Google Reviews</span><span class="gr-row"><strong class="gr-score">4.8</strong><span class="gr-stars" aria-hidden="true">★★★★★</span><span class="gr-count">7.779 avaliações</span></span></span>
 </a>
@@ -1254,7 +1270,7 @@ header.hero::before,header.hero::after,.hero::before,.hero::after,.page-hero::be
 <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:5px 14px;font-size:0.85rem;color:#f5f0e8;white-space:nowrap;">Abierto todos los días · 8:30–21:00</span>
 </div>
 <div class="ctas">
-<a class="btn lg" href="https://go.tagme.com.br/embaixadacarioca">Reservar para la feijoada →</a>
+<a class="btn lg" href="https://go.tagme.com.br/embaixadacarioca">Reservar para la feijoada</a>
 <a class="btn lg ghost" href="/es/cardapio.html">Ver menú completo</a>
 </div>
 </div>
@@ -1292,8 +1308,8 @@ header.hero::before,header.hero::after,.hero::before,.hero::after,.page-hero::be
 <span class="detail">para 2 personas<br/>todos los días · 11:30–17:00</span>
 </div>
 <div class="ctas">
-<a class="btn lg" href="https://go.tagme.com.br/embaixadacarioca">Reservar ahora →</a>
-<a class="btn lg" href="https://wa.me/5521966837556?text=Hola.%20Vi%20Embaixada%20Carioca%20en%20el%20sitio%20web%20y%20me%20gustar%C3%ADa%20hacer%20una%20reserva." style="background: var(--verde); color: #fff;">WhatsApp →</a>
+<a class="btn lg" href="https://go.tagme.com.br/embaixadacarioca">Reservar ahora</a>
+<a class="btn lg" href="https://wa.me/5521966837556?text=Hola.%20Vi%20Embaixada%20Carioca%20en%20el%20sitio%20web%20y%20me%20gustar%C3%ADa%20hacer%20una%20reserva." style="background: var(--verde); color: #fff;">WhatsApp</a>
 </div>
 </div>
 </div>
@@ -1481,8 +1497,8 @@ header.hero::before,header.hero::after,.hero::before,.hero::after,.page-hero::be
 <h2>Vive la <em>Experiencia Carioca Completa.</em></h2>
 <p>Aprovecha el paseo en teleférico para almorzar en las alturas en Embaixada Carioca — y luego sumérgete aún más en la cultura nacional visitando Academia da Cachaça. Dos cimas de la gastronomía brasileña y carioca esperándote.</p>
 <div class="btn-group">
-<a class="btn" href="https://go.tagme.com.br/embaixadacarioca" rel="noopener" target="_blank">Reservar en Embaixada →</a>
-<a class="btn ghost" href="https://www.academiadacachaca.com.br" rel="noopener" target="_blank">Conocer Academia da Cachaça →</a>
+<a class="btn" href="https://go.tagme.com.br/embaixadacarioca" rel="noopener" target="_blank">Reservar en Embaixada</a>
+<a class="btn ghost" href="https://www.academiadacachaca.com.br" rel="noopener" target="_blank">Conocer Academia da Cachaça</a>
 </div>
 </div>
 </section>
@@ -1534,7 +1550,7 @@ header.hero::before,header.hero::after,.hero::before,.hero::after,.page-hero::be
 <div class="wrap">
 <h2 class="serif">La Feijoada premiada de Academia da Cachaça — con la vista más bella de Río.</h2>
 <p>Todos los días, de 11:30 a 17:00, en lo alto del Morro da Urca. Reserve su mesa ahora.</p>
-<a class="btn-white" href="https://go.tagme.com.br/embaixadacarioca">Reservar para la feijoada →</a>
+<a class="btn-white" href="https://go.tagme.com.br/embaixadacarioca">Reservar para la feijoada</a>
 </div>
 </section>
 <section class="quick-facts">
