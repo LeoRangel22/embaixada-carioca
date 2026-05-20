@@ -36,6 +36,7 @@ on:
       - 'scripts/apply_orange_eyebrow_position_fix.py'
       - 'scripts/apply_sprint4_r2d2_aio_conversion_hardening.py'
       - 'scripts/apply_sprint5_86page_quality_consolidation.py'
+      - 'scripts/apply_sprint51_access_openinghours_fix.py'
       - 'scripts/apply_sprint1_5_excellence_audit.py'
       - 'scripts/apply_structural_restaurant_site_audit.py'
       - 'data/gsc_click_magnet_queries.json'
@@ -111,6 +112,8 @@ jobs:
         run: python3 scripts/apply_sprint4_r2d2_aio_conversion_hardening.py
       - name: Run sprint 5 86-page quality consolidation script
         run: python3 scripts/apply_sprint5_86page_quality_consolidation.py
+      - name: Run sprint 5.1 access opening hours fix script
+        run: python3 scripts/apply_sprint51_access_openinghours_fix.py
       - name: Run sprint 1 to 5 excellence audit script
         run: python3 scripts/apply_sprint1_5_excellence_audit.py
       - name: Run deep restaurant site audit script
