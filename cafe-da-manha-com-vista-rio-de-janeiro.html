@@ -169,6 +169,47 @@ nav.top.scrolled .nav-rating-badge.google-review-badge{
 }
 </style>
 <!-- /EC Orange Eyebrow Position Fix -->
+<!-- EC Sprint 4 R2D2 AIO Conversion CSS -->
+<style id="ec-sprint4-r2d2-aio-conversion-css">
+/* Topo: botão Reservar com efeito do CTA principal, sem seta e menor */
+nav.top .btn,
+nav.top .nav-inner > .btn{
+  min-width:148px!important;
+  width:auto!important;
+  max-width:164px!important;
+  justify-content:center!important;
+  text-align:center!important;
+  padding-left:22px!important;
+  padding-right:22px!important;
+  gap:0!important;
+  box-shadow:0 9px 0 rgba(0,64,90,.22),0 16px 30px rgba(0,32,46,.22)!important;
+}
+nav.top .btn::after,
+nav.top .nav-inner > .btn::after{content:none!important;display:none!important}
+@media(max-width:1180px) and (min-width:961px){
+  nav.top .nav-inner{grid-template-columns:68px minmax(0,1fr) 136px 62px 148px!important}
+  nav.top .btn,nav.top .nav-inner > .btn{min-width:118px!important;max-width:148px!important;padding-left:14px!important;padding-right:14px!important}
+}
+/* Âncoras: evitam links quebrados e compensam header fixo */
+.ec-anchor-target{display:block;position:relative;top:-118px;visibility:hidden;height:0;width:0;overflow:hidden}
+/* Blocos R2D2/AIO */
+.ec-r2d2-depth,.ec-sprint4-faq,.ec-sprint4-steps{background:#f6efde;color:#00405a;padding:64px 0;border-top:1px solid rgba(0,64,90,.10)}
+.ec-r2d2-depth .wrap,.ec-sprint4-faq .wrap,.ec-sprint4-steps .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.ec-r2d2-depth h2,.ec-sprint4-faq h2,.ec-sprint4-steps h2{font-size:clamp(30px,3.6vw,50px);line-height:1.05;margin:0 0 20px;color:#00405a}
+.ec-r2d2-depth h3{font-size:24px;line-height:1.15;margin:28px 0 8px;color:#00405a}
+.ec-r2d2-depth p,.ec-sprint4-faq p,.ec-sprint4-steps li{font-size:17px;line-height:1.62;color:#485156}
+.ec-r2d2-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin:28px 0}
+.ec-r2d2-card,.ec-sprint4-faq details{background:#fff;border:1px solid rgba(0,64,90,.12);border-radius:20px;padding:22px}
+.ec-r2d2-card strong{display:block;color:#00405a;margin-bottom:6px}
+.ec-r2d2-depth table{width:100%;border-collapse:collapse;margin:28px 0;background:#fff;border-radius:18px;overflow:hidden}
+.ec-r2d2-depth th,.ec-r2d2-depth td{padding:14px 16px;border-bottom:1px solid rgba(0,64,90,.10);text-align:left;vertical-align:top}
+.ec-r2d2-depth th{background:#e9ddc2;color:#00405a}
+.ec-sprint4-faq details{margin:12px 0}
+.ec-sprint4-faq summary{font-weight:800;cursor:pointer;color:#00405a}
+.ec-sprint4-steps ol{background:#fff;border:1px solid rgba(0,64,90,.12);border-radius:20px;padding:26px 26px 26px 48px}
+@media(max-width:760px){.ec-r2d2-depth,.ec-sprint4-faq,.ec-sprint4-steps{padding:42px 0}}
+</style>
+<!-- /EC Sprint 4 R2D2 AIO Conversion CSS -->
 </head>
 <body>
 <header class="top"><a class="brand" href="/">Embaixada Carioca</a><nav class="nav"><a href="/cafe-da-manha.html">Café</a><a href="/almoco.html">Almoço</a><a href="/como-chegar.html">COMO CHEGAR</a><a href="/cardapio.html">Cardápio</a></nav></header>
