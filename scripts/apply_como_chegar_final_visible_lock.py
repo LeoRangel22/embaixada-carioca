@@ -37,6 +37,40 @@ html body[data-screen-label="Como Chegar"] main :is(.box,.access-fact,.access-ro
   visibility:visible !important;
   text-shadow:none !important;
 }}
+
+/* Public UX: hide technical SEO/GEO labels from visitors. */
+html body[data-screen-label="Como Chegar"] main section.access-direct .box > .kicker,
+html body[data-screen-label="Como Chegar"] main section.access-faq .kicker {{
+  display:none !important;
+}}
+
+/* Heading balance: keep authority without oversized visual weight. */
+html body[data-screen-label="Como Chegar"] main section.access-direct .box > h2 {{
+  color:#00405a !important;
+  -webkit-text-fill-color:#00405a !important;
+  font-size:clamp(34px,3.4vw,48px) !important;
+  line-height:1.08 !important;
+  letter-spacing:.02em !important;
+  max-width:880px !important;
+  margin:0 0 18px !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  text-shadow:none !important;
+}}
+html body[data-screen-label="Como Chegar"] main section.access-section .wrap > h2,
+html body[data-screen-label="Como Chegar"] main section.access-faq .wrap > h2,
+html body[data-screen-label="Como Chegar"] main section.ec-sprint4-steps .wrap > h2,
+html body[data-screen-label="Como Chegar"] main section.ec-sprint5-quality .wrap > h2 {{
+  color:#00405a !important;
+  -webkit-text-fill-color:#00405a !important;
+  font-size:clamp(30px,3vw,42px) !important;
+  line-height:1.1 !important;
+  letter-spacing:.02em !important;
+  margin:0 0 24px !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  text-shadow:none !important;
+}}
 html body[data-screen-label="Como Chegar"] main :is(h1,h2,h3,h4,h5,h6,summary,strong,b) {{
   color:#00405a !important;
   -webkit-text-fill-color:#00405a !important;
@@ -51,7 +85,7 @@ html body[data-screen-label="Como Chegar"] main :is(p,li,span,small,dd,dt) {{
   visibility:visible !important;
   text-shadow:none !important;
 }}
-html body[data-screen-label="Como Chegar"] main :is(.kicker,.eyebrow,.tag,a:not(.btn):not(.secondary)) {{
+html body[data-screen-label="Como Chegar"] main :is(.eyebrow,.tag,a:not(.btn):not(.secondary)) {{
   color:#9a6500 !important;
   -webkit-text-fill-color:#9a6500 !important;
   opacity:1 !important;
@@ -69,6 +103,13 @@ html body[data-screen-label="Como Chegar"] main :is(.kicker,.eyebrow,.tag,a:not(
     all('main .box, main .access-fact, main .access-route, main details, main .ec-sprint5-card, main ol', function(el){{
       imp(el,'background','#fffaf0'); imp(el,'color','#00405a'); imp(el,'-webkit-text-fill-color','#00405a'); imp(el,'opacity','1'); imp(el,'visibility','visible'); imp(el,'text-shadow','none'); imp(el,'filter','none'); imp(el,'mix-blend-mode','normal');
     }});
+    all('section.access-direct .box > .kicker, section.access-faq .kicker', function(el){{ imp(el,'display','none'); }});
+    all('section.access-direct .box > h2', function(el){{
+      imp(el,'color','#00405a'); imp(el,'-webkit-text-fill-color','#00405a'); imp(el,'font-size','clamp(34px,3.4vw,48px)'); imp(el,'line-height','1.08'); imp(el,'letter-spacing','.02em'); imp(el,'max-width','880px'); imp(el,'margin','0 0 18px'); imp(el,'opacity','1'); imp(el,'visibility','visible'); imp(el,'text-shadow','none');
+    }});
+    all('section.access-section .wrap > h2, section.access-faq .wrap > h2, section.ec-sprint4-steps .wrap > h2, section.ec-sprint5-quality .wrap > h2', function(el){{
+      imp(el,'color','#00405a'); imp(el,'-webkit-text-fill-color','#00405a'); imp(el,'font-size','clamp(30px,3vw,42px)'); imp(el,'line-height','1.1'); imp(el,'letter-spacing','.02em'); imp(el,'margin','0 0 24px'); imp(el,'opacity','1'); imp(el,'visibility','visible'); imp(el,'text-shadow','none');
+    }});
     all('main h1, main h2, main h3, main h4, main h5, main h6, main summary, main strong, main b', function(el){{
       imp(el,'color','#00405a'); imp(el,'-webkit-text-fill-color','#00405a'); imp(el,'opacity','1'); imp(el,'visibility','visible'); imp(el,'text-shadow','none'); imp(el,'filter','none'); imp(el,'mix-blend-mode','normal');
     }});
@@ -76,7 +117,7 @@ html body[data-screen-label="Como Chegar"] main :is(.kicker,.eyebrow,.tag,a:not(
       if(el.closest('.kicker,.eyebrow,.tag')) return;
       imp(el,'color','#485156'); imp(el,'-webkit-text-fill-color','#485156'); imp(el,'opacity','1'); imp(el,'visibility','visible'); imp(el,'text-shadow','none'); imp(el,'filter','none'); imp(el,'mix-blend-mode','normal');
     }});
-    all('main .kicker, main .eyebrow, main .tag, main a:not(.btn):not(.secondary)', function(el){{
+    all('main .eyebrow, main .tag, main a:not(.btn):not(.secondary)', function(el){{
       imp(el,'color','#9a6500'); imp(el,'-webkit-text-fill-color','#9a6500'); imp(el,'opacity','1'); imp(el,'visibility','visible'); imp(el,'text-shadow','none');
     }});
   }}
@@ -100,6 +141,8 @@ def main() -> int:
         "# Como Chegar Final Visible Lock Report\n\n"
         "- CSS final light-page lock: PASS\n"
         "- Runtime inline color lock: PASS\n"
+        "- Technical SEO/GEO kicker hidden from public UI: PASS\n"
+        "- Heading sizes rebalanced: PASS\n"
         f"- Previous locks removed: {replaced}\n"
         "- Target page: como-chegar.html\n",
         encoding="utf-8",
