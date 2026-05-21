@@ -1,0 +1,133 @@
+/* Embaixada Carioca — Stabilization Base CSS
+   Phase 1: consolidate urgent visual/readability/performance-safe overrides.
+   This file is intentionally small and should replace scattered emergency overrides over time. */
+
+:root {
+  --ec-blue: #00405a;
+  --ec-blue-2: #527f8f;
+  --ec-green: #335d4a;
+  --ec-yellow: #f59b1e;
+  --ec-sand: #ede2c9;
+  --ec-paper: #f6efde;
+  --ec-gray: #485156;
+  --ec-price: #9a6500;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hero performance/readability */
+.hero-photo,
+.page-hero-photo,
+picture.page-hero-photo img {
+  object-fit: cover;
+  background: var(--ec-blue);
+}
+
+/* CTA hierarchy */
+a.btn[href*="tagme"],
+a.btn[href*="reserv"],
+.hero-ctas a[href*="tagme"],
+.hero-ctas a[href*="reserv"],
+.ctas a[href*="tagme"],
+.ctas a[href*="reserv"] {
+  background: var(--ec-yellow) !important;
+  border-color: var(--ec-yellow) !important;
+  color: var(--ec-blue) !important;
+  -webkit-text-fill-color: var(--ec-blue) !important;
+  font-weight: 900 !important;
+}
+
+/* Menu readability final lock */
+.menu-item .menu-item-name,
+.menu-item .item-name,
+.menu-item .dish-name,
+.menu-item h3,
+.menu-item h4 {
+  color: var(--ec-green) !important;
+  -webkit-text-fill-color: var(--ec-green) !important;
+  font-weight: 900 !important;
+  text-shadow: none !important;
+}
+
+.menu-item .menu-item-desc,
+.menu-item .item-desc,
+.menu-item .description,
+.menu-item p,
+.menu-item small {
+  color: var(--ec-gray) !important;
+  -webkit-text-fill-color: var(--ec-gray) !important;
+  text-shadow: none !important;
+}
+
+.menu-item .menu-item-price,
+.menu-item .item-price,
+.menu-item .price {
+  color: var(--ec-price) !important;
+  -webkit-text-fill-color: var(--ec-price) !important;
+  font-weight: 900 !important;
+}
+
+/* Light cards must never inherit pale text */
+.card,
+.box,
+.faq-item,
+.info-card,
+.content-card,
+.copy-card,
+.route-card,
+.guide-card,
+.place-card,
+.geo-card,
+.direct-answer-card,
+.ec-r2d2-card,
+.ec-sprint4-faq details {
+  color: var(--ec-blue);
+  text-shadow: none;
+}
+
+.card p,
+.box p,
+.faq-item p,
+.info-card p,
+.content-card p,
+.copy-card p,
+.route-card p,
+.guide-card p,
+.place-card p,
+.geo-card p,
+.direct-answer-card p,
+.ec-r2d2-card p,
+.ec-sprint4-faq details p {
+  color: var(--ec-gray);
+}
+
+/* Mobile touch safety */
+a,
+button,
+[role="button"] {
+  touch-action: manipulation;
+}
+
+@media (max-width: 720px) {
+  body {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .hero-ctas,
+  .ctas {
+    gap: 12px;
+  }
+
+  .hero-ctas .btn,
+  .ctas .btn {
+    min-height: 48px;
+  }
+}
