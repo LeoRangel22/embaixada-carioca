@@ -1010,5 +1010,75 @@ html body[data-screen-label="Como Chegar"][data-screen-label="Como Chegar"] main
   visibility:visible !important;
 }
 </style>
+<!-- EC Como Chegar Final Visible Lock -->
+<style id="ec-como-chegar-final-visible-lock">
+/* Page-specific final lock: Como Chegar is a light content page. */
+html body[data-screen-label="Como Chegar"] main {
+  background:#f6efde !important;
+  color:#00405a !important;
+  -webkit-text-fill-color:initial !important;
+}
+html body[data-screen-label="Como Chegar"] main section {
+  background:#f6efde !important;
+  color:#00405a !important;
+  -webkit-text-fill-color:initial !important;
+}
+html body[data-screen-label="Como Chegar"] main :is(.box,.access-fact,.access-route,details,.ec-sprint5-card,ol) {
+  background:#fffaf0 !important;
+  color:#00405a !important;
+  -webkit-text-fill-color:#00405a !important;
+  border-color:rgba(0,64,90,.16) !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  text-shadow:none !important;
+}
+html body[data-screen-label="Como Chegar"] main :is(h1,h2,h3,h4,h5,h6,summary,strong,b) {
+  color:#00405a !important;
+  -webkit-text-fill-color:#00405a !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  text-shadow:none !important;
+}
+html body[data-screen-label="Como Chegar"] main :is(p,li,span,small,dd,dt) {
+  color:#485156 !important;
+  -webkit-text-fill-color:#485156 !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  text-shadow:none !important;
+}
+html body[data-screen-label="Como Chegar"] main :is(.kicker,.eyebrow,.tag,a:not(.btn):not(.secondary)) {
+  color:#9a6500 !important;
+  -webkit-text-fill-color:#9a6500 !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  text-shadow:none !important;
+}
+</style>
+<script id="ec-como-chegar-runtime-visible-lock">
+(function(){
+  function imp(el, prop, val){ if(el && el.style) el.style.setProperty(prop, val, 'important'); }
+  function all(sel, fn){ document.querySelectorAll(sel).forEach(fn); }
+  function run(){
+    if(!document.body || document.body.getAttribute('data-screen-label') !== 'Como Chegar') return;
+    all('main, main section', function(el){ imp(el,'background','#f6efde'); imp(el,'color','#00405a'); imp(el,'-webkit-text-fill-color','initial'); });
+    all('main .box, main .access-fact, main .access-route, main details, main .ec-sprint5-card, main ol', function(el){
+      imp(el,'background','#fffaf0'); imp(el,'color','#00405a'); imp(el,'-webkit-text-fill-color','#00405a'); imp(el,'opacity','1'); imp(el,'visibility','visible'); imp(el,'text-shadow','none'); imp(el,'filter','none'); imp(el,'mix-blend-mode','normal');
+    });
+    all('main h1, main h2, main h3, main h4, main h5, main h6, main summary, main strong, main b', function(el){
+      imp(el,'color','#00405a'); imp(el,'-webkit-text-fill-color','#00405a'); imp(el,'opacity','1'); imp(el,'visibility','visible'); imp(el,'text-shadow','none'); imp(el,'filter','none'); imp(el,'mix-blend-mode','normal');
+    });
+    all('main p, main li, main span, main small, main dd, main dt', function(el){
+      if(el.closest('.kicker,.eyebrow,.tag')) return;
+      imp(el,'color','#485156'); imp(el,'-webkit-text-fill-color','#485156'); imp(el,'opacity','1'); imp(el,'visibility','visible'); imp(el,'text-shadow','none'); imp(el,'filter','none'); imp(el,'mix-blend-mode','normal');
+    });
+    all('main .kicker, main .eyebrow, main .tag, main a:not(.btn):not(.secondary)', function(el){
+      imp(el,'color','#9a6500'); imp(el,'-webkit-text-fill-color','#9a6500'); imp(el,'opacity','1'); imp(el,'visibility','visible'); imp(el,'text-shadow','none');
+    });
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run, {once:true}); else run();
+  window.addEventListener('load', function(){ run(); setTimeout(run,250); setTimeout(run,1000); }, {once:true});
+})();
+</script>
+<!-- /EC Como Chegar Final Visible Lock -->
 </body>
 </html>
