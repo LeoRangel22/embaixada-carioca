@@ -1,5 +1,5 @@
 /* Embaixada Carioca — Visible Text Lock
-   Pontual para o card de Como Chegar e para o texto claro da Home.
+   Pontual para o card de Como Chegar e para o texto do hero da Home.
    Carregado via ec-stabilization-base.css. */
 
 :root{
@@ -7,6 +7,7 @@
   --ec-visible-gray:#485156;
   --ec-visible-gold:#9a6500;
   --ec-visible-card:#fffaf0;
+  --ec-visible-cream:#f6efde;
 }
 
 /* Como Chegar — card Resposta Direta */
@@ -69,15 +70,15 @@ body[data-screen-label="Como Chegar"][data-screen-label="Como Chegar"] main sect
   -webkit-text-fill-color:var(--ec-visible-gold)!important;
 }
 
-/* Home — texto claro sobre fundo claro */
+/* Home — hero sobre foto escura deve usar texto claro, não azul escuro. */
 body[data-screen-label="Home"][data-screen-label="Home"] header.hero.hero h1,
 body[data-screen-label="Home"][data-screen-label="Home"] header.hero.hero h1 *{
-  color:var(--ec-visible-blue)!important;
-  -webkit-text-fill-color:var(--ec-visible-blue)!important;
+  color:var(--ec-visible-cream)!important;
+  -webkit-text-fill-color:var(--ec-visible-cream)!important;
   opacity:1!important;
   visibility:visible!important;
   filter:none!important;
-  text-shadow:none!important;
+  text-shadow:0 3px 22px rgba(0,0,0,.55)!important;
   mix-blend-mode:normal!important;
   background-image:none!important;
   -webkit-background-clip:border-box!important;
@@ -86,12 +87,12 @@ body[data-screen-label="Home"][data-screen-label="Home"] header.hero.hero h1 *{
 
 body[data-screen-label="Home"][data-screen-label="Home"] header.hero.hero .hero-sub,
 body[data-screen-label="Home"][data-screen-label="Home"] header.hero.hero .hero-sub *{
-  color:var(--ec-visible-gray)!important;
-  -webkit-text-fill-color:var(--ec-visible-gray)!important;
+  color:rgba(246,239,222,.94)!important;
+  -webkit-text-fill-color:rgba(246,239,222,.94)!important;
   opacity:1!important;
   visibility:visible!important;
   filter:none!important;
-  text-shadow:none!important;
+  text-shadow:0 2px 16px rgba(0,0,0,.56)!important;
   mix-blend-mode:normal!important;
   background-image:none!important;
   -webkit-background-clip:border-box!important;
