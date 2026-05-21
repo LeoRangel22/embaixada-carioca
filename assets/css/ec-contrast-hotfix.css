@@ -227,3 +227,19 @@ body[data-screen-label="Café da Manhã"] main :is(.card,.box,.info-card,.conten
   color: var(--ec-hotfix-gray) !important;
   -webkit-text-fill-color: var(--ec-hotfix-gray) !important;
 }
+
+/* FINAL DARK SECTION LEDE LOCK — precisa vir por último.
+   Corrige o bloco "Do Café da Embaixada..." e outros cabeçalhos de seção em fundo azul escuro. */
+body[data-screen-label="Café da Manhã"] main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links) > .wrap > .sec-head :is(p,.lede,.copy,.description),
+body[data-screen-label="Café da Manhã"] main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links) .sec-head > :is(p,.lede,.copy,.description) {
+  color: rgba(246,239,222,.92) !important;
+  -webkit-text-fill-color: rgba(246,239,222,.92) !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,.46) !important;
+}
+
+body[data-screen-label="Café da Manhã"] main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links) > .wrap > .sec-head :is(h1,h2,h3,.serif),
+body[data-screen-label="Café da Manhã"] main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links) .sec-head > :is(h1,h2,h3,.serif) {
+  color: #f6efde !important;
+  -webkit-text-fill-color: #f6efde !important;
+  text-shadow: 0 2px 14px rgba(0,0,0,.42) !important;
+}
