@@ -9,7 +9,7 @@
 - como-chegar.html: light content contrast lock inserted
 - eventos.html: light content contrast lock inserted
 - guia-do-rio.html: light content contrast lock inserted
-- Light lock changed pages: 7
+- Light lock changed pages: 6
 - index.html has reservation CTA: PASS
 - index.html has JSON-LD: PASS
 - index.html has canonical: PASS
