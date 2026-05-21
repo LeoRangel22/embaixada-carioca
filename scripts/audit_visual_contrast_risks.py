@@ -1,22 +1,20 @@
 #!/usr/bin/env python3
 """Audit visual contrast risks in current public pages.
 
-This is a static heuristic audit for the exact class of regressions found visually:
-- pale text inside dark sections that became too dim;
-- pale text inside light cards;
-- .lede/.copy/.description inside section headers;
-- inline styles with low-contrast colors.
-
-It does not replace Playwright visual validation, but gives a fast guardrail.
+This static guardrail detects patterns that previously created visual regressions.
+It now classifies findings as:
+- PASS/COVERED: pattern is covered by the global contrast hotfix CSS.
+- OPEN: pattern still needs a code/CSS fix.
+- VISUAL_CHECK: covered or ambiguous pattern that must still be confirmed in browser screenshots.
 """
 from __future__ import annotations
 
 from html.parser import HTMLParser
 from pathlib import Path
-import re
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / "_audit_reports" / "visual_contrast_risk_audit.md"
+HOTFIX = ROOT / "assets" / "css" / "ec-contrast-hotfix.css"
 
 PAGES = [
     "index.html",
@@ -28,53 +26,19 @@ PAGES = [
     "guia-do-rio.html",
 ]
 
-LOW_CONTRAST_LIGHT_TEXT = [
-    "#ede2c9",
-    "#f6efde",
-    "rgba(237,226,201",
-    "rgba(246,239,222",
-    "rgb(237,226,201",
-    "rgb(246,239,222",
-]
+LOW_CONTRAST_LIGHT_TEXT = ["#ede2c9", "#f6efde", "rgba(237,226,201", "rgba(246,239,222", "rgb(237,226,201", "rgb(246,239,222"]
+LOW_CONTRAST_DARK_TEXT = ["#00405a", "#00202e", "#335d4a", "#485156", "rgba(0,64,90", "rgba(0,32,46", "rgba(72,81,86"]
+LIGHT_BACKGROUND_HINTS = ["#fff", "white", "#f6efde", "#ede2c9", "246,239,222", "237,226,201"]
+DARK_BACKGROUND_HINTS = ["#00202e", "#00405a", "0,32,46", "0,64,90"]
+IMPORTANT_TEXT_CLASSES = ["lede", "copy", "description", "sec-head", "card", "box", "guide-card", "place-card", "beach-card", "experience-card", "route-card", "faq-answer"]
 
-LOW_CONTRAST_DARK_TEXT = [
-    "#00405a",
-    "#00202e",
-    "#335d4a",
-    "#485156",
-    "rgba(0,64,90",
-    "rgba(0,32,46",
-    "rgba(72,81,86",
-]
-
-LIGHT_BACKGROUND_HINTS = [
-    "#fff",
-    "white",
-    "#f6efde",
-    "#ede2c9",
-    "246,239,222",
-    "237,226,201",
-]
-
-DARK_BACKGROUND_HINTS = [
-    "#00202e",
-    "#00405a",
-    "0,32,46",
-    "0,64,90",
-]
-
-IMPORTANT_TEXT_CLASSES = [
-    "lede",
-    "copy",
-    "description",
-    "sec-head",
-    "card",
-    "box",
-    "guide-card",
-    "place-card",
-    "beach-card",
-    "experience-card",
-    "route-card",
+HOTFIX_COVERAGE_MARKERS = [
+    "FINAL DARK SECTION LOCK",
+    "Final light card paragraph lock",
+    "body main :is(.card,.box,.card-light",
+    "body main section:not(.light-section)",
+    "ec-hotfix-gray",
+    "ec-hotfix-green",
 ]
 
 
@@ -82,18 +46,13 @@ class ContrastParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
         self.stack: list[dict[str, str]] = []
-        self.risks: list[dict[str, str]] = []
+        self.findings: list[dict[str, str]] = []
         self.current_text_tag: dict[str, str] | None = None
         self.text_buffer: list[str] = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         attr = {k.lower(): v or "" for k, v in attrs}
-        node = {
-            "tag": tag.lower(),
-            "class": attr.get("class", ""),
-            "style": attr.get("style", ""),
-            "id": attr.get("id", ""),
-        }
+        node = {"tag": tag.lower(), "class": attr.get("class", ""), "style": attr.get("style", ""), "id": attr.get("id", "")}
         self.stack.append(node)
         if tag.lower() in {"h1", "h2", "h3", "h4", "p", "li", "span", "small", "summary"}:
             self.current_text_tag = node
@@ -111,7 +70,6 @@ class ContrastParser(HTMLParser):
             self.current_text_tag = None
             self.text_buffer = []
         if self.stack:
-            # Pop last matching tag when possible.
             for i in range(len(self.stack) - 1, -1, -1):
                 if self.stack[i].get("tag") == tag.lower():
                     del self.stack[i:]
@@ -120,20 +78,9 @@ class ContrastParser(HTMLParser):
     def ancestors(self) -> list[dict[str, str]]:
         return self.stack[:-1]
 
-    def combined_context(self, node: dict[str, str]) -> str:
-        parts: list[str] = []
-        for item in self.ancestors() + [node]:
-            parts.append(item.get("tag", ""))
-            parts.append(item.get("id", ""))
-            parts.append(item.get("class", ""))
-            parts.append(item.get("style", ""))
-        return " ".join(parts).lower()
-
     def inspect_text_node(self, node: dict[str, str], text: str) -> None:
-        context = self.combined_context(node)
         style_context = " ".join(item.get("style", "") for item in self.ancestors() + [node]).lower()
         class_context = " ".join(item.get("class", "") for item in self.ancestors() + [node]).lower()
-
         is_important = any(c in class_context for c in IMPORTANT_TEXT_CLASSES) or node.get("tag") in {"h1", "h2", "h3", "p"}
         if not is_important:
             return
@@ -143,66 +90,68 @@ class ContrastParser(HTMLParser):
         has_light_text = any(c in style_context for c in LOW_CONTRAST_LIGHT_TEXT)
         has_dark_text = any(c in style_context for c in LOW_CONTRAST_DARK_TEXT)
 
-        # Risk: light text inside a light/card context.
         if has_light_bg and has_light_text:
-            self.risks.append({
-                "type": "light-text-on-light-bg",
-                "tag": node.get("tag", ""),
-                "class": node.get("class", ""),
-                "text": text[:160],
-            })
-
-        # Risk: dark text inside dark/hero context.
+            self.findings.append({"type": "light-text-on-light-bg", "tag": node.get("tag", ""), "class": node.get("class", ""), "coverage": "covered-by-light-card-lock", "text": text[:160]})
         if has_dark_bg and has_dark_text:
-            self.risks.append({
-                "type": "dark-text-on-dark-bg",
-                "tag": node.get("tag", ""),
-                "class": node.get("class", ""),
-                "text": text[:160],
-            })
-
-        # Risk: section headers with lede are historically fragile.
+            self.findings.append({"type": "dark-text-on-dark-bg", "tag": node.get("tag", ""), "class": node.get("class", ""), "coverage": "covered-by-dark-section-lock", "text": text[:160]})
         if "sec-head" in class_context and "lede" in class_context and not has_light_bg:
-            self.risks.append({
-                "type": "dark-section-lede-needs-visual-check",
-                "tag": node.get("tag", ""),
-                "class": node.get("class", ""),
-                "text": text[:160],
-            })
+            self.findings.append({"type": "dark-section-lede-needs-visual-check", "tag": node.get("tag", ""), "class": node.get("class", ""), "coverage": "covered-by-final-dark-section-lock", "text": text[:160]})
+
+
+def hotfix_has_expected_coverage() -> bool:
+    if not HOTFIX.exists():
+        return False
+    css = HOTFIX.read_text(encoding="utf-8")
+    return all(marker in css for marker in HOTFIX_COVERAGE_MARKERS)
 
 
 def audit_page(path: Path) -> list[dict[str, str]]:
     parser = ContrastParser()
     parser.feed(path.read_text(encoding="utf-8"))
-    return parser.risks
+    return parser.findings
 
 
 def main() -> int:
     REPORT.parent.mkdir(parents=True, exist_ok=True)
-    lines = ["# Visual Contrast Risk Audit", "", "Static guardrail for visual contrast regressions in current pages.", ""]
-    total = 0
+    hotfix_ok = hotfix_has_expected_coverage()
+    lines = ["# Visual Contrast Risk Audit", "", "Static guardrail for visual contrast regressions in current pages.", "", f"- Global contrast hotfix coverage: {'PASS' if hotfix_ok else 'FAIL'}", ""]
+    total_findings = 0
+    total_open = 0
+    total_visual_check = 0
+
     for filename in PAGES:
         path = ROOT / filename
         lines.append(f"## {filename}")
         if not path.exists():
             lines.append("- FAIL: file missing")
             lines.append("")
-            total += 1
+            total_open += 1
             continue
-        risks = audit_page(path)
-        total += len(risks)
-        if not risks:
-            lines.append("- PASS: no static contrast risks found")
+        findings = audit_page(path)
+        total_findings += len(findings)
+        if not findings:
+            lines.append("- PASS: no static contrast risk patterns found")
+        elif hotfix_ok:
+            total_visual_check += len(findings)
+            lines.append(f"- VISUAL_CHECK: {len(findings)} pattern(s) detected but covered by global contrast hotfix")
+            for item in findings[:20]:
+                lines.append(f"  - {item['coverage']} | {item['type']} | <{item['tag']}> class='{item['class']}' | {item['text']}")
+            if len(findings) > 20:
+                lines.append(f"  - ... +{len(findings) - 20} more")
         else:
-            lines.append(f"- WARN: {len(risks)} static risk(s)")
-            for risk in risks[:30]:
-                lines.append(f"  - {risk['type']} | <{risk['tag']}> class='{risk['class']}' | {risk['text']}")
-            if len(risks) > 30:
-                lines.append(f"  - ... +{len(risks) - 30} more")
+            total_open += len(findings)
+            lines.append(f"- OPEN: {len(findings)} uncovered static risk(s)")
+            for item in findings[:30]:
+                lines.append(f"  - {item['type']} | <{item['tag']}> class='{item['class']}' | {item['text']}")
+            if len(findings) > 30:
+                lines.append(f"  - ... +{len(findings) - 30} more")
         lines.append("")
+
     lines.append("## Summary")
-    lines.append(f"- Total static risks: {total}")
-    lines.append("- Next required validation: browser screenshots for cafe-da-manha.html and guia-do-rio.html after deployment.")
+    lines.append(f"- Total static patterns detected: {total_findings}")
+    lines.append(f"- Open contrast risks: {total_open}")
+    lines.append(f"- Covered patterns requiring browser visual check: {total_visual_check}")
+    lines.append("- Required next validation: browser screenshots for cafe-da-manha.html, guia-do-rio.html, index.html, almoco.html, cardapio.html and eventos.html after deployment.")
     REPORT.write_text("\n".join(lines), encoding="utf-8")
     print("\n".join(lines))
     return 0
