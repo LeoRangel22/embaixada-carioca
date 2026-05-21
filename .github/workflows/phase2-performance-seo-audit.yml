@@ -1,5 +1,5 @@
 name: Phase 2 performance SEO audit
-# trigger: visible text CSS lock 2026-05-21
+# trigger: como chegar final visible lock 2026-05-21
 
 on:
   workflow_dispatch:
@@ -8,6 +8,7 @@ on:
     paths:
       - 'scripts/apply_phase2_quick_fixes.py'
       - 'scripts/apply_visible_text_css_link.py'
+      - 'scripts/apply_como_chegar_final_visible_lock.py'
       - 'scripts/audit_phase2_performance_seo.py'
       - 'assets/css/ec-visible-text-lock.css'
       - 'index.html'
@@ -35,6 +36,9 @@ jobs:
       - name: Link visible text CSS lock
         run: python3 scripts/apply_visible_text_css_link.py
 
+      - name: Apply Como Chegar final visible lock
+        run: python3 scripts/apply_como_chegar_final_visible_lock.py
+
       - name: Run Phase 2 performance SEO audit
         run: python3 scripts/audit_phase2_performance_seo.py
 
@@ -44,12 +48,14 @@ jobs:
           echo '---'
           cat _audit_reports/visible_text_css_link_report.md
           echo '---'
+          cat _audit_reports/como_chegar_final_visible_lock_report.md
+          echo '---'
           cat _audit_reports/phase2_performance_seo_audit.md
 
       - name: Commit Phase 2 reports and quick fixes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'fix: apply phase 2 visible text lock and update audit'
+          commit_message: 'fix: apply como chegar final visible lock and update audit'
           file_pattern: >-
             index.html
             cafe-da-manha.html
@@ -60,4 +66,5 @@ jobs:
             guia-do-rio.html
             _audit_reports/phase2_quick_fixes_report.md
             _audit_reports/visible_text_css_link_report.md
+            _audit_reports/como_chegar_final_visible_lock_report.md
             _audit_reports/phase2_performance_seo_audit.md
