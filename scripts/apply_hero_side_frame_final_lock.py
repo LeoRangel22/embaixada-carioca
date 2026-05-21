@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 """Apply final CSS contrast lock for hero side frame boxes.
 
-This script is intentionally CSS-only and idempotent.
-It inserts the final lock before </body> so it loads after page-level styles.
+This script is CSS-only and idempotent.
+It inserts or replaces the final lock before </body> so it loads after page-level styles.
+
+Important visual rule:
+- The outer .ec-page-hero-side-frame may have a translucent dark glass background.
+- The inner .hmc blocks must NOT receive solid blue backgrounds.
 """
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,15 +29,23 @@ LOCK_ID = "ec-hero-side-frame-final-contrast-lock"
 LOCK = f'''<!-- EC Hero Side Frame Final Contrast Lock -->
 <style id="{LOCK_ID}">
 html body .ec-page-hero-side-frame,
-html body .hero-summary-card,
-html body .hmc {{
-  background: rgba(0,32,46,.92) !important;
-  border-color: rgba(246,239,222,.42) !important;
-  box-shadow: 0 22px 64px rgba(0,0,0,.58) !important;
+html body .hero-summary-card {{
+  background: rgba(0,32,46,.74) !important;
+  border-color: rgba(246,239,222,.34) !important;
+  box-shadow: 0 22px 64px rgba(0,0,0,.46) !important;
   color: #f6efde !important;
   -webkit-text-fill-color: #f6efde !important;
   text-shadow: none !important;
   opacity: 1 !important;
+}}
+html body .ec-page-hero-side-frame .hmc,
+html body .hero-summary-card .hmc,
+html body .hmc {{
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
 }}
 html body .ec-page-hero-side-frame *,
 html body .hero-summary-card *,
@@ -53,7 +66,7 @@ html body .hmc .kicker,
 html body .hmc .eyebrow {{
   color: #f2b24a !important;
   -webkit-text-fill-color: #f2b24a !important;
-  text-shadow: 0 2px 10px rgba(0,0,0,.66) !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,.56) !important;
   font-weight: 900 !important;
   letter-spacing: .26em !important;
 }}
@@ -68,20 +81,29 @@ html body .hmc .value,
 html body .hmc p {{
   color: #f6efde !important;
   -webkit-text-fill-color: #f6efde !important;
-  text-shadow: 0 2px 12px rgba(0,0,0,.70) !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,.62) !important;
   font-weight: 750 !important;
   font-size: clamp(15px, 4vw, 18px) !important;
   line-height: 1.35 !important;
 }}
 </style>'''
 
+LOCK_RE = re.compile(
+    r"\n?<!-- EC Hero Side Frame Final Contrast Lock -->\s*<style id=\"ec-hero-side-frame-final-contrast-lock\">.*?</style>",
+    re.DOTALL,
+)
+
 
 def apply_lock(path: Path) -> tuple[bool, str]:
     text = path.read_text(encoding="utf-8")
-    if LOCK_ID in text:
-        return False, "already present"
     if not any(token in text for token in ("ec-page-hero-side-frame", "hero-summary-card", "hmc")):
         return False, "no hero side frame found"
+    if LOCK_ID in text:
+        new_text, count = LOCK_RE.subn("\n" + LOCK, text, count=1)
+        if count and new_text != text:
+            path.write_text(new_text, encoding="utf-8")
+            return True, "final lock replaced"
+        return False, "already present"
     if "</body>" in text:
         text = text.replace("</body>", LOCK + "\n</body>", 1)
     else:
