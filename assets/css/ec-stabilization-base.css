@@ -26,17 +26,36 @@ img {
   height: auto;
 }
 
-/* Nav active/hover line adjustment requested after visual review:
-   visually lower the yellow line and shift it left without colliding with the hero subtitle. */
-.nav-links a::after {
-  left: -0.5cm !important;
-  bottom: calc(-2px - 0.78cm) !important;
-  max-width: 42px !important;
+/* Nav underline must underline the menu word, not float as a separate trace. */
+html body nav.top nav.nav-links a::after,
+html body nav.top .nav-links.nav-links a::after,
+html body header nav.top .nav-links.nav-links a::after {
+  left: 0 !important;
+  right: auto !important;
+  bottom: -7px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+  height: 2px !important;
+  transform: none !important;
+  background: var(--ec-yellow) !important;
 }
-.nav-links a:hover::after,
-.nav-links a[aria-current="page"]::after,
-.nav-links a.active::after {
-  width: 42px !important;
+html body nav.top nav.nav-links a:hover::after,
+html body nav.top .nav-links.nav-links a:hover::after,
+html body nav.top .nav-links.nav-links a[aria-current="page"]::after,
+html body nav.top .nav-links.nav-links a.active::after {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+
+/* Hero eyebrow/tagline is the line that should move down and left. */
+@media (min-width: 961px) {
+  html body header.hero.hero .hero-content .eyebrow.hero-eyebrow,
+  html body header.page-hero.page-hero .page-hero-content .eyebrow.hero-eyebrow {
+    left: clamp(158px, 9.7vw, 190px) !important;
+    transform: translate(0, 30px) !important;
+  }
 }
 
 /* Hero performance/readability */
