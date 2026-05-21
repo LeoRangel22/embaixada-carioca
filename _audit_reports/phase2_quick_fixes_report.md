@@ -2,7 +2,7 @@
 
 - index.html: title already fixed
 - index.html: unsafe home light-background contrast lock not present
-- index.html: light content contrast lock inserted
+- index.html: light content contrast lock replaced
 - cafe-da-manha.html: light content contrast lock inserted
 - almoco.html: light content contrast lock inserted
 - cardapio.html: light content contrast lock inserted

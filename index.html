@@ -4048,36 +4048,74 @@ html body main :is(.box,.access-fact,.access-route,details,.card,.faq-item,.faq-
   z-index:1 !important;
   background:#fffaf0 !important;
   color:#00405a !important;
-  -webkit-text-fill-color:initial !important;
+  -webkit-text-fill-color:#00405a !important;
   text-shadow:none !important;
   opacity:1 !important;
+  visibility:visible !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
 }
 html body main :is(.box,.access-fact,.access-route,details,.card,.faq-item,.faq-card,.info-card,.content-card,.copy-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.ec-sprint5-card,.ec-r2d2-card)::before,
 html body main :is(.box,.access-fact,.access-route,details,.card,.faq-item,.faq-card,.info-card,.content-card,.copy-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.ec-sprint5-card,.ec-r2d2-card)::after {
   pointer-events:none !important;
+  opacity:0 !important;
+  display:none !important;
 }
-html body main :is(.box,.access-fact,.access-route,details,.card,.faq-item,.faq-card,.info-card,.content-card,.copy-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.ec-sprint5-card,.ec-r2d2-card) > * {
+html body main :is(.box,.access-fact,.access-route,details,.card,.faq-item,.faq-card,.info-card,.content-card,.copy-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.ec-sprint5-card,.ec-r2d2-card) > *,
+html body main :is(.box,.access-fact,.access-route,details,.card,.faq-item,.faq-card,.info-card,.content-card,.copy-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.ec-sprint5-card,.ec-r2d2-card) :is(h1,h2,h3,h4,h5,h6,p,li,span,small,dd,dt,summary,strong,b,a) {
   position:relative !important;
-  z-index:2 !important;
+  z-index:3 !important;
   opacity:1 !important;
+  visibility:visible !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+  text-shadow:none !important;
 }
 html body main :is(.access-direct,.access-section,.access-faq,.light-section,.paper-section,.section-paper,.bg-paper,.menu-section,.gallery-section,.ec-sprint4-steps,.ec-sprint5-quality,.ec-sprint5-faq,.ec-r2d2-depth,.ec-sprint4-faq,.box,.access-fact,.access-route,details,.card,.faq-item,.faq-card,.info-card,.content-card,.copy-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.ec-sprint5-card,.ec-r2d2-card) :is(h1,h2,h3,h4,h5,h6,.title,.headline,.section-title,.card-title,summary) {
   color:#00405a !important;
   -webkit-text-fill-color:#00405a !important;
   text-shadow:none !important;
   opacity:1 !important;
+  visibility:visible !important;
 }
 html body main :is(.access-direct,.access-section,.access-faq,.light-section,.paper-section,.section-paper,.bg-paper,.menu-section,.gallery-section,.ec-sprint4-steps,.ec-sprint5-quality,.ec-sprint5-faq,.ec-r2d2-depth,.ec-sprint4-faq,.box,.access-fact,.access-route,details,.card,.faq-item,.faq-card,.info-card,.content-card,.copy-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.ec-sprint5-card,.ec-r2d2-card) :is(p,li,span,small,dd,dt,.lede,.copy,.description,.faq-answer) {
   color:#485156 !important;
   -webkit-text-fill-color:#485156 !important;
   text-shadow:none !important;
   opacity:1 !important;
+  visibility:visible !important;
 }
 html body main :is(.access-direct,.access-section,.access-faq,.light-section,.paper-section,.section-paper,.bg-paper,.menu-section,.gallery-section,.ec-sprint4-steps,.ec-sprint5-quality,.ec-sprint5-faq,.ec-r2d2-depth,.ec-sprint4-faq,.box,.access-fact,.access-route,details,.card,.faq-item,.faq-card,.info-card,.content-card,.copy-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.ec-sprint5-card,.ec-r2d2-card) :is(strong,b,a:not(.btn),.kicker,.eyebrow,.tag) {
   color:#9a6500 !important;
   -webkit-text-fill-color:#9a6500 !important;
   text-shadow:none !important;
   opacity:1 !important;
+  visibility:visible !important;
+}
+/* Specific access page visible text rescue */
+html body[data-screen-label="Como Chegar"] main .box .kicker,
+html body[data-screen-label="Como Chegar"] main .box h2,
+html body[data-screen-label="Como Chegar"] main .box p,
+html body[data-screen-label="Como Chegar"] main .access-fact h3,
+html body[data-screen-label="Como Chegar"] main .access-fact p,
+html body[data-screen-label="Como Chegar"] main .access-route h3,
+html body[data-screen-label="Como Chegar"] main .access-route p {
+  display:block !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  transform:none !important;
+}
+html body[data-screen-label="Como Chegar"] main .box h2,
+html body[data-screen-label="Como Chegar"] main .access-fact h3,
+html body[data-screen-label="Como Chegar"] main .access-route h3 {
+  color:#00405a !important;
+  -webkit-text-fill-color:#00405a !important;
+}
+html body[data-screen-label="Como Chegar"] main .box p,
+html body[data-screen-label="Como Chegar"] main .access-fact p,
+html body[data-screen-label="Como Chegar"] main .access-route p {
+  color:#485156 !important;
+  -webkit-text-fill-color:#485156 !important;
 }
 html body main :is(.menu-item,.menu-card,.dish-card) :is(h1,h2,h3,h4,.title,.menu-item-name) { color:#335d4a !important; -webkit-text-fill-color:#335d4a !important; }
 html body main :is(.menu-item,.menu-card,.dish-card) :is(p,li,span,small,.description,.menu-item-desc) { color:#485156 !important; -webkit-text-fill-color:#485156 !important; }
