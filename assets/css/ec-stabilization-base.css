@@ -58,12 +58,13 @@ html body nav.top .nav-links.nav-links a.active::after {
   opacity: 0 !important;
 }
 
-/* Hero eyebrow/tagline is the line that should move down and left. */
+/* Hero eyebrow/tagline alignment:
+   start aligned with the C of CAFÉ DA MANHÃ and vertically near the base of the top-left logo. */
 @media (min-width: 961px) {
   html body header.hero.hero .hero-content .eyebrow.hero-eyebrow,
   html body header.page-hero.page-hero .page-hero-content .eyebrow.hero-eyebrow {
-    left: clamp(158px, 9.7vw, 190px) !important;
-    transform: translate(0, 30px) !important;
+    left: clamp(170px, 10.9vw, 210px) !important;
+    transform: translate(0, -6px) !important;
   }
 }
 
