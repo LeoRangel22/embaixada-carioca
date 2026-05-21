@@ -5,6 +5,8 @@ Static guardrail for visual contrast regressions in current pages.
 - Global contrast hotfix coverage: PASS
 - Breakfast lede sentinel present: PASS
 - Breakfast lede sentinel selector: `body[data-screen-label="Café da Manhã"] #o-que-servimos .sec-head p.lede`
+- Hero side frame sentinel present: PASS
+- Hero side frame selector: `body .ec-page-hero-side-frame`
 
 ## index.html
 - VISUAL_CHECK: 50 pattern(s) detected but covered by global contrast hotfix
@@ -32,10 +34,20 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h2> class='' | O Cardápio da Embaixada Carioca
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | No Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, servimos gastronomia brasileira de verdade — da empada artesanal ao bobó de camarão, do açaí gelado à
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Servido todos os dias (8h30–11h30). Sucos naturais, água de coco, açaí, frutas frescas e pão de queijo — tudo com vista panorâmica para o Pão de Açúcar.
-  - ... +26 more
+  - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Especialidade Picanha Brasileira (400g), Feijoada premiada Veja Rio 2025/2026, Bobó de Camarão cremoso, Bolinho de Bacalhau, Pastel crocante e Empada artesanal 
+  - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Caipirinha com cachaça Magnífica premiada, Chopp Heineken gelado (referência no Rio), sucos naturais de frutas tropicais, água de coco fresca e açaí cremoso.
+  - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Espetinho, Pastel, Empada, Bolinho de Bacalhau, Picadinho e Sanduíches — perfeitos para um lanche rápido entre as atrações do Bondinho.
+  - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | As perguntas mais comuns de quem busca onde comer no Rio de Janeiro com vista para o Pão de Açúcar.
+  - ... +22 more
 
 ## cafe-da-manha.html
-- VISUAL_CHECK: 5 pattern(s) detected but covered by global contrast hotfix
+- VISUAL_CHECK: 11 pattern(s) detected but covered by global contrast hotfix
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Hoje
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Por do sol às 17h44
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Resumo
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | O café da manhã com vista para o Pão de Açúcar mais especial do Rio de Janeiro — servido todos os dias , das 8h30 às 11h30, no alto do Morro da Urca. Pães artes
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Vista
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Pão de Açúcar em primeiro plano
   - covered-by-breakfast-sentinel-lock | breakfast-lede-sentinel | <p> class='lede' | Do Café da Embaixada para 2 ao açaí orgânico, ovos na chapa e cafés especiais — servido todos os dias, das 8h30 às 11h30, no alto do Morro da Urca.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h2> class='' | Restaurante, café da manhã, feijoada, picanha e drinks no Morro da Urca.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Explore os principais momentos da Embaixada Carioca dentro do Parque Bondinho Pão de Açúcar: café da manhã com vista, almoço brasileiro, feijoada premiada da Ac
@@ -43,7 +55,13 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='faq-answer' | Sim. A Embaixada Carioca serve café da manhã todos os dias, das 8h30 às 11h30, no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com vista direta para 
 
 ## almoco.html
-- VISUAL_CHECK: 6 pattern(s) detected but covered by global contrast hotfix
+- VISUAL_CHECK: 12 pattern(s) detected but covered by global contrast hotfix
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Hoje
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Por do sol às 17h44
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Resumo
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | O único almoço dentro do Parque Bondinho Pão de Açúcar , a 227 metros de altitude no Morro da Urca. Gastronomia brasileira premiada: picanha à brasileira e a fe
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Vista
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Pão de Açúcar em primeiro plano
   - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | Receitas clássicas da gastronomia brasileira servidas com técnica contemporânea e ingredientes selecionados — o sabor do Brasil com a vista mais bonita do Rio. 
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | O roteiro perfeito: Bondinho + Almoço
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Para otimizar seu tempo e orçamento no Rio de Janeiro, recomendamos combinar a visita ao Parque Bondinho com seu almoço. Ao invés de procurar restaurantes na Ur
@@ -52,7 +70,13 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Explore os principais momentos da Embaixada Carioca dentro do Parque Bondinho Pão de Açúcar: café da manhã com vista, almoço brasileiro, feijoada premiada da Ac
 
 ## cardapio.html
-- VISUAL_CHECK: 5 pattern(s) detected but covered by global contrast hotfix
+- VISUAL_CHECK: 11 pattern(s) detected but covered by global contrast hotfix
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Hoje
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Por do sol às 17h44
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Resumo
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Do café da manhã com vista para o Pão de Açúcar ao entardecer com drinks autorais — o cardápio do Restaurante Morro da Urca celebra a gastronomia brasileira com
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Vista
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Pão de Açúcar em primeiro plano
   - covered-by-light-card-lock | light-text-on-light-bg | <p> class='' | Café da manhã, almoço com feijoada premiada ou entardecer com drinks autorais — todos com vista para o Pão de Açúcar, no alto do Morro da Urca.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h2> class='' | Restaurante, café da manhã, feijoada, picanha e drinks no Morro da Urca.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Explore os principais momentos da Embaixada Carioca dentro do Parque Bondinho Pão de Açúcar: café da manhã com vista, almoço brasileiro, feijoada premiada da Ac
@@ -60,10 +84,22 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='faq-answer' | Sim. A Embaixada Carioca serve a feijoada premiada da Academia da Cachaça, Picanha Brasileira, caipirinhas e chope Heineken premiado no Morro da Urca, dentro do
 
 ## como-chegar.html
-- PASS: no static contrast risk patterns found
+- VISUAL_CHECK: 6 pattern(s) detected but covered by global contrast hotfix
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Hoje
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Por do sol às 17h44
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Resumo
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Estamos no Morro da Urca, a primeira parada do Parque Bondinho Pão de Açúcar. O acesso é pela Praia Vermelha, na Avenida Pasteur, 520, Urca.
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Vista
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Pão de Açúcar em primeiro plano
 
 ## eventos.html
-- VISUAL_CHECK: 5 pattern(s) detected but covered by global contrast hotfix
+- VISUAL_CHECK: 11 pattern(s) detected but covered by global contrast hotfix
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Hoje
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Por do sol às 17h44
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Resumo
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | O espaço para eventos mais bonito do Rio de Janeiro — no alto do Morro da Urca, a 227 metros, com vista panorâmica para o Pão de Açúcar e Baía de Guanabara. Reu
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Vista
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Pão de Açúcar em primeiro plano
   - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | Del evento corporativo al itinerario premium para grupos internacionais — recebemos cada formato com curadoria sob medida no espaço para eventos do Morro da Urc
   - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | Múltiplos salões e terraços panorâmicos no Morro da Urca, com vista para o Pão de Açúcar e Baía de Guanabara. Infraestrutura completa de catering, A/V e equipe 
   - covered-by-light-card-lock | light-text-on-light-bg | <p> class='' | Catering próprio, equipe receptiva, mestre de cerimônias, hostess bilíngue, equipo de bar e cozinha completa.
@@ -71,13 +107,19 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-light-card-lock | light-text-on-light-bg | <p> class='' | Acesso sem degraus, elevador para cadeirantes e sanitários adaptados conforme NBR 9050.
 
 ## guia-do-rio.html
-- VISUAL_CHECK: 3 pattern(s) detected but covered by global contrast hotfix
+- VISUAL_CHECK: 9 pattern(s) detected but covered by global contrast hotfix
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Hoje
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Por do sol às 17h44
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Resumo
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Planejando uma viagem para o Rio de Janeiro? Descobrir o que fazer no Rio exige um roteiro que equilibre os cartões-postais mundiais com a autêntica gastronomia
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Vista
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Pão de Açúcar em primeiro plano
   - covered-by-light-card-lock | light-text-on-light-bg | <p> class='' | Café da manhã, almoço ou entardecer — todos com vista de frente para o Pão de Açúcar, no alto do Morro da Urca.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h2> class='' | Restaurante, café da manhã, feijoada, picanha e drinks no Morro da Urca.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Explore os principais momentos da Embaixada Carioca dentro do Parque Bondinho Pão de Açúcar: café da manhã com vista, almoço brasileiro, feijoada premiada da Ac
 
 ## Summary
-- Total static patterns detected: 74
+- Total static patterns detected: 110
 - Open contrast risks: 0
-- Covered patterns requiring browser visual check: 74
+- Covered patterns requiring browser visual check: 110
 - Required next validation: browser screenshots for cafe-da-manha.html, guia-do-rio.html, index.html, almoco.html, cardapio.html and eventos.html after deployment.
