@@ -48,15 +48,15 @@ Scope: existing public pages only. No new landing pages.
   - high inline style blocks: 26
 
 ## como-chegar.html
-- Score: 95/100
+- Score: 96/100
 - Title length: 66
 - Meta description length: 147
-- Inline style blocks: 17
+- Inline style blocks: 16
 - Script tags: 6
 - Images: 3
 - JSON-LD blocks: 3
 - Issues:
-  - high inline style blocks: 17
+  - high inline style blocks: 16
 
 ## eventos.html
 - Score: 86/100
@@ -82,5 +82,5 @@ Scope: existing public pages only. No new landing pages.
   - high inline style blocks: 26
 
 ## Summary
-- Average score: 86.9/100
+- Average score: 87.0/100
 - Phase 2 next fixes: reduce inline style density, normalize image loading, preserve CTAs, keep JSON-LD, and prepare performance validation.

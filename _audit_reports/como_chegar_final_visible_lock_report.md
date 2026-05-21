@@ -2,5 +2,7 @@
 
 - CSS final light-page lock: PASS
 - Runtime inline color lock: PASS
-- Previous locks removed: 0
+- Technical SEO/GEO kicker hidden from public UI: PASS
+- Heading sizes rebalanced: PASS
+- Previous locks removed: 1
 - Target page: como-chegar.html
