@@ -3,7 +3,7 @@
 
 Current scope:
 - shorten home title to safer SERP length;
-- add final Home light-background contrast lock;
+- remove the experimental Home light-background lock if present;
 - generate guardrail report;
 - preserve reservation CTA, JSON-LD, canonical and stabilization CSS.
 """
@@ -20,43 +20,19 @@ OLD_TITLE = "Restaurante Morro da Urca com Vista para o Pão de Açúcar | Embai
 NEW_TITLE = "Restaurante no Morro da Urca | Embaixada Carioca"
 HOME_LOCK_ID = "ec-home-light-bg-final-contrast-lock"
 
-HOME_LIGHT_LOCK = f'''<!-- EC Home Light Background Final Contrast Lock -->
-<style id="{HOME_LOCK_ID}">
-body[data-screen-label="Home"] :is(section,main,article,div):not(header):not(.hero):not(.page-hero):not(.ec-page-hero-side-frame):not(.hero-summary-card):not(.hmc):not(.nav-drawer):not(.wa-preview) :is(p,li,span,small,dd,dt,.lede,.copy,.description,.faq-answer) {{
-  color: #485156 !important;
-  -webkit-text-fill-color: #485156 !important;
-  text-shadow: none !important;
-}}
-body[data-screen-label="Home"] :is(section,main,article,div):not(header):not(.hero):not(.page-hero):not(.ec-page-hero-side-frame):not(.hero-summary-card):not(.hmc):not(.nav-drawer):not(.wa-preview) :is(h1,h2,h3,h4,h5,h6,.title,.headline,.section-title,.card-title) {{
-  color: #335d4a !important;
-  -webkit-text-fill-color: #335d4a !important;
-  text-shadow: none !important;
-}}
-body[data-screen-label="Home"] :is(section,main,article,div):not(header):not(.hero):not(.page-hero):not(.ec-page-hero-side-frame):not(.hero-summary-card):not(.hmc):not(.nav-drawer):not(.wa-preview) :is(strong,b,a:not(.btn),.eyebrow,.kicker,.tag) {{
-  color: #9a6500 !important;
-  -webkit-text-fill-color: #9a6500 !important;
-  text-shadow: none !important;
-}}
-body[data-screen-label="Home"] :is(.btn,a.btn,.hero-ctas a,.ctas a) {{
-  -webkit-text-fill-color: currentColor !important;
-}}
-</style>'''
-
 LOCK_RE = re.compile(
     r"\n?<!-- EC Home Light Background Final Contrast Lock -->\s*<style id=\"ec-home-light-bg-final-contrast-lock\">.*?</style>",
     re.DOTALL,
 )
 
 
-def apply_home_light_lock(text: str) -> tuple[str, str]:
-    if HOME_LOCK_ID in text:
-        new_text, count = LOCK_RE.subn("\n" + HOME_LIGHT_LOCK, text, count=1)
-        if count and new_text != text:
-            return new_text, "home light-background contrast lock replaced"
-        return text, "home light-background contrast lock already present"
-    if "</body>" in text:
-        return text.replace("</body>", HOME_LIGHT_LOCK + "\n</body>", 1), "home light-background contrast lock inserted"
-    return text + "\n" + HOME_LIGHT_LOCK + "\n", "home light-background contrast lock appended"
+def remove_home_light_lock(text: str) -> tuple[str, str]:
+    if HOME_LOCK_ID not in text:
+        return text, "unsafe home light-background contrast lock not present"
+    new_text, count = LOCK_RE.subn("", text)
+    if count:
+        return new_text, "unsafe home light-background contrast lock removed"
+    return text, "unsafe home light-background contrast lock found but not removed"
 
 
 def main() -> int:
@@ -72,7 +48,7 @@ def main() -> int:
     else:
         lines.append("- index.html: title target not found")
 
-    text, lock_note = apply_home_light_lock(text)
+    text, lock_note = remove_home_light_lock(text)
     HOME.write_text(text, encoding="utf-8")
     lines.append(f"- index.html: {lock_note}")
 
@@ -82,7 +58,7 @@ def main() -> int:
         "index.html has JSON-LD": "application/ld+json" in text,
         "index.html has canonical": 'rel="canonical"' in text,
         "index.html keeps stabilization CSS": "ec-stabilization-base.css" in text,
-        "index.html has home light contrast lock": HOME_LOCK_ID in text,
+        "index.html unsafe home light contrast lock absent": HOME_LOCK_ID not in text,
     }
     for label, ok in checks.items():
         lines.append(f"- {label}: {'PASS' if ok else 'FAIL'}")
