@@ -7,9 +7,9 @@ It now classifies findings as:
 - OPEN: pattern still needs a code/CSS fix.
 - VISUAL_CHECK: covered or ambiguous pattern that must still be confirmed in browser screenshots.
 
-Sentinel included:
+Sentinels included:
 - cafe-da-manha.html / #o-que-servimos .sec-head p.lede
-  This exact text was visually confirmed as too dark on a dark-blue background.
+- .ec-page-hero-side-frame labels/values, visually confirmed as too dark on translucent hero cards.
 """
 from __future__ import annotations
 
@@ -32,12 +32,13 @@ PAGES = [
 
 BREAKFAST_SENTINEL_TEXT = "Do Café da Embaixada para 2 ao açaí orgânico, ovos na chapa e cafés especiais"
 BREAKFAST_SENTINEL_SELECTOR = 'body[data-screen-label="Café da Manhã"] #o-que-servimos .sec-head p.lede'
+HERO_SIDE_FRAME_SELECTOR = "body .ec-page-hero-side-frame"
 
 LOW_CONTRAST_LIGHT_TEXT = ["#ede2c9", "#f6efde", "rgba(237,226,201", "rgba(246,239,222", "rgb(237,226,201", "rgb(246,239,222"]
 LOW_CONTRAST_DARK_TEXT = ["#00405a", "#00202e", "#335d4a", "#485156", "rgba(0,64,90", "rgba(0,32,46", "rgba(72,81,86"]
 LIGHT_BACKGROUND_HINTS = ["#fff", "white", "#f6efde", "#ede2c9", "246,239,222", "237,226,201"]
 DARK_BACKGROUND_HINTS = ["#00202e", "#00405a", "0,32,46", "0,64,90"]
-IMPORTANT_TEXT_CLASSES = ["lede", "copy", "description", "sec-head", "card", "box", "guide-card", "place-card", "beach-card", "experience-card", "route-card", "faq-answer"]
+IMPORTANT_TEXT_CLASSES = ["lede", "copy", "description", "sec-head", "card", "box", "guide-card", "place-card", "beach-card", "experience-card", "route-card", "faq-answer", "ec-page-hero-side-frame", "hero-summary-card", "hmc"]
 
 HOTFIX_COVERAGE_MARKERS = [
     "FINAL DARK SECTION LOCK",
@@ -45,7 +46,10 @@ HOTFIX_COVERAGE_MARKERS = [
     "body section:not(.light-section)",
     "body main section:not(.light-section)",
     BREAKFAST_SENTINEL_SELECTOR,
+    HERO_SIDE_FRAME_SELECTOR,
+    "hero-summary-card",
     "rgba(246,239,222,.98)",
+    "rgba(246,239,222,.96)",
     "ec-hotfix-gray",
     "ec-hotfix-green",
 ]
@@ -63,7 +67,7 @@ class ContrastParser(HTMLParser):
         attr = {k.lower(): v or "" for k, v in attrs}
         node = {"tag": tag.lower(), "class": attr.get("class", ""), "style": attr.get("style", ""), "id": attr.get("id", "")}
         self.stack.append(node)
-        if tag.lower() in {"h1", "h2", "h3", "h4", "p", "li", "span", "small", "summary"}:
+        if tag.lower() in {"h1", "h2", "h3", "h4", "p", "li", "span", "small", "summary", "div"}:
             self.current_text_tag = node
             self.text_buffer = []
 
@@ -74,7 +78,7 @@ class ContrastParser(HTMLParser):
     def handle_endtag(self, tag: str) -> None:
         if self.current_text_tag is not None and tag.lower() == self.current_text_tag.get("tag"):
             text = " ".join("".join(self.text_buffer).split())
-            if len(text) >= 28:
+            if len(text) >= 4:
                 self.inspect_text_node(self.current_text_tag, text)
             self.current_text_tag = None
             self.text_buffer = []
@@ -96,14 +100,24 @@ class ContrastParser(HTMLParser):
             return
 
         has_light_bg = any(h in style_context for h in LIGHT_BACKGROUND_HINTS) or any(k in class_context for k in ["card", "box", "paper", "light"])
-        has_dark_bg = any(h in style_context for h in DARK_BACKGROUND_HINTS) or any(k in class_context for k in ["hero", "dark", "navy"])
+        has_dark_bg = any(h in style_context for h in DARK_BACKGROUND_HINTS) or any(k in class_context for k in ["hero", "dark", "navy", "ec-page-hero-side-frame"])
         has_light_text = any(c in style_context for c in LOW_CONTRAST_LIGHT_TEXT)
         has_dark_text = any(c in style_context for c in LOW_CONTRAST_DARK_TEXT)
+
+        if "ec-page-hero-side-frame" in class_context and text.lower() in {"hoje", "hoje, no alto", "resumo", "premiada", "vista"}:
+            self.findings.append({"type": "hero-side-frame-label-sentinel", "tag": node.get("tag", ""), "class": node.get("class", ""), "coverage": "covered-by-hero-side-frame-lock", "text": text[:160]})
+            return
+
+        if "ec-page-hero-side-frame" in class_context and len(text) >= 8:
+            self.findings.append({"type": "hero-side-frame-value-sentinel", "tag": node.get("tag", ""), "class": node.get("class", ""), "coverage": "covered-by-hero-side-frame-lock", "text": text[:160]})
+            return
 
         if "o-que-servimos" in id_context and "sec-head" in class_context and "lede" in class_context and BREAKFAST_SENTINEL_TEXT in text:
             self.findings.append({"type": "breakfast-lede-sentinel", "tag": node.get("tag", ""), "class": node.get("class", ""), "coverage": "covered-by-breakfast-sentinel-lock", "text": text[:160]})
             return
 
+        if len(text) < 28:
+            return
         if has_light_bg and has_light_text:
             self.findings.append({"type": "light-text-on-light-bg", "tag": node.get("tag", ""), "class": node.get("class", ""), "coverage": "covered-by-light-card-lock", "text": text[:160]})
         if has_dark_bg and has_dark_text:
@@ -124,6 +138,10 @@ def breakfast_sentinel_exists() -> bool:
     return BREAKFAST_SENTINEL_TEXT in html
 
 
+def hero_side_frame_exists() -> bool:
+    return any("ec-page-hero-side-frame" in (ROOT / page).read_text(encoding="utf-8") for page in PAGES)
+
+
 def audit_page(path: Path) -> list[dict[str, str]]:
     parser = ContrastParser()
     parser.feed(path.read_text(encoding="utf-8"))
@@ -134,6 +152,7 @@ def main() -> int:
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     hotfix_ok = hotfix_has_expected_coverage()
     sentinel_ok = breakfast_sentinel_exists()
+    hero_side_frame_ok = hero_side_frame_exists()
     lines = [
         "# Visual Contrast Risk Audit",
         "",
@@ -142,6 +161,8 @@ def main() -> int:
         f"- Global contrast hotfix coverage: {'PASS' if hotfix_ok else 'FAIL'}",
         f"- Breakfast lede sentinel present: {'PASS' if sentinel_ok else 'FAIL'}",
         f"- Breakfast lede sentinel selector: `{BREAKFAST_SENTINEL_SELECTOR}`",
+        f"- Hero side frame sentinel present: {'PASS' if hero_side_frame_ok else 'FAIL'}",
+        f"- Hero side frame selector: `{HERO_SIDE_FRAME_SELECTOR}`",
         "",
     ]
     total_findings = 0
@@ -151,6 +172,8 @@ def main() -> int:
     if not hotfix_ok:
         total_open += 1
     if not sentinel_ok:
+        total_open += 1
+    if not hero_side_frame_ok:
         total_open += 1
 
     for filename in PAGES:
@@ -168,10 +191,10 @@ def main() -> int:
         elif hotfix_ok:
             total_visual_check += len(findings)
             lines.append(f"- VISUAL_CHECK: {len(findings)} pattern(s) detected but covered by global contrast hotfix")
-            for item in findings[:24]:
+            for item in findings[:28]:
                 lines.append(f"  - {item['coverage']} | {item['type']} | <{item['tag']}> class='{item['class']}' | {item['text']}")
-            if len(findings) > 24:
-                lines.append(f"  - ... +{len(findings) - 24} more")
+            if len(findings) > 28:
+                lines.append(f"  - ... +{len(findings) - 28} more")
         else:
             total_open += len(findings)
             lines.append(f"- OPEN: {len(findings)} uncovered static risk(s)")
