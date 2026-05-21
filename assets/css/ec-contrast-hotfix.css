@@ -24,6 +24,38 @@ body[data-screen-label="Café da Manhã"] :is(header.hero,header.page-hero,.hero
   text-shadow: 0 3px 18px rgba(0,0,0,.56) !important;
 }
 
+/* Hero side frame / glass cards: visual regression seen on mobile screenshots. */
+body :is(.ec-page-hero-side-frame,.hero-summary-card,.hmc) {
+  text-shadow: none !important;
+}
+
+body .ec-page-hero-side-frame {
+  background: rgba(0,32,46,.82) !important;
+  border-color: rgba(246,239,222,.28) !important;
+  box-shadow: 0 22px 60px rgba(0,0,0,.42) !important;
+  backdrop-filter: blur(12px) saturate(1.18) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(1.18) !important;
+}
+
+body .ec-page-hero-side-frame :is(.l,.label,.kicker,.eyebrow) {
+  color: #f2b24a !important;
+  -webkit-text-fill-color: #f2b24a !important;
+  opacity: 1 !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,.42) !important;
+}
+
+body .ec-page-hero-side-frame :is(.v,.value,p,span,strong,b) {
+  color: rgba(246,239,222,.96) !important;
+  -webkit-text-fill-color: rgba(246,239,222,.96) !important;
+  opacity: 1 !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,.5) !important;
+}
+
+body .ec-page-hero-side-frame .hero-summary-card :is(.v,p,span) {
+  color: rgba(246,239,222,.95) !important;
+  -webkit-text-fill-color: rgba(246,239,222,.95) !important;
+}
+
 /* Blocos claros conhecidos do site */
 body :is(
   .light-section,
