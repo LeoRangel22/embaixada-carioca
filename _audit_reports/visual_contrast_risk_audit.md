@@ -3,6 +3,8 @@
 Static guardrail for visual contrast regressions in current pages.
 
 - Global contrast hotfix coverage: PASS
+- Breakfast lede sentinel present: PASS
+- Breakfast lede sentinel selector: `body[data-screen-label="Café da Manhã"] #o-que-servimos .sec-head p.lede`
 
 ## index.html
 - VISUAL_CHECK: 50 pattern(s) detected but covered by global contrast hotfix
@@ -26,11 +28,15 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Todos os dias · Caipirinha com cachaça Magnífica premiada · Chopp Heineken gelado · o mais premiado bar do Parque Bondinho.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | Eventos Privados no Morro da Urca
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Casamentos, aniversários, eventos corporativos · Capacidade sob consulta · Vista panorâmica para o Pão de Açúcar · único.
-  - ... +30 more
+  - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='eyebrow' | Do café da manhã ao happy hour
+  - covered-by-dark-section-lock | dark-text-on-dark-bg | <h2> class='' | O Cardápio da Embaixada Carioca
+  - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | No Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, servimos gastronomia brasileira de verdade — da empada artesanal ao bobó de camarão, do açaí gelado à
+  - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Servido todos os dias (8h30–11h30). Sucos naturais, água de coco, açaí, frutas frescas e pão de queijo — tudo com vista panorâmica para o Pão de Açúcar.
+  - ... +26 more
 
 ## cafe-da-manha.html
 - VISUAL_CHECK: 5 pattern(s) detected but covered by global contrast hotfix
-  - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | Do Café da Embaixada para 2 ao açaí orgânico, ovos na chapa e cafés especiais — servido todos os dias, das 8h30 às 11h30, no alto do Morro da Urca.
+  - covered-by-breakfast-sentinel-lock | breakfast-lede-sentinel | <p> class='lede' | Do Café da Embaixada para 2 ao açaí orgânico, ovos na chapa e cafés especiais — servido todos os dias, das 8h30 às 11h30, no alto do Morro da Urca.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h2> class='' | Restaurante, café da manhã, feijoada, picanha e drinks no Morro da Urca.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Explore os principais momentos da Embaixada Carioca dentro do Parque Bondinho Pão de Açúcar: café da manhã com vista, almoço brasileiro, feijoada premiada da Ac
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | Tem café da manhã no Pão de Açúcar?
