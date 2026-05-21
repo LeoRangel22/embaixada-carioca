@@ -228,18 +228,33 @@ body[data-screen-label="Café da Manhã"] main :is(.card,.box,.info-card,.conten
   -webkit-text-fill-color: var(--ec-hotfix-gray) !important;
 }
 
-/* FINAL DARK SECTION LEDE LOCK — precisa vir por último.
-   Corrige o bloco "Do Café da Embaixada..." e outros cabeçalhos de seção em fundo azul escuro. */
-body[data-screen-label="Café da Manhã"] main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links) > .wrap > .sec-head :is(p,.lede,.copy,.description),
-body[data-screen-label="Café da Manhã"] main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links) .sec-head > :is(p,.lede,.copy,.description) {
+/* FINAL DARK SECTION LOCK — precisa vir por último.
+   Corrige .sec-head/.lede em seções azul-escuras em todas as páginas atuais. */
+body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > .sec-head :is(p,.lede,.copy,.description),
+body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) .sec-head > :is(p,.lede,.copy,.description),
+body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > :is(.section-head,.content-head,.intro-head) :is(p,.lede,.copy,.description) {
   color: rgba(246,239,222,.92) !important;
   -webkit-text-fill-color: rgba(246,239,222,.92) !important;
   text-shadow: 0 2px 12px rgba(0,0,0,.46) !important;
 }
 
-body[data-screen-label="Café da Manhã"] main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links) > .wrap > .sec-head :is(h1,h2,h3,.serif),
-body[data-screen-label="Café da Manhã"] main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links) .sec-head > :is(h1,h2,h3,.serif) {
+body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > .sec-head :is(h1,h2,h3,.serif),
+body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) .sec-head > :is(h1,h2,h3,.serif),
+body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > :is(.section-head,.content-head,.intro-head) :is(h1,h2,h3,.serif) {
   color: #f6efde !important;
   -webkit-text-fill-color: #f6efde !important;
   text-shadow: 0 2px 14px rgba(0,0,0,.42) !important;
+}
+
+/* Final light card paragraph lock: evita texto areia/claro em cards claros. */
+body main :is(.card,.box,.card-light,.guide-card,.place-card,.beach-card,.experience-card,.route-card,.info-card,.content-card,.copy-card,.faq-card,.faq-item,[class*="card"],[class*="box"]) :is(p,li,span,small,.lede,.copy,.description,.faq-answer) {
+  color: var(--ec-hotfix-gray) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-gray) !important;
+  text-shadow: none !important;
+}
+
+body main :is(.card,.box,.card-light,.guide-card,.place-card,.beach-card,.experience-card,.route-card,.info-card,.content-card,.copy-card,.faq-card,.faq-item,[class*="card"],[class*="box"]) :is(h1,h2,h3,h4,h5,h6,.title,.headline,.card-title) {
+  color: var(--ec-hotfix-green) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-green) !important;
+  text-shadow: none !important;
 }
