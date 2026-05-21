@@ -1,0 +1,41 @@
+name: Stabilize existing pages before landing pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'scripts/stabilize_existing_pages_before_landings.py'
+      - '.github/workflows/stabilize-existing-pages.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  stabilize-existing-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run stabilization script
+        run: python3 scripts/stabilize_existing_pages_before_landings.py
+
+      - name: Show stabilization report
+        run: |
+          echo '--- existing_pages_stabilization_report.md ---'
+          cat _audit_reports/existing_pages_stabilization_report.md
+
+      - name: Commit stabilized pages
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'fix: stabilize existing pages metadata before landing pages'
+          file_pattern: >-
+            index.html
+            cafe-da-manha.html
+            almoco.html
+            cardapio.html
+            como-chegar.html
+            eventos.html
+            guia-do-rio.html
+            _audit_reports/existing_pages_stabilization_report.md
