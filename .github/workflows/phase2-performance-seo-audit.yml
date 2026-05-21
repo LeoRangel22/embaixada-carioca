@@ -1,5 +1,5 @@
 name: Phase 2 performance SEO audit
-# trigger: light content contrast fix 2026-05-21
+# trigger: visible text CSS lock 2026-05-21
 
 on:
   workflow_dispatch:
@@ -7,7 +7,9 @@ on:
     branches: [master]
     paths:
       - 'scripts/apply_phase2_quick_fixes.py'
+      - 'scripts/apply_visible_text_css_link.py'
       - 'scripts/audit_phase2_performance_seo.py'
+      - 'assets/css/ec-visible-text-lock.css'
       - 'index.html'
       - 'cafe-da-manha.html'
       - 'almoco.html'
@@ -30,6 +32,9 @@ jobs:
       - name: Apply safe Phase 2 quick fixes
         run: python3 scripts/apply_phase2_quick_fixes.py
 
+      - name: Link visible text CSS lock
+        run: python3 scripts/apply_visible_text_css_link.py
+
       - name: Run Phase 2 performance SEO audit
         run: python3 scripts/audit_phase2_performance_seo.py
 
@@ -37,12 +42,14 @@ jobs:
         run: |
           cat _audit_reports/phase2_quick_fixes_report.md
           echo '---'
+          cat _audit_reports/visible_text_css_link_report.md
+          echo '---'
           cat _audit_reports/phase2_performance_seo_audit.md
 
       - name: Commit Phase 2 reports and quick fixes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'fix: apply phase 2 quick fixes and update audit'
+          commit_message: 'fix: apply phase 2 visible text lock and update audit'
           file_pattern: >-
             index.html
             cafe-da-manha.html
@@ -52,4 +59,5 @@ jobs:
             eventos.html
             guia-do-rio.html
             _audit_reports/phase2_quick_fixes_report.md
+            _audit_reports/visible_text_css_link_report.md
             _audit_reports/phase2_performance_seo_audit.md
