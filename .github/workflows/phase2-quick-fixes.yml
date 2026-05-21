@@ -1,4 +1,5 @@
 name: Phase 2 quick fixes
+# manual trigger refresh: phase 2 SEO quick fixes
 
 on:
   workflow_dispatch:
