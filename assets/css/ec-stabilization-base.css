@@ -27,10 +27,16 @@ img {
 }
 
 /* Nav active/hover line adjustment requested after visual review:
-   move the yellow line roughly 1cm down and 0.5cm left. */
+   visually lower the yellow line and shift it left without colliding with the hero subtitle. */
 .nav-links a::after {
   left: -0.5cm !important;
-  bottom: calc(-2px - 1cm) !important;
+  bottom: calc(-2px - 0.78cm) !important;
+  max-width: 42px !important;
+}
+.nav-links a:hover::after,
+.nav-links a[aria-current="page"]::after,
+.nav-links a.active::after {
+  width: 42px !important;
 }
 
 /* Hero performance/readability */
