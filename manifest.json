@@ -100,12 +100,13 @@
     {
       "name": "Reservar Mesa",
       "short_name": "Reservar",
-      "description": "Faça sua reserva pelo TagMe",
-      "url": "https://go.tagme.com.br/embaixadacarioca",
+      "description": "Veja como reservar uma mesa na Embaixada Carioca",
+      "url": "/#reservas",
       "icons": [
         {
           "src": "/assets/icon-96.png",
-          "sizes": "96x96"
+          "sizes": "96x96",
+          "type": "image/png"
         }
       ]
     },
@@ -117,19 +118,21 @@
       "icons": [
         {
           "src": "/assets/icon-96.png",
-          "sizes": "96x96"
+          "sizes": "96x96",
+          "type": "image/png"
         }
       ]
     },
     {
-      "name": "WhatsApp",
-      "short_name": "WhatsApp",
-      "description": "Fale conosco pelo WhatsApp",
-      "url": "https://wa.me/5521966837556",
+      "name": "Como Chegar",
+      "short_name": "Como Chegar",
+      "description": "Acesse as orientações para chegar ao Morro da Urca",
+      "url": "/como-chegar.html",
       "icons": [
         {
           "src": "/assets/icon-96.png",
-          "sizes": "96x96"
+          "sizes": "96x96",
+          "type": "image/png"
         }
       ]
     },
@@ -141,7 +144,8 @@
       "icons": [
         {
           "src": "/assets/icon-96.png",
-          "sizes": "96x96"
+          "sizes": "96x96",
+          "type": "image/png"
         }
       ]
     }
