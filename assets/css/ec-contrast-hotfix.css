@@ -229,21 +229,34 @@ body[data-screen-label="Café da Manhã"] main :is(.card,.box,.info-card,.conten
 }
 
 /* FINAL DARK SECTION LOCK — precisa vir por último.
-   Corrige .sec-head/.lede em seções azul-escuras em todas as páginas atuais. */
+   Corrige .sec-head/.lede em seções azul-escuras em todas as páginas atuais, inclusive páginas sem <main>. */
+body section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > .sec-head :is(p,.lede,.copy,.description),
+body section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) .sec-head > :is(p,.lede,.copy,.description),
+body section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > :is(.section-head,.content-head,.intro-head) :is(p,.lede,.copy,.description),
 body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > .sec-head :is(p,.lede,.copy,.description),
 body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) .sec-head > :is(p,.lede,.copy,.description),
 body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > :is(.section-head,.content-head,.intro-head) :is(p,.lede,.copy,.description) {
-  color: rgba(246,239,222,.92) !important;
-  -webkit-text-fill-color: rgba(246,239,222,.92) !important;
-  text-shadow: 0 2px 12px rgba(0,0,0,.46) !important;
+  color: rgba(246,239,222,.96) !important;
+  -webkit-text-fill-color: rgba(246,239,222,.96) !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,.54) !important;
 }
 
+body section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > .sec-head :is(h1,h2,h3,.serif),
+body section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) .sec-head > :is(h1,h2,h3,.serif),
+body section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > :is(.section-head,.content-head,.intro-head) :is(h1,h2,h3,.serif),
 body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > .sec-head :is(h1,h2,h3,.serif),
 body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) .sec-head > :is(h1,h2,h3,.serif),
 body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > :is(.section-head,.content-head,.intro-head) :is(h1,h2,h3,.serif) {
   color: #f6efde !important;
   -webkit-text-fill-color: #f6efde !important;
-  text-shadow: 0 2px 14px rgba(0,0,0,.42) !important;
+  text-shadow: 0 2px 14px rgba(0,0,0,.48) !important;
+}
+
+/* Known visual regression sentinel: Café da Manhã / O que servimos */
+body[data-screen-label="Café da Manhã"] #o-que-servimos .sec-head p.lede {
+  color: rgba(246,239,222,.98) !important;
+  -webkit-text-fill-color: rgba(246,239,222,.98) !important;
+  text-shadow: 0 2px 14px rgba(0,0,0,.58) !important;
 }
 
 /* Final light card paragraph lock: evita texto areia/claro em cards claros. */
