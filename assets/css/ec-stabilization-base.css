@@ -1,3 +1,5 @@
+@import url('/assets/css/ec-contrast-hotfix.css');
+
 /* Embaixada Carioca — Stabilization Base CSS
    Phase 1: consolidate urgent visual/readability/performance-safe overrides.
    This file is intentionally small and should replace scattered emergency overrides over time. */
