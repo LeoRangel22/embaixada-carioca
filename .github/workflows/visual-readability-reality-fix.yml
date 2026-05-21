@@ -6,6 +6,7 @@ on:
     branches: [master]
     paths:
       - 'scripts/apply_visual_readability_reality_fix.py'
+      - 'scripts/apply_visual_readability_reality_fix_v2.py'
       - '.github/workflows/visual-readability-reality-fix.yml'
 
 permissions:
@@ -19,8 +20,8 @@ jobs:
         uses: actions/checkout@v6
         with:
           ref: ${{ github.ref_name }}
-      - name: Run visual readability reality fix
-        run: python3 scripts/apply_visual_readability_reality_fix.py
+      - name: Run visual readability reality fix v2
+        run: python3 scripts/apply_visual_readability_reality_fix_v2.py
       - name: Run final 86-page AAA master audit
         run: python3 scripts/apply_final_86page_aaa_master_audit.py
       - name: Commit changes and reports
