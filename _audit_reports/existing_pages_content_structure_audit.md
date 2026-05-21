@@ -15,14 +15,14 @@ Scope: current pages only. No new landing pages were created.
 - Alt non-strategic: 0
 - Strategic internal links: PASS
 - WARN: high repeated phrase signals:
-  - morro da urca: 94 uses (12.5/1k words)
-  - pão de açúcar: 132 uses (17.55/1k words)
-  - parque bondinho: 54 uses (7.18/1k words)
-  - vista para o pão de açúcar: 13 uses (1.73/1k words)
+  - morro da urca: 94 uses (12.51/1k words)
+  - pão de açúcar: 131 uses (17.43/1k words)
+  - parque bondinho: 54 uses (7.19/1k words)
+  - vista para o pão de açúcar: 12 uses (1.6/1k words)
   - café da manhã com vista: 12 uses (1.6/1k words)
-  - restaurante no morro da urca: 8 uses (1.06/1k words)
-  - rio de janeiro: 64 uses (8.51/1k words)
-  - embaixada carioca: 77 uses (10.24/1k words)
+  - restaurante no morro da urca: 9 uses (1.2/1k words)
+  - rio de janeiro: 64 uses (8.52/1k words)
+  - embaixada carioca: 77 uses (10.25/1k words)
 
 ## cafe-da-manha.html
 - CSS consolidated link: already present
