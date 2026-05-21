@@ -1,0 +1,216 @@
+/* Embaixada Carioca — Global Light Background Contrast Hotfix
+   Corrige regressões visuais: texto claro herdado dentro de cards e áreas claras.
+   Escopo: força texto escuro apenas em blocos claros, preservando áreas hero/escuras. */
+
+:root {
+  --ec-hotfix-blue: #00405a;
+  --ec-hotfix-green: #335d4a;
+  --ec-hotfix-gray: #485156;
+  --ec-hotfix-gold: #9a6500;
+  --ec-hotfix-paper: #f6efde;
+  --ec-hotfix-sand: #ede2c9;
+}
+
+/* Blocos claros conhecidos do site */
+body :is(
+  .light-section,
+  .paper-section,
+  .section-paper,
+  .bg-paper,
+  .card-light,
+  .card,
+  .box,
+  .faq-item,
+  .faq-card,
+  .info-card,
+  .content-card,
+  .copy-card,
+  .route-card,
+  .guide-card,
+  .place-card,
+  .beach-card,
+  .experience-card,
+  .geo-card,
+  .direct-answer-card,
+  .ec-r2d2-card,
+  .ec-final-geo-card,
+  .ec-final-geo-answer,
+  .ec-sprint4-faq details,
+  .ec-strategic-links,
+  .access-direct,
+  .access-section,
+  .access-faq,
+  .menu-section,
+  .menu-item,
+  [class*="card"],
+  [class*="Card"],
+  [class*="box"],
+  [class*="Box"]
+) {
+  text-shadow: none !important;
+}
+
+body :is(
+  .light-section,
+  .paper-section,
+  .section-paper,
+  .bg-paper,
+  .card-light,
+  .card,
+  .box,
+  .faq-item,
+  .faq-card,
+  .info-card,
+  .content-card,
+  .copy-card,
+  .route-card,
+  .guide-card,
+  .place-card,
+  .beach-card,
+  .experience-card,
+  .geo-card,
+  .direct-answer-card,
+  .ec-r2d2-card,
+  .ec-final-geo-card,
+  .ec-final-geo-answer,
+  .ec-sprint4-faq details,
+  .ec-strategic-links,
+  .access-direct,
+  .access-section,
+  .access-faq,
+  .menu-section,
+  .menu-item,
+  [class*="card"],
+  [class*="Card"],
+  [class*="box"],
+  [class*="Box"]
+) :is(h1,h2,h3,h4,h5,h6,.title,.headline,.section-title,.card-title) {
+  color: var(--ec-hotfix-green) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-green) !important;
+  text-shadow: none !important;
+}
+
+body :is(
+  .light-section,
+  .paper-section,
+  .section-paper,
+  .bg-paper,
+  .card-light,
+  .card,
+  .box,
+  .faq-item,
+  .faq-card,
+  .info-card,
+  .content-card,
+  .copy-card,
+  .route-card,
+  .guide-card,
+  .place-card,
+  .beach-card,
+  .experience-card,
+  .geo-card,
+  .direct-answer-card,
+  .ec-r2d2-card,
+  .ec-final-geo-card,
+  .ec-final-geo-answer,
+  .ec-sprint4-faq details,
+  .ec-strategic-links,
+  .access-direct,
+  .access-section,
+  .access-faq,
+  .menu-section,
+  .menu-item,
+  [class*="card"],
+  [class*="Card"],
+  [class*="box"],
+  [class*="Box"]
+) :is(p,li,span,small,summary,dd,dt,.lede,.copy,.description,.card-copy) {
+  color: var(--ec-hotfix-gray) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-gray) !important;
+  text-shadow: none !important;
+}
+
+body :is(
+  .light-section,
+  .paper-section,
+  .section-paper,
+  .bg-paper,
+  .card-light,
+  .card,
+  .box,
+  .faq-item,
+  .faq-card,
+  .info-card,
+  .content-card,
+  .copy-card,
+  .route-card,
+  .guide-card,
+  .place-card,
+  .beach-card,
+  .experience-card,
+  .geo-card,
+  .direct-answer-card,
+  .ec-r2d2-card,
+  .ec-final-geo-card,
+  .ec-final-geo-answer,
+  .ec-sprint4-faq details,
+  .ec-strategic-links,
+  .access-direct,
+  .access-section,
+  .access-faq,
+  .menu-section,
+  .menu-item,
+  [class*="card"],
+  [class*="Card"],
+  [class*="box"],
+  [class*="Box"]
+) :is(a:not(.btn),strong,b,.kicker,.eyebrow,.tag) {
+  color: var(--ec-hotfix-gold) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-gold) !important;
+  text-shadow: none !important;
+}
+
+/* Captura blocos claros feitos com style inline, como os cards do Guia do Rio. */
+body :is(section,article,div,li)[style*="background"]:is([style*="#fff"],[style*="white"],[style*="#f6efde"],[style*="#ede2c9"],[style*="246,239,222"],[style*="237,226,201"]) {
+  color: var(--ec-hotfix-blue) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-blue) !important;
+  text-shadow: none !important;
+}
+
+body :is(section,article,div,li)[style*="background"]:is([style*="#fff"],[style*="white"],[style*="#f6efde"],[style*="#ede2c9"],[style*="246,239,222"],[style*="237,226,201"]) :is(h1,h2,h3,h4,h5,h6,.title,.headline) {
+  color: var(--ec-hotfix-green) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-green) !important;
+  text-shadow: none !important;
+}
+
+body :is(section,article,div,li)[style*="background"]:is([style*="#fff"],[style*="white"],[style*="#f6efde"],[style*="#ede2c9"],[style*="246,239,222"],[style*="237,226,201"]) :is(p,li,span,small,.lede,.copy,.description) {
+  color: var(--ec-hotfix-gray) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-gray) !important;
+  text-shadow: none !important;
+}
+
+/* Guia do Rio: cards de roteiro/praias/pontos turísticos precisam ser legíveis em fundo claro. */
+body[data-screen-label="Guia do Rio"] main :is(article,section,div,li):not(.hero):not(.page-hero):not(.nav-drawer):not(.wa-preview) :is(h1,h2,h3,h4,p,li,span,small) {
+  text-shadow: none !important;
+}
+
+body[data-screen-label="Guia do Rio"] main :is(.card,.box,.guide-card,.place-card,.beach-card,.experience-card,.route-card,[class*="card"],[class*="box"]) :is(h1,h2,h3,h4,.title,.headline) {
+  color: var(--ec-hotfix-green) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-green) !important;
+}
+
+body[data-screen-label="Guia do Rio"] main :is(.card,.box,.guide-card,.place-card,.beach-card,.experience-card,.route-card,[class*="card"],[class*="box"]) :is(p,li,span,small,.copy,.description) {
+  color: var(--ec-hotfix-gray) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-gray) !important;
+}
+
+/* Café da manhã: mesma proteção em cards e blocos claros. */
+body[data-screen-label="Café da Manhã"] main :is(.card,.box,.info-card,.content-card,.copy-card,[class*="card"],[class*="box"]) :is(h1,h2,h3,h4,.title,.headline) {
+  color: var(--ec-hotfix-green) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-green) !important;
+}
+
+body[data-screen-label="Café da Manhã"] main :is(.card,.box,.info-card,.content-card,.copy-card,[class*="card"],[class*="box"]) :is(p,li,span,small,.lede,.copy,.description) {
+  color: var(--ec-hotfix-gray) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-gray) !important;
+}
