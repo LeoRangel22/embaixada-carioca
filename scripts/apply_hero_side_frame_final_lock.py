@@ -7,6 +7,8 @@ It inserts or replaces the final lock before </body> so it loads after page-leve
 Important visual rule:
 - The outer .ec-page-hero-side-frame may have a translucent dark glass background.
 - The inner .hmc blocks must NOT receive solid blue backgrounds.
+
+Trigger note: 2026-05-21 visual contrast audit rerun.
 """
 from __future__ import annotations
 
