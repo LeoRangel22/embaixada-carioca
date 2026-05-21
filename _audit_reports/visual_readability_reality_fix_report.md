@@ -17,8 +17,8 @@ Corrigir problemas visuais reais de contraste, especialmente o cardápio com tí
 
 ## Contadores
 - html_scanned: 83
-- html_updated: 83
-- css_js_injected: 83
+- html_updated: 0
+- css_js_injected: 0
 - invalid_rgba_fixed: 0
 - audit_pass: 83
 - audit_warn: 0
