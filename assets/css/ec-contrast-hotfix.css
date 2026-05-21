@@ -11,6 +11,19 @@
   --ec-hotfix-sand: #ede2c9;
 }
 
+/* DARK HERO / BLUE AREAS: text must be light. */
+body[data-screen-label="Café da Manhã"] :is(header.hero,header.page-hero,.hero,.page-hero) :is(p,.lede,.copy,.description,.hero-sub) {
+  color: rgba(246,239,222,.94) !important;
+  -webkit-text-fill-color: rgba(246,239,222,.94) !important;
+  text-shadow: 0 2px 14px rgba(0,0,0,.48) !important;
+}
+
+body[data-screen-label="Café da Manhã"] :is(header.hero,header.page-hero,.hero,.page-hero) :is(h1,h2,h3,.eyebrow,.kicker,.hero-kicker) {
+  color: #f6efde !important;
+  -webkit-text-fill-color: #f6efde !important;
+  text-shadow: 0 3px 18px rgba(0,0,0,.56) !important;
+}
+
 /* Blocos claros conhecidos do site */
 body :is(
   .light-section,
