@@ -1,0 +1,42 @@
+name: Visual contrast risk audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'scripts/audit_visual_contrast_risks.py'
+      - 'assets/css/ec-contrast-hotfix.css'
+      - 'assets/css/ec-stabilization-base.css'
+      - 'index.html'
+      - 'cafe-da-manha.html'
+      - 'almoco.html'
+      - 'cardapio.html'
+      - 'como-chegar.html'
+      - 'eventos.html'
+      - 'guia-do-rio.html'
+      - '.github/workflows/visual-contrast-risk-audit.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  visual-contrast-risk-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run visual contrast risk audit
+        run: python3 scripts/audit_visual_contrast_risks.py
+
+      - name: Show visual contrast risk report
+        run: |
+          echo '--- visual_contrast_risk_audit.md ---'
+          cat _audit_reports/visual_contrast_risk_audit.md
+
+      - name: Commit visual contrast risk report
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'audit: update visual contrast risk report'
+          file_pattern: _audit_reports/visual_contrast_risk_audit.md
