@@ -63,8 +63,8 @@ html body nav.top .nav-links.nav-links a.active::after {
 @media (min-width: 961px) {
   html body header.hero.hero .hero-content .eyebrow.hero-eyebrow,
   html body header.page-hero.page-hero .page-hero-content .eyebrow.hero-eyebrow {
-    left: clamp(170px, 10.9vw, 210px) !important;
-    transform: translate(0, -6px) !important;
+    left: calc(clamp(170px, 10.9vw, 210px) + 5px) !important;
+    transform: translate(0, -3px) !important;
   }
 }
 
