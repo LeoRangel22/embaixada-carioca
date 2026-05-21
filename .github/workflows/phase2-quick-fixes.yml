@@ -1,0 +1,74 @@
+name: Phase 2 quick fixes
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/phase2-quick-fixes.yml'
+      - 'scripts/audit_phase2_performance_seo.py'
+
+permissions:
+  contents: write
+
+jobs:
+  phase2-quick-fixes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Apply safe Phase 2 quick fixes
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+from pathlib import Path
+
+report = Path('_audit_reports/phase2_quick_fixes_report.md')
+report.parent.mkdir(parents=True, exist_ok=True)
+lines = ['# Phase 2 Quick Fixes Report', '']
+
+# 1) Home title: reduce from 76 chars to safer SEO/SERP length, preserve intent.
+path = Path('index.html')
+text = path.read_text(encoding='utf-8')
+old = 'Restaurante Morro da Urca com Vista para o Pão de Açúcar | Embaixada Carioca'
+new = 'Restaurante no Morro da Urca | Embaixada Carioca'
+if old in text:
+    text = text.replace(old, new)
+    path.write_text(text, encoding='utf-8')
+    lines.append('- index.html: title reduced to safer SERP length')
+else:
+    lines.append('- index.html: title target not found or already fixed')
+
+# 2) Guardrails: verify critical assets still present.
+checks = {
+    'index.html has reservation CTA': 'tagme' in text.lower() or 'reserv' in text.lower(),
+    'index.html has JSON-LD': 'application/ld+json' in text,
+    'index.html has canonical': 'rel="canonical"' in text,
+    'index.html keeps stabilization CSS': 'ec-stabilization-base.css' in text,
+}
+for label, ok in checks.items():
+    lines.append(f"- {label}: {'PASS' if ok else 'FAIL'}")
+
+report.write_text('\n'.join(lines), encoding='utf-8')
+print('\n'.join(lines))
+PY
+
+      - name: Run Phase 2 performance SEO audit
+        run: python3 scripts/audit_phase2_performance_seo.py
+
+      - name: Show reports
+        run: |
+          cat _audit_reports/phase2_quick_fixes_report.md
+          echo '---'
+          cat _audit_reports/phase2_performance_seo_audit.md
+
+      - name: Commit Phase 2 quick fixes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'fix: apply phase 2 quick SEO fixes'
+          file_pattern: >-
+            index.html
+            _audit_reports/phase2_quick_fixes_report.md
+            _audit_reports/phase2_performance_seo_audit.md
