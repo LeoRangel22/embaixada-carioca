@@ -7,7 +7,9 @@ on:
     paths:
       - 'scripts/fix_existing_pages_content_structure.py'
       - 'scripts/audit_existing_pages_content_structure.py'
+      - 'scripts/audit_visual_contrast_risks.py'
       - 'assets/css/ec-stabilization-base.css'
+      - 'assets/css/ec-contrast-hotfix.css'
       - '.github/workflows/fase1-content-structure-fix.yml'
 
 permissions:
@@ -23,18 +25,26 @@ jobs:
       - name: Run Phase 1 fixer
         run: python3 scripts/fix_existing_pages_content_structure.py
 
-      - name: Run Phase 1 audit after fixes
+      - name: Run Phase 1 content audit after fixes
         run: python3 scripts/audit_existing_pages_content_structure.py
+
+      - name: Run visual contrast risk audit
+        run: python3 scripts/audit_visual_contrast_risks.py
 
       - name: Show fix report
         run: |
           echo '--- existing_pages_content_structure_fix_report.md ---'
           cat _audit_reports/existing_pages_content_structure_fix_report.md
 
-      - name: Show audit report
+      - name: Show content audit report
         run: |
           echo '--- existing_pages_content_structure_audit.md ---'
           cat _audit_reports/existing_pages_content_structure_audit.md
+
+      - name: Show visual contrast risk report
+        run: |
+          echo '--- visual_contrast_risk_audit.md ---'
+          cat _audit_reports/visual_contrast_risk_audit.md
 
       - name: Commit Phase 1 structural fixes
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -50,3 +60,4 @@ jobs:
             guia-do-rio.html
             _audit_reports/existing_pages_content_structure_fix_report.md
             _audit_reports/existing_pages_content_structure_audit.md
+            _audit_reports/visual_contrast_risk_audit.md
