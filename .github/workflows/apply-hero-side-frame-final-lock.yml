@@ -1,4 +1,5 @@
 name: Apply hero side frame final lock
+# manual trigger refresh: hero side frame contrast closeout
 
 on:
   workflow_dispatch:
