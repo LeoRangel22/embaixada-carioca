@@ -1,11 +1,11 @@
 # Hero Side Frame Final Lock Report
 
-- index.html: final lock replaced
-- cafe-da-manha.html: final lock replaced
-- almoco.html: final lock replaced
-- cardapio.html: final lock replaced
-- como-chegar.html: final lock replaced
-- eventos.html: final lock replaced
-- guia-do-rio.html: final lock replaced
+- index.html: already present
+- cafe-da-manha.html: already present
+- almoco.html: already present
+- cardapio.html: already present
+- como-chegar.html: already present
+- eventos.html: already present
+- guia-do-rio.html: already present
 
-Changed pages: 7
+Changed pages: 0
