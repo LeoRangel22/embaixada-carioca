@@ -1,0 +1,52 @@
+name: Phase 1 content structure fix
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'scripts/fix_existing_pages_content_structure.py'
+      - 'scripts/audit_existing_pages_content_structure.py'
+      - 'assets/css/ec-stabilization-base.css'
+      - '.github/workflows/fase1-content-structure-fix.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix-and-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Phase 1 fixer
+        run: python3 scripts/fix_existing_pages_content_structure.py
+
+      - name: Run Phase 1 audit after fixes
+        run: python3 scripts/audit_existing_pages_content_structure.py
+
+      - name: Show fix report
+        run: |
+          echo '--- existing_pages_content_structure_fix_report.md ---'
+          cat _audit_reports/existing_pages_content_structure_fix_report.md
+
+      - name: Show audit report
+        run: |
+          echo '--- existing_pages_content_structure_audit.md ---'
+          cat _audit_reports/existing_pages_content_structure_audit.md
+
+      - name: Commit Phase 1 structural fixes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'fix: apply phase 1 content structure stabilization'
+          file_pattern: >-
+            index.html
+            cafe-da-manha.html
+            almoco.html
+            cardapio.html
+            como-chegar.html
+            eventos.html
+            guia-do-rio.html
+            _audit_reports/existing_pages_content_structure_fix_report.md
+            _audit_reports/existing_pages_content_structure_audit.md
