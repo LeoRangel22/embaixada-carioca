@@ -1,53 +1,99 @@
-/* Embaixada Carioca — Visible Text Color Lock */
-:root{--ec-visible-blue:#00405a;--ec-visible-gray:#485156;--ec-visible-gold:#9a6500;}
+/* Embaixada Carioca — Visible Text Lock
+   Pontual para o card de Como Chegar e para o texto claro da Home.
+   Carregado via ec-stabilization-base.css. */
 
-html body[data-screen-label="Como Chegar"] main .access-direct.access-direct .box.box h2,
-html body[data-screen-label="Como Chegar"] main .access-fact.access-fact h3,
-html body[data-screen-label="Como Chegar"] main .access-route.access-route h3,
-html body[data-screen-label="Como Chegar"] main .access-section.access-section > .wrap > h2,
-html body[data-screen-label="Como Chegar"] main .access-faq.access-faq h2,
-html body[data-screen-label="Como Chegar"] main .access-faq.access-faq summary{
+:root{
+  --ec-visible-blue:#00405a;
+  --ec-visible-gray:#485156;
+  --ec-visible-gold:#9a6500;
+  --ec-visible-card:#fffaf0;
+}
+
+/* Como Chegar — card Resposta Direta */
+body[data-screen-label="Como Chegar"][data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box{
+  background:var(--ec-visible-card)!important;
   color:var(--ec-visible-blue)!important;
   -webkit-text-fill-color:var(--ec-visible-blue)!important;
   opacity:1!important;
   visibility:visible!important;
+  filter:none!important;
   text-shadow:none!important;
+  mix-blend-mode:normal!important;
+  position:relative!important;
+  z-index:5!important;
 }
 
-html body[data-screen-label="Como Chegar"] main .access-direct.access-direct .box.box p,
-html body[data-screen-label="Como Chegar"] main .access-fact.access-fact p,
-html body[data-screen-label="Como Chegar"] main .access-route.access-route p,
-html body[data-screen-label="Como Chegar"] main .access-faq.access-faq p{
-  color:var(--ec-visible-gray)!important;
-  -webkit-text-fill-color:var(--ec-visible-gray)!important;
+body[data-screen-label="Como Chegar"][data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box::before,
+body[data-screen-label="Como Chegar"][data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box::after,
+body[data-screen-label="Como Chegar"][data-screen-label="Como Chegar"] main .access-fact.access-fact.access-fact::before,
+body[data-screen-label="Como Chegar"][data-screen-label="Como Chegar"] main .access-fact.access-fact.access-fact::after{
+  display:none!important;
+  opacity:0!important;
+  content:none!important;
+}
+
+body[data-screen-label="Como Chegar"][data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box .kicker.kicker,
+body[data-screen-label="Como Chegar"][data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box h2,
+body[data-screen-label="Como Chegar"][data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box p,
+body[data-screen-label="Como Chegar"][data-screen-label="Como Chegar"] main .access-fact.access-fact.access-fact h3,
+body[data-screen-label="Como Chegar"][data-screen-label="Como Chegar"] main .access-fact.access-fact.access-fact p{
+  display:block!important;
   opacity:1!important;
   visibility:visible!important;
+  filter:none!important;
   text-shadow:none!important;
+  mix-blend-mode:normal!important;
+  background-image:none!important;
+  background-color:transparent!important;
+  -webkit-background-clip:border-box!important;
+  background-clip:border-box!important;
+  -webkit-text-stroke:0!important;
+  position:relative!important;
+  z-index:20!important;
 }
 
-html body[data-screen-label="Como Chegar"] main .access-direct.access-direct .box.box .kicker,
-html body[data-screen-label="Como Chegar"] main .access-faq.access-faq .kicker{
+body[data-screen-label="Como Chegar"][data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box h2,
+body[data-screen-label="Como Chegar"][data-screen-label="Como Chegar"] main .access-fact.access-fact.access-fact h3{
+  color:var(--ec-visible-blue)!important;
+  -webkit-text-fill-color:var(--ec-visible-blue)!important;
+}
+
+body[data-screen-label="Como Chegar"][data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box p,
+body[data-screen-label="Como Chegar"][data-screen-label="Como Chegar"] main .access-fact.access-fact.access-fact p{
+  color:var(--ec-visible-gray)!important;
+  -webkit-text-fill-color:var(--ec-visible-gray)!important;
+}
+
+body[data-screen-label="Como Chegar"][data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box .kicker.kicker{
   color:var(--ec-visible-gold)!important;
   -webkit-text-fill-color:var(--ec-visible-gold)!important;
-  opacity:1!important;
-  visibility:visible!important;
-  text-shadow:none!important;
 }
 
-html body[data-screen-label="Home"] header.hero.hero h1,
-html body[data-screen-label="Home"] header.hero.hero h1 *{
+/* Home — texto claro sobre fundo claro */
+body[data-screen-label="Home"][data-screen-label="Home"] header.hero.hero h1,
+body[data-screen-label="Home"][data-screen-label="Home"] header.hero.hero h1 *{
   color:var(--ec-visible-blue)!important;
   -webkit-text-fill-color:var(--ec-visible-blue)!important;
   opacity:1!important;
   visibility:visible!important;
+  filter:none!important;
   text-shadow:none!important;
+  mix-blend-mode:normal!important;
+  background-image:none!important;
+  -webkit-background-clip:border-box!important;
+  background-clip:border-box!important;
 }
 
-html body[data-screen-label="Home"] header.hero.hero .hero-sub,
-html body[data-screen-label="Home"] header.hero.hero .hero-sub *{
+body[data-screen-label="Home"][data-screen-label="Home"] header.hero.hero .hero-sub,
+body[data-screen-label="Home"][data-screen-label="Home"] header.hero.hero .hero-sub *{
   color:var(--ec-visible-gray)!important;
   -webkit-text-fill-color:var(--ec-visible-gray)!important;
   opacity:1!important;
   visibility:visible!important;
+  filter:none!important;
   text-shadow:none!important;
+  mix-blend-mode:normal!important;
+  background-image:none!important;
+  -webkit-background-clip:border-box!important;
+  background-clip:border-box!important;
 }
