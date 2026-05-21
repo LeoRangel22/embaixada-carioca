@@ -908,4 +908,64 @@ html body main .btn-secondary:hover,html body main a.btn-secondary:hover,html bo
 @media(max-width:760px){html body main .dish-card .photo-ph{min-height:230px;}html body main .dish-card.featured .photo-ph{min-height:270px;}}
 </style>
 <!-- /EC Lunch Photos + Global Readability Hardfix -->
+<!-- EC Visual Readability Reality Fix -->
+<style id="ec-visual-readability-reality-fix">
+/* VISUAL REALITY FIX V2 — correção final de contraste observada no navegador.
+   Card claro = texto escuro. Cardápio = nome do prato em verde escuro. */
+:root{--ec-vr-blue:#00405a;--ec-vr-green:#335d4a;--ec-vr-yellow:#f59b1e;--ec-vr-sand:#ede2c9;--ec-vr-paper:#f6efde;--ec-vr-gray:#485156;--ec-vr-price:#9a6500;}
+html body main *{-webkit-text-fill-color:currentColor!important;}
+
+/* CARDÁPIO — prioridade máxima */
+html body main :is(.menu-section,.menu-grid) .menu-item,html body main .menu-item{background:var(--ec-vr-sand)!important;color:var(--ec-vr-gray)!important;border-color:rgba(0,64,90,.16)!important;}
+html body main :is(.menu-section,.menu-grid) .menu-item :is(h1,h2,h3,h4,.menu-item-name,.item-name,.dish-name,.title,.card-title),html body main .menu-item :is(h1,h2,h3,h4,.menu-item-name,.item-name,.dish-name,.title,.card-title){color:var(--ec-vr-green)!important;-webkit-text-fill-color:var(--ec-vr-green)!important;font-weight:900!important;text-shadow:none!important;opacity:1!important;}
+html body main :is(.menu-section,.menu-grid) .menu-item :is(p,li,span,small,.menu-item-desc,.item-desc,.description,.copy),html body main .menu-item :is(p,li,span,small,.menu-item-desc,.item-desc,.description,.copy){color:var(--ec-vr-gray)!important;-webkit-text-fill-color:var(--ec-vr-gray)!important;text-shadow:none!important;opacity:1!important;}
+html body main :is(.menu-section,.menu-grid) .menu-item :is(.price,.menu-item-price,.item-price),html body main .menu-item :is(.price,.menu-item-price,.item-price){color:var(--ec-vr-price)!important;-webkit-text-fill-color:var(--ec-vr-price)!important;font-weight:900!important;text-shadow:none!important;}
+html body main .menu-item :is(.tag,.badge,.kicker){color:var(--ec-vr-blue)!important;-webkit-text-fill-color:var(--ec-vr-blue)!important;text-shadow:none!important;}
+html body main .menu-item :is(.tag.win,.badge.win,.premiada,.premiado){background:var(--ec-vr-yellow)!important;color:var(--ec-vr-blue)!important;-webkit-text-fill-color:var(--ec-vr-blue)!important;}
+
+/* Cards claros de conteúdo — leitura obrigatória */
+html body main :is(.card,.box,.guide-card,.place-card,.beach-card,.route-card,.access-card,.access-fact,.access-route,.faq-card,.faq-item,.info-card,.content-card,.copy-card,.direct-answer-card,.geo-card,.ec-r2d2-card,.ec-final-geo-card,.ec-final-geo-faq details,.ec-sprint4-faq details){background-color:var(--ec-vr-paper)!important;color:var(--ec-vr-gray)!important;border-color:rgba(0,64,90,.14)!important;}
+html body main :is(.card,.box,.guide-card,.place-card,.beach-card,.route-card,.access-card,.access-fact,.access-route,.faq-card,.faq-item,.info-card,.content-card,.copy-card,.direct-answer-card,.geo-card,.ec-r2d2-card,.ec-final-geo-card,.ec-final-geo-faq details,.ec-sprint4-faq details) :is(h1,h2,h3,h4,h5,h6,.title,.card-title){color:var(--ec-vr-blue)!important;-webkit-text-fill-color:var(--ec-vr-blue)!important;font-weight:850!important;text-shadow:none!important;opacity:1!important;}
+html body main :is(.card,.box,.guide-card,.place-card,.beach-card,.route-card,.access-card,.access-fact,.access-route,.faq-card,.faq-item,.info-card,.content-card,.copy-card,.direct-answer-card,.geo-card,.ec-r2d2-card,.ec-final-geo-card,.ec-final-geo-faq details,.ec-sprint4-faq details) :is(p,li,span,small,dd,dt,summary,.copy,.description){color:var(--ec-vr-gray)!important;-webkit-text-fill-color:var(--ec-vr-gray)!important;text-shadow:none!important;opacity:1!important;}
+html body main :is(.card,.box,.guide-card,.place-card,.beach-card,.route-card,.access-card,.access-fact,.access-route,.faq-card,.faq-item,.info-card,.content-card,.copy-card,.direct-answer-card,.geo-card,.ec-r2d2-card,.ec-final-geo-card,.ec-final-geo-faq details,.ec-sprint4-faq details) :is(strong,b){color:var(--ec-vr-green)!important;-webkit-text-fill-color:var(--ec-vr-green)!important;}
+html body main :is(.card,.box,.guide-card,.place-card,.beach-card,.route-card,.access-card,.access-fact,.access-route,.faq-card,.faq-item,.info-card,.content-card,.copy-card,.direct-answer-card,.geo-card,.ec-r2d2-card,.ec-final-geo-card,.ec-final-geo-faq details,.ec-sprint4-faq details) a:not(.btn):not(.btn-secondary){color:#b76f00!important;-webkit-text-fill-color:#b76f00!important;}
+
+/* Áreas escuras sem card */
+html body main section:not(.menu-section):not(.gallery-section):not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.ec-final-geo-answer) :is(p,li,span,small,dd,dt,.lede,.copy,.description){color:rgba(246,239,222,.90)!important;-webkit-text-fill-color:rgba(246,239,222,.90)!important;opacity:1!important;text-shadow:none!important;}
+html body main section:not(.menu-section):not(.gallery-section):not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.ec-final-geo-answer) :is(h1,h2,h3,h4,h5,h6){color:var(--ec-vr-paper)!important;-webkit-text-fill-color:var(--ec-vr-paper)!important;opacity:1!important;text-shadow:none!important;}
+
+/* Galerias/captions em fundo branco */
+html body main .gallery-section :is(figure,figcaption,.caption){background:#fff!important;color:var(--ec-vr-gray)!important;-webkit-text-fill-color:var(--ec-vr-gray)!important;}
+
+/* Botões principais */
+html body main a.btn[href*="tagme"],html body main a.btn[href*="reserv"],nav.top a.btn[href*="tagme"]{background:var(--ec-vr-yellow)!important;border-color:var(--ec-vr-yellow)!important;color:var(--ec-vr-blue)!important;-webkit-text-fill-color:var(--ec-vr-blue)!important;}
+</style>
+<script id="ec-visual-readability-reality-js">
+(function(){
+  function setImportant(el, prop, val){ if(el && el.style) el.style.setProperty(prop, val, 'important'); }
+  function fixMenu(){
+    document.querySelectorAll('main .menu-item h1, main .menu-item h2, main .menu-item h3, main .menu-item h4, main .menu-item .menu-item-name, main .menu-item .item-name, main .menu-item .dish-name, main .menu-item .title, main .menu-item .card-title').forEach(function(el){
+      setImportant(el,'color','#335d4a');
+      setImportant(el,'-webkit-text-fill-color','#335d4a');
+      setImportant(el,'text-shadow','none');
+      setImportant(el,'opacity','1');
+      setImportant(el,'font-weight','900');
+    });
+    document.querySelectorAll('main .menu-item p, main .menu-item .menu-item-desc, main .menu-item .item-desc, main .menu-item .description, main .menu-item small').forEach(function(el){
+      setImportant(el,'color','#485156');
+      setImportant(el,'-webkit-text-fill-color','#485156');
+      setImportant(el,'text-shadow','none');
+      setImportant(el,'opacity','1');
+    });
+    document.querySelectorAll('main .menu-item .price, main .menu-item .menu-item-price, main .menu-item .item-price').forEach(function(el){
+      setImportant(el,'color','#9a6500');
+      setImportant(el,'-webkit-text-fill-color','#9a6500');
+      setImportant(el,'font-weight','900');
+    });
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fixMenu, {once:true}); else fixMenu();
+  window.addEventListener('load', fixMenu, {once:true});
+})();
+</script>
+<!-- /EC Visual Readability Reality Fix -->
 </body></html>
