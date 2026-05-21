@@ -26,27 +26,36 @@ img {
   height: auto;
 }
 
-/* Nav underline must underline the menu word, not float as a separate trace. */
+/* Nav underline: hidden by default; animates only on hover/focus as a real word underline. */
 html body nav.top nav.nav-links a::after,
 html body nav.top .nav-links.nav-links a::after,
 html body header nav.top .nav-links.nav-links a::after {
   left: 0 !important;
   right: auto !important;
   bottom: -7px !important;
-  width: 100% !important;
+  width: 0 !important;
   max-width: 100% !important;
-  min-width: 100% !important;
+  min-width: 0 !important;
   height: 2px !important;
   transform: none !important;
+  transform-origin: left center !important;
+  opacity: 0 !important;
   background: var(--ec-yellow) !important;
+  transition: width .22s ease, opacity .18s ease !important;
 }
 html body nav.top nav.nav-links a:hover::after,
 html body nav.top .nav-links.nav-links a:hover::after,
-html body nav.top .nav-links.nav-links a[aria-current="page"]::after,
-html body nav.top .nav-links.nav-links a.active::after {
+html body nav.top nav.nav-links a:focus-visible::after,
+html body nav.top .nav-links.nav-links a:focus-visible::after {
   width: 100% !important;
   max-width: 100% !important;
-  min-width: 100% !important;
+  min-width: 0 !important;
+  opacity: 1 !important;
+}
+html body nav.top .nav-links.nav-links a[aria-current="page"]::after,
+html body nav.top .nav-links.nav-links a.active::after {
+  width: 0 !important;
+  opacity: 0 !important;
 }
 
 /* Hero eyebrow/tagline is the line that should move down and left. */
