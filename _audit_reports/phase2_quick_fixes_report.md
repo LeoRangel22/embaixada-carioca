@@ -3,13 +3,13 @@
 - index.html: title already fixed
 - index.html: unsafe home light-background contrast lock not present
 - index.html: light content contrast lock replaced
-- cafe-da-manha.html: light content contrast lock inserted
-- almoco.html: light content contrast lock inserted
-- cardapio.html: light content contrast lock inserted
-- como-chegar.html: light content contrast lock inserted
-- eventos.html: light content contrast lock inserted
-- guia-do-rio.html: light content contrast lock inserted
-- Light lock changed pages: 6
+- cafe-da-manha.html: light content contrast lock replaced
+- almoco.html: light content contrast lock replaced
+- cardapio.html: light content contrast lock replaced
+- como-chegar.html: light content contrast lock replaced
+- eventos.html: light content contrast lock replaced
+- guia-do-rio.html: light content contrast lock replaced
+- Light lock changed pages: 0
 - index.html has reservation CTA: PASS
 - index.html has JSON-LD: PASS
 - index.html has canonical: PASS
