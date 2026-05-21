@@ -6,6 +6,10 @@ It now classifies findings as:
 - PASS/COVERED: pattern is covered by the global contrast hotfix CSS.
 - OPEN: pattern still needs a code/CSS fix.
 - VISUAL_CHECK: covered or ambiguous pattern that must still be confirmed in browser screenshots.
+
+Sentinel included:
+- cafe-da-manha.html / #o-que-servimos .sec-head p.lede
+  This exact text was visually confirmed as too dark on a dark-blue background.
 """
 from __future__ import annotations
 
@@ -26,6 +30,9 @@ PAGES = [
     "guia-do-rio.html",
 ]
 
+BREAKFAST_SENTINEL_TEXT = "Do Café da Embaixada para 2 ao açaí orgânico, ovos na chapa e cafés especiais"
+BREAKFAST_SENTINEL_SELECTOR = 'body[data-screen-label="Café da Manhã"] #o-que-servimos .sec-head p.lede'
+
 LOW_CONTRAST_LIGHT_TEXT = ["#ede2c9", "#f6efde", "rgba(237,226,201", "rgba(246,239,222", "rgb(237,226,201", "rgb(246,239,222"]
 LOW_CONTRAST_DARK_TEXT = ["#00405a", "#00202e", "#335d4a", "#485156", "rgba(0,64,90", "rgba(0,32,46", "rgba(72,81,86"]
 LIGHT_BACKGROUND_HINTS = ["#fff", "white", "#f6efde", "#ede2c9", "246,239,222", "237,226,201"]
@@ -35,8 +42,10 @@ IMPORTANT_TEXT_CLASSES = ["lede", "copy", "description", "sec-head", "card", "bo
 HOTFIX_COVERAGE_MARKERS = [
     "FINAL DARK SECTION LOCK",
     "Final light card paragraph lock",
-    "body main :is(.card,.box,.card-light",
+    "body section:not(.light-section)",
     "body main section:not(.light-section)",
+    BREAKFAST_SENTINEL_SELECTOR,
+    "rgba(246,239,222,.98)",
     "ec-hotfix-gray",
     "ec-hotfix-green",
 ]
@@ -81,6 +90,7 @@ class ContrastParser(HTMLParser):
     def inspect_text_node(self, node: dict[str, str], text: str) -> None:
         style_context = " ".join(item.get("style", "") for item in self.ancestors() + [node]).lower()
         class_context = " ".join(item.get("class", "") for item in self.ancestors() + [node]).lower()
+        id_context = " ".join(item.get("id", "") for item in self.ancestors() + [node]).lower()
         is_important = any(c in class_context for c in IMPORTANT_TEXT_CLASSES) or node.get("tag") in {"h1", "h2", "h3", "p"}
         if not is_important:
             return
@@ -89,6 +99,10 @@ class ContrastParser(HTMLParser):
         has_dark_bg = any(h in style_context for h in DARK_BACKGROUND_HINTS) or any(k in class_context for k in ["hero", "dark", "navy"])
         has_light_text = any(c in style_context for c in LOW_CONTRAST_LIGHT_TEXT)
         has_dark_text = any(c in style_context for c in LOW_CONTRAST_DARK_TEXT)
+
+        if "o-que-servimos" in id_context and "sec-head" in class_context and "lede" in class_context and BREAKFAST_SENTINEL_TEXT in text:
+            self.findings.append({"type": "breakfast-lede-sentinel", "tag": node.get("tag", ""), "class": node.get("class", ""), "coverage": "covered-by-breakfast-sentinel-lock", "text": text[:160]})
+            return
 
         if has_light_bg and has_light_text:
             self.findings.append({"type": "light-text-on-light-bg", "tag": node.get("tag", ""), "class": node.get("class", ""), "coverage": "covered-by-light-card-lock", "text": text[:160]})
@@ -105,6 +119,11 @@ def hotfix_has_expected_coverage() -> bool:
     return all(marker in css for marker in HOTFIX_COVERAGE_MARKERS)
 
 
+def breakfast_sentinel_exists() -> bool:
+    html = (ROOT / "cafe-da-manha.html").read_text(encoding="utf-8")
+    return BREAKFAST_SENTINEL_TEXT in html
+
+
 def audit_page(path: Path) -> list[dict[str, str]]:
     parser = ContrastParser()
     parser.feed(path.read_text(encoding="utf-8"))
@@ -114,10 +133,25 @@ def audit_page(path: Path) -> list[dict[str, str]]:
 def main() -> int:
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     hotfix_ok = hotfix_has_expected_coverage()
-    lines = ["# Visual Contrast Risk Audit", "", "Static guardrail for visual contrast regressions in current pages.", "", f"- Global contrast hotfix coverage: {'PASS' if hotfix_ok else 'FAIL'}", ""]
+    sentinel_ok = breakfast_sentinel_exists()
+    lines = [
+        "# Visual Contrast Risk Audit",
+        "",
+        "Static guardrail for visual contrast regressions in current pages.",
+        "",
+        f"- Global contrast hotfix coverage: {'PASS' if hotfix_ok else 'FAIL'}",
+        f"- Breakfast lede sentinel present: {'PASS' if sentinel_ok else 'FAIL'}",
+        f"- Breakfast lede sentinel selector: `{BREAKFAST_SENTINEL_SELECTOR}`",
+        "",
+    ]
     total_findings = 0
     total_open = 0
     total_visual_check = 0
+
+    if not hotfix_ok:
+        total_open += 1
+    if not sentinel_ok:
+        total_open += 1
 
     for filename in PAGES:
         path = ROOT / filename
@@ -134,10 +168,10 @@ def main() -> int:
         elif hotfix_ok:
             total_visual_check += len(findings)
             lines.append(f"- VISUAL_CHECK: {len(findings)} pattern(s) detected but covered by global contrast hotfix")
-            for item in findings[:20]:
+            for item in findings[:24]:
                 lines.append(f"  - {item['coverage']} | {item['type']} | <{item['tag']}> class='{item['class']}' | {item['text']}")
-            if len(findings) > 20:
-                lines.append(f"  - ... +{len(findings) - 20} more")
+            if len(findings) > 24:
+                lines.append(f"  - ... +{len(findings) - 24} more")
         else:
             total_open += len(findings)
             lines.append(f"- OPEN: {len(findings)} uncovered static risk(s)")
