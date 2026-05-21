@@ -1,0 +1,53 @@
+/* Embaixada Carioca — Visible Text Color Lock */
+:root{--ec-visible-blue:#00405a;--ec-visible-gray:#485156;--ec-visible-gold:#9a6500;}
+
+html body[data-screen-label="Como Chegar"] main .access-direct.access-direct .box.box h2,
+html body[data-screen-label="Como Chegar"] main .access-fact.access-fact h3,
+html body[data-screen-label="Como Chegar"] main .access-route.access-route h3,
+html body[data-screen-label="Como Chegar"] main .access-section.access-section > .wrap > h2,
+html body[data-screen-label="Como Chegar"] main .access-faq.access-faq h2,
+html body[data-screen-label="Como Chegar"] main .access-faq.access-faq summary{
+  color:var(--ec-visible-blue)!important;
+  -webkit-text-fill-color:var(--ec-visible-blue)!important;
+  opacity:1!important;
+  visibility:visible!important;
+  text-shadow:none!important;
+}
+
+html body[data-screen-label="Como Chegar"] main .access-direct.access-direct .box.box p,
+html body[data-screen-label="Como Chegar"] main .access-fact.access-fact p,
+html body[data-screen-label="Como Chegar"] main .access-route.access-route p,
+html body[data-screen-label="Como Chegar"] main .access-faq.access-faq p{
+  color:var(--ec-visible-gray)!important;
+  -webkit-text-fill-color:var(--ec-visible-gray)!important;
+  opacity:1!important;
+  visibility:visible!important;
+  text-shadow:none!important;
+}
+
+html body[data-screen-label="Como Chegar"] main .access-direct.access-direct .box.box .kicker,
+html body[data-screen-label="Como Chegar"] main .access-faq.access-faq .kicker{
+  color:var(--ec-visible-gold)!important;
+  -webkit-text-fill-color:var(--ec-visible-gold)!important;
+  opacity:1!important;
+  visibility:visible!important;
+  text-shadow:none!important;
+}
+
+html body[data-screen-label="Home"] header.hero.hero h1,
+html body[data-screen-label="Home"] header.hero.hero h1 *{
+  color:var(--ec-visible-blue)!important;
+  -webkit-text-fill-color:var(--ec-visible-blue)!important;
+  opacity:1!important;
+  visibility:visible!important;
+  text-shadow:none!important;
+}
+
+html body[data-screen-label="Home"] header.hero.hero .hero-sub,
+html body[data-screen-label="Home"] header.hero.hero .hero-sub *{
+  color:var(--ec-visible-gray)!important;
+  -webkit-text-fill-color:var(--ec-visible-gray)!important;
+  opacity:1!important;
+  visibility:visible!important;
+  text-shadow:none!important;
+}
