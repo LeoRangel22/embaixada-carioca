@@ -216,6 +216,95 @@ footer.foot strong,
   -webkit-text-fill-color: var(--ec-yellow) !important;
 }
 
+/* Mobile Lighthouse contrast lock: authority/geo sections and light-background links. */
+section.topic-authority.section-animate,
+section.ec-sprint2-geo,
+section.topic-authority.section-animate p,
+section.ec-sprint2-geo p,
+section.topic-authority.section-animate li,
+section.ec-sprint2-geo li,
+section.topic-authority.section-animate span,
+section.ec-sprint2-geo span,
+div.ec-kicker {
+  color: var(--ec-gray) !important;
+  -webkit-text-fill-color: var(--ec-gray) !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+section.topic-authority.section-animate h1,
+section.topic-authority.section-animate h2,
+section.topic-authority.section-animate h3,
+section.topic-authority.section-animate h4,
+section.ec-sprint2-geo h1,
+section.ec-sprint2-geo h2,
+section.ec-sprint2-geo h3,
+section.ec-sprint2-geo h4,
+div.ec-kicker strong,
+div.ec-kicker b {
+  color: var(--ec-blue) !important;
+  -webkit-text-fill-color: var(--ec-blue) !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+section.topic-authority.section-animate a,
+section.ec-sprint2-geo a,
+.ec-sprint2-geo a,
+.topic-authority a {
+  color: var(--ec-blue) !important;
+  -webkit-text-fill-color: var(--ec-blue) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 0.16em !important;
+  text-decoration-thickness: 1.5px !important;
+  font-weight: 800 !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+section.topic-authority.section-animate .pill,
+section.ec-sprint2-geo .pill,
+section.topic-authority.section-animate .badge,
+section.ec-sprint2-geo .badge {
+  background: rgba(0, 64, 90, 0.08) !important;
+  color: var(--ec-blue) !important;
+  -webkit-text-fill-color: var(--ec-blue) !important;
+  border-color: rgba(0, 64, 90, 0.24) !important;
+}
+
+/* Skip link must be focusable when keyboard users tab into the page. */
+a.skip-nav,
+.skip-nav {
+  position: fixed !important;
+  left: 16px !important;
+  top: 16px !important;
+  z-index: 9999 !important;
+  padding: 12px 16px !important;
+  background: var(--ec-yellow) !important;
+  color: var(--ec-blue) !important;
+  -webkit-text-fill-color: var(--ec-blue) !important;
+  border-radius: 999px !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+  transform: translateY(-140%) !important;
+  transition: transform .18s ease !important;
+}
+
+a.skip-nav:focus,
+a.skip-nav:focus-visible,
+.skip-nav:focus,
+.skip-nav:focus-visible {
+  transform: translateY(0) !important;
+  outline: 3px solid var(--ec-blue) !important;
+  outline-offset: 3px !important;
+}
+
 /* Mobile touch safety */
 a,
 button,
