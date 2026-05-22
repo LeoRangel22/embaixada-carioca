@@ -33,7 +33,7 @@ Wait between attempts: **120s**
 - Attempt 1 — **Priority keywords AIO score audit**: FAIL, score 0.0, command exit 1
   - _audit_reports/priority_keywords_aio_score_audit.md: 0.0; _audit_reports/priority_keywords_aio_score_audit.csv: 58.0; _audit_reports/priority_keywords_aio_score_audit.json: 58.0
 - Attempt 1 — **GSC real organic queries score audit**: FAIL, score 0.0, command exit 1
-  - _audit_reports/gsc_real_queries_score_audit.md: 0.0; _audit_reports/gsc_real_queries_score_audit.csv: 0.0; _audit_reports/gsc_real_queries_score_audit.json: 0.0
+  - _audit_reports/gsc_real_queries_score_audit.md: 0.0; _audit_reports/gsc_real_queries_score_audit.csv: 59.0; _audit_reports/gsc_real_queries_score_audit.json: 59.0
 - Attempt 1 — **Superholistic design UX SEO GEO audit**: PASS, score 92.0, command exit 0
   - _audit_reports/superholistic_design_ux_seo_geo_audit.md: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: 92.0
 - Attempt 2 — **Superholistic visual readability lock**: PASS, score 100.0, command exit 0
@@ -49,7 +49,7 @@ Wait between attempts: **120s**
 - Attempt 2 — **Priority keywords AIO score audit**: FAIL, score 0.0, command exit 1
   - _audit_reports/priority_keywords_aio_score_audit.md: 0.0; _audit_reports/priority_keywords_aio_score_audit.csv: 58.0; _audit_reports/priority_keywords_aio_score_audit.json: 58.0
 - Attempt 2 — **GSC real organic queries score audit**: FAIL, score 0.0, command exit 1
-  - _audit_reports/gsc_real_queries_score_audit.md: 0.0; _audit_reports/gsc_real_queries_score_audit.csv: 0.0; _audit_reports/gsc_real_queries_score_audit.json: 0.0
+  - _audit_reports/gsc_real_queries_score_audit.md: 0.0; _audit_reports/gsc_real_queries_score_audit.csv: 59.0; _audit_reports/gsc_real_queries_score_audit.json: 59.0
 - Attempt 2 — **Superholistic design UX SEO GEO audit**: PASS, score 92.0, command exit 0
   - _audit_reports/superholistic_design_ux_seo_geo_audit.md: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: 92.0
 - Attempt 3 — **Superholistic visual readability lock**: PASS, score 100.0, command exit 0
@@ -65,7 +65,7 @@ Wait between attempts: **120s**
 - Attempt 3 — **Priority keywords AIO score audit**: FAIL, score 0.0, command exit 1
   - _audit_reports/priority_keywords_aio_score_audit.md: 0.0; _audit_reports/priority_keywords_aio_score_audit.csv: 58.0; _audit_reports/priority_keywords_aio_score_audit.json: 58.0
 - Attempt 3 — **GSC real organic queries score audit**: FAIL, score 0.0, command exit 1
-  - _audit_reports/gsc_real_queries_score_audit.md: 0.0; _audit_reports/gsc_real_queries_score_audit.csv: 0.0; _audit_reports/gsc_real_queries_score_audit.json: 0.0
+  - _audit_reports/gsc_real_queries_score_audit.md: 0.0; _audit_reports/gsc_real_queries_score_audit.csv: 59.0; _audit_reports/gsc_real_queries_score_audit.json: 59.0
 - Attempt 3 — **Superholistic design UX SEO GEO audit**: PASS, score 92.0, command exit 0
   - _audit_reports/superholistic_design_ux_seo_geo_audit.md: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: 92.0
 - Attempt 4 — **Superholistic visual readability lock**: PASS, score 100.0, command exit 0
@@ -81,6 +81,6 @@ Wait between attempts: **120s**
 - Attempt 4 — **Priority keywords AIO score audit**: FAIL, score 0.0, command exit 1
   - _audit_reports/priority_keywords_aio_score_audit.md: 0.0; _audit_reports/priority_keywords_aio_score_audit.csv: 58.0; _audit_reports/priority_keywords_aio_score_audit.json: 58.0
 - Attempt 4 — **GSC real organic queries score audit**: FAIL, score 0.0, command exit 1
-  - _audit_reports/gsc_real_queries_score_audit.md: 0.0; _audit_reports/gsc_real_queries_score_audit.csv: 0.0; _audit_reports/gsc_real_queries_score_audit.json: 0.0
+  - _audit_reports/gsc_real_queries_score_audit.md: 0.0; _audit_reports/gsc_real_queries_score_audit.csv: 59.0; _audit_reports/gsc_real_queries_score_audit.json: 59.0
 - Attempt 4 — **Superholistic design UX SEO GEO audit**: PASS, score 92.0, command exit 0
   - _audit_reports/superholistic_design_ux_seo_geo_audit.md: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: 92.0
