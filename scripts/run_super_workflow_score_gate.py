@@ -98,6 +98,16 @@ TASKS = [
         ],
     ),
     AuditTask(
+        name="GSC real organic queries score audit",
+        workflow_file=".github/workflows/super-workflow-score-gate.yml",
+        commands=["python3 scripts/audit_gsc_real_queries_score.py"],
+        reports=[
+            "_audit_reports/gsc_real_queries_score_audit.md",
+            "_audit_reports/gsc_real_queries_score_audit.csv",
+            "_audit_reports/gsc_real_queries_score_audit.json",
+        ],
+    ),
+    AuditTask(
         name="Superholistic design UX SEO GEO audit",
         workflow_file=".github/workflows/super-workflow-score-gate.yml",
         commands=["python3 scripts/superholistic_design_ux_seo_geo_audit.py"],
