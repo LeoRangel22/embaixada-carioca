@@ -48,6 +48,12 @@ class TaskResult:
 
 TASKS = [
     AuditTask(
+        name="Superholistic visual readability lock",
+        workflow_file=".github/workflows/super-workflow-score-gate.yml",
+        commands=["python3 scripts/apply_superholistic_visual_readability_lock.py"],
+        reports=["_audit_reports/superholistic_visual_readability_lock_report.md"],
+    ),
+    AuditTask(
         name="Final 86-page AAA master audit",
         workflow_file=".github/workflows/final-86page-aaa-master-audit.yml",
         commands=["python3 scripts/apply_final_86page_aaa_master_audit.py"],
@@ -126,16 +132,9 @@ def text_score(text: str) -> float | None:
                     candidates.append(value)
             except ValueError:
                 pass
-    for m in re.finditer(r"nota\s+m[eé]dia\s*[:=]?\s*(\d+(?:\.\d+)?)\s*/\s*10", text, flags=re.I):
-        try:
-            value = float(m.group(1)) * 10
-            if 0 <= value <= 100:
-                candidates.append(value)
-        except ValueError:
-            pass
-    if "status geral: **pass**" in text.lower() or "status: **pass**" in text.lower():
+    if "status: **pass**" in text.lower() or "status geral: **pass**" in text.lower():
         candidates.append(100.0)
-    if "status geral: **fail**" in text.lower() or "status: **fail**" in text.lower():
+    if "status: **fail**" in text.lower() or "status geral: **fail**" in text.lower():
         candidates.append(0.0)
     if not candidates:
         return None
