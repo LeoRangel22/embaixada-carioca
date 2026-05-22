@@ -1,0 +1,450 @@
+{
+  "status": "FAIL",
+  "threshold": 90,
+  "max_attempts": 4,
+  "wait_seconds": 120,
+  "results": [
+    {
+      "attempt": 1,
+      "name": "Final 86-page AAA master audit",
+      "workflow_file": ".github/workflows/final-86page-aaa-master-audit.yml",
+      "status": "PASS",
+      "score": 90.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/final_86page_aaa_master_audit_report.md",
+        "_audit_reports/final_86page_aaa_master_audit_details.csv"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/final_86page_aaa_master_audit_report.md: sem score explícito; tratado como 90.0; _audit_reports/final_86page_aaa_master_audit_details.csv: sem score explícito; tratado como 90.0"
+    },
+    {
+      "attempt": 1,
+      "name": "Visual contrast risk audit",
+      "workflow_file": ".github/workflows/visual-contrast-risk-audit.yml",
+      "status": "PASS",
+      "score": 90.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/hero_side_frame_final_lock_report.md",
+        "_audit_reports/visual_contrast_risk_audit.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/hero_side_frame_final_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/visual_contrast_risk_audit.md: sem score explícito; tratado como 90.0"
+    },
+    {
+      "attempt": 1,
+      "name": "Phase 2 performance SEO audit",
+      "workflow_file": ".github/workflows/phase2-performance-seo-audit.yml",
+      "status": "FAIL",
+      "score": 82.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/phase2_quick_fixes_report.md",
+        "_audit_reports/visible_text_css_link_report.md",
+        "_audit_reports/como_chegar_final_visible_lock_report.md",
+        "_audit_reports/phase2_performance_seo_audit.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: 82.0"
+    },
+    {
+      "attempt": 1,
+      "name": "Super site standards SEO audit",
+      "workflow_file": ".github/workflows/super-site-standards-seo-audit.yml",
+      "status": "FAIL",
+      "score": 0.0,
+      "command_status": 1,
+      "reports_found": [],
+      "missing_reports": [
+        "_audit_reports/super_site_standards_seo_audit.md",
+        "_audit_reports/super_site_standards_seo_audit_details.csv"
+      ],
+      "notes": ""
+    },
+    {
+      "attempt": 1,
+      "name": "Priority keywords AIO score audit",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "FAIL",
+      "score": 0.0,
+      "command_status": 1,
+      "reports_found": [],
+      "missing_reports": [
+        "_audit_reports/priority_keywords_aio_score_audit.md",
+        "_audit_reports/priority_keywords_aio_score_audit.csv",
+        "_audit_reports/priority_keywords_aio_score_audit.json"
+      ],
+      "notes": ""
+    },
+    {
+      "attempt": 1,
+      "name": "Superholistic design UX SEO GEO audit",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "PASS",
+      "score": 92.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/superholistic_design_ux_seo_geo_audit.md",
+        "_audit_reports/superholistic_design_ux_seo_geo_audit.csv",
+        "_audit_reports/superholistic_design_ux_seo_geo_audit.json"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/superholistic_design_ux_seo_geo_audit.md: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: 92.0"
+    },
+    {
+      "attempt": 2,
+      "name": "Final 86-page AAA master audit",
+      "workflow_file": ".github/workflows/final-86page-aaa-master-audit.yml",
+      "status": "PASS",
+      "score": 90.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/final_86page_aaa_master_audit_report.md",
+        "_audit_reports/final_86page_aaa_master_audit_details.csv"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/final_86page_aaa_master_audit_report.md: sem score explícito; tratado como 90.0; _audit_reports/final_86page_aaa_master_audit_details.csv: sem score explícito; tratado como 90.0"
+    },
+    {
+      "attempt": 2,
+      "name": "Visual contrast risk audit",
+      "workflow_file": ".github/workflows/visual-contrast-risk-audit.yml",
+      "status": "PASS",
+      "score": 90.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/hero_side_frame_final_lock_report.md",
+        "_audit_reports/visual_contrast_risk_audit.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/hero_side_frame_final_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/visual_contrast_risk_audit.md: sem score explícito; tratado como 90.0"
+    },
+    {
+      "attempt": 2,
+      "name": "Phase 2 performance SEO audit",
+      "workflow_file": ".github/workflows/phase2-performance-seo-audit.yml",
+      "status": "FAIL",
+      "score": 82.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/phase2_quick_fixes_report.md",
+        "_audit_reports/visible_text_css_link_report.md",
+        "_audit_reports/como_chegar_final_visible_lock_report.md",
+        "_audit_reports/phase2_performance_seo_audit.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: 82.0"
+    },
+    {
+      "attempt": 2,
+      "name": "Super site standards SEO audit",
+      "workflow_file": ".github/workflows/super-site-standards-seo-audit.yml",
+      "status": "FAIL",
+      "score": 0.0,
+      "command_status": 1,
+      "reports_found": [],
+      "missing_reports": [
+        "_audit_reports/super_site_standards_seo_audit.md",
+        "_audit_reports/super_site_standards_seo_audit_details.csv"
+      ],
+      "notes": ""
+    },
+    {
+      "attempt": 2,
+      "name": "Priority keywords AIO score audit",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "FAIL",
+      "score": 0.0,
+      "command_status": 1,
+      "reports_found": [],
+      "missing_reports": [
+        "_audit_reports/priority_keywords_aio_score_audit.md",
+        "_audit_reports/priority_keywords_aio_score_audit.csv",
+        "_audit_reports/priority_keywords_aio_score_audit.json"
+      ],
+      "notes": ""
+    },
+    {
+      "attempt": 2,
+      "name": "Superholistic design UX SEO GEO audit",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "PASS",
+      "score": 92.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/superholistic_design_ux_seo_geo_audit.md",
+        "_audit_reports/superholistic_design_ux_seo_geo_audit.csv",
+        "_audit_reports/superholistic_design_ux_seo_geo_audit.json"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/superholistic_design_ux_seo_geo_audit.md: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: 92.0"
+    },
+    {
+      "attempt": 3,
+      "name": "Final 86-page AAA master audit",
+      "workflow_file": ".github/workflows/final-86page-aaa-master-audit.yml",
+      "status": "PASS",
+      "score": 90.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/final_86page_aaa_master_audit_report.md",
+        "_audit_reports/final_86page_aaa_master_audit_details.csv"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/final_86page_aaa_master_audit_report.md: sem score explícito; tratado como 90.0; _audit_reports/final_86page_aaa_master_audit_details.csv: sem score explícito; tratado como 90.0"
+    },
+    {
+      "attempt": 3,
+      "name": "Visual contrast risk audit",
+      "workflow_file": ".github/workflows/visual-contrast-risk-audit.yml",
+      "status": "PASS",
+      "score": 90.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/hero_side_frame_final_lock_report.md",
+        "_audit_reports/visual_contrast_risk_audit.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/hero_side_frame_final_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/visual_contrast_risk_audit.md: sem score explícito; tratado como 90.0"
+    },
+    {
+      "attempt": 3,
+      "name": "Phase 2 performance SEO audit",
+      "workflow_file": ".github/workflows/phase2-performance-seo-audit.yml",
+      "status": "FAIL",
+      "score": 82.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/phase2_quick_fixes_report.md",
+        "_audit_reports/visible_text_css_link_report.md",
+        "_audit_reports/como_chegar_final_visible_lock_report.md",
+        "_audit_reports/phase2_performance_seo_audit.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: 82.0"
+    },
+    {
+      "attempt": 3,
+      "name": "Super site standards SEO audit",
+      "workflow_file": ".github/workflows/super-site-standards-seo-audit.yml",
+      "status": "FAIL",
+      "score": 0.0,
+      "command_status": 1,
+      "reports_found": [],
+      "missing_reports": [
+        "_audit_reports/super_site_standards_seo_audit.md",
+        "_audit_reports/super_site_standards_seo_audit_details.csv"
+      ],
+      "notes": ""
+    },
+    {
+      "attempt": 3,
+      "name": "Priority keywords AIO score audit",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "FAIL",
+      "score": 0.0,
+      "command_status": 1,
+      "reports_found": [],
+      "missing_reports": [
+        "_audit_reports/priority_keywords_aio_score_audit.md",
+        "_audit_reports/priority_keywords_aio_score_audit.csv",
+        "_audit_reports/priority_keywords_aio_score_audit.json"
+      ],
+      "notes": ""
+    },
+    {
+      "attempt": 3,
+      "name": "Superholistic design UX SEO GEO audit",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "PASS",
+      "score": 92.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/superholistic_design_ux_seo_geo_audit.md",
+        "_audit_reports/superholistic_design_ux_seo_geo_audit.csv",
+        "_audit_reports/superholistic_design_ux_seo_geo_audit.json"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/superholistic_design_ux_seo_geo_audit.md: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: 92.0"
+    },
+    {
+      "attempt": 4,
+      "name": "Final 86-page AAA master audit",
+      "workflow_file": ".github/workflows/final-86page-aaa-master-audit.yml",
+      "status": "PASS",
+      "score": 90.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/final_86page_aaa_master_audit_report.md",
+        "_audit_reports/final_86page_aaa_master_audit_details.csv"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/final_86page_aaa_master_audit_report.md: sem score explícito; tratado como 90.0; _audit_reports/final_86page_aaa_master_audit_details.csv: sem score explícito; tratado como 90.0"
+    },
+    {
+      "attempt": 4,
+      "name": "Visual contrast risk audit",
+      "workflow_file": ".github/workflows/visual-contrast-risk-audit.yml",
+      "status": "PASS",
+      "score": 90.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/hero_side_frame_final_lock_report.md",
+        "_audit_reports/visual_contrast_risk_audit.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/hero_side_frame_final_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/visual_contrast_risk_audit.md: sem score explícito; tratado como 90.0"
+    },
+    {
+      "attempt": 4,
+      "name": "Phase 2 performance SEO audit",
+      "workflow_file": ".github/workflows/phase2-performance-seo-audit.yml",
+      "status": "FAIL",
+      "score": 82.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/phase2_quick_fixes_report.md",
+        "_audit_reports/visible_text_css_link_report.md",
+        "_audit_reports/como_chegar_final_visible_lock_report.md",
+        "_audit_reports/phase2_performance_seo_audit.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: 82.0"
+    },
+    {
+      "attempt": 4,
+      "name": "Super site standards SEO audit",
+      "workflow_file": ".github/workflows/super-site-standards-seo-audit.yml",
+      "status": "FAIL",
+      "score": 0.0,
+      "command_status": 1,
+      "reports_found": [],
+      "missing_reports": [
+        "_audit_reports/super_site_standards_seo_audit.md",
+        "_audit_reports/super_site_standards_seo_audit_details.csv"
+      ],
+      "notes": ""
+    },
+    {
+      "attempt": 4,
+      "name": "Priority keywords AIO score audit",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "FAIL",
+      "score": 0.0,
+      "command_status": 1,
+      "reports_found": [],
+      "missing_reports": [
+        "_audit_reports/priority_keywords_aio_score_audit.md",
+        "_audit_reports/priority_keywords_aio_score_audit.csv",
+        "_audit_reports/priority_keywords_aio_score_audit.json"
+      ],
+      "notes": ""
+    },
+    {
+      "attempt": 4,
+      "name": "Superholistic design UX SEO GEO audit",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "PASS",
+      "score": 92.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/superholistic_design_ux_seo_geo_audit.md",
+        "_audit_reports/superholistic_design_ux_seo_geo_audit.csv",
+        "_audit_reports/superholistic_design_ux_seo_geo_audit.json"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/superholistic_design_ux_seo_geo_audit.md: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: 92.0"
+    }
+  ],
+  "latest": {
+    "Final 86-page AAA master audit": {
+      "attempt": 4,
+      "name": "Final 86-page AAA master audit",
+      "workflow_file": ".github/workflows/final-86page-aaa-master-audit.yml",
+      "status": "PASS",
+      "score": 90.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/final_86page_aaa_master_audit_report.md",
+        "_audit_reports/final_86page_aaa_master_audit_details.csv"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/final_86page_aaa_master_audit_report.md: sem score explícito; tratado como 90.0; _audit_reports/final_86page_aaa_master_audit_details.csv: sem score explícito; tratado como 90.0"
+    },
+    "Visual contrast risk audit": {
+      "attempt": 4,
+      "name": "Visual contrast risk audit",
+      "workflow_file": ".github/workflows/visual-contrast-risk-audit.yml",
+      "status": "PASS",
+      "score": 90.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/hero_side_frame_final_lock_report.md",
+        "_audit_reports/visual_contrast_risk_audit.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/hero_side_frame_final_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/visual_contrast_risk_audit.md: sem score explícito; tratado como 90.0"
+    },
+    "Phase 2 performance SEO audit": {
+      "attempt": 4,
+      "name": "Phase 2 performance SEO audit",
+      "workflow_file": ".github/workflows/phase2-performance-seo-audit.yml",
+      "status": "FAIL",
+      "score": 82.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/phase2_quick_fixes_report.md",
+        "_audit_reports/visible_text_css_link_report.md",
+        "_audit_reports/como_chegar_final_visible_lock_report.md",
+        "_audit_reports/phase2_performance_seo_audit.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: 82.0"
+    },
+    "Super site standards SEO audit": {
+      "attempt": 4,
+      "name": "Super site standards SEO audit",
+      "workflow_file": ".github/workflows/super-site-standards-seo-audit.yml",
+      "status": "FAIL",
+      "score": 0.0,
+      "command_status": 1,
+      "reports_found": [],
+      "missing_reports": [
+        "_audit_reports/super_site_standards_seo_audit.md",
+        "_audit_reports/super_site_standards_seo_audit_details.csv"
+      ],
+      "notes": ""
+    },
+    "Priority keywords AIO score audit": {
+      "attempt": 4,
+      "name": "Priority keywords AIO score audit",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "FAIL",
+      "score": 0.0,
+      "command_status": 1,
+      "reports_found": [],
+      "missing_reports": [
+        "_audit_reports/priority_keywords_aio_score_audit.md",
+        "_audit_reports/priority_keywords_aio_score_audit.csv",
+        "_audit_reports/priority_keywords_aio_score_audit.json"
+      ],
+      "notes": ""
+    },
+    "Superholistic design UX SEO GEO audit": {
+      "attempt": 4,
+      "name": "Superholistic design UX SEO GEO audit",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "PASS",
+      "score": 92.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/superholistic_design_ux_seo_geo_audit.md",
+        "_audit_reports/superholistic_design_ux_seo_geo_audit.csv",
+        "_audit_reports/superholistic_design_ux_seo_geo_audit.json"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/superholistic_design_ux_seo_geo_audit.md: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: 92.0"
+    }
+  }
+}
