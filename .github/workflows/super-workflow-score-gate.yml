@@ -52,26 +52,43 @@ jobs:
       - name: Run super workflow score gate
         run: python3 scripts/run_super_workflow_score_gate.py
 
-      - name: Show score gate report
+      - name: Show executive audit reports
         if: always()
         run: |
+          echo "===== Executive audit reports ====="
+          echo "1. _audit_reports/super_workflow_score_gate.md"
+          echo "2. _audit_reports/superholistic_design_ux_seo_geo_audit.md"
+          echo "3. _audit_reports/gsc_real_queries_score_audit.md"
+          echo "4. _audit_reports/priority_keywords_aio_score_audit.md"
+
           if [ -f _audit_reports/super_workflow_score_gate.md ]; then
+            echo ""
+            echo "===== Super Workflow Score Gate ====="
             cat _audit_reports/super_workflow_score_gate.md
           fi
-          if [ -f _audit_reports/superholistic_visual_readability_lock_report.md ]; then
+
+          if [ -f _audit_reports/superholistic_design_ux_seo_geo_audit.md ]; then
             echo ""
-            echo "===== Superholistic Visual Readability Lock ====="
-            cat _audit_reports/superholistic_visual_readability_lock_report.md
+            echo "===== Superholistic Design UX SEO GEO Audit ====="
+            cat _audit_reports/superholistic_design_ux_seo_geo_audit.md
           fi
+
+          if [ -f _audit_reports/gsc_real_queries_score_audit.md ]; then
+            echo ""
+            echo "===== GSC Real Organic Queries Score Audit ====="
+            cat _audit_reports/gsc_real_queries_score_audit.md
+          fi
+
           if [ -f _audit_reports/priority_keywords_aio_score_audit.md ]; then
             echo ""
             echo "===== Priority Keywords AIO Score Audit ====="
             cat _audit_reports/priority_keywords_aio_score_audit.md
           fi
-          if [ -f _audit_reports/superholistic_design_ux_seo_geo_audit.md ]; then
+
+          if [ -f _audit_reports/superholistic_visual_readability_lock_report.md ]; then
             echo ""
-            echo "===== Superholistic Design UX SEO GEO Audit ====="
-            cat _audit_reports/superholistic_design_ux_seo_geo_audit.md
+            echo "===== Superholistic Visual Readability Lock ====="
+            cat _audit_reports/superholistic_visual_readability_lock_report.md
           fi
 
       - name: Upload all audit reports
