@@ -100,10 +100,10 @@ body[data-screen-label="Home"][data-screen-label="Home"] header.hero.hero .hero-
 }
 
 /* Home — seção Os três momentos em fundo claro.
-   Esta trava não depende do data-screen-label e usa ID repetido para vencer estilos tardios genéricos. */
-html body main section#momentos#momentos#momentos.momentos,
-html body main section#momentos#momentos#momentos.momentos .sec-head,
-html body main section#momentos#momentos#momentos.momentos .sec-head *{
+   Correção: no HTML real a seção #momentos fica fora de <main>. */
+html body section#momentos#momentos#momentos.momentos,
+html body section#momentos#momentos#momentos.momentos .sec-head,
+html body section#momentos#momentos#momentos.momentos .sec-head *{
   --ec-vr-paper:#00405a!important;
   --ec-readable-sand-soft:#00405a!important;
   --ec-readable-yellow:#9a6500!important;
@@ -123,18 +123,20 @@ html body main section#momentos#momentos#momentos.momentos .sec-head *{
   -webkit-text-stroke:0!important;
 }
 
-html body main section#momentos#momentos#momentos.momentos{
+html body section#momentos#momentos#momentos.momentos{
   background:#f6efde!important;
   color:#00405a!important;
   -webkit-text-fill-color:#00405a!important;
 }
 
-html body main section#momentos#momentos#momentos.momentos .sec-head h1,
-html body main section#momentos#momentos#momentos.momentos .sec-head h2,
-html body main section#momentos#momentos#momentos.momentos .sec-head h3,
-html body main section#momentos#momentos#momentos.momentos .sec-head h1 *,
-html body main section#momentos#momentos#momentos.momentos .sec-head h2 *,
-html body main section#momentos#momentos#momentos.momentos .sec-head h3 *{
+html body section#momentos#momentos#momentos.momentos .sec-head h1,
+html body section#momentos#momentos#momentos.momentos .sec-head h2,
+html body section#momentos#momentos#momentos.momentos .sec-head h2[style],
+html body section#momentos#momentos#momentos.momentos .sec-head h3,
+html body section#momentos#momentos#momentos.momentos .sec-head h1 *,
+html body section#momentos#momentos#momentos.momentos .sec-head h2 *,
+html body section#momentos#momentos#momentos.momentos .sec-head h2[style] *,
+html body section#momentos#momentos#momentos.momentos .sec-head h3 *{
   --ec-vr-paper:#00405a!important;
   --ec-readable-sand-soft:#00405a!important;
   --areia-pale:#00405a!important;
@@ -145,9 +147,10 @@ html body main section#momentos#momentos#momentos.momentos .sec-head h3 *{
   text-shadow:none!important;
 }
 
-html body main section#momentos#momentos#momentos.momentos .sec-head h1 .serif,
-html body main section#momentos#momentos#momentos.momentos .sec-head h2 .serif,
-html body main section#momentos#momentos#momentos.momentos .sec-head h3 .serif{
+html body section#momentos#momentos#momentos.momentos .sec-head h1 .serif,
+html body section#momentos#momentos#momentos.momentos .sec-head h2 .serif,
+html body section#momentos#momentos#momentos.momentos .sec-head h2[style] .serif,
+html body section#momentos#momentos#momentos.momentos .sec-head h3 .serif{
   --ec-vr-paper:#335d4a!important;
   --ec-readable-sand-soft:#335d4a!important;
   --areia-pale:#335d4a!important;
@@ -158,10 +161,10 @@ html body main section#momentos#momentos#momentos.momentos .sec-head h3 .serif{
   text-shadow:none!important;
 }
 
-html body main section#momentos#momentos#momentos.momentos .sec-head .lede,
-html body main section#momentos#momentos#momentos.momentos .sec-head p,
-html body main section#momentos#momentos#momentos.momentos .sec-head .lede *:not(strong):not(b),
-html body main section#momentos#momentos#momentos.momentos .sec-head p *:not(strong):not(b){
+html body section#momentos#momentos#momentos.momentos .sec-head .lede,
+html body section#momentos#momentos#momentos.momentos .sec-head p,
+html body section#momentos#momentos#momentos.momentos .sec-head .lede *:not(strong):not(b),
+html body section#momentos#momentos#momentos.momentos .sec-head p *:not(strong):not(b){
   --ec-vr-paper:#485156!important;
   --ec-readable-sand-soft:#485156!important;
   --areia-pale:#485156!important;
@@ -172,10 +175,10 @@ html body main section#momentos#momentos#momentos.momentos .sec-head p *:not(str
   text-shadow:none!important;
 }
 
-html body main section#momentos#momentos#momentos.momentos .sec-head .lede strong,
-html body main section#momentos#momentos#momentos.momentos .sec-head p strong,
-html body main section#momentos#momentos#momentos.momentos .sec-head .lede b,
-html body main section#momentos#momentos#momentos.momentos .sec-head p b{
+html body section#momentos#momentos#momentos.momentos .sec-head .lede strong,
+html body section#momentos#momentos#momentos.momentos .sec-head p strong,
+html body section#momentos#momentos#momentos.momentos .sec-head .lede b,
+html body section#momentos#momentos#momentos.momentos .sec-head p b{
   --ec-vr-paper:#00405a!important;
   --ec-readable-sand-soft:#00405a!important;
   --areia-pale:#00405a!important;
@@ -186,8 +189,8 @@ html body main section#momentos#momentos#momentos.momentos .sec-head p b{
   text-shadow:none!important;
 }
 
-html body main section#momentos#momentos#momentos.momentos .sec-head .num,
-html body main section#momentos#momentos#momentos.momentos .sec-head .num *{
+html body section#momentos#momentos#momentos.momentos .sec-head .num,
+html body section#momentos#momentos#momentos.momentos .sec-head .num *{
   --ec-vr-paper:#527f8f!important;
   --ec-readable-sand-soft:#527f8f!important;
   --areia-pale:#527f8f!important;
@@ -198,7 +201,7 @@ html body main section#momentos#momentos#momentos.momentos .sec-head .num *{
   text-shadow:none!important;
 }
 
-html body main section#momentos#momentos#momentos.momentos .sec-head .num b{
+html body section#momentos#momentos#momentos.momentos .sec-head .num b{
   --ec-vr-paper:#f59b1e!important;
   --ec-readable-sand-soft:#f59b1e!important;
   --areia-pale:#f59b1e!important;
