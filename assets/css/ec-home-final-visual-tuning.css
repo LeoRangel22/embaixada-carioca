@@ -133,3 +133,63 @@ html body[data-screen-label="Home"] header.hero.hero .hmc .l{
   filter:none!important;
   mix-blend-mode:normal!important;
 }
+
+/* Entardecer / Sunset — cards de informação sobre fundo escuro.
+   O print mostrou .sunset-info-item e .sunset-info-text herdando texto escuro demais. */
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-box,
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-item{
+  background:rgba(246,239,222,.095)!important;
+  border:1px solid rgba(246,239,222,.24)!important;
+  box-shadow:none!important;
+  opacity:1!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+}
+
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-item,
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-item *,
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text,
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text *{
+  opacity:1!important;
+  visibility:visible!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+  -webkit-text-stroke:0!important;
+  background-image:none!important;
+  -webkit-background-clip:border-box!important;
+  background-clip:border-box!important;
+  text-shadow:none!important;
+}
+
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text h1,
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text h2,
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text h3,
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text h4,
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-dicas-title{
+  color:var(--ec-home-orange)!important;
+  -webkit-text-fill-color:var(--ec-home-orange)!important;
+  font-weight:800!important;
+  letter-spacing:.18em!important;
+  text-transform:uppercase!important;
+}
+
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text p,
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text li,
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text span:not(.sunset-info-icon),
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text div:not(.sunset-info-icon){
+  color:rgba(246,239,222,.92)!important;
+  -webkit-text-fill-color:rgba(246,239,222,.92)!important;
+}
+
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text strong,
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text b,
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text a{
+  color:var(--ec-home-orange)!important;
+  -webkit-text-fill-color:var(--ec-home-orange)!important;
+  font-weight:800!important;
+}
+
+html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-icon{
+  opacity:1!important;
+  filter:none!important;
+}
