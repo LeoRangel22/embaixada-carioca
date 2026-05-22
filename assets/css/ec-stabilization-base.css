@@ -94,6 +94,62 @@ html body header.hero.hero .hero-photo {
   visibility: visible !important;
 }
 
+/* Home "Os três momentos" is a light section, not a hero.
+   It must use dark readable text on cream background. */
+html body[data-screen-label="Home"] main section.momentos,
+html body main section.momentos {
+  background: var(--ec-paper) !important;
+  color: var(--ec-blue) !important;
+  -webkit-text-fill-color: var(--ec-blue) !important;
+  text-shadow: none !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+html body[data-screen-label="Home"] main section.momentos .sec-head h1,
+html body[data-screen-label="Home"] main section.momentos .sec-head h2,
+html body[data-screen-label="Home"] main section.momentos .sec-head h3,
+html body main section.momentos .sec-head h1,
+html body main section.momentos .sec-head h2,
+html body main section.momentos .sec-head h3 {
+  color: var(--ec-blue) !important;
+  -webkit-text-fill-color: var(--ec-blue) !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+html body[data-screen-label="Home"] main section.momentos .sec-head h1 .serif,
+html body[data-screen-label="Home"] main section.momentos .sec-head h2 .serif,
+html body[data-screen-label="Home"] main section.momentos .sec-head h3 .serif,
+html body main section.momentos .sec-head h1 .serif,
+html body main section.momentos .sec-head h2 .serif,
+html body main section.momentos .sec-head h3 .serif {
+  color: var(--ec-green) !important;
+  -webkit-text-fill-color: var(--ec-green) !important;
+  text-shadow: none !important;
+}
+
+html body[data-screen-label="Home"] main section.momentos .sec-head .lede,
+html body[data-screen-label="Home"] main section.momentos .sec-head p,
+html body main section.momentos .sec-head .lede,
+html body main section.momentos .sec-head p {
+  color: var(--ec-gray) !important;
+  -webkit-text-fill-color: var(--ec-gray) !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+html body[data-screen-label="Home"] main section.momentos .sec-head .num,
+html body main section.momentos .sec-head .num {
+  color: var(--ec-blue-2) !important;
+  -webkit-text-fill-color: var(--ec-blue-2) !important;
+  text-shadow: none !important;
+}
+
 /* Hero performance/readability */
 .hero-photo,
 .page-hero-photo,
