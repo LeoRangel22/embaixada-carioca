@@ -106,6 +106,16 @@ TASKS = [
             "_audit_reports/super_site_standards_seo_audit_details.csv",
         ],
     ),
+    AuditTask(
+        name="Priority keywords AIO score audit",
+        workflow_file=".github/workflows/super-workflow-score-gate.yml",
+        commands=["python3 scripts/audit_priority_keywords_aio_score.py"],
+        reports=[
+            "_audit_reports/priority_keywords_aio_score_audit.md",
+            "_audit_reports/priority_keywords_aio_score_audit.csv",
+            "_audit_reports/priority_keywords_aio_score_audit.json",
+        ],
+    ),
 ]
 
 
@@ -127,6 +137,14 @@ def text_score(text: str) -> float | None:
         except ValueError:
             pass
 
+    for m in re.finditer(r"score\s+m[ií]nimo\s*[:=]?\s*\*\*?(\d+(?:\.\d+)?)", text, flags=re.I):
+        try:
+            value = float(m.group(1))
+            if 0 <= value <= 100:
+                candidates.append(value)
+        except ValueError:
+            pass
+
     for m in re.finditer(r"nota\s+m[eé]dia\s*[:=]?\s*(\d+(?:\.\d+)?)\s*/\s*10", text, flags=re.I):
         try:
             value = float(m.group(1)) * 10
@@ -138,6 +156,7 @@ def text_score(text: str) -> float | None:
     if "Status geral: **PASS**" in text or "Status: **PASS**" in text or "status geral: pass" in text.lower():
         candidates.append(100.0)
     if "Status geral: **FAIL**" in text or "Status: **FAIL**" in text or "status geral: fail" in text.lower():
+        # Se também houver score explícito, o score explícito prevalece pelo min().
         candidates.append(0.0)
 
     if "WARN: 0" in text and "FAIL" not in text.upper():
@@ -172,11 +191,31 @@ def csv_score(path: Path) -> float | None:
     return None
 
 
+def json_score(path: Path) -> float | None:
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+    for key in ("min_score", "score"):
+        value = data.get(key) if isinstance(data, dict) else None
+        if isinstance(value, (int, float)) and 0 <= value <= 100:
+            return float(value)
+    if isinstance(data, dict) and isinstance(data.get("results"), list):
+        scores = [item.get("score") for item in data["results"] if isinstance(item, dict) and isinstance(item.get("score"), (int, float))]
+        if scores:
+            return float(min(scores))
+    return None
+
+
 def infer_report_score(path: Path) -> float | None:
     if not path.exists():
         return None
     if path.suffix.lower() == ".csv":
         s = csv_score(path)
+        if s is not None:
+            return s
+    if path.suffix.lower() == ".json":
+        s = json_score(path)
         if s is not None:
             return s
     try:
@@ -308,7 +347,6 @@ def run_attempt(attempt: int) -> list[TaskResult]:
             rc = run_command(cmd)
             if rc != 0:
                 command_status = rc
-                # Continua para gerar/ler os relatórios existentes, mas marca falha.
                 break
         result = score_task(task, attempt, command_status)
         print(f"{task.name}: {result.status} score={result.score:.1f}", flush=True)
