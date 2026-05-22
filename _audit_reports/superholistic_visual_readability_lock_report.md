@@ -2,20 +2,20 @@
 
 Status: **PASS**
 CSS: `/assets/superholistic_visual_readability_lock.css`
-Páginas atualizadas: **0**
-Páginas já ok/ignoradas: **86**
+Páginas atualizadas: **22**
+Páginas já ok/ignoradas: **64**
 
 ## Detalhe
-- `404.html` — already_present
-- `almoco-morro-da-urca.html` — already_present
+- `404.html` — injected
+- `almoco-morro-da-urca.html` — injected
 - `almoco.html` — already_present
-- `cafe-da-manha-com-vista-rio-de-janeiro.html` — already_present
-- `cafe-da-manha-pao-de-acucar.html` — already_present
+- `cafe-da-manha-com-vista-rio-de-janeiro.html` — injected
+- `cafe-da-manha-pao-de-acucar.html` — injected
 - `cafe-da-manha.html` — already_present
-- `caipirinha-com-vista-rio.html` — already_present
+- `caipirinha-com-vista-rio.html` — injected
 - `cardapio.html` — already_present
 - `como-chegar.html` — already_present
-- `contato.html` — already_present
+- `contato.html` — injected
 - `en/almoco-morro-da-urca.html` — already_present
 - `en/almoco.html` — already_present
 - `en/breakfast-with-a-view-rio-de-janeiro.html` — already_present
@@ -44,7 +44,7 @@ Páginas já ok/ignoradas: **86**
 - `en/sugarloaf-cable-car-restaurant.html` — already_present
 - `en/sunset.html` — already_present
 - `en/where-to-eat-near-sugarloaf.html` — already_present
-- `entardecer.html` — already_present
+- `entardecer.html` — injected
 - `es/almoco-morro-da-urca.html` — already_present
 - `es/almoco.html` — already_present
 - `es/atardecer.html` — already_present
@@ -74,21 +74,21 @@ Páginas já ok/ignoradas: **86**
 - `es/restaurantes-cerca-del-pan-de-azucar.html` — already_present
 - `es/roteiro-meio-dia-urca-pao-de-acucar.html` — already_present
 - `eventos.html` — already_present
-- `feijoada-com-vista-rio-de-janeiro.html` — already_present
-- `feijoada.html` — already_present
-- `gastronomia-carioca.html` — already_present
+- `feijoada-com-vista-rio-de-janeiro.html` — injected
+- `feijoada.html` — injected
+- `gastronomia-carioca.html` — injected
 - `guia-do-rio.html` — already_present
-- `home-preview.html` — already_present
+- `home-preview.html` — injected
 - `index.html` — already_present
-- `morro-da-urca.html` — already_present
-- `nossa-visao.html` — already_present
-- `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — already_present
-- `offline.html` — already_present
-- `onde-comer-no-pao-de-acucar.html` — already_present
-- `parque-bondinho-pao-de-acucar.html` — already_present
-- `parque-bondinho.html` — already_present
-- `por-do-sol-morro-da-urca.html` — already_present
-- `restaurante-bondinho-pao-de-acucar.html` — already_present
+- `morro-da-urca.html` — injected
+- `nossa-visao.html` — injected
+- `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — injected
+- `offline.html` — injected
+- `onde-comer-no-pao-de-acucar.html` — injected
+- `parque-bondinho-pao-de-acucar.html` — injected
+- `parque-bondinho.html` — injected
+- `por-do-sol-morro-da-urca.html` — injected
+- `restaurante-bondinho-pao-de-acucar.html` — injected
 - `restaurante-morro-da-urca.html` — already_present
-- `restaurantes-perto-do-pao-de-acucar.html` — already_present
-- `roteiro-meio-dia-urca-pao-de-acucar.html` — already_present
+- `restaurantes-perto-do-pao-de-acucar.html` — injected
+- `roteiro-meio-dia-urca-pao-de-acucar.html` — injected
