@@ -1,0 +1,78 @@
+/* Embaixada Carioca — Home Final Visual Tuning
+   Camada final carregada depois do CSS de estabilização.
+   Objetivo: ajustes finos apontados em inspeção visual real. */
+
+:root{
+  --ec-home-orange:#f59b1e;
+  --ec-home-blue:#00405a;
+  --ec-home-cream:#f6efde;
+}
+
+/* Itálicos editoriais de títulos devem usar o mesmo laranja do botão Reservar. */
+body[data-screen-label="Home"] header.hero h1 .serif,
+body[data-screen-label="Home"] header.hero h1 em,
+body[data-screen-label="Home"] section#momentos h1 .serif,
+body[data-screen-label="Home"] section#momentos h2 .serif,
+body[data-screen-label="Home"] section#momentos h3 .serif,
+body[data-screen-label="Home"] section#momentos h1 em,
+body[data-screen-label="Home"] section#momentos h2 em,
+body[data-screen-label="Home"] section#momentos h3 em,
+body[data-screen-label="Home"] section#visao h1 .serif,
+body[data-screen-label="Home"] section#visao h2 .serif,
+body[data-screen-label="Home"] section#visao h3 .serif,
+body[data-screen-label="Home"] section#visao h1 em,
+body[data-screen-label="Home"] section#visao h2 em,
+body[data-screen-label="Home"] section#visao h3 em,
+body[data-screen-label="Home"] section#avaliacoes h1 .serif,
+body[data-screen-label="Home"] section#avaliacoes h2 .serif,
+body[data-screen-label="Home"] section#avaliacoes h3 .serif,
+body[data-screen-label="Home"] section#avaliacoes h1 em,
+body[data-screen-label="Home"] section#avaliacoes h2 em,
+body[data-screen-label="Home"] section#avaliacoes h3 em,
+body[data-screen-label="Home"] section#informacoes-essenciais h1 em,
+body[data-screen-label="Home"] section#informacoes-essenciais h2 em,
+body[data-screen-label="Home"] section#informacoes-essenciais h3 em,
+body[data-screen-label="Home"] section#informacoes-essenciais h1 .serif,
+body[data-screen-label="Home"] section#informacoes-essenciais h2 .serif,
+body[data-screen-label="Home"] section#informacoes-essenciais h3 .serif{
+  color:var(--ec-home-orange)!important;
+  -webkit-text-fill-color:var(--ec-home-orange)!important;
+  text-shadow:none!important;
+  opacity:1!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+}
+
+/* Mantém o itálico do hero legível sobre foto escura, mas agora em laranja. */
+body[data-screen-label="Home"] header.hero h1 .serif,
+body[data-screen-label="Home"] header.hero h1 em{
+  text-shadow:0 3px 22px rgba(0,0,0,.55)!important;
+}
+
+/* Labels do card lateral do hero: HOJE, NO ALTO / PREMIADA / VISTA.
+   Aumento solicitado: +1,5pt ≈ +2px sobre a base anterior de 10px. */
+body[data-screen-label="Home"] header.hero .hero-meta-card .hmc .l,
+body[data-screen-label="Home"] header.hero .hero-side .hmc .l,
+body[data-screen-label="Home"] header.hero .hmc .l{
+  font-size:12px!important;
+  line-height:1.2!important;
+  letter-spacing:.24em!important;
+  color:var(--ec-home-orange)!important;
+  -webkit-text-fill-color:var(--ec-home-orange)!important;
+  font-weight:700!important;
+  text-shadow:none!important;
+  opacity:1!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+}
+
+/* Blindagem contra variáveis antigas que recoloriam spans/ems de títulos para verde ou creme. */
+body[data-screen-label="Home"] section#momentos .sec-head h2 .serif,
+body[data-screen-label="Home"] section#visao h2 .serif,
+body[data-screen-label="Home"] section#avaliacoes h2 .serif{
+  --ec-vr-paper:var(--ec-home-orange)!important;
+  --ec-readable-sand-soft:var(--ec-home-orange)!important;
+  --areia-pale:var(--ec-home-orange)!important;
+  --ec-areia:var(--ec-home-orange)!important;
+  --ec-visible-cream:var(--ec-home-orange)!important;
+}
