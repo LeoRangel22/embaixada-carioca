@@ -6,6 +6,19 @@
   "results": [
     {
       "attempt": 1,
+      "name": "Superholistic visual readability lock",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "PASS",
+      "score": 100.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/superholistic_visual_readability_lock_report.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/superholistic_visual_readability_lock_report.md: 100.0"
+    },
+    {
+      "attempt": 1,
       "name": "Final 86-page AAA master audit",
       "workflow_file": ".github/workflows/final-86page-aaa-master-audit.yml",
       "status": "PASS",
@@ -94,6 +107,19 @@
     },
     {
       "attempt": 2,
+      "name": "Superholistic visual readability lock",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "PASS",
+      "score": 100.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/superholistic_visual_readability_lock_report.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/superholistic_visual_readability_lock_report.md: 100.0"
+    },
+    {
+      "attempt": 2,
       "name": "Final 86-page AAA master audit",
       "workflow_file": ".github/workflows/final-86page-aaa-master-audit.yml",
       "status": "PASS",
@@ -182,6 +208,19 @@
     },
     {
       "attempt": 3,
+      "name": "Superholistic visual readability lock",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "PASS",
+      "score": 100.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/superholistic_visual_readability_lock_report.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/superholistic_visual_readability_lock_report.md: 100.0"
+    },
+    {
+      "attempt": 3,
       "name": "Final 86-page AAA master audit",
       "workflow_file": ".github/workflows/final-86page-aaa-master-audit.yml",
       "status": "PASS",
@@ -267,6 +306,19 @@
       ],
       "missing_reports": [],
       "notes": "_audit_reports/superholistic_design_ux_seo_geo_audit.md: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: 92.0"
+    },
+    {
+      "attempt": 4,
+      "name": "Superholistic visual readability lock",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "PASS",
+      "score": 100.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/superholistic_visual_readability_lock_report.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/superholistic_visual_readability_lock_report.md: 100.0"
     },
     {
       "attempt": 4,
@@ -358,6 +410,19 @@
     }
   ],
   "latest": {
+    "Superholistic visual readability lock": {
+      "attempt": 4,
+      "name": "Superholistic visual readability lock",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "PASS",
+      "score": 100.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/superholistic_visual_readability_lock_report.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/superholistic_visual_readability_lock_report.md: 100.0"
+    },
     "Final 86-page AAA master audit": {
       "attempt": 4,
       "name": "Final 86-page AAA master audit",

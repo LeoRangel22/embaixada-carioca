@@ -9,6 +9,7 @@ Wait between attempts: **120s**
 
 | Workflow | Status | Score | Reports | Pendências |
 |---|---:|---:|---|---|
+| Superholistic visual readability lock | PASS | 100.0 | _audit_reports/superholistic_visual_readability_lock_report.md | — |
 | Final 86-page AAA master audit | PASS | 90.0 | _audit_reports/final_86page_aaa_master_audit_report.md<br>_audit_reports/final_86page_aaa_master_audit_details.csv | — |
 | Visual contrast risk audit | PASS | 90.0 | _audit_reports/hero_side_frame_final_lock_report.md<br>_audit_reports/visual_contrast_risk_audit.md | — |
 | Phase 2 performance SEO audit | FAIL | 82.0 | _audit_reports/phase2_quick_fixes_report.md<br>_audit_reports/visible_text_css_link_report.md<br>_audit_reports/como_chegar_final_visible_lock_report.md<br>_audit_reports/phase2_performance_seo_audit.md | — |
@@ -18,6 +19,8 @@ Wait between attempts: **120s**
 
 ## Histórico de tentativas
 
+- Attempt 1 — **Superholistic visual readability lock**: PASS, score 100.0, command exit 0
+  - _audit_reports/superholistic_visual_readability_lock_report.md: 100.0
 - Attempt 1 — **Final 86-page AAA master audit**: PASS, score 90.0, command exit 0
   - _audit_reports/final_86page_aaa_master_audit_report.md: sem score explícito; tratado como 90.0; _audit_reports/final_86page_aaa_master_audit_details.csv: sem score explícito; tratado como 90.0
 - Attempt 1 — **Visual contrast risk audit**: PASS, score 90.0, command exit 0
@@ -28,6 +31,8 @@ Wait between attempts: **120s**
 - Attempt 1 — **Priority keywords AIO score audit**: FAIL, score 0.0, command exit 1
 - Attempt 1 — **Superholistic design UX SEO GEO audit**: PASS, score 92.0, command exit 0
   - _audit_reports/superholistic_design_ux_seo_geo_audit.md: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: 92.0
+- Attempt 2 — **Superholistic visual readability lock**: PASS, score 100.0, command exit 0
+  - _audit_reports/superholistic_visual_readability_lock_report.md: 100.0
 - Attempt 2 — **Final 86-page AAA master audit**: PASS, score 90.0, command exit 0
   - _audit_reports/final_86page_aaa_master_audit_report.md: sem score explícito; tratado como 90.0; _audit_reports/final_86page_aaa_master_audit_details.csv: sem score explícito; tratado como 90.0
 - Attempt 2 — **Visual contrast risk audit**: PASS, score 90.0, command exit 0
@@ -38,6 +43,8 @@ Wait between attempts: **120s**
 - Attempt 2 — **Priority keywords AIO score audit**: FAIL, score 0.0, command exit 1
 - Attempt 2 — **Superholistic design UX SEO GEO audit**: PASS, score 92.0, command exit 0
   - _audit_reports/superholistic_design_ux_seo_geo_audit.md: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: 92.0
+- Attempt 3 — **Superholistic visual readability lock**: PASS, score 100.0, command exit 0
+  - _audit_reports/superholistic_visual_readability_lock_report.md: 100.0
 - Attempt 3 — **Final 86-page AAA master audit**: PASS, score 90.0, command exit 0
   - _audit_reports/final_86page_aaa_master_audit_report.md: sem score explícito; tratado como 90.0; _audit_reports/final_86page_aaa_master_audit_details.csv: sem score explícito; tratado como 90.0
 - Attempt 3 — **Visual contrast risk audit**: PASS, score 90.0, command exit 0
@@ -48,6 +55,8 @@ Wait between attempts: **120s**
 - Attempt 3 — **Priority keywords AIO score audit**: FAIL, score 0.0, command exit 1
 - Attempt 3 — **Superholistic design UX SEO GEO audit**: PASS, score 92.0, command exit 0
   - _audit_reports/superholistic_design_ux_seo_geo_audit.md: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: 92.0
+- Attempt 4 — **Superholistic visual readability lock**: PASS, score 100.0, command exit 0
+  - _audit_reports/superholistic_visual_readability_lock_report.md: 100.0
 - Attempt 4 — **Final 86-page AAA master audit**: PASS, score 90.0, command exit 0
   - _audit_reports/final_86page_aaa_master_audit_report.md: sem score explícito; tratado como 90.0; _audit_reports/final_86page_aaa_master_audit_details.csv: sem score explícito; tratado como 90.0
 - Attempt 4 — **Visual contrast risk audit**: PASS, score 90.0, command exit 0
