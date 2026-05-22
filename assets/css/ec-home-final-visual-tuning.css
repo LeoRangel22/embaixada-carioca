@@ -5,6 +5,8 @@
 :root{
   --ec-home-orange:#f59b1e;
   --ec-home-blue:#00405a;
+  --ec-home-green:#335d4a;
+  --ec-home-gray:#485156;
   --ec-home-cream:#f6efde;
 }
 
@@ -64,6 +66,53 @@ html body[data-screen-label="Home"] section#informacoes-essenciais#informacoes-e
 html body[data-screen-label="Home"] header.hero.hero h1 .serif,
 html body[data-screen-label="Home"] header.hero.hero h1 em{
   text-shadow:0 3px 22px rgba(0,0,0,.55)!important;
+}
+
+/* História: estabiliza o trecho "desde 2010" dentro do título.
+   Evita quebra/offset estranho e mantém o laranja do CTA Reservar. */
+html body[data-screen-label="Home"] section#visao#visao#visao .visao-text h2 .serif,
+html body[data-screen-label="Home"] section#visao#visao#visao .visao-text h2 em{
+  display:inline!important;
+  white-space:nowrap!important;
+  vertical-align:baseline!important;
+  line-height:inherit!important;
+  margin:0 .04em!important;
+  color:var(--ec-home-orange)!important;
+  -webkit-text-fill-color:var(--ec-home-orange)!important;
+  text-shadow:none!important;
+}
+
+/* História: crédito correto de arquitetura.
+   Correção visual emergencial para substituir o texto antigo no navegador. */
+html body[data-screen-label="Home"] section#visao#visao#visao .visao-text p:nth-of-type(2) strong:nth-of-type(2){
+  font-size:0!important;
+  line-height:0!important;
+  color:transparent!important;
+  -webkit-text-fill-color:transparent!important;
+}
+html body[data-screen-label="Home"] section#visao#visao#visao .visao-text p:nth-of-type(2) strong:nth-of-type(2)::after{
+  content:"SCH Arquitetura"!important;
+  display:inline!important;
+  font-size:17px!important;
+  line-height:inherit!important;
+  font-weight:700!important;
+  color:var(--ec-home-green)!important;
+  -webkit-text-fill-color:var(--ec-home-green)!important;
+}
+html body[data-screen-label="Home"] section#visao#visao#visao .visao-credits .credit:first-child .v{
+  font-size:0!important;
+  line-height:0!important;
+  color:transparent!important;
+  -webkit-text-fill-color:transparent!important;
+}
+html body[data-screen-label="Home"] section#visao#visao#visao .visao-credits .credit:first-child .v::after{
+  content:"SCH Arquitetura"!important;
+  display:block!important;
+  font-size:15px!important;
+  line-height:1.35!important;
+  font-weight:600!important;
+  color:var(--ec-home-blue)!important;
+  -webkit-text-fill-color:var(--ec-home-blue)!important;
 }
 
 /* Labels do card lateral do hero: HOJE, NO ALTO / PREMIADA / VISTA.
