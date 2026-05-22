@@ -58,6 +58,11 @@ jobs:
           if [ -f _audit_reports/super_workflow_score_gate.md ]; then
             cat _audit_reports/super_workflow_score_gate.md
           fi
+          if [ -f _audit_reports/superholistic_visual_readability_lock_report.md ]; then
+            echo ""
+            echo "===== Superholistic Visual Readability Lock ====="
+            cat _audit_reports/superholistic_visual_readability_lock_report.md
+          fi
           if [ -f _audit_reports/priority_keywords_aio_score_audit.md ]; then
             echo ""
             echo "===== Priority Keywords AIO Score Audit ====="
@@ -86,14 +91,8 @@ jobs:
         with:
           commit_message: "audit: update super workflow score gate reports"
           file_pattern: >-
-            index.html
-            cafe-da-manha.html
-            almoco.html
-            cardapio.html
-            como-chegar.html
-            eventos.html
-            guia-do-rio.html
-            restaurante-morro-da-urca.html
+            **/*.html
+            assets/**/*.css
             manifest.json
             _audit_reports/*.md
             _audit_reports/*.csv
