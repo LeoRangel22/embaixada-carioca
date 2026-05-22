@@ -1,0 +1,522 @@
+{
+  "status": "FAIL",
+  "threshold": 90,
+  "min_score": 0,
+  "queries": [
+    {
+      "query": "embaixada carioca",
+      "clicks": 45,
+      "impressions": 293,
+      "ctr": 15.36,
+      "cluster": "brand",
+      "target": "index.html"
+    },
+    {
+      "query": "avaliações sobre embaixada carioca",
+      "clicks": 0,
+      "impressions": 112,
+      "ctr": 0.0,
+      "cluster": "reviews",
+      "target": "index.html"
+    },
+    {
+      "query": "morro da urca",
+      "clicks": 0,
+      "impressions": 88,
+      "ctr": 0.0,
+      "cluster": "geo",
+      "target": "restaurante-morro-da-urca.html"
+    },
+    {
+      "query": "restaurante urca",
+      "clicks": 0,
+      "impressions": 62,
+      "ctr": 0.0,
+      "cluster": "restaurant_urca",
+      "target": "restaurante-morro-da-urca.html"
+    },
+    {
+      "query": "restaurante pão de açucar",
+      "clicks": 1,
+      "impressions": 49,
+      "ctr": 2.04,
+      "cluster": "pao_de_acucar",
+      "target": "index.html"
+    },
+    {
+      "query": "restaurante morro da urca",
+      "clicks": 1,
+      "impressions": 45,
+      "ctr": 2.22,
+      "cluster": "morro_da_urca_restaurant",
+      "target": "restaurante-morro-da-urca.html"
+    },
+    {
+      "query": "restaurante na urca",
+      "clicks": 0,
+      "impressions": 39,
+      "ctr": 0.0,
+      "cluster": "restaurant_urca",
+      "target": "restaurante-morro-da-urca.html"
+    },
+    {
+      "query": "restaurante no pão de açúcar",
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0.0,
+      "cluster": "pao_de_acucar",
+      "target": "index.html"
+    },
+    {
+      "query": "embaixada",
+      "clicks": 2,
+      "impressions": 30,
+      "ctr": 6.67,
+      "cluster": "brand",
+      "target": "index.html"
+    },
+    {
+      "query": "restaurante no morro da urca",
+      "clicks": 4,
+      "impressions": 25,
+      "ctr": 16.0,
+      "cluster": "morro_da_urca_restaurant",
+      "target": "restaurante-morro-da-urca.html"
+    },
+    {
+      "query": "restaurantes urca",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0.0,
+      "cluster": "restaurant_urca",
+      "target": "restaurante-morro-da-urca.html"
+    },
+    {
+      "query": "av pasteur 520 - urca rio de janeiro",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0.0,
+      "cluster": "address",
+      "target": "como-chegar.html"
+    },
+    {
+      "query": "restaurante pao de acucar",
+      "clicks": 1,
+      "impressions": 21,
+      "ctr": 4.76,
+      "cluster": "pao_de_acucar",
+      "target": "index.html"
+    },
+    {
+      "query": "cafe da manha pao de acucar",
+      "clicks": 1,
+      "impressions": 19,
+      "ctr": 5.26,
+      "cluster": "breakfast",
+      "target": "cafe-da-manha.html"
+    },
+    {
+      "query": "avenida pasteur 520",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0.0,
+      "cluster": "address",
+      "target": "como-chegar.html"
+    },
+    {
+      "query": "cafe da manha na urca",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0.0,
+      "cluster": "breakfast",
+      "target": "cafe-da-manha.html"
+    },
+    {
+      "query": "restaurantes na urca",
+      "clicks": 1,
+      "impressions": 17,
+      "ctr": 5.88,
+      "cluster": "restaurant_urca",
+      "target": "restaurante-morro-da-urca.html"
+    },
+    {
+      "query": "morro da urca rio de janeiro",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0.0,
+      "cluster": "geo",
+      "target": "restaurante-morro-da-urca.html"
+    },
+    {
+      "query": "restaurante no pao de açucar rj",
+      "clicks": 1,
+      "impressions": 16,
+      "ctr": 6.25,
+      "cluster": "pao_de_acucar",
+      "target": "index.html"
+    },
+    {
+      "query": "café da manhã na urca",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0.0,
+      "cluster": "breakfast",
+      "target": "cafe-da-manha.html"
+    },
+    {
+      "query": "restaurante bondinho",
+      "clicks": 1,
+      "impressions": 15,
+      "ctr": 6.67,
+      "cluster": "bondinho",
+      "target": "index.html"
+    }
+  ],
+  "query_results": [
+    {
+      "query": "embaixada carioca",
+      "cluster": "brand",
+      "target": "index.html",
+      "clicks": 45,
+      "impressions": 293,
+      "ctr": 15.36,
+      "present_in_target": true,
+      "present_in_title": true,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 70,
+      "recommendation": "Reforçar consulta em: meta description, H1"
+    },
+    {
+      "query": "avaliações sobre embaixada carioca",
+      "cluster": "reviews",
+      "target": "index.html",
+      "clicks": 0,
+      "impressions": 112,
+      "ctr": 0.0,
+      "present_in_target": false,
+      "present_in_title": false,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 0,
+      "recommendation": "Reforçar consulta em: texto visível, title, meta description, H1"
+    },
+    {
+      "query": "morro da urca",
+      "cluster": "geo",
+      "target": "restaurante-morro-da-urca.html",
+      "clicks": 0,
+      "impressions": 88,
+      "ctr": 0.0,
+      "present_in_target": true,
+      "present_in_title": true,
+      "present_in_description": true,
+      "present_in_h1": true,
+      "score": 100,
+      "recommendation": "OK"
+    },
+    {
+      "query": "restaurante urca",
+      "cluster": "restaurant_urca",
+      "target": "restaurante-morro-da-urca.html",
+      "clicks": 0,
+      "impressions": 62,
+      "ctr": 0.0,
+      "present_in_target": false,
+      "present_in_title": false,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 0,
+      "recommendation": "Reforçar consulta em: texto visível, title, meta description, H1"
+    },
+    {
+      "query": "restaurante pão de açucar",
+      "cluster": "pao_de_acucar",
+      "target": "index.html",
+      "clicks": 1,
+      "impressions": 49,
+      "ctr": 2.04,
+      "present_in_target": false,
+      "present_in_title": false,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 0,
+      "recommendation": "Reforçar consulta em: texto visível, title, meta description, H1"
+    },
+    {
+      "query": "restaurante morro da urca",
+      "cluster": "morro_da_urca_restaurant",
+      "target": "restaurante-morro-da-urca.html",
+      "clicks": 1,
+      "impressions": 45,
+      "ctr": 2.22,
+      "present_in_target": true,
+      "present_in_title": true,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 70,
+      "recommendation": "Reforçar consulta em: meta description, H1"
+    },
+    {
+      "query": "restaurante na urca",
+      "cluster": "restaurant_urca",
+      "target": "restaurante-morro-da-urca.html",
+      "clicks": 0,
+      "impressions": 39,
+      "ctr": 0.0,
+      "present_in_target": false,
+      "present_in_title": false,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 0,
+      "recommendation": "Reforçar consulta em: texto visível, title, meta description, H1"
+    },
+    {
+      "query": "restaurante no pão de açúcar",
+      "cluster": "pao_de_acucar",
+      "target": "index.html",
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0.0,
+      "present_in_target": true,
+      "present_in_title": false,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 50,
+      "recommendation": "Reforçar consulta em: title, meta description, H1"
+    },
+    {
+      "query": "embaixada",
+      "cluster": "brand",
+      "target": "index.html",
+      "clicks": 2,
+      "impressions": 30,
+      "ctr": 6.67,
+      "present_in_target": true,
+      "present_in_title": true,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 70,
+      "recommendation": "Reforçar consulta em: meta description, H1"
+    },
+    {
+      "query": "restaurante no morro da urca",
+      "cluster": "morro_da_urca_restaurant",
+      "target": "restaurante-morro-da-urca.html",
+      "clicks": 4,
+      "impressions": 25,
+      "ctr": 16.0,
+      "present_in_target": true,
+      "present_in_title": false,
+      "present_in_description": true,
+      "present_in_h1": true,
+      "score": 80,
+      "recommendation": "Reforçar consulta em: title"
+    },
+    {
+      "query": "restaurantes urca",
+      "cluster": "restaurant_urca",
+      "target": "restaurante-morro-da-urca.html",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0.0,
+      "present_in_target": false,
+      "present_in_title": false,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 0,
+      "recommendation": "Reforçar consulta em: texto visível, title, meta description, H1"
+    },
+    {
+      "query": "av pasteur 520 - urca rio de janeiro",
+      "cluster": "address",
+      "target": "como-chegar.html",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0.0,
+      "present_in_target": false,
+      "present_in_title": false,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 0,
+      "recommendation": "Reforçar consulta em: texto visível, title, meta description, H1"
+    },
+    {
+      "query": "restaurante pao de acucar",
+      "cluster": "pao_de_acucar",
+      "target": "index.html",
+      "clicks": 1,
+      "impressions": 21,
+      "ctr": 4.76,
+      "present_in_target": false,
+      "present_in_title": false,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 0,
+      "recommendation": "Reforçar consulta em: texto visível, title, meta description, H1"
+    },
+    {
+      "query": "cafe da manha pao de acucar",
+      "cluster": "breakfast",
+      "target": "cafe-da-manha.html",
+      "clicks": 1,
+      "impressions": 19,
+      "ctr": 5.26,
+      "present_in_target": false,
+      "present_in_title": false,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 0,
+      "recommendation": "Reforçar consulta em: texto visível, title, meta description, H1"
+    },
+    {
+      "query": "avenida pasteur 520",
+      "cluster": "address",
+      "target": "como-chegar.html",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0.0,
+      "present_in_target": false,
+      "present_in_title": false,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 0,
+      "recommendation": "Reforçar consulta em: texto visível, title, meta description, H1"
+    },
+    {
+      "query": "cafe da manha na urca",
+      "cluster": "breakfast",
+      "target": "cafe-da-manha.html",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0.0,
+      "present_in_target": false,
+      "present_in_title": false,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 0,
+      "recommendation": "Reforçar consulta em: texto visível, title, meta description, H1"
+    },
+    {
+      "query": "restaurantes na urca",
+      "cluster": "restaurant_urca",
+      "target": "restaurante-morro-da-urca.html",
+      "clicks": 1,
+      "impressions": 17,
+      "ctr": 5.88,
+      "present_in_target": false,
+      "present_in_title": false,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 0,
+      "recommendation": "Reforçar consulta em: texto visível, title, meta description, H1"
+    },
+    {
+      "query": "morro da urca rio de janeiro",
+      "cluster": "geo",
+      "target": "restaurante-morro-da-urca.html",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0.0,
+      "present_in_target": false,
+      "present_in_title": false,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 0,
+      "recommendation": "Reforçar consulta em: texto visível, title, meta description, H1"
+    },
+    {
+      "query": "restaurante no pao de açucar rj",
+      "cluster": "pao_de_acucar",
+      "target": "index.html",
+      "clicks": 1,
+      "impressions": 16,
+      "ctr": 6.25,
+      "present_in_target": false,
+      "present_in_title": false,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 0,
+      "recommendation": "Reforçar consulta em: texto visível, title, meta description, H1"
+    },
+    {
+      "query": "café da manhã na urca",
+      "cluster": "breakfast",
+      "target": "cafe-da-manha.html",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0.0,
+      "present_in_target": false,
+      "present_in_title": false,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 0,
+      "recommendation": "Reforçar consulta em: texto visível, title, meta description, H1"
+    },
+    {
+      "query": "restaurante bondinho",
+      "cluster": "bondinho",
+      "target": "index.html",
+      "clicks": 1,
+      "impressions": 15,
+      "ctr": 6.67,
+      "present_in_target": false,
+      "present_in_title": false,
+      "present_in_description": false,
+      "present_in_h1": false,
+      "score": 0,
+      "recommendation": "Reforçar consulta em: texto visível, title, meta description, H1"
+    }
+  ],
+  "page_results": [
+    {
+      "page": "index.html",
+      "score": 50,
+      "status": "FAIL",
+      "covered": 3,
+      "required": 6,
+      "missing": [
+        "restaurante pão de açúcar",
+        "restaurante bondinho",
+        "av pasteur 520"
+      ]
+    },
+    {
+      "page": "restaurante-morro-da-urca.html",
+      "score": 40,
+      "status": "FAIL",
+      "covered": 2,
+      "required": 5,
+      "missing": [
+        "restaurante urca",
+        "restaurantes na urca",
+        "morro da urca rio de janeiro"
+      ]
+    },
+    {
+      "page": "cafe-da-manha.html",
+      "score": 0,
+      "status": "FAIL",
+      "covered": 0,
+      "required": 4,
+      "missing": [
+        "cafe da manha pao de acucar",
+        "cafe da manha na urca",
+        "café da manhã na urca",
+        "café da manhã pão de açúcar"
+      ]
+    },
+    {
+      "page": "como-chegar.html",
+      "score": 25,
+      "status": "FAIL",
+      "covered": 1,
+      "required": 4,
+      "missing": [
+        "av pasteur 520",
+        "avenida pasteur 520",
+        "urca rio de janeiro"
+      ]
+    }
+  ]
+}

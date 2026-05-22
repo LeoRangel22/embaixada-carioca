@@ -92,6 +92,21 @@
     },
     {
       "attempt": 1,
+      "name": "GSC real organic queries score audit",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "FAIL",
+      "score": 0.0,
+      "command_status": 1,
+      "reports_found": [
+        "_audit_reports/gsc_real_queries_score_audit.md",
+        "_audit_reports/gsc_real_queries_score_audit.csv",
+        "_audit_reports/gsc_real_queries_score_audit.json"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/gsc_real_queries_score_audit.md: 0.0; _audit_reports/gsc_real_queries_score_audit.csv: 0.0; _audit_reports/gsc_real_queries_score_audit.json: 0.0"
+    },
+    {
+      "attempt": 1,
       "name": "Superholistic design UX SEO GEO audit",
       "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
       "status": "PASS",
@@ -193,6 +208,21 @@
     },
     {
       "attempt": 2,
+      "name": "GSC real organic queries score audit",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "FAIL",
+      "score": 0.0,
+      "command_status": 1,
+      "reports_found": [
+        "_audit_reports/gsc_real_queries_score_audit.md",
+        "_audit_reports/gsc_real_queries_score_audit.csv",
+        "_audit_reports/gsc_real_queries_score_audit.json"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/gsc_real_queries_score_audit.md: 0.0; _audit_reports/gsc_real_queries_score_audit.csv: 0.0; _audit_reports/gsc_real_queries_score_audit.json: 0.0"
+    },
+    {
+      "attempt": 2,
       "name": "Superholistic design UX SEO GEO audit",
       "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
       "status": "PASS",
@@ -294,6 +324,21 @@
     },
     {
       "attempt": 3,
+      "name": "GSC real organic queries score audit",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "FAIL",
+      "score": 0.0,
+      "command_status": 1,
+      "reports_found": [
+        "_audit_reports/gsc_real_queries_score_audit.md",
+        "_audit_reports/gsc_real_queries_score_audit.csv",
+        "_audit_reports/gsc_real_queries_score_audit.json"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/gsc_real_queries_score_audit.md: 0.0; _audit_reports/gsc_real_queries_score_audit.csv: 0.0; _audit_reports/gsc_real_queries_score_audit.json: 0.0"
+    },
+    {
+      "attempt": 3,
       "name": "Superholistic design UX SEO GEO audit",
       "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
       "status": "PASS",
@@ -392,6 +437,21 @@
         "_audit_reports/priority_keywords_aio_score_audit.json"
       ],
       "notes": ""
+    },
+    {
+      "attempt": 4,
+      "name": "GSC real organic queries score audit",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "FAIL",
+      "score": 0.0,
+      "command_status": 1,
+      "reports_found": [
+        "_audit_reports/gsc_real_queries_score_audit.md",
+        "_audit_reports/gsc_real_queries_score_audit.csv",
+        "_audit_reports/gsc_real_queries_score_audit.json"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/gsc_real_queries_score_audit.md: 0.0; _audit_reports/gsc_real_queries_score_audit.csv: 0.0; _audit_reports/gsc_real_queries_score_audit.json: 0.0"
     },
     {
       "attempt": 4,
@@ -495,6 +555,21 @@
         "_audit_reports/priority_keywords_aio_score_audit.json"
       ],
       "notes": ""
+    },
+    "GSC real organic queries score audit": {
+      "attempt": 4,
+      "name": "GSC real organic queries score audit",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "FAIL",
+      "score": 0.0,
+      "command_status": 1,
+      "reports_found": [
+        "_audit_reports/gsc_real_queries_score_audit.md",
+        "_audit_reports/gsc_real_queries_score_audit.csv",
+        "_audit_reports/gsc_real_queries_score_audit.json"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/gsc_real_queries_score_audit.md: 0.0; _audit_reports/gsc_real_queries_score_audit.csv: 0.0; _audit_reports/gsc_real_queries_score_audit.json: 0.0"
     },
     "Superholistic design UX SEO GEO audit": {
       "attempt": 4,

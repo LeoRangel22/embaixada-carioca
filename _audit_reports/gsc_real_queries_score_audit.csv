@@ -1,0 +1,22 @@
+query,cluster,target,clicks,impressions,ctr,present_in_target,present_in_title,present_in_description,present_in_h1,score,recommendation
+embaixada carioca,brand,index.html,45,293,15.36,True,True,False,False,70,"Reforçar consulta em: meta description, H1"
+avaliações sobre embaixada carioca,reviews,index.html,0,112,0.0,False,False,False,False,0,"Reforçar consulta em: texto visível, title, meta description, H1"
+morro da urca,geo,restaurante-morro-da-urca.html,0,88,0.0,True,True,True,True,100,OK
+restaurante urca,restaurant_urca,restaurante-morro-da-urca.html,0,62,0.0,False,False,False,False,0,"Reforçar consulta em: texto visível, title, meta description, H1"
+restaurante pão de açucar,pao_de_acucar,index.html,1,49,2.04,False,False,False,False,0,"Reforçar consulta em: texto visível, title, meta description, H1"
+restaurante morro da urca,morro_da_urca_restaurant,restaurante-morro-da-urca.html,1,45,2.22,True,True,False,False,70,"Reforçar consulta em: meta description, H1"
+restaurante na urca,restaurant_urca,restaurante-morro-da-urca.html,0,39,0.0,False,False,False,False,0,"Reforçar consulta em: texto visível, title, meta description, H1"
+restaurante no pão de açúcar,pao_de_acucar,index.html,0,34,0.0,True,False,False,False,50,"Reforçar consulta em: title, meta description, H1"
+embaixada,brand,index.html,2,30,6.67,True,True,False,False,70,"Reforçar consulta em: meta description, H1"
+restaurante no morro da urca,morro_da_urca_restaurant,restaurante-morro-da-urca.html,4,25,16.0,True,False,True,True,80,Reforçar consulta em: title
+restaurantes urca,restaurant_urca,restaurante-morro-da-urca.html,0,25,0.0,False,False,False,False,0,"Reforçar consulta em: texto visível, title, meta description, H1"
+av pasteur 520 - urca rio de janeiro,address,como-chegar.html,0,22,0.0,False,False,False,False,0,"Reforçar consulta em: texto visível, title, meta description, H1"
+restaurante pao de acucar,pao_de_acucar,index.html,1,21,4.76,False,False,False,False,0,"Reforçar consulta em: texto visível, title, meta description, H1"
+cafe da manha pao de acucar,breakfast,cafe-da-manha.html,1,19,5.26,False,False,False,False,0,"Reforçar consulta em: texto visível, title, meta description, H1"
+avenida pasteur 520,address,como-chegar.html,0,17,0.0,False,False,False,False,0,"Reforçar consulta em: texto visível, title, meta description, H1"
+cafe da manha na urca,breakfast,cafe-da-manha.html,0,17,0.0,False,False,False,False,0,"Reforçar consulta em: texto visível, title, meta description, H1"
+restaurantes na urca,restaurant_urca,restaurante-morro-da-urca.html,1,17,5.88,False,False,False,False,0,"Reforçar consulta em: texto visível, title, meta description, H1"
+morro da urca rio de janeiro,geo,restaurante-morro-da-urca.html,0,16,0.0,False,False,False,False,0,"Reforçar consulta em: texto visível, title, meta description, H1"
+restaurante no pao de açucar rj,pao_de_acucar,index.html,1,16,6.25,False,False,False,False,0,"Reforçar consulta em: texto visível, title, meta description, H1"
+café da manhã na urca,breakfast,cafe-da-manha.html,0,15,0.0,False,False,False,False,0,"Reforçar consulta em: texto visível, title, meta description, H1"
+restaurante bondinho,bondinho,index.html,1,15,6.67,False,False,False,False,0,"Reforçar consulta em: texto visível, title, meta description, H1"
