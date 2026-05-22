@@ -1,0 +1,183 @@
+{
+  "status": "FAIL",
+  "threshold": 90,
+  "min_score": 58,
+  "priority_keywords": [
+    "restaurante pão de açúcar",
+    "restaurante morro da urca",
+    "restaurante no pão de açúcar",
+    "av pasteur 520 urca rio de janeiro",
+    "restaurante pao de acucar",
+    "restaurante no morro da urca",
+    "cafe da manha na urca",
+    "restaurante no pao de acucar rj"
+  ],
+  "targets": {
+    "index.html": {
+      "keywords": [
+        "restaurante pão de açúcar",
+        "restaurante pao de acucar",
+        "restaurante no pão de açúcar",
+        "restaurante no pao de acucar rj",
+        "av pasteur 520 urca rio de janeiro"
+      ],
+      "min_words": 3500,
+      "min_faq": 8,
+      "requires_ol": true,
+      "requires_video": false,
+      "requires_awards": true,
+      "requires_restaurant_schema": true,
+      "requires_single_aggregate_rating": true,
+      "notes": "Home deve ser fonte completa para IA, com FAQs estruturadas, listas e schema canônico."
+    },
+    "restaurante-morro-da-urca.html": {
+      "keywords": [
+        "restaurante morro da urca",
+        "restaurante no morro da urca",
+        "restaurante pão de açúcar",
+        "restaurante no pão de açúcar"
+      ],
+      "min_words": 1200,
+      "min_faq": 8,
+      "requires_ol": true,
+      "requires_video": true,
+      "requires_awards": true,
+      "requires_restaurant_schema": true,
+      "requires_single_aggregate_rating": false,
+      "notes": "Página de captação deve expandir conteúdo, E-E-A-T e FAQ para competir com agregadores."
+    },
+    "cafe-da-manha.html": {
+      "keywords": [
+        "cafe da manha na urca",
+        "café da manhã na urca",
+        "café da manhã pão de açúcar",
+        "cafe da manha pao de acucar"
+      ],
+      "min_words": 2000,
+      "min_faq": 8,
+      "requires_ol": true,
+      "requires_video": true,
+      "requires_awards": false,
+      "requires_restaurant_schema": true,
+      "requires_single_aggregate_rating": false,
+      "notes": "Página de produto deve ter passo a passo em OL e VideoObject para chegar a 90+."
+    }
+  },
+  "results": [
+    {
+      "page": "index.html",
+      "exists": true,
+      "score": 78,
+      "status": "FAIL",
+      "word_count": 6486,
+      "faq_count": 29,
+      "keyword_present": [
+        "restaurante no pão de açúcar"
+      ],
+      "keyword_missing": [
+        "restaurante pão de açúcar",
+        "restaurante pao de acucar",
+        "restaurante no pao de acucar rj",
+        "av pasteur 520 urca rio de janeiro"
+      ],
+      "award_present": [
+        "Veja Rio",
+        "Prazeres da Mesa",
+        "melhor chope",
+        "Heineken",
+        "feijoada premiada",
+        "caipirinha",
+        "Magnífica",
+        "picanha"
+      ],
+      "award_missing": [],
+      "has_ol": false,
+      "has_restaurant_schema": true,
+      "has_video_schema": false,
+      "aggregate_rating_count": 2,
+      "findings": [
+        "Keywords ausentes ou pouco literais: restaurante pão de açúcar, restaurante pao de acucar, restaurante no pao de acucar rj, av pasteur 520 urca rio de janeiro",
+        "Falta lista numerada <ol> para Featured Snippet.",
+        "aggregateRating deve ser único; encontrado 2."
+      ]
+    },
+    {
+      "page": "restaurante-morro-da-urca.html",
+      "exists": true,
+      "score": 58,
+      "status": "FAIL",
+      "word_count": 660,
+      "faq_count": 4,
+      "keyword_present": [
+        "restaurante morro da urca",
+        "restaurante no morro da urca"
+      ],
+      "keyword_missing": [
+        "restaurante pão de açúcar",
+        "restaurante no pão de açúcar"
+      ],
+      "award_present": [
+        "caipirinha"
+      ],
+      "award_missing": [
+        "Veja Rio",
+        "Prazeres da Mesa",
+        "melhor chope",
+        "Heineken",
+        "feijoada premiada",
+        "Magnífica",
+        "picanha"
+      ],
+      "has_ol": true,
+      "has_restaurant_schema": true,
+      "has_video_schema": false,
+      "aggregate_rating_count": 2,
+      "findings": [
+        "Keywords ausentes ou pouco literais: restaurante pão de açúcar, restaurante no pão de açúcar",
+        "Conteúdo curto: 660 palavras; meta 1200.",
+        "FAQ insuficiente: 4; meta 8.",
+        "E-E-A-T/premiações insuficientes: 1/4 termos mínimos.",
+        "Falta VideoObject schema recomendado.",
+        "Possível duplicidade de aggregateRating: 2."
+      ]
+    },
+    {
+      "page": "cafe-da-manha.html",
+      "exists": true,
+      "score": 63,
+      "status": "FAIL",
+      "word_count": 1755,
+      "faq_count": 8,
+      "keyword_present": [],
+      "keyword_missing": [
+        "cafe da manha na urca",
+        "café da manhã na urca",
+        "café da manhã pão de açúcar",
+        "cafe da manha pao de acucar"
+      ],
+      "award_present": [
+        "Heineken",
+        "feijoada premiada",
+        "caipirinha",
+        "Magnífica",
+        "picanha"
+      ],
+      "award_missing": [
+        "Veja Rio",
+        "Prazeres da Mesa",
+        "melhor chope"
+      ],
+      "has_ol": false,
+      "has_restaurant_schema": true,
+      "has_video_schema": false,
+      "aggregate_rating_count": 4,
+      "findings": [
+        "Keywords ausentes ou pouco literais: cafe da manha na urca, café da manhã na urca, café da manhã pão de açúcar, cafe da manha pao de acucar",
+        "Conteúdo curto: 1755 palavras; meta 2000.",
+        "Falta lista numerada <ol> para Featured Snippet.",
+        "Falta VideoObject schema recomendado.",
+        "Possível duplicidade de aggregateRating: 4."
+      ]
+    }
+  ]
+}

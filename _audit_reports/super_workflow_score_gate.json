@@ -82,13 +82,13 @@
       "status": "FAIL",
       "score": 0.0,
       "command_status": 1,
-      "reports_found": [],
-      "missing_reports": [
+      "reports_found": [
         "_audit_reports/priority_keywords_aio_score_audit.md",
         "_audit_reports/priority_keywords_aio_score_audit.csv",
         "_audit_reports/priority_keywords_aio_score_audit.json"
       ],
-      "notes": ""
+      "missing_reports": [],
+      "notes": "_audit_reports/priority_keywords_aio_score_audit.md: 0.0; _audit_reports/priority_keywords_aio_score_audit.csv: 58.0; _audit_reports/priority_keywords_aio_score_audit.json: 58.0"
     },
     {
       "attempt": 1,
@@ -198,13 +198,13 @@
       "status": "FAIL",
       "score": 0.0,
       "command_status": 1,
-      "reports_found": [],
-      "missing_reports": [
+      "reports_found": [
         "_audit_reports/priority_keywords_aio_score_audit.md",
         "_audit_reports/priority_keywords_aio_score_audit.csv",
         "_audit_reports/priority_keywords_aio_score_audit.json"
       ],
-      "notes": ""
+      "missing_reports": [],
+      "notes": "_audit_reports/priority_keywords_aio_score_audit.md: 0.0; _audit_reports/priority_keywords_aio_score_audit.csv: 58.0; _audit_reports/priority_keywords_aio_score_audit.json: 58.0"
     },
     {
       "attempt": 2,
@@ -314,13 +314,13 @@
       "status": "FAIL",
       "score": 0.0,
       "command_status": 1,
-      "reports_found": [],
-      "missing_reports": [
+      "reports_found": [
         "_audit_reports/priority_keywords_aio_score_audit.md",
         "_audit_reports/priority_keywords_aio_score_audit.csv",
         "_audit_reports/priority_keywords_aio_score_audit.json"
       ],
-      "notes": ""
+      "missing_reports": [],
+      "notes": "_audit_reports/priority_keywords_aio_score_audit.md: 0.0; _audit_reports/priority_keywords_aio_score_audit.csv: 58.0; _audit_reports/priority_keywords_aio_score_audit.json: 58.0"
     },
     {
       "attempt": 3,
@@ -430,13 +430,13 @@
       "status": "FAIL",
       "score": 0.0,
       "command_status": 1,
-      "reports_found": [],
-      "missing_reports": [
+      "reports_found": [
         "_audit_reports/priority_keywords_aio_score_audit.md",
         "_audit_reports/priority_keywords_aio_score_audit.csv",
         "_audit_reports/priority_keywords_aio_score_audit.json"
       ],
-      "notes": ""
+      "missing_reports": [],
+      "notes": "_audit_reports/priority_keywords_aio_score_audit.md: 0.0; _audit_reports/priority_keywords_aio_score_audit.csv: 58.0; _audit_reports/priority_keywords_aio_score_audit.json: 58.0"
     },
     {
       "attempt": 4,
@@ -548,13 +548,13 @@
       "status": "FAIL",
       "score": 0.0,
       "command_status": 1,
-      "reports_found": [],
-      "missing_reports": [
+      "reports_found": [
         "_audit_reports/priority_keywords_aio_score_audit.md",
         "_audit_reports/priority_keywords_aio_score_audit.csv",
         "_audit_reports/priority_keywords_aio_score_audit.json"
       ],
-      "notes": ""
+      "missing_reports": [],
+      "notes": "_audit_reports/priority_keywords_aio_score_audit.md: 0.0; _audit_reports/priority_keywords_aio_score_audit.csv: 58.0; _audit_reports/priority_keywords_aio_score_audit.json: 58.0"
     },
     "GSC real organic queries score audit": {
       "attempt": 4,
