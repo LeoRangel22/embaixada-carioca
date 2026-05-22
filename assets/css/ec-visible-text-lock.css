@@ -98,3 +98,114 @@ body[data-screen-label="Home"][data-screen-label="Home"] header.hero.hero .hero-
   -webkit-background-clip:border-box!important;
   background-clip:border-box!important;
 }
+
+/* Home — seção Os três momentos em fundo claro.
+   Esta trava não depende do data-screen-label e usa ID repetido para vencer estilos tardios genéricos. */
+html body main section#momentos#momentos#momentos.momentos,
+html body main section#momentos#momentos#momentos.momentos .sec-head,
+html body main section#momentos#momentos#momentos.momentos .sec-head *{
+  --ec-vr-paper:#00405a!important;
+  --ec-readable-sand-soft:#00405a!important;
+  --ec-readable-yellow:#9a6500!important;
+  --ec-readable-blue:#00405a!important;
+  --ec-readable-gray:#485156!important;
+  --areia-pale:#00405a!important;
+  --ec-areia:#00405a!important;
+  --ec-visible-cream:#00405a!important;
+  text-shadow:none!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+  opacity:1!important;
+  visibility:visible!important;
+  background-image:none!important;
+  -webkit-background-clip:border-box!important;
+  background-clip:border-box!important;
+  -webkit-text-stroke:0!important;
+}
+
+html body main section#momentos#momentos#momentos.momentos{
+  background:#f6efde!important;
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+}
+
+html body main section#momentos#momentos#momentos.momentos .sec-head h1,
+html body main section#momentos#momentos#momentos.momentos .sec-head h2,
+html body main section#momentos#momentos#momentos.momentos .sec-head h3,
+html body main section#momentos#momentos#momentos.momentos .sec-head h1 *,
+html body main section#momentos#momentos#momentos.momentos .sec-head h2 *,
+html body main section#momentos#momentos#momentos.momentos .sec-head h3 *{
+  --ec-vr-paper:#00405a!important;
+  --ec-readable-sand-soft:#00405a!important;
+  --areia-pale:#00405a!important;
+  --ec-areia:#00405a!important;
+  --ec-visible-cream:#00405a!important;
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+  text-shadow:none!important;
+}
+
+html body main section#momentos#momentos#momentos.momentos .sec-head h1 .serif,
+html body main section#momentos#momentos#momentos.momentos .sec-head h2 .serif,
+html body main section#momentos#momentos#momentos.momentos .sec-head h3 .serif{
+  --ec-vr-paper:#335d4a!important;
+  --ec-readable-sand-soft:#335d4a!important;
+  --areia-pale:#335d4a!important;
+  --ec-areia:#335d4a!important;
+  --ec-visible-cream:#335d4a!important;
+  color:#335d4a!important;
+  -webkit-text-fill-color:#335d4a!important;
+  text-shadow:none!important;
+}
+
+html body main section#momentos#momentos#momentos.momentos .sec-head .lede,
+html body main section#momentos#momentos#momentos.momentos .sec-head p,
+html body main section#momentos#momentos#momentos.momentos .sec-head .lede *:not(strong):not(b),
+html body main section#momentos#momentos#momentos.momentos .sec-head p *:not(strong):not(b){
+  --ec-vr-paper:#485156!important;
+  --ec-readable-sand-soft:#485156!important;
+  --areia-pale:#485156!important;
+  --ec-areia:#485156!important;
+  --ec-visible-cream:#485156!important;
+  color:#485156!important;
+  -webkit-text-fill-color:#485156!important;
+  text-shadow:none!important;
+}
+
+html body main section#momentos#momentos#momentos.momentos .sec-head .lede strong,
+html body main section#momentos#momentos#momentos.momentos .sec-head p strong,
+html body main section#momentos#momentos#momentos.momentos .sec-head .lede b,
+html body main section#momentos#momentos#momentos.momentos .sec-head p b{
+  --ec-vr-paper:#00405a!important;
+  --ec-readable-sand-soft:#00405a!important;
+  --areia-pale:#00405a!important;
+  --ec-areia:#00405a!important;
+  --ec-visible-cream:#00405a!important;
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+  text-shadow:none!important;
+}
+
+html body main section#momentos#momentos#momentos.momentos .sec-head .num,
+html body main section#momentos#momentos#momentos.momentos .sec-head .num *{
+  --ec-vr-paper:#527f8f!important;
+  --ec-readable-sand-soft:#527f8f!important;
+  --areia-pale:#527f8f!important;
+  --ec-areia:#527f8f!important;
+  --ec-visible-cream:#527f8f!important;
+  color:#527f8f!important;
+  -webkit-text-fill-color:#527f8f!important;
+  text-shadow:none!important;
+}
+
+html body main section#momentos#momentos#momentos.momentos .sec-head .num b{
+  --ec-vr-paper:#f59b1e!important;
+  --ec-readable-sand-soft:#f59b1e!important;
+  --areia-pale:#f59b1e!important;
+  --ec-areia:#f59b1e!important;
+  --ec-visible-cream:#f59b1e!important;
+  color:#f59b1e!important;
+  -webkit-text-fill-color:#f59b1e!important;
+  border-color:#f59b1e!important;
+  text-shadow:none!important;
+}
