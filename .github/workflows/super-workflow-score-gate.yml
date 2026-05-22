@@ -74,16 +74,11 @@ jobs:
         if: always()
         with:
           name: super-workflow-score-gate-reports
+          if-no-files-found: ignore
           path: |
             _audit_reports/*.md
             _audit_reports/*.csv
             _audit_reports/*.json
-            _audit_reports/priority_keywords_aio_score_audit.md
-            _audit_reports/priority_keywords_aio_score_audit.csv
-            _audit_reports/priority_keywords_aio_score_audit.json
-            _audit_reports/superholistic_design_ux_seo_geo_audit.md
-            _audit_reports/superholistic_design_ux_seo_geo_audit.csv
-            _audit_reports/superholistic_design_ux_seo_geo_audit.json
 
       - name: Commit updated reports and automatic fixes
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -103,9 +98,3 @@ jobs:
             _audit_reports/*.md
             _audit_reports/*.csv
             _audit_reports/*.json
-            _audit_reports/priority_keywords_aio_score_audit.md
-            _audit_reports/priority_keywords_aio_score_audit.csv
-            _audit_reports/priority_keywords_aio_score_audit.json
-            _audit_reports/superholistic_design_ux_seo_geo_audit.md
-            _audit_reports/superholistic_design_ux_seo_geo_audit.csv
-            _audit_reports/superholistic_design_ux_seo_geo_audit.json
