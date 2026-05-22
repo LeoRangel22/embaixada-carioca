@@ -68,12 +68,12 @@
       "status": "FAIL",
       "score": 0.0,
       "command_status": 1,
-      "reports_found": [],
-      "missing_reports": [
+      "reports_found": [
         "_audit_reports/super_site_standards_seo_audit.md",
         "_audit_reports/super_site_standards_seo_audit_details.csv"
       ],
-      "notes": ""
+      "missing_reports": [],
+      "notes": "_audit_reports/super_site_standards_seo_audit.md: 0.0; _audit_reports/super_site_standards_seo_audit_details.csv: 64.0"
     },
     {
       "attempt": 1,
@@ -184,12 +184,12 @@
       "status": "FAIL",
       "score": 0.0,
       "command_status": 1,
-      "reports_found": [],
-      "missing_reports": [
+      "reports_found": [
         "_audit_reports/super_site_standards_seo_audit.md",
         "_audit_reports/super_site_standards_seo_audit_details.csv"
       ],
-      "notes": ""
+      "missing_reports": [],
+      "notes": "_audit_reports/super_site_standards_seo_audit.md: 0.0; _audit_reports/super_site_standards_seo_audit_details.csv: 64.0"
     },
     {
       "attempt": 2,
@@ -300,12 +300,12 @@
       "status": "FAIL",
       "score": 0.0,
       "command_status": 1,
-      "reports_found": [],
-      "missing_reports": [
+      "reports_found": [
         "_audit_reports/super_site_standards_seo_audit.md",
         "_audit_reports/super_site_standards_seo_audit_details.csv"
       ],
-      "notes": ""
+      "missing_reports": [],
+      "notes": "_audit_reports/super_site_standards_seo_audit.md: 0.0; _audit_reports/super_site_standards_seo_audit_details.csv: 64.0"
     },
     {
       "attempt": 3,
@@ -416,12 +416,12 @@
       "status": "FAIL",
       "score": 0.0,
       "command_status": 1,
-      "reports_found": [],
-      "missing_reports": [
+      "reports_found": [
         "_audit_reports/super_site_standards_seo_audit.md",
         "_audit_reports/super_site_standards_seo_audit_details.csv"
       ],
-      "notes": ""
+      "missing_reports": [],
+      "notes": "_audit_reports/super_site_standards_seo_audit.md: 0.0; _audit_reports/super_site_standards_seo_audit_details.csv: 64.0"
     },
     {
       "attempt": 4,
@@ -534,12 +534,12 @@
       "status": "FAIL",
       "score": 0.0,
       "command_status": 1,
-      "reports_found": [],
-      "missing_reports": [
+      "reports_found": [
         "_audit_reports/super_site_standards_seo_audit.md",
         "_audit_reports/super_site_standards_seo_audit_details.csv"
       ],
-      "notes": ""
+      "missing_reports": [],
+      "notes": "_audit_reports/super_site_standards_seo_audit.md: 0.0; _audit_reports/super_site_standards_seo_audit_details.csv: 64.0"
     },
     "Priority keywords AIO score audit": {
       "attempt": 4,

@@ -13,7 +13,7 @@ Wait between attempts: **120s**
 | Final 86-page AAA master audit | PASS | 90.0 | _audit_reports/final_86page_aaa_master_audit_report.md<br>_audit_reports/final_86page_aaa_master_audit_details.csv | — |
 | Visual contrast risk audit | PASS | 90.0 | _audit_reports/hero_side_frame_final_lock_report.md<br>_audit_reports/visual_contrast_risk_audit.md | — |
 | Phase 2 performance SEO audit | FAIL | 82.0 | _audit_reports/phase2_quick_fixes_report.md<br>_audit_reports/visible_text_css_link_report.md<br>_audit_reports/como_chegar_final_visible_lock_report.md<br>_audit_reports/phase2_performance_seo_audit.md | — |
-| Super site standards SEO audit | FAIL | 0.0 | — | _audit_reports/super_site_standards_seo_audit.md<br>_audit_reports/super_site_standards_seo_audit_details.csv |
+| Super site standards SEO audit | FAIL | 0.0 | _audit_reports/super_site_standards_seo_audit.md<br>_audit_reports/super_site_standards_seo_audit_details.csv | — |
 | Priority keywords AIO score audit | FAIL | 0.0 | — | _audit_reports/priority_keywords_aio_score_audit.md<br>_audit_reports/priority_keywords_aio_score_audit.csv<br>_audit_reports/priority_keywords_aio_score_audit.json |
 | GSC real organic queries score audit | FAIL | 0.0 | _audit_reports/gsc_real_queries_score_audit.md<br>_audit_reports/gsc_real_queries_score_audit.csv<br>_audit_reports/gsc_real_queries_score_audit.json | — |
 | Superholistic design UX SEO GEO audit | PASS | 92.0 | _audit_reports/superholistic_design_ux_seo_geo_audit.md<br>_audit_reports/superholistic_design_ux_seo_geo_audit.csv<br>_audit_reports/superholistic_design_ux_seo_geo_audit.json | — |
@@ -29,6 +29,7 @@ Wait between attempts: **120s**
 - Attempt 1 — **Phase 2 performance SEO audit**: FAIL, score 82.0, command exit 0
   - _audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: 82.0
 - Attempt 1 — **Super site standards SEO audit**: FAIL, score 0.0, command exit 1
+  - _audit_reports/super_site_standards_seo_audit.md: 0.0; _audit_reports/super_site_standards_seo_audit_details.csv: 64.0
 - Attempt 1 — **Priority keywords AIO score audit**: FAIL, score 0.0, command exit 1
 - Attempt 1 — **GSC real organic queries score audit**: FAIL, score 0.0, command exit 1
   - _audit_reports/gsc_real_queries_score_audit.md: 0.0; _audit_reports/gsc_real_queries_score_audit.csv: 0.0; _audit_reports/gsc_real_queries_score_audit.json: 0.0
@@ -43,6 +44,7 @@ Wait between attempts: **120s**
 - Attempt 2 — **Phase 2 performance SEO audit**: FAIL, score 82.0, command exit 0
   - _audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: 82.0
 - Attempt 2 — **Super site standards SEO audit**: FAIL, score 0.0, command exit 1
+  - _audit_reports/super_site_standards_seo_audit.md: 0.0; _audit_reports/super_site_standards_seo_audit_details.csv: 64.0
 - Attempt 2 — **Priority keywords AIO score audit**: FAIL, score 0.0, command exit 1
 - Attempt 2 — **GSC real organic queries score audit**: FAIL, score 0.0, command exit 1
   - _audit_reports/gsc_real_queries_score_audit.md: 0.0; _audit_reports/gsc_real_queries_score_audit.csv: 0.0; _audit_reports/gsc_real_queries_score_audit.json: 0.0
@@ -57,6 +59,7 @@ Wait between attempts: **120s**
 - Attempt 3 — **Phase 2 performance SEO audit**: FAIL, score 82.0, command exit 0
   - _audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: 82.0
 - Attempt 3 — **Super site standards SEO audit**: FAIL, score 0.0, command exit 1
+  - _audit_reports/super_site_standards_seo_audit.md: 0.0; _audit_reports/super_site_standards_seo_audit_details.csv: 64.0
 - Attempt 3 — **Priority keywords AIO score audit**: FAIL, score 0.0, command exit 1
 - Attempt 3 — **GSC real organic queries score audit**: FAIL, score 0.0, command exit 1
   - _audit_reports/gsc_real_queries_score_audit.md: 0.0; _audit_reports/gsc_real_queries_score_audit.csv: 0.0; _audit_reports/gsc_real_queries_score_audit.json: 0.0
@@ -71,6 +74,7 @@ Wait between attempts: **120s**
 - Attempt 4 — **Phase 2 performance SEO audit**: FAIL, score 82.0, command exit 0
   - _audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: 82.0
 - Attempt 4 — **Super site standards SEO audit**: FAIL, score 0.0, command exit 1
+  - _audit_reports/super_site_standards_seo_audit.md: 0.0; _audit_reports/super_site_standards_seo_audit_details.csv: 64.0
 - Attempt 4 — **Priority keywords AIO score audit**: FAIL, score 0.0, command exit 1
 - Attempt 4 — **GSC real organic queries score audit**: FAIL, score 0.0, command exit 1
   - _audit_reports/gsc_real_queries_score_audit.md: 0.0; _audit_reports/gsc_real_queries_score_audit.csv: 0.0; _audit_reports/gsc_real_queries_score_audit.json: 0.0

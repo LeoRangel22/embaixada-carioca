@@ -1,0 +1,252 @@
+# Super Site Standards + SEO Audit
+
+Status geral: **FAIL**
+Score mínimo: **64**
+Páginas HTML auditadas: **86**
+Findings FAIL: **100**
+Findings totais: **307**
+
+## Aprendizados incorporados
+- Home lower contrast
+- Home dark contrast
+- Sunset cards
+- Como chegar visibility
+- Nav underline
+- Hero eyebrow
+- Hero side frame
+- Orange italics
+- Single aggregateRating
+- Manifest scope
+
+## Páginas com score abaixo de 90
+- `en/parque-bondinho.html` — FAIL — score 64
+- `es/parque-bondinho.html` — FAIL — score 64
+- `parque-bondinho.html` — FAIL — score 64
+- `index.html` — FAIL — score 72
+- `en/almoco.html` — FAIL — score 74
+- `en/cardapio.html` — FAIL — score 74
+- `en/eventos.html` — FAIL — score 74
+- `en/feijoada.html` — FAIL — score 74
+- `en/index.html` — FAIL — score 74
+- `en/morro-da-urca.html` — FAIL — score 74
+- `en/roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 74
+- `en/sunset.html` — FAIL — score 74
+- `es/almoco.html` — FAIL — score 74
+- `es/atardecer.html` — FAIL — score 74
+- `es/cardapio.html` — FAIL — score 74
+- `es/entardecer.html` — FAIL — score 74
+- `es/eventos.html` — FAIL — score 74
+- `es/feijoada.html` — FAIL — score 74
+- `es/index.html` — FAIL — score 74
+- `es/morro-da-urca.html` — FAIL — score 74
+- `es/roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 74
+- `feijoada.html` — FAIL — score 74
+- `morro-da-urca.html` — FAIL — score 74
+- `caipirinha-com-vista-rio.html` — FAIL — score 76
+- `en/caipirinha-com-vista-rio.html` — FAIL — score 76
+- `es/caipirinha-com-vista-rio.html` — FAIL — score 76
+- `contato.html` — FAIL — score 78
+- `en/contato.html` — FAIL — score 78
+- `en/nossa-visao.html` — FAIL — score 78
+- `es/contato.html` — FAIL — score 78
+- `es/nossa-visao.html` — FAIL — score 78
+- `nossa-visao.html` — FAIL — score 78
+- `almoco.html` — FAIL — score 82
+- `cafe-da-manha.html` — FAIL — score 84
+- `cardapio.html` — FAIL — score 84
+- `en/cafe-da-manha.html` — FAIL — score 84
+- `en/entardecer.html` — FAIL — score 84
+- `en/gastronomia-carioca.html` — FAIL — score 84
+- `en/guia-do-rio.html` — FAIL — score 84
+- `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — FAIL — score 84
+- `entardecer.html` — FAIL — score 84
+- `es/cafe-da-manha.html` — FAIL — score 84
+- `es/gastronomia-carioca.html` — FAIL — score 84
+- `es/guia-do-rio.html` — FAIL — score 84
+- `es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — FAIL — score 84
+- `eventos.html` — FAIL — score 84
+- `gastronomia-carioca.html` — FAIL — score 84
+- `guia-do-rio.html` — FAIL — score 84
+- `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — FAIL — score 84
+- `roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 84
+- `en/restaurant-at-urca-hill.html` — FAIL — score 86
+- `en/restaurants-near-sugarloaf-mountain.html` — FAIL — score 86
+- `en/sugarloaf-cable-car-park.html` — FAIL — score 86
+- `en/sugarloaf-cable-car-restaurant.html` — FAIL — score 86
+- `en/where-to-eat-near-sugarloaf.html` — FAIL — score 86
+- `es/donde-comer-cerca-del-pan-de-azucar.html` — FAIL — score 86
+- `es/parque-bondinho-pan-de-azucar.html` — FAIL — score 86
+- `es/restaurante-bondinho-pan-de-azucar.html` — FAIL — score 86
+- `es/restaurante-morro-da-urca.html` — FAIL — score 86
+- `es/restaurantes-cerca-del-pan-de-azucar.html` — FAIL — score 86
+- `onde-comer-no-pao-de-acucar.html` — FAIL — score 86
+- `parque-bondinho-pao-de-acucar.html` — FAIL — score 86
+- `restaurante-bondinho-pao-de-acucar.html` — FAIL — score 86
+- `restaurante-morro-da-urca.html` — FAIL — score 86
+- `restaurantes-perto-do-pao-de-acucar.html` — FAIL — score 86
+
+## Top findings
+- **WARN** `404.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `404.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `404.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `almoco-morro-da-urca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `almoco-morro-da-urca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `almoco.html` — SEO/title_length: Title fora da faixa ideal.
+- **FAIL** `almoco.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `almoco.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `almoco.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `almoco.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `cafe-da-manha-com-vista-rio-de-janeiro.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `cafe-da-manha-com-vista-rio-de-janeiro.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `cafe-da-manha-pao-de-acucar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `cafe-da-manha-pao-de-acucar.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `cafe-da-manha.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 4.
+- **WARN** `cafe-da-manha.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `cafe-da-manha.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `cafe-da-manha.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `caipirinha-com-vista-rio.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
+- **FAIL** `caipirinha-com-vista-rio.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `caipirinha-com-vista-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `caipirinha-com-vista-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `cardapio.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `cardapio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `cardapio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `cardapio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `como-chegar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **FAIL** `contato.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
+- **FAIL** `contato.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `contato.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/almoco-morro-da-urca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/almoco-morro-da-urca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/almoco.html` — SEO/meta_description: Página sem meta description.
+- **FAIL** `en/almoco.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `en/almoco.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `en/almoco.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/almoco.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `en/breakfast-with-a-view-rio-de-janeiro.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/breakfast-with-a-view-rio-de-janeiro.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `en/cafe-da-manha-pao-de-acucar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/cafe-da-manha-pao-de-acucar.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/cafe-da-manha.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 4.
+- **WARN** `en/cafe-da-manha.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `en/cafe-da-manha.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/cafe-da-manha.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/caipirinha-com-vista-rio.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
+- **FAIL** `en/caipirinha-com-vista-rio.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `en/caipirinha-com-vista-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/caipirinha-com-vista-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/cardapio.html` — SEO/meta_description: Página sem meta description.
+- **FAIL** `en/cardapio.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `en/cardapio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `en/cardapio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/cardapio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/contato.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
+- **FAIL** `en/contato.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `en/contato.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **FAIL** `en/entardecer.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 3.
+- **WARN** `en/entardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `en/entardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/entardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/eventos.html` — SEO/meta_description: Página sem meta description.
+- **FAIL** `en/eventos.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 3.
+- **WARN** `en/eventos.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `en/eventos.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/eventos.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `en/feijoada-com-vista-rio-de-janeiro.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/feijoada-com-vista-rio-de-janeiro.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/feijoada.html` — SEO/meta_description: Página sem meta description.
+- **FAIL** `en/feijoada.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 3.
+- **WARN** `en/feijoada.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `en/feijoada.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/feijoada.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/gastronomia-carioca.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 3.
+- **WARN** `en/gastronomia-carioca.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `en/gastronomia-carioca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/gastronomia-carioca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/guia-do-rio.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `en/guia-do-rio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `en/guia-do-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/guia-do-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `en/how-to-get-there.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **FAIL** `en/index.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
+- **FAIL** `en/index.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `en/index.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `en/index.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/index.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/morro-da-urca.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
+- **FAIL** `en/morro-da-urca.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `en/morro-da-urca.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `en/morro-da-urca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/morro-da-urca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/nossa-visao.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
+- **FAIL** `en/nossa-visao.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `en/nossa-visao.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **FAIL** `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/parque-bondinho.html` — SEO/meta_description: Página sem meta description.
+- **FAIL** `en/parque-bondinho.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
+- **FAIL** `en/parque-bondinho.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `en/parque-bondinho.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `en/parque-bondinho.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/parque-bondinho.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `en/por-do-sol-morro-da-urca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/por-do-sol-morro-da-urca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/restaurant-at-urca-hill.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `en/restaurant-at-urca-hill.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/restaurant-at-urca-hill.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/restaurants-near-sugarloaf-mountain.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `en/restaurants-near-sugarloaf-mountain.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/restaurants-near-sugarloaf-mountain.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/roteiro-meio-dia-urca-pao-de-acucar.html` — SEO/meta_description: Página sem meta description.
+- **FAIL** `en/roteiro-meio-dia-urca-pao-de-acucar.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `en/roteiro-meio-dia-urca-pao-de-acucar.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `en/roteiro-meio-dia-urca-pao-de-acucar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/roteiro-meio-dia-urca-pao-de-acucar.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/sugarloaf-cable-car-park.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `en/sugarloaf-cable-car-park.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/sugarloaf-cable-car-park.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/sugarloaf-cable-car-restaurant.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `en/sugarloaf-cable-car-restaurant.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/sugarloaf-cable-car-restaurant.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/sunset.html` — SEO/meta_description: Página sem meta description.
+- **FAIL** `en/sunset.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 3.
+- **WARN** `en/sunset.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `en/sunset.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/sunset.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `en/where-to-eat-near-sugarloaf.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `en/where-to-eat-near-sugarloaf.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `en/where-to-eat-near-sugarloaf.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `entardecer.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 3.
+- **WARN** `entardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `entardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `entardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `es/almoco-morro-da-urca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `es/almoco-morro-da-urca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `es/almoco.html` — SEO/meta_description: Página sem meta description.
+- **FAIL** `es/almoco.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `es/almoco.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `es/almoco.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `es/almoco.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `es/atardecer.html` — SEO/meta_description: Página sem meta description.
+- **FAIL** `es/atardecer.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `es/atardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `es/atardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `es/atardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `es/cafe-da-manha-pao-de-acucar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `es/cafe-da-manha-pao-de-acucar.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `es/cafe-da-manha.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 3.
+- **WARN** `es/cafe-da-manha.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `es/cafe-da-manha.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `es/cafe-da-manha.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `es/caipirinha-com-vista-rio.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
+- **FAIL** `es/caipirinha-com-vista-rio.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+- **WARN** `es/caipirinha-com-vista-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `es/caipirinha-com-vista-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `es/cardapio.html` — SEO/meta_description: Página sem meta description.
+- **FAIL** `es/cardapio.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
+
+## Arquivos
+- `_audit_reports/super_site_standards_seo_audit.md`
+- `_audit_reports/super_site_standards_seo_audit_details.csv`
