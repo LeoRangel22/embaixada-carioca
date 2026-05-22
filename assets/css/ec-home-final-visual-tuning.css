@@ -1,6 +1,6 @@
 /* Embaixada Carioca — Home Final Visual Tuning
-   Camada final carregada depois do CSS de estabilização.
-   Objetivo: ajustes finos apontados em inspeção visual real. */
+   Camada final com seletores fortes para vencer locks antigos da Home.
+   Objetivo: itálicos em laranja Reservar e labels do card lateral +1,5pt. */
 
 :root{
   --ec-home-orange:#f59b1e;
@@ -8,71 +8,79 @@
   --ec-home-cream:#f6efde;
 }
 
-/* Itálicos editoriais de títulos devem usar o mesmo laranja do botão Reservar. */
-body[data-screen-label="Home"] header.hero h1 .serif,
-body[data-screen-label="Home"] header.hero h1 em,
-body[data-screen-label="Home"] section#momentos h1 .serif,
-body[data-screen-label="Home"] section#momentos h2 .serif,
-body[data-screen-label="Home"] section#momentos h3 .serif,
-body[data-screen-label="Home"] section#momentos h1 em,
-body[data-screen-label="Home"] section#momentos h2 em,
-body[data-screen-label="Home"] section#momentos h3 em,
-body[data-screen-label="Home"] section#visao h1 .serif,
-body[data-screen-label="Home"] section#visao h2 .serif,
-body[data-screen-label="Home"] section#visao h3 .serif,
-body[data-screen-label="Home"] section#visao h1 em,
-body[data-screen-label="Home"] section#visao h2 em,
-body[data-screen-label="Home"] section#visao h3 em,
-body[data-screen-label="Home"] section#avaliacoes h1 .serif,
-body[data-screen-label="Home"] section#avaliacoes h2 .serif,
-body[data-screen-label="Home"] section#avaliacoes h3 .serif,
-body[data-screen-label="Home"] section#avaliacoes h1 em,
-body[data-screen-label="Home"] section#avaliacoes h2 em,
-body[data-screen-label="Home"] section#avaliacoes h3 em,
-body[data-screen-label="Home"] section#informacoes-essenciais h1 em,
-body[data-screen-label="Home"] section#informacoes-essenciais h2 em,
-body[data-screen-label="Home"] section#informacoes-essenciais h3 em,
-body[data-screen-label="Home"] section#informacoes-essenciais h1 .serif,
-body[data-screen-label="Home"] section#informacoes-essenciais h2 .serif,
-body[data-screen-label="Home"] section#informacoes-essenciais h3 .serif{
+/* Itálicos editoriais de títulos: sempre no laranja do botão Reservar. */
+html body[data-screen-label="Home"] header.hero.hero h1 .serif,
+html body[data-screen-label="Home"] header.hero.hero h1 .serif.serif,
+html body[data-screen-label="Home"] header.hero.hero h1 em,
+html body[data-screen-label="Home"] header.hero.hero h1 em.serif,
+html body[data-screen-label="Home"] section#momentos#momentos#momentos#momentos.momentos.momentos .sec-head.sec-head h1 .serif,
+html body[data-screen-label="Home"] section#momentos#momentos#momentos#momentos.momentos.momentos .sec-head.sec-head h2 .serif,
+html body[data-screen-label="Home"] section#momentos#momentos#momentos#momentos.momentos.momentos .sec-head.sec-head h2[style] .serif,
+html body[data-screen-label="Home"] section#momentos#momentos#momentos#momentos.momentos.momentos .sec-head.sec-head h3 .serif,
+html body[data-screen-label="Home"] section#momentos#momentos#momentos#momentos.momentos.momentos .sec-head.sec-head h1 em,
+html body[data-screen-label="Home"] section#momentos#momentos#momentos#momentos.momentos.momentos .sec-head.sec-head h2 em,
+html body[data-screen-label="Home"] section#momentos#momentos#momentos#momentos.momentos.momentos .sec-head.sec-head h2[style] em,
+html body[data-screen-label="Home"] section#momentos#momentos#momentos#momentos.momentos.momentos .sec-head.sec-head h3 em,
+html body[data-screen-label="Home"] section#visao#visao#visao .visao-text h1 .serif,
+html body[data-screen-label="Home"] section#visao#visao#visao .visao-text h2 .serif,
+html body[data-screen-label="Home"] section#visao#visao#visao .visao-text h2[style] .serif,
+html body[data-screen-label="Home"] section#visao#visao#visao .visao-text h3 .serif,
+html body[data-screen-label="Home"] section#visao#visao#visao .visao-text h1 em,
+html body[data-screen-label="Home"] section#visao#visao#visao .visao-text h2 em,
+html body[data-screen-label="Home"] section#visao#visao#visao .visao-text h2[style] em,
+html body[data-screen-label="Home"] section#visao#visao#visao .visao-text h3 em,
+html body[data-screen-label="Home"] section#avaliacoes#avaliacoes#avaliacoes .sec-head h1 .serif,
+html body[data-screen-label="Home"] section#avaliacoes#avaliacoes#avaliacoes .sec-head h2 .serif,
+html body[data-screen-label="Home"] section#avaliacoes#avaliacoes#avaliacoes .sec-head h2[style] .serif,
+html body[data-screen-label="Home"] section#avaliacoes#avaliacoes#avaliacoes .sec-head h3 .serif,
+html body[data-screen-label="Home"] section#avaliacoes#avaliacoes#avaliacoes .sec-head h1 em,
+html body[data-screen-label="Home"] section#avaliacoes#avaliacoes#avaliacoes .sec-head h2 em,
+html body[data-screen-label="Home"] section#avaliacoes#avaliacoes#avaliacoes .sec-head h2[style] em,
+html body[data-screen-label="Home"] section#avaliacoes#avaliacoes#avaliacoes .sec-head h3 em,
+html body[data-screen-label="Home"] section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais h1 em,
+html body[data-screen-label="Home"] section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais h2 em,
+html body[data-screen-label="Home"] section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais h3 em,
+html body[data-screen-label="Home"] section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais h1 .serif,
+html body[data-screen-label="Home"] section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais h2 .serif,
+html body[data-screen-label="Home"] section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais h3 .serif{
+  --ec-vr-paper:var(--ec-home-orange)!important;
+  --ec-readable-sand-soft:var(--ec-home-orange)!important;
+  --ec-readable-yellow:var(--ec-home-orange)!important;
+  --areia-pale:var(--ec-home-orange)!important;
+  --ec-areia:var(--ec-home-orange)!important;
+  --ec-visible-cream:var(--ec-home-orange)!important;
   color:var(--ec-home-orange)!important;
   -webkit-text-fill-color:var(--ec-home-orange)!important;
   text-shadow:none!important;
   opacity:1!important;
   filter:none!important;
   mix-blend-mode:normal!important;
+  background-image:none!important;
+  -webkit-background-clip:border-box!important;
+  background-clip:border-box!important;
 }
 
-/* Mantém o itálico do hero legível sobre foto escura, mas agora em laranja. */
-body[data-screen-label="Home"] header.hero h1 .serif,
-body[data-screen-label="Home"] header.hero h1 em{
+/* No hero, mantém sombra apenas para legibilidade sobre foto escura. */
+html body[data-screen-label="Home"] header.hero.hero h1 .serif,
+html body[data-screen-label="Home"] header.hero.hero h1 em{
   text-shadow:0 3px 22px rgba(0,0,0,.55)!important;
 }
 
 /* Labels do card lateral do hero: HOJE, NO ALTO / PREMIADA / VISTA.
-   Aumento solicitado: +1,5pt ≈ +2px sobre a base anterior de 10px. */
-body[data-screen-label="Home"] header.hero .hero-meta-card .hmc .l,
-body[data-screen-label="Home"] header.hero .hero-side .hmc .l,
-body[data-screen-label="Home"] header.hero .hmc .l{
-  font-size:12px!important;
-  line-height:1.2!important;
-  letter-spacing:.24em!important;
+   Aumento de 1,5pt: de 8px para 10px. */
+html body[data-screen-label="Home"] header.hero.hero aside.hero-side .hero-meta-card .hmc .l,
+html body[data-screen-label="Home"] header.hero.hero aside.hero-side .hero-meta-card .hmc .l[style],
+html body[data-screen-label="Home"] header.hero.hero .hero-side .hero-meta-card .hmc .l,
+html body[data-screen-label="Home"] header.hero.hero .hero-meta-card .hmc .l,
+html body[data-screen-label="Home"] header.hero.hero .hmc .l{
+  font-size:10px!important;
+  line-height:1.22!important;
+  letter-spacing:.28em!important;
   color:var(--ec-home-orange)!important;
   -webkit-text-fill-color:var(--ec-home-orange)!important;
-  font-weight:700!important;
+  font-weight:800!important;
   text-shadow:none!important;
   opacity:1!important;
   filter:none!important;
   mix-blend-mode:normal!important;
-}
-
-/* Blindagem contra variáveis antigas que recoloriam spans/ems de títulos para verde ou creme. */
-body[data-screen-label="Home"] section#momentos .sec-head h2 .serif,
-body[data-screen-label="Home"] section#visao h2 .serif,
-body[data-screen-label="Home"] section#avaliacoes h2 .serif{
-  --ec-vr-paper:var(--ec-home-orange)!important;
-  --ec-readable-sand-soft:var(--ec-home-orange)!important;
-  --areia-pale:var(--ec-home-orange)!important;
-  --ec-areia:var(--ec-home-orange)!important;
-  --ec-visible-cream:var(--ec-home-orange)!important;
 }
