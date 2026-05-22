@@ -58,6 +58,11 @@ jobs:
           if [ -f _audit_reports/super_workflow_score_gate.md ]; then
             cat _audit_reports/super_workflow_score_gate.md
           fi
+          if [ -f _audit_reports/priority_keywords_aio_score_audit.md ]; then
+            echo ""
+            echo "===== Priority Keywords AIO Score Audit ====="
+            cat _audit_reports/priority_keywords_aio_score_audit.md
+          fi
 
       - name: Upload all audit reports
         uses: actions/upload-artifact@v4
@@ -68,6 +73,9 @@ jobs:
             _audit_reports/*.md
             _audit_reports/*.csv
             _audit_reports/*.json
+            _audit_reports/priority_keywords_aio_score_audit.md
+            _audit_reports/priority_keywords_aio_score_audit.csv
+            _audit_reports/priority_keywords_aio_score_audit.json
 
       - name: Commit updated reports and automatic fixes
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -82,7 +90,11 @@ jobs:
             como-chegar.html
             eventos.html
             guia-do-rio.html
+            restaurante-morro-da-urca.html
             manifest.json
             _audit_reports/*.md
             _audit_reports/*.csv
             _audit_reports/*.json
+            _audit_reports/priority_keywords_aio_score_audit.md
+            _audit_reports/priority_keywords_aio_score_audit.csv
+            _audit_reports/priority_keywords_aio_score_audit.json
