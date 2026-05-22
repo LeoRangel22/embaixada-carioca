@@ -154,6 +154,68 @@ a.btn[href*="reserv"],
   color: var(--ec-gray);
 }
 
+/* Lighthouse contrast lock: FAQ headings inside light cards were being inherited as pale text. */
+h3.faq-question,
+.faq-question,
+.faq-item h3,
+.faq-item summary,
+.ec-sprint4-faq h3,
+.ec-sprint4-faq summary,
+details .faq-question {
+  color: var(--ec-blue) !important;
+  -webkit-text-fill-color: var(--ec-blue) !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+.faq-answer,
+.faq-item .faq-answer,
+.faq-item p,
+.ec-sprint4-faq p,
+.ec-sprint4-faq details p {
+  color: var(--ec-gray) !important;
+  -webkit-text-fill-color: var(--ec-gray) !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+/* Lighthouse contrast lock: footer must be a true dark block, never pale text on pale background. */
+footer.foot,
+.foot[role="contentinfo"],
+body > footer.foot {
+  background: var(--ec-blue) !important;
+  color: var(--ec-paper) !important;
+  -webkit-text-fill-color: var(--ec-paper) !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+footer.foot *,
+.foot[role="contentinfo"] * {
+  color: inherit !important;
+  -webkit-text-fill-color: currentColor !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+footer.foot a,
+.foot[role="contentinfo"] a,
+footer.foot b,
+footer.foot strong,
+.foot[role="contentinfo"] b,
+.foot[role="contentinfo"] strong {
+  color: var(--ec-yellow) !important;
+  -webkit-text-fill-color: var(--ec-yellow) !important;
+}
+
 /* Mobile touch safety */
 a,
 button,
