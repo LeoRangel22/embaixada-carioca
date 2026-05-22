@@ -1,6 +1,6 @@
 /* Embaixada Carioca — Home Final Visual Tuning
    Camada final com seletores fortes para vencer locks antigos da Home.
-   Objetivo: itálicos em laranja Reservar e labels do card lateral +1,5pt. */
+   Objetivo: itálicos em laranja Reservar, labels do card lateral +1,5pt e correções finais de contraste. */
 
 :root{
   --ec-home-orange:#f59b1e;
@@ -8,6 +8,7 @@
   --ec-home-green:#335d4a;
   --ec-home-gray:#485156;
   --ec-home-cream:#f6efde;
+  --ec-home-paper:#fffaf0;
 }
 
 /* Itálicos editoriais de títulos: sempre no laranja do botão Reservar. */
@@ -62,14 +63,11 @@ html body[data-screen-label="Home"] section#informacoes-essenciais#informacoes-e
   background-clip:border-box!important;
 }
 
-/* No hero, mantém sombra apenas para legibilidade sobre foto escura. */
 html body[data-screen-label="Home"] header.hero.hero h1 .serif,
 html body[data-screen-label="Home"] header.hero.hero h1 em{
   text-shadow:0 3px 22px rgba(0,0,0,.55)!important;
 }
 
-/* História: estabiliza o trecho "desde 2010" dentro do título.
-   Evita quebra/offset estranho e mantém o laranja do CTA Reservar. */
 html body[data-screen-label="Home"] section#visao#visao#visao .visao-text h2 .serif,
 html body[data-screen-label="Home"] section#visao#visao#visao .visao-text h2 em{
   display:inline!important;
@@ -82,8 +80,6 @@ html body[data-screen-label="Home"] section#visao#visao#visao .visao-text h2 em{
   text-shadow:none!important;
 }
 
-/* História: crédito correto de arquitetura.
-   Correção visual emergencial para substituir o texto antigo no navegador. */
 html body[data-screen-label="Home"] section#visao#visao#visao .visao-text p:nth-of-type(2) strong:nth-of-type(2){
   font-size:0!important;
   line-height:0!important;
@@ -115,8 +111,6 @@ html body[data-screen-label="Home"] section#visao#visao#visao .visao-credits .cr
   -webkit-text-fill-color:var(--ec-home-blue)!important;
 }
 
-/* Labels do card lateral do hero: HOJE, NO ALTO / PREMIADA / VISTA.
-   Aumento de 1,5pt: de 8px para 10px. */
 html body[data-screen-label="Home"] header.hero.hero aside.hero-side .hero-meta-card .hmc .l,
 html body[data-screen-label="Home"] header.hero.hero aside.hero-side .hero-meta-card .hmc .l[style],
 html body[data-screen-label="Home"] header.hero.hero .hero-side .hero-meta-card .hmc .l,
@@ -134,8 +128,7 @@ html body[data-screen-label="Home"] header.hero.hero .hmc .l{
   mix-blend-mode:normal!important;
 }
 
-/* Entardecer / Sunset — cards de informação sobre fundo escuro.
-   O print mostrou .sunset-info-item e .sunset-info-text herdando texto escuro demais. */
+/* Entardecer / Sunset — cards de informação sobre fundo escuro. */
 html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-box,
 html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-item{
   background:rgba(246,239,222,.095)!important;
@@ -145,7 +138,6 @@ html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-sectio
   filter:none!important;
   mix-blend-mode:normal!important;
 }
-
 html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-item,
 html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-item *,
 html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text,
@@ -160,7 +152,6 @@ html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-sectio
   background-clip:border-box!important;
   text-shadow:none!important;
 }
-
 html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text h1,
 html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text h2,
 html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text h3,
@@ -172,7 +163,6 @@ html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-sectio
   letter-spacing:.18em!important;
   text-transform:uppercase!important;
 }
-
 html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text p,
 html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text li,
 html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text span:not(.sunset-info-icon),
@@ -180,7 +170,6 @@ html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-sectio
   color:rgba(246,239,222,.92)!important;
   -webkit-text-fill-color:rgba(246,239,222,.92)!important;
 }
-
 html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text strong,
 html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text b,
 html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-text a{
@@ -188,8 +177,126 @@ html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-sectio
   -webkit-text-fill-color:var(--ec-home-orange)!important;
   font-weight:800!important;
 }
-
 html body[data-screen-label="Home"] section#sunset-dj#sunset-dj.sunset-dj-section .sunset-info-icon{
   opacity:1!important;
   filter:none!important;
+}
+
+/* Lower Home cleanup — seções claras devem usar texto escuro, não creme. */
+html body[data-screen-label="Home"] section#informacoes-essenciais#informacoes-essenciais,
+html body[data-screen-label="Home"] section#por-que-embaixada#por-que-embaixada,
+html body[data-screen-label="Home"] section#faq#faq{
+  background:var(--ec-home-paper)!important;
+  color:var(--ec-home-blue)!important;
+  -webkit-text-fill-color:var(--ec-home-blue)!important;
+  text-shadow:none!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+  opacity:1!important;
+}
+html body[data-screen-label="Home"] section#informacoes-essenciais#informacoes-essenciais h1,
+html body[data-screen-label="Home"] section#informacoes-essenciais#informacoes-essenciais h2,
+html body[data-screen-label="Home"] section#informacoes-essenciais#informacoes-essenciais h3,
+html body[data-screen-label="Home"] section#por-que-embaixada#por-que-embaixada h1,
+html body[data-screen-label="Home"] section#por-que-embaixada#por-que-embaixada h2,
+html body[data-screen-label="Home"] section#por-que-embaixada#por-que-embaixada h3,
+html body[data-screen-label="Home"] section#faq#faq h1,
+html body[data-screen-label="Home"] section#faq#faq h2,
+html body[data-screen-label="Home"] section#faq#faq h3,
+html body[data-screen-label="Home"] .faq-item h3,
+html body[data-screen-label="Home"] .faq-question{
+  color:var(--ec-home-blue)!important;
+  -webkit-text-fill-color:var(--ec-home-blue)!important;
+  text-shadow:none!important;
+  opacity:1!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+}
+html body[data-screen-label="Home"] section#informacoes-essenciais#informacoes-essenciais p,
+html body[data-screen-label="Home"] section#informacoes-essenciais#informacoes-essenciais div,
+html body[data-screen-label="Home"] section#por-que-embaixada#por-que-embaixada p,
+html body[data-screen-label="Home"] section#por-que-embaixada#por-que-embaixada li,
+html body[data-screen-label="Home"] section#faq#faq p,
+html body[data-screen-label="Home"] section#faq#faq li,
+html body[data-screen-label="Home"] .faq-answer,
+html body[data-screen-label="Home"] .faq-answer p,
+html body[data-screen-label="Home"] .faq-answer div{
+  color:var(--ec-home-gray)!important;
+  -webkit-text-fill-color:var(--ec-home-gray)!important;
+  text-shadow:none!important;
+  opacity:1!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+}
+html body[data-screen-label="Home"] section#informacoes-essenciais#informacoes-essenciais a,
+html body[data-screen-label="Home"] section#por-que-embaixada#por-que-embaixada a,
+html body[data-screen-label="Home"] section#faq#faq a,
+html body[data-screen-label="Home"] .faq-answer a,
+html body[data-screen-label="Home"] section#faq#faq .serif,
+html body[data-screen-label="Home"] section#faq#faq em,
+html body[data-screen-label="Home"] section#por-que-embaixada#por-que-embaixada em{
+  color:var(--ec-home-orange)!important;
+  -webkit-text-fill-color:var(--ec-home-orange)!important;
+}
+html body[data-screen-label="Home"] section#informacoes-essenciais#informacoes-essenciais [style*="background:#f8f4ed"],
+html body[data-screen-label="Home"] section#por-que-embaixada#por-que-embaixada [style*="background: #fff"],
+html body[data-screen-label="Home"] section#por-que-embaixada#por-que-embaixada [style*="background:#fff"]{
+  background:#fffaf0!important;
+  border-color:rgba(0,64,90,.18)!important;
+}
+
+/* FAQ items que aparecem fora do wrapper por HTML herdado: transformar em cards legíveis. */
+html body[data-screen-label="Home"] > .faq-item{
+  max-width:1100px!important;
+  margin:0 auto!important;
+  padding:22px 24px!important;
+  background:var(--ec-home-paper)!important;
+  color:var(--ec-home-blue)!important;
+  -webkit-text-fill-color:var(--ec-home-blue)!important;
+  border-top:1px solid rgba(0,64,90,.16)!important;
+  text-shadow:none!important;
+  opacity:1!important;
+}
+
+/* Bloco escuro de restaurante do Bondinho: corrigir contraste sem a tabela comparativa. */
+html body[data-screen-label="Home"] section#restaurante-bondinho#restaurante-bondinho{
+  background:#00405a!important;
+  color:var(--ec-home-cream)!important;
+  -webkit-text-fill-color:var(--ec-home-cream)!important;
+}
+html body[data-screen-label="Home"] section#restaurante-bondinho#restaurante-bondinho h1,
+html body[data-screen-label="Home"] section#restaurante-bondinho#restaurante-bondinho h2{
+  color:var(--ec-home-cream)!important;
+  -webkit-text-fill-color:var(--ec-home-cream)!important;
+  text-shadow:none!important;
+  opacity:1!important;
+}
+html body[data-screen-label="Home"] section#restaurante-bondinho#restaurante-bondinho h3,
+html body[data-screen-label="Home"] section#restaurante-bondinho#restaurante-bondinho .eyebrow,
+html body[data-screen-label="Home"] section#restaurante-bondinho#restaurante-bondinho em,
+html body[data-screen-label="Home"] section#restaurante-bondinho#restaurante-bondinho strong,
+html body[data-screen-label="Home"] section#restaurante-bondinho#restaurante-bondinho a{
+  color:var(--ec-home-orange)!important;
+  -webkit-text-fill-color:var(--ec-home-orange)!important;
+  opacity:1!important;
+}
+html body[data-screen-label="Home"] section#restaurante-bondinho#restaurante-bondinho p,
+html body[data-screen-label="Home"] section#restaurante-bondinho#restaurante-bondinho li,
+html body[data-screen-label="Home"] section#restaurante-bondinho#restaurante-bondinho div{
+  color:rgba(246,239,222,.92)!important;
+  -webkit-text-fill-color:rgba(246,239,222,.92)!important;
+  text-shadow:none!important;
+  opacity:1!important;
+}
+
+/* Remoção visual solicitada: tabela comparativa Restaurantes na Urca. */
+html body[data-screen-label="Home"] section#restaurantes-urca#restaurantes-urca{
+  display:none!important;
+  visibility:hidden!important;
+  opacity:0!important;
+  height:0!important;
+  min-height:0!important;
+  padding:0!important;
+  margin:0!important;
+  overflow:hidden!important;
 }
