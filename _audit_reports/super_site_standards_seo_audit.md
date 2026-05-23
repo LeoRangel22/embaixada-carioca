@@ -3,8 +3,8 @@
 Status geral: **FAIL**
 Score mínimo: **64**
 Páginas HTML auditadas: **87**
-Findings FAIL: **99**
-Findings totais: **313**
+Findings FAIL: **98**
+Findings totais: **312**
 
 ## Aprendizados incorporados
 - Home lower contrast
@@ -55,7 +55,6 @@ Findings totais: **313**
 - `es/cafe-da-manha.html` — FAIL — score 82
 - `es/guia-do-rio.html` — FAIL — score 82
 - `cafe-da-manha.html` — FAIL — score 84
-- `cardapio.html` — FAIL — score 84
 - `en/cafe-da-manha.html` — FAIL — score 84
 - `en/entardecer.html` — FAIL — score 84
 - `en/gastronomia-carioca.html` — FAIL — score 84
@@ -107,7 +106,6 @@ Findings totais: **313**
 - **FAIL** `caipirinha-com-vista-rio.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
 - **WARN** `caipirinha-com-vista-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `caipirinha-com-vista-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `cardapio.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
 - **WARN** `cardapio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
 - **WARN** `cardapio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `cardapio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
@@ -245,6 +243,7 @@ Findings totais: **313**
 - **FAIL** `es/caipirinha-com-vista-rio.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
 - **WARN** `es/caipirinha-com-vista-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `es/caipirinha-com-vista-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `es/cardapio.html` — SEO/meta_description: Página sem meta description.
 
 ## Arquivos
 - `_audit_reports/super_site_standards_seo_audit.md`

@@ -706,7 +706,7 @@
     {
       "page": "cardapio.html",
       "status": "PASS",
-      "score": 96,
+      "score": 98,
       "word_count": 1271,
       "h1_count": 1,
       "h2_count": 12,
@@ -791,10 +791,8 @@
         },
         {
           "dimension": "Schema",
-          "score": 80,
-          "findings": [
-            "Múltiplos aggregateRating: 2."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "Performance",

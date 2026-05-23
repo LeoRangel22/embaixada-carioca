@@ -17,7 +17,7 @@ Páginas auditadas: **87**
 - **SXO** — média 99.6, mínimo 69
 - **Marketing** — média 97.8, mínimo 82
 - **R2D2** — média 97.8, mínimo 86
-- **Schema** — média 85.5, mínimo 80
+- **Schema** — média 85.7, mínimo 80
 - **Performance** — média 99.9, mínimo 92
 
 ## Páginas abaixo de 90
@@ -905,17 +905,6 @@ Páginas auditadas: **87**
 - **Schema (80)**
   - Múltiplos aggregateRating: 2.
 
-### `cardapio.html` — 96
-- **Design (90)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-- **AEO (92)**
-  - FAQ visual sem FAQPage JSON-LD.
-- **AIO (95)**
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
 ### `contato.html` — 96
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -1235,6 +1224,15 @@ Páginas auditadas: **87**
   - Sem skip-nav detectado.
 - **AEO (92)**
   - FAQ visual sem FAQPage JSON-LD.
+
+### `cardapio.html` — 98
+- **Design (90)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+- **AEO (92)**
+  - FAQ visual sem FAQPage JSON-LD.
+- **AIO (95)**
+  - Sem VideoObject em página de experiência/produto.
 
 ### `como-chegar.html` — 98
 - **Design (90)**
