@@ -93,7 +93,18 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Pão de Açúcar em primeiro plano
 
 ## eventos.html
-- PASS: no static contrast risk patterns found
+- VISUAL_CHECK: 11 pattern(s) detected but covered by global contrast hotfix
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Hoje
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Por do sol às 17h44
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Resumo
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | O espaço para eventos mais bonito do Rio de Janeiro — no alto do Morro da Urca, a 227 metros, com vista panorâmica para o Pão de Açúcar e Baía de Guanabara. Reu
+  - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Vista
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Pão de Açúcar em primeiro plano
+  - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | Del evento corporativo al itinerario premium para grupos internacionais — recebemos cada formato com curadoria sob medida no espaço para eventos do Morro da Urc
+  - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | Múltiplos salões e terraços panorâmicos no Morro da Urca, com vista para o Pão de Açúcar e Baía de Guanabara. Infraestrutura completa de catering, A/V e equipe 
+  - covered-by-light-card-lock | light-text-on-light-bg | <p> class='' | Catering próprio, equipe receptiva, mestre de cerimônias, hostess bilíngue, equipo de bar e cozinha completa.
+  - covered-by-light-card-lock | light-text-on-light-bg | <p> class='' | A/V completo: projeção, sonorização, microfones sem fio, telões e wi-fi de alta capacidade.
+  - covered-by-light-card-lock | light-text-on-light-bg | <p> class='' | Acesso sem degraus, elevador para cadeirantes e sanitários adaptados conforme NBR 9050.
 
 ## guia-do-rio.html
 - VISUAL_CHECK: 9 pattern(s) detected but covered by global contrast hotfix
@@ -108,7 +119,7 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Explore os principais momentos da Embaixada Carioca dentro do Parque Bondinho Pão de Açúcar: café da manhã com vista, almoço brasileiro, feijoada premiada da Ac
 
 ## Summary
-- Total static patterns detected: 99
+- Total static patterns detected: 110
 - Open contrast risks: 0
-- Covered patterns requiring browser visual check: 99
+- Covered patterns requiring browser visual check: 110
 - Required next validation: browser screenshots for cafe-da-manha.html, guia-do-rio.html, index.html, almoco.html, cardapio.html and eventos.html after deployment.
