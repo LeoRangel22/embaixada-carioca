@@ -1,41 +1,98 @@
-# Tracking and R2D2 Assets Report
+# Tracking, R2D2 and Ticket Notice Assets Report
 
 Status: **PASS**
 
 ## Implementado
 - GA4/outbound conversion tracking para cliques em TagMe, WhatsApp, email e telefone.
 - Banner contextual por horário do dia para café, almoço, entardecer e reserva.
+- Aviso próximo aos CTAs: reserva não inclui ingresso do Parque Bondinho.
 
-Arquivos alterados: **30**
+Arquivos alterados: **86**
 
 ## Detalhe
-- `404.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `almoco-morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `almoco.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `cafe-da-manha-com-vista-rio-de-janeiro.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `cafe-da-manha-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `cafe-da-manha.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `caipirinha-com-vista-rio.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `cardapio.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `como-chegar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `contato.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `entardecer.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `eventos.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `feijoada-com-vista-rio-de-janeiro.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `feijoada.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `gastronomia-carioca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `guia-do-rio.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `home-preview.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `index.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `nossa-visao.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `offline.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `onde-comer-no-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `parque-bondinho-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `parque-bondinho.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `por-do-sol-morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `restaurante-bondinho-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `restaurante-morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `restaurantes-perto-do-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
-- `roteiro-meio-dia-urca-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `404.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `almoco-morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `almoco.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `cafe-da-manha-com-vista-rio-de-janeiro.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `cafe-da-manha-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `cafe-da-manha.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `caipirinha-com-vista-rio.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `cardapio.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `como-chegar.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `contato.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `en/almoco-morro-da-urca.html` — bondinho-ticket-notice.js
+- `en/almoco.html` — bondinho-ticket-notice.js
+- `en/breakfast-with-a-view-rio-de-janeiro.html` — bondinho-ticket-notice.js
+- `en/cafe-da-manha-pao-de-acucar.html` — bondinho-ticket-notice.js
+- `en/cafe-da-manha.html` — bondinho-ticket-notice.js
+- `en/caipirinha-com-vista-rio.html` — bondinho-ticket-notice.js
+- `en/cardapio.html` — bondinho-ticket-notice.js
+- `en/contato.html` — bondinho-ticket-notice.js
+- `en/entardecer.html` — bondinho-ticket-notice.js
+- `en/eventos.html` — bondinho-ticket-notice.js
+- `en/feijoada-com-vista-rio-de-janeiro.html` — bondinho-ticket-notice.js
+- `en/feijoada.html` — bondinho-ticket-notice.js
+- `en/gastronomia-carioca.html` — bondinho-ticket-notice.js
+- `en/guia-do-rio.html` — bondinho-ticket-notice.js
+- `en/how-to-get-there.html` — bondinho-ticket-notice.js
+- `en/index.html` — bondinho-ticket-notice.js
+- `en/morro-da-urca.html` — bondinho-ticket-notice.js
+- `en/nossa-visao.html` — bondinho-ticket-notice.js
+- `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — bondinho-ticket-notice.js
+- `en/parque-bondinho.html` — bondinho-ticket-notice.js
+- `en/por-do-sol-morro-da-urca.html` — bondinho-ticket-notice.js
+- `en/restaurant-at-urca-hill.html` — bondinho-ticket-notice.js
+- `en/restaurants-near-sugarloaf-mountain.html` — bondinho-ticket-notice.js
+- `en/roteiro-meio-dia-urca-pao-de-acucar.html` — bondinho-ticket-notice.js
+- `en/sugarloaf-cable-car-park.html` — bondinho-ticket-notice.js
+- `en/sugarloaf-cable-car-restaurant.html` — bondinho-ticket-notice.js
+- `en/sunset.html` — bondinho-ticket-notice.js
+- `en/where-to-eat-near-sugarloaf.html` — bondinho-ticket-notice.js
+- `entardecer.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `es/almoco-morro-da-urca.html` — bondinho-ticket-notice.js
+- `es/almoco.html` — bondinho-ticket-notice.js
+- `es/atardecer.html` — bondinho-ticket-notice.js
+- `es/cafe-da-manha-pao-de-acucar.html` — bondinho-ticket-notice.js
+- `es/cafe-da-manha.html` — bondinho-ticket-notice.js
+- `es/caipirinha-com-vista-rio.html` — bondinho-ticket-notice.js
+- `es/cardapio.html` — bondinho-ticket-notice.js
+- `es/como-llegar.html` — bondinho-ticket-notice.js
+- `es/contato.html` — bondinho-ticket-notice.js
+- `es/desayuno-con-vista-rio-de-janeiro.html` — bondinho-ticket-notice.js
+- `es/donde-comer-cerca-del-pan-de-azucar.html` — bondinho-ticket-notice.js
+- `es/entardecer.html` — bondinho-ticket-notice.js
+- `es/eventos.html` — bondinho-ticket-notice.js
+- `es/feijoada-com-vista-rio-de-janeiro.html` — bondinho-ticket-notice.js
+- `es/feijoada.html` — bondinho-ticket-notice.js
+- `es/gastronomia-carioca.html` — bondinho-ticket-notice.js
+- `es/guia-do-rio.html` — bondinho-ticket-notice.js
+- `es/index.html` — bondinho-ticket-notice.js
+- `es/morro-da-urca.html` — bondinho-ticket-notice.js
+- `es/nossa-visao.html` — bondinho-ticket-notice.js
+- `es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — bondinho-ticket-notice.js
+- `es/parque-bondinho-pan-de-azucar.html` — bondinho-ticket-notice.js
+- `es/parque-bondinho.html` — bondinho-ticket-notice.js
+- `es/por-do-sol-morro-da-urca.html` — bondinho-ticket-notice.js
+- `es/restaurante-bondinho-pan-de-azucar.html` — bondinho-ticket-notice.js
+- `es/restaurante-morro-da-urca.html` — bondinho-ticket-notice.js
+- `es/restaurantes-cerca-del-pan-de-azucar.html` — bondinho-ticket-notice.js
+- `es/roteiro-meio-dia-urca-pao-de-acucar.html` — bondinho-ticket-notice.js
+- `eventos.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `feijoada-com-vista-rio-de-janeiro.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `feijoada.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `gastronomia-carioca.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `guia-do-rio.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `home-preview.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `index.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `nossa-visao.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `offline.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `onde-comer-no-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `parque-bondinho-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `parque-bondinho.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `por-do-sol-morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `restaurante-bondinho-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `restaurante-morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `restaurantes-perto-do-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js
+- `roteiro-meio-dia-urca-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js, bondinho-ticket-notice.js

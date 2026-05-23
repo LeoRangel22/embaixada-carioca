@@ -99,7 +99,7 @@
         "_audit_reports/phase2_performance_seo_audit.md"
       ],
       "missing_reports": [],
-      "notes": "_audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: raw 80.0; advisory gate: raw 80.0 normalized to 90.0; issues remain in source reports"
+      "notes": "_audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: raw 79.0; advisory gate: raw 79.0 normalized to 90.0; issues remain in source reports"
     },
     {
       "attempt": 1,
@@ -256,7 +256,7 @@
         "_audit_reports/phase2_performance_seo_audit.md"
       ],
       "missing_reports": [],
-      "notes": "_audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: raw 80.0; advisory gate: raw 80.0 normalized to 90.0; issues remain in source reports"
+      "notes": "_audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: raw 79.0; advisory gate: raw 79.0 normalized to 90.0; issues remain in source reports"
     },
     "Super site standards SEO audit": {
       "attempt": 1,
