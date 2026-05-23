@@ -7,6 +7,19 @@
   "results": [
     {
       "attempt": 1,
+      "name": "Red block copidesk fixes",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "PASS",
+      "score": 100.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/red_block_copidesk_fixes_report.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/red_block_copidesk_fixes_report.md: raw 100.0"
+    },
+    {
+      "attempt": 1,
       "name": "Superholistic visual readability lock",
       "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
       "status": "PASS",
@@ -123,6 +136,19 @@
     }
   ],
   "latest": {
+    "Red block copidesk fixes": {
+      "attempt": 1,
+      "name": "Red block copidesk fixes",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "PASS",
+      "score": 100.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/red_block_copidesk_fixes_report.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/red_block_copidesk_fixes_report.md: raw 100.0"
+    },
     "Superholistic visual readability lock": {
       "attempt": 1,
       "name": "Superholistic visual readability lock",

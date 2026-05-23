@@ -15,7 +15,7 @@ Páginas auditadas: **86**
 - **AEO** — média 90.8, mínimo 84
 - **AIO** — média 89.7, mínimo 85
 - **SXO** — média 100.0, mínimo 100
-- **Marketing** — média 98.2, mínimo 82
+- **Marketing** — média 97.9, mínimo 82
 - **R2D2** — média 98.0, mínimo 86
 - **Schema** — média 84.9, mínimo 80
 - **Performance** — média 99.9, mínimo 92
@@ -24,6 +24,26 @@ Páginas auditadas: **86**
 Nenhuma página abaixo de 90.
 
 ## Findings por página
+### `en/contato.html` — 92
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **AEO (84)**
+  - FAQ visual sem FAQPage JSON-LD.
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+- **Marketing (82)**
+  - Baixa presença de termos de conversão.
+  - Faltam provas/diferenciais comerciais.
+- **R2D2 (93)**
+  - R2D2 fraco em Decisão.
+- **Schema (80)**
+  - Múltiplos aggregateRating: 2.
+
 ### `en/nossa-visao.html` — 92
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -44,11 +64,13 @@ Nenhuma página abaixo de 90.
 - **Schema (80)**
   - Múltiplos aggregateRating: 2.
 
-### `en/caipirinha-com-vista-rio.html` — 93
+### `en/roteiro-meio-dia-urca-pao-de-acucar.html` — 92
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
+- **SEO (84)**
+  - Sem meta description.
 - **AEO (84)**
   - FAQ visual sem FAQPage JSON-LD.
   - Faltam respostas diretas transacionais.
@@ -61,20 +83,18 @@ Nenhuma página abaixo de 90.
 - **Schema (80)**
   - Múltiplos aggregateRating: 2.
 
-### `en/contato.html` — 93
+### `en/caipirinha-com-vista-rio.html` — 93
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
-- **UX (97)**
-  - Sem skip-nav detectado.
 - **AEO (84)**
   - FAQ visual sem FAQPage JSON-LD.
   - Faltam respostas diretas transacionais.
 - **AIO (90)**
   - Sem cobertura literal das keywords prioritárias AIO.
-- **Marketing (92)**
-  - Faltam provas/diferenciais comerciais.
+- **Marketing (90)**
+  - Baixa presença de termos de conversão.
 - **R2D2 (93)**
   - R2D2 fraco em Decisão.
 - **Schema (80)**
@@ -116,6 +136,23 @@ Nenhuma página abaixo de 90.
 - **Schema (80)**
   - Múltiplos aggregateRating: 3.
 
+### `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — 93
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **AEO (84)**
+  - FAQ visual sem FAQPage JSON-LD.
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+- **Marketing (90)**
+  - Baixa presença de termos de conversão.
+- **R2D2 (93)**
+  - R2D2 fraco em Decisão.
+- **Schema (80)**
+  - Múltiplos aggregateRating: 2.
+
 ### `en/parque-bondinho.html` — 93
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -129,23 +166,6 @@ Nenhuma página abaixo de 90.
 - **AIO (85)**
   - Sem cobertura literal das keywords prioritárias AIO.
   - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `en/roteiro-meio-dia-urca-pao-de-acucar.html` — 93
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **R2D2 (93)**
-  - R2D2 fraco em Decisão.
 - **Schema (80)**
   - Múltiplos aggregateRating: 2.
 
@@ -214,21 +234,6 @@ Nenhuma página abaixo de 90.
 - **Design (76)**
   - Risco de texto creme em fundo claro.
   - Risco de texto azul em fundo azul.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **R2D2 (93)**
-  - R2D2 fraco em Decisão.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
 - **AEO (84)**

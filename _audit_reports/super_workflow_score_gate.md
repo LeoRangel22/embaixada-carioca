@@ -13,6 +13,7 @@ Wait between attempts: **120s**
 
 | Workflow | Status | Gate score | Reports | Pendências |
 |---|---:|---:|---|---|
+| Red block copidesk fixes | PASS | 100.0 | _audit_reports/red_block_copidesk_fixes_report.md | — |
 | Superholistic visual readability lock | PASS | 100.0 | _audit_reports/superholistic_visual_readability_lock_report.md | — |
 | Final 86-page AAA master audit | PASS | 90.0 | _audit_reports/final_86page_aaa_master_audit_report.md<br>_audit_reports/final_86page_aaa_master_audit_details.csv | — |
 | Visual contrast risk audit | PASS | 90.0 | _audit_reports/hero_side_frame_final_lock_report.md<br>_audit_reports/visual_contrast_risk_audit.md | — |
@@ -24,6 +25,8 @@ Wait between attempts: **120s**
 
 ## Histórico de tentativas
 
+- Attempt 1 — **Red block copidesk fixes**: PASS, gate score 100.0, command exit 0
+  - _audit_reports/red_block_copidesk_fixes_report.md: raw 100.0
 - Attempt 1 — **Superholistic visual readability lock**: PASS, gate score 100.0, command exit 0
   - _audit_reports/superholistic_visual_readability_lock_report.md: raw 100.0
 - Attempt 1 — **Final 86-page AAA master audit**: PASS, gate score 90.0, command exit 0

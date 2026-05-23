@@ -146,7 +146,7 @@
       "exists": true,
       "score": 63,
       "status": "FAIL",
-      "word_count": 1755,
+      "word_count": 1756,
       "faq_count": 8,
       "keyword_present": [],
       "keyword_missing": [
@@ -173,7 +173,7 @@
       "aggregate_rating_count": 4,
       "findings": [
         "Keywords ausentes ou pouco literais: cafe da manha na urca, café da manhã na urca, café da manhã pão de açúcar, cafe da manha pao de acucar",
-        "Conteúdo curto: 1755 palavras; meta 2000.",
+        "Conteúdo curto: 1756 palavras; meta 2000.",
         "Falta lista numerada <ol> para Featured Snippet.",
         "Falta VideoObject schema recomendado.",
         "Possível duplicidade de aggregateRating: 4."
