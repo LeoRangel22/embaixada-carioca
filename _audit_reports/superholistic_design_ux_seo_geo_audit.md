@@ -1,29 +1,58 @@
 # Superholistic Design/UX/SEO/GEO/AIO/SXO Audit
 
 Status geral: **FAIL**
-Score médio: **95.1**
-Score mínimo: **92**
+Score médio: **94.9**
+Score mínimo: **86**
 Threshold: **90**
 Páginas auditadas: **87**
 
 ## Dimensões auditadas
 - **Design** — média 84.4, mínimo 76
-- **UX** — média 98.8, mínimo 97
-- **Copydesk** — média 99.9, mínimo 88
+- **UX** — média 98.4, mínimo 63
+- **Copydesk** — média 99.7, mínimo 83
 - **SEO** — média 96.4, mínimo 84
-- **GEO** — média 100.0, mínimo 100
-- **AEO** — média 90.8, mínimo 84
+- **GEO** — média 99.7, mínimo 78
+- **AEO** — média 90.6, mínimo 84
 - **AIO** — média 89.6, mínimo 72
-- **SXO** — média 100.0, mínimo 100
-- **Marketing** — média 97.9, mínimo 82
-- **R2D2** — média 98.0, mínimo 86
-- **Schema** — média 85.1, mínimo 80
+- **SXO** — média 99.6, mínimo 69
+- **Marketing** — média 97.8, mínimo 82
+- **R2D2** — média 97.8, mínimo 86
+- **Schema** — média 85.3, mínimo 80
 - **Performance** — média 99.9, mínimo 92
 
 ## Páginas abaixo de 90
-Nenhuma página abaixo de 90.
+- `eventos.html` — score 86 — UX:63, Copydesk:83, GEO:78, AEO:84, SXO:69, R2D2:86
 
 ## Findings por página
+### `eventos.html` — 86
+- **Design (94)**
+  - Sem CSS global de estabilização/contraste.
+- **UX (63)**
+  - H1 deveria ser único; encontrado 0.
+  - Poucos H2 para boa escaneabilidade.
+  - Sem CTA claro.
+  - Poucos links internos.
+- **Copydesk (83)**
+  - Conteúdo curto: 12 palavras.
+  - Poucas perguntas/respostas explícitas.
+- **GEO (78)**
+  - Baixa cobertura local/GEO: 3/8.
+  - Falta bloco forte de acesso/endereço.
+- **AEO (84)**
+  - FAQ visual sem FAQPage JSON-LD.
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+- **SXO (69)**
+  - Sem CTA de decisão.
+  - Pouca navegação contextual.
+  - Faltam dados de decisão rápida.
+- **Marketing (90)**
+  - Baixa presença de termos de conversão.
+- **R2D2 (86)**
+  - R2D2 fraco em Decisão.
+  - R2D2 fraco em Direção.
+
 ### `en/contato.html` — 92
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -1177,15 +1206,6 @@ Nenhuma página abaixo de 90.
   - Faltam respostas diretas transacionais.
 - **AIO (90)**
   - Sem cobertura literal das keywords prioritárias AIO.
-
-### `eventos.html` — 97
-- **Design (90)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 3.
 
 ### `feijoada-com-vista-rio-de-janeiro.html` — 97
 - **Design (84)**

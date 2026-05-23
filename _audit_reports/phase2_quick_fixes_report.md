@@ -7,9 +7,9 @@
 - almoco.html: light content contrast lock replaced
 - cardapio.html: light content contrast lock replaced
 - como-chegar.html: light content contrast lock replaced
-- eventos.html: light content contrast lock replaced
+- eventos.html: light content contrast lock inserted
 - guia-do-rio.html: light content contrast lock replaced
-- Light lock changed pages: 0
+- Light lock changed pages: 1
 - index.html has reservation CTA: PASS
 - index.html has JSON-LD: PASS
 - index.html has canonical: PASS

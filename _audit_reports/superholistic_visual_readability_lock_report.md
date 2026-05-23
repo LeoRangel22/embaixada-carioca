@@ -2,8 +2,8 @@
 
 Status: **PASS**
 CSS: `/assets/superholistic_visual_readability_lock.css`
-Páginas atualizadas: **23**
-Páginas já ok/ignoradas: **64**
+Páginas atualizadas: **24**
+Páginas já ok/ignoradas: **63**
 
 ## Detalhe
 - `404.html` — injected
@@ -73,7 +73,7 @@ Páginas já ok/ignoradas: **64**
 - `es/restaurante-morro-da-urca.html` — already_present
 - `es/restaurantes-cerca-del-pan-de-azucar.html` — already_present
 - `es/roteiro-meio-dia-urca-pao-de-acucar.html` — already_present
-- `eventos.html` — already_present
+- `eventos.html` — injected
 - `feijoada-com-vista-rio-de-janeiro.html` — injected
 - `feijoada.html` — injected
 - `gastronomia-carioca.html` — injected

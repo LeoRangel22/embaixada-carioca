@@ -66,7 +66,7 @@ es/restaurante-bondinho-pan-de-azucar.html,territory,PASS,10.0,10.0,10.0,10.0,10
 es/restaurante-morro-da-urca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/restaurantes-cerca-del-pan-de-azucar.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/roteiro-meio-dia-urca-pao-de-acucar.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-eventos.html,events,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
+eventos.html,events,WARN,5.9,8.3,8.9,8.3,2.9,2.9,0.0,6.0,10.0,language:has_visible_copy | seo:h1_present | geo_aio_sai:restaurant_or_local_schema | ux_conversion:top_nav_present;reservation_cta_present;language_switcher_present;google_reviews_visible;event_quote_form_ok | design_brand:brand_manual_lock;final_design_lock;typography_present;button_hierarchy_lock;hero_lock_or_na | contrast_readability:legibility_lock_present;readability_emergency_lock;hard_readability_lock;webkit_reset;dark_background_light_text;light_cards_dark_text | images_performance:webp_used;cache_or_perf_report_lock
 feijoada-com-vista-rio-de-janeiro.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 feijoada.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 gastronomia-carioca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,

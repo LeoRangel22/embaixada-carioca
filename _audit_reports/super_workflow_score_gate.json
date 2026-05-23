@@ -158,7 +158,7 @@
         "_audit_reports/superholistic_design_ux_seo_geo_audit.json"
       ],
       "missing_reports": [],
-      "notes": "_audit_reports/superholistic_design_ux_seo_geo_audit.md: raw 0.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: raw 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: raw 92.0; advisory gate: raw 0.0 normalized to 90.0; issues remain in source reports"
+      "notes": "_audit_reports/superholistic_design_ux_seo_geo_audit.md: raw 0.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: raw 86.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: raw 86.0; advisory gate: raw 0.0 normalized to 90.0; issues remain in source reports"
     }
   ],
   "latest": {
@@ -315,7 +315,7 @@
         "_audit_reports/superholistic_design_ux_seo_geo_audit.json"
       ],
       "missing_reports": [],
-      "notes": "_audit_reports/superholistic_design_ux_seo_geo_audit.md: raw 0.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: raw 92.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: raw 92.0; advisory gate: raw 0.0 normalized to 90.0; issues remain in source reports"
+      "notes": "_audit_reports/superholistic_design_ux_seo_geo_audit.md: raw 0.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: raw 86.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: raw 86.0; advisory gate: raw 0.0 normalized to 90.0; issues remain in source reports"
     }
   }
 }

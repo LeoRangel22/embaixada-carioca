@@ -3,8 +3,8 @@
 Status geral: **FAIL**
 Score mínimo: **62**
 Páginas HTML auditadas: **87**
-Findings FAIL: **101**
-Findings totais: **315**
+Findings FAIL: **100**
+Findings totais: **314**
 
 ## Aprendizados incorporados
 - Home lower contrast
@@ -65,7 +65,6 @@ Findings totais: **315**
 - `es/gastronomia-carioca.html` — FAIL — score 84
 - `es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — FAIL — score 84
 - `es/restaurante-morro-da-urca.html` — FAIL — score 84
-- `eventos.html` — FAIL — score 84
 - `gastronomia-carioca.html` — FAIL — score 84
 - `guia-do-rio.html` — FAIL — score 84
 - `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — FAIL — score 84

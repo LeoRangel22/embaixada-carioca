@@ -1,8 +1,8 @@
 {
   "status": "FAIL",
   "threshold": 90,
-  "average_score": 95.1,
-  "min_score": 92,
+  "average_score": 94.9,
+  "min_score": 86,
   "dimensions": [
     "Design",
     "UX",
@@ -6861,54 +6861,50 @@
     },
     {
       "page": "eventos.html",
-      "status": "PASS",
-      "score": 97,
-      "word_count": 1300,
-      "h1_count": 1,
-      "h2_count": 9,
-      "faq_count": 26,
-      "internal_links": 37,
-      "cta_links": 24,
+      "status": "FAIL",
+      "score": 86,
+      "word_count": 12,
+      "h1_count": 0,
+      "h2_count": 0,
+      "faq_count": 8,
+      "internal_links": 0,
+      "cta_links": 0,
       "jsonld_types": [
-        "AggregateRating",
-        "Answer",
         "BreadcrumbList",
         "EventVenue",
-        "FAQPage",
         "GeoCoordinates",
-        "ImageObject",
         "ListItem",
         "LocationFeatureSpecification",
-        "OpeningHoursSpecification",
-        "Organization",
         "PostalAddress",
-        "Question",
-        "ReserveAction",
         "Restaurant",
-        "Service",
-        "SpeakableSpecification",
-        "VideoObject",
-        "WebPage",
-        "WebSite"
+        "Service"
       ],
       "dimensions": [
         {
           "dimension": "Design",
-          "score": 90,
+          "score": 94,
           "findings": [
-            "Risco de texto creme em fundo claro.",
-            "Opacity baixa detectada; validar texto real."
+            "Sem CSS global de estabilização/contraste."
           ]
         },
         {
           "dimension": "UX",
-          "score": 100,
-          "findings": []
+          "score": 63,
+          "findings": [
+            "H1 deveria ser único; encontrado 0.",
+            "Poucos H2 para boa escaneabilidade.",
+            "Sem CTA claro.",
+            "Poucos links internos.",
+            "Sem skip-nav detectado."
+          ]
         },
         {
           "dimension": "Copydesk",
-          "score": 100,
-          "findings": []
+          "score": 83,
+          "findings": [
+            "Conteúdo curto: 12 palavras.",
+            "Poucas perguntas/respostas explícitas."
+          ]
         },
         {
           "dimension": "SEO",
@@ -6917,13 +6913,19 @@
         },
         {
           "dimension": "GEO",
-          "score": 100,
-          "findings": []
+          "score": 78,
+          "findings": [
+            "Baixa cobertura local/GEO: 3/8.",
+            "Falta bloco forte de acesso/endereço."
+          ]
         },
         {
           "dimension": "AEO",
-          "score": 100,
-          "findings": []
+          "score": 84,
+          "findings": [
+            "FAQ visual sem FAQPage JSON-LD.",
+            "Faltam respostas diretas transacionais."
+          ]
         },
         {
           "dimension": "AIO",
@@ -6934,25 +6936,32 @@
         },
         {
           "dimension": "SXO",
-          "score": 100,
-          "findings": []
+          "score": 69,
+          "findings": [
+            "Sem CTA de decisão.",
+            "Pouca navegação contextual.",
+            "Faltam dados de decisão rápida."
+          ]
         },
         {
           "dimension": "Marketing",
-          "score": 100,
-          "findings": []
+          "score": 90,
+          "findings": [
+            "Baixa presença de termos de conversão."
+          ]
         },
         {
           "dimension": "R2D2",
-          "score": 100,
-          "findings": []
+          "score": 86,
+          "findings": [
+            "R2D2 fraco em Decisão.",
+            "R2D2 fraco em Direção."
+          ]
         },
         {
           "dimension": "Schema",
-          "score": 80,
-          "findings": [
-            "Múltiplos aggregateRating: 3."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "Performance",
