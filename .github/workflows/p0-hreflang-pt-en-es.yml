@@ -1,0 +1,75 @@
+name: P0 hreflang PT EN ES
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - "scripts/apply_hreflang_pt_en_es.py"
+      - "scripts/audit_hreflang_pt_en_es.py"
+      - ".github/workflows/p0-hreflang-pt-en-es.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  p0-hreflang:
+    name: Apply and audit hreflang PT EN ES
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Apply hreflang PT EN ES
+        run: python3 scripts/apply_hreflang_pt_en_es.py
+
+      - name: Audit hreflang PT EN ES
+        run: python3 scripts/audit_hreflang_pt_en_es.py
+
+      - name: Show reports
+        if: always()
+        run: |
+          if [ -f _audit_reports/hreflang_pt_en_es_apply_report.md ]; then cat _audit_reports/hreflang_pt_en_es_apply_report.md; fi
+          echo '---'
+          if [ -f _audit_reports/hreflang_pt_en_es_audit.md ]; then cat _audit_reports/hreflang_pt_en_es_audit.md; fi
+
+      - name: Upload hreflang reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: p0-hreflang-pt-en-es-reports
+          path: |
+            _audit_reports/hreflang_pt_en_es_apply_report.md
+            _audit_reports/hreflang_pt_en_es_audit.md
+            _audit_reports/hreflang_pt_en_es_audit.json
+
+      - name: Commit hreflang outputs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "fix: apply hreflang PT EN ES"
+          file_pattern: |
+            index.html
+            almoco.html
+            cafe-da-manha.html
+            eventos.html
+            guia-do-rio.html
+            restaurante-morro-da-urca.html
+            restaurantes-romanticos-rio-de-janeiro.html
+            en/index.html
+            en/almoco.html
+            en/cafe-da-manha.html
+            en/eventos.html
+            es/index.html
+            es/almoco.html
+            es/cafe-da-manha.html
+            es/eventos.html
+            _audit_reports/hreflang_pt_en_es_apply_report.md
+            _audit_reports/hreflang_pt_en_es_audit.md
+            _audit_reports/hreflang_pt_en_es_audit.json
