@@ -1,0 +1,61 @@
+name: Dossier content enhancer
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - "assets/dossie-content-enhancer.js"
+      - "scripts/apply_dossie_content_enhancer.py"
+      - ".github/workflows/dossie-content-enhancer.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  dossie-content-enhancer:
+    name: Apply dossier content enhancer
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Apply dossier content enhancer
+        run: python3 scripts/apply_dossie_content_enhancer.py
+
+      - name: Show report
+        if: always()
+        run: |
+          if [ -f _audit_reports/dossie_content_enhancer_report.md ]; then
+            cat _audit_reports/dossie_content_enhancer_report.md
+          fi
+
+      - name: Upload dossier content report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dossie-content-enhancer-report
+          path: |
+            _audit_reports/dossie_content_enhancer_report.md
+
+      - name: Commit dossier content enhancer application
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "feat: apply dossier content enhancer"
+          file_pattern: |
+            index.html
+            cafe-da-manha.html
+            eventos.html
+            guia-do-rio.html
+            restaurante-morro-da-urca.html
+            restaurantes-romanticos-rio-de-janeiro.html
+            en/index.html
+            es/index.html
+            _audit_reports/dossie_content_enhancer_report.md
