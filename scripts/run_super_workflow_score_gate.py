@@ -62,6 +62,12 @@ class TaskResult:
 
 TASKS = [
     AuditTask(
+        name="Red block copidesk fixes",
+        workflow_file=".github/workflows/super-workflow-score-gate.yml",
+        commands=["python3 scripts/apply_red_block_copidesk_fixes.py"],
+        reports=["_audit_reports/red_block_copidesk_fixes_report.md"],
+    ),
+    AuditTask(
         name="Superholistic visual readability lock",
         workflow_file=".github/workflows/super-workflow-score-gate.yml",
         commands=["python3 scripts/apply_superholistic_visual_readability_lock.py"],
@@ -245,8 +251,6 @@ def score_task(task: AuditTask, attempt: int, command_status: int) -> TaskResult
     effective_command_status = command_status
 
     if task.name in ADVISORY_TASKS and found and not missing:
-        # Auditorias consultivas podem retornar exit 1 por pendência de conteúdo.
-        # Isso deve gerar backlog, não quebrar deploy/relatório.
         score = max(raw_score, float(THRESHOLD))
         effective_command_status = 0
         notes.append(f"advisory gate: raw {raw_score:.1f} normalized to {score:.1f}; issues remain in source reports")
