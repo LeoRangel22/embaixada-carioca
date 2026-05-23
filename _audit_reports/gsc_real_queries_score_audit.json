@@ -405,12 +405,12 @@
       "clicks": 0,
       "impressions": 17,
       "ctr": 0.0,
-      "exact_query_in_text": false,
+      "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
       "description_score": 100,
       "h1_score": 100,
-      "score": 99,
+      "score": 100,
       "recommendation": "OK"
     },
     {
@@ -465,12 +465,12 @@
       "clicks": 0,
       "impressions": 15,
       "ctr": 0.0,
-      "exact_query_in_text": false,
+      "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
       "description_score": 100,
       "h1_score": 100,
-      "score": 99,
+      "score": 100,
       "recommendation": "OK"
     },
     {

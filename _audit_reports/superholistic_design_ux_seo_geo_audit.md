@@ -13,7 +13,7 @@ Páginas auditadas: **86**
 - **SEO** — média 96.7, mínimo 84
 - **GEO** — média 100.0, mínimo 100
 - **AEO** — média 90.8, mínimo 84
-- **AIO** — média 89.7, mínimo 85
+- **AIO** — média 89.8, mínimo 85
 - **SXO** — média 100.0, mínimo 100
 - **Marketing** — média 97.9, mínimo 82
 - **R2D2** — média 98.0, mínimo 86
@@ -866,16 +866,6 @@ Nenhuma página abaixo de 90.
 - **Schema (80)**
   - Múltiplos aggregateRating: 2.
 
-### `cafe-da-manha.html` — 96
-- **Design (90)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-- **AIO (85)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 4.
-
 ### `cardapio.html` — 96
 - **Design (90)**
   - Risco de texto creme em fundo claro.
@@ -1012,8 +1002,9 @@ Nenhuma página abaixo de 90.
   - Sem cobertura literal das keywords prioritárias AIO.
 
 ### `guia-do-rio.html` — 96
-- **Design (90)**
+- **Design (82)**
   - Risco de texto creme em fundo claro.
+  - Risco de texto azul em fundo azul.
   - Opacity baixa detectada; validar texto real.
 - **AEO (92)**
   - FAQ visual sem FAQPage JSON-LD.
@@ -1140,6 +1131,15 @@ Nenhuma página abaixo de 90.
 - **AIO (85)**
   - Sem cobertura literal das keywords prioritárias AIO.
   - Sem VideoObject em página de experiência/produto.
+
+### `cafe-da-manha.html` — 97
+- **Design (90)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+- **AIO (95)**
+  - Sem VideoObject em página de experiência/produto.
+- **Schema (80)**
+  - Múltiplos aggregateRating: 4.
 
 ### `es/como-llegar.html` — 97
 - **Design (84)**

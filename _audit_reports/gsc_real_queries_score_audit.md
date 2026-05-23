@@ -47,9 +47,9 @@ Threshold: **90**
 - `restaurante pao de acucar` → `index.html` — score 99 — cluster=100, title=100, desc=100, h1=100, exact=False
 - `cafe da manha pao de acucar` → `cafe-da-manha.html` — score 99 — cluster=100, title=100, desc=100, h1=100, exact=False
 - `avenida pasteur 520` → `como-chegar.html` — score 78 — cluster=83, title=70, desc=70, h1=70, exact=False
-- `cafe da manha na urca` → `cafe-da-manha.html` — score 99 — cluster=100, title=100, desc=100, h1=100, exact=False
+- `cafe da manha na urca` → `cafe-da-manha.html` — score 100 — cluster=100, title=100, desc=100, h1=100, exact=True
 - `restaurantes na urca` → `restaurante-morro-da-urca.html` — score 99 — cluster=100, title=100, desc=100, h1=100, exact=False
 - `morro da urca rio de janeiro` → `restaurante-morro-da-urca.html` — score 99 — cluster=100, title=100, desc=100, h1=100, exact=False
 - `restaurante no pao de açucar rj` → `index.html` — score 99 — cluster=100, title=100, desc=100, h1=100, exact=False
-- `café da manhã na urca` → `cafe-da-manha.html` — score 99 — cluster=100, title=100, desc=100, h1=100, exact=False
+- `café da manhã na urca` → `cafe-da-manha.html` — score 100 — cluster=100, title=100, desc=100, h1=100, exact=True
 - `restaurante bondinho` → `index.html` — score 99 — cluster=100, title=100, desc=100, h1=100, exact=False

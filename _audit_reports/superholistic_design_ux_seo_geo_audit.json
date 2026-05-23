@@ -507,13 +507,13 @@
     {
       "page": "cafe-da-manha.html",
       "status": "PASS",
-      "score": 96,
-      "word_count": 1756,
+      "score": 97,
+      "word_count": 1864,
       "h1_count": 1,
-      "h2_count": 10,
+      "h2_count": 11,
       "faq_count": 27,
-      "internal_links": 41,
-      "cta_links": 28,
+      "internal_links": 42,
+      "cta_links": 30,
       "jsonld_types": [
         "AggregateRating",
         "Answer",
@@ -570,9 +570,8 @@
         },
         {
           "dimension": "AIO",
-          "score": 85,
+          "score": 95,
           "findings": [
-            "Sem cobertura literal das keywords prioritárias AIO.",
             "Sem VideoObject em página de experiência/produto."
           ]
         },
@@ -7254,12 +7253,12 @@
       "page": "guia-do-rio.html",
       "status": "PASS",
       "score": 96,
-      "word_count": 3175,
+      "word_count": 3218,
       "h1_count": 1,
-      "h2_count": 15,
+      "h2_count": 16,
       "faq_count": 26,
-      "internal_links": 45,
-      "cta_links": 29,
+      "internal_links": 48,
+      "cta_links": 31,
       "jsonld_types": [
         "AggregateRating",
         "Article",
@@ -7282,9 +7281,10 @@
       "dimensions": [
         {
           "dimension": "Design",
-          "score": 90,
+          "score": 82,
           "findings": [
             "Risco de texto creme em fundo claro.",
+            "Risco de texto azul em fundo azul.",
             "Opacity baixa detectada; validar texto real."
           ]
         },
@@ -8453,12 +8453,12 @@
       "page": "restaurante-morro-da-urca.html",
       "status": "PASS",
       "score": 96,
-      "word_count": 660,
+      "word_count": 772,
       "h1_count": 1,
-      "h2_count": 7,
+      "h2_count": 8,
       "faq_count": 14,
-      "internal_links": 19,
-      "cta_links": 8,
+      "internal_links": 20,
+      "cta_links": 10,
       "jsonld_types": [
         "AggregateRating",
         "Answer",

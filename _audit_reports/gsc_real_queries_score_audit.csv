@@ -14,9 +14,9 @@ av pasteur 520 - urca rio de janeiro,address,como-chegar.html,0,22,0.0,False,83,
 restaurante pao de acucar,pao_de_acucar,index.html,1,21,4.76,False,100,100,100,100,99,OK
 cafe da manha pao de acucar,breakfast,cafe-da-manha.html,1,19,5.26,False,100,100,100,100,99,OK
 avenida pasteur 520,address,como-chegar.html,0,17,0.0,False,83,70,70,70,78,Reforçar cluster na página: av pasteur
-cafe da manha na urca,breakfast,cafe-da-manha.html,0,17,0.0,False,100,100,100,100,99,OK
+cafe da manha na urca,breakfast,cafe-da-manha.html,0,17,0.0,True,100,100,100,100,100,OK
 restaurantes na urca,restaurant_urca,restaurante-morro-da-urca.html,1,17,5.88,False,100,100,100,100,99,OK
 morro da urca rio de janeiro,geo,restaurante-morro-da-urca.html,0,16,0.0,False,100,100,100,100,99,OK
 restaurante no pao de açucar rj,pao_de_acucar,index.html,1,16,6.25,False,100,100,100,100,99,OK
-café da manhã na urca,breakfast,cafe-da-manha.html,0,15,0.0,False,100,100,100,100,99,OK
+café da manhã na urca,breakfast,cafe-da-manha.html,0,15,0.0,True,100,100,100,100,100,OK
 restaurante bondinho,bondinho,index.html,1,15,6.67,False,100,100,100,100,99,OK

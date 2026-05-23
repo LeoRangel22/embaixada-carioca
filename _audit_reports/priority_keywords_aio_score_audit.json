@@ -1,7 +1,7 @@
 {
   "status": "FAIL",
   "threshold": 90,
-  "min_score": 58,
+  "min_score": 69,
   "priority_keywords": [
     "restaurante pão de açúcar",
     "restaurante morro da urca",
@@ -104,39 +104,39 @@
     {
       "page": "restaurante-morro-da-urca.html",
       "exists": true,
-      "score": 58,
+      "score": 69,
       "status": "FAIL",
-      "word_count": 660,
+      "word_count": 772,
       "faq_count": 4,
       "keyword_present": [
         "restaurante morro da urca",
-        "restaurante no morro da urca"
-      ],
-      "keyword_missing": [
-        "restaurante pão de açúcar",
+        "restaurante no morro da urca",
         "restaurante no pão de açúcar"
       ],
+      "keyword_missing": [
+        "restaurante pão de açúcar"
+      ],
       "award_present": [
-        "caipirinha"
+        "feijoada premiada",
+        "caipirinha",
+        "picanha"
       ],
       "award_missing": [
         "Veja Rio",
         "Prazeres da Mesa",
         "melhor chope",
         "Heineken",
-        "feijoada premiada",
-        "Magnífica",
-        "picanha"
+        "Magnífica"
       ],
       "has_ol": true,
       "has_restaurant_schema": true,
       "has_video_schema": false,
       "aggregate_rating_count": 2,
       "findings": [
-        "Keywords ausentes ou pouco literais: restaurante pão de açúcar, restaurante no pão de açúcar",
-        "Conteúdo curto: 660 palavras; meta 1200.",
+        "Keywords ausentes ou pouco literais: restaurante pão de açúcar",
+        "Conteúdo curto: 772 palavras; meta 1200.",
         "FAQ insuficiente: 4; meta 8.",
-        "E-E-A-T/premiações insuficientes: 1/4 termos mínimos.",
+        "E-E-A-T/premiações insuficientes: 3/4 termos mínimos.",
         "Falta VideoObject schema recomendado.",
         "Possível duplicidade de aggregateRating: 2."
       ]
@@ -144,14 +144,15 @@
     {
       "page": "cafe-da-manha.html",
       "exists": true,
-      "score": 63,
+      "score": 72,
       "status": "FAIL",
-      "word_count": 1756,
+      "word_count": 1864,
       "faq_count": 8,
-      "keyword_present": [],
-      "keyword_missing": [
+      "keyword_present": [
         "cafe da manha na urca",
-        "café da manhã na urca",
+        "café da manhã na urca"
+      ],
+      "keyword_missing": [
         "café da manhã pão de açúcar",
         "cafe da manha pao de acucar"
       ],
@@ -172,8 +173,8 @@
       "has_video_schema": false,
       "aggregate_rating_count": 4,
       "findings": [
-        "Keywords ausentes ou pouco literais: cafe da manha na urca, café da manhã na urca, café da manhã pão de açúcar, cafe da manha pao de acucar",
-        "Conteúdo curto: 1756 palavras; meta 2000.",
+        "Keywords ausentes ou pouco literais: café da manhã pão de açúcar, cafe da manha pao de acucar",
+        "Conteúdo curto: 1864 palavras; meta 2000.",
         "Falta lista numerada <ol> para Featured Snippet.",
         "Falta VideoObject schema recomendado.",
         "Possível duplicidade de aggregateRating: 4."

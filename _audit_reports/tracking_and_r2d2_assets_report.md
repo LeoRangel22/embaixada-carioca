@@ -1,0 +1,97 @@
+# Tracking and R2D2 Assets Report
+
+Status: **PASS**
+
+## Implementado
+- GA4/outbound conversion tracking para cliques em TagMe, WhatsApp, email e telefone.
+- Banner contextual por horário do dia para café, almoço, entardecer e reserva.
+
+Arquivos alterados: **86**
+
+## Detalhe
+- `404.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `almoco-morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `almoco.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `cafe-da-manha-com-vista-rio-de-janeiro.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `cafe-da-manha-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `cafe-da-manha.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `caipirinha-com-vista-rio.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `cardapio.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `como-chegar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `contato.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/almoco-morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/almoco.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/breakfast-with-a-view-rio-de-janeiro.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/cafe-da-manha-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/cafe-da-manha.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/caipirinha-com-vista-rio.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/cardapio.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/contato.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/entardecer.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/eventos.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/feijoada-com-vista-rio-de-janeiro.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/feijoada.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/gastronomia-carioca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/guia-do-rio.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/how-to-get-there.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/index.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/nossa-visao.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/parque-bondinho.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/por-do-sol-morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/restaurant-at-urca-hill.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/restaurants-near-sugarloaf-mountain.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/roteiro-meio-dia-urca-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/sugarloaf-cable-car-park.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/sugarloaf-cable-car-restaurant.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/sunset.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `en/where-to-eat-near-sugarloaf.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `entardecer.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/almoco-morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/almoco.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/atardecer.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/cafe-da-manha-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/cafe-da-manha.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/caipirinha-com-vista-rio.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/cardapio.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/como-llegar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/contato.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/desayuno-con-vista-rio-de-janeiro.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/donde-comer-cerca-del-pan-de-azucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/entardecer.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/eventos.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/feijoada-com-vista-rio-de-janeiro.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/feijoada.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/gastronomia-carioca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/guia-do-rio.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/index.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/nossa-visao.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/parque-bondinho-pan-de-azucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/parque-bondinho.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/por-do-sol-morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/restaurante-bondinho-pan-de-azucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/restaurante-morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/restaurantes-cerca-del-pan-de-azucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `es/roteiro-meio-dia-urca-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `eventos.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `feijoada-com-vista-rio-de-janeiro.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `feijoada.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `gastronomia-carioca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `guia-do-rio.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `home-preview.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `index.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `nossa-visao.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `offline.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `onde-comer-no-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `parque-bondinho-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `parque-bondinho.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `por-do-sol-morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `restaurante-bondinho-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `restaurante-morro-da-urca.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `restaurantes-perto-do-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js
+- `roteiro-meio-dia-urca-pao-de-acucar.html` — conversion-tracking.js, r2d2-dynamic-banner.js

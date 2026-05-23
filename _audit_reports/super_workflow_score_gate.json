@@ -20,6 +20,32 @@
     },
     {
       "attempt": 1,
+      "name": "Tracking and R2D2 assets",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "PASS",
+      "score": 100.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/tracking_and_r2d2_assets_report.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/tracking_and_r2d2_assets_report.md: raw 100.0"
+    },
+    {
+      "attempt": 1,
+      "name": "SEO content growth fixes",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "PASS",
+      "score": 100.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/seo_content_growth_fixes_report.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/seo_content_growth_fixes_report.md: raw 100.0"
+    },
+    {
+      "attempt": 1,
       "name": "Superholistic visual readability lock",
       "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
       "status": "PASS",
@@ -73,7 +99,7 @@
         "_audit_reports/phase2_performance_seo_audit.md"
       ],
       "missing_reports": [],
-      "notes": "_audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: raw 82.0; advisory gate: raw 82.0 normalized to 90.0; issues remain in source reports"
+      "notes": "_audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: raw 80.0; advisory gate: raw 80.0 normalized to 90.0; issues remain in source reports"
     },
     {
       "attempt": 1,
@@ -102,7 +128,7 @@
         "_audit_reports/priority_keywords_aio_score_audit.json"
       ],
       "missing_reports": [],
-      "notes": "_audit_reports/priority_keywords_aio_score_audit.md: raw 0.0; _audit_reports/priority_keywords_aio_score_audit.csv: raw 58.0; _audit_reports/priority_keywords_aio_score_audit.json: raw 58.0; advisory gate: raw 0.0 normalized to 90.0; issues remain in source reports"
+      "notes": "_audit_reports/priority_keywords_aio_score_audit.md: raw 0.0; _audit_reports/priority_keywords_aio_score_audit.csv: raw 69.0; _audit_reports/priority_keywords_aio_score_audit.json: raw 69.0; advisory gate: raw 0.0 normalized to 90.0; issues remain in source reports"
     },
     {
       "attempt": 1,
@@ -148,6 +174,32 @@
       ],
       "missing_reports": [],
       "notes": "_audit_reports/red_block_copidesk_fixes_report.md: raw 100.0"
+    },
+    "Tracking and R2D2 assets": {
+      "attempt": 1,
+      "name": "Tracking and R2D2 assets",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "PASS",
+      "score": 100.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/tracking_and_r2d2_assets_report.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/tracking_and_r2d2_assets_report.md: raw 100.0"
+    },
+    "SEO content growth fixes": {
+      "attempt": 1,
+      "name": "SEO content growth fixes",
+      "workflow_file": ".github/workflows/super-workflow-score-gate.yml",
+      "status": "PASS",
+      "score": 100.0,
+      "command_status": 0,
+      "reports_found": [
+        "_audit_reports/seo_content_growth_fixes_report.md"
+      ],
+      "missing_reports": [],
+      "notes": "_audit_reports/seo_content_growth_fixes_report.md: raw 100.0"
     },
     "Superholistic visual readability lock": {
       "attempt": 1,
@@ -204,7 +256,7 @@
         "_audit_reports/phase2_performance_seo_audit.md"
       ],
       "missing_reports": [],
-      "notes": "_audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: raw 82.0; advisory gate: raw 82.0 normalized to 90.0; issues remain in source reports"
+      "notes": "_audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: raw 80.0; advisory gate: raw 80.0 normalized to 90.0; issues remain in source reports"
     },
     "Super site standards SEO audit": {
       "attempt": 1,
@@ -233,7 +285,7 @@
         "_audit_reports/priority_keywords_aio_score_audit.json"
       ],
       "missing_reports": [],
-      "notes": "_audit_reports/priority_keywords_aio_score_audit.md: raw 0.0; _audit_reports/priority_keywords_aio_score_audit.csv: raw 58.0; _audit_reports/priority_keywords_aio_score_audit.json: raw 58.0; advisory gate: raw 0.0 normalized to 90.0; issues remain in source reports"
+      "notes": "_audit_reports/priority_keywords_aio_score_audit.md: raw 0.0; _audit_reports/priority_keywords_aio_score_audit.csv: raw 69.0; _audit_reports/priority_keywords_aio_score_audit.json: raw 69.0; advisory gate: raw 0.0 normalized to 90.0; issues remain in source reports"
     },
     "GSC real organic queries score audit": {
       "attempt": 1,
