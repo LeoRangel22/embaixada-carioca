@@ -1,0 +1,68 @@
+name: Schema rating guard
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Run mode"
+        required: true
+        default: "check"
+        type: choice
+        options:
+          - check
+          - fix
+
+permissions:
+  contents: write
+
+concurrency:
+  group: schema-rating-guard
+  cancel-in-progress: true
+
+jobs:
+  schema-rating-guard:
+    name: Guard JSON-LD rating fields
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run schema rating guard
+        run: |
+          if [ "${{ github.event.inputs.mode }}" = "fix" ]; then
+            python3 scripts/schema_rating_guard.py --fix
+          else
+            python3 scripts/schema_rating_guard.py --check
+          fi
+
+      - name: Show schema rating guard report
+        if: always()
+        run: |
+          if [ -f _audit_reports/schema_rating_guard_report.md ]; then
+            cat _audit_reports/schema_rating_guard_report.md
+          fi
+
+      - name: Upload schema rating guard reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: schema-rating-guard-reports
+          path: |
+            _audit_reports/schema_rating_guard_report.md
+            _audit_reports/schema_rating_guard_report.json
+
+      - name: Commit schema rating guard fixes
+        if: ${{ github.event.inputs.mode == 'fix' }}
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "fix: enforce JSON-LD rating safety"
+          file_pattern: |
+            **/*.html
+            _audit_reports/schema_rating_guard_report.md
+            _audit_reports/schema_rating_guard_report.json
