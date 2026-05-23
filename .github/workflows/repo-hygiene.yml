@@ -1,0 +1,40 @@
+name: Repo hygiene
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - "scripts/repo_hygiene_archive_legacy.py"
+      - ".github/workflows/repo-hygiene.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  repo-hygiene:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run repo hygiene
+        run: python3 scripts/repo_hygiene_archive_legacy.py
+
+      - name: Show repo hygiene report
+        if: always()
+        run: |
+          if [ -f _audit_reports/repo_hygiene_report.md ]; then cat _audit_reports/repo_hygiene_report.md; fi
+
+      - name: Commit repo hygiene outputs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: archive legacy files and update repo hygiene report"
+          file_pattern: |
+            archive/legacy/**
+            _audit_reports/repo_hygiene_report.md
+            _audit_reports/repo_hygiene_report.json
