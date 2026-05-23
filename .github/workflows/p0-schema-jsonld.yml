@@ -1,5 +1,5 @@
 name: P0 static JSON-LD schema
-# manual trigger: 2026-05-23 cycle 4 full reset
+# manual trigger: 2026-05-23 cycle 5 retry after GitHub Actions startup failure
 
 on:
   workflow_dispatch:
