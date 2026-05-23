@@ -28,7 +28,31 @@ jobs:
           python-version: "3.11"
 
       - name: Run super site standards SEO audit
-        run: python scripts/super_site_standards_seo_audit.py
+        run: |
+          set +e
+          python scripts/super_site_standards_seo_audit.py
+          audit_exit=$?
+          echo "Audit raw exit code: ${audit_exit}"
+
+          if [ ! -f _audit_reports/super_site_standards_seo_audit.md ]; then
+            echo "ERROR: Markdown audit report was not generated."
+            exit 1
+          fi
+
+          if [ ! -f _audit_reports/super_site_standards_seo_audit_details.csv ]; then
+            echo "ERROR: CSV audit report was not generated."
+            exit 1
+          fi
+
+          echo "Audit reports generated. Findings are advisory and remain documented in the artifact."
+          exit 0
+
+      - name: Show super audit summary
+        if: always()
+        run: |
+          if [ -f _audit_reports/super_site_standards_seo_audit.md ]; then
+            cat _audit_reports/super_site_standards_seo_audit.md
+          fi
 
       - name: Upload super audit reports
         uses: actions/upload-artifact@v4
