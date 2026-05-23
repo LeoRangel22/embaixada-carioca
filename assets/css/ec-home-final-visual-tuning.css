@@ -318,3 +318,64 @@ html body[data-screen-label="Home"] section#restaurantes-urca{
   margin:0!important;
   overflow:hidden!important;
 }
+
+/* Nossa História: título editorial deve permanecer em linha, sem fragmentar span/em. */
+html body[data-screen-label="Home"] section#visao .visao-text h2,
+html body[data-screen-label="Home"] section#visao#visao .visao-text h2[style]{
+  display:block!important;
+  position:static!important;
+  max-width:780px!important;
+  margin:0 0 28px!important;
+  padding:0!important;
+  color:var(--ec-home-blue)!important;
+  -webkit-text-fill-color:var(--ec-home-blue)!important;
+  font-family:Catamaran,Verdana,system-ui,sans-serif!important;
+  font-size:clamp(36px,4.4vw,62px)!important;
+  line-height:1.08!important;
+  font-weight:300!important;
+  letter-spacing:-.035em!important;
+  text-align:left!important;
+  white-space:normal!important;
+  word-break:normal!important;
+  overflow-wrap:normal!important;
+  text-wrap:balance!important;
+}
+
+html body[data-screen-label="Home"] section#visao .visao-text h2 .serif,
+html body[data-screen-label="Home"] section#visao .visao-text h2 em,
+html body[data-screen-label="Home"] section#visao#visao .visao-text h2[style] .serif,
+html body[data-screen-label="Home"] section#visao#visao .visao-text h2[style] em{
+  display:inline!important;
+  position:static!important;
+  float:none!important;
+  clear:none!important;
+  width:auto!important;
+  height:auto!important;
+  max-width:none!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:0!important;
+  transform:none!important;
+  vertical-align:baseline!important;
+  text-align:inherit!important;
+  white-space:normal!important;
+  word-break:normal!important;
+  overflow-wrap:normal!important;
+  font-size:inherit!important;
+  line-height:inherit!important;
+  letter-spacing:inherit!important;
+  font-weight:400!important;
+  font-style:italic!important;
+  color:var(--ec-home-orange)!important;
+  -webkit-text-fill-color:var(--ec-home-orange)!important;
+  text-shadow:none!important;
+  background:none!important;
+}
+
+html body[data-screen-label="Home"] section#visao .visao-text h2 .serif::before,
+html body[data-screen-label="Home"] section#visao .visao-text h2 .serif::after,
+html body[data-screen-label="Home"] section#visao .visao-text h2 em::before,
+html body[data-screen-label="Home"] section#visao .visao-text h2 em::after{
+  display:none!important;
+  content:none!important;
+}
