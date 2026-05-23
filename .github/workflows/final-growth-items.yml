@@ -1,0 +1,67 @@
+name: Final growth items
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - "restaurantes-romanticos-rio-de-janeiro.html"
+      - "assets/bondinho-ticket-notice.js"
+      - "assets/r2d2-dynamic-banner.js"
+      - "assets/menuitem-schema-enhancer.js"
+      - "scripts/apply_final_growth_items.py"
+      - "scripts/apply_tracking_and_r2d2_assets.py"
+      - ".github/workflows/final-growth-items.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  final-growth-items:
+    name: Apply final growth items
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Apply tracking, R2D2, ticket notice and schema
+        run: python3 scripts/apply_tracking_and_r2d2_assets.py
+
+      - name: Apply final growth items
+        run: python3 scripts/apply_final_growth_items.py
+
+      - name: Show reports
+        if: always()
+        run: |
+          if [ -f _audit_reports/tracking_and_r2d2_assets_report.md ]; then
+            cat _audit_reports/tracking_and_r2d2_assets_report.md
+          fi
+          if [ -f _audit_reports/final_growth_items_report.md ]; then
+            cat _audit_reports/final_growth_items_report.md
+          fi
+
+      - name: Upload final growth reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: final-growth-items-reports
+          path: |
+            _audit_reports/tracking_and_r2d2_assets_report.md
+            _audit_reports/final_growth_items_report.md
+            sitemap.xml
+
+      - name: Commit generated growth files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: apply final growth items"
+          file_pattern: |
+            **/*.html
+            sitemap.xml
+            _audit_reports/*.md
