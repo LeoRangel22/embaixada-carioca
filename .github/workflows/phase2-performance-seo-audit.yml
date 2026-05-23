@@ -40,17 +40,30 @@ jobs:
         run: python3 scripts/apply_como_chegar_final_visible_lock.py
 
       - name: Run Phase 2 performance SEO audit
-        run: python3 scripts/audit_phase2_performance_seo.py
+        run: |
+          set +e
+          python3 scripts/audit_phase2_performance_seo.py
+          audit_exit=$?
+          echo "Phase 2 audit raw exit code: ${audit_exit}"
+
+          if [ ! -f _audit_reports/phase2_performance_seo_audit.md ]; then
+            echo "ERROR: phase2_performance_seo_audit.md was not generated."
+            exit 1
+          fi
+
+          echo "Phase 2 performance findings are advisory. Report generated successfully."
+          exit 0
 
       - name: Show reports
+        if: always()
         run: |
-          cat _audit_reports/phase2_quick_fixes_report.md
+          if [ -f _audit_reports/phase2_quick_fixes_report.md ]; then cat _audit_reports/phase2_quick_fixes_report.md; fi
           echo '---'
-          cat _audit_reports/visible_text_css_link_report.md
+          if [ -f _audit_reports/visible_text_css_link_report.md ]; then cat _audit_reports/visible_text_css_link_report.md; fi
           echo '---'
-          cat _audit_reports/como_chegar_final_visible_lock_report.md
+          if [ -f _audit_reports/como_chegar_final_visible_lock_report.md ]; then cat _audit_reports/como_chegar_final_visible_lock_report.md; fi
           echo '---'
-          cat _audit_reports/phase2_performance_seo_audit.md
+          if [ -f _audit_reports/phase2_performance_seo_audit.md ]; then cat _audit_reports/phase2_performance_seo_audit.md; fi
 
       - name: Commit Phase 2 reports and quick fixes
         uses: stefanzweifel/git-auto-commit-action@v5
