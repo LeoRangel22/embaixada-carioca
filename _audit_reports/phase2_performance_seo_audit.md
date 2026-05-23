@@ -3,16 +3,16 @@
 Scope: existing public pages only. No new landing pages.
 
 ## index.html
-- Score: 77/100
+- Score: 76/100
 - Title length: 48
 - Meta description length: 151
 - Inline style blocks: 31
-- Script tags: 26
+- Script tags: 27
 - Images: 40
 - JSON-LD blocks: 5
 - Issues:
   - high inline style blocks: 31
-  - high script count: 26
+  - high script count: 27
 
 ## cafe-da-manha.html
 - Score: 82/100
@@ -86,5 +86,5 @@ Scope: existing public pages only. No new landing pages.
   - high script count: 22
 
 ## Summary
-- Average score: 83.6/100
+- Average score: 83.4/100
 - Phase 2 next fixes: reduce inline style density, normalize image loading, preserve CTAs, keep JSON-LD, and prepare performance validation.
