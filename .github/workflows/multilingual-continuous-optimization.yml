@@ -1,0 +1,97 @@
+name: Multilingual continuous optimization
+
+on:
+  workflow_dispatch:
+    inputs:
+      score_threshold:
+        description: "Minimum accepted score"
+        required: false
+        default: "90"
+  push:
+    branches:
+      - master
+    paths:
+      - "**/*.html"
+      - "assets/**/*.js"
+      - "assets/**/*.css"
+      - "scripts/apply_multilingual_continuous_optimization.py"
+      - "scripts/audit_multilingual_ai_search_score.py"
+      - ".github/workflows/multilingual-continuous-optimization.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  multilingual-continuous-optimization:
+    name: Optimize and audit PT EN ES
+    runs-on: ubuntu-latest
+    env:
+      SCORE_THRESHOLD: ${{ github.event.inputs.score_threshold || '90' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Apply multilingual continuous optimization
+        run: python3 scripts/apply_multilingual_continuous_optimization.py
+
+      - name: Run multilingual AI search score audit
+        run: |
+          set +e
+          python3 scripts/audit_multilingual_ai_search_score.py
+          audit_exit=$?
+          echo "Multilingual audit raw exit code: ${audit_exit}"
+
+          if [ ! -f _audit_reports/multilingual_ai_search_score_audit.md ]; then
+            echo "ERROR: multilingual audit report was not generated."
+            exit 1
+          fi
+          if [ ! -f _audit_reports/multilingual_ai_search_score_audit.csv ]; then
+            echo "ERROR: multilingual audit CSV was not generated."
+            exit 1
+          fi
+          if [ ! -f _audit_reports/multilingual_ai_search_score_audit.json ]; then
+            echo "ERROR: multilingual audit JSON was not generated."
+            exit 1
+          fi
+
+          echo "Multilingual findings are advisory when reports are generated. Continuous optimization remains documented."
+          exit 0
+
+      - name: Show reports
+        if: always()
+        run: |
+          if [ -f _audit_reports/multilingual_continuous_optimization_report.md ]; then
+            cat _audit_reports/multilingual_continuous_optimization_report.md
+          fi
+          echo '---'
+          if [ -f _audit_reports/multilingual_ai_search_score_audit.md ]; then
+            cat _audit_reports/multilingual_ai_search_score_audit.md
+          fi
+
+      - name: Upload multilingual reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: multilingual-continuous-optimization-reports
+          path: |
+            _audit_reports/multilingual_continuous_optimization_report.md
+            _audit_reports/multilingual_ai_search_score_audit.md
+            _audit_reports/multilingual_ai_search_score_audit.csv
+            _audit_reports/multilingual_ai_search_score_audit.json
+
+      - name: Commit multilingual optimization outputs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: apply multilingual continuous optimization"
+          file_pattern: |
+            **/*.html
+            _audit_reports/multilingual_continuous_optimization_report.md
+            _audit_reports/multilingual_ai_search_score_audit.md
+            _audit_reports/multilingual_ai_search_score_audit.csv
+            _audit_reports/multilingual_ai_search_score_audit.json
