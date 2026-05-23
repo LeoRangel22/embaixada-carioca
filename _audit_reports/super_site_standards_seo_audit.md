@@ -3,8 +3,8 @@
 Status geral: **FAIL**
 Score mínimo: **64**
 Páginas HTML auditadas: **87**
-Findings FAIL: **98**
-Findings totais: **312**
+Findings FAIL: **97**
+Findings totais: **311**
 
 ## Aprendizados incorporados
 - Home lower contrast
@@ -51,7 +51,6 @@ Findings totais: **312**
 - `es/contato.html` — FAIL — score 78
 - `es/nossa-visao.html` — FAIL — score 78
 - `nossa-visao.html` — FAIL — score 78
-- `almoco.html` — FAIL — score 82
 - `es/cafe-da-manha.html` — FAIL — score 82
 - `es/guia-do-rio.html` — FAIL — score 82
 - `cafe-da-manha.html` — FAIL — score 84
@@ -90,7 +89,6 @@ Findings totais: **312**
 - **WARN** `almoco-morro-da-urca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `almoco-morro-da-urca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
 - **WARN** `almoco.html` — SEO/title_length: Title fora da faixa ideal.
-- **FAIL** `almoco.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
 - **WARN** `almoco.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
 - **WARN** `almoco.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `almoco.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
@@ -98,7 +96,7 @@ Findings totais: **312**
 - **WARN** `cafe-da-manha-com-vista-rio-de-janeiro.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
 - **WARN** `cafe-da-manha-pao-de-acucar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `cafe-da-manha-pao-de-acucar.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `cafe-da-manha.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 4.
+- **FAIL** `cafe-da-manha.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 3.
 - **WARN** `cafe-da-manha.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
 - **WARN** `cafe-da-manha.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `cafe-da-manha.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
@@ -244,6 +242,7 @@ Findings totais: **312**
 - **WARN** `es/caipirinha-com-vista-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `es/caipirinha-com-vista-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
 - **FAIL** `es/cardapio.html` — SEO/meta_description: Página sem meta description.
+- **FAIL** `es/cardapio.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
 
 ## Arquivos
 - `_audit_reports/super_site_standards_seo_audit.md`
