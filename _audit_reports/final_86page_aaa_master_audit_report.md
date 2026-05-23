@@ -4,26 +4,26 @@
 Auditar o conjunto completo de páginas HTML em linguagem, SEO, GEO/AIO/SAI, UX, design, marca, contraste, imagens, performance básica e integridade técnica.
 
 ## Veredito executivo
-- Total de arquivos HTML encontrados: 86
-- Páginas comerciais/conteúdo: 83
+- Total de arquivos HTML encontrados: 87
+- Páginas comerciais/conteúdo: 84
 - Páginas utilitárias: 3
 - PASS: 86
-- WARN: 0
+- WARN: 1
 - Nota geral média: 10.0/10
-- Status geral: PASS
+- Status geral: WARN
 
 ## Médias por critério
 - LANGUAGE: 10.0/10
 - SEO: 10.0/10
 - GEO AIO SAI: 10.0/10
 - UX CONVERSION: 10.0/10
-- DESIGN BRAND: 10.0/10
-- CONTRAST READABILITY: 10.0/10
+- DESIGN BRAND: 9.9/10
+- CONTRAST READABILITY: 9.9/10
 - IMAGES PERFORMANCE: 10.0/10
 - TECHNICAL INTEGRITY: 10.0/10
 
 ## Páginas com WARN
-- Nenhuma.
+- restaurantes-romanticos-rio-de-janeiro.html — 7.1/10 — ux_conversion:top_nav_present;language_switcher_present;google_reviews_visible | design_brand:brand_manual_lock;final_design_lock;brand_palette_present;logo_present_or_utility;button_hierarchy_lock | contrast_readability:legibility_lock_present;readability_emergency_lock;hard_readability_lock;webkit_reset;dark_background_light_text;light_cards_dark_text | images_performance:cache_or_perf_report_lock
 
 ## Leitura crítica
 - Auditoria recalibrada para não confundir CSS/JS/JSON-LD com template quebrado.

@@ -302,6 +302,8 @@ restaurante-morro-da-urca.html,FAIL,86,WARN,VISUAL,dark_bg_dark_text,Risco de te
 restaurantes-perto-do-pao-de-acucar.html,FAIL,86,FAIL,SEO_SCHEMA,aggregate_rating_duplicate,Múltiplos aggregateRating: 2.,
 restaurantes-perto-do-pao-de-acucar.html,FAIL,86,WARN,VISUAL,light_bg_light_text,Risco de texto claro em fundo claro.,
 restaurantes-perto-do-pao-de-acucar.html,FAIL,86,WARN,VISUAL,dark_bg_dark_text,Risco de texto escuro em fundo escuro.,
+restaurantes-romanticos-rio-de-janeiro.html,WARN,96,WARN,VISUAL,light_bg_light_text,Risco de texto claro em fundo claro.,
+restaurantes-romanticos-rio-de-janeiro.html,WARN,96,WARN,VISUAL,dark_bg_dark_text,Risco de texto escuro em fundo escuro.,
 roteiro-meio-dia-urca-pao-de-acucar.html,FAIL,84,FAIL,SEO_SCHEMA,aggregate_rating_duplicate,Múltiplos aggregateRating: 2.,
 roteiro-meio-dia-urca-pao-de-acucar.html,FAIL,84,WARN,VISUAL,low_opacity,Opacity baixa detectada; validar texto real.,
 roteiro-meio-dia-urca-pao-de-acucar.html,FAIL,84,WARN,VISUAL,light_bg_light_text,Risco de texto claro em fundo claro.,

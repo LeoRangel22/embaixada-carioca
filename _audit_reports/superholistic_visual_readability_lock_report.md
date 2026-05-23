@@ -2,7 +2,7 @@
 
 Status: **PASS**
 CSS: `/assets/superholistic_visual_readability_lock.css`
-Páginas atualizadas: **22**
+Páginas atualizadas: **23**
 Páginas já ok/ignoradas: **64**
 
 ## Detalhe
@@ -91,4 +91,5 @@ Páginas já ok/ignoradas: **64**
 - `restaurante-bondinho-pao-de-acucar.html` — injected
 - `restaurante-morro-da-urca.html` — already_present
 - `restaurantes-perto-do-pao-de-acucar.html` — injected
+- `restaurantes-romanticos-rio-de-janeiro.html` — injected
 - `roteiro-meio-dia-urca-pao-de-acucar.html` — injected

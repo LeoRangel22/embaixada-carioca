@@ -2,9 +2,9 @@
 
 Status geral: **FAIL**
 Score mínimo: **64**
-Páginas HTML auditadas: **86**
+Páginas HTML auditadas: **87**
 Findings FAIL: **100**
-Findings totais: **307**
+Findings totais: **309**
 
 ## Aprendizados incorporados
 - Home lower contrast

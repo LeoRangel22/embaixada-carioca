@@ -1,23 +1,23 @@
 # Superholistic Design/UX/SEO/GEO/AIO/SXO Audit
 
-Status geral: **PASS**
+Status geral: **FAIL**
 Score médio: **95.1**
 Score mínimo: **92**
 Threshold: **90**
-Páginas auditadas: **86**
+Páginas auditadas: **87**
 
 ## Dimensões auditadas
-- **Design** — média 84.3, mínimo 76
+- **Design** — média 84.4, mínimo 76
 - **UX** — média 98.8, mínimo 97
-- **Copydesk** — média 100.0, mínimo 100
+- **Copydesk** — média 99.9, mínimo 88
 - **SEO** — média 96.7, mínimo 84
 - **GEO** — média 100.0, mínimo 100
-- **AEO** — média 90.8, mínimo 84
-- **AIO** — média 89.8, mínimo 85
+- **AEO** — média 90.7, mínimo 84
+- **AIO** — média 89.6, mínimo 72
 - **SXO** — média 100.0, mínimo 100
 - **Marketing** — média 97.9, mínimo 82
 - **R2D2** — média 98.0, mínimo 86
-- **Schema** — média 84.9, mínimo 80
+- **Schema** — média 85.1, mínimo 80
 - **Performance** — média 99.9, mínimo 92
 
 ## Páginas abaixo de 90
@@ -839,6 +839,21 @@ Nenhuma página abaixo de 90.
   - Sem VideoObject em página de experiência/produto.
 - **Schema (80)**
   - Múltiplos aggregateRating: 2.
+
+### `restaurantes-romanticos-rio-de-janeiro.html` — 95
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **Copydesk (88)**
+  - Conteúdo curto: 356 palavras.
+- **SEO (96)**
+  - Sem hreflang.
+- **AEO (86)**
+  - FAQ baixo para AEO: 0.
+- **AIO (72)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+  - Poucas FAQs para IA.
+  - Sem VideoObject em página de experiência/produto.
+  - Schema sem @graph.
 
 ### `roteiro-meio-dia-urca-pao-de-acucar.html` — 95
 - **Design (84)**

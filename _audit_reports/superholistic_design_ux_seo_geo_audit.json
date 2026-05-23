@@ -1,5 +1,5 @@
 {
-  "status": "PASS",
+  "status": "FAIL",
   "threshold": 90,
   "average_score": 95.1,
   "min_score": 92,
@@ -8639,6 +8639,98 @@
           "findings": [
             "Múltiplos aggregateRating: 2."
           ]
+        },
+        {
+          "dimension": "Performance",
+          "score": 100,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "page": "restaurantes-romanticos-rio-de-janeiro.html",
+      "status": "FAIL",
+      "score": 95,
+      "word_count": 356,
+      "h1_count": 1,
+      "h2_count": 3,
+      "faq_count": 0,
+      "internal_links": 5,
+      "cta_links": 4,
+      "jsonld_types": [
+        "GeoCoordinates",
+        "PostalAddress",
+        "ReserveAction",
+        "Restaurant"
+      ],
+      "dimensions": [
+        {
+          "dimension": "Design",
+          "score": 100,
+          "findings": []
+        },
+        {
+          "dimension": "UX",
+          "score": 97,
+          "findings": [
+            "Sem skip-nav detectado."
+          ]
+        },
+        {
+          "dimension": "Copydesk",
+          "score": 88,
+          "findings": [
+            "Conteúdo curto: 356 palavras."
+          ]
+        },
+        {
+          "dimension": "SEO",
+          "score": 96,
+          "findings": [
+            "Sem hreflang."
+          ]
+        },
+        {
+          "dimension": "GEO",
+          "score": 100,
+          "findings": []
+        },
+        {
+          "dimension": "AEO",
+          "score": 86,
+          "findings": [
+            "FAQ baixo para AEO: 0."
+          ]
+        },
+        {
+          "dimension": "AIO",
+          "score": 72,
+          "findings": [
+            "Sem cobertura literal das keywords prioritárias AIO.",
+            "Poucas FAQs para IA.",
+            "Sem VideoObject em página de experiência/produto.",
+            "Schema sem @graph."
+          ]
+        },
+        {
+          "dimension": "SXO",
+          "score": 100,
+          "findings": []
+        },
+        {
+          "dimension": "Marketing",
+          "score": 100,
+          "findings": []
+        },
+        {
+          "dimension": "R2D2",
+          "score": 100,
+          "findings": []
+        },
+        {
+          "dimension": "Schema",
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "Performance",
