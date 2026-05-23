@@ -1,5 +1,5 @@
 name: P0 static JSON-LD schema
-# manual trigger: 2026-05-23 schema cycle
+# manual trigger: 2026-05-23 cycle 2
 
 on:
   workflow_dispatch:
