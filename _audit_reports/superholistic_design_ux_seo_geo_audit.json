@@ -996,7 +996,7 @@
       "page": "en/almoco-morro-da-urca.html",
       "status": "PASS",
       "score": 95,
-      "word_count": 730,
+      "word_count": 728,
       "h1_count": 1,
       "h2_count": 7,
       "faq_count": 14,
@@ -1095,7 +1095,7 @@
       "page": "en/almoco.html",
       "status": "PASS",
       "score": 94,
-      "word_count": 1503,
+      "word_count": 1502,
       "h1_count": 1,
       "h2_count": 10,
       "faq_count": 18,
@@ -1201,7 +1201,7 @@
       "page": "en/breakfast-with-a-view-rio-de-janeiro.html",
       "status": "PASS",
       "score": 95,
-      "word_count": 730,
+      "word_count": 729,
       "h1_count": 1,
       "h2_count": 5,
       "faq_count": 14,
@@ -1299,7 +1299,7 @@
       "page": "en/cafe-da-manha-pao-de-acucar.html",
       "status": "PASS",
       "score": 95,
-      "word_count": 733,
+      "word_count": 731,
       "h1_count": 1,
       "h2_count": 7,
       "faq_count": 14,
@@ -1502,7 +1502,7 @@
       "page": "en/caipirinha-com-vista-rio.html",
       "status": "PASS",
       "score": 93,
-      "word_count": 724,
+      "word_count": 722,
       "h1_count": 1,
       "h2_count": 7,
       "faq_count": 14,
@@ -1713,7 +1713,7 @@
       "page": "en/contato.html",
       "status": "PASS",
       "score": 92,
-      "word_count": 627,
+      "word_count": 626,
       "h1_count": 1,
       "h2_count": 3,
       "faq_count": 14,
@@ -1818,7 +1818,7 @@
       "page": "en/entardecer.html",
       "status": "PASS",
       "score": 96,
-      "word_count": 1400,
+      "word_count": 1399,
       "h1_count": 1,
       "h2_count": 9,
       "faq_count": 18,
@@ -1924,7 +1924,7 @@
       "page": "en/eventos.html",
       "status": "PASS",
       "score": 94,
-      "word_count": 1245,
+      "word_count": 1247,
       "h1_count": 1,
       "h2_count": 7,
       "faq_count": 18,
@@ -2031,7 +2031,7 @@
       "page": "en/feijoada-com-vista-rio-de-janeiro.html",
       "status": "PASS",
       "score": 95,
-      "word_count": 730,
+      "word_count": 729,
       "h1_count": 1,
       "h2_count": 7,
       "faq_count": 14,
@@ -2338,7 +2338,7 @@
       "page": "en/guia-do-rio.html",
       "status": "PASS",
       "score": 95,
-      "word_count": 3066,
+      "word_count": 3067,
       "h1_count": 1,
       "h2_count": 13,
       "faq_count": 18,
@@ -2441,7 +2441,7 @@
       "page": "en/how-to-get-there.html",
       "status": "PASS",
       "score": 96,
-      "word_count": 977,
+      "word_count": 975,
       "h1_count": 1,
       "h2_count": 6,
       "faq_count": 14,
@@ -2537,8 +2537,8 @@
     {
       "page": "en/index.html",
       "status": "PASS",
-      "score": 94,
-      "word_count": 5624,
+      "score": 93,
+      "word_count": 5629,
       "h1_count": 1,
       "h2_count": 22,
       "faq_count": 54,
@@ -2588,8 +2588,10 @@
         },
         {
           "dimension": "SEO",
-          "score": 100,
-          "findings": []
+          "score": 95,
+          "findings": [
+            "Title fora da faixa ideal: 73."
+          ]
         },
         {
           "dimension": "GEO",
@@ -2750,7 +2752,7 @@
       "page": "en/nossa-visao.html",
       "status": "PASS",
       "score": 92,
-      "word_count": 616,
+      "word_count": 615,
       "h1_count": 1,
       "h2_count": 3,
       "faq_count": 14,
@@ -2855,7 +2857,7 @@
       "page": "en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html",
       "status": "PASS",
       "score": 93,
-      "word_count": 970,
+      "word_count": 969,
       "h1_count": 1,
       "h2_count": 5,
       "faq_count": 18,
@@ -3066,7 +3068,7 @@
       "page": "en/por-do-sol-morro-da-urca.html",
       "status": "PASS",
       "score": 95,
-      "word_count": 710,
+      "word_count": 709,
       "h1_count": 1,
       "h2_count": 7,
       "faq_count": 14,
@@ -3165,7 +3167,7 @@
       "page": "en/restaurant-at-urca-hill.html",
       "status": "PASS",
       "score": 94,
-      "word_count": 1052,
+      "word_count": 1051,
       "h1_count": 1,
       "h2_count": 7,
       "faq_count": 14,
@@ -3270,7 +3272,7 @@
       "page": "en/restaurants-near-sugarloaf-mountain.html",
       "status": "PASS",
       "score": 94,
-      "word_count": 1069,
+      "word_count": 1068,
       "h1_count": 1,
       "h2_count": 7,
       "faq_count": 14,
@@ -3375,7 +3377,7 @@
       "page": "en/roteiro-meio-dia-urca-pao-de-acucar.html",
       "status": "PASS",
       "score": 92,
-      "word_count": 818,
+      "word_count": 816,
       "h1_count": 1,
       "h2_count": 7,
       "faq_count": 18,
@@ -3589,7 +3591,7 @@
       "page": "en/sugarloaf-cable-car-restaurant.html",
       "status": "PASS",
       "score": 94,
-      "word_count": 1058,
+      "word_count": 1057,
       "h1_count": 1,
       "h2_count": 7,
       "faq_count": 14,
@@ -3694,7 +3696,7 @@
       "page": "en/sunset.html",
       "status": "PASS",
       "score": 94,
-      "word_count": 1229,
+      "word_count": 1228,
       "h1_count": 1,
       "h2_count": 8,
       "faq_count": 18,
@@ -3800,7 +3802,7 @@
       "page": "en/where-to-eat-near-sugarloaf.html",
       "status": "PASS",
       "score": 94,
-      "word_count": 1045,
+      "word_count": 1044,
       "h1_count": 1,
       "h2_count": 7,
       "faq_count": 14,
@@ -4009,7 +4011,7 @@
       "page": "es/almoco-morro-da-urca.html",
       "status": "PASS",
       "score": 96,
-      "word_count": 698,
+      "word_count": 696,
       "h1_count": 1,
       "h2_count": 7,
       "faq_count": 14,
@@ -4316,7 +4318,7 @@
       "page": "es/cafe-da-manha-pao-de-acucar.html",
       "status": "PASS",
       "score": 96,
-      "word_count": 715,
+      "word_count": 713,
       "h1_count": 1,
       "h2_count": 7,
       "faq_count": 14,
@@ -4411,7 +4413,7 @@
       "page": "es/cafe-da-manha.html",
       "status": "PASS",
       "score": 95,
-      "word_count": 1564,
+      "word_count": 1570,
       "h1_count": 1,
       "h2_count": 9,
       "faq_count": 18,
@@ -4459,8 +4461,10 @@
         },
         {
           "dimension": "SEO",
-          "score": 100,
-          "findings": []
+          "score": 95,
+          "findings": [
+            "Title fora da faixa ideal: 75."
+          ]
         },
         {
           "dimension": "GEO",
@@ -4515,7 +4519,7 @@
       "page": "es/caipirinha-com-vista-rio.html",
       "status": "PASS",
       "score": 95,
-      "word_count": 698,
+      "word_count": 696,
       "h1_count": 1,
       "h2_count": 7,
       "faq_count": 14,
@@ -5217,7 +5221,7 @@
       "page": "es/eventos.html",
       "status": "PASS",
       "score": 94,
-      "word_count": 1242,
+      "word_count": 1247,
       "h1_count": 1,
       "h2_count": 7,
       "faq_count": 18,
@@ -5628,7 +5632,7 @@
       "page": "es/guia-do-rio.html",
       "status": "PASS",
       "score": 96,
-      "word_count": 3088,
+      "word_count": 3092,
       "h1_count": 1,
       "h2_count": 13,
       "faq_count": 18,
@@ -5675,8 +5679,10 @@
         },
         {
           "dimension": "SEO",
-          "score": 100,
-          "findings": []
+          "score": 95,
+          "findings": [
+            "Title fora da faixa ideal: 75."
+          ]
         },
         {
           "dimension": "GEO",
@@ -5729,8 +5735,8 @@
     {
       "page": "es/index.html",
       "status": "PASS",
-      "score": 95,
-      "word_count": 5874,
+      "score": 94,
+      "word_count": 5881,
       "h1_count": 1,
       "h2_count": 22,
       "faq_count": 54,
@@ -5780,8 +5786,10 @@
         },
         {
           "dimension": "SEO",
-          "score": 100,
-          "findings": []
+          "score": 95,
+          "findings": [
+            "Title fora da faixa ideal: 88."
+          ]
         },
         {
           "dimension": "GEO",
@@ -6543,8 +6551,8 @@
     {
       "page": "es/restaurante-morro-da-urca.html",
       "status": "PASS",
-      "score": 95,
-      "word_count": 1033,
+      "score": 94,
+      "word_count": 1035,
       "h1_count": 1,
       "h2_count": 7,
       "faq_count": 14,
@@ -6590,8 +6598,10 @@
         },
         {
           "dimension": "SEO",
-          "score": 100,
-          "findings": []
+          "score": 95,
+          "findings": [
+            "Title fora da faixa ideal: 78."
+          ]
         },
         {
           "dimension": "GEO",
@@ -6748,7 +6758,7 @@
       "page": "es/roteiro-meio-dia-urca-pao-de-acucar.html",
       "status": "PASS",
       "score": 94,
-      "word_count": 818,
+      "word_count": 816,
       "h1_count": 1,
       "h2_count": 7,
       "faq_count": 18,

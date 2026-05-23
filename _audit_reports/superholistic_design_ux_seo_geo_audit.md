@@ -10,7 +10,7 @@ Páginas auditadas: **87**
 - **Design** — média 84.4, mínimo 76
 - **UX** — média 98.8, mínimo 97
 - **Copydesk** — média 99.9, mínimo 88
-- **SEO** — média 96.7, mínimo 84
+- **SEO** — média 96.4, mínimo 84
 - **GEO** — média 100.0, mínimo 100
 - **AEO** — média 90.7, mínimo 84
 - **AIO** — média 89.6, mínimo 72
@@ -136,6 +136,24 @@ Nenhuma página abaixo de 90.
 - **Schema (80)**
   - Múltiplos aggregateRating: 3.
 
+### `en/index.html` — 93
+- **Design (76)**
+  - Risco de texto creme em fundo claro.
+  - Risco de texto azul em fundo azul.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **SEO (95)**
+  - Title fora da faixa ideal: 73.
+- **AEO (84)**
+  - FAQ visual sem FAQPage JSON-LD.
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+- **R2D2 (93)**
+  - R2D2 fraco em Decisão.
+- **Schema (80)**
+  - Múltiplos aggregateRating: 2.
+
 ### `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — 93
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -229,22 +247,6 @@ Nenhuma página abaixo de 90.
   - Sem cobertura literal das keywords prioritárias AIO.
 - **Schema (80)**
   - Múltiplos aggregateRating: 3.
-
-### `en/index.html` — 94
-- **Design (76)**
-  - Risco de texto creme em fundo claro.
-  - Risco de texto azul em fundo azul.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **R2D2 (93)**
-  - R2D2 fraco em Decisão.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
 
 ### `en/restaurant-at-urca-hill.html` — 94
 - **Design (84)**
@@ -411,6 +413,22 @@ Nenhuma página abaixo de 90.
 - **Schema (80)**
   - Múltiplos aggregateRating: 3.
 
+### `es/index.html` — 94
+- **Design (76)**
+  - Risco de texto creme em fundo claro.
+  - Risco de texto azul em fundo azul.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **SEO (95)**
+  - Title fora da faixa ideal: 88.
+- **AEO (84)**
+  - FAQ visual sem FAQPage JSON-LD.
+  - Faltam respostas diretas transacionais.
+- **AIO (95)**
+  - Sem VideoObject em página de experiência/produto.
+- **Schema (80)**
+  - Múltiplos aggregateRating: 2.
+
 ### `es/parque-bondinho.html` — 94
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -420,6 +438,23 @@ Nenhuma página abaixo de 90.
   - Sem meta description.
 - **AEO (92)**
   - FAQ visual sem FAQPage JSON-LD.
+- **AIO (85)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+  - Sem VideoObject em página de experiência/produto.
+- **Schema (80)**
+  - Múltiplos aggregateRating: 2.
+
+### `es/restaurante-morro-da-urca.html` — 94
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **SEO (95)**
+  - Title fora da faixa ideal: 78.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
 - **AIO (85)**
   - Sem cobertura literal das keywords prioritárias AIO.
   - Sem VideoObject em página de experiência/produto.
@@ -636,6 +671,8 @@ Nenhuma página abaixo de 90.
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
+- **SEO (95)**
+  - Title fora da faixa ideal: 75.
 - **AEO (92)**
   - Faltam respostas diretas transacionais.
 - **AIO (85)**
@@ -701,20 +738,6 @@ Nenhuma página abaixo de 90.
 - **Schema (80)**
   - Múltiplos aggregateRating: 2.
 
-### `es/index.html` — 95
-- **Design (76)**
-  - Risco de texto creme em fundo claro.
-  - Risco de texto azul em fundo azul.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (95)**
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
 ### `es/morro-da-urca.html` — 95
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -772,21 +795,6 @@ Nenhuma página abaixo de 90.
   - Múltiplos aggregateRating: 2.
 
 ### `es/restaurante-bondinho-pan-de-azucar.html` — 95
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **UX (97)**
-  - Sem skip-nav detectado.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (85)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `es/restaurante-morro-da-urca.html` — 95
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
@@ -1000,6 +1008,8 @@ Nenhuma página abaixo de 90.
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
+- **SEO (95)**
+  - Title fora da faixa ideal: 75.
 - **AEO (92)**
   - FAQ visual sem FAQPage JSON-LD.
 - **AIO (95)**
