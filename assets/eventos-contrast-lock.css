@@ -1,0 +1,130 @@
+/* Embaixada Carioca — Eventos Contrast Lock
+   Correção direta para textos claros/apagados em eventos.html. */
+
+body[data-screen-label="Eventos"] #faq,
+body[data-screen-label="Eventos"] .faq-grid,
+body[data-screen-label="Eventos"] .faq,
+body[data-screen-label="Eventos"] .capacity,
+body[data-screen-label="Eventos"] #capacity,
+body[data-screen-label="Eventos"] section[style*="background:#00405a"],
+body[data-screen-label="Eventos"] section[style*="background: #00405a"],
+body[data-screen-label="Eventos"] section[style*="background:#002f3f"],
+body[data-screen-label="Eventos"] section[style*="background: #002f3f"],
+body[data-screen-label="Eventos"] section[style*="background:#001f2b"],
+body[data-screen-label="Eventos"] section[style*="background: #001f2b"]{
+  color:#f6efde!important;
+  -webkit-text-fill-color:#f6efde!important;
+}
+
+body[data-screen-label="Eventos"] #faq *,
+body[data-screen-label="Eventos"] .faq-grid *,
+body[data-screen-label="Eventos"] .faq *,
+body[data-screen-label="Eventos"] .capacity *,
+body[data-screen-label="Eventos"] #capacity *{
+  opacity:1!important;
+  visibility:visible!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+  text-shadow:none!important;
+  -webkit-text-stroke:0!important;
+}
+
+body[data-screen-label="Eventos"] #faq h1,
+body[data-screen-label="Eventos"] #faq h2,
+body[data-screen-label="Eventos"] #faq h3,
+body[data-screen-label="Eventos"] #faq h4,
+body[data-screen-label="Eventos"] #faq h5,
+body[data-screen-label="Eventos"] .faq h1,
+body[data-screen-label="Eventos"] .faq h2,
+body[data-screen-label="Eventos"] .faq h3,
+body[data-screen-label="Eventos"] .faq h4,
+body[data-screen-label="Eventos"] .faq h5,
+body[data-screen-label="Eventos"] .capacity h1,
+body[data-screen-label="Eventos"] .capacity h2,
+body[data-screen-label="Eventos"] .capacity h3,
+body[data-screen-label="Eventos"] .capacity h4,
+body[data-screen-label="Eventos"] #capacity h1,
+body[data-screen-label="Eventos"] #capacity h2,
+body[data-screen-label="Eventos"] #capacity h3,
+body[data-screen-label="Eventos"] #capacity h4{
+  color:#f6efde!important;
+  -webkit-text-fill-color:#f6efde!important;
+  font-weight:800!important;
+}
+
+body[data-screen-label="Eventos"] #faq p,
+body[data-screen-label="Eventos"] #faq li,
+body[data-screen-label="Eventos"] #faq span,
+body[data-screen-label="Eventos"] #faq td,
+body[data-screen-label="Eventos"] .faq p,
+body[data-screen-label="Eventos"] .faq li,
+body[data-screen-label="Eventos"] .faq span,
+body[data-screen-label="Eventos"] .faq td,
+body[data-screen-label="Eventos"] .capacity p,
+body[data-screen-label="Eventos"] .capacity li,
+body[data-screen-label="Eventos"] .capacity span,
+body[data-screen-label="Eventos"] .capacity td,
+body[data-screen-label="Eventos"] #capacity p,
+body[data-screen-label="Eventos"] #capacity li,
+body[data-screen-label="Eventos"] #capacity span,
+body[data-screen-label="Eventos"] #capacity td{
+  color:rgba(246,239,222,.92)!important;
+  -webkit-text-fill-color:rgba(246,239,222,.92)!important;
+}
+
+body[data-screen-label="Eventos"] #faq strong,
+body[data-screen-label="Eventos"] .faq strong,
+body[data-screen-label="Eventos"] .capacity strong,
+body[data-screen-label="Eventos"] #capacity strong,
+body[data-screen-label="Eventos"] #faq a,
+body[data-screen-label="Eventos"] .faq a,
+body[data-screen-label="Eventos"] .capacity a,
+body[data-screen-label="Eventos"] #capacity a{
+  color:#f59b1e!important;
+  -webkit-text-fill-color:#f59b1e!important;
+  font-weight:900!important;
+}
+
+body[data-screen-label="Eventos"] .faq{
+  border-top-color:rgba(246,239,222,.24)!important;
+}
+
+/* Qualquer card/bloco claro dentro da página Eventos volta a texto escuro. */
+body[data-screen-label="Eventos"] [style*="background:#fff"],
+body[data-screen-label="Eventos"] [style*="background: #fff"],
+body[data-screen-label="Eventos"] [style*="background:#fffaf0"],
+body[data-screen-label="Eventos"] [style*="background: #fffaf0"],
+body[data-screen-label="Eventos"] [style*="background:#f6efde"],
+body[data-screen-label="Eventos"] [style*="background: #f6efde"],
+body[data-screen-label="Eventos"] .audience-card,
+body[data-screen-label="Eventos"] .form-section,
+body[data-screen-label="Eventos"] form.cotacao{
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+}
+
+body[data-screen-label="Eventos"] [style*="background:#fff"] h3,
+body[data-screen-label="Eventos"] [style*="background: #fff"] h3,
+body[data-screen-label="Eventos"] [style*="background:#fffaf0"] h3,
+body[data-screen-label="Eventos"] [style*="background: #fffaf0"] h3,
+body[data-screen-label="Eventos"] [style*="background:#f6efde"] h3,
+body[data-screen-label="Eventos"] [style*="background: #f6efde"] h3,
+body[data-screen-label="Eventos"] .audience-card h3,
+body[data-screen-label="Eventos"] .form-section h3,
+body[data-screen-label="Eventos"] form.cotacao h3{
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+}
+
+body[data-screen-label="Eventos"] [style*="background:#fff"] p,
+body[data-screen-label="Eventos"] [style*="background: #fff"] p,
+body[data-screen-label="Eventos"] [style*="background:#fffaf0"] p,
+body[data-screen-label="Eventos"] [style*="background: #fffaf0"] p,
+body[data-screen-label="Eventos"] [style*="background:#f6efde"] p,
+body[data-screen-label="Eventos"] [style*="background: #f6efde"] p,
+body[data-screen-label="Eventos"] .audience-card p,
+body[data-screen-label="Eventos"] .form-section p,
+body[data-screen-label="Eventos"] form.cotacao p{
+  color:#485156!important;
+  -webkit-text-fill-color:#485156!important;
+}
