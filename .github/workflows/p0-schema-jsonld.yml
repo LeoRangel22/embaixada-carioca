@@ -1,5 +1,5 @@
 name: P0 static JSON-LD schema
-# manual trigger: 2026-05-23 cycle 3
+# manual trigger: 2026-05-23 cycle 4 full reset
 
 on:
   workflow_dispatch:
@@ -66,6 +66,8 @@ jobs:
             en/cafe-da-manha.html
             es/cafe-da-manha.html
             cardapio.html
+            en/cardapio.html
+            es/cardapio.html
             restaurante-morro-da-urca.html
             eventos.html
             en/eventos.html
