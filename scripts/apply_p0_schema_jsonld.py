@@ -9,12 +9,15 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / '_audit_reports'
 REPORT = OUT / 'p0_schema_jsonld_report.md'
-START = '<!-- EC P0 Structured Data -->'
-END = '<!-- /EC P0 Structured Data -->'
 BASE = 'https://www.embaixadacarioca.com'
 TAGME = 'https://go.tagme.com.br/embaixadacarioca'
 PHONE = '+5521966837556'
 EMAIL = 'eventos@embaixadacarioca.com.br'
+START = '<!-- EC P0 Structured Data -->'
+END = '<!-- /EC P0 Structured Data -->'
+JSONLD_RE = re.compile(r'\s*<!-- EC P0 Structured Data -->.*?<!-- /EC P0 Structured Data -->\s*|\s*<script\s+[^>]*type=["\']application/ld\+json["\'][^>]*>.*?</script>\s*', re.I | re.S)
+FORBIDDEN = {'aggregateRating', 'ratingValue', 'reviewCount', 'ratingCount', 'bestRating', 'worstRating'}
+
 ADDRESS = {
     '@type': 'PostalAddress',
     'streetAddress': 'Av. Pasteur, 520 - Morro da Urca',
@@ -24,8 +27,6 @@ ADDRESS = {
     'addressCountry': 'BR',
 }
 GEO = {'@type': 'GeoCoordinates', 'latitude': -22.9508333, 'longitude': -43.1641667}
-FORBIDDEN_RATING_KEYS = {'aggregateRating', 'ratingValue', 'reviewCount', 'ratingCount', 'bestRating', 'worstRating'}
-SCRIPT_RE = re.compile(r'(<script\s+[^>]*type=["\']application/ld\+json["\'][^>]*>)(.*?)(</script>)', re.I | re.S)
 
 PAGES = [
     ('pt-BR', 'index.html', '/', 'Embaixada Carioca', 'Restaurante no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, na primeira parada do teleférico. Café da manhã, almoço brasileiro, feijoada premiada, caipirinhas e chope com vista para o Pão de Açúcar.'),
@@ -38,6 +39,8 @@ PAGES = [
     ('en', 'en/cafe-da-manha.html', '/en/cafe-da-manha.html', 'Breakfast at Urca Hill', 'Daily breakfast at Urca Hill inside Sugarloaf Cable Car Park, with views of Sugarloaf Mountain.'),
     ('es', 'es/cafe-da-manha.html', '/es/cafe-da-manha.html', 'Desayuno en el Morro da Urca', 'Desayuno todos los días en el Morro da Urca, dentro del Parque Bondinho Pão de Açúcar, con vista al Pan de Azúcar.'),
     ('pt-BR', 'cardapio.html', '/cardapio.html', 'Cardápio Embaixada Carioca', 'Cardápio da Embaixada Carioca com café da manhã, almoço brasileiro, feijoada premiada, picanha, bobó de camarão, caipirinhas e chope.'),
+    ('en', 'en/cardapio.html', '/en/cardapio.html', 'Embaixada Carioca Menu', 'Embaixada Carioca menu with breakfast, Brazilian lunch, feijoada, picanha, shrimp bobó, caipirinhas and draft beer.'),
+    ('es', 'es/cardapio.html', '/es/cardapio.html', 'Menú Embaixada Carioca', 'Menú de Embaixada Carioca con desayuno, almuerzo brasileño, feijoada, picanha, bobó de camarón, caipirinhas y chopp.'),
     ('pt-BR', 'restaurante-morro-da-urca.html', '/restaurante-morro-da-urca.html', 'Restaurante no Morro da Urca', 'Restaurante no Morro da Urca, primeira parada do Bondinho Pão de Açúcar, com comida brasileira, caipirinhas, café da manhã, almoço e eventos.'),
     ('pt-BR', 'eventos.html', '/eventos.html', 'Eventos com vista no Rio de Janeiro', 'Eventos corporativos e privados no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com gastronomia brasileira e vista.'),
     ('en', 'en/eventos.html', '/en/eventos.html', 'Events with a view in Rio de Janeiro', 'Private and corporate events at Urca Hill inside Sugarloaf Cable Car Park, with Brazilian food, drinks and views.'),
@@ -48,55 +51,43 @@ PAGES = [
 
 FAQS = {
     'pt-BR': [
-        ('Tem restaurante no Bondinho do teleférico?', 'Sim. A Embaixada Carioca fica dentro do Parque Bondinho Pão de Açúcar, no Morro da Urca, a primeira parada do teleférico, com vista para o Pão de Açúcar.'),
-        ('A Embaixada Carioca fica no topo do Pão de Açúcar?', 'Não. A Embaixada Carioca fica no Morro da Urca, na primeira parada do Bondinho Pão de Açúcar, com vista para o Pão de Açúcar.'),
-        ('Precisa pagar o bondinho para ir ao restaurante?', 'A reserva é do restaurante. Quem sobe de bondinho precisa comprar o ingresso regular do Parque Bondinho; quem sobe pela trilha, quando aberta, segue as regras de acesso do parque.'),
-        ('Tem café da manhã todos os dias?', 'Sim. A Embaixada Carioca serve café da manhã todos os dias no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar.'),
-        ('Quais são as especialidades da casa?', 'As especialidades incluem picanha brasileira, feijoada premiada ligada à tradição da Academia da Cachaça, bobó de camarão, caipirinhas e chope gelado.'),
-        ('A Embaixada Carioca recebe eventos?', 'Sim. A casa recebe eventos corporativos, grupos turísticos, cafés da manhã, coquetéis, aniversários e experiências privadas com vista no Morro da Urca.'),
+        ('Tem restaurante no Bondinho do teleférico?', 'Sim. A Embaixada Carioca fica dentro do Parque Bondinho Pão de Açúcar, no Morro da Urca, a primeira parada do teleférico.'),
+        ('A Embaixada Carioca fica no topo do Pão de Açúcar?', 'Não. A Embaixada Carioca fica no Morro da Urca, na primeira parada do Bondinho Pão de Açúcar.'),
+        ('Precisa pagar o bondinho para ir ao restaurante?', 'Quem sobe de bondinho precisa comprar o ingresso regular do Parque Bondinho. Quem sobe pela trilha, quando aberta, segue as regras de acesso do parque.'),
+        ('Tem café da manhã todos os dias?', 'Sim. A Embaixada Carioca serve café da manhã todos os dias no Morro da Urca.'),
+        ('Quais são as especialidades da casa?', 'Picanha brasileira, feijoada premiada ligada à tradição da Academia da Cachaça, bobó de camarão, caipirinhas e chope gelado.'),
+        ('A Embaixada Carioca recebe eventos?', 'Sim. A casa recebe eventos corporativos, grupos turísticos, cafés da manhã, coquetéis, aniversários e experiências privadas.'),
     ],
     'en': [
-        ('Is there a restaurant at the Sugarloaf cable car?', 'Yes. Embaixada Carioca is inside Sugarloaf Cable Car Park, at Urca Hill, the first cable car stop, with views of Sugarloaf Mountain.'),
-        ('Is Embaixada Carioca at the top of Sugarloaf Mountain?', 'No. Embaixada Carioca is at Urca Hill, the first Sugarloaf Cable Car stop, with views of Sugarloaf Mountain.'),
-        ('Does the restaurant reservation include the cable car ticket?', 'No. The restaurant reservation does not include the Sugarloaf Cable Car Park ticket. The park ticket must be purchased separately.'),
-        ('Is breakfast served every day?', 'Yes. Embaixada Carioca serves breakfast every day at Urca Hill inside Sugarloaf Cable Car Park.'),
-        ('What is the restaurant known for?', 'The restaurant is known for Brazilian food, caipirinhas, feijoada, picanha, breakfast and views of Sugarloaf Mountain.'),
+        ('Is there a restaurant at the Sugarloaf cable car?', 'Yes. Embaixada Carioca is inside Sugarloaf Cable Car Park, at Urca Hill, the first cable car stop.'),
+        ('Is Embaixada Carioca at the top of Sugarloaf Mountain?', 'No. Embaixada Carioca is at Urca Hill, the first Sugarloaf Cable Car stop.'),
+        ('Does the restaurant reservation include the cable car ticket?', 'No. The restaurant reservation does not include the Sugarloaf Cable Car Park ticket.'),
+        ('Is breakfast served every day?', 'Yes. Embaixada Carioca serves breakfast every day at Urca Hill.'),
+        ('What is the restaurant known for?', 'Brazilian food, caipirinhas, feijoada, picanha, breakfast and views of Sugarloaf Mountain.'),
     ],
     'es': [
-        ('¿Hay restaurante en el Bondinho del teleférico?', 'Sí. Embaixada Carioca está dentro del Parque Bondinho Pão de Açúcar, en el Morro da Urca, la primera parada del teleférico, con vista al Pan de Azúcar.'),
-        ('¿Embaixada Carioca está en la cima del Pan de Azúcar?', 'No. Embaixada Carioca está en el Morro da Urca, en la primera parada del Bondinho Pão de Açúcar, con vista al Pan de Azúcar.'),
+        ('¿Hay restaurante en el Bondinho del teleférico?', 'Sí. Embaixada Carioca está dentro del Parque Bondinho Pão de Açúcar, en el Morro da Urca, la primera parada del teleférico.'),
+        ('¿Embaixada Carioca está en la cima del Pan de Azúcar?', 'No. Embaixada Carioca está en el Morro da Urca, en la primera parada del Bondinho Pão de Açúcar.'),
         ('¿La reserva incluye la entrada del Bondinho?', 'No. La reserva es del restaurante. La entrada del Parque Bondinho Pão de Açúcar debe comprarse por separado para subir en teleférico.'),
-        ('¿Hay desayuno todos los días?', 'Sí. Embaixada Carioca sirve desayuno todos los días en el Morro da Urca, dentro del Parque Bondinho Pão de Açúcar.'),
-        ('¿Cuáles son las especialidades?', 'Las especialidades incluyen picanha brasileña, feijoada premiada vinculada a la tradición de Academia da Cachaça, bobó de camarón, caipirinhas y chopp frío.'),
+        ('¿Hay desayuno todos los días?', 'Sí. Embaixada Carioca sirve desayuno todos los días en el Morro da Urca.'),
+        ('¿Cuáles son las especialidades?', 'Picanha brasileña, feijoada premiada vinculada a Academia da Cachaça, bobó de camarón, caipirinhas y chopp frío.'),
     ],
 }
 
 
-def remove_forbidden_rating_fields(obj: Any) -> Any:
+def clean_forbidden(obj: Any) -> Any:
     if isinstance(obj, dict):
-        cleaned = {}
+        out = {}
         for k, v in obj.items():
-            if k in FORBIDDEN_RATING_KEYS:
+            if k in FORBIDDEN:
                 continue
             if k == '@type' and (v == 'AggregateRating' or (isinstance(v, list) and 'AggregateRating' in v)):
                 continue
-            cleaned[k] = remove_forbidden_rating_fields(v)
-        return cleaned
+            out[k] = clean_forbidden(v)
+        return out
     if isinstance(obj, list):
-        return [remove_forbidden_rating_fields(v) for v in obj]
+        return [clean_forbidden(v) for v in obj]
     return obj
-
-
-def clean_legacy_jsonld(html: str) -> str:
-    def repl(match: re.Match) -> str:
-        open_tag, payload, close_tag = match.groups()
-        try:
-            obj = json.loads(payload.strip())
-        except Exception:
-            return match.group(0)
-        cleaned = remove_forbidden_rating_fields(obj)
-        return open_tag + '\n' + json.dumps(cleaned, ensure_ascii=False, indent=2) + '\n' + close_tag
-    return SCRIPT_RE.sub(repl, html)
 
 
 def restaurant_schema(lang: str) -> dict:
@@ -117,17 +108,16 @@ def restaurant_schema(lang: str) -> dict:
         'slogan': 'A alma carioca em frente ao Pão de Açúcar.',
         'telephone': PHONE,
         'email': EMAIL,
+        'address': ADDRESS,
+        'geo': GEO,
         'priceRange': '$$',
         'currenciesAccepted': 'BRL',
         'servesCuisine': ['Brasileira', 'Carioca', 'Brazilian', 'Frutos do mar', 'Café da manhã'],
-        'address': ADDRESS,
-        'geo': GEO,
         'hasMap': 'https://www.google.com/maps/dir/?api=1&destination=-22.9508333,-43.1641667',
-        'openingHoursSpecification': [{'@type': 'OpeningHoursSpecification', 'dayOfWeek': ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], 'opens': '08:30', 'closes': '21:00'}],
+        'openingHoursSpecification': [{'@type': 'OpeningHoursSpecification', 'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], 'opens': '08:30', 'closes': '21:00'}],
         'acceptsReservations': True,
         'hasMenu': BASE + '/cardapio.html',
         'award': ['Melhor Feijoada do Rio de Janeiro — Veja Rio Comer & Beber 2025/2026', '2º melhor chope Heineken do Brasil'],
-        'isAccessibleForFree': False,
         'publicAccess': True,
         'smokingAllowed': False,
         'amenityFeature': [
@@ -151,11 +141,9 @@ def menu_schema(lang: str) -> dict:
         'url': BASE + '/cardapio.html',
         'provider': {'@id': BASE + '/#restaurant'},
         'hasMenuSection': [
-            {'@type': 'MenuSection', 'name': 'Café da Manhã', 'description': 'Todos os dias, das 8h30 às 11h30', 'hasMenuItem': [
-                {'@type': 'MenuItem', 'name': 'Café da manhã', 'description': 'Café da manhã diário no Morro da Urca, com vista para o Pão de Açúcar.'},
-            ]},
+            {'@type': 'MenuSection', 'name': 'Café da Manhã', 'description': 'Todos os dias, das 8h30 às 11h30', 'hasMenuItem': [{'@type': 'MenuItem', 'name': 'Café da manhã', 'description': 'Café da manhã diário no Morro da Urca.'}]},
             {'@type': 'MenuSection', 'name': 'Almoço Brasileiro', 'description': 'Todos os dias, das 11h30 às 17h', 'hasMenuItem': [
-                {'@type': 'MenuItem', 'name': 'Feijoada da Academia da Cachaça', 'description': 'Feijoada premiada pela Veja Rio 2025/2026, servida no Morro da Urca.'},
+                {'@type': 'MenuItem', 'name': 'Feijoada da Academia da Cachaça', 'description': 'Feijoada premiada pela Veja Rio 2025/2026.'},
                 {'@type': 'MenuItem', 'name': 'Picanha à brasileira', 'description': 'Picanha grelhada com acompanhamentos brasileiros.'},
                 {'@type': 'MenuItem', 'name': 'Bobó de camarão', 'description': 'Camarão em creme de mandioca com tempero brasileiro.'},
                 {'@type': 'MenuItem', 'name': 'Picadinho carioca', 'description': 'Clássico carioca para almoço.'},
@@ -163,10 +151,17 @@ def menu_schema(lang: str) -> dict:
             {'@type': 'MenuSection', 'name': 'Drinks e Bebidas', 'hasMenuItem': [
                 {'@type': 'MenuItem', 'name': 'Caipirinha da casa', 'description': 'Caipirinha com cachaça Magnífica, limão tahiti e siciliano, adoçada com rapadura.'},
                 {'@type': 'MenuItem', 'name': 'Chope Heineken', 'description': 'Chope Heineken gelado.'},
-                {'@type': 'MenuItem', 'name': 'Bossa Sour', 'description': 'Drink da casa.'},
             ]},
         ],
     }
+
+
+def website_schema(lang: str) -> dict:
+    return {'@type': 'WebSite', '@id': BASE + '/#website', 'url': BASE + '/', 'name': 'Embaixada Carioca', 'inLanguage': lang, 'publisher': {'@id': BASE + '/#restaurant'}}
+
+
+def webpage_schema(lang: str, page_url: str, page_name: str, desc: str) -> dict:
+    return {'@type': 'WebPage', '@id': BASE + page_url + '#webpage', 'url': BASE + page_url, 'name': page_name, 'description': desc, 'inLanguage': lang, 'isPartOf': {'@id': BASE + '/#website'}, 'about': {'@id': BASE + '/#restaurant'}, 'mainEntity': {'@id': BASE + '/#restaurant'}}
 
 
 def faq_schema(lang: str, page_url: str) -> dict:
@@ -178,26 +173,14 @@ def breadcrumb_schema(page_url: str, page_name: str, lang: str) -> dict:
     return {'@type': 'BreadcrumbList', '@id': BASE + page_url + '#breadcrumb', 'itemListElement': [{'@type': 'ListItem', 'position': 1, 'name': home_name, 'item': BASE + '/'}, {'@type': 'ListItem', 'position': 2, 'name': page_name, 'item': BASE + page_url}]}
 
 
-def webpage_schema(lang: str, page_url: str, page_name: str, desc: str) -> dict:
-    return {'@type': 'WebPage', '@id': BASE + page_url + '#webpage', 'url': BASE + page_url, 'name': page_name, 'description': desc, 'inLanguage': lang, 'isPartOf': {'@id': BASE + '/#website'}, 'about': {'@id': BASE + '/#restaurant'}, 'mainEntity': {'@id': BASE + '/#restaurant'}}
-
-
-def website_schema(lang: str) -> dict:
-    return {'@type': 'WebSite', '@id': BASE + '/#website', 'url': BASE + '/', 'name': 'Embaixada Carioca', 'inLanguage': lang, 'publisher': {'@id': BASE + '/#restaurant'}}
-
-
 def graph(lang: str, page_url: str, page_name: str, desc: str) -> dict:
-    return {'@context': 'https://schema.org', '@graph': [restaurant_schema(lang), menu_schema(lang), website_schema(lang), webpage_schema(lang, page_url, page_name, desc), faq_schema(lang, page_url), breadcrumb_schema(page_url, page_name, lang)]}
-
-
-def strip_old_schema(html: str) -> str:
-    return re.sub(re.escape(START) + r'.*?' + re.escape(END) + r'\s*', '', html, flags=re.S)
+    return clean_forbidden({'@context': 'https://schema.org', '@graph': [restaurant_schema(lang), menu_schema(lang), website_schema(lang), webpage_schema(lang, page_url, page_name, desc), faq_schema(lang, page_url), breadcrumb_schema(page_url, page_name, lang)]})
 
 
 def insert_schema(html: str, schema: dict) -> str:
-    html = clean_legacy_jsonld(strip_old_schema(html))
-    payload = json.dumps(remove_forbidden_rating_fields(schema), ensure_ascii=False, indent=2)
-    block = f'{START}\n<script type="application/ld+json" id="ec-p0-jsonld">\n{payload}\n</script>\n{END}\n'
+    html = JSONLD_RE.sub('\n', html)
+    payload = json.dumps(schema, ensure_ascii=False, indent=2)
+    block = f'\n{START}\n<script type="application/ld+json" id="ec-p0-jsonld">\n{payload}\n</script>\n{END}\n'
     idx = html.lower().find('</head>')
     return html[:idx] + block + html[idx:] if idx >= 0 else block + html
 
@@ -210,17 +193,27 @@ def main() -> int:
         if not path.exists():
             skipped.append(rel)
             continue
-        html = path.read_text(encoding='utf-8', errors='ignore')
-        new_html = insert_schema(html, graph(lang, url, name, desc))
-        if new_html != html:
-            path.write_text(new_html, encoding='utf-8')
+        old = path.read_text(encoding='utf-8', errors='ignore')
+        new = insert_schema(old, graph(lang, url, name, desc))
+        if new != old:
+            path.write_text(new, encoding='utf-8')
             changed.append(rel)
-    lines = ['# P0 Schema JSON-LD Report', '', 'Status: **PASS**', '', '## Conformidade aplicada', '- `aggregateRating`, `ratingValue`, `reviewCount` e `ratingCount` foram removidos do JSON-LD.', '- O rating 4.8 pode continuar visível no texto da página, mas não entra no schema.', '- `award` foi usado para prêmios factuais, como Veja Rio.', '', '## Implementado', '- JSON-LD estático no `<head>` das páginas prioritárias.', '- `Restaurant` + `LocalBusiness` + `FoodEstablishment`.', '- `FAQPage`, `Menu`, `BreadcrumbList`, `WebSite` e `WebPage`.', '- Cobertura PT/EN/ES quando há página correspondente.', '', f'Páginas alteradas: **{len(changed)}**', f'Páginas não encontradas: **{len(skipped)}**', '', '## Alteradas']
-    lines += [f'- `{rel}`' for rel in changed] or ['Nenhuma; schema já estava aplicado.']
+    lines = [
+        '# P0 Schema JSON-LD Report', '', 'Status: **PASS**', '',
+        '## Correção aplicada',
+        '- Todos os blocos antigos de JSON-LD das páginas P0 foram removidos.',
+        '- Cada página P0 passou a receber um único bloco canônico `ec-p0-jsonld`.',
+        '- O schema não contém `aggregateRating`, `ratingValue`, `reviewCount`, `ratingCount`, `bestRating` ou `worstRating`.',
+        '- `award` foi mantido para prêmios factuais.',
+        '- Cobertura PT/EN/ES quando há página correspondente.', '',
+        f'Páginas alteradas: **{len(changed)}**',
+        f'Páginas não encontradas: **{len(skipped)}**', '', '## Alteradas'
+    ]
+    lines += [f'- `{x}`' for x in changed] or ['- Nenhuma; schema já estava aplicado.']
     if skipped:
-        lines += ['', '## Não encontradas'] + [f'- `{rel}`' for rel in skipped]
+        lines += ['', '## Não encontradas'] + [f'- `{x}`' for x in skipped]
     REPORT.write_text('\n'.join(lines) + '\n', encoding='utf-8')
-    print(f'P0 schema JSON-LD applied safely: changed={len(changed)} skipped={len(skipped)}')
+    print(f'P0 schema reset complete: changed={len(changed)} skipped={len(skipped)}')
     return 0
 
 if __name__ == '__main__':
