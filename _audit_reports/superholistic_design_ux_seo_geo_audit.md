@@ -12,7 +12,7 @@ Páginas auditadas: **87**
 - **Copydesk** — média 99.9, mínimo 88
 - **SEO** — média 96.4, mínimo 84
 - **GEO** — média 100.0, mínimo 100
-- **AEO** — média 90.7, mínimo 84
+- **AEO** — média 90.8, mínimo 84
 - **AIO** — média 89.6, mínimo 72
 - **SXO** — média 100.0, mínimo 100
 - **Marketing** — média 97.9, mínimo 82
@@ -843,12 +843,10 @@ Nenhuma página abaixo de 90.
   - Risco de texto azul em fundo azul.
   - Opacity baixa detectada; validar texto real.
   - Excesso de blocos style.
-- **AEO (92)**
-  - FAQ visual sem FAQPage JSON-LD.
 - **AIO (95)**
   - Sem VideoObject em página de experiência/produto.
 - **Schema (80)**
-  - Múltiplos aggregateRating: 2.
+  - Múltiplos aggregateRating: 3.
 - **Performance (92)**
   - Muitos blocos style.
 

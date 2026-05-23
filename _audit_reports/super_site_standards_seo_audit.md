@@ -1,10 +1,10 @@
 # Super Site Standards + SEO Audit
 
 Status geral: **FAIL**
-Score mínimo: **64**
+Score mínimo: **62**
 Páginas HTML auditadas: **87**
-Findings FAIL: **100**
-Findings totais: **314**
+Findings FAIL: **101**
+Findings totais: **315**
 
 ## Aprendizados incorporados
 - Home lower contrast
@@ -19,12 +19,12 @@ Findings totais: **314**
 - Manifest scope
 
 ## Páginas com score abaixo de 90
+- `index.html` — FAIL — score 62
 - `en/parque-bondinho.html` — FAIL — score 64
 - `es/parque-bondinho.html` — FAIL — score 64
 - `parque-bondinho.html` — FAIL — score 64
 - `en/index.html` — FAIL — score 72
 - `es/index.html` — FAIL — score 72
-- `index.html` — FAIL — score 72
 - `en/almoco.html` — FAIL — score 74
 - `en/cardapio.html` — FAIL — score 74
 - `en/eventos.html` — FAIL — score 74

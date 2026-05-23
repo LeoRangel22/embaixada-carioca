@@ -94,11 +94,11 @@
       "has_ol": false,
       "has_restaurant_schema": true,
       "has_video_schema": false,
-      "aggregate_rating_count": 2,
+      "aggregate_rating_count": 3,
       "findings": [
         "Keywords ausentes ou pouco literais: restaurante pão de açúcar, restaurante pao de acucar, restaurante no pao de acucar rj, av pasteur 520 urca rio de janeiro",
         "Falta lista numerada <ol> para Featured Snippet.",
-        "aggregateRating deve ser único; encontrado 2."
+        "aggregateRating deve ser único; encontrado 3."
       ]
     },
     {

@@ -7467,9 +7467,11 @@
       "cta_links": 67,
       "jsonld_types": [
         "AggregateRating",
+        "Answer",
         "BreadcrumbList",
         "ContactPoint",
         "EntryPoint",
+        "FAQPage",
         "FoodEstablishment",
         "GeoCoordinates",
         "ImageObject",
@@ -7483,10 +7485,12 @@
         "OpeningHoursSpecification",
         "Organization",
         "PostalAddress",
+        "Question",
         "ReserveAction",
         "Restaurant",
         "SearchAction",
         "TouristAttraction",
+        "WebPage",
         "WebSite"
       ],
       "dimensions": [
@@ -7522,10 +7526,8 @@
         },
         {
           "dimension": "AEO",
-          "score": 92,
-          "findings": [
-            "FAQ visual sem FAQPage JSON-LD."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "AIO",
@@ -7553,7 +7555,7 @@
           "dimension": "Schema",
           "score": 80,
           "findings": [
-            "Múltiplos aggregateRating: 2."
+            "Múltiplos aggregateRating: 3."
           ]
         },
         {
