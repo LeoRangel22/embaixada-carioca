@@ -471,6 +471,23 @@ Nenhuma página abaixo de 90.
 - **Schema (80)**
   - Múltiplos aggregateRating: 2.
 
+### `restaurantes-romanticos-rio-de-janeiro.html` — 94
+- **Design (94)**
+  - Risco de texto creme em fundo claro.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **Copydesk (88)**
+  - Conteúdo curto: 356 palavras.
+- **SEO (96)**
+  - Sem hreflang.
+- **AEO (86)**
+  - FAQ baixo para AEO: 0.
+- **AIO (72)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+  - Poucas FAQs para IA.
+  - Sem VideoObject em página de experiência/produto.
+  - Schema sem @graph.
+
 ### `caipirinha-com-vista-rio.html` — 95
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -839,21 +856,6 @@ Nenhuma página abaixo de 90.
   - Sem VideoObject em página de experiência/produto.
 - **Schema (80)**
   - Múltiplos aggregateRating: 2.
-
-### `restaurantes-romanticos-rio-de-janeiro.html` — 95
-- **UX (97)**
-  - Sem skip-nav detectado.
-- **Copydesk (88)**
-  - Conteúdo curto: 356 palavras.
-- **SEO (96)**
-  - Sem hreflang.
-- **AEO (86)**
-  - FAQ baixo para AEO: 0.
-- **AIO (72)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-  - Poucas FAQs para IA.
-  - Sem VideoObject em página de experiência/produto.
-  - Schema sem @graph.
 
 ### `roteiro-meio-dia-urca-pao-de-acucar.html` — 95
 - **Design (84)**

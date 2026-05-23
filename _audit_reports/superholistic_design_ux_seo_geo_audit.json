@@ -8650,7 +8650,7 @@
     {
       "page": "restaurantes-romanticos-rio-de-janeiro.html",
       "status": "FAIL",
-      "score": 95,
+      "score": 94,
       "word_count": 356,
       "h1_count": 1,
       "h2_count": 3,
@@ -8666,8 +8666,10 @@
       "dimensions": [
         {
           "dimension": "Design",
-          "score": 100,
-          "findings": []
+          "score": 94,
+          "findings": [
+            "Risco de texto creme em fundo claro."
+          ]
         },
         {
           "dimension": "UX",
