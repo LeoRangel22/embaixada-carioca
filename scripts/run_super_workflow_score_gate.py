@@ -68,6 +68,18 @@ TASKS = [
         reports=["_audit_reports/red_block_copidesk_fixes_report.md"],
     ),
     AuditTask(
+        name="Tracking and R2D2 assets",
+        workflow_file=".github/workflows/super-workflow-score-gate.yml",
+        commands=["python3 scripts/apply_tracking_and_r2d2_assets.py"],
+        reports=["_audit_reports/tracking_and_r2d2_assets_report.md"],
+    ),
+    AuditTask(
+        name="SEO content growth fixes",
+        workflow_file=".github/workflows/super-workflow-score-gate.yml",
+        commands=["python3 scripts/apply_seo_content_growth_fixes.py"],
+        reports=["_audit_reports/seo_content_growth_fixes_report.md"],
+    ),
+    AuditTask(
         name="Superholistic visual readability lock",
         workflow_file=".github/workflows/super-workflow-score-gate.yml",
         commands=["python3 scripts/apply_superholistic_visual_readability_lock.py"],
