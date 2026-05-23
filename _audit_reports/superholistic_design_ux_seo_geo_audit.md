@@ -1,7 +1,7 @@
 # Superholistic Design/UX/SEO/GEO/AIO/SXO Audit
 
 Status geral: **FAIL**
-Score médio: **94.9**
+Score médio: **95.0**
 Score mínimo: **86**
 Threshold: **90**
 Páginas auditadas: **87**
@@ -17,7 +17,7 @@ Páginas auditadas: **87**
 - **SXO** — média 99.6, mínimo 69
 - **Marketing** — média 97.8, mínimo 82
 - **R2D2** — média 97.8, mínimo 86
-- **Schema** — média 85.3, mínimo 80
+- **Schema** — média 85.5, mínimo 80
 - **Performance** — média 99.9, mínimo 92
 
 ## Páginas abaixo de 90
@@ -866,19 +866,6 @@ Páginas auditadas: **87**
 - **Schema (80)**
   - Múltiplos aggregateRating: 3.
 
-### `index.html` — 95
-- **Design (76)**
-  - Risco de texto creme em fundo claro.
-  - Risco de texto azul em fundo azul.
-  - Opacity baixa detectada; validar texto real.
-  - Excesso de blocos style.
-- **AIO (95)**
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 3.
-- **Performance (92)**
-  - Muitos blocos style.
-
 ### `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — 95
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -1217,6 +1204,17 @@ Páginas auditadas: **87**
 - **AIO (85)**
   - Sem cobertura literal das keywords prioritárias AIO.
   - Sem VideoObject em página de experiência/produto.
+
+### `index.html` — 97
+- **Design (76)**
+  - Risco de texto creme em fundo claro.
+  - Risco de texto azul em fundo azul.
+  - Opacity baixa detectada; validar texto real.
+  - Excesso de blocos style.
+- **AIO (95)**
+  - Sem VideoObject em página de experiência/produto.
+- **Performance (92)**
+  - Muitos blocos style.
 
 ### `por-do-sol-morro-da-urca.html` — 97
 - **Design (84)**

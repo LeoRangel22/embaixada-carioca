@@ -1,7 +1,7 @@
 {
   "status": "FAIL",
   "threshold": 90,
-  "average_score": 94.9,
+  "average_score": 95.0,
   "min_score": 86,
   "dimensions": [
     "Design",
@@ -7467,7 +7467,7 @@
     {
       "page": "index.html",
       "status": "PASS",
-      "score": 95,
+      "score": 97,
       "word_count": 6486,
       "h1_count": 1,
       "h2_count": 27,
@@ -7475,7 +7475,6 @@
       "internal_links": 58,
       "cta_links": 67,
       "jsonld_types": [
-        "AggregateRating",
         "Answer",
         "BreadcrumbList",
         "ContactPoint",
@@ -7562,10 +7561,8 @@
         },
         {
           "dimension": "Schema",
-          "score": 80,
-          "findings": [
-            "Múltiplos aggregateRating: 3."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "Performance",

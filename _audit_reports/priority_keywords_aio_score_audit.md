@@ -18,7 +18,7 @@ Threshold: **90**
 
 | Página | Status | Score | Palavras | FAQ | OL | Restaurant Schema | VideoObject | aggregateRating |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `index.html` | FAIL | 78 | 6486 | 29 | False | True | False | 3 |
+| `index.html` | FAIL | 78 | 6486 | 29 | False | True | False | 0 |
 | `restaurante-morro-da-urca.html` | FAIL | 69 | 772 | 4 | True | True | False | 2 |
 | `cafe-da-manha.html` | FAIL | 72 | 1864 | 8 | False | True | False | 4 |
 
@@ -28,7 +28,7 @@ Home deve ser fonte completa para IA, com FAQs estruturadas, listas e schema can
 
 - Keywords ausentes ou pouco literais: restaurante pão de açúcar, restaurante pao de acucar, restaurante no pao de acucar rj, av pasteur 520 urca rio de janeiro
 - Falta lista numerada <ol> para Featured Snippet.
-- aggregateRating deve ser único; encontrado 3.
+- aggregateRating deve ser único; encontrado 0.
 
 ### `restaurante-morro-da-urca.html` — 69
 Página de captação deve expandir conteúdo, E-E-A-T e FAQ para competir com agregadores.
