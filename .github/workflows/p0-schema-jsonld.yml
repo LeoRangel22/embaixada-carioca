@@ -1,0 +1,72 @@
+name: P0 static JSON-LD schema
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - "scripts/apply_p0_schema_jsonld.py"
+      - "scripts/audit_p0_schema_jsonld.py"
+      - ".github/workflows/p0-schema-jsonld.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  p0-schema-jsonld:
+    name: Apply and audit static JSON-LD schema
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Apply P0 static JSON-LD schema
+        run: python3 scripts/apply_p0_schema_jsonld.py
+
+      - name: Audit P0 static JSON-LD schema
+        run: python3 scripts/audit_p0_schema_jsonld.py
+
+      - name: Show reports
+        if: always()
+        run: |
+          if [ -f _audit_reports/p0_schema_jsonld_report.md ]; then cat _audit_reports/p0_schema_jsonld_report.md; fi
+          echo '---'
+          if [ -f _audit_reports/p0_schema_jsonld_audit.md ]; then cat _audit_reports/p0_schema_jsonld_audit.md; fi
+
+      - name: Upload P0 schema reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: p0-schema-jsonld-reports
+          path: |
+            _audit_reports/p0_schema_jsonld_report.md
+            _audit_reports/p0_schema_jsonld_audit.md
+            _audit_reports/p0_schema_jsonld_audit.json
+
+      - name: Commit P0 schema outputs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "feat: apply P0 static JSON-LD schema"
+          file_pattern: |
+            index.html
+            en/index.html
+            es/index.html
+            cafe-da-manha.html
+            en/cafe-da-manha.html
+            es/cafe-da-manha.html
+            restaurante-morro-da-urca.html
+            eventos.html
+            en/eventos.html
+            es/eventos.html
+            guia-do-rio.html
+            restaurantes-romanticos-rio-de-janeiro.html
+            _audit_reports/p0_schema_jsonld_report.md
+            _audit_reports/p0_schema_jsonld_audit.md
+            _audit_reports/p0_schema_jsonld_audit.json
