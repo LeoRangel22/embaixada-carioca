@@ -3,17 +3,74 @@
   if (window.ecR2D2BannerLoaded) return;
   window.ecR2D2BannerLoaded = true;
 
-  function lang(){
+  function currentLang(){
     var l = (document.documentElement.lang || 'pt').toLowerCase();
     if (l.indexOf('en') === 0) return 'en';
     if (l.indexOf('es') === 0) return 'es';
     return 'pt';
   }
 
+  function browserLang(){
+    var l = ((navigator.languages && navigator.languages[0]) || navigator.language || '').toLowerCase();
+    if (l.indexOf('en') === 0) return 'en';
+    if (l.indexOf('es') === 0) return 'es';
+    return 'pt';
+  }
+
+  function rememberInterest(){
+    var p = location.pathname.toLowerCase();
+    try {
+      localStorage.setItem('ec_last_visit_at', String(Date.now()));
+      var visits = Number(localStorage.getItem('ec_visit_count') || '0') + 1;
+      localStorage.setItem('ec_visit_count', String(visits));
+      if (p.indexOf('cafe') >= 0 || p.indexOf('breakfast') >= 0) localStorage.setItem('ec_interest', 'breakfast');
+      if (p.indexOf('almoco') >= 0 || p.indexOf('lunch') >= 0) localStorage.setItem('ec_interest', 'lunch');
+      if (p.indexOf('evento') >= 0 || p.indexOf('event') >= 0) localStorage.setItem('ec_interest', 'events');
+      if (p.indexOf('romant') >= 0) localStorage.setItem('ec_interest', 'romantic');
+    } catch(e) {}
+  }
+
+  function hasReservationClick(){
+    try { return localStorage.getItem('ec_reservation_clicked') === '1'; } catch(e) { return false; }
+  }
+
+  document.addEventListener('click', function(evt){
+    var a = evt.target && evt.target.closest ? evt.target.closest('a[href]') : null;
+    if (!a) return;
+    var href = (a.getAttribute('href') || '').toLowerCase();
+    var txt = (a.textContent || '').toLowerCase();
+    if (href.indexOf('tagme.com.br') >= 0 || /reserv|reserve|reserva/.test(txt)) {
+      try { localStorage.setItem('ec_reservation_clicked','1'); } catch(e) {}
+    }
+  }, true);
+
   function content(){
     var h = new Date().getHours();
-    var l = lang();
+    var l = currentLang();
+    var b = browserLang();
     var slot = h < 11 ? 'morning' : h < 15 ? 'lunch' : h < 19 ? 'sunset' : 'evening';
+    var interest = '';
+    var visits = 1;
+    try {
+      interest = localStorage.getItem('ec_interest') || '';
+      visits = Number(localStorage.getItem('ec_visit_count') || '1');
+    } catch(e) {}
+
+    if (b !== l && !sessionStorage.getItem('ec_language_suggestion_seen')) {
+      sessionStorage.setItem('ec_language_suggestion_seen','1');
+      if (b === 'en') return ['Prefer English?', 'We also have an English version with practical information for international visitors.', 'Open English', '/en/'];
+      if (b === 'es') return ['¿Prefiere español?', 'También tenemos una versión en español con información práctica para visitantes.', 'Abrir español', '/es/'];
+    }
+
+    if (visits > 1 && !hasReservationClick()) {
+      if (interest === 'breakfast') {
+        return l === 'en' ? ['Welcome back — still thinking about breakfast?', 'Book your breakfast with a Sugarloaf view before visiting Urca Hill.', 'Reserve breakfast', 'https://go.tagme.com.br/embaixadacarioca'] : l === 'es' ? ['Bienvenido de vuelta — ¿todavía pensando en el desayuno?', 'Reserve su desayuno con vista al Pan de Azúcar antes de visitar el Morro da Urca.', 'Reservar desayuno', 'https://go.tagme.com.br/embaixadacarioca'] : ['Bem-vindo de volta — ainda pensando no café da manhã?', 'Reserve o café com vista para o Pão de Açúcar antes de visitar o Morro da Urca.', 'Reservar café', 'https://go.tagme.com.br/embaixadacarioca'];
+      }
+      if (interest === 'romantic') {
+        return l === 'en' ? ['Welcome back — plan the romantic moment', 'View, caipirinhas and Brazilian food at Urca Hill.', 'Reserve a table', 'https://go.tagme.com.br/embaixadacarioca'] : l === 'es' ? ['Bienvenido de vuelta — planifique el momento romántico', 'Vista, caipirinhas y comida brasileña en el Morro da Urca.', 'Reservar mesa', 'https://go.tagme.com.br/embaixadacarioca'] : ['Bem-vindo de volta — planeje o momento especial', 'Vista, caipirinhas e comida brasileira no Morro da Urca.', 'Reservar mesa', 'https://go.tagme.com.br/embaixadacarioca'];
+      }
+    }
+
     var copy = {
       pt: {
         morning: ['Café da manhã com vista no Morro da Urca', 'Comece o passeio no Parque Bondinho com café, frutas, pães e vista para o Pão de Açúcar.', 'Ver café da manhã', '/cafe-da-manha.html'],
@@ -47,6 +104,7 @@
   }
 
   function render(){
+    rememberInterest();
     if (sessionStorage.getItem('ec_r2d2_banner_closed') === '1') return;
     if (document.querySelector('.ec-r2d2-banner')) return;
     injectStyle();
