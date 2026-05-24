@@ -1,0 +1,68 @@
+name: JSON-LD duplicate key guard
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Run mode"
+        required: true
+        default: "check"
+        type: choice
+        options:
+          - check
+          - fix
+
+permissions:
+  contents: write
+
+concurrency:
+  group: schema-jsonld-duplicate-key-guard
+  cancel-in-progress: true
+
+jobs:
+  schema-jsonld-duplicate-key-guard:
+    name: Guard duplicate JSON-LD keys
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run JSON-LD duplicate key guard
+        run: |
+          if [ "${{ github.event.inputs.mode }}" = "fix" ]; then
+            python3 scripts/schema_jsonld_duplicate_key_guard.py --fix
+          else
+            python3 scripts/schema_jsonld_duplicate_key_guard.py --check
+          fi
+
+      - name: Show JSON-LD duplicate key report
+        if: always()
+        run: |
+          if [ -f _audit_reports/schema_jsonld_duplicate_key_report.md ]; then
+            cat _audit_reports/schema_jsonld_duplicate_key_report.md
+          fi
+
+      - name: Upload JSON-LD duplicate key reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: schema-jsonld-duplicate-key-reports
+          path: |
+            _audit_reports/schema_jsonld_duplicate_key_report.md
+            _audit_reports/schema_jsonld_duplicate_key_report.json
+
+      - name: Commit JSON-LD duplicate key fixes
+        if: ${{ github.event.inputs.mode == 'fix' }}
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "fix: normalize duplicate JSON-LD keys"
+          file_pattern: |
+            **/*.html
+            _audit_reports/schema_jsonld_duplicate_key_report.md
+            _audit_reports/schema_jsonld_duplicate_key_report.json
