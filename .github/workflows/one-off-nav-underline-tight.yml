@@ -1,0 +1,76 @@
+name: one-off nav underline tight fix
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - ".github/workflows/one-off-nav-underline-tight.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  fix-nav-underline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Tighten nav underline distance
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          root = Path('.')
+          changed = []
+
+          css = root / 'assets/css/ec-stabilization-base.css'
+          if css.exists():
+              text = css.read_text(encoding='utf-8', errors='ignore')
+              new = text.replace('bottom: -7px !important;', 'bottom: -3px !important;')
+              if new != text:
+                  css.write_text(new, encoding='utf-8')
+                  changed.append(str(css))
+
+          override = '''
+/* EC nav underline tight standard — 40% of previous gap */
+.links a{position:relative;}
+.links a::after{content:"";position:absolute;left:0;right:auto;bottom:-3px;width:0;max-width:100%;height:2px;background:var(--amarelo,var(--ec-yellow,#f59b1e));opacity:0;transition:width .22s ease,opacity .18s ease;}
+.links a:hover::after,.links a:focus-visible::after{width:100%;opacity:1;}
+.nav-links a::after{bottom:-3px!important;}
+'''.strip()
+
+          for html_path in root.rglob('*.html'):
+              if any(part in {'.git', 'archive', '_audit_reports', 'node_modules'} for part in html_path.parts):
+                  continue
+              html = html_path.read_text(encoding='utf-8', errors='ignore')
+              if 'EC nav underline tight standard' in html:
+                  continue
+              if '</style>' not in html:
+                  continue
+              html2 = html.replace('</style>', '\n' + override + '\n</style>', 1)
+              if html2 != html:
+                  html_path.write_text(html2, encoding='utf-8')
+                  changed.append(str(html_path))
+
+          wf = root / '.github/workflows/one-off-nav-underline-tight.yml'
+          if wf.exists():
+              wf.unlink()
+              changed.append(str(wf))
+
+          print('changed files:')
+          for item in changed:
+              print('-', item)
+          PY
+
+      - name: Commit nav underline spacing fix
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "fix: tighten nav underline hover spacing"
+          file_pattern: |
+            assets/css/ec-stabilization-base.css
+            **/*.html
+            .github/workflows/one-off-nav-underline-tight.yml
