@@ -12,13 +12,19 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / '_audit_reports'
 REPORT_MD = OUT / 'holistic_site_audit_report.md'
 REPORT_JSON = OUT / 'holistic_site_audit_report.json'
+
+CANONICAL_HOST = 'www.embaixadacarioca.com'
 BASE_HOSTS = {'www.embaixadacarioca.com', 'embaixadacarioca.com'}
+LEGACY_HOSTS = {'embaixadacarioca.com.br', 'www.embaixadacarioca.com.br', 'lp.embaixadacarioca.com.br'}
+KNOWN_EXTERNAL_CONTENT_HOSTS = {'admin.tagme.com.br'}
 SKIP_DIRS = {'.git', '.github', 'node_modules', 'dist', 'build', '_site', '_audit_reports', 'archive'}
 FORBIDDEN_RATING_KEYS = {'aggregateRating', 'ratingValue', 'reviewCount', 'ratingCount', 'bestRating', 'worstRating'}
 FORBIDDEN_RATING_TYPES = {'AggregateRating'}
+
 JSONLD_RE = re.compile(r'<script\s+[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', re.I | re.S)
 TAG_RE = re.compile(r'<(?P<tag>[a-zA-Z0-9]+)\b(?P<attrs>[^>]*)>', re.I | re.S)
 ATTR_RE = re.compile(r'([a-zA-Z_:.-]+)\s*=\s*("[^"]*"|\'[^\']*\'|[^\s>]+)')
+URL_RE = re.compile(r'https?://[^\s"\'<>]+', re.I)
 
 P0_PAGES = {
     'index.html', 'en/index.html', 'es/index.html',
@@ -35,6 +41,12 @@ LANGUAGE_PATTERNS = [
     ('wrong_location_top_sugarloaf_en', re.compile(r'\btop of Sugarloaf\b', re.I), 'Use Urca Hill / first cable car stop, not top of Sugarloaf.'),
     ('wrong_location_top_sugarloaf_pt', re.compile(r'\btopo do P[ãa]o de A[çc][úu]car\b', re.I), 'Use Morro da Urca / primeira parada do Bondinho.'),
     ('wrong_location_top_sugarloaf_es', re.compile(r'\bcima del Pan de Az[úu]car\b|\bcima do P[ãa]o de A[çc][úu]car\b', re.I), 'Use Morro da Urca / primera parada del Bondinho.'),
+]
+
+SOCIAL_PROOF_PATTERNS = [
+    ('stale_84k_followers_pt', re.compile(r'\b84\s*(mil|k)\s+seguidores\b|\b84\.000\s+seguidores\b', re.I), 'Padronizar para “100 mil seguidores” ou remover número variável.'),
+    ('stale_84k_followers_en', re.compile(r'\b84\s*(k|thousand)\s+followers\b|\b84,000\s+followers\b', re.I), 'Padronizar para “100k followers” ou remover número variável.'),
+    ('stale_84k_followers_es', re.compile(r'\b84\s*(mil|k)\s+seguidores\b|\b84\.000\s+seguidores\b', re.I), 'Padronizar para “100 mil seguidores” ou remover número variável.'),
 ]
 
 
@@ -152,10 +164,7 @@ def expected_internal_path(current_file: Path, href: str) -> str | None:
         path = href.split('#', 1)[0].split('?', 1)[0]
     if not path:
         return None
-    if path.startswith('/'):
-        candidate = path.lstrip('/')
-    else:
-        candidate = (current_file.parent / path).relative_to(ROOT).as_posix() if current_file.is_absolute() else path
+    candidate = path.lstrip('/') if path.startswith('/') else (current_file.parent / path).relative_to(ROOT).as_posix()
     candidate = candidate.split('#', 1)[0].split('?', 1)[0]
     if not candidate or candidate.endswith('/'):
         candidate = candidate.rstrip('/') + '/index.html' if candidate.strip('/') else 'index.html'
@@ -171,6 +180,30 @@ def expected_internal_path(current_file: Path, href: str) -> str | None:
             return candidate_index
         return candidate_html
     return candidate
+
+
+def scan_domain_governance(file_rel: str, html: str, canonicals: list[str], hreflangs: list[tuple[str, str]], findings: list[Finding]) -> None:
+    for href in canonicals:
+        host = urlparse(href).netloc.lower()
+        if host and host != CANONICAL_HOST:
+            severity = 'critical' if host in LEGACY_HOSTS else 'warning'
+            findings.append(Finding(severity, file_rel, 'canonical_host_mismatch', f'Canonical points to {host}; preferred host is {CANONICAL_HOST}.'))
+    for lang, href in hreflangs:
+        host = urlparse(href).netloc.lower()
+        if host and host not in BASE_HOSTS:
+            severity = 'critical' if host in LEGACY_HOSTS else 'warning'
+            findings.append(Finding(severity, file_rel, 'hreflang_host_mismatch', f'hreflang {lang} points to {host}; preferred host is {CANONICAL_HOST}.'))
+    seen_urls: set[str] = set()
+    for url in URL_RE.findall(html):
+        cleaned = url.rstrip(').,;')
+        if cleaned in seen_urls:
+            continue
+        seen_urls.add(cleaned)
+        host = urlparse(cleaned).netloc.lower()
+        if host in LEGACY_HOSTS:
+            findings.append(Finding('warning', file_rel, 'legacy_domain_reference', f'Reference to legacy/parallel domain: {cleaned}'))
+        if host in KNOWN_EXTERNAL_CONTENT_HOSTS and '/menu/embaixadacarioca' in cleaned:
+            findings.append(Finding('warning', file_rel, 'external_menu_domain', f'TagMe menu content is outside canonical domain: {cleaned}'))
 
 
 def audit_file(path: Path) -> dict[str, Any]:
@@ -210,9 +243,14 @@ def audit_file(path: Path) -> dict[str, Any]:
         findings.append(Finding('warning', file_rel, 'multiple_h1', f'{h1_count} H1 tags found.'))
     if missing_alt:
         findings.append(Finding('warning', file_rel, 'image_alt', f'{missing_alt} image(s) without alt text.'))
+
     for code, pattern, suggestion in LANGUAGE_PATTERNS:
         if pattern.search(html):
             findings.append(Finding('warning', file_rel, code, suggestion))
+    for code, pattern, suggestion in SOCIAL_PROOF_PATTERNS:
+        if pattern.search(html):
+            findings.append(Finding('warning', file_rel, code, suggestion))
+    scan_domain_governance(file_rel, html, canonicals, hreflangs, findings)
 
     broken_links: list[str] = []
     for a in tags(html, 'a'):
@@ -254,6 +292,8 @@ def main() -> int:
         'files_checked': len(rows),
         'critical_count': len(critical),
         'warning_count': len(warnings),
+        'canonical_host': CANONICAL_HOST,
+        'legacy_hosts': sorted(LEGACY_HOSTS),
         'p0_pages': sorted(P0_PAGES),
         'results': rows,
     }
@@ -272,6 +312,7 @@ def main() -> int:
         '- JSON-LD válido.',
         '- Ausência de `aggregateRating`, `ratingValue`, `reviewCount`, `ratingCount`, `bestRating`, `worstRating` e `AggregateRating` no JSON-LD.',
         '- Páginas P0 com title, meta description, canonical e JSON-LD.',
+        '- Canonical/hreflang não devem apontar para domínios paralelos `.com.br`.',
         '',
         '## Critérios de aviso',
         '- Tamanho de title e meta description.',
@@ -279,6 +320,8 @@ def main() -> int:
         '- H1 ausente ou múltiplo.',
         '- Imagens sem alt.',
         '- Termos problemáticos de tradução/localização.',
+        '- Números antigos de prova social, como “84 mil seguidores”.',
+        '- Referências a domínios paralelos, como `lp.embaixadacarioca.com.br`.',
         '- Links internos HTML possivelmente quebrados.',
         '',
         '## Achados críticos',
@@ -290,7 +333,7 @@ def main() -> int:
         lines.append('- Nenhum achado crítico.')
     lines += ['', '## Avisos principais']
     if warnings:
-        for f in warnings[:150]:
+        for f in warnings[:200]:
             lines.append(f'- `{f.file}` — {f.category}: {f.detail}')
     else:
         lines.append('- Nenhum aviso.')
