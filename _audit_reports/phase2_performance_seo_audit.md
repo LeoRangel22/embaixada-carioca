@@ -62,14 +62,15 @@ Scope: existing public pages only. No new landing pages.
   - high inline style blocks: 16
 
 ## eventos.html
-- Score: 72/100
+- Score: 64/100
 - Title length: 69
-- Meta description length: 152
+- Meta description length: 172
 - Inline style blocks: 2
 - Script tags: 6
 - Images: 4
 - JSON-LD blocks: 1
 - Issues:
+  - meta description length suboptimal: 172
   - missing hero/image preload
   - missing consolidated CSS
   - reservation CTA not clearly present
@@ -87,5 +88,5 @@ Scope: existing public pages only. No new landing pages.
   - high script count: 22
 
 ## Summary
-- Average score: 82.0/100
+- Average score: 80.9/100
 - Phase 2 next fixes: reduce inline style density, normalize image loading, preserve CTAs, keep JSON-LD, and prepare performance validation.
