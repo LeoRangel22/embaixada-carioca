@@ -1,22 +1,16 @@
 name: P0 static JSON-LD schema
-# manual trigger: 2026-05-23 cycle 5 retry after GitHub Actions startup failure
+# Legacy workflow kept for manual recovery only.
+# Do not run automatically. Main protection is schema-rating-guard + duplicate-key guard.
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
-    paths:
-      - "scripts/apply_p0_schema_jsonld.py"
-      - "scripts/audit_p0_schema_jsonld.py"
-      - ".github/workflows/p0-schema-jsonld.yml"
 
 permissions:
   contents: write
 
 jobs:
   p0-schema-jsonld:
-    name: Apply and audit static JSON-LD schema
+    name: Apply and audit static JSON-LD schema manually
     runs-on: ubuntu-latest
 
     steps:
