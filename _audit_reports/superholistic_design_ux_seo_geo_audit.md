@@ -1,7 +1,7 @@
 # Superholistic Design/UX/SEO/GEO/AIO/SXO Audit
 
 Status geral: **FAIL**
-Score médio: **95.0**
+Score médio: **95.8**
 Score mínimo: **86**
 Threshold: **90**
 Páginas auditadas: **87**
@@ -17,7 +17,7 @@ Páginas auditadas: **87**
 - **SXO** — média 99.6, mínimo 69
 - **Marketing** — média 97.8, mínimo 82
 - **R2D2** — média 97.8, mínimo 86
-- **Schema** — média 86.0, mínimo 80
+- **Schema** — média 96.1, mínimo 80
 - **Performance** — média 99.9, mínimo 92
 
 ## Páginas abaixo de 90
@@ -53,7 +53,7 @@ Páginas auditadas: **87**
   - R2D2 fraco em Decisão.
   - R2D2 fraco em Direção.
 
-### `en/contato.html` — 92
+### `en/contato.html` — 94
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
@@ -70,10 +70,25 @@ Páginas auditadas: **87**
   - Faltam provas/diferenciais comerciais.
 - **R2D2 (93)**
   - R2D2 fraco em Decisão.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
 
-### `en/nossa-visao.html` — 92
+### `en/feijoada.html` — 94
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **SEO (84)**
+  - Sem meta description.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+- **R2D2 (86)**
+  - R2D2 fraco em Decisão.
+  - R2D2 fraco em Direção.
+
+### `en/nossa-visao.html` — 94
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
@@ -90,10 +105,8 @@ Páginas auditadas: **87**
   - Faltam provas/diferenciais comerciais.
 - **R2D2 (93)**
   - R2D2 fraco em Decisão.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
 
-### `en/roteiro-meio-dia-urca-pao-de-acucar.html` — 92
+### `en/roteiro-meio-dia-urca-pao-de-acucar.html` — 94
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
@@ -109,401 +122,6 @@ Páginas auditadas: **87**
   - Baixa presença de termos de conversão.
 - **R2D2 (93)**
   - R2D2 fraco em Decisão.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `en/caipirinha-com-vista-rio.html` — 93
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **Marketing (90)**
-  - Baixa presença de termos de conversão.
-- **R2D2 (93)**
-  - R2D2 fraco em Decisão.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `en/feijoada.html` — 93
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **UX (97)**
-  - Sem skip-nav detectado.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **R2D2 (86)**
-  - R2D2 fraco em Decisão.
-  - R2D2 fraco em Direção.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 3.
-
-### `en/gastronomia-carioca.html` — 93
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (85)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-  - Sem VideoObject em página de experiência/produto.
-- **R2D2 (86)**
-  - R2D2 fraco em Decisão.
-  - R2D2 fraco em Direção.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 3.
-
-### `en/index.html` — 93
-- **Design (76)**
-  - Risco de texto creme em fundo claro.
-  - Risco de texto azul em fundo azul.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (95)**
-  - Title fora da faixa ideal: 73.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **R2D2 (93)**
-  - R2D2 fraco em Decisão.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — 93
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **Marketing (90)**
-  - Baixa presença de termos de conversão.
-- **R2D2 (93)**
-  - R2D2 fraco em Decisão.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `en/parque-bondinho.html` — 93
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (85)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `es/gastronomia-carioca.html` — 93
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (85)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-  - Sem VideoObject em página de experiência/produto.
-- **R2D2 (86)**
-  - R2D2 fraco em Decisão.
-  - R2D2 fraco em Direção.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 3.
-
-### `en/almoco.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `en/cardapio.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **R2D2 (93)**
-  - R2D2 fraco em Direção.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `en/eventos.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 3.
-
-### `en/restaurant-at-urca-hill.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **UX (97)**
-  - Sem skip-nav detectado.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **Marketing (90)**
-  - Baixa presença de termos de conversão.
-- **R2D2 (93)**
-  - R2D2 fraco em Decisão.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `en/restaurants-near-sugarloaf-mountain.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **UX (97)**
-  - Sem skip-nav detectado.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **Marketing (90)**
-  - Baixa presença de termos de conversão.
-- **R2D2 (93)**
-  - R2D2 fraco em Decisão.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `en/sugarloaf-cable-car-park.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **UX (97)**
-  - Sem skip-nav detectado.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **Marketing (90)**
-  - Baixa presença de termos de conversão.
-- **R2D2 (93)**
-  - R2D2 fraco em Decisão.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `en/sugarloaf-cable-car-restaurant.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **UX (97)**
-  - Sem skip-nav detectado.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **Marketing (90)**
-  - Baixa presença de termos de conversão.
-- **R2D2 (93)**
-  - R2D2 fraco em Decisão.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `en/sunset.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 3.
-
-### `en/where-to-eat-near-sugarloaf.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **UX (97)**
-  - Sem skip-nav detectado.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **Marketing (90)**
-  - Baixa presença de termos de conversão.
-- **R2D2 (93)**
-  - R2D2 fraco em Decisão.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `es/atardecer.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `es/entardecer.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `es/eventos.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 3.
-
-### `es/feijoada.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **UX (97)**
-  - Sem skip-nav detectado.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (85)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 3.
-
-### `es/index.html` — 94
-- **Design (76)**
-  - Risco de texto creme em fundo claro.
-  - Risco de texto azul em fundo azul.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (95)**
-  - Title fora da faixa ideal: 88.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (95)**
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `es/parque-bondinho.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (92)**
-  - FAQ visual sem FAQPage JSON-LD.
-- **AIO (85)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `es/restaurante-morro-da-urca.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **UX (97)**
-  - Sem skip-nav detectado.
-- **SEO (95)**
-  - Title fora da faixa ideal: 78.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (85)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `es/roteiro-meio-dia-urca-pao-de-acucar.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
 
 ### `feijoada.html` — 94
 - **Design (84)**
@@ -612,18 +230,34 @@ Páginas auditadas: **87**
 - **R2D2 (93)**
   - R2D2 fraco em Decisão.
 
-### `en/cafe-da-manha.html` — 95
+### `en/caipirinha-com-vista-rio.html` — 95
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
+- **AEO (84)**
+  - FAQ visual sem FAQPage JSON-LD.
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+- **Marketing (90)**
+  - Baixa presença de termos de conversão.
+- **R2D2 (93)**
+  - R2D2 fraco em Decisão.
+
+### `en/cardapio.html` — 95
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **SEO (84)**
+  - Sem meta description.
 - **AEO (92)**
   - Faltam respostas diretas transacionais.
-- **AIO (85)**
+- **AIO (90)**
   - Sem cobertura literal das keywords prioritárias AIO.
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 4.
+- **R2D2 (93)**
+  - R2D2 fraco em Direção.
 
 ### `en/feijoada-com-vista-rio-de-janeiro.html` — 95
 - **Design (84)**
@@ -640,31 +274,65 @@ Páginas auditadas: **87**
 - **R2D2 (93)**
   - R2D2 fraco em Decisão.
 
-### `en/guia-do-rio.html` — 95
+### `en/gastronomia-carioca.html` — 95
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
-- **AEO (92)**
+- **AEO (84)**
   - FAQ visual sem FAQPage JSON-LD.
+  - Faltam respostas diretas transacionais.
 - **AIO (85)**
   - Sem cobertura literal das keywords prioritárias AIO.
   - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
+- **R2D2 (86)**
+  - R2D2 fraco em Decisão.
+  - R2D2 fraco em Direção.
 
-### `en/morro-da-urca.html` — 95
+### `en/index.html` — 95
+- **Design (76)**
+  - Risco de texto creme em fundo claro.
+  - Risco de texto azul em fundo azul.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **SEO (95)**
+  - Title fora da faixa ideal: 73.
+- **AEO (84)**
+  - FAQ visual sem FAQPage JSON-LD.
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+- **R2D2 (93)**
+  - R2D2 fraco em Decisão.
+
+### `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — 95
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
-- **AEO (92)**
+- **AEO (84)**
   - FAQ visual sem FAQPage JSON-LD.
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+- **Marketing (90)**
+  - Baixa presença de termos de conversão.
+- **R2D2 (93)**
+  - R2D2 fraco em Decisão.
+
+### `en/parque-bondinho.html` — 95
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **SEO (84)**
+  - Sem meta description.
+- **AEO (84)**
+  - FAQ visual sem FAQPage JSON-LD.
+  - Faltam respostas diretas transacionais.
 - **AIO (85)**
   - Sem cobertura literal das keywords prioritárias AIO.
   - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
 
 ### `en/por-do-sol-morro-da-urca.html` — 95
 - **Design (84)**
@@ -681,36 +349,48 @@ Páginas auditadas: **87**
 - **R2D2 (93)**
   - R2D2 fraco em Decisão.
 
-### `es/almoco.html` — 95
+### `en/sunset.html` — 95
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
 - **SEO (84)**
   - Sem meta description.
-- **AEO (92)**
+- **AEO (84)**
+  - FAQ visual sem FAQPage JSON-LD.
   - Faltam respostas diretas transacionais.
-- **AIO (95)**
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
 
-### `es/cafe-da-manha.html` — 95
+### `es/atardecer.html` — 95
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
-- **SEO (95)**
-  - Title fora da faixa ideal: 75.
+- **SEO (84)**
+  - Sem meta description.
+- **AEO (84)**
+  - FAQ visual sem FAQPage JSON-LD.
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+
+### `es/feijoada.html` — 95
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **SEO (84)**
+  - Sem meta description.
 - **AEO (92)**
   - Faltam respostas diretas transacionais.
 - **AIO (85)**
   - Sem cobertura literal das keywords prioritárias AIO.
   - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 3.
 
-### `es/caipirinha-com-vista-rio.html` — 95
+### `es/gastronomia-carioca.html` — 95
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
@@ -718,140 +398,38 @@ Páginas auditadas: **87**
 - **AEO (84)**
   - FAQ visual sem FAQPage JSON-LD.
   - Faltam respostas diretas transacionais.
-- **AIO (90)**
+- **AIO (85)**
   - Sem cobertura literal das keywords prioritárias AIO.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `es/cardapio.html` — 95
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AIO (95)**
   - Sem VideoObject em página de experiência/produto.
-- **R2D2 (93)**
+- **R2D2 (86)**
+  - R2D2 fraco em Decisão.
   - R2D2 fraco em Direção.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
 
-### `es/contato.html` — 95
+### `es/parque-bondinho.html` — 95
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
-- **UX (97)**
-  - Sem skip-nav detectado.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (95)**
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `es/donde-comer-cerca-del-pan-de-azucar.html` — 95
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **UX (97)**
-  - Sem skip-nav detectado.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (85)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `es/morro-da-urca.html` — 95
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
+- **SEO (84)**
+  - Sem meta description.
 - **AEO (92)**
   - FAQ visual sem FAQPage JSON-LD.
 - **AIO (85)**
   - Sem cobertura literal das keywords prioritárias AIO.
   - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
 
-### `es/nossa-visao.html` — 95
+### `es/roteiro-meio-dia-urca-pao-de-acucar.html` — 95
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
-- **UX (97)**
-  - Sem skip-nav detectado.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (95)**
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — 95
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
+- **SEO (84)**
+  - Sem meta description.
 - **AEO (84)**
   - FAQ visual sem FAQPage JSON-LD.
   - Faltam respostas diretas transacionais.
 - **AIO (90)**
   - Sem cobertura literal das keywords prioritárias AIO.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `es/parque-bondinho-pan-de-azucar.html` — 95
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **UX (97)**
-  - Sem skip-nav detectado.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (85)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `es/restaurante-bondinho-pan-de-azucar.html` — 95
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **UX (97)**
-  - Sem skip-nav detectado.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (85)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
-### `es/restaurantes-cerca-del-pan-de-azucar.html` — 95
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **UX (97)**
-  - Sem skip-nav detectado.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (85)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
 
 ### `gastronomia-carioca.html` — 95
 - **Design (84)**
@@ -906,19 +484,111 @@ Páginas auditadas: **87**
 - **Schema (80)**
   - Múltiplos aggregateRating: 2.
 
-### `en/entardecer.html` — 96
+### `en/almoco.html` — 96
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
+- **SEO (84)**
+  - Sem meta description.
 - **AEO (92)**
   - Faltam respostas diretas transacionais.
 - **AIO (90)**
   - Sem cobertura literal das keywords prioritárias AIO.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 3.
+
+### `en/eventos.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **SEO (84)**
+  - Sem meta description.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
 
 ### `en/how-to-get-there.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+- **Marketing (90)**
+  - Baixa presença de termos de conversão.
+- **R2D2 (93)**
+  - R2D2 fraco em Decisão.
+
+### `en/restaurant-at-urca-hill.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+- **Marketing (90)**
+  - Baixa presença de termos de conversão.
+- **R2D2 (93)**
+  - R2D2 fraco em Decisão.
+
+### `en/restaurants-near-sugarloaf-mountain.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+- **Marketing (90)**
+  - Baixa presença de termos de conversão.
+- **R2D2 (93)**
+  - R2D2 fraco em Decisão.
+
+### `en/sugarloaf-cable-car-park.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+- **Marketing (90)**
+  - Baixa presença de termos de conversão.
+- **R2D2 (93)**
+  - R2D2 fraco em Decisão.
+
+### `en/sugarloaf-cable-car-restaurant.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+- **Marketing (90)**
+  - Baixa presença de termos de conversão.
+- **R2D2 (93)**
+  - R2D2 fraco em Decisão.
+
+### `en/where-to-eat-near-sugarloaf.html` — 96
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
@@ -957,6 +627,18 @@ Páginas auditadas: **87**
 - **AIO (90)**
   - Sem cobertura literal das keywords prioritárias AIO.
 
+### `es/almoco.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **SEO (84)**
+  - Sem meta description.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (95)**
+  - Sem VideoObject em página de experiência/produto.
+
 ### `es/cafe-da-manha-pao-de-acucar.html` — 96
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -967,6 +649,42 @@ Páginas auditadas: **87**
   - Faltam respostas diretas transacionais.
 - **AIO (90)**
   - Sem cobertura literal das keywords prioritárias AIO.
+
+### `es/cafe-da-manha.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **SEO (95)**
+  - Title fora da faixa ideal: 75.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (85)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+  - Sem VideoObject em página de experiência/produto.
+
+### `es/caipirinha-com-vista-rio.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **AEO (84)**
+  - FAQ visual sem FAQPage JSON-LD.
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+
+### `es/cardapio.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **SEO (84)**
+  - Sem meta description.
+- **AIO (95)**
+  - Sem VideoObject em página de experiência/produto.
+- **R2D2 (93)**
+  - R2D2 fraco em Direção.
 
 ### `es/desayuno-con-vista-rio-de-janeiro.html` — 96
 - **Design (84)**
@@ -981,6 +699,43 @@ Páginas auditadas: **87**
   - Sem cobertura literal das keywords prioritárias AIO.
   - Sem VideoObject em página de experiência/produto.
 
+### `es/donde-comer-cerca-del-pan-de-azucar.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (85)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+  - Sem VideoObject em página de experiência/produto.
+
+### `es/entardecer.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **SEO (84)**
+  - Sem meta description.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+
+### `es/eventos.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **SEO (84)**
+  - Sem meta description.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+
 ### `es/feijoada-com-vista-rio-de-janeiro.html` — 96
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -993,19 +748,43 @@ Páginas auditadas: **87**
   - Sem cobertura literal das keywords prioritárias AIO.
   - Sem VideoObject em página de experiência/produto.
 
-### `es/guia-do-rio.html` — 96
+### `es/index.html` — 96
+- **Design (76)**
+  - Risco de texto creme em fundo claro.
+  - Risco de texto azul em fundo azul.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **SEO (95)**
+  - Title fora da faixa ideal: 88.
+- **AEO (84)**
+  - FAQ visual sem FAQPage JSON-LD.
+  - Faltam respostas diretas transacionais.
+- **AIO (95)**
+  - Sem VideoObject em página de experiência/produto.
+
+### `es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — 96
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
-- **SEO (95)**
-  - Title fora da faixa ideal: 75.
-- **AEO (92)**
+- **AEO (84)**
   - FAQ visual sem FAQPage JSON-LD.
-- **AIO (95)**
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+
+### `es/parque-bondinho-pan-de-azucar.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (85)**
+  - Sem cobertura literal das keywords prioritárias AIO.
   - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
 
 ### `es/por-do-sol-morro-da-urca.html` — 96
 - **Design (84)**
@@ -1017,6 +796,47 @@ Páginas auditadas: **87**
   - Faltam respostas diretas transacionais.
 - **AIO (90)**
   - Sem cobertura literal das keywords prioritárias AIO.
+
+### `es/restaurante-bondinho-pan-de-azucar.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (85)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+  - Sem VideoObject em página de experiência/produto.
+
+### `es/restaurante-morro-da-urca.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **SEO (95)**
+  - Title fora da faixa ideal: 78.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (85)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+  - Sem VideoObject em página de experiência/produto.
+
+### `es/restaurantes-cerca-del-pan-de-azucar.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (85)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+  - Sem VideoObject em página de experiência/produto.
 
 ### `guia-do-rio.html` — 96
 - **Design (82)**
@@ -1158,6 +978,49 @@ Páginas auditadas: **87**
 - **Schema (80)**
   - Múltiplos aggregateRating: 3.
 
+### `en/cafe-da-manha.html` — 97
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (85)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+  - Sem VideoObject em página de experiência/produto.
+
+### `en/entardecer.html` — 97
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+
+### `en/guia-do-rio.html` — 97
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **AEO (92)**
+  - FAQ visual sem FAQPage JSON-LD.
+- **AIO (85)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+  - Sem VideoObject em página de experiência/produto.
+
+### `en/morro-da-urca.html` — 97
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **AEO (92)**
+  - FAQ visual sem FAQPage JSON-LD.
+- **AIO (85)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+  - Sem VideoObject em página de experiência/produto.
+
 ### `es/como-llegar.html` — 97
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -1169,6 +1032,55 @@ Páginas auditadas: **87**
   - Faltam respostas diretas transacionais.
 - **AIO (90)**
   - Sem cobertura literal das keywords prioritárias AIO.
+
+### `es/contato.html` — 97
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **AEO (84)**
+  - FAQ visual sem FAQPage JSON-LD.
+  - Faltam respostas diretas transacionais.
+- **AIO (95)**
+  - Sem VideoObject em página de experiência/produto.
+
+### `es/guia-do-rio.html` — 97
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **SEO (95)**
+  - Title fora da faixa ideal: 75.
+- **AEO (92)**
+  - FAQ visual sem FAQPage JSON-LD.
+- **AIO (95)**
+  - Sem VideoObject em página de experiência/produto.
+
+### `es/morro-da-urca.html` — 97
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **AEO (92)**
+  - FAQ visual sem FAQPage JSON-LD.
+- **AIO (85)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+  - Sem VideoObject em página de experiência/produto.
+
+### `es/nossa-visao.html` — 97
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **AEO (84)**
+  - FAQ visual sem FAQPage JSON-LD.
+  - Faltam respostas diretas transacionais.
+- **AIO (95)**
+  - Sem VideoObject em página de experiência/produto.
 
 ### `feijoada-com-vista-rio-de-janeiro.html` — 97
 - **Design (84)**
