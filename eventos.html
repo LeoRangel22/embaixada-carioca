@@ -1,514 +1,326 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
-<!-- EC Analytics Foundation v2 -->
-<script id="ec-ga4-base">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  window.ecLoadGA4 = window.ecLoadGA4 || function(){
-    if (window.ecGA4Loaded) return;
-    window.ecGA4Loaded = true;
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-9GRXVZ55CB';
-    document.head.appendChild(s);
-    gtag('js', new Date());
-    gtag('config', 'G-9GRXVZ55CB', { send_page_view: true });
-  };
-  (function(){
-    var load = window.ecLoadGA4;
-    var idle = function(){
-      if ('requestIdleCallback' in window) requestIdleCallback(load, { timeout: 2600 });
-      else setTimeout(load, 1800);
-    };
-    ['pointerdown','keydown','touchstart','scroll'].forEach(function(evt){
-      window.addEventListener(evt, load, { once:true, passive:true });
-    });
-    if (document.readyState === 'complete') idle();
-    else window.addEventListener('load', idle, { once:true });
-  })();
-</script>
-<!-- /EC Analytics Foundation v2 -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Eventos com Vista no Rio de Janeiro | Embaixada Carioca Morro da Urca</title>
+  <meta name="description" content="Espaço para eventos corporativos, grupos, agências e celebrações no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar. Fale por WhatsApp ou e-mail." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.embaixadacarioca.com/eventos.html" />
+  <link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/eventos.html" />
+  <link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/eventos.html" />
+  <link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/eventos.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/eventos.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Embaixada Carioca" />
+  <meta property="og:url" content="https://www.embaixadacarioca.com/eventos.html" />
+  <meta property="og:title" content="Eventos com Vista no Rio de Janeiro | Embaixada Carioca" />
+  <meta property="og:description" content="Eventos corporativos, grupos, agências e celebrações no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar." />
+  <meta property="og:image" content="https://www.embaixadacarioca.com/assets/hero.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="geo.region" content="BR-RJ" />
+  <meta name="geo.placename" content="Morro da Urca, Rio de Janeiro" />
+  <meta name="geo.position" content="-22.9508333;-43.1641667" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon-180.png" />
+  <link rel="icon" sizes="32x32" type="image/png" href="/assets/icon-32.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#00405a" />
 
-<link rel="canonical" href="https://www.embaixadacarioca.com/eventos.html">
-<link rel="stylesheet" href="/assets/eventos-contrast-lock.css">
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<!-- ── SEO ── -->
-<title>Eventos com Vista no Rio de Janeiro | Embaixada Carioca Morro da Urca</title>
-<meta name="description" content="Espaço para eventos corporativos, aniversários e experiências gastronômicas no Morro da Urca, com vista para o Pão de Açúcar. Solicite orçamento.">
-<meta content="espaço para eventos Rio de Janeiro com vista, eventos corporativos Rio de Janeiro, aluguel espaço festas Rio de Janeiro, café da manhã para grupos Rio, agências de viagens Rio Pão de Açúcar, eventos com vista panorâmica" name="keywords"/>
-<meta content="index, follow, max-image-preview:large" name="robots"/>
-<meta content="website" property="og:type"/>
-<meta content="pt_BR" property="og:locale"/>
-<meta content="https://www.embaixadacarioca.com/eventos.html" property="og:url"/>
-<meta property="og:title" content="Eventos com Vista no Rio de Janeiro | Embaixada Carioca Morro da Urca">
-<meta property="og:description" content="Espaço para eventos corporativos, aniversários e experiências gastronômicas no Morro da Urca, com vista para o Pão de Açúcar. Solicite orçamento.">
-<meta content="https://www.embaixadacarioca.com/assets/hero.jpg" property="og:image"/>
-<meta content="1200" property="og:image:width"/>
-<meta content="630" property="og:image:height"/>
-<meta content="Espaço para eventos na Embaixada Carioca, Morro da Urca, com vista para o Pão de Açúcar" property="og:image:alt"/>
-<meta content="Embaixada Carioca" property="og:site_name"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta name="twitter:title" content="Eventos com Vista no Rio de Janeiro | Embaixada Carioca Morro da Urca">
-<meta name="twitter:description" content="Espaço para eventos corporativos, aniversários e experiências gastronômicas no Morro da Urca, com vista para o Pão de Açúcar. Solicite orçamento.">
-<meta content="https://www.embaixadacarioca.com/assets/hero.jpg" name="twitter:image"/>
-<meta content="BR-RJ" name="geo.region"/>
-<meta content="Morro da Urca, Rio de Janeiro" name="geo.placename"/>
-<meta content="-22.9508333;-43.1641667" name="geo.position"/>
-<link href="https://www.embaixadacarioca.com/eventos.html" hreflang="pt-BR" rel="alternate"/>
-<link href="https://www.embaixadacarioca.com/en/eventos.html" hreflang="en" rel="alternate"/>
-<link href="https://www.embaixadacarioca.com/es/eventos.html" hreflang="es" rel="alternate"/>
-<link href="https://www.embaixadacarioca.com/eventos.html" hreflang="x-default" rel="alternate"/>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"EventVenue","@id":"https://www.embaixadacarioca.com/eventos#venue","name":"Embaixada Carioca · Espaço para Eventos no Morro da Urca","description":"Espaço para eventos no Morro da Urca, Rio de Janeiro, com vista panorâmica para o Pão de Açúcar e Baía de Guanabara. Corporate events e privados, aniversários, lançamentos e roteiros para grupos. Capacidade variável conforme formato, montagem e áreas utilizadas.","url":"https://www.embaixadacarioca.com/eventos","image":"https://www.embaixadacarioca.com/assets/hero.jpg","telephone":"+55 21 96683-7556","email":"eventos@embaixadacarioca.com.br","address":{"@type":"PostalAddress","streetAddress":"Av. Pasteur, 520 — Morro da Urca","addressLocality":"Urca","addressRegion":"RJ","postalCode":"22290-255","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-22.9508333,"longitude":-43.1641667},"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Acessibilidade NBR 9050","value":true},{"@type":"LocationFeatureSpecification","name":"Catering próprio","value":true},{"@type":"LocationFeatureSpecification","name":"Cardápio bilíngue PT/ESP","value":true},{"@type":"LocationFeatureSpecification","name":"Vista panorâmica de frente para o Pão de Açúcar","value":true},{"@type":"LocationFeatureSpecification","name":"Salão privativo","value":true}]},{"@type":"Service","name":"Eventos Corporativos com Vista Panorâmica","provider":{"@type":"Restaurant","@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca"},"areaServed":"Rio de Janeiro","serviceType":"Corporate event venue","description":"Reuniões executivas, almoços corporativos, lançamentos de marca, treinamentos e workshops com vista para o Pão de Açúcar.","url":"https://www.embaixadacarioca.com/eventos.html"},{"@type":"Service","name":"Roteiros e Experiências para Agências de Viagens","provider":{"@type":"Restaurant","@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca"},"areaServed":"Rio de Janeiro","serviceType":"Travel agency partnership","description":"Café da manhã para grupos, entardecer premium, experiência VIP e feijoada premiada para grupos turísticos. Cardápio bilíngue PT/ESP.","url":"https://www.embaixadacarioca.com/eventos.html"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.embaixadacarioca.com/"},{"@type":"ListItem","position":2,"name":"Eventos","item":"https://www.embaixadacarioca.com/eventos"}]}],"inLanguage":"pt-BR"}</script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600;700;800;900&amp;family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
-<style>
-:root {
-  --azul1: #00405a;
-  --azul2: #527f8f;
-  --verde: #335d4a;
-  --verde2: #cbded4;
-  --amarelo: #f59b1e;
-  --amarelo-deep: #c47e15;
-  --areia: #ede2c9;
-  --areia-pale: #f6efde;
-  --areia-deep: #e0d3b5;
-  --cinza1: #485156;
-  --cinza2: #7d8386;
-  --cinza3: #b1b7bc;
-  --paper: var(--areia-pale);
-  --ink: var(--azul1);
-  --ink-2: var(--cinza1);
-  --rule: rgba(0,64,90,0.18);
-  --rule-soft: rgba(0,64,90,0.08);
-  --max: 1440px;
-  --gutter: 64px;
-}
+  <script type="application/ld+json" id="ec-eventos-jsonld">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Restaurant", "LocalBusiness", "EventVenue"],
+        "@id": "https://www.embaixadacarioca.com/#restaurant",
+        "name": "Embaixada Carioca",
+        "url": "https://www.embaixadacarioca.com/",
+        "image": "https://www.embaixadacarioca.com/assets/hero.jpg",
+        "logo": "https://www.embaixadacarioca.com/assets/logo-azul.svg",
+        "telephone": "+5521966837556",
+        "email": "eventos@embaixadacarioca.com.br",
+        "priceRange": "$$",
+        "servesCuisine": ["Brasileira", "Carioca", "Café da manhã", "Bar"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Pasteur, 520 - Morro da Urca",
+          "addressLocality": "Rio de Janeiro",
+          "addressRegion": "RJ",
+          "postalCode": "22290-255",
+          "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -22.9508333,
+          "longitude": -43.1641667
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "08:30",
+          "closes": "21:00"
+        },
+        "amenityFeature": [
+          {"@type": "LocationFeatureSpecification", "name": "Vista para o Pão de Açúcar", "value": true},
+          {"@type": "LocationFeatureSpecification", "name": "Dentro do Parque Bondinho Pão de Açúcar", "value": true},
+          {"@type": "LocationFeatureSpecification", "name": "Atendimento para grupos e eventos", "value": true},
+          {"@type": "LocationFeatureSpecification", "name": "Catering próprio", "value": true}
+        ],
+        "sameAs": ["https://www.instagram.com/embaixadacarioca/"]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.embaixadacarioca.com/eventos.html#corporativo",
+        "name": "Eventos corporativos no Morro da Urca",
+        "serviceType": "Eventos corporativos, lançamentos, reuniões e experiências de marca",
+        "provider": {"@id": "https://www.embaixadacarioca.com/#restaurant"},
+        "areaServed": "Rio de Janeiro",
+        "url": "https://www.embaixadacarioca.com/eventos.html",
+        "description": "Espaço para eventos corporativos no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com gastronomia brasileira e vista para o Rio."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.embaixadacarioca.com/eventos.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "A Embaixada Carioca recebe eventos corporativos?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Sim. A Embaixada Carioca recebe eventos corporativos, reuniões, almoços de relacionamento, lançamentos de marca, ações de imprensa, workshops e experiências para grupos no Morro da Urca."}
+          },
+          {
+            "@type": "Question",
+            "name": "Onde fica o espaço de eventos?",
+            "acceptedAnswer": {"@type": "Answer", "text": "A Embaixada Carioca fica no Morro da Urca, na primeira parada do Bondinho Pão de Açúcar, dentro do Parque Bondinho, no Rio de Janeiro."}
+          },
+          {
+            "@type": "Question",
+            "name": "Como solicitar uma proposta de evento?",
+            "acceptedAnswer": {"@type": "Answer", "text": "A proposta pode ser solicitada por WhatsApp ou pelo e-mail eventos@embaixadacarioca.com.br, informando data, horário, número de pessoas e tipo de evento."}
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.embaixadacarioca.com/eventos.html#breadcrumb",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.embaixadacarioca.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Eventos", "item": "https://www.embaixadacarioca.com/eventos.html"}
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.embaixadacarioca.com/eventos.html#webpage",
+        "url": "https://www.embaixadacarioca.com/eventos.html",
+        "name": "Eventos com Vista no Rio de Janeiro | Embaixada Carioca",
+        "description": "Página de eventos da Embaixada Carioca no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar.",
+        "inLanguage": "pt-BR",
+        "about": {"@id": "https://www.embaixadacarioca.com/#restaurant"}
+      }
+    ]
+  }
+  </script>
 
-  /* Two-column B2B layout */
-  .audience-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-  }
-  .audience-card {
-    background: var(--areia);
-    border: 1px solid var(--rule-soft);
-    padding: 56px 48px 48px;
-    display: flex; flex-direction: column;
-  }
-  .audience-card.variant { background: var(--verde2); }
-  .audience-tag {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 11px; letter-spacing: 0.24em;
-    text-transform: uppercase;
-    color: var(--azul2);
-    padding-bottom: 14px;
-    border-bottom: 1px solid var(--rule);
-    margin-bottom: 28px;
-    font-weight: 500;
-  }
-  .audience-card.variant .audience-tag { color: var(--verde); border-color: rgba(51,93,74,0.25); }
-  .audience-card h3 {
-    font-family: "Catamaran", sans-serif;
-    font-weight: 300;
-    font-size: clamp(32px, 3.4vw, 48px);
-    line-height: 1.02;
-    letter-spacing: -0.02em;
-    margin: 0 0 20px;
-    color: var(--azul1);
-  }
-  .audience-card h3 .serif { font-style: italic; font-weight: 500; color: var(--verde); font-family: "Cormorant Garamond", serif; }
-  .audience-card.variant h3 .serif { color: var(--amarelo-deep); }
-  .audience-lede {
-    font-size: 17px;
-    line-height: 1.55;
-    color: var(--cinza1);
-    margin: 0 0 32px;
-    max-width: 44ch;
-  }
-  .audience-list {
-    list-style: none; padding: 0; margin: 0 0 36px;
-    display: flex; flex-direction: column;
-    flex: 1;
-  }
-  .audience-list li {
-    padding: 18px 0;
-    border-top: 1px solid var(--rule);
-    display: flex; flex-direction: column; gap: 4px;
-  }
-  .audience-card.variant .audience-list li { border-top-color: rgba(51,93,74,0.18); }
-  .audience-list li:last-child { border-bottom: 1px solid var(--rule); }
-  .audience-card.variant .audience-list li:last-child { border-bottom-color: rgba(51,93,74,0.18); }
-  .audience-l { font-family: "Catamaran", sans-serif; font-weight: 700; font-size: 16px; color: var(--azul1); }
-  .audience-d { font-size: 14.5px; color: var(--cinza1); line-height: 1.45; }
-
-  /* Capacity stats */
-  .capacity {
-    background: var(--azul1);
-    color: var(--areia-pale);
-  }
-  .capacity .sec-head h2 { color: var(--areia-pale); }
-  .capacity .sec-head h2 .serif { color: var(--amarelo); }
-  .capacity .sec-head .num { color: rgba(237,226,201,0.65); }
-  .capacity .sec-head .lede { color: rgba(237,226,201,0.78); }
-
-  .cap-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    padding: 40px 0;
-    border-top: 1px solid rgba(237,226,201,0.18);
-    border-bottom: 1px solid rgba(237,226,201,0.18);
-  }
-  .cap {
-    display: flex; flex-direction: column; gap: 8px;
-  }
-  .cap .l {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 10px; letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--amarelo);
-  }
-  .cap .v {
-    font-family: "Catamaran", sans-serif;
-    font-weight: 200;
-    font-size: 64px;
-    line-height: 1;
-    color: var(--areia-pale);
-    letter-spacing: -0.03em;
-  }
-  .cap .v sup { font-size: 18px; vertical-align: super; margin-left: 4px; color: var(--amarelo); }
-  .cap .d { font-size: 14px; color: rgba(237,226,201,0.75); line-height: 1.4; margin-top: 2px; }
-
-  /* FAQ */
-  .faq-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 28px 56px;
-  }
-  .faq {
-    border-top: 1px solid var(--rule);
-    padding: 24px 0 8px;
-  }
-  .faq h4 {
-    font-family: "Catamaran", sans-serif;
-    font-weight: 600;
-    font-size: 19px;
-    line-height: 1.25;
-    color: var(--azul1);
-    margin: 0 0 12px;
-  }
-  .faq p {
-    font-size: 15.5px;
-    line-height: 1.55;
-    color: var(--cinza1);
-    margin: 0 0 16px;
-  }
-
-  /* Form */
-  .form-section { background: var(--areia); }
-  .form-grid {
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 80px;
-    align-items: start;
-  }
-  .form-intro h2 {
-    font-family: "Catamaran", sans-serif;
-    font-weight: 300;
-    font-size: clamp(36px, 4.4vw, 64px);
-    line-height: 1.02;
-    margin: 0 0 24px;
-    letter-spacing: -0.02em;
-    color: var(--azul1);
-  }
-  .form-intro h2 .serif { font-style: italic; font-weight: 500; color: var(--amarelo); font-family: "Cormorant Garamond", serif; }
-  .form-intro p {
-    font-size: 17px;
-    line-height: 1.65;
-    color: var(--cinza1);
-    margin: 0 0 20px;
-    max-width: 46ch;
-  }
-  .form-intro .contacts {
-    margin-top: 32px;
-    padding-top: 28px;
-    border-top: 1px solid var(--rule);
-    display: flex; flex-direction: column;
-    gap: 14px;
-  }
-  .form-intro .contacts .l {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 11px; letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--azul2);
-  }
-  .form-intro .contacts a {
-    color: var(--azul1);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 17px;
-  }
-  .form-intro .contacts a:hover { color: var(--amarelo-deep); }
-
-  form.cotacao {
-    background: var(--areia-pale);
-    border: 1px solid var(--rule);
-    padding: 40px 36px;
-    display: flex; flex-direction: column;
-    gap: 18px;
-  }
-  form.cotacao label {
-    display: block;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 10px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--azul2);
-    margin-bottom: 6px;
-    font-weight: 500;
-  }
-  form.cotacao input, form.cotacao select, form.cotacao textarea {
-    width: 100%;
-    border: 0;
-    border-bottom: 1px solid var(--rule);
-    background: transparent;
-    padding: 12px 0;
-    font-family: "Catamaran", sans-serif;
-    font-size: 16px;
-    color: var(--azul1);
-    outline: none;
-    transition: border-color .2s;
-  }
-  form.cotacao textarea { min-height: 80px; resize: vertical; }
-  form.cotacao input:focus, form.cotacao select:focus, form.cotacao textarea:focus {
-    border-bottom-color: var(--amarelo);
-  }
-  form.cotacao input::placeholder, form.cotacao textarea::placeholder { color: var(--cinza2); }
-  form.cotacao .row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-  form.cotacao button {
-    margin-top: 20px;
-    padding: 16px 28px;
-    border: 0;
-    background: var(--azul1);
-    color: var(--areia-pale);
-    font-family: "Catamaran", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    border-radius: 999px;
-    cursor: pointer;
-    transition: background .2s, color .2s;
-  }
-  form.cotacao button:hover { background: var(--amarelo); color: var(--azul1); }
-
-  @media (max-width: 1100px) {
-    .audience-grid { grid-template-columns: 1fr; }
-    .cap-grid { grid-template-columns: 1fr 1fr; }
-    .faq-grid, .form-grid { grid-template-columns: 1fr !important; gap: 32px; }
-    form.cotacao .row { grid-template-columns: 1fr; }
-  }
-
-/* ══════════════════════════════════════════
-   MENU MOBILE — HAMBÚRGUER + DRAWER
-   6 Estrelas · Mobile-First para Turistas
-══════════════════════════════════════════ */
-
-/* Botão hambúrguer */
-.nav-hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  width: 44px;
-  height: 44px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
-  border-radius: 8px;
-  transition: background 0.2s;
-  -webkit-tap-highlight-color: transparent;
-  z-index: 200;
-}
-.nav-hamburger:hover { background: rgba(255,255,255,0.1); }
-nav.top.scrolled .nav-hamburger:hover { background: rgba(0,64,90,0.08); }
-.nav-hamburger span {
-  display: block;
-  width: 22px;
-  height: 2px;
-  background: currentColor;
-  border-radius: 2px;
-  transition: transform 0.3s ease, opacity 0.3s ease, width 0.3s ease;
-  transform-origin: center;
-}
-.nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.nav-hamburger.open span:nth-child(2) { opacity: 0; width: 0; }
-.nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-/* Overlay escuro */
-.nav-drawer-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.55);
-  z-index: 150;
-  backdrop-filter: blur(2px);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.nav-drawer-overlay.open {
-  display: block;
-  opacity: 1;
-}
-
-/* Drawer lateral */
-.nav-drawer {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: min(320px, 88vw);
-  background: var(--azul1, #00405A);
-  z-index: 160;
-  transform: translateX(100%);
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
-.nav-drawer.open {
-  transform: translateX(0);
-}
-.nav-drawer-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 24px;
-  border-bottom: 1px solid rgba(255,255,255,0.12);
-}
-.nav-drawer-logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-  color: var(--areia-pale, #F5EFE6);
-}
-.nav-drawer-logo img {
-  width: 40px;
-  height: 40px;
-}
-.nav-drawer-logo-text {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  line-height: 1.4;
-  color: var(--areia-pale, #F5EFE6);
-  opacity: 0.85;
-}
-.nav-drawer-close {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255,255,255,0.08);
-  border: none;
-  border-radius: 50%;
-  color: var(--areia-pale, #F5EFE6);
-  font-size: 20px;
-  cursor: pointer;
-  transition: background 0.2s;
-  -webkit-tap-highlight-color: transparent;
-}
-.nav-drawer-close:hover { background: rgba(255,255,255,0.16); }
-
-/* Links do drawer */
-.nav-drawer-links {
-  list-style: none;
-  padding: 16px 0;
-  margin: 0;
-  flex: 1;
-}
-.nav-drawer-links li {
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-}
-.nav-drawer-links a {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 16px 24px;
-  text-decoration: none;
-  color: var(--areia-pale, #F5EFE6);
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  transition: background 0.2s, padding-left 0.2s;
-  -webkit-tap-highlight-color: transparent;
-  min-height: 56px;
-}
-.nav-drawer-links a:hover,
-.nav-drawer-links a:active {
-  background: rgba(255,255,255,0.08);
-  padding-left: 32px;
-}
-.nav-drawer-links .drawer-icon {
-  font-size: 18px;
-  width: 24px;
-  text-align: center;
-  flex-shrink: 0;
-}
-
-/* CTA no drawer */
-.nav-drawer-cta {
-  padding: 24px;
-  border-top: 1px solid rgba(255,255,255,0.12);
-}
-.nav-drawer-cta a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 16px 24px;
-  background: var(--amarelo, #E8C547);
-  color: var(--azul1, #00405A);
-  border-radius: 999px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  transition: transform 0.2s, box-shadow 0.2s;
-  -webkit-tap-highlight-color: transparent;
-}
-.nav-drawer-cta a:active { transform: scale(0.97); }
-
-/* Info de contato no drawer */
-.nav-drawer-contact {
-  padding: 16px 24px 24px;
-  color: rgba(245,239,230,0.6);
-  font-size: 12px;
-  line-height: 1.6;
-}
-.nav-drawer-contact a {
-  color: rgba(245,239,230,0.8);
-  text-decoration: none;
-}
-
-<!-- TRUNCADO AUTOMATICAMENTE PELO PATCH: o restante do arquivo original foi preservado no commit anterior -->
-</style>
+  <style>
+    :root{--azul:#00405a;--azul2:#527f8f;--verde:#335d4a;--verde2:#cbded4;--amarelo:#f59b1e;--areia:#ede2c9;--paper:#f6efde;--cinza:#485156;--max:1180px;--gutter:clamp(20px,5vw,64px)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Catamaran,Verdana,system-ui,sans-serif;background:var(--paper);color:var(--azul);line-height:1.55}a{color:inherit}img{max-width:100%;height:auto}.wrap{max-width:var(--max);margin:auto;padding:0 var(--gutter)}
+    .top{position:fixed;inset:0 0 auto;z-index:50;background:rgba(0,32,46,.72);backdrop-filter:blur(12px);border-bottom:1px solid rgba(246,239,222,.18)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 var(--gutter)}.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--paper);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}.brand img{width:52px;height:52px}.links{display:flex;align-items:center;gap:22px}.links a{font-family:'JetBrains Mono',monospace;text-decoration:none;color:rgba(246,239,222,.92);font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}.links a:hover{color:var(--amarelo)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;background:var(--amarelo);border:1px solid var(--amarelo);color:var(--azul);font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;text-decoration:none}.btn.secondary{background:rgba(0,64,90,.18);border-color:rgba(246,239,222,.85);color:var(--paper)}.btn.dark{background:var(--azul);border-color:var(--azul);color:var(--paper)}.btn:hover{transform:translateY(-1px)}
+    .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:var(--paper);overflow:hidden;background:var(--azul)}.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,32,46,.82),rgba(0,32,46,.35),rgba(0,32,46,.78)),url('/assets/hero.webp') center/cover no-repeat;z-index:0}.hero .wrap{position:relative;z-index:2;width:100%;padding-top:160px;padding-bottom:86px}.eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--amarelo);font-weight:700;margin-bottom:22px}.hero h1{font-size:clamp(44px,7vw,92px);line-height:.95;margin:0 0 24px;letter-spacing:-.035em;font-weight:300;max-width:780px}.hero h1 em{font-family:'Cormorant Garamond',serif;color:var(--amarelo);font-style:italic;font-weight:500}.hero p{font-size:clamp(18px,2vw,23px);max-width:720px;color:rgba(246,239,222,.92);margin:0 0 32px}.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px}.chip{border:1px solid rgba(246,239,222,.28);background:rgba(0,32,46,.42);border-radius:999px;padding:8px 14px;color:rgba(246,239,222,.92);font-weight:700}.ctas{display:flex;flex-wrap:wrap;gap:14px}
+    section{padding:96px 0}.section-head{display:grid;grid-template-columns:240px 1fr;gap:54px;align-items:end;margin-bottom:54px}.num{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--azul2);font-weight:700}.section-head h2{font-size:clamp(34px,5vw,66px);line-height:1;margin:0;font-weight:300;letter-spacing:-.025em}.section-head h2 em{font-family:'Cormorant Garamond',serif;color:var(--verde);font-style:italic}.lede{font-size:19px;color:var(--cinza);max-width:780px}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}.card{background:var(--areia);border:1px solid rgba(0,64,90,.12);padding:42px;border-radius:28px}.card.alt{background:var(--verde2)}.card h3{font-size:clamp(28px,3vw,42px);line-height:1.04;margin:0 0 16px;color:var(--azul);font-weight:400}.card p{font-size:17px;color:var(--cinza);margin:0 0 26px}.list{list-style:none;padding:0;margin:0;display:grid;gap:0}.list li{border-top:1px solid rgba(0,64,90,.14);padding:16px 0}.list strong{display:block;color:var(--verde);font-size:17px}.list span{display:block;color:var(--cinza);font-size:15px}
+    .dark{background:var(--azul);color:var(--paper)}.dark .section-head h2,.dark h2,.dark h3{color:var(--paper)}.dark .num,.dark em{color:var(--amarelo)}.dark .lede,.dark p,.dark li span{color:rgba(246,239,222,.82)}.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(246,239,222,.2);border-bottom:1px solid rgba(246,239,222,.2)}.fact{padding:32px 24px;border-right:1px solid rgba(246,239,222,.16)}.fact:last-child{border-right:0}.fact .v{font-size:clamp(32px,4vw,56px);line-height:1;color:var(--amarelo);font-weight:300}.fact .l{font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:rgba(246,239,222,.7);margin-top:10px}
+    .formats{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.format{background:#fff;border:1px solid rgba(0,64,90,.12);padding:28px;border-radius:22px}.format h3{margin:0 0 10px;font-size:24px;color:var(--verde)}.format p{margin:0;color:var(--cinza)}
+    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:step}.step{background:rgba(255,255,255,.07);border:1px solid rgba(246,239,222,.16);border-radius:22px;padding:28px}.step::before{counter-increment:step;content:counter(step, decimal-leading-zero);display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--amarelo);color:var(--azul);font-family:'JetBrains Mono',monospace;font-weight:800;margin-bottom:18px}.step h3{margin:0 0 8px;font-size:22px}
+    .contact{background:linear-gradient(135deg,var(--verde),var(--azul));color:var(--paper);text-align:center}.contact h2{font-size:clamp(36px,5vw,68px);line-height:1;margin:0 0 18px;font-weight:300}.contact p{max-width:720px;margin:0 auto 28px;color:rgba(246,239,222,.88);font-size:19px}.contact .contact-lines{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:26px;color:rgba(246,239,222,.88)}.contact .contact-lines a{color:var(--amarelo);font-weight:800;text-decoration:none}
+    .faq{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.qa{background:#fff;border:1px solid rgba(0,64,90,.12);padding:28px;border-radius:22px}.qa h3{margin:0 0 10px;color:var(--azul);font-size:22px}.qa p{margin:0;color:var(--cinza)}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.gallery figure{margin:0;background:#fff;border-radius:22px;overflow:hidden;border:1px solid rgba(0,64,90,.12)}.gallery img{display:block;width:100%;height:240px;object-fit:cover}.gallery figcaption{padding:16px 18px;color:var(--cinza);font-weight:700}
+    footer{background:#00202e;color:rgba(246,239,222,.76);padding:58px var(--gutter);font-size:14px}.foot{max-width:var(--max);margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:34px}.foot h4{margin:0 0 12px;color:var(--amarelo);font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.18em}.foot a{display:block;color:rgba(246,239,222,.86);text-decoration:none;margin:8px 0}.foot a:hover{color:var(--amarelo)}
+    @media(max-width:900px){.links{display:none}.brand span{display:none}.hero{min-height:86vh}.section-head,.cards,.formats,.facts,.process,.faq,.gallery,.foot{grid-template-columns:1fr}.fact{border-right:0;border-bottom:1px solid rgba(246,239,222,.16)}section{padding:70px 0}.nav{height:72px}.ctas .btn{width:100%}}
+  </style>
 </head>
-<body data-screen-label="Eventos">
-<script>location.reload()</script>
+<body>
+  <nav class="top" aria-label="Navegação principal">
+    <div class="nav">
+      <a class="brand" href="/" aria-label="Embaixada Carioca"><img src="/assets/logo-areia.svg" alt="Embaixada Carioca" /><span>Embaixada Carioca</span></a>
+      <div class="links">
+        <a href="/cafe-da-manha.html">Café da manhã</a>
+        <a href="/almoco.html">Almoço</a>
+        <a href="/como-chegar.html">Como chegar</a>
+        <a href="/eventos.html">Eventos</a>
+        <a href="/cardapio.html">Cardápio</a>
+      </div>
+      <a class="btn" href="https://wa.me/5521966837556?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20um%20evento%20na%20Embaixada%20Carioca." rel="noopener" target="_blank">WhatsApp</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Eventos · Morro da Urca · Parque Bondinho Pão de Açúcar</div>
+      <h1>Eventos no <em>Morro da Urca</em> com vista para o Pão de Açúcar.</h1>
+      <p>Um endereço icônico para eventos corporativos, grupos, agências, celebrações e experiências gastronômicas no Rio de Janeiro — na primeira parada do Bondinho.</p>
+      <div class="chips" aria-label="Destaques">
+        <span class="chip">Dentro do Parque Bondinho</span>
+        <span class="chip">Vista para o Pão de Açúcar</span>
+        <span class="chip">Café da manhã, almoço e coquetéis</span>
+        <span class="chip">Atendimento para grupos</span>
+      </div>
+      <div class="ctas">
+        <a class="btn" href="https://wa.me/5521966837556?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20um%20evento%20na%20Embaixada%20Carioca." rel="noopener" target="_blank">Pedir proposta por WhatsApp</a>
+        <a class="btn secondary" href="mailto:eventos@embaixadacarioca.com.br?subject=Solicita%C3%A7%C3%A3o%20de%20evento%20-%20Embaixada%20Carioca&body=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20um%20evento%20na%20Embaixada%20Carioca.%0A%0AData%3A%0AHor%C3%A1rio%3A%0AN%C3%BAmero%20de%20pessoas%3A%0ATipo%20de%20evento%3A%0AObserva%C3%A7%C3%B5es%3A">Enviar e-mail para eventos</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">01 · Para quem</div>
+          <div>
+            <h2>Do encontro executivo ao <em>roteiro premium</em>.</h2>
+            <p class="lede">A Embaixada Carioca combina localização turística, gastronomia brasileira e operação de restaurante para receber grupos com clareza, agilidade e identidade carioca.</p>
+          </div>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Empresas e instituições</h3>
+            <p>Para reuniões executivas, almoços corporativos, lançamentos, confraternizações, workshops e experiências de marca.</p>
+            <ul class="list">
+              <li><strong>Café da manhã executivo</strong><span>Recepção matinal no Morro da Urca.</span></li>
+              <li><strong>Almoço de relacionamento</strong><span>Gastronomia brasileira com serviço à mesa.</span></li>
+              <li><strong>Lançamentos e ativações</strong><span>Experiência com vista e alto valor simbólico.</span></li>
+            </ul>
+          </article>
+          <article class="card alt">
+            <h3>Agências, receptivos e grupos</h3>
+            <p>Para grupos turísticos, delegações, clientes VIP e roteiros que precisam de uma experiência carioca clara e memorável.</p>
+            <ul class="list">
+              <li><strong>Café da manhã para grupos</strong><span>Boa solução para abrir o dia no Parque Bondinho.</span></li>
+              <li><strong>Entardecer e drinks</strong><span>Caipirinhas, petiscos e vista.</span></li>
+              <li><strong>Feijoada e almoço brasileiro</strong><span>Experiência gastronômica com identidade local.</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">02 · Estrutura</div>
+          <div>
+            <h2>Um espaço com <em>paisagem, serviço e operação</em>.</h2>
+            <p class="lede">A estrutura permite montar diferentes formatos de evento, sempre respeitando o fluxo do Parque Bondinho, a experiência do visitante e a operação da casa.</p>
+          </div>
+        </div>
+        <div class="facts">
+          <div class="fact"><div class="v">120</div><div class="l">pessoas sentadas</div></div>
+          <div class="fact"><div class="v">227m</div><div class="l">Morro da Urca</div></div>
+          <div class="fact"><div class="v">08h30</div><div class="l">abertura diária</div></div>
+          <div class="fact"><div class="v">PT · ES · EN</div><div class="l">atendimento para grupos</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">03 · Formatos</div>
+          <div><h2>Formatos de evento que <em>funcionam bem</em>.</h2></div>
+        </div>
+        <div class="formats">
+          <article class="format"><h3>Café da manhã</h3><p>Ideal para grupos, receptivos, reuniões e experiências antes do passeio pelo Parque Bondinho.</p></article>
+          <article class="format"><h3>Almoço corporativo</h3><p>Boa opção para relacionamento, celebrações, imprensa, equipes e clientes estratégicos.</p></article>
+          <article class="format"><h3>Welcome drink</h3><p>Recepção curta, elegante e direta, com caipirinhas, espumante, drinks e petiscos.</p></article>
+          <article class="format"><h3>Coquetel</h3><p>Formato flexível para lançamentos, aniversários, ativações e grupos maiores.</p></article>
+          <article class="format"><h3>Workshop</h3><p>Encontros de conteúdo, treinamento e integração com apoio de A&B.</p></article>
+          <article class="format"><h3>Experiência turística</h3><p>Roteiros com gastronomia brasileira e narrativa carioca para visitantes nacionais e internacionais.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">04 · Processo</div>
+          <div><h2>Como avançar sem <em>formulário</em>.</h2><p class="lede">A página não usa formulário. O contato é direto por WhatsApp ou e-mail, com as informações essenciais para montar a proposta.</p></div>
+        </div>
+        <div class="process">
+          <div class="step"><h3>Envie a data</h3><p>Informe data, horário e duração estimada.</p></div>
+          <div class="step"><h3>Informe o grupo</h3><p>Número de pessoas, perfil e objetivo do evento.</p></div>
+          <div class="step"><h3>Defina o formato</h3><p>Café, almoço, welcome drink, coquetel, workshop ou experiência.</p></div>
+          <div class="step"><h3>Receba a proposta</h3><p>A equipe retorna com a melhor composição possível.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">05 · Galeria</div>
+          <div><h2>Eventos e grupos com <em>alma carioca</em>.</h2></div>
+        </div>
+        <div class="gallery">
+          <figure><img src="/assets/evento-chandon-opt.webp" alt="Evento com espumante na Embaixada Carioca no Morro da Urca" loading="lazy" decoding="async"><figcaption>Recepções, ativações e celebrações.</figcaption></figure>
+          <figure><img src="/assets/grupo-amigos-opt.webp" alt="Grupo celebrando na Embaixada Carioca" loading="lazy" decoding="async"><figcaption>Grupos, aniversários e experiências.</figcaption></figure>
+          <figure><img src="/assets/musicos-ao-vivo-opt.webp" alt="Música ao vivo em evento na Embaixada Carioca" loading="lazy" decoding="async"><figcaption>Clima carioca, música e vista.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">06 · FAQ</div>
+          <div><h2>Perguntas frequentes sobre <em>eventos</em>.</h2></div>
+        </div>
+        <div class="faq" id="faq">
+          <article class="qa"><h3>A Embaixada Carioca recebe eventos corporativos?</h3><p>Sim. Recebemos empresas, agências, grupos, lançamentos, workshops, reuniões, almoços e experiências de relacionamento.</p></article>
+          <article class="qa"><h3>O espaço fica no topo do Pão de Açúcar?</h3><p>Não. A Embaixada Carioca fica no Morro da Urca, na primeira parada do Bondinho Pão de Açúcar.</p></article>
+          <article class="qa"><h3>Como peço uma proposta?</h3><p>Envie mensagem pelo WhatsApp ou e-mail com data, horário, número de pessoas e formato desejado.</p></article>
+          <article class="qa"><h3>Há cardápios para grupos?</h3><p>Sim. A equipe pode montar opções de café da manhã, almoço, coquetel, welcome drink e experiências gastronômicas.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="wrap">
+        <h2>Fale direto com a equipe de eventos.</h2>
+        <p>Sem formulário na página. O contato é direto para reduzir atrito, acelerar a resposta e qualificar melhor cada proposta.</p>
+        <div class="ctas" style="justify-content:center">
+          <a class="btn" href="https://wa.me/5521966837556?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20um%20evento%20na%20Embaixada%20Carioca." rel="noopener" target="_blank">WhatsApp de eventos</a>
+          <a class="btn secondary" href="mailto:eventos@embaixadacarioca.com.br?subject=Solicita%C3%A7%C3%A3o%20de%20evento%20-%20Embaixada%20Carioca&body=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20um%20evento%20na%20Embaixada%20Carioca.%0A%0AData%3A%0AHor%C3%A1rio%3A%0AN%C3%BAmero%20de%20pessoas%3A%0ATipo%20de%20evento%3A%0AObserva%C3%A7%C3%B5es%3A">Enviar e-mail</a>
+        </div>
+        <div class="contact-lines">
+          <span>WhatsApp: <a href="tel:+5521966837556">+55 21 96683-7556</a></span>
+          <span>E-mail: <a href="mailto:eventos@embaixadacarioca.com.br">eventos@embaixadacarioca.com.br</a></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="foot">
+      <div>
+        <h4>Embaixada Carioca</h4>
+        <p>Gastronomia brasileira no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <a href="/">Início</a>
+        <a href="/cardapio.html">Cardápio</a>
+        <a href="/como-chegar.html">Como chegar</a>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <a href="mailto:eventos@embaixadacarioca.com.br">eventos@embaixadacarioca.com.br</a>
+        <a href="https://www.instagram.com/embaixadacarioca/" rel="noopener" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
