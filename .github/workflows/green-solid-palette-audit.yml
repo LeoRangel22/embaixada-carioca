@@ -1,0 +1,61 @@
+name: Green solid palette audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - "scripts/audit_green_solid_palette.py"
+      - "assets/css/ec-green-solid-palette.css"
+      - ".github/workflows/green-solid-palette-audit.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: green-solid-palette-audit
+  cancel-in-progress: true
+
+jobs:
+  green-solid-palette-audit:
+    name: Audit green solid palette across HTML pages
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run green solid palette audit
+        run: python3 scripts/audit_green_solid_palette.py
+        continue-on-error: true
+
+      - name: Show green solid palette audit report
+        if: always()
+        run: |
+          if [ -f _audit_reports/green_solid_palette_audit_report.md ]; then
+            cat _audit_reports/green_solid_palette_audit_report.md
+          fi
+
+      - name: Upload green solid palette audit reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: green-solid-palette-audit-reports
+          path: |
+            _audit_reports/green_solid_palette_audit_report.md
+            _audit_reports/green_solid_palette_audit_report.json
+
+      - name: Commit green solid palette audit reports
+        uses: stefanzweifel/git-auto-commit-action@v5
+        if: always()
+        with:
+          commit_message: "audit: update green solid palette report"
+          file_pattern: |
+            _audit_reports/green_solid_palette_audit_report.md
+            _audit_reports/green_solid_palette_audit_report.json
