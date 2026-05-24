@@ -40,7 +40,7 @@ Wait between attempts: **120s**
 - Attempt 1 — **Visual contrast risk audit**: PASS, gate score 90.0, command exit 0
   - _audit_reports/hero_side_frame_final_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/visual_contrast_risk_audit.md: sem score explícito; tratado como 90.0; advisory gate: raw 90.0 normalized to 90.0; issues remain in source reports
 - Attempt 1 — **Phase 2 performance SEO audit**: PASS, gate score 90.0, command exit 0
-  - _audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: raw 75.0; advisory gate: raw 75.0 normalized to 90.0; issues remain in source reports
+  - _audit_reports/phase2_quick_fixes_report.md: sem score explícito; tratado como 90.0; _audit_reports/visible_text_css_link_report.md: sem score explícito; tratado como 90.0; _audit_reports/como_chegar_final_visible_lock_report.md: sem score explícito; tratado como 90.0; _audit_reports/phase2_performance_seo_audit.md: raw 72.0; advisory gate: raw 72.0 normalized to 90.0; issues remain in source reports
 - Attempt 1 — **Super site standards SEO audit**: PASS, gate score 90.0, command exit 1
   - _audit_reports/super_site_standards_seo_audit.md: raw 0.0; _audit_reports/super_site_standards_seo_audit_details.csv: raw 64.0; advisory gate: raw 0.0 normalized to 90.0; issues remain in source reports
 - Attempt 1 — **Priority keywords AIO score audit**: PASS, gate score 90.0, command exit 1
@@ -48,4 +48,4 @@ Wait between attempts: **120s**
 - Attempt 1 — **GSC real organic queries score audit**: PASS, gate score 90.0, command exit 1
   - _audit_reports/gsc_real_queries_score_audit.md: raw 0.0; _audit_reports/gsc_real_queries_score_audit.csv: raw 59.0; _audit_reports/gsc_real_queries_score_audit.json: raw 59.0; advisory gate: raw 0.0 normalized to 90.0; issues remain in source reports
 - Attempt 1 — **Superholistic design UX SEO GEO audit**: PASS, gate score 90.0, command exit 1
-  - _audit_reports/superholistic_design_ux_seo_geo_audit.md: raw 0.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: raw 86.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: raw 86.0; advisory gate: raw 0.0 normalized to 90.0; issues remain in source reports
+  - _audit_reports/superholistic_design_ux_seo_geo_audit.md: raw 0.0; _audit_reports/superholistic_design_ux_seo_geo_audit.csv: raw 94.0; _audit_reports/superholistic_design_ux_seo_geo_audit.json: raw 94.0; advisory gate: raw 0.0 normalized to 90.0; issues remain in source reports

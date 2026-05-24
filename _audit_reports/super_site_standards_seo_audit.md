@@ -3,7 +3,7 @@
 Status geral: **FAIL**
 Score mínimo: **64**
 Páginas HTML auditadas: **87**
-Findings FAIL: **53**
+Findings FAIL: **54**
 Findings totais: **267**
 
 ## Aprendizados incorporados
@@ -53,6 +53,7 @@ Findings totais: **267**
 - `roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 84
 - `en/caipirinha-com-vista-rio.html` — FAIL — score 86
 - `es/caipirinha-com-vista-rio.html` — FAIL — score 86
+- `eventos.html` — FAIL — score 86
 - `onde-comer-no-pao-de-acucar.html` — FAIL — score 86
 - `parque-bondinho-pao-de-acucar.html` — FAIL — score 86
 - `restaurante-bondinho-pao-de-acucar.html` — FAIL — score 86

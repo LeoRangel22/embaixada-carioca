@@ -62,17 +62,17 @@ Scope: existing public pages only. No new landing pages.
   - high inline style blocks: 16
 
 ## eventos.html
-- Score: 79/100
+- Score: 72/100
 - Title length: 69
-- Meta description length: 145
+- Meta description length: 152
 - Inline style blocks: 2
-- Script tags: 8
-- Images: 0
+- Script tags: 6
+- Images: 4
 - JSON-LD blocks: 1
 - Issues:
   - missing hero/image preload
   - missing consolidated CSS
-  - weak internal link coverage: cafe-da-manha.html, almoco.html, cardapio.html, como-chegar.html
+  - reservation CTA not clearly present
 
 ## guia-do-rio.html
 - Score: 82/100
@@ -87,5 +87,5 @@ Scope: existing public pages only. No new landing pages.
   - high script count: 22
 
 ## Summary
-- Average score: 83.0/100
+- Average score: 82.0/100
 - Phase 2 next fixes: reduce inline style density, normalize image loading, preserve CTAs, keep JSON-LD, and prepare performance validation.
