@@ -1,0 +1,255 @@
+/* Embaixada Carioca — Green Solid Palette Standard
+   Pattern based on the breakfast/menu green block: dark green background, cream text, yellow highlights.
+   Use for sections with solid green backgrounds across the site. */
+
+:root {
+  --ec-green-solid: #152f22;
+  --ec-green-solid-card: #1d3b2c;
+  --ec-green-solid-card-2: #203f31;
+  --ec-green-solid-text: #f6efde;
+  --ec-green-solid-muted: #dbe7d0;
+  --ec-green-solid-yellow: #ffc62e;
+  --ec-green-solid-rule: rgba(246, 239, 222, .12);
+  --ec-green-solid-rule-strong: rgba(255, 198, 46, .32);
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) {
+  background: var(--ec-green-solid) !important;
+  background-color: var(--ec-green-solid) !important;
+  color: var(--ec-green-solid-text) !important;
+  -webkit-text-fill-color: currentColor;
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) :is(h1, h2, h3, h4, h5, h6, p, li, span, small, strong, b, div) {
+  color: inherit;
+  -webkit-text-fill-color: currentColor;
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) :is(.eyebrow, .tag, .badge, .pill, .price, .n, .value, .v, .highlight, .serif, em, .check, li::before) {
+  color: var(--ec-green-solid-yellow) !important;
+  -webkit-text-fill-color: var(--ec-green-solid-yellow) !important;
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) :is(.lede, .sub, .subtitle, .description, .desc, .muted, .l, .label) {
+  color: var(--ec-green-solid-muted) !important;
+  -webkit-text-fill-color: var(--ec-green-solid-muted) !important;
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) :is(.card, .box, .info-card, .menu-card, .feature-card, .highlight-card, .note, .callout) {
+  background: var(--ec-green-solid-card) !important;
+  border-color: var(--ec-green-solid-rule) !important;
+  color: var(--ec-green-solid-text) !important;
+  -webkit-text-fill-color: currentColor;
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) :is(hr, li, .row, .line, .divider, .rule) {
+  border-color: var(--ec-green-solid-rule) !important;
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) .pill,
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) .badge {
+  background: rgba(255, 198, 46, .10) !important;
+  border: 1px solid var(--ec-green-solid-rule-strong) !important;
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) .btn {
+  background: var(--ec-green-solid-yellow) !important;
+  border-color: var(--ec-green-solid-yellow) !important;
+  color: var(--ec-green-solid) !important;
+  -webkit-text-fill-color: var(--ec-green-solid) !important;
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) .btn:hover,
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) .btn:focus-visible {
+  background: var(--ec-green-solid-text) !important;
+  border-color: var(--ec-green-solid-text) !important;
+  color: var(--ec-green-solid) !important;
+  -webkit-text-fill-color: var(--ec-green-solid) !important;
+}
