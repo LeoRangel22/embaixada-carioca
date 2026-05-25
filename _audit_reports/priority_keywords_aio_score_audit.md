@@ -18,7 +18,7 @@ Threshold: **90**
 
 | Página | Status | Score | Palavras | FAQ | OL | Restaurant Schema | VideoObject | aggregateRating |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `index.html` | FAIL | 78 | 6486 | 29 | False | True | False | 0 |
+| `index.html` | FAIL | 78 | 6524 | 29 | False | True | False | 0 |
 | `restaurante-morro-da-urca.html` | FAIL | 69 | 772 | 4 | True | True | False | 2 |
 | `cafe-da-manha.html` | FAIL | 72 | 1864 | 8 | False | True | False | 3 |
 
