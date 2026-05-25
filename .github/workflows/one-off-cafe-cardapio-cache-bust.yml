@@ -1,0 +1,79 @@
+name: one-off cafe cardapio contrast cache bust
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - ".github/workflows/one-off-cafe-cardapio-cache-bust.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: one-off-cafe-cardapio-cache-bust
+  cancel-in-progress: true
+
+jobs:
+  cafe-cardapio-cache-bust:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Force CSS refresh for cafe cardapio contrast lock
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path('cafe-da-manha.html')
+          html = path.read_text(encoding='utf-8', errors='ignore')
+          old = html
+
+          # Cache-bust the CSS file that now contains the final cardápio contrast lock.
+          html = re.sub(
+              r'href="/assets/superholistic_visual_readability_lock\.css(?:\?v=[^"]*)?"',
+              'href="/assets/superholistic_visual_readability_lock.css?v=cardapio-cafe-contrast-final-2"',
+              html,
+          )
+
+          # Also add an inline emergency lock after the external link for the current page only.
+          lock = '''
+<style id="ec-cafe-cardapio-live-contrast-fix">
+html body[data-screen-label="Café da Manhã"] main .cardapio-grid .cardapio-card:is(.cardapio-card--escuro,.cardapio-card--verde-escuro,.cardapio-card--amarelo-escuro,.cardapio-card--cafe,.cardapio-card--roxo),
+html body[data-screen-label="Café da Manhã"] main .cardapio-grid .cardapio-card:is(.cardapio-card--escuro,.cardapio-card--verde-escuro,.cardapio-card--amarelo-escuro,.cardapio-card--cafe,.cardapio-card--roxo) *{color:#f6efde!important;-webkit-text-fill-color:#f6efde!important;opacity:1!important;text-shadow:none!important;filter:none!important;mix-blend-mode:normal!important;}
+html body[data-screen-label="Café da Manhã"] main .cardapio-grid .cardapio-card:is(.cardapio-card--escuro,.cardapio-card--verde-escuro,.cardapio-card--amarelo-escuro,.cardapio-card--cafe,.cardapio-card--roxo) :is(.item-sub,.item-desc,.item-add,.cardapio-card-nota){color:#dbe7d0!important;-webkit-text-fill-color:#dbe7d0!important;opacity:1!important;}
+html body[data-screen-label="Café da Manhã"] main .cardapio-grid .cardapio-card:is(.cardapio-card--escuro,.cardapio-card--verde-escuro,.cardapio-card--amarelo-escuro,.cardapio-card--cafe,.cardapio-card--roxo) :is(.item-preco,.cardapio-destaque-mini strong,.metodo-icone){color:#ffc62e!important;-webkit-text-fill-color:#ffc62e!important;opacity:1!important;}
+html body[data-screen-label="Café da Manhã"] main .cardapio-grid .cardapio-card:is(.cardapio-card--escuro,.cardapio-card--verde-escuro,.cardapio-card--amarelo-escuro,.cardapio-card--cafe,.cardapio-card--roxo) .cardapio-lista li{border-bottom-color:rgba(246,239,222,.16)!important;}
+html body[data-screen-label="Café da Manhã"] main .cardapio-grid .cardapio-card:is(.cardapio-card--amarelo,.cardapio-card--verde,.cardapio-card--verde-agua),
+html body[data-screen-label="Café da Manhã"] main .cardapio-grid .cardapio-card:is(.cardapio-card--amarelo,.cardapio-card--verde,.cardapio-card--verde-agua) :is(h3,.item-nome){color:#00405a!important;-webkit-text-fill-color:#00405a!important;opacity:1!important;}
+html body[data-screen-label="Café da Manhã"] main .cardapio-grid .cardapio-card:is(.cardapio-card--amarelo,.cardapio-card--verde,.cardapio-card--verde-agua) :is(.item-sub,.item-desc,.item-add,.cardapio-card-nota){color:#485156!important;-webkit-text-fill-color:#485156!important;opacity:1!important;}
+html body[data-screen-label="Café da Manhã"] main .cardapio-grid .cardapio-card:is(.cardapio-card--amarelo,.cardapio-card--verde,.cardapio-card--verde-agua) .item-preco{color:#9a6500!important;-webkit-text-fill-color:#9a6500!important;opacity:1!important;}
+</style>
+'''.strip()
+          html = re.sub(r'\n?<style id="ec-cafe-cardapio-live-contrast-fix">[\s\S]*?</style>\n?', '\n', html)
+          html = html.replace('</head>', lock + '\n</head>', 1)
+
+          if html != old:
+              path.write_text(html, encoding='utf-8')
+              print('patched cafe-da-manha.html')
+          else:
+              print('no changes needed')
+
+          wf = Path('.github/workflows/one-off-cafe-cardapio-cache-bust.yml')
+          if wf.exists():
+              wf.unlink()
+              print('removed one-off workflow')
+          PY
+
+      - name: Commit cafe contrast cache bust
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "fix: force cafe cardapio contrast refresh"
+          file_pattern: |
+            cafe-da-manha.html
+            .github/workflows/one-off-cafe-cardapio-cache-bust.yml
