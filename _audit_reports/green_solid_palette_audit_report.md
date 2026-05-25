@@ -2,182 +2,142 @@
 
 Status: **WARN**
 Arquivos HTML verificados: **87**
-Páginas com sinal de fundo verde: **87**
+Páginas com fundo verde sólido real: **43**
 Páginas com CSS verde importado diretamente: **0**
 Páginas com CSS base: **7**
-Avisos: **80**
+CSS base importa padrão verde: **True**
+Avisos: **38**
 
-## Regra
-- Toda página com fundo verde sólido deve carregar o padrão `ec-green-solid-palette.css` direta ou indiretamente.
-- O padrão define fundo verde escuro, texto creme, destaques amarelos, cards internos verde mais claro e divisórias suaves.
+## Critério eficiente
+- A auditoria ignora mera declaração de variável em `:root`, como `--verde`.
+- Só conta como sinal real: `background/background-color` verde aplicado ou classes semânticas de seção verde.
+- Página coberta = importa `ec-green-solid-palette.css` diretamente ou importa `ec-stabilization-base.css` quando este já importa o padrão verde.
 
 ## Avisos
-- `404.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `almoco-morro-da-urca.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `cafe-da-manha-com-vista-rio-de-janeiro.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `cafe-da-manha-pao-de-acucar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `caipirinha-com-vista-rio.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `contato.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/almoco-morro-da-urca.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/almoco.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/breakfast-with-a-view-rio-de-janeiro.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/cafe-da-manha-pao-de-acucar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/cafe-da-manha.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/caipirinha-com-vista-rio.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/cardapio.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/contato.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/entardecer.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/eventos.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/feijoada-com-vista-rio-de-janeiro.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/feijoada.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/gastronomia-carioca.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/guia-do-rio.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/how-to-get-there.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/index.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/morro-da-urca.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/nossa-visao.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/parque-bondinho.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/por-do-sol-morro-da-urca.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/restaurant-at-urca-hill.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/restaurants-near-sugarloaf-mountain.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/roteiro-meio-dia-urca-pao-de-acucar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/sugarloaf-cable-car-park.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/sugarloaf-cable-car-restaurant.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/sunset.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `en/where-to-eat-near-sugarloaf.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `entardecer.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/almoco-morro-da-urca.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/almoco.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/atardecer.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/cafe-da-manha-pao-de-acucar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/cafe-da-manha.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/caipirinha-com-vista-rio.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/cardapio.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/como-llegar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/contato.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/desayuno-con-vista-rio-de-janeiro.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/donde-comer-cerca-del-pan-de-azucar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/entardecer.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/eventos.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/feijoada-com-vista-rio-de-janeiro.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/feijoada.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/gastronomia-carioca.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/guia-do-rio.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/index.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/morro-da-urca.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/nossa-visao.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/parque-bondinho-pan-de-azucar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/parque-bondinho.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/por-do-sol-morro-da-urca.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/restaurante-bondinho-pan-de-azucar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/restaurante-morro-da-urca.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/restaurantes-cerca-del-pan-de-azucar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `es/roteiro-meio-dia-urca-pao-de-acucar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `eventos.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `feijoada-com-vista-rio-de-janeiro.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `feijoada.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `gastronomia-carioca.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `home-preview.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `morro-da-urca.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `nossa-visao.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `offline.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `onde-comer-no-pao-de-acucar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `parque-bondinho-pao-de-acucar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `parque-bondinho.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `por-do-sol-morro-da-urca.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `restaurante-bondinho-pao-de-acucar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `restaurante-morro-da-urca.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `restaurantes-perto-do-pao-de-acucar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
-- `roteiro-meio-dia-urca-pao-de-acucar.html` — Página tem sinal de fundo verde, mas não carrega o padrão verde sólido.
+- `404.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `en/almoco.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `en/cafe-da-manha.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `en/cardapio.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `en/entardecer.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `en/eventos.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `en/feijoada.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `en/gastronomia-carioca.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `en/guia-do-rio.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `en/index.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `en/morro-da-urca.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `en/parque-bondinho.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `en/roteiro-meio-dia-urca-pao-de-acucar.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `en/sunset.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `entardecer.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `es/almoco.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `es/atardecer.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `es/cafe-da-manha.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `es/cardapio.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `es/entardecer.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `es/eventos.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `es/feijoada.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `es/gastronomia-carioca.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `es/guia-do-rio.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `es/index.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `es/morro-da-urca.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `es/parque-bondinho.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `es/roteiro-meio-dia-urca-pao-de-acucar.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `eventos.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `feijoada.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `gastronomia-carioca.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `morro-da-urca.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `offline.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `parque-bondinho.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
+- `roteiro-meio-dia-urca-pao-de-acucar.html` — Página tem fundo verde sólido real, mas não carrega o padrão verde sólido. Fonte: background declaration.
 
 ## Resumo por página
-- `404.html` — WARN — green_signal=True green_css=False base_css=False
-- `almoco-morro-da-urca.html` — WARN — green_signal=True green_css=False base_css=False
-- `almoco.html` — OK — green_signal=True green_css=False base_css=True
-- `cafe-da-manha-com-vista-rio-de-janeiro.html` — WARN — green_signal=True green_css=False base_css=False
-- `cafe-da-manha-pao-de-acucar.html` — WARN — green_signal=True green_css=False base_css=False
-- `cafe-da-manha.html` — OK — green_signal=True green_css=False base_css=True
-- `caipirinha-com-vista-rio.html` — WARN — green_signal=True green_css=False base_css=False
-- `cardapio.html` — OK — green_signal=True green_css=False base_css=True
-- `como-chegar.html` — OK — green_signal=True green_css=False base_css=True
-- `contato.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/almoco-morro-da-urca.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/almoco.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/breakfast-with-a-view-rio-de-janeiro.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/cafe-da-manha-pao-de-acucar.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/cafe-da-manha.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/caipirinha-com-vista-rio.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/cardapio.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/contato.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/entardecer.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/eventos.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/feijoada-com-vista-rio-de-janeiro.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/feijoada.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/gastronomia-carioca.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/guia-do-rio.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/how-to-get-there.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/index.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/morro-da-urca.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/nossa-visao.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/parque-bondinho.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/por-do-sol-morro-da-urca.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/restaurant-at-urca-hill.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/restaurants-near-sugarloaf-mountain.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/roteiro-meio-dia-urca-pao-de-acucar.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/sugarloaf-cable-car-park.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/sugarloaf-cable-car-restaurant.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/sunset.html` — WARN — green_signal=True green_css=False base_css=False
-- `en/where-to-eat-near-sugarloaf.html` — WARN — green_signal=True green_css=False base_css=False
-- `entardecer.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/almoco-morro-da-urca.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/almoco.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/atardecer.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/cafe-da-manha-pao-de-acucar.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/cafe-da-manha.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/caipirinha-com-vista-rio.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/cardapio.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/como-llegar.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/contato.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/desayuno-con-vista-rio-de-janeiro.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/donde-comer-cerca-del-pan-de-azucar.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/entardecer.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/eventos.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/feijoada-com-vista-rio-de-janeiro.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/feijoada.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/gastronomia-carioca.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/guia-do-rio.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/index.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/morro-da-urca.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/nossa-visao.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/parque-bondinho-pan-de-azucar.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/parque-bondinho.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/por-do-sol-morro-da-urca.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/restaurante-bondinho-pan-de-azucar.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/restaurante-morro-da-urca.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/restaurantes-cerca-del-pan-de-azucar.html` — WARN — green_signal=True green_css=False base_css=False
-- `es/roteiro-meio-dia-urca-pao-de-acucar.html` — WARN — green_signal=True green_css=False base_css=False
-- `eventos.html` — WARN — green_signal=True green_css=False base_css=False
-- `feijoada-com-vista-rio-de-janeiro.html` — WARN — green_signal=True green_css=False base_css=False
-- `feijoada.html` — WARN — green_signal=True green_css=False base_css=False
-- `gastronomia-carioca.html` — WARN — green_signal=True green_css=False base_css=False
-- `guia-do-rio.html` — OK — green_signal=True green_css=False base_css=True
-- `home-preview.html` — WARN — green_signal=True green_css=False base_css=False
-- `index.html` — OK — green_signal=True green_css=False base_css=True
-- `morro-da-urca.html` — WARN — green_signal=True green_css=False base_css=False
-- `nossa-visao.html` — WARN — green_signal=True green_css=False base_css=False
-- `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — WARN — green_signal=True green_css=False base_css=False
-- `offline.html` — WARN — green_signal=True green_css=False base_css=False
-- `onde-comer-no-pao-de-acucar.html` — WARN — green_signal=True green_css=False base_css=False
-- `parque-bondinho-pao-de-acucar.html` — WARN — green_signal=True green_css=False base_css=False
-- `parque-bondinho.html` — WARN — green_signal=True green_css=False base_css=False
-- `por-do-sol-morro-da-urca.html` — WARN — green_signal=True green_css=False base_css=False
-- `restaurante-bondinho-pao-de-acucar.html` — WARN — green_signal=True green_css=False base_css=False
-- `restaurante-morro-da-urca.html` — WARN — green_signal=True green_css=False base_css=False
-- `restaurantes-perto-do-pao-de-acucar.html` — WARN — green_signal=True green_css=False base_css=False
-- `restaurantes-romanticos-rio-de-janeiro.html` — OK — green_signal=True green_css=False base_css=True
-- `roteiro-meio-dia-urca-pao-de-acucar.html` — WARN — green_signal=True green_css=False base_css=False
+- `404.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `almoco-morro-da-urca.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `almoco.html` — OK — green_signal=True source=background declaration direct_green_css=False base_css=True covered=True
+- `cafe-da-manha-com-vista-rio-de-janeiro.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `cafe-da-manha-pao-de-acucar.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `cafe-da-manha.html` — OK — green_signal=True source=background declaration direct_green_css=False base_css=True covered=True
+- `caipirinha-com-vista-rio.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `cardapio.html` — OK — green_signal=True source=background declaration direct_green_css=False base_css=True covered=True
+- `como-chegar.html` — OK — green_signal=False source=- direct_green_css=False base_css=True covered=True
+- `contato.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `en/almoco-morro-da-urca.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `en/almoco.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `en/breakfast-with-a-view-rio-de-janeiro.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `en/cafe-da-manha-pao-de-acucar.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `en/cafe-da-manha.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `en/caipirinha-com-vista-rio.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `en/cardapio.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `en/contato.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `en/entardecer.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `en/eventos.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `en/feijoada-com-vista-rio-de-janeiro.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `en/feijoada.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `en/gastronomia-carioca.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `en/guia-do-rio.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `en/how-to-get-there.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `en/index.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `en/morro-da-urca.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `en/nossa-visao.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `en/parque-bondinho.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `en/por-do-sol-morro-da-urca.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `en/restaurant-at-urca-hill.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `en/restaurants-near-sugarloaf-mountain.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `en/roteiro-meio-dia-urca-pao-de-acucar.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `en/sugarloaf-cable-car-park.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `en/sugarloaf-cable-car-restaurant.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `en/sunset.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `en/where-to-eat-near-sugarloaf.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `entardecer.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `es/almoco-morro-da-urca.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `es/almoco.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `es/atardecer.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `es/cafe-da-manha-pao-de-acucar.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `es/cafe-da-manha.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `es/caipirinha-com-vista-rio.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `es/cardapio.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `es/como-llegar.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `es/contato.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `es/desayuno-con-vista-rio-de-janeiro.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `es/donde-comer-cerca-del-pan-de-azucar.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `es/entardecer.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `es/eventos.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `es/feijoada-com-vista-rio-de-janeiro.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `es/feijoada.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `es/gastronomia-carioca.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `es/guia-do-rio.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `es/index.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `es/morro-da-urca.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `es/nossa-visao.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `es/parque-bondinho-pan-de-azucar.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `es/parque-bondinho.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `es/por-do-sol-morro-da-urca.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `es/restaurante-bondinho-pan-de-azucar.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `es/restaurante-morro-da-urca.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `es/restaurantes-cerca-del-pan-de-azucar.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `es/roteiro-meio-dia-urca-pao-de-acucar.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `eventos.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `feijoada-com-vista-rio-de-janeiro.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `feijoada.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `gastronomia-carioca.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `guia-do-rio.html` — OK — green_signal=True source=background declaration direct_green_css=False base_css=True covered=True
+- `home-preview.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `index.html` — OK — green_signal=True source=background declaration direct_green_css=False base_css=True covered=True
+- `morro-da-urca.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `nossa-visao.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `offline.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `onde-comer-no-pao-de-acucar.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `parque-bondinho-pao-de-acucar.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `parque-bondinho.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
+- `por-do-sol-morro-da-urca.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `restaurante-bondinho-pao-de-acucar.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `restaurante-morro-da-urca.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `restaurantes-perto-do-pao-de-acucar.html` — OK — green_signal=False source=- direct_green_css=False base_css=False covered=False
+- `restaurantes-romanticos-rio-de-janeiro.html` — OK — green_signal=False source=- direct_green_css=False base_css=True covered=True
+- `roteiro-meio-dia-urca-pao-de-acucar.html` — WARN — green_signal=True source=background declaration direct_green_css=False base_css=False covered=False
