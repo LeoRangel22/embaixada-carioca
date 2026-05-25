@@ -241,3 +241,57 @@ a[href*="whatsapp"]{
   background:var(--ec-gold) !important;
   color:var(--ec-ink) !important;
 }
+
+/* 10) Cardápio do café: correção específica para os cards ruins do print.
+   Deve vencer CSS legado, inline e locks anteriores sem alterar os cards claros. */
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--escuro,.cardapio-card--verde-escuro,.cardapio-card--amarelo-escuro,.cardapio-card--cafe,.cardapio-card--roxo),
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--escuro,.cardapio-card--verde-escuro,.cardapio-card--amarelo-escuro,.cardapio-card--cafe,.cardapio-card--roxo) *{
+  color:#f6efde !important;
+  -webkit-text-fill-color:#f6efde !important;
+  opacity:1 !important;
+  text-shadow:none !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+}
+
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--escuro,.cardapio-card--verde-escuro,.cardapio-card--amarelo-escuro,.cardapio-card--cafe,.cardapio-card--roxo) :is(.cardapio-card-nota,.item-sub,.item-desc,.item-add){
+  color:#dbe7d0 !important;
+  -webkit-text-fill-color:#dbe7d0 !important;
+  opacity:1 !important;
+}
+
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--escuro,.cardapio-card--verde-escuro,.cardapio-card--amarelo-escuro,.cardapio-card--cafe,.cardapio-card--roxo) :is(.item-preco,.cardapio-destaque-mini strong,.metodo-icone){
+  color:#ffc62e !important;
+  -webkit-text-fill-color:#ffc62e !important;
+  opacity:1 !important;
+}
+
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--escuro,.cardapio-card--verde-escuro,.cardapio-card--amarelo-escuro,.cardapio-card--cafe,.cardapio-card--roxo) .cardapio-lista li{
+  border-bottom-color:rgba(246,239,222,.16) !important;
+}
+
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--amarelo,.cardapio-card--verde,.cardapio-card--verde-agua),
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--amarelo,.cardapio-card--verde,.cardapio-card--verde-agua) :is(h3,.item-nome){
+  color:#00405a !important;
+  -webkit-text-fill-color:#00405a !important;
+  opacity:1 !important;
+}
+
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--amarelo,.cardapio-card--verde,.cardapio-card--verde-agua) :is(.item-sub,.item-desc,.item-add,.cardapio-card-nota){
+  color:#485156 !important;
+  -webkit-text-fill-color:#485156 !important;
+  opacity:1 !important;
+}
+
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--amarelo,.cardapio-card--verde,.cardapio-card--verde-agua) .item-preco{
+  color:#9a6500 !important;
+  -webkit-text-fill-color:#9a6500 !important;
+  opacity:1 !important;
+}
+
+html body main .cardapio-grid .cardapio-card--verde-agua .cardapio-lista--2col li{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) auto !important;
+  gap:.5rem !important;
+  align-items:baseline !important;
+}
