@@ -1,6 +1,7 @@
 name: one-off P0 site fixes
 
 on:
+  workflow_dispatch:
   push:
     branches: [master]
     paths:
@@ -108,14 +109,12 @@ jobs:
               report.extend(['  - `' + item + '`' for item in remaining])
           else:
               report.append('  - none')
-          (report_dir / 'p0_site_fixes_report.md').write_text('\n'.join(report) + '\n', encoding='utf-8')
-          changed.append(str(report_dir / 'p0_site_fixes_report.md'))
+          report_path = report_dir / 'p0_site_fixes_report.md'
+          old_report = read(report_path) if report_path.exists() else ''
+          new_report = '\n'.join(report) + '\n'
+          write_if_changed(report_path, old_report, new_report)
 
-          wf = root / '.github/workflows/one-off-p0-site-fixes.yml'
-          if wf.exists():
-              wf.unlink()
-              changed.append(str(wf))
-
+          # Do NOT delete this workflow: master has deletion protection enabled.
           print('P0 changed files:')
           for item in sorted(set(changed)):
               print('-', item)
@@ -126,7 +125,7 @@ jobs:
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add cafe-da-manha.html assets/js/ec-cafe-cardapio-runtime-contrast.js _audit_reports/p0_site_fixes_report.md .github/workflows/one-off-p0-site-fixes.yml '**/*.html' || true
+          git add -A
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
