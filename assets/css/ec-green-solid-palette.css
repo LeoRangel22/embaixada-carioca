@@ -253,3 +253,127 @@
   color: var(--ec-green-solid) !important;
   -webkit-text-fill-color: var(--ec-green-solid) !important;
 }
+
+/* EC Breakfast/Cardapio contrast lock
+   Fixes low-contrast menu cards on the breakfast cardápio grid. */
+.cardapio-card--escuro,
+.cardapio-card--verde-escuro,
+.cardapio-card--roxo,
+.cardapio-card--amarelo-escuro,
+.cardapio-card--cafe {
+  color: var(--ec-green-solid-text) !important;
+  -webkit-text-fill-color: var(--ec-green-solid-text) !important;
+}
+
+.cardapio-card--escuro .cardapio-card-header h3,
+.cardapio-card--verde-escuro .cardapio-card-header h3,
+.cardapio-card--roxo .cardapio-card-header h3,
+.cardapio-card--amarelo-escuro .cardapio-card-header h3,
+.cardapio-card--cafe .cardapio-card-header h3,
+.cardapio-card--escuro .item-nome,
+.cardapio-card--verde-escuro .item-nome,
+.cardapio-card--roxo .item-nome,
+.cardapio-card--amarelo-escuro .item-nome,
+.cardapio-card--cafe .item-nome {
+  color: var(--ec-green-solid-text) !important;
+  -webkit-text-fill-color: var(--ec-green-solid-text) !important;
+}
+
+.cardapio-card--escuro .cardapio-card-nota,
+.cardapio-card--verde-escuro .cardapio-card-nota,
+.cardapio-card--roxo .cardapio-card-nota,
+.cardapio-card--amarelo-escuro .cardapio-card-nota,
+.cardapio-card--cafe .cardapio-card-nota,
+.cardapio-card--escuro .item-sub,
+.cardapio-card--verde-escuro .item-sub,
+.cardapio-card--roxo .item-sub,
+.cardapio-card--amarelo-escuro .item-sub,
+.cardapio-card--cafe .item-sub,
+.cardapio-card--escuro .item-desc,
+.cardapio-card--verde-escuro .item-desc,
+.cardapio-card--roxo .item-desc,
+.cardapio-card--amarelo-escuro .item-desc,
+.cardapio-card--cafe .item-desc,
+.cardapio-card--escuro .item-add,
+.cardapio-card--verde-escuro .item-add,
+.cardapio-card--roxo .item-add,
+.cardapio-card--amarelo-escuro .item-add,
+.cardapio-card--cafe .item-add {
+  color: var(--ec-green-solid-muted) !important;
+  -webkit-text-fill-color: var(--ec-green-solid-muted) !important;
+  opacity: 1 !important;
+}
+
+.cardapio-card--escuro .item-preco,
+.cardapio-card--verde-escuro .item-preco,
+.cardapio-card--roxo .item-preco,
+.cardapio-card--amarelo-escuro .item-preco,
+.cardapio-card--cafe .item-preco,
+.cardapio-card--escuro .cardapio-destaque-mini strong,
+.cardapio-card--verde-escuro .cardapio-destaque-mini strong,
+.cardapio-card--roxo .cardapio-destaque-mini strong,
+.cardapio-card--amarelo-escuro .cardapio-destaque-mini strong,
+.cardapio-card--cafe .cardapio-destaque-mini strong {
+  color: var(--ec-green-solid-yellow) !important;
+  -webkit-text-fill-color: var(--ec-green-solid-yellow) !important;
+}
+
+.cardapio-card--escuro .cardapio-lista li,
+.cardapio-card--verde-escuro .cardapio-lista li,
+.cardapio-card--roxo .cardapio-lista li,
+.cardapio-card--amarelo-escuro .cardapio-lista li,
+.cardapio-card--cafe .cardapio-lista li {
+  border-bottom-color: var(--ec-green-solid-rule) !important;
+}
+
+.cardapio-card--amarelo,
+.cardapio-card--verde,
+.cardapio-card--verde-agua {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+}
+
+.cardapio-card--amarelo .cardapio-card-header h3,
+.cardapio-card--verde .cardapio-card-header h3,
+.cardapio-card--verde-agua .cardapio-card-header h3,
+.cardapio-card--amarelo .item-nome,
+.cardapio-card--verde .item-nome,
+.cardapio-card--verde-agua .item-nome {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+}
+
+.cardapio-card--amarelo .cardapio-card-nota,
+.cardapio-card--verde .cardapio-card-nota,
+.cardapio-card--verde-agua .cardapio-card-nota,
+.cardapio-card--amarelo .item-sub,
+.cardapio-card--verde .item-sub,
+.cardapio-card--verde-agua .item-sub,
+.cardapio-card--amarelo .item-desc,
+.cardapio-card--verde .item-desc,
+.cardapio-card--verde-agua .item-desc,
+.cardapio-card--amarelo .item-add,
+.cardapio-card--verde .item-add,
+.cardapio-card--verde-agua .item-add {
+  color: #485156 !important;
+  -webkit-text-fill-color: #485156 !important;
+  opacity: 1 !important;
+}
+
+.cardapio-card--amarelo .item-preco,
+.cardapio-card--verde .item-preco,
+.cardapio-card--verde-agua .item-preco {
+  color: #9a6500 !important;
+  -webkit-text-fill-color: #9a6500 !important;
+}
+
+.cardapio-card--verde-agua .cardapio-lista--2col {
+  gap: .2rem 1.4rem !important;
+}
+
+.cardapio-card--verde-agua .cardapio-lista--2col li {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  gap: .5rem !important;
+  align-items: baseline !important;
+}
