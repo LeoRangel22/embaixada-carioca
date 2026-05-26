@@ -1,0 +1,53 @@
+name: P1 AIO schema and meta
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - "scripts/apply_p1_aio_schema_meta.py"
+      - "scripts/audit_p1_aio_schema_meta.py"
+      - ".github/workflows/p1-aio-schema-meta.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: p1-aio-schema-meta
+  cancel-in-progress: true
+
+jobs:
+  apply-and-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Apply P1 AIO schema and meta fixes
+        run: python3 scripts/apply_p1_aio_schema_meta.py
+
+      - name: Audit P1 AIO schema and meta fixes
+        run: python3 scripts/audit_p1_aio_schema_meta.py
+
+      - name: Commit P1 AIO schema and meta fixes
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "feat: apply P1 AIO schema and meta fixes"
+          for i in 1 2 3; do
+            git pull --rebase origin master && git push origin HEAD:master && exit 0
+            git rebase --abort || true
+            sleep 3
+          done
+          exit 1
