@@ -1,0 +1,61 @@
+name: Static product schema and FAQ
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - "scripts/apply_static_product_schema_faq.py"
+      - ".github/workflows/static-product-schema-faq.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: static-product-schema-faq
+  cancel-in-progress: true
+
+jobs:
+  apply-and-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Apply static product schema and FAQ
+        id: apply
+        shell: bash
+        run: |
+          set +e
+          python3 scripts/apply_static_product_schema_faq.py
+          code=$?
+          echo "audit_exit_code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Commit static schema fixes and reports
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "feat: apply static product schema FAQ fixes"
+            for i in 1 2 3; do
+              git pull --rebase origin master && git push origin HEAD:master && break
+              git rebase --abort || true
+              sleep 3
+            done
+          fi
+
+      - name: Fail if static schema audit is not 100 percent
+        if: steps.apply.outputs.audit_exit_code != '0'
+        run: |
+          echo "Static product schema/FAQ audit did not pass 100%. Reports were committed for diagnosis."
+          exit 1
