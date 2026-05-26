@@ -85,4 +85,5 @@ jobs:
         if: steps.audit.outputs.audit_exit_code != '0'
         run: |
           echo "Audit did not pass 100%. Reports were committed for diagnosis."
+          echo "Current expected blocker after previous run: legacy AggregateRating fields in PT pages; apply script now removes them."
           exit 1
