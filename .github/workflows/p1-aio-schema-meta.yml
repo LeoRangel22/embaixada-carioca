@@ -31,10 +31,40 @@ jobs:
       - name: Apply P1 AIO schema and meta fixes
         run: python3 scripts/apply_p1_aio_schema_meta.py
 
-      - name: Audit P1 AIO schema and meta fixes
-        run: python3 scripts/audit_p1_aio_schema_meta.py
+      - name: Ensure P0 runtime is loaded by cafe-da-manha.html
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('cafe-da-manha.html')
+          if not p.exists():
+              print('cafe-da-manha.html missing; audit will report this')
+              raise SystemExit(0)
+          html = p.read_text(encoding='utf-8', errors='ignore')
+          if 'geo-proximity.js' in html:
+              print('P0 loader already present')
+              raise SystemExit(0)
+          tag = '<script defer src="/assets/geo-proximity.js?v=p0-p1-audit"></script>\n'
+          if '</body>' in html:
+              html = html.replace('</body>', tag + '</body>', 1)
+          elif '</head>' in html:
+              html = html.replace('</head>', tag + '</head>', 1)
+          else:
+              html += '\n' + tag
+          p.write_text(html, encoding='utf-8')
+          print('Inserted P0 geo-proximity loader in cafe-da-manha.html')
+          PY
 
-      - name: Commit P1 AIO schema and meta fixes
+      - name: Audit P0 and P1 AIO schema/meta fixes
+        id: audit
+        shell: bash
+        run: |
+          set +e
+          python3 scripts/audit_p1_aio_schema_meta.py
+          code=$?
+          echo "audit_exit_code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Commit audit reports and applied fixes
         run: |
           set -e
           git config user.name "github-actions[bot]"
@@ -42,12 +72,17 @@ jobs:
           git add -A
           if git diff --cached --quiet; then
             echo "No changes to commit"
-            exit 0
+          else
+            git commit -m "feat: apply and audit P0 P1 schema meta fixes"
+            for i in 1 2 3; do
+              git pull --rebase origin master && git push origin HEAD:master && break
+              git rebase --abort || true
+              sleep 3
+            done
           fi
-          git commit -m "feat: apply P1 AIO schema and meta fixes"
-          for i in 1 2 3; do
-            git pull --rebase origin master && git push origin HEAD:master && exit 0
-            git rebase --abort || true
-            sleep 3
-          done
+
+      - name: Fail if audit is not 100 percent
+        if: steps.audit.outputs.audit_exit_code != '0'
+        run: |
+          echo "Audit did not pass 100%. Reports were committed for diagnosis."
           exit 1
