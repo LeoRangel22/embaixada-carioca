@@ -3,8 +3,8 @@
 Status geral: **FAIL**
 Score mínimo: **64**
 Páginas HTML auditadas: **87**
-Findings FAIL: **54**
-Findings totais: **267**
+Findings FAIL: **48**
+Findings totais: **261**
 
 ## Aprendizados incorporados
 - Home lower contrast
@@ -31,19 +31,13 @@ Findings totais: **267**
 - `en/index.html` — FAIL — score 82
 - `es/index.html` — FAIL — score 82
 - `cafe-da-manha.html` — FAIL — score 84
-- `en/almoco.html` — FAIL — score 84
 - `en/cardapio.html` — FAIL — score 84
-- `en/eventos.html` — FAIL — score 84
 - `en/feijoada.html` — FAIL — score 84
 - `en/morro-da-urca.html` — FAIL — score 84
 - `en/roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 84
-- `en/sunset.html` — FAIL — score 84
 - `entardecer.html` — FAIL — score 84
-- `es/almoco.html` — FAIL — score 84
-- `es/atardecer.html` — FAIL — score 84
 - `es/cardapio.html` — FAIL — score 84
 - `es/entardecer.html` — FAIL — score 84
-- `es/eventos.html` — FAIL — score 84
 - `es/feijoada.html` — FAIL — score 84
 - `es/morro-da-urca.html` — FAIL — score 84
 - `es/roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 84
@@ -95,7 +89,6 @@ Findings totais: **267**
 - **WARN** `contato.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `en/almoco-morro-da-urca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `en/almoco-morro-da-urca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `en/almoco.html` — SEO/meta_description: Página sem meta description.
 - **WARN** `en/almoco.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
 - **WARN** `en/almoco.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `en/almoco.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
@@ -118,7 +111,6 @@ Findings totais: **267**
 - **WARN** `en/entardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
 - **WARN** `en/entardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `en/entardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `en/eventos.html` — SEO/meta_description: Página sem meta description.
 - **WARN** `en/eventos.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
 - **WARN** `en/eventos.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `en/eventos.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
@@ -168,7 +160,6 @@ Findings totais: **267**
 - **WARN** `en/sugarloaf-cable-car-park.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
 - **WARN** `en/sugarloaf-cable-car-restaurant.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `en/sugarloaf-cable-car-restaurant.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `en/sunset.html` — SEO/meta_description: Página sem meta description.
 - **WARN** `en/sunset.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
 - **WARN** `en/sunset.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `en/sunset.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
@@ -180,11 +171,9 @@ Findings totais: **267**
 - **WARN** `entardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
 - **WARN** `es/almoco-morro-da-urca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `es/almoco-morro-da-urca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `es/almoco.html` — SEO/meta_description: Página sem meta description.
 - **WARN** `es/almoco.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
 - **WARN** `es/almoco.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `es/almoco.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `es/atardecer.html` — SEO/meta_description: Página sem meta description.
 - **WARN** `es/atardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
 - **WARN** `es/atardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `es/atardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
@@ -212,7 +201,6 @@ Findings totais: **267**
 - **WARN** `es/entardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
 - **WARN** `es/entardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `es/entardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `es/eventos.html` — SEO/meta_description: Página sem meta description.
 - **WARN** `es/eventos.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
 - **WARN** `es/eventos.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `es/eventos.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
@@ -225,6 +213,12 @@ Findings totais: **267**
 - **WARN** `es/gastronomia-carioca.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
 - **WARN** `es/gastronomia-carioca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `es/gastronomia-carioca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `es/guia-do-rio.html` — SEO/title_length: Title fora da faixa ideal.
+- **WARN** `es/guia-do-rio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `es/guia-do-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `es/guia-do-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `es/index.html` — SEO/title_length: Title fora da faixa ideal.
+- **FAIL** `es/index.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
 
 ## Arquivos
 - `_audit_reports/super_site_standards_seo_audit.md`

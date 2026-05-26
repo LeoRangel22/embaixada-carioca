@@ -1,7 +1,7 @@
 # Superholistic Design/UX/SEO/GEO/AIO/SXO Audit
 
 Status geral: **FAIL**
-Score médio: **95.9**
+Score médio: **96.0**
 Score mínimo: **94**
 Threshold: **90**
 Páginas auditadas: **87**
@@ -10,9 +10,9 @@ Páginas auditadas: **87**
 - **Design** — média 84.4, mínimo 76
 - **UX** — média 98.8, mínimo 97
 - **Copydesk** — média 99.9, mínimo 88
-- **SEO** — média 96.4, mínimo 84
+- **SEO** — média 97.5, mínimo 84
 - **GEO** — média 100.0, mínimo 100
-- **AEO** — média 90.8, mínimo 84
+- **AEO** — média 91.0, mínimo 84
 - **AIO** — média 89.6, mínimo 72
 - **SXO** — média 100.0, mínimo 100
 - **Marketing** — média 97.9, mínimo 82
@@ -260,22 +260,6 @@ Nenhuma página abaixo de 90.
   - R2D2 fraco em Decisão.
   - R2D2 fraco em Direção.
 
-### `en/index.html` — 95
-- **Design (76)**
-  - Risco de texto creme em fundo claro.
-  - Risco de texto azul em fundo azul.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (95)**
-  - Title fora da faixa ideal: 73.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **R2D2 (93)**
-  - R2D2 fraco em Decisão.
-
 ### `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — 95
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -319,32 +303,6 @@ Nenhuma página abaixo de 90.
   - Baixa presença de termos de conversão.
 - **R2D2 (93)**
   - R2D2 fraco em Decisão.
-
-### `en/sunset.html` — 95
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-
-### `es/atardecer.html` — 95
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
 
 ### `es/feijoada.html` — 95
 - **Design (84)**
@@ -455,30 +413,6 @@ Nenhuma página abaixo de 90.
 - **Schema (80)**
   - Múltiplos aggregateRating: 2.
 
-### `en/almoco.html` — 96
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-
-### `en/eventos.html` — 96
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-
 ### `en/how-to-get-there.html` — 96
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -492,6 +426,21 @@ Nenhuma página abaixo de 90.
   - Sem cobertura literal das keywords prioritárias AIO.
 - **Marketing (90)**
   - Baixa presença de termos de conversão.
+- **R2D2 (93)**
+  - R2D2 fraco em Decisão.
+
+### `en/index.html` — 96
+- **Design (76)**
+  - Risco de texto creme em fundo claro.
+  - Risco de texto azul em fundo azul.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **SEO (95)**
+  - Title fora da faixa ideal: 73.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
 - **R2D2 (93)**
   - R2D2 fraco em Decisão.
 
@@ -559,6 +508,17 @@ Nenhuma página abaixo de 90.
 - **R2D2 (93)**
   - R2D2 fraco em Decisão.
 
+### `en/sunset.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **AEO (84)**
+  - FAQ visual sem FAQPage JSON-LD.
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+
 ### `en/where-to-eat-near-sugarloaf.html` — 96
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -598,17 +558,16 @@ Nenhuma página abaixo de 90.
 - **AIO (90)**
   - Sem cobertura literal das keywords prioritárias AIO.
 
-### `es/almoco.html` — 96
+### `es/atardecer.html` — 96
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (92)**
+- **AEO (84)**
+  - FAQ visual sem FAQPage JSON-LD.
   - Faltam respostas diretas transacionais.
-- **AIO (95)**
-  - Sem VideoObject em página de experiência/produto.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
 
 ### `es/cafe-da-manha-pao-de-acucar.html` — 96
 - **Design (84)**
@@ -695,18 +654,6 @@ Nenhuma página abaixo de 90.
 - **AIO (90)**
   - Sem cobertura literal das keywords prioritárias AIO.
 
-### `es/eventos.html` — 96
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **SEO (84)**
-  - Sem meta description.
-- **AEO (92)**
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-
 ### `es/feijoada-com-vista-rio-de-janeiro.html` — 96
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -727,8 +674,7 @@ Nenhuma página abaixo de 90.
   - Sem CSS global de estabilização/contraste.
 - **SEO (95)**
   - Title fora da faixa ideal: 88.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
+- **AEO (92)**
   - Faltam respostas diretas transacionais.
 - **AIO (95)**
   - Sem VideoObject em página de experiência/produto.
@@ -949,6 +895,16 @@ Nenhuma página abaixo de 90.
 - **Schema (80)**
   - Múltiplos aggregateRating: 3.
 
+### `en/almoco.html` — 97
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+
 ### `en/cafe-da-manha.html` — 97
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -961,6 +917,16 @@ Nenhuma página abaixo de 90.
   - Sem VideoObject em página de experiência/produto.
 
 ### `en/entardecer.html` — 97
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+
+### `en/eventos.html` — 97
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
@@ -1016,6 +982,16 @@ Nenhuma página abaixo de 90.
   - Faltam respostas diretas transacionais.
 - **AIO (95)**
   - Sem VideoObject em página de experiência/produto.
+
+### `es/eventos.html` — 97
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
 
 ### `es/guia-do-rio.html` — 97
 - **Design (84)**
@@ -1121,6 +1097,16 @@ Nenhuma página abaixo de 90.
   - Opacity baixa detectada; validar texto real.
 - **UX (97)**
   - Sem skip-nav detectado.
+- **AIO (95)**
+  - Sem VideoObject em página de experiência/produto.
+
+### `es/almoco.html` — 98
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
 - **AIO (95)**
   - Sem VideoObject em página de experiência/produto.
 

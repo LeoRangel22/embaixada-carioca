@@ -1,7 +1,7 @@
 {
   "status": "FAIL",
   "threshold": 90,
-  "average_score": 95.9,
+  "average_score": 96.0,
   "min_score": 94,
   "dimensions": [
     "Design",
@@ -1089,7 +1089,7 @@
     {
       "page": "en/almoco.html",
       "status": "PASS",
-      "score": 96,
+      "score": 97,
       "word_count": 1502,
       "h1_count": 1,
       "h2_count": 10,
@@ -1138,10 +1138,8 @@
         },
         {
           "dimension": "SEO",
-          "score": 84,
-          "findings": [
-            "Sem meta description."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "GEO",
@@ -1899,7 +1897,7 @@
     {
       "page": "en/eventos.html",
       "status": "PASS",
-      "score": 96,
+      "score": 97,
       "word_count": 1247,
       "h1_count": 1,
       "h2_count": 7,
@@ -1949,10 +1947,8 @@
         },
         {
           "dimension": "SEO",
-          "score": 84,
-          "findings": [
-            "Sem meta description."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "GEO",
@@ -2500,7 +2496,7 @@
     {
       "page": "en/index.html",
       "status": "PASS",
-      "score": 95,
+      "score": 96,
       "word_count": 5666,
       "h1_count": 1,
       "h2_count": 22,
@@ -2508,8 +2504,10 @@
       "internal_links": 46,
       "cta_links": 47,
       "jsonld_types": [
+        "Answer",
         "BreadcrumbList",
         "ContactPoint",
+        "FAQPage",
         "FoodEstablishment",
         "GeoCoordinates",
         "ListItem",
@@ -2522,6 +2520,7 @@
         "OpeningHoursSpecification",
         "Organization",
         "PostalAddress",
+        "Question",
         "ReserveAction",
         "Restaurant",
         "TouristAttraction",
@@ -2562,9 +2561,8 @@
         },
         {
           "dimension": "AEO",
-          "score": 84,
+          "score": 92,
           "findings": [
-            "FAQ visual sem FAQPage JSON-LD.",
             "Faltam respostas diretas transacionais."
           ]
         },
@@ -3627,7 +3625,7 @@
     {
       "page": "en/sunset.html",
       "status": "PASS",
-      "score": 95,
+      "score": 96,
       "word_count": 1228,
       "h1_count": 1,
       "h2_count": 8,
@@ -3675,10 +3673,8 @@
         },
         {
           "dimension": "SEO",
-          "score": 84,
-          "findings": [
-            "Sem meta description."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "GEO",
@@ -4030,7 +4026,7 @@
     {
       "page": "es/almoco.html",
       "status": "PASS",
-      "score": 96,
+      "score": 98,
       "word_count": 1210,
       "h1_count": 1,
       "h2_count": 8,
@@ -4079,10 +4075,8 @@
         },
         {
           "dimension": "SEO",
-          "score": 84,
-          "findings": [
-            "Sem meta description."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "GEO",
@@ -4133,7 +4127,7 @@
     {
       "page": "es/atardecer.html",
       "status": "PASS",
-      "score": 95,
+      "score": 96,
       "word_count": 1235,
       "h1_count": 1,
       "h2_count": 8,
@@ -4181,10 +4175,8 @@
         },
         {
           "dimension": "SEO",
-          "score": 84,
-          "findings": [
-            "Sem meta description."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "GEO",
@@ -5120,7 +5112,7 @@
     {
       "page": "es/eventos.html",
       "status": "PASS",
-      "score": 96,
+      "score": 97,
       "word_count": 1247,
       "h1_count": 1,
       "h2_count": 7,
@@ -5172,10 +5164,8 @@
         },
         {
           "dimension": "SEO",
-          "score": 84,
-          "findings": [
-            "Sem meta description."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "GEO",
@@ -5630,8 +5620,10 @@
       "internal_links": 46,
       "cta_links": 46,
       "jsonld_types": [
+        "Answer",
         "BreadcrumbList",
         "ContactPoint",
+        "FAQPage",
         "FoodEstablishment",
         "GeoCoordinates",
         "ListItem",
@@ -5644,6 +5636,7 @@
         "OpeningHoursSpecification",
         "Organization",
         "PostalAddress",
+        "Question",
         "ReserveAction",
         "Restaurant",
         "TouristAttraction",
@@ -5684,9 +5677,8 @@
         },
         {
           "dimension": "AEO",
-          "score": 84,
+          "score": 92,
           "findings": [
-            "FAQ visual sem FAQPage JSON-LD.",
             "Faltam respostas diretas transacionais."
           ]
         },
@@ -6737,6 +6729,7 @@
         "OpeningHoursSpecification",
         "PostalAddress",
         "Question",
+        "ReserveAction",
         "Restaurant",
         "Service",
         "WebPage"
