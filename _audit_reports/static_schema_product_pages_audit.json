@@ -11,7 +11,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -31,7 +31,7 @@
         "reviewCount",
         "worstRating"
       ],
-      "changed": true,
+      "changed": false,
       "warnings": [
         "forbidden rating/review terms found"
       ]
@@ -53,7 +53,7 @@
         "reviewCount",
         "worstRating"
       ],
-      "changed": true,
+      "changed": false,
       "warnings": [
         "forbidden rating/review terms found"
       ]
@@ -75,7 +75,7 @@
         "reviewCount",
         "worstRating"
       ],
-      "changed": true,
+      "changed": false,
       "warnings": [
         "forbidden rating/review terms found"
       ]
@@ -97,7 +97,7 @@
         "reviewCount",
         "worstRating"
       ],
-      "changed": true,
+      "changed": false,
       "warnings": [
         "forbidden rating/review terms found"
       ]
@@ -119,7 +119,7 @@
         "reviewCount",
         "worstRating"
       ],
-      "changed": true,
+      "changed": false,
       "warnings": [
         "forbidden rating/review terms found"
       ]
@@ -141,7 +141,7 @@
         "reviewCount",
         "worstRating"
       ],
-      "changed": true,
+      "changed": false,
       "warnings": [
         "forbidden rating/review terms found"
       ]
@@ -156,7 +156,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -169,7 +169,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -182,7 +182,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -195,7 +195,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -208,7 +208,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -221,7 +221,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -234,7 +234,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -247,7 +247,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     }
   ]

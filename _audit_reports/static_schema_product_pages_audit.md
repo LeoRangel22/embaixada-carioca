@@ -9,30 +9,30 @@ Status geral: **FAIL**
 - Páginas inexistentes são marcadas como SKIP, não como FAIL.
 
 ## Resultados por página
-- `eventos.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `cardapio.html` — **FAIL** — Restaurant=True — FAQ=True (8) — changed=True
+- `eventos.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `cardapio.html` — **FAIL** — Restaurant=True — FAQ=True (8) — changed=False
   - forbidden: AggregateRating, aggregateRating, bestRating, ratingValue, reviewCount, worstRating
   - forbidden rating/review terms found
-- `almoco.html` — **FAIL** — Restaurant=True — FAQ=True (8) — changed=True
+- `almoco.html` — **FAIL** — Restaurant=True — FAQ=True (8) — changed=False
   - forbidden: AggregateRating, aggregateRating, bestRating, ratingValue, reviewCount, worstRating
   - forbidden rating/review terms found
-- `entardecer.html` — **FAIL** — Restaurant=True — FAQ=True (8) — changed=True
+- `entardecer.html` — **FAIL** — Restaurant=True — FAQ=True (8) — changed=False
   - forbidden: AggregateRating, aggregateRating, bestRating, ratingValue, reviewCount, worstRating
   - forbidden rating/review terms found
-- `feijoada.html` — **FAIL** — Restaurant=True — FAQ=True (8) — changed=True
+- `feijoada.html` — **FAIL** — Restaurant=True — FAQ=True (8) — changed=False
   - forbidden: AggregateRating, aggregateRating, bestRating, ratingValue, reviewCount, worstRating
   - forbidden rating/review terms found
-- `cafe-da-manha.html` — **FAIL** — Restaurant=True — FAQ=True (8) — changed=True
+- `cafe-da-manha.html` — **FAIL** — Restaurant=True — FAQ=True (8) — changed=False
   - forbidden: AggregateRating, aggregateRating, bestRating, ratingValue, reviewCount, worstRating
   - forbidden rating/review terms found
-- `morro-da-urca.html` — **FAIL** — Restaurant=True — FAQ=True (8) — changed=True
+- `morro-da-urca.html` — **FAIL** — Restaurant=True — FAQ=True (8) — changed=False
   - forbidden: AggregateRating, aggregateRating, bestRating, ratingValue, reviewCount, worstRating
   - forbidden rating/review terms found
-- `en/sunset.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `en/cardapio.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `en/almoco.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `en/morro-da-urca.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `es/atardecer.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `es/cardapio.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `es/almoco.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `es/morro-da-urca.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
+- `en/sunset.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `en/cardapio.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `en/almoco.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `en/morro-da-urca.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `es/atardecer.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `es/cardapio.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `es/almoco.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `es/morro-da-urca.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
