@@ -5,6 +5,7 @@ Scope:
 - FAQPage schema on PT/EN/ES home pages.
 - Restaurant schema on critical conversion/product pages.
 - Meta description normalization on the same priority pages.
+- Removal of forbidden rating/review fields from JSON-LD.
 
 Rules:
 - Do not add aggregateRating, reviewCount, ratingValue, or Google review-derived ratings.
@@ -22,6 +23,9 @@ ROOT = Path(__file__).resolve().parents[1]
 BLOCK_START = "<!-- EC P1 AIO Schema + Meta Fix -->"
 BLOCK_END = "<!-- /EC P1 AIO Schema + Meta Fix -->"
 SITE = "https://www.embaixadacarioca.com"
+FORBIDDEN_RATING_TERMS = {"aggregateRating", "ratingValue", "reviewCount", "ratingCount", "bestRating", "worstRating"}
+FORBIDDEN_TYPE_VALUES = {"AggregateRating"}
+JSONLD_RE = re.compile(r'<script\s+([^>]*)type=["\']application/ld\+json["\']([^>]*)>(.*?)</script>', re.I | re.S)
 
 RESTAURANT_BASE: dict[str, Any] = {
     "@type": "Restaurant",
@@ -46,14 +50,8 @@ RESTAURANT_BASE: dict[str, Any] = {
         {"@type": "LocationFeatureSpecification", "name": "Dentro do Parque Bondinho Pão de Açúcar", "value": True},
         {"@type": "LocationFeatureSpecification", "name": "Atendimento para grupos e eventos", "value": True},
     ],
-    "sameAs": [
-        "https://www.instagram.com/embaixadacarioca/",
-        "https://www.wikidata.org/wiki/Q8678",
-    ],
-    "potentialAction": {
-        "@type": "ReserveAction",
-        "target": "https://go.tagme.com.br/embaixadacarioca",
-    },
+    "sameAs": ["https://www.instagram.com/embaixadacarioca/"],
+    "potentialAction": {"@type": "ReserveAction", "target": "https://go.tagme.com.br/embaixadacarioca"},
 }
 
 FAQS = {
@@ -90,113 +88,68 @@ FAQS = {
 }
 
 PAGES: dict[str, dict[str, Any]] = {
-    "index.html": {
-        "lang": "pt",
-        "meta": "Restaurante no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com café da manhã, almoço, caipirinhas, chope e eventos com vista.",
-        "faq": True,
-        "restaurant": True,
-        "url": SITE + "/",
-    },
-    "en/index.html": {
-        "lang": "en",
-        "meta": "Restaurant on Morro da Urca inside Sugarloaf Cable Car Park, serving breakfast, lunch, caipirinhas, draft beer and events with a view.",
-        "faq": True,
-        "restaurant": True,
-        "url": SITE + "/en/",
-    },
-    "es/index.html": {
-        "lang": "es",
-        "meta": "Restaurante en Morro da Urca dentro del Parque Bondinho Pão de Açúcar, con desayuno, almuerzo, caipirinhas y eventos con vista.",
-        "faq": True,
-        "restaurant": True,
-        "url": SITE + "/es/",
-    },
-    "eventos.html": {
-        "lang": "pt",
-        "meta": "Eventos corporativos, grupos e celebrações no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com gastronomia carioca e vista.",
-        "restaurant": True,
-        "url": SITE + "/eventos.html",
-    },
-    "cardapio.html": {
-        "lang": "pt",
-        "meta": "Cardápio da Embaixada Carioca no Morro da Urca: café da manhã, almoço, pratos brasileiros, caipirinhas, chope e petiscos.",
-        "restaurant": True,
-        "url": SITE + "/cardapio.html",
-    },
-    "almoco.html": {
-        "lang": "pt",
-        "meta": "Almoço brasileiro no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com picanha, feijoada, bobó, caipirinhas e vista.",
-        "restaurant": True,
-        "url": SITE + "/almoco.html",
-    },
-    "cafe-da-manha.html": {
-        "lang": "pt",
-        "meta": "Café da manhã no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com experiência carioca, pães, frutas, bebidas e vista.",
-        "restaurant": True,
-        "url": SITE + "/cafe-da-manha.html",
-    },
-    "entardecer.html": {
-        "lang": "pt",
-        "meta": "Entardecer no Morro da Urca com caipirinhas, chope, petiscos e vista no Parque Bondinho Pão de Açúcar.",
-        "restaurant": True,
-        "url": SITE + "/entardecer.html",
-    },
-    "en/eventos.html": {
-        "lang": "en",
-        "meta": "Corporate events, groups and celebrations at Morro da Urca inside Sugarloaf Cable Car Park, with Brazilian food and views.",
-        "restaurant": True,
-        "url": SITE + "/en/eventos.html",
-    },
-    "en/almoco.html": {
-        "lang": "en",
-        "meta": "Brazilian lunch on Morro da Urca inside Sugarloaf Cable Car Park, with picanha, feijoada, shrimp bobó, caipirinhas and views.",
-        "restaurant": True,
-        "url": SITE + "/en/almoco.html",
-    },
-    "en/cafe-da-manha.html": {
-        "lang": "en",
-        "meta": "Breakfast on Morro da Urca inside Sugarloaf Cable Car Park, with Brazilian flavors, fruit, breads, hot drinks and views.",
-        "restaurant": True,
-        "url": SITE + "/en/cafe-da-manha.html",
-    },
-    "en/sunset.html": {
-        "lang": "en",
-        "meta": "Sunset at Morro da Urca with caipirinhas, draft beer, snacks and views inside Sugarloaf Cable Car Park.",
-        "restaurant": True,
-        "url": SITE + "/en/sunset.html",
-    },
-    "es/eventos.html": {
-        "lang": "es",
-        "meta": "Eventos corporativos, grupos y celebraciones en Morro da Urca, dentro del Parque Bondinho Pão de Açúcar, con gastronomía y vista.",
-        "restaurant": True,
-        "url": SITE + "/es/eventos.html",
-    },
-    "es/almoco.html": {
-        "lang": "es",
-        "meta": "Almuerzo brasileño en Morro da Urca, dentro del Parque Bondinho Pão de Açúcar, con picanha, feijoada, bobó, caipirinhas y vista.",
-        "restaurant": True,
-        "url": SITE + "/es/almoco.html",
-    },
-    "es/cafe-da-manha.html": {
-        "lang": "es",
-        "meta": "Desayuno en Morro da Urca, dentro del Parque Bondinho Pão de Açúcar, con sabores brasileños, frutas, panes, bebidas y vista.",
-        "restaurant": True,
-        "url": SITE + "/es/cafe-da-manha.html",
-    },
-    "es/atardecer.html": {
-        "lang": "es",
-        "meta": "Atardecer en Morro da Urca con caipirinhas, chope, petiscos y vista dentro del Parque Bondinho Pão de Açúcar.",
-        "restaurant": True,
-        "url": SITE + "/es/atardecer.html",
-    },
+    "index.html": {"lang": "pt", "meta": "Restaurante no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com café da manhã, almoço, caipirinhas, chope e eventos com vista.", "faq": True, "restaurant": True, "url": SITE + "/"},
+    "en/index.html": {"lang": "en", "meta": "Restaurant on Morro da Urca inside Sugarloaf Cable Car Park, serving breakfast, lunch, caipirinhas, draft beer and events with a view.", "faq": True, "restaurant": True, "url": SITE + "/en/"},
+    "es/index.html": {"lang": "es", "meta": "Restaurante en Morro da Urca dentro del Parque Bondinho Pão de Açúcar, con desayuno, almuerzo, caipirinhas y eventos con vista.", "faq": True, "restaurant": True, "url": SITE + "/es/"},
+    "eventos.html": {"lang": "pt", "meta": "Eventos corporativos, grupos e celebrações no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com gastronomia carioca e vista.", "restaurant": True, "url": SITE + "/eventos.html"},
+    "cardapio.html": {"lang": "pt", "meta": "Cardápio da Embaixada Carioca no Morro da Urca: café da manhã, almoço, pratos brasileiros, caipirinhas, chope e petiscos.", "restaurant": True, "url": SITE + "/cardapio.html"},
+    "almoco.html": {"lang": "pt", "meta": "Almoço brasileiro no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com picanha, feijoada, bobó, caipirinhas e vista.", "restaurant": True, "url": SITE + "/almoco.html"},
+    "cafe-da-manha.html": {"lang": "pt", "meta": "Café da manhã no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com experiência carioca, pães, frutas, bebidas e vista.", "restaurant": True, "url": SITE + "/cafe-da-manha.html"},
+    "entardecer.html": {"lang": "pt", "meta": "Entardecer no Morro da Urca com caipirinhas, chope, petiscos e vista no Parque Bondinho Pão de Açúcar.", "restaurant": True, "url": SITE + "/entardecer.html"},
+    "en/eventos.html": {"lang": "en", "meta": "Corporate events, groups and celebrations at Morro da Urca inside Sugarloaf Cable Car Park, with Brazilian food and views.", "restaurant": True, "url": SITE + "/en/eventos.html"},
+    "en/almoco.html": {"lang": "en", "meta": "Brazilian lunch on Morro da Urca inside Sugarloaf Cable Car Park, with picanha, feijoada, shrimp bobó, caipirinhas and views.", "restaurant": True, "url": SITE + "/en/almoco.html"},
+    "en/cafe-da-manha.html": {"lang": "en", "meta": "Breakfast on Morro da Urca inside Sugarloaf Cable Car Park, with Brazilian flavors, fruit, breads, hot drinks and views.", "restaurant": True, "url": SITE + "/en/cafe-da-manha.html"},
+    "en/sunset.html": {"lang": "en", "meta": "Sunset at Morro da Urca with caipirinhas, draft beer, snacks and views inside Sugarloaf Cable Car Park.", "restaurant": True, "url": SITE + "/en/sunset.html"},
+    "es/eventos.html": {"lang": "es", "meta": "Eventos corporativos, grupos y celebraciones en Morro da Urca, dentro del Parque Bondinho Pão de Açúcar, con gastronomía y vista.", "restaurant": True, "url": SITE + "/es/eventos.html"},
+    "es/almoco.html": {"lang": "es", "meta": "Almuerzo brasileño en Morro da Urca, dentro del Parque Bondinho Pão de Açúcar, con picanha, feijoada, bobó, caipirinhas y vista.", "restaurant": True, "url": SITE + "/es/almoco.html"},
+    "es/cafe-da-manha.html": {"lang": "es", "meta": "Desayuno en Morro da Urca, dentro del Parque Bondinho Pão de Açúcar, con sabores brasileños, frutas, panes, bebidas y vista.", "restaurant": True, "url": SITE + "/es/cafe-da-manha.html"},
+    "es/atardecer.html": {"lang": "es", "meta": "Atardecer en Morro da Urca con caipirinhas, chope, petiscos y vista dentro del Parque Bondinho Pão de Açúcar.", "restaurant": True, "url": SITE + "/es/atardecer.html"},
 }
-
-FORBIDDEN_RATING_TERMS = ("aggregateRating", "ratingValue", "reviewCount", "ratingCount", "bestRating", "worstRating")
 
 
 def strip_old_block(source: str) -> str:
-    pattern = re.compile(re.escape(BLOCK_START) + r"[\s\S]*?" + re.escape(BLOCK_END) + r"\s*", re.I)
-    return pattern.sub("", source)
+    return re.sub(re.escape(BLOCK_START) + r"[\s\S]*?" + re.escape(BLOCK_END) + r"\s*", "", source, flags=re.I)
+
+
+def clean_jsonld_obj(obj: Any) -> Any:
+    if isinstance(obj, dict):
+        typ = obj.get("@type")
+        if typ in FORBIDDEN_TYPE_VALUES or (isinstance(typ, list) and any(t in FORBIDDEN_TYPE_VALUES for t in typ)):
+            return None
+        cleaned: dict[str, Any] = {}
+        for key, value in obj.items():
+            if key in FORBIDDEN_RATING_TERMS:
+                continue
+            next_value = clean_jsonld_obj(value)
+            if next_value is None:
+                continue
+            if isinstance(next_value, list) and not next_value:
+                continue
+            cleaned[key] = next_value
+        return cleaned
+    if isinstance(obj, list):
+        return [item for item in (clean_jsonld_obj(v) for v in obj) if item is not None]
+    return obj
+
+
+def sanitize_existing_jsonld(source: str) -> str:
+    def repl(match: re.Match[str]) -> str:
+        raw = match.group(3).strip()
+        try:
+            obj = json.loads(raw)
+        except Exception:
+            return match.group(0)
+        cleaned = clean_jsonld_obj(obj)
+        if cleaned is None:
+            return ""
+        serialized = json.dumps(cleaned, ensure_ascii=False, separators=(",", ":"))
+        for term in list(FORBIDDEN_RATING_TERMS) + list(FORBIDDEN_TYPE_VALUES):
+            if term in serialized:
+                raise ValueError(f"Forbidden rating term remains after sanitization: {term}")
+        attrs = (match.group(1) + match.group(2)).strip()
+        attrs = (attrs + " ") if attrs else ""
+        return f'<script {attrs}type="application/ld+json">{serialized}</script>'
+    return JSONLD_RE.sub(repl, source)
 
 
 def update_meta_description(source: str, description: str) -> str:
@@ -211,18 +164,7 @@ def update_meta_description(source: str, description: str) -> str:
 
 
 def faq_schema(lang: str, url: str) -> dict[str, Any]:
-    return {
-        "@type": "FAQPage",
-        "@id": url.rstrip("/") + "#faq",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": q,
-                "acceptedAnswer": {"@type": "Answer", "text": a},
-            }
-            for q, a in FAQS[lang]
-        ],
-    }
+    return {"@type": "FAQPage", "@id": url.rstrip("/") + "#faq", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQS[lang]]}
 
 
 def restaurant_schema(url: str) -> dict[str, Any]:
@@ -239,9 +181,8 @@ def schema_block(config: dict[str, Any]) -> str:
         graph.append(faq_schema(config["lang"], config["url"]))
     if not graph:
         return ""
-    payload = {"@context": "https://schema.org", "@graph": graph}
-    serialized = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
-    for term in FORBIDDEN_RATING_TERMS:
+    serialized = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False, separators=(",", ":"))
+    for term in list(FORBIDDEN_RATING_TERMS) + list(FORBIDDEN_TYPE_VALUES):
         if term in serialized:
             raise ValueError(f"Forbidden rating term leaked into schema: {term}")
     return f'{BLOCK_START}\n<script id="ec-p1-aio-schema-meta" type="application/ld+json">{serialized}</script>\n{BLOCK_END}\n'
@@ -258,6 +199,7 @@ def insert_schema_block(source: str, block: str) -> str:
 def apply_page(path: Path, config: dict[str, Any]) -> bool:
     original = path.read_text(encoding="utf-8", errors="ignore")
     updated = strip_old_block(original)
+    updated = sanitize_existing_jsonld(updated)
     updated = update_meta_description(updated, config["meta"])
     updated = insert_schema_block(updated, schema_block(config))
     if updated != original:
@@ -286,15 +228,14 @@ def main() -> int:
         "- FAQPage schema on PT/EN/ES home pages.",
         "- Restaurant schema on critical conversion/product pages.",
         "- Meta description normalization on priority pages.",
-        "- No aggregateRating, ratingValue, reviewCount or Google-review-derived rating fields.",
+        "- Removal of aggregateRating/ratingValue/reviewCount/ratingCount/bestRating/worstRating from JSON-LD.",
         "",
         "## Changed files",
     ]
     report.extend([f"- `{item}`" for item in changed] or ["- none"])
     report.extend(["", "## Missing/skipped files"])
     report.extend([f"- `{item}`" for item in missing] or ["- none"])
-    report_path = report_dir / "p1_aio_schema_meta_report.md"
-    report_path.write_text("\n".join(report) + "\n", encoding="utf-8")
+    (report_dir / "p1_aio_schema_meta_report.md").write_text("\n".join(report) + "\n", encoding="utf-8")
 
     print("P1 AIO schema/meta changed:", len(changed))
     for item in changed:
