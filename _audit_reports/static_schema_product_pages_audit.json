@@ -1,0 +1,254 @@
+{
+  "status": "FAIL",
+  "results": [
+    {
+      "page": "eventos.html",
+      "exists": true,
+      "status": "PASS",
+      "restaurant_required": true,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [],
+      "changed": true,
+      "warnings": []
+    },
+    {
+      "page": "cardapio.html",
+      "exists": true,
+      "status": "FAIL",
+      "restaurant_required": true,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [
+        "AggregateRating",
+        "aggregateRating",
+        "bestRating",
+        "ratingValue",
+        "reviewCount",
+        "worstRating"
+      ],
+      "changed": true,
+      "warnings": [
+        "forbidden rating/review terms found"
+      ]
+    },
+    {
+      "page": "almoco.html",
+      "exists": true,
+      "status": "FAIL",
+      "restaurant_required": true,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [
+        "AggregateRating",
+        "aggregateRating",
+        "bestRating",
+        "ratingValue",
+        "reviewCount",
+        "worstRating"
+      ],
+      "changed": true,
+      "warnings": [
+        "forbidden rating/review terms found"
+      ]
+    },
+    {
+      "page": "entardecer.html",
+      "exists": true,
+      "status": "FAIL",
+      "restaurant_required": true,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [
+        "AggregateRating",
+        "aggregateRating",
+        "bestRating",
+        "ratingValue",
+        "reviewCount",
+        "worstRating"
+      ],
+      "changed": true,
+      "warnings": [
+        "forbidden rating/review terms found"
+      ]
+    },
+    {
+      "page": "feijoada.html",
+      "exists": true,
+      "status": "FAIL",
+      "restaurant_required": true,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [
+        "AggregateRating",
+        "aggregateRating",
+        "bestRating",
+        "ratingValue",
+        "reviewCount",
+        "worstRating"
+      ],
+      "changed": true,
+      "warnings": [
+        "forbidden rating/review terms found"
+      ]
+    },
+    {
+      "page": "cafe-da-manha.html",
+      "exists": true,
+      "status": "FAIL",
+      "restaurant_required": true,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [
+        "AggregateRating",
+        "aggregateRating",
+        "bestRating",
+        "ratingValue",
+        "reviewCount",
+        "worstRating"
+      ],
+      "changed": true,
+      "warnings": [
+        "forbidden rating/review terms found"
+      ]
+    },
+    {
+      "page": "morro-da-urca.html",
+      "exists": true,
+      "status": "FAIL",
+      "restaurant_required": false,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [
+        "AggregateRating",
+        "aggregateRating",
+        "bestRating",
+        "ratingValue",
+        "reviewCount",
+        "worstRating"
+      ],
+      "changed": true,
+      "warnings": [
+        "forbidden rating/review terms found"
+      ]
+    },
+    {
+      "page": "en/sunset.html",
+      "exists": true,
+      "status": "PASS",
+      "restaurant_required": true,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [],
+      "changed": true,
+      "warnings": []
+    },
+    {
+      "page": "en/cardapio.html",
+      "exists": true,
+      "status": "PASS",
+      "restaurant_required": true,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [],
+      "changed": true,
+      "warnings": []
+    },
+    {
+      "page": "en/almoco.html",
+      "exists": true,
+      "status": "PASS",
+      "restaurant_required": true,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [],
+      "changed": true,
+      "warnings": []
+    },
+    {
+      "page": "en/morro-da-urca.html",
+      "exists": true,
+      "status": "PASS",
+      "restaurant_required": false,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [],
+      "changed": true,
+      "warnings": []
+    },
+    {
+      "page": "es/atardecer.html",
+      "exists": true,
+      "status": "PASS",
+      "restaurant_required": true,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [],
+      "changed": true,
+      "warnings": []
+    },
+    {
+      "page": "es/cardapio.html",
+      "exists": true,
+      "status": "PASS",
+      "restaurant_required": true,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [],
+      "changed": true,
+      "warnings": []
+    },
+    {
+      "page": "es/almoco.html",
+      "exists": true,
+      "status": "PASS",
+      "restaurant_required": true,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [],
+      "changed": true,
+      "warnings": []
+    },
+    {
+      "page": "es/morro-da-urca.html",
+      "exists": true,
+      "status": "PASS",
+      "restaurant_required": false,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [],
+      "changed": true,
+      "warnings": []
+    }
+  ]
+}
