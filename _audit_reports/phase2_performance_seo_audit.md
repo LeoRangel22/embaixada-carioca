@@ -15,40 +15,40 @@ Scope: existing public pages only. No new landing pages.
   - high script count: 29
 
 ## cafe-da-manha.html
-- Score: 80/100
+- Score: 79/100
 - Title length: 64
 - Meta description length: 133
 - Inline style blocks: 25
-- Script tags: 25
+- Script tags: 26
 - Images: 19
-- JSON-LD blocks: 7
+- JSON-LD blocks: 8
 - Issues:
   - high inline style blocks: 25
-  - high script count: 25
+  - high script count: 26
 
 ## almoco.html
-- Score: 83/100
+- Score: 82/100
 - Title length: 74
 - Meta description length: 126
 - Inline style blocks: 26
-- Script tags: 21
-- Images: 17
-- JSON-LD blocks: 4
-- Issues:
-  - high inline style blocks: 26
-  - high script count: 21
-
-## cardapio.html
-- Score: 82/100
-- Title length: 69
-- Meta description length: 121
-- Inline style blocks: 26
 - Script tags: 22
-- Images: 11
+- Images: 17
 - JSON-LD blocks: 5
 - Issues:
   - high inline style blocks: 26
   - high script count: 22
+
+## cardapio.html
+- Score: 81/100
+- Title length: 69
+- Meta description length: 121
+- Inline style blocks: 26
+- Script tags: 23
+- Images: 11
+- JSON-LD blocks: 6
+- Issues:
+  - high inline style blocks: 26
+  - high script count: 23
 
 ## como-chegar.html
 - Score: 96/100
@@ -66,9 +66,9 @@ Scope: existing public pages only. No new landing pages.
 - Title length: 69
 - Meta description length: 134
 - Inline style blocks: 2
-- Script tags: 7
+- Script tags: 8
 - Images: 4
-- JSON-LD blocks: 2
+- JSON-LD blocks: 3
 - Issues:
   - missing hero/image preload
   - missing consolidated CSS
@@ -86,5 +86,5 @@ Scope: existing public pages only. No new landing pages.
   - high script count: 22
 
 ## Summary
-- Average score: 83.1/100
+- Average score: 82.7/100
 - Phase 2 next fixes: reduce inline style density, normalize image loading, preserve CTAs, keep JSON-LD, and prepare performance validation.

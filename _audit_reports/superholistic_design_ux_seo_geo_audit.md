@@ -1,7 +1,7 @@
 # Superholistic Design/UX/SEO/GEO/AIO/SXO Audit
 
 Status geral: **FAIL**
-Score médio: **96.0**
+Score médio: **96.1**
 Score mínimo: **94**
 Threshold: **90**
 Páginas auditadas: **87**
@@ -12,7 +12,7 @@ Páginas auditadas: **87**
 - **Copydesk** — média 99.9, mínimo 88
 - **SEO** — média 97.5, mínimo 84
 - **GEO** — média 100.0, mínimo 100
-- **AEO** — média 91.0, mínimo 84
+- **AEO** — média 91.7, mínimo 84
 - **AIO** — média 89.6, mínimo 72
 - **SXO** — média 100.0, mínimo 100
 - **Marketing** — média 97.9, mínimo 82
@@ -508,17 +508,6 @@ Nenhuma página abaixo de 90.
 - **R2D2 (93)**
   - R2D2 fraco em Decisão.
 
-### `en/sunset.html` — 96
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-
 ### `en/where-to-eat-near-sugarloaf.html` — 96
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -540,25 +529,12 @@ Nenhuma página abaixo de 90.
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
-- **AEO (92)**
-  - FAQ visual sem FAQPage JSON-LD.
 - **AIO (90)**
   - Sem cobertura literal das keywords prioritárias AIO.
 - **Schema (80)**
   - Múltiplos aggregateRating: 3.
 
 ### `es/almoco-morro-da-urca.html` — 96
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **AEO (84)**
-  - FAQ visual sem FAQPage JSON-LD.
-  - Faltam respostas diretas transacionais.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-
-### `es/atardecer.html` — 96
 - **Design (84)**
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
@@ -767,18 +743,6 @@ Nenhuma página abaixo de 90.
 - **Schema (80)**
   - Múltiplos aggregateRating: 2.
 
-### `morro-da-urca.html` — 96
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **AEO (92)**
-  - FAQ visual sem FAQPage JSON-LD.
-- **AIO (95)**
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
 ### `nossa-visao.html` — 96
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -952,11 +916,29 @@ Nenhuma página abaixo de 90.
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
-- **AEO (92)**
-  - FAQ visual sem FAQPage JSON-LD.
 - **AIO (85)**
   - Sem cobertura literal das keywords prioritárias AIO.
   - Sem VideoObject em página de experiência/produto.
+
+### `en/sunset.html` — 97
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+
+### `es/atardecer.html` — 97
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **AEO (92)**
+  - Faltam respostas diretas transacionais.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
 
 ### `es/como-llegar.html` — 97
 - **Design (84)**
@@ -1010,8 +992,6 @@ Nenhuma página abaixo de 90.
   - Risco de texto creme em fundo claro.
   - Opacity baixa detectada; validar texto real.
   - Sem CSS global de estabilização/contraste.
-- **AEO (92)**
-  - FAQ visual sem FAQPage JSON-LD.
 - **AIO (85)**
   - Sem cobertura literal das keywords prioritárias AIO.
   - Sem VideoObject em página de experiência/produto.
@@ -1051,6 +1031,16 @@ Nenhuma página abaixo de 90.
 - **Performance (92)**
   - Muitos blocos style.
 
+### `morro-da-urca.html` — 97
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **AIO (95)**
+  - Sem VideoObject em página de experiência/produto.
+- **Schema (80)**
+  - Múltiplos aggregateRating: 2.
+
 ### `por-do-sol-morro-da-urca.html` — 97
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -1077,17 +1067,6 @@ Nenhuma página abaixo de 90.
   - Opacity baixa detectada; validar texto real.
 - **SEO (95)**
   - Title fora da faixa ideal: 74.
-- **AEO (92)**
-  - FAQ visual sem FAQPage JSON-LD.
-- **AIO (95)**
-  - Sem VideoObject em página de experiência/produto.
-
-### `cardapio.html` — 98
-- **Design (90)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-- **AEO (92)**
-  - FAQ visual sem FAQPage JSON-LD.
 - **AIO (95)**
   - Sem VideoObject em página de experiência/produto.
 
@@ -1140,6 +1119,13 @@ Nenhuma página abaixo de 90.
   - Sem hreflang.
 - **AEO (92)**
   - FAQ visual sem FAQPage JSON-LD.
+
+### `cardapio.html` — 99
+- **Design (90)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+- **AIO (95)**
+  - Sem VideoObject em página de experiência/produto.
 
 ## Arquivos gerados
 - `_audit_reports/superholistic_design_ux_seo_geo_audit.md`

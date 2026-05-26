@@ -1,7 +1,7 @@
 {
   "status": "FAIL",
   "threshold": 90,
-  "average_score": 96.0,
+  "average_score": 96.1,
   "min_score": 94,
   "dimensions": [
     "Design",
@@ -227,7 +227,9 @@
       "cta_links": 27,
       "jsonld_types": [
         "AggregateRating",
+        "Answer",
         "BreadcrumbList",
+        "FAQPage",
         "GeoCoordinates",
         "ListItem",
         "LocationFeatureSpecification",
@@ -237,6 +239,7 @@
         "Offer",
         "OpeningHoursSpecification",
         "PostalAddress",
+        "Question",
         "ReserveAction",
         "Restaurant",
         "SpeakableSpecification",
@@ -276,10 +279,8 @@
         },
         {
           "dimension": "AEO",
-          "score": 92,
-          "findings": [
-            "FAQ visual sem FAQPage JSON-LD."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "AIO",
@@ -704,7 +705,7 @@
     {
       "page": "cardapio.html",
       "status": "PASS",
-      "score": 98,
+      "score": 99,
       "word_count": 1271,
       "h1_count": 1,
       "h2_count": 12,
@@ -713,7 +714,9 @@
       "cta_links": 27,
       "jsonld_types": [
         "AggregateRating",
+        "Answer",
         "BreadcrumbList",
+        "FAQPage",
         "GeoCoordinates",
         "ListItem",
         "LocationFeatureSpecification",
@@ -723,6 +726,7 @@
         "Offer",
         "OpeningHoursSpecification",
         "PostalAddress",
+        "Question",
         "ReserveAction",
         "Restaurant",
         "SpeakableSpecification",
@@ -760,10 +764,8 @@
         },
         {
           "dimension": "AEO",
-          "score": 92,
-          "findings": [
-            "FAQ visual sem FAQPage JSON-LD."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "AIO",
@@ -2613,9 +2615,11 @@
       "internal_links": 28,
       "cta_links": 17,
       "jsonld_types": [
+        "Answer",
         "Article",
         "BreadcrumbList",
         "City",
+        "FAQPage",
         "GeoCoordinates",
         "ImageObject",
         "Landform",
@@ -2626,6 +2630,7 @@
         "OpeningHoursSpecification",
         "Organization",
         "PostalAddress",
+        "Question",
         "ReserveAction",
         "Restaurant",
         "TouristAttraction",
@@ -2663,10 +2668,8 @@
         },
         {
           "dimension": "AEO",
-          "score": 92,
-          "findings": [
-            "FAQ visual sem FAQPage JSON-LD."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "AIO",
@@ -3625,7 +3628,7 @@
     {
       "page": "en/sunset.html",
       "status": "PASS",
-      "score": 96,
+      "score": 97,
       "word_count": 1228,
       "h1_count": 1,
       "h2_count": 8,
@@ -3633,7 +3636,9 @@
       "internal_links": 31,
       "cta_links": 20,
       "jsonld_types": [
+        "Answer",
         "BreadcrumbList",
+        "FAQPage",
         "FoodEvent",
         "GeoCoordinates",
         "ImageObject",
@@ -3643,6 +3648,7 @@
         "Organization",
         "Place",
         "PostalAddress",
+        "Question",
         "ReserveAction",
         "Restaurant",
         "Schedule",
@@ -3683,9 +3689,8 @@
         },
         {
           "dimension": "AEO",
-          "score": 84,
+          "score": 92,
           "findings": [
-            "FAQ visual sem FAQPage JSON-LD.",
             "Faltam respostas diretas transacionais."
           ]
         },
@@ -3837,7 +3842,9 @@
       "cta_links": 27,
       "jsonld_types": [
         "AggregateRating",
+        "Answer",
         "BreadcrumbList",
+        "FAQPage",
         "FoodEvent",
         "GeoCoordinates",
         "ImageObject",
@@ -3848,6 +3855,7 @@
         "Organization",
         "Place",
         "PostalAddress",
+        "Question",
         "ReserveAction",
         "Restaurant",
         "Schedule",
@@ -3888,10 +3896,8 @@
         },
         {
           "dimension": "AEO",
-          "score": 92,
-          "findings": [
-            "FAQ visual sem FAQPage JSON-LD."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "AIO",
@@ -4127,7 +4133,7 @@
     {
       "page": "es/atardecer.html",
       "status": "PASS",
-      "score": 96,
+      "score": 97,
       "word_count": 1235,
       "h1_count": 1,
       "h2_count": 8,
@@ -4135,7 +4141,9 @@
       "internal_links": 31,
       "cta_links": 20,
       "jsonld_types": [
+        "Answer",
         "BreadcrumbList",
+        "FAQPage",
         "FoodEvent",
         "GeoCoordinates",
         "ImageObject",
@@ -4145,6 +4153,7 @@
         "Organization",
         "Place",
         "PostalAddress",
+        "Question",
         "ReserveAction",
         "Restaurant",
         "Schedule",
@@ -4185,9 +4194,8 @@
         },
         {
           "dimension": "AEO",
-          "score": 84,
+          "score": 92,
           "findings": [
-            "FAQ visual sem FAQPage JSON-LD.",
             "Faltam respostas diretas transacionais."
           ]
         },
@@ -5727,9 +5735,11 @@
       "internal_links": 28,
       "cta_links": 17,
       "jsonld_types": [
+        "Answer",
         "Article",
         "BreadcrumbList",
         "City",
+        "FAQPage",
         "GeoCoordinates",
         "ImageObject",
         "Landform",
@@ -5740,6 +5750,7 @@
         "OpeningHoursSpecification",
         "Organization",
         "PostalAddress",
+        "Question",
         "ReserveAction",
         "Restaurant",
         "TouristAttraction",
@@ -5777,10 +5788,8 @@
         },
         {
           "dimension": "AEO",
-          "score": 92,
-          "findings": [
-            "FAQ visual sem FAQPage JSON-LD."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "AIO",
@@ -7410,7 +7419,7 @@
     {
       "page": "morro-da-urca.html",
       "status": "PASS",
-      "score": 96,
+      "score": 97,
       "word_count": 1586,
       "h1_count": 1,
       "h2_count": 7,
@@ -7419,9 +7428,11 @@
       "cta_links": 19,
       "jsonld_types": [
         "AggregateRating",
+        "Answer",
         "Article",
         "BreadcrumbList",
         "City",
+        "FAQPage",
         "GeoCoordinates",
         "ImageObject",
         "Landform",
@@ -7432,6 +7443,7 @@
         "OpeningHoursSpecification",
         "Organization",
         "PostalAddress",
+        "Question",
         "ReserveAction",
         "Restaurant",
         "TouristAttraction",
@@ -7469,10 +7481,8 @@
         },
         {
           "dimension": "AEO",
-          "score": 92,
-          "findings": [
-            "FAQ visual sem FAQPage JSON-LD."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "AIO",
