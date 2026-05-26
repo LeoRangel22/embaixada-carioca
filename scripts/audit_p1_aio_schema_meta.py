@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Audit P1 AIO/SEO fixes for Embaixada Carioca.
+"""Audit P0 readiness and P1 AIO/SEO fixes for Embaixada Carioca.
 
 Checks:
+- P0 visual/operational runtime is present in the repository.
 - FAQPage schema with at least 8 questions on PT/EN/ES home pages.
 - Restaurant schema on critical pages when the page exists.
 - Meta description present and within a practical SEO range.
@@ -31,6 +32,36 @@ SCRIPT_RE = re.compile(r'<script\s+[^>]*type=["\']application/ld\+json["\'][^>]*
 META_RE = re.compile(r'<meta\s+name=["\']description["\']\s+content=["\']([^"\']*)["\']\s*/?>', re.I)
 
 
+def audit_p0_runtime() -> dict[str, Any]:
+    geo = ROOT / "assets" / "geo-proximity.js"
+    cafe = ROOT / "cafe-da-manha.html"
+    result: dict[str, Any] = {
+        "name": "P0 visual/operational runtime",
+        "status": "PASS",
+        "checks": {},
+        "warnings": [],
+    }
+
+    geo_text = geo.read_text(encoding="utf-8", errors="ignore") if geo.exists() else ""
+    cafe_text = cafe.read_text(encoding="utf-8", errors="ignore") if cafe.exists() else ""
+
+    checks = {
+        "geo_proximity_exists": geo.exists(),
+        "cafe_page_exists": cafe.exists(),
+        "cafe_loads_geo_proximity": "geo-proximity.js" in cafe_text,
+        "has_ecCafeCardapioContrast": "ecCafeCardapioContrast" in geo_text,
+        "has_ecBondinhoCopyFix": "ecBondinhoCopyFix" in geo_text,
+        "has_background_aware_strategy": "runtime-background-aware-via-geo-proximity" in geo_text,
+        "has_dark_card_detection": "getComputedStyle" in geo_text and "darkCards" in geo_text,
+    }
+    result["checks"] = checks
+    failed = [name for name, passed in checks.items() if not passed]
+    if failed:
+        result["status"] = "FAIL"
+        result["warnings"].extend(failed)
+    return result
+
+
 def walk(obj: Any, types: set[str], forbidden: set[str], faq_questions: list[int]) -> None:
     if isinstance(obj, dict):
         for key, value in obj.items():
@@ -45,9 +76,10 @@ def walk(obj: Any, types: set[str], forbidden: set[str], faq_questions: list[int
                     for item in value:
                         if isinstance(item, str):
                             types.add(item)
-            if key == "mainEntity" and isinstance(value, list):
-                if obj.get("@type") == "FAQPage":
-                    faq_questions.append(len(value))
+                            if item == "AggregateRating":
+                                forbidden.add("AggregateRating")
+            if key == "mainEntity" and isinstance(value, list) and obj.get("@type") == "FAQPage":
+                faq_questions.append(len(value))
             walk(value, types, forbidden, faq_questions)
     elif isinstance(obj, list):
         for item in obj:
@@ -77,8 +109,8 @@ def audit_page(rel: str) -> dict[str, Any]:
         result["warnings"].append("file missing")
         return result
 
-    html = path.read_text(encoding="utf-8", errors="ignore")
-    meta = META_RE.search(html)
+    source = path.read_text(encoding="utf-8", errors="ignore")
+    meta = META_RE.search(source)
     if meta:
         desc = meta.group(1).strip()
         result["meta_description"] = desc
@@ -90,7 +122,7 @@ def audit_page(rel: str) -> dict[str, Any]:
     types: set[str] = set()
     forbidden: set[str] = set()
     faq_counts: list[int] = []
-    for raw in SCRIPT_RE.findall(html):
+    for raw in SCRIPT_RE.findall(source):
         try:
             obj = json.loads(raw.strip())
             result["json_valid_blocks"] += 1
@@ -104,7 +136,7 @@ def audit_page(rel: str) -> dict[str, Any]:
     result["faq_questions"] = max(faq_counts or [0])
     result["forbidden"] = sorted(forbidden)
 
-    fails = []
+    fails: list[str] = []
     if rel in HOME_PAGES:
         result["faq_ok"] = result["has_faq"] and result["faq_questions"] >= 8
         if not result["faq_ok"]:
@@ -128,33 +160,47 @@ def audit_page(rel: str) -> dict[str, Any]:
 def main() -> int:
     OUT.mkdir(exist_ok=True)
     pages = list(dict.fromkeys(HOME_PAGES + CRITICAL_PAGES))
+    p0 = audit_p0_runtime()
     rows = [audit_page(page) for page in pages]
-    failures = [r for r in rows if r["status"] == "FAIL"]
-    status = "PASS" if not failures else "FAIL"
+    failures = [row for row in rows if row["status"] == "FAIL"]
+    status = "PASS" if p0["status"] == "PASS" and not failures else "FAIL"
 
-    REPORT_JSON.write_text(json.dumps({"status": status, "results": rows}, ensure_ascii=False, indent=2), encoding="utf-8")
+    REPORT_JSON.write_text(json.dumps({
+        "status": status,
+        "p0": p0,
+        "results": rows,
+    }, ensure_ascii=False, indent=2), encoding="utf-8")
 
     lines = [
-        "# P1 AIO Schema + Meta Audit",
+        "# P0 + P1 AIO Schema + Meta Audit",
         "",
         f"Status geral: **{status}**",
         "",
         "## Critérios",
+        "- P0 runtime de contraste/copy presente no repositório e carregado pelo `cafe-da-manha.html`.",
         "- Homes PT/EN/ES com FAQPage e pelo menos 8 perguntas.",
         "- Páginas críticas existentes com Restaurant ou FoodEstablishment schema.",
         "- Meta description presente nas páginas prioritárias.",
         "- Proibido usar aggregateRating/ratingValue/reviewCount/ratingCount/bestRating/worstRating no JSON-LD.",
         "",
-        "## Resultados",
+        "## P0 visual/operacional",
+        f"- Status: **{p0['status']}**",
     ]
-    for r in rows:
-        lines.append(f"- `{r['page']}` — {r['status']} — meta {r['meta_length']} chars — Restaurant={r['has_restaurant']} — FAQ={r['has_faq']} ({r['faq_questions']})")
-        for warning in r.get("warnings", []):
+    for check, passed in p0["checks"].items():
+        lines.append(f"  - {check}: {passed}")
+    if p0["warnings"]:
+        lines.append("  - Pendências: " + ", ".join(p0["warnings"]))
+
+    lines.extend(["", "## P1 FAQ Schema, Restaurant Schema e Meta descriptions"])
+    for row in rows:
+        lines.append(f"- `{row['page']}` — {row['status']} — meta {row['meta_length']} chars — Restaurant={row['has_restaurant']} — FAQ={row['has_faq']} ({row['faq_questions']})")
+        for warning in row.get("warnings", []):
             lines.append(f"  - {warning}")
-        if r.get("forbidden"):
-            lines.append("  - forbidden: " + ", ".join(r["forbidden"]))
+        if row.get("forbidden"):
+            lines.append("  - forbidden: " + ", ".join(row["forbidden"]))
+
     REPORT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print(f"P1 AIO schema/meta audit: {status}")
+    print(f"P0 + P1 AIO schema/meta audit: {status}")
     return 0 if status == "PASS" else 1
 
 
