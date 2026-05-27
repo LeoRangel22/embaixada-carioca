@@ -5,6 +5,7 @@ on:
   push:
     branches: [master]
     paths:
+      - 'scripts/apply_lang_dropdown_closed_state_fix.py'
       - 'scripts/apply_featured_snippet_ordered_lists.py'
       - 'scripts/audit_css_js_refactor_opportunities.py'
       - 'scripts/apply_performance_urgent_quick_wins.py'
@@ -30,6 +31,8 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
           fetch-depth: 0
+      - name: Apply language dropdown closed state fix
+        run: python3 scripts/apply_lang_dropdown_closed_state_fix.py
       - name: Apply featured snippet ordered lists
         run: python3 scripts/apply_featured_snippet_ordered_lists.py
       - name: Audit CSS JS refactor opportunities
@@ -55,7 +58,7 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "fix: apply featured snippet ordered lists and final audit"
+          git commit -m "fix: apply language dropdown guard and final audit"
           for i in 1 2 3 4 5; do
             git fetch origin "${GITHUB_REF_NAME}"
             if git rebase "origin/${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
