@@ -5,6 +5,7 @@ on:
   push:
     branches: [master]
     paths:
+      - 'scripts/apply_duplicate_faq_schema_cleaner.py'
       - 'scripts/apply_scorecard_gap_fixes.py'
       - 'scripts/apply_static_product_schema_faq.py'
       - 'scripts/apply_static_schema_product_full_coverage.py'
@@ -42,6 +43,8 @@ jobs:
         run: python3 scripts/apply_static_product_schema_faq.py
       - name: Re-apply static product schema full coverage
         run: python3 scripts/apply_static_schema_product_full_coverage.py
+      - name: Clean duplicate FAQ schema
+        run: python3 scripts/apply_duplicate_faq_schema_cleaner.py
       - name: Apply Parque Bondinho access clarity fix
         run: python3 scripts/apply_parque_bondinho_access_clarity_fix.py
       - name: Apply internal linking keyword cluster fixes
@@ -73,7 +76,7 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "fix: persist scorecard report and final audit"
+          git commit -m "fix: clean duplicate FAQ schema and final audit"
           for i in 1 2 3 4 5; do
             git fetch origin "${GITHUB_REF_NAME}"
             if git rebase "origin/${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
