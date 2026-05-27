@@ -1,0 +1,55 @@
+name: Review snippets issue fix
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - "scripts/apply_review_snippets_issue_fix.py"
+      - ".github/workflows/review-snippets-issue-fix.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: review-snippets-issue-fix-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  fix-review-snippets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Apply Review snippets issue fix
+        run: python3 scripts/apply_review_snippets_issue_fix.py
+
+      - name: Commit Review snippets fixes and report
+        shell: bash
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "fix: resolve review snippets aggregate rating issue"
+          for i in 1 2 3 4 5; do
+            git fetch origin "${GITHUB_REF_NAME}"
+            if git rebase "origin/${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
+              exit 0
+            fi
+            git rebase --abort || true
+            sleep $((i * 3))
+          done
+          echo "Failed to push after retries"
+          exit 1
