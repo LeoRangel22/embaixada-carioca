@@ -5,6 +5,7 @@ on:
   push:
     branches: [master]
     paths:
+      - 'scripts/apply_priority_query_conversion_fixes.py'
       - 'scripts/apply_aio_low_score_editorial_fixes.py'
       - 'scripts/apply_priority_aaa_warn_fixes.py'
       - 'scripts/apply_final_86page_aaa_master_audit.py'
@@ -26,6 +27,8 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
           fetch-depth: 0
+      - name: Apply priority query conversion fixes
+        run: python3 scripts/apply_priority_query_conversion_fixes.py
       - name: Apply AIO low score editorial fixes
         run: python3 scripts/apply_aio_low_score_editorial_fixes.py
       - name: Apply priority AAA WARN fixes
@@ -43,7 +46,7 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "fix: apply AIO editorial fixes and final audit"
+          git commit -m "fix: apply priority query conversion fixes and final audit"
           for i in 1 2 3 4 5; do
             git fetch origin "${GITHUB_REF_NAME}"
             if git rebase "origin/${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
