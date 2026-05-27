@@ -1,5 +1,5 @@
 {
-  "status": "FAIL",
+  "status": "PASS",
   "results": [
     {
       "page": "eventos.html",
@@ -11,140 +11,86 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": false,
+      "changed": true,
       "warnings": []
     },
     {
       "page": "cardapio.html",
       "exists": true,
-      "status": "FAIL",
+      "status": "PASS",
       "restaurant_required": true,
       "restaurant_found": true,
       "faq_required": true,
       "faq_found": true,
       "faq_questions": 8,
-      "forbidden_terms": [
-        "AggregateRating",
-        "aggregateRating",
-        "bestRating",
-        "ratingValue",
-        "reviewCount",
-        "worstRating"
-      ],
-      "changed": false,
-      "warnings": [
-        "forbidden rating/review terms found"
-      ]
+      "forbidden_terms": [],
+      "changed": true,
+      "warnings": []
     },
     {
       "page": "almoco.html",
       "exists": true,
-      "status": "FAIL",
+      "status": "PASS",
       "restaurant_required": true,
       "restaurant_found": true,
       "faq_required": true,
       "faq_found": true,
       "faq_questions": 8,
-      "forbidden_terms": [
-        "AggregateRating",
-        "aggregateRating",
-        "bestRating",
-        "ratingValue",
-        "reviewCount",
-        "worstRating"
-      ],
-      "changed": false,
-      "warnings": [
-        "forbidden rating/review terms found"
-      ]
+      "forbidden_terms": [],
+      "changed": true,
+      "warnings": []
     },
     {
       "page": "entardecer.html",
       "exists": true,
-      "status": "FAIL",
+      "status": "PASS",
       "restaurant_required": true,
       "restaurant_found": true,
       "faq_required": true,
       "faq_found": true,
       "faq_questions": 8,
-      "forbidden_terms": [
-        "AggregateRating",
-        "aggregateRating",
-        "bestRating",
-        "ratingValue",
-        "reviewCount",
-        "worstRating"
-      ],
-      "changed": false,
-      "warnings": [
-        "forbidden rating/review terms found"
-      ]
+      "forbidden_terms": [],
+      "changed": true,
+      "warnings": []
     },
     {
       "page": "feijoada.html",
       "exists": true,
-      "status": "FAIL",
+      "status": "PASS",
       "restaurant_required": true,
       "restaurant_found": true,
       "faq_required": true,
       "faq_found": true,
       "faq_questions": 8,
-      "forbidden_terms": [
-        "AggregateRating",
-        "aggregateRating",
-        "bestRating",
-        "ratingValue",
-        "reviewCount",
-        "worstRating"
-      ],
-      "changed": false,
-      "warnings": [
-        "forbidden rating/review terms found"
-      ]
+      "forbidden_terms": [],
+      "changed": true,
+      "warnings": []
     },
     {
       "page": "cafe-da-manha.html",
       "exists": true,
-      "status": "FAIL",
+      "status": "PASS",
       "restaurant_required": true,
       "restaurant_found": true,
       "faq_required": true,
       "faq_found": true,
       "faq_questions": 8,
-      "forbidden_terms": [
-        "AggregateRating",
-        "aggregateRating",
-        "bestRating",
-        "ratingValue",
-        "reviewCount",
-        "worstRating"
-      ],
-      "changed": false,
-      "warnings": [
-        "forbidden rating/review terms found"
-      ]
+      "forbidden_terms": [],
+      "changed": true,
+      "warnings": []
     },
     {
       "page": "morro-da-urca.html",
       "exists": true,
-      "status": "FAIL",
+      "status": "PASS",
       "restaurant_required": false,
       "restaurant_found": true,
       "faq_required": true,
       "faq_found": true,
       "faq_questions": 8,
-      "forbidden_terms": [
-        "AggregateRating",
-        "aggregateRating",
-        "bestRating",
-        "ratingValue",
-        "reviewCount",
-        "worstRating"
-      ],
-      "changed": false,
-      "warnings": [
-        "forbidden rating/review terms found"
-      ]
+      "forbidden_terms": [],
+      "changed": true,
+      "warnings": []
     },
     {
       "page": "en/sunset.html",
@@ -156,7 +102,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": false,
+      "changed": true,
       "warnings": []
     },
     {
@@ -169,7 +115,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": false,
+      "changed": true,
       "warnings": []
     },
     {
@@ -182,7 +128,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": false,
+      "changed": true,
       "warnings": []
     },
     {
@@ -195,7 +141,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": false,
+      "changed": true,
       "warnings": []
     },
     {
@@ -208,7 +154,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": false,
+      "changed": true,
       "warnings": []
     },
     {
@@ -221,7 +167,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": false,
+      "changed": true,
       "warnings": []
     },
     {
@@ -234,7 +180,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": false,
+      "changed": true,
       "warnings": []
     },
     {
@@ -247,7 +193,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": false,
+      "changed": true,
       "warnings": []
     }
   ]
