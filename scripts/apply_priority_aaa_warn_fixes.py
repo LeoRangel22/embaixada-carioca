@@ -63,6 +63,7 @@ def events_block() -> str:
   <a href="{TAGME_URL}">Reservar via TagMe</a>
   <a href="{EVENT_FORM_URL}">Solicitar cotação de evento</a>
   <a href="mailto:{EVENT_EMAIL}">{EVENT_EMAIL}</a>
+  <span class="lang-current">Português</span>
   <span>Google Reviews</span>
   <span class="ec-priority-light-text">Texto claro em fundo escuro validado.</span>
   <span class="ec-priority-dark-text">Texto escuro em cards claros validado.</span>
