@@ -6,6 +6,7 @@ on:
     branches: [master]
     paths:
       - "scripts/apply_static_product_schema_faq.py"
+      - "scripts/apply_static_schema_product_full_coverage.py"
       - ".github/workflows/static-product-schema-faq.yml"
 
 permissions:
@@ -33,8 +34,14 @@ jobs:
         run: |
           set +e
           python3 scripts/apply_static_product_schema_faq.py
-          code=$?
-          echo "audit_exit_code=$code" >> "$GITHUB_OUTPUT"
+          code1=$?
+          python3 scripts/apply_static_schema_product_full_coverage.py
+          code2=$?
+          if [ "$code1" != "0" ] || [ "$code2" != "0" ]; then
+            echo "audit_exit_code=1" >> "$GITHUB_OUTPUT"
+          else
+            echo "audit_exit_code=0" >> "$GITHUB_OUTPUT"
+          fi
           exit 0
 
       - name: Commit static schema fixes and reports
@@ -46,8 +53,8 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "feat: apply static product schema FAQ fixes"
-            for i in 1 2 3; do
+            git commit -m "feat: apply full static product schema FAQ coverage"
+            for i in 1 2 3 4 5; do
               git pull --rebase origin master && git push origin HEAD:master && break
               git rebase --abort || true
               sleep 3
