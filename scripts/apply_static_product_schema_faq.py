@@ -129,6 +129,14 @@ def strip_old_block(source: str) -> str:
     return re.sub(re.escape(BLOCK_START) + r"[\s\S]*?" + re.escape(BLOCK_END) + r"\s*", "", source, flags=re.I)
 
 
+def has_forbidden_type(typ: Any) -> bool:
+    if isinstance(typ, str):
+        return typ in FORBIDDEN_TYPES
+    if isinstance(typ, list):
+        return any(str(item) in FORBIDDEN_TYPES for item in typ)
+    return False
+
+
 def collect_forbidden_schema_terms(obj: Any, found: set[str]) -> None:
     """Collect only forbidden JSON-LD keys/types, not arbitrary text values."""
     if isinstance(obj, dict):
@@ -152,7 +160,7 @@ def collect_forbidden_schema_terms(obj: Any, found: set[str]) -> None:
 def remove_forbidden_jsonld(obj: Any) -> Any:
     if isinstance(obj, dict):
         typ = obj.get("@type")
-        if typ in FORBIDDEN_TYPES or (isinstance(typ, list) and any(t in FORBIDDEN_TYPES for t in typ)):
+        if has_forbidden_type(typ):
             return None
         cleaned: dict[str, Any] = {}
         for key, value in obj.items():
