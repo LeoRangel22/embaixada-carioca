@@ -5,6 +5,7 @@ on:
   push:
     branches: [master]
     paths:
+      - 'scripts/audit_css_js_refactor_opportunities.py'
       - 'scripts/apply_performance_urgent_quick_wins.py'
       - 'scripts/apply_priority_query_conversion_fixes.py'
       - 'scripts/apply_aio_low_score_editorial_fixes.py'
@@ -28,6 +29,8 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
           fetch-depth: 0
+      - name: Audit CSS JS refactor opportunities
+        run: python3 scripts/audit_css_js_refactor_opportunities.py
       - name: Apply performance urgent quick wins
         run: python3 scripts/apply_performance_urgent_quick_wins.py
       - name: Apply priority query conversion fixes
@@ -49,7 +52,7 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "fix: apply performance quick wins and final audit"
+          git commit -m "fix: audit CSS JS refactor opportunities and final audit"
           for i in 1 2 3 4 5; do
             git fetch origin "${GITHUB_REF_NAME}"
             if git rebase "origin/${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
