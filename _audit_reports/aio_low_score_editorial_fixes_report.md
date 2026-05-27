@@ -13,11 +13,11 @@ Correções editoriais aplicadas às 8 páginas que apareciam no relatório hist
 - Correções pontuais de idioma em páginas espanholas.
 
 ## Resultados
-- `almoco.html` — ok — changed=True
-- `cardapio.html` — ok — changed=True
-- `eventos.html` — ok — changed=True
-- `entardecer.html` — ok — changed=True
-- `en/sunset.html` — ok — changed=True
-- `es/atardecer.html` — ok — changed=True
-- `es/cafe-da-manha.html` — ok — changed=True
-- `es/almoco.html` — ok — changed=True
+- `almoco.html` — ok — changed=False
+- `cardapio.html` — ok — changed=False
+- `eventos.html` — ok — changed=False
+- `entardecer.html` — ok — changed=False
+- `en/sunset.html` — ok — changed=False
+- `es/atardecer.html` — ok — changed=False
+- `es/cafe-da-manha.html` — ok — changed=False
+- `es/almoco.html` — ok — changed=False
