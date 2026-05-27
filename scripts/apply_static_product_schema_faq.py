@@ -30,6 +30,7 @@ FORBIDDEN_TYPES = {"AggregateRating"}
 JSONLD_RE = re.compile(r'(<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>)(.*?)(</script>)', re.I | re.S)
 
 PAGES: dict[str, dict[str, Any]] = {
+    "index.html": {"lang": "pt", "topic": "Embaixada Carioca no Morro da Urca", "restaurant": True, "faq": True, "url": SITE + "/"},
     "eventos.html": {"lang": "pt", "topic": "eventos no Morro da Urca", "restaurant": True, "faq": True, "url": SITE + "/eventos.html"},
     "cardapio.html": {"lang": "pt", "topic": "cardápio da Embaixada Carioca", "restaurant": True, "faq": True, "url": SITE + "/cardapio.html"},
     "almoco.html": {"lang": "pt", "topic": "almoço no Pão de Açúcar", "restaurant": True, "faq": True, "url": SITE + "/almoco.html"},
@@ -37,10 +38,12 @@ PAGES: dict[str, dict[str, Any]] = {
     "feijoada.html": {"lang": "pt", "topic": "feijoada no Morro da Urca", "restaurant": True, "faq": True, "url": SITE + "/feijoada.html"},
     "cafe-da-manha.html": {"lang": "pt", "topic": "café da manhã no Morro da Urca", "restaurant": True, "faq": True, "url": SITE + "/cafe-da-manha.html"},
     "morro-da-urca.html": {"lang": "pt", "topic": "Morro da Urca", "restaurant": False, "faq": True, "url": SITE + "/morro-da-urca.html"},
+    "en/index.html": {"lang": "en", "topic": "Embaixada Carioca at Morro da Urca", "restaurant": True, "faq": True, "url": SITE + "/en/"},
     "en/sunset.html": {"lang": "en", "topic": "sunset at Morro da Urca", "restaurant": True, "faq": True, "url": SITE + "/en/sunset.html"},
     "en/cardapio.html": {"lang": "en", "topic": "Embaixada Carioca menu", "restaurant": True, "faq": True, "url": SITE + "/en/cardapio.html"},
     "en/almoco.html": {"lang": "en", "topic": "Brazilian lunch at Sugarloaf", "restaurant": True, "faq": True, "url": SITE + "/en/almoco.html"},
     "en/morro-da-urca.html": {"lang": "en", "topic": "Morro da Urca", "restaurant": False, "faq": True, "url": SITE + "/en/morro-da-urca.html"},
+    "es/index.html": {"lang": "es", "topic": "Embaixada Carioca en Morro da Urca", "restaurant": True, "faq": True, "url": SITE + "/es/"},
     "es/atardecer.html": {"lang": "es", "topic": "atardecer en Morro da Urca", "restaurant": True, "faq": True, "url": SITE + "/es/atardecer.html"},
     "es/cardapio.html": {"lang": "es", "topic": "menú de Embaixada Carioca", "restaurant": True, "faq": True, "url": SITE + "/es/cardapio.html"},
     "es/almoco.html": {"lang": "es", "topic": "almuerzo brasileño en Pão de Açúcar", "restaurant": True, "faq": True, "url": SITE + "/es/almoco.html"},
