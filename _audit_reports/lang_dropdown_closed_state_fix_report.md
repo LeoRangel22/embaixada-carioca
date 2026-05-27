@@ -13,7 +13,7 @@ Durante QA visual real, o seletor de idioma apareceu aberto/sem contenção sobr
 ## Resumo
 - Arquivos HTML analisados: **87**
 - Arquivos com seletor de idioma processados: **85**
-- Arquivos alterados: **6**
+- Arquivos alterados: **1**
 - Arquivos sem seletor de idioma/SKIP: **2**
 
 ## Resultados
@@ -25,9 +25,9 @@ Durante QA visual real, o seletor de idioma apareceu aberto/sem contenção sobr
 | `almoco.html` | ok | False |
 | `cafe-da-manha-com-vista-rio-de-janeiro.html` | ok | False |
 | `cafe-da-manha-pao-de-acucar.html` | ok | False |
-| `cafe-da-manha.html` | ok | True |
+| `cafe-da-manha.html` | ok | False |
 | `caipirinha-com-vista-rio.html` | ok | False |
-| `cardapio.html` | ok | True |
+| `cardapio.html` | ok | False |
 | `como-chegar.html` | ok | False |
 | `contato.html` | ok | False |
 | `en/almoco-morro-da-urca.html` | ok | False |
@@ -88,12 +88,12 @@ Durante QA visual real, o seletor de idioma apareceu aberto/sem contenção sobr
 | `es/restaurantes-cerca-del-pan-de-azucar.html` | ok | False |
 | `es/roteiro-meio-dia-urca-pao-de-acucar.html` | ok | False |
 | `feijoada-com-vista-rio-de-janeiro.html` | ok | False |
-| `feijoada.html` | ok | True |
+| `feijoada.html` | ok | False |
 | `gastronomia-carioca.html` | ok | False |
-| `guia-do-rio.html` | ok | True |
+| `guia-do-rio.html` | ok | False |
 | `home-preview.html` | ok | False |
 | `index.html` | ok | False |
-| `morro-da-urca.html` | ok | True |
+| `morro-da-urca.html` | ok | False |
 | `nossa-visao.html` | ok | False |
 | `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` | ok | False |
 | `offline.html` | ok | False |

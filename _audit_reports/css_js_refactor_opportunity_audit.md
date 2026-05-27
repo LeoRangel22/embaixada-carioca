@@ -7,9 +7,9 @@ Mapear oportunidades reais de refactor de CSS/JS sem mexer no visual antes de um
 
 ## Resumo executivo
 - Arquivos HTML analisados: **87**
-- Blocos `<style>` inline: **1548**
+- Blocos `<style>` inline: **1549**
 - Blocos `<script>` inline, incluindo JSON-LD: **1469**
-- Peso estimado de CSS inline: **9.054.906 bytes**
+- Peso estimado de CSS inline: **9.056.063 bytes**
 - Peso estimado de scripts inline: **1.370.736 bytes**
 - Blocos CSS exatos repetidos em 2+ páginas: **20**
 - Blocos JS exatos repetidos em 2+ páginas: **20**
