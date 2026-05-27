@@ -6,6 +6,7 @@ on:
     branches: [master]
     paths:
       - "scripts/apply_gsc_structured_data_issues_fix.py"
+      - "scripts/apply_gsc_emergency_validation_cleaner.py"
       - "scripts/validate_gsc_postfix_structured_data.py"
       - ".github/workflows/gsc-structured-data-issues-fix.yml"
 
@@ -32,6 +33,9 @@ jobs:
       - name: Apply GSC structured data issues fix
         run: python3 scripts/apply_gsc_structured_data_issues_fix.py
 
+      - name: Apply GSC emergency validation cleaner
+        run: python3 scripts/apply_gsc_emergency_validation_cleaner.py
+
       - name: Validate GSC post-fix structured data
         run: python3 scripts/validate_gsc_postfix_structured_data.py
 
@@ -46,7 +50,7 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "fix: resolve and validate GSC structured data issues"
+          git commit -m "fix: resolve GSC validation blockers"
           for i in 1 2 3 4 5; do
             git fetch origin "${GITHUB_REF_NAME}"
             if git rebase "origin/${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
