@@ -2601,6 +2601,18 @@ body{background:#00202e!important;}
 <!-- EC STATIC PRODUCT SCHEMA FAQ FIX -->
 <script id="ec-static-product-schema-faq" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Restaurant","@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca","url":"https://www.embaixadacarioca.com/","telephone":"+55 21 96683-7556","email":"eventos@embaixadacarioca.com.br","servesCuisine":["Brazilian","Carioca","Brazilian breakfast","Brazilian lunch"],"priceRange":"R$R$","acceptsReservations":true,"hasMenu":"https://www.embaixadacarioca.com/cardapio.html","address":{"@type":"PostalAddress","streetAddress":"Parque Bondinho Pão de Açúcar, Morro da Urca","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"},"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Dentro do Parque Bondinho Pão de Açúcar","value":true},{"@type":"LocationFeatureSpecification","name":"Vista no Morro da Urca","value":true},{"@type":"LocationFeatureSpecification","name":"Experiência gastronômica carioca","value":true}],"potentialAction":{"@type":"ReserveAction","target":"https://go.tagme.com.br/embaixadacarioca"},"sameAs":["https://www.instagram.com/embaixadacarioca/"],"mainEntityOfPage":"https://www.embaixadacarioca.com/es/cafe-da-manha.html"},{"@type":"FAQPage","@id":"https://www.embaixadacarioca.com/es/cafe-da-manha.html#faq","mainEntity":[{"@type":"Question","name":"¿Qué es desayuno en Morro da Urca?","acceptedAnswer":{"@type":"Answer","text":"Forma parte de la experiencia de Embaixada Carioca en Morro da Urca, dentro del Parque Bondinho Pão de Açúcar."}},{"@type":"Question","name":"¿Dónde está Embaixada Carioca?","acceptedAnswer":{"@type":"Answer","text":"Embaixada Carioca está en Morro da Urca, dentro del Parque Bondinho Pão de Açúcar, en la primera parada del teleférico."}},{"@type":"Question","name":"¿Necesito entrada del Bondinho?","acceptedAnswer":{"@type":"Answer","text":"Sí. El acceso al restaurante ocurre dentro del Parque Bondinho Pão de Açúcar."}},{"@type":"Question","name":"¿El restaurante sirve comida brasileña?","acceptedAnswer":{"@type":"Answer","text":"Sí. El restaurante sirve comida brasileña y carioca, con desayuno, almuerzo, petiscos y bebidas."}},{"@type":"Question","name":"¿Puedo hacer una reserva?","acceptedAnswer":{"@type":"Answer","text":"Sí. Las reservas se pueden hacer por el enlace oficial de Embaixada Carioca."}},{"@type":"Question","name":"¿Es recomendable para turistas?","acceptedAnswer":{"@type":"Answer","text":"Sí. La casa fue pensada para visitantes que quieren una experiencia carioca durante el paseo al Pão de Açúcar."}},{"@type":"Question","name":"¿Embaixada Carioca recibe grupos y eventos?","acceptedAnswer":{"@type":"Answer","text":"Sí. La casa recibe grupos, eventos corporativos, agencias y celebraciones."}},{"@type":"Question","name":"¿Cuál es la especialidad de Embaixada Carioca?","acceptedAnswer":{"@type":"Answer","text":"La casa es conocida por caipirinhas, chope, comida brasileña y su ubicación en Morro da Urca."}}]}]}</script>
 <!-- /EC STATIC PRODUCT SCHEMA FAQ FIX -->
+<style id="ec-featured-snippet-ordered-lists-css">
+.ec-featured-snippet-ol{background:#fff8ea;color:#00405a;border-top:1px solid rgba(0,64,90,.10);border-bottom:1px solid rgba(0,64,90,.08);padding:56px 0;font-family:Catamaran,Verdana,system-ui,sans-serif}
+.ec-featured-snippet-ol .ec-fs-wrap{width:min(1080px,calc(100% - 44px));margin:0 auto}
+.ec-featured-snippet-ol .ec-fs-kicker{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#527f8f;margin-bottom:12px}
+.ec-featured-snippet-ol h2{font-size:clamp(28px,3.4vw,48px);line-height:1.08;margin:0 0 16px;color:#00405a;font-weight:800;letter-spacing:-.02em}
+.ec-featured-snippet-ol p{font-size:18px;line-height:1.62;color:#485156;max-width:880px;margin:0 0 18px}
+.ec-featured-snippet-ol ol{counter-reset:item;margin:20px 0 0;padding:0;display:grid;gap:12px;list-style:none}
+.ec-featured-snippet-ol li{display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start;background:#fff;border:1px solid rgba(0,64,90,.12);border-radius:18px;padding:18px;line-height:1.5;color:#485156;box-shadow:0 12px 32px rgba(0,64,90,.05)}
+.ec-featured-snippet-ol li::before{counter-increment:item;content:counter(item);display:grid;place-items:center;width:34px;height:34px;border-radius:999px;background:#f59b1e;color:#00405a;font-weight:900;font-family:'JetBrains Mono',ui-monospace,monospace}
+.ec-featured-snippet-ol strong{color:#335d4a}
+@media(max-width:760px){.ec-featured-snippet-ol{padding:40px 0}.ec-featured-snippet-ol p{font-size:16px}.ec-featured-snippet-ol li{grid-template-columns:36px 1fr;padding:15px}}
+</style>
 </head>
 <body data-screen-label="Desayuno"><!-- NAV -->
 <nav class="top" id="topnav">
@@ -3805,6 +3817,21 @@ html body main a.btn[href*="tagme"],html body main a.btn[href*="reserv"],nav.top
 <script defer src="/assets/menuitem-schema-enhancer.js"></script>
 <script defer src="/assets/internal-page-contrast-rescue.js"></script>
 <script defer src="/assets/dossie-content-enhancer.js"></script>
+<!-- EC FEATURED SNIPPET ORDERED LISTS -->
+<section class="ec-featured-snippet-ol" aria-label="Cómo desayunar con vista en el Morro da Urca">
+  <div class="ec-fs-wrap">
+    <div class="ec-fs-kicker">Paso a paso</div>
+    <h2>Cómo desayunar con vista en el Morro da Urca</h2>
+    <p>Un plan simple para desayunar en Embaixada Carioca.</p>
+    <ol>
+      <li>Llegue temprano al Parque Bondinho, Av. Pasteur, 520 — Urca.</li>
+      <li>Suba en el primer tramo del bondinho hasta el Morro da Urca.</li>
+      <li>Vaya a Embaixada Carioca y pida el desayuno, servido todos los días.</li>
+      <li>Reserve antes en fines de semana y feriados para reducir la espera.</li>
+    </ol>
+  </div>
+</section>
+<!-- /EC FEATURED SNIPPET ORDERED LISTS -->
 <!-- EC AIO LOW SCORE EDITORIAL FIX -->
 <section class="ec-aio-low-score-fix" aria-label="Informações úteis para visitantes">
   <div class="ec-aio-wrap">

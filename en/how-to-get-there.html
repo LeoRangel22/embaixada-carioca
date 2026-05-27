@@ -626,6 +626,18 @@ body{background:#00202e!important;}
 @media(max-width:960px){.article-body,.article-content,.longform,.story,.guide-content,.rio-guide{font-size:16px!important;line-height:1.64!important;}}
 </style>
 <!-- /EC Legibility Contrast Lock -->
+<style id="ec-featured-snippet-ordered-lists-css">
+.ec-featured-snippet-ol{background:#fff8ea;color:#00405a;border-top:1px solid rgba(0,64,90,.10);border-bottom:1px solid rgba(0,64,90,.08);padding:56px 0;font-family:Catamaran,Verdana,system-ui,sans-serif}
+.ec-featured-snippet-ol .ec-fs-wrap{width:min(1080px,calc(100% - 44px));margin:0 auto}
+.ec-featured-snippet-ol .ec-fs-kicker{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#527f8f;margin-bottom:12px}
+.ec-featured-snippet-ol h2{font-size:clamp(28px,3.4vw,48px);line-height:1.08;margin:0 0 16px;color:#00405a;font-weight:800;letter-spacing:-.02em}
+.ec-featured-snippet-ol p{font-size:18px;line-height:1.62;color:#485156;max-width:880px;margin:0 0 18px}
+.ec-featured-snippet-ol ol{counter-reset:item;margin:20px 0 0;padding:0;display:grid;gap:12px;list-style:none}
+.ec-featured-snippet-ol li{display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start;background:#fff;border:1px solid rgba(0,64,90,.12);border-radius:18px;padding:18px;line-height:1.5;color:#485156;box-shadow:0 12px 32px rgba(0,64,90,.05)}
+.ec-featured-snippet-ol li::before{counter-increment:item;content:counter(item);display:grid;place-items:center;width:34px;height:34px;border-radius:999px;background:#f59b1e;color:#00405a;font-weight:900;font-family:'JetBrains Mono',ui-monospace,monospace}
+.ec-featured-snippet-ol strong{color:#335d4a}
+@media(max-width:760px){.ec-featured-snippet-ol{padding:40px 0}.ec-featured-snippet-ol p{font-size:16px}.ec-featured-snippet-ol li{grid-template-columns:36px 1fr;padding:15px}}
+</style>
 </head>
 <body data-screen-label="How to Get There">
 <!-- NAV -->
@@ -691,6 +703,21 @@ body{background:#00202e!important;}
 <!-- EC Sprint 5 Quality Consolidation Block -->
 <section class="ec-sprint5-quality" aria-label="Quality guide"><div class="wrap"><h2>Practical guide for planning this visit</h2><p>This page is designed to answer the questions visitors usually have before deciding where to eat during a Sugarloaf visit: access, timing, food style, view, reservation and how the stop fits into the day. Embaixada Carioca is not positioned as a generic restaurant in Rio; it is a Brazilian restaurant inside the Sugarloaf Cable Car Park route, at Urca Hill, with breakfast, lunch, caipirinhas, draft beer and event options.</p><div class="ec-sprint5-grid"><article class="ec-sprint5-card"><strong>Why it matters</strong>The location reduces friction for travelers who are already visiting Sugarloaf and want a reliable place to eat without leaving the attraction.</article><article class="ec-sprint5-card"><strong>Best timing</strong>Morning works well for breakfast with a view; lunch is ideal for Brazilian dishes; late afternoon is useful for drinks and a slower Rio-style pause.</article><article class="ec-sprint5-card"><strong>Access logic</strong>Most visitors reach the restaurant by cable car from Praia Vermelha. The Urca Hill trail can be an alternative when open.</article><article class="ec-sprint5-card"><strong>Decision factor</strong>Choose this stop when the goal is to combine a landmark view, Brazilian food and a practical route inside the tourist attraction.</article></div><h3>How to use this page</h3><ol><li>Confirm whether your visit will be by cable car or trail.</li><li>Check the best meal moment for your itinerary: breakfast, lunch, drinks or event.</li><li>Use the reservation link when visiting on weekends, holidays or with a group.</li><li>Continue exploring Urca Hill or the next cable car stage after the meal.</li></ol></div></section>
 <!-- /EC Sprint 5 Quality Consolidation Block -->
+<!-- EC FEATURED SNIPPET ORDERED LISTS -->
+<section class="ec-featured-snippet-ol" aria-label="How to get to Embaixada Carioca">
+  <div class="ec-fs-wrap">
+    <div class="ec-fs-kicker">Step by step</div>
+    <h2>How to get to Embaixada Carioca</h2>
+    <p>Use this route to avoid GPS mistakes and arrive at Sugarloaf Cable Car Park.</p>
+    <ol>
+      <li>Enter <strong>Av. Pasteur, 520 — Urca, Rio de Janeiro</strong> in your GPS or ride app.</li>
+      <li>Go to the Sugarloaf Cable Car Park entrance at Praia Vermelha.</li>
+      <li>Buy or present your cable car ticket.</li>
+      <li>Ride to Morro da Urca, the first stop, where Embaixada Carioca is located.</li>
+    </ol>
+  </div>
+</section>
+<!-- /EC FEATURED SNIPPET ORDERED LISTS -->
 </main><footer class="footer">Embaixada Carioca · Urca Hill · Sugarloaf Cable Car Park · Av. Pasteur, 520 – Urca – Rio de Janeiro – RJ</footer>
 <!-- EC Performance Service Worker -->
 <script>

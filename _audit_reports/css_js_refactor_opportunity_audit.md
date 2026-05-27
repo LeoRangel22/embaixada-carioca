@@ -7,9 +7,9 @@ Mapear oportunidades reais de refactor de CSS/JS sem mexer no visual antes de um
 
 ## Resumo executivo
 - Arquivos HTML analisados: **87**
-- Blocos `<style>` inline: **1427**
+- Blocos `<style>` inline: **1456**
 - Blocos `<script>` inline, incluindo JSON-LD: **1384**
-- Peso estimado de CSS inline: **8.730.932 bytes**
+- Peso estimado de CSS inline: **8.776.549 bytes**
 - Peso estimado de scripts inline: **1.255.901 bytes**
 - Blocos CSS exatos repetidos em 2+ páginas: **20**
 - Blocos JS exatos repetidos em 2+ páginas: **20**
@@ -18,18 +18,18 @@ Mapear oportunidades reais de refactor de CSS/JS sem mexer no visual antes de um
 
 | Página | Styles inline | Scripts inline | JSON-LD | CSS externo | Imagens | CSS bytes | JS bytes | Prioridade |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `index.html` | 32 | 25 | 8 | 4 | 40 | 158732 | 30080 | alta |
-| `es/index.html` | 25 | 29 | 7 | 3 | 34 | 137360 | 24363 | alta |
-| `en/index.html` | 25 | 29 | 7 | 3 | 34 | 137441 | 24231 | alta |
-| `es/eventos.html` | 21 | 29 | 11 | 3 | 10 | 147366 | 25781 | alta |
-| `es/atardecer.html` | 23 | 26 | 8 | 3 | 12 | 148238 | 22898 | alta |
-| `en/sunset.html` | 23 | 26 | 8 | 3 | 12 | 148307 | 22812 | alta |
-| `es/cafe-da-manha.html` | 23 | 25 | 7 | 3 | 19 | 158189 | 23212 | alta |
-| `en/almoco.html` | 23 | 25 | 7 | 3 | 16 | 148506 | 22076 | alta |
+| `index.html` | 33 | 25 | 8 | 4 | 40 | 160305 | 30080 | alta |
+| `es/index.html` | 26 | 29 | 7 | 3 | 34 | 138933 | 24363 | alta |
+| `en/index.html` | 26 | 29 | 7 | 3 | 34 | 139014 | 24231 | alta |
+| `es/eventos.html` | 22 | 29 | 11 | 3 | 10 | 148939 | 25781 | alta |
+| `es/atardecer.html` | 24 | 26 | 8 | 3 | 12 | 149811 | 22898 | alta |
+| `en/sunset.html` | 24 | 26 | 8 | 3 | 12 | 149880 | 22812 | alta |
+| `es/cafe-da-manha.html` | 24 | 25 | 7 | 3 | 19 | 159762 | 23212 | alta |
+| `en/almoco.html` | 24 | 25 | 7 | 3 | 16 | 150079 | 22076 | alta |
+| `en/cafe-da-manha.html` | 23 | 25 | 7 | 3 | 19 | 159124 | 23278 | alta |
+| `en/eventos.html` | 22 | 26 | 8 | 3 | 10 | 149011 | 23381 | alta |
+| `es/almoco.html` | 24 | 24 | 6 | 3 | 16 | 149520 | 21894 | alta |
 | `en/entardecer.html` | 23 | 25 | 7 | 3 | 12 | 148511 | 21641 | alta |
-| `es/entardecer.html` | 23 | 25 | 7 | 3 | 12 | 148442 | 21706 | alta |
-| `en/cafe-da-manha.html` | 22 | 25 | 7 | 3 | 19 | 157551 | 23278 | alta |
-| `en/eventos.html` | 21 | 26 | 8 | 3 | 10 | 147438 | 23381 | alta |
 
 ## Blocos CSS repetidos — candidatos a extração
 
@@ -49,12 +49,12 @@ Mapear oportunidades reais de refactor de CSS/JS sem mexer no visual antes de um
 | `a4d44586ec93` | 34 | 2800 | `══════════════════════════════════════════` | high | no/partial | visual/readability/page-critical pattern: lock |
 | `7acd773d247d` | 31 | 2107 | `bnav-color-fix` | low | yes | recurring utility pattern: nav-rating-badge |
 | `c56f571ca40d` | 29 | 5751 | `ec-nav-ux-fixes` | low | yes | recurring utility pattern: lang-switcher |
+| `d3ac5e30f85c` | 29 | 1573 | `ec-featured-snippet-ordered-lists-css` | medium | partial | global/layout styles or scripts require visual QA before extraction |
 | `d9a5ee4aa469` | 28 | 5756 | `ec-nav-ux-fixes` | low | yes | recurring utility pattern: lang-switcher |
 | `e47d4916028e` | 28 | 5751 | `ec-nav-ux-fixes` | low | yes | recurring utility pattern: lang-switcher |
 | `5dfe83a60153` | 25 | 3043 | `══════════════════════════════════════════` | high | no/partial | visual/readability/page-critical pattern: lock |
 | `f2b7de8f1772` | 24 | 1296 | `ec-aaa-closeout-design-lock` | medium | partial | global/layout styles or scripts require visual QA before extraction |
 | `366f2b42215b` | 22 | 38148 | `nav-standard-css` | high | no/partial | visual/readability/page-critical pattern: lock |
-| `59562c24afde` | 19 | 282 | `── Hero Eyebrow nas subpáginas ──` | high | no/partial | visual/readability/page-critical pattern: page-hero |
 
 ## Blocos JS repetidos — candidatos a extração
 

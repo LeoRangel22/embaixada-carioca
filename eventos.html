@@ -69,6 +69,19 @@
 <link rel="stylesheet" href="/assets/css/ec-stabilization-base.css">
 <link rel="preload" as="image" href="/assets/hero.webp" type="image/webp" fetchpriority="high">
 
+
+<style id="ec-featured-snippet-ordered-lists-css">
+.ec-featured-snippet-ol{background:#fff8ea;color:#00405a;border-top:1px solid rgba(0,64,90,.10);border-bottom:1px solid rgba(0,64,90,.08);padding:56px 0;font-family:Catamaran,Verdana,system-ui,sans-serif}
+.ec-featured-snippet-ol .ec-fs-wrap{width:min(1080px,calc(100% - 44px));margin:0 auto}
+.ec-featured-snippet-ol .ec-fs-kicker{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#527f8f;margin-bottom:12px}
+.ec-featured-snippet-ol h2{font-size:clamp(28px,3.4vw,48px);line-height:1.08;margin:0 0 16px;color:#00405a;font-weight:800;letter-spacing:-.02em}
+.ec-featured-snippet-ol p{font-size:18px;line-height:1.62;color:#485156;max-width:880px;margin:0 0 18px}
+.ec-featured-snippet-ol ol{counter-reset:item;margin:20px 0 0;padding:0;display:grid;gap:12px;list-style:none}
+.ec-featured-snippet-ol li{display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start;background:#fff;border:1px solid rgba(0,64,90,.12);border-radius:18px;padding:18px;line-height:1.5;color:#485156;box-shadow:0 12px 32px rgba(0,64,90,.05)}
+.ec-featured-snippet-ol li::before{counter-increment:item;content:counter(item);display:grid;place-items:center;width:34px;height:34px;border-radius:999px;background:#f59b1e;color:#00405a;font-weight:900;font-family:'JetBrains Mono',ui-monospace,monospace}
+.ec-featured-snippet-ol strong{color:#335d4a}
+@media(max-width:760px){.ec-featured-snippet-ol{padding:40px 0}.ec-featured-snippet-ol p{font-size:16px}.ec-featured-snippet-ol li{grid-template-columns:36px 1fr;padding:15px}}
+</style>
 <!-- EC PRIORITY AAA WARN FIX -->
 <style id="ec-priority-aaa-warn-fix-css">
 /* ec-brand-manual-alignment */
@@ -255,7 +268,22 @@
         </div>
       </div>
     </section>
-  <!-- EC AIO LOW SCORE EDITORIAL FIX -->
+  <!-- EC FEATURED SNIPPET ORDERED LISTS -->
+<section class="ec-featured-snippet-ol" aria-label="Como solicitar um evento no Morro da Urca">
+  <div class="ec-fs-wrap">
+    <div class="ec-fs-kicker">Passo a passo</div>
+    <h2>Como solicitar um evento no Morro da Urca</h2>
+    <p>O orçamento fica mais preciso quando as informações essenciais chegam completas.</p>
+    <ol>
+      <li>Informe data, horário e número estimado de convidados.</li>
+      <li>Escolha o formato: café da manhã, almoço, welcome drink, coquetel, workshop ou experiência.</li>
+      <li>Envie necessidades especiais de montagem, audiovisual, troféus, brindes ou roteiro do grupo.</li>
+      <li>Aguarde a proposta e confirme o evento com pagamento do sinal.</li>
+    </ol>
+  </div>
+</section>
+<!-- /EC FEATURED SNIPPET ORDERED LISTS -->
+<!-- EC AIO LOW SCORE EDITORIAL FIX -->
 <section class="ec-aio-low-score-fix" aria-label="Informações úteis para visitantes">
   <div class="ec-aio-wrap">
     <h2>Como solicitar um evento na Embaixada Carioca</h2>
