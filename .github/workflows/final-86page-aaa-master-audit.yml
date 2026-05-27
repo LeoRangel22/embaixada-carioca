@@ -5,6 +5,7 @@ on:
   push:
     branches: [master]
     paths:
+      - 'scripts/finalize_en_parque_bondinho_scorecard_report.py'
       - 'scripts/apply_en_parque_bondinho_scorecard_fix.py'
       - 'scripts/apply_duplicate_faq_schema_cleaner.py'
       - 'scripts/apply_scorecard_gap_fixes.py'
@@ -66,6 +67,8 @@ jobs:
         run: python3 scripts/apply_aio_low_score_editorial_fixes.py
       - name: Apply priority AAA WARN fixes
         run: python3 scripts/apply_priority_aaa_warn_fixes.py
+      - name: Finalize EN Parque Bondinho scorecard report
+        run: python3 scripts/finalize_en_parque_bondinho_scorecard_report.py
       - name: Run final 86-page AAA master audit
         run: python3 scripts/apply_final_86page_aaa_master_audit.py
       - name: Commit fixes and reports
@@ -79,7 +82,7 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "fix: persist EN Parque Bondinho scorecard report"
+          git commit -m "fix: finalize EN Parque Bondinho scorecard report"
           for i in 1 2 3 4 5; do
             git fetch origin "${GITHUB_REF_NAME}"
             if git rebase "origin/${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
