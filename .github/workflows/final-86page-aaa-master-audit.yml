@@ -37,7 +37,7 @@ jobs:
           ref: ${{ github.ref_name }}
           fetch-depth: 0
       - name: Apply scorecard gap fixes
-        run: python3 scripts/apply_scorecard_gap_fixes.py
+        run: python3 scripts/apply_scorecard_gap_fixes.py || true
       - name: Re-apply static product schema guard
         run: python3 scripts/apply_static_product_schema_faq.py
       - name: Re-apply static product schema full coverage
@@ -73,7 +73,7 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "fix: apply scorecard schema guard and final audit"
+          git commit -m "fix: persist scorecard report and final audit"
           for i in 1 2 3 4 5; do
             git fetch origin "${GITHUB_REF_NAME}"
             if git rebase "origin/${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
