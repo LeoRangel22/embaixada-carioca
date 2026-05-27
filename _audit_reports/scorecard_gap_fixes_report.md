@@ -21,10 +21,10 @@ Corrigir os gaps apontados no scorecard visual: FAQ incompleto, `parque-bondinho
 
 | Página | Status | Changed | FAQ | OL | Palavras | Notas |
 |---|---|---:|---:|---:|---:|---|
-| `index.html` | ok | True | 8 | 2 | 6756 | faq_json_ld_removed=2 |
-| `eventos.html` | fail | True | 8 | 3 | 1110 | faq_json_ld_removed=2; visible_depth_block=True |
-| `en/cardapio.html` | ok | True | 8 | 1 | 1274 | faq_json_ld_removed=2 |
-| `en/almoco.html` | ok | True | 8 | 2 | 1559 | faq_json_ld_removed=2 |
+| `index.html` | ok | True | 8 | 2 | 6756 | faq_json_ld_removed=1 |
+| `eventos.html` | fail | True | 8 | 3 | 1110 | faq_json_ld_removed=1; visible_depth_block=True |
+| `en/cardapio.html` | ok | True | 8 | 1 | 1274 | faq_json_ld_removed=1 |
+| `en/almoco.html` | ok | True | 8 | 2 | 1559 | faq_json_ld_removed=1 |
 | `parque-bondinho.html` | ok | True | 8 | 1 | 1598 | faq_json_ld_removed=1; visible_depth_block=True |
 
 ## Próxima validação

@@ -14,7 +14,7 @@ Garantir no máximo um `FAQPage` por URL nas páginas críticas apontadas pelo r
 - Páginas analisadas: **11**
 - Páginas com PASS: **11**
 - Páginas com falha: **0**
-- Páginas alteradas: **10**
+- Páginas alteradas: **8**
 
 ## Resultados por página
 
@@ -27,7 +27,7 @@ Garantir no máximo um `FAQPage` por URL nas páginas críticas apontadas pelo r
 | `cafe-da-manha.html` | ok | True | 2 | 16 | 1 | 8 | 1 | kept:no-id:8; stripped-faq-preserved-nonfaq:ec-static-product-schema-faq:8 |
 | `eventos.html` | ok | True | 2 | 16 | 1 | 8 | 1 | kept:no-id:8; stripped-faq-preserved-nonfaq:ec-static-product-schema-faq:8 |
 | `en/cardapio.html` | ok | True | 2 | 16 | 1 | 8 | 1 | kept:no-id:8; stripped-faq-preserved-nonfaq:ec-static-product-schema-faq:8 |
-| `es/cardapio.html` | ok | True | 2 | 11 | 1 | 8 | 1 | removed:no-id:3; kept:ec-static-product-schema-faq:8 |
+| `es/cardapio.html` | ok | False | 1 | 8 | 1 | 8 | 0 | kept:ec-static-product-schema-faq:8 |
 | `en/almoco.html` | ok | True | 2 | 16 | 1 | 8 | 1 | kept:no-id:8; stripped-faq-preserved-nonfaq:ec-static-product-schema-faq:8 |
-| `es/almoco.html` | ok | True | 2 | 11 | 1 | 8 | 1 | removed:no-id:3; kept:ec-static-product-schema-faq:8 |
+| `es/almoco.html` | ok | False | 1 | 8 | 1 | 8 | 0 | kept:ec-static-product-schema-faq:8 |
 | `parque-bondinho.html` | ok | False | 1 | 8 | 1 | 8 | 0 | kept:no-id:8 |

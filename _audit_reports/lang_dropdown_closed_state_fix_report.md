@@ -13,7 +13,7 @@ Durante QA visual real, o seletor de idioma apareceu aberto/sem contenção sobr
 ## Resumo
 - Arquivos HTML analisados: **87**
 - Arquivos com seletor de idioma processados: **85**
-- Arquivos alterados: **26**
+- Arquivos alterados: **27**
 - Arquivos sem seletor de idioma/SKIP: **2**
 
 ## Resultados
@@ -49,7 +49,7 @@ Durante QA visual real, o seletor de idioma apareceu aberto/sem contenção sobr
 | `en/morro-da-urca.html` | ok | True |
 | `en/nossa-visao.html` | ok | False |
 | `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` | ok | False |
-| `en/parque-bondinho.html` | ok | False |
+| `en/parque-bondinho.html` | ok | True |
 | `en/por-do-sol-morro-da-urca.html` | ok | False |
 | `en/restaurant-at-urca-hill.html` | ok | False |
 | `en/restaurants-near-sugarloaf-mountain.html` | ok | False |
