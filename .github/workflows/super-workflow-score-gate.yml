@@ -29,6 +29,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: super-workflow-score-gate-${{ github.ref_name }}
+  cancel-in-progress: false
+
 jobs:
   super-workflow-score-gate:
     name: Run all audit reports until score gate passes
@@ -43,6 +47,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -103,14 +108,25 @@ jobs:
             _audit_reports/*.json
 
       - name: Commit updated reports and automatic fixes
-        uses: stefanzweifel/git-auto-commit-action@v5
         if: always()
-        with:
-          commit_message: "audit: update super workflow score gate reports"
-          file_pattern: >-
-            **/*.html
-            assets/**/*.css
-            manifest.json
-            _audit_reports/*.md
-            _audit_reports/*.csv
-            _audit_reports/*.json
+        shell: bash
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add **/*.html assets/**/*.css manifest.json _audit_reports/*.md _audit_reports/*.csv _audit_reports/*.json || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "audit: update super workflow score gate reports"
+          for i in 1 2 3 4 5; do
+            git fetch origin "${GITHUB_REF_NAME}"
+            if git rebase "origin/${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
+              exit 0
+            fi
+            git rebase --abort || true
+            sleep $((i * 3))
+          done
+          echo "Failed to push after retries"
+          exit 1
