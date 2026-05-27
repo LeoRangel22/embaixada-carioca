@@ -7,9 +7,9 @@ Mapear oportunidades reais de refactor de CSS/JS sem mexer no visual antes de um
 
 ## Resumo executivo
 - Arquivos HTML analisados: **87**
-- Blocos `<style>` inline: **1541**
+- Blocos `<style>` inline: **1548**
 - Blocos `<script>` inline, incluindo JSON-LD: **1469**
-- Peso estimado de CSS inline: **9.045.064 bytes**
+- Peso estimado de CSS inline: **9.054.906 bytes**
 - Peso estimado de scripts inline: **1.370.736 bytes**
 - Blocos CSS exatos repetidos em 2+ páginas: **20**
 - Blocos JS exatos repetidos em 2+ páginas: **20**
@@ -26,10 +26,10 @@ Mapear oportunidades reais de refactor de CSS/JS sem mexer no visual antes de um
 | `en/sunset.html` | 25 | 27 | 8 | 3 | 12 | 153039 | 24163 | alta |
 | `es/cafe-da-manha.html` | 25 | 26 | 7 | 3 | 19 | 162921 | 24563 | alta |
 | `en/almoco.html` | 25 | 26 | 7 | 3 | 16 | 153238 | 23427 | alta |
+| `cafe-da-manha.html` | 28 | 22 | 8 | 4 | 19 | 171689 | 25880 | alta |
 | `en/cafe-da-manha.html` | 24 | 26 | 7 | 3 | 19 | 162283 | 24629 | alta |
 | `en/eventos.html` | 23 | 27 | 8 | 3 | 10 | 152170 | 24732 | alta |
 | `es/almoco.html` | 25 | 25 | 6 | 3 | 16 | 152679 | 23245 | alta |
-| `en/entardecer.html` | 24 | 26 | 7 | 3 | 12 | 151670 | 22992 | alta |
 
 ## Blocos CSS repetidos — candidatos a extração
 

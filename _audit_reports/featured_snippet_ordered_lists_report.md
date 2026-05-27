@@ -13,7 +13,7 @@ Adicionar listas ordenadas visíveis (`<ol>`) em páginas comerciais prioritári
 ## Resumo
 - Páginas configuradas: **29**
 - Páginas existentes processadas: **29**
-- Páginas alteradas: **10**
+- Páginas alteradas: **14**
 - Páginas inexistentes/SKIP: **0**
 - Páginas processadas sem `<ol>` após execução: **0**
 
@@ -22,16 +22,16 @@ Adicionar listas ordenadas visíveis (`<ol>`) em páginas comerciais prioritári
 | Página | Status | Changed | OL após execução |
 |---|---|---:|---:|
 | `index.html` | ok | True | 2 |
-| `cafe-da-manha.html` | ok | False | 1 |
+| `cafe-da-manha.html` | ok | True | 1 |
 | `almoco.html` | ok | True | 2 |
 | `cardapio.html` | ok | True | 2 |
 | `entardecer.html` | ok | True | 2 |
 | `eventos.html` | ok | True | 2 |
-| `feijoada.html` | ok | False | 1 |
+| `feijoada.html` | ok | True | 1 |
 | `como-chegar.html` | ok | True | 4 |
-| `guia-do-rio.html` | ok | False | 5 |
+| `guia-do-rio.html` | ok | True | 5 |
 | `restaurante-morro-da-urca.html` | ok | False | 2 |
-| `morro-da-urca.html` | ok | False | 1 |
+| `morro-da-urca.html` | ok | True | 1 |
 | `en/index.html` | ok | False | 1 |
 | `en/cafe-da-manha.html` | ok | False | 1 |
 | `en/almoco.html` | ok | False | 2 |
