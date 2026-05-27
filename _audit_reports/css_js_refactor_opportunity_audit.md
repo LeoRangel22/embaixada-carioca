@@ -7,10 +7,10 @@ Mapear oportunidades reais de refactor de CSS/JS sem mexer no visual antes de um
 
 ## Resumo executivo
 - Arquivos HTML analisados: **87**
-- Blocos `<style>` inline: **1549**
-- Blocos `<script>` inline, incluindo JSON-LD: **1469**
-- Peso estimado de CSS inline: **9.056.063 bytes**
-- Peso estimado de scripts inline: **1.370.736 bytes**
+- Blocos `<style>` inline: **1551**
+- Blocos `<script>` inline, incluindo JSON-LD: **1470**
+- Peso estimado de CSS inline: **9.058.445 bytes**
+- Peso estimado de scripts inline: **1.387.118 bytes**
 - Blocos CSS exatos repetidos em 2+ páginas: **20**
 - Blocos JS exatos repetidos em 2+ páginas: **20**
 
@@ -18,18 +18,18 @@ Mapear oportunidades reais de refactor de CSS/JS sem mexer no visual antes de um
 
 | Página | Styles inline | Scripts inline | JSON-LD | CSS externo | Imagens | CSS bytes | JS bytes | Prioridade |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `index.html` | 34 | 26 | 8 | 4 | 40 | 163464 | 31431 | alta |
-| `es/index.html` | 27 | 30 | 7 | 3 | 34 | 142092 | 25714 | alta |
-| `en/index.html` | 27 | 30 | 7 | 3 | 34 | 142173 | 25582 | alta |
+| `index.html` | 34 | 26 | 8 | 4 | 40 | 163464 | 28632 | alta |
+| `es/index.html` | 27 | 30 | 7 | 3 | 34 | 142092 | 27456 | alta |
+| `en/index.html` | 27 | 30 | 7 | 3 | 34 | 142173 | 27293 | alta |
 | `es/eventos.html` | 23 | 30 | 11 | 3 | 10 | 152098 | 27132 | alta |
 | `es/atardecer.html` | 25 | 27 | 8 | 3 | 12 | 152970 | 24249 | alta |
 | `en/sunset.html` | 25 | 27 | 8 | 3 | 12 | 153039 | 24163 | alta |
 | `es/cafe-da-manha.html` | 25 | 26 | 7 | 3 | 19 | 162921 | 24563 | alta |
-| `en/almoco.html` | 25 | 26 | 7 | 3 | 16 | 153238 | 23427 | alta |
-| `cafe-da-manha.html` | 28 | 22 | 8 | 4 | 19 | 171689 | 25880 | alta |
+| `en/almoco.html` | 25 | 26 | 7 | 3 | 16 | 153238 | 26373 | alta |
+| `cafe-da-manha.html` | 28 | 22 | 8 | 4 | 19 | 171689 | 27599 | alta |
 | `en/cafe-da-manha.html` | 24 | 26 | 7 | 3 | 19 | 162283 | 24629 | alta |
+| `es/almoco.html` | 25 | 25 | 6 | 3 | 16 | 152679 | 25000 | alta |
 | `en/eventos.html` | 23 | 27 | 8 | 3 | 10 | 152170 | 24732 | alta |
-| `es/almoco.html` | 25 | 25 | 6 | 3 | 16 | 152679 | 23245 | alta |
 
 ## Blocos CSS repetidos — candidatos a extração
 

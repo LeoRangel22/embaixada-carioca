@@ -15,7 +15,7 @@ Corrigir a inconsistência editorial sobre ingresso/acesso no `parque-bondinho.h
 - Página: `parque-bondinho.html`
 - Status: `ok`
 - Changed: `True`
-- Substituições de frases potencialmente inconsistentes: `2`
+- Substituições de frases potencialmente inconsistentes: `0`
 - Bloco de clareza inserido: `True`
 - Frases obrigatórias presentes: `True`
 

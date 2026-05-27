@@ -26,7 +26,7 @@ Adicionar listas ordenadas visíveis (`<ol>`) em páginas comerciais prioritári
 | `almoco.html` | ok | True | 2 |
 | `cardapio.html` | ok | True | 2 |
 | `entardecer.html` | ok | True | 2 |
-| `eventos.html` | ok | True | 2 |
+| `eventos.html` | ok | True | 3 |
 | `feijoada.html` | ok | True | 1 |
 | `como-chegar.html` | ok | True | 4 |
 | `guia-do-rio.html` | ok | True | 5 |

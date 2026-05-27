@@ -23,7 +23,7 @@ Correções seguras nas páginas mais pesadas apontadas pelo Phase 2 Performance
 | `almoco.html` | False | 0 | 0 | 0 | 0 | 0 | 0 | 0 | False | False | 29 | 18 | 17 |
 | `cardapio.html` | False | 0 | 0 | 0 | 0 | 0 | 0 | 0 | False | False | 30 | 19 | 11 |
 | `guia-do-rio.html` | False | 0 | 0 | 0 | 0 | 0 | 0 | 0 | False | False | 29 | 18 | 9 |
-| `eventos.html` | False | 0 | 0 | 0 | 0 | 0 | 0 | 0 | False | False | 5 | 3 | 4 |
+| `eventos.html` | False | 0 | 0 | 0 | 0 | 0 | 0 | 0 | False | False | 6 | 3 | 4 |
 
 ## Próxima fase
 A redução pesada de CSS/JS deve ser feita como refactor controlado: extrair blocos globais para assets externos, testar visualmente e só então remover os patches inline redundantes.

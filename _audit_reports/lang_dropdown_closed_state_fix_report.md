@@ -13,7 +13,7 @@ Durante QA visual real, o seletor de idioma apareceu aberto/sem contenção sobr
 ## Resumo
 - Arquivos HTML analisados: **87**
 - Arquivos com seletor de idioma processados: **85**
-- Arquivos alterados: **1**
+- Arquivos alterados: **26**
 - Arquivos sem seletor de idioma/SKIP: **2**
 
 ## Resultados
@@ -22,31 +22,31 @@ Durante QA visual real, o seletor de idioma apareceu aberto/sem contenção sobr
 |---|---|---:|
 | `404.html` | ok | False |
 | `almoco-morro-da-urca.html` | ok | False |
-| `almoco.html` | ok | False |
+| `almoco.html` | ok | True |
 | `cafe-da-manha-com-vista-rio-de-janeiro.html` | ok | False |
 | `cafe-da-manha-pao-de-acucar.html` | ok | False |
-| `cafe-da-manha.html` | ok | False |
+| `cafe-da-manha.html` | ok | True |
 | `caipirinha-com-vista-rio.html` | ok | False |
-| `cardapio.html` | ok | False |
+| `cardapio.html` | ok | True |
 | `como-chegar.html` | ok | False |
 | `contato.html` | ok | False |
 | `en/almoco-morro-da-urca.html` | ok | False |
-| `en/almoco.html` | ok | False |
+| `en/almoco.html` | ok | True |
 | `en/breakfast-with-a-view-rio-de-janeiro.html` | ok | False |
 | `en/cafe-da-manha-pao-de-acucar.html` | ok | False |
-| `en/cafe-da-manha.html` | ok | False |
+| `en/cafe-da-manha.html` | ok | True |
 | `en/caipirinha-com-vista-rio.html` | ok | False |
-| `en/cardapio.html` | ok | False |
+| `en/cardapio.html` | ok | True |
 | `en/contato.html` | ok | False |
-| `en/entardecer.html` | ok | False |
-| `en/eventos.html` | ok | False |
+| `en/entardecer.html` | ok | True |
+| `en/eventos.html` | ok | True |
 | `en/feijoada-com-vista-rio-de-janeiro.html` | ok | False |
-| `en/feijoada.html` | ok | False |
+| `en/feijoada.html` | ok | True |
 | `en/gastronomia-carioca.html` | ok | False |
 | `en/guia-do-rio.html` | ok | False |
 | `en/how-to-get-there.html` | ok | False |
-| `en/index.html` | ok | False |
-| `en/morro-da-urca.html` | ok | False |
+| `en/index.html` | ok | True |
+| `en/morro-da-urca.html` | ok | True |
 | `en/nossa-visao.html` | ok | False |
 | `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` | ok | False |
 | `en/parque-bondinho.html` | ok | False |
@@ -56,28 +56,28 @@ Durante QA visual real, o seletor de idioma apareceu aberto/sem contenção sobr
 | `en/roteiro-meio-dia-urca-pao-de-acucar.html` | ok | False |
 | `en/sugarloaf-cable-car-park.html` | ok | False |
 | `en/sugarloaf-cable-car-restaurant.html` | ok | False |
-| `en/sunset.html` | ok | False |
+| `en/sunset.html` | ok | True |
 | `en/where-to-eat-near-sugarloaf.html` | ok | False |
-| `entardecer.html` | ok | False |
+| `entardecer.html` | ok | True |
 | `es/almoco-morro-da-urca.html` | ok | False |
-| `es/almoco.html` | ok | False |
-| `es/atardecer.html` | ok | False |
+| `es/almoco.html` | ok | True |
+| `es/atardecer.html` | ok | True |
 | `es/cafe-da-manha-pao-de-acucar.html` | ok | False |
-| `es/cafe-da-manha.html` | ok | False |
+| `es/cafe-da-manha.html` | ok | True |
 | `es/caipirinha-com-vista-rio.html` | ok | False |
-| `es/cardapio.html` | ok | False |
+| `es/cardapio.html` | ok | True |
 | `es/como-llegar.html` | ok | False |
 | `es/contato.html` | ok | False |
 | `es/desayuno-con-vista-rio-de-janeiro.html` | ok | False |
 | `es/donde-comer-cerca-del-pan-de-azucar.html` | ok | False |
-| `es/entardecer.html` | ok | False |
-| `es/eventos.html` | ok | False |
+| `es/entardecer.html` | ok | True |
+| `es/eventos.html` | ok | True |
 | `es/feijoada-com-vista-rio-de-janeiro.html` | ok | False |
-| `es/feijoada.html` | ok | False |
+| `es/feijoada.html` | ok | True |
 | `es/gastronomia-carioca.html` | ok | False |
 | `es/guia-do-rio.html` | ok | False |
-| `es/index.html` | ok | False |
-| `es/morro-da-urca.html` | ok | False |
+| `es/index.html` | ok | True |
+| `es/morro-da-urca.html` | ok | True |
 | `es/nossa-visao.html` | ok | False |
 | `es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` | ok | False |
 | `es/parque-bondinho-pan-de-azucar.html` | ok | False |
@@ -88,12 +88,12 @@ Durante QA visual real, o seletor de idioma apareceu aberto/sem contenção sobr
 | `es/restaurantes-cerca-del-pan-de-azucar.html` | ok | False |
 | `es/roteiro-meio-dia-urca-pao-de-acucar.html` | ok | False |
 | `feijoada-com-vista-rio-de-janeiro.html` | ok | False |
-| `feijoada.html` | ok | False |
+| `feijoada.html` | ok | True |
 | `gastronomia-carioca.html` | ok | False |
 | `guia-do-rio.html` | ok | False |
 | `home-preview.html` | ok | False |
-| `index.html` | ok | False |
-| `morro-da-urca.html` | ok | False |
+| `index.html` | ok | True |
+| `morro-da-urca.html` | ok | True |
 | `nossa-visao.html` | ok | False |
 | `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` | ok | False |
 | `offline.html` | ok | False |
