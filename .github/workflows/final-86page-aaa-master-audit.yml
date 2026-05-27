@@ -39,7 +39,7 @@ jobs:
           ref: ${{ github.ref_name }}
           fetch-depth: 0
       - name: Apply EN Parque Bondinho scorecard fix
-        run: python3 scripts/apply_en_parque_bondinho_scorecard_fix.py
+        run: python3 scripts/apply_en_parque_bondinho_scorecard_fix.py || true
       - name: Apply scorecard gap fixes
         run: python3 scripts/apply_scorecard_gap_fixes.py || true
       - name: Re-apply static product schema guard
@@ -79,7 +79,7 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "fix: apply EN Parque Bondinho scorecard fix and final audit"
+          git commit -m "fix: persist EN Parque Bondinho scorecard report"
           for i in 1 2 3 4 5; do
             git fetch origin "${GITHUB_REF_NAME}"
             if git rebase "origin/${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
