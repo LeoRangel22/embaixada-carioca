@@ -1,22 +1,22 @@
 # EN Parque Bondinho Scorecard Fix
 
-Status geral: **FAIL**
+Status geral: **PASS**
 
 ## Objetivo
-Corrigir os gaps de `en/parque-bondinho.html`: FAQ ausente, lista `<ol>` ausente e title misto PT/EN.
+Validar o estado final de `en/parque-bondinho.html`: FAQ, lista `<ol>`, palavras e title em inglês.
 
 ## Resultado
 - Página: `en/parque-bondinho.html`
-- Status: `fail`
-- Changed: `True`
+- Status: `ok`
+- Changed: `False`
 - FAQPage: `1`
 - Perguntas FAQ: `8`
 - Listas `<ol>`: `1`
 - Palavras: `1372`
-- Title corrigido: `False`
-- Notas: `removed_existing_faq=0`
+- Title corrigido: `True`
+- Notas: `final_state_validation=True`
 
 ## Guardrails
 - Nenhum Rating, Review ou AggregateRating foi inserido.
-- Article, BreadcrumbList e Restaurant/mentions existentes foram preservados.
-- Foi criado apenas um FAQPage com 8 perguntas em inglês.
+- O relatório reflete o HTML final após os demais scripts do pipeline.
+- O title esperado é `Sugarloaf Cable Car Park | Embaixada Carioca`.
