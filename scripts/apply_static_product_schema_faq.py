@@ -6,6 +6,7 @@ P1B objective:
 - Add Restaurant schema where required.
 - Add FAQPage with 8 questions where required.
 - Remove legacy rating/review fields from all JSON-LD blocks on audited pages.
+- Audit forbidden rating terms structurally, not as raw-text false positives.
 """
 from __future__ import annotations
 
@@ -26,7 +27,6 @@ BLOCK_END = "<!-- /EC STATIC PRODUCT SCHEMA FAQ FIX -->"
 SCRIPT_ID = "ec-static-product-schema-faq"
 FORBIDDEN_KEYS = {"aggregateRating", "ratingValue", "reviewCount", "ratingCount", "bestRating", "worstRating"}
 FORBIDDEN_TYPES = {"AggregateRating"}
-FORBIDDEN_TERMS = {"AggregateRating", *FORBIDDEN_KEYS}
 JSONLD_RE = re.compile(r'(<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>)(.*?)(</script>)', re.I | re.S)
 
 PAGES: dict[str, dict[str, Any]] = {
@@ -73,6 +73,7 @@ RESTAURANT_BASE: dict[str, Any] = {
     "potentialAction": {"@type": "ReserveAction", "target": "https://go.tagme.com.br/embaixadacarioca"},
     "sameAs": ["https://www.instagram.com/embaixadacarioca/"],
 }
+
 
 @dataclass
 class PageResult:
@@ -128,6 +129,26 @@ def strip_old_block(source: str) -> str:
     return re.sub(re.escape(BLOCK_START) + r"[\s\S]*?" + re.escape(BLOCK_END) + r"\s*", "", source, flags=re.I)
 
 
+def collect_forbidden_schema_terms(obj: Any, found: set[str]) -> None:
+    """Collect only forbidden JSON-LD keys/types, not arbitrary text values."""
+    if isinstance(obj, dict):
+        typ = obj.get("@type")
+        if isinstance(typ, str) and typ in FORBIDDEN_TYPES:
+            found.add(typ)
+        elif isinstance(typ, list):
+            for item in typ:
+                item_str = str(item)
+                if item_str in FORBIDDEN_TYPES:
+                    found.add(item_str)
+        for key, value in obj.items():
+            if key in FORBIDDEN_KEYS:
+                found.add(key)
+            collect_forbidden_schema_terms(value, found)
+    elif isinstance(obj, list):
+        for item in obj:
+            collect_forbidden_schema_terms(item, found)
+
+
 def remove_forbidden_jsonld(obj: Any) -> Any:
     if isinstance(obj, dict):
         typ = obj.get("@type")
@@ -159,9 +180,11 @@ def sanitize_jsonld(source: str) -> str:
         cleaned = remove_forbidden_jsonld(obj)
         if cleaned is None:
             return ""
+        remaining: set[str] = set()
+        collect_forbidden_schema_terms(cleaned, remaining)
+        if remaining:
+            raise ValueError("Forbidden rating/review schema term remains after JSON-LD sanitization: " + ", ".join(sorted(remaining)))
         serialized = json.dumps(cleaned, ensure_ascii=False, separators=(",", ":"))
-        if any(term in serialized for term in FORBIDDEN_TERMS):
-            raise ValueError("Forbidden rating/review term remains after JSON-LD sanitization")
         return opener + serialized + closer
     return JSONLD_RE.sub(repl, source)
 
@@ -182,9 +205,11 @@ def schema_block(config: dict[str, Any]) -> str:
             ],
         })
     payload = {"@context": "https://schema.org", "@graph": graph}
+    remaining: set[str] = set()
+    collect_forbidden_schema_terms(payload, remaining)
+    if remaining:
+        raise ValueError("Forbidden rating/review schema term leaked into new static schema: " + ", ".join(sorted(remaining)))
     serialized = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
-    if any(term in serialized for term in FORBIDDEN_TERMS):
-        raise ValueError("Forbidden rating/review term leaked into new static schema")
     return f'{BLOCK_START}\n<script id="{SCRIPT_ID}" type="application/ld+json">{serialized}</script>\n{BLOCK_END}\n'
 
 
@@ -215,12 +240,11 @@ def audit_html(source: str) -> tuple[bool, bool, int, list[str]]:
     faq_counts: list[int] = []
     forbidden: set[str] = set()
     for _, raw, _ in JSONLD_RE.findall(source):
-        if any(term in raw for term in FORBIDDEN_TERMS):
-            forbidden.update(term for term in FORBIDDEN_TERMS if term in raw)
         try:
             obj = json.loads(html.unescape(raw.strip()))
         except Exception:
             continue
+        collect_forbidden_schema_terms(obj, forbidden)
         walk_schema(obj, types, faq_counts)
     return ("Restaurant" in types or "FoodEstablishment" in types), "FAQPage" in types, max(faq_counts or [0]), sorted(forbidden)
 
@@ -243,7 +267,7 @@ def apply_page(page: str, config: dict[str, Any]) -> PageResult:
     if config.get("faq") and (not faq_found or faq_questions < 8):
         warnings.append("FAQPage missing or below 8 questions")
     if forbidden:
-        warnings.append("forbidden rating/review terms found")
+        warnings.append("forbidden rating/review schema terms found")
     status = "PASS" if not warnings else "FAIL"
     return PageResult(page, True, status, bool(config.get("restaurant")), restaurant_found, bool(config.get("faq")), faq_found, faq_questions, forbidden, changed, warnings)
 
@@ -261,7 +285,7 @@ def write_reports(results: list[PageResult]) -> int:
         "## Critérios",
         "- Restaurant Schema estático no HTML das páginas de produto críticas.",
         "- FAQPage estático com 8 perguntas nas páginas configuradas.",
-        "- Nenhum campo de rating/review proibido no JSON-LD.",
+        "- Nenhum tipo/campo estrutural proibido de rating/review no JSON-LD.",
         "- Páginas inexistentes são marcadas como SKIP, não como FAIL.",
         "",
         "## Resultados por página",
