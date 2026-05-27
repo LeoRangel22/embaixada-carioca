@@ -7,10 +7,10 @@ Mapear oportunidades reais de refactor de CSS/JS sem mexer no visual antes de um
 
 ## Resumo executivo
 - Arquivos HTML analisados: **87**
-- Blocos `<style>` inline: **1456**
-- Blocos `<script>` inline, incluindo JSON-LD: **1384**
-- Peso estimado de CSS inline: **8.776.549 bytes**
-- Peso estimado de scripts inline: **1.255.901 bytes**
+- Blocos `<style>` inline: **1541**
+- Blocos `<script>` inline, incluindo JSON-LD: **1469**
+- Peso estimado de CSS inline: **9.045.064 bytes**
+- Peso estimado de scripts inline: **1.370.736 bytes**
 - Blocos CSS exatos repetidos em 2+ páginas: **20**
 - Blocos JS exatos repetidos em 2+ páginas: **20**
 
@@ -18,23 +18,24 @@ Mapear oportunidades reais de refactor de CSS/JS sem mexer no visual antes de um
 
 | Página | Styles inline | Scripts inline | JSON-LD | CSS externo | Imagens | CSS bytes | JS bytes | Prioridade |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `index.html` | 33 | 25 | 8 | 4 | 40 | 160305 | 30080 | alta |
-| `es/index.html` | 26 | 29 | 7 | 3 | 34 | 138933 | 24363 | alta |
-| `en/index.html` | 26 | 29 | 7 | 3 | 34 | 139014 | 24231 | alta |
-| `es/eventos.html` | 22 | 29 | 11 | 3 | 10 | 148939 | 25781 | alta |
-| `es/atardecer.html` | 24 | 26 | 8 | 3 | 12 | 149811 | 22898 | alta |
-| `en/sunset.html` | 24 | 26 | 8 | 3 | 12 | 149880 | 22812 | alta |
-| `es/cafe-da-manha.html` | 24 | 25 | 7 | 3 | 19 | 159762 | 23212 | alta |
-| `en/almoco.html` | 24 | 25 | 7 | 3 | 16 | 150079 | 22076 | alta |
-| `en/cafe-da-manha.html` | 23 | 25 | 7 | 3 | 19 | 159124 | 23278 | alta |
-| `en/eventos.html` | 22 | 26 | 8 | 3 | 10 | 149011 | 23381 | alta |
-| `es/almoco.html` | 24 | 24 | 6 | 3 | 16 | 149520 | 21894 | alta |
-| `en/entardecer.html` | 23 | 25 | 7 | 3 | 12 | 148511 | 21641 | alta |
+| `index.html` | 34 | 26 | 8 | 4 | 40 | 163464 | 31431 | alta |
+| `es/index.html` | 27 | 30 | 7 | 3 | 34 | 142092 | 25714 | alta |
+| `en/index.html` | 27 | 30 | 7 | 3 | 34 | 142173 | 25582 | alta |
+| `es/eventos.html` | 23 | 30 | 11 | 3 | 10 | 152098 | 27132 | alta |
+| `es/atardecer.html` | 25 | 27 | 8 | 3 | 12 | 152970 | 24249 | alta |
+| `en/sunset.html` | 25 | 27 | 8 | 3 | 12 | 153039 | 24163 | alta |
+| `es/cafe-da-manha.html` | 25 | 26 | 7 | 3 | 19 | 162921 | 24563 | alta |
+| `en/almoco.html` | 25 | 26 | 7 | 3 | 16 | 153238 | 23427 | alta |
+| `en/cafe-da-manha.html` | 24 | 26 | 7 | 3 | 19 | 162283 | 24629 | alta |
+| `en/eventos.html` | 23 | 27 | 8 | 3 | 10 | 152170 | 24732 | alta |
+| `es/almoco.html` | 25 | 25 | 6 | 3 | 16 | 152679 | 23245 | alta |
+| `en/entardecer.html` | 24 | 26 | 7 | 3 | 12 | 151670 | 22992 | alta |
 
 ## Blocos CSS repetidos — candidatos a extração
 
 | Hash | Páginas | Bytes | Marker provável | Risco | Pode extrair? | Motivo |
 |---|---:|---:|---|---|---|---|
+| `6c2812d18885` | 85 | 3159 | `ec-lang-dropdown-closed-state-fix` | high | no/partial | visual/readability/page-critical pattern: lock |
 | `d9cebd34b57b` | 85 | 2517 | `ec-sprint4-r2d2-aio-conversion-css` | high | no/partial | visual/readability/page-critical pattern: lock |
 | `f0b8729a5f03` | 85 | 199 | `ec-orange-eyebrow-position-fix` | high | no/partial | visual/readability/page-critical pattern: page-hero |
 | `d44459714a03` | 83 | 4896 | `ec-legibility-contrast-lock` | high | no/partial | visual/readability/page-critical pattern: lock |
@@ -54,12 +55,12 @@ Mapear oportunidades reais de refactor de CSS/JS sem mexer no visual antes de um
 | `e47d4916028e` | 28 | 5751 | `ec-nav-ux-fixes` | low | yes | recurring utility pattern: lang-switcher |
 | `5dfe83a60153` | 25 | 3043 | `══════════════════════════════════════════` | high | no/partial | visual/readability/page-critical pattern: lock |
 | `f2b7de8f1772` | 24 | 1296 | `ec-aaa-closeout-design-lock` | medium | partial | global/layout styles or scripts require visual QA before extraction |
-| `366f2b42215b` | 22 | 38148 | `nav-standard-css` | high | no/partial | visual/readability/page-critical pattern: lock |
 
 ## Blocos JS repetidos — candidatos a extração
 
 | Hash | Páginas | Bytes | Marker provável | Risco | Pode extrair? | Motivo |
 |---|---:|---:|---|---|---|---|
+| `fd2421dec915` | 85 | 1351 | `ec-lang-dropdown-closed-state-js` | low | yes | recurring utility pattern: lang-switcher |
 | `eee95d5e7c2b` | 85 | 311 | `script:eee95d5e7c2b` | medium | partial | global/layout styles or scripts require visual QA before extraction |
 | `fa3046ebf668` | 82 | 1424 | `ec-visual-readability-reality-js` | high | no/partial | visual/readability/page-critical pattern: menu-item |
 | `052d6108a742` | 78 | 187 | `ec-service-worker-register` | medium | partial | global/layout styles or scripts require visual QA before extraction |
@@ -79,7 +80,6 @@ Mapear oportunidades reais de refactor de CSS/JS sem mexer no visual antes de um
 | `1c552a3e2b95` | 3 | 674 | `script:1c552a3e2b95` | medium | partial | global/layout styles or scripts require visual QA before extraction |
 | `074d72413665` | 3 | 623 | `script:074d72413665` | medium | partial | global/layout styles or scripts require visual QA before extraction |
 | `e792dfd95856` | 3 | 487 | `script:e792dfd95856` | medium | partial | global/layout styles or scripts require visual QA before extraction |
-| `c1c5546a5487` | 3 | 367 | `lang-switcher` | low | yes | recurring utility pattern: lang-switcher |
 
 ## Padrões recorrentes por marcador
 
@@ -90,6 +90,8 @@ Mapear oportunidades reais de refactor de CSS/JS sem mexer no visual antes de um
 | `css:ec-nav-ux-fixes` | 85 | avaliar no refactor |
 | `css:ec-orange-eyebrow-position-fix` | 85 | avaliar no refactor |
 | `css:ec-sprint4-r2d2-aio-conversion-css` | 85 | avaliar no refactor |
+| `css:ec-lang-dropdown-closed-state-fix` | 85 | candidato a asset global |
+| `js:ec-lang-dropdown-closed-state-js` | 85 | candidato a asset global |
 | `js:script:eee95d5e7c2b` | 85 | avaliar no refactor |
 | `css:ec-legibility-contrast-lock` | 83 | avaliar no refactor |
 | `css:ec-home-top-exact-replication-lock` | 82 | avaliar no refactor |
@@ -103,8 +105,6 @@ Mapear oportunidades reais de refactor de CSS/JS sem mexer no visual antes de um
 | `js:ec-ga4-base` | 77 | avaliar no refactor |
 | `js:ec-ga4-events` | 77 | avaliar no refactor |
 | `css:ec-final-design-consistency-lock` | 61 | avaliar no refactor |
-| `css:ec-sprint5-quality-consolidation-css` | 53 | avaliar no refactor |
-| `css:nav-standard-css` | 39 | avaliar no refactor |
 
 ## Plano de refactor recomendado
 
