@@ -26,6 +26,8 @@ VISIBLE_START = "<!-- EC EN PARQUE BONDINHO OL FIX -->"
 VISIBLE_END = "<!-- /EC EN PARQUE BONDINHO OL FIX -->"
 STYLE_ID = "ec-en-parque-bondinho-scorecard-css"
 JSONLD_RE = re.compile(r'(<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>)(.*?)(</script>)', re.I | re.S)
+TITLE_RE = re.compile(r"<title>(.*?)</title>", re.I | re.S)
+OG_TITLE_RE = re.compile(r'<meta\b(?=[^>]*property=["\']og:title["\'])(?=[^>]*content=["\']([^"\']+)["\'])[^>]*>', re.I | re.S)
 
 FAQS = [
     ("Is Embaixada Carioca inside Sugarloaf Cable Car Park?", "Yes. Embaixada Carioca is located at Morro da Urca, the first stop of the Sugarloaf Cable Car, inside Parque Bondinho Pão de Açúcar."),
@@ -189,13 +191,34 @@ def insert_visible(source: str, payload: str) -> str:
     return source + "\n" + payload
 
 
+def replace_or_insert_meta(source: str, attr_name: str, attr_value: str, content: str) -> str:
+    pattern = re.compile(rf'<meta\b(?=[^>]*{attr_name}=["\']{re.escape(attr_value)}["\'])(?=[^>]*content=["\'][^"\']*["\'])[^>]*>', re.I | re.S)
+    repl = f'<meta {attr_name}="{attr_value}" content="{content}"/>'
+    if pattern.search(source):
+        return pattern.sub(repl, source, count=1)
+    return source.replace("</head>", repl + "\n</head>", 1) if "</head>" in source else repl + "\n" + source
+
+
 def update_metadata(source: str) -> str:
     source = re.sub(r"<title>.*?</title>", "<title>Sugarloaf Cable Car Park | Embaixada Carioca</title>", source, count=1, flags=re.I | re.S)
-    source = re.sub(r'<meta\s+content="[^"]*"\s+property="og:title"\s*/?>', '<meta content="Sugarloaf Cable Car Park | Embaixada Carioca" property="og:title"/>', source, count=1, flags=re.I)
-    source = re.sub(r'<meta\s+content="[^"]*"\s+name="keywords"\s*/?>', '<meta content="Sugarloaf Cable Car Park, Sugarloaf cable car tickets, Sugarloaf Mountain Rio de Janeiro, restaurant inside Sugarloaf Cable Car Park, where to eat at Morro da Urca" name="keywords"/>', source, count=1, flags=re.I)
+    source = replace_or_insert_meta(source, "property", "og:title", "Sugarloaf Cable Car Park | Embaixada Carioca")
+    source = replace_or_insert_meta(source, "name", "twitter:title", "Sugarloaf Cable Car Park | Embaixada Carioca")
+    source = replace_or_insert_meta(source, "name", "keywords", "Sugarloaf Cable Car Park, Sugarloaf cable car tickets, Sugarloaf Mountain Rio de Janeiro, restaurant inside Sugarloaf Cable Car Park, where to eat at Morro da Urca")
     source = source.replace('"headline":"Bondinho Pão de Açúcar Park: Guia Completo 2026 — Ingressos, Horários e Restaurant"', '"headline":"Sugarloaf Cable Car Park: Complete 2026 Guide — Tickets, Hours and Where to Eat"')
     source = source.replace('"description":"Guia completo do Bondinho Pão de Açúcar Park: ingressos, horários, how to get there, o que fazer e onde comer."', '"description":"Complete guide to Sugarloaf Cable Car Park: tickets, hours, how to get there, what to do and where to eat."')
     return source
+
+
+def head_text(source: str) -> str:
+    m = re.search(r"<head[\s\S]*?</head>", source, flags=re.I)
+    return m.group(0) if m else source[:5000]
+
+
+def title_is_clean(source: str) -> bool:
+    m = TITLE_RE.search(source)
+    title = html.unescape((m.group(1) if m else "").strip())
+    head = head_text(source)
+    return title == "Sugarloaf Cable Car Park | Embaixada Carioca" and "Parque Bondinho cable car" not in head
 
 
 def count_faq(source: str) -> tuple[int, int]:
@@ -244,7 +267,7 @@ def apply() -> Result:
     faq_pages, faq_questions = count_faq(updated)
     ol_count = len(re.findall(r"<ol\b", updated, flags=re.I))
     words = count_words(updated)
-    title_ok = "Parque Bondinho cable car" not in updated and "Sugarloaf Cable Car Park | Embaixada Carioca" in updated
+    title_ok = title_is_clean(updated)
     status = "ok" if faq_pages == 1 and faq_questions == 8 and ol_count >= 1 and title_ok else "fail"
     return Result(status, changed, faq_pages, faq_questions, ol_count, words, title_ok, f"removed_existing_faq={removed}")
 
