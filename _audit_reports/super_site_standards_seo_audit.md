@@ -3,8 +3,8 @@
 Status geral: **FAIL**
 Score mínimo: **64**
 Páginas HTML auditadas: **87**
-Findings FAIL: **48**
-Findings totais: **261**
+Findings FAIL: **44**
+Findings totais: **257**
 
 ## Aprendizados incorporados
 - Home lower contrast
@@ -23,26 +23,24 @@ Findings totais: **261**
 - `index.html` — FAIL — score 72
 - `en/parque-bondinho.html` — FAIL — score 74
 - `es/parque-bondinho.html` — FAIL — score 74
-- `feijoada.html` — FAIL — score 74
-- `morro-da-urca.html` — FAIL — score 74
 - `caipirinha-com-vista-rio.html` — FAIL — score 76
 - `contato.html` — FAIL — score 78
 - `nossa-visao.html` — FAIL — score 78
 - `en/index.html` — FAIL — score 82
 - `es/index.html` — FAIL — score 82
-- `cafe-da-manha.html` — FAIL — score 84
 - `en/cardapio.html` — FAIL — score 84
 - `en/feijoada.html` — FAIL — score 84
 - `en/morro-da-urca.html` — FAIL — score 84
 - `en/roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 84
-- `entardecer.html` — FAIL — score 84
 - `es/cardapio.html` — FAIL — score 84
 - `es/entardecer.html` — FAIL — score 84
 - `es/feijoada.html` — FAIL — score 84
 - `es/morro-da-urca.html` — FAIL — score 84
 - `es/roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 84
+- `feijoada.html` — FAIL — score 84
 - `gastronomia-carioca.html` — FAIL — score 84
 - `guia-do-rio.html` — FAIL — score 84
+- `morro-da-urca.html` — FAIL — score 84
 - `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — FAIL — score 84
 - `roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 84
 - `en/caipirinha-com-vista-rio.html` — FAIL — score 86
@@ -72,7 +70,6 @@ Findings totais: **261**
 - **WARN** `cafe-da-manha-com-vista-rio-de-janeiro.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
 - **WARN** `cafe-da-manha-pao-de-acucar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `cafe-da-manha-pao-de-acucar.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `cafe-da-manha.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 3.
 - **WARN** `cafe-da-manha.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
 - **WARN** `cafe-da-manha.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `cafe-da-manha.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
@@ -165,7 +162,6 @@ Findings totais: **261**
 - **WARN** `en/sunset.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
 - **WARN** `en/where-to-eat-near-sugarloaf.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `en/where-to-eat-near-sugarloaf.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `entardecer.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 3.
 - **WARN** `entardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
 - **WARN** `entardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `entardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
@@ -219,6 +215,8 @@ Findings totais: **261**
 - **WARN** `es/guia-do-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
 - **WARN** `es/index.html` — SEO/title_length: Title fora da faixa ideal.
 - **FAIL** `es/index.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
+- **WARN** `es/index.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `es/index.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 
 ## Arquivos
 - `_audit_reports/super_site_standards_seo_audit.md`

@@ -144,7 +144,7 @@
     {
       "page": "cafe-da-manha.html",
       "exists": true,
-      "score": 72,
+      "score": 82,
       "status": "FAIL",
       "word_count": 1864,
       "faq_count": 8,
@@ -171,13 +171,12 @@
       "has_ol": false,
       "has_restaurant_schema": true,
       "has_video_schema": false,
-      "aggregate_rating_count": 3,
+      "aggregate_rating_count": 0,
       "findings": [
         "Keywords ausentes ou pouco literais: café da manhã pão de açúcar, cafe da manha pao de acucar",
         "Conteúdo curto: 1864 palavras; meta 2000.",
         "Falta lista numerada <ol> para Featured Snippet.",
-        "Falta VideoObject schema recomendado.",
-        "Possível duplicidade de aggregateRating: 3."
+        "Falta VideoObject schema recomendado."
       ]
     }
   ]

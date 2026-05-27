@@ -1,7 +1,7 @@
 {
   "status": "FAIL",
   "threshold": 90,
-  "average_score": 96.1,
+  "average_score": 96.2,
   "min_score": 94,
   "dimensions": [
     "Design",
@@ -226,7 +226,6 @@
       "internal_links": 41,
       "cta_links": 27,
       "jsonld_types": [
-        "AggregateRating",
         "Answer",
         "BreadcrumbList",
         "FAQPage",
@@ -506,7 +505,7 @@
     {
       "page": "cafe-da-manha.html",
       "status": "PASS",
-      "score": 97,
+      "score": 99,
       "word_count": 1864,
       "h1_count": 1,
       "h2_count": 11,
@@ -514,7 +513,6 @@
       "internal_links": 42,
       "cta_links": 30,
       "jsonld_types": [
-        "AggregateRating",
         "Answer",
         "BreadcrumbList",
         "FAQPage",
@@ -591,10 +589,8 @@
         },
         {
           "dimension": "Schema",
-          "score": 80,
-          "findings": [
-            "Múltiplos aggregateRating: 3."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "Performance",
@@ -713,7 +709,6 @@
       "internal_links": 43,
       "cta_links": 27,
       "jsonld_types": [
-        "AggregateRating",
         "Answer",
         "BreadcrumbList",
         "FAQPage",
@@ -3833,7 +3828,7 @@
     {
       "page": "entardecer.html",
       "status": "PASS",
-      "score": 96,
+      "score": 98,
       "word_count": 1062,
       "h1_count": 1,
       "h2_count": 9,
@@ -3841,7 +3836,6 @@
       "internal_links": 41,
       "cta_links": 27,
       "jsonld_types": [
-        "AggregateRating",
         "Answer",
         "BreadcrumbList",
         "FAQPage",
@@ -3923,10 +3917,8 @@
         },
         {
           "dimension": "Schema",
-          "score": 80,
-          "findings": [
-            "Múltiplos aggregateRating: 3."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "Performance",
@@ -6911,7 +6903,7 @@
     {
       "page": "feijoada.html",
       "status": "PASS",
-      "score": 94,
+      "score": 96,
       "word_count": 1734,
       "h1_count": 1,
       "h2_count": 15,
@@ -6919,7 +6911,6 @@
       "internal_links": 27,
       "cta_links": 25,
       "jsonld_types": [
-        "AggregateRating",
         "Answer",
         "BreadcrumbList",
         "FAQPage",
@@ -7000,10 +6991,8 @@
         },
         {
           "dimension": "Schema",
-          "score": 80,
-          "findings": [
-            "Múltiplos aggregateRating: 3."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "Performance",
@@ -7419,7 +7408,7 @@
     {
       "page": "morro-da-urca.html",
       "status": "PASS",
-      "score": 97,
+      "score": 98,
       "word_count": 1586,
       "h1_count": 1,
       "h2_count": 7,
@@ -7427,7 +7416,6 @@
       "internal_links": 28,
       "cta_links": 19,
       "jsonld_types": [
-        "AggregateRating",
         "Answer",
         "Article",
         "BreadcrumbList",
@@ -7508,10 +7496,8 @@
         },
         {
           "dimension": "Schema",
-          "score": 80,
-          "findings": [
-            "Múltiplos aggregateRating: 2."
-          ]
+          "score": 100,
+          "findings": []
         },
         {
           "dimension": "Performance",

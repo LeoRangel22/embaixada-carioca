@@ -1,7 +1,7 @@
 # Superholistic Design/UX/SEO/GEO/AIO/SXO Audit
 
 Status geral: **FAIL**
-Score médio: **96.1**
+Score médio: **96.2**
 Score mínimo: **94**
 Threshold: **90**
 Páginas auditadas: **87**
@@ -17,7 +17,7 @@ Páginas auditadas: **87**
 - **SXO** — média 100.0, mínimo 100
 - **Marketing** — média 97.9, mínimo 82
 - **R2D2** — média 98.0, mínimo 86
-- **Schema** — média 96.1, mínimo 80
+- **Schema** — média 97.0, mínimo 80
 - **Performance** — média 99.9, mínimo 92
 
 ## Páginas abaixo de 90
@@ -93,21 +93,6 @@ Nenhuma página abaixo de 90.
   - Baixa presença de termos de conversão.
 - **R2D2 (93)**
   - R2D2 fraco em Decisão.
-
-### `feijoada.html` — 94
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **UX (97)**
-  - Sem skip-nav detectado.
-- **SEO (84)**
-  - Sem meta description.
-- **AIO (85)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 3.
 
 ### `parque-bondinho.html` — 94
 - **Design (84)**
@@ -524,16 +509,6 @@ Nenhuma página abaixo de 90.
 - **R2D2 (93)**
   - R2D2 fraco em Decisão.
 
-### `entardecer.html` — 96
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **AIO (90)**
-  - Sem cobertura literal das keywords prioritárias AIO.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 3.
-
 ### `es/almoco-morro-da-urca.html` — 96
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -731,6 +706,19 @@ Nenhuma página abaixo de 90.
   - Sem cobertura literal das keywords prioritárias AIO.
   - Sem VideoObject em página de experiência/produto.
 
+### `feijoada.html` — 96
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **UX (97)**
+  - Sem skip-nav detectado.
+- **SEO (84)**
+  - Sem meta description.
+- **AIO (85)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+  - Sem VideoObject em página de experiência/produto.
+
 ### `guia-do-rio.html` — 96
 - **Design (82)**
   - Risco de texto creme em fundo claro.
@@ -849,15 +837,6 @@ Nenhuma página abaixo de 90.
 - **AIO (85)**
   - Sem cobertura literal das keywords prioritárias AIO.
   - Sem VideoObject em página de experiência/produto.
-
-### `cafe-da-manha.html` — 97
-- **Design (90)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-- **AIO (95)**
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 3.
 
 ### `en/almoco.html` — 97
 - **Design (84)**
@@ -1031,16 +1010,6 @@ Nenhuma página abaixo de 90.
 - **Performance (92)**
   - Muitos blocos style.
 
-### `morro-da-urca.html` — 97
-- **Design (84)**
-  - Risco de texto creme em fundo claro.
-  - Opacity baixa detectada; validar texto real.
-  - Sem CSS global de estabilização/contraste.
-- **AIO (95)**
-  - Sem VideoObject em página de experiência/produto.
-- **Schema (80)**
-  - Múltiplos aggregateRating: 2.
-
 ### `por-do-sol-morro-da-urca.html` — 97
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -1079,6 +1048,14 @@ Nenhuma página abaixo de 90.
 - **AIO (95)**
   - Sem VideoObject em página de experiência/produto.
 
+### `entardecer.html` — 98
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **AIO (90)**
+  - Sem cobertura literal das keywords prioritárias AIO.
+
 ### `es/almoco.html` — 98
 - **Design (84)**
   - Risco de texto creme em fundo claro.
@@ -1109,6 +1086,14 @@ Nenhuma página abaixo de 90.
 - **AIO (95)**
   - Sem VideoObject em página de experiência/produto.
 
+### `morro-da-urca.html` — 98
+- **Design (84)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+  - Sem CSS global de estabilização/contraste.
+- **AIO (95)**
+  - Sem VideoObject em página de experiência/produto.
+
 ### `offline.html` — 98
 - **Design (90)**
   - Opacity baixa detectada; validar texto real.
@@ -1119,6 +1104,13 @@ Nenhuma página abaixo de 90.
   - Sem hreflang.
 - **AEO (92)**
   - FAQ visual sem FAQPage JSON-LD.
+
+### `cafe-da-manha.html` — 99
+- **Design (90)**
+  - Risco de texto creme em fundo claro.
+  - Opacity baixa detectada; validar texto real.
+- **AIO (95)**
+  - Sem VideoObject em página de experiência/produto.
 
 ### `cardapio.html` — 99
 - **Design (90)**

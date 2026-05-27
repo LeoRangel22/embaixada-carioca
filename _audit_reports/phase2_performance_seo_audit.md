@@ -7,12 +7,12 @@ Scope: existing public pages only. No new landing pages.
 - Title length: 48
 - Meta description length: 137
 - Inline style blocks: 31
-- Script tags: 29
+- Script tags: 30
 - Images: 40
-- JSON-LD blocks: 7
+- JSON-LD blocks: 8
 - Issues:
   - high inline style blocks: 31
-  - high script count: 29
+  - high script count: 30
 
 ## cafe-da-manha.html
 - Score: 79/100

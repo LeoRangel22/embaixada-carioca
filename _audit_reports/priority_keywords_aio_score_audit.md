@@ -20,7 +20,7 @@ Threshold: **90**
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | `index.html` | FAIL | 78 | 6524 | 29 | False | True | False | 0 |
 | `restaurante-morro-da-urca.html` | FAIL | 69 | 772 | 4 | True | True | False | 2 |
-| `cafe-da-manha.html` | FAIL | 72 | 1864 | 8 | False | True | False | 3 |
+| `cafe-da-manha.html` | FAIL | 82 | 1864 | 8 | False | True | False | 0 |
 
 ## Findings
 ### `index.html` — 78
@@ -40,14 +40,13 @@ Página de captação deve expandir conteúdo, E-E-A-T e FAQ para competir com a
 - Falta VideoObject schema recomendado.
 - Possível duplicidade de aggregateRating: 2.
 
-### `cafe-da-manha.html` — 72
+### `cafe-da-manha.html` — 82
 Página de produto deve ter passo a passo em OL e VideoObject para chegar a 90+.
 
 - Keywords ausentes ou pouco literais: café da manhã pão de açúcar, cafe da manha pao de acucar
 - Conteúdo curto: 1864 palavras; meta 2000.
 - Falta lista numerada <ol> para Featured Snippet.
 - Falta VideoObject schema recomendado.
-- Possível duplicidade de aggregateRating: 3.
 
 ## Arquivos
 - `_audit_reports/priority_keywords_aio_score_audit.md`
