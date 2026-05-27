@@ -31,7 +31,7 @@ permissions:
 
 concurrency:
   group: super-workflow-score-gate-${{ github.ref_name }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   super-workflow-score-gate:
@@ -110,8 +110,9 @@ jobs:
       - name: Commit updated reports and automatic fixes
         if: always()
         shell: bash
+        continue-on-error: true
         run: |
-          set -e
+          set +e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add **/*.html assets/**/*.css manifest.json _audit_reports/*.md _audit_reports/*.csv _audit_reports/*.json || true
@@ -122,11 +123,9 @@ jobs:
           git commit -m "audit: update super workflow score gate reports"
           for i in 1 2 3 4 5; do
             git fetch origin "${GITHUB_REF_NAME}"
-            if git rebase "origin/${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
-              exit 0
-            fi
+            git rebase "origin/${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}" && exit 0
             git rebase --abort || true
             sleep $((i * 3))
           done
-          echo "Failed to push after retries"
-          exit 1
+          echo "Report commit skipped after push race; audit result remains valid."
+          exit 0
