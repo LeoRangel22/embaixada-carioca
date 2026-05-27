@@ -2,7 +2,7 @@
   "status": "PASS",
   "results": [
     {
-      "page": "eventos.html",
+      "page": "index.html",
       "exists": true,
       "status": "PASS",
       "restaurant_required": true,
@@ -12,6 +12,19 @@
       "faq_questions": 8,
       "forbidden_terms": [],
       "changed": true,
+      "warnings": []
+    },
+    {
+      "page": "eventos.html",
+      "exists": true,
+      "status": "PASS",
+      "restaurant_required": true,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [],
+      "changed": false,
       "warnings": []
     },
     {
@@ -24,7 +37,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -37,7 +50,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -50,7 +63,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -63,7 +76,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -76,7 +89,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -84,6 +97,19 @@
       "exists": true,
       "status": "PASS",
       "restaurant_required": false,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [],
+      "changed": false,
+      "warnings": []
+    },
+    {
+      "page": "en/index.html",
+      "exists": true,
+      "status": "PASS",
+      "restaurant_required": true,
       "restaurant_found": true,
       "faq_required": true,
       "faq_found": true,
@@ -102,7 +128,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -115,7 +141,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -128,7 +154,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -136,6 +162,19 @@
       "exists": true,
       "status": "PASS",
       "restaurant_required": false,
+      "restaurant_found": true,
+      "faq_required": true,
+      "faq_found": true,
+      "faq_questions": 8,
+      "forbidden_terms": [],
+      "changed": false,
+      "warnings": []
+    },
+    {
+      "page": "es/index.html",
+      "exists": true,
+      "status": "PASS",
+      "restaurant_required": true,
       "restaurant_found": true,
       "faq_required": true,
       "faq_found": true,
@@ -154,7 +193,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -167,7 +206,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -180,7 +219,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     },
     {
@@ -193,7 +232,7 @@
       "faq_found": true,
       "faq_questions": 8,
       "forbidden_terms": [],
-      "changed": true,
+      "changed": false,
       "warnings": []
     }
   ]

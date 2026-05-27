@@ -9,18 +9,21 @@ Status geral: **PASS**
 - Páginas inexistentes são marcadas como SKIP, não como FAIL.
 
 ## Resultados por página
-- `eventos.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `cardapio.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `almoco.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `entardecer.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `feijoada.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `cafe-da-manha.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `morro-da-urca.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `en/sunset.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `en/cardapio.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `en/almoco.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `en/morro-da-urca.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `es/atardecer.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `es/cardapio.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `es/almoco.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
-- `es/morro-da-urca.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
+- `index.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
+- `eventos.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `cardapio.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `almoco.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `entardecer.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `feijoada.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `cafe-da-manha.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `morro-da-urca.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `en/index.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
+- `en/sunset.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `en/cardapio.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `en/almoco.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `en/morro-da-urca.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `es/index.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=True
+- `es/atardecer.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `es/cardapio.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `es/almoco.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
+- `es/morro-da-urca.html` — **PASS** — Restaurant=True — FAQ=True (8) — changed=False
