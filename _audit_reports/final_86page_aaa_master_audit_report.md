@@ -7,10 +7,10 @@ Auditar o conjunto completo de páginas HTML em linguagem, SEO, GEO/AIO/SAI, UX,
 - Total de arquivos HTML encontrados: 87
 - Páginas comerciais/conteúdo: 84
 - Páginas utilitárias: 3
-- PASS: 86
-- WARN: 1
+- PASS: 87
+- WARN: 0
 - Nota geral média: 10.0/10
-- Status geral: WARN
+- Status geral: PASS
 
 ## Médias por critério
 - LANGUAGE: 10.0/10
@@ -23,7 +23,7 @@ Auditar o conjunto completo de páginas HTML em linguagem, SEO, GEO/AIO/SAI, UX,
 - TECHNICAL INTEGRITY: 10.0/10
 
 ## Páginas com WARN
-- eventos.html — 9.8/10 — ux_conversion:language_switcher_present
+- Nenhuma.
 
 ## Leitura crítica
 - Auditoria recalibrada para não confundir CSS/JS/JSON-LD com template quebrado.

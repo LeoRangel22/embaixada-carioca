@@ -66,7 +66,7 @@ es/restaurante-bondinho-pan-de-azucar.html,territory,PASS,10.0,10.0,10.0,10.0,10
 es/restaurante-morro-da-urca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/restaurantes-cerca-del-pan-de-azucar.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/roteiro-meio-dia-urca-pao-de-acucar.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-eventos.html,events,WARN,9.8,10.0,10.0,10.0,8.6,10.0,10.0,10.0,10.0,ux_conversion:language_switcher_present
+eventos.html,events,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 feijoada-com-vista-rio-de-janeiro.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 feijoada.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 gastronomia-carioca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
