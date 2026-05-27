@@ -5,11 +5,7 @@ P1B objective:
 - Guarantee static JSON-LD in HTML, not runtime-only injection.
 - Add Restaurant schema where required.
 - Add FAQPage with 8 questions where required.
-- Remove legacy rating/review fields from all JSON-LD blocks on the audited pages.
-
-The script writes:
-- _audit_reports/static_schema_product_pages_audit.md
-- _audit_reports/static_schema_product_pages_audit.json
+- Remove legacy rating/review fields from all JSON-LD blocks on audited pages.
 """
 from __future__ import annotations
 
@@ -24,14 +20,13 @@ ROOT = Path(__file__).resolve().parents[1]
 REPORT_DIR = ROOT / "_audit_reports"
 REPORT_MD = REPORT_DIR / "static_schema_product_pages_audit.md"
 REPORT_JSON = REPORT_DIR / "static_schema_product_pages_audit.json"
-
 SITE = "https://www.embaixadacarioca.com"
 BLOCK_START = "<!-- EC STATIC PRODUCT SCHEMA FAQ FIX -->"
 BLOCK_END = "<!-- /EC STATIC PRODUCT SCHEMA FAQ FIX -->"
 SCRIPT_ID = "ec-static-product-schema-faq"
 FORBIDDEN_KEYS = {"aggregateRating", "ratingValue", "reviewCount", "ratingCount", "bestRating", "worstRating"}
-FORBIDDEN_TERMS = {"AggregateRating", *FORBIDDEN_KEYS}
 FORBIDDEN_TYPES = {"AggregateRating"}
+FORBIDDEN_TERMS = {"AggregateRating", *FORBIDDEN_KEYS}
 JSONLD_RE = re.compile(r'(<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>)(.*?)(</script>)', re.I | re.S)
 
 PAGES: dict[str, dict[str, Any]] = {
@@ -79,6 +74,20 @@ RESTAURANT_BASE: dict[str, Any] = {
     "sameAs": ["https://www.instagram.com/embaixadacarioca/"],
 }
 
+@dataclass
+class PageResult:
+    page: str
+    exists: bool
+    status: str
+    restaurant_required: bool
+    restaurant_found: bool
+    faq_required: bool
+    faq_found: bool
+    faq_questions: int
+    forbidden_terms: list[str]
+    changed: bool
+    warnings: list[str]
+
 
 def faq_items(lang: str, topic: str) -> list[tuple[str, str]]:
     if lang == "en":
@@ -113,21 +122,6 @@ def faq_items(lang: str, topic: str) -> list[tuple[str, str]]:
         ("A Embaixada Carioca recebe grupos e eventos?", "Sim. A casa recebe grupos, eventos corporativos, agências e celebrações."),
         ("Qual é a especialidade da Embaixada Carioca?", "A casa é conhecida por caipirinhas, chope, comida brasileira e localização no Morro da Urca."),
     ]
-
-
-@dataclass
-class PageResult:
-    page: str
-    exists: bool
-    status: str
-    restaurant_required: bool
-    restaurant_found: bool
-    faq_required: bool
-    faq_found: bool
-    faq_questions: int
-    forbidden_terms: list[str]
-    changed: bool
-    warnings: list[str]
 
 
 def strip_old_block(source: str) -> str:
@@ -172,29 +166,21 @@ def sanitize_jsonld(source: str) -> str:
     return JSONLD_RE.sub(repl, source)
 
 
-def restaurant_schema(url: str) -> dict[str, Any]:
-    schema = dict(RESTAURANT_BASE)
-    schema["mainEntityOfPage"] = url
-    return schema
-
-
-def faq_schema(lang: str, topic: str, url: str) -> dict[str, Any]:
-    return {
-        "@type": "FAQPage",
-        "@id": url.rstrip("/") + "#faq",
-        "mainEntity": [
-            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}
-            for q, a in faq_items(lang, topic)
-        ],
-    }
-
-
 def schema_block(config: dict[str, Any]) -> str:
     graph: list[dict[str, Any]] = []
     if config.get("restaurant"):
-        graph.append(restaurant_schema(config["url"]))
+        schema = dict(RESTAURANT_BASE)
+        schema["mainEntityOfPage"] = config["url"]
+        graph.append(schema)
     if config.get("faq"):
-        graph.append(faq_schema(config["lang"], config["topic"], config["url"]))
+        graph.append({
+            "@type": "FAQPage",
+            "@id": config["url"].rstrip("/") + "#faq",
+            "mainEntity": [
+                {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}
+                for q, a in faq_items(config["lang"], config["topic"])
+            ],
+        })
     payload = {"@context": "https://schema.org", "@graph": graph}
     serialized = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     if any(term in serialized for term in FORBIDDEN_TERMS):
