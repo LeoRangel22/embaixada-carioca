@@ -5,6 +5,7 @@ on:
   push:
     branches: [master]
     paths:
+      - 'scripts/apply_parque_bondinho_access_clarity_fix.py'
       - 'scripts/apply_internal_linking_keyword_cluster_fixes.py'
       - 'scripts/apply_lang_dropdown_closed_state_fix.py'
       - 'scripts/apply_featured_snippet_ordered_lists.py'
@@ -32,6 +33,8 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
           fetch-depth: 0
+      - name: Apply Parque Bondinho access clarity fix
+        run: python3 scripts/apply_parque_bondinho_access_clarity_fix.py
       - name: Apply internal linking keyword cluster fixes
         run: python3 scripts/apply_internal_linking_keyword_cluster_fixes.py
       - name: Apply language dropdown closed state fix
@@ -61,7 +64,7 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "fix: apply internal linking keyword cluster fixes and final audit"
+          git commit -m "fix: clarify Parque Bondinho access rules and final audit"
           for i in 1 2 3 4 5; do
             git fetch origin "${GITHUB_REF_NAME}"
             if git rebase "origin/${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
