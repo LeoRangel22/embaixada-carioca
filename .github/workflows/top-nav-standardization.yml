@@ -1,0 +1,51 @@
+name: Top nav standardization
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'scripts/apply_top_nav_standardization.py'
+      - '.github/workflows/top-nav-standardization.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: top-nav-standardization-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  standardize-top-nav:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Apply top nav standardization
+        run: python3 scripts/apply_top_nav_standardization.py
+
+      - name: Commit top nav standardization
+        shell: bash
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "fix: standardize top navigation across pages"
+          for i in 1 2 3 4 5; do
+            git fetch origin "${GITHUB_REF_NAME}"
+            if git rebase "origin/${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
+              exit 0
+            fi
+            git rebase --abort || true
+            sleep $((i * 3))
+          done
+          exit 1
