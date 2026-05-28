@@ -41,7 +41,7 @@ Static guardrail for visual contrast regressions in current pages.
   - ... +22 more
 
 ## cafe-da-manha.html
-- VISUAL_CHECK: 15 pattern(s) detected but covered by global contrast hotfix
+- VISUAL_CHECK: 11 pattern(s) detected but covered by global contrast hotfix
   - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Hoje
   - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Por do sol às 17h44
   - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Resumo
@@ -53,10 +53,6 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Explore os principais momentos da Embaixada Carioca dentro do Parque Bondinho Pão de Açúcar: café da manhã com vista, almoço brasileiro, feijoada premiada da Ac
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | Tem café da manhã no Pão de Açúcar?
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='faq-answer' | Sim. A Embaixada Carioca serve café da manhã todos os dias, das 8h30 às 11h30, no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com vista direta para 
-  - covered-by-light-card-lock | light-text-on-light-bg | <h2> class='' | Café da manhã na Urca, dentro do Parque Bondinho Pão de Açúcar
-  - covered-by-dark-section-lock | dark-text-on-dark-bg | <h2> class='' | Café da manhã na Urca, dentro do Parque Bondinho Pão de Açúcar
-  - covered-by-light-card-lock | light-text-on-light-bg | <p> class='' | Para quem busca café da manhã na Urca, café da manhã no Bondinho Pão de Açúcar ou uma experiência de manhã com vista no Rio de Janeiro, a Embaixada Carioca abre
-  - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Para quem busca café da manhã na Urca, café da manhã no Bondinho Pão de Açúcar ou uma experiência de manhã com vista no Rio de Janeiro, a Embaixada Carioca abre
 
 ## almoco.html
 - VISUAL_CHECK: 12 pattern(s) detected but covered by global contrast hotfix
@@ -100,7 +96,7 @@ Static guardrail for visual contrast regressions in current pages.
 - PASS: no static contrast risk patterns found
 
 ## guia-do-rio.html
-- VISUAL_CHECK: 13 pattern(s) detected but covered by global contrast hotfix
+- VISUAL_CHECK: 9 pattern(s) detected but covered by global contrast hotfix
   - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Hoje
   - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Por do sol às 17h44
   - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Resumo
@@ -110,13 +106,9 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-light-card-lock | light-text-on-light-bg | <p> class='' | Café da manhã, almoço ou entardecer — todos com vista de frente para o Pão de Açúcar, no alto do Morro da Urca.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h2> class='' | Restaurante, café da manhã, feijoada, picanha e drinks no Morro da Urca.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Explore os principais momentos da Embaixada Carioca dentro do Parque Bondinho Pão de Açúcar: café da manhã com vista, almoço brasileiro, feijoada premiada da Ac
-  - covered-by-light-card-lock | light-text-on-light-bg | <h2> class='' | Complete o passeio com a Embaixada Carioca
-  - covered-by-dark-section-lock | dark-text-on-dark-bg | <h2> class='' | Complete o passeio com a Embaixada Carioca
-  - covered-by-light-card-lock | light-text-on-light-bg | <p> class='' | Se o seu roteiro passa pelo Bondinho, Morro da Urca ou Pão de Açúcar, reserve uma parada para café da manhã, almoço brasileiro, caipirinhas ou uma experiência c
-  - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Se o seu roteiro passa pelo Bondinho, Morro da Urca ou Pão de Açúcar, reserve uma parada para café da manhã, almoço brasileiro, caipirinhas ou uma experiência c
 
 ## Summary
-- Total static patterns detected: 107
+- Total static patterns detected: 99
 - Open contrast risks: 0
-- Covered patterns requiring browser visual check: 107
+- Covered patterns requiring browser visual check: 99
 - Required next validation: browser screenshots for cafe-da-manha.html, guia-do-rio.html, index.html, almoco.html, cardapio.html and eventos.html after deployment.
