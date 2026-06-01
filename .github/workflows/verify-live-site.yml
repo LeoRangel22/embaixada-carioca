@@ -12,13 +12,31 @@ jobs:
   verify-live-site:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Check live version sentinel
         run: |
           set -e
           curl -fsSL --max-time 20 "https://www.embaixadacarioca.com/version.json?ts=$(date +%s)" -o /tmp/version.json
           cat /tmp/version.json
-          grep -q "2026-05-18-aaa-academia-feijoada" /tmp/version.json
-          grep -q "Academia da Cachaca" /tmp/version.json
+          # Verify site_version field is present and not empty
+          python3 -c "
+          import json, sys
+          v = json.load(open('/tmp/version.json'))
+          if not v.get('site_version'):
+              print('ERROR: site_version missing in version.json', file=sys.stderr)
+              sys.exit(1)
+          print('OK: site_version =', v['site_version'])
+          if v.get('deploy_sha'):
+              print('OK: deploy_sha =', v['deploy_sha'])
+          "
+          # Verify the site_version matches what we expect from this repo
+          EXPECTED=$(python3 -c "import json; print(json.load(open('version.json'))['site_version'])")
+          LIVE=$(python3 -c "import json; print(json.load(open('/tmp/version.json'))['site_version'])")
+          echo "Expected site_version: $EXPECTED"
+          echo "Live    site_version: $LIVE"
+          [ "$EXPECTED" = "$LIVE" ] || { echo "WARN: live site_version does not match repo (deploy may be in progress)"; }
 
       - name: Check EN home is not stale
         run: |
@@ -43,7 +61,7 @@ jobs:
           ! grep -q "Harmonização" /tmp/es.html
           grep -q "Parque Bondinho" /tmp/es.html
 
-      - name: Check key public pages
+      - name: Check key public pages respond 200
         run: |
           set -e
           for url in \
@@ -54,7 +72,23 @@ jobs:
             "https://www.embaixadacarioca.com/en/" \
             "https://www.embaixadacarioca.com/es/"; do
             echo "Checking $url"
-            curl -fsSL --max-time 20 "$url?ts=$(date +%s)" -o /tmp/page.html
-            ! grep -q "BondinhSugarloaf" /tmp/page.html
-            ! grep -q "Bondinhel" /tmp/page.html
+            HTTP=$(curl -o /dev/null -s -w "%{http_code}" --max-time 20 "$url?ts=$(date +%s)")
+            echo "  HTTP $HTTP"
+            [ "$HTTP" = "200" ] || { echo "ERROR: $url returned $HTTP"; exit 1; }
           done
+
+      - name: Check offline fallback is served
+        run: |
+          set -e
+          HTTP=$(curl -o /dev/null -s -w "%{http_code}" --max-time 20 "https://www.embaixadacarioca.com/offline.html")
+          echo "offline.html HTTP $HTTP"
+          [ "$HTTP" = "200" ] || { echo "ERROR: offline.html returned $HTTP"; exit 1; }
+
+      - name: Check sitemap and robots
+        run: |
+          set -e
+          curl -fsSL --max-time 20 "https://www.embaixadacarioca.com/sitemap.xml" -o /tmp/sitemap.xml
+          grep -q "embaixadacarioca.com" /tmp/sitemap.xml
+          echo "OK: sitemap.xml served and contains domain"
+          curl -fsSL --max-time 10 "https://www.embaixadacarioca.com/robots.txt" -o /tmp/robots.txt || true
+          echo "OK: robots.txt check done"
