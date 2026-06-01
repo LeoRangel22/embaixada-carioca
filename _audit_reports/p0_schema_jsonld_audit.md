@@ -34,12 +34,12 @@ Score mínimo: **100**
 - `restaurante-morro-da-urca.html` — PASS — score 100 — blocos válidos 6
   - Encontrado: Answer, BreadcrumbList, FAQPage, GeoCoordinates, ItemList, ListItem, LocationFeatureSpecification, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, TouristAttraction, WebPage, WebSite
 - `eventos.html` — PASS — score 100 — blocos válidos 6
-  - Encontrado: Answer, BreadcrumbList, FAQPage, ListItem, LocationFeatureSpecification, PostalAddress, Question, ReserveAction, Restaurant, WebPage, WebSite
+  - Encontrado: Answer, BreadcrumbList, FAQPage, ListItem, LocationFeatureSpecification, PostalAddress, Question, ReserveAction, Restaurant, TouristAttraction, WebPage, WebSite
 - `en/eventos.html` — PASS — score 100 — blocos válidos 11
-  - Encontrado: Answer, BreadcrumbList, EventVenue, FAQPage, GeoCoordinates, ImageObject, ListItem, LocationFeatureSpecification, OpeningHoursSpecification, Organization, PostalAddress, Question, ReserveAction, Restaurant, Service, SpeakableSpecification, VideoObject, WebPage, WebSite
+  - Encontrado: Answer, BreadcrumbList, EventVenue, FAQPage, GeoCoordinates, ImageObject, ListItem, LocationFeatureSpecification, OpeningHoursSpecification, Organization, PostalAddress, Question, ReserveAction, Restaurant, Service, SpeakableSpecification, TouristAttraction, VideoObject, WebPage, WebSite
 - `es/eventos.html` — PASS — score 100 — blocos válidos 11
   - Encontrado: Answer, BreadcrumbList, ContactPoint, EventVenue, FAQPage, GeoCoordinates, ImageObject, ListItem, LocationFeatureSpecification, OpeningHoursSpecification, Organization, PostalAddress, Question, ReserveAction, Restaurant, Service, SpeakableSpecification, TouristAttraction, VideoObject, WebPage
 - `guia-do-rio.html` — PASS — score 100 — blocos válidos 6
-  - Encontrado: Answer, Article, BreadcrumbList, FAQPage, GeoCoordinates, HowTo, HowToStep, ListItem, LocationFeatureSpecification, MonetaryAmount, OpeningHoursSpecification, Organization, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, WebPage, WebSite
+  - Encontrado: Answer, Article, BreadcrumbList, FAQPage, GeoCoordinates, HowTo, HowToStep, ListItem, LocationFeatureSpecification, MonetaryAmount, OpeningHoursSpecification, Organization, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, TouristAttraction, WebPage, WebSite
 - `restaurantes-romanticos-rio-de-janeiro.html` — PASS — score 100 — blocos válidos 5
-  - Encontrado: Answer, BreadcrumbList, FAQPage, GeoCoordinates, ListItem, PostalAddress, Question, ReserveAction, Restaurant, WebPage, WebSite
+  - Encontrado: Answer, BreadcrumbList, FAQPage, GeoCoordinates, ListItem, PostalAddress, Question, ReserveAction, Restaurant, TouristAttraction, WebPage, WebSite

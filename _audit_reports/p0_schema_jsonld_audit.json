@@ -370,6 +370,7 @@
         "Question",
         "ReserveAction",
         "Restaurant",
+        "TouristAttraction",
         "WebPage",
         "WebSite"
       ],
@@ -399,6 +400,7 @@
         "Restaurant",
         "Service",
         "SpeakableSpecification",
+        "TouristAttraction",
         "VideoObject",
         "WebPage",
         "WebSite"
@@ -462,6 +464,7 @@
         "ReserveAction",
         "Restaurant",
         "SpeakableSpecification",
+        "TouristAttraction",
         "WebPage",
         "WebSite"
       ],
@@ -484,6 +487,7 @@
         "Question",
         "ReserveAction",
         "Restaurant",
+        "TouristAttraction",
         "WebPage",
         "WebSite"
       ],
