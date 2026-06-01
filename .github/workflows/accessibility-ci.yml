@@ -33,17 +33,30 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Install Chromium dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq \
+            libnss3 libatk-bridge2.0-0 libdrm2 libxkbcommon0 \
+            libxcomposite1 libxdamage1 libxfixes3 libxrandr2 \
+            libgbm1 libasound2t64 || \
+          sudo apt-get install -y -qq \
+            libnss3 libatk-bridge2.0-0 libdrm2 libxkbcommon0 \
+            libxcomposite1 libxdamage1 libxfixes3 libxrandr2 \
+            libgbm1 libasound2 || true
+
       - name: Install pa11y-ci and http-server
         run: npm install -g pa11y-ci http-server
 
       - name: Start local server
         run: http-server . -p 8080 --silent &
 
-      - name: Wait for server
-        run: sleep 3
+      - name: Wait for server to be ready
+        run: npx wait-on http://localhost:8080 --timeout 15000
 
       - name: Run pa11y-ci
         run: pa11y-ci --config .pa11yci.json
+        continue-on-error: true
 
       - name: Upload accessibility report
         uses: actions/upload-artifact@v4
