@@ -41,3 +41,8 @@
 # HTML: 5 min cache, always revalidate
 /*.html
   Cache-Control: public, max-age=300, must-revalidate
+
+# Sitemap: 1-day cache, revalidate (refresh on each deploy)
+/sitemap.xml
+  Cache-Control: public, max-age=86400, must-revalidate
+  Content-Type: application/xml; charset=UTF-8
