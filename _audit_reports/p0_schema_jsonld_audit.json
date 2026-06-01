@@ -173,6 +173,7 @@
         "ReserveAction",
         "Restaurant",
         "SpeakableSpecification",
+        "TouristAttraction",
         "WebPage",
         "WebSite"
       ],
@@ -202,6 +203,7 @@
         "ReserveAction",
         "Restaurant",
         "SpeakableSpecification",
+        "TouristAttraction",
         "WebPage",
         "WebSite"
       ],
@@ -259,6 +261,7 @@
         "Restaurant",
         "Schedule",
         "SpeakableSpecification",
+        "TouristAttraction",
         "WebPage",
         "WebSite"
       ],
@@ -287,6 +290,7 @@
         "Restaurant",
         "Schedule",
         "SpeakableSpecification",
+        "TouristAttraction",
         "WebPage",
         "WebSite"
       ],
@@ -316,6 +320,7 @@
         "ReserveAction",
         "Restaurant",
         "SpeakableSpecification",
+        "TouristAttraction",
         "WebPage",
         "WebSite"
       ],

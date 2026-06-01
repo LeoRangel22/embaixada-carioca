@@ -20,17 +20,17 @@ Score mínimo: **100**
 - `almoco.html` — PASS — score 100 — blocos válidos 5
   - Encontrado: Answer, BreadcrumbList, FAQPage, GeoCoordinates, ListItem, LocationFeatureSpecification, Menu, MenuItem, MenuSection, Offer, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, TouristAttraction, WebPage, WebSite
 - `en/almoco.html` — PASS — score 100 — blocos válidos 7
-  - Encontrado: Answer, BreadcrumbList, FAQPage, GeoCoordinates, ListItem, LocationFeatureSpecification, Menu, MenuItem, MenuSection, Offer, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, WebPage, WebSite
+  - Encontrado: Answer, BreadcrumbList, FAQPage, GeoCoordinates, ListItem, LocationFeatureSpecification, Menu, MenuItem, MenuSection, Offer, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, TouristAttraction, WebPage, WebSite
 - `es/almoco.html` — PASS — score 100 — blocos válidos 5
-  - Encontrado: Answer, BreadcrumbList, FAQPage, GeoCoordinates, ListItem, LocationFeatureSpecification, MenuItem, MenuSection, Menú, Offer, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, WebPage, WebSite
+  - Encontrado: Answer, BreadcrumbList, FAQPage, GeoCoordinates, ListItem, LocationFeatureSpecification, MenuItem, MenuSection, Menú, Offer, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, TouristAttraction, WebPage, WebSite
 - `cafe-da-manha.html` — PASS — score 100 — blocos válidos 8
   - Encontrado: Answer, BreadcrumbList, FAQPage, FoodEvent, GeoCoordinates, ListItem, LocationFeatureSpecification, OpeningHoursSpecification, Place, PostalAddress, Question, ReserveAction, Restaurant, Schedule, SpeakableSpecification, TouristAttraction, WebPage, WebSite
 - `en/cafe-da-manha.html` — PASS — score 100 — blocos válidos 7
-  - Encontrado: Answer, BreadcrumbList, FAQPage, FoodEvent, GeoCoordinates, ListItem, LocationFeatureSpecification, OpeningHoursSpecification, Place, PostalAddress, Question, ReserveAction, Restaurant, Schedule, SpeakableSpecification, WebPage, WebSite
+  - Encontrado: Answer, BreadcrumbList, FAQPage, FoodEvent, GeoCoordinates, ListItem, LocationFeatureSpecification, OpeningHoursSpecification, Place, PostalAddress, Question, ReserveAction, Restaurant, Schedule, SpeakableSpecification, TouristAttraction, WebPage, WebSite
 - `es/cafe-da-manha.html` — PASS — score 100 — blocos válidos 7
-  - Encontrado: Answer, BreadcrumbList, FAQPage, FoodEvent, GeoCoordinates, ListItem, LocationFeatureSpecification, OpeningHoursSpecification, Place, PostalAddress, Question, ReserveAction, Restaurant, Schedule, SpeakableSpecification, WebPage, WebSite
+  - Encontrado: Answer, BreadcrumbList, FAQPage, FoodEvent, GeoCoordinates, ListItem, LocationFeatureSpecification, OpeningHoursSpecification, Place, PostalAddress, Question, ReserveAction, Restaurant, Schedule, SpeakableSpecification, TouristAttraction, WebPage, WebSite
 - `cardapio.html` — PASS — score 100 — blocos válidos 6
-  - Encontrado: Answer, BreadcrumbList, FAQPage, GeoCoordinates, ListItem, LocationFeatureSpecification, Menu, MenuItem, MenuSection, Offer, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, WebPage, WebSite
+  - Encontrado: Answer, BreadcrumbList, FAQPage, GeoCoordinates, ListItem, LocationFeatureSpecification, Menu, MenuItem, MenuSection, Offer, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, TouristAttraction, WebPage, WebSite
 - `restaurante-morro-da-urca.html` — PASS — score 100 — blocos válidos 6
   - Encontrado: Answer, BreadcrumbList, FAQPage, GeoCoordinates, ItemList, ListItem, LocationFeatureSpecification, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, TouristAttraction, WebPage, WebSite
 - `eventos.html` — PASS — score 100 — blocos válidos 6
