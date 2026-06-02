@@ -41,16 +41,17 @@ jobs:
           cat _audit_reports/visual_contrast_risk_audit.md
 
       - name: Commit visual contrast reports and locks
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: 'fix: apply hero side frame lock and update contrast audit'
-          file_pattern: >-
-            index.html
-            cafe-da-manha.html
-            almoco.html
-            cardapio.html
-            como-chegar.html
-            eventos.html
-            guia-do-rio.html
-            _audit_reports/hero_side_frame_final_lock_report.md
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html cafe-da-manha.html almoco.html cardapio.html como-chegar.html \
+            eventos.html guia-do-rio.html \
+            _audit_reports/hero_side_frame_final_lock_report.md \
             _audit_reports/visual_contrast_risk_audit.md
+          git diff --cached --quiet && { echo "No changes to commit"; exit 0; }
+          git commit -m "fix: apply hero side frame lock and update contrast audit"
+          for i in 1 2 3; do
+            git pull --rebase origin master && git push origin master && exit 0
+            echo "Push attempt $i/3 failed, retrying…"; sleep $((i * 3))
+          done
+          exit 1
