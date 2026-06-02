@@ -8,7 +8,7 @@ Mode: **check**
 - JSON-LD não pode conter `ratingValue`, `reviewCount`, `ratingCount`, `bestRating` ou `worstRating` ligados a avaliações externas.
 - A nota do Google pode continuar no texto visível da página, mas não no schema estruturado.
 
-Arquivos HTML verificados: **232**
+Arquivos HTML verificados: **302**
 Achados: **0**
 
 ## Arquivos alterados / verificados
@@ -154,6 +154,76 @@ Achados: **0**
 - `_backups/fase2/restaurantes-perto-do-pao-de-acucar.html` — ok — blocos JSON-LD: 6 — inválidos: 0
 - `_backups/fase2/restaurantes-romanticos-rio-de-janeiro.html` — ok — blocos JSON-LD: 5 — inválidos: 0
 - `_backups/fase2/roteiro-meio-dia-urca-pao-de-acucar.html` — ok — blocos JSON-LD: 8 — inválidos: 0
+- `_backups/fase3/almoco.html` — ok — blocos JSON-LD: 5 — inválidos: 0
+- `_backups/fase3/cafe-da-manha-com-vista-rio-de-janeiro.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/cafe-da-manha.html` — ok — blocos JSON-LD: 8 — inválidos: 0
+- `_backups/fase3/cardapio.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/como-chegar.html` — ok — blocos JSON-LD: 3 — inválidos: 0
+- `_backups/fase3/contato.html` — ok — blocos JSON-LD: 5 — inválidos: 0
+- `_backups/fase3/en/almoco.html` — ok — blocos JSON-LD: 7 — inválidos: 0
+- `_backups/fase3/en/breakfast-with-a-view-rio-de-janeiro.html` — ok — blocos JSON-LD: 4 — inválidos: 0
+- `_backups/fase3/en/cafe-da-manha.html` — ok — blocos JSON-LD: 7 — inválidos: 0
+- `_backups/fase3/en/cardapio.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/en/contato.html` — ok — blocos JSON-LD: 5 — inválidos: 0
+- `_backups/fase3/en/entardecer.html` — ok — blocos JSON-LD: 7 — inválidos: 0
+- `_backups/fase3/en/eventos.html` — ok — blocos JSON-LD: 11 — inválidos: 0
+- `_backups/fase3/en/feijoada.html` — ok — blocos JSON-LD: 5 — inválidos: 0
+- `_backups/fase3/en/gastronomia-carioca.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/en/guia-do-rio.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/en/how-to-get-there.html` — ok — blocos JSON-LD: 3 — inválidos: 0
+- `_backups/fase3/en/index.html` — ok — blocos JSON-LD: 8 — inválidos: 0
+- `_backups/fase3/en/morro-da-urca.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/en/nossa-visao.html` — ok — blocos JSON-LD: 5 — inválidos: 0
+- `_backups/fase3/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 8 — inválidos: 0
+- `_backups/fase3/en/parque-bondinho.html` — ok — blocos JSON-LD: 7 — inválidos: 0
+- `_backups/fase3/en/restaurant-at-urca-hill.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/en/restaurants-near-sugarloaf-mountain.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/en/roteiro-meio-dia-urca-pao-de-acucar.html` — ok — blocos JSON-LD: 7 — inválidos: 0
+- `_backups/fase3/en/sugarloaf-cable-car-park.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/en/sugarloaf-cable-car-restaurant.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/en/sunset.html` — ok — blocos JSON-LD: 9 — inválidos: 0
+- `_backups/fase3/en/where-to-eat-near-sugarloaf.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/entardecer.html` — ok — blocos JSON-LD: 8 — inválidos: 0
+- `_backups/fase3/es/almoco.html` — ok — blocos JSON-LD: 5 — inválidos: 0
+- `_backups/fase3/es/atardecer.html` — ok — blocos JSON-LD: 9 — inválidos: 0
+- `_backups/fase3/es/cafe-da-manha.html` — ok — blocos JSON-LD: 7 — inválidos: 0
+- `_backups/fase3/es/cardapio.html` — ok — blocos JSON-LD: 5 — inválidos: 0
+- `_backups/fase3/es/como-llegar.html` — ok — blocos JSON-LD: 3 — inválidos: 0
+- `_backups/fase3/es/contato.html` — ok — blocos JSON-LD: 5 — inválidos: 0
+- `_backups/fase3/es/desayuno-con-vista-rio-de-janeiro.html` — ok — blocos JSON-LD: 4 — inválidos: 0
+- `_backups/fase3/es/donde-comer-cerca-del-pan-de-azucar.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/es/entardecer.html` — ok — blocos JSON-LD: 7 — inválidos: 0
+- `_backups/fase3/es/eventos.html` — ok — blocos JSON-LD: 11 — inválidos: 0
+- `_backups/fase3/es/feijoada.html` — ok — blocos JSON-LD: 5 — inválidos: 0
+- `_backups/fase3/es/gastronomia-carioca.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/es/guia-do-rio.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/es/index.html` — ok — blocos JSON-LD: 8 — inválidos: 0
+- `_backups/fase3/es/morro-da-urca.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/es/nossa-visao.html` — ok — blocos JSON-LD: 5 — inválidos: 0
+- `_backups/fase3/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 8 — inválidos: 0
+- `_backups/fase3/es/parque-bondinho-pan-de-azucar.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/es/parque-bondinho.html` — ok — blocos JSON-LD: 7 — inválidos: 0
+- `_backups/fase3/es/restaurante-bondinho-pan-de-azucar.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/es/restaurante-morro-da-urca.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/es/restaurantes-cerca-del-pan-de-azucar.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/es/roteiro-meio-dia-urca-pao-de-acucar.html` — ok — blocos JSON-LD: 7 — inválidos: 0
+- `_backups/fase3/eventos.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/feijoada.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/gastronomia-carioca.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/general-3/index.html` — ok — blocos JSON-LD: 0 — inválidos: 0
+- `_backups/fase3/guia-do-rio.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/index.html` — ok — blocos JSON-LD: 9 — inválidos: 0
+- `_backups/fase3/morro-da-urca.html` — ok — blocos JSON-LD: 7 — inválidos: 0
+- `_backups/fase3/nossa-visao.html` — ok — blocos JSON-LD: 5 — inválidos: 0
+- `_backups/fase3/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 8 — inválidos: 0
+- `_backups/fase3/onde-comer-no-pao-de-acucar.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/parque-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 7 — inválidos: 0
+- `_backups/fase3/parque-bondinho.html` — ok — blocos JSON-LD: 7 — inválidos: 0
+- `_backups/fase3/restaurante-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/restaurante-morro-da-urca.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/restaurantes-perto-do-pao-de-acucar.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase3/restaurantes-romanticos-rio-de-janeiro.html` — ok — blocos JSON-LD: 5 — inválidos: 0
+- `_backups/fase3/roteiro-meio-dia-urca-pao-de-acucar.html` — ok — blocos JSON-LD: 8 — inválidos: 0
 - `_includes/footer.html` — ok — blocos JSON-LD: 0 — inválidos: 0
 - `_includes/head-common.html` — ok — blocos JSON-LD: 0 — inválidos: 0
 - `_includes/nav.html` — ok — blocos JSON-LD: 0 — inválidos: 0

@@ -93,3 +93,117 @@ html body main .guia-card .guia-roteiro strong {
   color: #f59b1e !important;
   -webkit-text-fill-color: #f59b1e !important;
 }
+
+/* ================================================
+   FASE 3 — Acessibilidade AAA (WCAG 2.2)
+   Injetado por apply_fase3_acessibilidade.py
+   Data: 2026-06-02
+   ================================================ */
+
+/* A-3.1 — Contraste AA/AAA: Cinza secundário
+   #7d8386 → #4a4f52 (ratio 6.84:1 sobre branco, 6.01:1 sobre paper) */
+:root {
+  --ec-gray-secondary: #4a4f52;
+  --ec-blue-2-aaa: #1d4f60;
+  --ec-gold-aaa: #7a5000;
+  --ec-placeholder-aaa: #767676;
+}
+
+/* Cinza secundário: textos de suporte, legendas, metadados */
+html body .ec-meta,
+html body .ec-caption,
+html body .ec-label,
+html body .ec-kicker,
+html body .kicker,
+html body .eyebrow,
+html body .label,
+html body .meta,
+html body .caption,
+html body time,
+html body .ec-time,
+html body .ec-secondary-text,
+html body p.secondary,
+html body span.secondary {
+  color: #4a4f52 !important;
+  -webkit-text-fill-color: #4a4f52 !important;
+}
+
+/* Azul2: links e destaques sobre fundo claro
+   #527f8f → #1d4f60 (ratio 7.12:1 sobre branco) */
+html body a:not([class*="btn"]):not([class*="button"]):not(.nav-link):not(nav a) {
+  color: #1d4f60;
+}
+html body a:not([class*="btn"]):not([class*="button"]):not(.nav-link):not(nav a):hover {
+  color: #00405a;
+}
+
+/* Dourado sobre fundo claro: badges, preços, destaques
+   #c8a96e → #7a5000 (ratio 7.31:1 sobre branco) */
+html body .ec-price-label,
+html body .ec-badge,
+html body .ec-highlight,
+html body .price,
+html body .badge {
+  color: #7a5000 !important;
+  -webkit-text-fill-color: #7a5000 !important;
+}
+
+/* Placeholder: inputs
+   #9e9e9e → #767676 (ratio 4.54:1 sobre branco — mínimo AA) */
+html body input::placeholder,
+html body textarea::placeholder,
+html body select::placeholder {
+  color: #767676 !important;
+  opacity: 1 !important;
+}
+
+/* A-3.4 — :focus-visible: outline dourado nítido para navegação por teclado */
+:focus-visible {
+  outline: 3px solid #f59b1e !important;
+  outline-offset: 3px !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 0 5px rgba(245, 155, 30, 0.25) !important;
+}
+
+/* Remover outline padrão apenas quando :focus-visible está disponível */
+:focus:not(:focus-visible) {
+  outline: none !important;
+}
+
+/* Skip link: visível apenas no foco por teclado */
+.skip-nav {
+  position: absolute !important;
+  top: -100px !important;
+  left: 16px !important;
+  z-index: 9999 !important;
+  background: #00405a !important;
+  color: #f6efde !important;
+  padding: 12px 20px !important;
+  border-radius: 0 0 6px 6px !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  text-decoration: none !important;
+  transition: top 0.15s ease !important;
+}
+.skip-nav:focus,
+.skip-nav:focus-visible {
+  top: 0 !important;
+  outline: 3px solid #f59b1e !important;
+  outline-offset: 2px !important;
+}
+
+/* A-3.5 — prefers-reduced-motion: respeitar preferências do sistema */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  /* Preservar transições de foco para acessibilidade */
+  :focus-visible {
+    transition: none !important;
+  }
+}
