@@ -24,7 +24,7 @@ jobs:
       - name: Run visual readability reality fix v3
         run: python3 scripts/apply_visual_readability_reality_fix_v3.py
       - name: Run final 86-page AAA master audit
-        run: python3 scripts/apply_final_86page_aaa_master_audit.py
+        run: python3 scripts/apply_final_86page_aaa_master_audit_v2.py
       - name: Commit changes and reports
         run: |
           git config user.name "github-actions[bot]"
