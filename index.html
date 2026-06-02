@@ -43,6 +43,7 @@
 <meta charset="utf-8"/>
 <link as="style" href="/assets/fonts/fonts.css" rel="preload"/>
 <link rel="stylesheet" href="/assets/css/ec-stabilization-base.css">
+<link rel="stylesheet" href="/assets/css/ec-shared.css">
 <link rel="stylesheet" href="/assets/css/ec-index-inline.css"/>
 <link href="/assets/fonts/fonts.css" rel="stylesheet"/>
 
@@ -116,14 +117,43 @@
 
 
 
-
-
-
-
-
-
-
-<script type="application/ld+json">{"@context":"https://schema.org","@type":["Restaurant","FoodEstablishment","LocalBusiness"],"@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca","alternateName":["Restaurante Embaixada Carioca","Restaurante no Bondinho","Restaurante Morro da Urca"],"description":"Restaurante brasileiro premium no alto do Morro da Urca, a 227 metros de altitude, com vista panorâmica para o Pão de Açúcar, Pão de Açúcar e Baía de Guanabara. Café da manhã, almoço, entardecer e eventos privados no Parque Bondinho Pão de Açúcar.","url":"https://www.embaixadacarioca.com/","image":["https://www.embaixadacarioca.com/assets/img/hero-bg.jpg","https://www.embaixadacarioca.com/assets/fotos/salao-entardecer-vista.jpg","https://www.embaixadacarioca.com/assets/fotos/banda-pao-de-acucar-01.jpg"],"logo":"https://www.embaixadacarioca.com/assets/img/logo-embaixada-carioca.svg","telephone":"+55 21 96683-7556","email":"contato@embaixadacarioca.com","inLanguage":"pt-BR","address":{"@type":"PostalAddress","streetAddress":"Parque Bondinho Pão de Açúcar, Morro da Urca","addressLocality":"Rio de Janeiro","addressRegion":"RJ","postalCode":"22290-255","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-22.9511,"longitude":-43.1637},"hasMap":"https://www.google.com/maps/search/?api=1&query=Embaixada+Carioca+Morro+da+Urca","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:30","closes":"21:00"}],"servesCuisine":["Brasileira","Carioca","Contemporânea"],"priceRange":"R$79–R$250","currenciesAccepted":"BRL","paymentAccepted":"Dinheiro, Cartão de Crédito, Cartão de Débito, PIX","menu":"https://www.embaixadacarioca.com/cardapio","reservations":"https://tagme.com.br/embaixadacarioca","sameAs":["https://www.instagram.com/embaixadacarioca/","https://www.facebook.com/embaixadacarioca/","https://g.co/kgs/embaixadacarioca"],"containedInPlace":{"@type":"TouristAttraction","name":"Parque Bondinho Pão de Açúcar","url":"https://bondinho.com.br/","address":{"@type":"PostalAddress","streetAddress":"Praça General Tibúrcio, 68","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"}},"hasMenu":{"@type":"Menu","@id":"https://www.embaixadacarioca.com/cardapio#menu","name":"Cardápio Embaixada Carioca","inLanguage":"pt-BR","url":"https://www.embaixadacarioca.com/cardapio","hasMenuSection":[{"@type":"MenuSection","name":"Café da Manhã","description":"Servido todos os dias das 8h30 às 11h30","hasMenuItem":[{"@type":"MenuItem","name":"Café da Manhã Individual","offers":{"@type":"Offer","price":"79.90","priceCurrency":"BRL","url":"https://www.embaixadacarioca.com/","validFrom":"2026-05-20T08:30:00-03:00"}},{"@type":"MenuItem","name":"Café da Manhã Casal","offers":{"@type":"Offer","price":"149.90","priceCurrency":"BRL","url":"https://www.embaixadacarioca.com/","validFrom":"2026-05-20T08:30:00-03:00"}}]},{"@type":"MenuSection","name":"Almoço","description":"Servido todos os dias das 11h30 às 17h","hasMenuItem":[{"@type":"MenuItem","name":"Picanha Grelhada","description":"Prato mais vendido da Embaixada Carioca","offers":{"@type":"Offer","price":"129.90","priceCurrency":"BRL","url":"https://www.embaixadacarioca.com/","validFrom":"2026-05-20T08:30:00-03:00"}},{"@type":"MenuItem","name":"Feijoada Completa","description":"Premiada como melhor feijoada do Rio pela Veja Rio Comer & Beber 2025/2026","offers":{"@type":"Offer","price":"189.70","priceCurrency":"BRL","url":"https://www.embaixadacarioca.com/","validFrom":"2026-05-20T08:30:00-03:00"}},{"@type":"MenuItem","name":"Caipirinha com Cachaça Magnífica","description":"Caipirinha com cachaça Magnífica premiada","offers":{"@type":"Offer","price":"39.90","priceCurrency":"BRL","url":"https://www.embaixadacarioca.com/","validFrom":"2026-05-20T08:30:00-03:00"}}]},{"@type":"MenuSection","name":"Entardecer","description":"Servido todos os dias das 17h às 21h","hasMenuItem":[{"@type":"MenuItem","name":"Chopp Heineken","description":"Considerado o melhor chopp da cidade","offers":{"@type":"Offer","price":"18.90","priceCurrency":"BRL","url":"https://www.embaixadacarioca.com/","validFrom":"2026-05-20T08:30:00-03:00"}}]}]}}</script>
+  /* ── BOTTOM NAV: fundo azul escuro + texto claro ── */
+  .mobile-bottom-nav {
+    background: #00405A !important;
+    border-top-color: rgba(255,255,255,0.15) !important;
+    color-scheme: dark !important;
+  }
+  .mobile-bottom-nav a {
+    color: rgba(245, 237, 214, 0.75) !important;
+    background: transparent !important;
+  }
+  .mobile-bottom-nav a:hover,
+  .mobile-bottom-nav a:active,
+  .mobile-bottom-nav a:focus {
+    color: #E8C547 !important;
+    background: rgba(255,255,255,0.06) !important;
+  }
+  .mobile-bottom-nav .bnav-icon {
+    color: rgba(245, 237, 214, 0.75) !important;
+  }
+  /* Botão RESERVAR no bottom nav: fundo amarelo + texto azul */
+  .mobile-bottom-nav .bnav-reservar,
+  .mobile-bottom-nav a.bnav-reservar {
+    background: #E8C547 !important;
+    color: #00405A !important;
+  }
+  .mobile-bottom-nav .bnav-reservar .bnav-icon,
+  .mobile-bottom-nav a.bnav-reservar .bnav-icon {
+    color: #00405A !important;
+  }}
+</style>
+<style id="hero-mobile-fix">
+/* ── HERO MOBILE: foco no Pão de Açúcar ── */
+@media (max-width: 720px) {
+  .hero-photo { object-position: 22% 15% !important; }
+}
+</style>
+<style id="seo-vh">.seo-vh{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style><script type="application/ld+json">{"@context":"https://schema.org","@type":["Restaurant","FoodEstablishment","LocalBusiness"],"@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca","alternateName":["Restaurante Embaixada Carioca","Restaurante no Bondinho","Restaurante Morro da Urca"],"description":"Restaurante brasileiro premium no alto do Morro da Urca, a 227 metros de altitude, com vista panorâmica para o Pão de Açúcar, Pão de Açúcar e Baía de Guanabara. Café da manhã, almoço, entardecer e eventos privados no Parque Bondinho Pão de Açúcar.","url":"https://www.embaixadacarioca.com/","image":["https://www.embaixadacarioca.com/assets/img/hero-bg.jpg","https://www.embaixadacarioca.com/assets/fotos/salao-entardecer-vista.jpg","https://www.embaixadacarioca.com/assets/fotos/banda-pao-de-acucar-01.jpg"],"logo":"https://www.embaixadacarioca.com/assets/img/logo-embaixada-carioca.svg","telephone":"+55 21 96683-7556","email":"contato@embaixadacarioca.com","inLanguage":"pt-BR","address":{"@type":"PostalAddress","streetAddress":"Parque Bondinho Pão de Açúcar, Morro da Urca","addressLocality":"Rio de Janeiro","addressRegion":"RJ","postalCode":"22290-255","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-22.9511,"longitude":-43.1637},"hasMap":"https://www.google.com/maps/search/?api=1&query=Embaixada+Carioca+Morro+da+Urca","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:30","closes":"21:00"}],"servesCuisine":["Brasileira","Carioca","Contemporânea"],"priceRange":"R$79–R$250","currenciesAccepted":"BRL","paymentAccepted":"Dinheiro, Cartão de Crédito, Cartão de Débito, PIX","menu":"https://www.embaixadacarioca.com/cardapio","reservations":"https://tagme.com.br/embaixadacarioca","sameAs":["https://www.instagram.com/embaixadacarioca/","https://www.facebook.com/embaixadacarioca/","https://g.co/kgs/embaixadacarioca"],"containedInPlace":{"@type":"TouristAttraction","name":"Parque Bondinho Pão de Açúcar","url":"https://bondinho.com.br/","address":{"@type":"PostalAddress","streetAddress":"Praça General Tibúrcio, 68","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"}},"hasMenu":{"@type":"Menu","@id":"https://www.embaixadacarioca.com/cardapio#menu","name":"Cardápio Embaixada Carioca","inLanguage":"pt-BR","url":"https://www.embaixadacarioca.com/cardapio","hasMenuSection":[{"@type":"MenuSection","name":"Café da Manhã","description":"Servido todos os dias das 8h30 às 11h30","hasMenuItem":[{"@type":"MenuItem","name":"Café da Manhã Individual","offers":{"@type":"Offer","price":"79.90","priceCurrency":"BRL","url":"https://www.embaixadacarioca.com/","validFrom":"2026-05-20T08:30:00-03:00"}},{"@type":"MenuItem","name":"Café da Manhã Casal","offers":{"@type":"Offer","price":"149.90","priceCurrency":"BRL","url":"https://www.embaixadacarioca.com/","validFrom":"2026-05-20T08:30:00-03:00"}}]},{"@type":"MenuSection","name":"Almoço","description":"Servido todos os dias das 11h30 às 17h","hasMenuItem":[{"@type":"MenuItem","name":"Picanha Grelhada","description":"Prato mais vendido da Embaixada Carioca","offers":{"@type":"Offer","price":"129.90","priceCurrency":"BRL","url":"https://www.embaixadacarioca.com/","validFrom":"2026-05-20T08:30:00-03:00"}},{"@type":"MenuItem","name":"Feijoada Completa","description":"Premiada como melhor feijoada do Rio pela Veja Rio Comer & Beber 2025/2026","offers":{"@type":"Offer","price":"189.70","priceCurrency":"BRL","url":"https://www.embaixadacarioca.com/","validFrom":"2026-05-20T08:30:00-03:00"}},{"@type":"MenuItem","name":"Caipirinha com Cachaça Magnífica","description":"Caipirinha com cachaça Magnífica premiada","offers":{"@type":"Offer","price":"39.90","priceCurrency":"BRL","url":"https://www.embaixadacarioca.com/","validFrom":"2026-05-20T08:30:00-03:00"}}]},{"@type":"MenuSection","name":"Entardecer","description":"Servido todos os dias das 17h às 21h","hasMenuItem":[{"@type":"MenuItem","name":"Chopp Heineken","description":"Considerado o melhor chopp da cidade","offers":{"@type":"Offer","price":"18.90","priceCurrency":"BRL","url":"https://www.embaixadacarioca.com/","validFrom":"2026-05-20T08:30:00-03:00"}}]}]},"nearbyAttraction":[{"@type":"TouristAttraction","name":"Pão de Açúcar","sameAs":"https://en.wikipedia.org/wiki/Sugarloaf_Mountain"},{"@type":"TouristAttraction","name":"Morro da Urca","sameAs":"https://en.wikipedia.org/wiki/Urca_Hill"}],"areaServed":[{"@type":"City","name":"Rio de Janeiro","sameAs":"https://en.wikipedia.org/wiki/Rio_de_Janeiro"},{"@type":"Neighborhood","name":"Urca, Rio de Janeiro"},{"@type":"AdministrativeArea","name":"Zona Sul do Rio de Janeiro"}],"slogan":"O Rio de Janeiro no seu melhor ângulo — 227 metros acima do nível do mar","award":"Melhor Feijoada do Rio de Janeiro — Veja Rio Comer & Beber 2025/2026"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://www.embaixadacarioca.com/#organization","name":"Embaixada Carioca","url":"https://www.embaixadacarioca.com/","logo":{"@type":"ImageObject","url":"https://www.embaixadacarioca.com/assets/img/logo-embaixada-carioca.svg","width":200,"height":60,"contentUrl":"https://www.embaixadacarioca.com/assets/img/logo-embaixada-carioca.svg","caption":"Restaurante no Morro da Urca — a alma carioca em frente ao Pão de Açúcar ."},"inLanguage":"pt-BR","sameAs":["https://www.instagram.com/embaixadacarioca/","https://www.facebook.com/embaixadacarioca/"],"contactPoint":{"@type":"ContactPoint","telephone":"+55 21 96683-7556","contactType":"reservations","availableLanguage":["Portuguese","English","Spanish"]}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.embaixadacarioca.com/#website","name":"Embaixada Carioca","url":"https://www.embaixadacarioca.com/","inLanguage":"pt-BR","description":"Site oficial da Embaixada Carioca — restaurante no Morro da Urca com vista para o Pão de Açúcar","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.embaixadacarioca.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Embaixada Carioca","item":"https://www.embaixadacarioca.com/"}]}</script>
@@ -140,7 +170,7 @@
 
 
 <!-- EC Sprint 1 Structured Data -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"Restaurant","@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca","alternateName":["Restaurante no Bondinho","Restaurante Morro da Urca","Restaurant at Sugarloaf Cable Car Park"],"url":"https://www.embaixadacarioca.com/","logo":"https://www.embaixadacarioca.com/assets/logo-azul.svg","image":["https://www.embaixadacarioca.com/assets/hero.webp","https://www.embaixadacarioca.com/assets/hero-1200w.webp"],"description":"Restaurante brasileiro no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com café da manhã, almoço, caipirinhas, chope e eventos com vista.","telephone":"+5521966837556","priceRange":"$$","servesCuisine":["Brasileira","Carioca","Café da manhã","Bar"],"acceptsReservations":true,"hasMenu":"https://www.embaixadacarioca.com/cardapio.html","hasMap":"https://www.google.com/maps/search/?api=1&query=Embaixada+Carioca+Morro+da+Urca","isAccessibleForFree":false,"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Vista para o Pão de Açúcar","value":true},{"@type":"LocationFeatureSpecification","name":"Dentro do Parque Bondinho Pão de Açúcar","value":true},{"@type":"LocationFeatureSpecification","name":"Mesas ao ar livre","value":true}],"address":{"@type":"PostalAddress","streetAddress":"Av. Pasteur, 520 — Morro da Urca","addressLocality":"Rio de Janeiro","addressRegion":"RJ","postalCode":"22290-240","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-22.9508333,"longitude":-43.1641667},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:30","closes":"21:00"}],"sameAs":["https://www.instagram.com/embaixadacarioca/","https://g.page/r/CU-tJiJIjBUcEAE/review","https://www.google.com/maps/search/?api=1&query=Embaixada+Carioca+Morro+da+Urca"],"potentialAction":{"@type":"ReserveAction","target":"https://go.tagme.com.br/embaixadacarioca","name":"Reservar mesa"},"keywords":["restaurante no Pão de Açúcar","restaurante Morro da Urca","restaurante no Bondinho","café da manhã com vista","caipirinha no Rio de Janeiro"],"inLanguage":"pt-BR"},{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.embaixadacarioca.com/#website","name":"Embaixada Carioca","url":"https://www.embaixadacarioca.com/","inLanguage":"pt-BR","publisher":{"@id":"https://www.embaixadacarioca.com/#restaurant"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Embaixada Carioca","item":"https://www.embaixadacarioca.com/"},{"@type":"ListItem","position":2,"name":"Restaurante no Pão de Açúcar e Morro da Urca | Embaixada Carioca","item":"https://www.embaixadacarioca.com/"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"Restaurant","@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca","alternateName":["Restaurante no Bondinho","Restaurante Morro da Urca","Restaurant at Sugarloaf Cable Car Park"],"url":"https://www.embaixadacarioca.com/","logo":"https://www.embaixadacarioca.com/assets/logo-azul.svg","image":["https://www.embaixadacarioca.com/assets/hero.webp","https://www.embaixadacarioca.com/assets/hero-1200w.webp"],"description":"Restaurante brasileiro no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com café da manhã, almoço, caipirinhas, chope e eventos com vista.","telephone":"+5521966837556","priceRange":"$$","servesCuisine":["Brasileira","Carioca","Café da manhã","Bar"],"acceptsReservations":true,"hasMenu":"https://www.embaixadacarioca.com/cardapio.html","hasMap":"https://www.google.com/maps/search/?api=1&query=Embaixada+Carioca+Morro+da+Urca","isAccessibleForFree":false,"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Vista para o Pão de Açúcar","value":true},{"@type":"LocationFeatureSpecification","name":"Dentro do Parque Bondinho Pão de Açúcar","value":true},{"@type":"LocationFeatureSpecification","name":"Mesas ao ar livre","value":true}],"address":{"@type":"PostalAddress","streetAddress":"Av. Pasteur, 520 — Morro da Urca","addressLocality":"Rio de Janeiro","addressRegion":"RJ","postalCode":"22290-240","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-22.9508333,"longitude":-43.1641667},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:30","closes":"21:00"}],"sameAs":["https://www.instagram.com/embaixadacarioca/","https://g.page/r/CU-tJiJIjBUcEAE/review","https://www.google.com/maps/search/?api=1&query=Embaixada+Carioca+Morro+da+Urca"],"potentialAction":{"@type":"ReserveAction","target":"https://go.tagme.com.br/embaixadacarioca","name":"Reservar mesa"},"keywords":["restaurante no Pão de Açúcar","restaurante Morro da Urca","restaurante no Bondinho","café da manhã com vista","caipirinha no Rio de Janeiro"],"inLanguage":"pt-BR","containedInPlace":{"@type":"TouristAttraction","name":"Parque Bondinho Pão de Açúcar","url":"https://bondinho.com.br/","sameAs":"https://en.wikipedia.org/wiki/Sugarloaf_Mountain","address":{"@type":"PostalAddress","streetAddress":"Praça General Tibúrcio, 68","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"}},"nearbyAttraction":[{"@type":"TouristAttraction","name":"Pão de Açúcar","sameAs":"https://en.wikipedia.org/wiki/Sugarloaf_Mountain"},{"@type":"TouristAttraction","name":"Morro da Urca","sameAs":"https://en.wikipedia.org/wiki/Urca_Hill"}],"areaServed":[{"@type":"City","name":"Rio de Janeiro","sameAs":"https://en.wikipedia.org/wiki/Rio_de_Janeiro"},{"@type":"Neighborhood","name":"Urca, Rio de Janeiro"},{"@type":"AdministrativeArea","name":"Zona Sul do Rio de Janeiro"}],"slogan":"O Rio de Janeiro no seu melhor ângulo — 227 metros acima do nível do mar","award":"Melhor Feijoada do Rio de Janeiro — Veja Rio Comer & Beber 2025/2026"},{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.embaixadacarioca.com/#website","name":"Embaixada Carioca","url":"https://www.embaixadacarioca.com/","inLanguage":"pt-BR","publisher":{"@id":"https://www.embaixadacarioca.com/#restaurant"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Embaixada Carioca","item":"https://www.embaixadacarioca.com/"},{"@type":"ListItem","position":2,"name":"Restaurante no Pão de Açúcar e Morro da Urca | Embaixada Carioca","item":"https://www.embaixadacarioca.com/"}]}]}</script>
 <!-- /EC Sprint 1 Structured Data -->
 <!-- EC Sprint 2 GEO Growth CSS -->
 
@@ -176,7 +206,7 @@
 
 <!-- /EC P0 Structured Data -->
 <!-- EC P1 AIO Schema + Meta Fix -->
-<script id="ec-p1-aio-schema-meta" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Restaurant","@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca","url":"https://www.embaixadacarioca.com/","telephone":"+55 21 96683-7556","email":"eventos@embaixadacarioca.com.br","servesCuisine":["Brazilian","Carioca","Brazilian breakfast","Brazilian lunch"],"priceRange":"R$R$","acceptsReservations":true,"hasMenu":"https://www.embaixadacarioca.com/cardapio.html","address":{"@type":"PostalAddress","streetAddress":"Parque Bondinho Pão de Açúcar, Morro da Urca","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"},"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Vista para o Pão de Açúcar","value":true},{"@type":"LocationFeatureSpecification","name":"Dentro do Parque Bondinho Pão de Açúcar","value":true},{"@type":"LocationFeatureSpecification","name":"Atendimento para grupos e eventos","value":true}],"sameAs":["https://www.instagram.com/embaixadacarioca/","https://www.wikidata.org/wiki/Q8678"],"potentialAction":{"@type":"ReserveAction","target":"https://go.tagme.com.br/embaixadacarioca"},"mainEntityOfPage":"https://www.embaixadacarioca.com/"}]}</script>
+<script id="ec-p1-aio-schema-meta" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Restaurant","@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca","url":"https://www.embaixadacarioca.com/","telephone":"+55 21 96683-7556","email":"eventos@embaixadacarioca.com.br","servesCuisine":["Brazilian","Carioca","Brazilian breakfast","Brazilian lunch"],"priceRange":"R$R$","acceptsReservations":true,"hasMenu":"https://www.embaixadacarioca.com/cardapio.html","address":{"@type":"PostalAddress","streetAddress":"Parque Bondinho Pão de Açúcar, Morro da Urca","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"},"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Vista para o Pão de Açúcar","value":true},{"@type":"LocationFeatureSpecification","name":"Dentro do Parque Bondinho Pão de Açúcar","value":true},{"@type":"LocationFeatureSpecification","name":"Atendimento para grupos e eventos","value":true}],"sameAs":["https://www.instagram.com/embaixadacarioca/","https://www.wikidata.org/wiki/Q8678"],"potentialAction":{"@type":"ReserveAction","target":"https://go.tagme.com.br/embaixadacarioca"},"mainEntityOfPage":"https://www.embaixadacarioca.com/","containedInPlace":{"@type":"TouristAttraction","name":"Parque Bondinho Pão de Açúcar","url":"https://bondinho.com.br/","sameAs":"https://en.wikipedia.org/wiki/Sugarloaf_Mountain","address":{"@type":"PostalAddress","streetAddress":"Praça General Tibúrcio, 68","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"}},"nearbyAttraction":[{"@type":"TouristAttraction","name":"Pão de Açúcar","sameAs":"https://en.wikipedia.org/wiki/Sugarloaf_Mountain"},{"@type":"TouristAttraction","name":"Morro da Urca","sameAs":"https://en.wikipedia.org/wiki/Urca_Hill"}],"areaServed":[{"@type":"City","name":"Rio de Janeiro","sameAs":"https://en.wikipedia.org/wiki/Rio_de_Janeiro"},{"@type":"Neighborhood","name":"Urca, Rio de Janeiro"},{"@type":"AdministrativeArea","name":"Zona Sul do Rio de Janeiro"}],"slogan":"O Rio de Janeiro no seu melhor ângulo — 227 metros acima do nível do mar","award":"Melhor Feijoada do Rio de Janeiro — Veja Rio Comer & Beber 2025/2026"}]}</script>
 <!-- /EC P1 AIO Schema + Meta Fix -->
 
 
@@ -196,7 +226,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://www.embaixadacarioca.com/#faq","mainEntity":[{"@type":"Question","name":"Tem restaurante no Bondinho do Pão de Açúcar?","acceptedAnswer":{"@type":"Answer","text":"Sim. A Embaixada Carioca fica no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com café da manhã, almoço, caipirinhas, chope e vista para o Rio."}},{"@type":"Question","name":"Onde fica a Embaixada Carioca?","acceptedAnswer":{"@type":"Answer","text":"A Embaixada Carioca fica no Morro da Urca, primeira parada do Bondinho Pão de Açúcar, com acesso pela Av. Pasteur, 520, Urca, Rio de Janeiro."}},{"@type":"Question","name":"Precisa reservar mesa?","acceptedAnswer":{"@type":"Answer","text":"A reserva é recomendada para fins de semana, feriados, grupos, café da manhã e horários de maior movimento, mas o atendimento também pode ocorrer por ordem de chegada conforme disponibilidade."}},{"@type":"Question","name":"Tem café da manhã todos os dias?","acceptedAnswer":{"@type":"Answer","text":"Sim. A Embaixada Carioca serve café da manhã todos os dias, ideal para quem sobe cedo ao Morro da Urca e quer começar o passeio com vista."}},{"@type":"Question","name":"A Embaixada Carioca serve almoço?","acceptedAnswer":{"@type":"Answer","text":"Sim. O restaurante serve almoço com pratos brasileiros e cariocas, como picanha, feijoada, bobó, petiscos, caipirinhas e chope gelado."}},{"@type":"Question","name":"A feijoada é servida todos os dias?","acceptedAnswer":{"@type":"Answer","text":"Sim. A feijoada da Embaixada Carioca é uma das especialidades da casa e pode ser pedida todos os dias, conforme disponibilidade operacional."}},{"@type":"Question","name":"Dá para fazer eventos na Embaixada Carioca?","acceptedAnswer":{"@type":"Answer","text":"Sim. A casa recebe eventos corporativos, grupos de turismo, celebrações, welcome drinks, cafés da manhã, almoços e formatos especiais no Morro da Urca."}},{"@type":"Question","name":"Qual é a especialidade da Embaixada Carioca?","acceptedAnswer":{"@type":"Answer","text":"A proposta é reunir gastronomia carioca, caipirinhas, chope bem tirado, pratos brasileiros e uma experiência com vista no Morro da Urca."}}]}</script>
 <!-- /EC Scorecard Gap FAQ: index.html -->
 <!-- EC STATIC PRODUCT SCHEMA FAQ FIX -->
-<script id="ec-static-product-schema-faq" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Restaurant","@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca","url":"https://www.embaixadacarioca.com/","telephone":"+55 21 96683-7556","email":"eventos@embaixadacarioca.com.br","servesCuisine":["Brazilian","Carioca","Brazilian breakfast","Brazilian lunch"],"priceRange":"R$R$","acceptsReservations":true,"hasMenu":"https://www.embaixadacarioca.com/cardapio.html","address":{"@type":"PostalAddress","streetAddress":"Parque Bondinho Pão de Açúcar, Morro da Urca","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"},"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Dentro do Parque Bondinho Pão de Açúcar","value":true},{"@type":"LocationFeatureSpecification","name":"Vista no Morro da Urca","value":true},{"@type":"LocationFeatureSpecification","name":"Experiência gastronômica carioca","value":true}],"potentialAction":{"@type":"ReserveAction","target":"https://go.tagme.com.br/embaixadacarioca"},"sameAs":["https://www.instagram.com/embaixadacarioca/"],"mainEntityOfPage":"https://www.embaixadacarioca.com/"}]}</script>
+<script id="ec-static-product-schema-faq" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Restaurant","@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca","url":"https://www.embaixadacarioca.com/","telephone":"+55 21 96683-7556","email":"eventos@embaixadacarioca.com.br","servesCuisine":["Brazilian","Carioca","Brazilian breakfast","Brazilian lunch"],"priceRange":"R$R$","acceptsReservations":true,"hasMenu":"https://www.embaixadacarioca.com/cardapio.html","address":{"@type":"PostalAddress","streetAddress":"Parque Bondinho Pão de Açúcar, Morro da Urca","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"},"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Dentro do Parque Bondinho Pão de Açúcar","value":true},{"@type":"LocationFeatureSpecification","name":"Vista no Morro da Urca","value":true},{"@type":"LocationFeatureSpecification","name":"Experiência gastronômica carioca","value":true}],"potentialAction":{"@type":"ReserveAction","target":"https://go.tagme.com.br/embaixadacarioca"},"sameAs":["https://www.instagram.com/embaixadacarioca/"],"mainEntityOfPage":"https://www.embaixadacarioca.com/","containedInPlace":{"@type":"TouristAttraction","name":"Parque Bondinho Pão de Açúcar","url":"https://bondinho.com.br/","sameAs":"https://en.wikipedia.org/wiki/Sugarloaf_Mountain","address":{"@type":"PostalAddress","streetAddress":"Praça General Tibúrcio, 68","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"}},"nearbyAttraction":[{"@type":"TouristAttraction","name":"Pão de Açúcar","sameAs":"https://en.wikipedia.org/wiki/Sugarloaf_Mountain"},{"@type":"TouristAttraction","name":"Morro da Urca","sameAs":"https://en.wikipedia.org/wiki/Urca_Hill"}],"areaServed":[{"@type":"City","name":"Rio de Janeiro","sameAs":"https://en.wikipedia.org/wiki/Rio_de_Janeiro"},{"@type":"Neighborhood","name":"Urca, Rio de Janeiro"},{"@type":"AdministrativeArea","name":"Zona Sul do Rio de Janeiro"}],"slogan":"O Rio de Janeiro no seu melhor ângulo — 227 metros acima do nível do mar","award":"Melhor Feijoada do Rio de Janeiro — Veja Rio Comer & Beber 2025/2026"}]}</script>
 <!-- /EC STATIC PRODUCT SCHEMA FAQ FIX -->
 
 <script id="ec-lang-dropdown-closed-state-js">
@@ -241,7 +271,38 @@
 <!-- EC HOME REFERENCE TOP NAV LOCK V2 -->
 
 <!-- /EC HOME REFERENCE TOP NAV LOCK V2 -->
+<style id="ec-top-nav-viewport-fit-v3-css">
+/* V3 viewport-fit lock. Must stay as the last nav CSS in <head>. */
+html,body{overflow-x:hidden!important;max-width:100%!important;border:0!important;outline:0!important;}
+html body nav.top,html body #topnav.top{left:0!important;right:0!important;width:100%!important;max-width:100vw!important;overflow:visible!important;border:0!important;border-bottom:0!important;outline:0!important;box-shadow:none!important;}
+html body nav.top::before,html body nav.top::after,html body #topnav::before,html body #topnav::after{content:none!important;display:none!important;border:0!important;box-shadow:none!important;}
+html body nav.top .nav-inner{box-sizing:border-box!important;width:100%!important;max-width:min(1440px,100vw)!important;margin:0 auto!important;padding-left:clamp(22px,3.4vw,58px)!important;padding-right:clamp(22px,3.4vw,58px)!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:clamp(14px,1.35vw,24px)!important;overflow:visible!important;border:0!important;outline:0!important;box-shadow:none!important;}
+html body nav.top .brand-mark{flex:0 0 auto!important;min-width:64px!important;padding:0!important;margin:0!important;}
+html body nav.top .brand-logo{width:64px!important;height:64px!important;min-width:64px!important;min-height:64px!important;max-width:64px!important;max-height:64px!important;}
+html body nav.top .nav-links{flex:1 1 auto!important;min-width:0!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:clamp(16px,1.65vw,28px)!important;margin:0!important;padding:0!important;}
+html body nav.top .nav-links a{font-family:'JetBrains Mono',ui-monospace,monospace!important;font-size:12px!important;line-height:1!important;font-weight:800!important;letter-spacing:.12em!important;text-transform:uppercase!important;white-space:nowrap!important;color:#f6efde!important;-webkit-text-fill-color:#f6efde!important;text-shadow:0 2px 10px rgba(0,64,90,.72)!important;}
+html body.scrolled nav.top .nav-links a,html body nav.top.scrolled .nav-links a,html body nav.top.nav-scrolled .nav-links a{color:#00405a!important;-webkit-text-fill-color:#00405a!important;text-shadow:none!important;}
+html body nav.top .nav-rating-badge{flex:0 0 auto!important;}
+html body nav.top .lang-switcher{flex:0 0 auto!important;}
+html body nav.top .btn{flex:0 0 auto!important;min-height:56px!important;height:56px!important;border:0!important;box-shadow:none!important;overflow:hidden!important;}
+html body nav.top .btn[href*="formulario"]{min-width:218px!important;max-width:250px!important;padding-left:24px!important;padding-right:24px!important;font-size:11.5px!important;letter-spacing:.135em!important;}
+html body nav.top:has(.btn[href*="formulario"]) .nav-rating-badge{display:none!important;}
+html body nav.top:has(.btn[href*="formulario"]) .nav-links{gap:clamp(14px,1.45vw,24px)!important;}
+html body nav.top:has(.btn[href*="formulario"]) .nav-inner{padding-left:clamp(22px,3.2vw,54px)!important;padding-right:clamp(22px,3.2vw,54px)!important;gap:clamp(12px,1.15vw,20px)!important;}
+@media(max-width:1800px){html body nav.top .nav-rating-badge{display:none!important;}}
+@media(max-width:1500px){html body nav.top .lang-switcher{display:none!important;}html body nav.top .nav-links{gap:clamp(14px,1.35vw,22px)!important;}html body nav.top .nav-links a{font-size:11.5px!important;letter-spacing:.105em!important;}}
+@media(max-width:1280px){html body nav.top .nav-links{gap:13px!important;}html body nav.top .nav-links a{font-size:11px!important;letter-spacing:.09em!important;}html body nav.top .btn{min-width:128px!important;max-width:180px!important;padding-left:18px!important;padding-right:18px!important;font-size:10.5px!important;letter-spacing:.10em!important;}html body nav.top .btn[href*="formulario"]{min-width:184px!important;max-width:220px!important;}}
+/* Hero eyebrow/location line: final color and typography guard. */
+html body header.hero :is(.eyebrow,.hero-eyebrow,.hero-kicker,.page-eyebrow,.page-kicker),
+html body header.page-hero :is(.eyebrow,.hero-eyebrow,.hero-kicker,.page-eyebrow,.page-kicker),
+html body .page-hero-content .eyebrow.hero-eyebrow{font-family:'JetBrains Mono',ui-monospace,monospace!important;font-size:11px!important;line-height:1.2!important;font-weight:700!important;letter-spacing:.22em!important;text-transform:uppercase!important;color:#f59b1e!important;-webkit-text-fill-color:#f59b1e!important;text-shadow:0 2px 10px rgba(0,64,90,.72)!important;}
+html body header.hero :is(.eyebrow,.hero-eyebrow,.hero-kicker,.page-eyebrow,.page-kicker)::before,
+html body header.page-hero :is(.eyebrow,.hero-eyebrow,.hero-kicker,.page-eyebrow,.page-kicker)::before,
+html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!important;border-color:#f59b1e!important;}
+@media(max-width:900px){html body nav.top .nav-links,html body nav.top .lang-switcher,html body nav.top .nav-rating-badge{display:none!important;}html body nav.top .brand-logo{width:54px!important;height:54px!important;min-width:54px!important;min-height:54px!important;}}
+</style>
 
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Embaixada Carioca — Restaurante no Morro da Urca, Pão de Açúcar","description":"Restaurante premiado no Morro da Urca com vista para o Pão de Açúcar. Café da manhã, almoço e eventos no Parque Bondinho.","url":"https://www.embaixadacarioca.com/","speakable":{"@type":"SpeakableSpecification","cssSelector":["h1",".hero-sub",".section-intro",".faq-answer"]},"inLanguage":"pt-BR"}</script>
 </head>
 <body data-screen-label="Home">
 <a class="skip-nav" href="#conteudo-principal">Pular para o conteúdo principal</a><!-- NAV -->
@@ -1966,9 +2027,15 @@
 <button aria-label="Fechar" id="tagme-modal-close">✕</button>
 </div>
 <iframe allow="payment" id="tagme-modal-iframe" loading="lazy" src="https://reservation-widget.tagme.com.br/reservation/schedule/61cb5857aa455a0012ebbdcf/reservationWidget" title="Reserva de mesa — Embaixada Carioca via Tagme"></iframe>
+<div id="tagme-fallback" style="display:none;padding:32px 24px;text-align:center;font-family:Catamaran,system-ui,sans-serif;">
+  <p style="font-size:15px;color:#485156;margin:0 0 20px">O sistema de reservas está temporariamente indisponível.</p>
+  <a href="https://go.tagme.com.br/embaixadacarioca" target="_blank" rel="noopener" style="display:inline-block;padding:12px 24px;background:#f59b1e;color:#00405a;border-radius:999px;font-weight:700;font-size:14px;text-decoration:none;margin:0 0 12px">Tentar no site Tagme</a>
+  <br>
+  <a href="https://wa.me/5521966837556" target="_blank" rel="noopener" style="display:inline-block;padding:12px 24px;background:#25D366;color:#fff;border-radius:999px;font-weight:700;font-size:14px;text-decoration:none">Reservar via WhatsApp</a>
 </div>
 </div>
-<script>!function(){var e=document.getElementById("tagme-modal-overlay"),t=document.getElementById("tagme-modal-close");function n(t){var n=this.getAttribute("href");n&&-1!==n.indexOf("go.tagme.com.br")&&(t.preventDefault(),e.classList.add("open"),document.body.style.overflow="hidden")}function o(){e.classList.remove("open"),document.body.style.overflow=""}document.querySelectorAll('a[href*="go.tagme.com.br"]').forEach(function(e){e.addEventListener("click",n)}),t.addEventListener("click",o),e.addEventListener("click",function(t){t.target===e&&o()}),document.addEventListener("keydown",function(e){"Escape"===e.key&&o()})}();</script>
+</div>
+<script>!function(){var e=document.getElementById("tagme-modal-overlay"),t=document.getElementById("tagme-modal-close"),i=document.getElementById("tagme-modal-iframe");var timer;function showFallback(){if(i)i.style.display="none";var fb=document.getElementById("tagme-fallback");if(fb)fb.style.display="block";}function n(t){var n=this.getAttribute("href");n&&-1!==n.indexOf("go.tagme.com.br")&&(t.preventDefault(),e.classList.add("open"),document.body.style.overflow="hidden",timer=setTimeout(showFallback,8000))}function o(){e.classList.remove("open"),document.body.style.overflow="";clearTimeout(timer);var fb=document.getElementById("tagme-fallback");if(fb)fb.style.display="none";if(i)i.style.display=""}document.querySelectorAll('a[href*="go.tagme.com.br"]').forEach(function(e){e.addEventListener("click",n)});if(i)i.addEventListener("load",function(){clearTimeout(timer);});t.addEventListener("click",o),e.addEventListener("click",function(t){t.target===e&&o()}),document.addEventListener("keydown",function(e){"Escape"===e.key&&o()})}();</script>
 <!-- ═══════════════════════════════════════════════════════════
      WHATSAPP FLUTUANTE — Bot de Atendimento Embaixada Carioca
      ═══════════════════════════════════════════════════════════ -->
@@ -2397,5 +2464,133 @@ html body .hmc p {
   line-height: 1.35 !important;
 }
 </style>
+<!-- EC Light Content Final Contrast Lock -->
+<style id="ec-light-content-final-contrast-lock">
+/* Main-content only. Never touch nav, header, hero, hero chips, hero side frame or CTAs. */
+html body main :is(.access-direct,.access-section,.access-faq,.light-section,.paper-section,.section-paper,.bg-paper,.menu-section,.gallery-section,.ec-sprint4-steps,.ec-sprint5-quality,.ec-sprint5-faq,.ec-r2d2-depth,.ec-sprint4-faq) {
+  background:#f6efde !important;
+  color:#00405a !important;
+  -webkit-text-fill-color:initial !important;
+}
+html body main :is(.box,.access-fact,.access-route,details,.card,.faq-item,.faq-card,.info-card,.content-card,.copy-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.ec-sprint5-card,.ec-r2d2-card) {
+  position:relative !important;
+  z-index:1 !important;
+  background:#fffaf0 !important;
+  color:#00405a !important;
+  -webkit-text-fill-color:#00405a !important;
+  text-shadow:none !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+}
+html body main :is(.box,.access-fact,.access-route,details,.card,.faq-item,.faq-card,.info-card,.content-card,.copy-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.ec-sprint5-card,.ec-r2d2-card)::before,
+html body main :is(.box,.access-fact,.access-route,details,.card,.faq-item,.faq-card,.info-card,.content-card,.copy-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.ec-sprint5-card,.ec-r2d2-card)::after {
+  pointer-events:none !important;
+  opacity:0 !important;
+  display:none !important;
+}
+html body main :is(.box,.access-fact,.access-route,details,.card,.faq-item,.faq-card,.info-card,.content-card,.copy-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.ec-sprint5-card,.ec-r2d2-card) > *,
+html body main :is(.box,.access-fact,.access-route,details,.card,.faq-item,.faq-card,.info-card,.content-card,.copy-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.ec-sprint5-card,.ec-r2d2-card) :is(h1,h2,h3,h4,h5,h6,p,li,span,small,dd,dt,summary,strong,b,a) {
+  position:relative !important;
+  z-index:3 !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+  text-shadow:none !important;
+}
+html body main :is(.access-direct,.access-section,.access-faq,.light-section,.paper-section,.section-paper,.bg-paper,.menu-section,.gallery-section,.ec-sprint4-steps,.ec-sprint5-quality,.ec-sprint5-faq,.ec-r2d2-depth,.ec-sprint4-faq,.box,.access-fact,.access-route,details,.card,.faq-item,.faq-card,.info-card,.content-card,.copy-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.ec-sprint5-card,.ec-r2d2-card) :is(h1,h2,h3,h4,h5,h6,.title,.headline,.section-title,.card-title,summary) {
+  color:#00405a !important;
+  -webkit-text-fill-color:#00405a !important;
+  text-shadow:none !important;
+  opacity:1 !important;
+  visibility:visible !important;
+}
+html body main :is(.access-direct,.access-section,.access-faq,.light-section,.paper-section,.section-paper,.bg-paper,.menu-section,.gallery-section,.ec-sprint4-steps,.ec-sprint5-quality,.ec-sprint5-faq,.ec-r2d2-depth,.ec-sprint4-faq,.box,.access-fact,.access-route,details,.card,.faq-item,.faq-card,.info-card,.content-card,.copy-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.ec-sprint5-card,.ec-r2d2-card) :is(p,li,span,small,dd,dt,.lede,.copy,.description,.faq-answer) {
+  color:#485156 !important;
+  -webkit-text-fill-color:#485156 !important;
+  text-shadow:none !important;
+  opacity:1 !important;
+  visibility:visible !important;
+}
+html body main :is(.access-direct,.access-section,.access-faq,.light-section,.paper-section,.section-paper,.bg-paper,.menu-section,.gallery-section,.ec-sprint4-steps,.ec-sprint5-quality,.ec-sprint5-faq,.ec-r2d2-depth,.ec-sprint4-faq,.box,.access-fact,.access-route,details,.card,.faq-item,.faq-card,.info-card,.content-card,.copy-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.ec-sprint5-card,.ec-r2d2-card) :is(strong,b,a:not(.btn),.kicker,.eyebrow,.tag) {
+  color:#9a6500 !important;
+  -webkit-text-fill-color:#9a6500 !important;
+  text-shadow:none !important;
+  opacity:1 !important;
+  visibility:visible !important;
+}
+/* Specific access page visible text rescue */
+html body[data-screen-label="Como Chegar"] main .box .kicker,
+html body[data-screen-label="Como Chegar"] main .box h2,
+html body[data-screen-label="Como Chegar"] main .box p,
+html body[data-screen-label="Como Chegar"] main .access-fact h3,
+html body[data-screen-label="Como Chegar"] main .access-fact p,
+html body[data-screen-label="Como Chegar"] main .access-route h3,
+html body[data-screen-label="Como Chegar"] main .access-route p {
+  display:block !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  transform:none !important;
+}
+html body[data-screen-label="Como Chegar"] main .box h2,
+html body[data-screen-label="Como Chegar"] main .access-fact h3,
+html body[data-screen-label="Como Chegar"] main .access-route h3 {
+  color:#00405a !important;
+  -webkit-text-fill-color:#00405a !important;
+}
+html body[data-screen-label="Como Chegar"] main .box p,
+html body[data-screen-label="Como Chegar"] main .access-fact p,
+html body[data-screen-label="Como Chegar"] main .access-route p {
+  color:#485156 !important;
+  -webkit-text-fill-color:#485156 !important;
+}
+html body main :is(.menu-item,.menu-card,.dish-card) :is(h1,h2,h3,h4,.title,.menu-item-name) { color:#335d4a !important; -webkit-text-fill-color:#335d4a !important; }
+html body main :is(.menu-item,.menu-card,.dish-card) :is(p,li,span,small,.description,.menu-item-desc) { color:#485156 !important; -webkit-text-fill-color:#485156 !important; }
+html body main :is(.menu-item,.menu-card,.dish-card) :is(.price,.menu-item-price,strong,b) { color:#9a6500 !important; -webkit-text-fill-color:#9a6500 !important; }
+</style>
+<script defer src="/assets/dossie-content-enhancer.js"></script>
+<!-- EC FEATURED SNIPPET ORDERED LISTS -->
+<section class="ec-featured-snippet-ol" aria-label="Como aproveitar a Embaixada Carioca no Pão de Açúcar">
+  <div class="ec-fs-wrap">
+    <div class="ec-fs-kicker">Passo a passo</div>
+    <h2>Como aproveitar a Embaixada Carioca no Pão de Açúcar</h2>
+    <p>Use este roteiro simples para transformar a visita ao Bondinho em uma experiência gastronômica completa.</p>
+    <ol>
+      <li>Compre ou apresente o ingresso do <strong>Parque Bondinho Pão de Açúcar</strong>.</li>
+      <li>Suba até o <strong>Morro da Urca</strong>, a primeira parada do bondinho.</li>
+      <li>Escolha café da manhã, almoço, caipirinha, chope ou petiscos conforme o horário da visita.</li>
+      <li>Faça reserva online em fins de semana, feriados e horários de maior movimento.</li>
+    </ol>
+  </div>
+</section>
+<!-- /EC FEATURED SNIPPET ORDERED LISTS -->
+<!-- EC PRIORITY QUERY CONVERSION FIX -->
+<section class="ec-priority-query-fix" aria-label="Avaliações e resposta rápida sobre a Embaixada Carioca">
+  <div class="ec-wrap">
+    <div class="ec-kicker">Avaliações sobre Embaixada Carioca</div>
+    <h2>Por que a Embaixada Carioca é tão procurada por quem visita o Pão de Açúcar?</h2>
+    <p>A <strong>Embaixada Carioca</strong> é o restaurante brasileiro no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com café da manhã, almoço, caipirinhas, chope e eventos com vista direta para o Pão de Açúcar.</p>
+    <p>Nas avaliações sobre a Embaixada Carioca, os visitantes costumam destacar a vista, a localização dentro do Bondinho, o atendimento, a caipirinha, o chope gelado e a facilidade de transformar o passeio em uma experiência gastronômica completa.</p>
+    <div class="ec-priority-query-grid">
+      <div class="ec-priority-query-card"><h3>Restaurante no Pão de Açúcar</h3><p>Fica na primeira parada do Bondinho, no Morro da Urca, antes da subida final ao Pão de Açúcar.</p></div>
+      <div class="ec-priority-query-card"><h3>Café da manhã e almoço</h3><p>Abre todos os dias às 8h30, com café da manhã, pratos brasileiros, petiscos e bebidas.</p></div>
+      <div class="ec-priority-query-card"><h3>Google Reviews</h3><p>A prova social deve ser usada como conteúdo visível, sem schema de review/rating para evitar erros no Search Console.</p></div>
+    </div>
+    <ol>
+      <li>Compre o ingresso do Parque Bondinho Pão de Açúcar.</li>
+      <li>Suba até o Morro da Urca, a primeira parada do bondinho.</li>
+      <li>Escolha a Embaixada Carioca para café da manhã, almoço, caipirinha, chope ou evento.</li>
+      <li>Use a reserva online para organizar melhor a visita em fins de semana, feriados e horários de pico.</li>
+    </ol>
+    <div class="ec-priority-query-cta">
+      <a href="https://go.tagme.com.br/embaixadacarioca" rel="noopener" target="_blank">Reservar</a>
+      <a class="secondary" href="/como-chegar.html">Como chegar</a>
+    </div>
+  </div>
+</section>
+<!-- /EC PRIORITY QUERY CONVERSION FIX -->
+<link rel="stylesheet" href="/assets/css/ec-contrast-fixes.css">
 </body>
 </html>

@@ -1,0 +1,29 @@
+{
+  "defaults": {
+    "standard": "WCAG2AA",
+    "timeout": 30000,
+    "wait": 1000,
+    "chromeLaunchConfig": {
+      "args": ["--no-sandbox", "--disable-setuid-sandbox"]
+    }
+  },
+  "threshold": 5,
+  "urls": [
+    "http://localhost:8080/index.html",
+    "http://localhost:8080/almoco.html",
+    "http://localhost:8080/cafe-da-manha.html",
+    "http://localhost:8080/cardapio.html",
+    "http://localhost:8080/eventos.html",
+    "http://localhost:8080/entardecer.html",
+    "http://localhost:8080/feijoada.html",
+    "http://localhost:8080/morro-da-urca.html",
+    "http://localhost:8080/parque-bondinho.html",
+    "http://localhost:8080/como-chegar.html",
+    "http://localhost:8080/en/index.html",
+    "http://localhost:8080/en/almoco.html",
+    "http://localhost:8080/en/cafe-da-manha.html",
+    "http://localhost:8080/es/index.html",
+    "http://localhost:8080/es/almoco.html",
+    "http://localhost:8080/es/cafe-da-manha.html"
+  ]
+}

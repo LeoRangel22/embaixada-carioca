@@ -20,4 +20,5 @@ deploy/
 scraps/
 uploads/
 assets_backup_orig/
+*.bundle
 .claude/
