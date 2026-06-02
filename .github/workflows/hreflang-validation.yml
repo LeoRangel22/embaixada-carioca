@@ -1,0 +1,35 @@
+name: Hreflang Validation
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  hreflang-audit:
+    name: Audit hreflang PT/EN/ES
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run hreflang audit
+        run: python scripts/audit_hreflang_pt_en_es.py
+
+      - name: Upload audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hreflang-audit-report
+          path: |
+            _audit_reports/hreflang_pt_en_es_audit.md
+            _audit_reports/hreflang_pt_en_es_audit.json
