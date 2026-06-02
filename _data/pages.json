@@ -1,0 +1,46 @@
+{
+  "pages": [
+    {
+      "slug": "index",
+      "lang": "pt",
+      "output": "index.html",
+      "title": "Restaurante no Morro da Urca | Embaixada Carioca",
+      "description": "Restaurante no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com avaliações, café da manhã, almoço, caipirinhas, chope e eventos com vista.",
+      "canonical": "https://www.embaixadacarioca.com/",
+      "hreflang": {
+        "pt-BR": "https://www.embaixadacarioca.com/",
+        "en": "https://www.embaixadacarioca.com/en/",
+        "es": "https://www.embaixadacarioca.com/es/",
+        "x-default": "https://www.embaixadacarioca.com/"
+      }
+    },
+    {
+      "slug": "index",
+      "lang": "en",
+      "output": "en/index.html",
+      "title": "Brazilian Restaurant at Urca Hill with Sugarloaf View | Embaixada Carioca",
+      "description": "Brazilian restaurant at Urca Hill inside Sugarloaf Cable Car Park in Rio de Janeiro. Daily breakfast, Brazilian lunch, caipirinhas, cold draft beer and views.",
+      "canonical": "https://www.embaixadacarioca.com/en/",
+      "hreflang": {
+        "pt-BR": "https://www.embaixadacarioca.com/",
+        "en": "https://www.embaixadacarioca.com/en/",
+        "es": "https://www.embaixadacarioca.com/es/",
+        "x-default": "https://www.embaixadacarioca.com/"
+      }
+    },
+    {
+      "slug": "index",
+      "lang": "es",
+      "output": "es/index.html",
+      "title": "Restaurante Brasileño en el Morro da Urca con Vista al Pan de Azúcar | Embaixada Carioca",
+      "description": "Restaurante en Morro da Urca dentro del Parque Bondinho Pão de Açúcar, con desayuno, almuerzo, caipirinhas y eventos con vista.",
+      "canonical": "https://www.embaixadacarioca.com/es/",
+      "hreflang": {
+        "pt-BR": "https://www.embaixadacarioca.com/",
+        "en": "https://www.embaixadacarioca.com/en/",
+        "es": "https://www.embaixadacarioca.com/es/",
+        "x-default": "https://www.embaixadacarioca.com/"
+      }
+    }
+  ]
+}
