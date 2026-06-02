@@ -445,12 +445,12 @@ Achados: **0**
 - `general-3/index.html` — ok — blocos JSON-LD: 0 — inválidos: 0
 - `guia-do-rio.html` — ok — blocos JSON-LD: 6 — inválidos: 0
 - `index.html` — ok — blocos JSON-LD: 9 — inválidos: 0
-- `morro-da-urca.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `morro-da-urca.html` — ok — blocos JSON-LD: 7 — inválidos: 0
 - `nossa-visao.html` — ok — blocos JSON-LD: 5 — inválidos: 0
 - `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 8 — inválidos: 0
 - `offline.html` — ok — blocos JSON-LD: 1 — inválidos: 0
 - `onde-comer-no-pao-de-acucar.html` — ok — blocos JSON-LD: 6 — inválidos: 0
-- `parque-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `parque-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 7 — inválidos: 0
 - `parque-bondinho.html` — ok — blocos JSON-LD: 7 — inválidos: 0
 - `por-do-sol-morro-da-urca.html` — ok — blocos JSON-LD: 5 — inválidos: 0
 - `restaurante-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 6 — inválidos: 0
