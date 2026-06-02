@@ -525,6 +525,7 @@
         "GeoCoordinates",
         "ListItem",
         "Neighborhood",
+        "OpeningHoursSpecification",
         "PostalAddress",
         "Question",
         "ReserveAction",

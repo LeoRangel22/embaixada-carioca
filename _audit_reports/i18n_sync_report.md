@@ -1,8 +1,8 @@
 # Relatório de Sincronização i18n PT/EN/ES
 
-Gerado em: 2026-06-02 02:04:42
+Gerado em: 2026-06-02 23:38:43
 
-- PT: 30 arquivos
+- PT: 29 arquivos
 - EN: 28 arquivos
 - ES: 28 arquivos
 
@@ -10,7 +10,6 @@ Gerado em: 2026-06-02 02:04:42
 
 - `cafe-da-manha-com-vista-rio-de-janeiro.html`
 - `como-chegar.html`
-- `home-preview.html`
 - `offline.html`
 - `onde-comer-no-pao-de-acucar.html`
 - `parque-bondinho-pao-de-acucar.html`
@@ -23,7 +22,6 @@ Gerado em: 2026-06-02 02:04:42
 
 - `cafe-da-manha-com-vista-rio-de-janeiro.html`
 - `como-chegar.html`
-- `home-preview.html`
 - `offline.html`
 - `onde-comer-no-pao-de-acucar.html`
 - `parque-bondinho-pao-de-acucar.html`
@@ -65,7 +63,7 @@ Gerado em: 2026-06-02 02:04:42
 
 ### `index.html`
 
-    - Headings (h1+h2) desbalanceados: PT=30, EN=24, ES=24 (diferença > 1)
+    - Headings (h1+h2) desbalanceados: PT=32, EN=24, ES=24 (diferença > 1)
 
 ### `parque-bondinho.html`
 
@@ -76,8 +74,8 @@ Gerado em: 2026-06-02 02:04:42
 
 | Métrica | Valor |
 |---------|-------|
-| Páginas PT | 30 |
-| PT sem EN | 10 |
-| PT sem ES | 9 |
+| Páginas PT | 29 |
+| PT sem EN | 9 |
+| PT sem ES | 8 |
 | Com problemas hreflang/headings | 8 |
-| Total de issues | 27 |
+| Total de issues | 25 |

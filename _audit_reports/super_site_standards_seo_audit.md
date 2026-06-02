@@ -1,10 +1,10 @@
 # Super Site Standards + SEO Audit
 
 Status geral: **FAIL**
-Score mínimo: **64**
-Páginas HTML auditadas: **87**
-Findings FAIL: **44**
-Findings totais: **257**
+Score mínimo: **54**
+Páginas HTML auditadas: **239**
+Findings FAIL: **234**
+Findings totais: **821**
 
 ## Aprendizados incorporados
 - Home lower contrast
@@ -19,204 +19,268 @@ Findings totais: **257**
 - Manifest scope
 
 ## Páginas com score abaixo de 90
-- `parque-bondinho.html` — FAIL — score 64
-- `index.html` — FAIL — score 72
-- `en/parque-bondinho.html` — FAIL — score 74
-- `es/parque-bondinho.html` — FAIL — score 74
-- `caipirinha-com-vista-rio.html` — FAIL — score 76
-- `contato.html` — FAIL — score 78
-- `nossa-visao.html` — FAIL — score 78
-- `en/index.html` — FAIL — score 82
-- `es/index.html` — FAIL — score 82
-- `en/cardapio.html` — FAIL — score 84
-- `en/feijoada.html` — FAIL — score 84
-- `en/morro-da-urca.html` — FAIL — score 84
-- `en/roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 84
-- `es/cardapio.html` — FAIL — score 84
-- `es/entardecer.html` — FAIL — score 84
-- `es/feijoada.html` — FAIL — score 84
-- `es/morro-da-urca.html` — FAIL — score 84
-- `es/roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 84
-- `feijoada.html` — FAIL — score 84
-- `gastronomia-carioca.html` — FAIL — score 84
-- `guia-do-rio.html` — FAIL — score 84
-- `morro-da-urca.html` — FAIL — score 84
-- `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — FAIL — score 84
-- `roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 84
-- `en/caipirinha-com-vista-rio.html` — FAIL — score 86
-- `es/caipirinha-com-vista-rio.html` — FAIL — score 86
-- `eventos.html` — FAIL — score 86
-- `onde-comer-no-pao-de-acucar.html` — FAIL — score 86
-- `parque-bondinho-pao-de-acucar.html` — FAIL — score 86
-- `restaurante-bondinho-pao-de-acucar.html` — FAIL — score 86
-- `restaurante-morro-da-urca.html` — FAIL — score 86
-- `restaurantes-perto-do-pao-de-acucar.html` — FAIL — score 86
-- `en/contato.html` — FAIL — score 88
-- `en/nossa-visao.html` — FAIL — score 88
-- `es/contato.html` — FAIL — score 88
-- `es/nossa-visao.html` — FAIL — score 88
+- `parque-bondinho.html` — FAIL — score 54
+- `_backups/fase2/parque-bondinho.html` — FAIL — score 64
+- `en/eventos.html` — FAIL — score 64
+- `en/index.html` — FAIL — score 64
+- `en/morro-da-urca.html` — FAIL — score 64
+- `en/parque-bondinho.html` — FAIL — score 64
+- `es/index.html` — FAIL — score 64
+- `es/morro-da-urca.html` — FAIL — score 64
+- `es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — FAIL — score 64
+- `es/parque-bondinho.html` — FAIL — score 64
+- `index.html` — FAIL — score 64
+- `morro-da-urca.html` — FAIL — score 64
+- `_includes/footer.html` — FAIL — score 66
+- `_includes/head-common.html` — FAIL — score 66
+- `_includes/nav.html` — FAIL — score 66
+- `_includes/wa-widget.html` — FAIL — score 66
+- `caipirinha-com-vista-rio.html` — FAIL — score 66
+- `en/caipirinha-com-vista-rio.html` — FAIL — score 66
+- `es/caipirinha-com-vista-rio.html` — FAIL — score 66
+- `src/partials/en/footer.html` — FAIL — score 66
+- `src/partials/en/nav.html` — FAIL — score 66
+- `src/partials/es/footer.html` — FAIL — score 66
+- `src/partials/es/nav.html` — FAIL — score 66
+- `src/partials/pt/footer.html` — FAIL — score 66
+- `src/partials/pt/nav.html` — FAIL — score 66
+- `contato.html` — FAIL — score 68
+- `en/contato.html` — FAIL — score 68
+- `en/nossa-visao.html` — FAIL — score 68
+- `es/contato.html` — FAIL — score 68
+- `es/nossa-visao.html` — FAIL — score 68
+- `nossa-visao.html` — FAIL — score 68
+- `_backups/fase1/es/parque-bondinho.html` — FAIL — score 74
+- `_backups/fase1/parque-bondinho.html` — FAIL — score 74
+- `_backups/fase2/en/eventos.html` — FAIL — score 74
+- `_backups/fase2/en/parque-bondinho.html` — FAIL — score 74
+- `_backups/fase2/es/parque-bondinho.html` — FAIL — score 74
+- `_templates/base.html` — FAIL — score 74
+- `en/gastronomia-carioca.html` — FAIL — score 74
+- `en/guia-do-rio.html` — FAIL — score 74
+- `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — FAIL — score 74
+- `en/roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 74
+- `es/eventos.html` — FAIL — score 74
+- `es/gastronomia-carioca.html` — FAIL — score 74
+- `es/guia-do-rio.html` — FAIL — score 74
+- `es/roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 74
+- `gastronomia-carioca.html` — FAIL — score 74
+- `guia-do-rio.html` — FAIL — score 74
+- `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — FAIL — score 74
+- `roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 74
+- `almoco-morro-da-urca.html` — FAIL — score 76
+- `cafe-da-manha-com-vista-rio-de-janeiro.html` — FAIL — score 76
+- `cafe-da-manha-pao-de-acucar.html` — FAIL — score 76
+- `en/almoco-morro-da-urca.html` — FAIL — score 76
+- `en/breakfast-with-a-view-rio-de-janeiro.html` — FAIL — score 76
+- `en/cafe-da-manha-pao-de-acucar.html` — FAIL — score 76
+- `en/feijoada-com-vista-rio-de-janeiro.html` — FAIL — score 76
+- `en/por-do-sol-morro-da-urca.html` — FAIL — score 76
+- `en/restaurant-at-urca-hill.html` — FAIL — score 76
+- `en/restaurants-near-sugarloaf-mountain.html` — FAIL — score 76
+- `en/sugarloaf-cable-car-park.html` — FAIL — score 76
+- `en/sugarloaf-cable-car-restaurant.html` — FAIL — score 76
+- `en/where-to-eat-near-sugarloaf.html` — FAIL — score 76
+- `es/almoco-morro-da-urca.html` — FAIL — score 76
+- `es/cafe-da-manha-pao-de-acucar.html` — FAIL — score 76
+- `es/desayuno-con-vista-rio-de-janeiro.html` — FAIL — score 76
+- `es/donde-comer-cerca-del-pan-de-azucar.html` — FAIL — score 76
+- `es/feijoada-com-vista-rio-de-janeiro.html` — FAIL — score 76
+- `es/parque-bondinho-pan-de-azucar.html` — FAIL — score 76
+- `es/por-do-sol-morro-da-urca.html` — FAIL — score 76
+- `es/restaurante-bondinho-pan-de-azucar.html` — FAIL — score 76
+- `es/restaurante-morro-da-urca.html` — FAIL — score 76
+- `es/restaurantes-cerca-del-pan-de-azucar.html` — FAIL — score 76
+- `feijoada-com-vista-rio-de-janeiro.html` — FAIL — score 76
+- `onde-comer-no-pao-de-acucar.html` — FAIL — score 76
+- `parque-bondinho-pao-de-acucar.html` — FAIL — score 76
+- `por-do-sol-morro-da-urca.html` — FAIL — score 76
+- `restaurante-bondinho-pao-de-acucar.html` — FAIL — score 76
+- `restaurante-morro-da-urca.html` — FAIL — score 76
+- `restaurantes-perto-do-pao-de-acucar.html` — FAIL — score 76
+- `restaurantes-romanticos-rio-de-janeiro.html` — FAIL — score 76
+- `_backups/fase1/_backups/fase1/en/index.html` — FAIL — score 82
+- `_backups/fase1/_backups/fase1/index.html` — FAIL — score 82
+- `_backups/fase1/en/index.html` — FAIL — score 82
+- `_backups/fase1/index.html` — FAIL — score 82
+- `_backups/fase1/morro-da-urca.html` — FAIL — score 82
+- `_backups/fase1/_backups/fase1/en/cardapio.html` — FAIL — score 84
+- `_backups/fase1/_backups/fase1/es/cardapio.html` — FAIL — score 84
+- `_backups/fase1/_backups/fase1/es/entardecer.html` — FAIL — score 84
+- `_backups/fase1/_backups/fase1/es/index.html` — FAIL — score 84
+- `_backups/fase1/en/cardapio.html` — FAIL — score 84
+- `_backups/fase1/es/cardapio.html` — FAIL — score 84
+- `_backups/fase1/es/entardecer.html` — FAIL — score 84
+- `_backups/fase1/es/index.html` — FAIL — score 84
+- `_backups/fase2/en/index.html` — FAIL — score 84
+- `_backups/fase2/en/morro-da-urca.html` — FAIL — score 84
+- `_backups/fase2/en/roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 84
+- `_backups/fase2/es/index.html` — FAIL — score 84
+- `_backups/fase2/es/morro-da-urca.html` — FAIL — score 84
+- `_backups/fase2/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — FAIL — score 84
+- `_backups/fase2/es/roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 84
 
 ## Top findings
 - **WARN** `404.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
 - **WARN** `404.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
 - **WARN** `404.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `almoco-morro-da-urca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `almoco-morro-da-urca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `almoco.html` — SEO/title_length: Title fora da faixa ideal.
-- **WARN** `almoco.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `almoco.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `almoco.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `cafe-da-manha-com-vista-rio-de-janeiro.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `cafe-da-manha-com-vista-rio-de-janeiro.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `cafe-da-manha-pao-de-acucar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `cafe-da-manha-pao-de-acucar.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `cafe-da-manha.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `cafe-da-manha.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `cafe-da-manha.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `caipirinha-com-vista-rio.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
-- **FAIL** `caipirinha-com-vista-rio.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
-- **WARN** `caipirinha-com-vista-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `caipirinha-com-vista-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `cardapio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `cardapio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `cardapio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `como-chegar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **FAIL** `contato.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
-- **FAIL** `contato.html` — SEO_SCHEMA/aggregate_rating_duplicate: Múltiplos aggregateRating: 2.
-- **WARN** `contato.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/almoco-morro-da-urca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/almoco-morro-da-urca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `en/almoco.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `en/almoco.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/almoco.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `en/breakfast-with-a-view-rio-de-janeiro.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/breakfast-with-a-view-rio-de-janeiro.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `en/cafe-da-manha-pao-de-acucar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/cafe-da-manha-pao-de-acucar.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `en/cafe-da-manha.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `en/cafe-da-manha.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/cafe-da-manha.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `en/caipirinha-com-vista-rio.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
-- **WARN** `en/caipirinha-com-vista-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/caipirinha-com-vista-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `en/cardapio.html` — SEO/meta_description: Página sem meta description.
-- **WARN** `en/cardapio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `en/cardapio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/cardapio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `en/contato.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
-- **WARN** `en/contato.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/entardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `en/entardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/entardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `en/eventos.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `en/eventos.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/eventos.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `en/feijoada-com-vista-rio-de-janeiro.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/feijoada-com-vista-rio-de-janeiro.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `en/feijoada.html` — SEO/meta_description: Página sem meta description.
-- **WARN** `en/feijoada.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `en/feijoada.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/feijoada.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `en/gastronomia-carioca.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `en/gastronomia-carioca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/gastronomia-carioca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `en/guia-do-rio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `en/guia-do-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/guia-do-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `en/how-to-get-there.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/index.html` — SEO/title_length: Title fora da faixa ideal.
-- **FAIL** `en/index.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
-- **WARN** `en/index.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `en/index.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/index.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `en/morro-da-urca.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
-- **WARN** `en/morro-da-urca.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `en/morro-da-urca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/morro-da-urca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `en/nossa-visao.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
-- **WARN** `en/nossa-visao.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `en/parque-bondinho.html` — SEO/meta_description: Página sem meta description.
-- **FAIL** `en/parque-bondinho.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
-- **WARN** `en/parque-bondinho.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `en/parque-bondinho.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/parque-bondinho.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `en/por-do-sol-morro-da-urca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/por-do-sol-morro-da-urca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `en/restaurant-at-urca-hill.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/restaurant-at-urca-hill.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `en/restaurants-near-sugarloaf-mountain.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/restaurants-near-sugarloaf-mountain.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `en/roteiro-meio-dia-urca-pao-de-acucar.html` — SEO/meta_description: Página sem meta description.
-- **WARN** `en/roteiro-meio-dia-urca-pao-de-acucar.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `en/roteiro-meio-dia-urca-pao-de-acucar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/roteiro-meio-dia-urca-pao-de-acucar.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `en/sugarloaf-cable-car-park.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/sugarloaf-cable-car-park.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `en/sugarloaf-cable-car-restaurant.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/sugarloaf-cable-car-restaurant.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `en/sunset.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `en/sunset.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/sunset.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `en/where-to-eat-near-sugarloaf.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `en/where-to-eat-near-sugarloaf.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `entardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `entardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `entardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `es/almoco-morro-da-urca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `es/almoco-morro-da-urca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `es/almoco.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `es/almoco.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `es/almoco.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `es/atardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `es/atardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `es/atardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `es/cafe-da-manha-pao-de-acucar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `es/cafe-da-manha-pao-de-acucar.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `es/cafe-da-manha.html` — SEO/title_length: Title fora da faixa ideal.
-- **WARN** `es/cafe-da-manha.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `es/cafe-da-manha.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `es/cafe-da-manha.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `es/caipirinha-com-vista-rio.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
-- **WARN** `es/caipirinha-com-vista-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `es/caipirinha-com-vista-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `es/cardapio.html` — SEO/meta_description: Página sem meta description.
-- **WARN** `es/cardapio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `es/cardapio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `es/cardapio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `es/como-llegar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **FAIL** `es/contato.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
-- **WARN** `es/contato.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `es/desayuno-con-vista-rio-de-janeiro.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `es/desayuno-con-vista-rio-de-janeiro.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `es/donde-comer-cerca-del-pan-de-azucar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `es/donde-comer-cerca-del-pan-de-azucar.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `es/entardecer.html` — SEO/meta_description: Página sem meta description.
-- **WARN** `es/entardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `es/entardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `es/entardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `es/eventos.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `es/eventos.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `es/eventos.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `es/feijoada-com-vista-rio-de-janeiro.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `es/feijoada-com-vista-rio-de-janeiro.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **FAIL** `es/feijoada.html` — SEO/meta_description: Página sem meta description.
-- **WARN** `es/feijoada.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `es/feijoada.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `es/feijoada.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `es/gastronomia-carioca.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `es/gastronomia-carioca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `es/gastronomia-carioca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `es/guia-do-rio.html` — SEO/title_length: Title fora da faixa ideal.
-- **WARN** `es/guia-do-rio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `es/guia-do-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
-- **WARN** `es/guia-do-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
-- **WARN** `es/index.html` — SEO/title_length: Title fora da faixa ideal.
-- **FAIL** `es/index.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
-- **WARN** `es/index.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
-- **WARN** `es/index.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/almoco-morro-da-urca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/almoco-morro-da-urca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/almoco.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/almoco.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/almoco.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/cafe-da-manha-pao-de-acucar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/cafe-da-manha-pao-de-acucar.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/cafe-da-manha.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/cafe-da-manha.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/cafe-da-manha.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `_backups/fase1/_backups/fase1/caipirinha-com-vista-rio.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
+- **WARN** `_backups/fase1/_backups/fase1/caipirinha-com-vista-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/caipirinha-com-vista-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/cardapio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/cardapio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/cardapio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/cardapio.html` — PERFORMANCE/many_inline_styles: 31 blocos style.
+- **WARN** `_backups/fase1/_backups/fase1/como-chegar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/como-chegar.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/en/almoco.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/en/almoco.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/en/almoco.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/en/cafe-da-manha.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/en/cafe-da-manha.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/en/cafe-da-manha.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `_backups/fase1/_backups/fase1/en/cardapio.html` — SEO/meta_description: Página sem meta description.
+- **WARN** `_backups/fase1/_backups/fase1/en/cardapio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/en/cardapio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/en/cardapio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/en/entardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/en/entardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/en/entardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/en/eventos.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/en/eventos.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/en/eventos.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/en/guia-do-rio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/en/guia-do-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/en/guia-do-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/en/how-to-get-there.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/en/index.html` — SEO/title_length: Title fora da faixa ideal.
+- **FAIL** `_backups/fase1/_backups/fase1/en/index.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
+- **WARN** `_backups/fase1/_backups/fase1/en/index.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/en/index.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/en/index.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/en/sunset.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/en/sunset.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/en/sunset.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/entardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/entardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/entardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/es/almoco.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/es/almoco.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/es/almoco.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/es/atardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/es/atardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/es/atardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/es/cafe-da-manha.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/es/cafe-da-manha.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/es/cafe-da-manha.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `_backups/fase1/_backups/fase1/es/cardapio.html` — SEO/meta_description: Página sem meta description.
+- **WARN** `_backups/fase1/_backups/fase1/es/cardapio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/es/cardapio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/es/cardapio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/es/como-llegar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **FAIL** `_backups/fase1/_backups/fase1/es/entardecer.html` — SEO/meta_description: Página sem meta description.
+- **WARN** `_backups/fase1/_backups/fase1/es/entardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/es/entardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/es/entardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/es/eventos.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/es/eventos.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/es/eventos.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/es/guia-do-rio.html` — SEO/title_length: Title fora da faixa ideal.
+- **WARN** `_backups/fase1/_backups/fase1/es/guia-do-rio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/es/guia-do-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/es/guia-do-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `_backups/fase1/_backups/fase1/es/index.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
+- **WARN** `_backups/fase1/_backups/fase1/es/index.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/es/index.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/es/index.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/feijoada-com-vista-rio-de-janeiro.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/feijoada-com-vista-rio-de-janeiro.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/guia-do-rio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/guia-do-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/guia-do-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/index.html` — SEO/title_length: Title fora da faixa ideal.
+- **FAIL** `_backups/fase1/_backups/fase1/index.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
+- **WARN** `_backups/fase1/_backups/fase1/index.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/_backups/fase1/index.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/index.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/_backups/fase1/por-do-sol-morro-da-urca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/_backups/fase1/por-do-sol-morro-da-urca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/almoco-morro-da-urca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/almoco-morro-da-urca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/almoco.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/almoco.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/almoco.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/cafe-da-manha-com-vista-rio-de-janeiro.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/cafe-da-manha-com-vista-rio-de-janeiro.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/cafe-da-manha-pao-de-acucar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/cafe-da-manha-pao-de-acucar.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/cafe-da-manha.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/cafe-da-manha.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/cafe-da-manha.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `_backups/fase1/caipirinha-com-vista-rio.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
+- **WARN** `_backups/fase1/caipirinha-com-vista-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/caipirinha-com-vista-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/cardapio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/cardapio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/cardapio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/cardapio.html` — PERFORMANCE/many_inline_styles: 31 blocos style.
+- **WARN** `_backups/fase1/como-chegar.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/como-chegar.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/en/almoco-morro-da-urca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/en/almoco-morro-da-urca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/en/almoco.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/en/almoco.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/en/almoco.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/en/cafe-da-manha.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/en/cafe-da-manha.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/en/cafe-da-manha.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `_backups/fase1/en/caipirinha-com-vista-rio.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
+- **WARN** `_backups/fase1/en/caipirinha-com-vista-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/en/caipirinha-com-vista-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **FAIL** `_backups/fase1/en/cardapio.html` — SEO/meta_description: Página sem meta description.
+- **WARN** `_backups/fase1/en/cardapio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/en/cardapio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/en/cardapio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/en/entardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/en/entardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/en/entardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/en/eventos.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/en/eventos.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/en/eventos.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/en/gastronomia-carioca.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/en/gastronomia-carioca.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/en/gastronomia-carioca.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/en/guia-do-rio.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/en/guia-do-rio.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/en/guia-do-rio.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/en/how-to-get-there.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/en/index.html` — SEO/title_length: Title fora da faixa ideal.
+- **FAIL** `_backups/fase1/en/index.html` — SEO_SCHEMA/restaurant_type_array: Restaurant misturado em @type array.
+- **WARN** `_backups/fase1/en/index.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/en/index.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/en/index.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/en/sunset.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/en/sunset.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/en/sunset.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/entardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/entardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/entardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/es/almoco.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/es/almoco.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/es/almoco.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
+- **WARN** `_backups/fase1/es/atardecer.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.
+- **WARN** `_backups/fase1/es/atardecer.html` — VISUAL/light_bg_light_text: Risco de texto claro em fundo claro.
+- **WARN** `_backups/fase1/es/atardecer.html` — VISUAL/dark_bg_dark_text: Risco de texto escuro em fundo escuro.
 
 ## Arquivos
 - `_audit_reports/super_site_standards_seo_audit.md`

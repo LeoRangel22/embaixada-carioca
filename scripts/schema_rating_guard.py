@@ -16,6 +16,20 @@ REPORT_JSON = REPORT_DIR / 'schema_rating_guard_report.json'
 SKIP_DIRS = {'.git', '.github', 'node_modules', 'dist', 'build', '_site', '_audit_reports', 'archive', '_templates', 'src'}
 FORBIDDEN_KEYS = {'aggregateRating', 'ratingValue', 'reviewCount', 'ratingCount', 'bestRating', 'worstRating'}
 FORBIDDEN_TYPES = {'AggregateRating'}
+# Fontes verificáveis que permitem aggregateRating no schema
+# (dados extraídos de fonte primária, não auto-declarados)
+VERIFIED_SOURCES = {
+    'google.com/maps',
+    'maps.google',
+    'maps.app.goo.gl',
+}
+
+def has_verified_source(obj: dict) -> bool:
+    """Verifica se o schema tem sameAs de fonte verificável."""
+    same_as = obj.get('sameAs', [])
+    if isinstance(same_as, str):
+        same_as = [same_as]
+    return any(any(src in str(s) for src in VERIFIED_SOURCES) for s in same_as)
 SCRIPT_RE = re.compile(r'(<script\s+[^>]*type=["\']application/ld\+json["\'][^>]*>)(.*?)(</script>)', re.I | re.S)
 
 
@@ -85,8 +99,13 @@ def clean_jsonld(obj: Any, findings: list[Finding], file_rel: str, block_no: int
 
 def scan_raw(obj: Any, findings: list[Finding], file_rel: str, block_no: int) -> None:
     if isinstance(obj, dict):
+        # Se o schema tem fonte verificável (sameAs Google Maps), aggregateRating é permitido
+        parent_verified = has_verified_source(obj)
         for key, value in obj.items():
             if key in FORBIDDEN_KEYS:
+                # Permitir aggregateRating se o schema pai tem fonte verificável
+                if key == 'aggregateRating' and parent_verified:
+                    continue  # Fonte verificada — permitido
                 findings.append(Finding(file_rel, block_no, 'forbidden_key', key))
             if key == '@type' and has_forbidden_type(value):
                 findings.append(Finding(file_rel, block_no, 'forbidden_type', 'AggregateRating'))

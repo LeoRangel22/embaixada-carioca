@@ -23,27 +23,50 @@ REQUIRED = ['Restaurant', 'FAQPage', 'BreadcrumbList', 'WebSite', 'WebPage']
 FORBIDDEN_KEYS = ['aggregateRating', 'ratingValue', 'reviewCount', 'ratingCount', 'bestRating', 'worstRating']
 SCRIPT_RE = re.compile(r'<script\s+[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', re.I | re.S)
 
+# Fontes verificáveis que permitem aggregateRating (dados de fonte primária, não auto-declarados)
+VERIFIED_SOURCES = {'google.com/maps', 'maps.google', 'maps.app.goo.gl'}
 
-def walk(obj, found_types, forbidden):
+
+def has_verified_source(obj: dict) -> bool:
+    """Verifica se o schema tem sameAs de fonte verificável (Google Maps)."""
+    same_as = obj.get('sameAs', [])
+    if isinstance(same_as, str):
+        same_as = [same_as]
+    return any(any(src in str(s) for src in VERIFIED_SOURCES) for s in same_as)
+
+
+def walk(obj, found_types, forbidden, parent_verified=False, inside_rating=False):
     if isinstance(obj, dict):
+        node_verified = parent_verified or has_verified_source(obj)
+        # Se estamos dentro de um aggregateRating verificado, todos os campos filhos são permitidos
+        if inside_rating and node_verified:
+            return
         for key, value in obj.items():
+            # Verificar se este nó é o aggregateRating com fonte verificável
+            child_inside_rating = inside_rating or (key == 'aggregateRating' and node_verified)
             if key in FORBIDDEN_KEYS:
-                forbidden.add(key)
+                # Permitir aggregateRating e seus campos quando o schema pai tem sameAs do Google Maps
+                if node_verified and (key == 'aggregateRating' or inside_rating):
+                    pass  # Fonte verificada — permitido
+                elif inside_rating and node_verified:
+                    pass  # Campo filho de aggregateRating verificado — permitido
+                else:
+                    forbidden.add(key)
             if key == '@type':
                 if isinstance(value, str):
                     found_types.add(value)
-                    if value == 'AggregateRating':
+                    if value == 'AggregateRating' and not node_verified:
                         forbidden.add('AggregateRating')
                 elif isinstance(value, list):
                     for item in value:
                         if isinstance(item, str):
                             found_types.add(item)
-                            if item == 'AggregateRating':
+                            if item == 'AggregateRating' and not node_verified:
                                 forbidden.add('AggregateRating')
-            walk(value, found_types, forbidden)
+            walk(value, found_types, forbidden, parent_verified=node_verified, inside_rating=child_inside_rating)
     elif isinstance(obj, list):
         for value in obj:
-            walk(value, found_types, forbidden)
+            walk(value, found_types, forbidden, parent_verified=parent_verified, inside_rating=inside_rating)
 
 
 def audit_page(rel):

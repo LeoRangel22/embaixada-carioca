@@ -42,4 +42,4 @@ Score mínimo: **100**
 - `guia-do-rio.html` — PASS — score 100 — blocos válidos 6
   - Encontrado: AdministrativeArea, Answer, Article, BreadcrumbList, City, FAQPage, GeoCoordinates, HowTo, HowToStep, ListItem, LocationFeatureSpecification, MonetaryAmount, Neighborhood, OpeningHoursSpecification, Organization, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification
 - `restaurantes-romanticos-rio-de-janeiro.html` — PASS — score 100 — blocos válidos 5
-  - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, FAQPage, GeoCoordinates, ListItem, Neighborhood, PostalAddress, Question, ReserveAction, Restaurant, TouristAttraction, WebPage, WebSite
+  - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, FAQPage, GeoCoordinates, ListItem, Neighborhood, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, TouristAttraction, WebPage, WebSite
