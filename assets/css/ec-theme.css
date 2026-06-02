@@ -1,0 +1,1891 @@
+/* Embaixada Carioca — ec-theme.css
+   Arquivo consolidado: contraste, paleta verde sólida, tuning visual e travas de legibilidade.
+   Gerado por merge de ec-contrast-hotfix.css + ec-green-solid-palette.css +
+   ec-home-final-visual-tuning.css + ec-visible-text-lock.css +
+   assets/superholistic_visual_readability_lock.css + assets/eventos-contrast-lock.css */
+
+/* === ORIGEM: ec-contrast-hotfix.css === */
+/* Embaixada Carioca — Global Light Background Contrast Hotfix
+   Corrige regressões visuais: texto claro herdado dentro de cards e áreas claras.
+   Escopo: força texto escuro apenas em blocos claros, preservando áreas hero/escuras. */
+
+:root {
+  --ec-hotfix-blue: #00405a;
+  --ec-hotfix-green: #335d4a;
+  --ec-hotfix-gray: #485156;
+  --ec-hotfix-gold: #9a6500;
+  --ec-hotfix-paper: #f6efde;
+  --ec-hotfix-sand: #ede2c9;
+}
+
+/* DARK HERO / BLUE AREAS: text must be light. */
+body[data-screen-label="Café da Manhã"] :is(header.hero,header.page-hero,.hero,.page-hero) :is(p,.lede,.copy,.description,.hero-sub) {
+  color: rgba(246,239,222,.94) !important;
+  -webkit-text-fill-color: rgba(246,239,222,.94) !important;
+  text-shadow: 0 2px 14px rgba(0,0,0,.48) !important;
+}
+
+body[data-screen-label="Café da Manhã"] :is(header.hero,header.page-hero,.hero,.page-hero) :is(h1,h2,h3,.eyebrow,.kicker,.hero-kicker) {
+  color: #f6efde !important;
+  -webkit-text-fill-color: #f6efde !important;
+  text-shadow: 0 3px 18px rgba(0,0,0,.56) !important;
+}
+
+/* Hero side frame / glass cards: visual regression seen on mobile screenshots. */
+body :is(.ec-page-hero-side-frame,.hero-summary-card,.hmc) {
+  text-shadow: none !important;
+}
+
+body .ec-page-hero-side-frame {
+  background: rgba(0,32,46,.82) !important;
+  border-color: rgba(246,239,222,.28) !important;
+  box-shadow: 0 22px 60px rgba(0,0,0,.42) !important;
+  backdrop-filter: blur(12px) saturate(1.18) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(1.18) !important;
+}
+
+body .ec-page-hero-side-frame :is(.l,.label,.kicker,.eyebrow) {
+  color: #f2b24a !important;
+  -webkit-text-fill-color: #f2b24a !important;
+  opacity: 1 !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,.42) !important;
+}
+
+body .ec-page-hero-side-frame :is(.v,.value,p,span,strong,b) {
+  color: rgba(246,239,222,.96) !important;
+  -webkit-text-fill-color: rgba(246,239,222,.96) !important;
+  opacity: 1 !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,.5) !important;
+}
+
+body .ec-page-hero-side-frame .hero-summary-card :is(.v,p,span) {
+  color: rgba(246,239,222,.95) !important;
+  -webkit-text-fill-color: rgba(246,239,222,.95) !important;
+}
+
+/* ULTRA SPECIFIC HERO SIDE FRAME LOCK
+   This beats later page-level visual locks that use html body header.page-hero ... !important. */
+html html body body header.page-hero.page-hero aside.ec-page-hero-side-frame.ec-page-hero-side-frame,
+html html body body header.hero.hero aside.ec-page-hero-side-frame.ec-page-hero-side-frame,
+html html body body header.page-hero.page-hero .ec-page-hero-side-frame.ec-page-hero-side-frame,
+html html body body header.hero.hero .ec-page-hero-side-frame.ec-page-hero-side-frame {
+  background: rgba(0,32,46,.92) !important;
+  border-color: rgba(246,239,222,.42) !important;
+  box-shadow: 0 22px 64px rgba(0,0,0,.58) !important;
+  color: #f6efde !important;
+  -webkit-text-fill-color: #f6efde !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+html html body body header.page-hero.page-hero .ec-page-hero-side-frame.ec-page-hero-side-frame .hmc.hmc .l.l,
+html html body body header.hero.hero .ec-page-hero-side-frame.ec-page-hero-side-frame .hmc.hmc .l.l,
+html html body body header.page-hero.page-hero .ec-page-hero-side-frame.ec-page-hero-side-frame .hmc.hmc .label.label,
+html html body body header.hero.hero .ec-page-hero-side-frame.ec-page-hero-side-frame .hmc.hmc .label.label,
+html html body body header.page-hero.page-hero .ec-page-hero-side-frame.ec-page-hero-side-frame .hmc.hmc .kicker.kicker,
+html html body body header.hero.hero .ec-page-hero-side-frame.ec-page-hero-side-frame .hmc.hmc .kicker.kicker,
+html html body body header.page-hero.page-hero .ec-page-hero-side-frame.ec-page-hero-side-frame .hmc.hmc .eyebrow.eyebrow,
+html html body body header.hero.hero .ec-page-hero-side-frame.ec-page-hero-side-frame .hmc.hmc .eyebrow.eyebrow {
+  color: #f2b24a !important;
+  -webkit-text-fill-color: #f2b24a !important;
+  opacity: 1 !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,.66) !important;
+  font-weight: 900 !important;
+  letter-spacing: .26em !important;
+}
+
+html html body body header.page-hero.page-hero .ec-page-hero-side-frame.ec-page-hero-side-frame .hmc.hmc .v.v,
+html html body body header.hero.hero .ec-page-hero-side-frame.ec-page-hero-side-frame .hmc.hmc .v.v,
+html html body body header.page-hero.page-hero .ec-page-hero-side-frame.ec-page-hero-side-frame .hmc.hmc .value.value,
+html html body body header.hero.hero .ec-page-hero-side-frame.ec-page-hero-side-frame .hmc.hmc .value.value,
+html html body body header.page-hero.page-hero .ec-page-hero-side-frame.ec-page-hero-side-frame .hmc.hmc p,
+html html body body header.hero.hero .ec-page-hero-side-frame.ec-page-hero-side-frame .hmc.hmc p,
+html html body body header.page-hero.page-hero .ec-page-hero-side-frame.ec-page-hero-side-frame .hmc.hmc span.v,
+html html body body header.hero.hero .ec-page-hero-side-frame.ec-page-hero-side-frame .hmc.hmc span.v {
+  color: #f6efde !important;
+  -webkit-text-fill-color: #f6efde !important;
+  opacity: 1 !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,.70) !important;
+  font-weight: 750 !important;
+  line-height: 1.35 !important;
+}
+
+/* Blocos claros conhecidos do site */
+body :is(
+  .light-section,
+  .paper-section,
+  .section-paper,
+  .bg-paper,
+  .card-light,
+  .card,
+  .box,
+  .faq-item,
+  .faq-card,
+  .info-card,
+  .content-card,
+  .copy-card,
+  .route-card,
+  .guide-card,
+  .place-card,
+  .beach-card,
+  .experience-card,
+  .geo-card,
+  .direct-answer-card,
+  .ec-r2d2-card,
+  .ec-final-geo-card,
+  .ec-final-geo-answer,
+  .ec-sprint4-faq details,
+  .ec-strategic-links,
+  .access-direct,
+  .access-section,
+  .access-faq,
+  .menu-section,
+  .menu-item,
+  [class*="card"],
+  [class*="Card"],
+  [class*="box"],
+  [class*="Box"]
+) {
+  text-shadow: none !important;
+}
+
+body :is(
+  .light-section,
+  .paper-section,
+  .section-paper,
+  .bg-paper,
+  .card-light,
+  .card,
+  .box,
+  .faq-item,
+  .faq-card,
+  .info-card,
+  .content-card,
+  .copy-card,
+  .route-card,
+  .guide-card,
+  .place-card,
+  .beach-card,
+  .experience-card,
+  .geo-card,
+  .direct-answer-card,
+  .ec-r2d2-card,
+  .ec-final-geo-card,
+  .ec-final-geo-answer,
+  .ec-sprint4-faq details,
+  .ec-strategic-links,
+  .access-direct,
+  .access-section,
+  .access-faq,
+  .menu-section,
+  .menu-item,
+  [class*="card"],
+  [class*="Card"],
+  [class*="box"],
+  [class*="Box"]
+) :is(h1,h2,h3,h4,h5,h6,.title,.headline,.section-title,.card-title) {
+  color: var(--ec-hotfix-green) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-green) !important;
+  text-shadow: none !important;
+}
+
+body :is(
+  .light-section,
+  .paper-section,
+  .section-paper,
+  .bg-paper,
+  .card-light,
+  .card,
+  .box,
+  .faq-item,
+  .faq-card,
+  .info-card,
+  .content-card,
+  .copy-card,
+  .route-card,
+  .guide-card,
+  .place-card,
+  .beach-card,
+  .experience-card,
+  .geo-card,
+  .direct-answer-card,
+  .ec-r2d2-card,
+  .ec-final-geo-card,
+  .ec-final-geo-answer,
+  .ec-sprint4-faq details,
+  .ec-strategic-links,
+  .access-direct,
+  .access-section,
+  .access-faq,
+  .menu-section,
+  .menu-item,
+  [class*="card"],
+  [class*="Card"],
+  [class*="box"],
+  [class*="Box"]
+) :is(p,li,span,small,summary,dd,dt,.lede,.copy,.description,.card-copy) {
+  color: var(--ec-hotfix-gray) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-gray) !important;
+  text-shadow: none !important;
+}
+
+body :is(
+  .light-section,
+  .paper-section,
+  .section-paper,
+  .bg-paper,
+  .card-light,
+  .card,
+  .box,
+  .faq-item,
+  .faq-card,
+  .info-card,
+  .content-card,
+  .copy-card,
+  .route-card,
+  .guide-card,
+  .place-card,
+  .beach-card,
+  .experience-card,
+  .geo-card,
+  .direct-answer-card,
+  .ec-r2d2-card,
+  .ec-final-geo-card,
+  .ec-final-geo-answer,
+  .ec-sprint4-faq details,
+  .ec-strategic-links,
+  .access-direct,
+  .access-section,
+  .access-faq,
+  .menu-section,
+  .menu-item,
+  [class*="card"],
+  [class*="Card"],
+  [class*="box"],
+  [class*="Box"]
+) :is(a:not(.btn),strong,b,.kicker,.eyebrow,.tag) {
+  color: var(--ec-hotfix-gold) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-gold) !important;
+  text-shadow: none !important;
+}
+
+/* Captura blocos claros feitos com style inline, como os cards do Guia do Rio. */
+body :is(section,article,div,li)[style*="background"]:is([style*="#fff"],[style*="white"],[style*="#f6efde"],[style*="#ede2c9"],[style*="246,239,222"],[style*="237,226,201"]) {
+  color: var(--ec-hotfix-blue) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-blue) !important;
+  text-shadow: none !important;
+}
+
+body :is(section,article,div,li)[style*="background"]:is([style*="#fff"],[style*="white"],[style*="#f6efde"],[style*="#ede2c9"],[style*="246,239,222"],[style*="237,226,201"]) :is(h1,h2,h3,h4,h5,h6,.title,.headline) {
+  color: var(--ec-hotfix-green) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-green) !important;
+  text-shadow: none !important;
+}
+
+body :is(section,article,div,li)[style*="background"]:is([style*="#fff"],[style*="white"],[style*="#f6efde"],[style*="#ede2c9"],[style*="246,239,222"],[style*="237,226,201"]) :is(p,li,span,small,.lede,.copy,.description) {
+  color: var(--ec-hotfix-gray) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-gray) !important;
+  text-shadow: none !important;
+}
+
+/* Guia do Rio: cards de roteiro/praias/pontos turísticos precisam ser legíveis em fundo claro. */
+body[data-screen-label="Guia do Rio"] main :is(article,section,div,li):not(.hero):not(.page-hero):not(.nav-drawer):not(.wa-preview) :is(h1,h2,h3,h4,p,li,span,small) {
+  text-shadow: none !important;
+}
+
+body[data-screen-label="Guia do Rio"] main :is(.card,.box,.guide-card,.place-card,.beach-card,.experience-card,.route-card,[class*="card"],[class*="box"]) :is(h1,h2,h3,h4,.title,.headline) {
+  color: var(--ec-hotfix-green) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-green) !important;
+}
+
+body[data-screen-label="Guia do Rio"] main :is(.card,.box,.guide-card,.place-card,.beach-card,.experience-card,.route-card,[class*="card"],[class*="box"]) :is(p,li,span,small,.copy,.description) {
+  color: var(--ec-hotfix-gray) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-gray) !important;
+}
+
+/* Café da manhã: mesma proteção em cards e blocos claros. */
+body[data-screen-label="Café da Manhã"] main :is(.card,.box,.info-card,.content-card,.copy-card,[class*="card"],[class*="box"]) :is(h1,h2,h3,h4,.title,.headline) {
+  color: var(--ec-hotfix-green) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-green) !important;
+}
+
+body[data-screen-label="Café da Manhã"] main :is(.card,.box,.info-card,.content-card,.copy-card,[class*="card"],[class*="box"]) :is(p,li,span,small,.lede,.copy,.description) {
+  color: var(--ec-hotfix-gray) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-gray) !important;
+}
+
+/* FINAL DARK SECTION LOCK — precisa vir por último.
+   Corrige .sec-head/.lede em seções azul-escuras em todas as páginas atuais, inclusive páginas sem <main>. */
+body section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > .sec-head :is(p,.lede,.copy,.description),
+body section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) .sec-head > :is(p,.lede,.copy,.description),
+body section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > :is(.section-head,.content-head,.intro-head) :is(p,.lede,.copy,.description),
+body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > .sec-head :is(p,.lede,.copy,.description),
+body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) .sec-head > :is(p,.lede,.copy,.description),
+body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > :is(.section-head,.content-head,.intro-head) :is(p,.lede,.copy,.description) {
+  color: rgba(246,239,222,.96) !important;
+  -webkit-text-fill-color: rgba(246,239,222,.96) !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,.54) !important;
+}
+
+body section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > .sec-head :is(h1,h2,h3,.serif),
+body section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) .sec-head > :is(h1,h2,h3,.serif),
+body section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > :is(.section-head,.content-head,.intro-head) :is(h1,h2,h3,.serif),
+body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > .sec-head :is(h1,h2,h3,.serif),
+body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) .sec-head > :is(h1,h2,h3,.serif),
+body main section:not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-final-geo-answer):not(.ec-strategic-links):not(.access-section):not(.access-faq):not(.access-direct) > .wrap > :is(.section-head,.content-head,.intro-head) :is(h1,h2,h3,.serif) {
+  color: #f6efde !important;
+  -webkit-text-fill-color: #f6efde !important;
+  text-shadow: 0 2px 14px rgba(0,0,0,.48) !important;
+}
+
+/* Known visual regression sentinel: Café da Manhã / O que servimos */
+body[data-screen-label="Café da Manhã"] #o-que-servimos .sec-head p.lede {
+  color: rgba(246,239,222,.98) !important;
+  -webkit-text-fill-color: rgba(246,239,222,.98) !important;
+  text-shadow: 0 2px 14px rgba(0,0,0,.58) !important;
+}
+
+/* Final light card paragraph lock: evita texto areia/claro em cards claros. */
+body main :is(.card,.box,.card-light,.guide-card,.place-card,.beach-card,.experience-card,.route-card,.info-card,.content-card,.copy-card,.faq-card,.faq-item,[class*="card"],[class*="box"]) :is(p,li,span,small,.lede,.copy,.description,.faq-answer) {
+  color: var(--ec-hotfix-gray) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-gray) !important;
+  text-shadow: none !important;
+}
+
+body main :is(.card,.box,.card-light,.guide-card,.place-card,.beach-card,.experience-card,.route-card,.info-card,.content-card,.copy-card,.faq-card,.faq-item,[class*="card"],[class*="box"]) :is(h1,h2,h3,h4,h5,h6,.title,.headline,.card-title) {
+  color: var(--ec-hotfix-green) !important;
+  -webkit-text-fill-color: var(--ec-hotfix-green) !important;
+  text-shadow: none !important;
+}
+
+/* === ORIGEM: ec-green-solid-palette.css === */
+/* Embaixada Carioca — Green Solid Palette Standard
+   Pattern based on the breakfast/menu green block: dark green background, cream text, yellow highlights.
+   Use for sections with solid green backgrounds across the site. */
+
+:root {
+  --ec-green-solid: #152f22;
+  --ec-green-solid-card: #1d3b2c;
+  --ec-green-solid-card-2: #203f31;
+  --ec-green-solid-text: #f6efde;
+  --ec-green-solid-muted: #dbe7d0;
+  --ec-green-solid-yellow: #ffc62e;
+  --ec-green-solid-rule: rgba(246, 239, 222, .12);
+  --ec-green-solid-rule-strong: rgba(255, 198, 46, .32);
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) {
+  background: var(--ec-green-solid) !important;
+  background-color: var(--ec-green-solid) !important;
+  color: var(--ec-green-solid-text) !important;
+  -webkit-text-fill-color: currentColor;
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) :is(h1, h2, h3, h4, h5, h6, p, li, span, small, strong, b, div) {
+  color: inherit;
+  -webkit-text-fill-color: currentColor;
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) :is(.eyebrow, .tag, .badge, .pill, .price, .n, .value, .v, .highlight, .serif, em, .check, li::before) {
+  color: var(--ec-green-solid-yellow) !important;
+  -webkit-text-fill-color: var(--ec-green-solid-yellow) !important;
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) :is(.lede, .sub, .subtitle, .description, .desc, .muted, .l, .label) {
+  color: var(--ec-green-solid-muted) !important;
+  -webkit-text-fill-color: var(--ec-green-solid-muted) !important;
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) :is(.card, .box, .info-card, .menu-card, .feature-card, .highlight-card, .note, .callout) {
+  background: var(--ec-green-solid-card) !important;
+  border-color: var(--ec-green-solid-rule) !important;
+  color: var(--ec-green-solid-text) !important;
+  -webkit-text-fill-color: currentColor;
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) :is(hr, li, .row, .line, .divider, .rule) {
+  border-color: var(--ec-green-solid-rule) !important;
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) .pill,
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) .badge {
+  background: rgba(255, 198, 46, .10) !important;
+  border: 1px solid var(--ec-green-solid-rule-strong) !important;
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) .btn {
+  background: var(--ec-green-solid-yellow) !important;
+  border-color: var(--ec-green-solid-yellow) !important;
+  color: var(--ec-green-solid) !important;
+  -webkit-text-fill-color: var(--ec-green-solid) !important;
+}
+
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) .btn:hover,
+:is(
+  .feijoada,
+  .reservas,
+  .green-section,
+  .section-green,
+  .ec-green-section,
+  .ec-green-solid,
+  .bg-green,
+  .verde,
+  .verde-section,
+  .cafe-green,
+  .breakfast-green,
+  .menu-green,
+  [style*="#152f22"],
+  [style*="#153022"],
+  [style*="#0b2"],
+  [style*="var(--verde)"]
+) .btn:focus-visible {
+  background: var(--ec-green-solid-text) !important;
+  border-color: var(--ec-green-solid-text) !important;
+  color: var(--ec-green-solid) !important;
+  -webkit-text-fill-color: var(--ec-green-solid) !important;
+}
+
+/* EC Breakfast/Cardapio contrast lock
+   Fixes low-contrast menu cards on the breakfast cardápio grid. */
+.cardapio-card--escuro,
+.cardapio-card--verde-escuro,
+.cardapio-card--roxo,
+.cardapio-card--amarelo-escuro,
+.cardapio-card--cafe {
+  color: var(--ec-green-solid-text) !important;
+  -webkit-text-fill-color: var(--ec-green-solid-text) !important;
+}
+
+.cardapio-card--escuro .cardapio-card-header h3,
+.cardapio-card--verde-escuro .cardapio-card-header h3,
+.cardapio-card--roxo .cardapio-card-header h3,
+.cardapio-card--amarelo-escuro .cardapio-card-header h3,
+.cardapio-card--cafe .cardapio-card-header h3,
+.cardapio-card--escuro .item-nome,
+.cardapio-card--verde-escuro .item-nome,
+.cardapio-card--roxo .item-nome,
+.cardapio-card--amarelo-escuro .item-nome,
+.cardapio-card--cafe .item-nome {
+  color: var(--ec-green-solid-text) !important;
+  -webkit-text-fill-color: var(--ec-green-solid-text) !important;
+}
+
+.cardapio-card--escuro .cardapio-card-nota,
+.cardapio-card--verde-escuro .cardapio-card-nota,
+.cardapio-card--roxo .cardapio-card-nota,
+.cardapio-card--amarelo-escuro .cardapio-card-nota,
+.cardapio-card--cafe .cardapio-card-nota,
+.cardapio-card--escuro .item-sub,
+.cardapio-card--verde-escuro .item-sub,
+.cardapio-card--roxo .item-sub,
+.cardapio-card--amarelo-escuro .item-sub,
+.cardapio-card--cafe .item-sub,
+.cardapio-card--escuro .item-desc,
+.cardapio-card--verde-escuro .item-desc,
+.cardapio-card--roxo .item-desc,
+.cardapio-card--amarelo-escuro .item-desc,
+.cardapio-card--cafe .item-desc,
+.cardapio-card--escuro .item-add,
+.cardapio-card--verde-escuro .item-add,
+.cardapio-card--roxo .item-add,
+.cardapio-card--amarelo-escuro .item-add,
+.cardapio-card--cafe .item-add {
+  color: var(--ec-green-solid-muted) !important;
+  -webkit-text-fill-color: var(--ec-green-solid-muted) !important;
+  opacity: 1 !important;
+}
+
+.cardapio-card--escuro .item-preco,
+.cardapio-card--verde-escuro .item-preco,
+.cardapio-card--roxo .item-preco,
+.cardapio-card--amarelo-escuro .item-preco,
+.cardapio-card--cafe .item-preco,
+.cardapio-card--escuro .cardapio-destaque-mini strong,
+.cardapio-card--verde-escuro .cardapio-destaque-mini strong,
+.cardapio-card--roxo .cardapio-destaque-mini strong,
+.cardapio-card--amarelo-escuro .cardapio-destaque-mini strong,
+.cardapio-card--cafe .cardapio-destaque-mini strong {
+  color: var(--ec-green-solid-yellow) !important;
+  -webkit-text-fill-color: var(--ec-green-solid-yellow) !important;
+}
+
+.cardapio-card--escuro .cardapio-lista li,
+.cardapio-card--verde-escuro .cardapio-lista li,
+.cardapio-card--roxo .cardapio-lista li,
+.cardapio-card--amarelo-escuro .cardapio-lista li,
+.cardapio-card--cafe .cardapio-lista li {
+  border-bottom-color: var(--ec-green-solid-rule) !important;
+}
+
+.cardapio-card--amarelo,
+.cardapio-card--verde,
+.cardapio-card--verde-agua {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+}
+
+.cardapio-card--amarelo .cardapio-card-header h3,
+.cardapio-card--verde .cardapio-card-header h3,
+.cardapio-card--verde-agua .cardapio-card-header h3,
+.cardapio-card--amarelo .item-nome,
+.cardapio-card--verde .item-nome,
+.cardapio-card--verde-agua .item-nome {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+}
+
+.cardapio-card--amarelo .cardapio-card-nota,
+.cardapio-card--verde .cardapio-card-nota,
+.cardapio-card--verde-agua .cardapio-card-nota,
+.cardapio-card--amarelo .item-sub,
+.cardapio-card--verde .item-sub,
+.cardapio-card--verde-agua .item-sub,
+.cardapio-card--amarelo .item-desc,
+.cardapio-card--verde .item-desc,
+.cardapio-card--verde-agua .item-desc,
+.cardapio-card--amarelo .item-add,
+.cardapio-card--verde .item-add,
+.cardapio-card--verde-agua .item-add {
+  color: #485156 !important;
+  -webkit-text-fill-color: #485156 !important;
+  opacity: 1 !important;
+}
+
+.cardapio-card--amarelo .item-preco,
+.cardapio-card--verde .item-preco,
+.cardapio-card--verde-agua .item-preco {
+  color: #9a6500 !important;
+  -webkit-text-fill-color: #9a6500 !important;
+}
+
+.cardapio-card--verde-agua .cardapio-lista--2col {
+  gap: .2rem 1.4rem !important;
+}
+
+.cardapio-card--verde-agua .cardapio-lista--2col li {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  gap: .5rem !important;
+  align-items: baseline !important;
+}
+
+/* === ORIGEM: ec-home-final-visual-tuning.css === */
+/* Embaixada Carioca — Home Final Visual Tuning
+   Camada final carregada via ec-stabilization-base.css.
+   Objetivo: contraste real, CTAs legíveis, itálicos laranja e correções pontuais da Home. */
+
+:root{
+  --ec-home-orange:#f59b1e;
+  --ec-home-blue:#00405a;
+  --ec-home-green:#335d4a;
+  --ec-home-gray:#485156;
+  --ec-home-cream:#f6efde;
+  --ec-home-paper:#fffaf0;
+  --ec-home-dark:#002f3f;
+}
+
+/* Reset visual para áreas problemáticas da Home. */
+html body[data-screen-label="Home"] #momentos *,
+html body[data-screen-label="Home"] #visao *,
+html body[data-screen-label="Home"] #avaliacoes *,
+html body[data-screen-label="Home"] #pratos-estrela *,
+html body[data-screen-label="Home"] #sunset-dj *,
+html body[data-screen-label="Home"] #eventos *,
+html body[data-screen-label="Home"] #faq *,
+html body[data-screen-label="Home"] #informacoes-essenciais *,
+html body[data-screen-label="Home"] #por-que-embaixada *,
+html body[data-screen-label="Home"] .geo-aio-section *,
+html body[data-screen-label="Home"] .quick-answers-section *,
+html body[data-screen-label="Home"] .gsc-ctr-block *,
+html body[data-screen-label="Home"] .ec-wrap *{
+  opacity:1!important;
+  visibility:visible!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+  text-shadow:none!important;
+  -webkit-text-stroke:0!important;
+  background-image:none!important;
+  -webkit-background-clip:border-box!important;
+  background-clip:border-box!important;
+}
+
+/* Itálicos editoriais: sempre no laranja do botão Reservar. */
+html body[data-screen-label="Home"] header.hero h1 .serif,
+html body[data-screen-label="Home"] header.hero h1 em,
+html body[data-screen-label="Home"] #momentos .serif,
+html body[data-screen-label="Home"] #momentos em,
+html body[data-screen-label="Home"] #visao .serif,
+html body[data-screen-label="Home"] #visao em,
+html body[data-screen-label="Home"] #avaliacoes .serif,
+html body[data-screen-label="Home"] #avaliacoes em,
+html body[data-screen-label="Home"] #pratos-estrela .serif,
+html body[data-screen-label="Home"] #pratos-estrela em,
+html body[data-screen-label="Home"] #faq .serif,
+html body[data-screen-label="Home"] #faq em,
+html body[data-screen-label="Home"] #por-que-embaixada em,
+html body[data-screen-label="Home"] h1 em,
+html body[data-screen-label="Home"] h2 em{
+  color:var(--ec-home-orange)!important;
+  -webkit-text-fill-color:var(--ec-home-orange)!important;
+}
+html body[data-screen-label="Home"] header.hero h1 .serif,
+html body[data-screen-label="Home"] header.hero h1 em{
+  text-shadow:0 3px 22px rgba(0,0,0,.55)!important;
+}
+
+/* Card lateral do hero: labels +1,5pt. */
+html body[data-screen-label="Home"] header.hero .hero-meta-card .hmc .l,
+html body[data-screen-label="Home"] header.hero .hmc .l{
+  font-size:10px!important;
+  line-height:1.22!important;
+  letter-spacing:.28em!important;
+  color:var(--ec-home-orange)!important;
+  -webkit-text-fill-color:var(--ec-home-orange)!important;
+  font-weight:800!important;
+}
+
+/* Arquitetura: crédito correto. */
+html body[data-screen-label="Home"] section#visao .visao-text p:nth-of-type(2) strong:nth-of-type(2){
+  font-size:0!important;
+  line-height:0!important;
+  color:transparent!important;
+  -webkit-text-fill-color:transparent!important;
+}
+html body[data-screen-label="Home"] section#visao .visao-text p:nth-of-type(2) strong:nth-of-type(2)::after{
+  content:"SCH Arquitetura"!important;
+  display:inline!important;
+  font-size:17px!important;
+  line-height:inherit!important;
+  font-weight:700!important;
+  color:var(--ec-home-green)!important;
+  -webkit-text-fill-color:var(--ec-home-green)!important;
+}
+html body[data-screen-label="Home"] section#visao .visao-credits .credit:first-child .v{
+  font-size:0!important;
+  line-height:0!important;
+  color:transparent!important;
+  -webkit-text-fill-color:transparent!important;
+}
+html body[data-screen-label="Home"] section#visao .visao-credits .credit:first-child .v::after{
+  content:"SCH Arquitetura"!important;
+  display:block!important;
+  font-size:15px!important;
+  line-height:1.35!important;
+  font-weight:600!important;
+  color:var(--ec-home-blue)!important;
+  -webkit-text-fill-color:var(--ec-home-blue)!important;
+}
+
+/* Fundos claros: texto escuro, nunca creme/branco fantasma. */
+html body[data-screen-label="Home"] #pratos-estrela,
+html body[data-screen-label="Home"] #informacoes-essenciais,
+html body[data-screen-label="Home"] #por-que-embaixada,
+html body[data-screen-label="Home"] #faq,
+html body[data-screen-label="Home"] .ec-professional-faq,
+html body[data-screen-label="Home"] .quick-answers-section,
+html body[data-screen-label="Home"] .geo-aio-section,
+html body[data-screen-label="Home"] section[style*="background:#f6efde"],
+html body[data-screen-label="Home"] section[style*="background: #f6efde"],
+html body[data-screen-label="Home"] section[style*="background:#f8f4ed"],
+html body[data-screen-label="Home"] section[style*="background: #f8f4ed"],
+html body[data-screen-label="Home"] section[style*="background:var(--areia"],
+html body[data-screen-label="Home"] section[style*="background: var(--areia"]{
+  background:var(--ec-home-cream)!important;
+  color:var(--ec-home-blue)!important;
+  -webkit-text-fill-color:var(--ec-home-blue)!important;
+}
+
+html body[data-screen-label="Home"] #pratos-estrela h1,
+html body[data-screen-label="Home"] #pratos-estrela h2,
+html body[data-screen-label="Home"] #pratos-estrela h3,
+html body[data-screen-label="Home"] #informacoes-essenciais h1,
+html body[data-screen-label="Home"] #informacoes-essenciais h2,
+html body[data-screen-label="Home"] #informacoes-essenciais h3,
+html body[data-screen-label="Home"] #informacoes-essenciais h4,
+html body[data-screen-label="Home"] #por-que-embaixada h1,
+html body[data-screen-label="Home"] #por-que-embaixada h2,
+html body[data-screen-label="Home"] #por-que-embaixada h3,
+html body[data-screen-label="Home"] #faq h1,
+html body[data-screen-label="Home"] #faq h2,
+html body[data-screen-label="Home"] #faq h3,
+html body[data-screen-label="Home"] .quick-answers-section h1,
+html body[data-screen-label="Home"] .quick-answers-section h2,
+html body[data-screen-label="Home"] .quick-answers-section h3,
+html body[data-screen-label="Home"] .geo-aio-section h1,
+html body[data-screen-label="Home"] .geo-aio-section h2,
+html body[data-screen-label="Home"] .geo-aio-section h3,
+html body[data-screen-label="Home"] .section-title,
+html body[data-screen-label="Home"] .faq-question,
+html body[data-screen-label="Home"] .faq-item h3{
+  color:var(--ec-home-blue)!important;
+  -webkit-text-fill-color:var(--ec-home-blue)!important;
+}
+
+html body[data-screen-label="Home"] #pratos-estrela p,
+html body[data-screen-label="Home"] #pratos-estrela li,
+html body[data-screen-label="Home"] #informacoes-essenciais p,
+html body[data-screen-label="Home"] #informacoes-essenciais li,
+html body[data-screen-label="Home"] #informacoes-essenciais span,
+html body[data-screen-label="Home"] #por-que-embaixada p,
+html body[data-screen-label="Home"] #por-que-embaixada li,
+html body[data-screen-label="Home"] #faq p,
+html body[data-screen-label="Home"] #faq li,
+html body[data-screen-label="Home"] .faq-answer,
+html body[data-screen-label="Home"] .quick-answers-section p,
+html body[data-screen-label="Home"] .quick-answers-section li,
+html body[data-screen-label="Home"] .geo-aio-section p,
+html body[data-screen-label="Home"] .geo-aio-section li{
+  color:var(--ec-home-gray)!important;
+  -webkit-text-fill-color:var(--ec-home-gray)!important;
+}
+
+html body[data-screen-label="Home"] #informacoes-essenciais .eyebrow,
+html body[data-screen-label="Home"] #informacoes-essenciais [class*="eyebrow"],
+html body[data-screen-label="Home"] .quick-answers-section .eyebrow,
+html body[data-screen-label="Home"] .geo-aio-section .eyebrow,
+html body[data-screen-label="Home"] .ec-kicker,
+html body[data-screen-label="Home"] .sec-head .num{
+  color:#c47e15!important;
+  -webkit-text-fill-color:#c47e15!important;
+}
+
+html body[data-screen-label="Home"] #informacoes-essenciais [class*="card"],
+html body[data-screen-label="Home"] #informacoes-essenciais .faq-item,
+html body[data-screen-label="Home"] #informacoes-essenciais .qa-card,
+html body[data-screen-label="Home"] #informacoes-essenciais .info-card,
+html body[data-screen-label="Home"] #faq .faq-item,
+html body[data-screen-label="Home"] .quick-answers-section [class*="card"],
+html body[data-screen-label="Home"] .geo-aio-section [class*="card"]{
+  background:var(--ec-home-paper)!important;
+  border-color:rgba(0,64,90,.18)!important;
+  color:var(--ec-home-blue)!important;
+  -webkit-text-fill-color:var(--ec-home-blue)!important;
+  box-shadow:0 12px 30px rgba(0,64,90,.08)!important;
+}
+
+/* Fundos escuros: texto claro, nunca azul/verde apagado. */
+html body[data-screen-label="Home"] #restaurante-bondinho,
+html body[data-screen-label="Home"] #cardapio-completo,
+html body[data-screen-label="Home"] #galeria,
+html body[data-screen-label="Home"] #instagram,
+html body[data-screen-label="Home"] #sunset-dj,
+html body[data-screen-label="Home"] #eventos,
+html body[data-screen-label="Home"] .gsc-ctr-block,
+html body[data-screen-label="Home"] section[style*="background:#00405a"],
+html body[data-screen-label="Home"] section[style*="background: #00405a"],
+html body[data-screen-label="Home"] section[style*="background:#002f3f"],
+html body[data-screen-label="Home"] section[style*="background: #002f3f"],
+html body[data-screen-label="Home"] section[style*="background:#1a2e24"],
+html body[data-screen-label="Home"] section[style*="background: #1a2e24"]{
+  color:var(--ec-home-cream)!important;
+  -webkit-text-fill-color:var(--ec-home-cream)!important;
+}
+
+html body[data-screen-label="Home"] #restaurante-bondinho h1,
+html body[data-screen-label="Home"] #restaurante-bondinho h2,
+html body[data-screen-label="Home"] #cardapio-completo h1,
+html body[data-screen-label="Home"] #cardapio-completo h2,
+html body[data-screen-label="Home"] #galeria h1,
+html body[data-screen-label="Home"] #galeria h2,
+html body[data-screen-label="Home"] #instagram h1,
+html body[data-screen-label="Home"] #instagram h2,
+html body[data-screen-label="Home"] #sunset-dj h1,
+html body[data-screen-label="Home"] #sunset-dj h2,
+html body[data-screen-label="Home"] #eventos h1,
+html body[data-screen-label="Home"] #eventos h2,
+html body[data-screen-label="Home"] .gsc-ctr-block h1,
+html body[data-screen-label="Home"] .gsc-ctr-block h2{
+  color:var(--ec-home-cream)!important;
+  -webkit-text-fill-color:var(--ec-home-cream)!important;
+}
+
+html body[data-screen-label="Home"] #restaurante-bondinho p,
+html body[data-screen-label="Home"] #restaurante-bondinho li,
+html body[data-screen-label="Home"] #cardapio-completo p,
+html body[data-screen-label="Home"] #cardapio-completo li,
+html body[data-screen-label="Home"] #galeria p,
+html body[data-screen-label="Home"] #galeria li,
+html body[data-screen-label="Home"] #instagram p,
+html body[data-screen-label="Home"] #instagram li,
+html body[data-screen-label="Home"] #sunset-dj p,
+html body[data-screen-label="Home"] #sunset-dj li,
+html body[data-screen-label="Home"] #eventos p,
+html body[data-screen-label="Home"] #eventos li,
+html body[data-screen-label="Home"] .gsc-ctr-block p,
+html body[data-screen-label="Home"] .gsc-ctr-block li{
+  color:rgba(246,239,222,.92)!important;
+  -webkit-text-fill-color:rgba(246,239,222,.92)!important;
+}
+
+html body[data-screen-label="Home"] #restaurante-bondinho h3,
+html body[data-screen-label="Home"] #restaurante-bondinho h4,
+html body[data-screen-label="Home"] #restaurante-bondinho strong,
+html body[data-screen-label="Home"] #cardapio-completo h3,
+html body[data-screen-label="Home"] #cardapio-completo h4,
+html body[data-screen-label="Home"] #cardapio-completo strong,
+html body[data-screen-label="Home"] #sunset-dj h3,
+html body[data-screen-label="Home"] #sunset-dj h4,
+html body[data-screen-label="Home"] #sunset-dj strong,
+html body[data-screen-label="Home"] #eventos h3,
+html body[data-screen-label="Home"] #eventos h4,
+html body[data-screen-label="Home"] #eventos strong,
+html body[data-screen-label="Home"] .gsc-ctr-block h3,
+html body[data-screen-label="Home"] .gsc-ctr-block strong{
+  color:var(--ec-home-orange)!important;
+  -webkit-text-fill-color:var(--ec-home-orange)!important;
+}
+
+/* CTAs: cor do texto definida pela cor de fundo. */
+html body a[style*="background:#335d4a"],
+html body a[style*="background: #335d4a"],
+html body a[style*="background:#00405a"],
+html body a[style*="background: #00405a"],
+html body a[style*="background:#002f3f"],
+html body a[style*="background: #002f3f"],
+html body a[style*="background:var(--verde"],
+html body a[style*="background: var(--verde"],
+html body a[style*="background:var(--azul"],
+html body a[style*="background: var(--azul"]{
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+}
+html body a[style*="background:#f59b1e"],
+html body a[style*="background: #f59b1e"],
+html body a[style*="background:#C8973A"],
+html body a[style*="background: #C8973A"],
+html body a[style*="background:var(--amarelo"],
+html body a[style*="background: var(--amarelo"],
+html body a[style*="background:var(--laranja"],
+html body a[style*="background: var(--laranja"],
+html body a[href*="tagme"]{
+  color:var(--ec-home-blue)!important;
+  -webkit-text-fill-color:var(--ec-home-blue)!important;
+}
+html body section[style*="background:#00405a"] a[style*="background:transparent"],
+html body section[style*="background: #00405a"] a[style*="background: transparent"],
+html body section[style*="background:#002f3f"] a[style*="background:transparent"],
+html body section[style*="background: #002f3f"] a[style*="background: transparent"],
+html body section[style*="background:#1a2e24"] a[style*="background:transparent"],
+html body section[style*="background: #1a2e24"] a[style*="background: transparent"]{
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+  border-color:rgba(255,255,255,.55)!important;
+}
+html body a,
+html body .btn,
+html body button{
+  opacity:1!important;
+  filter:none!important;
+  text-shadow:none!important;
+}
+
+/* Remoção visual solicitada: tabela comparativa Restaurantes na Urca. */
+html body[data-screen-label="Home"] section#restaurantes-urca{
+  display:none!important;
+  visibility:hidden!important;
+  opacity:0!important;
+  height:0!important;
+  min-height:0!important;
+  padding:0!important;
+  margin:0!important;
+  overflow:hidden!important;
+}
+
+/* Nossa História: título editorial deve permanecer em linha, sem fragmentar span/em. */
+html body[data-screen-label="Home"] section#visao .visao-text h2,
+html body[data-screen-label="Home"] section#visao#visao .visao-text h2[style]{
+  display:block!important;
+  position:static!important;
+  max-width:780px!important;
+  margin:0 0 28px!important;
+  padding:0!important;
+  color:var(--ec-home-blue)!important;
+  -webkit-text-fill-color:var(--ec-home-blue)!important;
+  font-family:Catamaran,Verdana,system-ui,sans-serif!important;
+  font-size:clamp(36px,4.4vw,62px)!important;
+  line-height:1.08!important;
+  font-weight:300!important;
+  letter-spacing:-.035em!important;
+  text-align:left!important;
+  white-space:normal!important;
+  word-break:normal!important;
+  overflow-wrap:normal!important;
+  text-wrap:balance!important;
+}
+
+html body[data-screen-label="Home"] section#visao .visao-text h2 .serif,
+html body[data-screen-label="Home"] section#visao .visao-text h2 em,
+html body[data-screen-label="Home"] section#visao#visao .visao-text h2[style] .serif,
+html body[data-screen-label="Home"] section#visao#visao .visao-text h2[style] em{
+  display:inline!important;
+  position:static!important;
+  float:none!important;
+  clear:none!important;
+  width:auto!important;
+  height:auto!important;
+  max-width:none!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:0!important;
+  transform:none!important;
+  vertical-align:baseline!important;
+  text-align:inherit!important;
+  white-space:normal!important;
+  word-break:normal!important;
+  overflow-wrap:normal!important;
+  font-size:inherit!important;
+  line-height:inherit!important;
+  letter-spacing:inherit!important;
+  font-weight:400!important;
+  font-style:italic!important;
+  color:var(--ec-home-orange)!important;
+  -webkit-text-fill-color:var(--ec-home-orange)!important;
+  text-shadow:none!important;
+  background:none!important;
+}
+
+html body[data-screen-label="Home"] section#visao .visao-text h2 .serif::before,
+html body[data-screen-label="Home"] section#visao .visao-text h2 .serif::after,
+html body[data-screen-label="Home"] section#visao .visao-text h2 em::before,
+html body[data-screen-label="Home"] section#visao .visao-text h2 em::after{
+  display:none!important;
+  content:none!important;
+}
+
+/* === ORIGEM: ec-visible-text-lock.css === */
+/* Embaixada Carioca — Visible Text Lock
+   Travas pontuais de contraste para blocos críticos detectados por inspeção visual real.
+   Carregado via ec-stabilization-base.css. */
+
+:root{
+  --ec-visible-blue:#00405a;
+  --ec-visible-green:#335d4a;
+  --ec-visible-gray:#485156;
+  --ec-visible-gold:#9a6500;
+  --ec-visible-yellow:#f59b1e;
+  --ec-visible-card:#fffaf0;
+  --ec-visible-cream:#f6efde;
+}
+
+/* Como Chegar — card Resposta Direta */
+body[data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box{
+  background:var(--ec-visible-card)!important;
+  color:var(--ec-visible-blue)!important;
+  -webkit-text-fill-color:var(--ec-visible-blue)!important;
+  opacity:1!important;
+  visibility:visible!important;
+  filter:none!important;
+  text-shadow:none!important;
+  mix-blend-mode:normal!important;
+  position:relative!important;
+  z-index:5!important;
+}
+
+body[data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box::before,
+body[data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box::after,
+body[data-screen-label="Como Chegar"] main .access-fact.access-fact.access-fact::before,
+body[data-screen-label="Como Chegar"] main .access-fact.access-fact.access-fact::after{
+  display:none!important;
+  opacity:0!important;
+  content:none!important;
+}
+
+body[data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box .kicker.kicker,
+body[data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box h2,
+body[data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box p,
+body[data-screen-label="Como Chegar"] main .access-fact.access-fact.access-fact h3,
+body[data-screen-label="Como Chegar"] main .access-fact.access-fact.access-fact p{
+  display:block!important;
+  opacity:1!important;
+  visibility:visible!important;
+  filter:none!important;
+  text-shadow:none!important;
+  mix-blend-mode:normal!important;
+  background-image:none!important;
+  background-color:transparent!important;
+  -webkit-background-clip:border-box!important;
+  background-clip:border-box!important;
+  -webkit-text-stroke:0!important;
+  position:relative!important;
+  z-index:20!important;
+}
+
+body[data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box h2,
+body[data-screen-label="Como Chegar"] main .access-fact.access-fact.access-fact h3{
+  color:var(--ec-visible-blue)!important;
+  -webkit-text-fill-color:var(--ec-visible-blue)!important;
+}
+
+body[data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box p,
+body[data-screen-label="Como Chegar"] main .access-fact.access-fact.access-fact p{
+  color:var(--ec-visible-gray)!important;
+  -webkit-text-fill-color:var(--ec-visible-gray)!important;
+}
+
+body[data-screen-label="Como Chegar"] main section.access-direct.access-direct.access-direct > .wrap.wrap > .box.box.box .kicker.kicker{
+  color:var(--ec-visible-gold)!important;
+  -webkit-text-fill-color:var(--ec-visible-gold)!important;
+}
+
+/* Home — hero sobre foto escura deve usar texto claro. */
+body[data-screen-label="Home"] header.hero.hero h1,
+body[data-screen-label="Home"] header.hero.hero h1 *{
+  color:var(--ec-visible-cream)!important;
+  -webkit-text-fill-color:var(--ec-visible-cream)!important;
+  opacity:1!important;
+  visibility:visible!important;
+  filter:none!important;
+  text-shadow:0 3px 22px rgba(0,0,0,.55)!important;
+  mix-blend-mode:normal!important;
+  background-image:none!important;
+  -webkit-background-clip:border-box!important;
+  background-clip:border-box!important;
+}
+
+body[data-screen-label="Home"] header.hero.hero .hero-sub,
+body[data-screen-label="Home"] header.hero.hero .hero-sub *{
+  color:rgba(246,239,222,.94)!important;
+  -webkit-text-fill-color:rgba(246,239,222,.94)!important;
+  opacity:1!important;
+  visibility:visible!important;
+  filter:none!important;
+  text-shadow:0 2px 16px rgba(0,0,0,.56)!important;
+  mix-blend-mode:normal!important;
+  background-image:none!important;
+  -webkit-background-clip:border-box!important;
+  background-clip:border-box!important;
+}
+
+/* Home — seção Os três momentos em fundo claro.
+   No HTML real a seção #momentos fica fora de <main>. */
+html body section#momentos#momentos#momentos.momentos,
+html body section#momentos#momentos#momentos.momentos .sec-head,
+html body section#momentos#momentos#momentos.momentos .sec-head *{
+  --ec-vr-paper:#00405a!important;
+  --ec-readable-sand-soft:#00405a!important;
+  --ec-readable-yellow:#9a6500!important;
+  --ec-readable-blue:#00405a!important;
+  --ec-readable-gray:#485156!important;
+  --areia-pale:#00405a!important;
+  --ec-areia:#00405a!important;
+  --ec-visible-cream:#00405a!important;
+  text-shadow:none!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+  opacity:1!important;
+  visibility:visible!important;
+  background-image:none!important;
+  -webkit-background-clip:border-box!important;
+  background-clip:border-box!important;
+  -webkit-text-stroke:0!important;
+}
+
+html body section#momentos#momentos#momentos.momentos{
+  background:#f6efde!important;
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+}
+
+html body section#momentos#momentos#momentos.momentos .sec-head h1,
+html body section#momentos#momentos#momentos.momentos .sec-head h2,
+html body section#momentos#momentos#momentos.momentos .sec-head h2[style],
+html body section#momentos#momentos#momentos.momentos .sec-head h3,
+html body section#momentos#momentos#momentos.momentos .sec-head h1 *,
+html body section#momentos#momentos#momentos.momentos .sec-head h2 *,
+html body section#momentos#momentos#momentos.momentos .sec-head h2[style] *,
+html body section#momentos#momentos#momentos.momentos .sec-head h3 *{
+  --ec-vr-paper:#00405a!important;
+  --ec-readable-sand-soft:#00405a!important;
+  --areia-pale:#00405a!important;
+  --ec-areia:#00405a!important;
+  --ec-visible-cream:#00405a!important;
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+  text-shadow:none!important;
+}
+
+html body section#momentos#momentos#momentos.momentos .sec-head h1 .serif,
+html body section#momentos#momentos#momentos.momentos .sec-head h2 .serif,
+html body section#momentos#momentos#momentos.momentos .sec-head h2[style] .serif,
+html body section#momentos#momentos#momentos.momentos .sec-head h3 .serif{
+  --ec-vr-paper:#335d4a!important;
+  --ec-readable-sand-soft:#335d4a!important;
+  --areia-pale:#335d4a!important;
+  --ec-areia:#335d4a!important;
+  --ec-visible-cream:#335d4a!important;
+  color:#335d4a!important;
+  -webkit-text-fill-color:#335d4a!important;
+  text-shadow:none!important;
+}
+
+html body section#momentos#momentos#momentos.momentos .sec-head .lede,
+html body section#momentos#momentos#momentos.momentos .sec-head p,
+html body section#momentos#momentos#momentos.momentos .sec-head .lede *:not(strong):not(b),
+html body section#momentos#momentos#momentos.momentos .sec-head p *:not(strong):not(b){
+  --ec-vr-paper:#485156!important;
+  --ec-readable-sand-soft:#485156!important;
+  --areia-pale:#485156!important;
+  --ec-areia:#485156!important;
+  --ec-visible-cream:#485156!important;
+  color:#485156!important;
+  -webkit-text-fill-color:#485156!important;
+  text-shadow:none!important;
+}
+
+html body section#momentos#momentos#momentos.momentos .sec-head .lede strong,
+html body section#momentos#momentos#momentos.momentos .sec-head p strong,
+html body section#momentos#momentos#momentos.momentos .sec-head .lede b,
+html body section#momentos#momentos#momentos.momentos .sec-head p b{
+  --ec-vr-paper:#00405a!important;
+  --ec-readable-sand-soft:#00405a!important;
+  --areia-pale:#00405a!important;
+  --ec-areia:#00405a!important;
+  --ec-visible-cream:#00405a!important;
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+  text-shadow:none!important;
+}
+
+html body section#momentos#momentos#momentos.momentos .sec-head .num,
+html body section#momentos#momentos#momentos.momentos .sec-head .num *{
+  --ec-vr-paper:#527f8f!important;
+  --ec-readable-sand-soft:#527f8f!important;
+  --areia-pale:#527f8f!important;
+  --ec-areia:#527f8f!important;
+  --ec-visible-cream:#527f8f!important;
+  color:#527f8f!important;
+  -webkit-text-fill-color:#527f8f!important;
+  text-shadow:none!important;
+}
+
+html body section#momentos#momentos#momentos.momentos .sec-head .num b{
+  --ec-vr-paper:#f59b1e!important;
+  --ec-readable-sand-soft:#f59b1e!important;
+  --areia-pale:#f59b1e!important;
+  --ec-areia:#f59b1e!important;
+  --ec-visible-cream:#f59b1e!important;
+  color:#f59b1e!important;
+  -webkit-text-fill-color:#f59b1e!important;
+  border-color:#f59b1e!important;
+  text-shadow:none!important;
+}
+
+/* Home — card de reservas em fundo escuro.
+   O fundo permanece escuro; o texto deve ser claro e os CTAs amarelos. */
+html body section#reservas#reservas#reservas .reservas-cta-card,
+html body section#reservas#reservas#reservas .reservas-cta-card *{
+  --ec-vr-paper:#f6efde!important;
+  --ec-readable-sand-soft:#f6efde!important;
+  --ec-readable-blue:#f6efde!important;
+  --areia-pale:#f6efde!important;
+  --ec-areia:#f6efde!important;
+  --ec-visible-blue:#f6efde!important;
+  text-shadow:none!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+  opacity:1!important;
+  visibility:visible!important;
+  -webkit-text-stroke:0!important;
+}
+
+html body section#reservas#reservas#reservas .reservas-cta-card h1,
+html body section#reservas#reservas#reservas .reservas-cta-card h2,
+html body section#reservas#reservas#reservas .reservas-cta-card h3,
+html body section#reservas#reservas#reservas .reservas-cta-card h3[style],
+html body section#reservas#reservas#reservas .reservas-cta-card h4,
+html body section#reservas#reservas#reservas .reservas-cta-card h1 *,
+html body section#reservas#reservas#reservas .reservas-cta-card h2 *,
+html body section#reservas#reservas#reservas .reservas-cta-card h3 *,
+html body section#reservas#reservas#reservas .reservas-cta-card h3[style] *,
+html body section#reservas#reservas#reservas .reservas-cta-card h4 *{
+  color:#f6efde!important;
+  -webkit-text-fill-color:#f6efde!important;
+  text-shadow:none!important;
+}
+
+html body section#reservas#reservas#reservas .reservas-cta-card p,
+html body section#reservas#reservas#reservas .reservas-cta-card li,
+html body section#reservas#reservas#reservas .reservas-cta-card span:not(.stamp),
+html body section#reservas#reservas#reservas .reservas-cta-card p *:not(strong):not(b):not(a),
+html body section#reservas#reservas#reservas .reservas-cta-card li *:not(strong):not(b):not(a){
+  color:rgba(246,239,222,.94)!important;
+  -webkit-text-fill-color:rgba(246,239,222,.94)!important;
+  text-shadow:none!important;
+}
+
+html body section#reservas#reservas#reservas .reservas-cta-card strong,
+html body section#reservas#reservas#reservas .reservas-cta-card b,
+html body section#reservas#reservas#reservas .reservas-cta-card em{
+  color:#f59b1e!important;
+  -webkit-text-fill-color:#f59b1e!important;
+  text-shadow:none!important;
+}
+
+html body section#reservas#reservas#reservas .reservas-cta-card a.btn_lg,
+html body section#reservas#reservas#reservas .reservas-cta-card a[href*="tagme"],
+html body section#reservas#reservas#reservas .reservas-cta-card a[href*="reserv"]{
+  background:#f59b1e!important;
+  border-color:#f59b1e!important;
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+  text-shadow:none!important;
+  font-weight:900!important;
+}
+
+/* Home — seção Informações Essenciais / AIO Citation Block em fundo azul escuro. */
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais,
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais *{
+  --ec-vr-paper:#f6efde!important;
+  --ec-readable-sand-soft:#f6efde!important;
+  --ec-readable-blue:#f6efde!important;
+  --areia-pale:#f6efde!important;
+  --ec-areia:#f6efde!important;
+  --ec-visible-blue:#f6efde!important;
+  opacity:1!important;
+  visibility:visible!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+  -webkit-text-stroke:0!important;
+}
+
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais h1,
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais h2,
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais h2[style],
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais h3,
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais h4,
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais h1 *,
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais h2 *,
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais h2[style] *,
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais h3 *,
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais h4 *{
+  color:#f6efde!important;
+  -webkit-text-fill-color:#f6efde!important;
+  text-shadow:none!important;
+}
+
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais p,
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais li,
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais span,
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais p *:not(strong):not(b):not(em):not(a),
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais li *:not(strong):not(b):not(em):not(a){
+  color:rgba(246,239,222,.92)!important;
+  -webkit-text-fill-color:rgba(246,239,222,.92)!important;
+  text-shadow:none!important;
+}
+
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais .eyebrow,
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais strong,
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais b,
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais em,
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais a{
+  color:#f59b1e!important;
+  -webkit-text-fill-color:#f59b1e!important;
+  text-shadow:none!important;
+}
+
+html body section#informacoes-essenciais#informacoes-essenciais#informacoes-essenciais [style*="color"]{
+  text-shadow:none!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+}
+
+/* === ORIGEM: superholistic_visual_readability_lock.css === */
+/* Embaixada Carioca — Superholistic Visual Readability Lock
+   Trava pontual para corrigir textos claros em fundos claros e textos escuros em fundos escuros
+   nas seções editoriais, SEO/GEO/AIO, eventos, reviews e blocos de informação. */
+
+:root{
+  --ec-ink:#00405a;
+  --ec-ink-soft:#485156;
+  --ec-cream:#f6efde;
+  --ec-gold:#f59b1e;
+  --ec-gold-deep:#c47e15;
+  --ec-green:#335d4a;
+  --ec-dark:#002f3f;
+}
+
+/* 1) Seções claras: nunca usar branco/creme como texto principal */
+.momentos,
+.visao,
+.avaliacoes,
+.eventos,
+.form-section,
+.faq-section,
+.geo-aio-section,
+.quick-answers-section,
+.gsc-ctr-block,
+section[style*="background:var(--areia"],
+section[style*="background: var(--areia"],
+section[style*="background:#f8f4"],
+section[style*="background: #f8f4"],
+section[style*="background:#f6ef"],
+section[style*="background: #f6ef"],
+section[style*="background:#ede2"],
+section[style*="background: #ede2"]{
+  color:var(--ec-ink) !important;
+}
+
+.momentos .sec-head h2,
+.momentos .sec-head .lede,
+.visao .sec-head h2,
+.visao .sec-head .lede,
+.avaliacoes .sec-head h2,
+.avaliacoes .sec-head .lede,
+.eventos .sec-head h2,
+.eventos .sec-head .lede,
+.faq-section .sec-head h2,
+.faq-section .sec-head .lede,
+.geo-aio-section h2,
+.geo-aio-section h3,
+.geo-aio-section p,
+.quick-answers-section h2,
+.quick-answers-section h3,
+.quick-answers-section p,
+.gsc-ctr-block h2,
+.gsc-ctr-block h3,
+.gsc-ctr-block p,
+section[style*="background:var(--areia"] h2,
+section[style*="background:var(--areia"] h3,
+section[style*="background:var(--areia"] p,
+section[style*="background: #f8f4"] h2,
+section[style*="background: #f8f4"] h3,
+section[style*="background: #f8f4"] p,
+section[style*="background:#f8f4"] h2,
+section[style*="background:#f8f4"] h3,
+section[style*="background:#f8f4"] p{
+  color:var(--ec-ink) !important;
+  opacity:1 !important;
+  text-shadow:none !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+  -webkit-text-fill-color:currentColor !important;
+}
+
+/* 2) Itálicos editoriais em destaque: laranja do botão reservar */
+.sec-head h2 .serif,
+.visao-text h2 .serif,
+.hero h1 .serif,
+h2 .serif,
+h2 em,
+.eventos h2 em,
+.momentos h2 em,
+.avaliacoes h2 em,
+.visao h2 em,
+section[style*="background:var(--areia"] h2 em,
+section[style*="background:#f8f4"] h2 em{
+  color:var(--ec-gold) !important;
+  -webkit-text-fill-color:var(--ec-gold) !important;
+  opacity:1 !important;
+  text-shadow:none !important;
+}
+
+/* 3) Eyebrow em fundos claros: escuro/laranja, legível e discreto */
+.eyebrow,
+.sec-head .num,
+.reviews p[style*="letter-spacing"],
+section[style*="background:var(--areia"] .eyebrow,
+section[style*="background:#f8f4"] .eyebrow{
+  color:var(--ec-gold-deep) !important;
+  opacity:1 !important;
+  text-shadow:none !important;
+  filter:none !important;
+}
+
+/* 4) Eventos e hero editorial em fundo claro: remover efeito fantasma */
+.eventos-hero h1,
+.eventos-hero h2,
+.eventos-hero p,
+.eventos-hero .lede,
+.page-hero h1,
+.page-hero h2,
+.page-hero p,
+.editorial-hero h1,
+.editorial-hero h2,
+.editorial-hero p,
+section[id="eventos"] h2,
+section[id="eventos"] p,
+section[aria-label*="Eventos"] h2,
+section[aria-label*="Eventos"] p{
+  color:var(--ec-ink) !important;
+  opacity:1 !important;
+  text-shadow:none !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+  -webkit-text-fill-color:currentColor !important;
+}
+
+/* 5) Reviews em fundo claro */
+#reviews,
+#reviews *:not(.btn):not(a),
+section[id="reviews"],
+section[id="reviews"] *:not(.btn):not(a){
+  text-shadow:none !important;
+  filter:none !important;
+  opacity:1 !important;
+}
+#reviews h2,
+#reviews h3,
+#reviews p,
+#reviews .mq .q,
+#reviews .rating .label,
+section[id="reviews"] h2,
+section[id="reviews"] h3,
+section[id="reviews"] p{
+  color:var(--ec-ink) !important;
+  -webkit-text-fill-color:var(--ec-ink) !important;
+}
+#reviews .stars,
+#reviews .rating .n .star,
+section[id="reviews"] .stars{
+  color:var(--ec-gold) !important;
+  -webkit-text-fill-color:var(--ec-gold) !important;
+}
+
+/* 6) Seções escuras: texto precisa ser creme/branco, nunca verde/cinza escuro */
+.capacity,
+.feijoada,
+.sunset-dj-section,
+section[style*="background:var(--azul1"],
+section[style*="background: var(--azul1"],
+section[style*="background:#00405a"],
+section[style*="background: #00405a"],
+section[style*="background:#002f3f"],
+section[style*="background: #002f3f"]{
+  color:var(--ec-cream) !important;
+}
+.capacity h2,
+.capacity h3,
+.capacity h4,
+.capacity p,
+.feijoada h2,
+.feijoada h3,
+.feijoada h4,
+.feijoada p,
+.sunset-dj-section h2,
+.sunset-dj-section h3,
+.sunset-dj-section h4,
+.sunset-dj-section p,
+.sunset-info-item h4,
+.sunset-info-item p,
+.sunset-info-text h4,
+.sunset-info-text p,
+section[style*="background:var(--azul1"] h2,
+section[style*="background:var(--azul1"] h3,
+section[style*="background:var(--azul1"] p,
+section[style*="background:#00405a"] h2,
+section[style*="background:#00405a"] h3,
+section[style*="background:#00405a"] p,
+section[style*="background:#002f3f"] h2,
+section[style*="background:#002f3f"] h3,
+section[style*="background:#002f3f"] p{
+  color:var(--ec-cream) !important;
+  -webkit-text-fill-color:var(--ec-cream) !important;
+  opacity:1 !important;
+  text-shadow:none !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+}
+
+.capacity .eyebrow,
+.feijoada .eyebrow,
+.sunset-dj-section .eyebrow,
+.sunset-info-text h4,
+section[style*="background:var(--azul1"] .eyebrow,
+section[style*="background:#00405a"] .eyebrow,
+section[style*="background:#002f3f"] .eyebrow{
+  color:var(--ec-gold) !important;
+  -webkit-text-fill-color:var(--ec-gold) !important;
+}
+
+/* 7) Cards e textos internos em dark blocks */
+.sunset-info-box,
+.sunset-info-item,
+.b2b-card,
+.info-card,
+.faq-item,
+.qa-card{
+  text-shadow:none !important;
+  filter:none !important;
+}
+
+.sunset-info-box .sunset-info-item,
+.sunset-info-item{
+  background:rgba(255,255,255,.08) !important;
+  border-color:rgba(246,239,222,.22) !important;
+}
+
+/* 8) Não aplicar nos botões e links de CTA */
+.btn,
+.btn *,
+.btn-reservar,
+.btn-reservar *,
+.hero-ctas .btn,
+.hero-ctas .btn *,
+a[href*="tagme"],
+a[href*="wa.me"],
+a[href*="whatsapp"]{
+  text-shadow:none !important;
+  filter:none !important;
+}
+
+/* 9) Seleção visual: manter legível para debug */
+::selection{
+  background:var(--ec-gold) !important;
+  color:var(--ec-ink) !important;
+}
+
+/* 10) Cardápio do café: correção específica para os cards ruins do print.
+   Deve vencer CSS legado, inline e locks anteriores sem alterar os cards claros. */
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--escuro,.cardapio-card--verde-escuro,.cardapio-card--amarelo-escuro,.cardapio-card--cafe,.cardapio-card--roxo),
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--escuro,.cardapio-card--verde-escuro,.cardapio-card--amarelo-escuro,.cardapio-card--cafe,.cardapio-card--roxo) *{
+  color:#f6efde !important;
+  -webkit-text-fill-color:#f6efde !important;
+  opacity:1 !important;
+  text-shadow:none !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+}
+
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--escuro,.cardapio-card--verde-escuro,.cardapio-card--amarelo-escuro,.cardapio-card--cafe,.cardapio-card--roxo) :is(.cardapio-card-nota,.item-sub,.item-desc,.item-add){
+  color:#dbe7d0 !important;
+  -webkit-text-fill-color:#dbe7d0 !important;
+  opacity:1 !important;
+}
+
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--escuro,.cardapio-card--verde-escuro,.cardapio-card--amarelo-escuro,.cardapio-card--cafe,.cardapio-card--roxo) :is(.item-preco,.cardapio-destaque-mini strong,.metodo-icone){
+  color:#ffc62e !important;
+  -webkit-text-fill-color:#ffc62e !important;
+  opacity:1 !important;
+}
+
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--escuro,.cardapio-card--verde-escuro,.cardapio-card--amarelo-escuro,.cardapio-card--cafe,.cardapio-card--roxo) .cardapio-lista li{
+  border-bottom-color:rgba(246,239,222,.16) !important;
+}
+
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--amarelo,.cardapio-card--verde,.cardapio-card--verde-agua),
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--amarelo,.cardapio-card--verde,.cardapio-card--verde-agua) :is(h3,.item-nome){
+  color:#00405a !important;
+  -webkit-text-fill-color:#00405a !important;
+  opacity:1 !important;
+}
+
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--amarelo,.cardapio-card--verde,.cardapio-card--verde-agua) :is(.item-sub,.item-desc,.item-add,.cardapio-card-nota){
+  color:#485156 !important;
+  -webkit-text-fill-color:#485156 !important;
+  opacity:1 !important;
+}
+
+html body main .cardapio-grid .cardapio-card:is(.cardapio-card--amarelo,.cardapio-card--verde,.cardapio-card--verde-agua) .item-preco{
+  color:#9a6500 !important;
+  -webkit-text-fill-color:#9a6500 !important;
+  opacity:1 !important;
+}
+
+html body main .cardapio-grid .cardapio-card--verde-agua .cardapio-lista--2col li{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) auto !important;
+  gap:.5rem !important;
+  align-items:baseline !important;
+}
+
+/* === ORIGEM: eventos-contrast-lock.css === */
+/* Embaixada Carioca — Eventos Contrast Lock
+   Correção direta para textos claros/apagados em eventos.html. */
+
+body[data-screen-label="Eventos"] #faq,
+body[data-screen-label="Eventos"] .faq-grid,
+body[data-screen-label="Eventos"] .faq,
+body[data-screen-label="Eventos"] .capacity,
+body[data-screen-label="Eventos"] #capacity,
+body[data-screen-label="Eventos"] section[style*="background:#00405a"],
+body[data-screen-label="Eventos"] section[style*="background: #00405a"],
+body[data-screen-label="Eventos"] section[style*="background:#002f3f"],
+body[data-screen-label="Eventos"] section[style*="background: #002f3f"],
+body[data-screen-label="Eventos"] section[style*="background:#001f2b"],
+body[data-screen-label="Eventos"] section[style*="background: #001f2b"]{
+  color:#f6efde!important;
+  -webkit-text-fill-color:#f6efde!important;
+}
+
+body[data-screen-label="Eventos"] #faq *,
+body[data-screen-label="Eventos"] .faq-grid *,
+body[data-screen-label="Eventos"] .faq *,
+body[data-screen-label="Eventos"] .capacity *,
+body[data-screen-label="Eventos"] #capacity *{
+  opacity:1!important;
+  visibility:visible!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+  text-shadow:none!important;
+  -webkit-text-stroke:0!important;
+}
+
+body[data-screen-label="Eventos"] #faq h1,
+body[data-screen-label="Eventos"] #faq h2,
+body[data-screen-label="Eventos"] #faq h3,
+body[data-screen-label="Eventos"] #faq h4,
+body[data-screen-label="Eventos"] #faq h5,
+body[data-screen-label="Eventos"] .faq h1,
+body[data-screen-label="Eventos"] .faq h2,
+body[data-screen-label="Eventos"] .faq h3,
+body[data-screen-label="Eventos"] .faq h4,
+body[data-screen-label="Eventos"] .faq h5,
+body[data-screen-label="Eventos"] .capacity h1,
+body[data-screen-label="Eventos"] .capacity h2,
+body[data-screen-label="Eventos"] .capacity h3,
+body[data-screen-label="Eventos"] .capacity h4,
+body[data-screen-label="Eventos"] #capacity h1,
+body[data-screen-label="Eventos"] #capacity h2,
+body[data-screen-label="Eventos"] #capacity h3,
+body[data-screen-label="Eventos"] #capacity h4{
+  color:#f6efde!important;
+  -webkit-text-fill-color:#f6efde!important;
+  font-weight:800!important;
+}
+
+body[data-screen-label="Eventos"] #faq p,
+body[data-screen-label="Eventos"] #faq li,
+body[data-screen-label="Eventos"] #faq span,
+body[data-screen-label="Eventos"] #faq td,
+body[data-screen-label="Eventos"] .faq p,
+body[data-screen-label="Eventos"] .faq li,
+body[data-screen-label="Eventos"] .faq span,
+body[data-screen-label="Eventos"] .faq td,
+body[data-screen-label="Eventos"] .capacity p,
+body[data-screen-label="Eventos"] .capacity li,
+body[data-screen-label="Eventos"] .capacity span,
+body[data-screen-label="Eventos"] .capacity td,
+body[data-screen-label="Eventos"] #capacity p,
+body[data-screen-label="Eventos"] #capacity li,
+body[data-screen-label="Eventos"] #capacity span,
+body[data-screen-label="Eventos"] #capacity td{
+  color:rgba(246,239,222,.92)!important;
+  -webkit-text-fill-color:rgba(246,239,222,.92)!important;
+}
+
+body[data-screen-label="Eventos"] #faq strong,
+body[data-screen-label="Eventos"] .faq strong,
+body[data-screen-label="Eventos"] .capacity strong,
+body[data-screen-label="Eventos"] #capacity strong,
+body[data-screen-label="Eventos"] #faq a,
+body[data-screen-label="Eventos"] .faq a,
+body[data-screen-label="Eventos"] .capacity a,
+body[data-screen-label="Eventos"] #capacity a{
+  color:#f59b1e!important;
+  -webkit-text-fill-color:#f59b1e!important;
+  font-weight:900!important;
+}
+
+body[data-screen-label="Eventos"] .faq{
+  border-top-color:rgba(246,239,222,.24)!important;
+}
+
+/* Qualquer card/bloco claro dentro da página Eventos volta a texto escuro. */
+body[data-screen-label="Eventos"] [style*="background:#fff"],
+body[data-screen-label="Eventos"] [style*="background: #fff"],
+body[data-screen-label="Eventos"] [style*="background:#fffaf0"],
+body[data-screen-label="Eventos"] [style*="background: #fffaf0"],
+body[data-screen-label="Eventos"] [style*="background:#f6efde"],
+body[data-screen-label="Eventos"] [style*="background: #f6efde"],
+body[data-screen-label="Eventos"] .audience-card,
+body[data-screen-label="Eventos"] .form-section,
+body[data-screen-label="Eventos"] form.cotacao{
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+}
+
+body[data-screen-label="Eventos"] [style*="background:#fff"] h3,
+body[data-screen-label="Eventos"] [style*="background: #fff"] h3,
+body[data-screen-label="Eventos"] [style*="background:#fffaf0"] h3,
+body[data-screen-label="Eventos"] [style*="background: #fffaf0"] h3,
+body[data-screen-label="Eventos"] [style*="background:#f6efde"] h3,
+body[data-screen-label="Eventos"] [style*="background: #f6efde"] h3,
+body[data-screen-label="Eventos"] .audience-card h3,
+body[data-screen-label="Eventos"] .form-section h3,
+body[data-screen-label="Eventos"] form.cotacao h3{
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+}
+
+body[data-screen-label="Eventos"] [style*="background:#fff"] p,
+body[data-screen-label="Eventos"] [style*="background: #fff"] p,
+body[data-screen-label="Eventos"] [style*="background:#fffaf0"] p,
+body[data-screen-label="Eventos"] [style*="background: #fffaf0"] p,
+body[data-screen-label="Eventos"] [style*="background:#f6efde"] p,
+body[data-screen-label="Eventos"] [style*="background: #f6efde"] p,
+body[data-screen-label="Eventos"] .audience-card p,
+body[data-screen-label="Eventos"] .form-section p,
+body[data-screen-label="Eventos"] form.cotacao p{
+  color:#485156!important;
+  -webkit-text-fill-color:#485156!important;
+}
