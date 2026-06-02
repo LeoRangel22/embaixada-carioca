@@ -1,0 +1,207 @@
+{
+  "status": "PASS",
+  "min_score": 100,
+  "required": [
+    "pt-BR",
+    "en",
+    "es",
+    "x-default"
+  ],
+  "results": [
+    {
+      "page": "index.html",
+      "status": "PASS",
+      "score": 100,
+      "missing": [],
+      "found": [
+        "en",
+        "es",
+        "pt-BR",
+        "x-default"
+      ],
+      "canonical": "https://www.embaixadacarioca.com/"
+    },
+    {
+      "page": "almoco.html",
+      "status": "PASS",
+      "score": 100,
+      "missing": [],
+      "found": [
+        "en",
+        "es",
+        "pt-BR",
+        "x-default"
+      ],
+      "canonical": "https://www.embaixadacarioca.com/almoco.html"
+    },
+    {
+      "page": "cafe-da-manha.html",
+      "status": "PASS",
+      "score": 100,
+      "missing": [],
+      "found": [
+        "en",
+        "es",
+        "pt-BR",
+        "x-default"
+      ],
+      "canonical": "https://www.embaixadacarioca.com/cafe-da-manha.html"
+    },
+    {
+      "page": "eventos.html",
+      "status": "PASS",
+      "score": 100,
+      "missing": [],
+      "found": [
+        "en",
+        "es",
+        "pt-BR",
+        "x-default"
+      ],
+      "canonical": "https://www.embaixadacarioca.com/eventos.html"
+    },
+    {
+      "page": "guia-do-rio.html",
+      "status": "PASS",
+      "score": 100,
+      "missing": [],
+      "found": [
+        "en",
+        "es",
+        "pt-BR",
+        "x-default"
+      ],
+      "canonical": "https://www.embaixadacarioca.com/guia-do-rio.html"
+    },
+    {
+      "page": "restaurante-morro-da-urca.html",
+      "status": "PASS",
+      "score": 100,
+      "missing": [],
+      "found": [
+        "en",
+        "es",
+        "pt-BR",
+        "x-default"
+      ],
+      "canonical": "https://www.embaixadacarioca.com/restaurante-morro-da-urca.html"
+    },
+    {
+      "page": "restaurantes-romanticos-rio-de-janeiro.html",
+      "status": "PASS",
+      "score": 100,
+      "missing": [],
+      "found": [
+        "en",
+        "es",
+        "pt-BR",
+        "x-default"
+      ],
+      "canonical": "https://www.embaixadacarioca.com/restaurantes-romanticos-rio-de-janeiro.html"
+    },
+    {
+      "page": "en/index.html",
+      "status": "PASS",
+      "score": 100,
+      "missing": [],
+      "found": [
+        "en",
+        "es",
+        "pt-BR",
+        "x-default"
+      ],
+      "canonical": "https://www.embaixadacarioca.com/en/"
+    },
+    {
+      "page": "en/almoco.html",
+      "status": "PASS",
+      "score": 100,
+      "missing": [],
+      "found": [
+        "en",
+        "es",
+        "pt-BR",
+        "x-default"
+      ],
+      "canonical": "https://www.embaixadacarioca.com/en/almoco.html"
+    },
+    {
+      "page": "en/cafe-da-manha.html",
+      "status": "PASS",
+      "score": 100,
+      "missing": [],
+      "found": [
+        "en",
+        "es",
+        "pt-BR",
+        "x-default"
+      ],
+      "canonical": "https://www.embaixadacarioca.com/en/cafe-da-manha.html"
+    },
+    {
+      "page": "en/eventos.html",
+      "status": "PASS",
+      "score": 100,
+      "missing": [],
+      "found": [
+        "en",
+        "es",
+        "pt-BR",
+        "x-default"
+      ],
+      "canonical": "https://www.embaixadacarioca.com/en/eventos.html"
+    },
+    {
+      "page": "es/index.html",
+      "status": "PASS",
+      "score": 100,
+      "missing": [],
+      "found": [
+        "en",
+        "es",
+        "pt-BR",
+        "x-default"
+      ],
+      "canonical": "https://www.embaixadacarioca.com/es/"
+    },
+    {
+      "page": "es/almoco.html",
+      "status": "PASS",
+      "score": 100,
+      "missing": [],
+      "found": [
+        "en",
+        "es",
+        "pt-BR",
+        "x-default"
+      ],
+      "canonical": "https://www.embaixadacarioca.com/es/almoco.html"
+    },
+    {
+      "page": "es/cafe-da-manha.html",
+      "status": "PASS",
+      "score": 100,
+      "missing": [],
+      "found": [
+        "en",
+        "es",
+        "pt-BR",
+        "x-default"
+      ],
+      "canonical": "https://www.embaixadacarioca.com/es/cafe-da-manha.html"
+    },
+    {
+      "page": "es/eventos.html",
+      "status": "PASS",
+      "score": 100,
+      "missing": [],
+      "found": [
+        "en",
+        "es",
+        "pt-BR",
+        "x-default"
+      ],
+      "canonical": "https://www.embaixadacarioca.com/es/eventos.html"
+    }
+  ]
+}

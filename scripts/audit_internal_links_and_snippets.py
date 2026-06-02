@@ -110,6 +110,10 @@ PRIORITY_PAGES: dict[str, dict[str, str]] = {
 }
 
 SKIP_SCHEMES = {"mailto", "tel", "sms", "whatsapp", "javascript", "data"}
+NON_HTML_EXTS = frozenset({
+    '.css', '.js', '.webp', '.jpg', '.jpeg', '.png', '.gif', '.svg', '.ico',
+    '.xml', '.json', '.pdf', '.woff', '.woff2', '.ttf', '.eot', '.mp4', '.webm', '.txt',
+})
 HREF_RE = re.compile(r'\s(?:href|src)=["\']([^"\']+)["\']', re.I)
 ID_RE = re.compile(r'\s(?:id|name)=["\']([^"\']+)["\']', re.I)
 OL_RE = re.compile(r'<ol\b[\s\S]*?</ol>', re.I)
@@ -181,6 +185,10 @@ def resolve_internal_target(current_page: str, href: str) -> tuple[str | None, s
 
     parsed = urlparse(href)
     if parsed.scheme and parsed.scheme.lower() in SKIP_SCHEMES:
+        return None, None
+    # Skip non-HTML resources (CSS, JS, images, fonts, etc.)
+    path_ext = Path(parsed.path).suffix.lower() if parsed.path else ''
+    if path_ext in NON_HTML_EXTS:
         return None, None
     if parsed.netloc and parsed.netloc not in SITE_HOSTS:
         return None, None

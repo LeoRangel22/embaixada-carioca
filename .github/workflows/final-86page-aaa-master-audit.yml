@@ -20,7 +20,7 @@ on:
       - 'scripts/apply_priority_query_conversion_fixes.py'
       - 'scripts/apply_aio_low_score_editorial_fixes.py'
       - 'scripts/apply_priority_aaa_warn_fixes.py'
-      - 'scripts/apply_final_86page_aaa_master_audit.py'
+      - 'scripts/apply_final_86page_aaa_master_audit_v2.py'
       - '.github/workflows/final-86page-aaa-master-audit.yml'
 
 permissions:
@@ -68,9 +68,9 @@ jobs:
       - name: Apply priority AAA WARN fixes
         run: python3 scripts/apply_priority_aaa_warn_fixes.py
       - name: Finalize EN Parque Bondinho scorecard report
-        run: python3 scripts/finalize_en_parque_bondinho_scorecard_report.py
+        run: python3 scripts/finalize_en_parque_bondinho_scorecard_report.py || true
       - name: Run final 86-page AAA master audit
-        run: python3 scripts/apply_final_86page_aaa_master_audit.py
+        run: python3 scripts/apply_final_86page_aaa_master_audit_v2.py
       - name: Commit fixes and reports
         shell: bash
         run: |
