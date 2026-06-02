@@ -69,6 +69,7 @@ eventos.html,PASS,True,True,True,True,True,True
 feijoada-com-vista-rio-de-janeiro.html,PASS,True,True,True,True,True,True
 feijoada.html,PASS,True,True,True,True,True,True
 gastronomia-carioca.html,PASS,True,True,True,True,True,True
+general-3/index.html,PASS,True,True,True,True,True,True
 guia-do-rio.html,PASS,True,True,True,True,True,True
 index.html,PASS,True,True,True,True,True,True
 morro-da-urca.html,PASS,True,True,True,True,True,True
@@ -81,4 +82,11 @@ por-do-sol-morro-da-urca.html,PASS,True,True,True,True,True,True
 restaurante-bondinho-pao-de-acucar.html,PASS,True,True,True,True,True,True
 restaurante-morro-da-urca.html,PASS,True,True,True,True,True,True
 restaurantes-perto-do-pao-de-acucar.html,PASS,True,True,True,True,True,True
+restaurantes-romanticos-rio-de-janeiro.html,PASS,True,True,True,True,True,True
 roteiro-meio-dia-urca-pao-de-acucar.html,PASS,True,True,True,True,True,True
+src/partials/en/footer.html,WARN,False,False,False,False,True,True
+src/partials/en/nav.html,WARN,False,False,False,False,True,True
+src/partials/es/footer.html,WARN,False,False,False,False,True,True
+src/partials/es/nav.html,WARN,False,False,False,False,True,True
+src/partials/pt/footer.html,WARN,False,False,False,False,True,True
+src/partials/pt/nav.html,WARN,False,False,False,False,True,True

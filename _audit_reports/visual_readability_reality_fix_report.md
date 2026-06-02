@@ -10,18 +10,23 @@ Corrigir problemas visuais reais de contraste, especialmente o cardápio com tí
 - Fundo escuro: texto areia claro com opacidade alta.
 
 ## Veredito
-- Páginas auditadas: 83
-- PASS: 83
-- WARN: 0
-- Status geral: PASS
+- Páginas auditadas: 91
+- PASS: 85
+- WARN: 6
+- Status geral: WARN
 
 ## Contadores
-- html_scanned: 83
-- html_updated: 0
-- css_js_injected: 0
+- html_scanned: 91
+- html_updated: 85
+- css_js_injected: 85
 - invalid_rgba_fixed: 0
-- audit_pass: 83
-- audit_warn: 0
+- audit_pass: 85
+- audit_warn: 6
 
 ## Páginas com WARN
-- Nenhuma.
+- src/partials/en/footer.html: reality_fix_present, menu_titles_dark_green_rule, menu_js_guard_present, light_card_dark_text_rule
+- src/partials/en/nav.html: reality_fix_present, menu_titles_dark_green_rule, menu_js_guard_present, light_card_dark_text_rule
+- src/partials/es/footer.html: reality_fix_present, menu_titles_dark_green_rule, menu_js_guard_present, light_card_dark_text_rule
+- src/partials/es/nav.html: reality_fix_present, menu_titles_dark_green_rule, menu_js_guard_present, light_card_dark_text_rule
+- src/partials/pt/footer.html: reality_fix_present, menu_titles_dark_green_rule, menu_js_guard_present, light_card_dark_text_rule
+- src/partials/pt/nav.html: reality_fix_present, menu_titles_dark_green_rule, menu_js_guard_present, light_card_dark_text_rule
