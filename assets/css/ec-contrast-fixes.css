@@ -1,0 +1,95 @@
+/* ================================================
+   FIX 1 — Contraste: seções de fundo claro
+   Afeta: "Explore também" e "Como escolher / encaixar"
+   ================================================ */
+
+/* "Explore também" */
+html body .links-relacionados.ec-internal-link-cluster h1,
+html body .links-relacionados.ec-internal-link-cluster h2,
+html body .links-relacionados.ec-internal-link-cluster h3 {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+  text-shadow: none !important;
+}
+html body .links-relacionados.ec-internal-link-cluster p,
+html body .links-relacionados.ec-internal-link-cluster li {
+  color: #485156 !important;
+  -webkit-text-fill-color: #485156 !important;
+  text-shadow: none !important;
+}
+
+/* "Como escolher no cardápio" / "Como encaixar..." */
+html body .ec-featured-snippet-ol h1,
+html body .ec-featured-snippet-ol h2,
+html body .ec-featured-snippet-ol h3 {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+  text-shadow: none !important;
+}
+html body .ec-featured-snippet-ol p,
+html body .ec-featured-snippet-ol .ec-fs-kicker {
+  color: #485156 !important;
+  -webkit-text-fill-color: #485156 !important;
+  text-shadow: none !important;
+}
+html body .ec-featured-snippet-ol li {
+  color: #485156 !important;
+  -webkit-text-fill-color: #485156 !important;
+  text-shadow: none !important;
+}
+
+/* ================================================
+   FIX 2 — Layout: li com strong quebrado em linhas
+   ================================================ */
+
+html body .ec-featured-snippet-ol li {
+  display: block !important;
+  position: relative !important;
+  padding-left: 56px !important;
+}
+html body .ec-featured-snippet-ol li::before {
+  position: absolute !important;
+  left: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+html body .ec-featured-snippet-ol li strong {
+  display: inline !important;
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+}
+
+/* ================================================
+   FIX 3 — Contraste: .guia-card (bg branco)
+   ================================================ */
+
+html body main .article-body .guia-card h1,
+html body main .article-body .guia-card h2,
+html body main .article-body .guia-card h3,
+html body main section .guia-card h1,
+html body main section .guia-card h2,
+html body main section .guia-card h3 {
+  color: #0d2a3a !important;
+  -webkit-text-fill-color: #0d2a3a !important;
+  text-shadow: none !important;
+}
+html body main .article-body .guia-card p,
+html body main .article-body .guia-card li,
+html body main section .guia-card p,
+html body main section .guia-card li {
+  color: #444444 !important;
+  -webkit-text-fill-color: #444444 !important;
+  text-shadow: none !important;
+}
+html body main .guia-card .guia-roteiro,
+html body main .guia-card .guia-roteiro p,
+html body main .guia-card .guia-roteiro span,
+html body main .guia-card .guia-roteiro li {
+  color: #1a3a2a !important;
+  -webkit-text-fill-color: #1a3a2a !important;
+  text-shadow: none !important;
+}
+html body main .guia-card .guia-roteiro strong {
+  color: #f59b1e !important;
+  -webkit-text-fill-color: #f59b1e !important;
+}
