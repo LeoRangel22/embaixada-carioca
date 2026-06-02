@@ -1,0 +1,51 @@
+name: Schema JSON-LD CI gate
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - '**/*.html'
+  pull_request:
+    branches: [main, master]
+    paths:
+      - '**/*.html'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: schema-ci-gate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-schema:
+    name: Validate JSON-LD schema
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Audit P0 schema types and forbidden fields
+        run: python3 scripts/audit_p0_schema_jsonld.py
+
+      - name: Check for duplicate JSON-LD keys
+        run: python3 scripts/schema_jsonld_duplicate_key_guard.py --check
+
+      - name: Check for forbidden rating fields
+        run: python3 scripts/schema_rating_guard.py --check
+
+      - name: Upload schema audit reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: schema-audit-${{ github.run_number }}
+          path: |
+            _audit_reports/p0_schema_jsonld_audit.md
+            _audit_reports/schema_jsonld_duplicate_key_report.md
+            _audit_reports/schema_rating_guard_report.md

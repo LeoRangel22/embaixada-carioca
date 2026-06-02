@@ -1,0 +1,40 @@
+name: Update version.json
+
+on:
+  push:
+    branches: [main, master]
+
+permissions:
+  contents: write
+
+jobs:
+  update-version:
+    name: Stamp version.json with deploy SHA
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Stamp deploy SHA and date
+        run: |
+          SHA="${{ github.sha }}"
+          DATE=$(date -u +%Y-%m-%d)
+          python3 - <<PYEOF
+          import json, pathlib
+          p = pathlib.Path("version.json")
+          v = json.loads(p.read_text())
+          v["deploy_sha"] = "$SHA"
+          v["updated_at"] = "$DATE"
+          p.write_text(json.dumps(v, indent=2, ensure_ascii=False) + "\n")
+          print(f"Stamped: {v['site_version']} @ $SHA")
+          PYEOF
+
+      - name: Commit updated version.json
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: stamp version.json with deploy SHA ${{ github.sha }}"
+          file_pattern: version.json
+          skip_dirty_check: false
