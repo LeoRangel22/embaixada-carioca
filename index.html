@@ -3572,13 +3572,13 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 <span>Reservar mesa · Embaixada Carioca</span>
 <button aria-label="Fechar" id="tagme-modal-close">✕</button>
 </div>
-<iframe allow="payment" id="tagme-modal-iframe" loading="lazy" src="https://reservation-widget.tagme.com.br/reservation/schedule/61cb5857aa455a0012ebbdcf/reservationWidget" title="Reserva de mesa — Embaixada Carioca via Tagme">
+<iframe allow="payment" id="tagme-modal-iframe" loading="lazy" src="https://reservation-widget.tagme.com.br/reservation/schedule/61cb5857aa455a0012ebbdcf/reservationWidget" title="Reserva de mesa — Embaixada Carioca via Tagme"></iframe>
 <div id="tagme-fallback" style="display:none;padding:32px 24px;text-align:center;font-family:Catamaran,system-ui,sans-serif;">
   <p style="font-size:15px;color:#485156;margin:0 0 20px">O sistema de reservas está temporariamente indisponível.</p>
   <a href="https://go.tagme.com.br/embaixadacarioca" target="_blank" rel="noopener" style="display:inline-block;padding:12px 24px;background:#f59b1e;color:#00405a;border-radius:999px;font-weight:700;font-size:14px;text-decoration:none;margin:0 0 12px">Tentar no site Tagme</a>
   <br>
   <a href="https://wa.me/5521966837556" target="_blank" rel="noopener" style="display:inline-block;padding:12px 24px;background:#25D366;color:#fff;border-radius:999px;font-weight:700;font-size:14px;text-decoration:none">Reservar via WhatsApp</a>
-</div></iframe>
+</div>
 </div>
 </div>
 <script>!function(){var e=document.getElementById("tagme-modal-overlay"),t=document.getElementById("tagme-modal-close"),i=document.getElementById("tagme-modal-iframe");var timer;function showFallback(){if(i)i.style.display="none";var fb=document.getElementById("tagme-fallback");if(fb)fb.style.display="block";}function n(t){var n=this.getAttribute("href");n&&-1!==n.indexOf("go.tagme.com.br")&&(t.preventDefault(),e.classList.add("open"),document.body.style.overflow="hidden",timer=setTimeout(showFallback,8000))}function o(){e.classList.remove("open"),document.body.style.overflow="";clearTimeout(timer);var fb=document.getElementById("tagme-fallback");if(fb)fb.style.display="none";if(i)i.style.display=""}document.querySelectorAll('a[href*="go.tagme.com.br"]').forEach(function(e){e.addEventListener("click",n)});if(i)i.addEventListener("load",function(){clearTimeout(timer);});t.addEventListener("click",o),e.addEventListener("click",function(t){t.target===e&&o()}),document.addEventListener("keydown",function(e){"Escape"===e.key&&o()})}();</script>
@@ -4389,5 +4389,6 @@ html body main :is(.menu-item,.menu-card,.dish-card) :is(.price,.menu-item-price
   </div>
 </section>
 <!-- /EC PRIORITY QUERY CONVERSION FIX -->
+<link rel="stylesheet" href="/assets/css/ec-contrast-fixes.css">
 </body>
 </html>

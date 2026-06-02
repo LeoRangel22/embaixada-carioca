@@ -1,75 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<!-- EC Analytics Foundation v2 -->
-<script id="ec-ga4-base">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  window.ecLoadGA4 = window.ecLoadGA4 || function(){
-    if (window.ecGA4Loaded) return;
-    window.ecGA4Loaded = true;
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-9GRXVZ55CB';
-    document.head.appendChild(s);
-    gtag('js', new Date());
-    gtag('config', 'G-9GRXVZ55CB', { send_page_view: true });
-  };
-  (function(){
-    var load = window.ecLoadGA4;
-    var idle = function(){
-      if ('requestIdleCallback' in window) requestIdleCallback(load, { timeout: 2600 });
-      else setTimeout(load, 1800);
-    };
-    ['pointerdown','keydown','touchstart','scroll'].forEach(function(evt){
-      window.addEventListener(evt, load, { once:true, passive:true });
-    });
-    if (document.readyState === 'complete') idle();
-    else window.addEventListener('load', idle, { once:true });
-  })();
-</script>
-<!-- /EC Analytics Foundation v2 -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<link rel="canonical" href="https://www.embaixadacarioca.com/restaurante-morro-da-urca.html">
-<link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-morro-da-urca.html">
-<link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurant-at-urca-hill.html">
-<link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-morro-da-urca.html">
-<link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-morro-da-urca.html">
-<title>Restaurante Morro da Urca | Embaixada Carioca</title>
-<meta name="description" content="Restaurante no Morro da Urca com café da manhã, almoço, caipirinhas e vista para o Pão de Açúcar dentro do Parque Bondinho.">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta property="og:type" content="website"><meta property="og:locale" content="pt_BR"><meta property="og:url" content="https://www.embaixadacarioca.com/restaurante-morro-da-urca.html" /><meta property="og:title" content="Restaurante Morro da Urca | Embaixada Carioca"><meta property="og:description" content="Restaurante no Morro da Urca com café da manhã, almoço, caipirinhas e vista para o Pão de Açúcar dentro do Parque Bondinho."><meta property="og:image" content="https://www.embaixadacarioca.com/assets/hero.jpg"><meta property="og:site_name" content="Embaixada Carioca">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Restaurante Morro da Urca | Embaixada Carioca"><meta name="twitter:description" content="Restaurante no Morro da Urca com café da manhã, almoço, caipirinhas e vista para o Pão de Açúcar dentro do Parque Bondinho."><meta name="twitter:image" content="https://www.embaixadacarioca.com/assets/hero.jpg">
-<link rel="preload" as="image" href="/assets/hero-1200w.webp" imagesrcset="/assets/hero-400w.webp 400w, /assets/hero-mobile.webp 600w, /assets/hero-800w.webp 800w, /assets/hero-1200w.webp 1200w, /assets/hero.webp 1920w" imagesizes="100vw" fetchpriority="high" type="image/webp"><link rel="stylesheet" href="/assets/fonts/fonts.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca","url":"https://www.embaixadacarioca.com","image":"https://www.embaixadacarioca.com/assets/hero.jpg","telephone":"+55 21 96683-7556","priceRange":"$$$","servesCuisine":["Brasileira","Carioca","Café da manhã","Bar"],"address":{"@type":"PostalAddress","streetAddress":"Av. Pasteur, 520 — Morro da Urca","addressLocality":"Urca","addressRegion":"RJ","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-22.9508333,"longitude":-43.1641667},"containedInPlace":{"@type":"TouristAttraction","name":"Parque Bondinho Pão de Açúcar","url":"https://bondinho.com.br/","sameAs":"https://en.wikipedia.org/wiki/Sugarloaf_Mountain","address":{"@type":"PostalAddress","streetAddress":"Praça General Tibúrcio, 68","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"}},"nearbyAttraction":[{"@type":"TouristAttraction","name":"Pão de Açúcar","sameAs":"https://en.wikipedia.org/wiki/Sugarloaf_Mountain"},{"@type":"TouristAttraction","name":"Morro da Urca","sameAs":"https://en.wikipedia.org/wiki/Urca_Hill"}],"areaServed":[{"@type":"City","name":"Rio de Janeiro","sameAs":"https://en.wikipedia.org/wiki/Rio_de_Janeiro"},{"@type":"Neighborhood","name":"Urca, Rio de Janeiro"},{"@type":"AdministrativeArea","name":"Zona Sul do Rio de Janeiro"}],"award":"Melhor Feijoada do Rio — Veja Rio Comer & Beber 2025/2026","slogan":"O Rio de Janeiro no seu melhor ângulo — 227 metros acima do nível do mar"}</script>
+/* ec-subpages-shared.css — extracted shared inline styles */
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Embaixada Carioca","item":"https://www.embaixadacarioca.com/"},{"@type":"ListItem","position":2,"name":"Restaurante no Morro da Urca","item":"https://www.embaixadacarioca.com/restaurante-morro-da-urca.html"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Restaurante no Morro da Urca","itemListElement":[{"@type":"ListItem","position":1,"name":"Araá","description":"Busca relacionada ao ecossistema gastronômico do Bondinho."},{"@type":"ListItem","position":2,"name":"Clássico Sunset Club","description":"Busca associada a sunset e experiências no alto."},{"@type":"ListItem","position":3,"name":"Terra Brasilis","description":"Opção pesquisada por quem está na Praia Vermelha e Urca."},{"@type":"ListItem","position":4,"name":"Bar Urca","description":"Referência pesquisada por quem busca tradição na Urca."},{"@type":"ListItem","position":5,"name":"Flutuante","description":"Busca ligada a vista e Baía de Guanabara."},{"@type":"ListItem","position":6,"name":"Fogo de Chão e Assador","description":"Buscas comuns para quem pesquisa carne, grupos e vista no Rio."},{"@type":"ListItem","position":7,"name":"Embaixada Carioca","description":"Opção no Morro da Urca, dentro do Parque Bondinho, com café da manhã, almoço, drinks e eventos."}]}</script>
+/* === ec-nav-ux-fixes === */
 
-<style>
-:root{--azul:#00202e;--azul1:#00405a;--amarelo:#f59b1e;--areia:#f6efde}*{box-sizing:border-box}html,body{margin:0;padding:0;overflow-x:hidden}body{font-family:Catamaran,system-ui,sans-serif;background:var(--areia);color:var(--azul1);font-size:17px;line-height:1.6}.mono{font-family:'JetBrains Mono',monospace}a{color:inherit}nav.top{position:fixed;top:0;left:0;right:0;z-index:50}.nav-inner{display:flex;gap:26px;align-items:center;justify-content:space-between;padding:14px 64px;color:var(--areia)}.brand-logo{width:60px;height:60px}.brand-logo.dark,.brand-word,.nav-wa-btn{display:none}.nav-links{display:flex;gap:26px}.nav-links a,.btn{font-family:'JetBrains Mono',monospace;text-decoration:none;text-transform:uppercase;letter-spacing:.1em;font-size:12px;font-weight:800;white-space:nowrap}.btn{background:var(--amarelo);color:#fff;border-radius:999px;padding:15px 28px}.btn.ghost{background:transparent;border:1px solid var(--areia);color:var(--areia)}.nav-rating-badge{border:1px solid rgba(246,239,222,.3);border-radius:999px;padding:8px 16px;text-decoration:none;background:rgba(246,239,222,.12);font-family:'JetBrains Mono',monospace;font-size:11px}.nav-rating-stars{color:var(--amarelo);font-weight:900}.lang-current{border:1px solid rgba(246,239,222,.3);background:rgba(246,239,222,.12);color:#fff;border-radius:12px;height:36px;padding:0 12px;font-weight:800}.page-hero{height:100svh;min-height:720px;position:relative;overflow:hidden;color:var(--areia);isolation:isolate}.page-hero-photo{position:absolute;inset:0;z-index:-3}.page-hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 44%}.page-hero-overlay{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(0,32,46,.08),rgba(0,32,46,.12) 35%,rgba(0,32,46,.5) 62%,rgba(0,32,46,.86)),linear-gradient(180deg,rgba(0,32,46,.18),rgba(0,32,46,.78))}.page-hero-content{position:absolute;inset:0;padding:140px 70px 90px}.eyebrow{font-family:'JetBrains Mono',monospace;color:var(--amarelo);text-transform:uppercase;letter-spacing:.28em;font-size:10px}.page-hero h1{position:absolute;right:7vw;top:22vh;max-width:620px;font-size:clamp(42px,5vw,78px);line-height:.95;font-weight:200;letter-spacing:-.03em;margin:0}.lede{position:absolute;right:7vw;top:54vh;max-width:580px;font-size:18px;color:rgba(246,239,222,.94)}.hero-chips{position:absolute;left:70px;bottom:175px;display:flex;gap:8px;flex-wrap:wrap}.hero-chips span{border:1px solid rgba(246,239,222,.28);background:rgba(0,32,46,.42);border-radius:999px;padding:6px 13px}.ctas{position:absolute;left:70px;bottom:88px;display:flex;gap:14px;flex-wrap:wrap}.wrap{max-width:1180px;margin:0 auto;padding:0 32px}.section{padding:82px 0;border-bottom:1px solid rgba(0,64,90,.12)}.section h2{font-size:clamp(32px,4vw,56px);line-height:1.04;margin:0 0 24px;font-weight:300}.direct-answer{background:white;border-left:5px solid var(--amarelo);padding:28px 32px;margin-top:-70px;position:relative;z-index:3;box-shadow:0 18px 60px rgba(0,32,46,.14)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid rgba(0,64,90,.1);padding:24px}.faq details{background:white;margin-bottom:10px;padding:18px 22px}.territory-links{display:flex;flex-wrap:wrap;gap:10px}.territory-link{background:white;border:1px solid rgba(0,64,90,.18);border-radius:999px;padding:9px 14px;text-decoration:none}.footer{background:var(--azul);color:var(--areia);padding:42px 32px;text-align:center}@media(max-width:960px){.nav-links,.nav-rating-badge,.lang-switcher{display:none}.nav-inner{padding:10px 22px}.page-hero h1,.lede{position:static}.page-hero-content{padding:120px 24px}.hero-chips,.ctas{position:static;margin-top:24px}.grid{grid-template-columns:1fr}.direct-answer{margin-top:0}}
-</style>
-
-<!-- EC Sprint 1 Structured Data -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"Restaurant","@id":"https://www.embaixadacarioca.com/#restaurant","name":"Embaixada Carioca","alternateName":["Restaurante no Bondinho","Restaurante Morro da Urca","Restaurant at Sugarloaf Cable Car Park"],"url":"https://www.embaixadacarioca.com/","logo":"https://www.embaixadacarioca.com/assets/logo-azul.svg","image":["https://www.embaixadacarioca.com/assets/hero.webp","https://www.embaixadacarioca.com/assets/hero-1200w.webp"],"description":"Restaurante brasileiro no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com café da manhã, almoço, caipirinhas, chope e eventos com vista.","telephone":"+5521966837556","priceRange":"$$","servesCuisine":["Brasileira","Carioca","Café da manhã","Bar"],"acceptsReservations":true,"hasMenu":"https://www.embaixadacarioca.com/cardapio.html","hasMap":"https://www.google.com/maps/search/?api=1&query=Embaixada+Carioca+Morro+da+Urca","isAccessibleForFree":false,"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Vista para o Pão de Açúcar","value":true},{"@type":"LocationFeatureSpecification","name":"Dentro do Parque Bondinho Pão de Açúcar","value":true},{"@type":"LocationFeatureSpecification","name":"Mesas ao ar livre","value":true}],"address":{"@type":"PostalAddress","streetAddress":"Av. Pasteur, 520 — Morro da Urca","addressLocality":"Rio de Janeiro","addressRegion":"RJ","postalCode":"22290-240","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-22.9508333,"longitude":-43.1641667},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:30","closes":"21:00"}],"sameAs":["https://www.instagram.com/embaixadacarioca/","https://g.page/r/CU-tJiJIjBUcEAE/review","https://www.google.com/maps/search/?api=1&query=Embaixada+Carioca+Morro+da+Urca"],"potentialAction":{"@type":"ReserveAction","target":"https://go.tagme.com.br/embaixadacarioca","name":"Reservar mesa"},"keywords":["restaurante no Pão de Açúcar","restaurante Morro da Urca","restaurante no Bondinho","café da manhã com vista","caipirinha no Rio de Janeiro"],"inLanguage":"pt-BR","containedInPlace":{"@type":"TouristAttraction","name":"Parque Bondinho Pão de Açúcar","url":"https://bondinho.com.br/","sameAs":"https://en.wikipedia.org/wiki/Sugarloaf_Mountain","address":{"@type":"PostalAddress","streetAddress":"Praça General Tibúrcio, 68","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"}},"nearbyAttraction":[{"@type":"TouristAttraction","name":"Pão de Açúcar","sameAs":"https://en.wikipedia.org/wiki/Sugarloaf_Mountain"},{"@type":"TouristAttraction","name":"Morro da Urca","sameAs":"https://en.wikipedia.org/wiki/Urca_Hill"}],"areaServed":[{"@type":"City","name":"Rio de Janeiro","sameAs":"https://en.wikipedia.org/wiki/Rio_de_Janeiro"},{"@type":"Neighborhood","name":"Urca, Rio de Janeiro"},{"@type":"AdministrativeArea","name":"Zona Sul do Rio de Janeiro"}],"award":"Melhor Feijoada do Rio — Veja Rio Comer & Beber 2025/2026","slogan":"O Rio de Janeiro no seu melhor ângulo — 227 metros acima do nível do mar"},{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.embaixadacarioca.com/#website","name":"Embaixada Carioca","url":"https://www.embaixadacarioca.com/","inLanguage":"pt-BR","publisher":{"@id":"https://www.embaixadacarioca.com/#restaurant"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Embaixada Carioca","item":"https://www.embaixadacarioca.com/"},{"@type":"ListItem","position":2,"name":"Restaurante Morro da Urca com vista para o Pão de Açúcar","item":"https://www.embaixadacarioca.com/restaurante-morro-da-urca.html"}]}]}</script>
-<!-- /EC Sprint 1 Structured Data -->
-<!-- EC Sprint 2 GEO Growth CSS -->
-<style>
-.ec-sprint2-geo{background:#f6efde;color:#00405a;border-top:1px solid rgba(0,64,90,.10);border-bottom:1px solid rgba(0,64,90,.10);padding:48px 0;font-family:Catamaran,Verdana,system-ui,sans-serif}
-.ec-sprint2-geo .ec-wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-.ec-sprint2-geo .ec-kicker{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#527f8f;margin-bottom:12px}
-.ec-sprint2-geo h2{font-size:clamp(26px,3vw,42px);line-height:1.05;margin:0 0 14px;font-weight:700;letter-spacing:-.02em;color:#00405a}
-.ec-sprint2-geo p{font-size:18px;line-height:1.55;max-width:860px;margin:0;color:#485156}
-.ec-sprint2-geo strong{color:#00405a}
-.ec-sprint2-geo .ec-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-.ec-sprint2-geo .ec-links a{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(0,64,90,.18);border-radius:999px;padding:10px 15px;text-decoration:none;color:#00405a;background:rgba(255,255,255,.45);font-size:14px;font-weight:700}
-.ec-sprint2-geo .ec-links a:hover{background:#f59b1e;color:#00405a;border-color:#f59b1e}
-@media(max-width:760px){.ec-sprint2-geo{padding:34px 0}.ec-sprint2-geo p{font-size:16px}.ec-sprint2-geo .ec-links a{width:100%;justify-content:center}}
-</style>
-<!-- /EC Sprint 2 GEO Growth CSS -->
-<!-- EC Nav UX Fixes -->
-<style id="ec-nav-ux-fixes">
 /* Idiomas: abre para baixo, sem cortar fora da página */
 nav.top,
 nav.top .nav-inner,
@@ -257,10 +189,9 @@ nav.top a.btn[href*="tagme"]::before{
   .google-review-badge .gr-score{font-size:11.5px!important;}
   .google-review-badge .gr-stars{font-size:9px!important;}
 }
-</style>
-<!-- /EC Nav UX Fixes -->
-<!-- EC Orange Eyebrow Position Fix -->
-<style id="ec-orange-eyebrow-position-fix">
+
+/* === ec-orange-eyebrow-position-fix === */
+
 @media (min-width: 961px) {
   .hero .hero-eyebrow,
   .page-hero .hero-eyebrow {
@@ -269,10 +200,9 @@ nav.top a.btn[href*="tagme"]::before{
     will-change: transform;
   }
 }
-</style>
-<!-- /EC Orange Eyebrow Position Fix -->
-<!-- EC Sprint 4 R2D2 AIO Conversion CSS -->
-<style id="ec-sprint4-r2d2-aio-conversion-css">
+
+/* === ec-sprint4-r2d2-aio-conversion-css === */
+
 /* Topo: botão Reservar com efeito do CTA principal, sem seta e menor */
 nav.top .btn,
 nav.top .nav-inner > .btn{
@@ -310,31 +240,9 @@ nav.top .nav-inner > .btn::after{content:none!important;display:none!important}
 .ec-sprint4-faq summary{font-weight:800;cursor:pointer;color:#00405a}
 .ec-sprint4-steps ol{background:#fff;border:1px solid rgba(0,64,90,.12);border-radius:20px;padding:26px 26px 26px 48px}
 @media(max-width:760px){.ec-r2d2-depth,.ec-sprint4-faq,.ec-sprint4-steps{padding:42px 0}}
-</style>
-<!-- /EC Sprint 4 R2D2 AIO Conversion CSS -->
-<!-- EC Sprint 5 Quality Consolidation CSS -->
-<style id="ec-sprint5-quality-consolidation-css">
-.ec-sprint5-quality,.ec-sprint5-faq{background:#f6efde;color:#00405a;padding:62px 0;border-top:1px solid rgba(0,64,90,.10)}
-.ec-sprint5-quality .wrap,.ec-sprint5-faq .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-.ec-sprint5-quality h2,.ec-sprint5-faq h2{font-size:clamp(30px,3.4vw,48px);line-height:1.06;margin:0 0 18px;color:#00405a}
-.ec-sprint5-quality h3{font-size:22px;line-height:1.18;margin:24px 0 8px;color:#00405a}
-.ec-sprint5-quality p,.ec-sprint5-quality li,.ec-sprint5-faq p{font-size:17px;line-height:1.62;color:#485156}
-.ec-sprint5-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin:26px 0}
-.ec-sprint5-card,.ec-sprint5-faq details{background:#fff;border:1px solid rgba(0,64,90,.12);border-radius:20px;padding:22px;box-shadow:0 12px 32px rgba(0,64,90,.05)}
-.ec-sprint5-card strong{display:block;color:#00405a;margin-bottom:6px}
-.ec-sprint5-quality ol{background:#fff;border:1px solid rgba(0,64,90,.12);border-radius:20px;padding:24px 24px 24px 46px}
-.ec-sprint5-faq details{margin:12px 0}
-.ec-sprint5-faq summary{font-weight:800;cursor:pointer;color:#00405a}
-@media(max-width:760px){.ec-sprint5-quality,.ec-sprint5-faq{padding:42px 0}}
-</style>
-<!-- /EC Sprint 5 Quality Consolidation CSS -->
-<!-- EC Rich Results Consolidated FAQ -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://www.embaixadacarioca.com/restaurante-morro-da-urca.html#faq","mainEntity":[{"@type":"Question","name":"A Embaixada Carioca fica dentro do Parque Bondinho?","acceptedAnswer":{"@type":"Answer","text":"Sim. Fica no Morro da Urca, na primeira parada do bondinho."}},{"@type":"Question","name":"Precisa comprar ingresso do Bondinho?","acceptedAnswer":{"@type":"Answer","text":"Sim. O acesso ao Morro da Urca é feito pelo Parque Bondinho."}},{"@type":"Question","name":"Serve café da manhã e almoço?","acceptedAnswer":{"@type":"Answer","text":"Sim. A casa serve café da manhã, almoço brasileiro, caipirinhas, chope e eventos."}},{"@type":"Question","name":"Esta página é uma comparação oficial com concorrentes?","acceptedAnswer":{"@type":"Answer","text":"Não. É um guia editorial para ajudar o visitante a decidir onde comer na região."}}]}</script>
-<!-- /EC Rich Results Consolidated FAQ -->
-<!-- EC Home Top Exact Replication Lock -->
-<!-- /EC Home Top Exact Replication Lock -->
-<!-- EC Hero Pao de Acucar Visual Lock -->
-<style id="ec-hero-pao-de-acucar-visual-lock">
+
+/* === ec-hero-pao-de-acucar-visual-lock === */
+
 /* HERO VISUAL LOCK — pedra do Pão de Açúcar livre no centro */
 html,body{background:#00202e!important;overflow-x:hidden!important;}
 header.hero,.hero,.page-hero,.hero-photo,.page-hero-photo,.hero-overlay,.page-hero-overlay,.hero-content,.page-hero-content{
@@ -501,10 +409,9 @@ header.hero::before,header.hero::after,.hero::before,.hero::after,.page-hero::be
   html body header.page-hero .hero-chips,
   html body header.page-hero .ctas{position:static!important;white-space:normal!important;width:auto!important;display:revert!important;}
 }
-</style>
-<!-- /EC Hero Pao de Acucar Visual Lock -->
-<!-- EC Brand Manual Alignment -->
-<style id="ec-brand-manual-alignment">
+
+/* === ec-brand-manual-alignment === */
+
 /* Embaixada Carioca — alinhamento ao Manual da Marca V02
    Paleta oficial: Azul 1 #00405a; Azul 2 #527f8f; Verde #335d4a; Amarelo #f59b1e;
    Areia #ede2c9; Verde 2 #cbded4; Cinzas #485156/#7d8386/#b1b7bc.
@@ -555,10 +462,9 @@ a.btn,.btn,button.btn,.hero-ctas a,.ctas a{font-family:Catamaran,Verdana,system-
 
 /* Elementos de apoio: ondas/estampas sutis inspiradas no manual */
 .brand-wave-bg,.ec-brand-wave-bg{background-image:repeating-linear-gradient(0deg,rgba(237,226,201,.08) 0 1px,transparent 1px 10px);background-blend-mode:soft-light;}
-</style>
-<!-- /EC Brand Manual Alignment -->
-<!-- EC AAA Readability Emergency Fix -->
-<style id="ec-aaa-readability-emergency-fix">
+
+/* === ec-aaa-readability-emergency-fix === */
+
 /* AAA READABILITY EMERGENCY FIX
    Corrige o problema real visto no navegador: textos herdando -webkit-text-fill-color claro em cards claros
    e textos escuros em fundos azul-escuro. Este bloco deve ficar por último no <head>. */
@@ -601,22 +507,9 @@ html body main :where(.faq,.faq-section,.faq-list,.questions,.qa-grid,.event-faq
 html body main a.btn[href*="tagme"],html body main a.btn[href*="reserv"],html body main .hero-ctas a[href*="tagme"],html body main .hero-ctas a[href*="reserv"],nav.top a.btn[href*="tagme"]{background:var(--ec-readable-yellow)!important;border-color:var(--ec-readable-yellow)!important;color:var(--ec-readable-blue)!important;-webkit-text-fill-color:var(--ec-readable-blue)!important;}
 html body main .btn-secondary,html body main a.btn-secondary,html body main .hero-ctas a:not([href*="tagme"]):not([href*="reserv"]),html body main .ctas a:not([href*="tagme"]):not([href*="reserv"]){color:var(--ec-readable-sand-soft)!important;-webkit-text-fill-color:var(--ec-readable-sand-soft)!important;}
 html body main .btn-secondary:hover,html body main a.btn-secondary:hover,html body main .hero-ctas a:not([href*="tagme"]):not([href*="reserv"]):hover,html body main .ctas a:not([href*="tagme"]):not([href*="reserv"]):hover{background:var(--ec-readable-sand-soft)!important;color:var(--ec-readable-blue)!important;-webkit-text-fill-color:var(--ec-readable-blue)!important;}
-</style>
-<!-- /EC AAA Readability Emergency Fix -->
-<!-- EC AAA Closeout Design Lock -->
-<style id="ec-aaa-closeout-design-lock">
-/* Final AAA closeout — Somente reserva / TagMe fica laranja; botões secundários são vazados e invertem no hover. */
-:root{--ec-blue:#00405a;--ec-green:#335d4a;--ec-yellow:#f59b1e;--ec-sand:#ede2c9;--ec-paper:#f6efde;--ec-gray:#485156;}
-html body nav.top .nav-links a{color:var(--ec-blue);}
-html body nav.top a.btn[href*="tagme"],html body a.btn[href*="tagme"],html body a.btn[href*="reserv"],html body .ctas a[href*="tagme"],html body .hero-ctas a[href*="tagme"]{background:var(--ec-yellow)!important;border-color:var(--ec-yellow)!important;color:var(--ec-blue)!important;-webkit-text-fill-color:var(--ec-blue)!important;}
-html body .btn-secondary,html body a.btn-secondary,html body .ctas a:not([href*="tagme"]):not([href*="reserv"]),html body .hero-ctas a:not([href*="tagme"]):not([href*="reserv"]){background:rgba(0,64,90,.18)!important;border:1px solid rgba(246,239,222,.82)!important;color:var(--ec-paper)!important;-webkit-text-fill-color:var(--ec-paper)!important;}
-html body .btn-secondary:hover,html body a.btn-secondary:hover,html body .ctas a:not([href*="tagme"]):not([href*="reserv"]):hover,html body .hero-ctas a:not([href*="tagme"]):not([href*="reserv"]):hover{background:var(--ec-paper)!important;color:var(--ec-blue)!important;-webkit-text-fill-color:var(--ec-blue)!important;}
-</style>
-<!-- /EC AAA Closeout Design Lock -->
 
-<link rel="stylesheet" href="/assets/superholistic_visual_readability_lock.css">
-<!-- EC Legibility Contrast Lock -->
-<style id="ec-legibility-contrast-lock">
+/* === ec-legibility-contrast-lock === */
+
 /* Legibilidade real: menu, hero e corpo em áreas escuras */
 nav.top:not(.scrolled) .nav-links a,
 nav.top:not(.scrolled) .nav-links a:link,
@@ -642,21 +535,9 @@ body{background:#00202e!important;}
 .ec-final-geo-answer,.ec-final-geo-answer *,.light-section,.light-section *,.paper-section,.paper-section *,.section-paper,.section-paper *,.bg-paper,.bg-paper *,.card-light,.card-light *{color:#00405a!important;-webkit-text-fill-color:#00405a!important;text-shadow:none!important;}
 .ec-final-geo-answer a,.light-section a,.paper-section a,.section-paper a,.bg-paper a,.card-light a{color:#c47e15!important;-webkit-text-fill-color:#c47e15!important;}
 @media(max-width:960px){.article-body,.article-content,.longform,.story,.guide-content,.rio-guide{font-size:16px!important;line-height:1.64!important;}}
-</style>
-<!-- /EC Legibility Contrast Lock -->
-<style id="ec-featured-snippet-ordered-lists-css">
-.ec-featured-snippet-ol{background:#fff8ea;color:#00405a;border-top:1px solid rgba(0,64,90,.10);border-bottom:1px solid rgba(0,64,90,.08);padding:56px 0;font-family:Catamaran,Verdana,system-ui,sans-serif}
-.ec-featured-snippet-ol .ec-fs-wrap{width:min(1080px,calc(100% - 44px));margin:0 auto}
-.ec-featured-snippet-ol .ec-fs-kicker{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#527f8f;margin-bottom:12px}
-.ec-featured-snippet-ol h2{font-size:clamp(28px,3.4vw,48px);line-height:1.08;margin:0 0 16px;color:#00405a;font-weight:800;letter-spacing:-.02em}
-.ec-featured-snippet-ol p{font-size:18px;line-height:1.62;color:#485156;max-width:880px;margin:0 0 18px}
-.ec-featured-snippet-ol ol{counter-reset:item;margin:20px 0 0;padding:0;display:grid;gap:12px;list-style:none}
-.ec-featured-snippet-ol li{display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start;background:#fff;border:1px solid rgba(0,64,90,.12);border-radius:18px;padding:18px;line-height:1.5;color:#485156;box-shadow:0 12px 32px rgba(0,64,90,.05)}
-.ec-featured-snippet-ol li::before{counter-increment:item;content:counter(item);display:grid;place-items:center;width:34px;height:34px;border-radius:999px;background:#f59b1e;color:#00405a;font-weight:900;font-family:'JetBrains Mono',ui-monospace,monospace}
-.ec-featured-snippet-ol strong{color:#335d4a}
-@media(max-width:760px){.ec-featured-snippet-ol{padding:40px 0}.ec-featured-snippet-ol p{font-size:16px}.ec-featured-snippet-ol li{grid-template-columns:36px 1fr;padding:15px}}
-</style>
-<style id="ec-lang-dropdown-closed-state-fix">
+
+/* === ec-lang-dropdown-closed-state-fix === */
+
 /* Final guard: language menu must be closed by default and contained above the hero. */
 html body nav.top,
 html body nav.top .nav-inner,
@@ -735,48 +616,9 @@ html body nav.top .lang-dropdown .lang-check{margin-left:auto!important;color:#3
 @media(max-width:960px){
   html body nav.top .lang-dropdown{left:0!important;right:auto!important;top:calc(100% + 6px)!important;min-width:188px!important;}
 }
-</style>
-<script id="ec-lang-dropdown-closed-state-js">
-(function(){
-  function closeAll(except){
-    document.querySelectorAll('nav.top .lang-switcher.is-open').forEach(function(node){
-      if(node !== except){
-        node.classList.remove('is-open');
-        var btn = node.querySelector('.lang-current');
-        if(btn) btn.setAttribute('aria-expanded','false');
-      }
-    });
-  }
-  function init(){
-    document.querySelectorAll('nav.top .lang-switcher').forEach(function(node){
-      if(node.dataset.ecLangGuard === '1') return;
-      node.dataset.ecLangGuard = '1';
-      var btn = node.querySelector('.lang-current');
-      if(!btn) return;
-      btn.addEventListener('click', function(evt){
-        evt.preventDefault();
-        evt.stopPropagation();
-        var willOpen = !node.classList.contains('is-open');
-        closeAll(node);
-        node.classList.toggle('is-open', willOpen);
-        btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
-      });
-      node.addEventListener('keydown', function(evt){
-        if(evt.key === 'Escape'){
-          node.classList.remove('is-open');
-          btn.setAttribute('aria-expanded','false');
-          btn.focus();
-        }
-      });
-    });
-  }
-  document.addEventListener('click', function(){ closeAll(null); });
-  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
-  else init();
-})();
-</script>
-<!-- EC HOME REFERENCE TOP NAV LOCK V2 -->
-<style id="ec-home-reference-top-nav-lock-v2-css">
+
+/* === ec-home-reference-top-nav-lock-v2-css === */
+
 /* Final visual lock: every page uses the home-reference top nav. */
 html,body{margin:0!important;padding:0!important;border:0!important;outline:0!important;max-width:100%!important;overflow-x:hidden!important;}
 html body{background:#00202e!important;}
@@ -823,9 +665,9 @@ html body header.hero::before,html body header.hero::after,html body header.page
 @media(max-width:1120px){html body nav.top .nav-links{gap:14px!important;}}
 @media(max-width:900px){html body nav.top{min-height:76px!important;background:rgba(0,64,90,.88)!important;backdrop-filter:blur(12px)!important;}html body nav.top .nav-inner{height:76px!important;min-height:76px!important;padding:10px 20px!important;}html body nav.top .brand-logo{width:54px!important;height:54px!important;min-width:54px!important;min-height:54px!important;}html body nav.top .nav-links{display:none!important;}html body nav.top .btn{height:46px!important;min-height:46px!important;padding:0 18px!important;font-size:10px!important;letter-spacing:.10em!important;}}
 @media(max-width:520px){html body nav.top .btn{display:none!important;}}
-</style>
-<!-- /EC HOME REFERENCE TOP NAV LOCK V2 -->
-<style id="ec-top-nav-viewport-fit-v3-css">
+
+/* === ec-top-nav-viewport-fit-v3-css === */
+
 /* V3 viewport-fit lock. Must stay as the last nav CSS in <head>. */
 html,body{overflow-x:hidden!important;max-width:100%!important;border:0!important;outline:0!important;}
 html body nav.top,html body #topnav.top{left:0!important;right:0!important;width:100%!important;max-width:100vw!important;overflow:visible!important;border:0!important;border-bottom:0!important;outline:0!important;box-shadow:none!important;}
@@ -854,191 +696,9 @@ html body header.hero :is(.eyebrow,.hero-eyebrow,.hero-kicker,.page-eyebrow,.pag
 html body header.page-hero :is(.eyebrow,.hero-eyebrow,.hero-kicker,.page-eyebrow,.page-kicker)::before,
 html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!important;border-color:#f59b1e!important;}
 @media(max-width:900px){html body nav.top .nav-links,html body nav.top .lang-switcher,html body nav.top .nav-rating-badge{display:none!important;}html body nav.top .brand-logo{width:54px!important;height:54px!important;min-width:54px!important;min-height:54px!important;}}
-</style>
-<link rel="stylesheet" href="/assets/css/ec-shared.css">
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Restaurante Morro da Urca — Embaixada Carioca","description":"Restaurante no Morro da Urca com vista panorâmica para o Pão de Açúcar. Café da manhã, almoço e eventos no Parque Bondinho.","url":"https://www.embaixadacarioca.com/restaurante-morro-da-urca.html","speakable":{"@type":"SpeakableSpecification","cssSelector":["h1",".hero-sub",".intro-text",".faq-answer"]},"inLanguage":"pt-BR"}</script>
-<meta name="keywords" content="restaurante Morro da Urca, restaurante Pão de Açúcar, restaurante bondinho, Embaixada Carioca, onde comer Morro da Urca, restaurante dentro do Parque Bondinho">
-</head>
-<body data-screen-label="Territory">
-<!-- NAV -->
-<nav class="top" id="topnav" aria-label="Navegação principal">
-<div class="nav-inner">
-<a aria-label="Embaixada Carioca · início" class="brand-mark" href="/">
-<img alt="Embaixada Carioca — Restaurante com Vista para o Pão de Açúcar, Morro da Urca, Rio de Janeiro" class="brand-logo light" src="/assets/logo-areia.svg" decoding="async" fetchpriority="high"/>
-<img alt="Embaixada Carioca · Restaurante no Morro da Urca, Rio de Janeiro" class="brand-logo dark" loading="lazy" src="/assets/logo-azul.svg" decoding="async"/>
-</a>
-<ul class="nav-links">
-<li><a href="/cafe-da-manha.html">Café da Manhã</a></li>
-<li><a href="/almoco.html">Almoço</a></li>
-<li><a href="/como-chegar.html">Como Chegar</a></li>
-<li><a href="/eventos.html">Eventos</a></li>
-<li><a href="/cardapio.html">Cardápio</a></li>
-<li><a href="/guia-do-rio.html">Guia do Rio</a></li>
-</ul>
-<a aria-label="Google Reviews: 4.8 estrelas · 7.779 avaliações" class="nav-rating-badge google-review-badge" href="https://g.page/r/CU-tJiJIjBUcEAE/review" rel="noopener" target="_blank" title="Google Reviews · 4.8 estrelas">
-<span class="gr-copy"><span class="gr-label">Google Reviews</span><span class="gr-row"><strong class="gr-score">4.8</strong><span class="gr-stars" aria-hidden="true">★★★★★</span><span class="gr-count">7.779 avaliações</span></span></span>
-</a>
-<div aria-label="Selecionar idioma" class="lang-switcher" role="navigation">
-<button aria-expanded="false" aria-haspopup="true" aria-label="Idioma atual: PT" class="lang-current"><span class="lang-flag">🇧🇷</span><span>PT</span><span class="lang-arrow">▼</span></button>
-<div class="lang-dropdown" role="menu">
-<a class="active" href="/" hreflang="pt-BR" role="menuitem"><span class="lang-flag">🇧🇷</span><span class="lang-name">Português</span> <span class="lang-check">✓</span></a>
-<a class="" href="/en/" hreflang="en" role="menuitem"><span class="lang-flag">🇺🇸</span><span class="lang-name">English</span></a>
-<a class="" href="/es/" hreflang="es" role="menuitem"><span class="lang-flag">🇪🇸</span><span class="lang-name">Español</span></a>
-</div>
-</div>
-<button aria-controls="nav-drawer" aria-expanded="false" aria-label="Abrir menu de navegação" class="nav-hamburger" id="nav-hamburger"><span></span><span></span><span></span></button>
-<a class="btn" href="https://go.tagme.com.br/embaixadacarioca">Reservar</a>
-</div>
-</nav>
-<header class="page-hero"><picture class="page-hero-photo"><source type="image/webp" srcset="/assets/hero-400w.webp 400w, /assets/hero-mobile.webp 600w, /assets/hero-800w.webp 800w, /assets/hero-1200w.webp 1200w, /assets/hero.webp 1920w" sizes="100vw"><img src="/assets/hero-1200w.webp" alt="Restaurante no Morro da Urca — Embaixada Carioca" width="1920" height="1267" fetchpriority="high" decoding="async" loading="lazy"></picture><div class="page-hero-overlay"></div><div class="page-hero-content"><div class="eyebrow hero-eyebrow">Restaurante no Bondinho · Morro da Urca · Parque Bondinho Pão de Açúcar · Rio de Janeiro · Brasil</div><h1>Restaurante no Morro da Urca</h1><p class="lede">A busca por restaurante no Morro da Urca aponta diretamente para a experiência gastronômica no alto do Bondinho.</p><div class="hero-chips"><span>4.8★ · 7.779 avaliações</span><span>Parque Bondinho</span><span>Morro da Urca</span><span>Pão de Açúcar</span></div><div class="ctas"><a class="btn" href="https://go.tagme.com.br/embaixadacarioca">Reservar mesa</a><a class="btn ghost" href="/cardapio.html">Ver cardápio</a></div></div>
-<!-- EC Hero Summary In Side Frame -->
-<aside class="ec-page-hero-side-frame" aria-label="Resumo">
-<div class="hmc"><span class="l">Hoje</span><span class="v">Por do sol às 17h44</span></div>
-<div class="hmc hero-summary-card"><span class="l">Resumo</span><span class="v">A busca por restaurante no Morro da Urca aponta diretamente para a experiência gastronômica no alto do Bondinho.</span></div>
-<div class="hmc"><span class="l">Vista</span><span class="v">Pão de Açúcar em primeiro plano</span></div>
-</aside>
-<!-- /EC Hero Summary In Side Frame -->
-</header>
-<main><div class="wrap"><section class="direct-answer"><strong class="mono">Resposta direta</strong><p>A Embaixada Carioca é um restaurante no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com café da manhã, almoço brasileiro, caipirinhas e vista.</p></section><section class="section"><h2>Por que essa busca importa</h2><p>A busca local tem alta intenção: a pessoa está planejando o passeio, já está na região ou comparando onde comer.</p><p>O objetivo é responder de forma clara e mostrar quando a Embaixada Carioca é a opção mais natural: dentro do Parque Bondinho, no alto do Morro da Urca, com vista direta para o Pão de Açúcar.</p></section><section class="section"><h2>Quando escolher a Embaixada Carioca</h2><ul><li>Quando quiser comer dentro do circuito do Bondinho.</li><li>Quando a vista para o Pão de Açúcar for parte da experiência.</li><li>Quando quiser café da manhã, almoço brasileiro, caipirinha, chope ou evento no Morro da Urca.</li></ul></section><section class="section"><h2>Opções da região e como decidir</h2><div class="grid"><article class='card'><h3>Araá</h3><p>Busca relacionada ao ecossistema gastronômico do Bondinho.</p>
-<div class="related-link" style="margin:1.5rem 0;padding:.9rem 1.1rem;background:#f0f7ff;border-radius:8px;border-left:4px solid #1d4ed8"><a href="/almoco-morro-da-urca.html" style="display:block;margin:1.5rem 0;padding:.9rem 1.1rem;background:#f0f7ff;border-radius:8px;border-left:4px solid #1d4ed8;color:#1d4ed8;font-weight:600;text-decoration:none;font-size:.95rem">Almoço especial no Morro da Urca &rarr;</a></div>
-</article><article class='card'><h3>Clássico Sunset Club</h3><p>Busca associada a sunset e experiências no alto.</p></article><article class='card'><h3>Terra Brasilis</h3><p>Opção pesquisada por quem está na Praia Vermelha e Urca.</p></article><article class='card'><h3>Bar Urca</h3><p>Referência pesquisada por quem busca tradição na Urca.</p></article><article class='card'><h3>Flutuante</h3><p>Busca ligada a vista e Baía de Guanabara.</p></article><article class='card'><h3>Fogo de Chão e Assador</h3><p>Buscas comuns para quem pesquisa carne, grupos e vista no Rio.</p></article><article class='card'><h3>Embaixada Carioca</h3><p>Opção no Morro da Urca, dentro do Parque Bondinho, com café da manhã, almoço, drinks e eventos.</p></article></div><p><small>Guia editorial. As marcas citadas pertencem aos seus respectivos titulares.</small></p></section><section class="section faq"><h2>Perguntas frequentes</h2><details><summary>A Embaixada Carioca fica dentro do Parque Bondinho?</summary><p>Sim. Fica no Morro da Urca, na primeira parada do bondinho.</p></details><details><summary>Precisa comprar ingresso do Bondinho?</summary><p>Sim. O acesso ao Morro da Urca é feito pelo Parque Bondinho.</p></details><details><summary>Serve café da manhã e almoço?</summary><p>Sim. A casa serve café da manhã, almoço brasileiro, caipirinhas, chope e eventos.</p></details><details><summary>Esta página é uma comparação oficial com concorrentes?</summary><p>Não. É um guia editorial para ajudar o visitante a decidir onde comer na região.</p></details></section><section class="section"><h2>Continue explorando</h2><div class="territory-links"><a class="territory-link" href="/parque-bondinho-pao-de-acucar.html">Onde comer no Parque Bondinho Pão de Açúcar</a><a class="territory-link" href="/restaurante-bondinho-pao-de-acucar.html">Restaurante no Bondinho Pão de Açúcar</a><a class="territory-link" href="/onde-comer-no-pao-de-acucar.html">Onde comer no Pão de Açúcar</a><a class="territory-link" href="/restaurantes-perto-do-pao-de-acucar.html">Restaurantes perto do Pão de Açúcar</a></div></section></div><!-- EC Sprint 5 Quality Consolidation Block -->
-<section class="ec-sprint5-quality" aria-label="Quality guide"><div class="wrap"><h2>Guia prático para planejar a visita</h2><p>Esta página foi consolidada para responder às dúvidas que realmente influenciam a decisão do visitante: acesso, horário, tipo de experiência, vista, reserva e encaixe no roteiro do Pão de Açúcar. A Embaixada Carioca não é um restaurante genérico no Rio; é um restaurante brasileiro dentro da rota do Parque Bondinho, no Morro da Urca, com café da manhã, almoço, caipirinhas, chope e eventos.</p><div class="ec-sprint5-grid"><article class="ec-sprint5-card"><strong>Por que importa</strong>A localização reduz atrito para quem já está visitando o Pão de Açúcar e quer comer bem sem sair do atrativo.</article><article class="ec-sprint5-card"><strong>Melhor horário</strong>A manhã funciona para café com vista; o almoço para pratos brasileiros; o fim da tarde para drinks e uma pausa carioca.</article><article class="ec-sprint5-card"><strong>Lógica de acesso</strong>A maioria chega de Bondinho pela Praia Vermelha. A trilha do Morro da Urca pode ser alternativa quando aberta.</article><article class="ec-sprint5-card"><strong>Fator de decisão</strong>Escolha essa parada quando quiser unir vista icônica, comida brasileira e rota prática dentro do ponto turístico.</article></div><h3>Como usar esta página</h3><ol><li>Confirme se o acesso será pelo Bondinho ou pela trilha.</li><li>Escolha o melhor momento: café, almoço, drinks ou evento.</li><li>Use a reserva em fins de semana, feriados ou grupos.</li><li>Depois da refeição, continue pelo Morro da Urca ou pelo próximo trecho do Bondinho.</li></ol></div></section>
-<!-- /EC Sprint 5 Quality Consolidation Block -->
-<!-- EC FEATURED SNIPPET ORDERED LISTS -->
-<section class="ec-featured-snippet-ol" aria-label="Como visitar o restaurante no Morro da Urca">
-  <div class="ec-fs-wrap">
-    <div class="ec-fs-kicker">Passo a passo</div>
-    <h2>Como visitar o restaurante no Morro da Urca</h2>
-    <p>O acesso depende do Parque Bondinho, por isso o planejamento do ingresso é essencial.</p>
-    <ol>
-      <li>Vá até a Av. Pasteur, 520, na Urca.</li>
-      <li>Entre no Parque Bondinho Pão de Açúcar.</li>
-      <li>Suba até a primeira parada, o Morro da Urca.</li>
-      <li>Procure a Embaixada Carioca para comer, beber ou realizar eventos com vista.</li>
-    </ol>
-  </div>
-</section>
-<!-- /EC FEATURED SNIPPET ORDERED LISTS -->
-</main>
-<footer class="footer"><p>Embaixada Carioca · Morro da Urca · Parque Bondinho Pão de Açúcar</p><p><a class="btn" href="https://go.tagme.com.br/embaixadacarioca">Reservar mesa</a></p></footer>
-<!-- EC Analytics Events v1 -->
-<script id="ec-ga4-events">
-(function(){
-  'use strict';
+/* === ec-lunch-photos-global-readability-hardfix === */
 
-  var EVENT_VERSION = '2026-05-19.2';
-
-  function textOf(el){
-    if (!el) return '';
-    return String(
-      el.innerText ||
-      el.getAttribute('aria-label') ||
-      el.getAttribute('title') ||
-      el.getAttribute('data-analytics-label') ||
-      ''
-    ).replace(/\s+/g, ' ').trim().slice(0, 140);
-  }
-
-  function cleanUrl(url){
-    if (!url) return '';
-    try {
-      var u = new URL(url, window.location.href);
-      var host = u.hostname.toLowerCase();
-      if (host.indexOf('wa.me') >= 0 || host.indexOf('whatsapp') >= 0) {
-        return u.origin + u.pathname;
-      }
-      return u.href.slice(0, 500);
-    } catch(e) {
-      return String(url).slice(0, 500);
-    }
-  }
-
-  function eventNameFor(el){
-    var href = String(el.href || el.getAttribute('href') || '');
-    var label = textOf(el);
-    var classes = String(el.className || '');
-    var aria = String(el.getAttribute('aria-label') || '');
-    var haystack = (href + ' ' + label + ' ' + classes + ' ' + aria).toLowerCase();
-
-    if (haystack.indexOf('go.tagme.com.br') >= 0 || haystack.indexOf('reservar') >= 0 || haystack.indexOf('reserva') >= 0) return 'click_reservar';
-    if (haystack.indexOf('wa.me') >= 0 || haystack.indexOf('whatsapp') >= 0) return 'click_whatsapp';
-    if (haystack.indexOf('google.com/maps') >= 0 || haystack.indexOf('maps.app.goo') >= 0 || haystack.indexOf('como chegar') >= 0 || haystack.indexOf('directions') >= 0) return 'click_como_chegar';
-    if (haystack.indexOf('cardapio') >= 0 || haystack.indexOf('cardápio') >= 0 || haystack.indexOf('menu') >= 0) return 'click_cardapio';
-    if (haystack.indexOf('eventos') >= 0 || haystack.indexOf('events') >= 0 || haystack.indexOf('eventos corporativos') >= 0) return 'click_eventos';
-    if (haystack.indexOf('cafe-da-manha') >= 0 || haystack.indexOf('café da manhã') >= 0 || haystack.indexOf('breakfast') >= 0 || haystack.indexOf('desayuno') >= 0) return 'click_cafe_da_manha';
-    if (haystack.indexOf('almoco') >= 0 || haystack.indexOf('almoço') >= 0 || haystack.indexOf('lunch') >= 0 || haystack.indexOf('almuerzo') >= 0) return 'click_almoco';
-    if (haystack.indexOf('lang-') >= 0 || haystack.indexOf('hreflang') >= 0 || el.closest('.lang-switcher')) return 'click_idioma';
-
-    return '';
-  }
-
-  function sendAnalyticsEvent(name, el){
-    if (!name || typeof window.gtag !== 'function') return;
-
-    if (typeof window.ecLoadGA4 === 'function') window.ecLoadGA4();
-
-    var href = String(el.href || el.getAttribute('href') || '');
-    var label = textOf(el);
-
-    window.gtag('event', name, {
-      event_category: 'site_interaction',
-      event_label: label || cleanUrl(href),
-      link_url: cleanUrl(href),
-      link_text: label,
-      page_path: window.location.pathname,
-      page_location_clean: window.location.origin + window.location.pathname,
-      page_language: document.documentElement.lang || '',
-      analytics_version: EVENT_VERSION
-    });
-  }
-
-  document.addEventListener('click', function(event){
-    var target = event.target;
-    if (!target || !target.closest) return;
-
-    var el = target.closest('a, button, [role="button"]');
-    if (!el) return;
-
-    var name = eventNameFor(el);
-    if (!name) return;
-
-    sendAnalyticsEvent(name, el);
-  }, true);
-})();
-</script>
-<!-- /EC Analytics Events v1 -->
-<!-- EC Performance Cache v1 -->
-<script id="ec-service-worker-register">
-(function(){
-  if (!('serviceWorker' in navigator)) return;
-  window.addEventListener('load', function(){
-    navigator.serviceWorker.register('/sw.js').catch(function(){});
-  });
-})();
-</script>
-<!-- /EC Performance Cache v1 -->
-<!-- EC Sprint 2 GEO Direct Answer -->
-<section class="ec-sprint2-geo" aria-label="Resposta direta para busca e IA">
-  <div class="ec-wrap">
-    <div class="ec-kicker">Resposta direta · SEO + GEO</div>
-    <h2>Restaurante no Morro da Urca para café, almoço e vista</h2>
-    <p>A Embaixada Carioca é um restaurante no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar. É indicada para café da manhã, almoço brasileiro, caipirinhas, chope e eventos com vista para o Rio.</p>
-    <div class="ec-links"><a href="/">Home →</a><a href="/almoco.html">Almoço →</a><a href="/cafe-da-manha-com-vista-rio-de-janeiro.html">Café com vista →</a><a href="/onde-comer-no-pao-de-acucar.html">Onde comer no Pão de Açúcar →</a></div>
-  </div>
-</section>
-<!-- /EC Sprint 2 GEO Direct Answer -->
-<!-- EC Performance Service Worker -->
-<script>
-(function(){
-  if(!('serviceWorker' in navigator) || location.protocol !== 'https:') return;
-  var run=function(){navigator.serviceWorker.register('/sw.js').catch(function(){});};
-  if('requestIdleCallback' in window) requestIdleCallback(run, {timeout: 3500}); else window.addEventListener('load', run);
-})();
-</script>
-<!-- /EC Performance Service Worker -->
-<!-- EC Lunch Photos + Global Readability Hardfix -->
-<style id="ec-lunch-photos-global-readability-hardfix">
 /* HARD READABILITY FIX — deve ficar no fim do body para vencer CSS anterior */
 :root{--ec-blue:#00405a;--ec-green:#335d4a;--ec-yellow:#f59b1e;--ec-sand:#ede2c9;--ec-paper:#f6efde;--ec-gray:#485156;--ec-gray2:#6b7377;}
 
@@ -1096,10 +756,9 @@ html body main a.btn[href*="tagme"],html body main a.btn[href*="reserv"],nav.top
 html body main .btn-secondary,html body main a.btn-secondary,html body main .hero-ctas a:not([href*="tagme"]):not([href*="reserv"]),html body main .ctas a:not([href*="tagme"]):not([href*="reserv"]){color:var(--ec-paper)!important;}
 html body main .btn-secondary:hover,html body main a.btn-secondary:hover,html body main .hero-ctas a:not([href*="tagme"]):not([href*="reserv"]):hover,html body main .ctas a:not([href*="tagme"]):not([href*="reserv"]):hover{background:var(--ec-paper)!important;color:var(--ec-blue)!important;}
 @media(max-width:760px){html body main .dish-card .photo-ph{min-height:230px;}html body main .dish-card.featured .photo-ph{min-height:270px;}}
-</style>
-<!-- /EC Lunch Photos + Global Readability Hardfix -->
-<!-- EC Visual Readability Reality Fix -->
-<style id="ec-visual-readability-reality-fix">
+
+/* === ec-visual-readability-reality-fix === */
+
 /* VISUAL READABILITY REALITY FIX V3
    Correção baseada em print real: no cardápio, o nome do prato deve ser verde escuro e legível no fundo areia. */
 :root{--ec-vr-blue:#00405a;--ec-vr-green:#335d4a;--ec-vr-yellow:#f59b1e;--ec-vr-sand:#ede2c9;--ec-vr-paper:#f6efde;--ec-vr-gray:#485156;--ec-vr-price:#9a6500;}
@@ -1117,19 +776,4 @@ html body main section:not(.menu-section):not(.gallery-section):not(.light-secti
 html body main section:not(.menu-section):not(.gallery-section):not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.ec-final-geo-answer) :is(h1,h2,h3,h4,h5,h6){color:var(--ec-vr-paper)!important;-webkit-text-fill-color:var(--ec-vr-paper)!important;opacity:1!important;text-shadow:none!important;}
 html body main .gallery-section :is(figure,figcaption,.caption){background:#fff!important;color:var(--ec-vr-gray)!important;-webkit-text-fill-color:var(--ec-vr-gray)!important;}
 html body main a.btn[href*="tagme"],html body main a.btn[href*="reserv"],nav.top a.btn[href*="tagme"]{background:var(--ec-vr-yellow)!important;border-color:var(--ec-vr-yellow)!important;color:var(--ec-vr-blue)!important;-webkit-text-fill-color:var(--ec-vr-blue)!important;}
-</style>
-<script id="ec-visual-readability-reality-js">
-(function(){
-  function setImportant(el, prop, val){ if(el && el.style) el.style.setProperty(prop, val, 'important'); }
-  function fixMenu(){
-    document.querySelectorAll('main .menu-item h1, main .menu-item h2, main .menu-item h3, main .menu-item h4, main .menu-item .menu-item-name, main .menu-item .item-name, main .menu-item .dish-name, main .menu-item .title, main .menu-item .card-title').forEach(function(el){setImportant(el,'color','#335d4a');setImportant(el,'-webkit-text-fill-color','#335d4a');setImportant(el,'text-shadow','none');setImportant(el,'opacity','1');setImportant(el,'font-weight','900');});
-    document.querySelectorAll('main .menu-item p, main .menu-item .menu-item-desc, main .menu-item .item-desc, main .menu-item .description, main .menu-item small').forEach(function(el){setImportant(el,'color','#485156');setImportant(el,'-webkit-text-fill-color','#485156');setImportant(el,'text-shadow','none');setImportant(el,'opacity','1');});
-    document.querySelectorAll('main .menu-item .price, main .menu-item .menu-item-price, main .menu-item .item-price').forEach(function(el){setImportant(el,'color','#9a6500');setImportant(el,'-webkit-text-fill-color','#9a6500');setImportant(el,'font-weight','900');});
-  }
-  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fixMenu, {once:true}); else fixMenu();
-  window.addEventListener('load', fixMenu, {once:true});
-})();
-</script>
-<!-- /EC Visual Readability Reality Fix -->
-<link rel="stylesheet" href="/assets/css/ec-contrast-fixes.css">
-</body></html>
+
