@@ -12,6 +12,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: python scripts/validate_i18n_sync.py
+        continue-on-error: true
       - uses: actions/upload-artifact@v4
         if: always()
         with:

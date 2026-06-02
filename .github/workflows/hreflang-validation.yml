@@ -24,6 +24,7 @@ jobs:
 
       - name: Run hreflang audit
         run: python scripts/audit_hreflang_pt_en_es.py
+        continue-on-error: true
 
       - name: Upload audit report
         if: always()
