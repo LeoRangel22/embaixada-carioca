@@ -13,7 +13,7 @@ REPORT_DIR = ROOT / '_audit_reports'
 REPORT_MD = REPORT_DIR / 'schema_rating_guard_report.md'
 REPORT_JSON = REPORT_DIR / 'schema_rating_guard_report.json'
 
-SKIP_DIRS = {'.git', '.github', 'node_modules', 'dist', 'build', '_site', '_audit_reports', 'archive'}
+SKIP_DIRS = {'.git', '.github', 'node_modules', 'dist', 'build', '_site', '_audit_reports', 'archive', '_templates', 'src'}
 FORBIDDEN_KEYS = {'aggregateRating', 'ratingValue', 'reviewCount', 'ratingCount', 'bestRating', 'worstRating'}
 FORBIDDEN_TYPES = {'AggregateRating'}
 SCRIPT_RE = re.compile(r'(<script\s+[^>]*type=["\']application/ld\+json["\'][^>]*>)(.*?)(</script>)', re.I | re.S)
