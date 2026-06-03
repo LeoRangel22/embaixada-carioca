@@ -2,9 +2,9 @@
 
 Status geral: **FAIL**
 Score mínimo: **54**
-Páginas HTML auditadas: **239**
-Findings FAIL: **234**
-Findings totais: **821**
+Páginas HTML auditadas: **336**
+Findings FAIL: **409**
+Findings totais: **1228**
 
 ## Aprendizados incorporados
 - Home lower contrast
@@ -19,8 +19,23 @@ Findings totais: **821**
 - Manifest scope
 
 ## Páginas com score abaixo de 90
+- `_backups/fase3/parque-bondinho.html` — FAIL — score 54
 - `parque-bondinho.html` — FAIL — score 54
 - `_backups/fase2/parque-bondinho.html` — FAIL — score 64
+- `_backups/fase3/en/eventos.html` — FAIL — score 64
+- `_backups/fase3/en/index.html` — FAIL — score 64
+- `_backups/fase3/en/morro-da-urca.html` — FAIL — score 64
+- `_backups/fase3/en/parque-bondinho.html` — FAIL — score 64
+- `_backups/fase3/es/index.html` — FAIL — score 64
+- `_backups/fase3/es/morro-da-urca.html` — FAIL — score 64
+- `_backups/fase3/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — FAIL — score 64
+- `_backups/fase3/es/parque-bondinho.html` — FAIL — score 64
+- `_backups/fase3/index.html` — FAIL — score 64
+- `_backups/fase3/morro-da-urca.html` — FAIL — score 64
+- `_backups/fase4/index.html` — FAIL — score 64
+- `_backups/fase4_final/index.html` — FAIL — score 64
+- `_backups/fix_css_leak/index.html` — FAIL — score 64
+- `_backups/landing_page_optimizations/index.html` — FAIL — score 64
 - `en/eventos.html` — FAIL — score 64
 - `en/index.html` — FAIL — score 64
 - `en/morro-da-urca.html` — FAIL — score 64
@@ -44,6 +59,18 @@ Findings totais: **821**
 - `src/partials/es/nav.html` — FAIL — score 66
 - `src/partials/pt/footer.html` — FAIL — score 66
 - `src/partials/pt/nav.html` — FAIL — score 66
+- `_backups/fase3/contato.html` — FAIL — score 68
+- `_backups/fase3/en/contato.html` — FAIL — score 68
+- `_backups/fase3/en/nossa-visao.html` — FAIL — score 68
+- `_backups/fase3/es/contato.html` — FAIL — score 68
+- `_backups/fase3/es/nossa-visao.html` — FAIL — score 68
+- `_backups/fase3/nossa-visao.html` — FAIL — score 68
+- `_backups/gsc_fixes/contato.html` — FAIL — score 68
+- `_backups/gsc_fixes/en/contato.html` — FAIL — score 68
+- `_backups/gsc_fixes/en/nossa-visao.html` — FAIL — score 68
+- `_backups/gsc_fixes/es/contato.html` — FAIL — score 68
+- `_backups/gsc_fixes/es/nossa-visao.html` — FAIL — score 68
+- `_backups/gsc_fixes/nossa-visao.html` — FAIL — score 68
 - `contato.html` — FAIL — score 68
 - `en/contato.html` — FAIL — score 68
 - `en/nossa-visao.html` — FAIL — score 68
@@ -55,6 +82,18 @@ Findings totais: **821**
 - `_backups/fase2/en/eventos.html` — FAIL — score 74
 - `_backups/fase2/en/parque-bondinho.html` — FAIL — score 74
 - `_backups/fase2/es/parque-bondinho.html` — FAIL — score 74
+- `_backups/fase3/en/gastronomia-carioca.html` — FAIL — score 74
+- `_backups/fase3/en/guia-do-rio.html` — FAIL — score 74
+- `_backups/fase3/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — FAIL — score 74
+- `_backups/fase3/en/roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 74
+- `_backups/fase3/es/eventos.html` — FAIL — score 74
+- `_backups/fase3/es/gastronomia-carioca.html` — FAIL — score 74
+- `_backups/fase3/es/guia-do-rio.html` — FAIL — score 74
+- `_backups/fase3/es/roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 74
+- `_backups/fase3/gastronomia-carioca.html` — FAIL — score 74
+- `_backups/fase3/guia-do-rio.html` — FAIL — score 74
+- `_backups/fase3/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — FAIL — score 74
+- `_backups/fase3/roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 74
 - `_templates/base.html` — FAIL — score 74
 - `en/gastronomia-carioca.html` — FAIL — score 74
 - `en/guia-do-rio.html` — FAIL — score 74
@@ -68,57 +107,18 @@ Findings totais: **821**
 - `guia-do-rio.html` — FAIL — score 74
 - `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — FAIL — score 74
 - `roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 74
-- `almoco-morro-da-urca.html` — FAIL — score 76
-- `cafe-da-manha-com-vista-rio-de-janeiro.html` — FAIL — score 76
-- `cafe-da-manha-pao-de-acucar.html` — FAIL — score 76
-- `en/almoco-morro-da-urca.html` — FAIL — score 76
-- `en/breakfast-with-a-view-rio-de-janeiro.html` — FAIL — score 76
-- `en/cafe-da-manha-pao-de-acucar.html` — FAIL — score 76
-- `en/feijoada-com-vista-rio-de-janeiro.html` — FAIL — score 76
-- `en/por-do-sol-morro-da-urca.html` — FAIL — score 76
-- `en/restaurant-at-urca-hill.html` — FAIL — score 76
-- `en/restaurants-near-sugarloaf-mountain.html` — FAIL — score 76
-- `en/sugarloaf-cable-car-park.html` — FAIL — score 76
-- `en/sugarloaf-cable-car-restaurant.html` — FAIL — score 76
-- `en/where-to-eat-near-sugarloaf.html` — FAIL — score 76
-- `es/almoco-morro-da-urca.html` — FAIL — score 76
-- `es/cafe-da-manha-pao-de-acucar.html` — FAIL — score 76
-- `es/desayuno-con-vista-rio-de-janeiro.html` — FAIL — score 76
-- `es/donde-comer-cerca-del-pan-de-azucar.html` — FAIL — score 76
-- `es/feijoada-com-vista-rio-de-janeiro.html` — FAIL — score 76
-- `es/parque-bondinho-pan-de-azucar.html` — FAIL — score 76
-- `es/por-do-sol-morro-da-urca.html` — FAIL — score 76
-- `es/restaurante-bondinho-pan-de-azucar.html` — FAIL — score 76
-- `es/restaurante-morro-da-urca.html` — FAIL — score 76
-- `es/restaurantes-cerca-del-pan-de-azucar.html` — FAIL — score 76
-- `feijoada-com-vista-rio-de-janeiro.html` — FAIL — score 76
-- `onde-comer-no-pao-de-acucar.html` — FAIL — score 76
-- `parque-bondinho-pao-de-acucar.html` — FAIL — score 76
-- `por-do-sol-morro-da-urca.html` — FAIL — score 76
-- `restaurante-bondinho-pao-de-acucar.html` — FAIL — score 76
-- `restaurante-morro-da-urca.html` — FAIL — score 76
-- `restaurantes-perto-do-pao-de-acucar.html` — FAIL — score 76
-- `restaurantes-romanticos-rio-de-janeiro.html` — FAIL — score 76
-- `_backups/fase1/_backups/fase1/en/index.html` — FAIL — score 82
-- `_backups/fase1/_backups/fase1/index.html` — FAIL — score 82
-- `_backups/fase1/en/index.html` — FAIL — score 82
-- `_backups/fase1/index.html` — FAIL — score 82
-- `_backups/fase1/morro-da-urca.html` — FAIL — score 82
-- `_backups/fase1/_backups/fase1/en/cardapio.html` — FAIL — score 84
-- `_backups/fase1/_backups/fase1/es/cardapio.html` — FAIL — score 84
-- `_backups/fase1/_backups/fase1/es/entardecer.html` — FAIL — score 84
-- `_backups/fase1/_backups/fase1/es/index.html` — FAIL — score 84
-- `_backups/fase1/en/cardapio.html` — FAIL — score 84
-- `_backups/fase1/es/cardapio.html` — FAIL — score 84
-- `_backups/fase1/es/entardecer.html` — FAIL — score 84
-- `_backups/fase1/es/index.html` — FAIL — score 84
-- `_backups/fase2/en/index.html` — FAIL — score 84
-- `_backups/fase2/en/morro-da-urca.html` — FAIL — score 84
-- `_backups/fase2/en/roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 84
-- `_backups/fase2/es/index.html` — FAIL — score 84
-- `_backups/fase2/es/morro-da-urca.html` — FAIL — score 84
-- `_backups/fase2/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — FAIL — score 84
-- `_backups/fase2/es/roteiro-meio-dia-urca-pao-de-acucar.html` — FAIL — score 84
+- `_backups/fase3/cafe-da-manha-com-vista-rio-de-janeiro.html` — FAIL — score 76
+- `_backups/fase3/en/breakfast-with-a-view-rio-de-janeiro.html` — FAIL — score 76
+- `_backups/fase3/en/restaurant-at-urca-hill.html` — FAIL — score 76
+- `_backups/fase3/en/restaurants-near-sugarloaf-mountain.html` — FAIL — score 76
+- `_backups/fase3/en/sugarloaf-cable-car-park.html` — FAIL — score 76
+- `_backups/fase3/en/sugarloaf-cable-car-restaurant.html` — FAIL — score 76
+- `_backups/fase3/en/where-to-eat-near-sugarloaf.html` — FAIL — score 76
+- `_backups/fase3/es/desayuno-con-vista-rio-de-janeiro.html` — FAIL — score 76
+- `_backups/fase3/es/donde-comer-cerca-del-pan-de-azucar.html` — FAIL — score 76
+- `_backups/fase3/es/parque-bondinho-pan-de-azucar.html` — FAIL — score 76
+- `_backups/fase3/es/restaurante-bondinho-pan-de-azucar.html` — FAIL — score 76
+- `_backups/fase3/es/restaurante-morro-da-urca.html` — FAIL — score 76
 
 ## Top findings
 - **WARN** `404.html` — VISUAL/low_opacity: Opacity baixa detectada; validar texto real.

@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "mode": "check",
-  "files_checked": 329,
+  "files_checked": 336,
   "findings_count": 0,
   "files": [
     {
@@ -1355,6 +1355,12 @@
       "invalid_blocks": 0
     },
     {
+      "file": "_backups/fix_css_leak/index.html",
+      "changed": false,
+      "jsonld_blocks": 9,
+      "invalid_blocks": 0
+    },
+    {
       "file": "_backups/gsc_fixes/contato.html",
       "changed": false,
       "jsonld_blocks": 5,
@@ -1397,6 +1403,42 @@
       "invalid_blocks": 0
     },
     {
+      "file": "_backups/landing_page_optimizations/almoco.html",
+      "changed": false,
+      "jsonld_blocks": 6,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "_backups/landing_page_optimizations/cafe-da-manha.html",
+      "changed": false,
+      "jsonld_blocks": 9,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "_backups/landing_page_optimizations/index.html",
+      "changed": false,
+      "jsonld_blocks": 9,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "_backups/landing_page_optimizations/onde-comer-no-pao-de-acucar.html",
+      "changed": false,
+      "jsonld_blocks": 7,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "_backups/landing_page_optimizations/parque-bondinho-pao-de-acucar.html",
+      "changed": false,
+      "jsonld_blocks": 8,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "_backups/landing_page_optimizations/restaurante-morro-da-urca.html",
+      "changed": false,
+      "jsonld_blocks": 7,
+      "invalid_blocks": 0
+    },
+    {
       "file": "_includes/footer.html",
       "changed": false,
       "jsonld_blocks": 0,
@@ -1435,7 +1477,7 @@
     {
       "file": "almoco.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 7,
       "invalid_blocks": 0
     },
     {
@@ -1861,7 +1903,7 @@
     {
       "file": "index.html",
       "changed": false,
-      "jsonld_blocks": 9,
+      "jsonld_blocks": 10,
       "invalid_blocks": 0
     },
     {

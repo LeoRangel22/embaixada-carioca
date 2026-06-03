@@ -1,7 +1,7 @@
 {
   "status": "FAIL",
   "threshold": 90,
-  "min_score": 59,
+  "min_score": 60,
   "queries": [
     {
       "query": "embaixada carioca",
@@ -195,12 +195,12 @@
       "clicks": 0,
       "impressions": 112,
       "ctr": 0.0,
-      "exact_query_in_text": false,
+      "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 0,
       "description_score": 0,
       "h1_score": 0,
-      "score": 59,
+      "score": 60,
       "recommendation": "Reforçar cluster na página: "
     },
     {
@@ -213,10 +213,10 @@
       "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 100,
+      "description_score": 0,
       "h1_score": 100,
-      "score": 100,
-      "recommendation": "OK"
+      "score": 85,
+      "recommendation": "Reforçar cluster na página: "
     },
     {
       "query": "restaurante urca",
@@ -228,10 +228,10 @@
       "exact_query_in_text": false,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 100,
+      "description_score": 0,
       "h1_score": 100,
-      "score": 99,
-      "recommendation": "OK"
+      "score": 84,
+      "recommendation": "Reforçar cluster na página: "
     },
     {
       "query": "restaurante pão de açucar",
@@ -243,10 +243,10 @@
       "exact_query_in_text": false,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 100,
+      "description_score": 0,
       "h1_score": 100,
-      "score": 99,
-      "recommendation": "OK"
+      "score": 84,
+      "recommendation": "Reforçar cluster na página: "
     },
     {
       "query": "restaurante morro da urca",
@@ -258,10 +258,10 @@
       "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 100,
+      "description_score": 0,
       "h1_score": 100,
-      "score": 100,
-      "recommendation": "OK"
+      "score": 85,
+      "recommendation": "Reforçar cluster na página: "
     },
     {
       "query": "restaurante na urca",
@@ -273,10 +273,10 @@
       "exact_query_in_text": false,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 100,
+      "description_score": 0,
       "h1_score": 100,
-      "score": 99,
-      "recommendation": "OK"
+      "score": 84,
+      "recommendation": "Reforçar cluster na página: "
     },
     {
       "query": "restaurante no pão de açúcar",
@@ -288,10 +288,10 @@
       "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 100,
+      "description_score": 0,
       "h1_score": 100,
-      "score": 100,
-      "recommendation": "OK"
+      "score": 85,
+      "recommendation": "Reforçar cluster na página: "
     },
     {
       "query": "embaixada",
@@ -318,10 +318,10 @@
       "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 100,
+      "description_score": 0,
       "h1_score": 100,
-      "score": 100,
-      "recommendation": "OK"
+      "score": 85,
+      "recommendation": "Reforçar cluster na página: "
     },
     {
       "query": "restaurantes urca",
@@ -333,10 +333,10 @@
       "exact_query_in_text": false,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 100,
+      "description_score": 0,
       "h1_score": 100,
-      "score": 99,
-      "recommendation": "OK"
+      "score": 84,
+      "recommendation": "Reforçar cluster na página: "
     },
     {
       "query": "av pasteur 520 - urca rio de janeiro",
@@ -347,10 +347,10 @@
       "ctr": 0.0,
       "exact_query_in_text": false,
       "cluster_score": 83,
-      "title_score": 70,
-      "description_score": 70,
+      "title_score": 100,
+      "description_score": 100,
       "h1_score": 70,
-      "score": 78,
+      "score": 87,
       "recommendation": "Reforçar cluster na página: av pasteur"
     },
     {
@@ -363,10 +363,10 @@
       "exact_query_in_text": false,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 100,
+      "description_score": 0,
       "h1_score": 100,
-      "score": 99,
-      "recommendation": "OK"
+      "score": 84,
+      "recommendation": "Reforçar cluster na página: "
     },
     {
       "query": "cafe da manha pao de acucar",
@@ -392,10 +392,10 @@
       "ctr": 0.0,
       "exact_query_in_text": false,
       "cluster_score": 83,
-      "title_score": 70,
-      "description_score": 70,
+      "title_score": 100,
+      "description_score": 100,
       "h1_score": 70,
-      "score": 78,
+      "score": 87,
       "recommendation": "Reforçar cluster na página: av pasteur"
     },
     {
@@ -423,10 +423,10 @@
       "exact_query_in_text": false,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 100,
+      "description_score": 0,
       "h1_score": 100,
-      "score": 99,
-      "recommendation": "OK"
+      "score": 84,
+      "recommendation": "Reforçar cluster na página: "
     },
     {
       "query": "morro da urca rio de janeiro",
@@ -438,10 +438,10 @@
       "exact_query_in_text": false,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 100,
+      "description_score": 0,
       "h1_score": 100,
-      "score": 99,
-      "recommendation": "OK"
+      "score": 84,
+      "recommendation": "Reforçar cluster na página: "
     },
     {
       "query": "restaurante no pao de açucar rj",
@@ -453,10 +453,10 @@
       "exact_query_in_text": false,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 100,
+      "description_score": 0,
       "h1_score": 100,
-      "score": 99,
-      "recommendation": "OK"
+      "score": 84,
+      "recommendation": "Reforçar cluster na página: "
     },
     {
       "query": "café da manhã na urca",
@@ -483,10 +483,10 @@
       "exact_query_in_text": false,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 100,
+      "description_score": 0,
       "h1_score": 100,
-      "score": 99,
-      "recommendation": "OK"
+      "score": 84,
+      "recommendation": "Reforçar cluster na página: "
     }
   ],
   "page_results": [

@@ -55,7 +55,7 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 9
+      "blocks": 10
     },
     {
       "page": "en/index.html",
@@ -162,7 +162,7 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 6
+      "blocks": 7
     },
     {
       "page": "en/almoco.html",

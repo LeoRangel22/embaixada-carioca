@@ -11,13 +11,13 @@ Score mínimo: **100**
 - Score mínimo: 90.
 
 ## Resultados
-- `index.html` — PASS — score 100 — blocos válidos 9
+- `index.html` — PASS — score 100 — blocos válidos 10
   - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, ContactPoint, EntryPoint, FAQPage, FoodEstablishment, GeoCoordinates, ImageObject, ListItem, LocalBusiness, LocationFeatureSpecification, Menu, MenuItem, MenuSection, Neighborhood, Offer, OpeningHoursSpecification, Organization
 - `en/index.html` — PASS — score 100 — blocos válidos 8
   - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, ContactPoint, FAQPage, FoodEstablishment, GeoCoordinates, ListItem, LocalBusiness, LocationFeatureSpecification, Menu, MenuItem, MenuSection, Neighborhood, Offer, OpeningHoursSpecification, Organization, PostalAddress, Question
 - `es/index.html` — PASS — score 100 — blocos válidos 8
   - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, ContactPoint, FAQPage, FoodEstablishment, GeoCoordinates, ListItem, LocalBusiness, LocationFeatureSpecification, Menu, MenuItem, MenuSection, Neighborhood, Offer, OpeningHoursSpecification, Organization, PostalAddress, Question
-- `almoco.html` — PASS — score 100 — blocos válidos 6
+- `almoco.html` — PASS — score 100 — blocos válidos 7
   - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, FAQPage, GeoCoordinates, ListItem, LocationFeatureSpecification, Menu, MenuItem, MenuSection, Neighborhood, Offer, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, TouristAttraction
 - `en/almoco.html` — PASS — score 100 — blocos válidos 7
   - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, FAQPage, GeoCoordinates, ListItem, LocationFeatureSpecification, Menu, MenuItem, MenuSection, Neighborhood, Offer, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, TouristAttraction

@@ -8,7 +8,7 @@ Mode: **check**
 - JSON-LD não pode conter `ratingValue`, `reviewCount`, `ratingCount`, `bestRating` ou `worstRating` ligados a avaliações externas.
 - A nota do Google pode continuar no texto visível da página, mas não no schema estruturado.
 
-Arquivos HTML verificados: **322**
+Arquivos HTML verificados: **329**
 Achados: **0**
 
 ## Arquivos alterados / verificados
@@ -237,6 +237,7 @@ Achados: **0**
 - `_backups/fase4_final/onde-comer-no-pao-de-acucar.html` — ok — blocos JSON-LD: 7 — inválidos: 0
 - `_backups/fase4_final/parque-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 7 — inválidos: 0
 - `_backups/fase4_final/restaurante-morro-da-urca.html` — ok — blocos JSON-LD: 7 — inválidos: 0
+- `_backups/fix_css_leak/index.html` — ok — blocos JSON-LD: 9 — inválidos: 0
 - `_backups/gsc_fixes/contato.html` — ok — blocos JSON-LD: 5 — inválidos: 0
 - `_backups/gsc_fixes/en/contato.html` — ok — blocos JSON-LD: 5 — inválidos: 0
 - `_backups/gsc_fixes/en/nossa-visao.html` — ok — blocos JSON-LD: 5 — inválidos: 0
@@ -244,12 +245,18 @@ Achados: **0**
 - `_backups/gsc_fixes/es/nossa-visao.html` — ok — blocos JSON-LD: 5 — inválidos: 0
 - `_backups/gsc_fixes/nossa-visao.html` — ok — blocos JSON-LD: 5 — inválidos: 0
 - `_backups/gsc_i18n_fix/cafe-da-manha-com-vista-rio-de-janeiro.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/landing_page_optimizations/almoco.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/landing_page_optimizations/cafe-da-manha.html` — ok — blocos JSON-LD: 9 — inválidos: 0
+- `_backups/landing_page_optimizations/index.html` — ok — blocos JSON-LD: 9 — inválidos: 0
+- `_backups/landing_page_optimizations/onde-comer-no-pao-de-acucar.html` — ok — blocos JSON-LD: 7 — inválidos: 0
+- `_backups/landing_page_optimizations/parque-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 8 — inválidos: 0
+- `_backups/landing_page_optimizations/restaurante-morro-da-urca.html` — ok — blocos JSON-LD: 7 — inválidos: 0
 - `_includes/footer.html` — ok — blocos JSON-LD: 0 — inválidos: 0
 - `_includes/head-common.html` — ok — blocos JSON-LD: 0 — inválidos: 0
 - `_includes/nav.html` — ok — blocos JSON-LD: 0 — inválidos: 0
 - `_includes/wa-widget.html` — ok — blocos JSON-LD: 0 — inválidos: 0
 - `almoco-morro-da-urca.html` — ok — blocos JSON-LD: 5 — inválidos: 0
-- `almoco.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `almoco.html` — ok — blocos JSON-LD: 7 — inválidos: 0
 - `cafe-da-manha-com-vista-rio-de-janeiro.html` — ok — blocos JSON-LD: 6 — inválidos: 0
 - `cafe-da-manha-pao-de-acucar.html` — ok — blocos JSON-LD: 4 — inválidos: 0
 - `cafe-da-manha.html` — ok — blocos JSON-LD: 9 — inválidos: 0
@@ -320,7 +327,7 @@ Achados: **0**
 - `gastronomia-carioca.html` — ok — blocos JSON-LD: 6 — inválidos: 0
 - `general-3/index.html` — ok — blocos JSON-LD: 0 — inválidos: 0
 - `guia-do-rio.html` — ok — blocos JSON-LD: 6 — inválidos: 0
-- `index.html` — ok — blocos JSON-LD: 9 — inválidos: 0
+- `index.html` — ok — blocos JSON-LD: 10 — inválidos: 0
 - `morro-da-urca.html` — ok — blocos JSON-LD: 7 — inválidos: 0
 - `nossa-visao.html` — ok — blocos JSON-LD: 5 — inválidos: 0
 - `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 8 — inválidos: 0

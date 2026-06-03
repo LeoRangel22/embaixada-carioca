@@ -102,7 +102,8 @@
 
 
 
-  /* ── BOTTOM NAV: fundo azul escuro + texto claro ── */
+<style id="ec-bottom-nav-css">
+/* ── BOTTOM NAV: fundo azul escuro + texto claro ── */
   .mobile-bottom-nav {
     background: #00405A !important;
     border-top-color: rgba(255,255,255,0.15) !important;
@@ -130,8 +131,8 @@
   .mobile-bottom-nav .bnav-reservar .bnav-icon,
   .mobile-bottom-nav a.bnav-reservar .bnav-icon {
     color: #00405A !important;
-  }}
-
+  }
+</style>
 <style id="hero-mobile-fix">
 /* ── HERO MOBILE: foco no Pão de Açúcar ── */
 @media (max-width: 720px) {
@@ -466,6 +467,54 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 @media(prefers-reduced-motion:reduce){.ec-cc-card,.ec-cc-btn-primary,.ec-cc-btn-secondary{transition:none;}}
 </style>
 <!-- /FASE 4: CSS Conteúdo Campeão -->
+<script type="application/ld+json" id="faq-homepage-jsonld">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Onde fica o restaurante Embaixada Carioca?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Embaixada Carioca fica no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar — na primeira parada do teleférico, com vista direta para o Pão de Açúcar e a Baía de Guanabara. Endereço: Av. Pasteur, 520 — Urca, Rio de Janeiro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Preciso de reserva para almoçar no Morro da Urca?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Recomendamos reservar mesa com antecedência, especialmente nos fins de semana e feriados. Você pode reservar pelo nosso site ou pelo WhatsApp. A reserva no restaurante não inclui o ingresso do Parque Bondinho — compre o ingresso separadamente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quais são os horários de funcionamento do restaurante no Pão de Açúcar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O restaurante Embaixada Carioca funciona todos os dias das 08h30 às 21h00, servindo café da manhã, almoço, happy hour e jantar com vista para o Pão de Açúcar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual é o prato mais famoso do restaurante Embaixada Carioca?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O prato mais pedido é a Picanha Grelhada de 400g, servida com acompanhamentos tradicionais. A Feijoada Premiada — eleita pela Academia da Cachaça — também é servida todos os dias e é um dos maiores destaques do cardápio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O restaurante aceita cartão de crédito e débito?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, aceitamos as principais bandeiras de cartão de crédito e débito, além de Pix. A reserva no restaurante não inclui o ingresso do Parque Bondinho Pão de Açúcar."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body data-screen-label="Home">
 <a class="skip-nav" href="#conteudo-principal">Pular para o conteúdo principal</a><!-- NAV -->
@@ -2175,6 +2224,44 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 <section id="ec-fase4-index" aria-label="Sobre o Restaurante Embaixada Carioca" style="display:none">
   <h2>Restaurante Embaixada Carioca — Morro da Urca, Pão de Açúcar</h2>
   <p>O <strong>restaurante Embaixada Carioca</strong> fica no Morro da Urca, dentro do <strong>Parque Bondinho Pão de Açúcar</strong>, no Rio de Janeiro. É o único <strong>restaurante no Pão de Açúcar</strong> com serviço completo de café da manhã, almoço e happy hour com vista panorâmica para a Baía de Guanabara. O <strong>restaurante Embaixada Carioca</strong> serve a picanha grelhada mais famosa do Rio, feijoada premiada todos os dias e o Chopp Heineken considerado o 2º melhor do Brasil.</p>
+</section>
+<!-- ec-faq-homepage-v1 -->
+<section aria-label="Perguntas Frequentes" class="faq-section ec-faq-section" id="faq">
+  <div class="container">
+    <h2 class="faq-title">Perguntas Frequentes</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-question">Onde fica o restaurante Embaixada Carioca?</summary>
+        <div class="faq-answer">
+          <p>A Embaixada Carioca fica no <strong>Morro da Urca</strong>, dentro do <strong>Parque Bondinho Pão de Açúcar</strong> — na primeira parada do teleférico, com vista direta para o Pão de Açúcar e a Baía de Guanabara. Endereço: Av. Pasteur, 520 — Urca, Rio de Janeiro.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">Preciso de reserva para almoçar no Morro da Urca?</summary>
+        <div class="faq-answer">
+          <p>Recomendamos reservar mesa com antecedência, especialmente nos fins de semana e feriados. Você pode reservar pelo nosso site ou pelo WhatsApp. A reserva no restaurante <strong>não inclui o ingresso</strong> do Parque Bondinho — compre o ingresso separadamente.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">Quais são os horários de funcionamento do restaurante no Pão de Açúcar?</summary>
+        <div class="faq-answer">
+          <p>O restaurante Embaixada Carioca funciona <strong>todos os dias das 08h30 às 21h00</strong>, servindo café da manhã, almoço, happy hour e jantar com vista para o Pão de Açúcar.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">Qual é o prato mais famoso do restaurante Embaixada Carioca?</summary>
+        <div class="faq-answer">
+          <p>O prato mais pedido é a <strong>Picanha Grelhada de 400g</strong>. A <strong>Feijoada Premiada</strong> — eleita pela Academia da Cachaça — também é servida todos os dias e é um dos maiores destaques do cardápio.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">O restaurante aceita cartão de crédito e débito?</summary>
+        <div class="faq-answer">
+          <p>Sim, aceitamos as principais bandeiras de cartão de crédito e débito, além de Pix. A reserva no restaurante <strong>não inclui o ingresso</strong> do Parque Bondinho Pão de Açúcar.</p>
+        </div>
+      </details>
+    </div>
+  </div>
 </section>
 </footer>
 <!-- nav scroll effect -->

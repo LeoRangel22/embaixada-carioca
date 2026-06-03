@@ -1,6 +1,6 @@
 # Relatório de Sincronização i18n PT/EN/ES
 
-Gerado em: 2026-06-03 00:12:16
+Gerado em: 2026-06-03 00:22:10
 
 - PT: 18 arquivos
 - EN: 26 arquivos
@@ -22,7 +22,11 @@ _Nenhuma. Todas as páginas PT têm equivalente ES._
 
 ### `almoco.html`
 
-    - Headings (h1+h2) desbalanceados: PT=15, EN=12, ES=11 (diferença > 1)
+    - Headings (h1+h2) desbalanceados: PT=16, EN=12, ES=11 (diferença > 1)
+
+### `cafe-da-manha.html`
+
+    - Headings (h1+h2) desbalanceados: PT=13, EN=11, ES=12 (diferença > 1)
 
 ### `cardapio.html`
 
@@ -46,7 +50,7 @@ _Nenhuma. Todas as páginas PT têm equivalente ES._
 
 ### `index.html`
 
-    - Headings (h1+h2) desbalanceados: PT=33, EN=24, ES=24 (diferença > 1)
+    - Headings (h1+h2) desbalanceados: PT=34, EN=24, ES=24 (diferença > 1)
 
 ### `parque-bondinho.html`
 
@@ -60,5 +64,5 @@ _Nenhuma. Todas as páginas PT têm equivalente ES._
 | Páginas PT | 18 |
 | PT sem EN | 0 |
 | PT sem ES | 0 |
-| Com problemas hreflang/headings | 9 |
-| Total de issues | 9 |
+| Com problemas hreflang/headings | 10 |
+| Total de issues | 10 |

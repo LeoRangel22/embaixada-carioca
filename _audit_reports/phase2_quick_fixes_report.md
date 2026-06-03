@@ -1,6 +1,6 @@
 # Phase 2 Quick Fixes Report
 
-- index.html: title already fixed
+- index.html: title target not found
 - index.html: unsafe home light-background contrast lock not present
 - index.html: light content contrast lock replaced
 - cafe-da-manha.html: light content contrast lock replaced
