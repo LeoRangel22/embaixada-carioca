@@ -1,0 +1,1210 @@
+[
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "html body[data-screen-label=\"Home\"] section#restaurantes-urca",
+    "props": "display:none!important;\n  visibility:hidden!important;\n  opacity:0!important;\n  height:0!important;\n  min-height:0!important;\n  padding:0!important;\n  margin:0!important;\n  overflow:hidden!important;",
+    "file": "assets/css/ec-home-final-visual-tuning.css",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "@media (min-width:961px)",
+    "props": "header.hero .hero-content .eyebrow.hero-eyebrow,\n  header.page-hero .page-hero-content .eyebrow.hero-eyebrow{position:absolute!important;top:96px!important;left:clamp(78px,5.5vw,112px)!important;trans",
+    "file": "assets/css/ec-index-inline.css",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "@media (min-width: 961px)",
+    "props": "html body[data-screen-label=\"Home\"] header.hero{\n    --hero-up-2cm:76px;\n    --hero-down-1cm:38px;\n    --hero-up-05cm:19px;\n    --hero-down-subtitle:38px;\n    --hero-eyebrow-left:clamp(185px,11.8vw,21",
+    "file": "assets/css/ec-index-inline.css",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body[data-screen-label=\"Home\"] header.hero .hero-content .eyebrow.hero-eyebrow",
+    "props": "position:absolute!important;\n    left:var(--hero-eyebrow-left)!important;\n    top:calc(clamp(136px,16vh,172px) - var(--hero-up-2cm) + var(--hero-down-1cm) - var(--hero-up-05cm))!important;\n    width:c",
+    "file": "assets/css/ec-index-inline.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "nav.top a.btn[href*=\"tagme\"]",
+    "props": "position:relative!important;\n  overflow:hidden!important;\n  animation:ecTopReservePulse 2.8s ease-in-out infinite!important;",
+    "file": "assets/css/ec-index-inline.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "@media (min-width:961px)",
+    "props": "html body header.hero,\n  html body header.page-hero{\n    --ec-hero-up-2cm:76px;\n    --ec-hero-down-1cm:38px;\n    --ec-hero-up-05cm:19px;\n    --ec-hero-down-subtitle:38px;\n    --ec-hero-eyebrow-left:cl",
+    "file": "assets/css/ec-index-inline.css",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow",
+    "props": "position:absolute!important;\n    left:var(--ec-hero-eyebrow-left)!important;\n    top:calc(clamp(136px,16vh,172px) - var(--ec-hero-up-2cm) + var(--ec-hero-down-1cm) - var(--ec-hero-up-05cm))!important;",
+    "file": "assets/css/ec-index-inline.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "html body header.page-hero .ec-page-hero-side-frame",
+    "props": "position:absolute!important;left:clamp(38px,3vw,70px)!important;top:auto!important;\n    bottom:calc(clamp(246px,28.5vh,315px) + var(--ec-hero-up-2cm))!important;\n    width:min(214px,15vw)!important;mi",
+    "file": "assets/css/ec-index-inline.css",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body nav.top .btn",
+    "props": "flex:0 0 auto!important;min-height:56px!important;height:56px!important;border:0!important;box-shadow:none!important;overflow:hidden!important;",
+    "file": "assets/css/ec-index-inline.css",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": ".seo-vh",
+    "props": "position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0",
+    "file": "assets/css/ec-index-inline.css",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": "@media (min-width:961px)",
+    "props": "header.hero .hero-content .eyebrow.hero-eyebrow,\n  header.page-hero .page-hero-content .eyebrow.hero-eyebrow{position:absolute!important;top:96px!important;left:clamp(78px,5.5vw,112px)!important;trans",
+    "file": "assets/css/ec-index-inline.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".hero",
+    "props": "position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;color:var(--areia-pale);overflow:hidden;isolation:isolate",
+    "file": "assets/css/ec-index-inline.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".feijoada",
+    "props": "background:var(--verde);color:var(--areia-pale);overflow:hidden",
+    "file": "assets/css/ec-index-inline.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".reservas-cta-card",
+    "props": "background:var(--verde);border:1px solid rgba(237,226,201,0.18);padding:56px 48px;position:relative;overflow:hidden",
+    "file": "assets/css/ec-index-inline.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": ".btn, .momento-cta",
+    "props": "position: relative !important;\n    overflow: hidden !important;",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "@media (min-width:961px)",
+    "props": "header.hero .hero-content .eyebrow.hero-eyebrow,\n  header.page-hero .page-hero-content .eyebrow.hero-eyebrow{position:absolute!important;top:96px!important;left:clamp(78px,5.5vw,112px)!important;trans",
+    "file": "assets/css/ec-shared.css",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "nav.top a.btn[href*=\"tagme\"]",
+    "props": "position:relative!important;\n  overflow:hidden!important;\n  animation:ecTopReservePulse 2.8s ease-in-out infinite!important;",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "nav.top .btn,nav.top .btn:link,nav.top .btn:visited,nav.top a.btn[href*=\"tagme\"]",
+    "props": "flex:0 0 188px!important;width:188px!important;min-width:188px!important;height:60px!important;min-height:60px!important;margin:0!important;padding:0!important;display:inline-flex!important;align-item",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "nav.top .nav-links",
+    "props": "gap:12px!important;overflow:hidden!important;",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "@media (min-width:961px)",
+    "props": "html body header.hero,\n  html body header.page-hero{\n    --ec-hero-up-2cm:76px;\n    --ec-hero-down-1cm:38px;\n    --ec-hero-up-05cm:19px;\n    --ec-hero-down-subtitle:38px;\n    --ec-hero-eyebrow-left:cl",
+    "file": "assets/css/ec-shared.css",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow",
+    "props": "position:absolute!important;\n    left:var(--ec-hero-eyebrow-left)!important;\n    top:calc(clamp(136px,16vh,172px) - var(--ec-hero-up-2cm) + var(--ec-hero-down-1cm) - var(--ec-hero-up-05cm))!important;",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "html body header.page-hero .ec-page-hero-side-frame",
+    "props": "position:absolute!important;left:clamp(38px,3vw,70px)!important;top:auto!important;\n    bottom:calc(clamp(246px,28.5vh,315px) + var(--ec-hero-up-2cm))!important;\n    width:min(214px,15vw)!important;mi",
+    "file": "assets/css/ec-shared.css",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": ".btn, .momento-cta",
+    "props": "position: relative !important;\n    overflow: hidden !important;",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "nav.top a.btn[href*=\"tagme\"]",
+    "props": "position:relative!important;\n  overflow:hidden!important;\n  animation:ecTopReservePulse 2.8s ease-in-out infinite!important;",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": ".btn, .momento-cta",
+    "props": "position: relative !important;\n    overflow: hidden !important;",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "nav.top a.btn[href*=\"tagme\"]",
+    "props": "position:relative!important;\n  overflow:hidden!important;\n  animation:ecTopReservePulse 2.8s ease-in-out infinite!important;",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": ".seo-vh",
+    "props": "position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": "@media (min-width:961px)",
+    "props": "header.hero .hero-content .eyebrow.hero-eyebrow,\n  header.page-hero .page-hero-content .eyebrow.hero-eyebrow{position:absolute!important;top:96px!important;left:clamp(78px,5.5vw,112px)!important;trans",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": ".seo-vh",
+    "props": "position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".hero",
+    "props": "position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;color:var(--areia-pale);overflow:hidden;isolation:isolate",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".feijoada",
+    "props": "background:var(--verde);color:var(--areia-pale);overflow:hidden",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".reservas-cta-card",
+    "props": "background:var(--verde);border:1px solid rgba(237,226,201,0.18);padding:56px 48px;position:relative;overflow:hidden",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".hero",
+    "props": "position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;color:var(--areia-pale);overflow:hidden;isolation:isolate",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".feijoada",
+    "props": "background:var(--verde);color:var(--areia-pale);overflow:hidden",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".reservations-cta-card",
+    "props": "background:var(--verde);border:1px solid rgba(237,226,201,0.18);padding:56px 48px;position:relative;overflow:hidden",
+    "file": "assets/css/ec-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "html body[data-screen-label=\"Home\"] section#restaurantes-urca",
+    "props": "display:none!important;\n  visibility:hidden!important;\n  opacity:0!important;\n  height:0!important;\n  min-height:0!important;\n  padding:0!important;\n  margin:0!important;\n  overflow:hidden!important;",
+    "file": "assets/css/ec-stabilization-base.css",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "nav.top a.btn[href*=\"tagme\"]",
+    "props": "position:relative!important;\n  overflow:hidden!important;\n  animation:ecTopReservePulse 2.8s ease-in-out infinite!important;",
+    "file": "assets/css/ec-subpages-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "@media (min-width:961px)",
+    "props": "html body header.hero,\n  html body header.page-hero{\n    --ec-hero-up-2cm:76px;\n    --ec-hero-down-1cm:38px;\n    --ec-hero-up-05cm:19px;\n    --ec-hero-down-subtitle:38px;\n    --ec-hero-eyebrow-left:cl",
+    "file": "assets/css/ec-subpages-shared.css",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow",
+    "props": "position:absolute!important;\n    left:var(--ec-hero-eyebrow-left)!important;\n    top:calc(clamp(136px,16vh,172px) - var(--ec-hero-up-2cm) + var(--ec-hero-down-1cm) - var(--ec-hero-up-05cm))!important;",
+    "file": "assets/css/ec-subpages-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "html body header.page-hero .ec-page-hero-side-frame",
+    "props": "position:absolute!important;left:clamp(38px,3vw,70px)!important;top:auto!important;\n    bottom:calc(clamp(246px,28.5vh,315px) + var(--ec-hero-up-2cm))!important;\n    width:min(214px,15vw)!important;mi",
+    "file": "assets/css/ec-subpages-shared.css",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body nav.top .btn",
+    "props": "flex:0 0 auto!important;min-height:56px!important;height:56px!important;border:0!important;box-shadow:none!important;overflow:hidden!important;",
+    "file": "assets/css/ec-subpages-shared.css",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "html body[data-screen-label=\"Home\"] section#restaurantes-urca",
+    "props": "display:none!important;\n  visibility:hidden!important;\n  opacity:0!important;\n  height:0!important;\n  min-height:0!important;\n  padding:0!important;\n  margin:0!important;\n  overflow:hidden!important;",
+    "file": "assets/css/ec-theme.css",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body nav.top .btn",
+    "props": "flex:0 0 auto!important;min-height:56px!important;height:56px!important;border:0!important;box-shadow:none!important;overflow:hidden!important;",
+    "file": "index.html",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": ".seo-vh",
+    "props": "position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0",
+    "file": "index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "display:block; aspect-ratio:4/3; overflow:hidden;",
+    "file": "index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "display:block; aspect-ratio:4/3; overflow:hidden;",
+    "file": "index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "display:block; aspect-ratio:4/3; overflow:hidden;",
+    "file": "index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "display:block; aspect-ratio:5/6; overflow:hidden; border:1px solid var(--rule);",
+    "file": "index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "border-radius:12px;overflow:hidden;aspect-ratio:4/3;display:block;",
+    "file": "index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "border-radius:12px;overflow:hidden;aspect-ratio:4/3;display:block;",
+    "file": "index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "border-radius:12px;overflow:hidden;aspect-ratio:4/3;display:block;",
+    "file": "index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "display:block; aspect-ratio:1/1; overflow:hidden; border:1px solid rgba(237,226,201,0.2);",
+    "file": "index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": ".btn, .momento-cta",
+    "props": "position: relative !important;\n    overflow: hidden !important;",
+    "file": "almoco.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "@media (min-width:961px)",
+    "props": "header.hero .hero-content .eyebrow.hero-eyebrow,\n  header.page-hero .page-hero-content .eyebrow.hero-eyebrow{position:absolute!important;top:96px!important;left:clamp(78px,5.5vw,112px)!important;trans",
+    "file": "almoco.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": ".hero-ctas a,.hero-ctas button,.ctas a,.ctas button,.btn,a.btn,button.btn,.btn-secondary,a.btn-secondary",
+    "props": "min-height:60px!important;height:60px!important;padding:0 36px!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0",
+    "file": "almoco.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "nav.top a.btn[href*=\"tagme\"]",
+    "props": "position:relative!important;\n  overflow:hidden!important;\n  animation:ecTopReservePulse 2.8s ease-in-out infinite!important;",
+    "file": "almoco.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "@media (min-width:961px)",
+    "props": "html body header.hero,\n  html body header.page-hero{\n    --ec-hero-up-2cm:76px;\n    --ec-hero-down-1cm:38px;\n    --ec-hero-up-05cm:19px;\n    --ec-hero-down-subtitle:38px;\n    --ec-hero-eyebrow-left:cl",
+    "file": "almoco.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow",
+    "props": "position:absolute!important;\n    left:var(--ec-hero-eyebrow-left)!important;\n    top:calc(clamp(136px,16vh,172px) - var(--ec-hero-up-2cm) + var(--ec-hero-down-1cm) - var(--ec-hero-up-05cm))!important;",
+    "file": "almoco.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "html body header.page-hero .ec-page-hero-side-frame",
+    "props": "position:absolute!important;left:clamp(38px,3vw,70px)!important;top:auto!important;\n    bottom:calc(clamp(246px,28.5vh,315px) + var(--ec-hero-up-2cm))!important;\n    width:min(214px,15vw)!important;mi",
+    "file": "almoco.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body nav.top .btn",
+    "props": "flex:0 0 auto!important;min-height:56px!important;height:56px!important;border:0!important;box-shadow:none!important;overflow:hidden!important;",
+    "file": "almoco.html",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": ".seo-vh",
+    "props": "position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0",
+    "file": "almoco.html",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": "@media (min-width:961px)",
+    "props": "header.hero .hero-content .eyebrow.hero-eyebrow,\n  header.page-hero .page-hero-content .eyebrow.hero-eyebrow{position:absolute!important;top:96px!important;left:clamp(78px,5.5vw,112px)!important;trans",
+    "file": "almoco.html",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": ".hero-ctas a,.hero-ctas button,.ctas a,.ctas button,.btn,a.btn,button.btn,.btn-secondary,a.btn-secondary",
+    "props": "min-height:60px!important;height:60px!important;padding:0 36px!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0",
+    "file": "almoco.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": ".btn, .momento-cta",
+    "props": "position: relative !important;\n    overflow: hidden !important;",
+    "file": "cafe-da-manha.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "@media (min-width:961px)",
+    "props": "header.hero .hero-content .eyebrow.hero-eyebrow,\n  header.page-hero .page-hero-content .eyebrow.hero-eyebrow{position:absolute!important;top:96px!important;left:clamp(78px,5.5vw,112px)!important;trans",
+    "file": "cafe-da-manha.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": ".hero-ctas a,.hero-ctas button,.ctas a,.ctas button,.btn,a.btn,button.btn,.btn-secondary,a.btn-secondary",
+    "props": "min-height:60px!important;height:60px!important;padding:0 36px!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0",
+    "file": "cafe-da-manha.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "nav.top a.btn[href*=\"tagme\"]",
+    "props": "position:relative!important;\n  overflow:hidden!important;\n  animation:ecTopReservePulse 2.8s ease-in-out infinite!important;",
+    "file": "cafe-da-manha.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "@media (min-width:961px)",
+    "props": "html body header.hero,\n  html body header.page-hero{\n    --ec-hero-up-2cm:76px;\n    --ec-hero-down-1cm:38px;\n    --ec-hero-up-05cm:19px;\n    --ec-hero-down-subtitle:38px;\n    --ec-hero-eyebrow-left:cl",
+    "file": "cafe-da-manha.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow",
+    "props": "position:absolute!important;\n    left:var(--ec-hero-eyebrow-left)!important;\n    top:calc(clamp(136px,16vh,172px) - var(--ec-hero-up-2cm) + var(--ec-hero-down-1cm) - var(--ec-hero-up-05cm))!important;",
+    "file": "cafe-da-manha.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "html body header.page-hero .ec-page-hero-side-frame",
+    "props": "position:absolute!important;left:clamp(38px,3vw,70px)!important;top:auto!important;\n    bottom:calc(clamp(246px,28.5vh,315px) + var(--ec-hero-up-2cm))!important;\n    width:min(214px,15vw)!important;mi",
+    "file": "cafe-da-manha.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body nav.top .btn",
+    "props": "flex:0 0 auto!important;min-height:56px!important;height:56px!important;border:0!important;box-shadow:none!important;overflow:hidden!important;",
+    "file": "cafe-da-manha.html",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": "@media (min-width:961px)",
+    "props": "header.hero .hero-content .eyebrow.hero-eyebrow,\n  header.page-hero .page-hero-content .eyebrow.hero-eyebrow{position:absolute!important;top:96px!important;left:clamp(78px,5.5vw,112px)!important;trans",
+    "file": "cafe-da-manha.html",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": ".hero-ctas a,.hero-ctas button,.ctas a,.ctas button,.btn,a.btn,button.btn,.btn-secondary,a.btn-secondary",
+    "props": "min-height:60px!important;height:60px!important;padding:0 36px!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0",
+    "file": "cafe-da-manha.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".cafe-galeria",
+    "props": "display: grid;\n      grid-template-columns: 2fr 1fr 1fr;\n      grid-template-rows: 280px 280px;\n      gap: 12px;\n      margin-bottom: 3rem;\n      border-radius: 16px;\n      overflow: hidden;",
+    "file": "cafe-da-manha.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".cafe-galeria-item",
+    "props": "position: relative;\n      overflow: hidden;\n      cursor: pointer;",
+    "file": "cafe-da-manha.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".cafe-cta-banner",
+    "props": "position: relative;\n      border-radius: 20px;\n      overflow: hidden;\n      min-height: 320px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;",
+    "file": "cafe-da-manha.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": ".btn, .momento-cta",
+    "props": "position: relative !important;\n    overflow: hidden !important;",
+    "file": "cardapio.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "@media (min-width:961px)",
+    "props": "header.hero .hero-content .eyebrow.hero-eyebrow,\n  header.page-hero .page-hero-content .eyebrow.hero-eyebrow{position:absolute!important;top:96px!important;left:clamp(78px,5.5vw,112px)!important;trans",
+    "file": "cardapio.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": ".hero-ctas a,.hero-ctas button,.ctas a,.ctas button,.btn,a.btn,button.btn,.btn-secondary,a.btn-secondary",
+    "props": "min-height:60px!important;height:60px!important;padding:0 36px!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0",
+    "file": "cardapio.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "nav.top a.btn[href*=\"tagme\"]",
+    "props": "position:relative!important;\n  overflow:hidden!important;\n  animation:ecTopReservePulse 2.8s ease-in-out infinite!important;",
+    "file": "cardapio.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "@media (min-width:961px)",
+    "props": "html body header.hero,\n  html body header.page-hero{\n    --ec-hero-up-2cm:76px;\n    --ec-hero-down-1cm:38px;\n    --ec-hero-up-05cm:19px;\n    --ec-hero-down-subtitle:38px;\n    --ec-hero-eyebrow-left:cl",
+    "file": "cardapio.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow",
+    "props": "position:absolute!important;\n    left:var(--ec-hero-eyebrow-left)!important;\n    top:calc(clamp(136px,16vh,172px) - var(--ec-hero-up-2cm) + var(--ec-hero-down-1cm) - var(--ec-hero-up-05cm))!important;",
+    "file": "cardapio.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "html body header.page-hero .ec-page-hero-side-frame",
+    "props": "position:absolute!important;left:clamp(38px,3vw,70px)!important;top:auto!important;\n    bottom:calc(clamp(246px,28.5vh,315px) + var(--ec-hero-up-2cm))!important;\n    width:min(214px,15vw)!important;mi",
+    "file": "cardapio.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body nav.top .btn",
+    "props": "flex:0 0 auto!important;min-height:56px!important;height:56px!important;border:0!important;box-shadow:none!important;overflow:hidden!important;",
+    "file": "cardapio.html",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": ".seo-vh",
+    "props": "position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0",
+    "file": "cardapio.html",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": "@media (min-width:961px)",
+    "props": "header.hero .hero-content .eyebrow.hero-eyebrow,\n  header.page-hero .page-hero-content .eyebrow.hero-eyebrow{position:absolute!important;top:96px!important;left:clamp(78px,5.5vw,112px)!important;trans",
+    "file": "cardapio.html",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": ".hero-ctas a,.hero-ctas button,.ctas a,.ctas button,.btn,a.btn,button.btn,.btn-secondary,a.btn-secondary",
+    "props": "min-height:60px!important;height:60px!important;padding:0 36px!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0",
+    "file": "cardapio.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": ".ec-priority-audit-links",
+    "props": "position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;overflow:hidden!important;",
+    "file": "eventos.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body nav.top .btn",
+    "props": "flex:0 0 auto!important;min-height:56px!important;height:56px!important;border:0!important;box-shadow:none!important;overflow:hidden!important;",
+    "file": "eventos.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".hero",
+    "props": "position:relative;min-height:92vh;display:flex;align-items:flex-end;color:var(--paper);overflow:hidden;background:var(--azul)",
+    "file": "eventos.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "nav.top a.btn[href*=\"tagme\"]",
+    "props": "position:relative!important;\n  overflow:hidden!important;\n  animation:ecTopReservePulse 2.8s ease-in-out infinite!important;",
+    "file": "como-chegar.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "@media (min-width:961px)",
+    "props": "html body header.hero,\n  html body header.page-hero{\n    --ec-hero-up-2cm:76px;\n    --ec-hero-down-1cm:38px;\n    --ec-hero-up-05cm:19px;\n    --ec-hero-down-subtitle:38px;\n    --ec-hero-eyebrow-left:cl",
+    "file": "como-chegar.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow",
+    "props": "position:absolute!important;\n    left:var(--ec-hero-eyebrow-left)!important;\n    top:calc(clamp(136px,16vh,172px) - var(--ec-hero-up-2cm) + var(--ec-hero-down-1cm) - var(--ec-hero-up-05cm))!important;",
+    "file": "como-chegar.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "html body header.page-hero .ec-page-hero-side-frame",
+    "props": "position:absolute!important;left:clamp(38px,3vw,70px)!important;top:auto!important;\n    bottom:calc(clamp(246px,28.5vh,315px) + var(--ec-hero-up-2cm))!important;\n    width:min(214px,15vw)!important;mi",
+    "file": "como-chegar.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body nav.top .btn",
+    "props": "flex:0 0 auto!important;min-height:56px!important;height:56px!important;border:0!important;box-shadow:none!important;overflow:hidden!important;",
+    "file": "como-chegar.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".nav-links",
+    "props": "list-style:none;display:flex;align-items:center;gap:30px;margin:0;padding:0;overflow:hidden",
+    "file": "como-chegar.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".hero-eyebrow",
+    "props": "position:absolute;left:clamp(185px,11.8vw,215px);top:118px;width:calc(100vw - 520px);white-space:nowrap;overflow:hidden;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.31em;text-t",
+    "file": "como-chegar.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": ".btn,.momento-cta",
+    "props": "position:relative !important;overflow:hidden !important",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "@media (min-width:961px)",
+    "props": "header.hero .hero-content .eyebrow.hero-eyebrow,\n  header.page-hero .page-hero-content .eyebrow.hero-eyebrow{position:absolute!important;top:96px!important;left:clamp(78px,5.5vw,112px)!important;trans",
+    "file": "en/index.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": ".hero-ctas a,.hero-ctas button,.ctas a,.ctas button,.btn,a.btn,button.btn,.btn-secondary,a.btn-secondary",
+    "props": "min-height:60px!important;height:60px!important;padding:0 36px!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "nav.top a.btn[href*=\"tagme\"]",
+    "props": "position:relative!important;\n  overflow:hidden!important;\n  animation:ecTopReservePulse 2.8s ease-in-out infinite!important;",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "@media (min-width:961px)",
+    "props": "html body header.hero,\n  html body header.page-hero{\n    --ec-hero-up-2cm:76px;\n    --ec-hero-down-1cm:38px;\n    --ec-hero-up-05cm:19px;\n    --ec-hero-down-subtitle:38px;\n    --ec-hero-eyebrow-left:cl",
+    "file": "en/index.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow",
+    "props": "position:absolute!important;\n    left:var(--ec-hero-eyebrow-left)!important;\n    top:calc(clamp(136px,16vh,172px) - var(--ec-hero-up-2cm) + var(--ec-hero-down-1cm) - var(--ec-hero-up-05cm))!important;",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "html body header.page-hero .ec-page-hero-side-frame",
+    "props": "position:absolute!important;left:clamp(38px,3vw,70px)!important;top:auto!important;\n    bottom:calc(clamp(246px,28.5vh,315px) + var(--ec-hero-up-2cm))!important;\n    width:min(214px,15vw)!important;mi",
+    "file": "en/index.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body nav.top .btn",
+    "props": "flex:0 0 auto!important;min-height:56px!important;height:56px!important;border:0!important;box-shadow:none!important;overflow:hidden!important;",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": "@media (min-width:961px)",
+    "props": "header.hero .hero-content .eyebrow.hero-eyebrow,\n  header.page-hero .page-hero-content .eyebrow.hero-eyebrow{position:absolute!important;top:96px!important;left:clamp(78px,5.5vw,112px)!important;trans",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": ".hero-ctas a,.hero-ctas button,.ctas a,.ctas button,.btn,a.btn,button.btn,.btn-secondary,a.btn-secondary",
+    "props": "min-height:60px!important;height:60px!important;padding:0 36px!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".hero",
+    "props": "position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;color:var(--areia-pale);overflow:hidden;isolation:isolate",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".feijoada",
+    "props": "background:var(--verde);color:var(--areia-pale);overflow:hidden",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".reservations-cta-card",
+    "props": "background:var(--verde);border:1px solid rgba(237,226,201,0.18);padding:56px 48px;position:relative;overflow:hidden",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".btn,.momento-cta,.btn-reservar",
+    "props": "position:relative;overflow:hidden",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "flex-wrap:nowrap (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".hero-ctas",
+    "props": "flex-wrap:nowrap;gap:10px",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "display:block; aspect-ratio:4/3; overflow:hidden;",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "display:block; aspect-ratio:4/3; overflow:hidden;",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "display:block; aspect-ratio:4/3; overflow:hidden;",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "display:block; aspect-ratio:5/6; overflow:hidden; border:1px solid var(--rule);",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "border-radius:12px;overflow:hidden;aspect-ratio:4/3;display:block;",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "border-radius:12px;overflow:hidden;aspect-ratio:4/3;display:block;",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "border-radius:12px;overflow:hidden;aspect-ratio:4/3;display:block;",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "display:block; aspect-ratio:1/1; overflow:hidden; border:1px solid rgba(237,226,201,0.2);",
+    "file": "en/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": ".btn,.momento-cta",
+    "props": "position:relative !important;overflow:hidden !important",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "@media (min-width:961px)",
+    "props": "header.hero .hero-content .eyebrow.hero-eyebrow,\n  header.page-hero .page-hero-content .eyebrow.hero-eyebrow{position:absolute!important;top:96px!important;left:clamp(78px,5.5vw,112px)!important;trans",
+    "file": "es/index.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": ".hero-ctas a,.hero-ctas button,.ctas a,.ctas button,.btn,a.btn,button.btn,.btn-secondary,a.btn-secondary",
+    "props": "min-height:60px!important;height:60px!important;padding:0 36px!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "nav.top a.btn[href*=\"tagme\"]",
+    "props": "position:relative!important;\n  overflow:hidden!important;\n  animation:ecTopReservePulse 2.8s ease-in-out infinite!important;",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "@media (min-width:961px)",
+    "props": "html body header.hero,\n  html body header.page-hero{\n    --ec-hero-up-2cm:76px;\n    --ec-hero-down-1cm:38px;\n    --ec-hero-up-05cm:19px;\n    --ec-hero-down-subtitle:38px;\n    --ec-hero-eyebrow-left:cl",
+    "file": "es/index.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body header.page-hero .page-hero-content .eyebrow.hero-eyebrow",
+    "props": "position:absolute!important;\n    left:var(--ec-hero-eyebrow-left)!important;\n    top:calc(clamp(136px,16vh,172px) - var(--ec-hero-up-2cm) + var(--ec-hero-down-1cm) - var(--ec-hero-up-05cm))!important;",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "MEDIUM",
+    "selector": "html body header.page-hero .ec-page-hero-side-frame",
+    "props": "position:absolute!important;left:clamp(38px,3vw,70px)!important;top:auto!important;\n    bottom:calc(clamp(246px,28.5vh,315px) + var(--ec-hero-up-2cm))!important;\n    width:min(214px,15vw)!important;mi",
+    "file": "es/index.html",
+    "risky": false
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "html body nav.top .btn",
+    "props": "flex:0 0 auto!important;min-height:56px!important;height:56px!important;border:0!important;box-shadow:none!important;overflow:hidden!important;",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": "@media (min-width:961px)",
+    "props": "header.hero .hero-content .eyebrow.hero-eyebrow,\n  header.page-hero .page-hero-content .eyebrow.hero-eyebrow{position:absolute!important;top:96px!important;left:clamp(78px,5.5vw,112px)!important;trans",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "white-space:nowrap + overflow:hidden",
+    "severity": "HIGH",
+    "selector": ".hero-ctas a,.hero-ctas button,.ctas a,.ctas button,.btn,a.btn,button.btn,.btn-secondary,a.btn-secondary",
+    "props": "min-height:60px!important;height:60px!important;padding:0 36px!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:0",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".hero",
+    "props": "position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;color:var(--areia-pale);overflow:hidden;isolation:isolate",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".feijoada",
+    "props": "background:var(--verde);color:var(--areia-pale);overflow:hidden",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".reservas-cta-card",
+    "props": "background:var(--verde);border:1px solid rgba(237,226,201,0.18);padding:56px 48px;position:relative;overflow:hidden",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".btn,.momento-cta,.btn-reservar",
+    "props": "position:relative;overflow:hidden",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "flex-wrap:nowrap (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".hero-ctas",
+    "props": "flex-wrap:nowrap;gap:10px",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "display:block; aspect-ratio:4/3; overflow:hidden;",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "display:block; aspect-ratio:4/3; overflow:hidden;",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "display:block; aspect-ratio:4/3; overflow:hidden;",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "display:block; aspect-ratio:5/6; overflow:hidden; border:1px solid var(--rule);",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "border-radius:12px;overflow:hidden;aspect-ratio:4/3;display:block;",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "border-radius:12px;overflow:hidden;aspect-ratio:4/3;display:block;",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "border-radius:12px;overflow:hidden;aspect-ratio:4/3;display:block;",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "inline style overflow:hidden",
+    "severity": "MEDIUM",
+    "selector": "<picture> tag",
+    "props": "display:block; aspect-ratio:1/1; overflow:hidden; border:1px solid rgba(237,226,201,0.2);",
+    "file": "es/index.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "nav.top a.btn[href*=\"tagme\"]",
+    "props": "position:relative!important;\n  overflow:hidden!important;\n  animation:ecTopReservePulse 2.8s ease-in-out infinite!important;",
+    "file": "offline.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".hero",
+    "props": "position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;color:var(--areia-pale);overflow:hidden;isolation:isolate",
+    "file": "offline.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".feijoada",
+    "props": "background:var(--verde);color:var(--areia-pale);overflow:hidden",
+    "file": "offline.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".reservas-cta-card",
+    "props": "background:var(--verde);border:1px solid rgba(237.779,201,0.18);padding:56px 48px;position:relative;overflow:hidden",
+    "file": "offline.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden!important",
+    "severity": "HIGH",
+    "selector": "nav.top a.btn[href*=\"tagme\"]",
+    "props": "position:relative!important;\n  overflow:hidden!important;\n  animation:ecTopReservePulse 2.8s ease-in-out infinite!important;",
+    "file": "404.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".hero",
+    "props": "position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;color:var(--areia-pale);overflow:hidden;isolation:isolate",
+    "file": "404.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".feijoada",
+    "props": "background:var(--verde);color:var(--areia-pale);overflow:hidden",
+    "file": "404.html",
+    "risky": true
+  },
+  {
+    "type": "overflow:hidden (sem !important)",
+    "severity": "MEDIUM",
+    "selector": ".reservas-cta-card",
+    "props": "background:var(--verde);border:1px solid rgba(237.779,201,0.18);padding:56px 48px;position:relative;overflow:hidden",
+    "file": "404.html",
+    "risky": true
+  }
+]

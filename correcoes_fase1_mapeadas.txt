@@ -1,0 +1,70 @@
+=== MAPEAMENTO DE CORREÇÕES — FASE 1: HIGIENE DE CÓDIGO ===
+
+1. REMOÇÃO DE DUPLICADOS (CSS / JS)
+   - index.html:
+     - Remover link duplicado de '/assets/css/ec-contrast-fixes.css' (linha 2579). Manter apenas a primeira ocorrência (linha 201).
+     - Remover script duplicado de '/assets/dossie-content-enhancer.js' (linha 2538). Manter apenas a primeira ocorrência (linha 2350).
+   - almoco.html, cafe-da-manha.html, cardapio.html, como-chegar.html, guia-do-rio.html, restaurante-morro-da-urca.html:
+     - Remover link duplicado de '/assets/css/ec-contrast-fixes.css' no final do arquivo (linhas ~1100 a ~3900). Manter apenas o link no <head> ou no início do body (linhas ~200 a ~2300).
+
+2. OTIMIZAÇÃO DE TÍTULOS (TITLE TAGS)
+   Títulos com mais de 60 caracteres devem ser otimizados para evitar truncamento nas SERPs:
+   - index.html:
+     - Atual (79 chars): "Embaixada Carioca — Restaurante no Morro da Urca com Vista para o Pão de Açúcar"
+     - Sugestão (57 chars): "Embaixada Carioca | Restaurante no Morro da Urca com Vista"
+   - morro-da-urca.html:
+     - Atual (74 chars): "Morro da Urca — Restaurante Embaixada Carioca | Vista para o Pão de Açúcar"
+     - Sugestão (58 chars): "Morro da Urca | Restaurante Embaixada Carioca com Vista"
+   - restaurantes-romanticos-rio-de-janeiro.html:
+     - Atual (69 chars): "Restaurante Romântico no Rio de Janeiro com Vista | Embaixada Carioca"
+     - Sugestão (59 chars): "Restaurante Romântico no Rio com Vista | Embaixada Carioca"
+   - almoco-morro-da-urca.html:
+     - Atual (65 chars): "Onde Almoçar no Morro da Urca e Pão de Açúcar | Embaixada Carioca"
+     - Sugestão (59 chars): "Onde Almoçar no Morro da Urca | Embaixada Carioca"
+   - parque-bondinho-pao-de-acucar.html:
+     - Atual (65 chars): "Pão de Açúcar — Onde Comer no Parque Bondinho | Embaixada Carioca"
+     - Sugestão (58 chars): "Onde Comer no Parque Bondinho Pão de Açúcar | Embaixada"
+   - cafe-da-manha.html:
+     - Atual (64 chars): "Café da Manhã com Vista para o Pão de Açúcar | Embaixada Carioca"
+     - Sugestão (59 chars): "Café da Manhã no Morro da Urca | Embaixada Carioca"
+   - por-do-sol-morro-da-urca.html:
+     - Atual (63 chars): "Pôr do Sol no Pão de Açúcar e Morro da Urca | Embaixada Carioca"
+     - Sugestão (57 chars): "Pôr do Sol no Morro da Urca | Embaixada Carioca"
+   - roteiro-meio-dia-urca-pao-de-acucar.html:
+     - Atual (63 chars): "Roteiro de Meio Dia na Urca e Pão de Açúcar | Embaixada Carioca"
+     - Sugestão (57 chars): "Roteiro de Meio Dia na Urca | Embaixada Carioca"
+   - cafe-da-manha-com-vista-rio-de-janeiro.html:
+     - Atual (61 chars): "Café da Manhã com Vista no Rio de Janeiro | Embaixada Carioca"
+     - Sugestão (59 chars): "Café da Manhã com Vista no Rio | Embaixada Carioca"
+
+3. OTIMIZAÇÃO DE DESCRIÇÕES (META DESCRIPTION)
+   Descrições longas (>160 chars) truncam nas buscas. Otimização recomendada:
+   - parque-bondinho-pao-de-acucar.html:
+     - Atual (227 chars): "Onde comer no Pão de Açúcar e no Parque Bondinho: a Embaixada Carioca fica no Morro da Urca, primeira parada do bondinho, com café da manhã, almoço brasileiro, feijoada premiada, caipirinhas e vista direta para o Pão de Açúcar."
+     - Sugestão (155 chars): "Onde comer no Pão de Açúcar? A Embaixada Carioca fica no Morro da Urca (Parque Bondinho) e serve café da manhã, almoço e feijoada premiada com vista direta."
+   - parque-bondinho.html:
+     - Atual (170 chars): "Como funciona o acesso à Embaixada Carioca no Parque Bondinho: pelo bondinho com ingresso ou pela trilha do Morro da Urca quando aberta; ingresso só para usar teleférico."
+     - Sugestão (148 chars): "Saiba como acessar a Embaixada Carioca no Parque Bondinho: subida de bondinho com ingresso ou pela Trilha do Morro da Urca. Veja dicas de acesso."
+
+4. IMPLEMENTAÇÃO DE HREFLANG
+   - cafe-da-manha-com-vista-rio-de-janeiro.html:
+     Adicionar no <head>:
+     <link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html">
+     <link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cafe-da-manha-com-vista-rio-de-janeiro.html">
+     <link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cafe-da-manha-com-vista-rio-de-janeiro.html">
+     <link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html">
+   - 404.html e offline.html:
+     Remover qualquer herança de internacionalização ou manter apenas hreflang apontando para a própria página padrão para evitar indexação de páginas de erro em múltiplos idiomas.
+
+5. IMPLEMENTAÇÃO DE SRCSET PARA IMAGENS COM VARIANTES DISPONÍVEIS
+   Para as 3 imagens de conteúdo com variantes geradas no repositório, aplicar a substituição:
+   - /assets/cafe-da-manha-mesa-opt.webp:
+     srcset="/assets/cafe-da-manha-mesa-opt-400w.webp 400w, /assets/cafe-da-manha-mesa-opt-800w.webp 800w" sizes="(max-width: 768px) 100vw, 560px"
+   - /assets/gin-tonic-vista.webp:
+     srcset="/assets/gin-tonic-vista-400w.webp 400w, /assets/gin-tonic-vista-800w.webp 800w" sizes="(max-width: 768px) 100vw, 560px"
+   - /assets/hero.webp:
+     srcset="/assets/hero-400w.webp 400w, /assets/hero-800w.webp 800w, /assets/hero-1200w.webp 1200w" sizes="100vw"
+
+6. SITEMAP — ATUALIZAÇÃO DO LASTMOD
+   - sitemap.xml:
+     - Adicionar tag <lastmod>2026-06-02</lastmod> em todas as 30 URLs que estão sem a propriedade. Isso informa aos rastreadores a última data de atualização e acelera a indexação das correções de código.

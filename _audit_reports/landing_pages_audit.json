@@ -1,0 +1,804 @@
+{
+  "index.html": {
+    "page": "index.html",
+    "size_kb": 229.0,
+    "intent": "navegacional + informacional",
+    "persona": "turista pesquisando antes da visita",
+    "keywords": {
+      "restaurante morro da urca": {
+        "count": 44,
+        "status": "✅",
+        "is_primary": true
+      },
+      "restaurante pão de açúcar": {
+        "count": 13,
+        "status": "✅",
+        "is_primary": true
+      },
+      "restaurante embaixada carioca": {
+        "count": 8,
+        "status": "✅",
+        "is_primary": true
+      },
+      "onde comer morro da urca": {
+        "count": 0,
+        "status": "❌",
+        "is_primary": false
+      },
+      "almoço morro da urca": {
+        "count": 4,
+        "status": "✅",
+        "is_primary": false
+      }
+    },
+    "structure": {
+      "h1_count": 1,
+      "h1_texts": [
+        "Restaurante noMorro da Urca—a alma cariocaem frente aoPão de Açúcar."
+      ],
+      "h2_count": 32,
+      "h3_count": 72,
+      "paragraph_count": 162,
+      "has_main": true,
+      "has_hero": true,
+      "has_pratos_section": false,
+      "has_reviews_section": true,
+      "has_map_section": false,
+      "has_hours_section": true,
+      "word_count": 8319
+    },
+    "ctas": {
+      "whatsapp_count": 12,
+      "whatsapp_texts": [
+        "+55 21 96683-7556",
+        "📞 +55 21 96683-7556",
+        "WhatsApp"
+      ],
+      "reservation_count": 11,
+      "phone_count": 1,
+      "cta_links": [
+        "Reservar via Tagme",
+        "Reservar minha mesa →",
+        "Reservar para a feijoada",
+        "Reserve com antecedência →",
+        "Reservar mesa na Embaixada"
+      ],
+      "has_floating_cta": true
+    },
+    "faq": {
+      "has_faq_section": true,
+      "faq_items_count": 0,
+      "has_faq_schema": true,
+      "faq_questions": []
+    },
+    "schema": {
+      "types": [
+        [
+          "Restaurant",
+          "FoodEstablishment",
+          "LocalBusiness"
+        ],
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "Restaurant",
+        "WebSite",
+        "BreadcrumbList",
+        "Restaurant",
+        "FAQPage",
+        "Restaurant",
+        "WebPage"
+      ],
+      "has_restaurant": true,
+      "has_faq": true,
+      "has_breadcrumb": true,
+      "has_local_business": true,
+      "schema_count": 11
+    },
+    "images": {
+      "total": 40,
+      "without_alt": 0,
+      "without_srcset": 30,
+      "with_lazy": 38,
+      "alt_coverage": 100.0
+    },
+    "internal_links": {
+      "count": 50,
+      "sample": [
+        "/es/",
+        "cardapio.html#petiscos",
+        "/o-que-fazer-depois-do-bondinho-pao-de-acucar.html",
+        "almoco.html",
+        "/almoco.html",
+        "/cardapio.html",
+        "/",
+        "guia-do-rio.html"
+      ]
+    },
+    "opportunities": [
+      "🟡 P1: FAQ com apenas 0 perguntas — ideal ≥ 5 para AIO"
+    ],
+    "score": 100
+  },
+  "almoco.html": {
+    "page": "almoco.html",
+    "size_kb": 210.6,
+    "intent": "transacional",
+    "persona": "turista no bondinho decidindo onde almoçar",
+    "keywords": {
+      "almoço morro da urca": {
+        "count": 18,
+        "status": "✅",
+        "is_primary": true
+      },
+      "almoço pão de açúcar": {
+        "count": 3,
+        "status": "⚠️",
+        "is_primary": true
+      },
+      "almoço embaixada carioca": {
+        "count": 1,
+        "status": "❌",
+        "is_primary": true
+      },
+      "restaurante morro da urca": {
+        "count": 13,
+        "status": "✅",
+        "is_primary": false
+      },
+      "onde comer morro da urca": {
+        "count": 0,
+        "status": "❌",
+        "is_primary": false
+      }
+    },
+    "structure": {
+      "h1_count": 1,
+      "h1_texts": [
+        "Almoçopremiadono Pão de Açúcar—Restaurante Morro da Urca."
+      ],
+      "h2_count": 14,
+      "h3_count": 10,
+      "paragraph_count": 34,
+      "has_main": true,
+      "has_hero": true,
+      "has_pratos_section": true,
+      "has_reviews_section": true,
+      "has_map_section": false,
+      "has_hours_section": false,
+      "word_count": 1866
+    },
+    "ctas": {
+      "whatsapp_count": 4,
+      "whatsapp_texts": [
+        "💬 Iniciar conversa",
+        "1",
+        "WhatsApp: +55 21 96683-7556"
+      ],
+      "reservation_count": 4,
+      "phone_count": 1,
+      "cta_links": [
+        "Reservar via Tagme",
+        "Reservar para a feijoada",
+        "Reservar Mesa",
+        "Reservar mesa",
+        "📅Reservar"
+      ],
+      "has_floating_cta": true
+    },
+    "faq": {
+      "has_faq_section": true,
+      "faq_items_count": 0,
+      "has_faq_schema": true,
+      "faq_questions": []
+    },
+    "schema": {
+      "types": [
+        "Restaurant",
+        "BreadcrumbList",
+        "Menu",
+        "WebPage",
+        "Restaurant",
+        "WebSite",
+        "BreadcrumbList",
+        "Restaurant",
+        "Restaurant",
+        "FAQPage",
+        "FAQPage"
+      ],
+      "has_restaurant": true,
+      "has_faq": true,
+      "has_breadcrumb": true,
+      "has_local_business": true,
+      "schema_count": 11
+    },
+    "images": {
+      "total": 17,
+      "without_alt": 0,
+      "without_srcset": 11,
+      "with_lazy": 16,
+      "alt_coverage": 100.0
+    },
+    "internal_links": {
+      "count": 41,
+      "sample": [
+        "/es/",
+        "index.html",
+        "almoco.html",
+        "/almoco.html",
+        "/cardapio.html",
+        "/",
+        "guia-do-rio.html",
+        "cardapio.html"
+      ]
+    },
+    "opportunities": [
+      "🔴 P0: 2 keywords primárias com densidade < 4x",
+      "🟡 P1: FAQ com apenas 0 perguntas — ideal ≥ 5 para AIO"
+    ],
+    "score": 80
+  },
+  "almoco-morro-da-urca.html": {
+    "page": "almoco-morro-da-urca.html",
+    "size_kb": 120.8,
+    "intent": "transacional",
+    "persona": "turista buscando opção de almoço específica",
+    "keywords": {
+      "almoço morro da urca": {
+        "count": 25,
+        "status": "✅",
+        "is_primary": true
+      },
+      "restaurante morro da urca": {
+        "count": 6,
+        "status": "✅",
+        "is_primary": true
+      },
+      "almoço pão de açúcar": {
+        "count": 3,
+        "status": "⚠️",
+        "is_primary": false
+      },
+      "onde comer morro da urca": {
+        "count": 5,
+        "status": "✅",
+        "is_primary": false
+      }
+    },
+    "structure": {
+      "h1_count": 1,
+      "h1_texts": [
+        "Onde Almoçar no Morro da Urca"
+      ],
+      "h2_count": 9,
+      "h3_count": 7,
+      "paragraph_count": 18,
+      "has_main": true,
+      "has_hero": true,
+      "has_pratos_section": false,
+      "has_reviews_section": true,
+      "has_map_section": false,
+      "has_hours_section": false,
+      "word_count": 1021
+    },
+    "ctas": {
+      "whatsapp_count": 1,
+      "whatsapp_texts": [
+        ""
+      ],
+      "reservation_count": 1,
+      "phone_count": 0,
+      "cta_links": [
+        "Ver cardápio completo",
+        "Reservar almoço",
+        "Reservar",
+        "Reservar Mesa Agora"
+      ],
+      "has_floating_cta": true
+    },
+    "faq": {
+      "has_faq_section": true,
+      "faq_items_count": 4,
+      "has_faq_schema": true,
+      "faq_questions": [
+        "A Embaixada Carioca fica dentro do Parque Bondinho?",
+        "Preciso planejar o acesso antes de ir?",
+        "É melhor para café, almoço ou drinks?",
+        "Grupos devem reservar?"
+      ]
+    },
+    "schema": {
+      "types": [
+        "WebPage",
+        "Restaurant",
+        "WebSite",
+        "BreadcrumbList",
+        "FAQPage",
+        "FAQPage",
+        "Restaurant"
+      ],
+      "has_restaurant": true,
+      "has_faq": true,
+      "has_breadcrumb": true,
+      "has_local_business": true,
+      "schema_count": 7
+    },
+    "images": {
+      "total": 5,
+      "without_alt": 0,
+      "without_srcset": 2,
+      "with_lazy": 3,
+      "alt_coverage": 100.0
+    },
+    "internal_links": {
+      "count": 14,
+      "sample": [
+        "/almoco.html",
+        "/cardapio.html",
+        "/",
+        "/es/",
+        "/restaurante-morro-da-urca.html",
+        "/eventos.html",
+        "/en/",
+        "/guia-do-rio.html"
+      ]
+    },
+    "opportunities": [],
+    "score": 100
+  },
+  "restaurante-morro-da-urca.html": {
+    "page": "restaurante-morro-da-urca.html",
+    "size_kb": 122.1,
+    "intent": "informacional + transacional",
+    "persona": "turista pesquisando restaurantes no Morro da Urca",
+    "keywords": {
+      "restaurante morro da urca": {
+        "count": 43,
+        "status": "✅",
+        "is_primary": true
+      },
+      "restaurante pão de açúcar": {
+        "count": 11,
+        "status": "✅",
+        "is_primary": true
+      },
+      "onde comer morro da urca": {
+        "count": 7,
+        "status": "✅",
+        "is_primary": false
+      },
+      "restaurante embaixada carioca": {
+        "count": 0,
+        "status": "❌",
+        "is_primary": false
+      }
+    },
+    "structure": {
+      "h1_count": 1,
+      "h1_texts": [
+        "Restaurante no Morro da Urca"
+      ],
+      "h2_count": 10,
+      "h3_count": 12,
+      "paragraph_count": 27,
+      "has_main": true,
+      "has_hero": true,
+      "has_pratos_section": false,
+      "has_reviews_section": true,
+      "has_map_section": false,
+      "has_hours_section": false,
+      "word_count": 1151
+    },
+    "ctas": {
+      "whatsapp_count": 1,
+      "whatsapp_texts": [
+        ""
+      ],
+      "reservation_count": 1,
+      "phone_count": 0,
+      "cta_links": [
+        "Reservar mesa",
+        "Reservar",
+        "Ver cardápio"
+      ],
+      "has_floating_cta": true
+    },
+    "faq": {
+      "has_faq_section": true,
+      "faq_items_count": 4,
+      "has_faq_schema": true,
+      "faq_questions": [
+        "A Embaixada Carioca fica dentro do Parque Bondinho?",
+        "Precisa comprar ingresso do Bondinho?",
+        "Serve café da manhã e almoço?",
+        "Esta página é uma comparação oficial com concorrentes?"
+      ]
+    },
+    "schema": {
+      "types": [
+        "Restaurant",
+        "BreadcrumbList",
+        "ItemList",
+        "Restaurant",
+        "WebSite",
+        "BreadcrumbList",
+        "FAQPage",
+        "WebPage",
+        "FAQPage"
+      ],
+      "has_restaurant": true,
+      "has_faq": true,
+      "has_breadcrumb": true,
+      "has_local_business": true,
+      "schema_count": 9
+    },
+    "images": {
+      "total": 3,
+      "without_alt": 0,
+      "without_srcset": 1,
+      "with_lazy": 2,
+      "alt_coverage": 100.0
+    },
+    "internal_links": {
+      "count": 20,
+      "sample": [
+        "/almoco.html",
+        "/restaurante-bondinho-pao-de-acucar.html",
+        "/cardapio.html",
+        "/",
+        "/almoco-morro-da-urca.html",
+        "/es/",
+        "/restaurantes-perto-do-pao-de-acucar.html",
+        "/cafe-da-manha-com-vista-rio-de-janeiro.html"
+      ]
+    },
+    "opportunities": [],
+    "score": 100
+  },
+  "onde-comer-no-pao-de-acucar.html": {
+    "page": "onde-comer-no-pao-de-acucar.html",
+    "size_kb": 118.6,
+    "intent": "informacional",
+    "persona": "turista pesquisando opções de alimentação no Pão de Açúcar",
+    "keywords": {
+      "onde comer pão de açúcar": {
+        "count": 26,
+        "status": "✅",
+        "is_primary": true
+      },
+      "onde comer morro da urca": {
+        "count": 6,
+        "status": "✅",
+        "is_primary": true
+      },
+      "restaurante pão de açúcar": {
+        "count": 8,
+        "status": "✅",
+        "is_primary": false
+      },
+      "restaurante morro da urca": {
+        "count": 5,
+        "status": "✅",
+        "is_primary": false
+      }
+    },
+    "structure": {
+      "h1_count": 1,
+      "h1_texts": [
+        "Onde comer no Pão de Açúcar"
+      ],
+      "h2_count": 9,
+      "h3_count": 11,
+      "paragraph_count": 24,
+      "has_main": true,
+      "has_hero": true,
+      "has_pratos_section": false,
+      "has_reviews_section": true,
+      "has_map_section": false,
+      "has_hours_section": false,
+      "word_count": 974
+    },
+    "ctas": {
+      "whatsapp_count": 1,
+      "whatsapp_texts": [
+        ""
+      ],
+      "reservation_count": 1,
+      "phone_count": 0,
+      "cta_links": [
+        "Reservar mesa",
+        "Reservar",
+        "Ver cardápio"
+      ],
+      "has_floating_cta": true
+    },
+    "faq": {
+      "has_faq_section": true,
+      "faq_items_count": 4,
+      "has_faq_schema": true,
+      "faq_questions": [
+        "A Embaixada Carioca fica dentro do Parque Bondinho?",
+        "Precisa comprar ingresso do Bondinho?",
+        "Serve café da manhã e almoço?",
+        "Esta página é uma comparação oficial com concorrentes?"
+      ]
+    },
+    "schema": {
+      "types": [
+        "Restaurant",
+        "BreadcrumbList",
+        "ItemList",
+        "Restaurant",
+        "WebSite",
+        "BreadcrumbList",
+        "FAQPage",
+        "WebPage",
+        "FAQPage"
+      ],
+      "has_restaurant": true,
+      "has_faq": true,
+      "has_breadcrumb": true,
+      "has_local_business": true,
+      "schema_count": 9
+    },
+    "images": {
+      "total": 3,
+      "without_alt": 0,
+      "without_srcset": 1,
+      "with_lazy": 2,
+      "alt_coverage": 100.0
+    },
+    "internal_links": {
+      "count": 19,
+      "sample": [
+        "/almoco.html",
+        "/restaurante-bondinho-pao-de-acucar.html",
+        "/cardapio.html",
+        "/",
+        "/almoco-morro-da-urca.html",
+        "/es/",
+        "/restaurantes-perto-do-pao-de-acucar.html",
+        "/restaurante-morro-da-urca.html"
+      ]
+    },
+    "opportunities": [],
+    "score": 100
+  },
+  "cafe-da-manha.html": {
+    "page": "cafe-da-manha.html",
+    "size_kb": 226.2,
+    "intent": "transacional",
+    "persona": "turista buscando café da manhã com vista",
+    "keywords": {
+      "café da manhã morro da urca": {
+        "count": 17,
+        "status": "✅",
+        "is_primary": true
+      },
+      "café da manhã pão de açúcar": {
+        "count": 18,
+        "status": "✅",
+        "is_primary": true
+      },
+      "café da manhã embaixada carioca": {
+        "count": 0,
+        "status": "❌",
+        "is_primary": true
+      },
+      "restaurante morro da urca": {
+        "count": 5,
+        "status": "✅",
+        "is_primary": false
+      },
+      "onde comer morro da urca": {
+        "count": 0,
+        "status": "❌",
+        "is_primary": false
+      }
+    },
+    "structure": {
+      "h1_count": 1,
+      "h1_texts": [
+        "Café da manhãcom vistapara o Pão de Açúcar — Morro da Urca."
+      ],
+      "h2_count": 11,
+      "h3_count": 18,
+      "paragraph_count": 38,
+      "has_main": true,
+      "has_hero": true,
+      "has_pratos_section": true,
+      "has_reviews_section": true,
+      "has_map_section": false,
+      "has_hours_section": true,
+      "word_count": 2498
+    },
+    "ctas": {
+      "whatsapp_count": 3,
+      "whatsapp_texts": [
+        "💬 Iniciar conversa",
+        "1",
+        "WhatsApp: +55 21 96683-7556"
+      ],
+      "reservation_count": 3,
+      "phone_count": 1,
+      "cta_links": [
+        "Reservar Mesa",
+        "Reservar",
+        "Reservar mesa",
+        "📅Reservar",
+        "Ver cardápio completo"
+      ],
+      "has_floating_cta": false
+    },
+    "faq": {
+      "has_faq_section": true,
+      "faq_items_count": 11,
+      "has_faq_schema": true,
+      "faq_questions": [
+        "O café da manhã é servido todos os dias?",
+        "Precisa de reserva para o café da manhã?",
+        "Qual o horário do café da manhã no Pão de Açúcar?",
+        "Preciso pagar o Bondinho para tomar café da manhã?",
+        "Qual é o horário do café da manhã?"
+      ]
+    },
+    "schema": {
+      "types": [
+        "Restaurant",
+        "BreadcrumbList",
+        "WebPage",
+        "WebPage",
+        "FoodEvent",
+        "Restaurant",
+        "WebSite",
+        "BreadcrumbList",
+        "Restaurant",
+        "FAQPage",
+        "Restaurant",
+        "Restaurant",
+        "FAQPage"
+      ],
+      "has_restaurant": true,
+      "has_faq": true,
+      "has_breadcrumb": true,
+      "has_local_business": true,
+      "schema_count": 13
+    },
+    "images": {
+      "total": 19,
+      "without_alt": 0,
+      "without_srcset": 13,
+      "with_lazy": 18,
+      "alt_coverage": 100.0
+    },
+    "internal_links": {
+      "count": 42,
+      "sample": [
+        "/es/",
+        "index.html",
+        "almoco.html",
+        "/almoco.html",
+        "/cardapio.html",
+        "/",
+        "guia-do-rio.html",
+        "cardapio.html"
+      ]
+    },
+    "opportunities": [
+      "🔴 P0: 1 keywords primárias com densidade < 4x"
+    ],
+    "score": 100
+  },
+  "parque-bondinho-pao-de-acucar.html": {
+    "page": "parque-bondinho-pao-de-acucar.html",
+    "size_kb": 116.2,
+    "intent": "informacional",
+    "persona": "turista pesquisando sobre o Parque Bondinho e alimentação",
+    "keywords": {
+      "restaurante pão de açúcar": {
+        "count": 21,
+        "status": "✅",
+        "is_primary": true
+      },
+      "onde comer pão de açúcar": {
+        "count": 13,
+        "status": "✅",
+        "is_primary": true
+      },
+      "restaurante morro da urca": {
+        "count": 8,
+        "status": "✅",
+        "is_primary": false
+      },
+      "almoço pão de açúcar": {
+        "count": 2,
+        "status": "⚠️",
+        "is_primary": false
+      }
+    },
+    "structure": {
+      "h1_count": 1,
+      "h1_texts": [
+        "Onde comer no Parque Bondinho Pão de Açúcar"
+      ],
+      "h2_count": 6,
+      "h3_count": 10,
+      "paragraph_count": 22,
+      "has_main": true,
+      "has_hero": true,
+      "has_pratos_section": false,
+      "has_reviews_section": true,
+      "has_map_section": false,
+      "has_hours_section": false,
+      "word_count": 1021
+    },
+    "ctas": {
+      "whatsapp_count": 0,
+      "whatsapp_texts": [],
+      "reservation_count": 0,
+      "phone_count": 0,
+      "cta_links": [
+        "Reservar mesa",
+        "Reservar",
+        "Ver cardápio"
+      ],
+      "has_floating_cta": false
+    },
+    "faq": {
+      "has_faq_section": true,
+      "faq_items_count": 7,
+      "has_faq_schema": true,
+      "faq_questions": [
+        "A Embaixada Carioca fica dentro do Parque Bondinho?",
+        "Precisa comprar ingresso do Bondinho?",
+        "Serve café da manhã e almoço?",
+        "Esta página é uma comparação oficial com concorrentes?",
+        "Tem restaurante no Pão de Açúcar?"
+      ]
+    },
+    "schema": {
+      "types": [
+        "Restaurant",
+        "BreadcrumbList",
+        "ItemList",
+        "Restaurant",
+        "WebSite",
+        "BreadcrumbList",
+        "FAQPage",
+        "TouristAttraction",
+        "WebPage",
+        "FAQPage"
+      ],
+      "has_restaurant": true,
+      "has_faq": true,
+      "has_breadcrumb": true,
+      "has_local_business": true,
+      "schema_count": 10
+    },
+    "images": {
+      "total": 3,
+      "without_alt": 0,
+      "without_srcset": 1,
+      "with_lazy": 2,
+      "alt_coverage": 100.0
+    },
+    "internal_links": {
+      "count": 15,
+      "sample": [
+        "/almoco.html",
+        "/restaurante-bondinho-pao-de-acucar.html",
+        "/cardapio.html",
+        "/",
+        "/es/",
+        "/restaurantes-perto-do-pao-de-acucar.html",
+        "/restaurante-morro-da-urca.html",
+        "/eventos.html"
+      ]
+    },
+    "opportunities": [
+      "🔴 P0: Botão WhatsApp ausente — principal canal de conversão",
+      "🟡 P1: Link de reserva ausente"
+    ],
+    "score": 90
+  }
+}
