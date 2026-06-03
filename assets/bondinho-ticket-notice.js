@@ -18,7 +18,28 @@
 
   function injectStyle(){
     if (document.getElementById('ec-bondinho-ticket-notice-style')) return;
-    var css = '.ec-bondinho-ticket-notice{display:block;margin:.65rem 0 0;padding:.72rem .9rem;border-radius:14px;background:rgba(245,155,30,.13);border:1px solid rgba(245,155,30,.38);color:#00405a!important;-webkit-text-fill-color:#00405a!important;font-family:Catamaran,Verdana,system-ui,sans-serif;font-size:.92rem;line-height:1.38;font-weight:700;max-width:560px}@media(max-width:760px){.ec-bondinho-ticket-notice{font-size:.86rem;max-width:100%}}';
+    var css = [
+      '.ec-bondinho-ticket-notice{',
+        'display:block;',
+        'margin:0;',
+        'padding:.8rem 1.2rem;',
+        'background:rgba(245,155,30,.13);',
+        'border-top:2px solid rgba(245,155,30,.45);',
+        'border-bottom:2px solid rgba(245,155,30,.45);',
+        'color:#00405a!important;',
+        '-webkit-text-fill-color:#00405a!important;',
+        'font-family:Catamaran,Verdana,system-ui,sans-serif;',
+        'font-size:.92rem;',
+        'line-height:1.4;',
+        'font-weight:700;',
+        'text-align:center;',
+        'width:100%;',
+        'box-sizing:border-box',
+      '}',
+      '@media(max-width:760px){',
+        '.ec-bondinho-ticket-notice{font-size:.84rem;padding:.7rem .9rem}',
+      '}'
+    ].join('');
     var style = document.createElement('style');
     style.id = 'ec-bondinho-ticket-notice-style';
     style.textContent = css;
@@ -28,28 +49,23 @@
   function run(){
     injectStyle();
 
-    /* 1. Remover TODOS os avisos existentes em qualquer lugar da pagina */
+    /* Remover qualquer aviso anterior em qualquer lugar da pagina */
     document.querySelectorAll('.ec-bondinho-ticket-notice').forEach(function(el){
       el.remove();
     });
 
-    /* 2. Inserir o aviso UMA UNICA VEZ — logo apos o bloco de CTAs do hero.
-          O hero usa .hero-ctas (index.html) ou header.page-hero .ctas (subpaginas). */
-    var heroCtas = (
-      document.querySelector('header.page-hero .hero-ctas') ||
-      document.querySelector('header.page-hero .ctas') ||
-      document.querySelector('.hero-ctas') ||
-      document.querySelector('header .ctas')
-    );
-
-    if (!heroCtas) return;
+    /* Inserir o aviso logo APOS o header.page-hero, no fluxo normal do documento.
+       Assim fica visivel abaixo do hero, sem conflito com position:absolute ou overflow:hidden. */
+    var hero = document.querySelector('header.page-hero');
+    if (!hero) return;
 
     var note = document.createElement('small');
     note.className = 'ec-bondinho-ticket-notice';
     note.textContent = copy[lang()];
 
-    if (heroCtas.parentNode) {
-      heroCtas.parentNode.insertBefore(note, heroCtas.nextSibling);
+    /* insertBefore(note, hero.nextSibling) insere logo apos o header no body */
+    if (hero.parentNode) {
+      hero.parentNode.insertBefore(note, hero.nextSibling);
     }
   }
 
