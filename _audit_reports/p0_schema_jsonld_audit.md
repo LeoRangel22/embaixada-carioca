@@ -17,7 +17,7 @@ Score mínimo: **100**
   - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, ContactPoint, FAQPage, FoodEstablishment, GeoCoordinates, ListItem, LocalBusiness, LocationFeatureSpecification, Menu, MenuItem, MenuSection, Neighborhood, Offer, OpeningHoursSpecification, Organization, PostalAddress, Question
 - `es/index.html` — PASS — score 100 — blocos válidos 8
   - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, ContactPoint, FAQPage, FoodEstablishment, GeoCoordinates, ListItem, LocalBusiness, LocationFeatureSpecification, Menu, MenuItem, MenuSection, Neighborhood, Offer, OpeningHoursSpecification, Organization, PostalAddress, Question
-- `almoco.html` — PASS — score 100 — blocos válidos 5
+- `almoco.html` — PASS — score 100 — blocos válidos 6
   - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, FAQPage, GeoCoordinates, ListItem, LocationFeatureSpecification, Menu, MenuItem, MenuSection, Neighborhood, Offer, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, TouristAttraction
 - `en/almoco.html` — PASS — score 100 — blocos válidos 7
   - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, FAQPage, GeoCoordinates, ListItem, LocationFeatureSpecification, Menu, MenuItem, MenuSection, Neighborhood, Offer, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, TouristAttraction
@@ -31,7 +31,7 @@ Score mínimo: **100**
   - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, FAQPage, FoodEvent, GeoCoordinates, ListItem, LocationFeatureSpecification, Neighborhood, OpeningHoursSpecification, Place, PostalAddress, Question, ReserveAction, Restaurant, Schedule, SpeakableSpecification, TouristAttraction, WebPage
 - `cardapio.html` — PASS — score 100 — blocos válidos 6
   - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, FAQPage, GeoCoordinates, ListItem, LocationFeatureSpecification, Menu, MenuItem, MenuSection, Neighborhood, Offer, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, TouristAttraction
-- `restaurante-morro-da-urca.html` — PASS — score 100 — blocos válidos 6
+- `restaurante-morro-da-urca.html` — PASS — score 100 — blocos válidos 7
   - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, FAQPage, GeoCoordinates, ItemList, ListItem, LocationFeatureSpecification, Neighborhood, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, TouristAttraction, WebPage, WebSite
 - `eventos.html` — PASS — score 100 — blocos válidos 6
   - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, FAQPage, ListItem, LocationFeatureSpecification, Neighborhood, PostalAddress, Question, ReserveAction, Restaurant, TouristAttraction, WebPage, WebSite

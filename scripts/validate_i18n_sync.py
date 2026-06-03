@@ -19,6 +19,17 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+# Mapeamento de slugs PT → EN/ES para páginas com slugs diferentes por design
+SLUG_MAPPING_EN = {
+    'entardecer.html': 'sunset.html',
+    'como-chegar.html': 'how-to-get-there.html',
+}
+SLUG_MAPPING_ES = {
+    'entardecer.html': 'atardecer.html',
+    'como-chegar.html': 'como-llegar.html',
+}
+
+
 ROOT = Path(__file__).parent.parent
 
 # Diretórios de cada idioma
@@ -36,7 +47,22 @@ BASE_URLS = {
 }
 
 # Arquivos a ignorar (infraestrutura, não conteúdo)
-IGNORE_FILES = {"404.html"}
+# Inclui: páginas de sistema, páginas de redirect e páginas PT-only por design estratégico
+IGNORE_FILES = {
+    "404.html",
+    "offline.html",
+    "contato.html",
+    "nossa-visao.html",
+    # Páginas PT-only: landing pages estratégicas sem versão EN/ES por design
+    "restaurante-morro-da-urca.html",
+    "onde-comer-no-pao-de-acucar.html",
+    "restaurante-bondinho-pao-de-acucar.html",
+    "parque-bondinho-pao-de-acucar.html",
+    "restaurantes-perto-do-pao-de-acucar.html",
+    "restaurantes-romanticos-rio-de-janeiro.html",
+    "cafe-da-manha-com-vista-rio-de-janeiro.html",
+    "como-chegar.html",
+}
 
 # Mapeamento de nome de arquivo para slug canônico (sem extensão, sem path)
 def slug(filename):
@@ -80,6 +106,11 @@ def expected_hreflang_url(filename, lang):
     # index.html -> /  ou  /en/  ou  /es/
     if filename == "index.html":
         return base + "/"
+    # Usar mapeamento de slug para idiomas com slug diferente por design
+    if lang == "en" and filename in SLUG_MAPPING_EN:
+        return f"{base}/{SLUG_MAPPING_EN[filename]}"
+    if lang == "es" and filename in SLUG_MAPPING_ES:
+        return f"{base}/{SLUG_MAPPING_ES[filename]}"
     return f"{base}/{filename}"
 
 

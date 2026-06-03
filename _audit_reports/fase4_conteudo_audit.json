@@ -1,0 +1,625 @@
+{
+  "restaurante-morro-da-urca.html": {
+    "page": "restaurante-morro-da-urca.html",
+    "exists": true,
+    "word_count": 906,
+    "score": 50,
+    "score_details": [
+      "Keywords ≥2x: 0/4 (+0pts)",
+      "Estrutura: H1=1, H2=8, words=906 (+20pts)",
+      "CTAs: WA=True, Reserva=True, Tel=True (+20pts)",
+      "Mídia: imgs=3, srcset=0, webp=1, video=False (+10pts)"
+    ],
+    "keywords": {
+      "restaurante morro da urca": {
+        "count": 1,
+        "density": 0.11
+      },
+      "almoço morro da urca": {
+        "count": 0,
+        "density": 0.0
+      },
+      "onde comer morro da urca": {
+        "count": 0,
+        "density": 0.0
+      },
+      "café da manhã morro da urca": {
+        "count": 0,
+        "density": 0.0
+      }
+    },
+    "h1": [
+      "restaurante no morro da urca"
+    ],
+    "h2_count": 8,
+    "h2_list": [
+      "por que essa busca importa",
+      "quando escolher a embaixada carioca",
+      "opções da região e como decidir",
+      "perguntas frequentes",
+      "continue explorando"
+    ],
+    "images": {
+      "total": 3,
+      "with_alt": 3,
+      "with_srcset": 0,
+      "webp": 1
+    },
+    "ctas": {
+      "whatsapp": true,
+      "reservation": true,
+      "menu": true,
+      "tel": true
+    },
+    "eeat": [
+      "premiado",
+      "google"
+    ],
+    "faq": [
+      "perguntas",
+      "frequentes",
+      "como chegar",
+      "horário"
+    ],
+    "has_faq_schema": true,
+    "schema_types": [
+      "AdministrativeArea",
+      "AggregateRating",
+      "Answer",
+      "BreadcrumbList",
+      "City",
+      "FAQPage",
+      "GeoCoordinates",
+      "ItemList",
+      "ListItem",
+      "LocationFeatureSpecification",
+      "Neighborhood",
+      "OpeningHoursSpecification",
+      "PostalAddress",
+      "Question",
+      "ReserveAction",
+      "Restaurant",
+      "SpeakableSpecification",
+      "TouristAttraction",
+      "WebPage",
+      "WebSite"
+    ],
+    "has_og_image": true,
+    "has_price": false,
+    "has_video": false
+  },
+  "almoco-morro-da-urca.html": {
+    "page": "almoco-morro-da-urca.html",
+    "exists": true,
+    "word_count": 810,
+    "score": 50,
+    "score_details": [
+      "Keywords ≥2x: 0/3 (+0pts)",
+      "Estrutura: H1=1, H2=7, words=810 (+20pts)",
+      "CTAs: WA=True, Reserva=True, Tel=True (+20pts)",
+      "Mídia: imgs=5, srcset=1, webp=1, video=False (+10pts)"
+    ],
+    "keywords": {
+      "almoço morro da urca": {
+        "count": 0,
+        "density": 0.0
+      },
+      "restaurante morro da urca": {
+        "count": 1,
+        "density": 0.12
+      },
+      "onde comer morro da urca": {
+        "count": 0,
+        "density": 0.0
+      }
+    },
+    "h1": [
+      "onde almoçar no morro da urca"
+    ],
+    "h2_count": 7,
+    "h2_list": [
+      "a resposta rápida",
+      "como encaixar o almoço no seu passeio",
+      "destaques do almoço",
+      "perguntas frequentes",
+      "fotos do restaurante"
+    ],
+    "images": {
+      "total": 5,
+      "with_alt": 5,
+      "with_srcset": 1,
+      "webp": 1
+    },
+    "ctas": {
+      "whatsapp": true,
+      "reservation": true,
+      "menu": true,
+      "tel": true
+    },
+    "eeat": [
+      "premiada",
+      "google"
+    ],
+    "faq": [
+      "perguntas",
+      "frequentes",
+      "como chegar",
+      "horário"
+    ],
+    "has_faq_schema": true,
+    "schema_types": [
+      "AdministrativeArea",
+      "AggregateRating",
+      "Answer",
+      "BreadcrumbList",
+      "City",
+      "FAQPage",
+      "GeoCoordinates",
+      "ListItem",
+      "LocationFeatureSpecification",
+      "Neighborhood",
+      "OpeningHoursSpecification",
+      "PostalAddress",
+      "Question",
+      "ReserveAction",
+      "Restaurant",
+      "TouristAttraction",
+      "WebPage",
+      "WebSite"
+    ],
+    "has_og_image": true,
+    "has_price": false,
+    "has_video": false
+  },
+  "cafe-da-manha.html": {
+    "page": "cafe-da-manha.html",
+    "exists": true,
+    "word_count": 2243,
+    "score": 55,
+    "score_details": [
+      "Keywords ≥2x: 0/2 (+0pts)",
+      "Estrutura: H1=1, H2=11, words=2243 (+20pts)",
+      "CTAs: WA=True, Reserva=True, Tel=True (+20pts)",
+      "Mídia: imgs=19, srcset=2, webp=11, video=False (+15pts)"
+    ],
+    "keywords": {
+      "café da manhã morro da urca": {
+        "count": 1,
+        "density": 0.04
+      },
+      "café da manhã pão de açúcar": {
+        "count": 0,
+        "density": 0.0
+      }
+    },
+    "h1": [
+      "café da manhã \n com vista  para o pão de açúcar — morro da urca."
+    ],
+    "h2_count": 11,
+    "h2_list": [
+      "tudo o que você pode  pedir  — com vista para o pão de açúcar.",
+      "café da manhã  todos os dias  — com vista para o pão de açúcar.",
+      "como  chegar  ao café da manhã com vista para o pão de açúcar.",
+      "café da manhã  com vista  todos os dias — o melhor do rio de janeiro.",
+      "o café da manhã mais bonito do rio de janeiro"
+    ],
+    "images": {
+      "total": 19,
+      "with_alt": 19,
+      "with_srcset": 2,
+      "webp": 11
+    },
+    "ctas": {
+      "whatsapp": true,
+      "reservation": true,
+      "menu": true,
+      "tel": true
+    },
+    "eeat": [
+      "premiado",
+      "premiada",
+      "desde",
+      "nota",
+      "google"
+    ],
+    "faq": [
+      "perguntas",
+      "frequentes",
+      "como chegar",
+      "horário",
+      "preço"
+    ],
+    "has_faq_schema": true,
+    "schema_types": [
+      "AdministrativeArea",
+      "AggregateRating",
+      "Answer",
+      "BreadcrumbList",
+      "City",
+      "FAQPage",
+      "FoodEvent",
+      "GeoCoordinates",
+      "ListItem",
+      "LocationFeatureSpecification",
+      "Neighborhood",
+      "OpeningHoursSpecification",
+      "Place",
+      "PostalAddress",
+      "Question",
+      "ReserveAction",
+      "Restaurant",
+      "Schedule",
+      "SpeakableSpecification",
+      "TouristAttraction",
+      "WebPage",
+      "WebSite"
+    ],
+    "has_og_image": true,
+    "has_price": true,
+    "has_video": false
+  },
+  "onde-comer-no-pao-de-acucar.html": {
+    "page": "onde-comer-no-pao-de-acucar.html",
+    "exists": true,
+    "word_count": 746,
+    "score": 50,
+    "score_details": [
+      "Keywords ≥2x: 0/3 (+0pts)",
+      "Estrutura: H1=1, H2=7, words=746 (+20pts)",
+      "CTAs: WA=True, Reserva=True, Tel=True (+20pts)",
+      "Mídia: imgs=3, srcset=0, webp=1, video=False (+10pts)"
+    ],
+    "keywords": {
+      "onde comer pão de açúcar": {
+        "count": 0,
+        "density": 0.0
+      },
+      "restaurante pão de açúcar": {
+        "count": 0,
+        "density": 0.0
+      },
+      "onde comer morro da urca": {
+        "count": 0,
+        "density": 0.0
+      }
+    },
+    "h1": [
+      "onde comer no pão de açúcar"
+    ],
+    "h2_count": 7,
+    "h2_list": [
+      "por que essa busca importa",
+      "quando escolher a embaixada carioca",
+      "opções da região e como decidir",
+      "perguntas frequentes",
+      "continue explorando"
+    ],
+    "images": {
+      "total": 3,
+      "with_alt": 3,
+      "with_srcset": 0,
+      "webp": 1
+    },
+    "ctas": {
+      "whatsapp": true,
+      "reservation": true,
+      "menu": true,
+      "tel": true
+    },
+    "eeat": [
+      "google"
+    ],
+    "faq": [
+      "perguntas",
+      "frequentes",
+      "como chegar",
+      "horário"
+    ],
+    "has_faq_schema": true,
+    "schema_types": [
+      "AdministrativeArea",
+      "AggregateRating",
+      "Answer",
+      "BreadcrumbList",
+      "City",
+      "FAQPage",
+      "GeoCoordinates",
+      "ItemList",
+      "ListItem",
+      "LocationFeatureSpecification",
+      "Neighborhood",
+      "OpeningHoursSpecification",
+      "PostalAddress",
+      "Question",
+      "ReserveAction",
+      "Restaurant",
+      "SpeakableSpecification",
+      "TouristAttraction",
+      "WebPage",
+      "WebSite"
+    ],
+    "has_og_image": true,
+    "has_price": false,
+    "has_video": false
+  },
+  "restaurante-bondinho-pao-de-acucar.html": {
+    "page": "restaurante-bondinho-pao-de-acucar.html",
+    "exists": true,
+    "word_count": 738,
+    "score": 50,
+    "score_details": [
+      "Keywords ≥2x: 0/3 (+0pts)",
+      "Estrutura: H1=1, H2=7, words=738 (+20pts)",
+      "CTAs: WA=True, Reserva=True, Tel=True (+20pts)",
+      "Mídia: imgs=3, srcset=0, webp=1, video=False (+10pts)"
+    ],
+    "keywords": {
+      "restaurante pão de açúcar": {
+        "count": 0,
+        "density": 0.0
+      },
+      "almoço pão de açúcar": {
+        "count": 0,
+        "density": 0.0
+      },
+      "onde comer pão de açúcar": {
+        "count": 0,
+        "density": 0.0
+      }
+    },
+    "h1": [
+      "restaurante no bondinho pão de açúcar"
+    ],
+    "h2_count": 7,
+    "h2_list": [
+      "por que essa busca importa",
+      "quando escolher a embaixada carioca",
+      "opções da região e como decidir",
+      "perguntas frequentes",
+      "continue explorando"
+    ],
+    "images": {
+      "total": 3,
+      "with_alt": 3,
+      "with_srcset": 0,
+      "webp": 1
+    },
+    "ctas": {
+      "whatsapp": true,
+      "reservation": true,
+      "menu": true,
+      "tel": true
+    },
+    "eeat": [
+      "google"
+    ],
+    "faq": [
+      "perguntas",
+      "frequentes",
+      "como chegar",
+      "horário"
+    ],
+    "has_faq_schema": true,
+    "schema_types": [
+      "AdministrativeArea",
+      "AggregateRating",
+      "Answer",
+      "BreadcrumbList",
+      "City",
+      "FAQPage",
+      "GeoCoordinates",
+      "ItemList",
+      "ListItem",
+      "LocationFeatureSpecification",
+      "Neighborhood",
+      "OpeningHoursSpecification",
+      "PostalAddress",
+      "Question",
+      "ReserveAction",
+      "Restaurant",
+      "SpeakableSpecification",
+      "TouristAttraction",
+      "WebPage",
+      "WebSite"
+    ],
+    "has_og_image": true,
+    "has_price": false,
+    "has_video": false
+  },
+  "almoco.html": {
+    "page": "almoco.html",
+    "exists": true,
+    "word_count": 1622,
+    "score": 55,
+    "score_details": [
+      "Keywords ≥2x: 0/3 (+0pts)",
+      "Estrutura: H1=1, H2=12, words=1622 (+20pts)",
+      "CTAs: WA=True, Reserva=True, Tel=True (+20pts)",
+      "Mídia: imgs=17, srcset=2, webp=8, video=False (+15pts)"
+    ],
+    "keywords": {
+      "almoço morro da urca": {
+        "count": 0,
+        "density": 0.0
+      },
+      "almoço pão de açúcar": {
+        "count": 0,
+        "density": 0.0
+      },
+      "restaurante embaixada carioca": {
+        "count": 0,
+        "density": 0.0
+      }
+    },
+    "h1": [
+      "almoço  premiado  no pão de açúcar \n      —  restaurante morro da urca ."
+    ],
+    "h2_count": 12,
+    "h2_list": [
+      "almoço no bondinho pão de açúcar com vista panorâmica — morro da urca",
+      "cozinha brasileira  contemporânea  — almoço no morro da urca com vista para o pão de açúcar.",
+      "a feijoada que  marca a tradição carioca  — servida no alto do morro da urca.",
+      "almoço  premiado  no morro da urca — um dos melhores restaurantes do rio de janeiro.",
+      "a gastronomia brasileira no topo do rio"
+    ],
+    "images": {
+      "total": 17,
+      "with_alt": 17,
+      "with_srcset": 2,
+      "webp": 8
+    },
+    "ctas": {
+      "whatsapp": true,
+      "reservation": true,
+      "menu": true,
+      "tel": true
+    },
+    "eeat": [
+      "premiado",
+      "premiada",
+      "prêmio",
+      "desde",
+      "chef",
+      "nota",
+      "google"
+    ],
+    "faq": [
+      "como chegar",
+      "horário"
+    ],
+    "has_faq_schema": true,
+    "schema_types": [
+      "AdministrativeArea",
+      "AggregateRating",
+      "Answer",
+      "BreadcrumbList",
+      "City",
+      "FAQPage",
+      "GeoCoordinates",
+      "ListItem",
+      "LocationFeatureSpecification",
+      "Menu",
+      "MenuItem",
+      "MenuSection",
+      "Neighborhood",
+      "Offer",
+      "OpeningHoursSpecification",
+      "PostalAddress",
+      "Question",
+      "ReserveAction",
+      "Restaurant",
+      "SpeakableSpecification",
+      "TouristAttraction",
+      "WebPage",
+      "WebSite"
+    ],
+    "has_og_image": true,
+    "has_price": true,
+    "has_video": false
+  },
+  "index.html": {
+    "page": "index.html",
+    "exists": true,
+    "word_count": 7978,
+    "score": 65,
+    "score_details": [
+      "Keywords ≥2x: 1/3 (+10pts)",
+      "Estrutura: H1=1, H2=31, words=7978 (+20pts)",
+      "CTAs: WA=True, Reserva=True, Tel=True (+20pts)",
+      "Mídia: imgs=40, srcset=4, webp=20, video=False (+15pts)"
+    ],
+    "keywords": {
+      "restaurante embaixada carioca": {
+        "count": 0,
+        "density": 0.0
+      },
+      "restaurante morro da urca": {
+        "count": 2,
+        "density": 0.03
+      },
+      "restaurante pão de açúcar": {
+        "count": 0,
+        "density": 0.0
+      }
+    },
+    "h1": [
+      "restaurante no  morro da urca  —  a alma carioca  em frente ao  pão de açúcar ."
+    ],
+    "h2_count": 31,
+    "h2_list": [
+      "restaurante no bondinho pão de açúcar com vista panorâmica no morro da urca",
+      "um dia inteiro  no alto  da cidade — um restaurante no alto do morro da urca — com vista do rio de janeiro.",
+      "no alto do rio  desde 2010  — reinaugurada em 2020 como  embaixada carioca .",
+      "a feijoada que  marca a tradição carioca  — servida a 227m.",
+      "reconhecido por quem  visita e premia  — o restaurante com vista mais bem-avaliado do rio."
+    ],
+    "images": {
+      "total": 40,
+      "with_alt": 40,
+      "with_srcset": 4,
+      "webp": 20
+    },
+    "ctas": {
+      "whatsapp": true,
+      "reservation": true,
+      "menu": true,
+      "tel": true
+    },
+    "eeat": [
+      "premiado",
+      "premiada",
+      "prêmio",
+      "anos de",
+      "fundado",
+      "desde",
+      "chef",
+      "especialista",
+      "avaliação",
+      "nota",
+      "estrelas",
+      "google",
+      "imprensa"
+    ],
+    "faq": [
+      "perguntas",
+      "frequentes",
+      "como chegar",
+      "horário",
+      "preço"
+    ],
+    "has_faq_schema": true,
+    "schema_types": [
+      "AdministrativeArea",
+      "AggregateRating",
+      "Answer",
+      "BreadcrumbList",
+      "City",
+      "ContactPoint",
+      "EntryPoint",
+      "FAQPage",
+      "GeoCoordinates",
+      "ImageObject",
+      "ListItem",
+      "LocationFeatureSpecification",
+      "Menu",
+      "MenuItem",
+      "MenuSection",
+      "Neighborhood",
+      "Offer",
+      "OpeningHoursSpecification",
+      "Organization",
+      "PostalAddress",
+      "Question",
+      "ReserveAction",
+      "Restaurant",
+      "SearchAction",
+      "SpeakableSpecification",
+      "TouristAttraction",
+      "WebPage",
+      "WebSite"
+    ],
+    "has_og_image": true,
+    "has_price": true,
+    "has_video": false
+  }
+}

@@ -1,17 +1,8 @@
 {
   "status": "PASS",
   "mode": "check",
-  "forbidden_keys": [
-    "aggregateRating",
-    "bestRating",
-    "ratingCount",
-    "ratingValue",
-    "reviewCount",
-    "worstRating"
-  ],
-  "forbidden_types": [
-    "AggregateRating"
-  ],
+  "files_checked": 322,
+  "findings_count": 0,
   "files": [
     {
       "file": "404.html",
@@ -1388,6 +1379,12 @@
       "invalid_blocks": 0
     },
     {
+      "file": "_templates/base.html",
+      "changed": false,
+      "jsonld_blocks": 1,
+      "invalid_blocks": 1
+    },
+    {
       "file": "almoco-morro-da-urca.html",
       "changed": false,
       "jsonld_blocks": 5,
@@ -1901,6 +1898,42 @@
       "file": "roteiro-meio-dia-urca-pao-de-acucar.html",
       "changed": false,
       "jsonld_blocks": 8,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "src/partials/en/footer.html",
+      "changed": false,
+      "jsonld_blocks": 0,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "src/partials/en/nav.html",
+      "changed": false,
+      "jsonld_blocks": 0,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "src/partials/es/footer.html",
+      "changed": false,
+      "jsonld_blocks": 0,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "src/partials/es/nav.html",
+      "changed": false,
+      "jsonld_blocks": 0,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "src/partials/pt/footer.html",
+      "changed": false,
+      "jsonld_blocks": 0,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "src/partials/pt/nav.html",
+      "changed": false,
+      "jsonld_blocks": 0,
       "invalid_blocks": 0
     }
   ],

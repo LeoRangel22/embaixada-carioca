@@ -1,17 +1,19 @@
-# Schema Rating Guard Report
+# JSON-LD Duplicate Key Guard Report
 
 Status: **PASS**
 Mode: **check**
-
-## Regra de segurança
-- JSON-LD não pode conter `aggregateRating` quando a nota vem do Google Reviews.
-- JSON-LD não pode conter `ratingValue`, `reviewCount`, `ratingCount`, `bestRating` ou `worstRating` ligados a avaliações externas.
-- A nota do Google pode continuar no texto visível da página, mas não no schema estruturado.
-
-Arquivos HTML verificados: **315**
+Arquivos HTML verificados: **322**
 Achados: **0**
 
-## Arquivos alterados / verificados
+## Regra
+- Nenhum objeto JSON-LD deve repetir a mesma chave dentro do mesmo objeto.
+- Exemplo de alerta do Google: `O campo url está duplicado (opcional)`.
+- Em modo `fix`, o JSON-LD é reserializado e a última ocorrência da chave é preservada.
+
+## Achados
+- Nenhum campo duplicado encontrado.
+
+## Arquivos
 - `404.html` — ok — blocos JSON-LD: 1 — inválidos: 0
 - `_backups/fase1/_backups/fase1/almoco-morro-da-urca.html` — ok — blocos JSON-LD: 4 — inválidos: 0
 - `_backups/fase1/_backups/fase1/almoco.html` — ok — blocos JSON-LD: 5 — inválidos: 0
@@ -241,6 +243,7 @@ Achados: **0**
 - `_includes/head-common.html` — ok — blocos JSON-LD: 0 — inválidos: 0
 - `_includes/nav.html` — ok — blocos JSON-LD: 0 — inválidos: 0
 - `_includes/wa-widget.html` — ok — blocos JSON-LD: 0 — inválidos: 0
+- `_templates/base.html` — ok — blocos JSON-LD: 1 — inválidos: 1
 - `almoco-morro-da-urca.html` — ok — blocos JSON-LD: 5 — inválidos: 0
 - `almoco.html` — ok — blocos JSON-LD: 6 — inválidos: 0
 - `cafe-da-manha-com-vista-rio-de-janeiro.html` — ok — blocos JSON-LD: 6 — inválidos: 0
@@ -327,3 +330,9 @@ Achados: **0**
 - `restaurantes-perto-do-pao-de-acucar.html` — ok — blocos JSON-LD: 6 — inválidos: 0
 - `restaurantes-romanticos-rio-de-janeiro.html` — ok — blocos JSON-LD: 5 — inválidos: 0
 - `roteiro-meio-dia-urca-pao-de-acucar.html` — ok — blocos JSON-LD: 8 — inválidos: 0
+- `src/partials/en/footer.html` — ok — blocos JSON-LD: 0 — inválidos: 0
+- `src/partials/en/nav.html` — ok — blocos JSON-LD: 0 — inválidos: 0
+- `src/partials/es/footer.html` — ok — blocos JSON-LD: 0 — inválidos: 0
+- `src/partials/es/nav.html` — ok — blocos JSON-LD: 0 — inválidos: 0
+- `src/partials/pt/footer.html` — ok — blocos JSON-LD: 0 — inválidos: 0
+- `src/partials/pt/nav.html` — ok — blocos JSON-LD: 0 — inválidos: 0

@@ -162,7 +162,7 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 5
+      "blocks": 6
     },
     {
       "page": "en/almoco.html",
@@ -387,7 +387,7 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 6
+      "blocks": 7
     },
     {
       "page": "eventos.html",

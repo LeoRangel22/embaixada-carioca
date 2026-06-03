@@ -1,39 +1,24 @@
 # Relatório de Sincronização i18n PT/EN/ES
 
-Gerado em: 2026-06-02 23:38:43
+Gerado em: 2026-06-03 00:08:52
 
-- PT: 29 arquivos
-- EN: 28 arquivos
-- ES: 28 arquivos
+- PT: 18 arquivos
+- EN: 26 arquivos
+- ES: 25 arquivos
 
 ## Páginas PT sem equivalente EN
 
-- `cafe-da-manha-com-vista-rio-de-janeiro.html`
-- `como-chegar.html`
-- `offline.html`
-- `onde-comer-no-pao-de-acucar.html`
-- `parque-bondinho-pao-de-acucar.html`
-- `restaurante-bondinho-pao-de-acucar.html`
-- `restaurante-morro-da-urca.html`
-- `restaurantes-perto-do-pao-de-acucar.html`
-- `restaurantes-romanticos-rio-de-janeiro.html`
+_Nenhuma. Todas as páginas PT têm equivalente EN._
 
 ## Páginas PT sem equivalente ES
 
-- `cafe-da-manha-com-vista-rio-de-janeiro.html`
-- `como-chegar.html`
-- `offline.html`
-- `onde-comer-no-pao-de-acucar.html`
-- `parque-bondinho-pao-de-acucar.html`
-- `restaurante-bondinho-pao-de-acucar.html`
-- `restaurantes-perto-do-pao-de-acucar.html`
-- `restaurantes-romanticos-rio-de-janeiro.html`
+_Nenhuma. Todas as páginas PT têm equivalente ES._
 
 ## Problemas de hreflang e headings (páginas existentes nos 3 idiomas)
 
 ### `almoco.html`
 
-    - Headings (h1+h2) desbalanceados: PT=13, EN=12, ES=11 (diferença > 1)
+    - Headings (h1+h2) desbalanceados: PT=14, EN=12, ES=11 (diferença > 1)
 
 ### `cardapio.html`
 
@@ -41,12 +26,6 @@ Gerado em: 2026-06-02 23:38:43
 
 ### `entardecer.html`
 
-    [PT] - hreflang 'en': esperado 'https://www.embaixadacarioca.com/en/entardecer.html', encontrado 'https://www.embaixadacarioca.com/en/sunset.html'
-    [PT] - hreflang 'es': esperado 'https://www.embaixadacarioca.com/es/entardecer.html', encontrado 'https://www.embaixadacarioca.com/es/atardecer.html'
-    [EN] - hreflang 'en': esperado 'https://www.embaixadacarioca.com/en/entardecer.html', encontrado 'https://www.embaixadacarioca.com/en/sunset.html'
-    [EN] - hreflang 'es': esperado 'https://www.embaixadacarioca.com/es/entardecer.html', encontrado 'https://www.embaixadacarioca.com/es/atardecer.html'
-    [ES] - hreflang 'en': esperado 'https://www.embaixadacarioca.com/en/entardecer.html', encontrado 'https://www.embaixadacarioca.com/en/sunset.html'
-    [ES] - hreflang 'es': esperado 'https://www.embaixadacarioca.com/es/entardecer.html', encontrado 'https://www.embaixadacarioca.com/es/atardecer.html'
     - Headings (h1+h2) desbalanceados: PT=12, EN=10, ES=10 (diferença > 1)
 
 ### `eventos.html`
@@ -67,15 +46,15 @@ Gerado em: 2026-06-02 23:38:43
 
 ### `parque-bondinho.html`
 
-    - Headings (h1+h2) desbalanceados: PT=8, EN=7, ES=6 (diferença > 1)
+    - Headings (h1+h2) desbalanceados: PT=9, EN=8, ES=7 (diferença > 1)
 
 
 ## Resumo
 
 | Métrica | Valor |
 |---------|-------|
-| Páginas PT | 29 |
-| PT sem EN | 9 |
-| PT sem ES | 8 |
+| Páginas PT | 18 |
+| PT sem EN | 0 |
+| PT sem ES | 0 |
 | Com problemas hreflang/headings | 8 |
-| Total de issues | 25 |
+| Total de issues | 8 |
