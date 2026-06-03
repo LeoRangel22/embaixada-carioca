@@ -114,25 +114,29 @@
     bar.setAttribute('aria-label', 'Sugestão contextual da Embaixada Carioca');
     bar.innerHTML = '<div class="ec-r2d2-banner__inner"><div class="ec-r2d2-banner__copy"><i class="ec-r2d2-banner__dot" aria-hidden="true"></i><div><strong>'+c[0]+'</strong><span>'+c[1]+'</span></div></div><a href="'+c[3]+'">'+c[2]+'</a><button type="button" aria-label="Fechar">×</button></div>';
     document.body.insertBefore(bar, document.body.firstChild);
-    /* Ajustar o top do nav fixo para não sobrepor o banner */
-    function adjustNavTop(){
+    /* Ajustar o top do nav fixo e o min-height do hero para não sobrepor o banner */
+    function adjustLayout(){
       var nav = document.getElementById('topnav') || document.querySelector('nav.top');
-      if (!nav) return;
+      var hero = document.querySelector('header.hero');
       var bh = document.body.contains(bar) ? bar.offsetHeight : 0;
       if (bh > 0) {
-        nav.style.setProperty('top', bh + 'px', 'important');
+        if (nav) nav.style.setProperty('top', bh + 'px', 'important');
+        if (hero) hero.style.setProperty('min-height', 'calc(100svh - ' + bh + 'px)', 'important');
       } else {
-        nav.style.removeProperty('top');
+        if (nav) nav.style.removeProperty('top');
+        if (hero) hero.style.removeProperty('min-height');
       }
     }
-    adjustNavTop();
-    window.addEventListener('resize', adjustNavTop, { passive: true });
-    /* Ao fechar o banner, resetar o top do nav */
+    adjustLayout();
+    window.addEventListener('resize', adjustLayout, { passive: true });
+    /* Ao fechar o banner, resetar o top do nav e o min-height do hero */
     bar.querySelector('button').addEventListener('click', function(){
       sessionStorage.setItem('ec_r2d2_banner_closed','1');
       bar.remove();
       var nav = document.getElementById('topnav') || document.querySelector('nav.top');
+      var hero = document.querySelector('header.hero');
       if (nav) nav.style.removeProperty('top');
+      if (hero) hero.style.removeProperty('min-height');
     });
   }
 

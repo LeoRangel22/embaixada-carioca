@@ -31,10 +31,8 @@
   }
   function run(){
     injectStyle();
-    /* Para o hero-ctas: inserir o aviso UMA VEZ, APÓS o container (não dentro).
-       Isso evita que o hero-ctas (position:absolute) expanda para baixo e
-       sobreponha o hero-bottom-bar. */
-    var heroCtas = document.querySelector('.hero-ctas');
+    /* Seletores de containers CTA do hero — tanto .hero-ctas (index) quanto .ctas (subpáginas) */
+    var heroCtas = document.querySelector('.hero-ctas') || document.querySelector('header .ctas');
     if (heroCtas) {
       var hasRes = false;
       var links = heroCtas.querySelectorAll('a[href]');
@@ -42,10 +40,11 @@
         if (isReservationLink(links[i])) { hasRes = true; break; }
       }
       if (hasRes) {
-        /* Remover aviso antigo dentro do hero-ctas (se existir) */
+        /* Remover aviso antigo dentro do heroCtas (se existir de versão anterior) */
         var oldInside = heroCtas.querySelector('.ec-bondinho-ticket-notice');
         if (oldInside) oldInside.remove();
-        /* Inserir após o hero-ctas, se ainda não existir */
+        /* Inserir APÓS o heroCtas como irmão — não dentro dele.
+           Isso evita que o container (position:absolute ou overflow:hidden) quebre o layout. */
         var nextSib = heroCtas.nextElementSibling;
         if (!nextSib || !nextSib.classList.contains('ec-bondinho-ticket-notice')) {
           var note = document.createElement('small');
@@ -57,11 +56,10 @@
     }
     /* Para outros containers de CTAs dentro de main/section/article:
        inserir o aviso no parentElement do link.
-       NUNCA inserir dentro de: nav.top, .mobile-bottom-nav, qualquer header
-       (header.page-hero tem overflow:hidden e cliparia o aviso). */
+       NUNCA inserir dentro de: nav.top, .mobile-bottom-nav, qualquer header. */
     Array.prototype.slice.call(document.querySelectorAll('a[href]')).forEach(function(a){
       if (!isReservationLink(a)) return;
-      /* Pular links dentro do hero-ctas (já tratado acima) */
+      /* Pular links dentro do heroCtas (já tratado acima) */
       if (heroCtas && heroCtas.contains(a)) return;
       /* Pular links dentro do nav.top, mobile-bottom-nav e qualquer header */
       if (a.closest('nav.top') || a.closest('.mobile-bottom-nav') || a.closest('header')) return;
@@ -76,7 +74,7 @@
       parent.appendChild(note2);
     });
   }
+  /* Executar UMA ÚNICA VEZ — sem window.load para evitar dupla execução */
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run, { once:true });
   else run();
-  window.addEventListener('load', run, { once:true });
 })();
