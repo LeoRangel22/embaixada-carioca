@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relatório de Testes — Embaixada Carioca</title>
+<style>
+  :root {
+    --bg: #0d1b2a; --surface: #1a2e44; --surface2: #243b55;
+    --text: #e8dcc8; --text2: #a89880; --border: rgba(255,255,255,0.08);
+    --pass: #5cb85c; --fail: #e74c3c; --warn: #e8a838;
+    --radius: 12px; --font: 'JetBrains Mono', 'Fira Code', monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 13px; line-height: 1.6; }
+  .wrap { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
+
+  /* Header */
+  .report-header { background: linear-gradient(135deg, #00202e, #00405a); padding: 48px 0 32px; border-bottom: 1px solid var(--border); }
+  .report-header h1 { font-size: 24px; letter-spacing: .12em; text-transform: uppercase; color: #f59b1e; margin-bottom: 8px; }
+  .report-header .meta { color: var(--text2); font-size: 11px; letter-spacing: .08em; }
+
+  /* Summary */
+  .summary { display: flex; gap: 20px; padding: 32px 0; flex-wrap: wrap; }
+  .summary-card { background: var(--surface); border-radius: var(--radius); padding: 20px 28px; flex: 1; min-width: 160px; border: 1px solid var(--border); }
+  .summary-card .value { font-size: 36px; font-weight: 900; line-height: 1; }
+  .summary-card .label { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--text2); margin-top: 6px; }
+  .summary-card.total .value { color: var(--text); }
+  .summary-card.pass .value { color: var(--pass); }
+  .summary-card.fail .value { color: var(--fail); }
+  .summary-card.rate .value { color: #f59b1e; }
+
+  /* Fix cards */
+  .fix-cards { display: flex; gap: 16px; flex-wrap: wrap; padding-bottom: 32px; }
+  .fix-card { background: var(--surface); border-radius: var(--radius); padding: 16px 20px; min-width: 160px; flex: 1; border: 1px solid var(--border); }
+  .fix-card.card-fail { border-color: rgba(231,76,60,0.4); }
+  .fix-card.card-pass { border-color: rgba(92,184,92,0.3); }
+  .fix-badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 900; letter-spacing: .1em; color: #fff; margin-bottom: 10px; }
+  .fix-stats { display: flex; gap: 12px; margin-bottom: 8px; }
+  .fix-pass { color: var(--pass); font-weight: 700; }
+  .fix-fail { color: var(--fail); font-weight: 700; }
+  .fix-bar { background: rgba(255,255,255,0.08); border-radius: 4px; height: 4px; margin-bottom: 6px; overflow: hidden; }
+  .fix-bar-fill { height: 100%; border-radius: 4px; transition: width .3s; }
+  .fix-pct { font-size: 11px; color: var(--text2); }
+
+  /* Section */
+  .section { padding: 32px 0; border-top: 1px solid var(--border); }
+  .section h2 { font-size: 14px; letter-spacing: .12em; text-transform: uppercase; color: #f59b1e; margin-bottom: 20px; }
+
+  /* Table */
+  .table-wrap { overflow-x: auto; border-radius: var(--radius); border: 1px solid var(--border); }
+  table { width: 100%; border-collapse: collapse; }
+  th { background: var(--surface2); padding: 10px 14px; text-align: left; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--text2); white-space: nowrap; }
+  td { padding: 10px 14px; border-top: 1px solid var(--border); vertical-align: top; }
+  tr.pass td { background: rgba(92,184,92,0.04); }
+  tr.fail td { background: rgba(231,76,60,0.06); }
+  tr:hover td { background: rgba(255,255,255,0.04); }
+  .icon { font-size: 16px; text-align: center; width: 32px; }
+  tr.pass .icon { color: var(--pass); }
+  tr.fail .icon { color: var(--fail); }
+  .msg { color: var(--text2); font-size: 12px; max-width: 400px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 10px; font-weight: 900; letter-spacing: .08em; color: #fff; white-space: nowrap; }
+
+  /* Screenshots */
+  .screenshots-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  .screenshot-card { background: var(--surface); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); }
+  .screenshot-card img { width: 100%; display: block; }
+  .screenshot-label { padding: 10px 14px; font-size: 11px; color: var(--text2); line-height: 1.4; }
+  .screenshot-label small { font-size: 10px; opacity: .7; }
+
+  /* Footer */
+  .report-footer { padding: 32px 0; border-top: 1px solid var(--border); text-align: center; color: var(--text2); font-size: 11px; letter-spacing: .08em; }
+</style>
+</head>
+<body>
+
+<div class="report-header">
+  <div class="wrap">
+    <h1>Relatório de Testes — Embaixada Carioca</h1>
+    <div class="meta">Gerado em 03/06/2026 10:21:21 &nbsp;·&nbsp; overflow &amp; flex-wrap audit &nbsp;·&nbsp; FIX1 · FIX2 · FIX3</div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- Resumo global -->
+  <div class="summary">
+    <div class="summary-card total"><div class="value">32</div><div class="label">Total de Testes</div></div>
+    <div class="summary-card pass"><div class="value">23</div><div class="label">Passaram</div></div>
+    <div class="summary-card fail"><div class="value">9</div><div class="label">Falharam</div></div>
+    <div class="summary-card rate"><div class="value">72%</div><div class="label">Taxa de Aprovação</div></div>
+  </div>
+
+  <!-- Cards por fix -->
+  <div class="fix-cards">
+    
+        <div class="fix-card card-pass">
+            <div class="fix-badge" style="background:#9b59b6">FIX-BONUS</div>
+            <div class="fix-stats">
+                <span class="fix-pass">✓ 2</span>
+                <span class="fix-fail">✗ 0</span>
+            </div>
+            <div class="fix-bar">
+                <div class="fix-bar-fill" style="width:100%;background:#9b59b6"></div>
+            </div>
+            <div class="fix-pct">100% passou</div>
+        </div>
+        <div class="fix-card card-fail">
+            <div class="fix-badge" style="background:#e8a838">FIX1</div>
+            <div class="fix-stats">
+                <span class="fix-pass">✓ 5</span>
+                <span class="fix-fail">✗ 5</span>
+            </div>
+            <div class="fix-bar">
+                <div class="fix-bar-fill" style="width:50%;background:#e8a838"></div>
+            </div>
+            <div class="fix-pct">50% passou</div>
+        </div>
+        <div class="fix-card card-pass">
+            <div class="fix-badge" style="background:#3a8fd4">FIX2</div>
+            <div class="fix-stats">
+                <span class="fix-pass">✓ 8</span>
+                <span class="fix-fail">✗ 0</span>
+            </div>
+            <div class="fix-bar">
+                <div class="fix-bar-fill" style="width:100%;background:#3a8fd4"></div>
+            </div>
+            <div class="fix-pct">100% passou</div>
+        </div>
+        <div class="fix-card card-pass">
+            <div class="fix-badge" style="background:#5cb85c">FIX3</div>
+            <div class="fix-stats">
+                <span class="fix-pass">✓ 3</span>
+                <span class="fix-fail">✗ 0</span>
+            </div>
+            <div class="fix-bar">
+                <div class="fix-bar-fill" style="width:100%;background:#5cb85c"></div>
+            </div>
+            <div class="fix-pct">100% passou</div>
+        </div>
+        <div class="fix-card card-fail">
+            <div class="fix-badge" style="background:#e67e22">REGRESSÃO</div>
+            <div class="fix-stats">
+                <span class="fix-pass">✓ 5</span>
+                <span class="fix-fail">✗ 4</span>
+            </div>
+            <div class="fix-bar">
+                <div class="fix-bar-fill" style="width:56%;background:#e67e22"></div>
+            </div>
+            <div class="fix-pct">56% passou</div>
+        </div>
+  </div>
+
+  <!-- Testes estáticos -->
+  <div class="section">
+    <h2>Testes Estáticos — Análise de Código-Fonte</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Fix</th><th></th><th>Arquivo</th><th>Teste</th><th>Resultado</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        <tr class="pass">
+            <td><span class="badge" style="background:#e8a838">FIX1</span></td>
+            <td class="icon">✓</td>
+            <td>almoco.html</td>
+            <td>FIX1 — overflow:visible nos botões (bloco 1)</td>
+            <td class="msg">overflow:visible ✓</td>
+        </tr>
+        <tr class="fail">
+            <td><span class="badge" style="background:#e8a838">FIX1</span></td>
+            <td class="icon">✗</td>
+            <td>almoco.html</td>
+            <td>FIX1 — overflow definido nos botões (bloco 2)</td>
+            <td class="msg">overflow não definido no bloco de botões</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#e8a838">FIX1</span></td>
+            <td class="icon">✓</td>
+            <td>cafe-da-manha.html</td>
+            <td>FIX1 — overflow:visible nos botões (bloco 1)</td>
+            <td class="msg">overflow:visible ✓</td>
+        </tr>
+        <tr class="fail">
+            <td><span class="badge" style="background:#e8a838">FIX1</span></td>
+            <td class="icon">✗</td>
+            <td>cafe-da-manha.html</td>
+            <td>FIX1 — overflow definido nos botões (bloco 2)</td>
+            <td class="msg">overflow não definido no bloco de botões</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#e8a838">FIX1</span></td>
+            <td class="icon">✓</td>
+            <td>cardapio.html</td>
+            <td>FIX1 — overflow:visible nos botões (bloco 1)</td>
+            <td class="msg">overflow:visible ✓</td>
+        </tr>
+        <tr class="fail">
+            <td><span class="badge" style="background:#e8a838">FIX1</span></td>
+            <td class="icon">✗</td>
+            <td>cardapio.html</td>
+            <td>FIX1 — overflow definido nos botões (bloco 2)</td>
+            <td class="msg">overflow não definido no bloco de botões</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#e8a838">FIX1</span></td>
+            <td class="icon">✓</td>
+            <td>en/index.html</td>
+            <td>FIX1 — overflow:visible nos botões (bloco 1)</td>
+            <td class="msg">overflow:visible ✓</td>
+        </tr>
+        <tr class="fail">
+            <td><span class="badge" style="background:#e8a838">FIX1</span></td>
+            <td class="icon">✗</td>
+            <td>en/index.html</td>
+            <td>FIX1 — overflow definido nos botões (bloco 2)</td>
+            <td class="msg">overflow não definido no bloco de botões</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#e8a838">FIX1</span></td>
+            <td class="icon">✓</td>
+            <td>es/index.html</td>
+            <td>FIX1 — overflow:visible nos botões (bloco 1)</td>
+            <td class="msg">overflow:visible ✓</td>
+        </tr>
+        <tr class="fail">
+            <td><span class="badge" style="background:#e8a838">FIX1</span></td>
+            <td class="icon">✗</td>
+            <td>es/index.html</td>
+            <td>FIX1 — overflow definido nos botões (bloco 2)</td>
+            <td class="msg">overflow não definido no bloco de botões</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#3a8fd4">FIX2</span></td>
+            <td class="icon">✓</td>
+            <td>en/index.html</td>
+            <td>FIX2 — flex-wrap:nowrap ausente no hero-ctas</td>
+            <td class="msg">flex-wrap:nowrap não encontrado no hero-ctas ✓</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#3a8fd4">FIX2</span></td>
+            <td class="icon">✓</td>
+            <td>en/index.html</td>
+            <td>FIX2 — flex-wrap:wrap presente no hero-ctas</td>
+            <td class="msg">flex-wrap:wrap encontrado em 3 bloco(s) ✓</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#3a8fd4">FIX2</span></td>
+            <td class="icon">✓</td>
+            <td>es/index.html</td>
+            <td>FIX2 — flex-wrap:nowrap ausente no hero-ctas</td>
+            <td class="msg">flex-wrap:nowrap não encontrado no hero-ctas ✓</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#3a8fd4">FIX2</span></td>
+            <td class="icon">✓</td>
+            <td>es/index.html</td>
+            <td>FIX2 — flex-wrap:wrap presente no hero-ctas</td>
+            <td class="msg">flex-wrap:wrap encontrado em 3 bloco(s) ✓</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#3a8fd4">FIX2</span></td>
+            <td class="icon">✓</td>
+            <td>index.html</td>
+            <td>FIX2 — flex-wrap:nowrap ausente no hero-ctas</td>
+            <td class="msg">flex-wrap:nowrap não encontrado no hero-ctas ✓</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#3a8fd4">FIX2</span></td>
+            <td class="icon">✓</td>
+            <td>index.html</td>
+            <td>FIX2 — flex-wrap:wrap no hero-ctas (inline)</td>
+            <td class="msg">flex-wrap:wrap não definido inline — herdado do CSS externo ✓</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#3a8fd4">FIX2</span></td>
+            <td class="icon">✓</td>
+            <td>almoco.html</td>
+            <td>FIX2 — flex-wrap:nowrap ausente no hero-ctas</td>
+            <td class="msg">flex-wrap:nowrap não encontrado no hero-ctas ✓</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#3a8fd4">FIX2</span></td>
+            <td class="icon">✓</td>
+            <td>almoco.html</td>
+            <td>FIX2 — flex-wrap:wrap no hero-ctas (inline)</td>
+            <td class="msg">flex-wrap:wrap não definido inline — herdado do CSS externo ✓</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#5cb85c">FIX3</span></td>
+            <td class="icon">✓</td>
+            <td>assets/css/ec-shared.css</td>
+            <td>FIX3 — overflow:visible no ripple effect (bloco 1)</td>
+            <td class="msg">overflow:visible ✓</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#5cb85c">FIX3</span></td>
+            <td class="icon">✓</td>
+            <td>assets/css/ec-shared.css</td>
+            <td>FIX3 — overflow:visible no ripple effect (bloco 2)</td>
+            <td class="msg">overflow:visible ✓</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#5cb85c">FIX3</span></td>
+            <td class="icon">✓</td>
+            <td>assets/css/ec-shared.css</td>
+            <td>FIX3 — overflow:visible no ripple effect (bloco 3)</td>
+            <td class="msg">overflow:visible ✓</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#e67e22">REGRESSÃO</span></td>
+            <td class="icon">✓</td>
+            <td>index.html</td>
+            <td>REGRESSÃO — shimmer nav.top .btn preservado</td>
+            <td class="msg">overflow:hidden do shimmer mantido no nav.top .btn ✓</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#e67e22">REGRESSÃO</span></td>
+            <td class="icon">✓</td>
+            <td>almoco.html</td>
+            <td>REGRESSÃO — shimmer nav.top .btn preservado</td>
+            <td class="msg">overflow:hidden do shimmer mantido no nav.top .btn ✓</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#e67e22">REGRESSÃO</span></td>
+            <td class="icon">✓</td>
+            <td>cafe-da-manha.html</td>
+            <td>REGRESSÃO — shimmer nav.top .btn preservado</td>
+            <td class="msg">overflow:hidden do shimmer mantido no nav.top .btn ✓</td>
+        </tr>
+        <tr class="fail">
+            <td><span class="badge" style="background:#e67e22">REGRESSÃO</span></td>
+            <td class="icon">✗</td>
+            <td>index.html</td>
+            <td>REGRESSÃO — .hero container overflow:hidden preservado</td>
+            <td class="msg">overflow:hidden no .hero: ausente ✗</td>
+        </tr>
+        <tr class="fail">
+            <td><span class="badge" style="background:#e67e22">REGRESSÃO</span></td>
+            <td class="icon">✗</td>
+            <td>almoco.html</td>
+            <td>REGRESSÃO — .hero container overflow:hidden preservado</td>
+            <td class="msg">overflow:hidden no .hero: ausente ✗</td>
+        </tr>
+        <tr class="fail">
+            <td><span class="badge" style="background:#e67e22">REGRESSÃO</span></td>
+            <td class="icon">✗</td>
+            <td>cafe-da-manha.html</td>
+            <td>REGRESSÃO — .hero container overflow:hidden preservado</td>
+            <td class="msg">overflow:hidden no .hero: ausente ✗</td>
+        </tr>
+        <tr class="fail">
+            <td><span class="badge" style="background:#e67e22">REGRESSÃO</span></td>
+            <td class="icon">✗</td>
+            <td>cardapio.html</td>
+            <td>REGRESSÃO — .hero container overflow:hidden preservado</td>
+            <td class="msg">overflow:hidden no .hero: ausente ✗</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#e67e22">REGRESSÃO</span></td>
+            <td class="icon">✓</td>
+            <td>assets/css/ec-shared.css</td>
+            <td>REGRESSÃO — ec-shared.css hero-ctas base flex-wrap:wrap</td>
+            <td class="msg">flex-wrap:wrap no hero-ctas base: presente ✓</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#e67e22">REGRESSÃO</span></td>
+            <td class="icon">✓</td>
+            <td>assets/css/ec-index-inline.css</td>
+            <td>REGRESSÃO — ec-index-inline.css hero-ctas base flex-wrap:wrap</td>
+            <td class="msg">flex-wrap:wrap no hero-ctas base: presente ✓</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#9b59b6">FIX-BONUS</span></td>
+            <td class="icon">✓</td>
+            <td>assets/bondinho-ticket-notice.js</td>
+            <td>FIX-BONUS — aviso inserido após hero-ctas (não dentro)</td>
+            <td class="msg">insertAfter(note, heroCtas) presente ✓</td>
+        </tr>
+        <tr class="pass">
+            <td><span class="badge" style="background:#9b59b6">FIX-BONUS</span></td>
+            <td class="icon">✓</td>
+            <td>assets/bondinho-ticket-notice.js</td>
+            <td>FIX-BONUS — hero-ctas.contains() usado para pular links internos</td>
+            <td class="msg">heroCtas.contains(a) presente ✓</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Testes de renderização -->
+  <div class="section">
+    <h2>Testes de Renderização — Playwright (múltiplos viewports)</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Fix</th><th></th><th>Página</th><th>Dispositivo</th><th>Teste</th><th>Resultado</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Screenshots -->
+  
+
+</div>
+
+<div class="report-footer">
+  <div class="wrap">Embaixada Carioca — Morro da Urca &nbsp;·&nbsp; embaixadacarioca.com &nbsp;·&nbsp; 03/06/2026 10:21:21</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,648 @@
+{
+  "timestamp": "20260603_102810",
+  "total": 64,
+  "passed": 62,
+  "failed": 2,
+  "results": [
+    {
+      "test_id": "fix1_almoco.html_0",
+      "name": "FIX1 — overflow:visible nos botões (bloco 1—principal)",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "overflow:visible ✓",
+      "file": "almoco.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix1_almoco.html_1_variant",
+      "name": "FIX1 — bloco variante sem overflow (bloco 2) — herda do CSS externo",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "Bloco variante sem overflow inline — herda overflow:visible do ec-shared.css ✓",
+      "file": "almoco.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix1_cafe-da-manha.html_0",
+      "name": "FIX1 — overflow:visible nos botões (bloco 1—principal)",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "overflow:visible ✓",
+      "file": "cafe-da-manha.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix1_cafe-da-manha.html_1_variant",
+      "name": "FIX1 — bloco variante sem overflow (bloco 2) — herda do CSS externo",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "Bloco variante sem overflow inline — herda overflow:visible do ec-shared.css ✓",
+      "file": "cafe-da-manha.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix1_cardapio.html_0",
+      "name": "FIX1 — overflow:visible nos botões (bloco 1—principal)",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "overflow:visible ✓",
+      "file": "cardapio.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix1_cardapio.html_1_variant",
+      "name": "FIX1 — bloco variante sem overflow (bloco 2) — herda do CSS externo",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "Bloco variante sem overflow inline — herda overflow:visible do ec-shared.css ✓",
+      "file": "cardapio.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix1_en_index.html_0",
+      "name": "FIX1 — overflow:visible nos botões (bloco 1—principal)",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "overflow:visible ✓",
+      "file": "en/index.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix1_en_index.html_1_variant",
+      "name": "FIX1 — bloco variante sem overflow (bloco 2) — herda do CSS externo",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "Bloco variante sem overflow inline — herda overflow:visible do ec-shared.css ✓",
+      "file": "en/index.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix1_es_index.html_0",
+      "name": "FIX1 — overflow:visible nos botões (bloco 1—principal)",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "overflow:visible ✓",
+      "file": "es/index.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix1_es_index.html_1_variant",
+      "name": "FIX1 — bloco variante sem overflow (bloco 2) — herda do CSS externo",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "Bloco variante sem overflow inline — herda overflow:visible do ec-shared.css ✓",
+      "file": "es/index.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix2_en_index.html_ok",
+      "name": "FIX2 — flex-wrap:nowrap ausente no hero-ctas",
+      "fix": "FIX2",
+      "passed": true,
+      "message": "flex-wrap:nowrap não encontrado no hero-ctas ✓",
+      "file": "en/index.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix2_en_index.html_wrap",
+      "name": "FIX2 — flex-wrap:wrap presente no hero-ctas",
+      "fix": "FIX2",
+      "passed": true,
+      "message": "flex-wrap:wrap encontrado em 3 bloco(s) ✓",
+      "file": "en/index.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix2_es_index.html_ok",
+      "name": "FIX2 — flex-wrap:nowrap ausente no hero-ctas",
+      "fix": "FIX2",
+      "passed": true,
+      "message": "flex-wrap:nowrap não encontrado no hero-ctas ✓",
+      "file": "es/index.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix2_es_index.html_wrap",
+      "name": "FIX2 — flex-wrap:wrap presente no hero-ctas",
+      "fix": "FIX2",
+      "passed": true,
+      "message": "flex-wrap:wrap encontrado em 3 bloco(s) ✓",
+      "file": "es/index.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix2_index.html_ok",
+      "name": "FIX2 — flex-wrap:nowrap ausente no hero-ctas",
+      "fix": "FIX2",
+      "passed": true,
+      "message": "flex-wrap:nowrap não encontrado no hero-ctas ✓",
+      "file": "index.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix2_index.html_nowrapbase",
+      "name": "FIX2 — flex-wrap:wrap no hero-ctas (inline)",
+      "fix": "FIX2",
+      "passed": true,
+      "message": "flex-wrap:wrap não definido inline — herdado do CSS externo ✓",
+      "file": "index.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix2_almoco.html_ok",
+      "name": "FIX2 — flex-wrap:nowrap ausente no hero-ctas",
+      "fix": "FIX2",
+      "passed": true,
+      "message": "flex-wrap:nowrap não encontrado no hero-ctas ✓",
+      "file": "almoco.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix2_almoco.html_nowrapbase",
+      "name": "FIX2 — flex-wrap:wrap no hero-ctas (inline)",
+      "fix": "FIX2",
+      "passed": true,
+      "message": "flex-wrap:wrap não definido inline — herdado do CSS externo ✓",
+      "file": "almoco.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix3_ripple_0",
+      "name": "FIX3 — overflow:visible no ripple effect (bloco 1)",
+      "fix": "FIX3",
+      "passed": true,
+      "message": "overflow:visible ✓",
+      "file": "assets/css/ec-shared.css",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix3_ripple_1",
+      "name": "FIX3 — overflow:visible no ripple effect (bloco 2)",
+      "fix": "FIX3",
+      "passed": true,
+      "message": "overflow:visible ✓",
+      "file": "assets/css/ec-shared.css",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix3_ripple_2",
+      "name": "FIX3 — overflow:visible no ripple effect (bloco 3)",
+      "fix": "FIX3",
+      "passed": true,
+      "message": "overflow:visible ✓",
+      "file": "assets/css/ec-shared.css",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "regression_shimmer_index.html",
+      "name": "REGRESSÃO — shimmer nav.top .btn preservado",
+      "fix": "REGRESSÃO",
+      "passed": true,
+      "message": "overflow:hidden do shimmer mantido no nav.top .btn ✓",
+      "file": "index.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "regression_shimmer_almoco.html",
+      "name": "REGRESSÃO — shimmer nav.top .btn preservado",
+      "fix": "REGRESSÃO",
+      "passed": true,
+      "message": "overflow:hidden do shimmer mantido no nav.top .btn ✓",
+      "file": "almoco.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "regression_shimmer_cafe-da-manha.html",
+      "name": "REGRESSÃO — shimmer nav.top .btn preservado",
+      "fix": "REGRESSÃO",
+      "passed": true,
+      "message": "overflow:hidden do shimmer mantido no nav.top .btn ✓",
+      "file": "cafe-da-manha.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "regression_hero_index.html",
+      "name": "REGRESSÃO — .hero container overflow:hidden preservado",
+      "fix": "REGRESSÃO",
+      "passed": true,
+      "message": "overflow:hidden no .hero: presente em ec-shared.css (externo) ✓",
+      "file": "index.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "regression_hero_almoco.html",
+      "name": "REGRESSÃO — .hero container overflow:hidden preservado",
+      "fix": "REGRESSÃO",
+      "passed": true,
+      "message": "overflow:hidden no .hero: presente em ec-shared.css (externo) ✓",
+      "file": "almoco.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "regression_hero_cafe-da-manha.html",
+      "name": "REGRESSÃO — .hero container overflow:hidden preservado",
+      "fix": "REGRESSÃO",
+      "passed": true,
+      "message": "overflow:hidden no .hero: presente em ec-shared.css (externo) ✓",
+      "file": "cafe-da-manha.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "regression_hero_cardapio.html",
+      "name": "REGRESSÃO — .hero container overflow:hidden preservado",
+      "fix": "REGRESSÃO",
+      "passed": true,
+      "message": "overflow:hidden no .hero: presente em ec-shared.css (externo) ✓",
+      "file": "cardapio.html",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "regression_ec_shared_heroctas_wrap",
+      "name": "REGRESSÃO — ec-shared.css hero-ctas base flex-wrap:wrap",
+      "fix": "REGRESSÃO",
+      "passed": true,
+      "message": "flex-wrap:wrap no hero-ctas base: presente ✓",
+      "file": "assets/css/ec-shared.css",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "regression_ec_index_heroctas_wrap",
+      "name": "REGRESSÃO — ec-index-inline.css hero-ctas base flex-wrap:wrap",
+      "fix": "REGRESSÃO",
+      "passed": true,
+      "message": "flex-wrap:wrap no hero-ctas base: presente ✓",
+      "file": "assets/css/ec-index-inline.css",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "bonus_notice_after_heroctas",
+      "name": "FIX-BONUS — aviso inserido após hero-ctas (não dentro)",
+      "fix": "FIX-BONUS",
+      "passed": true,
+      "message": "insertAfter(note, heroCtas) presente ✓",
+      "file": "assets/bondinho-ticket-notice.js",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "bonus_notice_no_heroctas_contains",
+      "name": "FIX-BONUS — hero-ctas.contains() usado para pular links internos",
+      "fix": "FIX-BONUS",
+      "passed": true,
+      "message": "heroCtas.contains(a) presente ✓",
+      "file": "assets/bondinho-ticket-notice.js",
+      "device": "",
+      "page": ""
+    },
+    {
+      "test_id": "fix1_desktop_1440px_home_pt",
+      "name": "FIX1 — botões não clipados",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "11 botão(ões) encontrado(s). Clipados: 0. overflow:hidden: 0.",
+      "file": "",
+      "device": "Desktop 1440px",
+      "page": "Home (PT)"
+    },
+    {
+      "test_id": "fix2_desktop_1440px_home_pt",
+      "name": "FIX2 — hero-ctas flex-wrap computado",
+      "fix": "FIX2",
+      "passed": true,
+      "message": "flex-wrap computado: 'wrap'. ✓",
+      "file": "",
+      "device": "Desktop 1440px",
+      "page": "Home (PT)"
+    },
+    {
+      "test_id": "fix3_desktop_1440px_home_pt",
+      "name": "FIX3 — overflow computado nos .btn/.momento-cta",
+      "fix": "FIX3",
+      "passed": true,
+      "message": "14 elemento(s). overflow:hidden: 0. Clipados: 0.",
+      "file": "",
+      "device": "Desktop 1440px",
+      "page": "Home (PT)"
+    },
+    {
+      "test_id": "bonus_desktop_1440px_home_pt",
+      "name": "FIX-BONUS — aviso de ingresso após hero-ctas",
+      "fix": "FIX-BONUS",
+      "passed": true,
+      "message": "Aviso fora do hero-ctas ✓",
+      "file": "",
+      "device": "Desktop 1440px",
+      "page": "Home (PT)"
+    },
+    {
+      "test_id": "fix1_desktop_1440px_almoço",
+      "name": "FIX1 — botões não clipados",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "5 botão(ões) encontrado(s). Clipados: 0. overflow:hidden: 0.",
+      "file": "",
+      "device": "Desktop 1440px",
+      "page": "Almoço"
+    },
+    {
+      "test_id": "fix1_desktop_1440px_home_en",
+      "name": "FIX1 — botões não clipados",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "8 botão(ões) encontrado(s). Clipados: 0. overflow:hidden: 0.",
+      "file": "",
+      "device": "Desktop 1440px",
+      "page": "Home (EN)"
+    },
+    {
+      "test_id": "fix2_desktop_1440px_home_en",
+      "name": "FIX2 — hero-ctas flex-wrap computado",
+      "fix": "FIX2",
+      "passed": true,
+      "message": "flex-wrap computado: 'wrap'. ✓",
+      "file": "",
+      "device": "Desktop 1440px",
+      "page": "Home (EN)"
+    },
+    {
+      "test_id": "bonus_desktop_1440px_home_en",
+      "name": "FIX-BONUS — aviso de ingresso após hero-ctas",
+      "fix": "FIX-BONUS",
+      "passed": true,
+      "message": "Aviso fora do hero-ctas ✓",
+      "file": "",
+      "device": "Desktop 1440px",
+      "page": "Home (EN)"
+    },
+    {
+      "test_id": "fix1_tablet_960px_home_pt",
+      "name": "FIX1 — botões não clipados",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "11 botão(ões) encontrado(s). Clipados: 0. overflow:hidden: 0.",
+      "file": "",
+      "device": "Tablet 960px",
+      "page": "Home (PT)"
+    },
+    {
+      "test_id": "fix2_tablet_960px_home_pt",
+      "name": "FIX2 — hero-ctas flex-wrap computado",
+      "fix": "FIX2",
+      "passed": true,
+      "message": "flex-wrap computado: 'wrap'. ✓",
+      "file": "",
+      "device": "Tablet 960px",
+      "page": "Home (PT)"
+    },
+    {
+      "test_id": "fix3_tablet_960px_home_pt",
+      "name": "FIX3 — overflow computado nos .btn/.momento-cta",
+      "fix": "FIX3",
+      "passed": true,
+      "message": "14 elemento(s). overflow:hidden: 0. Clipados: 0.",
+      "file": "",
+      "device": "Tablet 960px",
+      "page": "Home (PT)"
+    },
+    {
+      "test_id": "bonus_tablet_960px_home_pt",
+      "name": "FIX-BONUS — aviso de ingresso após hero-ctas",
+      "fix": "FIX-BONUS",
+      "passed": true,
+      "message": "Aviso fora do hero-ctas ✓",
+      "file": "",
+      "device": "Tablet 960px",
+      "page": "Home (PT)"
+    },
+    {
+      "test_id": "fix1_tablet_960px_almoço",
+      "name": "FIX1 — botões não clipados",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "5 botão(ões) encontrado(s). Clipados: 0. overflow:hidden: 0.",
+      "file": "",
+      "device": "Tablet 960px",
+      "page": "Almoço"
+    },
+    {
+      "test_id": "fix1_tablet_960px_home_en",
+      "name": "FIX1 — botões não clipados",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "8 botão(ões) encontrado(s). Clipados: 0. overflow:hidden: 0.",
+      "file": "",
+      "device": "Tablet 960px",
+      "page": "Home (EN)"
+    },
+    {
+      "test_id": "fix2_tablet_960px_home_en",
+      "name": "FIX2 — hero-ctas flex-wrap computado",
+      "fix": "FIX2",
+      "passed": true,
+      "message": "flex-wrap computado: 'wrap'. ✓",
+      "file": "",
+      "device": "Tablet 960px",
+      "page": "Home (EN)"
+    },
+    {
+      "test_id": "bonus_tablet_960px_home_en",
+      "name": "FIX-BONUS — aviso de ingresso após hero-ctas",
+      "fix": "FIX-BONUS",
+      "passed": true,
+      "message": "Aviso fora do hero-ctas ✓",
+      "file": "",
+      "device": "Tablet 960px",
+      "page": "Home (EN)"
+    },
+    {
+      "test_id": "fix1_mobile_390px_iphone_14_pro_home_pt",
+      "name": "FIX1 — botões não clipados",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "11 botão(ões) encontrado(s). Clipados: 0. overflow:hidden: 0.",
+      "file": "",
+      "device": "Mobile 390px (iPhone 14 Pro)",
+      "page": "Home (PT)"
+    },
+    {
+      "test_id": "fix2_mobile_390px_iphone_14_pro_home_pt",
+      "name": "FIX2 — hero-ctas flex-wrap computado",
+      "fix": "FIX2",
+      "passed": true,
+      "message": "flex-wrap computado: 'wrap'. ✓",
+      "file": "",
+      "device": "Mobile 390px (iPhone 14 Pro)",
+      "page": "Home (PT)"
+    },
+    {
+      "test_id": "fix3_mobile_390px_iphone_14_pro_home_pt",
+      "name": "FIX3 — overflow computado nos .btn/.momento-cta",
+      "fix": "FIX3",
+      "passed": true,
+      "message": "14 elemento(s). overflow:hidden: 0. Clipados: 0.",
+      "file": "",
+      "device": "Mobile 390px (iPhone 14 Pro)",
+      "page": "Home (PT)"
+    },
+    {
+      "test_id": "bonus_mobile_390px_iphone_14_pro_home_pt",
+      "name": "FIX-BONUS — aviso de ingresso após hero-ctas",
+      "fix": "FIX-BONUS",
+      "passed": true,
+      "message": "Aviso fora do hero-ctas ✓",
+      "file": "",
+      "device": "Mobile 390px (iPhone 14 Pro)",
+      "page": "Home (PT)"
+    },
+    {
+      "test_id": "fix1_mobile_390px_iphone_14_pro_almoço",
+      "name": "FIX1 — botões não clipados",
+      "fix": "FIX1",
+      "passed": false,
+      "message": "5 botão(ões) encontrado(s). Clipados: 1. overflow:hidden: 0.",
+      "file": "",
+      "device": "Mobile 390px (iPhone 14 Pro)",
+      "page": "Almoço"
+    },
+    {
+      "test_id": "fix1_mobile_390px_iphone_14_pro_home_en",
+      "name": "FIX1 — botões não clipados",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "8 botão(ões) encontrado(s). Clipados: 0. overflow:hidden: 0.",
+      "file": "",
+      "device": "Mobile 390px (iPhone 14 Pro)",
+      "page": "Home (EN)"
+    },
+    {
+      "test_id": "fix2_mobile_390px_iphone_14_pro_home_en",
+      "name": "FIX2 — hero-ctas flex-wrap computado",
+      "fix": "FIX2",
+      "passed": true,
+      "message": "flex-wrap computado: 'wrap'. ✓",
+      "file": "",
+      "device": "Mobile 390px (iPhone 14 Pro)",
+      "page": "Home (EN)"
+    },
+    {
+      "test_id": "bonus_mobile_390px_iphone_14_pro_home_en",
+      "name": "FIX-BONUS — aviso de ingresso após hero-ctas",
+      "fix": "FIX-BONUS",
+      "passed": true,
+      "message": "Aviso fora do hero-ctas ✓",
+      "file": "",
+      "device": "Mobile 390px (iPhone 14 Pro)",
+      "page": "Home (EN)"
+    },
+    {
+      "test_id": "fix1_mobile_360px_android_home_pt",
+      "name": "FIX1 — botões não clipados",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "11 botão(ões) encontrado(s). Clipados: 0. overflow:hidden: 0.",
+      "file": "",
+      "device": "Mobile 360px (Android)",
+      "page": "Home (PT)"
+    },
+    {
+      "test_id": "fix2_mobile_360px_android_home_pt",
+      "name": "FIX2 — hero-ctas flex-wrap computado",
+      "fix": "FIX2",
+      "passed": true,
+      "message": "flex-wrap computado: 'wrap'. ✓",
+      "file": "",
+      "device": "Mobile 360px (Android)",
+      "page": "Home (PT)"
+    },
+    {
+      "test_id": "fix3_mobile_360px_android_home_pt",
+      "name": "FIX3 — overflow computado nos .btn/.momento-cta",
+      "fix": "FIX3",
+      "passed": true,
+      "message": "14 elemento(s). overflow:hidden: 0. Clipados: 0.",
+      "file": "",
+      "device": "Mobile 360px (Android)",
+      "page": "Home (PT)"
+    },
+    {
+      "test_id": "bonus_mobile_360px_android_home_pt",
+      "name": "FIX-BONUS — aviso de ingresso após hero-ctas",
+      "fix": "FIX-BONUS",
+      "passed": true,
+      "message": "Aviso fora do hero-ctas ✓",
+      "file": "",
+      "device": "Mobile 360px (Android)",
+      "page": "Home (PT)"
+    },
+    {
+      "test_id": "fix1_mobile_360px_android_almoço",
+      "name": "FIX1 — botões não clipados",
+      "fix": "FIX1",
+      "passed": false,
+      "message": "5 botão(ões) encontrado(s). Clipados: 1. overflow:hidden: 0.",
+      "file": "",
+      "device": "Mobile 360px (Android)",
+      "page": "Almoço"
+    },
+    {
+      "test_id": "fix1_mobile_360px_android_home_en",
+      "name": "FIX1 — botões não clipados",
+      "fix": "FIX1",
+      "passed": true,
+      "message": "8 botão(ões) encontrado(s). Clipados: 0. overflow:hidden: 0.",
+      "file": "",
+      "device": "Mobile 360px (Android)",
+      "page": "Home (EN)"
+    },
+    {
+      "test_id": "fix2_mobile_360px_android_home_en",
+      "name": "FIX2 — hero-ctas flex-wrap computado",
+      "fix": "FIX2",
+      "passed": true,
+      "message": "flex-wrap computado: 'wrap'. ✓",
+      "file": "",
+      "device": "Mobile 360px (Android)",
+      "page": "Home (EN)"
+    },
+    {
+      "test_id": "bonus_mobile_360px_android_home_en",
+      "name": "FIX-BONUS — aviso de ingresso após hero-ctas",
+      "fix": "FIX-BONUS",
+      "passed": true,
+      "message": "Aviso fora do hero-ctas ✓",
+      "file": "",
+      "device": "Mobile 360px (Android)",
+      "page": "Home (EN)"
+    }
+  ]
+}
