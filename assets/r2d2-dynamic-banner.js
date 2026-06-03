@@ -96,7 +96,7 @@
 
   function injectStyle(){
     if (document.getElementById('ec-r2d2-banner-style')) return;
-    var css = '.ec-r2d2-banner{position:relative;z-index:20;background:#00405a;color:#f6efde;border-bottom:1px solid rgba(246,239,222,.18);padding:14px 20px;font-family:Catamaran,Verdana,system-ui,sans-serif}.ec-r2d2-banner__inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:18px}.ec-r2d2-banner strong{display:block;color:#fff;font-size:18px;line-height:1.15}.ec-r2d2-banner span{display:block;color:rgba(246,239,222,.86);font-size:15px;line-height:1.35}.ec-r2d2-banner a{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 18px;border-radius:999px;background:#f59b1e;color:#00405a!important;-webkit-text-fill-color:#00405a!important;text-decoration:none;font-weight:900;letter-spacing:.12em;text-transform:uppercase;font-size:12px}.ec-r2d2-banner button{background:transparent;border:0;color:#f6efde;font-size:22px;line-height:1;cursor:pointer;padding:6px}.ec-r2d2-banner__copy{display:flex;align-items:center;gap:14px}.ec-r2d2-banner__dot{width:10px;height:10px;border-radius:99px;background:#f59b1e;box-shadow:0 0 0 6px rgba(245,155,30,.18)}@media(max-width:760px){.ec-r2d2-banner__inner{align-items:flex-start}.ec-r2d2-banner__copy{align-items:flex-start}.ec-r2d2-banner a{display:none}.ec-r2d2-banner strong{font-size:16px}.ec-r2d2-banner span{font-size:14px}}';
+    var css = '.ec-r2d2-banner{position:sticky;top:0;z-index:1000;background:#00405a;color:#f6efde;border-bottom:1px solid rgba(246,239,222,.18);padding:14px 20px;font-family:Catamaran,Verdana,system-ui,sans-serif}.ec-r2d2-banner__inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:18px}.ec-r2d2-banner strong{display:block;color:#fff;font-size:18px;line-height:1.15}.ec-r2d2-banner span{display:block;color:rgba(246,239,222,.86);font-size:15px;line-height:1.35}.ec-r2d2-banner a{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 18px;border-radius:999px;background:#f59b1e;color:#00405a!important;-webkit-text-fill-color:#00405a!important;text-decoration:none;font-weight:900;letter-spacing:.12em;text-transform:uppercase;font-size:12px}.ec-r2d2-banner button{background:transparent;border:0;color:#f6efde;font-size:22px;line-height:1;cursor:pointer;padding:6px}.ec-r2d2-banner__copy{display:flex;align-items:center;gap:14px}.ec-r2d2-banner__dot{width:10px;height:10px;border-radius:99px;background:#f59b1e;box-shadow:0 0 0 6px rgba(245,155,30,.18)}@media(max-width:760px){.ec-r2d2-banner__inner{align-items:flex-start}.ec-r2d2-banner__copy{align-items:flex-start}.ec-r2d2-banner a{display:none}.ec-r2d2-banner strong{font-size:16px}.ec-r2d2-banner span{font-size:14px}}';
     var style = document.createElement('style');
     style.id = 'ec-r2d2-banner-style';
     style.textContent = css;
@@ -113,11 +113,27 @@
     bar.className = 'ec-r2d2-banner';
     bar.setAttribute('aria-label', 'Sugestão contextual da Embaixada Carioca');
     bar.innerHTML = '<div class="ec-r2d2-banner__inner"><div class="ec-r2d2-banner__copy"><i class="ec-r2d2-banner__dot" aria-hidden="true"></i><div><strong>'+c[0]+'</strong><span>'+c[1]+'</span></div></div><a href="'+c[3]+'">'+c[2]+'</a><button type="button" aria-label="Fechar">×</button></div>';
+    document.body.insertBefore(bar, document.body.firstChild);
+    /* Ajustar o top do nav fixo para não sobrepor o banner */
+    function adjustNavTop(){
+      var nav = document.getElementById('topnav') || document.querySelector('nav.top');
+      if (!nav) return;
+      var bh = document.body.contains(bar) ? bar.offsetHeight : 0;
+      if (bh > 0) {
+        nav.style.setProperty('top', bh + 'px', 'important');
+      } else {
+        nav.style.removeProperty('top');
+      }
+    }
+    adjustNavTop();
+    window.addEventListener('resize', adjustNavTop, { passive: true });
+    /* Ao fechar o banner, resetar o top do nav */
     bar.querySelector('button').addEventListener('click', function(){
       sessionStorage.setItem('ec_r2d2_banner_closed','1');
       bar.remove();
+      var nav = document.getElementById('topnav') || document.querySelector('nav.top');
+      if (nav) nav.style.removeProperty('top');
     });
-    document.body.insertBefore(bar, document.body.firstChild);
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', render, { once:true });

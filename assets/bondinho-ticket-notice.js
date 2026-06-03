@@ -55,15 +55,19 @@
         }
       }
     }
-    /* Para outros containers de CTAs: inserir o aviso no parentElement do link */
+    /* Para outros containers de CTAs: inserir o aviso no parentElement do link.
+       NUNCA inserir dentro de: nav.top, .mobile-bottom-nav, header de navegação. */
     Array.prototype.slice.call(document.querySelectorAll('a[href]')).forEach(function(a){
       if (!isReservationLink(a)) return;
       /* Pular links dentro do hero-ctas (já tratado acima) */
       if (heroCtas && heroCtas.contains(a)) return;
+      /* Pular links dentro do nav.top e mobile-bottom-nav */
+      if (a.closest('nav.top') || a.closest('.mobile-bottom-nav')) return;
       var parent = a.parentElement;
       if (!parent || parent.querySelector('.ec-bondinho-ticket-notice')) return;
-      var nearHero = a.closest('.ctas,.ec-faq-actions,.seo-conversion-block,.guia-reservation-links,header,main,section');
-      if (!nearHero) return;
+      /* Restringir apenas a containers de conteúdo — nunca nav/header de navegação */
+      var nearContent = a.closest('main, section, article, .ctas, .ec-faq-actions, .seo-conversion-block, .guia-reservation-links');
+      if (!nearContent) return;
       var note2 = document.createElement('small');
       note2.className = 'ec-bondinho-ticket-notice';
       note2.textContent = copy[lang()];
