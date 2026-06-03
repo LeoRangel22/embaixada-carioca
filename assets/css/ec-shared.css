@@ -284,7 +284,7 @@ nav .lang-dropdown a:visited {
   /* Ripple effect nos botões principais */
   .btn, .momento-cta {
     position: relative !important;
-    overflow: hidden !important;
+    overflow:visible !important;
   }
 }
 
@@ -2062,7 +2062,7 @@ html body main :is(.menu-item,.menu-card,.dish-card) :is(.price,.menu-item-price
   /* Ripple effect nos botões principais */
   .btn, .momento-cta {
     position: relative !important;
-    overflow: hidden !important;
+    overflow:visible !important;
   }
 }
 
@@ -2673,7 +2673,7 @@ nav.top a.btn[href*="tagme"]::before{
   /* Ripple effect nos botões principais */
   .btn, .momento-cta {
     position: relative !important;
-    overflow: hidden !important;
+    overflow:visible !important;
   }
 }
 
