@@ -5,7 +5,7 @@
 - almoco.html: already linked
 - cardapio.html: already linked
 - como-chegar.html: already linked
-- eventos.html: link inserted
+- eventos.html: already linked
 - guia-do-rio.html: already linked
 
-Changed pages: 1
+Changed pages: 0
