@@ -23,7 +23,7 @@ Score mínimo: **100**
   - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, FAQPage, GeoCoordinates, ListItem, LocationFeatureSpecification, Menu, MenuItem, MenuSection, Neighborhood, Offer, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, TouristAttraction
 - `es/almoco.html` — PASS — score 100 — blocos válidos 5
   - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, FAQPage, GeoCoordinates, ListItem, LocationFeatureSpecification, MenuItem, MenuSection, Menú, Neighborhood, Offer, OpeningHoursSpecification, PostalAddress, Question, ReserveAction, Restaurant, SpeakableSpecification, TouristAttraction
-- `cafe-da-manha.html` — PASS — score 100 — blocos válidos 8
+- `cafe-da-manha.html` — PASS — score 100 — blocos válidos 9
   - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, FAQPage, FoodEvent, GeoCoordinates, ListItem, LocationFeatureSpecification, Neighborhood, OpeningHoursSpecification, Place, PostalAddress, Question, ReserveAction, Restaurant, Schedule, SpeakableSpecification, TouristAttraction, WebPage
 - `en/cafe-da-manha.html` — PASS — score 100 — blocos válidos 7
   - Encontrado: AdministrativeArea, Answer, BreadcrumbList, City, FAQPage, FoodEvent, GeoCoordinates, ListItem, LocationFeatureSpecification, Neighborhood, OpeningHoursSpecification, Place, PostalAddress, Question, ReserveAction, Restaurant, Schedule, SpeakableSpecification, TouristAttraction, WebPage

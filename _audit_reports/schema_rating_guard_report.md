@@ -8,7 +8,7 @@ Mode: **check**
 - JSON-LD não pode conter `ratingValue`, `reviewCount`, `ratingCount`, `bestRating` ou `worstRating` ligados a avaliações externas.
 - A nota do Google pode continuar no texto visível da página, mas não no schema estruturado.
 
-Arquivos HTML verificados: **315**
+Arquivos HTML verificados: **322**
 Achados: **0**
 
 ## Arquivos alterados / verificados
@@ -230,6 +230,13 @@ Achados: **0**
 - `_backups/fase4/onde-comer-no-pao-de-acucar.html` — ok — blocos JSON-LD: 6 — inválidos: 0
 - `_backups/fase4/restaurante-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 6 — inválidos: 0
 - `_backups/fase4/restaurante-morro-da-urca.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase4_final/almoco-morro-da-urca.html` — ok — blocos JSON-LD: 5 — inválidos: 0
+- `_backups/fase4_final/almoco.html` — ok — blocos JSON-LD: 6 — inválidos: 0
+- `_backups/fase4_final/cafe-da-manha.html` — ok — blocos JSON-LD: 8 — inválidos: 0
+- `_backups/fase4_final/index.html` — ok — blocos JSON-LD: 9 — inválidos: 0
+- `_backups/fase4_final/onde-comer-no-pao-de-acucar.html` — ok — blocos JSON-LD: 7 — inválidos: 0
+- `_backups/fase4_final/parque-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 7 — inválidos: 0
+- `_backups/fase4_final/restaurante-morro-da-urca.html` — ok — blocos JSON-LD: 7 — inválidos: 0
 - `_backups/gsc_fixes/contato.html` — ok — blocos JSON-LD: 5 — inválidos: 0
 - `_backups/gsc_fixes/en/contato.html` — ok — blocos JSON-LD: 5 — inválidos: 0
 - `_backups/gsc_fixes/en/nossa-visao.html` — ok — blocos JSON-LD: 5 — inválidos: 0
@@ -245,7 +252,7 @@ Achados: **0**
 - `almoco.html` — ok — blocos JSON-LD: 6 — inválidos: 0
 - `cafe-da-manha-com-vista-rio-de-janeiro.html` — ok — blocos JSON-LD: 6 — inválidos: 0
 - `cafe-da-manha-pao-de-acucar.html` — ok — blocos JSON-LD: 4 — inválidos: 0
-- `cafe-da-manha.html` — ok — blocos JSON-LD: 8 — inválidos: 0
+- `cafe-da-manha.html` — ok — blocos JSON-LD: 9 — inválidos: 0
 - `caipirinha-com-vista-rio.html` — ok — blocos JSON-LD: 5 — inválidos: 0
 - `cardapio.html` — ok — blocos JSON-LD: 6 — inválidos: 0
 - `como-chegar.html` — ok — blocos JSON-LD: 3 — inválidos: 0
@@ -319,7 +326,7 @@ Achados: **0**
 - `o-que-fazer-depois-do-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 8 — inválidos: 0
 - `offline.html` — ok — blocos JSON-LD: 1 — inválidos: 0
 - `onde-comer-no-pao-de-acucar.html` — ok — blocos JSON-LD: 7 — inválidos: 0
-- `parque-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 7 — inválidos: 0
+- `parque-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 8 — inválidos: 0
 - `parque-bondinho.html` — ok — blocos JSON-LD: 7 — inválidos: 0
 - `por-do-sol-morro-da-urca.html` — ok — blocos JSON-LD: 5 — inválidos: 0
 - `restaurante-bondinho-pao-de-acucar.html` — ok — blocos JSON-LD: 7 — inválidos: 0
