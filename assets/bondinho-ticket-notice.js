@@ -55,18 +55,20 @@
         }
       }
     }
-    /* Para outros containers de CTAs: inserir o aviso no parentElement do link.
-       NUNCA inserir dentro de: nav.top, .mobile-bottom-nav, header de navegação. */
+    /* Para outros containers de CTAs dentro de main/section/article:
+       inserir o aviso no parentElement do link.
+       NUNCA inserir dentro de: nav.top, .mobile-bottom-nav, qualquer header
+       (header.page-hero tem overflow:hidden e cliparia o aviso). */
     Array.prototype.slice.call(document.querySelectorAll('a[href]')).forEach(function(a){
       if (!isReservationLink(a)) return;
       /* Pular links dentro do hero-ctas (já tratado acima) */
       if (heroCtas && heroCtas.contains(a)) return;
-      /* Pular links dentro do nav.top e mobile-bottom-nav */
-      if (a.closest('nav.top') || a.closest('.mobile-bottom-nav')) return;
+      /* Pular links dentro do nav.top, mobile-bottom-nav e qualquer header */
+      if (a.closest('nav.top') || a.closest('.mobile-bottom-nav') || a.closest('header')) return;
       var parent = a.parentElement;
       if (!parent || parent.querySelector('.ec-bondinho-ticket-notice')) return;
-      /* Restringir apenas a containers de conteúdo — nunca nav/header de navegação */
-      var nearContent = a.closest('main, section, article, .ctas, .ec-faq-actions, .seo-conversion-block, .guia-reservation-links');
+      /* Restringir apenas a containers de conteúdo dentro de main/section/article */
+      var nearContent = a.closest('main, section, article, .ec-faq-actions, .seo-conversion-block, .guia-reservation-links');
       if (!nearContent) return;
       var note2 = document.createElement('small');
       note2.className = 'ec-bondinho-ticket-notice';
