@@ -97,7 +97,8 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Pão de Açúcar em primeiro plano
 
 ## eventos.html
-- PASS: no static contrast risk patterns found
+- VISUAL_CHECK: 1 pattern(s) detected but covered by global contrast hotfix
+  - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | Planejando onde comer ou realizar eventos no Morro da Urca?
 
 ## guia-do-rio.html
 - VISUAL_CHECK: 13 pattern(s) detected but covered by global contrast hotfix
@@ -116,7 +117,7 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Se o seu roteiro passa pelo Bondinho, Morro da Urca ou Pão de Açúcar, reserve uma parada para café da manhã, almoço brasileiro, caipirinhas ou uma experiência c
 
 ## Summary
-- Total static patterns detected: 107
+- Total static patterns detected: 108
 - Open contrast risks: 0
-- Covered patterns requiring browser visual check: 107
+- Covered patterns requiring browser visual check: 108
 - Required next validation: browser screenshots for cafe-da-manha.html, guia-do-rio.html, index.html, almoco.html, cardapio.html and eventos.html after deployment.
