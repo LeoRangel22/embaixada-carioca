@@ -41,7 +41,7 @@ Static guardrail for visual contrast regressions in current pages.
   - ... +22 more
 
 ## cafe-da-manha.html
-- VISUAL_CHECK: 15 pattern(s) detected but covered by global contrast hotfix
+- VISUAL_CHECK: 17 pattern(s) detected but covered by global contrast hotfix
   - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Hoje
   - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Por do sol às 17h44
   - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Resumo
@@ -49,6 +49,8 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Vista
   - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Pão de Açúcar em primeiro plano
   - covered-by-breakfast-sentinel-lock | breakfast-lede-sentinel | <p> class='lede' | Do Café da Embaixada para 2 ao açaí orgânico, ovos na chapa e cafés especiais — servido todos os dias, das 8h30 às 11h30, no alto do Morro da Urca.
+  - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | Quer começar o dia com um Café da Manhã Corporativo?
+  - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Oferecemos serviços exclusivos de buffet para café da manhã no morro da urca para grupos de agências, reuniões de negócios ou celebrações especiais. Desfrute do
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h2> class='' | Restaurante, café da manhã, feijoada, picanha e drinks no Morro da Urca.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Explore os principais momentos da Embaixada Carioca dentro do Parque Bondinho Pão de Açúcar: café da manhã com vista, almoço brasileiro, feijoada premiada da Ac
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | Tem café da manhã no Pão de Açúcar?
@@ -59,7 +61,7 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Para quem busca café da manhã na Urca, café da manhã no Bondinho Pão de Açúcar ou uma experiência de manhã com vista no Rio de Janeiro, a Embaixada Carioca abre
 
 ## almoco.html
-- VISUAL_CHECK: 12 pattern(s) detected but covered by global contrast hotfix
+- VISUAL_CHECK: 14 pattern(s) detected but covered by global contrast hotfix
   - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Hoje
   - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Por do sol às 17h44
   - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Resumo
@@ -67,6 +69,8 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Vista
   - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Pão de Açúcar em primeiro plano
   - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | Receitas clássicas da gastronomia brasileira servidas com técnica contemporânea e ingredientes selecionados — o sabor do Brasil com a vista mais bonita do Rio. 
+  - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | Planejando um Evento Corporativo ou Celebração?
+  - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Além do nosso almoço tradicional, oferecemos um exclusivo espaço para eventos no Morro da Urca com capacidade para até 250 convidados. Seja para eventos corpora
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | O roteiro perfeito: Bondinho + Almoço
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Para otimizar seu tempo e orçamento no Rio de Janeiro, recomendamos combinar a visita ao Parque Bondinho com seu almoço. Ao invés de procurar restaurantes na Ur
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Nossa picanha grelhada (prato mais vendido) e o Chopp Heineken (eleito o melhor da cidade) são as escolhas favoritas de quem busca a autêntica alma carioca após
@@ -117,7 +121,7 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Se o seu roteiro passa pelo Bondinho, Morro da Urca ou Pão de Açúcar, reserve uma parada para café da manhã, almoço brasileiro, caipirinhas ou uma experiência c
 
 ## Summary
-- Total static patterns detected: 108
+- Total static patterns detected: 112
 - Open contrast risks: 0
-- Covered patterns requiring browser visual check: 108
+- Covered patterns requiring browser visual check: 112
 - Required next validation: browser screenshots for cafe-da-manha.html, guia-do-rio.html, index.html, almoco.html, cardapio.html and eventos.html after deployment.
