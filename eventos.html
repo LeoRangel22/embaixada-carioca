@@ -511,6 +511,102 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 <script defer src="/assets/bondinho-ticket-notice.js?v=5"></script>
 <script defer src="/assets/menuitem-schema-enhancer.js"></script>
 <script defer src="/assets/internal-page-contrast-rescue.js"></script>
+<!-- EC EVENTOS PAGE CONTRAST LOCK: garante legibilidade em todos os cards e seções claras -->
+<style id="ec-eventos-contrast-lock">
+/* EVENTOS PAGE — CONTRAST LOCK FINAL
+   Garante que TODOS os cards e seções de fundo claro na página de eventos
+   tenham texto escuro e legível, independente de qualquer outro CSS. */
+html body main .faq .qa,
+html body main #faq .qa,
+html body main .paper-section .qa{
+  background:#ffffff!important;
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+}
+html body main .faq .qa h1,
+html body main .faq .qa h2,
+html body main .faq .qa h3,
+html body main .faq .qa h4,
+html body main #faq .qa h1,
+html body main #faq .qa h2,
+html body main #faq .qa h3,
+html body main #faq .qa h4,
+html body main .paper-section .qa h3{
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+  font-weight:800!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+html body main .faq .qa p,
+html body main .faq .qa li,
+html body main .faq .qa span,
+html body main #faq .qa p,
+html body main #faq .qa li,
+html body main .paper-section .qa p{
+  color:#485156!important;
+  -webkit-text-fill-color:#485156!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+/* Seções editoriais de fundo bege/areia: texto escuro */
+html body main .ec-scorecard-gap,
+html body main .ec-scorecard-gap *,
+html body main .ec-aio-low-score-fix,
+html body main .ec-aio-low-score-fix *{
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+html body main .ec-scorecard-gap p,
+html body main .ec-scorecard-gap li,
+html body main .ec-aio-low-score-fix p,
+html body main .ec-aio-low-score-fix li{
+  color:#485156!important;
+  -webkit-text-fill-color:#485156!important;
+}
+html body main .ec-scorecard-gap strong,
+html body main .ec-aio-low-score-fix strong{
+  color:#335d4a!important;
+  -webkit-text-fill-color:#335d4a!important;
+  font-weight:900!important;
+}
+/* Seção de links relacionados */
+html body main .links-relacionados.ec-internal-link-cluster,
+html body main .links-relacionados.ec-internal-link-cluster *{
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+html body main .links-relacionados.ec-internal-link-cluster p,
+html body main .links-relacionados.ec-internal-link-cluster li{
+  color:#485156!important;
+  -webkit-text-fill-color:#485156!important;
+}
+/* Seção passo a passo */
+html body main .ec-featured-snippet-ol,
+html body main .ec-featured-snippet-ol h2,
+html body main .ec-featured-snippet-ol h3{
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+html body main .ec-featured-snippet-ol p,
+html body main .ec-featured-snippet-ol .ec-fs-kicker{
+  color:#485156!important;
+  -webkit-text-fill-color:#485156!important;
+}
+html body main .ec-featured-snippet-ol li{
+  color:#485156!important;
+  -webkit-text-fill-color:#485156!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+</style>
+<!-- /EC EVENTOS PAGE CONTRAST LOCK -->
 <!-- EC Visual Readability Reality Fix -->
 <style id="ec-visual-readability-reality-fix">
 /* VISUAL READABILITY REALITY FIX V3
