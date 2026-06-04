@@ -6,5 +6,5 @@
   "expected_commit_contains": "Academia da Cachaca",
   "updated_at": "2026-06-04",
   "purpose": "Sentinela para validar se www.embaixadacarioca.com esta servindo a ultima versao da branch master.",
-  "deploy_sha": "99375d3338e6ad891e1305cadeae410c4cf5574e"
+  "deploy_sha": "032d1d4cff9f0bc4791f7db84065af04003843fd"
 }
