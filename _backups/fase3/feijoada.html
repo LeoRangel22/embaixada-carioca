@@ -2483,5 +2483,74 @@ html body main a.btn[href*="tagme"],html body main a.btn[href*="reserv"],nav.top
 })();
 </script>
 <!-- /EC Visual Readability Reality Fix -->
+  <!-- GA4 Conversion Events: Form Submit, WhatsApp, CTA -->
+  <script>
+  (function() {
+    // Evento: Envio de formulário de cotação/contato
+    document.addEventListener('DOMContentLoaded', function() {
+      var forms = document.querySelectorAll('form');
+      forms.forEach(function(form) {
+        form.addEventListener('submit', function(e) {
+          var formId = form.id || form.className || 'form_unknown';
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'generate_lead', {
+              event_category: 'conversao',
+              event_label: formId,
+              value: 1
+            });
+            gtag('event', 'form_submit', {
+              event_category: 'conversao',
+              event_label: formId
+            });
+          }
+        });
+      });
+
+      // Evento: Clique em link WhatsApp
+      document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'whatsapp_click', {
+              event_category: 'conversao',
+              event_label: el.href || 'whatsapp_cta',
+              value: 1
+            });
+          }
+        });
+      });
+
+      // Evento: Clique em botões CTA (Solicitar Orçamento, Reservar, etc.)
+      document.querySelectorAll('.btn-cta, .ec-cta-btn, [data-cta], a[href*="tagme"], a[href*="reserva"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'cta_click', {
+              event_category: 'conversao',
+              event_label: el.textContent.trim().substring(0, 50) || 'cta_button',
+              value: 1
+            });
+          }
+        });
+      });
+
+      // Evento: Scroll 50% e 90% da página (engajamento)
+      var scrollFired = {};
+      window.addEventListener('scroll', function() {
+        var scrollPct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        [50, 90].forEach(function(pct) {
+          if (scrollPct >= pct && !scrollFired[pct]) {
+            scrollFired[pct] = true;
+            if (typeof gtag !== 'undefined') {
+              gtag('event', 'scroll_depth', {
+                event_category: 'engajamento',
+                event_label: pct + '%',
+                value: pct
+              });
+            }
+          }
+        });
+      });
+    });
+  })();
+  </script>
 </body>
 </html>
