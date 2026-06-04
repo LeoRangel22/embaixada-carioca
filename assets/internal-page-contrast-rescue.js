@@ -153,14 +153,12 @@
         -webkit-text-fill-color:rgba(246,239,222,.92)!important;
       }
 
-      /* EVENTOS — FAQ e capacidade em fundo azul: p/h3/h4 legíveis. */
+      /* EVENTOS — FAQ em fundo claro (cards brancos/bege): texto escuro e legível. */
       body.ec-page-eventos #faq,
       body.ec-page-eventos section#faq,
-      body.ec-page-eventos .faq-grid,
-      body.ec-page-eventos .capacity,
-      body.ec-page-eventos section.capacity,
-      body.ec-page-eventos #capacity{
-        color:var(--ec-rescue-cream)!important;
+      body.ec-page-eventos .faq,
+      body.ec-page-eventos .faq-grid{
+        color:var(--ec-rescue-blue)!important;
       }
 
       body.ec-page-eventos #faq h1,
@@ -171,17 +169,9 @@
       body.ec-page-eventos .faq h1,
       body.ec-page-eventos .faq h2,
       body.ec-page-eventos .faq h3,
-      body.ec-page-eventos .faq h4,
-      body.ec-page-eventos .capacity h1,
-      body.ec-page-eventos .capacity h2,
-      body.ec-page-eventos .capacity h3,
-      body.ec-page-eventos .capacity h4,
-      body.ec-page-eventos #capacity h1,
-      body.ec-page-eventos #capacity h2,
-      body.ec-page-eventos #capacity h3,
-      body.ec-page-eventos #capacity h4{
-        color:var(--ec-rescue-cream)!important;
-        -webkit-text-fill-color:var(--ec-rescue-cream)!important;
+      body.ec-page-eventos .faq h4{
+        color:var(--ec-rescue-blue)!important;
+        -webkit-text-fill-color:var(--ec-rescue-blue)!important;
         font-weight:800!important;
       }
 
@@ -190,33 +180,42 @@
       body.ec-page-eventos #faq td,
       body.ec-page-eventos #faq span,
       body.ec-page-eventos .faq p,
-      body.ec-page-eventos .faq li,
-      body.ec-page-eventos .capacity p,
-      body.ec-page-eventos .capacity li,
-      body.ec-page-eventos .capacity td,
-      body.ec-page-eventos #capacity p,
-      body.ec-page-eventos #capacity li,
-      body.ec-page-eventos #capacity td{
-        color:rgba(246,239,222,.88)!important;
-        -webkit-text-fill-color:rgba(246,239,222,.88)!important;
+      body.ec-page-eventos .faq li{
+        color:var(--ec-rescue-gray)!important;
+        -webkit-text-fill-color:var(--ec-rescue-gray)!important;
       }
 
       body.ec-page-eventos #faq strong,
-      body.ec-page-eventos .faq strong,
-      body.ec-page-eventos .capacity strong,
-      body.ec-page-eventos #capacity strong{
-        color:var(--ec-rescue-orange)!important;
-        -webkit-text-fill-color:var(--ec-rescue-orange)!important;
+      body.ec-page-eventos .faq strong{
+        color:var(--ec-rescue-green)!important;
+        -webkit-text-fill-color:var(--ec-rescue-green)!important;
         font-weight:900!important;
       }
 
       body.ec-page-eventos #faq a,
-      body.ec-page-eventos .faq a,
-      body.ec-page-eventos .capacity a,
-      body.ec-page-eventos #capacity a{
-        color:var(--ec-rescue-orange)!important;
-        -webkit-text-fill-color:var(--ec-rescue-orange)!important;
+      body.ec-page-eventos .faq a{
+        color:#9a6400!important;
+        -webkit-text-fill-color:#9a6400!important;
         font-weight:900!important;
+      }
+
+      /* EVENTOS — Cards .qa (FAQ cards brancos): garantir legibilidade máxima. */
+      body.ec-page-eventos .qa,
+      body.ec-page-eventos .faq .qa{
+        background:#ffffff!important;
+        color:var(--ec-rescue-blue)!important;
+        -webkit-text-fill-color:var(--ec-rescue-blue)!important;
+      }
+      body.ec-page-eventos .qa h3,
+      body.ec-page-eventos .faq .qa h3{
+        color:var(--ec-rescue-blue)!important;
+        -webkit-text-fill-color:var(--ec-rescue-blue)!important;
+        font-weight:800!important;
+      }
+      body.ec-page-eventos .qa p,
+      body.ec-page-eventos .faq .qa p{
+        color:var(--ec-rescue-gray)!important;
+        -webkit-text-fill-color:var(--ec-rescue-gray)!important;
       }
 
       /* Cards claros genéricos em páginas internas: sempre texto escuro. */
