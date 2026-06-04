@@ -2468,6 +2468,119 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 @media(max-width:900px){html body nav.top .nav-links,html body nav.top .lang-switcher,html body nav.top .nav-rating-badge{display:none!important;}html body nav.top .brand-logo{width:54px!important;height:54px!important;min-width:54px!important;min-height:54px!important;}}
 </style>
 <link href="/assets/css/ec-shared.css" rel="stylesheet"/>
+<!-- EC EVENTOS ES PAGE CONTRAST LOCK: garantiza legibilidad en todas las tarjetas y secciones claras -->
+<style id="ec-eventos-contrast-lock">
+/* EVENTOS ES PAGE — CONTRAST LOCK FINAL
+   Garantiza que TODAS las tarjetas y secciones de fondo claro en la página de eventos
+   tengan texto oscuro y legible, independientemente de cualquier otro CSS. */
+html body main .faq .qa,
+html body main #faq .qa,
+html body main .paper-section .qa{
+  background:#ffffff!important;
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+}
+html body main .faq .qa h1,
+html body main .faq .qa h2,
+html body main .faq .qa h3,
+html body main .faq .qa h4,
+html body main #faq .qa h1,
+html body main #faq .qa h2,
+html body main #faq .qa h3,
+html body main #faq .qa h4,
+html body main .paper-section .qa h3{
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+  font-weight:800!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+html body main .faq .qa p,
+html body main .faq .qa li,
+html body main .faq .qa span,
+html body main #faq .qa p,
+html body main #faq .qa li,
+html body main .paper-section .qa p{
+  color:#485156!important;
+  -webkit-text-fill-color:#485156!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+/* Override: títulos y párrafos .faq deben ser oscuros en tarjetas blancas */
+html body main section#faq .faq h4,
+html body main section#faq .faq h3,
+html body main section#faq .faq h2{
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+html body main section#faq .faq p,
+html body main section#faq .faq li,
+html body main section#faq .faq span{
+  color:#485156!important;
+  -webkit-text-fill-color:#485156!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+/* Secciones editoriales de fondo beige/arena: texto oscuro */
+html body main .ec-scorecard-gap,
+html body main .ec-scorecard-gap *,
+html body main .ec-aio-low-score-fix,
+html body main .ec-aio-low-score-fix *{
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+html body main .ec-scorecard-gap p,
+html body main .ec-scorecard-gap li,
+html body main .ec-aio-low-score-fix p,
+html body main .ec-aio-low-score-fix li{
+  color:#485156!important;
+  -webkit-text-fill-color:#485156!important;
+}
+html body main .ec-scorecard-gap strong,
+html body main .ec-aio-low-score-fix strong{
+  color:#335d4a!important;
+  -webkit-text-fill-color:#335d4a!important;
+  font-weight:900!important;
+}
+/* Sección de enlaces relacionados */
+html body main .links-relacionados.ec-internal-link-cluster,
+html body main .links-relacionados.ec-internal-link-cluster *{
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+html body main .links-relacionados.ec-internal-link-cluster p,
+html body main .links-relacionados.ec-internal-link-cluster li{
+  color:#485156!important;
+  -webkit-text-fill-color:#485156!important;
+}
+/* Sección paso a paso */
+html body main .ec-featured-snippet-ol,
+html body main .ec-featured-snippet-ol h2,
+html body main .ec-featured-snippet-ol h3{
+  color:#00405a!important;
+  -webkit-text-fill-color:#00405a!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+html body main .ec-featured-snippet-ol p,
+html body main .ec-featured-snippet-ol .ec-fs-kicker{
+  color:#485156!important;
+  -webkit-text-fill-color:#485156!important;
+}
+html body main .ec-featured-snippet-ol li{
+  color:#485156!important;
+  -webkit-text-fill-color:#485156!important;
+  opacity:1!important;
+  text-shadow:none!important;
+}
+</style>
+<!-- /EC EVENTOS ES PAGE CONTRAST LOCK -->
 </meta></head>
 <body data-screen-label="Eventos"><!-- NAV -->
 <nav aria-label="Navegação principal" class="top" id="topnav">
