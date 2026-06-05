@@ -302,3 +302,31 @@ html body select::placeholder {
     text-shadow: 0 1px 8px rgba(0, 0, 0, 0.55) !important;
   }
 }
+
+/* ================================================
+   FIX BADGES — Contraste texto sobre badges coloridos
+   
+   Badge dourado #c9a96e + texto branco → ratio 2.24:1 ❌ FALHA
+   Fix: texto escuro #2d1a00 → ratio 7.45:1 ✅ WCAG AAA
+   
+   Badge verde WhatsApp #25D366 + texto branco → ratio 1.98:1 ❌ FALHA
+   Fix: texto escuro #062b12 → ratio 7.77:1 ✅ WCAG AAA
+   ================================================ */
+
+/* Badge dourado — texto escuro marrom */
+[style*="background:#c9a96e"],
+[style*="background: #c9a96e"],
+.menu-item-badge[style*="background:#c9a96e"],
+.menu-item-badge[style*="background: #c9a96e"] {
+  color: #2d1a00 !important;
+  -webkit-text-fill-color: #2d1a00 !important;
+}
+
+/* Badge verde (prêmio Heineken / destaque) — texto escuro verde-escuro
+   EXCEÇÃO: .nav-wa-btn (botão WhatsApp da nav) mantém texto branco
+   pois é um ícone SVG e não texto legível */
+[style*="background:#25D366"]:not(.nav-wa-btn):not(.wa-btn),
+[style*="background: #25D366"]:not(.nav-wa-btn):not(.wa-btn) {
+  color: #062b12 !important;
+  -webkit-text-fill-color: #062b12 !important;
+}
