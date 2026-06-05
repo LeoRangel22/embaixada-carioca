@@ -207,3 +207,98 @@ html body select::placeholder {
     transition: none !important;
   }
 }
+
+/* ================================================
+   FIX HERO MOBILE — Contraste texto branco sobre fundo creme
+   Problema: no mobile (max-width:960px) o overlay escuro do hero
+   não é aplicado, deixando texto branco sobre fundo creme (#f5f0d8)
+   com ratio de contraste ~1.3:1 (falha WCAG AA).
+   Solução: aplicar overlay escuro e text-shadow no hero mobile.
+   ================================================ */
+
+/* 1) Header hero mobile: fundo escuro + foto como background */
+@media (max-width: 960px) {
+  html body header.hero {
+    position: relative !important;
+    overflow: hidden !important;
+    background: #00202e !important;
+    min-height: 100svh !important;
+    isolation: isolate !important;
+  }
+
+  /* Foto do hero: posição absoluta cobrindo todo o header */
+  html body header.hero img.hero-photo,
+  html body header.hero .hero-photo {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 30% !important;
+    z-index: -2 !important;
+  }
+
+  /* Overlay escuro: garante contraste WCAG AA mínimo 4.5:1 */
+  html body header.hero .hero-overlay {
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: -1 !important;
+    background:
+      linear-gradient(180deg,
+        rgba(0, 20, 30, 0.30) 0%,
+        rgba(0, 20, 30, 0.50) 40%,
+        rgba(0, 20, 30, 0.78) 100%) !important;
+  }
+
+  /* Hero-content: posição relativa para ficar sobre o overlay */
+  html body header.hero .hero-content {
+    position: relative !important;
+    z-index: 2 !important;
+  }
+
+  /* Texto H1 do hero: branco com text-shadow escuro para máximo contraste */
+  html body header.hero h1,
+  html body header.hero h1 * {
+    color: #f6efde !important;
+    -webkit-text-fill-color: #f6efde !important;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.72), 0 1px 6px rgba(0, 0, 0, 0.55) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  /* Subtítulo / hero-sub */
+  html body header.hero .hero-sub,
+  html body header.hero .hero-sub * {
+    color: rgba(246, 239, 222, 0.96) !important;
+    -webkit-text-fill-color: rgba(246, 239, 222, 0.96) !important;
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.65) !important;
+    opacity: 1 !important;
+  }
+
+  /* Eyebrow / hero-eyebrow */
+  html body header.hero .eyebrow,
+  html body header.hero .hero-eyebrow {
+    color: #f59b1e !important;
+    -webkit-text-fill-color: #f59b1e !important;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.60) !important;
+    opacity: 1 !important;
+  }
+
+  /* Hero chips: fundo semi-transparente escuro para legibilidade */
+  html body header.hero .hero-chips span {
+    background: rgba(0, 20, 30, 0.55) !important;
+    border-color: rgba(246, 239, 222, 0.35) !important;
+    color: #f6efde !important;
+    -webkit-text-fill-color: #f6efde !important;
+  }
+
+  /* Bottom bar de fatos */
+  html body header.hero .hero-bottom-bar,
+  html body header.hero .fato-item-hero,
+  html body header.hero .fato-num-hero,
+  html body header.hero .fato-label-hero {
+    color: #f6efde !important;
+    -webkit-text-fill-color: #f6efde !important;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.55) !important;
+  }
+}
