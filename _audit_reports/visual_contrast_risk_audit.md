@@ -27,7 +27,7 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Todos os dias · 8h30 às 11h30 · Vista panorâmica para o Pão de Açúcar · Pães artesanais, frutas tropicais e café especial.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Todos os dias · 11h30 às 17h · Especialidade Picanha Brasileira · Feijoada premiada Veja Rio 2025/2026 · Gastronomia carioca.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | Caipirinha & Chopp no Bondinho
-  - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Todos os dias · Caipirinha com cachaça Magnífica premiada · Chopp Heineken gelado · o mais premiado bar do Parque Bondinho.
+  - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Todos os dias · Caipirinha com cachaça Magnífica · Chopp Heineken gelado · o mais premiado bar do Parque Bondinho.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | Eventos Privados no Morro da Urca
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Casamentos, aniversários, eventos corporativos · Capacidade sob consulta · Vista panorâmica para o Pão de Açúcar · único.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='eyebrow' | Do café da manhã ao happy hour
@@ -35,7 +35,7 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | No Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, servimos gastronomia brasileira de verdade — da empada artesanal ao bobó de camarão, do açaí gelado à
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Servido todos os dias (8h30–11h30). Sucos naturais, água de coco, açaí, frutas frescas e pão de queijo — tudo com vista panorâmica para o Pão de Açúcar.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Especialidade Picanha Brasileira (400g), Feijoada premiada Veja Rio 2025/2026, Bobó de Camarão cremoso, Bolinho de Bacalhau, Pastel crocante e Empada artesanal 
-  - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Caipirinha com cachaça Magnífica premiada, Chopp Heineken gelado (referência no Rio), sucos naturais de frutas tropicais, água de coco fresca e açaí cremoso.
+  - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Caipirinha com cachaça Magnífica, Chopp Heineken gelado (referência no Rio), sucos naturais de frutas tropicais, água de coco fresca e açaí cremoso.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Espetinho, Pastel, Empada, Bolinho de Bacalhau, Picadinho e Sanduíches — perfeitos para um lanche rápido entre as atrações do Bondinho.
   - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | As perguntas mais comuns de quem busca onde comer no Rio de Janeiro com vista para o Pão de Açúcar.
   - ... +22 more
