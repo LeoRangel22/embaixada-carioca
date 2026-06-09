@@ -295,3 +295,87 @@ html body main .cardapio-grid .cardapio-card--verde-agua .cardapio-lista--2col l
   gap:.5rem !important;
   align-items:baseline !important;
 }
+
+/* ================================================
+   FIX TABELAS — Contraste td/th em seções de fundo claro
+   
+   PROBLEMA RAIZ: html body main { color: rgba(237,226,201,.90) } (texto creme)
+   afeta td e th sem color explícito, tornando-os invisíveis sobre fundos
+   brancos/creme das tabelas em .ec-r2d2-depth e seções claras.
+   
+   Contraste antes: ~1.29:1 ❌ FALHA WCAG
+   Contraste depois: cinza #485156 sobre branco = 8.12:1 ✅ WCAG AAA
+   ================================================ */
+
+html body main :where(
+  .ec-r2d2-depth,
+  .ec-sprint4-faq,
+  .ec-sprint4-steps,
+  .light-section,
+  .paper-section,
+  .section-paper,
+  .bg-paper,
+  .access-direct,
+  .access-section,
+  .access-faq,
+  .menu-section,
+  .ec-final-geo-answer
+) :where(table, td, th) {
+  color: #485156 !important;
+  -webkit-text-fill-color: #485156 !important;
+  text-shadow: none !important;
+}
+
+html body main :where(
+  .ec-r2d2-depth,
+  .ec-sprint4-faq,
+  .ec-sprint4-steps,
+  .light-section,
+  .paper-section,
+  .section-paper,
+  .bg-paper
+) thead :where(th) {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+  text-shadow: none !important;
+}
+
+html body main [style*="background:#f6efde"] :where(td, th),
+html body main [style*="background: #f6efde"] :where(td, th),
+html body main [style*="background:#f5efe6"] :where(td, th),
+html body main [style*="background: #f5efe6"] :where(td, th),
+html body main [style*="background:#ede2c9"] :where(td, th),
+html body main [style*="background: #ede2c9"] :where(td, th),
+html body main [style*="background:#f8f4ed"] :where(td, th),
+html body main [style*="background: #f8f4ed"] :where(td, th) {
+  color: #485156 !important;
+  -webkit-text-fill-color: #485156 !important;
+  text-shadow: none !important;
+}
+
+/* ================================================
+   FIX CARDS CREME — section#informacoes-essenciais
+   
+   Garante texto escuro legível nos cards com background #f8f4ed
+   mesmo quando variáveis CSS são sobrescritas por outros locks.
+   ================================================ */
+
+html body section#informacoes-essenciais [style*="background:#f8f4ed"],
+html body section#informacoes-essenciais [style*="background: #f8f4ed"] {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+}
+
+html body section#informacoes-essenciais [style*="color:#888"],
+html body section#informacoes-essenciais [style*="color: #888"] {
+  color: #666 !important;
+  -webkit-text-fill-color: #666 !important;
+  text-shadow: none !important;
+}
+
+html body section#informacoes-essenciais [style*="color:var(--azul1"],
+html body section#informacoes-essenciais [style*="color: var(--azul1"] {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+  text-shadow: none !important;
+}

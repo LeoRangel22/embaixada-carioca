@@ -330,3 +330,161 @@ html body select::placeholder {
   color: #062b12 !important;
   -webkit-text-fill-color: #062b12 !important;
 }
+
+
+/* ================================================
+   FIX TABELAS — Contraste td/th em seções de fundo claro
+   
+   PROBLEMA: html body main { color: rgba(237,226,201,.90) } (texto creme)
+   afeta td e th que não têm color explícito, tornando-os invisíveis
+   sobre fundos brancos/creme das tabelas em .ec-r2d2-depth e .light-section.
+   
+   Contraste antes: ~1.29:1 ❌ FALHA WCAG
+   Contraste depois: cinza #485156 sobre branco = 8.12:1 ✅ WCAG AAA
+   ================================================ */
+
+/* Tabelas dentro de seções claras — forçar texto escuro legível */
+html body main :where(
+  .ec-r2d2-depth,
+  .ec-sprint4-faq,
+  .ec-sprint4-steps,
+  .light-section,
+  .paper-section,
+  .section-paper,
+  .bg-paper,
+  .access-direct,
+  .access-section,
+  .access-faq,
+  .menu-section,
+  .ec-final-geo-answer
+) table {
+  color: #485156 !important;
+  -webkit-text-fill-color: #485156 !important;
+}
+
+html body main :where(
+  .ec-r2d2-depth,
+  .ec-sprint4-faq,
+  .ec-sprint4-steps,
+  .light-section,
+  .paper-section,
+  .section-paper,
+  .bg-paper,
+  .access-direct,
+  .access-section,
+  .access-faq,
+  .menu-section,
+  .ec-final-geo-answer
+) :where(td, th) {
+  color: #485156 !important;
+  -webkit-text-fill-color: #485156 !important;
+  text-shadow: none !important;
+}
+
+/* Cabeçalho da tabela — azul escuro para maior destaque */
+html body main :where(
+  .ec-r2d2-depth,
+  .ec-sprint4-faq,
+  .ec-sprint4-steps,
+  .light-section,
+  .paper-section,
+  .section-paper,
+  .bg-paper
+) thead :where(th) {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+  text-shadow: none !important;
+}
+
+/* Tabelas em seções claras com background inline */
+html body main [style*="background:#f6efde"] :where(td, th),
+html body main [style*="background: #f6efde"] :where(td, th),
+html body main [style*="background:#f5efe6"] :where(td, th),
+html body main [style*="background: #f5efe6"] :where(td, th),
+html body main [style*="background:#ede2c9"] :where(td, th),
+html body main [style*="background: #ede2c9"] :where(td, th),
+html body main [style*="background:#f8f4ed"] :where(td, th),
+html body main [style*="background: #f8f4ed"] :where(td, th) {
+  color: #485156 !important;
+  -webkit-text-fill-color: #485156 !important;
+  text-shadow: none !important;
+}
+
+/* ================================================
+   FIX CARDS CREME — section#informacoes-essenciais (home PT)
+   
+   PROBLEMA: ec-visible-text-lock.css sobrescreve --azul1 para #f6efde (creme)
+   dentro de section#informacoes-essenciais, que agora tem fundo BRANCO (#fff).
+   Os cards internos com background #f8f4ed ficam com texto creme ilegível.
+   
+   Contraste antes: #f6efde sobre #f8f4ed = ~1.1:1 ❌ FALHA WCAG
+   Contraste depois: #00405a sobre #f8f4ed = 10.18:1 ✅ WCAG AAA
+   ================================================ */
+
+/* Override da regra do ec-visible-text-lock para a seção de fundo branco */
+html body section#informacoes-essenciais[style*="background:#fff"] div,
+html body section#informacoes-essenciais[style*="background: #fff"] div,
+html body section#informacoes-essenciais[style*="background:#fff"] p,
+html body section#informacoes-essenciais[style*="background: #fff"] p {
+  --azul1: #00405a !important;
+  --ec-readable-blue: #00405a !important;
+  --ec-vr-paper: #f8f4ed !important;
+  --ec-visible-blue: #00405a !important;
+}
+
+/* Forçar texto escuro nos cards creme da seção informacoes-essenciais */
+html body section#informacoes-essenciais [style*="background:#f8f4ed"],
+html body section#informacoes-essenciais [style*="background: #f8f4ed"] {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+}
+
+html body section#informacoes-essenciais [style*="background:#f8f4ed"] div,
+html body section#informacoes-essenciais [style*="background: #f8f4ed"] div {
+  color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
+}
+
+/* Label (cor cinza #888) — garantir legibilidade */
+html body section#informacoes-essenciais [style*="color:#888"],
+html body section#informacoes-essenciais [style*="color: #888"] {
+  color: #666 !important;
+  -webkit-text-fill-color: #666 !important;
+  text-shadow: none !important;
+}
+
+/* Valor (cor azul --azul1) — garantir legibilidade */
+html body section#informacoes-essenciais [style*="color:var(--azul1"],
+html body section#informacoes-essenciais [style*="color: var(--azul1"] {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+  text-shadow: none !important;
+}
+
+/* ================================================
+   FIX GLOBAL — Qualquer div/span sem class em seção clara
+   com texto herdando cor creme de html body main
+   ================================================ */
+
+/* Cobertura global para elementos sem class em seções claras */
+html body main :where(
+  .ec-r2d2-depth,
+  .light-section,
+  .paper-section,
+  .section-paper,
+  .bg-paper,
+  .access-direct,
+  .access-section,
+  .access-faq
+) > .wrap > div:not([class]),
+html body main :where(
+  .ec-r2d2-depth,
+  .light-section,
+  .paper-section,
+  .section-paper,
+  .bg-paper
+) > .wrap > div:not([class]) > div:not([class]) {
+  color: #485156 !important;
+  -webkit-text-fill-color: #485156 !important;
+  text-shadow: none !important;
+}
