@@ -1,3 +1,9 @@
+# Redirecionamentos
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^lojasadm/?$ https://script.google.com/macros/s/AKfycbzNGnL3nMHDHX_xLfg7g-XpvAheJsoiyflp7yMW8vSjp9z5iOAjqPZ0TX9w_XAjkDzE/exec [R=302,L]
+</IfModule>
+
 # Cache de longa duração para assets estáticos
 <IfModule mod_expires.c>
   ExpiresActive On
