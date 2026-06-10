@@ -488,3 +488,95 @@ html body main :where(
   -webkit-text-fill-color: #485156 !important;
   text-shadow: none !important;
 }
+
+/* ================================================
+   FIX CRÍTICO — Seção .avaliacoes fora de <main>
+   
+   CAUSA: body { -webkit-text-fill-color: rgba(237,226,201,.90) !important }
+   afeta TODO o body. A seção .avaliacoes está ANTES de <main> na home PT/EN/ES.
+   Os blocos do superholistic/ec-stabilization-base cobrem .avaliacoes .sec-head h2
+   mas com -webkit-text-fill-color: currentColor — que herda do body (creme), não
+   do color computado (#00405a). Resultado: texto invisível sobre fundo creme.
+   
+   Solução: regra explícita com -webkit-text-fill-color: #00405a para todos os
+   elementos filhos de section.avaliacoes.
+   ================================================ */
+
+section.avaliacoes {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+}
+
+section.avaliacoes .sec-head,
+section.avaliacoes .sec-head h2,
+section.avaliacoes .sec-head h2 *,
+section.avaliacoes .sec-head p,
+section.avaliacoes .sec-head .lede,
+section.avaliacoes .num,
+section.avaliacoes .num b {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+}
+
+section.avaliacoes .ratings-row,
+section.avaliacoes .rating,
+section.avaliacoes .rating .n,
+section.avaliacoes .rating .src,
+section.avaliacoes .rating .label {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+  text-shadow: none !important;
+}
+
+section.avaliacoes .pullquote,
+section.avaliacoes .pullquote .label,
+section.avaliacoes blockquote,
+section.avaliacoes cite,
+section.avaliacoes cite span {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+  text-shadow: none !important;
+}
+
+section.avaliacoes .mini-quotes,
+section.avaliacoes .mq,
+section.avaliacoes .mq .q,
+section.avaliacoes .mq cite {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+  text-shadow: none !important;
+}
+
+/* Estrelas decorativas: manter âmbar */
+section.avaliacoes .star,
+section.avaliacoes [aria-hidden="true"] {
+  color: #f59b1e !important;
+  -webkit-text-fill-color: #f59b1e !important;
+}
+
+/* Superscript âmbar (2º, 100K) dentro de .rating .n */
+section.avaliacoes .rating .n span[style*="color: var(--amarelo)"],
+section.avaliacoes .rating .n span[style*="color:var(--amarelo)"] {
+  color: #c47e15 !important;
+  -webkit-text-fill-color: #c47e15 !important;
+}
+
+/* ================================================
+   FIX CRÍTICO — Seções .momentos, .visao, .eventos fora de <main>
+   Mesmo problema: -webkit-text-fill-color herdado do body
+   ================================================ */
+
+section.momentos .sec-head h2,
+section.momentos .sec-head h2 *,
+section.momentos .sec-head p,
+section.momentos .sec-head .lede,
+section.visao .sec-head h2,
+section.visao .sec-head h2 *,
+section.visao .sec-head p,
+section.visao .sec-head .lede {
+  -webkit-text-fill-color: #00405a !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+}

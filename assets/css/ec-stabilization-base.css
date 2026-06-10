@@ -2018,11 +2018,11 @@ section[style*="background:#f8f4"] h2,
 section[style*="background:#f8f4"] h3,
 section[style*="background:#f8f4"] p{
   color:var(--ec-ink) !important;
+  -webkit-text-fill-color:var(--ec-ink) !important;
   opacity:1 !important;
   text-shadow:none !important;
   filter:none !important;
   mix-blend-mode:normal !important;
-  -webkit-text-fill-color:currentColor !important;
 }
 
 /* 2) Itálicos editoriais em destaque: laranja do botão reservar */
@@ -2071,11 +2071,11 @@ section[id="eventos"] p,
 section[aria-label*="Eventos"] h2,
 section[aria-label*="Eventos"] p{
   color:var(--ec-ink) !important;
+  -webkit-text-fill-color:var(--ec-ink) !important;
   opacity:1 !important;
   text-shadow:none !important;
   filter:none !important;
   mix-blend-mode:normal !important;
-  -webkit-text-fill-color:currentColor !important;
 }
 
 /* 5) Reviews em fundo claro */
