@@ -1405,4 +1405,18 @@ html body main a.btn[href*="tagme"],html body main a.btn[href*="reserv"],nav.top
 <script defer="" src="/assets/bondinho-ticket-notice.js"></script>
 <script defer="" src="/assets/menuitem-schema-enhancer.js"></script>
 <script defer="" src="/assets/internal-page-contrast-rescue.js"></script>
+<nav aria-label="Navegação rápida mobile" class="mobile-bottom-nav">
+<div class="mobile-bottom-nav-inner">
+<a aria-label="Almoço" class="" href="/almoco.html"><span class="bnav-icon">🍽️</span>Almoço</a>
+<a aria-label="Café da Manhã" class="" href="/cafe-da-manha.html"><span class="bnav-icon">☀️</span>Café da Manhã</a>
+<a aria-label="Cardápio" class="" href="/cardapio.html"><span class="bnav-icon">📋</span>Cardápio</a>
+<a aria-label="Reservar" class="bnav-reservar" href="https://go.tagme.com.br/embaixadacarioca"><span class="bnav-icon">📅</span>Reservar</a>
+</div>
+</nav>
+
+<!-- STICKY CTA MOBILE — aparece após scroll do hero -->
+<div aria-label="Reserva rápida" class="sticky-cta-bar" id="sticky-cta-bar" role="complementary">
+<a aria-label="Reservar mesa na Embaixada Carioca" href="https://go.tagme.com.br/embaixadacarioca" rel="noopener" target="_blank">🍽️ Reservar mesa</a>
+</div>
+<script>(function(){var b=document.getElementById('sticky-cta-bar');if(!b)return;var h=document.querySelector('.hero,[class*="hero"]');var t=h?h.offsetHeight*0.6:300;function s(){var y=window.scrollY||window.pageYOffset;if(y>t)b.classList.add('visible');else b.classList.remove('visible');}window.addEventListener('scroll',s,{passive:true});s();})();</script>
 </body></html>

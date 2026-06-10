@@ -173,7 +173,40 @@
       ]
     }
   ]
-}</script></head>
+}</script>
+<style id="ec-mobile-bnav">
+/* ─── Mobile Bottom Nav ─────────────────────────────────────────── */
+.mobile-bottom-nav{display:none}
+@media(max-width:720px){
+  .mobile-bottom-nav{
+    display:flex;position:fixed;bottom:0;left:0;right:0;z-index:100;
+    background:#00405A;border-top:1px solid rgba(255,255,255,0.15);
+    padding:0 0 env(safe-area-inset-bottom,0);
+  }
+  .mobile-bottom-nav-inner{
+    display:flex;width:100%;
+  }
+  .mobile-bottom-nav a{
+    flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:3px;padding:10px 4px;min-height:56px;
+    color:rgba(245,237,214,0.75);text-decoration:none;
+    font-size:10px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;
+    transition:color 0.15s,background 0.15s;
+  }
+  .mobile-bottom-nav a:hover,.mobile-bottom-nav a:active{
+    color:#E8C547;background:rgba(255,255,255,0.06);
+  }
+  .bnav-icon{font-size:18px;line-height:1}
+  .mobile-bottom-nav .bnav-reservar{
+    background:#E8C547;color:#00405A;font-weight:800;
+  }
+  .mobile-bottom-nav .bnav-reservar:hover{
+    background:#f5d040;color:#00405A;
+  }
+  body{padding-bottom:56px}
+}
+</style>
+</head>
 <body>
 <!-- HEADER -->
 <header class="top">
@@ -448,5 +481,19 @@
 <script defer src="/assets/bondinho-ticket-notice.js"></script>
 <script defer src="/assets/menuitem-schema-enhancer.js"></script>
 <script defer src="/assets/internal-page-contrast-rescue.js"></script>
+<nav aria-label="Navegação rápida mobile" class="mobile-bottom-nav">
+<div class="mobile-bottom-nav-inner">
+<a aria-label="Almoço" class="" href="/almoco.html"><span class="bnav-icon">🍽️</span>Almoço</a>
+<a aria-label="Café da Manhã" class="" href="/cafe-da-manha.html"><span class="bnav-icon">☀️</span>Café da Manhã</a>
+<a aria-label="Cardápio" class="" href="/cardapio.html"><span class="bnav-icon">📋</span>Cardápio</a>
+<a aria-label="Reservar" class="bnav-reservar" href="https://go.tagme.com.br/embaixadacarioca"><span class="bnav-icon">📅</span>Reservar</a>
+</div>
+</nav>
+
+<!-- STICKY CTA MOBILE — aparece após scroll do hero -->
+<div aria-label="Reserva rápida" class="sticky-cta-bar" id="sticky-cta-bar" role="complementary">
+<a aria-label="Reservar mesa na Embaixada Carioca" href="https://go.tagme.com.br/embaixadacarioca" rel="noopener" target="_blank">🍽️ Reservar mesa</a>
+</div>
+<script>(function(){var b=document.getElementById('sticky-cta-bar');if(!b)return;var h=document.querySelector('.hero,[class*="hero"]');var t=h?h.offsetHeight*0.6:300;function s(){var y=window.scrollY||window.pageYOffset;if(y>t)b.classList.add('visible');else b.classList.remove('visible');}window.addEventListener('scroll',s,{passive:true});s();})();</script>
 </body>
 </html>
