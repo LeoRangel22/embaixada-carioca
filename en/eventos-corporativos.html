@@ -306,26 +306,26 @@
 <p>Bring your business to Rio de Janeiro's best angle. Fill out the form and our sales team will respond within 24 hours.</p>
 <form onsubmit="event.preventDefault(); alert('Thank you! We have received your request and our sales team will get in touch shortly.');" style="max-width: 600px; margin: 0 auto; text-align: left; background: rgba(255,255,255,0.05); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15);">
 <div style="margin-bottom: 20px;">
-<label style="display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; margin-bottom: 8px; color: var(--amarelo);">Company Name</label>
-<input required="" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.2); color: #fff; font-size: 16px;" type="text"/>
+<label id="ec-label-company" for="ec-company-name" style="display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; margin-bottom: 8px; color: var(--amarelo);">Company Name</label>
+<input required="" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.2); color: #fff; font-size: 16px;" id="ec-company-name" type="text"/>
 </div>
 <div style="margin-bottom: 20px;">
-<label style="display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; margin-bottom: 8px; color: var(--amarelo);">Corporate E-mail</label>
-<input required="" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.2); color: #fff; font-size: 16px;" type="email"/>
+<label id="ec-label-email-en" for="ec-email-en" style="display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; margin-bottom: 8px; color: var(--amarelo);">Corporate E-mail</label>
+<input required="" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.2); color: #fff; font-size: 16px;" id="ec-email-en" type="email"/>
 </div>
 <div style="margin-bottom: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
 <div>
-<label style="display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; margin-bottom: 8px; color: var(--amarelo);">Planned Date</label>
-<input required="" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.2); color: #fff; font-size: 16px;" type="date"/>
+<label id="ec-label-date" for="ec-event-date" style="display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; margin-bottom: 8px; color: var(--amarelo);">Planned Date</label>
+<input required="" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.2); color: #fff; font-size: 16px;" id="ec-event-date" type="date"/>
 </div>
 <div>
-<label style="display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; margin-bottom: 8px; color: var(--amarelo);">Number of Guests</label>
-<input placeholder="e.g. 100" required="" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.2); color: #fff; font-size: 16px;" type="number"/>
+<label id="ec-label-guests" for="ec-num-guests" style="display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; margin-bottom: 8px; color: var(--amarelo);">Number of Guests</label>
+<input placeholder="e.g. 100" required="" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.2); color: #fff; font-size: 16px;" id="ec-num-guests" type="number"/>
 </div>
 </div>
 <div style="margin-bottom: 30px;">
-<label style="display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; margin-bottom: 8px; color: var(--amarelo);">Message / Event Details</label>
-<textarea placeholder="Tell us about your event format (workshop, dinner, cocktail party, etc.)" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.2); color: #fff; font-size: 16px; height: 120px; resize: none;"></textarea>
+<label id="ec-label-msg-en" for="ec-message-en" style="display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; margin-bottom: 8px; color: var(--amarelo);">Message / Event Details</label>
+<textarea id="ec-message-en" placeholder="Tell us about your event format (workshop, dinner, cocktail party, etc.)" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.2); color: #fff; font-size: 16px; height: 120px; resize: none;"></textarea>
 </div>
 <button class="btn" style="width: 100%; cursor: pointer;" type="submit">Request Corporate Proposal</button>
 </form>
