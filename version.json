@@ -4,7 +4,7 @@
   "branch": "master",
   "site_version": "2026-05-18-aaa-academia-feijoada",
   "expected_commit_contains": "Academia da Cachaca",
-  "updated_at": "2026-06-11",
+  "updated_at": "2026-06-12",
   "purpose": "Sentinela para validar se www.embaixadacarioca.com esta servindo a ultima versao da branch master.",
-  "deploy_sha": "a142e5bf52e54c7dee9d76d1d3d3e4f1259f108c"
+  "deploy_sha": "384203064a3ace7dcbbf4d63f1f35e06aaab9d11"
 }
