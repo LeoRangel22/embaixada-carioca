@@ -586,9 +586,8 @@ html body main .menu-item{background:var(--ec-readable-sand)!important;border-co
 html body main .menu-item:hover{background:var(--ec-readable-sand-soft)!important;}
 html body main .menu-item-badge{background:var(--ec-readable-yellow)!important;color:var(--ec-readable-blue)!important;-webkit-text-fill-color:var(--ec-readable-blue)!important;}
 
-/* 6) FAQ/eventos em fundo escuro: perguntas claras, respostas claras */
-html body main :where(.faq,.faq-section,.faq-list,.questions,.qa-grid,.event-faq,.events-faq) :where(h2,h3,h4,summary){color:var(--ec-readable-sand-soft)!important;-webkit-text-fill-color:var(--ec-readable-sand-soft)!important;}
-html body main :where(.faq,.faq-section,.faq-list,.questions,.qa-grid,.event-faq,.events-faq) :where(p,li,span){color:rgba(237,226,201,.84)!important;-webkit-text-fill-color:rgba(237,226,201,.84)!important;}
+/* 6) FAQ/eventos em fundo escuro: APENAS h2/h3/h4 diretos da seção (NÃO details/summary que são cards brancos) */
+html body main :where(.faq,.faq-section,.faq-list,.questions,.qa-grid,.event-faq,.events-faq) > :where(h2,h3,h4,.wrap > h2,.wrap > h3,.wrap > h4){color:var(--ec-readable-sand-soft)!important;-webkit-text-fill-color:var(--ec-readable-sand-soft)!important;}
 
 /* 7) Botões preservam hierarquia de marca */
 html body main a.btn[href*="tagme"],html body main a.btn[href*="reserv"],html body main .hero-ctas a[href*="tagme"],html body main .hero-ctas a[href*="reserv"],nav.top a.btn[href*="tagme"]{background:var(--ec-readable-yellow)!important;border-color:var(--ec-readable-yellow)!important;color:var(--ec-readable-blue)!important;-webkit-text-fill-color:var(--ec-readable-blue)!important;}
@@ -1517,8 +1516,8 @@ html body main *{-webkit-text-fill-color:currentColor!important;text-shadow:none
 
 /* Fundo escuro: texto claro de verdade */
 html body main{background-color:var(--ec-blue);color:rgba(246,239,222,.92)!important;}
-html body main section:not(.gallery-section):not(.ec-final-geo-answer):not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-sprint5-quality):not(.ec-sprint5-faq):not(.ec-sprint2-geo):not(.ec-r2d2-depth):not(.ec-sprint4-faq):not(.ec-sprint4-steps):not(.ec-featured-snippet-ol):not(.ec-combos-fase4):not(.seo-conversion-block):not(.links-internos-section):not(.ec-semantic-section){color:rgba(246,239,222,.92)!important;}
-html body main section:not(.gallery-section):not(.ec-final-geo-answer):not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-sprint5-quality):not(.ec-sprint5-faq):not(.ec-sprint2-geo):not(.ec-r2d2-depth):not(.ec-sprint4-faq):not(.ec-sprint4-steps):not(.ec-featured-snippet-ol):not(.ec-combos-fase4):not(.seo-conversion-block):not(.links-internos-section):not(.ec-semantic-section) :where(p,li,span,small,dd,dt,summary,.lede,.copy,.description){color:rgba(246,239,222,.88)!important;}
+html body main section:not(.gallery-section):not(.ec-final-geo-answer):not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-sprint5-quality):not(.ec-sprint5-faq):not(.ec-sprint2-geo):not(.ec-r2d2-depth):not(.ec-sprint4-faq):not(.ec-sprint4-steps):not(.ec-featured-snippet-ol):not(.ec-combos-fase4):not(.seo-conversion-block):not(.links-internos-section):not(.ec-semantic-section):not(.faq){color:rgba(246,239,222,.92)!important;}
+html body main section:not(.gallery-section):not(.ec-final-geo-answer):not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-sprint5-quality):not(.ec-sprint5-faq):not(.ec-sprint2-geo):not(.ec-r2d2-depth):not(.ec-sprint4-faq):not(.ec-sprint4-steps):not(.ec-featured-snippet-ol):not(.ec-combos-fase4):not(.seo-conversion-block):not(.links-internos-section):not(.ec-semantic-section):not(.faq) :where(p,li,span,small,dd,dt,summary,.lede,.copy,.description){color:rgba(246,239,222,.88)!important;}
 html body main section:not(.gallery-section):not(.ec-final-geo-answer):not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-sprint5-quality):not(.ec-sprint5-faq):not(.ec-sprint2-geo):not(.ec-r2d2-depth):not(.ec-sprint4-faq):not(.ec-sprint4-steps):not(.ec-featured-snippet-ol):not(.ec-combos-fase4):not(.seo-conversion-block):not(.links-internos-section):not(.ec-semantic-section) :where(h1,h2,h3,h4,h5,h6){color:var(--ec-paper)!important;}
 html body main section:not(.gallery-section):not(.ec-final-geo-answer):not(.light-section):not(.paper-section):not(.section-paper):not(.bg-paper):not(.menu-section):not(.ec-sprint5-quality):not(.ec-sprint5-faq):not(.ec-sprint2-geo):not(.ec-r2d2-depth):not(.ec-sprint4-faq):not(.ec-sprint4-steps):not(.ec-featured-snippet-ol):not(.ec-combos-fase4):not(.seo-conversion-block):not(.links-internos-section):not(.ec-semantic-section) :where(strong,b){color:var(--ec-yellow)!important;}
 
@@ -1562,9 +1561,8 @@ html body main .menu-item :where(h3,h4,.menu-item-name){color:var(--ec-blue)!imp
 html body main .menu-item :where(p,.menu-item-desc,span,small){color:var(--ec-gray)!important;}
 html body main .menu-item :where(.price,.menu-item-price,strong){color:#b76f00!important;}
 
-/* Blocos de FAQ em fundo azul: melhora contraste sem virar card branco */
-html body main :where(.faq,.faq-section,.faq-list,.questions,.qa-grid,.event-faq,.events-faq) :where(h2,h3,h4,summary){color:var(--ec-paper)!important;}
-html body main :where(.faq,.faq-section,.faq-list,.questions,.qa-grid,.event-faq,.events-faq) :where(p,li,span){color:rgba(246,239,222,.86)!important;}
+/* Blocos de FAQ em fundo azul: APENAS h2/h3/h4 diretos (details/summary são cards brancos com texto verde) */
+html body main :where(.faq,.faq-section,.faq-list,.questions,.qa-grid,.event-faq,.events-faq) > :where(h2,h3,h4,.wrap > h2,.wrap > h3,.wrap > h4){color:var(--ec-paper)!important;}
 
 /* Galerias e captions */
 html body main .gallery-section figure,html body main .gallery-section figcaption{background:#fff!important;color:var(--ec-gray)!important;}
