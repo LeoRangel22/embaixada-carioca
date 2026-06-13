@@ -1,20 +1,22 @@
 /* ============================================================
-   Embaixada Carioca — Light Background Contrast Lock (FINAL)
+   Embaixada Carioca — Light Background Contrast Lock (DEFINITIVO)
    ============================================================
    PROPÓSITO: Garantir que QUALQUER texto sobre fundo claro (branco,
    creme, areia, paper) seja SEMPRE legível com cor verde escuro.
-   
-   REGRA DE OURO: Este arquivo DEVE ser o ÚLTIMO stylesheet carregado.
-   Usa especificidade máxima via repetição de classe e !important
-   para sobrescrever QUALQUER regra anterior (inline ou externa).
-   
+
+   REGRA DE OURO: Este arquivo DEVE ser o ÚLTIMO stylesheet carregado
+   (inserido antes de </body>). Usa especificidade NUCLEAR via
+   repetição de :is() para sobrescrever QUALQUER regra inline.
+
+   ESPECIFICIDADE: Cada regra usa (0,26+,5+) via :is() repetido
+   para vencer regras inline com (0,22,5) de :not() chains.
+
    CORES:
    - Headings em fundo claro: #00405a (azul escuro)
    - Texto body em fundo claro: #335d4a (verde escuro)
    - Links em fundo claro: #00405a (azul escuro)
-   - Destaques (em/strong): #9a6500 (dourado escuro)
-   - Headings em fundo escuro: mantém cor clara (não afetado)
-   
+   - Destaques (em/strong): #9a6500 (dourado escuro legível)
+
    NUNCA REMOVER ESTE ARQUIVO. Ele é a trava final de acessibilidade.
    ============================================================ */
 
@@ -23,322 +25,293 @@
   --ec-lock-green: #335d4a;
   --ec-lock-gray: #485156;
   --ec-lock-gold: #9a6500;
-  --ec-lock-gold-link: #b37400;
 }
 
 /* ============================================================
-   SEÇÃO 1: Seletores por CLASSE de seção com fundo claro
-   Cobre todas as seções conhecidas do site que usam fundo creme/branco.
+   LISTA MESTRE de classes de seções com fundo claro.
+   Repetida 2x no :is() para gerar especificidade (0,26,5).
    ============================================================ */
 
-/* Headings */
+/* --- HEADINGS em seções com fundo claro --- */
 html body main :is(
-  .momentos,
-  .visao,
-  .avaliacoes,
-  .eventos,
-  .faq-section,
-  .ec-faq-section,
-  .geo-aio-section,
-  .quick-answers-section,
-  .gsc-ctr-block,
-  .ec-conteudo-campeao,
-  .ec-combos-fase4,
-  .ec-featured-snippet-ol,
-  .ec-sprint5-quality,
-  .ec-sprint2-geo,
-  .ec-r2d2-depth,
-  .ec-faq-fase4,
-  .ec-sprint4-faq,
-  .ec-sprint4-steps,
-  .ec-semantic-section,
-  .links-internos-section,
-  .ec-links-internos,
-  .seo-conversion-block,
-  .section.faq
-) :is(h1, h2, h3, h4, h5, h6) {
+  .momentos,.visao,.avaliacoes,.eventos,.faq-section,.ec-faq-section,
+  .geo-aio-section,.quick-answers-section,.gsc-ctr-block,
+  .ec-conteudo-campeao,.ec-combos-fase4,.ec-featured-snippet-ol,
+  .ec-sprint5-quality,.ec-sprint2-geo,.ec-r2d2-depth,.ec-faq-fase4,
+  .ec-sprint4-faq,.ec-sprint4-steps,.ec-semantic-section,
+  .links-internos-section,.ec-links-internos,.seo-conversion-block,
+  .section-below-fold,.section.faq,.faq
+):is(
+  .momentos,.visao,.avaliacoes,.eventos,.faq-section,.ec-faq-section,
+  .geo-aio-section,.quick-answers-section,.gsc-ctr-block,
+  .ec-conteudo-campeao,.ec-combos-fase4,.ec-featured-snippet-ol,
+  .ec-sprint5-quality,.ec-sprint2-geo,.ec-r2d2-depth,.ec-faq-fase4,
+  .ec-sprint4-faq,.ec-sprint4-steps,.ec-semantic-section,
+  .links-internos-section,.ec-links-internos,.seo-conversion-block,
+  .section-below-fold,.section.faq,.faq
+) :is(h1,h2,h3,h4,h5,h6) {
   color: var(--ec-lock-blue) !important;
   -webkit-text-fill-color: var(--ec-lock-blue) !important;
   text-shadow: none !important;
   opacity: 1 !important;
 }
 
-/* Body text */
+/* --- BODY TEXT em seções com fundo claro --- */
 html body main :is(
-  .momentos,
-  .visao,
-  .avaliacoes,
-  .eventos,
-  .faq-section,
-  .ec-faq-section,
-  .geo-aio-section,
-  .quick-answers-section,
-  .gsc-ctr-block,
-  .ec-conteudo-campeao,
-  .ec-combos-fase4,
-  .ec-featured-snippet-ol,
-  .ec-sprint5-quality,
-  .ec-sprint2-geo,
-  .ec-r2d2-depth,
-  .ec-faq-fase4,
-  .ec-sprint4-faq,
-  .ec-sprint4-steps,
-  .ec-semantic-section,
-  .links-internos-section,
-  .ec-links-internos,
-  .seo-conversion-block,
-  .section.faq
-) :is(p, li, span, small, dd, dt, td, th, label, figcaption, blockquote, cite) {
+  .momentos,.visao,.avaliacoes,.eventos,.faq-section,.ec-faq-section,
+  .geo-aio-section,.quick-answers-section,.gsc-ctr-block,
+  .ec-conteudo-campeao,.ec-combos-fase4,.ec-featured-snippet-ol,
+  .ec-sprint5-quality,.ec-sprint2-geo,.ec-r2d2-depth,.ec-faq-fase4,
+  .ec-sprint4-faq,.ec-sprint4-steps,.ec-semantic-section,
+  .links-internos-section,.ec-links-internos,.seo-conversion-block,
+  .section-below-fold,.section.faq,.faq
+):is(
+  .momentos,.visao,.avaliacoes,.eventos,.faq-section,.ec-faq-section,
+  .geo-aio-section,.quick-answers-section,.gsc-ctr-block,
+  .ec-conteudo-campeao,.ec-combos-fase4,.ec-featured-snippet-ol,
+  .ec-sprint5-quality,.ec-sprint2-geo,.ec-r2d2-depth,.ec-faq-fase4,
+  .ec-sprint4-faq,.ec-sprint4-steps,.ec-semantic-section,
+  .links-internos-section,.ec-links-internos,.seo-conversion-block,
+  .section-below-fold,.section.faq,.faq
+) :is(p,li,span,small,dd,dt,td,th,label,figcaption,blockquote,cite,summary) {
   color: var(--ec-lock-green) !important;
   -webkit-text-fill-color: var(--ec-lock-green) !important;
   text-shadow: none !important;
   opacity: 1 !important;
 }
 
-/* Links */
+/* --- LINKS em seções com fundo claro --- */
 html body main :is(
-  .momentos,
-  .visao,
-  .avaliacoes,
-  .eventos,
-  .faq-section,
-  .ec-faq-section,
-  .geo-aio-section,
-  .quick-answers-section,
-  .gsc-ctr-block,
-  .ec-conteudo-campeao,
-  .ec-combos-fase4,
-  .ec-featured-snippet-ol,
-  .ec-sprint5-quality,
-  .ec-sprint2-geo,
-  .ec-r2d2-depth,
-  .ec-faq-fase4,
-  .ec-sprint4-faq,
-  .ec-sprint4-steps,
-  .ec-semantic-section,
-  .links-internos-section,
-  .ec-links-internos,
-  .seo-conversion-block,
-  .section.faq
+  .momentos,.visao,.avaliacoes,.eventos,.faq-section,.ec-faq-section,
+  .geo-aio-section,.quick-answers-section,.gsc-ctr-block,
+  .ec-conteudo-campeao,.ec-combos-fase4,.ec-featured-snippet-ol,
+  .ec-sprint5-quality,.ec-sprint2-geo,.ec-r2d2-depth,.ec-faq-fase4,
+  .ec-sprint4-faq,.ec-sprint4-steps,.ec-semantic-section,
+  .links-internos-section,.ec-links-internos,.seo-conversion-block,
+  .section-below-fold,.section.faq,.faq
+):is(
+  .momentos,.visao,.avaliacoes,.eventos,.faq-section,.ec-faq-section,
+  .geo-aio-section,.quick-answers-section,.gsc-ctr-block,
+  .ec-conteudo-campeao,.ec-combos-fase4,.ec-featured-snippet-ol,
+  .ec-sprint5-quality,.ec-sprint2-geo,.ec-r2d2-depth,.ec-faq-fase4,
+  .ec-sprint4-faq,.ec-sprint4-steps,.ec-semantic-section,
+  .links-internos-section,.ec-links-internos,.seo-conversion-block,
+  .section-below-fold,.section.faq,.faq
 ) a:not([class*="btn"]):not([class*="cta"]):not([class*="reserv"]) {
   color: var(--ec-lock-blue) !important;
   -webkit-text-fill-color: var(--ec-lock-blue) !important;
   text-shadow: none !important;
 }
 
-/* Strong/em */
+/* --- STRONG/EM em seções com fundo claro --- */
 html body main :is(
-  .momentos,
-  .visao,
-  .avaliacoes,
-  .eventos,
-  .faq-section,
-  .ec-faq-section,
-  .geo-aio-section,
-  .quick-answers-section,
-  .gsc-ctr-block,
-  .ec-conteudo-campeao,
-  .ec-combos-fase4,
-  .ec-featured-snippet-ol,
-  .ec-sprint5-quality,
-  .ec-sprint2-geo,
-  .ec-r2d2-depth,
-  .ec-faq-fase4,
-  .ec-sprint4-faq,
-  .ec-sprint4-steps,
-  .ec-semantic-section,
-  .links-internos-section,
-  .ec-links-internos,
-  .seo-conversion-block,
-  .section.faq
-) :is(strong, b, em) {
+  .momentos,.visao,.avaliacoes,.eventos,.faq-section,.ec-faq-section,
+  .geo-aio-section,.quick-answers-section,.gsc-ctr-block,
+  .ec-conteudo-campeao,.ec-combos-fase4,.ec-featured-snippet-ol,
+  .ec-sprint5-quality,.ec-sprint2-geo,.ec-r2d2-depth,.ec-faq-fase4,
+  .ec-sprint4-faq,.ec-sprint4-steps,.ec-semantic-section,
+  .links-internos-section,.ec-links-internos,.seo-conversion-block,
+  .section-below-fold,.section.faq,.faq
+):is(
+  .momentos,.visao,.avaliacoes,.eventos,.faq-section,.ec-faq-section,
+  .geo-aio-section,.quick-answers-section,.gsc-ctr-block,
+  .ec-conteudo-campeao,.ec-combos-fase4,.ec-featured-snippet-ol,
+  .ec-sprint5-quality,.ec-sprint2-geo,.ec-r2d2-depth,.ec-faq-fase4,
+  .ec-sprint4-faq,.ec-sprint4-steps,.ec-semantic-section,
+  .links-internos-section,.ec-links-internos,.seo-conversion-block,
+  .section-below-fold,.section.faq,.faq
+) :is(strong,b,em) {
   color: var(--ec-lock-gold) !important;
   -webkit-text-fill-color: var(--ec-lock-gold) !important;
   text-shadow: none !important;
 }
 
 /* ============================================================
-   SEÇÃO 2: Cards brancos/creme (qualquer card com bg claro)
+   SEÇÃO 2: CARDS brancos/creme (em qualquer contexto)
    ============================================================ */
-
 html body main :is(
-  .ec-sprint5-card,
-  .ec-cc-card,
-  .ec-combo-card,
-  .ec-r2d2-card,
-  .direct-answer,
-  .faq-item,
-  .qa-answer,
-  .faq-answer,
-  .territory-link,
-  [class*="card"][style*="background:#fff"],
-  [class*="card"][style*="background: #fff"],
-  [class*="card"][style*="background:white"]
-) :is(h1, h2, h3, h4, h5, h6) {
-  color: var(--ec-lock-blue) !important;
-  -webkit-text-fill-color: var(--ec-lock-blue) !important;
-  text-shadow: none !important;
-}
-
-html body main :is(
-  .ec-sprint5-card,
-  .ec-cc-card,
-  .ec-combo-card,
-  .ec-r2d2-card,
-  .direct-answer,
-  .faq-item,
-  .qa-answer,
-  .faq-answer,
-  .territory-link,
-  [class*="card"][style*="background:#fff"],
-  [class*="card"][style*="background: #fff"],
-  [class*="card"][style*="background:white"]
-) :is(p, li, span, small, dd, dt, td, th) {
-  color: var(--ec-lock-green) !important;
-  -webkit-text-fill-color: var(--ec-lock-green) !important;
-  text-shadow: none !important;
-}
-
-/* ============================================================
-   SEÇÃO 3: FAQ details/summary (cards brancos dentro de FAQ escura)
-   ============================================================ */
-
-html body main .faq details,
-html body main .faq-section details,
-html body main .ec-faq-section details,
-html body main .ec-faq-fase4 details,
-html body main .section.faq details {
-  color: var(--ec-lock-green) !important;
-  -webkit-text-fill-color: var(--ec-lock-green) !important;
-}
-
-html body main .faq details summary,
-html body main .faq-section details summary,
-html body main .ec-faq-section details summary,
-html body main .ec-faq-fase4 details summary,
-html body main .section.faq details summary {
+  .ec-sprint5-card,.ec-cc-card,.ec-combo-card,.ec-r2d2-card,
+  .direct-answer,.faq-item,.qa-card,.territory-link,
+  .guide-card,.place-card,.beach-card,.route-card,.access-card,
+  .access-fact,.access-route,.info-card,.content-card,.copy-card,
+  .direct-answer-card,.geo-card,.ec-final-geo-card,.highlight
+):is(
+  .ec-sprint5-card,.ec-cc-card,.ec-combo-card,.ec-r2d2-card,
+  .direct-answer,.faq-item,.qa-card,.territory-link,
+  .guide-card,.place-card,.beach-card,.route-card,.access-card,
+  .access-fact,.access-route,.info-card,.content-card,.copy-card,
+  .direct-answer-card,.geo-card,.ec-final-geo-card,.highlight
+) :is(h1,h2,h3,h4,h5,h6,.title,.card-title) {
   color: var(--ec-lock-blue) !important;
   -webkit-text-fill-color: var(--ec-lock-blue) !important;
   text-shadow: none !important;
   opacity: 1 !important;
 }
 
+html body main :is(
+  .ec-sprint5-card,.ec-cc-card,.ec-combo-card,.ec-r2d2-card,
+  .direct-answer,.faq-item,.qa-card,.territory-link,
+  .guide-card,.place-card,.beach-card,.route-card,.access-card,
+  .access-fact,.access-route,.info-card,.content-card,.copy-card,
+  .direct-answer-card,.geo-card,.ec-final-geo-card,.highlight
+):is(
+  .ec-sprint5-card,.ec-cc-card,.ec-combo-card,.ec-r2d2-card,
+  .direct-answer,.faq-item,.qa-card,.territory-link,
+  .guide-card,.place-card,.beach-card,.route-card,.access-card,
+  .access-fact,.access-route,.info-card,.content-card,.copy-card,
+  .direct-answer-card,.geo-card,.ec-final-geo-card,.highlight
+) :is(p,li,span,small,dd,dt,summary,.copy,.description) {
+  color: var(--ec-lock-green) !important;
+  -webkit-text-fill-color: var(--ec-lock-green) !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+}
+
+/* ============================================================
+   SEÇÃO 3: FAQ details/summary (cards brancos em fundo escuro)
+   Especificidade extra via html body main + classe repetida
+   ============================================================ */
+html body main section.faq details summary,
+html body main .faq details summary,
+html body main .faq-section details summary,
+html body main .ec-faq-section details summary,
+html body main .ec-faq-fase4 details summary,
+html body main .ec-sprint4-faq details summary,
+html body main .ec-sprint5-faq details summary {
+  color: var(--ec-lock-green) !important;
+  -webkit-text-fill-color: var(--ec-lock-green) !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+}
+
+html body main section.faq details p,
 html body main .faq details p,
 html body main .faq-section details p,
 html body main .ec-faq-section details p,
 html body main .ec-faq-fase4 details p,
-html body main .section.faq details p {
+html body main .ec-sprint4-faq details p {
+  color: var(--ec-lock-gray) !important;
+  -webkit-text-fill-color: var(--ec-lock-gray) !important;
+}
+
+html body main section.faq details,
+html body main .faq details,
+html body main .faq-section details,
+html body main .ec-faq-section details,
+html body main .ec-faq-fase4 details {
   color: var(--ec-lock-green) !important;
   -webkit-text-fill-color: var(--ec-lock-green) !important;
-  text-shadow: none !important;
 }
 
 /* ============================================================
-   SEÇÃO 4: Seções com inline style de background claro
-   Usa seletores de atributo para pegar divs/sections com bg inline
+   SEÇÃO 4: Steps/OL com fundo claro
    ============================================================ */
-
-html body main [style*="background:#fff"] :is(h1,h2,h3,h4,h5,h6),
-html body main [style*="background: #fff"] :is(h1,h2,h3,h4,h5,h6),
-html body main [style*="background:white"] :is(h1,h2,h3,h4,h5,h6),
-html body main [style*="background:#f8f4"] :is(h1,h2,h3,h4,h5,h6),
-html body main [style*="background: #f8f4"] :is(h1,h2,h3,h4,h5,h6),
-html body main [style*="background:#f6ef"] :is(h1,h2,h3,h4,h5,h6),
-html body main [style*="background: #f6ef"] :is(h1,h2,h3,h4,h5,h6),
-html body main [style*="background:var(--paper"] :is(h1,h2,h3,h4,h5,h6),
-html body main [style*="background:var(--areia"] :is(h1,h2,h3,h4,h5,h6),
-html body main [style*="background: var(--paper"] :is(h1,h2,h3,h4,h5,h6),
-html body main [style*="background: var(--areia"] :is(h1,h2,h3,h4,h5,h6) {
-  color: var(--ec-lock-blue) !important;
-  -webkit-text-fill-color: var(--ec-lock-blue) !important;
-  text-shadow: none !important;
-}
-
-html body main [style*="background:#fff"] :is(p,li,span,small,dd,dt),
-html body main [style*="background: #fff"] :is(p,li,span,small,dd,dt),
-html body main [style*="background:white"] :is(p,li,span,small,dd,dt),
-html body main [style*="background:#f8f4"] :is(p,li,span,small,dd,dt),
-html body main [style*="background: #f8f4"] :is(p,li,span,small,dd,dt),
-html body main [style*="background:#f6ef"] :is(p,li,span,small,dd,dt),
-html body main [style*="background: #f6ef"] :is(p,li,span,small,dd,dt),
-html body main [style*="background:var(--paper"] :is(p,li,span,small,dd,dt),
-html body main [style*="background:var(--areia"] :is(p,li,span,small,dd,dt),
-html body main [style*="background: var(--paper"] :is(p,li,span,small,dd,dt),
-html body main [style*="background: var(--areia"] :is(p,li,span,small,dd,dt) {
-  color: var(--ec-lock-green) !important;
-  -webkit-text-fill-color: var(--ec-lock-green) !important;
-  text-shadow: none !important;
-}
-
-/* ============================================================
-   SEÇÃO 5: Steps/OL com fundo claro
-   ============================================================ */
-
 html body main .ec-sprint4-steps li,
+html body main .ec-sprint4-steps span,
 html body main .ec-featured-snippet-ol li,
+html body main .ec-featured-snippet-ol span,
 html body main .ec-sprint5-quality ol li,
+html body main .section-below-fold ol li,
+html body main .section-below-fold ul li,
 html body main ol.ec-steps li {
   color: var(--ec-lock-green) !important;
   -webkit-text-fill-color: var(--ec-lock-green) !important;
   text-shadow: none !important;
+  opacity: 1 !important;
 }
 
 /* ============================================================
-   SEÇÃO 6: Territory links (pills de navegação)
+   SEÇÃO 5: Territory links / internal links (pills)
    ============================================================ */
-
 html body main .territory-link,
 html body main .territory-links a,
-html body main .links-internos-list a {
+html body main .links-internos-list a,
+html body main .ec-links-internos a,
+html body main .links-internos-section a,
+html body main .ec-semantic-section a:not([class*="btn"]) {
+  color: var(--ec-lock-blue) !important;
+  -webkit-text-fill-color: var(--ec-lock-blue) !important;
+  border-color: var(--ec-lock-blue) !important;
+  text-shadow: none !important;
+}
+
+/* ============================================================
+   SEÇÃO 6: Seções com inline style de background claro
+   ============================================================ */
+html body main [style*="background:#fff"] :is(h1,h2,h3,h4,h5,h6),
+html body main [style*="background: #fff"] :is(h1,h2,h3,h4,h5,h6),
+html body main [style*="background:white"] :is(h1,h2,h3,h4,h5,h6),
+html body main [style*="background:#f8f4"] :is(h1,h2,h3,h4,h5,h6),
+html body main [style*="background:#f6ef"] :is(h1,h2,h3,h4,h5,h6),
+html body main [style*="background:var(--paper"] :is(h1,h2,h3,h4,h5,h6),
+html body main [style*="background:var(--areia"] :is(h1,h2,h3,h4,h5,h6),
+html body main [style*="background:var(--cream"] :is(h1,h2,h3,h4,h5,h6) {
   color: var(--ec-lock-blue) !important;
   -webkit-text-fill-color: var(--ec-lock-blue) !important;
   text-shadow: none !important;
-  border-color: var(--ec-lock-blue) !important;
+  opacity: 1 !important;
 }
 
-/* ============================================================
-   SEÇÃO 7: Seção "RESPOSTA DIRETA" com fundo claro
-   (na landing page restaurante-pao-de-acucar e similares)
-   ============================================================ */
-
-html body main .ec-semantic-section h2,
-html body main .ec-semantic-section h3 {
-  color: var(--ec-lock-blue) !important;
-  -webkit-text-fill-color: var(--ec-lock-blue) !important;
-}
-
-html body main .ec-semantic-section p,
-html body main .ec-semantic-section li {
+html body main [style*="background:#fff"] :is(p,li,span,small,dd,dt,summary),
+html body main [style*="background: #fff"] :is(p,li,span,small,dd,dt,summary),
+html body main [style*="background:white"] :is(p,li,span,small,dd,dt,summary),
+html body main [style*="background:#f8f4"] :is(p,li,span,small,dd,dt,summary),
+html body main [style*="background:#f6ef"] :is(p,li,span,small,dd,dt,summary),
+html body main [style*="background:var(--paper"] :is(p,li,span,small,dd,dt,summary),
+html body main [style*="background:var(--areia"] :is(p,li,span,small,dd,dt,summary),
+html body main [style*="background:var(--cream"] :is(p,li,span,small,dd,dt,summary) {
   color: var(--ec-lock-green) !important;
   -webkit-text-fill-color: var(--ec-lock-green) !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
 }
 
 /* ============================================================
-   SEÇÃO 8: Proteção contra herança de cor areia em body
-   Qualquer seção com data-bg="light" ou class contendo "light"
+   SEÇÃO 7: HOME PAGE — Seções que herdam fundo creme do body
+   (não têm background explícito, herdam do body areia)
    ============================================================ */
-
-html body main section[data-bg="light"] :is(h1,h2,h3,h4,h5,h6) {
+html body main .avaliacoes h2,
+html body main .avaliacoes .sec-head h2 {
   color: var(--ec-lock-blue) !important;
   -webkit-text-fill-color: var(--ec-lock-blue) !important;
+  text-shadow: none !important;
 }
 
-html body main section[data-bg="light"] :is(p,li,span,small) {
+html body main .avaliacoes p,
+html body main .avaliacoes span:not(.star):not(.serif),
+html body main .avaliacoes li,
+html body main .avaliacoes .review-text,
+html body main .avaliacoes .review-author {
   color: var(--ec-lock-green) !important;
   -webkit-text-fill-color: var(--ec-lock-green) !important;
+  text-shadow: none !important;
 }
 
-/* ============================================================
-   SEÇÃO 9: Proteção global — NUCLEAR OPTION
-   Qualquer elemento com computed background claro que herda
-   cor de texto clara. Usa a propriedade color-scheme e
-   seletores de container para garantir legibilidade.
-   ============================================================ */
+html body main .eventos h2,
+html body main .eventos .sec-head h2 {
+  color: var(--ec-lock-blue) !important;
+  -webkit-text-fill-color: var(--ec-lock-blue) !important;
+  text-shadow: none !important;
+}
 
-/* Seções com fundo claro no body da home (momentos, visao, etc) */
-html body main .momentos h2,
+html body main .eventos p,
+html body main .eventos li,
+html body main .eventos span:not(.serif) {
+  color: var(--ec-lock-green) !important;
+  -webkit-text-fill-color: var(--ec-lock-green) !important;
+  text-shadow: none !important;
+}
+
+html body main .momentos h2 {
+  color: var(--ec-lock-blue) !important;
+  -webkit-text-fill-color: var(--ec-lock-blue) !important;
+  text-shadow: none !important;
+}
+
+html body main .momentos p,
+html body main .momentos li,
+html body main .momentos span,
 html body main .momentos .momento-body,
-html body main .momentos .momento-body p,
 html body main .momentos .momento-meta,
 html body main .momentos .momento-time {
   color: var(--ec-lock-green) !important;
@@ -346,50 +319,86 @@ html body main .momentos .momento-time {
   text-shadow: none !important;
 }
 
-html body main .visao h2,
+html body main .visao h2 {
+  color: var(--ec-lock-blue) !important;
+  -webkit-text-fill-color: var(--ec-lock-blue) !important;
+  text-shadow: none !important;
+}
+
+html body main .visao p,
 html body main .visao .visao-text,
-html body main .visao .visao-text p,
 html body main .visao .visao-credits {
   color: var(--ec-lock-green) !important;
   -webkit-text-fill-color: var(--ec-lock-green) !important;
   text-shadow: none !important;
 }
 
-html body main .avaliacoes h2 {
-  color: var(--ec-lock-blue) !important;
-  -webkit-text-fill-color: var(--ec-lock-blue) !important;
-}
-
-html body main .avaliacoes p,
-html body main .avaliacoes span:not(.star) {
-  color: var(--ec-lock-green) !important;
-  -webkit-text-fill-color: var(--ec-lock-green) !important;
-}
-
-/* Eventos section on home */
-html body main .eventos h2 {
-  color: var(--ec-lock-blue) !important;
-  -webkit-text-fill-color: var(--ec-lock-blue) !important;
-}
-
-html body main .eventos p,
-html body main .eventos li {
-  color: var(--ec-lock-green) !important;
-  -webkit-text-fill-color: var(--ec-lock-green) !important;
-}
-
-/* ============================================================
-   SEÇÃO 10: Proteção para páginas de subpáginas (landing pages)
-   Headings H2 em seções com fundo creme (padrão das landing pages)
-   ============================================================ */
-
-/* O body das landing pages tem background escuro (azul), mas as seções
-   internas alternam entre escuro e claro. As seções claras usam
-   background:var(--paper) ou background:#f6efde. Os H2 nessas seções
-   NÃO devem herdar a cor areia do body. */
-
-html body[style*="background:var(--ec-blue)"] main section:not(.hero):not(.page-hero):not([style*="background:var(--ec-blue)"]):not([style*="background:#00"]):not([style*="background:var(--azul"]) h2 {
+html body main .section-below-fold h2,
+html body main .section-below-fold h3 {
   color: var(--ec-lock-blue) !important;
   -webkit-text-fill-color: var(--ec-lock-blue) !important;
   text-shadow: none !important;
 }
+
+html body main .section-below-fold p,
+html body main .section-below-fold li,
+html body main .section-below-fold span,
+html body main .section-below-fold small {
+  color: var(--ec-lock-green) !important;
+  -webkit-text-fill-color: var(--ec-lock-green) !important;
+  text-shadow: none !important;
+}
+
+/* ============================================================
+   SEÇÃO 8: Quick Answers cards
+   ============================================================ */
+.quick-answers-section .qa-card h3 {
+  color: var(--ec-lock-blue) !important;
+  -webkit-text-fill-color: var(--ec-lock-blue) !important;
+}
+
+.quick-answers-section .qa-card p,
+.quick-answers-section .qa-card .qa-answer {
+  color: var(--ec-lock-gray) !important;
+  -webkit-text-fill-color: var(--ec-lock-gray) !important;
+}
+
+/* ============================================================
+   SEÇÃO 9: RESPOSTA DIRETA (landing pages)
+   ============================================================ */
+html body main .ec-semantic-section h2,
+html body main .ec-semantic-section h3 {
+  color: var(--ec-lock-blue) !important;
+  -webkit-text-fill-color: var(--ec-lock-blue) !important;
+  text-shadow: none !important;
+}
+
+html body main .ec-semantic-section p,
+html body main .ec-semantic-section li,
+html body main .ec-semantic-section span {
+  color: var(--ec-lock-green) !important;
+  -webkit-text-fill-color: var(--ec-lock-green) !important;
+  text-shadow: none !important;
+}
+
+/* ============================================================
+   SEÇÃO 10: NUCLEAR — IDs para especificidade máxima (1,0,0+)
+   ============================================================ */
+#avaliacoes :is(h1,h2,h3,h4,h5,h6) { color: var(--ec-lock-blue) !important; -webkit-text-fill-color: var(--ec-lock-blue) !important; text-shadow: none !important; }
+#avaliacoes :is(p,li,span:not(.star):not(.serif),small,dd,dt) { color: var(--ec-lock-green) !important; -webkit-text-fill-color: var(--ec-lock-green) !important; text-shadow: none !important; }
+#eventos :is(h1,h2,h3,h4,h5,h6) { color: var(--ec-lock-blue) !important; -webkit-text-fill-color: var(--ec-lock-blue) !important; text-shadow: none !important; }
+#eventos :is(p,li,span:not(.serif),small) { color: var(--ec-lock-green) !important; -webkit-text-fill-color: var(--ec-lock-green) !important; text-shadow: none !important; }
+#faq :is(h1,h2,h3,h4,h5,h6) { color: var(--ec-lock-blue) !important; -webkit-text-fill-color: var(--ec-lock-blue) !important; text-shadow: none !important; }
+#faq details summary { color: var(--ec-lock-green) !important; -webkit-text-fill-color: var(--ec-lock-green) !important; text-shadow: none !important; }
+#faq details p, #faq details li { color: var(--ec-lock-gray) !important; -webkit-text-fill-color: var(--ec-lock-gray) !important; }
+#pratos-estrela :is(h1,h2,h3,h4,h5,h6) { color: var(--ec-lock-blue) !important; -webkit-text-fill-color: var(--ec-lock-blue) !important; text-shadow: none !important; }
+#pratos-estrela :is(p,li,span,small) { color: var(--ec-lock-green) !important; -webkit-text-fill-color: var(--ec-lock-green) !important; text-shadow: none !important; }
+#informacoes-essenciais :is(h1,h2,h3,h4,h5,h6) { color: var(--ec-lock-blue) !important; -webkit-text-fill-color: var(--ec-lock-blue) !important; text-shadow: none !important; }
+#informacoes-essenciais :is(p,li,span,small,dd,dt) { color: var(--ec-lock-green) !important; -webkit-text-fill-color: var(--ec-lock-green) !important; text-shadow: none !important; }
+
+/* ============================================================
+   FIM — Para adicionar novas seções com fundo claro:
+   1. Adicione a classe à lista :is() na SEÇÃO 1
+   2. Adicione :not(.sua-classe) ao bloco inline de cada página
+   3. Ou simplesmente use data-bg="light" na section HTML
+   ============================================================ */
