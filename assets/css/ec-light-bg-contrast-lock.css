@@ -33,7 +33,7 @@
    ============================================================ */
 
 /* --- HEADINGS em seções com fundo claro --- */
-html body main :is(
+html body :is(
   .momentos,.visao,.avaliacoes,.eventos,.faq-section,.ec-faq-section,
   .geo-aio-section,.quick-answers-section,.gsc-ctr-block,
   .ec-conteudo-campeao,.ec-combos-fase4,.ec-featured-snippet-ol,
@@ -57,7 +57,7 @@ html body main :is(
 }
 
 /* --- BODY TEXT em seções com fundo claro --- */
-html body main :is(
+html body :is(
   .momentos,.visao,.avaliacoes,.eventos,.faq-section,.ec-faq-section,
   .geo-aio-section,.quick-answers-section,.gsc-ctr-block,
   .ec-conteudo-campeao,.ec-combos-fase4,.ec-featured-snippet-ol,
@@ -81,7 +81,7 @@ html body main :is(
 }
 
 /* --- LINKS em seções com fundo claro --- */
-html body main :is(
+html body :is(
   .momentos,.visao,.avaliacoes,.eventos,.faq-section,.ec-faq-section,
   .geo-aio-section,.quick-answers-section,.gsc-ctr-block,
   .ec-conteudo-campeao,.ec-combos-fase4,.ec-featured-snippet-ol,
@@ -104,7 +104,7 @@ html body main :is(
 }
 
 /* --- STRONG/EM em seções com fundo claro --- */
-html body main :is(
+html body :is(
   .momentos,.visao,.avaliacoes,.eventos,.faq-section,.ec-faq-section,
   .geo-aio-section,.quick-answers-section,.gsc-ctr-block,
   .ec-conteudo-campeao,.ec-combos-fase4,.ec-featured-snippet-ol,
@@ -129,7 +129,7 @@ html body main :is(
 /* ============================================================
    SEÇÃO 2: CARDS brancos/creme (em qualquer contexto)
    ============================================================ */
-html body main :is(
+html body :is(
   .ec-sprint5-card,.ec-cc-card,.ec-combo-card,.ec-r2d2-card,
   .direct-answer,.faq-item,.qa-card,.territory-link,
   .guide-card,.place-card,.beach-card,.route-card,.access-card,
@@ -148,7 +148,7 @@ html body main :is(
   opacity: 1 !important;
 }
 
-html body main :is(
+html body :is(
   .ec-sprint5-card,.ec-cc-card,.ec-combo-card,.ec-r2d2-card,
   .direct-answer,.faq-item,.qa-card,.territory-link,
   .guide-card,.place-card,.beach-card,.route-card,.access-card,
@@ -169,36 +169,36 @@ html body main :is(
 
 /* ============================================================
    SEÇÃO 3: FAQ details/summary (cards brancos em fundo escuro)
-   Especificidade extra via html body main + classe repetida
+   Especificidade extra via html body + classe repetida
    ============================================================ */
-html body main section.faq details summary,
-html body main .faq details summary,
-html body main .faq-section details summary,
-html body main .ec-faq-section details summary,
-html body main .ec-faq-fase4 details summary,
-html body main .ec-sprint4-faq details summary,
-html body main .ec-sprint5-faq details summary {
+html body section.faq details summary,
+html body .faq details summary,
+html body .faq-section details summary,
+html body .ec-faq-section details summary,
+html body .ec-faq-fase4 details summary,
+html body .ec-sprint4-faq details summary,
+html body .ec-sprint5-faq details summary {
   color: var(--ec-lock-green) !important;
   -webkit-text-fill-color: var(--ec-lock-green) !important;
   text-shadow: none !important;
   opacity: 1 !important;
 }
 
-html body main section.faq details p,
-html body main .faq details p,
-html body main .faq-section details p,
-html body main .ec-faq-section details p,
-html body main .ec-faq-fase4 details p,
-html body main .ec-sprint4-faq details p {
+html body section.faq details p,
+html body .faq details p,
+html body .faq-section details p,
+html body .ec-faq-section details p,
+html body .ec-faq-fase4 details p,
+html body .ec-sprint4-faq details p {
   color: var(--ec-lock-gray) !important;
   -webkit-text-fill-color: var(--ec-lock-gray) !important;
 }
 
-html body main section.faq details,
-html body main .faq details,
-html body main .faq-section details,
-html body main .ec-faq-section details,
-html body main .ec-faq-fase4 details {
+html body section.faq details,
+html body .faq details,
+html body .faq-section details,
+html body .ec-faq-section details,
+html body .ec-faq-fase4 details {
   color: var(--ec-lock-green) !important;
   -webkit-text-fill-color: var(--ec-lock-green) !important;
 }
@@ -206,14 +206,14 @@ html body main .ec-faq-fase4 details {
 /* ============================================================
    SEÇÃO 4: Steps/OL com fundo claro
    ============================================================ */
-html body main .ec-sprint4-steps li,
-html body main .ec-sprint4-steps span,
-html body main .ec-featured-snippet-ol li,
-html body main .ec-featured-snippet-ol span,
-html body main .ec-sprint5-quality ol li,
-html body main .section-below-fold ol li,
-html body main .section-below-fold ul li,
-html body main ol.ec-steps li {
+html body .ec-sprint4-steps li,
+html body .ec-sprint4-steps span,
+html body .ec-featured-snippet-ol li,
+html body .ec-featured-snippet-ol span,
+html body .ec-sprint5-quality ol li,
+html body .section-below-fold ol li,
+html body .section-below-fold ul li,
+html body ol.ec-steps li {
   color: var(--ec-lock-green) !important;
   -webkit-text-fill-color: var(--ec-lock-green) !important;
   text-shadow: none !important;
@@ -223,12 +223,12 @@ html body main ol.ec-steps li {
 /* ============================================================
    SEÇÃO 5: Territory links / internal links (pills)
    ============================================================ */
-html body main .territory-link,
-html body main .territory-links a,
-html body main .links-internos-list a,
-html body main .ec-links-internos a,
-html body main .links-internos-section a,
-html body main .ec-semantic-section a:not([class*="btn"]) {
+html body .territory-link,
+html body .territory-links a,
+html body .links-internos-list a,
+html body .ec-links-internos a,
+html body .links-internos-section a,
+html body .ec-semantic-section a:not([class*="btn"]) {
   color: var(--ec-lock-blue) !important;
   -webkit-text-fill-color: var(--ec-lock-blue) !important;
   border-color: var(--ec-lock-blue) !important;
@@ -238,28 +238,28 @@ html body main .ec-semantic-section a:not([class*="btn"]) {
 /* ============================================================
    SEÇÃO 6: Seções com inline style de background claro
    ============================================================ */
-html body main [style*="background:#fff"] :is(h1,h2,h3,h4,h5,h6),
-html body main [style*="background: #fff"] :is(h1,h2,h3,h4,h5,h6),
-html body main [style*="background:white"] :is(h1,h2,h3,h4,h5,h6),
-html body main [style*="background:#f8f4"] :is(h1,h2,h3,h4,h5,h6),
-html body main [style*="background:#f6ef"] :is(h1,h2,h3,h4,h5,h6),
-html body main [style*="background:var(--paper"] :is(h1,h2,h3,h4,h5,h6),
-html body main [style*="background:var(--areia"] :is(h1,h2,h3,h4,h5,h6),
-html body main [style*="background:var(--cream"] :is(h1,h2,h3,h4,h5,h6) {
+html body [style*="background:#fff"] :is(h1,h2,h3,h4,h5,h6),
+html body [style*="background: #fff"] :is(h1,h2,h3,h4,h5,h6),
+html body [style*="background:white"] :is(h1,h2,h3,h4,h5,h6),
+html body [style*="background:#f8f4"] :is(h1,h2,h3,h4,h5,h6),
+html body [style*="background:#f6ef"] :is(h1,h2,h3,h4,h5,h6),
+html body [style*="background:var(--paper"] :is(h1,h2,h3,h4,h5,h6),
+html body [style*="background:var(--areia"] :is(h1,h2,h3,h4,h5,h6),
+html body [style*="background:var(--cream"] :is(h1,h2,h3,h4,h5,h6) {
   color: var(--ec-lock-blue) !important;
   -webkit-text-fill-color: var(--ec-lock-blue) !important;
   text-shadow: none !important;
   opacity: 1 !important;
 }
 
-html body main [style*="background:#fff"] :is(p,li,span,small,dd,dt,summary),
-html body main [style*="background: #fff"] :is(p,li,span,small,dd,dt,summary),
-html body main [style*="background:white"] :is(p,li,span,small,dd,dt,summary),
-html body main [style*="background:#f8f4"] :is(p,li,span,small,dd,dt,summary),
-html body main [style*="background:#f6ef"] :is(p,li,span,small,dd,dt,summary),
-html body main [style*="background:var(--paper"] :is(p,li,span,small,dd,dt,summary),
-html body main [style*="background:var(--areia"] :is(p,li,span,small,dd,dt,summary),
-html body main [style*="background:var(--cream"] :is(p,li,span,small,dd,dt,summary) {
+html body [style*="background:#fff"] :is(p,li,span,small,dd,dt,summary),
+html body [style*="background: #fff"] :is(p,li,span,small,dd,dt,summary),
+html body [style*="background:white"] :is(p,li,span,small,dd,dt,summary),
+html body [style*="background:#f8f4"] :is(p,li,span,small,dd,dt,summary),
+html body [style*="background:#f6ef"] :is(p,li,span,small,dd,dt,summary),
+html body [style*="background:var(--paper"] :is(p,li,span,small,dd,dt,summary),
+html body [style*="background:var(--areia"] :is(p,li,span,small,dd,dt,summary),
+html body [style*="background:var(--cream"] :is(p,li,span,small,dd,dt,summary) {
   color: var(--ec-lock-green) !important;
   -webkit-text-fill-color: var(--ec-lock-green) !important;
   text-shadow: none !important;
@@ -270,80 +270,80 @@ html body main [style*="background:var(--cream"] :is(p,li,span,small,dd,dt,summa
    SEÇÃO 7: HOME PAGE — Seções que herdam fundo creme do body
    (não têm background explícito, herdam do body areia)
    ============================================================ */
-html body main .avaliacoes h2,
-html body main .avaliacoes .sec-head h2 {
+html body .avaliacoes h2,
+html body .avaliacoes .sec-head h2 {
   color: var(--ec-lock-blue) !important;
   -webkit-text-fill-color: var(--ec-lock-blue) !important;
   text-shadow: none !important;
 }
 
-html body main .avaliacoes p,
-html body main .avaliacoes span:not(.star):not(.serif),
-html body main .avaliacoes li,
-html body main .avaliacoes .review-text,
-html body main .avaliacoes .review-author {
+html body .avaliacoes p,
+html body .avaliacoes span:not(.star):not(.serif),
+html body .avaliacoes li,
+html body .avaliacoes .review-text,
+html body .avaliacoes .review-author {
   color: var(--ec-lock-green) !important;
   -webkit-text-fill-color: var(--ec-lock-green) !important;
   text-shadow: none !important;
 }
 
-html body main .eventos h2,
-html body main .eventos .sec-head h2 {
+html body .eventos h2,
+html body .eventos .sec-head h2 {
   color: var(--ec-lock-blue) !important;
   -webkit-text-fill-color: var(--ec-lock-blue) !important;
   text-shadow: none !important;
 }
 
-html body main .eventos p,
-html body main .eventos li,
-html body main .eventos span:not(.serif) {
+html body .eventos p,
+html body .eventos li,
+html body .eventos span:not(.serif) {
   color: var(--ec-lock-green) !important;
   -webkit-text-fill-color: var(--ec-lock-green) !important;
   text-shadow: none !important;
 }
 
-html body main .momentos h2 {
+html body .momentos h2 {
   color: var(--ec-lock-blue) !important;
   -webkit-text-fill-color: var(--ec-lock-blue) !important;
   text-shadow: none !important;
 }
 
-html body main .momentos p,
-html body main .momentos li,
-html body main .momentos span,
-html body main .momentos .momento-body,
-html body main .momentos .momento-meta,
-html body main .momentos .momento-time {
+html body .momentos p,
+html body .momentos li,
+html body .momentos span,
+html body .momentos .momento-body,
+html body .momentos .momento-meta,
+html body .momentos .momento-time {
   color: var(--ec-lock-green) !important;
   -webkit-text-fill-color: var(--ec-lock-green) !important;
   text-shadow: none !important;
 }
 
-html body main .visao h2 {
+html body .visao h2 {
   color: var(--ec-lock-blue) !important;
   -webkit-text-fill-color: var(--ec-lock-blue) !important;
   text-shadow: none !important;
 }
 
-html body main .visao p,
-html body main .visao .visao-text,
-html body main .visao .visao-credits {
+html body .visao p,
+html body .visao .visao-text,
+html body .visao .visao-credits {
   color: var(--ec-lock-green) !important;
   -webkit-text-fill-color: var(--ec-lock-green) !important;
   text-shadow: none !important;
 }
 
-html body main .section-below-fold h2,
-html body main .section-below-fold h3 {
+html body .section-below-fold h2,
+html body .section-below-fold h3 {
   color: var(--ec-lock-blue) !important;
   -webkit-text-fill-color: var(--ec-lock-blue) !important;
   text-shadow: none !important;
 }
 
-html body main .section-below-fold p,
-html body main .section-below-fold li,
-html body main .section-below-fold span,
-html body main .section-below-fold small {
+html body .section-below-fold p,
+html body .section-below-fold li,
+html body .section-below-fold span,
+html body .section-below-fold small {
   color: var(--ec-lock-green) !important;
   -webkit-text-fill-color: var(--ec-lock-green) !important;
   text-shadow: none !important;
@@ -366,16 +366,16 @@ html body main .section-below-fold small {
 /* ============================================================
    SEÇÃO 9: RESPOSTA DIRETA (landing pages)
    ============================================================ */
-html body main .ec-semantic-section h2,
-html body main .ec-semantic-section h3 {
+html body .ec-semantic-section h2,
+html body .ec-semantic-section h3 {
   color: var(--ec-lock-blue) !important;
   -webkit-text-fill-color: var(--ec-lock-blue) !important;
   text-shadow: none !important;
 }
 
-html body main .ec-semantic-section p,
-html body main .ec-semantic-section li,
-html body main .ec-semantic-section span {
+html body .ec-semantic-section p,
+html body .ec-semantic-section li,
+html body .ec-semantic-section span {
   color: var(--ec-lock-green) !important;
   -webkit-text-fill-color: var(--ec-lock-green) !important;
   text-shadow: none !important;
