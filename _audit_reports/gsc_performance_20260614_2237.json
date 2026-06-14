@@ -1,0 +1,954 @@
+{
+  "fetched_at": "2026-06-14T22:37:48.554239",
+  "site_url": "sc-domain:embaixadacarioca.com",
+  "period": {
+    "start": "2026-03-13",
+    "end": "2026-06-11"
+  },
+  "overview": {
+    "rows": [
+      {
+        "clicks": 903,
+        "impressions": 43719,
+        "ctr": 0.02065463528443011,
+        "position": 6.914545163430088
+      }
+    ],
+    "responseAggregationType": "byProperty"
+  },
+  "top_queries": [
+    {
+      "keys": [
+        "embaixada carioca"
+      ],
+      "clicks": 194,
+      "impressions": 1560,
+      "ctr": 0.12435897435897436,
+      "position": 1.1826923076923077
+    },
+    {
+      "keys": [
+        "embaixada carioca urca"
+      ],
+      "clicks": 23,
+      "impressions": 84,
+      "ctr": 0.27380952380952384,
+      "position": 1.130952380952381
+    },
+    {
+      "keys": [
+        "restaurante embaixada carioca"
+      ],
+      "clicks": 23,
+      "impressions": 79,
+      "ctr": 0.2911392405063291,
+      "position": 1.3670886075949367
+    },
+    {
+      "keys": [
+        "morro da urca"
+      ],
+      "clicks": 11,
+      "impressions": 3583,
+      "ctr": 0.0030700530281886685,
+      "position": 9.469718113312867
+    },
+    {
+      "keys": [
+        "restaurante morro da urca"
+      ],
+      "clicks": 9,
+      "impressions": 185,
+      "ctr": 0.04864864864864865,
+      "position": 4.237837837837837
+    },
+    {
+      "keys": [
+        "restaurante no morro da urca"
+      ],
+      "clicks": 9,
+      "impressions": 105,
+      "ctr": 0.08571428571428572,
+      "position": 5.704761904761905
+    },
+    {
+      "keys": [
+        "embaixada carioca morro da urca"
+      ],
+      "clicks": 8,
+      "impressions": 15,
+      "ctr": 0.5333333333333333,
+      "position": 1.6
+    },
+    {
+      "keys": [
+        "restaurante pao de acucar"
+      ],
+      "clicks": 8,
+      "impressions": 133,
+      "ctr": 0.06015037593984962,
+      "position": 3.2781954887218046
+    },
+    {
+      "keys": [
+        "cardápio de embaixada carioca"
+      ],
+      "clicks": 7,
+      "impressions": 32,
+      "ctr": 0.21875,
+      "position": 2
+    },
+    {
+      "keys": [
+        "embaixada carioca restaurante"
+      ],
+      "clicks": 7,
+      "impressions": 25,
+      "ctr": 0.28,
+      "position": 1.48
+    },
+    {
+      "keys": [
+        "restaurante no pao de açucar rj"
+      ],
+      "clicks": 6,
+      "impressions": 88,
+      "ctr": 0.06818181818181818,
+      "position": 4.909090909090909
+    },
+    {
+      "keys": [
+        "restaurante pão de açucar"
+      ],
+      "clicks": 6,
+      "impressions": 264,
+      "ctr": 0.022727272727272728,
+      "position": 4.234848484848484
+    },
+    {
+      "keys": [
+        "cafe da manha no pao de acucar"
+      ],
+      "clicks": 5,
+      "impressions": 67,
+      "ctr": 0.07462686567164178,
+      "position": 6.626865671641791
+    },
+    {
+      "keys": [
+        "cafe da manha pao de acucar"
+      ],
+      "clicks": 5,
+      "impressions": 85,
+      "ctr": 0.058823529411764705,
+      "position": 4.094117647058823
+    },
+    {
+      "keys": [
+        "avaliações sobre embaixada carioca"
+      ],
+      "clicks": 4,
+      "impressions": 780,
+      "ctr": 0.005128205128205128,
+      "position": 3.6717948717948716
+    },
+    {
+      "keys": [
+        "embaixada carioca fotos"
+      ],
+      "clicks": 4,
+      "impressions": 51,
+      "ctr": 0.0784313725490196,
+      "position": 1.2549019607843137
+    },
+    {
+      "keys": [
+        "restaurante bondinho"
+      ],
+      "clicks": 4,
+      "impressions": 74,
+      "ctr": 0.05405405405405406,
+      "position": 3.4864864864864864
+    },
+    {
+      "keys": [
+        "restaurantes no morro da urca"
+      ],
+      "clicks": 4,
+      "impressions": 45,
+      "ctr": 0.08888888888888889,
+      "position": 3.8
+    },
+    {
+      "keys": [
+        "cafe da manha na urca"
+      ],
+      "clicks": 3,
+      "impressions": 135,
+      "ctr": 0.022222222222222223,
+      "position": 6.288888888888889
+    },
+    {
+      "keys": [
+        "cafe da manha no bondinho pão de açucar"
+      ],
+      "clicks": 3,
+      "impressions": 14,
+      "ctr": 0.21428571428571427,
+      "position": 3.5714285714285716
+    },
+    {
+      "keys": [
+        "embaixada carioca rio de janeiro"
+      ],
+      "clicks": 3,
+      "impressions": 10,
+      "ctr": 0.3,
+      "position": 1.5
+    },
+    {
+      "keys": [
+        "pao de acucar restaurantes"
+      ],
+      "clicks": 3,
+      "impressions": 28,
+      "ctr": 0.10714285714285714,
+      "position": 4.178571428571429
+    },
+    {
+      "keys": [
+        "restaurante bondinho pão de açucar"
+      ],
+      "clicks": 3,
+      "impressions": 41,
+      "ctr": 0.07317073170731707,
+      "position": 1.9268292682926829
+    },
+    {
+      "keys": [
+        "restaurante no bondinho do pão de açúcar"
+      ],
+      "clicks": 3,
+      "impressions": 46,
+      "ctr": 0.06521739130434782,
+      "position": 1.5652173913043477
+    },
+    {
+      "keys": [
+        "restaurante no pao de acucar"
+      ],
+      "clicks": 3,
+      "impressions": 55,
+      "ctr": 0.05454545454545454,
+      "position": 4.890909090909091
+    },
+    {
+      "keys": [
+        "restaurante no pão de açucar"
+      ],
+      "clicks": 3,
+      "impressions": 165,
+      "ctr": 0.01818181818181818,
+      "position": 4.957575757575757
+    },
+    {
+      "keys": [
+        "restaurante no pão de açúcar rio de janeiro"
+      ],
+      "clicks": 3,
+      "impressions": 49,
+      "ctr": 0.061224489795918366,
+      "position": 3.877551020408163
+    },
+    {
+      "keys": [
+        "restaurante pao de acucar rio de janeiro"
+      ],
+      "clicks": 3,
+      "impressions": 46,
+      "ctr": 0.06521739130434782,
+      "position": 4.195652173913043
+    },
+    {
+      "keys": [
+        "restaurantes morro da urca"
+      ],
+      "clicks": 3,
+      "impressions": 36,
+      "ctr": 0.08333333333333333,
+      "position": 3.888888888888889
+    },
+    {
+      "keys": [
+        "bondinho restaurante"
+      ],
+      "clicks": 2,
+      "impressions": 10,
+      "ctr": 0.2,
+      "position": 2
+    },
+    {
+      "keys": [
+        "cafe da manha na urca rj"
+      ],
+      "clicks": 2,
+      "impressions": 36,
+      "ctr": 0.05555555555555555,
+      "position": 4.861111111111111
+    },
+    {
+      "keys": [
+        "cafe da manha urca"
+      ],
+      "clicks": 2,
+      "impressions": 89,
+      "ctr": 0.02247191011235955,
+      "position": 6.561797752808989
+    },
+    {
+      "keys": [
+        "embaixada"
+      ],
+      "clicks": 2,
+      "impressions": 151,
+      "ctr": 0.013245033112582781,
+      "position": 2.635761589403973
+    },
+    {
+      "keys": [
+        "imagens de embaixada carioca"
+      ],
+      "clicks": 2,
+      "impressions": 52,
+      "ctr": 0.038461538461538464,
+      "position": 1
+    },
+    {
+      "keys": [
+        "morro da urca restaurante"
+      ],
+      "clicks": 2,
+      "impressions": 35,
+      "ctr": 0.05714285714285714,
+      "position": 3.857142857142857
+    },
+    {
+      "keys": [
+        "restaurant on sugarloaf mountain rio de janeiro"
+      ],
+      "clicks": 2,
+      "impressions": 16,
+      "ctr": 0.125,
+      "position": 4.6875
+    },
+    {
+      "keys": [
+        "restaurante do bondinho"
+      ],
+      "clicks": 2,
+      "impressions": 13,
+      "ctr": 0.15384615384615385,
+      "position": 2.9230769230769234
+    },
+    {
+      "keys": [
+        "restaurante do pao de açucar"
+      ],
+      "clicks": 2,
+      "impressions": 30,
+      "ctr": 0.06666666666666667,
+      "position": 3.2333333333333334
+    },
+    {
+      "keys": [
+        "restaurante morro da urca bondinho"
+      ],
+      "clicks": 2,
+      "impressions": 28,
+      "ctr": 0.07142857142857142,
+      "position": 2.2142857142857144
+    },
+    {
+      "keys": [
+        "restaurante na urca"
+      ],
+      "clicks": 2,
+      "impressions": 182,
+      "ctr": 0.01098901098901099,
+      "position": 5.368131868131868
+    },
+    {
+      "keys": [
+        "restaurante pao de açucar"
+      ],
+      "clicks": 2,
+      "impressions": 25,
+      "ctr": 0.08,
+      "position": 3.2
+    },
+    {
+      "keys": [
+        "almoço pao de acucar"
+      ],
+      "clicks": 1,
+      "impressions": 17,
+      "ctr": 0.058823529411764705,
+      "position": 3.4705882352941178
+    },
+    {
+      "keys": [
+        "cafe da manha bondinho"
+      ],
+      "clicks": 1,
+      "impressions": 22,
+      "ctr": 0.045454545454545456,
+      "position": 5.181818181818182
+    },
+    {
+      "keys": [
+        "cafe da manha morro da urca"
+      ],
+      "clicks": 1,
+      "impressions": 31,
+      "ctr": 0.03225806451612903,
+      "position": 2.064516129032258
+    },
+    {
+      "keys": [
+        "cafe da manha mureta da urca"
+      ],
+      "clicks": 1,
+      "impressions": 4,
+      "ctr": 0.25,
+      "position": 3.75
+    },
+    {
+      "keys": [
+        "cafe da manha no bondinho"
+      ],
+      "clicks": 1,
+      "impressions": 12,
+      "ctr": 0.08333333333333333,
+      "position": 2.666666666666667
+    },
+    {
+      "keys": [
+        "cafe da manha no morro da urca"
+      ],
+      "clicks": 1,
+      "impressions": 13,
+      "ctr": 0.07692307692307693,
+      "position": 4.769230769230769
+    },
+    {
+      "keys": [
+        "cafe da manha no pao de acucar rj"
+      ],
+      "clicks": 1,
+      "impressions": 24,
+      "ctr": 0.041666666666666664,
+      "position": 5.958333333333333
+    },
+    {
+      "keys": [
+        "cafe da manha praia vermelha"
+      ],
+      "clicks": 1,
+      "impressions": 6,
+      "ctr": 0.16666666666666666,
+      "position": 1.6666666666666665
+    },
+    {
+      "keys": [
+        "cafe da manha urca rj"
+      ],
+      "clicks": 1,
+      "impressions": 14,
+      "ctr": 0.07142857142857142,
+      "position": 4.357142857142858
+    }
+  ],
+  "top_pages": [
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/"
+      ],
+      "clicks": 483,
+      "impressions": 13726,
+      "ctr": 0.035188692991403175,
+      "position": 5.861066588955268
+    },
+    {
+      "keys": [
+        "http://www.embaixadacarioca.com/"
+      ],
+      "clicks": 168,
+      "impressions": 8877,
+      "ctr": 0.018925312605610003,
+      "position": 4.764898051143405
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/cafe-da-manha.html"
+      ],
+      "clicks": 28,
+      "impressions": 1108,
+      "ctr": 0.02527075812274368,
+      "position": 6.376353790613718
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/cardapio.html"
+      ],
+      "clicks": 28,
+      "impressions": 1060,
+      "ctr": 0.026415094339622643,
+      "position": 6.558490566037736
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/morro-da-urca.html"
+      ],
+      "clicks": 28,
+      "impressions": 7754,
+      "ctr": 0.0036110394635027084,
+      "position": 8.372581893216404
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/en/"
+      ],
+      "clicks": 20,
+      "impressions": 1636,
+      "ctr": 0.012224938875305624,
+      "position": 7.21760391198044
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/es/"
+      ],
+      "clicks": 19,
+      "impressions": 481,
+      "ctr": 0.0395010395010395,
+      "position": 5.71933471933472
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/cardapio"
+      ],
+      "clicks": 16,
+      "impressions": 328,
+      "ctr": 0.04878048780487805,
+      "position": 5.445121951219512
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/eventos.html"
+      ],
+      "clicks": 14,
+      "impressions": 314,
+      "ctr": 0.044585987261146494,
+      "position": 7.429936305732484
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/como-chegar.html"
+      ],
+      "clicks": 13,
+      "impressions": 2383,
+      "ctr": 0.005455308434746118,
+      "position": 8.146454049517416
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/caf%C3%A9-da-manh%C3%A3-com-a-melhor-vista-do-rio"
+      ],
+      "clicks": 10,
+      "impressions": 739,
+      "ctr": 0.013531799729364006,
+      "position": 5.726657645466847
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/parque-bondinho-pao-de-acucar.html"
+      ],
+      "clicks": 8,
+      "impressions": 398,
+      "ctr": 0.020100502512562814,
+      "position": 7.763819095477387
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/en/cafe-da-manha.html"
+      ],
+      "clicks": 6,
+      "impressions": 154,
+      "ctr": 0.03896103896103896,
+      "position": 9.493506493506494
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/parque-bondinho.html"
+      ],
+      "clicks": 6,
+      "impressions": 7716,
+      "ctr": 0.0007776049766718507,
+      "position": 8.217081389320892
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/en/how-to-get-there.html"
+      ],
+      "clicks": 5,
+      "impressions": 1551,
+      "ctr": 0.003223726627981947,
+      "position": 7.474532559638942
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/onde-comer-no-pao-de-acucar.html"
+      ],
+      "clicks": 5,
+      "impressions": 346,
+      "ctr": 0.014450867052023121,
+      "position": 7.92485549132948
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html"
+      ],
+      "clicks": 4,
+      "impressions": 147,
+      "ctr": 0.027210884353741496,
+      "position": 6.64625850340136
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/es/restaurante-morro-da-urca.html"
+      ],
+      "clicks": 4,
+      "impressions": 122,
+      "ctr": 0.03278688524590164,
+      "position": 6.172131147540983
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/feijoada.html"
+      ],
+      "clicks": 4,
+      "impressions": 78,
+      "ctr": 0.05128205128205128,
+      "position": 5.961538461538462
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html"
+      ],
+      "clicks": 4,
+      "impressions": 134,
+      "ctr": 0.029850746268656716,
+      "position": 4.895522388059701
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/en/eventos.html"
+      ],
+      "clicks": 3,
+      "impressions": 265,
+      "ctr": 0.011320754716981131,
+      "position": 17.339622641509433
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/en/where-to-eat-near-sugarloaf.html"
+      ],
+      "clicks": 3,
+      "impressions": 207,
+      "ctr": 0.014492753623188406,
+      "position": 7.299516908212561
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/es/feijoada.html"
+      ],
+      "clicks": 3,
+      "impressions": 21,
+      "ctr": 0.14285714285714285,
+      "position": 7.523809523809524
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html"
+      ],
+      "clicks": 3,
+      "impressions": 46,
+      "ctr": 0.06521739130434782,
+      "position": 6.804347826086956
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/almoco.html"
+      ],
+      "clicks": 2,
+      "impressions": 313,
+      "ctr": 0.006389776357827476,
+      "position": 6.821086261980831
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/en/cardapio.html"
+      ],
+      "clicks": 2,
+      "impressions": 30,
+      "ctr": 0.06666666666666667,
+      "position": 6.3
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/en/restaurant-at-urca-hill.html"
+      ],
+      "clicks": 2,
+      "impressions": 82,
+      "ctr": 0.024390243902439025,
+      "position": 7.121951219512195
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/es/eventos.html"
+      ],
+      "clicks": 2,
+      "impressions": 69,
+      "ctr": 0.028985507246376812,
+      "position": 6.797101449275362
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/feijoada"
+      ],
+      "clicks": 2,
+      "impressions": 24,
+      "ctr": 0.08333333333333333,
+      "position": 10.791666666666666
+    },
+    {
+      "keys": [
+        "https://www.embaixadacarioca.com/guia-do-rio.html"
+      ],
+      "clicks": 2,
+      "impressions": 314,
+      "ctr": 0.006369426751592357,
+      "position": 8.531847133757962
+    }
+  ],
+  "countries": [
+    {
+      "keys": [
+        "bra"
+      ],
+      "clicks": 788,
+      "impressions": 36060,
+      "ctr": 0.02185246810870771,
+      "position": 6.625790349417637
+    },
+    {
+      "keys": [
+        "usa"
+      ],
+      "clicks": 40,
+      "impressions": 4965,
+      "ctr": 0.008056394763343404,
+      "position": 8.66183282980866
+    },
+    {
+      "keys": [
+        "chl"
+      ],
+      "clicks": 10,
+      "impressions": 206,
+      "ctr": 0.04854368932038835,
+      "position": 5.834951456310679
+    },
+    {
+      "keys": [
+        "can"
+      ],
+      "clicks": 7,
+      "impressions": 156,
+      "ctr": 0.04487179487179487,
+      "position": 6.576923076923077
+    },
+    {
+      "keys": [
+        "col"
+      ],
+      "clicks": 7,
+      "impressions": 157,
+      "ctr": 0.044585987261146494,
+      "position": 6.6050955414012735
+    },
+    {
+      "keys": [
+        "gbr"
+      ],
+      "clicks": 6,
+      "impressions": 204,
+      "ctr": 0.029411764705882353,
+      "position": 9.127450980392156
+    },
+    {
+      "keys": [
+        "bel"
+      ],
+      "clicks": 4,
+      "impressions": 34,
+      "ctr": 0.11764705882352941,
+      "position": 3.9411764705882355
+    },
+    {
+      "keys": [
+        "esp"
+      ],
+      "clicks": 4,
+      "impressions": 222,
+      "ctr": 0.018018018018018018,
+      "position": 7.351351351351352
+    },
+    {
+      "keys": [
+        "arg"
+      ],
+      "clicks": 3,
+      "impressions": 153,
+      "ctr": 0.0196078431372549,
+      "position": 8.529411764705882
+    },
+    {
+      "keys": [
+        "aus"
+      ],
+      "clicks": 3,
+      "impressions": 53,
+      "ctr": 0.05660377358490566,
+      "position": 6.943396226415095
+    },
+    {
+      "keys": [
+        "deu"
+      ],
+      "clicks": 3,
+      "impressions": 107,
+      "ctr": 0.028037383177570093,
+      "position": 6.785046728971962
+    },
+    {
+      "keys": [
+        "ita"
+      ],
+      "clicks": 3,
+      "impressions": 73,
+      "ctr": 0.0410958904109589,
+      "position": 7.082191780821918
+    },
+    {
+      "keys": [
+        "mex"
+      ],
+      "clicks": 3,
+      "impressions": 93,
+      "ctr": 0.03225806451612903,
+      "position": 7.290322580645161
+    },
+    {
+      "keys": [
+        "che"
+      ],
+      "clicks": 2,
+      "impressions": 35,
+      "ctr": 0.05714285714285714,
+      "position": 7.171428571428572
+    },
+    {
+      "keys": [
+        "cri"
+      ],
+      "clicks": 2,
+      "impressions": 28,
+      "ctr": 0.07142857142857142,
+      "position": 5
+    },
+    {
+      "keys": [
+        "dom"
+      ],
+      "clicks": 2,
+      "impressions": 13,
+      "ctr": 0.15384615384615385,
+      "position": 4.6923076923076925
+    },
+    {
+      "keys": [
+        "ind"
+      ],
+      "clicks": 2,
+      "impressions": 40,
+      "ctr": 0.05,
+      "position": 9.75
+    },
+    {
+      "keys": [
+        "nld"
+      ],
+      "clicks": 2,
+      "impressions": 123,
+      "ctr": 0.016260162601626018,
+      "position": 6.739837398373984
+    },
+    {
+      "keys": [
+        "swe"
+      ],
+      "clicks": 2,
+      "impressions": 9,
+      "ctr": 0.2222222222222222,
+      "position": 5
+    },
+    {
+      "keys": [
+        "bol"
+      ],
+      "clicks": 1,
+      "impressions": 20,
+      "ctr": 0.05,
+      "position": 7.95
+    }
+  ],
+  "devices": [
+    {
+      "keys": [
+        "MOBILE"
+      ],
+      "clicks": 625,
+      "impressions": 30805,
+      "ctr": 0.020288914137315373,
+      "position": 6.586008764810908
+    },
+    {
+      "keys": [
+        "DESKTOP"
+      ],
+      "clicks": 270,
+      "impressions": 12750,
+      "ctr": 0.021176470588235293,
+      "position": 7.714666666666667
+    },
+    {
+      "keys": [
+        "TABLET"
+      ],
+      "clicks": 8,
+      "impressions": 164,
+      "ctr": 0.04878048780487805,
+      "position": 6.420731707317073
+    }
+  ]
+}
