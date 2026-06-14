@@ -40,7 +40,8 @@ html body :is(
   .ec-sprint5-quality,.ec-sprint2-geo,.ec-r2d2-depth,.ec-faq-fase4,
   .ec-sprint4-faq,.ec-sprint4-steps,.ec-semantic-section,
   .links-internos-section,.ec-links-internos,.seo-conversion-block,
-  .section-below-fold,.section.faq,.faq
+  .section-below-fold,.section.faq,.faq,
+  .ec-scorecard-gap,.ec-access-clarity,.links-relacionados,.ec-internal-link-cluster,.ec-internal-linking,.ec-strategic-links,.b2b-section,.corporate-section,.ec-b2b-section
 ):is(
   .momentos,.visao,.avaliacoes,.eventos,.faq-section,.ec-faq-section,
   .geo-aio-section,.quick-answers-section,.gsc-ctr-block,
@@ -48,7 +49,8 @@ html body :is(
   .ec-sprint5-quality,.ec-sprint2-geo,.ec-r2d2-depth,.ec-faq-fase4,
   .ec-sprint4-faq,.ec-sprint4-steps,.ec-semantic-section,
   .links-internos-section,.ec-links-internos,.seo-conversion-block,
-  .section-below-fold,.section.faq,.faq
+  .section-below-fold,.section.faq,.faq,
+  .ec-scorecard-gap,.ec-access-clarity,.links-relacionados,.ec-internal-link-cluster,.ec-internal-linking,.ec-strategic-links,.b2b-section,.corporate-section,.ec-b2b-section
 ) :is(h1,h2,h3,h4,h5,h6) {
   color: var(--ec-lock-blue) !important;
   -webkit-text-fill-color: var(--ec-lock-blue) !important;
@@ -64,7 +66,8 @@ html body :is(
   .ec-sprint5-quality,.ec-sprint2-geo,.ec-r2d2-depth,.ec-faq-fase4,
   .ec-sprint4-faq,.ec-sprint4-steps,.ec-semantic-section,
   .links-internos-section,.ec-links-internos,.seo-conversion-block,
-  .section-below-fold,.section.faq,.faq
+  .section-below-fold,.section.faq,.faq,
+  .ec-scorecard-gap,.ec-access-clarity,.links-relacionados,.ec-internal-link-cluster,.ec-internal-linking,.ec-strategic-links,.b2b-section,.corporate-section,.ec-b2b-section
 ):is(
   .momentos,.visao,.avaliacoes,.eventos,.faq-section,.ec-faq-section,
   .geo-aio-section,.quick-answers-section,.gsc-ctr-block,
@@ -72,7 +75,8 @@ html body :is(
   .ec-sprint5-quality,.ec-sprint2-geo,.ec-r2d2-depth,.ec-faq-fase4,
   .ec-sprint4-faq,.ec-sprint4-steps,.ec-semantic-section,
   .links-internos-section,.ec-links-internos,.seo-conversion-block,
-  .section-below-fold,.section.faq,.faq
+  .section-below-fold,.section.faq,.faq,
+  .ec-scorecard-gap,.ec-access-clarity,.links-relacionados,.ec-internal-link-cluster,.ec-internal-linking,.ec-strategic-links,.b2b-section,.corporate-section,.ec-b2b-section
 ) :is(p,li,span,small,dd,dt,td,th,label,figcaption,blockquote,cite,summary) {
   color: var(--ec-lock-green) !important;
   -webkit-text-fill-color: var(--ec-lock-green) !important;
@@ -88,7 +92,8 @@ html body :is(
   .ec-sprint5-quality,.ec-sprint2-geo,.ec-r2d2-depth,.ec-faq-fase4,
   .ec-sprint4-faq,.ec-sprint4-steps,.ec-semantic-section,
   .links-internos-section,.ec-links-internos,.seo-conversion-block,
-  .section-below-fold,.section.faq,.faq
+  .section-below-fold,.section.faq,.faq,
+  .ec-scorecard-gap,.ec-access-clarity,.links-relacionados,.ec-internal-link-cluster,.ec-internal-linking,.ec-strategic-links,.b2b-section,.corporate-section,.ec-b2b-section
 ):is(
   .momentos,.visao,.avaliacoes,.eventos,.faq-section,.ec-faq-section,
   .geo-aio-section,.quick-answers-section,.gsc-ctr-block,
@@ -96,7 +101,8 @@ html body :is(
   .ec-sprint5-quality,.ec-sprint2-geo,.ec-r2d2-depth,.ec-faq-fase4,
   .ec-sprint4-faq,.ec-sprint4-steps,.ec-semantic-section,
   .links-internos-section,.ec-links-internos,.seo-conversion-block,
-  .section-below-fold,.section.faq,.faq
+  .section-below-fold,.section.faq,.faq,
+  .ec-scorecard-gap,.ec-access-clarity,.links-relacionados,.ec-internal-link-cluster,.ec-internal-linking,.ec-strategic-links,.b2b-section,.corporate-section,.ec-b2b-section
 ) a:not([class*="btn"]):not([class*="cta"]):not([class*="reserv"]) {
   color: var(--ec-lock-blue) !important;
   -webkit-text-fill-color: var(--ec-lock-blue) !important;
@@ -111,7 +117,8 @@ html body :is(
   .ec-sprint5-quality,.ec-sprint2-geo,.ec-r2d2-depth,.ec-faq-fase4,
   .ec-sprint4-faq,.ec-sprint4-steps,.ec-semantic-section,
   .links-internos-section,.ec-links-internos,.seo-conversion-block,
-  .section-below-fold,.section.faq,.faq
+  .section-below-fold,.section.faq,.faq,
+  .ec-scorecard-gap,.ec-access-clarity,.links-relacionados,.ec-internal-link-cluster,.ec-internal-linking,.ec-strategic-links,.b2b-section,.corporate-section,.ec-b2b-section
 ):is(
   .momentos,.visao,.avaliacoes,.eventos,.faq-section,.ec-faq-section,
   .geo-aio-section,.quick-answers-section,.gsc-ctr-block,
@@ -119,7 +126,8 @@ html body :is(
   .ec-sprint5-quality,.ec-sprint2-geo,.ec-r2d2-depth,.ec-faq-fase4,
   .ec-sprint4-faq,.ec-sprint4-steps,.ec-semantic-section,
   .links-internos-section,.ec-links-internos,.seo-conversion-block,
-  .section-below-fold,.section.faq,.faq
+  .section-below-fold,.section.faq,.faq,
+  .ec-scorecard-gap,.ec-access-clarity,.links-relacionados,.ec-internal-link-cluster,.ec-internal-linking,.ec-strategic-links,.b2b-section,.corporate-section,.ec-b2b-section
 ) :is(strong,b,em) {
   color: var(--ec-lock-gold) !important;
   -webkit-text-fill-color: var(--ec-lock-gold) !important;

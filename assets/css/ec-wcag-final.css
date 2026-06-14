@@ -130,3 +130,45 @@ html body [role="alert"]:not([class*="dark"]) {
 
 /* ─── FOCUS VISIBLE: manter amarelo (sobre fundo escuro do outline) ─── */
 /* :focus-visible usa amarelo sobre fundo de página — contexto escuro OK */
+
+/* ─── CORREÇÃO 6: Forçar texto escuro com contraste AAA nas novas seções claras ─── */
+/* Estas seções (ec-scorecard-gap, ec-access-clarity, links-relacionados, ec-internal-link-cluster)
+   têm fundo claro (#fff8ea, #fff, #fdfbf7) mas foram incorretamente afetadas por regras genéricas
+   de "not()" que pintam o texto de claro. Forçamos aqui as cores escuras de contraste AAA de forma nuclear. */
+
+html body main :is(.ec-scorecard-gap, .ec-access-clarity, .links-relacionados, .ec-internal-link-cluster, .ec-internal-linking, .ec-strategic-links, .b2b-section, .corporate-section, .ec-b2b-section) {
+  background-color: #fff8ea !important;
+  color: #1d4f60 !important;
+  -webkit-text-fill-color: #1d4f60 !important;
+}
+
+html body main :is(.ec-scorecard-gap, .ec-access-clarity, .links-relacionados, .ec-internal-link-cluster, .ec-internal-linking, .ec-strategic-links, .b2b-section, .corporate-section, .ec-b2b-section) :is(h1, h2, h3, h4, h5, h6, .title) {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+}
+
+html body main :is(.ec-scorecard-gap, .ec-access-clarity, .links-relacionados, .ec-internal-link-cluster, .ec-internal-linking, .ec-strategic-links, .b2b-section, .corporate-section, .ec-b2b-section) :is(p, li, span, small, dd, dt, summary, .lede, .copy, .description) {
+  color: #485156 !important;
+  -webkit-text-fill-color: #485156 !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+}
+
+html body main :is(.ec-scorecard-gap, .ec-access-clarity, .links-relacionados, .ec-internal-link-cluster, .ec-internal-linking, .ec-strategic-links, .b2b-section, .corporate-section, .ec-b2b-section) :is(strong, b) {
+  color: #7a5000 !important;
+  -webkit-text-fill-color: #7a5000 !important;
+  text-shadow: none !important;
+}
+
+html body main :is(.ec-scorecard-gap, .ec-access-clarity, .links-relacionados, .ec-internal-link-cluster, .ec-internal-linking, .ec-strategic-links, .b2b-section, .corporate-section, .ec-b2b-section) a:not([class*="btn"]) {
+  color: #1d4f60 !important;
+  -webkit-text-fill-color: #1d4f60 !important;
+  text-decoration: underline !important;
+}
+
+html body main :is(.ec-scorecard-gap, .ec-access-clarity, .links-relacionados, .ec-internal-link-cluster, .ec-internal-linking, .ec-strategic-links, .b2b-section, .corporate-section, .ec-b2b-section) a:not([class*="btn"]):hover {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+}
