@@ -2896,6 +2896,104 @@ html body main a.btn[href*="tagme"],html body main a.btn[href*="reserv"],nav.top
 <script defer src="/assets/bondinho-ticket-notice.js"></script>
 <script defer src="/assets/menuitem-schema-enhancer.js"></script>
 <script defer src="/assets/internal-page-contrast-rescue.js"></script>
+<!-- EC Light Section Contrast Override — MUST be last inline style -->
+<style id="ec-light-section-contrast-override">
+/* ============================================================
+   OVERRIDE FINAL DE CONTRASTE — Seções com fundo claro
+   Este bloco deve ser o ÚLTIMO <style> inline no body.
+   Garante texto escuro legível em seções de fundo creme/areia.
+   Especificidade: html body main section.CLASS > elemento
+   ============================================================ */
+html body main .ec-scorecard-gap,
+html body main .ec-access-clarity,
+html body main .ec-internal-link-cluster,
+html body main .links-relacionados,
+html body main .ec-internal-linking,
+html body main .ec-strategic-links,
+html body main .b2b-section,
+html body main .corporate-section,
+html body main .ec-b2b-section {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+}
+html body main .ec-scorecard-gap h1,
+html body main .ec-scorecard-gap h2,
+html body main .ec-scorecard-gap h3,
+html body main .ec-scorecard-gap h4,
+html body main .ec-scorecard-gap h5,
+html body main .ec-scorecard-gap h6,
+html body main .ec-access-clarity h1,
+html body main .ec-access-clarity h2,
+html body main .ec-access-clarity h3,
+html body main .ec-access-clarity h4,
+html body main .ec-access-clarity h5,
+html body main .ec-access-clarity h6,
+html body main .ec-internal-link-cluster h1,
+html body main .ec-internal-link-cluster h2,
+html body main .ec-internal-link-cluster h3,
+html body main .ec-internal-link-cluster h4,
+html body main .b2b-section h1,
+html body main .b2b-section h2,
+html body main .b2b-section h3,
+html body main .b2b-section h4,
+html body main .corporate-section h1,
+html body main .corporate-section h2,
+html body main .corporate-section h3,
+html body main .ec-b2b-section h1,
+html body main .ec-b2b-section h2,
+html body main .ec-b2b-section h3 {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+  opacity: 1 !important;
+}
+html body main .ec-scorecard-gap p,
+html body main .ec-scorecard-gap li,
+html body main .ec-scorecard-gap span,
+html body main .ec-scorecard-gap small,
+html body main .ec-scorecard-gap dd,
+html body main .ec-scorecard-gap dt,
+html body main .ec-scorecard-gap summary,
+html body main .ec-access-clarity p,
+html body main .ec-access-clarity li,
+html body main .ec-access-clarity span,
+html body main .ec-access-clarity small,
+html body main .ec-internal-link-cluster p,
+html body main .ec-internal-link-cluster li,
+html body main .ec-internal-link-cluster span,
+html body main .links-relacionados p,
+html body main .links-relacionados li,
+html body main .links-relacionados span,
+html body main .b2b-section p,
+html body main .b2b-section li,
+html body main .b2b-section span,
+html body main .corporate-section p,
+html body main .corporate-section li,
+html body main .ec-b2b-section p,
+html body main .ec-b2b-section li {
+  color: #485156 !important;
+  -webkit-text-fill-color: #485156 !important;
+  opacity: 1 !important;
+}
+html body main .ec-scorecard-gap strong,
+html body main .ec-scorecard-gap b,
+html body main .ec-access-clarity strong,
+html body main .ec-access-clarity b,
+html body main .ec-internal-link-cluster strong,
+html body main .b2b-section strong,
+html body main .corporate-section strong {
+  color: #335d4a !important;
+  -webkit-text-fill-color: #335d4a !important;
+}
+html body main .ec-scorecard-gap a,
+html body main .ec-access-clarity a,
+html body main .ec-internal-link-cluster a,
+html body main .links-relacionados a,
+html body main .b2b-section a,
+html body main .corporate-section a {
+  color: #1d4f60 !important;
+  -webkit-text-fill-color: #1d4f60 !important;
+}
+</style>
 <link href="/assets/css/ec-light-bg-contrast-lock.css" rel="stylesheet"/>
 <link href="/assets/css/ec-wcag-final.css" rel="stylesheet"/>
 </body>
