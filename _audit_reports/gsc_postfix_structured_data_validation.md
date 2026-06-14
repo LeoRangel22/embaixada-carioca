@@ -11,7 +11,7 @@ Status geral: **PASS**
 - VideoObject, quando presente, deve ter uploadDate com fuso horário.
 
 ## Resumo
-- Arquivos HTML analisados: 87
+- Arquivos HTML analisados: 106
 - Arquivos com pendências: 0
 
 ## Pendências
