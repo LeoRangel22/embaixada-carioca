@@ -1,22 +1,22 @@
 query,cluster,target,clicks,impressions,ctr,exact_query_in_text,cluster_score,title_score,description_score,h1_score,score,recommendation
-embaixada carioca,brand,index.html,45,293,15.36,True,100,100,0,100,85,Reforçar cluster na página: 
-avaliações sobre embaixada carioca,reviews,index.html,0,112,0.0,True,100,0,0,0,60,Reforçar cluster na página: 
-morro da urca,geo,restaurante-morro-da-urca.html,0,88,0.0,True,100,100,0,100,85,Reforçar cluster na página: 
-restaurante urca,restaurant_urca,restaurante-morro-da-urca.html,0,62,0.0,False,100,100,0,100,84,Reforçar cluster na página: 
-restaurante pão de açucar,pao_de_acucar,index.html,1,49,2.04,False,100,100,0,100,84,Reforçar cluster na página: 
-restaurante morro da urca,morro_da_urca_restaurant,restaurante-morro-da-urca.html,1,45,2.22,True,100,100,0,100,85,Reforçar cluster na página: 
-restaurante na urca,restaurant_urca,restaurante-morro-da-urca.html,0,39,0.0,False,100,100,0,100,84,Reforçar cluster na página: 
-restaurante no pão de açúcar,pao_de_acucar,index.html,0,34,0.0,True,100,100,0,100,85,Reforçar cluster na página: 
-embaixada,brand,index.html,2,30,6.67,True,100,100,0,100,85,Reforçar cluster na página: 
-restaurante no morro da urca,morro_da_urca_restaurant,restaurante-morro-da-urca.html,4,25,16.0,True,100,100,0,100,85,Reforçar cluster na página: 
-restaurantes urca,restaurant_urca,restaurante-morro-da-urca.html,0,25,0.0,False,100,100,0,100,84,Reforçar cluster na página: 
-av pasteur 520 - urca rio de janeiro,address,como-chegar.html,0,22,0.0,False,83,100,100,70,87,Reforçar cluster na página: av pasteur
-restaurante pao de acucar,pao_de_acucar,index.html,1,21,4.76,False,100,100,0,100,84,Reforçar cluster na página: 
-cafe da manha pao de acucar,breakfast,cafe-da-manha.html,1,19,5.26,False,100,100,100,100,99,OK
-avenida pasteur 520,address,como-chegar.html,0,17,0.0,False,83,100,100,70,87,Reforçar cluster na página: av pasteur
+embaixada carioca,brand,index.html,45,293,15.36,True,100,100,100,100,100,OK
+avaliações sobre embaixada carioca,reviews,index.html,0,112,0.0,True,100,0,100,0,75,Reforçar cluster na página: 
+morro da urca,geo,restaurante-morro-da-urca.html,0,88,0.0,True,100,100,100,100,100,OK
+restaurante urca,restaurant_urca,restaurante-morro-da-urca.html,0,62,0.0,True,100,100,100,100,100,OK
+restaurante pão de açucar,pao_de_acucar,index.html,1,49,2.04,True,100,100,100,100,100,OK
+restaurante morro da urca,morro_da_urca_restaurant,restaurante-morro-da-urca.html,1,45,2.22,True,100,100,100,100,100,OK
+restaurante na urca,restaurant_urca,restaurante-morro-da-urca.html,0,39,0.0,False,100,100,100,100,99,OK
+restaurante no pão de açúcar,pao_de_acucar,index.html,0,34,0.0,True,100,100,100,100,100,OK
+embaixada,brand,index.html,2,30,6.67,True,100,100,100,100,100,OK
+restaurante no morro da urca,morro_da_urca_restaurant,restaurante-morro-da-urca.html,4,25,16.0,True,100,100,100,100,100,OK
+restaurantes urca,restaurant_urca,restaurante-morro-da-urca.html,0,25,0.0,False,100,100,100,100,99,OK
+av pasteur 520 - urca rio de janeiro,address,como-chegar.html,0,22,0.0,False,86,100,100,70,88,Reforçar cluster na página: av pasteur
+restaurante pao de acucar,pao_de_acucar,index.html,1,21,4.76,True,100,100,100,100,100,OK
+cafe da manha pao de acucar,breakfast,cafe-da-manha.html,1,19,5.26,True,100,100,100,100,100,OK
+avenida pasteur 520,address,como-chegar.html,0,17,0.0,False,86,100,100,70,88,Reforçar cluster na página: av pasteur
 cafe da manha na urca,breakfast,cafe-da-manha.html,0,17,0.0,True,100,100,100,100,100,OK
-restaurantes na urca,restaurant_urca,restaurante-morro-da-urca.html,1,17,5.88,False,100,100,0,100,84,Reforçar cluster na página: 
-morro da urca rio de janeiro,geo,restaurante-morro-da-urca.html,0,16,0.0,False,100,100,0,100,84,Reforçar cluster na página: 
-restaurante no pao de açucar rj,pao_de_acucar,index.html,1,16,6.25,False,100,100,0,100,84,Reforçar cluster na página: 
+restaurantes na urca,restaurant_urca,restaurante-morro-da-urca.html,1,17,5.88,False,100,100,100,100,99,OK
+morro da urca rio de janeiro,geo,restaurante-morro-da-urca.html,0,16,0.0,False,100,100,100,100,99,OK
+restaurante no pao de açucar rj,pao_de_acucar,index.html,1,16,6.25,True,100,100,100,100,100,OK
 café da manhã na urca,breakfast,cafe-da-manha.html,0,15,0.0,True,100,100,100,100,100,OK
-restaurante bondinho,bondinho,index.html,1,15,6.67,False,100,100,0,100,84,Reforçar cluster na página: 
+restaurante bondinho,bondinho,index.html,1,15,6.67,True,100,100,100,100,100,OK

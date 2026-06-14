@@ -46,7 +46,7 @@ CLUSTER_TERMS = {
     "restaurant_urca": ["restaurante", "restaurantes", "urca", "morro da urca"],
     "pao_de_acucar": ["restaurante", "pao de acucar", "bondinho", "morro da urca"],
     "morro_da_urca_restaurant": ["restaurante", "morro da urca", "pao de acucar"],
-    "address": ["av pasteur", "avenida pasteur", "520", "urca", "rio de janeiro", "como chegar"],
+    "address": ["av pasteur", "av. pasteur", "avenida pasteur", "520", "urca", "rio de janeiro", "como chegar"],
     "breakfast": ["cafe da manha", "urca", "pao de acucar", "morro da urca"],
     "bondinho": ["restaurante", "bondinho", "pao de acucar", "morro da urca"],
 }
@@ -64,6 +64,7 @@ HIDDEN = re.compile(r"<script.*?</script>|<style.*?</style>|<noscript.*?</noscri
 SPACE = re.compile(r"\s+")
 TITLE = re.compile(r"<title[^>]*>(.*?)</title>", re.I|re.S)
 DESC = re.compile(r"<meta[^>]+name=[\"']description[\"'][^>]+content=[\"']([^\"']+)[\"']", re.I)
+DESC_ALT = re.compile(r"<meta[^>]+content=[\"']([^\"']+)[\"'][^>]*name=[\"']description[\"']", re.I)
 H1 = re.compile(r"<h1\b[^>]*>(.*?)</h1>", re.I|re.S)
 
 
@@ -124,7 +125,8 @@ def audit_query(q: dict) -> QueryResult:
     html = path.read_text(encoding="utf-8", errors="ignore")
     text = visible(html)
     title = strip(TITLE.search(html).group(1)) if TITLE.search(html) else ""
-    desc = norm(DESC.search(html).group(1)) if DESC.search(html) else ""
+    _desc_m = DESC.search(html) or DESC_ALT.search(html)
+    desc = norm(_desc_m.group(1)) if _desc_m else ""
     h1 = strip(H1.search(html).group(1)) if H1.search(html) else ""
 
     cluster_terms = CLUSTER_TERMS[q["cluster"]]

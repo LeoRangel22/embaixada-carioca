@@ -1,7 +1,7 @@
 {
   "status": "FAIL",
   "threshold": 90,
-  "min_score": 60,
+  "min_score": 75,
   "queries": [
     {
       "query": "embaixada carioca",
@@ -183,10 +183,10 @@
       "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 0,
+      "description_score": 100,
       "h1_score": 100,
-      "score": 85,
-      "recommendation": "Reforçar cluster na página: "
+      "score": 100,
+      "recommendation": "OK"
     },
     {
       "query": "avaliações sobre embaixada carioca",
@@ -198,9 +198,9 @@
       "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 0,
-      "description_score": 0,
+      "description_score": 100,
       "h1_score": 0,
-      "score": 60,
+      "score": 75,
       "recommendation": "Reforçar cluster na página: "
     },
     {
@@ -213,10 +213,10 @@
       "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 0,
+      "description_score": 100,
       "h1_score": 100,
-      "score": 85,
-      "recommendation": "Reforçar cluster na página: "
+      "score": 100,
+      "recommendation": "OK"
     },
     {
       "query": "restaurante urca",
@@ -225,13 +225,13 @@
       "clicks": 0,
       "impressions": 62,
       "ctr": 0.0,
-      "exact_query_in_text": false,
+      "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 0,
+      "description_score": 100,
       "h1_score": 100,
-      "score": 84,
-      "recommendation": "Reforçar cluster na página: "
+      "score": 100,
+      "recommendation": "OK"
     },
     {
       "query": "restaurante pão de açucar",
@@ -240,13 +240,13 @@
       "clicks": 1,
       "impressions": 49,
       "ctr": 2.04,
-      "exact_query_in_text": false,
+      "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 0,
+      "description_score": 100,
       "h1_score": 100,
-      "score": 84,
-      "recommendation": "Reforçar cluster na página: "
+      "score": 100,
+      "recommendation": "OK"
     },
     {
       "query": "restaurante morro da urca",
@@ -258,10 +258,10 @@
       "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 0,
+      "description_score": 100,
       "h1_score": 100,
-      "score": 85,
-      "recommendation": "Reforçar cluster na página: "
+      "score": 100,
+      "recommendation": "OK"
     },
     {
       "query": "restaurante na urca",
@@ -273,10 +273,10 @@
       "exact_query_in_text": false,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 0,
+      "description_score": 100,
       "h1_score": 100,
-      "score": 84,
-      "recommendation": "Reforçar cluster na página: "
+      "score": 99,
+      "recommendation": "OK"
     },
     {
       "query": "restaurante no pão de açúcar",
@@ -288,10 +288,10 @@
       "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 0,
+      "description_score": 100,
       "h1_score": 100,
-      "score": 85,
-      "recommendation": "Reforçar cluster na página: "
+      "score": 100,
+      "recommendation": "OK"
     },
     {
       "query": "embaixada",
@@ -303,10 +303,10 @@
       "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 0,
+      "description_score": 100,
       "h1_score": 100,
-      "score": 85,
-      "recommendation": "Reforçar cluster na página: "
+      "score": 100,
+      "recommendation": "OK"
     },
     {
       "query": "restaurante no morro da urca",
@@ -318,10 +318,10 @@
       "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 0,
+      "description_score": 100,
       "h1_score": 100,
-      "score": 85,
-      "recommendation": "Reforçar cluster na página: "
+      "score": 100,
+      "recommendation": "OK"
     },
     {
       "query": "restaurantes urca",
@@ -333,10 +333,10 @@
       "exact_query_in_text": false,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 0,
+      "description_score": 100,
       "h1_score": 100,
-      "score": 84,
-      "recommendation": "Reforçar cluster na página: "
+      "score": 99,
+      "recommendation": "OK"
     },
     {
       "query": "av pasteur 520 - urca rio de janeiro",
@@ -346,11 +346,11 @@
       "impressions": 22,
       "ctr": 0.0,
       "exact_query_in_text": false,
-      "cluster_score": 83,
+      "cluster_score": 86,
       "title_score": 100,
       "description_score": 100,
       "h1_score": 70,
-      "score": 87,
+      "score": 88,
       "recommendation": "Reforçar cluster na página: av pasteur"
     },
     {
@@ -360,13 +360,13 @@
       "clicks": 1,
       "impressions": 21,
       "ctr": 4.76,
-      "exact_query_in_text": false,
+      "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 0,
+      "description_score": 100,
       "h1_score": 100,
-      "score": 84,
-      "recommendation": "Reforçar cluster na página: "
+      "score": 100,
+      "recommendation": "OK"
     },
     {
       "query": "cafe da manha pao de acucar",
@@ -375,12 +375,12 @@
       "clicks": 1,
       "impressions": 19,
       "ctr": 5.26,
-      "exact_query_in_text": false,
+      "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
       "description_score": 100,
       "h1_score": 100,
-      "score": 99,
+      "score": 100,
       "recommendation": "OK"
     },
     {
@@ -391,11 +391,11 @@
       "impressions": 17,
       "ctr": 0.0,
       "exact_query_in_text": false,
-      "cluster_score": 83,
+      "cluster_score": 86,
       "title_score": 100,
       "description_score": 100,
       "h1_score": 70,
-      "score": 87,
+      "score": 88,
       "recommendation": "Reforçar cluster na página: av pasteur"
     },
     {
@@ -423,10 +423,10 @@
       "exact_query_in_text": false,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 0,
+      "description_score": 100,
       "h1_score": 100,
-      "score": 84,
-      "recommendation": "Reforçar cluster na página: "
+      "score": 99,
+      "recommendation": "OK"
     },
     {
       "query": "morro da urca rio de janeiro",
@@ -438,10 +438,10 @@
       "exact_query_in_text": false,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 0,
+      "description_score": 100,
       "h1_score": 100,
-      "score": 84,
-      "recommendation": "Reforçar cluster na página: "
+      "score": 99,
+      "recommendation": "OK"
     },
     {
       "query": "restaurante no pao de açucar rj",
@@ -450,13 +450,13 @@
       "clicks": 1,
       "impressions": 16,
       "ctr": 6.25,
-      "exact_query_in_text": false,
+      "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 0,
+      "description_score": 100,
       "h1_score": 100,
-      "score": 84,
-      "recommendation": "Reforçar cluster na página: "
+      "score": 100,
+      "recommendation": "OK"
     },
     {
       "query": "café da manhã na urca",
@@ -480,13 +480,13 @@
       "clicks": 1,
       "impressions": 15,
       "ctr": 6.67,
-      "exact_query_in_text": false,
+      "exact_query_in_text": true,
       "cluster_score": 100,
       "title_score": 100,
-      "description_score": 0,
+      "description_score": 100,
       "h1_score": 100,
-      "score": 84,
-      "recommendation": "Reforçar cluster na página: "
+      "score": 100,
+      "recommendation": "OK"
     }
   ],
   "page_results": [
