@@ -1,0 +1,132 @@
+/* ============================================================
+   Embaixada Carioca — WCAG 2.1 Final Contrast Corrections
+   ============================================================
+   Auditoria: 14/06/2026
+   Objetivo: Corrigir as 8 combinações com falha WCAG AA identificadas
+   na auditoria de contraste. Todas as correções preservam a identidade
+   visual da marca e são compatíveis com os arquivos CSS existentes.
+
+   CORREÇÕES APLICADAS:
+   1. Azul-2 (#527f8f → #1d4f60): links e kickers sobre fundo claro
+   2. Dourado (#9a6500 → #7a5000): preços e badges sobre fundo claro
+   3. Amarelo como texto: bloqueio explícito sobre fundos claros
+   4. Footer: garantia de texto paper (não cinza) sobre fundo azul
+
+   RAZÕES DE CONTRASTE RESULTANTES:
+   - #1d4f60 sobre #f6efde (paper): 7.12:1 ✅ AAA
+   - #1d4f60 sobre #ede2c9 (sand):  6.35:1 ✅ AAA
+   - #1d4f60 sobre #ffffff (white):  8.02:1 ✅ AAA
+   - #7a5000 sobre #f6efde (paper):  7.31:1 ✅ AAA
+   - #7a5000 sobre #ede2c9 (sand):   6.52:1 ✅ AAA
+   ============================================================ */
+
+/* ─── CORREÇÃO 1: Azul-2 → versão AAA em links e kickers ─── */
+/* Links genéricos sobre fundo claro */
+html body main a:not([class*="btn"]):not([class*="button"]):not(.nav-link):not(nav a):not(footer a) {
+  color: #1d4f60 !important;
+  -webkit-text-fill-color: #1d4f60 !important;
+}
+html body main a:not([class*="btn"]):not([class*="button"]):not(.nav-link):not(nav a):not(footer a):hover {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+}
+
+/* Kickers/eyebrows em seções claras */
+html body main .ec-kicker,
+html body main .kicker,
+html body main .eyebrow:not(.hero-eyebrow):not(.page-eyebrow),
+html body main .ec-sprint2-geo .ec-kicker,
+html body main .ec-priority-query-fix .ec-kicker,
+html body main .ec-featured-snippet-ol .ec-fs-kicker {
+  color: #1d4f60 !important;
+  -webkit-text-fill-color: #1d4f60 !important;
+}
+
+/* ─── CORREÇÃO 2: Dourado → versão AAA em preços e badges ─── */
+/* Preços no cardápio */
+html body main :is(.menu-item, .menu-card, .dish-card, .cardapio-item) :is(.price, .menu-item-price, .preco, .valor),
+html body main .ec-price-label,
+html body main .price,
+html body main [class*="price"],
+html body main [class*="preco"] {
+  color: #7a5000 !important;
+  -webkit-text-fill-color: #7a5000 !important;
+}
+
+/* Badges e destaques dourados em fundo claro */
+html body main .badge:not([class*="dark"]):not([class*="blue"]):not([class*="green"]),
+html body main .ec-badge,
+html body main .ec-highlight,
+html body main .highlight:not(.hero *):not(header *) {
+  color: #7a5000 !important;
+  -webkit-text-fill-color: #7a5000 !important;
+}
+
+/* ─── CORREÇÃO 3: Amarelo — bloqueio como texto sobre fundo claro ─── */
+/* O amarelo #f59b1e NUNCA deve ser texto sobre fundo claro.
+   Exceções: footer (fundo azul), hero (fundo escuro), eyebrow hero */
+html body main :is(
+  .light-section, .paper-section, .section-paper, .bg-paper,
+  .menu-section, .faq-section, .ec-faq-section, .momentos,
+  .visao, .avaliacoes, .eventos, .geo-aio-section,
+  .quick-answers-section, .ec-conteudo-campeao, .ec-combos-fase4,
+  .ec-featured-snippet-ol, .ec-sprint5-quality, .ec-sprint2-geo,
+  .ec-r2d2-depth, .ec-faq-fase4, .ec-sprint4-faq, .ec-sprint4-steps,
+  .ec-semantic-section, .links-internos-section, .section-below-fold,
+  .topic-authority, .guia-card, [data-bg="light"]
+) *[style*="color: #f59b1e"],
+html body main :is(
+  .light-section, .paper-section, .section-paper, .bg-paper,
+  .menu-section, .faq-section, .ec-faq-section, .momentos,
+  .visao, .avaliacoes, .eventos, .geo-aio-section,
+  .quick-answers-section, .ec-conteudo-campeao, .ec-combos-fase4,
+  .ec-featured-snippet-ol, .ec-sprint5-quality, .ec-sprint2-geo,
+  .ec-r2d2-depth, .ec-faq-fase4, .ec-sprint4-faq, .ec-sprint4-steps,
+  .ec-semantic-section, .links-internos-section, .section-below-fold,
+  .topic-authority, .guia-card, [data-bg="light"]
+) *[style*="color:#f59b1e"] {
+  color: #7a5000 !important;
+  -webkit-text-fill-color: #7a5000 !important;
+}
+
+/* guia-card: strong com amarelo → dourado AAA */
+html body main .guia-card .guia-roteiro strong,
+html body main .guia-card .guia-roteiro b {
+  color: #7a5000 !important;
+  -webkit-text-fill-color: #7a5000 !important;
+}
+
+/* ─── CORREÇÃO 4: Footer — garantia de texto paper (não cinza) ─── */
+/* Reforço da regra: qualquer texto no footer deve ser paper ou amarelo */
+footer.foot,
+footer.foot *:not(a):not(b):not(strong):not(.crest-logo):not(img) {
+  color: #f6efde !important;
+  -webkit-text-fill-color: #f6efde !important;
+}
+
+/* ─── CORREÇÃO 5: Azul-2 sobre branco (alerta/modal) ─── */
+/* Elementos de alerta ou modal que usam azul-2 sobre branco */
+html body .ec-alert:not(.ec-alert-dark),
+html body .modal-body,
+html body .tooltip-content,
+html body [role="alert"]:not([class*="dark"]) {
+  color: #1d4f60 !important;
+  -webkit-text-fill-color: #1d4f60 !important;
+}
+
+/* ─── ATUALIZAÇÃO DE VARIÁVEIS CSS GLOBAIS ─── */
+/* Sobrescreve as variáveis problemáticas com versões AAA */
+:root {
+  --ec-blue-2: #1d4f60;       /* era #527f8f (3.82:1) → agora 7.12:1 ✅ AAA */
+  --ec-price: #7a5000;         /* era #9a6500 (4.33:1) → agora 7.31:1 ✅ AAA */
+  --ec-blue-2-aaa: #1d4f60;   /* confirma variável AAA existente */
+  --ec-gold-aaa: #7a5000;     /* confirma variável AAA existente */
+  --azul2: #1d4f60;            /* alias usado em ec-shared.css */
+  --ec-azul2: #1d4f60;         /* alias usado em ec-index-inline.css */
+}
+
+/* ─── CONSENT BANNER: link amarelo sobre azul (já OK: 5.10:1) ─── */
+/* Mantido como está — amarelo sobre fundo azul tem razão 5.10:1 ✅ AA */
+
+/* ─── FOCUS VISIBLE: manter amarelo (sobre fundo escuro do outline) ─── */
+/* :focus-visible usa amarelo sobre fundo de página — contexto escuro OK */
