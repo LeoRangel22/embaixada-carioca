@@ -225,12 +225,12 @@
       "clicks": 0,
       "impressions": 62,
       "ctr": 0.0,
-      "exact_query_in_text": true,
+      "exact_query_in_text": false,
       "cluster_score": 100,
       "title_score": 100,
       "description_score": 100,
       "h1_score": 100,
-      "score": 100,
+      "score": 99,
       "recommendation": "OK"
     },
     {

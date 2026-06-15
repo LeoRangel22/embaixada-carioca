@@ -2,7 +2,7 @@ query,cluster,target,clicks,impressions,ctr,exact_query_in_text,cluster_score,ti
 embaixada carioca,brand,index.html,45,293,15.36,True,100,100,100,100,100,OK
 avaliações sobre embaixada carioca,reviews,index.html,0,112,0.0,True,100,0,100,0,75,Reforçar cluster na página: 
 morro da urca,geo,restaurante-morro-da-urca.html,0,88,0.0,True,100,100,100,100,100,OK
-restaurante urca,restaurant_urca,restaurante-morro-da-urca.html,0,62,0.0,True,100,100,100,100,100,OK
+restaurante urca,restaurant_urca,restaurante-morro-da-urca.html,0,62,0.0,False,100,100,100,100,99,OK
 restaurante pão de açucar,pao_de_acucar,index.html,1,49,2.04,True,100,100,100,100,100,OK
 restaurante morro da urca,morro_da_urca_restaurant,restaurante-morro-da-urca.html,1,45,2.22,True,100,100,100,100,100,OK
 restaurante na urca,restaurant_urca,restaurante-morro-da-urca.html,0,39,0.0,False,100,100,100,100,99,OK

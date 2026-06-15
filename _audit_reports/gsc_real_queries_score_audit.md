@@ -33,7 +33,7 @@ Threshold: **90**
 - `embaixada carioca` → `index.html` — score 100 — cluster=100, title=100, desc=100, h1=100, exact=True
 - `avaliações sobre embaixada carioca` → `index.html` — score 75 — cluster=100, title=0, desc=100, h1=0, exact=True
 - `morro da urca` → `restaurante-morro-da-urca.html` — score 100 — cluster=100, title=100, desc=100, h1=100, exact=True
-- `restaurante urca` → `restaurante-morro-da-urca.html` — score 100 — cluster=100, title=100, desc=100, h1=100, exact=True
+- `restaurante urca` → `restaurante-morro-da-urca.html` — score 99 — cluster=100, title=100, desc=100, h1=100, exact=False
 - `restaurante pão de açucar` → `index.html` — score 100 — cluster=100, title=100, desc=100, h1=100, exact=True
 - `restaurante morro da urca` → `restaurante-morro-da-urca.html` — score 100 — cluster=100, title=100, desc=100, h1=100, exact=True
 - `restaurante na urca` → `restaurante-morro-da-urca.html` — score 99 — cluster=100, title=100, desc=100, h1=100, exact=False
