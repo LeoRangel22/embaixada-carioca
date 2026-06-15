@@ -1,26 +1,49 @@
+# ============================================================
+# robots.txt — Embaixada Carioca (embaixadacarioca.com)
+# Última atualização: 2026-06-15
+# ============================================================
+
+# ── Regras globais ───────────────────────────────────────────
 User-agent: *
 Allow: /
+
+# Diretórios internos e de sistema
 Disallow: /_api/
 Disallow: /_partials/
 Disallow: /api/
 
+# Diretórios de backup e desenvolvimento (não devem ser indexados)
+Disallow: /_backups/
+Disallow: /design-fix/
+
+# ── Bots de IA (permitidos para LLMs e AI Overviews) ─────────
 User-agent: GPTBot
 Allow: /
 Allow: /llms.txt
+Disallow: /_backups/
 
 User-agent: Claude-Web
 Allow: /
 Allow: /llms.txt
+Disallow: /_backups/
 
 User-agent: PerplexityBot
 Allow: /
 Allow: /llms.txt
+Disallow: /_backups/
 
+User-agent: Bingbot
+Allow: /
+Disallow: /_backups/
+
+# ── Googlebot ────────────────────────────────────────────────
 User-agent: Googlebot
 Allow: /
 Disallow: /_api/
 Disallow: /_partials/
 Disallow: /api/
+Disallow: /_backups/
+Disallow: /design-fix/
 
 Sitemap: https://www.embaixadacarioca.com/sitemap.xml
 Sitemap: https://www.embaixadacarioca.com/sitemap-images.xml

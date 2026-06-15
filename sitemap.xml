@@ -1,941 +1,915 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- ═══════════════════════════════════════════════════════════════════ -->
-  <!-- HOMEPAGES (PT / EN / ES)                                           -->
-  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  
+  
+  
   <url>
     <loc>https://www.embaixadacarioca.com/</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/" />
   </url>
 
-  <!-- ═══════════════════════════════════════════════════════════════════ -->
-  <!-- PÁGINAS PRINCIPAIS — Português (PT-BR)                             -->
-  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  
+  
+  
   <url>
     <loc>https://www.embaixadacarioca.com/almoco-morro-da-urca.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/almoco-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/almoco-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/almoco-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/almoco-morro-da-urca.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/almoco-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/almoco-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/almoco-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/almoco-morro-da-urca.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/almoco.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/almoco.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/almoco.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/almoco.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/almoco.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/almoco.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/almoco.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/almoco.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/almoco.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/breakfast-with-a-view-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/desayuno-con-vista-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/breakfast-with-a-view-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/desayuno-con-vista-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cafe-da-manha-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cafe-da-manha-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cafe-da-manha-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cafe-da-manha-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/cafe-da-manha.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cafe-da-manha.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cafe-da-manha.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cafe-da-manha.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cafe-da-manha.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/caipirinha-com-vista-rio.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/caipirinha-com-vista-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/caipirinha-com-vista-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/caipirinha-com-vista-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/caipirinha-com-vista-rio.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/caipirinha-com-vista-rio.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/caipirinha-com-vista-rio.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/caipirinha-com-vista-rio.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/caipirinha-com-vista-rio.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/cardapio.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cardapio.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cardapio.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cardapio.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cardapio.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cardapio.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cardapio.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cardapio.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cardapio.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/como-chegar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/como-chegar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/how-to-get-there.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/como-llegar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/como-chegar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/como-chegar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/how-to-get-there.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/como-llegar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/como-chegar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/contato.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/contato.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/contato.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/contato.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/contato.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/contato.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/contato.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/contato.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/entardecer.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/entardecer.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sunset.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/atardecer.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/entardecer.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/entardecer.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sunset.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/atardecer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/entardecer.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/eventos-corporativos.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/eventos-corporativos.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/eventos-corporativos.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/eventos-corporativos.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/eventos-corporativos.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/eventos-corporativos.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/eventos-corporativos.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/eventos-corporativos.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/eventos-corporativos.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/eventos.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/eventos.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/eventos.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/eventos.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/eventos.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/eventos.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/eventos.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/eventos.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/feijoada-com-vista-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/feijoada-com-vista-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/feijoada-com-vista-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/feijoada-com-vista-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/feijoada.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/feijoada.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/feijoada.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/feijoada.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/feijoada.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/feijoada.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/feijoada.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/feijoada.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/feijoada.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/gastronomia-carioca.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/gastronomia-carioca.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/gastronomia-carioca.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/gastronomia-carioca.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/gastronomia-carioca.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/gastronomia-carioca.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/gastronomia-carioca.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/gastronomia-carioca.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/gastronomia-carioca.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/guia-do-rio.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/guia-do-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/guia-do-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/guia-do-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/guia-do-rio.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/guia-do-rio.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/guia-do-rio.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/guia-do-rio.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/guia-do-rio.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/morro-da-urca.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/morro-da-urca.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/morro-da-urca.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/nossa-visao.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/nossa-visao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/nossa-visao.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/nossa-visao.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/nossa-visao.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/nossa-visao.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/nossa-visao.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/nossa-visao.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/nossa-visao.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/onde-comer-no-pao-de-acucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/onde-comer-no-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/where-to-eat-near-sugarloaf.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/donde-comer-cerca-del-pan-de-azucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/onde-comer-no-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/onde-comer-no-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/where-to-eat-near-sugarloaf.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/donde-comer-cerca-del-pan-de-azucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/onde-comer-no-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/parque-bondinho-pao-de-acucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/parque-bondinho-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sugarloaf-cable-car-park.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/parque-bondinho-pan-de-azucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/parque-bondinho-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/parque-bondinho-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sugarloaf-cable-car-park.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/parque-bondinho-pan-de-azucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/parque-bondinho-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/parque-bondinho.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/parque-bondinho.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/parque-bondinho.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/parque-bondinho.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/parque-bondinho.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/parque-bondinho.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/parque-bondinho.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/parque-bondinho.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/parque-bondinho.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/por-do-sol-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/por-do-sol-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/por-do-sol-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/por-do-sol-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/restaurante-bondinho-pao-de-acucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-bondinho-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sugarloaf-cable-car-restaurant.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-bondinho-pan-de-azucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-bondinho-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-bondinho-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sugarloaf-cable-car-restaurant.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-bondinho-pan-de-azucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-bondinho-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/restaurante-morro-da-urca.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurant-at-urca-hill.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-morro-da-urca.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurant-at-urca-hill.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-morro-da-urca.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/restaurante-pao-de-acucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurant-at-sugarloaf.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-pan-de-azucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurant-at-sugarloaf.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-pan-de-azucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/restaurantes-perto-do-pao-de-acucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurantes-perto-do-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurants-near-sugarloaf-mountain.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurantes-cerca-del-pan-de-azucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurantes-perto-do-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurantes-perto-do-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurants-near-sugarloaf-mountain.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurantes-cerca-del-pan-de-azucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurantes-perto-do-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/restaurantes-romanticos-rio-de-janeiro.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurantes-romanticos-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/restaurantes-romanticos-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/restaurantes-romanticos-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurantes-romanticos-rio-de-janeiro.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurantes-romanticos-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/restaurantes-romanticos-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/restaurantes-romanticos-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurantes-romanticos-rio-de-janeiro.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/roteiro-meio-dia-urca-pao-de-acucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/roteiro-meio-dia-urca-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/roteiro-meio-dia-urca-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/roteiro-meio-dia-urca-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/roteiro-meio-dia-urca-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/roteiro-meio-dia-urca-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/roteiro-meio-dia-urca-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/roteiro-meio-dia-urca-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/roteiro-meio-dia-urca-pao-de-acucar.html" />
   </url>
 
-  <!-- ═══════════════════════════════════════════════════════════════════ -->
-  <!-- VERSÕES EM INGLÊS (EN)                                             -->
-  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  
+  
+  
   <url>
     <loc>https://www.embaixadacarioca.com/en/almoco-morro-da-urca.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/almoco-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/almoco-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/almoco-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/almoco-morro-da-urca.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/almoco-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/almoco-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/almoco-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/almoco-morro-da-urca.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/almoco.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/almoco.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/almoco.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/almoco.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/almoco.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/almoco.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/almoco.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/almoco.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/almoco.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/breakfast-with-a-view-rio-de-janeiro.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/breakfast-with-a-view-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/desayuno-con-vista-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/breakfast-with-a-view-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/desayuno-con-vista-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/cafe-da-manha-pao-de-acucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cafe-da-manha-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cafe-da-manha-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cafe-da-manha-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cafe-da-manha-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/cafe-da-manha.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cafe-da-manha.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cafe-da-manha.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cafe-da-manha.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cafe-da-manha.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/caipirinha-com-vista-rio.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/caipirinha-com-vista-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/caipirinha-com-vista-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/caipirinha-com-vista-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/caipirinha-com-vista-rio.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/caipirinha-com-vista-rio.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/caipirinha-com-vista-rio.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/caipirinha-com-vista-rio.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/caipirinha-com-vista-rio.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/cardapio.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cardapio.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cardapio.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cardapio.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cardapio.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cardapio.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cardapio.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cardapio.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cardapio.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/how-to-get-there.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/como-chegar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/how-to-get-there.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/como-llegar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/como-chegar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/como-chegar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/how-to-get-there.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/como-llegar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/como-chegar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/contato.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/contato.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/contato.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/contato.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/contato.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/contato.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/contato.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/contato.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/sunset.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/entardecer.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sunset.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/atardecer.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/entardecer.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/entardecer.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sunset.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/atardecer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/entardecer.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/eventos-corporativos.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/eventos-corporativos.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/eventos-corporativos.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/eventos-corporativos.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/eventos-corporativos.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/eventos-corporativos.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/eventos-corporativos.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/eventos-corporativos.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/eventos-corporativos.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/eventos.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/eventos.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/eventos.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/eventos.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/eventos.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/eventos.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/eventos.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/eventos.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/feijoada-com-vista-rio-de-janeiro.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/feijoada-com-vista-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/feijoada-com-vista-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/feijoada-com-vista-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/feijoada-com-vista-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/feijoada.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/feijoada.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/feijoada.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/feijoada.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/feijoada.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/feijoada.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/feijoada.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/feijoada.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/feijoada.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/gastronomia-carioca.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/gastronomia-carioca.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/gastronomia-carioca.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/gastronomia-carioca.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/gastronomia-carioca.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/gastronomia-carioca.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/gastronomia-carioca.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/gastronomia-carioca.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/gastronomia-carioca.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/guia-do-rio.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/guia-do-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/guia-do-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/guia-do-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/guia-do-rio.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/guia-do-rio.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/guia-do-rio.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/guia-do-rio.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/guia-do-rio.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/morro-da-urca.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/morro-da-urca.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/morro-da-urca.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/nossa-visao.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/nossa-visao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/nossa-visao.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/nossa-visao.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/nossa-visao.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/nossa-visao.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/nossa-visao.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/nossa-visao.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/nossa-visao.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/where-to-eat-near-sugarloaf.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/onde-comer-no-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/where-to-eat-near-sugarloaf.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/donde-comer-cerca-del-pan-de-azucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/onde-comer-no-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/onde-comer-no-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/where-to-eat-near-sugarloaf.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/donde-comer-cerca-del-pan-de-azucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/onde-comer-no-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/sugarloaf-cable-car-park.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/parque-bondinho-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sugarloaf-cable-car-park.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/parque-bondinho-pan-de-azucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/parque-bondinho-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/parque-bondinho-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sugarloaf-cable-car-park.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/parque-bondinho-pan-de-azucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/parque-bondinho-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/parque-bondinho.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/parque-bondinho.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/parque-bondinho.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/parque-bondinho.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/parque-bondinho.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/parque-bondinho.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/parque-bondinho.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/parque-bondinho.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/parque-bondinho.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/por-do-sol-morro-da-urca.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/por-do-sol-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/por-do-sol-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/por-do-sol-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/por-do-sol-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/sugarloaf-cable-car-restaurant.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-bondinho-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sugarloaf-cable-car-restaurant.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-bondinho-pan-de-azucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-bondinho-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-bondinho-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sugarloaf-cable-car-restaurant.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-bondinho-pan-de-azucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-bondinho-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/restaurant-at-urca-hill.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurant-at-urca-hill.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-morro-da-urca.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurant-at-urca-hill.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-morro-da-urca.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/restaurant-at-sugarloaf.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurant-at-sugarloaf.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-pan-de-azucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurant-at-sugarloaf.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-pan-de-azucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/restaurants-near-sugarloaf-mountain.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurantes-perto-do-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurants-near-sugarloaf-mountain.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurantes-cerca-del-pan-de-azucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurantes-perto-do-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurantes-perto-do-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurants-near-sugarloaf-mountain.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurantes-cerca-del-pan-de-azucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurantes-perto-do-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/roteiro-meio-dia-urca-pao-de-acucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/roteiro-meio-dia-urca-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/roteiro-meio-dia-urca-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/roteiro-meio-dia-urca-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/roteiro-meio-dia-urca-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/roteiro-meio-dia-urca-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/roteiro-meio-dia-urca-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/roteiro-meio-dia-urca-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/roteiro-meio-dia-urca-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/en/entardecer.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/entardecer.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/entardecer.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/atardecer.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/en/entardecer.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/entardecer.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/entardecer.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/atardecer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/en/entardecer.html" />
   </url>
-  <url>
-    <loc>https://www.embaixadacarioca.com/en/index.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/index.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/en/index.html"/>
-  </url>
-
-  <!-- ═══════════════════════════════════════════════════════════════════ -->
-  <!-- VERSÕES EM ESPANHOL (ES)                                           -->
-  <!-- ═══════════════════════════════════════════════════════════════════ -->
   <url>
     <loc>https://www.embaixadacarioca.com/es/almoco-morro-da-urca.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/almoco-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/almoco-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/almoco-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/almoco-morro-da-urca.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/almoco-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/almoco-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/almoco-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/almoco-morro-da-urca.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/almoco.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/almoco.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/almoco.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/almoco.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/almoco.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/almoco.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/almoco.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/almoco.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/almoco.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/desayuno-con-vista-rio-de-janeiro.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/breakfast-with-a-view-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/desayuno-con-vista-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/breakfast-with-a-view-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/desayuno-con-vista-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha-com-vista-rio-de-janeiro.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/cafe-da-manha-pao-de-acucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cafe-da-manha-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cafe-da-manha-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cafe-da-manha-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cafe-da-manha-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/cafe-da-manha.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cafe-da-manha.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cafe-da-manha.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cafe-da-manha.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cafe-da-manha.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cafe-da-manha.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cafe-da-manha.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/caipirinha-com-vista-rio.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/caipirinha-com-vista-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/caipirinha-com-vista-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/caipirinha-com-vista-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/caipirinha-com-vista-rio.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/caipirinha-com-vista-rio.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/caipirinha-com-vista-rio.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/caipirinha-com-vista-rio.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/caipirinha-com-vista-rio.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/cardapio.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cardapio.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cardapio.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cardapio.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cardapio.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/cardapio.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/cardapio.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/cardapio.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/cardapio.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/como-llegar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/como-chegar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/how-to-get-there.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/como-llegar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/como-chegar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/como-chegar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/how-to-get-there.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/como-llegar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/como-chegar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/contato.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/contato.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/contato.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/contato.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/contato.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/contato.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/contato.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/contato.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/atardecer.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/entardecer.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sunset.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/atardecer.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/entardecer.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/entardecer.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sunset.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/atardecer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/entardecer.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/eventos-corporativos.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/eventos-corporativos.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/eventos-corporativos.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/eventos-corporativos.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/eventos-corporativos.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/eventos-corporativos.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/eventos-corporativos.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/eventos-corporativos.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/eventos-corporativos.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/eventos.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/eventos.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/eventos.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/eventos.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/eventos.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/eventos.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/eventos.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/eventos.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/feijoada-com-vista-rio-de-janeiro.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/feijoada-com-vista-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/feijoada-com-vista-rio-de-janeiro.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/feijoada-com-vista-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/feijoada-com-vista-rio-de-janeiro.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/feijoada-com-vista-rio-de-janeiro.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/feijoada.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/feijoada.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/feijoada.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/feijoada.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/feijoada.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/feijoada.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/feijoada.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/feijoada.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/feijoada.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/gastronomia-carioca.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/gastronomia-carioca.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/gastronomia-carioca.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/gastronomia-carioca.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/gastronomia-carioca.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/gastronomia-carioca.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/gastronomia-carioca.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/gastronomia-carioca.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/gastronomia-carioca.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/guia-do-rio.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/guia-do-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/guia-do-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/guia-do-rio.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/guia-do-rio.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/guia-do-rio.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/guia-do-rio.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/guia-do-rio.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/guia-do-rio.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/morro-da-urca.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/morro-da-urca.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/morro-da-urca.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/nossa-visao.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/nossa-visao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/nossa-visao.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/nossa-visao.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/nossa-visao.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/nossa-visao.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/nossa-visao.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/nossa-visao.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/nossa-visao.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/o-que-fazer-depois-do-bondinho-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/donde-comer-cerca-del-pan-de-azucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/onde-comer-no-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/where-to-eat-near-sugarloaf.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/donde-comer-cerca-del-pan-de-azucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/onde-comer-no-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/onde-comer-no-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/where-to-eat-near-sugarloaf.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/donde-comer-cerca-del-pan-de-azucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/onde-comer-no-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/parque-bondinho-pan-de-azucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/parque-bondinho-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sugarloaf-cable-car-park.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/parque-bondinho-pan-de-azucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/parque-bondinho-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/parque-bondinho-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sugarloaf-cable-car-park.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/parque-bondinho-pan-de-azucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/parque-bondinho-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/parque-bondinho.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/parque-bondinho.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/parque-bondinho.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/parque-bondinho.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/parque-bondinho.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/parque-bondinho.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/parque-bondinho.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/parque-bondinho.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/parque-bondinho.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/por-do-sol-morro-da-urca.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/por-do-sol-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/por-do-sol-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/por-do-sol-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/por-do-sol-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/por-do-sol-morro-da-urca.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/restaurante-bondinho-pan-de-azucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-bondinho-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sugarloaf-cable-car-restaurant.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-bondinho-pan-de-azucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-bondinho-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-bondinho-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sugarloaf-cable-car-restaurant.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-bondinho-pan-de-azucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-bondinho-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/restaurante-morro-da-urca.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurant-at-urca-hill.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-morro-da-urca.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-morro-da-urca.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurant-at-urca-hill.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-morro-da-urca.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-morro-da-urca.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/restaurante-pan-de-azucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurant-at-sugarloaf.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-pan-de-azucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurante-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurant-at-sugarloaf.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurante-pan-de-azucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurante-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/restaurantes-cerca-del-pan-de-azucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurantes-perto-do-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurants-near-sugarloaf-mountain.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurantes-cerca-del-pan-de-azucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurantes-perto-do-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/restaurantes-perto-do-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/restaurants-near-sugarloaf-mountain.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/restaurantes-cerca-del-pan-de-azucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/restaurantes-perto-do-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/roteiro-meio-dia-urca-pao-de-acucar.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/roteiro-meio-dia-urca-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/roteiro-meio-dia-urca-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/roteiro-meio-dia-urca-pao-de-acucar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/roteiro-meio-dia-urca-pao-de-acucar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/roteiro-meio-dia-urca-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/roteiro-meio-dia-urca-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/roteiro-meio-dia-urca-pao-de-acucar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/roteiro-meio-dia-urca-pao-de-acucar.html" />
   </url>
   <url>
     <loc>https://www.embaixadacarioca.com/es/entardecer.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/entardecer.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sunset.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/entardecer.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/es/entardecer.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/entardecer.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/sunset.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/entardecer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/es/entardecer.html" />
   </url>
-  <url>
-    <loc>https://www.embaixadacarioca.com/es/index.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.embaixadacarioca.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.embaixadacarioca.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.embaixadacarioca.com/es/index.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.embaixadacarioca.com/es/index.html"/>
-  </url>
-
-</urlset>
+  </urlset>
