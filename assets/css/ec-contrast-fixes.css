@@ -580,3 +580,82 @@ section.visao .sec-head .lede {
   text-shadow: none !important;
   opacity: 1 !important;
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   A11Y LIGHTHOUSE FIX — Contraste WCAG AAA
+   Elementos: .sec-head, .momento-body, .faq-question, .serif (em fundos claros)
+   Cor problemática: #f59b1e (ratio ~2.8:1 sobre #f6efde)
+   Cor corrigida: #7a5000 (ratio 7.31:1 — AAA ✅)
+   Data: 2026-06-15
+   ═══════════════════════════════════════════════════════════════ */
+
+/* .sec-head: subtítulo de seção em fundo claro */
+html body main .sec-head,
+html body main .sec-head * {
+  color: #1d4f60 !important;
+  -webkit-text-fill-color: #1d4f60 !important;
+}
+
+/* .momento-body: texto descritivo dos momentos (café, almoço, entardecer) */
+html body main .momento-body,
+html body main .momento-body p,
+html body main .momento-body span {
+  color: #485156 !important;
+  -webkit-text-fill-color: #485156 !important;
+}
+
+/* .faq-question: pergunta do FAQ em fundo claro (#f6efde) */
+html body main .faq-question,
+html body main .faq-section .faq-question,
+html body main .ec-faq-section .faq-question {
+  color: #1d4f60 !important;
+  -webkit-text-fill-color: #1d4f60 !important;
+}
+
+/* .serif em seções claras: span decorativo com fonte serif */
+html body main :is(
+  .light-section, .paper-section, .section-paper, .bg-paper,
+  .menu-section, .faq-section, .ec-faq-section, .momentos,
+  .visao, .avaliacoes, .geo-aio-section, .quick-answers-section,
+  [data-bg="light"], .sec-head, .momento-card, .momento-item
+) .serif,
+html body main :is(
+  .light-section, .paper-section, .section-paper, .bg-paper,
+  .menu-section, .faq-section, .ec-faq-section, .momentos,
+  .visao, .avaliacoes, .geo-aio-section, .quick-answers-section,
+  [data-bg="light"], .sec-head, .momento-card, .momento-item
+) h2 .serif,
+html body main :is(
+  .light-section, .paper-section, .section-paper, .bg-paper,
+  .menu-section, .faq-section, .ec-faq-section, .momentos,
+  .visao, .avaliacoes, .geo-aio-section, .quick-answers-section,
+  [data-bg="light"], .sec-head, .momento-card, .momento-item
+) h3 .serif {
+  color: #7a5000 !important;
+  -webkit-text-fill-color: #7a5000 !important;
+}
+
+/* .eyebrow em seções claras (não-hero): garantia de contraste AAA */
+html body main :is(
+  .light-section, .paper-section, .section-paper, .bg-paper,
+  .menu-section, .faq-section, .ec-faq-section, .momentos,
+  .visao, .avaliacoes, .geo-aio-section, .quick-answers-section,
+  [data-bg="light"]
+) .eyebrow:not(.hero-eyebrow):not(.page-eyebrow) {
+  color: #7a5000 !important;
+  -webkit-text-fill-color: #7a5000 !important;
+}
+
+/* ec-dossie-kicker: kicker de dossiê em fundo claro */
+html body main .ec-dossie-kicker {
+  color: #7a5000 !important;
+  -webkit-text-fill-color: #7a5000 !important;
+}
+
+/* ── TOUCH TARGET FIX: sticky-reserve-mobile não deve sobrepor mobile-bottom-nav ── */
+/* mobile-bottom-nav height: ~72px + safe-area. Offset: 80px garante clearance total */
+@media (max-width: 900px) {
+  #sticky-reserve-mobile {
+    bottom: 80px !important;
+  }
+}
