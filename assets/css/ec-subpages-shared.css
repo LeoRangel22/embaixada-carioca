@@ -856,3 +856,55 @@ html body main .ec-dossie-kicker {
     bottom: 80px !important;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   HERO TEXT PROTECTION — Prioridade máxima sobre todas as regras globais
+   Garante que o texto do hero seja sempre legível sobre a foto de fundo,
+   independente de regras globais de contraste adicionadas posteriormente.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* H1 do hero: areia clara com text-shadow para contraste sobre foto */
+html body header.hero h1,
+html body header.hero h1 *,
+html body header.page-hero h1,
+html body header.page-hero h1 * {
+  color: #f6efde !important;
+  -webkit-text-fill-color: #f6efde !important;
+  text-shadow: 0 3px 18px rgba(0,32,46,.78), 0 1px 6px rgba(0,32,46,.55) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Subtítulo / hero-sub */
+html body header.hero .hero-sub,
+html body header.hero .hero-sub *,
+html body header.page-hero .hero-sub,
+html body header.page-hero .lede {
+  color: rgba(246,239,222,.95) !important;
+  -webkit-text-fill-color: rgba(246,239,222,.95) !important;
+  text-shadow: 0 1px 12px rgba(0,32,46,.65) !important;
+  opacity: 1 !important;
+}
+
+/* Eyebrow / kicker do hero: dourado com sombra */
+html body header.hero .eyebrow,
+html body header.hero .hero-eyebrow,
+html body header.hero .hero-kicker,
+html body header.page-hero .eyebrow,
+html body header.page-hero .page-eyebrow,
+html body header.page-hero .page-kicker {
+  color: #f59b1e !important;
+  -webkit-text-fill-color: #f59b1e !important;
+  text-shadow: 0 2px 10px rgba(0,32,46,.72) !important;
+  opacity: 1 !important;
+}
+
+/* Chips e bottom-bar do hero */
+html body header.hero .hero-chips span,
+html body header.page-hero .hero-chips span,
+html body header.hero .hero-bottom-bar *,
+html body header.hero .fato-num-hero,
+html body header.hero .fato-label-hero {
+  color: #f6efde !important;
+  -webkit-text-fill-color: #f6efde !important;
+}
