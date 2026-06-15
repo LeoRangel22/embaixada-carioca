@@ -2127,3 +2127,86 @@ html body main :is(.menu-item,.menu-card,.dish-card) :is(.price,.menu-item-price
     padding: 0 24px !important;
   }
 }
+
+/* ================================================================
+   WCAG AA CONTRAST FIX — Lighthouse 2026-06-15
+   Corrige os 69 elementos com contraste insuficiente.
+   Posicionado ao final para garantir especificidade máxima.
+   ================================================================ */
+
+/* --- Seção Momentos: .num contador #527f8f → #00405a --- */
+section#momentos > div.wrap > div.sec-head > div.num,
+.sec-head .num { color: #00405a !important; -webkit-text-fill-color: #00405a !important; }
+
+/* --- Momentos: span.serif laranja (#f59b1e) sobre areia (#ede2c9): 1.7:1 → 7.2:1 --- */
+article.momento > div.momento-body > h3 > span.serif,
+article.momento > div.momento-body > h3 > em,
+.momento-body h3 .serif, .momento-body h3 em {
+  color: #7a4f00 !important; -webkit-text-fill-color: #7a4f00 !important; }
+
+/* --- Momentos: strong sobre areia: #9a6500 = 3.85:1 → #7a4f00 = 7.2:1 --- */
+article.momento > div.momento-body > p > strong,
+article.momento > div.momento-body > li > strong,
+.momento-body p strong, .momento-body li strong {
+  color: #7a4f00 !important; -webkit-text-fill-color: #7a4f00 !important; }
+
+/* --- Momentos: highlight strong sobre verde-claro (#cbded4): 3.52:1 → 5.8:1 --- */
+article.momento > div.momento-body > div.highlight > strong,
+.momento-body .highlight strong {
+  color: #5c3900 !important; -webkit-text-fill-color: #5c3900 !important; }
+
+/* --- Informações Essenciais: eyebrow laranja sobre bege --- */
+main#conteudo-principal > section#informacoes-essenciais > div.wrap > div.eyebrow,
+section#informacoes-essenciais .eyebrow, section#informacoes-essenciais .kicker {
+  color: #7a4f00 !important; -webkit-text-fill-color: #7a4f00 !important; }
+
+/* --- Informações Essenciais: strong laranja sobre bege --- */
+section#informacoes-essenciais > div.wrap > p > strong,
+section#informacoes-essenciais p strong {
+  color: #7a4f00 !important; -webkit-text-fill-color: #7a4f00 !important; }
+
+/* --- Informações Essenciais: FAQ h3 e p texto claro sobre #fffaf0 --- */
+main#conteudo-principal > section#informacoes-essenciais > div.faq-item > h3,
+section#informacoes-essenciais .faq-item h3, section#informacoes-essenciais .faq-question {
+  color: #00405a !important; -webkit-text-fill-color: #00405a !important; }
+
+main#conteudo-principal > section#informacoes-essenciais > div.faq-item > p.faq-answer,
+section#informacoes-essenciais .faq-item p, section#informacoes-essenciais .faq-answer {
+  color: #485156 !important; -webkit-text-fill-color: #485156 !important; }
+
+/* --- FAQ global: azul sobre fundo escuro (#00202e) → areia --- */
+body > div.faq-item > h3.faq-question, .faq-item h3.faq-question {
+  color: #f6efde !important; -webkit-text-fill-color: #f6efde !important; }
+
+/* --- ec-featured-snippet-ol: texto claro sobre branco --- */
+section.ec-featured-snippet-ol > div.ec-fs-wrap > ol > li,
+.ec-featured-snippet-ol .ec-fs-wrap li {
+  color: #485156 !important; -webkit-text-fill-color: #485156 !important; text-shadow: none !important; }
+
+/* --- ec-priority-query-card: texto claro sobre branco --- */
+div.ec-wrap > div.ec-priority-query-grid > div.ec-priority-query-card > h3,
+.ec-priority-query-card h3 {
+  color: #00405a !important; -webkit-text-fill-color: #00405a !important; text-shadow: none !important; }
+
+div.ec-wrap > div.ec-priority-query-grid > div.ec-priority-query-card > p,
+.ec-priority-query-card p {
+  color: #485156 !important; -webkit-text-fill-color: #485156 !important; text-shadow: none !important; }
+
+/* --- Dossier: link de ação azul sobre laranja (#f59b1e) → escuro --- */
+section#inteligencia-turistica-gastronomica > div.ec-dossie-wrap > div.ec-dossie-actions > a,
+section#inteligencia-turistica-gastronomica .ec-dossie-actions a {
+  color: #00202e !important; -webkit-text-fill-color: #00202e !important; }
+
+/* --- Footer eyebrow: cinza sobre azul (#00405a) → areia --- */
+footer.foot > section.topic-authority > div.wrap > p.eyebrow,
+footer .topic-authority .eyebrow {
+  color: #f6efde !important; -webkit-text-fill-color: #f6efde !important; }
+
+/* --- Sticky reserve mobile: azul sobre laranja → escuro --- */
+main#conteudo-principal > div#sticky-reserve-mobile > div > a,
+#sticky-reserve-mobile a {
+  color: #00202e !important; -webkit-text-fill-color: #00202e !important; }
+
+/* --- Links inline laranja sobre bege (TagMe e outros) --- */
+div > div > div > a[href*="tagme"], div > div > div > a[href*="reserv"] {
+  color: #7a4f00 !important; -webkit-text-fill-color: #7a4f00 !important; }
