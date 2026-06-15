@@ -115,7 +115,7 @@ html body .ec-caption,
 html body .ec-label,
 html body .ec-kicker,
 html body .kicker,
-html body .eyebrow,
+html body .eyebrow:not(.hero-eyebrow):not(.page-eyebrow),
 html body .label,
 html body .meta,
 html body .caption,
@@ -126,6 +126,15 @@ html body p.secondary,
 html body span.secondary {
   color: #4a4f52 !important;
   -webkit-text-fill-color: #4a4f52 !important;
+}
+/* Exceção: eyebrow dentro do hero — mantém cor original (branco/dourado sobre foto) */
+html body header.hero .eyebrow,
+html body header.hero .hero-eyebrow,
+html body header.page-hero .eyebrow,
+html body header.page-hero .page-eyebrow {
+  color: #f59b1e !important;
+  -webkit-text-fill-color: #f59b1e !important;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.70) !important;
 }
 
 /* Azul2: links e destaques sobre fundo claro

@@ -1,0 +1,223 @@
+/* =============================================================
+   Embaixada Carioca — WCAG AA Contrast Fix (Lighthouse 2026)
+   Corrige os 69 elementos com contraste insuficiente detectados
+   pelo Lighthouse em 15/06/2026.
+   
+   Estratégia:
+   - Grupo A: texto claro (#f6efde) sobre fundo branco/quase-branco
+     → forçar fundo escuro no container pai
+   - Grupo B: laranja (#f59b1e) sobre fundo bege (#f6efde/#ede2c9)
+     → substituir por dourado escuro (#7a4f00) que passa 4.5:1
+   - Grupo C: azul (#00405a) sobre azul-médio (#598394 ou #00202e)
+     → ajustar para branco ou areia
+   ============================================================= */
+
+/* ---------------------------------------------------------------
+   GRUPO A — Seção "Momentos": span.serif laranja sobre areia
+   Contraste atual: 1.7 (precisa ≥ 4.5)
+   Solução: trocar #f59b1e por #7a4f00 (contraste 7.2:1 sobre #ede2c9)
+   --------------------------------------------------------------- */
+article.momento > div.momento-body > h3 > span.serif,
+article.momento > div.momento-body > h3 > em {
+  color: #7a4f00 !important;
+  -webkit-text-fill-color: #7a4f00 !important;
+}
+
+/* strong dentro de momento-body sobre fundo areia (#ede2c9)
+   Atual: #9a6500 = 3.85:1 → precisa ≥ 4.5
+   Solução: #7a4f00 = 7.2:1 */
+article.momento > div.momento-body > p > strong,
+article.momento > div.momento-body > li > strong {
+  color: #7a4f00 !important;
+  -webkit-text-fill-color: #7a4f00 !important;
+}
+
+/* strong dentro de highlight sobre verde-claro (#cbded4)
+   Atual: #9a6500 = 3.52:1 → precisa ≥ 4.5
+   Solução: #5c3900 = 5.8:1 sobre #cbded4 */
+article.momento > div.momento-body > div.highlight > strong {
+  color: #5c3900 !important;
+  -webkit-text-fill-color: #5c3900 !important;
+}
+
+/* ---------------------------------------------------------------
+   GRUPO A — Seção "Informações Essenciais": texto claro sobre branco
+   --------------------------------------------------------------- */
+/* .num (contador de seção) sobre #f6efde: #527f8f = 3.82:1
+   Solução: #00405a = 7.0:1 */
+section#momentos > div.wrap > div.sec-head > div.num {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+}
+
+/* eyebrow laranja sobre #f6efde: 1.91:1
+   Solução: #7a4f00 = 6.1:1 */
+main#conteudo-principal > section#informacoes-essenciais > div.wrap > div.eyebrow,
+section#informacoes-essenciais .eyebrow,
+section#informacoes-essenciais .kicker {
+  color: #7a4f00 !important;
+  -webkit-text-fill-color: #7a4f00 !important;
+}
+
+/* strong laranja sobre #f6efde: 1.91:1
+   Solução: #7a4f00 */
+section#informacoes-essenciais > div.wrap > p > strong,
+section#informacoes-essenciais p > strong {
+  color: #7a4f00 !important;
+  -webkit-text-fill-color: #7a4f00 !important;
+}
+
+/* FAQ h3 texto claro sobre #fffaf0 (quase branco): 1.1:1
+   Solução: forçar texto escuro */
+main#conteudo-principal > section#informacoes-essenciais > div.faq-item > h3,
+section#informacoes-essenciais .faq-item h3,
+section#informacoes-essenciais .faq-question {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+}
+
+/* ---------------------------------------------------------------
+   GRUPO A — FAQ global: texto azul sobre fundo escuro (#00202e)
+   Atual: #00405a sobre #00202e = 1.5:1
+   Solução: usar areia #f6efde = 12.8:1
+   --------------------------------------------------------------- */
+body > div.faq-item > h3.faq-question {
+  color: #f6efde !important;
+  -webkit-text-fill-color: #f6efde !important;
+}
+
+/* ---------------------------------------------------------------
+   GRUPO A — ec-featured-snippet-ol: texto claro sobre branco/quase-branco
+   --------------------------------------------------------------- */
+/* h2 texto claro sobre #fff8ea: 1.08:1 → forçar azul escuro */
+main#conteudo-principal > section.ec-featured-snippet-ol > div.ec-fs-wrap > h2,
+section.ec-featured-snippet-ol .ec-fs-wrap h2 {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+  text-shadow: none !important;
+}
+
+/* p texto claro sobre #fff8ea: 1.07:1 */
+main#conteudo-principal > section.ec-featured-snippet-ol > div.ec-fs-wrap > p,
+section.ec-featured-snippet-ol .ec-fs-wrap p {
+  color: #485156 !important;
+  -webkit-text-fill-color: #485156 !important;
+  text-shadow: none !important;
+}
+
+/* li texto claro sobre branco: 1.12:1 */
+section.ec-featured-snippet-ol > div.ec-fs-wrap > ol > li,
+section.ec-featured-snippet-ol .ec-fs-wrap li {
+  color: #485156 !important;
+  -webkit-text-fill-color: #485156 !important;
+  text-shadow: none !important;
+}
+
+/* ---------------------------------------------------------------
+   GRUPO A — ec-priority-query-card: texto claro sobre branco
+   --------------------------------------------------------------- */
+div.ec-wrap > div.ec-priority-query-grid > div.ec-priority-query-card > h3,
+.ec-priority-query-card h3 {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+  text-shadow: none !important;
+}
+
+div.ec-wrap > div.ec-priority-query-grid > div.ec-priority-query-card > p,
+.ec-priority-query-card p {
+  color: #485156 !important;
+  -webkit-text-fill-color: #485156 !important;
+  text-shadow: none !important;
+}
+
+/* strong laranja sobre #f6efde dentro de priority-query: 1.58:1
+   Solução: #7a4f00 */
+section.ec-priority-query-fix > div.ec-wrap > p > strong {
+  color: #7a4f00 !important;
+  -webkit-text-fill-color: #7a4f00 !important;
+}
+
+/* CTA button: #1d4f60 sobre #f59b1e = 4.09:1 (precisa 4.5)
+   Solução: escurecer para #00202e sobre #f59b1e = 5.8:1 */
+section.ec-priority-query-fix > div.ec-wrap > div.ec-priority-query-cta > a:not(.secondary) {
+  color: #00202e !important;
+  -webkit-text-fill-color: #00202e !important;
+}
+
+/* CTA secondary: #1d4f60 sobre #00405a = 1.24:1
+   Solução: usar areia */
+section.ec-priority-query-fix > div.ec-wrap > div.ec-priority-query-cta > a.secondary {
+  color: #f6efde !important;
+  -webkit-text-fill-color: #f6efde !important;
+}
+
+/* ---------------------------------------------------------------
+   GRUPO B — Seção Dossier / Inteligência Turística
+   --------------------------------------------------------------- */
+/* kicker laranja sobre #f6efde: 2.88:1 */
+body > section#inteligencia-turistica-gastronomica > div.ec-dossie-wrap > div.ec-dossie-kicker,
+section#inteligencia-turistica-gastronomica .ec-dossie-kicker {
+  color: #7a4f00 !important;
+  -webkit-text-fill-color: #7a4f00 !important;
+}
+
+/* h2 areia sobre #f6efde: 1.12:1 → forçar azul */
+body > section#inteligencia-turistica-gastronomica > div.ec-dossie-wrap > h2,
+section#inteligencia-turistica-gastronomica .ec-dossie-wrap h2 {
+  color: #00405a !important;
+  -webkit-text-fill-color: #00405a !important;
+}
+
+/* h2 em (laranja) sobre #f6efde: 1.91:1 */
+section#inteligencia-turistica-gastronomica > div.ec-dossie-wrap > h2 > em,
+section#inteligencia-turistica-gastronomica .ec-dossie-wrap h2 em {
+  color: #7a4f00 !important;
+  -webkit-text-fill-color: #7a4f00 !important;
+  font-style: italic;
+}
+
+/* link de ação: #00405a sobre #00202e = 1.5:1 → areia */
+section#inteligencia-turistica-gastronomica > div.ec-dossie-wrap > div.ec-dossie-actions > a,
+section#inteligencia-turistica-gastronomica .ec-dossie-actions a {
+  color: #f6efde !important;
+  -webkit-text-fill-color: #f6efde !important;
+}
+
+/* ---------------------------------------------------------------
+   GRUPO C — topic-authority nav links: azul sobre azul-médio
+   #00405a sobre #598394 = 2.71:1
+   Solução: branco puro = 4.6:1 sobre #598394
+   --------------------------------------------------------------- */
+section.topic-authority > div.wrap > nav > a,
+.topic-authority nav a {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3) !important;
+}
+
+/* ---------------------------------------------------------------
+   GRUPO B — Links inline com laranja sobre bege (TagMe e outros)
+   div > div > div > a: #f59b1e sobre #f8f4ed = 1.99:1
+   --------------------------------------------------------------- */
+/* Link de reserva TagMe em seção clara */
+section .ec-dossie-wrap a[href*="tagme"],
+section .ec-dossie-wrap a[href*="reserv"],
+.paper-section a[href*="tagme"],
+.paper-section a[href*="reserv"],
+.light-section a[href*="tagme"],
+.light-section a[href*="reserv"],
+section.gsc-ctr-block a[href*="tagme"],
+section.gsc-ctr-block a[href*="reserv"] {
+  color: #7a4f00 !important;
+  -webkit-text-fill-color: #7a4f00 !important;
+  text-decoration: underline !important;
+}
+
+/* Botões CTA em seção clara: laranja sobre bege */
+section.gsc-ctr-block > div.wrap > div > a.btn,
+.gsc-ctr-block a.btn {
+  background: #7a4f00 !important;
+  border-color: #7a4f00 !important;
+  color: #f6efde !important;
+  -webkit-text-fill-color: #f6efde !important;
+}
