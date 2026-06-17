@@ -9,8 +9,7 @@ Static guardrail for visual contrast regressions in current pages.
 - Hero side frame selector: `body .ec-page-hero-side-frame`
 
 ## index.html
-- VISUAL_CHECK: 51 pattern(s) detected but covered by global contrast hotfix
-  - covered-by-light-card-lock | light-text-on-light-bg | <h2> class='' | Restaurante no Bondinho Pão de Açúcar com vista panorâmica no Morro da Urca
+- VISUAL_CHECK: 50 pattern(s) detected but covered by global contrast hotfix
   - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | A Embaixada Carioca é o restaurante no Bondinho Pão de Açúcar — o único restaurante com vista direta para o Pão de Açúcar, no alto do Morro da Urca. Acompanha o
   - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | 🏆 Melhor Feijoada do Rio de Janeiro — Veja Rio Comer & Beber 2025/2026 · 2º melhor chopp Heineken do Brasil · 4.8★ em mais de 7.779 avaliações no Google.
   - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | O Sunset no Bondinho transformou o fim de tarde no alto do Morro da Urca em um evento único no Rio. O DJ Tommax — o DJ do Bondinho — comanda as pick-ups no Jard
@@ -38,7 +37,8 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Especialidade Picanha Brasileira (400g), Feijoada premiada Veja Rio 2025/2026, Bobó de Camarão cremoso, Bolinho de Bacalhau, Pastel crocante e Empada artesanal 
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Caipirinha com cachaça Magnífica, Chopp Heineken gelado (referência no Rio), sucos naturais de frutas tropicais, água de coco fresca e açaí cremoso.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Espetinho, Pastel, Empada, Bolinho de Bacalhau, Picadinho e Sanduíches — perfeitos para um lanche rápido entre as atrações do Bondinho.
-  - ... +23 more
+  - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | As perguntas mais comuns de quem busca onde comer no Rio de Janeiro com vista para o Pão de Açúcar.
+  - ... +22 more
 
 ## cafe-da-manha.html
 - VISUAL_CHECK: 17 pattern(s) detected but covered by global contrast hotfix
@@ -61,8 +61,7 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Para quem busca café da manhã na Urca, café da manhã no Bondinho Pão de Açúcar ou uma experiência de manhã com vista no Rio de Janeiro, a Embaixada Carioca abre
 
 ## almoco.html
-- VISUAL_CHECK: 15 pattern(s) detected but covered by global contrast hotfix
-  - covered-by-light-card-lock | light-text-on-light-bg | <h2> class='' | Almoço no Bondinho Pão de Açúcar com vista panorâmica — Morro da Urca
+- VISUAL_CHECK: 14 pattern(s) detected but covered by global contrast hotfix
   - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Hoje
   - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Por do sol às 17h44
   - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Resumo
@@ -79,8 +78,7 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Explore os principais momentos da Embaixada Carioca dentro do Parque Bondinho Pão de Açúcar: café da manhã com vista, almoço brasileiro, feijoada premiada da Ac
 
 ## cardapio.html
-- VISUAL_CHECK: 12 pattern(s) detected but covered by global contrast hotfix
-  - covered-by-light-card-lock | light-text-on-light-bg | <h2> class='' | Cardápio do restaurante no Bondinho Pão de Açúcar — Urca, Rio de Janeiro
+- VISUAL_CHECK: 11 pattern(s) detected but covered by global contrast hotfix
   - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Hoje
   - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Por do sol às 17h44
   - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Resumo
@@ -124,7 +122,7 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Se o seu roteiro passa pelo Bondinho, Morro da Urca ou Pão de Açúcar, reserve uma parada para café da manhã, almoço brasileiro, caipirinhas ou uma experiência c
 
 ## Summary
-- Total static patterns detected: 116
+- Total static patterns detected: 113
 - Open contrast risks: 0
-- Covered patterns requiring browser visual check: 116
+- Covered patterns requiring browser visual check: 113
 - Required next validation: browser screenshots for cafe-da-manha.html, guia-do-rio.html, index.html, almoco.html, cardapio.html and eventos.html after deployment.
