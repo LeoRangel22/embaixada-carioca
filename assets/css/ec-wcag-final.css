@@ -172,3 +172,29 @@ html body main :is(.ec-scorecard-gap, .ec-access-clarity, .links-relacionados, .
   color: #00405a !important;
   -webkit-text-fill-color: #00405a !important;
 }
+
+/* ═══════════════════════════════════════════════════════════════════
+   CORREÇÃO: #seo-subtitle — elemento SEO oculto visualmente
+   O H2 seo-subtitle é usado para SEO mas não deve ser visível,
+   pois fica posicionado sobre a navbar quando o hero-content
+   tem position:absolute;inset:0;padding:0.
+   ═══════════════════════════════════════════════════════════════════ */
+#seo-subtitle {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+  background: transparent !important;
+  pointer-events: none !important;
+  user-select: none !important;
+}
