@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.embaixadacarioca.com/</loc>
+    <image:image>
+      <image:loc>https://www.embaixadacarioca.com/assets/hero.jpg</image:loc>
+      <image:title>Embaixada Carioca no Morro da Urca</image:title>
+      <image:caption>Restaurante no Parque Bondinho Pão de Açúcar com vista para o Rio de Janeiro.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.embaixadacarioca.com/assets/hero.webp</image:loc>
+      <image:title>Vista do Pão de Açúcar a partir da Embaixada Carioca</image:title>
+      <image:caption>Café da manhã, almoço e entardecer no Morro da Urca.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.embaixadacarioca.com/eventos.html</loc>
+    <image:image>
+      <image:loc>https://www.embaixadacarioca.com/assets/evento-chandon-opt.webp</image:loc>
+      <image:title>Evento corporativo na Embaixada Carioca</image:title>
+      <image:caption>Evento no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.embaixadacarioca.com/assets/evento-corporativo-noturno.webp</image:loc>
+      <image:title>Evento noturno com vista no Rio de Janeiro</image:title>
+      <image:caption>Espaço para eventos corporativos e sociais na Embaixada Carioca.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.embaixadacarioca.com/cafe-da-manha.html</loc>
+    <image:image>
+      <image:loc>https://www.embaixadacarioca.com/assets/cafe-da-manha-vista-pao-de-acucar.webp</image:loc>
+      <image:title>Café da manhã com vista para o Pão de Açúcar</image:title>
+      <image:caption>Café da manhã diário no alto do Morro da Urca.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.embaixadacarioca.com/almoco.html</loc>
+    <image:image>
+      <image:loc>https://www.embaixadacarioca.com/assets/feijoada-academia-cachaca.webp</image:loc>
+      <image:title>Feijoada premiada da Embaixada Carioca</image:title>
+      <image:caption>Feijoada servida todos os dias no Morro da Urca.</image:caption>
+    </image:image>
+  </url>
+</urlset>
