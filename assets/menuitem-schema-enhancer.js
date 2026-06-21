@@ -21,6 +21,29 @@
     return origin + path;
   }
 
+  function stripRatingFields(value){
+    if (!value || typeof value !== 'object') return value;
+    if (Array.isArray(value)) return value.map(stripRatingFields);
+    var out = {};
+    Object.keys(value).forEach(function(key){
+      if (key === 'aggregateRating' || key === 'review' || key === 'reviews') return;
+      out[key] = stripRatingFields(value[key]);
+    });
+    return out;
+  }
+
+  function cleanLegacySchemas(){
+    document.querySelectorAll('script[type="application/ld+json"]').forEach(function(script){
+      if (script.id === 'ec-restaurant-schema' || script.id === 'ec-expanded-menuitem-schema') return;
+      var raw = script.textContent || '';
+      if (!raw.trim()) return;
+      try {
+        var cleaned = stripRatingFields(JSON.parse(raw));
+        script.textContent = JSON.stringify(cleaned);
+      } catch(e) {}
+    });
+  }
+
   var restaurantSchema = {
     '@context': 'https://schema.org',
     '@type': 'Restaurant',
@@ -154,6 +177,7 @@
   }
 
   function inject(){
+    cleanLegacySchemas();
     injectSchema('ec-restaurant-schema', restaurantSchema);
     injectSchema('ec-expanded-menuitem-schema', menuSchema);
   }
