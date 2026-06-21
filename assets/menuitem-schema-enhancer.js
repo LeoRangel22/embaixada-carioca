@@ -23,6 +23,8 @@
 
   function normalizeSchemaType(type){
     if (type === 'EventVenue') return 'Place';
+    if (type === 'DiscussionForumPosting') return 'Article';
+    if (type === 'Comment') return 'CreativeWork';
     return type;
   }
 
