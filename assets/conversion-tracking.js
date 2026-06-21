@@ -137,6 +137,24 @@
           opacity: 1 !important;
         }
 
+        html body nav.top.scrolled .nav-rating-badge *,
+        html body #topnav.top.scrolled .nav-rating-badge * {
+          color: #f6efde !important;
+          -webkit-text-fill-color: #f6efde !important;
+          opacity: 1 !important;
+          text-shadow: none !important;
+        }
+
+        html body nav.top.scrolled .nav-rating-badge .stars,
+        html body nav.top.scrolled .nav-rating-badge .star,
+        html body nav.top.scrolled .nav-rating-badge [class*="star"],
+        html body #topnav.top.scrolled .nav-rating-badge .stars,
+        html body #topnav.top.scrolled .nav-rating-badge .star,
+        html body #topnav.top.scrolled .nav-rating-badge [class*="star"] {
+          color: #f59b1e !important;
+          -webkit-text-fill-color: #f59b1e !important;
+        }
+
         html body nav.top.scrolled .lang-current,
         html body nav.top.scrolled .lang-switcher button,
         html body nav.top.scrolled .lang-switcher > a,
