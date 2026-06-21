@@ -3,10 +3,87 @@
   if (window.ecMenuItemSchemaEnhanced) return;
   window.ecMenuItemSchemaEnhanced = true;
 
-  var data = {
+  var restaurantId = 'https://www.embaixadacarioca.com/#restaurant';
+  var placeId = 'https://www.embaixadacarioca.com/#parque-bondinho-pao-de-acucar';
+
+  function currentLanguage(){
+    var path = String(location.pathname || '').toLowerCase();
+    var htmlLang = String(document.documentElement.lang || '').toLowerCase();
+    if (path === '/en/' || path.indexOf('/en/') === 0 || htmlLang.indexOf('en') === 0) return 'en';
+    if (path === '/es/' || path.indexOf('/es/') === 0 || htmlLang.indexOf('es') === 0) return 'es';
+    return 'pt-BR';
+  }
+
+  function currentUrl(){
+    var origin = location.origin || 'https://www.embaixadacarioca.com';
+    var path = location.pathname || '/';
+    if (path === '/index.html') path = '/';
+    return origin + path;
+  }
+
+  var restaurantSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Restaurant',
+    '@id': restaurantId,
+    'name': 'Embaixada Carioca Bar & Restaurante',
+    'alternateName': ['Embaixada Carioca', 'Restaurante Embaixada Carioca'],
+    'url': 'https://www.embaixadacarioca.com/',
+    'telephone': '+55 21 96683-7556',
+    'email': 'eventos@embaixadacarioca.com.br',
+    'image': 'https://www.embaixadacarioca.com/assets/hero.jpg',
+    'logo': 'https://www.embaixadacarioca.com/assets/logo.png',
+    'priceRange': '$$$',
+    'servesCuisine': ['Brazilian', 'Carioca', 'Feijoada', 'Breakfast', 'Bar'],
+    'acceptsReservations': true,
+    'reservationUrl': 'https://go.tagme.com.br/embaixadacarioca',
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': 'Av. Pasteur, 520 — Parque Bondinho Pão de Açúcar, Morro da Urca',
+      'addressLocality': 'Rio de Janeiro',
+      'addressRegion': 'RJ',
+      'postalCode': '22290-240',
+      'addressCountry': 'BR'
+    },
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': -22.9508333,
+      'longitude': -43.1641667
+    },
+    'openingHours': 'Mo-Su 08:30-21:00',
+    'openingHoursSpecification': [{
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday'
+      ],
+      'opens': '08:30',
+      'closes': '21:00'
+    }],
+    'containedInPlace': {
+      '@type': 'TouristAttraction',
+      '@id': placeId,
+      'name': 'Parque Bondinho Pão de Açúcar',
+      'url': 'https://www.bondinho.com.br/'
+    },
+    'hasMap': 'https://www.google.com/maps/search/?api=1&query=Embaixada%20Carioca%20Morro%20da%20Urca',
+    'sameAs': [
+      'https://www.instagram.com/embaixadacarioca/'
+    ],
+    'inLanguage': currentLanguage(),
+    'mainEntityOfPage': currentUrl()
+  };
+
+  var menuSchema = {
     '@context': 'https://schema.org',
     '@type': 'Menu',
+    '@id': 'https://www.embaixadacarioca.com/#menu',
     'name': 'Cardápio Embaixada Carioca',
+    'url': 'https://www.embaixadacarioca.com/cardapio.html',
     'hasMenuSection': [
       {
         '@type': 'MenuSection',
@@ -64,27 +141,21 @@
         ]
       }
     ],
-    'provider': {
-      '@type': 'Restaurant',
-      'name': 'Embaixada Carioca',
-      'url': 'https://www.embaixadacarioca.com/',
-      'address': {
-        '@type': 'PostalAddress',
-        'streetAddress': 'Av. Pasteur, 520',
-        'addressLocality': 'Rio de Janeiro',
-        'addressRegion': 'RJ',
-        'addressCountry': 'BR'
-      }
-    }
+    'provider': {'@id': restaurantId}
   };
 
-  function inject(){
-    if (document.getElementById('ec-expanded-menuitem-schema')) return;
+  function injectSchema(id, data){
+    if (document.getElementById(id)) return;
     var s = document.createElement('script');
     s.type = 'application/ld+json';
-    s.id = 'ec-expanded-menuitem-schema';
+    s.id = id;
     s.textContent = JSON.stringify(data);
     document.head.appendChild(s);
+  }
+
+  function inject(){
+    injectSchema('ec-restaurant-schema', restaurantSchema);
+    injectSchema('ec-expanded-menuitem-schema', menuSchema);
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', inject, { once:true });
