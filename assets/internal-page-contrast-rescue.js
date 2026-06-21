@@ -5,6 +5,9 @@
 
   function markPage(){
     var path = location.pathname.toLowerCase();
+    if (path === '/' || path === '/index.html') document.body.classList.add('ec-page-home', 'ec-lang-pt');
+    if (path === '/en/' || path === '/en/index.html') document.body.classList.add('ec-page-home', 'ec-lang-en');
+    if (path === '/es/' || path === '/es/index.html') document.body.classList.add('ec-page-home', 'ec-lang-es');
     if (path.indexOf('guia-do-rio') >= 0) document.body.classList.add('ec-page-guia-do-rio');
     if (path.indexOf('eventos') >= 0) document.body.classList.add('ec-page-eventos');
     if (path.indexOf('morro-da-urca') >= 0) document.body.classList.add('ec-page-morro-da-urca');
@@ -22,6 +25,191 @@
         --ec-rescue-gray:#485156;
         --ec-rescue-orange:#f59b1e;
         --ec-rescue-green:#335d4a;
+      }
+
+      /* P0 RESPONSIVE SAFETY V2 — carregado via JS global, sem alterar HTML/SEO. */
+      @media (max-width: 1100px) {
+        html body { overflow-x:hidden!important; }
+        html body nav.top .nav-inner,
+        html body #topnav.top .nav-inner {
+          max-width:100vw!important;
+          padding-left:clamp(14px,2.6vw,28px)!important;
+          padding-right:clamp(14px,2.6vw,28px)!important;
+          gap:10px!important;
+        }
+        html body nav.top .brand-logo,
+        html body #topnav.top .brand-logo {
+          width:52px!important;
+          height:52px!important;
+          min-width:52px!important;
+          min-height:52px!important;
+          max-width:52px!important;
+          max-height:52px!important;
+        }
+        html body nav.top .nav-rating-badge,
+        html body nav.top .lang-switcher,
+        html body #topnav.top .nav-rating-badge,
+        html body #topnav.top .lang-switcher { display:none!important; }
+        html body nav.top .nav-links,
+        html body #topnav.top .nav-links {
+          gap:10px!important;
+          justify-content:flex-end!important;
+          min-width:0!important;
+        }
+        html body nav.top .nav-links a,
+        html body #topnav.top .nav-links a {
+          font-size:9.5px!important;
+          letter-spacing:.055em!important;
+          max-width:104px!important;
+          overflow:hidden!important;
+          text-overflow:ellipsis!important;
+          white-space:nowrap!important;
+        }
+        html body nav.top .btn,
+        html body #topnav.top .btn {
+          min-width:118px!important;
+          max-width:168px!important;
+          height:46px!important;
+          min-height:46px!important;
+          padding:0 14px!important;
+          font-size:9.5px!important;
+          letter-spacing:.07em!important;
+        }
+        html body header.hero .hero-content,
+        html body header.page-hero .page-hero-content {
+          gap:28px!important;
+          padding-left:clamp(22px,4vw,44px)!important;
+          padding-right:clamp(22px,4vw,44px)!important;
+        }
+        html body section {
+          padding-top:clamp(72px,8vw,112px)!important;
+          padding-bottom:clamp(72px,8vw,112px)!important;
+        }
+        html body .wrap,
+        html body .container,
+        html body .ec-wrap {
+          padding-left:clamp(20px,4vw,44px)!important;
+          padding-right:clamp(20px,4vw,44px)!important;
+        }
+        html body .momentos-grid,
+        html body .ratings-row,
+        html body .mini-quotes,
+        html body .eventos-grid,
+        html body .cards-grid,
+        html body .ec-cc-grid,
+        html body .ec-priority-query-grid {
+          grid-template-columns:repeat(2,minmax(0,1fr))!important;
+          gap:22px!important;
+        }
+        html body .sec-head {
+          grid-template-columns:minmax(0,1fr)!important;
+          gap:24px!important;
+          margin-bottom:44px!important;
+        }
+        html body .sec-head .lede { grid-column:1 / -1!important; }
+      }
+
+      @media (min-width:768px) and (max-width:1100px) and (max-height:820px) {
+        html body header.hero,
+        html body header#conteudo-principal.hero,
+        html body header#main-content.hero {
+          min-height:620px!important;
+          height:auto!important;
+        }
+        html body header.hero .hero-content,
+        html body header#conteudo-principal.hero .hero-content,
+        html body header#main-content.hero .hero-content {
+          grid-template-columns:minmax(0,1fr)!important;
+          align-items:end!important;
+          padding-top:92px!important;
+          padding-bottom:86px!important;
+        }
+        html body header.hero .hero-side,
+        html body header#conteudo-principal.hero .hero-side,
+        html body header#main-content.hero .hero-side,
+        html body header.hero .hero-logo,
+        html body header#conteudo-principal.hero .hero-logo,
+        html body header#main-content.hero .hero-logo { display:none!important; }
+        html body header.hero h1,
+        html body header.hero h1 * {
+          font-size:clamp(34px,5.2vw,52px)!important;
+          line-height:1!important;
+        }
+        html body header.hero .hero-sub {
+          max-width:620px!important;
+          margin-bottom:24px!important;
+          font-size:15.5px!important;
+          line-height:1.42!important;
+        }
+        html body header.hero .hero-bottom-bar {
+          min-height:52px!important;
+          padding:10px 24px!important;
+          gap:14px!important;
+          font-size:8.5px!important;
+          letter-spacing:.10em!important;
+          line-height:1.25!important;
+          overflow:hidden!important;
+        }
+      }
+
+      @media (max-width:900px) {
+        html body nav.top .nav-links,
+        html body nav.top .lang-switcher,
+        html body nav.top .nav-rating-badge,
+        html body #topnav.top .nav-links,
+        html body #topnav.top .lang-switcher,
+        html body #topnav.top .nav-rating-badge { display:none!important; }
+        html body header.hero .hero-content {
+          display:block!important;
+          padding-top:92px!important;
+          padding-bottom:96px!important;
+        }
+        html body header.hero .hero-ctas {
+          display:grid!important;
+          grid-template-columns:1fr!important;
+          gap:10px!important;
+          max-width:360px!important;
+        }
+        html body header.hero .hero-ctas .btn,
+        html body header.hero .btn {
+          width:100%!important;
+          justify-content:center!important;
+          min-height:48px!important;
+        }
+        html body .momentos-grid,
+        html body .ratings-row,
+        html body .mini-quotes,
+        html body .eventos-grid,
+        html body .cards-grid,
+        html body .ec-cc-grid,
+        html body .ec-combos-grid,
+        html body .visao-grid,
+        html body .feijoada-grid,
+        html body .ec-priority-query-grid {
+          grid-template-columns:minmax(0,1fr)!important;
+        }
+        html body section {
+          padding-top:72px!important;
+          padding-bottom:72px!important;
+        }
+        html body .mobile-bottom-nav,
+        html body nav.mobile-bottom-nav {
+          min-height:calc(66px + env(safe-area-inset-bottom,0px))!important;
+        }
+        html body { padding-bottom:calc(74px + env(safe-area-inset-bottom,0px))!important; }
+      }
+
+      @media (max-width:820px) and (max-height:640px) {
+        html body header.hero { min-height:560px!important; }
+        html body header.hero .hero-content {
+          padding-top:78px!important;
+          padding-bottom:76px!important;
+        }
+        html body header.hero h1,
+        html body header.hero h1 * { font-size:clamp(30px,7.2vw,42px)!important; }
+        html body header.hero .hero-eyebrow,
+        html body header.hero .eyebrow { margin-bottom:16px!important; }
+        html body header.hero .hero-bottom-bar { display:none!important; }
       }
 
       /* Base: remove texto fantasma em páginas internas críticas. */
