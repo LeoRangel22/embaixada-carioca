@@ -21,12 +21,26 @@
     return origin + path;
   }
 
+  function normalizeSchemaType(type){
+    if (type === 'EventVenue') return 'Place';
+    return type;
+  }
+
+  function normalizeSchemaTypes(value){
+    if (Array.isArray(value)) return value.map(normalizeSchemaType);
+    return normalizeSchemaType(value);
+  }
+
   function stripRatingFields(value){
     if (!value || typeof value !== 'object') return value;
     if (Array.isArray(value)) return value.map(stripRatingFields);
     var out = {};
     Object.keys(value).forEach(function(key){
       if (key === 'aggregateRating' || key === 'review' || key === 'reviews') return;
+      if (key === '@type') {
+        out[key] = normalizeSchemaTypes(value[key]);
+        return;
+      }
       out[key] = stripRatingFields(value[key]);
     });
     return out;
