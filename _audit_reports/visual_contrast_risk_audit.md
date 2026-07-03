@@ -11,7 +11,7 @@ Static guardrail for visual contrast regressions in current pages.
 ## index.html
 - VISUAL_CHECK: 50 pattern(s) detected but covered by global contrast hotfix
   - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | A Embaixada Carioca é o restaurante no Bondinho Pão de Açúcar — o único restaurante com vista direta para o Pão de Açúcar, no alto do Morro da Urca. Acompanha o
-  - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | 🏆 Melhor Feijoada do Rio de Janeiro — Veja Rio Comer & Beber 2025/2026 · 2º melhor chopp Heineken do Brasil · 4.8★ em mais de 7.779 avaliações no Google.
+  - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | 🏆 Melhor Feijoada do Rio de Janeiro — Veja Rio Comer & Beber 2025/2026 · 2º melhor chopp Heineken do Brasil · 4.8★ em mais de 8.255 avaliações no Google.
   - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | O Sunset no Bondinho transformou o fim de tarde no alto do Morro da Urca em um evento único no Rio. O DJ Tommax — o DJ do Bondinho — comanda as pick-ups no Jard
   - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | Reuniões executivas, almoços corporativos, lançamentos, treinamentos e roteiros premium para grupos — recebidos a 227 metros de altura, com o Pão de Açúcar como
   - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | O Restaurante Morro da Urca está aberto todos os dias — café da manhã das 8h30 às 11h30, almoço das 11h30 às 17h e entardecer das 17h às 21h. Um dos melhores re
