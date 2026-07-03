@@ -65,7 +65,7 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Hoje
   - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Por do sol às 17h44
   - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Resumo
-  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | O único almoço dentro do Parque Bondinho Pão de Açúcar , a 227 metros de altitude no Morro da Urca. Gastronomia brasileira premiada: picanha à brasileira e a fe
+  - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | O único almoço com vista para o Pão de Açúcar dentro do Parque Bondinho , a 227 metros de altitude no Morro da Urca. Gastronomia brasileira premiada: picanha à 
   - covered-by-hero-side-frame-lock | hero-side-frame-label-sentinel | <span> class='l' | Vista
   - covered-by-hero-side-frame-lock | hero-side-frame-value-sentinel | <span> class='v' | Pão de Açúcar em primeiro plano
   - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | Receitas clássicas da gastronomia brasileira servidas com técnica contemporânea e ingredientes selecionados — o sabor do Brasil com a vista mais bonita do Rio. 
