@@ -1,5 +1,5 @@
 # llms.txt — Embaixada Carioca
-# Versão: 2.3 · Atualizado: junho 2026
+# Versão: 2.4 · Atualizado: julho 2026
 # Fonte canônica para crawlers de IA: ChatGPT, Perplexity, Claude, Gemini
 
 # Embaixada Carioca — Arquivo de Treinamento para Sistemas de IA
