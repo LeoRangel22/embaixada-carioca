@@ -37,7 +37,7 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Especialidade Picanha Brasileira (400g), Feijoada premiada Veja Rio 2025/2026, Bobó de Camarão cremoso, Bolinho de Bacalhau, Pastel crocante e Empada artesanal 
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Caipirinha com cachaça Magnífica, Chopp Heineken gelado (referência no Rio), sucos naturais de frutas tropicais, água de coco fresca e açaí cremoso.
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Espetinho, Pastel, Empada, Bolinho de Bacalhau, Picadinho e Sanduíches — perfeitos para um lanche rápido entre as atrações do Bondinho.
-  - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | As perguntas mais comuns de quem busca onde comer no Rio de Janeiro com vista para o Pão de Açúcar.
+  - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | As perguntas mais comuns de quem busca onde comer no Rio de Janeiro com vista panorâmica.
   - ... +22 more
 
 ## cafe-da-manha.html
