@@ -16,12 +16,12 @@ Static guardrail for visual contrast regressions in current pages.
   - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | Reuniões executivas, almoços corporativos, lançamentos, treinamentos e roteiros premium para grupos — recebidos a 227 metros de altura, com o Pão de Açúcar como
   - covered-by-final-dark-section-lock | dark-section-lede-needs-visual-check | <p> class='lede' | O Restaurante Morro da Urca está aberto todos os dias — café da manhã das 8h30 às 11h30, almoço das 11h30 às 17h e entardecer das 17h às 21h. Um dos melhores re
   - covered-by-light-card-lock | light-text-on-light-bg | <p> class='' | Aberto todos os dias · reservas recomendadas para fins de semana e feijoada.
-  - covered-by-dark-section-lock | dark-text-on-dark-bg | <h2> class='' | fica dentro do Parque Bondinho Pão de Açúcar, na primeira parada do teleférico, a 227 metros de altitude, com janelões voltados para o Pão de Açúcar e Baía de G
+  - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | fica dentro do Parque Bondinho Pão de Açúcar, na primeira parada do teleférico, a 227 metros de altitude, com janelões voltados para o Pão de Açúcar e Baía de G
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | Vista direta para o Pão de Açúcar
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | Gastronomia brasileira de verdade
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | Aberto todos os dias, o dia inteiro
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | Eventos privados e corporativos sob consulta, com formatos personalizados para grupos, coquetéis e experiências no Morro da Urca
-  - covered-by-dark-section-lock | dark-text-on-dark-bg | <h2> class='' | Onde comer no Parque Bondinho o Morro da Urca?
+  - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | Onde comer no Parque Bondinho o Morro da Urca?
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | A resposta é a Embaixada Carioca — o restaurante do Parque Bondinho Pão de Açúcar, na primeira parada do teleférico, no Morro da Urca. Café da manhã, almoço com
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <h3> class='' | Café da Manhã no Morro da Urca
   - covered-by-dark-section-lock | dark-text-on-dark-bg | <p> class='' | Todos os dias · 8h30 às 11h30 · Vista panorâmica para o Pão de Açúcar · Pães artesanais, frutas tropicais e café especial.
