@@ -2186,7 +2186,8 @@ html body header.page-hero :is(.eyebrow,.hero-eyebrow,.hero-kicker,.page-eyebrow
 html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!important;border-color:#f59b1e!important;}
 @media(max-width:900px){html body nav.top .nav-links,html body nav.top .lang-switcher,html body nav.top .nav-rating-badge{display:none!important;}html body nav.top .brand-logo{width:54px!important;height:54px!important;min-width:54px!important;min-height:54px!important;}}
 </style>
-</meta></meta></link></meta></meta></meta><script type="application/ld+json">{
+</meta></meta></link></meta></meta></meta><script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -2228,13 +2229,6 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
         "Brazilian lunch"
       ],
       "priceRange": "$$$",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "8255",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "hasMap": "https://www.google.com/maps/search/?api=1&query=Embaixada+Carioca+Morro+da+Urca",
       "@id": "https://www.embaixadacarioca.com/#restaurant",
       "name": "Embaixada Carioca",
@@ -2257,7 +2251,7 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
         "longitude": -43.1641667
       },
       "award": [
-        "Melhor Feijoada do Rio — Revista Veja Rio 2025/2026",
+        "Melhor Feijoada do Rio — Revista Veja Rio Comer & Beber 2025/2026",
         "2º Melhor Chope Heineken do Brasil"
       ],
       "containedInPlace": {
@@ -2522,7 +2516,10 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
                 "availabilityEnds": "17:00"
               },
               "suitableForDiet": "https://schema.org/LowLactoseDiet",
-              "nutrition": { "@type": "NutritionInformation", "servingSize": "2 pessoas" }
+              "nutrition": {
+                "@type": "NutritionInformation",
+                "servingSize": "2 pessoas"
+              }
             },
             {
               "@type": "MenuItem",
@@ -2709,7 +2706,7 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
             {
               "@type": "MenuItem",
               "name": "Feijoada Premiada",
-              "description": "A segunda mais vendida. Feijoada da Academia da Cachaça, eleita a Melhor do Brasil pela Revista Veja Rio 2025/2026. Preparada com charque, costela, lombo, paio e linguiça fina, servida em panela de barro todos os dias.",
+              "description": "A segunda mais vendida. Feijoada da Academia da Cachaça, eleita a Melhor do Brasil pela Revista Veja Rio Comer & Beber 2025/2026. Preparada com charque, costela, lombo, paio e linguiça fina, servida em panela de barro todos os dias.",
               "offers": {
                 "@type": "Offer",
                 "price": "189.70",
@@ -2831,7 +2828,8 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
       ]
     }
   ]
-}</script></head>
+}
+</script></head>
 <body data-screen-label="Cardápio"><!-- NAV -->
 <nav aria-label="Navegação principal" class="top" id="topnav">
 <div class="nav-inner">
@@ -2926,7 +2924,7 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 <article class="menu-item">
 <div class="menu-item-badge">Premiada · Todos os dias</div>
 <h3 class="menu-item-name">Feijoada da Academia da Cachaça<span class="menu-item-badge" style="background:#c9a96e;color:#2d1a00;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:700;margin-left:8px;vertical-align:middle;">PREMIADA</span></h3>
-<p class="menu-item-desc">Eleita <strong>Melhor Feijoada do Rio</strong> pela Revista Veja Rio 2025/2026. Charque, costela, lombo, paio e linguiça fina em panela de barro. Servida todos os dias, das 11h30 às 17h.</p>
+<p class="menu-item-desc">Eleita <strong>Melhor Feijoada do Rio</strong> pela Revista Veja Rio Comer & Beber 2025/2026. Charque, costela, lombo, paio e linguiça fina em panela de barro. Servida todos os dias, das 11h30 às 17h.</p>
 <span class="menu-item-price">R$ 189,70 (serve 2)</span>
 </article>
 <article class="menu-item">
@@ -3049,6 +3047,667 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 </div>
 </div>
 </section>
+<!-- EC CARDAPIO COMPLETENESS I18N FIX -->
+<style>
+.ec-menu-complete{background:#f6efde;color:#00405a;padding:84px 0;border-top:1px solid rgba(0,64,90,.10)}
+.ec-menu-complete .wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,4vw,64px)}
+.ec-menu-complete .kicker{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#9a6500;margin-bottom:12px;font-weight:800}
+.ec-menu-complete h2{font-family:Catamaran,Verdana,sans-serif;font-size:clamp(34px,4.2vw,62px);line-height:.98;margin:0 0 18px;color:#335d4a;font-weight:800;letter-spacing:-.03em}
+.ec-menu-complete .intro{max-width:820px;color:#485156;font-size:18px;line-height:1.55;margin:0 0 28px}
+.ec-menu-note{background:rgba(0,64,90,.06);border:1px solid rgba(0,64,90,.10);border-radius:18px;padding:16px 18px;margin:0 0 34px;color:#485156;font-size:15px;line-height:1.5}
+.ec-menu-complete-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:30px}
+.ec-menu-complete-section{background:#fffaf0;border:1px solid rgba(0,64,90,.12);border-radius:22px;padding:24px;box-shadow:0 10px 24px rgba(0,32,46,.05)}
+.ec-menu-complete-section h3{font-family:'JetBrains Mono',monospace;font-size:15px;line-height:1.25;letter-spacing:.12em;text-transform:uppercase;color:#335d4a;margin:0 0 18px;font-weight:900}
+.ec-complete-item{border-top:1px solid rgba(0,64,90,.10);padding:13px 0;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:start}
+.ec-complete-item:first-of-type{border-top:0;padding-top:0}
+.ec-complete-name{font-weight:800;color:#335d4a;font-size:16px;line-height:1.25}
+.ec-complete-price{font-family:'JetBrains Mono',monospace;font-size:13px;color:#9a6500;font-weight:900;white-space:nowrap;text-align:right}
+.ec-menu-source{font-size:13px;color:#7d8386;margin-top:26px}
+@media(max-width:820px){.ec-menu-complete-grid{grid-template-columns:1fr}.ec-complete-item{grid-template-columns:1fr}.ec-complete-price{text-align:left}}
+</style>
+<section class="ec-menu-complete" id="cardapio-completo">
+<div class="wrap">
+<div class="kicker">Cardápio completo</div>
+<h2>Itens do cardápio completo</h2>
+<p class="intro">Complemento editorial restaurado a partir do cardápio digital completo de outubro de 2025, com as categorias que não podiam ficar ausentes da página.</p>
+<p class="ec-menu-note">Valores e disponibilidade podem mudar conforme operação, estoque e horário. Confirme com a equipe no momento do pedido.</p>
+<div class="ec-menu-complete-grid">
+<article class="ec-menu-complete-section">
+<h3>Para começar</h3>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Caldinho de feijão 140ml</div>
+<div class="ec-complete-price">R$ 14,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Espetinho de filé mignon com molho à campanha</div>
+<div class="ec-complete-price">R$ 58,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Espetinho de filé de frango com bacon e molho à campanha</div>
+<div class="ec-complete-price">R$ 39,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Espetinho de camarão com gomos de limão</div>
+<div class="ec-complete-price">R$ 49,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Queijo coalho com mel de pimenta</div>
+<div class="ec-complete-price">R$ 27,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Abobrinha com molho teriyaki</div>
+<div class="ec-complete-price">R$ 19,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Empada de frango com cheddar</div>
+<div class="ec-complete-price">R$ 12,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Empada de carne seca</div>
+<div class="ec-complete-price">R$ 14,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Empada de camarão com Catupiry</div>
+<div class="ec-complete-price">R$ 15,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Pasteizinhos de queijo minas padrão com mel de pimenta</div>
+<div class="ec-complete-price">R$ 45,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Pasteizinhos de carne moída com vinagrete à campanha</div>
+<div class="ec-complete-price">R$ 48,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Pasteizinhos de camarão com Catupiry e molho de pitanga</div>
+<div class="ec-complete-price">R$ 49,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Pasteizinhos de carne seca com Catupiry</div>
+<div class="ec-complete-price">R$ 48,70</div>
+</div>
+</article>
+<article class="ec-menu-complete-section">
+<h3>Para beliscar</h3>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Aipim frito com queijo parmesão</div>
+<div class="ec-complete-price">R$ 44,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Batata frita abençoada com molho de queijo cheddar e bacon crocante</div>
+<div class="ec-complete-price">R$ 49,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Bolinho de bacalhau - 10 unidades</div>
+<div class="ec-complete-price">R$ 74,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Filé mignon aperitivo com molho madeira e cebola roxa</div>
+<div class="ec-complete-price">R$ 89,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Gurjão de peixe com molho tártaro</div>
+<div class="ec-complete-price">R$ 74,70</div>
+</div>
+</article>
+<article class="ec-menu-complete-section">
+<h3>Sanduíches, saladas e burgers</h3>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Sanduíche de filé mignon com queijo minas padrão, rúcula e ervas</div>
+<div class="ec-complete-price">R$ 57,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Pão com linguiça artesanal da Serra com molho de mostarda</div>
+<div class="ec-complete-price">R$ 48,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Sanduíche de frango com queijo minas, mostarda e mel</div>
+<div class="ec-complete-price">R$ 44,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Salada Caesar com frango grelhado</div>
+<div class="ec-complete-price">R$ 49,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Mix de folhas frescas, tomate cereja, vinagrete e lascas de parmesão</div>
+<div class="ec-complete-price">R$ 39,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Cheeseburger de picanha com queijo minas, alface romana e tomate</div>
+<div class="ec-complete-price">R$ 52,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Burger cheddar &amp; bacon com hambúrguer 100% picanha</div>
+<div class="ec-complete-price">R$ 57,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Burger Embaixador com dois hambúrgueres de picanha, queijo minas e cebola roxa caramelizada</div>
+<div class="ec-complete-price">R$ 67,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Adicione fritas ao sanduíche ou burger</div>
+<div class="ec-complete-price">+ R$ 10,00</div>
+</div>
+</article>
+<article class="ec-menu-complete-section">
+<h3>Almoço, pratos e carioquinhas</h3>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Risoto de quinoa com vegetais e shitake</div>
+<div class="ec-complete-price">R$ 64,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Salada Caesar com frango grelhado no almoço</div>
+<div class="ec-complete-price">R$ 54,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Salmão com molho de maracujá, arroz de brócolis e legumes grelhados</div>
+<div class="ec-complete-price">R$ 114,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Picadinho Carioca de mignon com arroz, ovo, farofa e banana frita</div>
+<div class="ec-complete-price">R$ 74,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Carioquinha de filé mignon com arroz, feijão, fritas e farofa</div>
+<div class="ec-complete-price">R$ 69,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Carioquinha de frango com arroz, feijão, fritas e farofa</div>
+<div class="ec-complete-price">R$ 54,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Carioquinha de peixe com arroz, feijão, fritas e farofa</div>
+<div class="ec-complete-price">R$ 64,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Menu infantil - filé mignon com arroz, feijão, fritas ou purê</div>
+<div class="ec-complete-price">R$ 59,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Menu infantil - filé de frango com arroz, feijão, fritas ou purê</div>
+<div class="ec-complete-price">R$ 49,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Menu infantil - macarrão à bolonhesa</div>
+<div class="ec-complete-price">R$ 49,70</div>
+</div>
+</article>
+<article class="ec-menu-complete-section">
+<h3>Especialidades da casa</h3>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Picanha à brasileira - 1 pessoa, com arroz, farofa de alho e cebola, molho à campanha e batata frita</div>
+<div class="ec-complete-price">R$ 134,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Picanha à brasileira - 2 pessoas</div>
+<div class="ec-complete-price">R$ 204,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Feijoada da Academia da Cachaça - 2 pessoas, servida em panela de barro com arroz, couve, farofa e laranja</div>
+<div class="ec-complete-price">R$ 189,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Bobó de camarão - 1 pessoa, com arroz branco e farofa de dendê</div>
+<div class="ec-complete-price">R$ 114,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Bobó de camarão - 2 pessoas</div>
+<div class="ec-complete-price">R$ 169,70</div>
+</div>
+</article>
+<article class="ec-menu-complete-section">
+<h3>Café da manhã</h3>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Café da manhã para duas pessoas com pães de fermentação natural, frios, mini açaí, iogurte, granola, fruta do dia, bolo do dia e 2 bebidas quentes</div>
+<div class="ec-complete-price">R$ 98,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Omelete de queijo prato e presunto</div>
+<div class="ec-complete-price">R$ 29,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Omelete de queijo minas e tomate</div>
+<div class="ec-complete-price">R$ 32,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Omelete de shitake fresco</div>
+<div class="ec-complete-price">R$ 34,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Ovos mexidos com bacon</div>
+<div class="ec-complete-price">R$ 23,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Ovos fritos</div>
+<div class="ec-complete-price">R$ 19,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Tapioca de queijo prato e presunto</div>
+<div class="ec-complete-price">R$ 20,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Tapioca de queijo minas e tomate</div>
+<div class="ec-complete-price">R$ 22,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Tapioca na manteiga</div>
+<div class="ec-complete-price">R$ 12,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Misto quente ou queijo quente</div>
+<div class="ec-complete-price">R$ 16,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Peito de peru com queijo minas</div>
+<div class="ec-complete-price">R$ 19,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Pão na chapa</div>
+<div class="ec-complete-price">R$ 9,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Seleção de pães - cesto</div>
+<div class="ec-complete-price">R$ 18,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Mini baguete rústica - unidade</div>
+<div class="ec-complete-price">R$ 8,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Fatias extras de queijo ou frios - 2 fatias</div>
+<div class="ec-complete-price">R$ 8,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Porção de fruta ou iogurte</div>
+<div class="ec-complete-price">R$ 11,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Porção de geleia, mel ou manteiga</div>
+<div class="ec-complete-price">R$ 4,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Bolo do dia - fatia</div>
+<div class="ec-complete-price">R$ 12,00</div>
+</div>
+</article>
+<article class="ec-menu-complete-section">
+<h3>Açaí, coco, cafés e bebidas com café</h3>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Açaí baby</div>
+<div class="ec-complete-price">R$ 22,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Açaí taça</div>
+<div class="ec-complete-price">R$ 26,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Adicional banana</div>
+<div class="ec-complete-price">R$ 3,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Adicional morango</div>
+<div class="ec-complete-price">R$ 5,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Granola - porção</div>
+<div class="ec-complete-price">R$ 3,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Coco gelado 100% natural</div>
+<div class="ec-complete-price">R$ 16,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Hario V60 150ml</div>
+<div class="ec-complete-price">R$ 14,50</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Hario V60 300ml</div>
+<div class="ec-complete-price">R$ 19,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Prensa francesa 150ml</div>
+<div class="ec-complete-price">R$ 14,50</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Prensa francesa 300ml</div>
+<div class="ec-complete-price">R$ 19,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Café espresso</div>
+<div class="ec-complete-price">R$ 7,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Café espresso duplo</div>
+<div class="ec-complete-price">R$ 10,50</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Café com leite</div>
+<div class="ec-complete-price">R$ 12,50</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Café especial do Brasil 100% arábica - pequeno</div>
+<div class="ec-complete-price">R$ 7,50</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Café especial do Brasil 100% arábica - grande</div>
+<div class="ec-complete-price">R$ 10,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Espresso tônica</div>
+<div class="ec-complete-price">R$ 17,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Latte gelado</div>
+<div class="ec-complete-price">R$ 17,00</div>
+</div>
+</article>
+<article class="ec-menu-complete-section">
+<h3>Caipirinhas e drinks</h3>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Caipirinha de limão tradicional com Cachaça Magnífica Cristal</div>
+<div class="ec-complete-price">R$ 32,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Caipirinhas de frutas: abacaxi, maracujá, manga Palmer, laranja com gengibre, kiwi, morango, limão siciliano, mista e lichia</div>
+<div class="ec-complete-price">a partir de R$ 35,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Caipirinha da Casa</div>
+<div class="ec-complete-price">R$ 43,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Caipirinha de coco</div>
+<div class="ec-complete-price">R$ 49,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Caipirinha Da Casa 2.0</div>
+<div class="ec-complete-price">R$ 45,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Praia Vermelha</div>
+<div class="ec-complete-price">R$ 45,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Café Expresso com cachaça envelhecida</div>
+<div class="ec-complete-price">R$ 44,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Mojito com Rum Havana Club 3 anos ou 7 anos</div>
+<div class="ec-complete-price">R$ 45,00 / R$ 50,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Moscow Mule com vodka nacional ou Absolut</div>
+<div class="ec-complete-price">R$ 40,00 / R$ 45,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Fitzgerald com Gin Amazzoni ou Gin Beefeater</div>
+<div class="ec-complete-price">R$ 45,00 / R$ 50,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Bloody Mary com vodka nacional ou Absolut</div>
+<div class="ec-complete-price">R$ 40,00 / R$ 45,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Piña Colada com rum, coco e abacaxi</div>
+<div class="ec-complete-price">a partir de R$ 45,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Amar Ela com vodka Absolut, maracujá, canela e tabasco</div>
+<div class="ec-complete-price">R$ 45,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Red Gin com Amazzoni Gin, tônica, frutas vermelhas, limão siciliano e alecrim</div>
+<div class="ec-complete-price">R$ 45,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Pineapple Carioca com Amazzoni Maniuara, abacaxi, licor de laranja, tônica e gengibre</div>
+<div class="ec-complete-price">R$ 45,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Carioca Red com Amazzoni Gin, hibisco, cereja, limão e tônica</div>
+<div class="ec-complete-price">R$ 45,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Carioca Mule com Ballantine&#x27;s ou Chivas 12, maracujá, canela e gengibre</div>
+<div class="ec-complete-price">R$ 45,00 / R$ 50,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Cherry Bramble com Amazzoni Gin, limão, gengibre e cereja</div>
+<div class="ec-complete-price">R$ 45,00</div>
+</div>
+</article>
+<article class="ec-menu-complete-section">
+<h3>Drinks refrescantes e signatures</h3>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Extrakt &amp; Tonic com Absolut Extrakt, limão tahiti e tônica</div>
+<div class="ec-complete-price">R$ 45,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Beefeater &amp; Tonic Dry</div>
+<div class="ec-complete-price">R$ 45,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Beefeater &amp; Tonic Botânicas</div>
+<div class="ec-complete-price">R$ 45,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Pink &amp; Tonic com Beefeater Pink e morango</div>
+<div class="ec-complete-price">R$ 45,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Gin Tropical com Red Bull Tropical e laranja</div>
+<div class="ec-complete-price">R$ 50,00 / R$ 55,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Absolut Raspberri Collins</div>
+<div class="ec-complete-price">R$ 45,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Jameson Tea &amp; Lime</div>
+<div class="ec-complete-price">R$ 45,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Lillet Vive</div>
+<div class="ec-complete-price">R$ 45,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Rosato Tonic</div>
+<div class="ec-complete-price">R$ 45,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Zero Balla com Ballantine&#x27;s Bourbon e Coca-Cola zero</div>
+<div class="ec-complete-price">R$ 50,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Balla Jam - Amora com Ballantine&#x27;s Finest</div>
+<div class="ec-complete-price">R$ 50,00</div>
+</div>
+</article>
+<article class="ec-menu-complete-section">
+<h3>Sucos naturais e outras bebidas</h3>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Suco natural de laranja 380ml</div>
+<div class="ec-complete-price">R$ 18,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Suco natural de melancia 380ml</div>
+<div class="ec-complete-price">R$ 20,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Suco natural de abacaxi 380ml</div>
+<div class="ec-complete-price">R$ 20,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Suco de abacaxi com hortelã 380ml</div>
+<div class="ec-complete-price">R$ 21,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Suco natural de manga 380ml</div>
+<div class="ec-complete-price">R$ 22,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Limonada suíça 380ml</div>
+<div class="ec-complete-price">R$ 23,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Suco natural de maracujá 380ml</div>
+<div class="ec-complete-price">R$ 20,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Morango ao leite 380ml</div>
+<div class="ec-complete-price">R$ 23,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Suco misto de 2 ou 3 frutas 380ml</div>
+<div class="ec-complete-price">R$ 24,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Suco de tomate temperado 380ml</div>
+<div class="ec-complete-price">R$ 24,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Água sem gás 500ml</div>
+<div class="ec-complete-price">R$ 7,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Água com gás 500ml</div>
+<div class="ec-complete-price">R$ 8,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Água Mamba Water lata 350ml</div>
+<div class="ec-complete-price">R$ 10,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Água tônica FYS 350ml</div>
+<div class="ec-complete-price">R$ 10,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">H2OH! Limão 500ml</div>
+<div class="ec-complete-price">R$ 11,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Coca-Cola, Coca-Cola zero, Guaraná ou Guaraná zero 350ml</div>
+<div class="ec-complete-price">R$ 9,50</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Gatorade Tangerina 500ml</div>
+<div class="ec-complete-price">R$ 16,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Guaraviton 500ml</div>
+<div class="ec-complete-price">R$ 10,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Red Bull 250ml</div>
+<div class="ec-complete-price">R$ 25,00</div>
+</div>
+</article>
+<article class="ec-menu-complete-section">
+<h3>Chopp, cervejas e harmonizadas</h3>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Chopp Heineken tulipa 250ml</div>
+<div class="ec-complete-price">R$ 18,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Chopp Heineken caneca 500ml</div>
+<div class="ec-complete-price">R$ 27,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Heineken long neck 330ml</div>
+<div class="ec-complete-price">R$ 20,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Heineken 0,0% 330ml</div>
+<div class="ec-complete-price">R$ 20,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Lagunitas IPA 350ml</div>
+<div class="ec-complete-price">R$ 25,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Eisenbahn Pilsen 473ml</div>
+<div class="ec-complete-price">R$ 18,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Blue Moon 350ml</div>
+<div class="ec-complete-price">R$ 25,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Praya Clássica 600ml</div>
+<div class="ec-complete-price">R$ 37,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">3 Monkeys Golden Ale 500ml</div>
+<div class="ec-complete-price">R$ 39,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">3 Monkeys Classic IPA 500ml</div>
+<div class="ec-complete-price">R$ 39,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Cerveja harmonizada Cristal 600ml</div>
+<div class="ec-complete-price">R$ 38,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Cerveja harmonizada IPA 600ml</div>
+<div class="ec-complete-price">R$ 38,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Cerveja harmonizada Peach 600ml</div>
+<div class="ec-complete-price">R$ 38,70</div>
+</div>
+</article>
+<article class="ec-menu-complete-section">
+<h3>Sobremesas e milkshakes</h3>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Brownie com sorvete de creme</div>
+<div class="ec-complete-price">R$ 24,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Sorvete com caramelo salgado e crocante</div>
+<div class="ec-complete-price">R$ 23,70</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Sorvete - 1 bola</div>
+<div class="ec-complete-price">R$ 17,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Sorvete - 2 bolas</div>
+<div class="ec-complete-price">R$ 26,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Frutas da estação: abacaxi, melancia ou manga</div>
+<div class="ec-complete-price">sob consulta</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Milkshake de creme</div>
+<div class="ec-complete-price">R$ 24,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Milkshake de Ovomaltine</div>
+<div class="ec-complete-price">R$ 26,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Milkshake de chocolate</div>
+<div class="ec-complete-price">R$ 24,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Milkshake de café</div>
+<div class="ec-complete-price">R$ 27,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Milkshake de tapioca</div>
+<div class="ec-complete-price">R$ 27,00</div>
+</div>
+<div class="ec-complete-item">
+<div class="ec-complete-name">Milkshake de doce de leite</div>
+<div class="ec-complete-price">R$ 27,00</div>
+</div>
+</article>
+</div>
+<p class="ec-menu-source">Fonte: cardápio digital Embaixada Carioca - outubro de 2025.</p>
+</div></section>
+<!-- /EC CARDAPIO COMPLETENESS I18N FIX -->
 <!-- EC INTERNAL LINKING KEYWORD CLUSTER FIX -->
 <section aria-label="Explore também" class="links-relacionados ec-internal-link-cluster light-section">
 <div class="ec-il-wrap">
@@ -3142,7 +3801,7 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 <h2 style="font-family:'Playfair Display',serif;font-size:2rem;color:#335d4a;margin-bottom:40px;text-align:center;">Perguntas Frequentes sobre o Cardápio</h2>
 <div class="faq-item" style="border-bottom:1px solid #d4c5a9;padding:20px 0;">
 <h3 class="faq-question" style="font-size:1.1rem;color:#1a1a1a;font-weight:600;margin-bottom:10px;">A feijoada é servida todos os dias?</h3>
-<p class="faq-answer" style="color:#555;line-height:1.7;">Sim! A feijoada da <strong>Academia da Cachaça</strong> — eleita premiada pela Revista Veja Rio 2025/2026 na Academia da Cachaça — é servida <strong>todos os dias das 11h30 às 17h</strong>. Preparada pela Academia da Cachaça e servida na Embaixada Carioca com a mesma qualidade premiada. Charque, costela, lombo, paio e linguiça fina, acompanhada de arroz, couve refogada, farofa tostada e fatias de laranja. Serve 2 pessoas por R$ 189,70.</p>
+<p class="faq-answer" style="color:#555;line-height:1.7;">Sim! A feijoada da <strong>Academia da Cachaça</strong> — eleita premiada pela Revista Veja Rio Comer & Beber 2025/2026 na Academia da Cachaça — é servida <strong>todos os dias das 11h30 às 17h</strong>. Preparada pela Academia da Cachaça e servida na Embaixada Carioca com a mesma qualidade premiada. Charque, costela, lombo, paio e linguiça fina, acompanhada de arroz, couve refogada, farofa tostada e fatias de laranja. Serve 2 pessoas por R$ 189,70.</p>
 </div>
 <div class="faq-item" style="border-bottom:1px solid #d4c5a9;padding:20px 0;">
 <h3 class="faq-question" style="font-size:1.1rem;color:#1a1a1a;font-weight:600;margin-bottom:10px;">Qual o horário do café da manhã?</h3>

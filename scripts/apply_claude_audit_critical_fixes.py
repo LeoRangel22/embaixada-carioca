@@ -25,7 +25,14 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / "_audit_reports" / "claude_audit_critical_fixes_report.md"
-HTML_FILES = sorted(p for p in ROOT.rglob("*.html") if ".git" not in p.parts and "node_modules" not in p.parts)
+EXCLUDED_DIRS = {
+    ".git", "node_modules", "_backups", "_templates",
+    "_site", "dist", "build",
+}
+HTML_FILES = sorted(
+    p for p in ROOT.rglob("*.html")
+    if not any(part in EXCLUDED_DIRS for part in p.relative_to(ROOT).parts)
+)
 WORKFLOW_DIR = ROOT / ".github" / "workflows"
 JSONLD_RE = re.compile(r'(<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>)(.*?)(</script>)', re.I | re.S)
 
@@ -40,9 +47,9 @@ TEXT_REPLACEMENTS: list[tuple[str, str, str]] = [
     (r"one\s+of\s+the\s+best\s+feijoadas?\s+in\s+the\s+city", EN_AWARD, "award-en-weak-to-best"),
     (r"one\s+of\s+the\s+best\s+in\s+the\s+city", EN_AWARD, "award-en-generic-weak-to-best"),
     (r"Voted\s+by\s+Veja\s+Rio\s+as\s+one\s+of\s+the\s+best\s+in\s+the\s+city", f"Voted {EN_AWARD}", "award-en-veja-one-of-best"),
-    (r"Prazeres\s+da\s+Mesa", "Veja Rio Comer & Beber 2025/2026", "wrong-source-prazeres-to-veja"),
     (r"Revista\s+Prazeres\s+da\s+Mesa", "Veja Rio Comer & Beber 2025/2026", "wrong-magazine-prazeres-to-veja"),
-    (r"Veja\s+Rio\s+2025/2026", "Veja Rio Comer & Beber 2025/2026", "award-veja-full-name"),
+    (r"Prazeres\s+da\s+Mesa", "Veja Rio Comer & Beber 2025/2026", "wrong-source-prazeres-to-veja"),
+    (r"Veja\s+Rio\s+2025/2026(?!\s+Comer\s*&\s*Beber)", "Veja Rio Comer & Beber 2025/2026", "award-veja-full-name"),
     (r"O\s+sunset\s+m[aá]s\s+bonito\s+do\s+Rio\s+de\s+Janeiro", "The most beautiful sunset in Rio de Janeiro", "en-portunhol-sunset-mas"),
     (r"Servida\s+every\s+day\s+no\s+lunch", "Served daily for lunch", "en-portunhol-servida"),
     (r"drinks\s+e\s+petiscos", "drinks and Brazilian snacks", "en-portunhol-e"),
@@ -53,11 +60,21 @@ TEXT_REPLACEMENTS: list[tuple[str, str, str]] = [
     (r"mais\s+de\s+100\s+mil\s+seguidores", "mais de 84 mil seguidores", "followers-pt-100mil-to-84mil"),
     (r"over\s+100K\s+followers", "over 84K followers", "followers-en-100k-to-84k"),
     (r"more\s+than\s+100K\s+followers", "more than 84K followers", "followers-en-100k-to-84k-2"),
+    (r"\+100K(?=\s*</div><div[^>]*>\s*Instagram followers)", "84K", "followers-en-counter-to-84k"),
     (r"m[aá]s\s+de\s+100K\s+seguidores", "más de 84K seguidores", "followers-es-100k-to-84k"),
+    (r"\+100K(?=\s*</div><div[^>]*>\s*Seguidores)", "84K", "followers-es-counter-to-84k"),
 ]
 
 # Longer, specific institutional claims: neutralize only if found.
 CLAIM_PATTERNS: list[tuple[str, str]] = [
+    (
+        r"<section\b(?:(?!</section>).)*Cantina\s+do\s+MAM(?:(?!</section>).)*</section>",
+        "",
+    ),
+    (
+        r"<!--\s*Cantina\s+do\s+MAM.*?-->\s*<div\b.*?@cantinadomam\s*</a>\s*</div></div>",
+        "",
+    ),
     (
         r"A\s+Embaixada\s+Carioca\s+faz\s+parte\s+do\s+Academia\s+da\s+Cachaça,\s+que\s+inclui\s+também\s+a\s+Academia\s+da\s+Cachaça\s*\([^)]*\)\s+e\s+a\s+Cantina\s+do\s+MAM\s*\([^)]*\),?\s+no\s+Museu\s+de\s+Arte\s+Moderna\.?",
         "A Embaixada Carioca fica no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com gastronomia brasileira, feijoada premiada da Academia da Cachaça e vista para o Pão de Açúcar.",
@@ -112,30 +129,50 @@ def parse_json(raw: str) -> Any | None:
         return None
 
 
-def scrub_rating_nodes(obj: Any) -> tuple[Any, int]:
+def scrub_rating_nodes(
+    obj: Any,
+    forbidden_types: set[str] | None = None,
+) -> tuple[Any, int]:
     """Remove review/rating/aggregateRating keys recursively from JSON-LD."""
+    forbidden_types = forbidden_types or {"Review", "Rating", "AggregateRating"}
     removed = 0
     if isinstance(obj, dict):
+        node_type = obj.get("@type")
+        node_types = node_type if isinstance(node_type, list) else [node_type]
+        present_types = [value for value in node_types if value is not None]
+        if present_types and all(value in forbidden_types for value in present_types):
+            return None, 1
+        if isinstance(node_type, list):
+            safe_types = [value for value in node_type if value not in forbidden_types]
+            removed += len(node_type) - len(safe_types)
+            obj = dict(obj)
+            obj["@type"] = safe_types
         cleaned = {}
         for k, v in obj.items():
-            if k in {"review", "reviews", "aggregateRating", "reviewRating", "ratingValue", "bestRating", "worstRating"}:
+            if k in {
+                "review", "reviews", "aggregateRating", "reviewRating",
+                "ratingValue", "ratingCount", "reviewCount",
+                "bestRating", "worstRating",
+            }:
                 removed += 1
                 continue
-            new_v, count = scrub_rating_nodes(v)
+            new_v, count = scrub_rating_nodes(v, forbidden_types)
             removed += count
-            cleaned[k] = new_v
+            if new_v is not None:
+                cleaned[k] = new_v
         return cleaned, removed
     if isinstance(obj, list):
         new_list = []
         for item in obj:
-            new_item, count = scrub_rating_nodes(item)
+            new_item, count = scrub_rating_nodes(item, forbidden_types)
             removed += count
-            new_list.append(new_item)
+            if new_item is not None:
+                new_list.append(new_item)
         return new_list, removed
     return obj, 0
 
 
-def scrub_jsonld(source: str) -> tuple[str, int]:
+def scrub_jsonld(source: str, remove_event: bool = False) -> tuple[str, int]:
     removed_total = 0
     parts: list[str] = []
     last = 0
@@ -144,11 +181,14 @@ def scrub_jsonld(source: str) -> tuple[str, int]:
         obj = parse_json(raw)
         if obj is None:
             continue
-        cleaned, removed = scrub_rating_nodes(obj)
+        forbidden_types = {"Review", "Rating", "AggregateRating"}
+        if remove_event:
+            forbidden_types.add("Event")
+        cleaned, removed = scrub_rating_nodes(obj, forbidden_types)
         if not removed:
             continue
         parts.append(source[last:m.start()])
-        parts.append(opener + json.dumps(cleaned, ensure_ascii=False, separators=(",", ":")) + closer)
+        parts.append(opener + "\n" + json.dumps(cleaned, ensure_ascii=False, indent=2) + "\n" + closer)
         last = m.end()
         removed_total += removed
     if not removed_total:
@@ -161,7 +201,10 @@ def apply_text_fixes(source: str, path: Path) -> tuple[str, int, list[str]]:
     count_total = 0
     notes: list[str] = []
     updated = source
+    page_lang = lang_for(path)
     for pattern, repl, note in TEXT_REPLACEMENTS:
+        if note.startswith("en-") and page_lang != "en":
+            continue
         updated, count = re.subn(pattern, repl, updated, flags=re.I)
         if count:
             count_total += count
@@ -172,14 +215,6 @@ def apply_text_fixes(source: str, path: Path) -> tuple[str, int, list[str]]:
             count_total += count
             notes.append(f"unverified-cantina-claim-removed:{count}")
 
-    # If a page discusses feijoada and has an award fragment, append the exact canonical phrase once if absent.
-    lower = updated.lower()
-    canonical = canonical_award_for(path)
-    if "feijoada" in lower and "veja rio" in lower and canonical.lower() not in lower:
-        # Prefer a safe visible comment-free insertion near first feijoada occurrence in text.
-        updated = updated.replace("feijoada", f"feijoada ({canonical})", 1)
-        count_total += 1
-        notes.append("canonical-award-inserted:1")
     return updated, count_total, notes
 
 
@@ -187,7 +222,8 @@ def process_file(path: Path) -> FileResult:
     rel = path.relative_to(ROOT).as_posix()
     original = path.read_text(encoding="utf-8", errors="ignore")
     updated, replacements, notes = apply_text_fixes(original, path)
-    updated, rating_removed = scrub_jsonld(updated)
+    remove_event = path.name == "sunset-por-do-sol-rio-de-janeiro.html"
+    updated, rating_removed = scrub_jsonld(updated, remove_event=remove_event)
     if rating_removed:
         notes.append(f"jsonld-rating-review-removed:{rating_removed}")
     changed = updated != original
@@ -200,7 +236,13 @@ def scan_remaining() -> dict[str, list[str]]:
     remaining: dict[str, list[str]] = {}
     for path in HTML_FILES:
         text = path.read_text(encoding="utf-8", errors="ignore")
-        found = [term for term in FORBIDDEN_AFTER if term.lower() in text.lower()]
+        page_lang = lang_for(path)
+        found = []
+        for term in FORBIDDEN_AFTER:
+            if term == "drinks e petiscos" and page_lang != "en":
+                continue
+            if term.lower() in text.lower():
+                found.append(term)
         if found:
             remaining[path.relative_to(ROOT).as_posix()] = found
     return remaining
