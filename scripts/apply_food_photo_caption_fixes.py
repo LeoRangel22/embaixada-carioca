@@ -12,6 +12,11 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / "_audit_reports" / "food_photo_caption_fixes_report.md"
 EXCLUDED = {".git", "_backups", "_templates", "_site", "node_modules", "dist", "build"}
+SHARED_CSS = (
+    ROOT / "assets" / "css" / "ec-shared.css",
+    ROOT / "assets" / "css" / "ec-subpages-shared.css",
+    ROOT / "assets" / "css" / "ec-index-inline.css",
+)
 
 CAPTIONS = {
     "carne-seca-mandioca.webp": {
@@ -58,44 +63,44 @@ CAPTIONS = {
     },
     "fabio-almoco-salmao-pao-acucar.webp": {
         "pt": (
-            "Almoço com salmão grelhado, acompanhamentos e vista para o Pão de Açúcar",
-            "Almoço com salmão grelhado e vista para o Pão de Açúcar",
+            "Salmão com molho de maracujá e Carioquinha de peixe, com vista para o Pão de Açúcar",
+            "Salmão com molho de maracujá e Carioquinha de peixe",
         ),
         "en": (
-            "Grilled salmon lunch with side dishes and a view of Sugarloaf Mountain",
-            "Grilled salmon lunch with a Sugarloaf view",
+            "Salmon with passion fruit sauce and fish carioquinha, with a view of Sugarloaf Mountain",
+            "Salmon with passion fruit sauce and fish carioquinha",
         ),
         "es": (
-            "Almuerzo con salmón a la parrilla, acompañamientos y vista al Pan de Azúcar",
-            "Almuerzo con salmón y vista al Pan de Azúcar",
+            "Salmón con salsa de maracuyá y carioquinha de pescado, con vista al Pan de Azúcar",
+            "Salmón con salsa de maracuyá y carioquinha de pescado",
         ),
     },
     "fabio-almoco-salmao-maracuja.webp": {
         "pt": (
-            "Salmão ao molho de maracujá com arroz verde e legumes grelhados",
-            "Salmão ao molho de maracujá com arroz verde",
+            "Salmão com molho de maracujá, arroz de brócolis e legumes grelhados",
+            "Salmão com molho de maracujá e arroz de brócolis",
         ),
         "en": (
-            "Grilled salmon with passion fruit sauce, green rice and grilled vegetables",
-            "Salmon with passion fruit sauce and green rice",
+            "Salmon with passion fruit sauce, broccoli rice and grilled vegetables",
+            "Salmon with passion fruit sauce and broccoli rice",
         ),
         "es": (
-            "Salmón a la parrilla con salsa de maracuyá, arroz verde y vegetales",
-            "Salmón con salsa de maracuyá y arroz verde",
+            "Salmón con salsa de maracuyá, arroz de brócoli y vegetales a la parrilla",
+            "Salmón con salsa de maracuyá y arroz de brócoli",
         ),
     },
     "fabio-almoco-picanha-fritas.webp": {
         "pt": (
-            "Prato executivo de carne grelhada com arroz, feijão, farofa e batata frita",
-            "Carne grelhada com arroz, feijão, farofa e fritas",
+            "Carioquinha de filé mignon com arroz, feijão, farofa e batata frita",
+            "Carioquinha de filé mignon",
         ),
         "en": (
-            "Grilled beef lunch plate with rice, beans, farofa and French fries",
-            "Grilled beef with rice, beans, farofa and fries",
+            "Filet mignon carioquinha with rice, beans, farofa and French fries",
+            "Filet mignon carioquinha",
         ),
         "es": (
-            "Plato de carne a la parrilla con arroz, frijoles, farofa y papas fritas",
-            "Carne a la parrilla con arroz, frijoles, farofa y papas fritas",
+            "Carioquinha de filete mignon con arroz, frijoles, farofa y papas fritas",
+            "Carioquinha de filete mignon",
         ),
     },
     "fabio-feijoada-caldeiron.webp": {
@@ -141,6 +146,7 @@ def replace_figure(match: re.Match[str], lang: str) -> tuple[str, bool, str | No
 
 
 def normalize_placeholder_mapping(text: str) -> tuple[str, int]:
+    count = 0
     pattern = re.compile(
         r"html body(?: main)? \.photo-ph\[data-label\*=\"Bobó\"\],"
         r"html body(?: main)? \.photo-ph\[data-label\*=\"Bobo\"\],"
@@ -153,7 +159,35 @@ def normalize_placeholder_mapping(text: str) -> tuple[str, int]:
         'html body main .photo-ph[data-label*="Risotto"],'
         'html body main .photo-ph[data-label*="risotto"]'
     )
-    return pattern.subn(replacement, text)
+    text, changed = pattern.subn(replacement, text)
+    count += changed
+
+    asset_rules = (
+        ("Feijoada", "feijoada-panela-close-acompanhamentos.webp"),
+        ("Picanha", "almoco-picanha-grelhada.webp"),
+        ("Salmão", "fabio-almoco-salmao-maracuja.webp"),
+    )
+    for label, asset in asset_rules:
+        rule = re.compile(
+            rf'(html body(?: main)? \.photo-ph\[data-label\*="{label}"\].*?'
+            rf'\{{background-image:[^{{}}]*?url\([\'"])/assets/[^\'"]+([\'"]\)!important;\}})'
+        )
+        text, changed = rule.subn(rf"\1/assets/{asset}\2", text)
+        count += changed
+
+    picadinho = re.compile(
+        r'html body(?: main)? \.photo-ph\[data-label\*="Picadinho"\],'
+        r'html body(?: main)? \.photo-ph\[data-label\*="picadinho"\]'
+        r'(?P<body>\{background-image:[^{}]*?url\([\'"])/assets/[^\'"]+(?P<end>[\'"]\)!important;\})'
+    )
+    carioquinha = (
+        'html body main .photo-ph[data-label*="Carioquinha"],'
+        'html body main .photo-ph[data-label*="carioquinha"]'
+        r'\g<body>/assets/fabio-almoco-picanha-fritas.webp\g<end>'
+    )
+    text, changed = picadinho.subn(carioquinha, text)
+    count += changed
+    return text, count
 
 
 def process(path: Path) -> tuple[bool, int, int, set[str]]:
@@ -187,6 +221,12 @@ def main() -> int:
         changed, figures, mappings, assets = process(path)
         if changed:
             results.append((path.relative_to(ROOT).as_posix(), figures, mappings, assets))
+    for path in SHARED_CSS:
+        if not path.exists():
+            continue
+        changed, figures, mappings, assets = process(path)
+        if changed:
+            results.append((path.relative_to(ROOT).as_posix(), figures, mappings, assets))
 
     remaining_wrong = []
     for path in sorted(ROOT.rglob("*.html")):
@@ -211,7 +251,7 @@ def main() -> int:
         f"Status geral: **{status}**",
         "",
         "## Resultado",
-        f"- Páginas alteradas: **{len(results)}**",
+        f"- Arquivos alterados: **{len(results)}**",
         f"- Figuras corrigidas: **{sum(item[1] for item in results)}**",
         f"- Mapeamentos globais Bobó/camarão → risoto corrigidos: **{sum(item[2] for item in results)}**",
         "- Legendas e textos alternativos revisados em PT, EN e ES.",
