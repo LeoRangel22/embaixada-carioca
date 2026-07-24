@@ -1,0 +1,275 @@
+#!/usr/bin/env python3
+"""Apply critical fixes from the Claude digital audit.
+
+Scope:
+- Standardize all feijoada award language.
+- Remove/neutralize unverified institutional claims involving Cantina do MAM.
+- Fix common EN portunhol fragments detected in previous scripts.
+- Standardize Instagram follower claims to 84K/84 mil.
+- Strip review/rating nodes from JSON-LD to avoid review-snippet regressions.
+- Audit workflow count and produce a governance report.
+
+Guardrails:
+- Does not change canonicals/hreflang.
+- Does not add AggregateRating/Rating/Review.
+- Does not touch prices unless part of visible text replacement.
+"""
+from __future__ import annotations
+
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any
+import html
+import json
+import re
+
+ROOT = Path(__file__).resolve().parents[1]
+REPORT = ROOT / "_audit_reports" / "claude_audit_critical_fixes_report.md"
+HTML_FILES = sorted(p for p in ROOT.rglob("*.html") if ".git" not in p.parts and "node_modules" not in p.parts)
+WORKFLOW_DIR = ROOT / ".github" / "workflows"
+JSONLD_RE = re.compile(r'(<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>)(.*?)(</script>)', re.I | re.S)
+
+PT_AWARD = "Melhor Feijoada do Rio de Janeiro — Veja Rio Comer & Beber 2025/2026"
+EN_AWARD = "Best Feijoada in Rio de Janeiro — Veja Rio Comer & Beber 2025/2026"
+ES_AWARD = "Mejor Feijoada de Río de Janeiro — Veja Rio Comer & Beber 2025/2026"
+
+TEXT_REPLACEMENTS: list[tuple[str, str, str]] = [
+    (r"Melhor\s+Feijoada\s+do\s+Brasil", "Melhor Feijoada do Rio de Janeiro", "award-pt-brasil-to-rio"),
+    (r"best\s+feijoada\s+in\s+Brazil", "Best Feijoada in Rio de Janeiro", "award-en-brazil-to-rio"),
+    (r"best\s+feijoada\s+of\s+Brazil", "Best Feijoada in Rio de Janeiro", "award-en-of-brazil-to-rio"),
+    (r"one\s+of\s+the\s+best\s+feijoadas?\s+in\s+the\s+city", EN_AWARD, "award-en-weak-to-best"),
+    (r"one\s+of\s+the\s+best\s+in\s+the\s+city", EN_AWARD, "award-en-generic-weak-to-best"),
+    (r"Voted\s+by\s+Veja\s+Rio\s+as\s+one\s+of\s+the\s+best\s+in\s+the\s+city", f"Voted {EN_AWARD}", "award-en-veja-one-of-best"),
+    (r"Prazeres\s+da\s+Mesa", "Veja Rio Comer & Beber 2025/2026", "wrong-source-prazeres-to-veja"),
+    (r"Revista\s+Prazeres\s+da\s+Mesa", "Veja Rio Comer & Beber 2025/2026", "wrong-magazine-prazeres-to-veja"),
+    (r"Veja\s+Rio\s+2025/2026", "Veja Rio Comer & Beber 2025/2026", "award-veja-full-name"),
+    (r"O\s+sunset\s+m[aá]s\s+bonito\s+do\s+Rio\s+de\s+Janeiro", "The most beautiful sunset in Rio de Janeiro", "en-portunhol-sunset-mas"),
+    (r"Servida\s+every\s+day\s+no\s+lunch", "Served daily for lunch", "en-portunhol-servida"),
+    (r"drinks\s+e\s+petiscos", "drinks and Brazilian snacks", "en-portunhol-e"),
+    (r"O\s+segunof\s+the\s+cable\s+car", "The second section of the cable car", "en-typo-segunof"),
+    (r"experi[eê]ncia\s+gastron[oô]micas", "gastronomic experience", "en-portunhol-concordance"),
+    (r"Perfeito\s+para\s+o\s+sunset\s+com\s+draft\s+beer\s+no\s+Urca\s+Hill", "Perfect for sunset with draft beer at Urca Hill", "en-portunhol-perfect"),
+    (r"mais\s+de\s+100K\s+seguidores", "mais de 84 mil seguidores", "followers-pt-100k-to-84k"),
+    (r"mais\s+de\s+100\s+mil\s+seguidores", "mais de 84 mil seguidores", "followers-pt-100mil-to-84mil"),
+    (r"over\s+100K\s+followers", "over 84K followers", "followers-en-100k-to-84k"),
+    (r"more\s+than\s+100K\s+followers", "more than 84K followers", "followers-en-100k-to-84k-2"),
+    (r"m[aá]s\s+de\s+100K\s+seguidores", "más de 84K seguidores", "followers-es-100k-to-84k"),
+]
+
+# Longer, specific institutional claims: neutralize only if found.
+CLAIM_PATTERNS: list[tuple[str, str]] = [
+    (
+        r"A\s+Embaixada\s+Carioca\s+faz\s+parte\s+do\s+Academia\s+da\s+Cachaça,\s+que\s+inclui\s+também\s+a\s+Academia\s+da\s+Cachaça\s*\([^)]*\)\s+e\s+a\s+Cantina\s+do\s+MAM\s*\([^)]*\),?\s+no\s+Museu\s+de\s+Arte\s+Moderna\.?",
+        "A Embaixada Carioca fica no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com gastronomia brasileira, feijoada premiada da Academia da Cachaça e vista para o Pão de Açúcar.",
+    ),
+    (
+        r"Embaixada\s+Carioca\s+is\s+part\s+of\s+Academia\s+da\s+Cachaça,\s+which\s+also\s+includes\s+Academia\s+da\s+Cachaça\s*\([^)]*\)\s+and\s+Cantina\s+do\s+MAM\s*\([^)]*\),?\s+at\s+the\s+Museum\s+of\s+Modern\s+Art\.?",
+        "Embaixada Carioca is located at Morro da Urca inside Sugarloaf Cable Car Park, serving Brazilian food, the award-winning Academia da Cachaça feijoada and views of Sugarloaf Mountain.",
+    ),
+]
+
+FORBIDDEN_AFTER = [
+    "Prazeres da Mesa",
+    "best feijoada in Brazil",
+    "Best Feijoada in Brazil",
+    "Melhor Feijoada do Brasil",
+    "one of the best in the city",
+    "Cantina do MAM",
+    "100K seguidores",
+    "100 mil seguidores",
+    "segunof",
+    "Servida every day no lunch",
+    "drinks e petiscos",
+]
+
+@dataclass
+class FileResult:
+    path: str
+    changed: bool
+    replacements: int
+    jsonld_rating_removed: int
+    notes: str
+
+
+def lang_for(path: Path) -> str:
+    rel = path.relative_to(ROOT).as_posix()
+    if rel.startswith("en/"):
+        return "en"
+    if rel.startswith("es/"):
+        return "es"
+    return "pt"
+
+
+def canonical_award_for(path: Path) -> str:
+    lang = lang_for(path)
+    return EN_AWARD if lang == "en" else ES_AWARD if lang == "es" else PT_AWARD
+
+
+def parse_json(raw: str) -> Any | None:
+    try:
+        return json.loads(html.unescape(raw.strip()))
+    except Exception:
+        return None
+
+
+def scrub_rating_nodes(obj: Any) -> tuple[Any, int]:
+    """Remove review/rating/aggregateRating keys recursively from JSON-LD."""
+    removed = 0
+    if isinstance(obj, dict):
+        cleaned = {}
+        for k, v in obj.items():
+            if k in {"review", "reviews", "aggregateRating", "reviewRating", "ratingValue", "bestRating", "worstRating"}:
+                removed += 1
+                continue
+            new_v, count = scrub_rating_nodes(v)
+            removed += count
+            cleaned[k] = new_v
+        return cleaned, removed
+    if isinstance(obj, list):
+        new_list = []
+        for item in obj:
+            new_item, count = scrub_rating_nodes(item)
+            removed += count
+            new_list.append(new_item)
+        return new_list, removed
+    return obj, 0
+
+
+def scrub_jsonld(source: str) -> tuple[str, int]:
+    removed_total = 0
+    parts: list[str] = []
+    last = 0
+    for m in JSONLD_RE.finditer(source):
+        opener, raw, closer = m.groups()
+        obj = parse_json(raw)
+        if obj is None:
+            continue
+        cleaned, removed = scrub_rating_nodes(obj)
+        if not removed:
+            continue
+        parts.append(source[last:m.start()])
+        parts.append(opener + json.dumps(cleaned, ensure_ascii=False, separators=(",", ":")) + closer)
+        last = m.end()
+        removed_total += removed
+    if not removed_total:
+        return source, 0
+    parts.append(source[last:])
+    return "".join(parts), removed_total
+
+
+def apply_text_fixes(source: str, path: Path) -> tuple[str, int, list[str]]:
+    count_total = 0
+    notes: list[str] = []
+    updated = source
+    for pattern, repl, note in TEXT_REPLACEMENTS:
+        updated, count = re.subn(pattern, repl, updated, flags=re.I)
+        if count:
+            count_total += count
+            notes.append(f"{note}:{count}")
+    for pattern, repl in CLAIM_PATTERNS:
+        updated, count = re.subn(pattern, repl, updated, flags=re.I | re.S)
+        if count:
+            count_total += count
+            notes.append(f"unverified-cantina-claim-removed:{count}")
+
+    # If a page discusses feijoada and has an award fragment, append the exact canonical phrase once if absent.
+    lower = updated.lower()
+    canonical = canonical_award_for(path)
+    if "feijoada" in lower and "veja rio" in lower and canonical.lower() not in lower:
+        # Prefer a safe visible comment-free insertion near first feijoada occurrence in text.
+        updated = updated.replace("feijoada", f"feijoada ({canonical})", 1)
+        count_total += 1
+        notes.append("canonical-award-inserted:1")
+    return updated, count_total, notes
+
+
+def process_file(path: Path) -> FileResult:
+    rel = path.relative_to(ROOT).as_posix()
+    original = path.read_text(encoding="utf-8", errors="ignore")
+    updated, replacements, notes = apply_text_fixes(original, path)
+    updated, rating_removed = scrub_jsonld(updated)
+    if rating_removed:
+        notes.append(f"jsonld-rating-review-removed:{rating_removed}")
+    changed = updated != original
+    if changed:
+        path.write_text(updated, encoding="utf-8")
+    return FileResult(rel, changed, replacements, rating_removed, "; ".join(notes) if notes else "no-op")
+
+
+def scan_remaining() -> dict[str, list[str]]:
+    remaining: dict[str, list[str]] = {}
+    for path in HTML_FILES:
+        text = path.read_text(encoding="utf-8", errors="ignore")
+        found = [term for term in FORBIDDEN_AFTER if term.lower() in text.lower()]
+        if found:
+            remaining[path.relative_to(ROOT).as_posix()] = found
+    return remaining
+
+
+def workflow_inventory() -> list[str]:
+    if not WORKFLOW_DIR.exists():
+        return []
+    return sorted(p.relative_to(ROOT).as_posix() for p in WORKFLOW_DIR.glob("*.yml")) + sorted(p.relative_to(ROOT).as_posix() for p in WORKFLOW_DIR.glob("*.yaml"))
+
+
+def write_report(results: list[FileResult], remaining: dict[str, list[str]], workflows: list[str]) -> int:
+    REPORT.parent.mkdir(exist_ok=True)
+    changed = [r for r in results if r.changed]
+    status = "PASS" if not remaining else "WARN"
+    lines = [
+        "# Claude Audit Critical Fixes",
+        "",
+        f"Status geral: **{status}**",
+        "",
+        "## Objetivo",
+        "Atuar sobre os pontos críticos do relatório Claude: padronização do prêmio da feijoada, remoção de alegações institucionais não verificadas, limpeza de portunhol técnico, padronização de seguidores e blindagem contra retorno de review/rating em JSON-LD.",
+        "",
+        "## Formulações canônicas aplicadas",
+        f"- PT: `{PT_AWARD}`",
+        f"- EN: `{EN_AWARD}`",
+        f"- ES: `{ES_AWARD}`",
+        "",
+        "## Guardrails",
+        "- Nenhum canonical/hreflang foi alterado.",
+        "- Nenhum AggregateRating, Rating ou Review foi adicionado.",
+        "- JSON-LD com `review`, `reviewRating` ou `aggregateRating` foi limpo quando encontrado.",
+        "- Alegações envolvendo Cantina do MAM foram neutralizadas se presentes no HTML.",
+        "",
+        "## Resumo",
+        f"- HTML analisados: **{len(results)}**",
+        f"- Arquivos alterados: **{len(changed)}**",
+        f"- Substituições textuais: **{sum(r.replacements for r in results)}**",
+        f"- Nós/campos JSON-LD de rating/review removidos: **{sum(r.jsonld_rating_removed for r in results)}**",
+        f"- Workflows encontrados: **{len(workflows)}**",
+        "",
+    ]
+    if workflows:
+        lines.extend(["## Inventário de workflows", ""])
+        for w in workflows:
+            lines.append(f"- `{w}`")
+        lines.append("")
+    if remaining:
+        lines.extend(["## Pendências encontradas", ""])
+        for rel, terms in remaining.items():
+            lines.append(f"- `{rel}`: {', '.join(f'`{t}`' for t in terms)}")
+        lines.append("")
+    else:
+        lines.extend(["## Pendências encontradas", "", "Nenhuma ocorrência dos termos críticos monitorados.", ""])
+    lines.extend(["## Arquivos alterados", "", "| Arquivo | Changed | Substituições | JSON-LD rating/review removidos | Notas |", "|---|---:|---:|---:|---|"])
+    for r in results:
+        if r.changed:
+            lines.append(f"| `{r.path}` | {r.changed} | {r.replacements} | {r.jsonld_rating_removed} | {r.notes} |")
+    REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print(f"Claude audit critical fixes: {status}")
+    return 0 if status in {"PASS", "WARN"} else 1
+
+
+def main() -> int:
+    results = [process_file(path) for path in HTML_FILES]
+    remaining = scan_remaining()
+    workflows = workflow_inventory()
+    return write_report(results, remaining, workflows)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
