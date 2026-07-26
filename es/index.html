@@ -41,9 +41,6 @@ a:visited { color: inherit; }
 nav .lang-dropdown a:visited { color: var(--azul1, #00405A); }
 </style>
 <link as="image" fetchpriority="high" href="/assets/hero-mobile.webp" imagesizes="(max-width: 480px) 400px, (max-width: 720px) 600px, (max-width: 1024px) 800px, (max-width: 1440px) 1200px, 1920px" imagesrcset="/assets/hero-400w.webp 400w, /assets/hero-mobile.webp 600w, /assets/hero-800w.webp 800w, /assets/hero-1200w.webp 1200w, /assets/hero.webp 1920w" rel="preload" type="image/webp"/>
-<link href="https://go.tagme.com.br" rel="preconnect"/>
-<link href="https://maps.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://maps.gstatic.com" rel="preconnect"/>
 <link href="https://www.googletagmanager.com" rel="dns-prefetch"/>
 <link as="document" href="cafe-da-manha.html" rel="prefetch"/>
 <link as="document" href="almoco.html" rel="prefetch"/>
@@ -1638,7 +1635,44 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
     }
   ]
 }
-</script></head>
+</script><!-- EC LIGHTHOUSE MOBILE QUICK WINS -->
+<style id="ec-lighthouse-mobile-quick-wins">
+/* Mobile-only Lighthouse quick wins: lower TBT/reflow risk, tap targets and contrast. */
+@media (max-width: 720px){
+  /* Non-composited animation guard: removes box-shadow/background-position animations on mobile. */
+  *,*::before,*::after{animation:none!important;transition-duration:0s!important;scroll-behavior:auto!important;}
+
+  /* Tap targets: Lighthouse requires enough size and spacing for repeated links/buttons. */
+  a,button,[role="button"],.btn,.btn.lg,.momento-cta,.mobile-bottom-nav a,.bnav-reservar,.lang-current{
+    min-height:48px!important;min-width:48px!important;touch-action:manipulation!important;
+  }
+  .mobile-bottom-nav-inner{min-height:66px!important;gap:2px!important;}
+  .mobile-bottom-nav a{padding:8px 6px!important;}
+  .hero-ctas,.ctas{gap:12px!important;}
+
+  /* Contrast rescue for failing home content groups from Lighthouse mobile. */
+  body .num,body .num b,body .fato-label-hero,body .momento-body p,body .momento-body strong,
+  body .highlight,body .highlight strong,body .faq-question,body .faq-answer,
+  body .ec-priority-query-card,body .ec-priority-query-card p,body .ec-priority-query-card li,
+  body section#informacoes-essenciais strong,body .sec-head p,body .lede{
+    color:#00405a!important;-webkit-text-fill-color:#00405a!important;text-shadow:none!important;
+  }
+  body .momento-body,body .faq-item,body .ec-priority-query-card,body .highlight{
+    background:#fffaf0!important;border-color:rgba(0,64,90,.18)!important;
+  }
+
+  /* Keep hero text readable on image/dark overlay. */
+  body header.hero h1,body header.hero .hero-sub,body header.hero .hero-sub strong,
+  body header.hero .hero-eyebrow,body header.hero .hero-chips span{
+    -webkit-text-fill-color:initial!important;text-shadow:0 2px 12px rgba(0,32,46,.72)!important;
+  }
+
+  /* Avoid expensive offscreen painting while preserving indexability. */
+  main section:not(:first-of-type), footer, aside{content-visibility:auto;contain-intrinsic-size:1px 720px;}
+}
+</style>
+<!-- /EC LIGHTHOUSE MOBILE QUICK WINS -->
+</head>
 <body data-screen-label="Home">
 <a class="skip-nav" href="#main-content">Saltar al contenido principal</a><!-- NAV -->
 <nav aria-label="Navegação principal" class="top" id="topnav">
@@ -1736,7 +1770,7 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 <span class="fato-label-hero">Calificación promedio</span>
 </div>
 <div class="fato-item-hero">
-<span class="fato-num-hero">+100K</span>
+<span class="fato-num-hero">+84K</span>
 <span class="fato-label-hero">Seguidores en Instagram</span>
 </div>
 <div class="fato-item-hero">
@@ -2944,7 +2978,7 @@ Para quienes buscan <strong>dónde comer en el Pan de Azúcar</strong>, <strong>
 <li><a href="#">Av. Pasteur, 520<br/>Urca · Río de Janeiro · RJ</a></li>
 <li><a href="tel:+5521966837556">+55 21 96683-7556</a></li>
 <li><a href="mailto:eventos@embaixadacarioca.com.br">eventos@embaixadacarioca.com.br</a></li>
-<li><a href="https://instagram.com/embaixadacarioca">Instagram · +100K</a></li>
+<li><a href="https://instagram.com/embaixadacarioca">Instagram · +84K</a></li>
 </ul>
 </div>
 </div>
