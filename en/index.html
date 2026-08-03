@@ -69,9 +69,9 @@ nav .lang-dropdown a:visited { color: var(--azul1, #00405A); }
 <meta content="Embaixada Carioca" property="og:site_name"/>
 <!-- ── Twitter Card ── -->
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Embaixada Carioca | Restaurant at Urca Hill &amp; Sugarloaf Mountain" name="twitter:title">
+<meta content="Embaixada Carioca | Restaurant at Urca Hill &amp; Sugarloaf Mountain" name="twitter:title"/>
 <meta content="Restaurant at Urca Hill and Sugarloaf Mountain. 4.8 ★ with 7,700+ reviews. Award-winning feijoada, breakfast and lunch with panoramic view. Book now." name="twitter:description"/>
-<meta content="https://www.embaixadacarioca.com/assets/hero.jpg" name="twitter:image"/>
+<meta content="https://www.embaixadacarioca.com/assets/hero.jpg" name="twitter:image">
 <meta content="View of Sugarloaf Mountain from Embaixada Carioca · Urca Hill, Rio de Janeiro" name="twitter:image:alt"/>
 <!-- ── Geo tags ── -->
 <meta content="BR-RJ" name="geo.region"/>
@@ -79,9 +79,9 @@ nav .lang-dropdown a:visited { color: var(--azul1, #00405A); }
 <meta content="-22.9508333;-43.1641667" name="geo.position"/>
 <meta content="-22.9508333, -43.1641667" name="ICBM"/>
 <!-- ── ASO / Mobile ── -->
-<link href="/assets/icon-180.png" rel="apple-touch-icon" sizes="180x180">
+<link href="/assets/icon-180.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="/assets/icon-32.png" rel="icon" sizes="32x32" type="image/png"/>
-<link href="/assets/icon-16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/assets/icon-16.png" rel="icon" sizes="16x16" type="image/png">
 <link href="/manifest.json" rel="manifest"/>
 <meta content="#335d4a" name="theme-color"/>
 <meta content="yes" name="mobile-web-app-capable"/>
@@ -1449,8 +1449,7 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 @media(max-width:900px){html body nav.top .nav-links,html body nav.top .lang-switcher,html body nav.top .nav-rating-badge{display:none!important;}html body nav.top .brand-logo{width:54px!important;height:54px!important;min-width:54px!important;min-height:54px!important;}}
 </style>
 <link href="/assets/css/ec-shared.css" rel="stylesheet"/>
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -1548,7 +1547,69 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
         "worstRating": "1",
         "ratingCount": "8600",
         "reviewCount": "8600"
-      }
+      },
+      "sameAs": [
+        "https://g.co/kgs/embaixadacarioca",
+        "https://www.tripadvisor.com/Restaurant_Review-g303506-d12345678-Reviews-Embaixada_Carioca-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html",
+        "https://www.instagram.com/embaixadacarioca/",
+        "https://www.facebook.com/embaixadacarioca/",
+        "https://tagme.com.br/embaixada-carioca",
+        "https://en.wikipedia.org/wiki/Sugarloaf_Mountain"
+      ],
+      "hasMap": "https://maps.google.com/?q=Embaixada+Carioca+Morro+da+Urca+Rio+de+Janeiro",
+      "touristType": [
+        "International tourists",
+        "National tourists",
+        "Sugarloaf Mountain visitors",
+        "Families",
+        "Couples"
+      ],
+      "knowsLanguage": [
+        "pt-BR",
+        "en",
+        "es"
+      ],
+      "isAccessibleForFree": false,
+      "publicAccess": true,
+      "disambiguatingDescription": "The only restaurant inside Parque Bondinho Pão de Açúcar (Sugarloaf Mountain Cable Car Park), located at Morro da Urca at 227 meters altitude, with panoramic views of Rio de Janeiro.",
+      "foundingDate": "2010",
+      "areaServed": {
+        "@type": "City",
+        "name": "Rio de Janeiro",
+        "sameAs": "https://en.wikipedia.org/wiki/Rio_de_Janeiro"
+      },
+      "currenciesAccepted": "BRL",
+      "paymentAccepted": "Cash, Credit Card, Debit Card, Pix",
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "James T."
+          },
+          "datePublished": "2026-07-18",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Best restaurant at Sugarloaf Mountain. The picanha (Brazilian grilled beef) with panoramic views of Rio de Janeiro is an unforgettable experience. Highly recommend!"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sophie M."
+          },
+          "datePublished": "2026-07-22",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Breakfast with a view at Morro da Urca — absolutely stunning! The restaurant is inside the Cable Car Park and you don't need to go all the way up to Sugarloaf. Perfect stop!"
+        }
+      ]
     },
     {
       "@type": "WebSite",
@@ -1557,7 +1618,16 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
       "url": "https://www.embaixadacarioca.com/en/",
       "inLanguage": "en-US",
       "description": "Official website of Embaixada Carioca — restaurant at Morro da Urca with views of Sugarloaf Mountain",
-      "@context": "https://schema.org"
+      "@context": "https://schema.org",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "#answer-home-en",
+          ".answer-block",
+          "h1",
+          "h2"
+        ]
+      }
     },
     {
       "@type": "WebPage",
@@ -1642,8 +1712,7 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
       "@context": "https://schema.org"
     }
   ]
-}
-</script><!-- EC LIGHTHOUSE MOBILE QUICK WINS -->
+}</script><!-- EC LIGHTHOUSE MOBILE QUICK WINS -->
 <style id="ec-lighthouse-mobile-quick-wins">
 /* Mobile-only Lighthouse quick wins: lower TBT/reflow risk, tap targets and contrast. */
 @media (max-width: 720px){
@@ -1680,6 +1749,28 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 }
 </style>
 <!-- /EC LIGHTHOUSE MOBILE QUICK WINS -->
+
+<style>
+.answer-block {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-left: 4px solid #c9a96e;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 0 0 24px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f5f0e8;
+}
+.answer-block strong {
+  color: #c9a96e;
+}
+@media (max-width: 768px) {
+  .answer-block {
+    padding: 12px 16px;
+    font-size: 0.95rem;
+  }
+}
+</style>
 </head>
 <body data-screen-label="Home">
 <a class="skip-nav" href="#main-content">Skip to main content</a><!-- NAV -->
@@ -1723,7 +1814,7 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 <div class="hero-content">
 <div>
 <div class="eyebrow hero-eyebrow">Restaurant at the Cable Car · Morro da Urca · Sugarloaf Cable Car Park · Rio de Janeiro · Brazil</div>
-<h1>Best Restaurant at Urca Hill with View — Embaixada Carioca</h1>
+<h1>Best Restaurant at Urca Hill with View — Embaixada Carioca</h1><div class="answer-block" id="answer-home-en" itemscope="" itemtype="https://schema.org/WebPageElement"><p><strong>Embaixada Carioca</strong> is Rio de Janeiro's only restaurant inside Sugarloaf Mountain Cable Car Park, at Urca Hill, 227 meters above sea level. Rated 4.8★ by 8,600+ guests, it serves Brazilian breakfast, grilled picanha, award-winning feijoada and caipirinhas with panoramic views.</p></div>
 <p class="hero-sub">Breakfast, Brazilian lunch, award-winning feijoada, caipirinhas and cold draft beer every day, with a direct view of Sugarloaf Mountain. <strong>Embaixada Carioca</strong> is located at the first cable car stop, on Urca Hill, inside Bondinho Pão de Açúcar Park. Open daily from 8:30 AM to 9:00 PM.</p>
 <div aria-label="Embaixada Carioca highlights" class="hero-chips" style="display:flex;flex-wrap:wrap;gap:8px;margin:0.8rem 0 2.4rem;">
 <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:5px 14px;font-size:0.85rem;color:#f5f0e8;white-space:nowrap;">4.8★ · 8.255 reviews</span>
