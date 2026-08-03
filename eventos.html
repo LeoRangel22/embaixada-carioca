@@ -16,10 +16,10 @@
 <meta content="website" property="og:type"/>
 <meta content="pt_BR" property="og:locale"/>
 <meta content="Embaixada Carioca" property="og:site_name"/>
-<meta content="https://www.embaixadacarioca.com/eventos.html" property="og:url">
+<meta content="https://www.embaixadacarioca.com/eventos.html" property="og:url"/>
 <meta content="Eventos no Morro da Urca | Embaixada Carioca — Vista Única" property="og:title"/>
 <meta content="Realize seu evento no Morro da Urca com vista para o Pão de Açúcar. Embaixada Carioca: casamentos, aniversários e eventos corporativos. Solicite orçamento." property="og:description"/>
-<meta content="https://www.embaixadacarioca.com/assets/hero.jpg" property="og:image"/>
+<meta content="https://www.embaixadacarioca.com/assets/hero.jpg" property="og:image">
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Eventos no Morro da Urca | Embaixada Carioca — Vista Única" name="twitter:title"/>
 <meta content="Realize seu evento no Morro da Urca com vista para o Pão de Açúcar. Embaixada Carioca: casamentos, aniversários e eventos corporativos. Solicite orçamento." name="twitter:description"/>
@@ -31,7 +31,7 @@
 <link href="/assets/icon-180.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="/assets/icon-32.png" rel="icon" sizes="32x32" type="image/png"/>
 <link href="/manifest.json" rel="manifest"/>
-<meta content="#00405a" name="theme-color">
+<meta content="#00405a" name="theme-color"/>
 <style>
     :root{--azul:#00405a;--azul2:#527f8f;--verde:#335d4a;--verde2:#cbded4;--amarelo:#f59b1e;--areia:#ede2c9;--paper:#f6efde;--cinza:#485156;--max:1180px;--gutter:clamp(20px,5vw,64px)}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Catamaran,Verdana,system-ui,sans-serif;background:var(--paper);color:var(--azul);line-height:1.55}a{color:inherit}img{max-width:100%;height:auto}.wrap{max-width:var(--max);margin:auto;padding:0 var(--gutter)}
@@ -227,7 +227,7 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
       page_location: window.location.href
     });
   </script>
-</meta></meta><script type="application/ld+json">{
+</meta><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -370,14 +370,45 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
       "disambiguatingDescription": "Único restaurante dentro do Parque Bondinho Pão de Açúcar, localizado no Morro da Urca a 227 metros de altitude, com vista panorâmica para o Rio de Janeiro.",
       "foundingDate": "2010",
       "currenciesAccepted": "BRL",
-      "paymentAccepted": "Cash, Credit Card, Debit Card, Pix"
+      "paymentAccepted": "Cash, Credit Card, Debit Card, Pix",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "8600",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Pedro A."
+          },
+          "datePublished": "2026-07-28",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Localização única no Rio de Janeiro. Dentro do Parque Bondinho, no Morro da Urca, com vista para o Pão de Açúcar. Atendimento excelente e comida deliciosa."
+        }
+      ]
     },
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "@id": "https://www.embaixadacarioca.com/#website",
       "name": "Embaixada Carioca",
-      "url": "https://www.embaixadacarioca.com/"
+      "url": "https://www.embaixadacarioca.com/",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "#answer-eventos",
+          ".answer-block",
+          "h1"
+        ]
+      }
     },
     {
       "@context": "https://schema.org",
@@ -526,7 +557,36 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
     }
   ]
 }</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","url":"https://www.embaixadacarioca.com/eventos.html","speakable":{"@type":"SpeakableSpecification","cssSelector":["h1",".hero-lead",".eventos-intro","h2"]}}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://www.embaixadacarioca.com/eventos.html",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      "h1",
+      ".hero-lead",
+      ".eventos-intro",
+      "h2"
+    ]
+  }
+}</script>
+<style>
+.answer-block {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-left: 4px solid #c9a96e;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 0 0 24px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f5f0e8;
+}
+.answer-block strong { color: #c9a96e; }
+@media (max-width: 768px) {
+  .answer-block { padding: 12px 16px; font-size: 0.95rem; }
+}
+</style>
 </head>
 <body>
 <a class="skip-nav" href="#conteudo-principal">Pular para o conteúdo principal</a>
@@ -562,7 +622,7 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 <header class="hero">
 <div class="wrap">
 <div class="eyebrow">Eventos · Morro da Urca · Parque Bondinho Pão de Açúcar</div>
-<h1>Eventos no <em>Morro da Urca</em> com vista para o Pão de Açúcar.</h1>
+<h1>Eventos no <em>Morro da Urca</em> com vista para o Pão de Açúcar.</h1><div class="answer-block" id="answer-eventos" itemscope="" itemtype="https://schema.org/WebPageElement"><p>A <strong>Embaixada Carioca</strong> oferece espaços para eventos corporativos, casamentos e celebrações privadas no Morro da Urca, com vista panorâmica para o Rio de Janeiro a 227 metros de altitude. Capacidade para grupos. Contato: eventos@embaixadacarioca.com.br.</p></div>
 <p>Um endereço icônico para eventos corporativos, grupos, agências, celebrações e experiências gastronômicas no Rio de Janeiro — na primeira parada do Bondinho.</p>
 <div aria-label="Destaques" class="chips">
 <span class="chip">Dentro do Parque Bondinho</span>

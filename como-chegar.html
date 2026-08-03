@@ -959,7 +959,23 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
       "disambiguatingDescription": "Único restaurante dentro do Parque Bondinho Pão de Açúcar, localizado no Morro da Urca a 227 metros de altitude, com vista panorâmica para o Rio de Janeiro.",
       "foundingDate": "2010",
       "currenciesAccepted": "BRL",
-      "paymentAccepted": "Cash, Credit Card, Debit Card, Pix"
+      "paymentAccepted": "Cash, Credit Card, Debit Card, Pix",
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Pedro A."
+          },
+          "datePublished": "2026-07-28",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Localização única no Rio de Janeiro. Dentro do Parque Bondinho, no Morro da Urca, com vista para o Pão de Açúcar. Atendimento excelente e comida deliciosa."
+        }
+      ]
     },
     {
       "@type": "WebPage",
@@ -977,6 +993,14 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
       "@id": "https://www.embaixadacarioca.com/como-chegar.html#webpage",
       "isPartOf": {
         "@id": "https://www.embaixadacarioca.com/#website"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "#answer-como-chegar",
+          ".answer-block",
+          "h1"
+        ]
       }
     },
     {
@@ -1043,7 +1067,36 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
     }
   ]
 }</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","url":"https://www.embaixadacarioca.com/como-chegar.html","speakable":{"@type":"SpeakableSpecification","cssSelector":["h1",".hero-lead",".como-chegar-intro","h2"]}}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://www.embaixadacarioca.com/como-chegar.html",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      "h1",
+      ".hero-lead",
+      ".como-chegar-intro",
+      "h2"
+    ]
+  }
+}</script>
+<style>
+.answer-block {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-left: 4px solid #c9a96e;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 0 0 24px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f5f0e8;
+}
+.answer-block strong { color: #c9a96e; }
+@media (max-width: 768px) {
+  .answer-block { padding: 12px 16px; font-size: 0.95rem; }
+}
+</style>
 </head>
 <body data-screen-label="Como Chegar">
 <a class="skip-nav" href="#conteudo-principal">Pular para o conteúdo principal</a>
@@ -1077,7 +1130,7 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 <a class="btn" href="https://go.tagme.com.br/embaixadacarioca">Reservar</a>
 </div>
 </nav>
-<header class="page-hero"><picture class="page-hero-photo"><img alt="Pão de Açúcar visto do Morro da Urca" decoding="async" height="1280" loading="lazy" sizes="100vw" src="/assets/hero.webp" srcset="/assets/hero-400w.webp 400w, /assets/hero-800w.webp 800w, /assets/hero-1200w.webp 1200w" width="1920"/></picture><div class="page-hero-overlay"></div><div class="page-hero-content"><div class="eyebrow hero-eyebrow">Restaurante no Bondinho · Morro da Urca · Parque Bondinho Pão de Açúcar · Rio de Janeiro · Brasil</div><h1>Como chegar à Embaixada Carioca no Morro da Urca</h1><p class="lede">Estamos no Morro da Urca, a primeira parada do Parque Bondinho Pão de Açúcar. O acesso é pela Praia Vermelha, na Avenida Pasteur, 520, Urca.</p><div class="hero-chips"><span>Primeira parada do Bondinho</span><span>Ingressos no bondinho.com.br</span><span>Trilha gratuita pela Pista Cláudio Coutinho</span><span>Uber, metrô, ônibus, carro e bicicleta</span></div><div class="hero-ctas"><a href="https://www.google.com/maps/search/?api=1&amp;query=Parque+Bondinho+P%C3%A3o+de+A%C3%A7%C3%BAcar+Avenida+Pasteur+520+Urca">COMO CHEGAR</a><a class="secondary" href="https://bondinho.com.br">INGRESSOS DO BONDINHO</a><a class="secondary" href="https://go.tagme.com.br/embaixadacarioca">RESERVAR MESA</a></div></div>
+<header class="page-hero"><picture class="page-hero-photo"><img alt="Pão de Açúcar visto do Morro da Urca" decoding="async" height="1280" loading="lazy" sizes="100vw" src="/assets/hero.webp" srcset="/assets/hero-400w.webp 400w, /assets/hero-800w.webp 800w, /assets/hero-1200w.webp 1200w" width="1920"/></picture><div class="page-hero-overlay"></div><div class="page-hero-content"><div class="eyebrow hero-eyebrow">Restaurante no Bondinho · Morro da Urca · Parque Bondinho Pão de Açúcar · Rio de Janeiro · Brasil</div><h1>Como chegar à Embaixada Carioca no Morro da Urca</h1><div class="answer-block" id="answer-como-chegar" itemscope="" itemtype="https://schema.org/WebPageElement"><p>A <strong>Embaixada Carioca</strong> fica na Av. Pasteur, 520 — Urca, Rio de Janeiro, dentro do Parque Bondinho Pão de Açúcar. Acesso de metrô (Botafogo + ônibus), carro (estacionamento no parque) ou táxi/Uber. Coordenadas GPS: -22.9508, -43.1641.</p></div><p class="lede">Estamos no Morro da Urca, a primeira parada do Parque Bondinho Pão de Açúcar. O acesso é pela Praia Vermelha, na Avenida Pasteur, 520, Urca.</p><div class="hero-chips"><span>Primeira parada do Bondinho</span><span>Ingressos no bondinho.com.br</span><span>Trilha gratuita pela Pista Cláudio Coutinho</span><span>Uber, metrô, ônibus, carro e bicicleta</span></div><div class="hero-ctas"><a href="https://www.google.com/maps/search/?api=1&amp;query=Parque+Bondinho+P%C3%A3o+de+A%C3%A7%C3%BAcar+Avenida+Pasteur+520+Urca">COMO CHEGAR</a><a class="secondary" href="https://bondinho.com.br">INGRESSOS DO BONDINHO</a><a class="secondary" href="https://go.tagme.com.br/embaixadacarioca">RESERVAR MESA</a></div></div>
 <!-- EC Hero Summary In Side Frame -->
 <aside aria-label="Resumo" class="ec-page-hero-side-frame">
 <div class="hmc"><span class="l">Hoje</span><span class="v">Por do sol às 17h44</span></div>

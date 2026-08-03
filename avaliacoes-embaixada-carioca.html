@@ -53,6 +53,14 @@
             "item": "https://www.embaixadacarioca.com/avaliacoes-embaixada-carioca.html"
           }
         ]
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "#answer-avaliacoes",
+          ".answer-block",
+          "h1"
+        ]
       }
     },
     {
@@ -415,6 +423,23 @@
       text-decoration: none;
     }
   </style>
+
+<style>
+.answer-block {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-left: 4px solid #c9a96e;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 0 0 24px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f5f0e8;
+}
+.answer-block strong { color: #c9a96e; }
+@media (max-width: 768px) {
+  .answer-block { padding: 12px 16px; font-size: 0.95rem; }
+}
+</style>
 </head>
 <body>
 <nav aria-label="Navegação principal" class="top" id="topnav">
@@ -432,7 +457,7 @@
 </nav>
 <!-- Hero -->
 <section class="reviews-hero">
-<h1>Avaliações sobre a Embaixada Carioca — 4,8★ com mais de 8.600 Opiniões</h1>
+<h1>Avaliações sobre a Embaixada Carioca — 4,8★ com mais de 8.600 Opiniões</h1><div class="answer-block" id="answer-avaliacoes" itemscope="" itemtype="https://schema.org/WebPageElement"><p>A <strong>Embaixada Carioca</strong> tem nota <strong>4,8★</strong> em mais de <strong>8.600 avaliações</strong> no Google e TripAdvisor — uma das maiores pontuações entre restaurantes turísticos do Rio de Janeiro. Localizada no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar.</p></div>
 <p class="subtitle">O que dizem os clientes do único restaurante dentro do Parque Bondinho Pão de Açúcar</p>
 <div class="rating-summary">
 <div class="rating-box">
