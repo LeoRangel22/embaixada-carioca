@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """Fix Google Search Console Review snippets issue.
 
-Problem exported from GSC: "A avaliação tem várias classificações agregadas".
+Problems exported from GSC:
+- "A avaliação tem várias classificações agregadas".
+- "O campo itemReviewed não foi encontrado" in Review items.
 
 Action:
 - Scan every public HTML file.
-- Sanitize JSON-LD blocks by removing Review Snippet rating structures:
-  AggregateRating objects, aggregateRating keys and nested rating fields.
+- Sanitize JSON-LD blocks by removing Review Snippet structures:
+  Review, Rating and AggregateRating objects plus their nested fields.
 - Keep Restaurant, WebPage, FAQPage, BreadcrumbList, Menu and other schema intact.
 - Write a compact audit report for Search Console follow-up.
 """
@@ -26,8 +28,11 @@ SITE = "https://www.embaixadacarioca.com/"
 
 JSONLD_RE = re.compile(r'(<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>)(.*?)(</script>)', re.I | re.S)
 
-FORBIDDEN_TYPES = {"AggregateRating"}
+FORBIDDEN_TYPES = {"AggregateRating", "Rating", "Review"}
 FORBIDDEN_KEYS = {
+    "review",
+    "reviews",
+    "reviewRating",
     "aggregateRating",
     "ratingValue",
     "reviewCount",
@@ -37,6 +42,9 @@ FORBIDDEN_KEYS = {
 }
 
 GSC_AFFECTED_URLS = [
+    "https://www.embaixadacarioca.com/avaliacoes-embaixada-carioca.html",
+    "https://www.embaixadacarioca.com/en/reviews-embaixada-carioca.html",
+    "https://www.embaixadacarioca.com/es/resenas-embaixada-carioca.html",
     "https://www.embaixadacarioca.com/morro-da-urca.html",
     "https://www.embaixadacarioca.com/onde-comer-no-pao-de-acucar.html",
     "https://www.embaixadacarioca.com/restaurante-morro-da-urca.html",
@@ -134,10 +142,12 @@ def sanitize_html(text: str) -> tuple[str, int, int, int, list[str]]:
         counter = {"removed": 0}
         cleaned = clean_jsonld(obj, counter)
         removed_total += counter["removed"]
+        if counter["removed"] == 0:
+            return match.group(0)
         if cleaned is None:
             return ""
         collect_forbidden(cleaned, remaining)
-        serialized = json.dumps(cleaned, ensure_ascii=False, separators=(",", ":"))
+        serialized = json.dumps(cleaned, ensure_ascii=False, indent=2)
         return opener + serialized + closer
 
     updated = JSONLD_RE.sub(repl, text)
@@ -179,7 +189,8 @@ def write_report(results: list[FileResult]) -> int:
         "",
         "## Problema do Google Search Console",
         "- A avaliação tem várias classificações agregadas.",
-        "- Estratégia: remover AggregateRating e campos de rating do JSON-LD, preservando os demais schemas.",
+        "- O campo `itemReviewed` não foi encontrado em itens `Review`.",
+        "- Estratégia: remover Review, Rating, AggregateRating e seus campos do JSON-LD, preservando os demais schemas.",
         "",
         "## Resumo",
         f"- Arquivos HTML escaneados: {len(results)}",
