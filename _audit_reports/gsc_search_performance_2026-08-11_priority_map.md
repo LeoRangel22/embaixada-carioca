@@ -63,6 +63,7 @@ Status geral: **PASS**
 ## Correções aplicadas
 
 - Reforços visíveis e naturais nas páginas comerciais vencedoras, sem criar novas URLs.
+- Diferencial confirmado pelo responsável padronizado em PT/EN/ES: a Embaixada Carioca é o único restaurante do Parque Bondinho com vista direta para o Pão de Açúcar; as demais opções gastronômicas estão voltadas para outros cartões-postais do Rio.
 - Conteúdo misturado em português/inglês removido de `en/parque-bondinho.html`.
 - Conteúdo misturado em português/espanhol removido de `es/parque-bondinho.html`.
 - Alegações não comprovadas de “restaurante oficial” e “único restaurante completo” removidas das versões EN/ES do Parque Bondinho.
