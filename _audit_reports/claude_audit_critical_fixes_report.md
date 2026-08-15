@@ -17,9 +17,9 @@ Atuar sobre os pontos críticos do relatório Claude: padronização do prêmio 
 - Alegações envolvendo Cantina do MAM foram neutralizadas se presentes no HTML.
 
 ## Resumo
-- HTML analisados: **122**
-- Arquivos alterados: **0**
-- Substituições textuais: **0**
+- HTML analisados: **116**
+- Arquivos alterados: **2**
+- Substituições textuais: **2**
 - Nós/campos JSON-LD de rating/review removidos: **0**
 - Workflows encontrados: **32**
 
@@ -66,3 +66,5 @@ Nenhuma ocorrência dos termos críticos monitorados.
 
 | Arquivo | Changed | Substituições | JSON-LD rating/review removidos | Notas |
 |---|---:|---:|---:|---|
+| `en/index.html` | True | 1 | 0 | followers-instagram-visible-en-to-84k:1 |
+| `en/morro-da-urca.html` | True | 1 | 0 | award-en-canonical-morro-faq:1 |

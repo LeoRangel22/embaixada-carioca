@@ -24,6 +24,6 @@ Restaurar no site o conteúdo do cardápio completo e garantir que a página de 
 
 | Idioma | Página | Changed | Seções | Itens |
 |---|---|---:|---:|---:|
-| `pt` | `cardapio.html` | True | 12 | 149 |
+| `pt` | `cardapio.html` | False | 12 | 149 |
 | `en` | `en/cardapio.html` | False | 12 | 149 |
 | `es` | `es/cardapio.html` | False | 12 | 149 |

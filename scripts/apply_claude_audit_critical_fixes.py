@@ -80,8 +80,15 @@ TEXT_REPLACEMENTS: list[tuple[str, str, str]] = [
     (r"m[aá]s\s+de\s+100K\s+seguidores", "más de 84K seguidores", "followers-es-100k-to-84k"),
     (r"\+100K(?=\s*</div><div[^>]*>\s*Seguidores)", "84K", "followers-es-counter-to-84k"),
     (r"Instagram\s*·\s*\+100K", "Instagram · 84K", "followers-footer-100k-to-84k"),
+    (r"aria-label=\"Seguir @embaixadacarioca no Instagram — 100\.716 seguidores\"", 'aria-label="Seguir @embaixadacarioca no Instagram — 84 mil seguidores"', "followers-instagram-aria-to-84k"),
+    (r"aria-label=\"Follow @embaixadacarioca on Instagram — 100\.716 followers\"", 'aria-label="Follow @embaixadacarioca on Instagram — 84K followers"', "followers-instagram-aria-en-to-84k"),
+    (r"aria-label=\"Seguir @embaixadacarioca en Instagram — 100\.716 seguidores\"", 'aria-label="Seguir @embaixadacarioca en Instagram — 84K seguidores"', "followers-instagram-aria-es-to-84k"),
+    (r"·\s*100\.716\s+seguidores", "· 84 mil seguidores", "followers-instagram-visible-to-84k"),
+    (r"·\s*100\.716\s+followers", "· 84K followers", "followers-instagram-visible-en-to-84k"),
     (r"Instagram\s*·\s*\+100\s+mil", "Instagram · 84 mil", "followers-footer-100mil-to-84mil"),
     (r"\+100K", "84K", "followers-generic-100k-to-84k"),
+    (r">100<span([^>]*)>K</span>", r">84<span\1>K</span>", "followers-split-counter-to-84k"),
+    (r"Voted one of the best in Rio by Veja Rio magazine \(Comer (?:&amp;|&) Beber 2025 and 2026\)\.", "Named Best Feijoada in Rio de Janeiro by Veja Rio Comer &amp; Beber 2025/2026.", "award-en-canonical-morro-faq"),
     (r"\+100\s+mil", "84 mil", "followers-generic-100mil-to-84mil"),
 ]
 
