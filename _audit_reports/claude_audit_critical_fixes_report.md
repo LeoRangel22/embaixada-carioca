@@ -17,7 +17,7 @@ Atuar sobre os pontos críticos do relatório Claude: padronização do prêmio 
 - Alegações envolvendo Cantina do MAM foram neutralizadas se presentes no HTML.
 
 ## Resumo
-- HTML analisados: **118**
+- HTML analisados: **122**
 - Arquivos alterados: **0**
 - Substituições textuais: **0**
 - Nós/campos JSON-LD de rating/review removidos: **0**

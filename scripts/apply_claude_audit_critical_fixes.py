@@ -27,7 +27,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / "_audit_reports" / "claude_audit_critical_fixes_report.md"
 EXCLUDED_DIRS = {
     ".git", "node_modules", "_backups", "_templates",
-    "_site", "dist", "build",
+    "_site", "dist", "build", "tests",
 }
 HTML_FILES = sorted(
     p for p in ROOT.rglob("*.html")
@@ -56,6 +56,22 @@ TEXT_REPLACEMENTS: list[tuple[str, str, str]] = [
     (r"O\s+segunof\s+the\s+cable\s+car", "The second section of the cable car", "en-typo-segunof"),
     (r"experi[eê]ncia\s+gastron[oô]micas", "gastronomic experience", "en-portunhol-concordance"),
     (r"Perfeito\s+para\s+o\s+sunset\s+com\s+draft\s+beer\s+no\s+Urca\s+Hill", "Perfect for sunset with draft beer at Urca Hill", "en-portunhol-perfect"),
+    (r'<li><a href="/cafe-da-manha\.html">Café da Manhã</a></li>', '<li><a href="/en/cafe-da-manha.html">Breakfast</a></li>', "en-nav-breakfast"),
+    (r'<li><a href="/almoco\.html">Almoço</a></li>', '<li><a href="/en/almoco.html">Lunch</a></li>', "en-nav-lunch"),
+    (r'<li><a href="/como-chegar\.html">Como Chegar</a></li>', '<li><a href="/en/how-to-get-there.html">How to get there</a></li>', "en-nav-directions"),
+    (r'<li><a href="/eventos\.html">Eventos</a></li>', '<li><a href="/en/eventos.html">Events</a></li>', "en-nav-events"),
+    (r'<li><a href="/cardapio\.html">Cardápio</a></li>', '<li><a href="/en/cardapio.html">Menu</a></li>', "en-nav-menu"),
+    (r'<li><a href="/guia-do-rio\.html">Guia do Rio</a></li>', '<li><a href="/en/guia-do-rio.html">Rio guide</a></li>', "en-nav-rio-guide"),
+    (r"Premiada\s+como\s+best\s+in\s+Brazil\s+pela\s+Revista\s+Veja\s+Rio\s+Comer\s*&\s*Beber\s+2025/2026\.", "Winner of Best Feijoada in Rio de Janeiro — Veja Rio Comer & Beber 2025/2026.", "en-award-sentence"),
+    (r"Servida\s+every\s+day,?\s+das\s+11:30\s+AM\s+[àa]s\s+5:00\s+PM\.", "Served every day from 11:30 AM to 5:00 PM.", "en-serving-hours"),
+    (r"Servida\s+every\s+day\.", "Served every day.", "en-served-daily"),
+    (r"O\s+único\s+<strong>lunch\s+dentro\s+do\s+Bondinho\s+Pão\s+de\s+Açúcar\s+Park</strong>,\s+at\s+227\s+meters\s+altitude\s+no\s+Urca\s+Hill\.\s+Award-winning\s+Brazilian\s+gastronomy:\s+picanha\s+à\s+brasileira\s+e\s+a\s+feijoada\s+eleita\s+best\s+in\s+Brazil\s+pela\s+Revista\s+Veja\s+Rio\s+Comer\s*&\s*Beber\s+2025/2026\.\s+Para\s+quién\s+busca\s+<strong>onde\s+have\s+lunch\s+no\s+Rio\s+de\s+Janeiro</strong>\s+com\s+a\s+vista\s+mais\s+bonita\s+da\s+cidade\s+—\s+entre\s+os\s+<strong>restaurantes\s+com\s+vista\s+no\s+Rio\s+de\s+Janeiro</strong>,\s+este\s+es\s+o\s+único\s+atop\s+Urca\s+Hill\.", "The only <strong>lunch inside Bondinho Pão de Açúcar Park</strong>, 227 meters above sea level on Urca Hill. Enjoy Brazilian picanha and the winner of Best Feijoada in Rio de Janeiro — Veja Rio Comer & Beber 2025/2026 — at the park's only restaurant with a direct view of Sugarloaf Mountain.", "en-lunch-hero-rewrite"),
+    (r"O\s+<strong>sunset\s+m[aá]s\s+bonito\s+do\s+Rio\s+de\s+Janeiro</strong>\s+—\s+sunset\s+atrás\s+of\s+Sugarloaf\s+Mountain,\s+visto\s+do\s+alto\s+do\s+Urca\s+Hill\.\s+Caipirinha\s+com\s+cachaça\s+Magnífica\s+e\s+draft\s+beer\s+Heineken\s+\(2º\s+best\s+in\s+Brazil\)\.\s+Um\s+dos\s+<strong>lugares\s+m[aá]s\s+bonitos\s+do\s+Rio\s+de\s+Janeiro</strong>\s+para\s+um\s+momento\s+romântico,\s+um\s+aniversário\s+ou\s+simplesmente\s+o\s+fim\s+de\s+um\s+dia\s+perfeito\s+na\s+cidade\.\s+Open\s+daily\s+das\s+5:00\s+PM\s+[àa]s\s+9:00\s+PM\.", "Watch the sun set behind Sugarloaf Mountain from Urca Hill while enjoying a caipirinha made with Magnífica cachaça or an ice-cold Heineken draft beer. It is an ideal setting for a romantic evening, a birthday or a relaxed end to a day in Rio. Open daily from 5:00 PM to 9:00 PM.", "en-sunset-hero-rewrite"),
+    (r"O\s+sunset\s+m[aá]s\s+bonito\s+in\s+Rio\s+de\s+Janeiro,\s+com\s+música\s+ao\s+vivo\s+e\s+drinks\s+no\s+Urca\s+Hill\.", "Sunset in Rio de Janeiro with live music and drinks on Urca Hill.", "en-sunset-description"),
+    (r"Veja\s+como\s+é\s+o\s+sunset\s+m[aá]s\s+bonito\s+in\s+Rio\s+de\s+Janeiro\s+no\s+Urca\s+Hill\.\s+Música\s+ao\s+vivo,\s+caipirinhas\s+e\s+vista\s+panorâmica\s+dGuanabara\s+Bay\s+e\s+of\s+Sugarloaf\s+Mountain\.", "See sunset from Urca Hill with live music, caipirinhas and panoramic views of Guanabara Bay and Sugarloaf Mountain.", "en-sunset-long-description"),
+    (r"A\s+<a\s+href=\"/en/almoco\.html\"\s+title=\"Lunch\s+no\s+Urca\s+Hill\s+com\s+feijoada\s+premiada\">feijoada\s+da\s+Embaixada\s+Carioca</a>\s+é\s+a\s+mesma\s+feijoada\s+premiada\s+da\s+Academia\s+da\s+Cachaça,\s+eleita\s+a\s+best\s+in\s+Brazil\s+pela\s+Revista\s+Veja\s+Rio\s+Comer\s*&amp;\s*Beber\s+2025/2026\.\s+Served\s+daily\s+for\s+lunch,\s+with\s+a\s+view\s+of\s+Sugarloaf\s+Mountain\.\s+Uma\s+experiência\s+que\s+combina\s+gastronomia\s+de\s+alto\s+nível\s+com\s+o\s+cenário\s+m[aá]s\s+bonito\s+do\s+Rio\.", "The <a href=\"/en/almoco.html\" title=\"Lunch on Urca Hill with award-winning feijoada\">Embaixada Carioca feijoada</a> is the award-winning Academia da Cachaça recipe, named Best Feijoada in Rio de Janeiro by Veja Rio Comer &amp; Beber 2025/2026. It is served daily for lunch with a direct view of Sugarloaf Mountain.", "en-morro-feijoada-paragraph"),
+    (r"\bno\s+Urca\s+Hill\b", "on Urca Hill", "en-no-urca-to-on"),
+    (r"\bcom\s+a\s+vista\s+of\b", "with a view of", "en-com-vista-of"),
     (r"mais\s+de\s+100K\s+seguidores", "mais de 84 mil seguidores", "followers-pt-100k-to-84k"),
     (r"mais\s+de\s+100\s+mil\s+seguidores", "mais de 84 mil seguidores", "followers-pt-100mil-to-84mil"),
     (r"over\s+100K\s+followers", "over 84K followers", "followers-en-100k-to-84k"),
@@ -63,6 +79,10 @@ TEXT_REPLACEMENTS: list[tuple[str, str, str]] = [
     (r"\+100K(?=\s*</div><div[^>]*>\s*Instagram followers)", "84K", "followers-en-counter-to-84k"),
     (r"m[aá]s\s+de\s+100K\s+seguidores", "más de 84K seguidores", "followers-es-100k-to-84k"),
     (r"\+100K(?=\s*</div><div[^>]*>\s*Seguidores)", "84K", "followers-es-counter-to-84k"),
+    (r"Instagram\s*·\s*\+100K", "Instagram · 84K", "followers-footer-100k-to-84k"),
+    (r"Instagram\s*·\s*\+100\s+mil", "Instagram · 84 mil", "followers-footer-100mil-to-84mil"),
+    (r"\+100K", "84K", "followers-generic-100k-to-84k"),
+    (r"\+100\s+mil", "84 mil", "followers-generic-100mil-to-84mil"),
 ]
 
 # Longer, specific institutional claims: neutralize only if found.
@@ -94,9 +114,17 @@ FORBIDDEN_AFTER = [
     "Cantina do MAM",
     "100K seguidores",
     "100 mil seguidores",
+    "+100K",
+    "+100 mil",
     "segunof",
     "Servida every day no lunch",
     "drinks e petiscos",
+    "best in Brazil pela",
+    "Servida every",
+    "sunset más",
+    "dGuanabara",
+    "Para quién",
+    "onde have",
 ]
 
 @dataclass
@@ -238,8 +266,12 @@ def scan_remaining() -> dict[str, list[str]]:
         text = path.read_text(encoding="utf-8", errors="ignore")
         page_lang = lang_for(path)
         found = []
+        en_only = {
+            "drinks e petiscos", "best in Brazil pela", "Servida every",
+            "sunset más", "dGuanabara", "Para quién", "onde have",
+        }
         for term in FORBIDDEN_AFTER:
-            if term == "drinks e petiscos" and page_lang != "en":
+            if term in en_only and page_lang != "en":
                 continue
             if term.lower() in text.lower():
                 found.append(term)
