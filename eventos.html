@@ -177,7 +177,7 @@ html body header.hero :is(.eyebrow,.hero-eyebrow,.hero-kicker,.page-eyebrow,.pag
 html body header.hero :is(.eyebrow,.hero-eyebrow,.hero-kicker,.page-eyebrow,.page-kicker)::before,html body header.page-hero :is(.eyebrow,.hero-eyebrow,.hero-kicker,.page-eyebrow,.page-kicker)::before{background:#f59b1e!important;border-color:#f59b1e!important;}
 html body header.hero,html body header.page-hero{margin-top:0!important;border:0!important;outline:0!important;box-shadow:none!important;}
 html body header.hero::before,html body header.hero::after,html body header.page-hero::before,html body header.page-hero::after{border:0!important;outline:0!important;box-shadow:none!important;}
-@media(max-width:1500px){html body nav.top .nav-rating-badge{display:none!important;}}
+/* Review badge follows the home navigation above the mobile breakpoint. */
 @media(max-width:1280px){html body nav.top .lang-switcher{display:none!important;}html body nav.top .nav-links{gap:16px!important;}html body nav.top .nav-links a{font-size:11px!important;letter-spacing:.10em!important;}}
 @media(max-width:1120px){html body nav.top .nav-links{gap:14px!important;}}
 @media(max-width:900px){html body nav.top{min-height:76px!important;background:rgba(0,64,90,.88)!important;backdrop-filter:blur(12px)!important;}html body nav.top .nav-inner{height:76px!important;min-height:76px!important;padding:10px 20px!important;}html body nav.top .brand-logo{width:54px!important;height:54px!important;min-width:54px!important;min-height:54px!important;}html body nav.top .nav-links{display:none!important;}html body nav.top .btn{height:46px!important;min-height:46px!important;padding:0 18px!important;font-size:10px!important;letter-spacing:.10em!important;}}
@@ -199,10 +199,10 @@ html body nav.top .nav-rating-badge{flex:0 0 auto!important;}
 html body nav.top .lang-switcher{flex:0 0 auto!important;}
 html body nav.top .btn{flex:0 0 auto!important;min-height:56px!important;height:56px!important;border:0!important;box-shadow:none!important;overflow:hidden!important;}
 html body nav.top .btn[href*="formulario"]{min-width:218px!important;max-width:250px!important;padding-left:24px!important;padding-right:24px!important;font-size:11.5px!important;letter-spacing:.135em!important;}
-html body nav.top:has(.btn[href*="formulario"]) .nav-rating-badge{display:none!important;}
+html body nav.top:has(.btn[href*="formulario"]) .nav-rating-badge{display:inline-flex!important;}
 html body nav.top:has(.btn[href*="formulario"]) .nav-links{gap:clamp(14px,1.45vw,24px)!important;}
 html body nav.top:has(.btn[href*="formulario"]) .nav-inner{padding-left:clamp(22px,3.2vw,54px)!important;padding-right:clamp(22px,3.2vw,54px)!important;gap:clamp(12px,1.15vw,20px)!important;}
-@media(max-width:1800px){html body nav.top .nav-rating-badge{display:none!important;}}
+@media(max-width:900px){html body nav.top .nav-rating-badge{display:none!important;}}
 @media(max-width:1500px){html body nav.top .lang-switcher{display:none!important;}html body nav.top .nav-links{gap:clamp(14px,1.35vw,22px)!important;}html body nav.top .nav-links a{font-size:11.5px!important;letter-spacing:.105em!important;}}
 @media(max-width:1280px){html body nav.top .nav-links{gap:13px!important;}html body nav.top .nav-links a{font-size:11px!important;letter-spacing:.09em!important;}html body nav.top .btn{min-width:128px!important;max-width:180px!important;padding-left:18px!important;padding-right:18px!important;font-size:10.5px!important;letter-spacing:.10em!important;}html body nav.top .btn[href*="formulario"]{min-width:184px!important;max-width:220px!important;}}
 /* Hero eyebrow/location line: final color and typography guard. */
@@ -565,7 +565,7 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 }
 </style>
 </head>
-<body>
+<body data-screen-label="Eventos">
 <a class="skip-nav" href="#conteudo-principal">Pular para o conteúdo principal</a>
 <nav aria-label="Navegação principal" class="top" id="topnav">
 <div class="nav-inner">
@@ -1261,6 +1261,7 @@ html body main .corporate-section a {
 </style>
 <link href="/assets/css/ec-light-bg-contrast-lock.css" rel="stylesheet"/>
 <link href="/assets/css/ec-wcag-final.css" rel="stylesheet"/>
+<link href="/assets/css/ec-design-aaa-fix.css?v=20260815b" rel="stylesheet"/>
 <script defer="" src="/assets/conversion-tracking.js"></script>
 <script defer="" src="/assets/r2d2-dynamic-banner.js"></script>
 <script defer="" src="/assets/bondinho-ticket-notice.js"></script>

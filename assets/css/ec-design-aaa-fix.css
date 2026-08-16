@@ -1,0 +1,169 @@
+/* EC Design AAA Fix — visual consistency and responsive hero flow */
+
+/* The reviews badge already exists inside the canonical navigation. */
+nav.top > .reviews-link {
+  display: none !important;
+}
+
+/* Keep the primary heading typography consistent with the home. */
+header.hero h1,
+header.page-hero h1 {
+  font-family: Catamaran, Verdana, system-ui, sans-serif !important;
+  font-size: clamp(44px, 4.35vw, 64px) !important;
+  line-height: 0.98 !important;
+  letter-spacing: -0.025em !important;
+}
+
+/* Editorial answers belong after the hero, never underneath the fixed nav. */
+.ec-hero-support {
+  position: relative;
+  z-index: 3;
+  padding: 48px 0;
+  background: #f6efde;
+  color: #00405a;
+  border: 0;
+}
+
+.ec-hero-support .ec-hero-support-wrap {
+  width: min(1080px, calc(100% - 44px));
+  margin: 0 auto;
+}
+
+.ec-hero-support .answer-block,
+.ec-hero-support section {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: #00405a !important;
+}
+
+.ec-hero-support section + .answer-block,
+.ec-hero-support .answer-block + section {
+  margin-top: 28px !important;
+}
+
+.ec-hero-support h2 {
+  margin: 0 0 12px;
+  color: #00405a;
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 1.08;
+}
+
+.ec-hero-support p,
+.ec-hero-support li {
+  color: #334f5a !important;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.ec-hero-support ul {
+  margin: 18px 0 0;
+  padding-left: 22px;
+}
+
+/* Events follows the home navigation; only its CTA label/destination differs. */
+@media (min-width: 1181px) {
+  html body[data-screen-label="Eventos"] nav#topnav.top .nav-inner > a.nav-rating-badge.google-review-badge {
+    display: inline-flex !important;
+  }
+}
+
+@media (max-width: 960px) {
+  header.hero h1,
+  header.page-hero h1 {
+    font-size: clamp(32px, 8.5vw, 42px) !important;
+    line-height: 1.03 !important;
+  }
+
+  header.page-hero {
+    height: auto !important;
+    min-height: 100svh !important;
+    overflow: hidden !important;
+    align-items: flex-start !important;
+  }
+
+  body[data-screen-label="Eventos"] header.hero > .wrap {
+    box-sizing: border-box !important;
+    padding-top: 104px !important;
+  }
+
+  header.page-hero .page-hero-content {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100svh !important;
+    padding: 88px 22px 112px !important;
+    display: block !important;
+  }
+
+  header.page-hero .page-hero-content .eyebrow,
+  header.page-hero .page-hero-content .crumbs,
+  header.page-hero .page-hero-content h1,
+  header.page-hero .page-hero-content .lede,
+  header.page-hero .page-hero-content .hero-chips,
+  header.page-hero .page-hero-content .ctas {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  header.page-hero .page-hero-content .eyebrow {
+    margin: 0 0 18px !important;
+    white-space: normal !important;
+  }
+
+  header.page-hero .page-hero-content .crumbs {
+    display: none !important;
+  }
+
+  header.page-hero .page-hero-content h1 {
+    margin: 0 0 20px !important;
+  }
+
+  header.page-hero .page-hero-content .lede {
+    display: block !important;
+    margin: 0 0 20px !important;
+    font-size: 17px !important;
+    line-height: 1.55 !important;
+  }
+
+  header.page-hero .page-hero-content .hero-chips {
+    margin: 0 0 22px !important;
+  }
+
+  header.page-hero .page-hero-content .ctas {
+    margin: 0 !important;
+  }
+
+  header.page-hero .page-hero-content .ctas .btn {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    padding-right: 18px !important;
+    padding-left: 18px !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .ec-page-hero-side-frame {
+    display: none !important;
+  }
+
+  .ec-hero-support {
+    padding: 38px 0;
+  }
+
+  .ec-hero-support p,
+  .ec-hero-support li {
+    font-size: 16px;
+  }
+}
