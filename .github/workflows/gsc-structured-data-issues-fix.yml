@@ -2,14 +2,6 @@ name: GSC structured data issues fix
 
 on:
   workflow_dispatch:
-  push:
-    branches: [master]
-    paths:
-      - "scripts/apply_gsc_structured_data_issues_fix.py"
-      - "scripts/apply_gsc_emergency_validation_cleaner.py"
-      - "scripts/validate_gsc_postfix_structured_data.py"
-      - ".github/workflows/gsc-structured-data-issues-fix.yml"
-
 permissions:
   contents: write
 

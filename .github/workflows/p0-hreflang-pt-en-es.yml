@@ -3,14 +3,6 @@ name: P0 hreflang PT EN ES
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
-    paths:
-      - "scripts/apply_hreflang_pt_en_es.py"
-      - "scripts/audit_hreflang_pt_en_es.py"
-      - ".github/workflows/p0-hreflang-pt-en-es.yml"
-
 permissions:
   contents: write
 

@@ -2,13 +2,6 @@ name: Static product schema and FAQ
 
 on:
   workflow_dispatch:
-  push:
-    branches: [master]
-    paths:
-      - "scripts/apply_static_product_schema_faq.py"
-      - "scripts/apply_static_schema_product_full_coverage.py"
-      - ".github/workflows/static-product-schema-faq.yml"
-
 permissions:
   contents: write
 

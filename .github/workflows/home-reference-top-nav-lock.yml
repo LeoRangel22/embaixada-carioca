@@ -2,12 +2,6 @@ name: Home reference top nav lock
 
 on:
   workflow_dispatch:
-  push:
-    branches: [master]
-    paths:
-      - 'scripts/apply_home_reference_top_nav_lock.py'
-      - '.github/workflows/home-reference-top-nav-lock.yml'
-
 permissions:
   contents: write
 

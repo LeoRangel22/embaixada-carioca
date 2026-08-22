@@ -2,27 +2,6 @@ name: Final 86-page AAA master audit
 
 on:
   workflow_dispatch:
-  push:
-    branches: [master]
-    paths:
-      - 'scripts/finalize_en_parque_bondinho_scorecard_report.py'
-      - 'scripts/apply_en_parque_bondinho_scorecard_fix.py'
-      - 'scripts/apply_duplicate_faq_schema_cleaner.py'
-      - 'scripts/apply_scorecard_gap_fixes.py'
-      - 'scripts/apply_static_product_schema_faq.py'
-      - 'scripts/apply_static_schema_product_full_coverage.py'
-      - 'scripts/apply_parque_bondinho_access_clarity_fix.py'
-      - 'scripts/apply_internal_linking_keyword_cluster_fixes.py'
-      - 'scripts/apply_lang_dropdown_closed_state_fix.py'
-      - 'scripts/apply_featured_snippet_ordered_lists.py'
-      - 'scripts/audit_css_js_refactor_opportunities.py'
-      - 'scripts/apply_performance_urgent_quick_wins.py'
-      - 'scripts/apply_priority_query_conversion_fixes.py'
-      - 'scripts/apply_aio_low_score_editorial_fixes.py'
-      - 'scripts/apply_priority_aaa_warn_fixes.py'
-      - 'scripts/apply_final_86page_aaa_master_audit_v2.py'
-      - '.github/workflows/final-86page-aaa-master-audit.yml'
-
 permissions:
   contents: write
 

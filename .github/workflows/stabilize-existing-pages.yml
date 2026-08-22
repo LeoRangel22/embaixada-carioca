@@ -2,12 +2,6 @@ name: Stabilize existing pages before landing pages
 
 on:
   workflow_dispatch:
-  push:
-    branches: [master]
-    paths:
-      - 'scripts/stabilize_existing_pages_before_landings.py'
-      - '.github/workflows/stabilize-existing-pages.yml'
-
 permissions:
   contents: write
 

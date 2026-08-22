@@ -2,18 +2,6 @@ name: Final growth items
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
-    paths:
-      - "restaurantes-romanticos-rio-de-janeiro.html"
-      - "assets/bondinho-ticket-notice.js"
-      - "assets/r2d2-dynamic-banner.js"
-      - "assets/menuitem-schema-enhancer.js"
-      - "scripts/apply_final_growth_items.py"
-      - "scripts/apply_tracking_and_r2d2_assets.py"
-      - ".github/workflows/final-growth-items.yml"
-
 permissions:
   contents: write
 

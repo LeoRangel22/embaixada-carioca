@@ -15,17 +15,6 @@ on:
         description: "Seconds to wait between attempts"
         required: false
         default: "120"
-  push:
-    branches:
-      - master
-    paths:
-      - "**/*.html"
-      - "assets/**/*.css"
-      - "assets/**/*.js"
-      - "manifest.json"
-      - "scripts/**/*.py"
-      - ".github/workflows/*.yml"
-
 permissions:
   contents: write
 

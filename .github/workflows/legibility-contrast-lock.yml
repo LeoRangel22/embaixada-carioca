@@ -2,12 +2,6 @@ name: Legibility contrast lock
 
 on:
   workflow_dispatch:
-  push:
-    branches: [master]
-    paths:
-      - 'scripts/apply_legibility_contrast_lock.py'
-      - '.github/workflows/legibility-contrast-lock.yml'
-
 permissions:
   contents: write
 

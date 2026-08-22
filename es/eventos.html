@@ -2575,7 +2575,7 @@ html body main .ec-featured-snippet-ol li{
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Eventos en el Morro da Urca — Embaixada Carioca",
-      "description": "Espacio para eventos corporativos, casamentos e celebrações con vista al Pan de Azúcar.",
+      "description": "Espacio para eventos corporativos, bodas y celebraciones con vista al Pan de Azúcar.",
       "url": "https://www.embaixadacarioca.com/eventos.html",
       "speakable": {
         "@type": "SpeakableSpecification",
@@ -2969,7 +2969,7 @@ html body main .ec-featured-snippet-ol li{
 </div>
 </div>
 <button aria-controls="nav-drawer" aria-expanded="false" aria-label="Abrir menu de navegação" class="nav-hamburger" id="nav-hamburger"><span></span><span></span><span></span></button>
-<a class="btn" href="https://leorangel22.github.io/main/formulario.html" rel="noopener nofollow" target="_blank">Solicitar orçamento</a>
+<a class="btn" href="https://wa.me/5521966837556?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20propuesta%20para%20un%20evento%20en%20Embaixada%20Carioca." rel="noopener" target="_blank">Solicitar presupuesto</a>
 </div>
 </nav>
 <!-- HERO -->
@@ -2995,7 +2995,7 @@ html body main .ec-featured-snippet-ol li{
 <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:5px 14px;font-size:0.85rem;color:#f5f0e8;white-space:nowrap;">Abierto todos los días · 8:30–21:00</span>
 </div>
 <div class="ctas">
-<a class="btn lg" href="https://leorangel22.github.io/main/formulario.html" rel="noopener" target="_blank">Solicitar orçamento</a>
+<a class="btn lg" href="https://wa.me/5521966837556?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20propuesta%20para%20un%20evento%20en%20Embaixada%20Carioca." rel="noopener" target="_blank">Solicitar presupuesto</a>
 <a class="btn lg ghost" href="mailto:eventos@embaixadacarioca.com.br" style="border-color: var(--areia-pale); color: var(--areia-pale);">Hablar con nuestro equipo</a>
 </div>
 </div>
@@ -3042,7 +3042,7 @@ html body main .ec-featured-snippet-ol li{
 <span class="audience-d">Paquetes con catering y estructura completa</span>
 </li>
 </ul>
-<a class="btn azul lg" href="https://leorangel22.github.io/main/formulario.html" rel="noopener" target="_blank">Solicitar cotización</a>
+<a class="btn azul lg" href="https://wa.me/5521966837556?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20propuesta%20para%20un%20evento%20en%20Embaixada%20Carioca." rel="noopener" target="_blank">Solicitar cotización</a>
 </article>
 <article class="audience-card variant">
 <div class="audience-tag">Para agencias de viajes</div>
@@ -3069,7 +3069,7 @@ html body main .ec-featured-snippet-ol li{
 <span class="audience-d">Almuerzo auténtico los fines de semana</span>
 </li>
 </ul>
-<a class="btn lg" href="https://leorangel22.github.io/main/formulario.html" rel="noopener" target="_blank">Solicitar cotización</a>
+<a class="btn lg" href="https://wa.me/5521966837556?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20propuesta%20para%20un%20evento%20en%20Embaixada%20Carioca." rel="noopener" target="_blank">Solicitar cotización</a>
 </article>
 </div>
 </div>
@@ -3195,24 +3195,24 @@ html body main .ec-featured-snippet-ol li{
 </div>
 </div>
 </div>
-<form class="cotacao" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Enviado · obrigado ✓';">
+<form class="cotacao" id="ec-event-lead-form-es">
 <div class="row">
 <div>
 <label for="nome">Nombre</label>
 <input id="nome" placeholder="su nombre completo" required="" type="text"/>
 </div>
 <div>
-<label for="empresa">Empresa / Agência</label>
+<label for="empresa">Empresa / Agencia</label>
 <input id="empresa" placeholder="opcional" type="text"/>
 </div>
 </div>
 <div class="row">
 <div>
 <label for="email">E-mail</label>
-<input id="email" placeholder="seu@email.com" required="" type="email"/>
+<input id="email" placeholder="usted@ejemplo.com" required="" type="email"/>
 </div>
 <div>
-<label for="tel">Telefone</label>
+<label for="tel">Teléfono</label>
 <input id="tel" placeholder="+55 21 9 0000-0000" required="" type="tel"/>
 </div>
 </div>
@@ -3243,8 +3243,10 @@ html body main .ec-featured-snippet-ol li{
 <label for="msg">Mensaje</label>
 <textarea id="msg" placeholder="Cuéntenos un poco sobre su evento — formato, horarios, restricciones alimentarias, momento deseado (café, almuerzo, atardecer)…"></textarea>
 </div>
-<button type="submit">Solicitar cotización</button>
+<button type="submit">Revisar y enviar por WhatsApp</button>
 </form>
+<p id="ec-event-form-note-es">La solicitud solo se envía cuando usted confirma el envío en WhatsApp.</p>
+<script>(function(){var f=document.getElementById('ec-event-lead-form-es');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();if(!f.reportValidity())return;var v=function(id){return document.getElementById(id).value.trim();};var m=['¡Hola! Me gustaría solicitar una propuesta para un evento en Embaixada Carioca.','','Nombre: '+v('nome'),'Empresa / Agencia: '+(v('empresa')||'No informado'),'E-mail: '+v('email'),'Teléfono: '+v('tel'),'Tipo de evento: '+v('tipo'),'Invitados estimados: '+v('convidados'),'Fecha prevista: '+(v('data')||'No informada'),'Detalles: '+(v('msg')||'No informados')].join('\n');window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'ec_event_lead_outbound',form_id:f.id,outbound_channel:'whatsapp',event_format:v('tipo')});window.open('https://wa.me/5521966837556?text='+encodeURIComponent(m),'_blank','noopener');document.getElementById('ec-event-form-note-es').textContent='El mensaje está listo. Revíselo y confirme el envío en WhatsApp.';});})();</script>
 </div>
 </div>
 </section>
@@ -3263,10 +3265,10 @@ html body main .ec-featured-snippet-ol li{
 <picture>
 <source sizes="(max-width: 720px) 600px, 1200px" srcset="/assets/evento-chandon-opt-mobile.webp 600w, /assets/evento-chandon-opt.webp 1200w" type="image/webp"/>
 <source srcset="/assets/evento-chandon-opt.jpg" type="image/jpg"/>
-<img alt="Taças de espumante Chandon em evento privado en Embaixada Carioca — espacio para eventos corporativos e celebrações en el Morro da Urca, Río de Janeiro" decoding="async" height="420" loading="lazy" src="/assets/evento-chandon-opt.webp" style="width:100%; height:280px; object-fit:cover; display:block;" width="560"/>
+<img alt="Copas de espumante en un evento privado en Embaixada Carioca, espacio para eventos en el Morro da Urca, Río de Janeiro" decoding="async" height="420" loading="lazy" src="/assets/evento-chandon-opt.webp" style="width:100%; height:280px; object-fit:cover; display:block;" width="560"/>
 </picture>
 <figcaption style="padding: 0.75rem 1rem; background: white; font-size: 0.85rem; color: #555;">
-          Ativação Chandon — celebrações com espumante
+          Activación de marca — celebraciones con espumante
         </figcaption>
 </figure>
 <figure style="margin:0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
@@ -3275,7 +3277,7 @@ html body main .ec-featured-snippet-ol li{
 <img alt="Grupo de amigos brindando com caipirinhas en Embaixada Carioca — o melhor lugar para celebrar no Río de Janeiro, Morro da Urca" decoding="async" height="420" loading="lazy" src="/assets/grupo-amigos-opt.webp" style="width:100%; height:280px; object-fit:cover; display:block;" width="560"/>
 </picture>
 <figcaption style="padding: 0.75rem 1rem; background: white; font-size: 0.85rem; color: #555;">
-          Comemorações em grupo — o melhor do Rio
+          Celebraciones en grupo con ambiente carioca
         </figcaption>
 </figure>
 <figure style="margin:0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
@@ -3284,7 +3286,7 @@ html body main .ec-featured-snippet-ol li{
 <img alt="Músicos ao vivo em evento en Embaixada Carioca — entretenimento cultural en el Morro da Urca con vista al Pan de Azúcar" decoding="async" height="420" loading="lazy" src="/assets/musicos-ao-vivo-opt.webp" style="width:100%; height:280px; object-fit:cover; display:block;" width="560"/>
 </picture>
 <figcaption style="padding: 0.75rem 1rem; background: white; font-size: 0.85rem; color: #555;">
-          Música ao vivo — cultura carioca no topo
+          Música en vivo y cultura carioca en el Morro da Urca
         </figcaption>
 </figure>
 </div>
@@ -4112,75 +4114,7 @@ html body main a.btn[href*="tagme"],html body main a.btn[href*="reserv"],nav.top
 <script defer="" src="/assets/r2d2-dynamic-banner.js"></script>
 <script defer="" src="/assets/bondinho-ticket-notice.js?v=5"></script>
 <script defer="" src="/assets/bondinho-ticket-notice.js"></script>
-<!-- GA4 Conversion Events: Form Submit, WhatsApp, CTA -->
-<script>
-  (function() {
-    // Evento: Envio de formulário de cotação/contato
-    document.addEventListener('DOMContentLoaded', function() {
-      var forms = document.querySelectorAll('form');
-      forms.forEach(function(form) {
-        form.addEventListener('submit', function(e) {
-          var formId = form.id || form.className || 'form_unknown';
-          if (typeof gtag !== 'undefined') {
-            gtag('event', 'generate_lead', {
-              event_category: 'conversao',
-              event_label: formId,
-              value: 1
-            });
-            gtag('event', 'form_submit', {
-              event_category: 'conversao',
-              event_label: formId
-            });
-          }
-        });
-      });
 
-      // Evento: Clique em link WhatsApp
-      document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]').forEach(function(el) {
-        el.addEventListener('click', function() {
-          if (typeof gtag !== 'undefined') {
-            gtag('event', 'whatsapp_click', {
-              event_category: 'conversao',
-              event_label: el.href || 'whatsapp_cta',
-              value: 1
-            });
-          }
-        });
-      });
-
-      // Evento: Clique em botões CTA (Solicitar Orçamento, Reservar, etc.)
-      document.querySelectorAll('.btn-cta, .ec-cta-btn, [data-cta], a[href*="tagme"], a[href*="reserva"]').forEach(function(el) {
-        el.addEventListener('click', function() {
-          if (typeof gtag !== 'undefined') {
-            gtag('event', 'cta_click', {
-              event_category: 'conversao',
-              event_label: el.textContent.trim().substring(0, 50) || 'cta_button',
-              value: 1
-            });
-          }
-        });
-      });
-
-      // Evento: Scroll 50% e 90% da página (engajamento)
-      var scrollFired = {};
-      window.addEventListener('scroll', function() {
-        var scrollPct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
-        [50, 90].forEach(function(pct) {
-          if (scrollPct >= pct && !scrollFired[pct]) {
-            scrollFired[pct] = true;
-            if (typeof gtag !== 'undefined') {
-              gtag('event', 'scroll_depth', {
-                event_category: 'engajamento',
-                event_label: pct + '%',
-                value: pct
-              });
-            }
-          }
-        });
-      });
-    });
-  })();
-  </script>
 </main><script defer="" src="/assets/conversion-tracking.js"></script>
 <script defer="" src="/assets/r2d2-dynamic-banner.js"></script>
 <script defer="" src="/assets/bondinho-ticket-notice.js"></script>

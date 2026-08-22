@@ -2,14 +2,6 @@ name: Visual readability reality fix
 
 on:
   workflow_dispatch:
-  push:
-    branches: [master]
-    paths:
-      - 'scripts/apply_visual_readability_reality_fix.py'
-      - 'scripts/apply_visual_readability_reality_fix_v2.py'
-      - 'scripts/apply_visual_readability_reality_fix_v3.py'
-      - '.github/workflows/visual-readability-reality-fix.yml'
-
 permissions:
   contents: write
 

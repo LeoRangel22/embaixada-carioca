@@ -2,13 +2,6 @@ name: Repo hygiene
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
-    paths:
-      - "scripts/repo_hygiene_archive_legacy.py"
-      - ".github/workflows/repo-hygiene.yml"
-
 permissions:
   contents: write
 

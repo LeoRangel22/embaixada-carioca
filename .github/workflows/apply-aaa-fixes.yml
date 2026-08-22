@@ -3,49 +3,6 @@ name: Apply AAA site fixes
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
-    paths:
-      - 'scripts/apply_aaa_site_fixes.py'
-      - 'scripts/apply_aaa_editorial_fixes.py'
-      - 'scripts/apply_language_score9_fixes.py'
-      - 'scripts/apply_seo_geo_ai_95_polish.py'
-      - 'scripts/apply_home_high_intent_95_fixes.py'
-      - 'scripts/apply_design_performance_fixes.py'
-      - 'scripts/apply_topic_authority_clusters.py'
-      - 'scripts/apply_gsc_ctr_optimization.py'
-      - 'scripts/apply_home_hero_efficiency_fixes.py'
-      - 'scripts/apply_google_review_link_fix.py'
-      - 'scripts/apply_subpage_home_header_clone.py'
-      - 'scripts/apply_subpage_home_header_final_override.py'
-      - 'scripts/apply_home_top_exact_replication_audit.py'
-      - 'scripts/apply_hero_pao_de_acucar_visual_lock.py'
-      - 'scripts/apply_search_territory_phase1.py'
-      - 'scripts/apply_performance_cache_image_refinements.py'
-      - 'scripts/apply_language_integrity_guard.py'
-      - 'scripts/apply_final_quality_repairs.py'
-      - 'scripts/apply_locale_restore_after_repairs.py'
-      - 'scripts/apply_sprint1_conversion_quality_fixes.py'
-      - 'scripts/apply_sprint2_keyword_geo_growth.py'
-      - 'scripts/apply_sprint2_locale_quality_fix.py'
-      - 'scripts/apply_sprint3_como_chegar_access_cluster.py'
-      - 'scripts/apply_sprint3_design_consistency_gate.py'
-      - 'scripts/apply_sprint123_final_visual_validation.py'
-      - 'scripts/apply_nav_language_review_fixes.py'
-      - 'scripts/apply_orange_eyebrow_position_fix.py'
-      - 'scripts/apply_sprint4_r2d2_aio_conversion_hardening.py'
-      - 'scripts/apply_sprint5_86page_quality_consolidation.py'
-      - 'scripts/apply_sprint51_access_openinghours_fix.py'
-      - 'scripts/apply_sprint1_5_excellence_audit.py'
-      - 'scripts/apply_live_visual_postdeploy_fixes.py'
-      - 'scripts/apply_rich_results_performance_fixes.py'
-      - 'scripts/apply_final_geo_direct_answer_fixes.py'
-      - 'scripts/apply_structural_restaurant_site_audit.py'
-      - 'data/gsc_click_magnet_queries.json'
-      - 'data/rio_authoritative_content_sources.json'
-      - '.github/workflows/apply-aaa-fixes.yml'
-
 permissions:
   contents: write
 

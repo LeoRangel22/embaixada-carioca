@@ -2,12 +2,6 @@ name: Top nav standardization
 
 on:
   workflow_dispatch:
-  push:
-    branches: [master]
-    paths:
-      - 'scripts/apply_top_nav_standardization.py'
-      - '.github/workflows/top-nav-standardization.yml'
-
 permissions:
   contents: write
 

@@ -2,14 +2,6 @@ name: Green solid palette audit
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
-    paths:
-      - "scripts/audit_green_solid_palette.py"
-      - "assets/css/ec-green-solid-palette.css"
-      - ".github/workflows/green-solid-palette-audit.yml"
-
 permissions:
   contents: write
 

@@ -2,12 +2,6 @@ name: Final design consistency lock
 
 on:
   workflow_dispatch:
-  push:
-    branches: [master]
-    paths:
-      - 'scripts/apply_final_design_consistency_lock.py'
-      - '.github/workflows/final-design-consistency-lock.yml'
-
 permissions:
   contents: write
 

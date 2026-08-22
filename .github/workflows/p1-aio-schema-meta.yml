@@ -2,13 +2,6 @@ name: P1 AIO schema and meta
 
 on:
   workflow_dispatch:
-  push:
-    branches: [master]
-    paths:
-      - "scripts/apply_p1_aio_schema_meta.py"
-      - "scripts/audit_p1_aio_schema_meta.py"
-      - ".github/workflows/p1-aio-schema-meta.yml"
-
 permissions:
   contents: write
 

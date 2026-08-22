@@ -2,12 +2,6 @@ name: Lunch photos and global readability hardfix
 
 on:
   workflow_dispatch:
-  push:
-    branches: [master]
-    paths:
-      - 'scripts/apply_lunch_photos_and_global_readability_hardfix.py'
-      - '.github/workflows/lunch-photos-global-readability-hardfix.yml'
-
 permissions:
   contents: write
 

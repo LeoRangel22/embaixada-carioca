@@ -2,12 +2,6 @@ name: Review snippets issue fix
 
 on:
   workflow_dispatch:
-  push:
-    branches: [master]
-    paths:
-      - "scripts/apply_review_snippets_issue_fix.py"
-      - ".github/workflows/review-snippets-issue-fix.yml"
-
 permissions:
   contents: write
 

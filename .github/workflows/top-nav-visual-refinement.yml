@@ -2,12 +2,6 @@ name: Top nav visual refinement
 
 on:
   workflow_dispatch:
-  push:
-    branches: [master]
-    paths:
-      - 'scripts/apply_top_nav_visual_refinement.py'
-      - '.github/workflows/top-nav-visual-refinement.yml'
-
 permissions:
   contents: write
 

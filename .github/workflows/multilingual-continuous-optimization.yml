@@ -8,17 +8,6 @@ on:
         description: "Minimum accepted score"
         required: false
         default: "90"
-  push:
-    branches:
-      - master
-    paths:
-      - "**/*.html"
-      - "assets/**/*.js"
-      - "assets/**/*.css"
-      - "scripts/apply_multilingual_continuous_optimization.py"
-      - "scripts/audit_multilingual_ai_search_score.py"
-      - ".github/workflows/multilingual-continuous-optimization.yml"
-
 permissions:
   contents: write
 

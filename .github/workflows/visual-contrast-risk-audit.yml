@@ -2,22 +2,6 @@ name: Visual contrast risk audit
 
 on:
   workflow_dispatch:
-  push:
-    branches: [master]
-    paths:
-      - 'scripts/apply_hero_side_frame_final_lock.py'
-      - 'scripts/audit_visual_contrast_risks.py'
-      - 'assets/css/ec-contrast-hotfix.css'
-      - 'assets/css/ec-stabilization-base.css'
-      - 'index.html'
-      - 'cafe-da-manha.html'
-      - 'almoco.html'
-      - 'cardapio.html'
-      - 'como-chegar.html'
-      - 'eventos.html'
-      - 'guia-do-rio.html'
-      - '.github/workflows/visual-contrast-risk-audit.yml'
-
 permissions:
   contents: write
 

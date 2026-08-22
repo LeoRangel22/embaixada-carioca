@@ -3,23 +3,6 @@ name: Phase 2 performance SEO audit
 
 on:
   workflow_dispatch:
-  push:
-    branches: [master]
-    paths:
-      - 'scripts/apply_phase2_quick_fixes.py'
-      - 'scripts/apply_visible_text_css_link.py'
-      - 'scripts/apply_como_chegar_final_visible_lock.py'
-      - 'scripts/audit_phase2_performance_seo.py'
-      - 'assets/css/ec-visible-text-lock.css'
-      - 'index.html'
-      - 'cafe-da-manha.html'
-      - 'almoco.html'
-      - 'cardapio.html'
-      - 'como-chegar.html'
-      - 'eventos.html'
-      - 'guia-do-rio.html'
-      - '.github/workflows/phase2-performance-seo-audit.yml'
-
 permissions:
   contents: write
 
