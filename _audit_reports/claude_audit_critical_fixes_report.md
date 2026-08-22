@@ -19,7 +19,7 @@ Atuar sobre os pontos críticos do relatório Claude: padronização do prêmio 
 ## Resumo
 - HTML analisados: **116**
 - Arquivos alterados: **1**
-- Substituições textuais: **10**
+- Substituições textuais: **1**
 - Nós/campos JSON-LD de rating/review removidos: **0**
 - Workflows encontrados: **32**
 
@@ -66,4 +66,4 @@ Nenhuma ocorrência dos termos críticos monitorados.
 
 | Arquivo | Changed | Substituições | JSON-LD rating/review removidos | Notas |
 |---|---:|---:|---:|---|
-| `en/gastronomia-carioca.html` | True | 10 | 0 | language-block-rewritten:1; language-block-rewritten:1; language-block-rewritten:1; language-block-rewritten:1; language-block-rewritten:1; language-block-rewritten:1; language-block-rewritten:1; language-block-rewritten:1; language-block-rewritten:1; language-block-rewritten:1 |
+| `en/gastronomia-carioca.html` | True | 1 | 0 | language-block-rewritten:1 |
