@@ -20,1434 +20,6 @@
       "invalid_blocks": 0
     },
     {
-      "file": "_backups/fase1/_backups/fase1/almoco-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/almoco.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/cafe-da-manha-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/cafe-da-manha.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/caipirinha-com-vista-rio.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/cardapio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/como-chegar.html",
-      "changed": false,
-      "jsonld_blocks": 3,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/en/almoco.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/en/cafe-da-manha.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/en/cardapio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/en/entardecer.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/en/eventos.html",
-      "changed": false,
-      "jsonld_blocks": 11,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/en/guia-do-rio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/en/how-to-get-there.html",
-      "changed": false,
-      "jsonld_blocks": 3,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/en/index.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/en/sunset.html",
-      "changed": false,
-      "jsonld_blocks": 9,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/entardecer.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/es/almoco.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/es/atardecer.html",
-      "changed": false,
-      "jsonld_blocks": 9,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/es/cafe-da-manha.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/es/cardapio.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/es/como-llegar.html",
-      "changed": false,
-      "jsonld_blocks": 3,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/es/entardecer.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/es/eventos.html",
-      "changed": false,
-      "jsonld_blocks": 11,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/es/guia-do-rio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/es/index.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/feijoada-com-vista-rio-de-janeiro.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/guia-do-rio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/index.html",
-      "changed": false,
-      "jsonld_blocks": 9,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/_backups/fase1/por-do-sol-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/almoco-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/almoco.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/cafe-da-manha-com-vista-rio-de-janeiro.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/cafe-da-manha-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/cafe-da-manha.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/caipirinha-com-vista-rio.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/cardapio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/como-chegar.html",
-      "changed": false,
-      "jsonld_blocks": 3,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/en/almoco-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/en/almoco.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/en/cafe-da-manha.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/en/caipirinha-com-vista-rio.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/en/cardapio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/en/entardecer.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/en/eventos.html",
-      "changed": false,
-      "jsonld_blocks": 11,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/en/gastronomia-carioca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/en/guia-do-rio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/en/how-to-get-there.html",
-      "changed": false,
-      "jsonld_blocks": 3,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/en/index.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/en/sunset.html",
-      "changed": false,
-      "jsonld_blocks": 9,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/entardecer.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/es/almoco.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/es/atardecer.html",
-      "changed": false,
-      "jsonld_blocks": 9,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/es/cafe-da-manha.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/es/cardapio.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/es/como-llegar.html",
-      "changed": false,
-      "jsonld_blocks": 3,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/es/entardecer.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/es/eventos.html",
-      "changed": false,
-      "jsonld_blocks": 11,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/es/gastronomia-carioca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/es/guia-do-rio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/es/index.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/es/nossa-visao.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/es/parque-bondinho-pan-de-azucar.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/es/parque-bondinho.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/es/por-do-sol-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/es/restaurante-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/feijoada-com-vista-rio-de-janeiro.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/guia-do-rio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/index.html",
-      "changed": false,
-      "jsonld_blocks": 9,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/parque-bondinho-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/parque-bondinho.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/por-do-sol-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/restaurante-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/restaurantes-romanticos-rio-de-janeiro.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase1/roteiro-meio-dia-urca-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/almoco-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/cafe-da-manha-com-vista-rio-de-janeiro.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/cafe-da-manha-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/cafe-da-manha.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/caipirinha-com-vista-rio.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/contato.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/almoco-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/breakfast-with-a-view-rio-de-janeiro.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/cafe-da-manha-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/caipirinha-com-vista-rio.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/contato.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/eventos.html",
-      "changed": false,
-      "jsonld_blocks": 11,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/feijoada-com-vista-rio-de-janeiro.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/gastronomia-carioca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/guia-do-rio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/index.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/nossa-visao.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/parque-bondinho.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/por-do-sol-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/restaurant-at-urca-hill.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/restaurants-near-sugarloaf-mountain.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/roteiro-meio-dia-urca-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/sugarloaf-cable-car-park.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/sugarloaf-cable-car-restaurant.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/en/where-to-eat-near-sugarloaf.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/almoco-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/cafe-da-manha-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/caipirinha-com-vista-rio.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/contato.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/desayuno-con-vista-rio-de-janeiro.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/donde-comer-cerca-del-pan-de-azucar.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/eventos.html",
-      "changed": false,
-      "jsonld_blocks": 11,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/feijoada-com-vista-rio-de-janeiro.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/gastronomia-carioca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/guia-do-rio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/index.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/nossa-visao.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/parque-bondinho-pan-de-azucar.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/parque-bondinho.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/por-do-sol-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/restaurante-bondinho-pan-de-azucar.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/restaurante-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/restaurantes-cerca-del-pan-de-azucar.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/es/roteiro-meio-dia-urca-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/feijoada-com-vista-rio-de-janeiro.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/gastronomia-carioca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/guia-do-rio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/index.html",
-      "changed": false,
-      "jsonld_blocks": 9,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/nossa-visao.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/o-que-fazer-depois-do-bondinho-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/onde-comer-no-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/parque-bondinho-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/parque-bondinho.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/por-do-sol-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/restaurante-bondinho-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/restaurante-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/restaurantes-perto-do-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/restaurantes-romanticos-rio-de-janeiro.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase2/roteiro-meio-dia-urca-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/almoco.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/cafe-da-manha-com-vista-rio-de-janeiro.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/cafe-da-manha.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/cardapio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/como-chegar.html",
-      "changed": false,
-      "jsonld_blocks": 3,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/contato.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/almoco.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/breakfast-with-a-view-rio-de-janeiro.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/cafe-da-manha.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/cardapio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/contato.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/entardecer.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/eventos.html",
-      "changed": false,
-      "jsonld_blocks": 11,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/feijoada.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/gastronomia-carioca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/guia-do-rio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/how-to-get-there.html",
-      "changed": false,
-      "jsonld_blocks": 3,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/index.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/nossa-visao.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/parque-bondinho.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/restaurant-at-urca-hill.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/restaurants-near-sugarloaf-mountain.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/roteiro-meio-dia-urca-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/sugarloaf-cable-car-park.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/sugarloaf-cable-car-restaurant.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/sunset.html",
-      "changed": false,
-      "jsonld_blocks": 9,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/en/where-to-eat-near-sugarloaf.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/entardecer.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/almoco.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/atardecer.html",
-      "changed": false,
-      "jsonld_blocks": 9,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/cafe-da-manha.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/cardapio.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/como-llegar.html",
-      "changed": false,
-      "jsonld_blocks": 3,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/contato.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/desayuno-con-vista-rio-de-janeiro.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/donde-comer-cerca-del-pan-de-azucar.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/entardecer.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/eventos.html",
-      "changed": false,
-      "jsonld_blocks": 11,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/feijoada.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/gastronomia-carioca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/guia-do-rio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/index.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/nossa-visao.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/parque-bondinho-pan-de-azucar.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/parque-bondinho.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/restaurante-bondinho-pan-de-azucar.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/restaurante-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/restaurantes-cerca-del-pan-de-azucar.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/es/roteiro-meio-dia-urca-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/eventos.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/feijoada.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/gastronomia-carioca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/general-3/index.html",
-      "changed": false,
-      "jsonld_blocks": 0,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/guia-do-rio.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/index.html",
-      "changed": false,
-      "jsonld_blocks": 9,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/nossa-visao.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/o-que-fazer-depois-do-bondinho-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/onde-comer-no-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/parque-bondinho-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/parque-bondinho.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/restaurante-bondinho-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/restaurante-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/restaurantes-perto-do-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/restaurantes-romanticos-rio-de-janeiro.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase3/roteiro-meio-dia-urca-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase4/almoco-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 4,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase4/almoco.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase4/index.html",
-      "changed": false,
-      "jsonld_blocks": 9,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase4/onde-comer-no-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase4/restaurante-bondinho-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase4/restaurante-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase4_final/almoco-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase4_final/almoco.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase4_final/cafe-da-manha.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase4_final/index.html",
-      "changed": false,
-      "jsonld_blocks": 9,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase4_final/onde-comer-no-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase4_final/parque-bondinho-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fase4_final/restaurante-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/fix_css_leak/index.html",
-      "changed": false,
-      "jsonld_blocks": 9,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/gsc_fixes/contato.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/gsc_fixes/en/contato.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/gsc_fixes/en/nossa-visao.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/gsc_fixes/es/contato.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/gsc_fixes/es/nossa-visao.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/gsc_fixes/nossa-visao.html",
-      "changed": false,
-      "jsonld_blocks": 5,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/gsc_i18n_fix/cafe-da-manha-com-vista-rio-de-janeiro.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/landing_page_optimizations/almoco.html",
-      "changed": false,
-      "jsonld_blocks": 6,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/landing_page_optimizations/cafe-da-manha.html",
-      "changed": false,
-      "jsonld_blocks": 9,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/landing_page_optimizations/index.html",
-      "changed": false,
-      "jsonld_blocks": 9,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/landing_page_optimizations/onde-comer-no-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/landing_page_optimizations/parque-bondinho-pao-de-acucar.html",
-      "changed": false,
-      "jsonld_blocks": 8,
-      "invalid_blocks": 0
-    },
-    {
-      "file": "_backups/landing_page_optimizations/restaurante-morro-da-urca.html",
-      "changed": false,
-      "jsonld_blocks": 7,
-      "invalid_blocks": 0
-    },
-    {
       "file": "_includes/footer.html",
       "changed": false,
       "jsonld_blocks": 0,
@@ -1474,407 +46,485 @@
     {
       "file": "almoco-morro-da-urca.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "almoco.html",
       "changed": false,
-      "jsonld_blocks": 7,
+      "jsonld_blocks": 1,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "avaliacoes-embaixada-carioca.html",
+      "changed": false,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "cafe-da-manha-com-vista-rio-de-janeiro.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "cafe-da-manha-pao-de-acucar.html",
       "changed": false,
-      "jsonld_blocks": 4,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "cafe-da-manha.html",
       "changed": false,
-      "jsonld_blocks": 9,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "caipirinha-com-vista-rio.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "cardapio.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "como-chegar.html",
       "changed": false,
-      "jsonld_blocks": 3,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "contato.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/almoco-morro-da-urca.html",
       "changed": false,
-      "jsonld_blocks": 4,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "en/almoco.html",
       "changed": false,
-      "jsonld_blocks": 7,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/breakfast-with-a-view-rio-de-janeiro.html",
       "changed": false,
-      "jsonld_blocks": 4,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/cafe-da-manha-pao-de-acucar.html",
       "changed": false,
-      "jsonld_blocks": 4,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/cafe-da-manha.html",
       "changed": false,
-      "jsonld_blocks": 7,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/caipirinha-com-vista-rio.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/cardapio.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/contato.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/entardecer.html",
       "changed": false,
-      "jsonld_blocks": 7,
+      "jsonld_blocks": 1,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "en/eventos-corporativos.html",
+      "changed": false,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "en/eventos.html",
       "changed": false,
-      "jsonld_blocks": 11,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/feijoada-com-vista-rio-de-janeiro.html",
       "changed": false,
-      "jsonld_blocks": 4,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/feijoada.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "en/gastronomia-carioca.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/guia-do-rio.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/how-to-get-there.html",
       "changed": false,
-      "jsonld_blocks": 3,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "en/index.html",
       "changed": false,
-      "jsonld_blocks": 8,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/morro-da-urca.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/nossa-visao.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/o-que-fazer-depois-do-bondinho-pao-de-acucar.html",
       "changed": false,
-      "jsonld_blocks": 8,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/parque-bondinho.html",
       "changed": false,
-      "jsonld_blocks": 7,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/por-do-sol-morro-da-urca.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 1,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "en/restaurant-at-sugarloaf.html",
+      "changed": false,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/restaurant-at-urca-hill.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "en/restaurante-com-vista-rio-de-janeiro.html",
+      "changed": false,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "en/restaurants-near-sugarloaf-mountain.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "en/reviews-embaixada-carioca.html",
+      "changed": false,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/roteiro-meio-dia-urca-pao-de-acucar.html",
       "changed": false,
-      "jsonld_blocks": 7,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/sugarloaf-cable-car-park.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/sugarloaf-cable-car-restaurant.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "en/sunset-por-do-sol-rio-de-janeiro.html",
+      "changed": false,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "en/sunset.html",
       "changed": false,
-      "jsonld_blocks": 9,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "en/where-to-eat-near-sugarloaf.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "entardecer.html",
       "changed": false,
-      "jsonld_blocks": 8,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/almoco-morro-da-urca.html",
       "changed": false,
-      "jsonld_blocks": 4,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "es/almoco.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/atardecer.html",
       "changed": false,
-      "jsonld_blocks": 9,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/cafe-da-manha-pao-de-acucar.html",
       "changed": false,
-      "jsonld_blocks": 4,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/cafe-da-manha.html",
       "changed": false,
-      "jsonld_blocks": 7,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/caipirinha-com-vista-rio.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/cardapio.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/como-llegar.html",
       "changed": false,
-      "jsonld_blocks": 3,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "es/contato.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/desayuno-con-vista-rio-de-janeiro.html",
       "changed": false,
-      "jsonld_blocks": 4,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/donde-comer-cerca-del-pan-de-azucar.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/entardecer.html",
       "changed": false,
-      "jsonld_blocks": 7,
+      "jsonld_blocks": 1,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "es/eventos-corporativos.html",
+      "changed": false,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "es/eventos.html",
       "changed": false,
-      "jsonld_blocks": 11,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/feijoada-com-vista-rio-de-janeiro.html",
       "changed": false,
-      "jsonld_blocks": 4,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/feijoada.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "es/gastronomia-carioca.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/guia-do-rio.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/index.html",
       "changed": false,
-      "jsonld_blocks": 8,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/morro-da-urca.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/nossa-visao.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html",
       "changed": false,
-      "jsonld_blocks": 8,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/parque-bondinho-pan-de-azucar.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/parque-bondinho.html",
       "changed": false,
-      "jsonld_blocks": 7,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/por-do-sol-morro-da-urca.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 1,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "es/resenas-embaixada-carioca.html",
+      "changed": false,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/restaurante-bondinho-pan-de-azucar.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "es/restaurante-com-vista-rio-de-janeiro.html",
+      "changed": false,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "es/restaurante-morro-da-urca.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "es/restaurante-pan-de-azucar.html",
+      "changed": false,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/restaurantes-cerca-del-pan-de-azucar.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "es/roteiro-meio-dia-urca-pao-de-acucar.html",
       "changed": false,
-      "jsonld_blocks": 7,
+      "jsonld_blocks": 1,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "es/sunset-por-do-sol-rio-de-janeiro.html",
+      "changed": false,
+      "jsonld_blocks": 2,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "eventos-corporativos.html",
+      "changed": false,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "eventos.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "feijoada-com-vista-rio-de-janeiro.html",
+      "changed": false,
+      "jsonld_blocks": 2,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "feijoada-morro-da-urca.html",
       "changed": false,
       "jsonld_blocks": 4,
       "invalid_blocks": 0
@@ -1882,13 +532,19 @@
     {
       "file": "feijoada.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 2,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "formulario.html",
+      "changed": false,
+      "jsonld_blocks": 0,
       "invalid_blocks": 0
     },
     {
       "file": "gastronomia-carioca.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
@@ -1900,31 +556,37 @@
     {
       "file": "guia-do-rio.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "index.html",
       "changed": false,
-      "jsonld_blocks": 10,
+      "jsonld_blocks": 1,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "lojasadm/index.html",
+      "changed": false,
+      "jsonld_blocks": 0,
       "invalid_blocks": 0
     },
     {
       "file": "morro-da-urca.html",
       "changed": false,
-      "jsonld_blocks": 7,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "nossa-visao.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "o-que-fazer-depois-do-bondinho-pao-de-acucar.html",
       "changed": false,
-      "jsonld_blocks": 8,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
@@ -1936,55 +598,79 @@
     {
       "file": "onde-comer-no-pao-de-acucar.html",
       "changed": false,
-      "jsonld_blocks": 7,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "parque-bondinho-pao-de-acucar.html",
       "changed": false,
-      "jsonld_blocks": 8,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "parque-bondinho.html",
       "changed": false,
-      "jsonld_blocks": 7,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "por-do-sol-morro-da-urca.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "restaurante-bondinho-pao-de-acucar.html",
       "changed": false,
-      "jsonld_blocks": 7,
+      "jsonld_blocks": 1,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "restaurante-com-vista-rio-de-janeiro.html",
+      "changed": false,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "restaurante-morro-da-urca.html",
       "changed": false,
-      "jsonld_blocks": 7,
+      "jsonld_blocks": 1,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "restaurante-pao-de-acucar.html",
+      "changed": false,
+      "jsonld_blocks": 1,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "restaurante-urca.html",
+      "changed": false,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "restaurantes-perto-do-pao-de-acucar.html",
       "changed": false,
-      "jsonld_blocks": 6,
+      "jsonld_blocks": 1,
       "invalid_blocks": 0
     },
     {
       "file": "restaurantes-romanticos-rio-de-janeiro.html",
       "changed": false,
-      "jsonld_blocks": 5,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     },
     {
       "file": "roteiro-meio-dia-urca-pao-de-acucar.html",
       "changed": false,
-      "jsonld_blocks": 8,
+      "jsonld_blocks": 1,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "sunset-por-do-sol-rio-de-janeiro.html",
+      "changed": false,
+      "jsonld_blocks": 2,
       "invalid_blocks": 0
     }
   ],

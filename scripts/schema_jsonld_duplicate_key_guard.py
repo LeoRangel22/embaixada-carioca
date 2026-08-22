@@ -13,7 +13,7 @@ OUT = ROOT / '_audit_reports'
 REPORT_MD = OUT / 'schema_jsonld_duplicate_key_report.md'
 REPORT_JSON = OUT / 'schema_jsonld_duplicate_key_report.json'
 
-SKIP_DIRS = {'.git', '.github', 'node_modules', 'dist', 'build', '_site', '_audit_reports', 'archive'}
+SKIP_DIRS = {'.git', '.github', '.codex-work', 'node_modules', 'dist', 'build', '_site', '_audit_reports', '_backups', 'archive', '_templates', 'src', 'scripts'}
 SCRIPT_RE = re.compile(r'(<script\s+[^>]*type=["\']application/ld\+json["\'][^>]*>)(.*?)(</script>)', re.I | re.S)
 
 

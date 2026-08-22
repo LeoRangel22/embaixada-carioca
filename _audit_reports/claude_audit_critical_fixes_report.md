@@ -18,8 +18,8 @@ Atuar sobre os pontos críticos do relatório Claude: padronização do prêmio 
 
 ## Resumo
 - HTML analisados: **116**
-- Arquivos alterados: **2**
-- Substituições textuais: **2**
+- Arquivos alterados: **3**
+- Substituições textuais: **3**
 - Nós/campos JSON-LD de rating/review removidos: **0**
 - Workflows encontrados: **32**
 
@@ -66,5 +66,6 @@ Nenhuma ocorrência dos termos críticos monitorados.
 
 | Arquivo | Changed | Substituições | JSON-LD rating/review removidos | Notas |
 |---|---:|---:|---:|---|
-| `en/index.html` | True | 1 | 0 | followers-instagram-visible-en-to-84k:1 |
-| `en/morro-da-urca.html` | True | 1 | 0 | award-en-canonical-morro-faq:1 |
+| `es/feijoada.html` | True | 1 | 0 | award-es-not-prepared-at-academia:1 |
+| `es/morro-da-urca.html` | True | 1 | 0 | language-block-rewritten:1 |
+| `es/sunset-por-do-sol-rio-de-janeiro.html` | True | 1 | 0 | award-es-not-prepared-at-academia:1 |

@@ -62,9 +62,10 @@ class PageCheck:
 
 
 def html_files() -> list[Path]:
+    excluded = {".git", ".github", ".codex-work", "node_modules", "dist", "build", "_site", "_audit_reports", "_backups", "archive", "_templates", "src", "scripts"}
     return [
         p for p in sorted(ROOT.rglob("*.html"))
-        if ".git" not in p.parts and not p.relative_to(ROOT).as_posix().startswith("_")
+        if not (set(p.relative_to(ROOT).parts) & excluded)
     ]
 
 

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Final 86-page AAA Master Audit V2 — Embaixada Carioca.
+"""Final Site AAA Master Audit V2 — Embaixada Carioca.
 
 Recalibragem da auditoria mestre para refletir a realidade visual pós-correções:
 - não confunde chaves de CSS/JS com template quebrado;
 - aceita o closeout design lock e o visual readability reality fix como locks válidos;
 - trata páginas utilitárias como utilitárias, sem exigir navegação/CTA comercial;
-- mantém a contagem completa dos 86 HTML.
+- usa o sitemap como fonte de verdade para a contagem das páginas públicas.
 """
 from __future__ import annotations
 
@@ -13,6 +13,8 @@ from pathlib import Path
 import csv
 import json
 import re
+import urllib.parse
+import xml.etree.ElementTree as ET
 from html import unescape
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -280,13 +282,30 @@ def audit_integrity(rel: str, text: str, kind: str):
 
 
 def html_files() -> list[Path]:
-    out = []
-    for p in sorted(ROOT.rglob("*.html")):
-        rel = p.relative_to(ROOT).as_posix()
-        if ".git" in p.parts or rel.startswith("_"):
-            continue
-        out.append(p)
-    return out
+    """Return only indexable sitemap pages plus intentional utility pages.
+
+    The old recursive scan included Playwright dependencies, generated test
+    reports and source partials whenever those folders existed locally. That
+    inflated the audit and produced false WARN results unrelated to the site.
+    """
+    sitemap = ROOT / "sitemap.xml"
+    out: dict[str, Path] = {}
+    if sitemap.exists():
+        tree = ET.parse(sitemap)
+        ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+        for node in tree.findall("s:url/s:loc", ns):
+            if not node.text:
+                continue
+            url_path = urllib.parse.unquote(urllib.parse.urlparse(node.text).path)
+            rel = "index.html" if url_path in {"", "/"} else url_path.lstrip("/")
+            page = ROOT / rel
+            if page.is_file() and page.suffix.lower() == ".html":
+                out[rel] = page
+    for rel in sorted(UTILITY_PAGES):
+        page = ROOT / rel
+        if page.is_file():
+            out.setdefault(rel, page)
+    return [out[rel] for rel in sorted(out)]
 
 
 def audit_page(path: Path) -> dict[str, object]:
@@ -324,7 +343,7 @@ def write_reports(rows: list[dict[str, object]]):
     categories = ["language", "seo", "geo_aio_sai", "ux_conversion", "design_brand", "contrast_readability", "images_performance", "technical_integrity"]
     cat_avgs = {cat: round(sum(float(r[f"score_{cat}"]) for r in rows) / total, 1) for cat in categories}
     lines = [
-        "# Final 86-page AAA Master Audit",
+        "# Final Site AAA Master Audit",
         "",
         "## Objetivo",
         "Auditar o conjunto completo de páginas HTML em linguagem, SEO, GEO/AIO/SAI, UX, design, marca, contraste, imagens, performance básica e integridade técnica.",
@@ -351,7 +370,11 @@ def write_reports(rows: list[dict[str, object]]):
     lines += ["", "## Leitura crítica", "- Auditoria V2 recalibrada para não confundir CSS/JS legítimo com template quebrado.", "- O visual readability reality fix é considerado lock válido de contraste real.", "- Páginas utilitárias são auditadas, mas com critérios compatíveis com função utilitária.", ""]
     REPORT_MD.write_text("\n".join(lines), encoding="utf-8")
     with REPORT_CSV.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()) if rows else ["page"])
+        writer = csv.DictWriter(
+            f,
+            fieldnames=list(rows[0].keys()) if rows else ["page"],
+            lineterminator="\n",
+        )
         writer.writeheader(); writer.writerows(rows)
     print(REPORT_MD.read_text(encoding="utf-8"))
 

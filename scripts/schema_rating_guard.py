@@ -13,7 +13,7 @@ REPORT_DIR = ROOT / '_audit_reports'
 REPORT_MD = REPORT_DIR / 'schema_rating_guard_report.md'
 REPORT_JSON = REPORT_DIR / 'schema_rating_guard_report.json'
 
-SKIP_DIRS = {'.git', '.github', 'node_modules', 'dist', 'build', '_site', '_audit_reports', 'archive', '_templates', 'src'}
+SKIP_DIRS = {'.git', '.github', '.codex-work', 'node_modules', 'dist', 'build', '_site', '_audit_reports', '_backups', 'archive', '_templates', 'src', 'scripts'}
 FORBIDDEN_KEYS = {'aggregateRating', 'ratingValue', 'reviewCount', 'ratingCount', 'bestRating', 'worstRating'}
 FORBIDDEN_TYPES = {'AggregateRating'}
 # Fontes verificáveis que permitem aggregateRating no schema
