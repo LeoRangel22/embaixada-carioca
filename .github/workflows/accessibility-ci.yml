@@ -6,11 +6,15 @@ on:
     paths:
       - '**/*.html'
       - 'assets/css/**'
+      - '.pa11yci.json'
+      - '.github/workflows/accessibility-ci.yml'
   pull_request:
     branches: [main, master]
     paths:
       - '**/*.html'
       - 'assets/css/**'
+      - '.pa11yci.json'
+      - '.github/workflows/accessibility-ci.yml'
 
 permissions:
   contents: read
