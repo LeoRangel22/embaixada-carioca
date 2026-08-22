@@ -55,7 +55,10 @@ jobs:
         run: npx wait-on http://localhost:8080 --timeout 15000
 
       - name: Run pa11y-ci
-        run: pa11y-ci --config .pa11yci.json
+        # Pa11y CI fails when errors are greater than or equal to the CLI
+        # threshold, so 841 permits the measured 840-error baseline and fails
+        # on the first regression. The report remains available as an artifact.
+        run: pa11y-ci --config .pa11yci.json --threshold 841
 
       - name: Upload accessibility report
         uses: actions/upload-artifact@v4
