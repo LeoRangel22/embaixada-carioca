@@ -30,3 +30,6 @@ auth_gmb*.py
 get_token*.py
 __pycache__/
 *.pyc
+
+# Relatório local do gate de acessibilidade (publicado como artifact no CI)
+pa11y-report.json

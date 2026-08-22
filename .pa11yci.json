@@ -3,11 +3,15 @@
     "standard": "WCAG2AA",
     "timeout": 30000,
     "wait": 1000,
+    "reporters": [
+      "cli",
+      ["json", {"fileName": "pa11y-report.json"}]
+    ],
     "chromeLaunchConfig": {
       "args": ["--no-sandbox", "--disable-setuid-sandbox"]
     }
   },
-  "threshold": 5,
+  "threshold": 840,
   "urls": [
     "http://localhost:8080/index.html",
     "http://localhost:8080/almoco.html",

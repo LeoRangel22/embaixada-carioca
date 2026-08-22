@@ -221,3 +221,15 @@ section.gsc-ctr-block > div.wrap > div > a.btn,
   color: #f6efde !important;
   -webkit-text-fill-color: #f6efde !important;
 }
+
+/* Como chegar: links sobre cartões claros e CTA fixo. */
+body[data-screen-label="Como Chegar"] main a:not(.btn):not(.secondary) {
+  color: #5c3d00 !important;
+  -webkit-text-fill-color: #5c3d00 !important;
+}
+
+body[data-screen-label="Como Chegar"] #sticky-cta-bar > a {
+  background: #f59b1e !important;
+  color: #00202e !important;
+  -webkit-text-fill-color: #00202e !important;
+}

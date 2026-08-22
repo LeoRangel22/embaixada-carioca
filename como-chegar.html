@@ -1027,7 +1027,7 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
           "name": "Tem estacionamento perto da Embaixada Carioca?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sim. O Parque Bondinho Pão de Açúcar tem estacionamento próprio na Av. Pasteur, 520 — Urca. Há também estacionamentos pagos nas ruas próximas. O Uber e táxi podem deixar diretamente na entrada do parque."
+            "text": "Não. O Parque Bondinho Pão de Açúcar não possui estacionamento próprio e as vagas na Urca são limitadas. Considere estacionamentos em Botafogo e complete o trajeto de táxi ou aplicativo até a entrada do parque."
           }
         },
         {
@@ -1072,8 +1072,10 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
   .answer-block { padding: 12px 16px; font-size: 0.95rem; }
 }
 </style>
+<link href="/assets/css/ec-wcag-contrast-2026.css" rel="stylesheet"/>
 </head>
 <body data-screen-label="Como Chegar">
+<span id="conteudo-principal" tabindex="-1"></span>
 <a class="skip-nav" href="#conteudo-principal">Pular para o conteúdo principal</a>
 <!-- NAV -->
 <nav aria-label="Navegação principal" class="top" id="topnav">
@@ -1150,7 +1152,7 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 <li>Siga para a Embaixada Carioca para café da manhã, almoço, caipirinha, chope ou evento.</li>
 </ol>
 <div class="ec-priority-query-cta">
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Parque+Bondinho+P%C3%A3o+de+A%C3%A7%C3%BAcar+Avenida+Pasteur+520+Urca" rel="noopener" target="_blank">Abrir no Maps</a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Parque+Bondinho+P%C3%A3o+de+A%C3%A7%C3%BAcar+Avenida+Pasteur+520+Urca" rel="noopener" style="color:#5c3d00!important;-webkit-text-fill-color:#5c3d00!important" target="_blank">Abrir no Maps</a>
 <a class="secondary" href="https://go.tagme.com.br/embaixadacarioca" rel="noopener" target="_blank">Reservar</a>
 </div>
 </div>
@@ -1171,8 +1173,8 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 <p>Se você está visitando o <strong>Morro da Urca</strong>, o <strong>Parque Bondinho Pão de Açúcar</strong> ou a <strong>Praia Vermelha</strong> e está procurando um <strong>restaurante perto de você</strong>, a <strong>Embaixada Carioca</strong> é a opção mais próxima e melhor avaliada da região — 4,8★ com mais de 8.600 avaliações.</p>
 <p><strong>Endereço:</strong> Av. Pasteur 520, Urca, Rio de Janeiro — dentro do Parque Bondinho Pão de Açúcar, na primeira parada do bondinho (Morro da Urca).</p>
 <p>
-<a href="https://maps.google.com/?q=Embaixada+Carioca+Morro+da+Urca" rel="noopener" target="_blank">📍 Abrir no Google Maps</a> ·
-    <a href="https://wa.me/5521966837556" rel="noopener">📱 Reservar pelo WhatsApp</a>
+<a href="https://maps.google.com/?q=Embaixada+Carioca+Morro+da+Urca" rel="noopener" style="color:#5c3d00!important;-webkit-text-fill-color:#5c3d00!important" target="_blank">📍 Abrir no Google Maps</a> ·
+    <a href="https://wa.me/5521966837556" rel="noopener" style="color:#5c3d00!important;-webkit-text-fill-color:#5c3d00!important">📱 Reservar pelo WhatsApp</a>
 </p>
 </section>
 </main><footer class="footer">Embaixada Carioca · Morro da Urca · Parque Bondinho Pão de Açúcar · Av. Pasteur, 520 – Urca – Rio de Janeiro – RJ</footer>
@@ -1358,8 +1360,8 @@ html body main :is(.access-direct,.access-section,.access-faq,.light-section,.pa
   visibility:visible !important;
 }
 html body main :is(.access-direct,.access-section,.access-faq,.light-section,.paper-section,.section-paper,.bg-paper,.menu-section,.gallery-section,.ec-sprint4-steps,.ec-sprint5-quality,.ec-sprint5-faq,.ec-r2d2-depth,.ec-sprint4-faq,.box,.access-fact,.access-route,details,.card,.faq-item,.faq-card,.info-card,.content-card,.copy-card,.route-card,.guide-card,.place-card,.beach-card,.experience-card,.ec-sprint5-card,.ec-r2d2-card) :is(strong,b,a:not(.btn),.kicker,.eyebrow,.tag) {
-  color:#9a6500 !important;
-  -webkit-text-fill-color:#9a6500 !important;
+  color:#5c3d00 !important;
+  -webkit-text-fill-color:#5c3d00 !important;
   text-shadow:none !important;
   opacity:1 !important;
   visibility:visible !important;
@@ -1502,8 +1504,8 @@ html body[data-screen-label="Como Chegar"] main :is(p,li,span,small,dd,dt) {
   text-shadow:none !important;
 }
 html body[data-screen-label="Como Chegar"] main :is(.eyebrow,.tag,a:not(.btn):not(.secondary)) {
-  color:#9a6500 !important;
-  -webkit-text-fill-color:#9a6500 !important;
+  color:#5c3d00 !important;
+  -webkit-text-fill-color:#5c3d00 !important;
   opacity:1 !important;
   visibility:visible !important;
   text-shadow:none !important;
@@ -1534,7 +1536,7 @@ html body[data-screen-label="Como Chegar"] main :is(.eyebrow,.tag,a:not(.btn):no
       imp(el,'color','#485156'); imp(el,'-webkit-text-fill-color','#485156'); imp(el,'opacity','1'); imp(el,'visibility','visible'); imp(el,'text-shadow','none'); imp(el,'filter','none'); imp(el,'mix-blend-mode','normal');
     });
     all('main .eyebrow, main .tag, main a:not(.btn):not(.secondary)', function(el){
-      imp(el,'color','#9a6500'); imp(el,'-webkit-text-fill-color','#9a6500'); imp(el,'opacity','1'); imp(el,'visibility','visible'); imp(el,'text-shadow','none');
+      imp(el,'color','#5c3d00'); imp(el,'-webkit-text-fill-color','#5c3d00'); imp(el,'opacity','1'); imp(el,'visibility','visible'); imp(el,'text-shadow','none');
     });
   }
   if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run, {once:true}); else run();

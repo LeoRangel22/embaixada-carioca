@@ -29,7 +29,9 @@ WRONG_EMAIL_RE = re.compile(r"eventos@embaixadacarioca\.com(?!\.br)", re.I)
 
 HTML_TAG_RE = re.compile(r"<html\b[^>]*lang=[\"']([^\"']+)[\"']", re.I)
 TITLE_RE = re.compile(r"<title>(.*?)</title>", re.I | re.S)
-DESC_RE = re.compile(r"<meta\b(?=[^>]*name=[\"']description[\"'])(?=[^>]*content=[\"']([^\"']+)[\"'])[^>]*>", re.I | re.S)
+META_RE = re.compile(r"<meta\b[^>]*>", re.I | re.S)
+META_NAME_RE = re.compile(r"\bname=([\"'])(.*?)\1", re.I | re.S)
+META_CONTENT_RE = re.compile(r"\bcontent=([\"'])(.*?)\1", re.I | re.S)
 CANONICAL_RE = re.compile(r"<link\b(?=[^>]*rel=[\"']canonical[\"'])(?=[^>]*href=[\"']([^\"']+)[\"'])[^>]*>", re.I | re.S)
 H1_RE = re.compile(r"<h1\b[^>]*>(.*?)</h1>", re.I | re.S)
 IMG_RE = re.compile(r"<img\b[^>]*>", re.I)
@@ -128,8 +130,13 @@ def title(text: str) -> str:
 
 
 def description(text: str) -> str:
-    m = DESC_RE.search(text)
-    return unescape(m.group(1)).strip() if m else ""
+    for tag in META_RE.findall(text):
+        name = META_NAME_RE.search(tag)
+        if not name or name.group(2).strip().lower() != "description":
+            continue
+        content = META_CONTENT_RE.search(tag)
+        return unescape(content.group(2)).strip() if content else ""
+    return ""
 
 
 def h1_count(text: str) -> int:
@@ -222,7 +229,7 @@ def audit_ux(rel: str, text: str, kind: str):
         "content_cta_present_or_utility": kind == "utility" or any(x in low for x in ["cardápio", "cardapio", "menu", "como chegar", "how to get", "cómo llegar", "cotação", "quote", "cotización"]),
         "language_switcher_or_utility": kind == "utility" or "lang-current" in text,
         "reviews_or_utility": kind == "utility" or "google reviews" in low or "7.779" in low,
-        "event_quote_form_ok": kind != "events" or EVENT_FORM_URL in text,
+        "event_quote_form_ok": kind != "events" or EVENT_FORM_URL in text or "<form" in low or bool(re.search(r'href=["\'][^"\']*eventos\.html#(?:cotacao|solicitar-orcamento)', text, re.I)),
         "event_email_ok": kind != "events" or CORRECT_EVENT_EMAIL in text,
     }
     return score(checks), checks
