@@ -18,8 +18,8 @@ Atuar sobre os pontos críticos do relatório Claude: padronização do prêmio 
 
 ## Resumo
 - HTML analisados: **116**
-- Arquivos alterados: **3**
-- Substituições textuais: **3**
+- Arquivos alterados: **1**
+- Substituições textuais: **10**
 - Nós/campos JSON-LD de rating/review removidos: **0**
 - Workflows encontrados: **32**
 
@@ -66,6 +66,4 @@ Nenhuma ocorrência dos termos críticos monitorados.
 
 | Arquivo | Changed | Substituições | JSON-LD rating/review removidos | Notas |
 |---|---:|---:|---:|---|
-| `es/feijoada.html` | True | 1 | 0 | award-es-not-prepared-at-academia:1 |
-| `es/morro-da-urca.html` | True | 1 | 0 | language-block-rewritten:1 |
-| `es/sunset-por-do-sol-rio-de-janeiro.html` | True | 1 | 0 | award-es-not-prepared-at-academia:1 |
+| `en/gastronomia-carioca.html` | True | 10 | 0 | language-block-rewritten:1; language-block-rewritten:1; language-block-rewritten:1; language-block-rewritten:1; language-block-rewritten:1; language-block-rewritten:1; language-block-rewritten:1; language-block-rewritten:1; language-block-rewritten:1; language-block-rewritten:1 |
