@@ -23,10 +23,14 @@ from pathlib import Path
 SLUG_MAPPING_EN = {
     'entardecer.html': 'sunset.html',
     'como-chegar.html': 'how-to-get-there.html',
+    'avaliacoes-embaixada-carioca.html': 'reviews-embaixada-carioca.html',
+    'restaurante-pao-de-acucar.html': 'restaurant-at-sugarloaf.html',
 }
 SLUG_MAPPING_ES = {
     'entardecer.html': 'atardecer.html',
     'como-chegar.html': 'como-llegar.html',
+    'avaliacoes-embaixada-carioca.html': 'resenas-embaixada-carioca.html',
+    'restaurante-pao-de-acucar.html': 'restaurante-pan-de-azucar.html',
 }
 
 
@@ -53,6 +57,13 @@ IGNORE_FILES = {
     "offline.html",
     "contato.html",
     "nossa-visao.html",
+    # Utilitário canônico para eventos.html#solicitar-orcamento.
+    "formulario.html",
+    # Alias canônico de restaurante-morro-da-urca.html.
+    "restaurante-urca.html",
+    # Landing GEO defensiva em PT. EN/ES já possuem páginas canônicas de
+    # feijoada com vista; duplicá-las criaria canibalização de intenção.
+    "feijoada-morro-da-urca.html",
     # Páginas PT-only: landing pages estratégicas sem versão EN/ES por design
     "restaurante-morro-da-urca.html",
     "onde-comer-no-pao-de-acucar.html",
@@ -158,8 +169,10 @@ def run_validation():
     heading_issues = {}
 
     for filename in pt_files:
-        has_en = filename in en_set
-        has_es = filename in es_set
+        en_filename = SLUG_MAPPING_EN.get(filename, filename)
+        es_filename = SLUG_MAPPING_ES.get(filename, filename)
+        has_en = en_filename in en_set
+        has_es = es_filename in es_set
 
         if not has_en:
             missing_en.append(filename)
@@ -172,8 +185,13 @@ def run_validation():
 
             # Ler arquivos
             contents = {}
+            localized_filenames = {
+                "pt": filename,
+                "en": en_filename,
+                "es": es_filename,
+            }
             for lang, d in DIRS.items():
-                path = d / filename
+                path = d / localized_filenames[lang]
                 if path.exists():
                     try:
                         with open(path, encoding="utf-8", errors="replace") as f:

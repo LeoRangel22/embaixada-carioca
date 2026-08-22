@@ -1,26 +1,18 @@
 # Relatório de Sincronização i18n PT/EN/ES
 
-Gerado em: 2026-08-22 16:56:06
+Gerado em: 2026-08-22 19:57:55
 
-- PT: 26 arquivos
+- PT: 23 arquivos
 - EN: 31 arquivos
 - ES: 30 arquivos
 
 ## Páginas PT sem equivalente EN
 
-- `avaliacoes-embaixada-carioca.html`
-- `feijoada-morro-da-urca.html`
-- `formulario.html`
-- `restaurante-pao-de-acucar.html`
-- `restaurante-urca.html`
+_Nenhuma. Todas as páginas PT têm equivalente EN._
 
 ## Páginas PT sem equivalente ES
 
-- `avaliacoes-embaixada-carioca.html`
-- `feijoada-morro-da-urca.html`
-- `formulario.html`
-- `restaurante-pao-de-acucar.html`
-- `restaurante-urca.html`
+_Nenhuma. Todas as páginas PT têm equivalente ES._
 
 ## Problemas de hreflang e headings (páginas existentes nos 3 idiomas)
 
@@ -39,10 +31,6 @@ Gerado em: 2026-08-22 16:56:06
 ### `cardapio.html`
 
     - Headings (h1+h2) desbalanceados: PT=16, EN=12, ES=12 (diferença > 1)
-
-### `entardecer.html`
-
-    - Headings (h1+h2) desbalanceados: PT=12, EN=10, ES=10 (diferença > 1)
 
 ### `eventos.html`
 
@@ -81,8 +69,8 @@ Gerado em: 2026-08-22 16:56:06
 
 | Métrica | Valor |
 |---------|-------|
-| Páginas PT | 26 |
-| PT sem EN | 5 |
-| PT sem ES | 5 |
-| Com problemas hreflang/headings | 13 |
-| Total de issues | 23 |
+| Páginas PT | 23 |
+| PT sem EN | 0 |
+| PT sem ES | 0 |
+| Com problemas hreflang/headings | 12 |
+| Total de issues | 12 |
