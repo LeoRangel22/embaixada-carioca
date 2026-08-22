@@ -1,6 +1,6 @@
 # Relatório de Sincronização i18n PT/EN/ES
 
-Gerado em: 2026-08-22 16:10:08
+Gerado em: 2026-08-22 16:56:06
 
 - PT: 26 arquivos
 - EN: 31 arquivos
