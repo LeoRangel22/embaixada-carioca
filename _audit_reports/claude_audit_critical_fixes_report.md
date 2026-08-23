@@ -14,7 +14,8 @@ Atuar sobre os pontos críticos do relatório Claude: atribuição oficial do pr
 - Nenhum canonical/hreflang foi alterado.
 - Nenhum AggregateRating, Rating ou Review foi adicionado.
 - JSON-LD com `review`, `reviewRating` ou `aggregateRating` foi limpo quando encontrado.
-- A relação institucional confirmada com a Cantina do MAM não é removida nem reescrita por este script.
+- A composição societária comum confirmada entre Embaixada Carioca e Cantina do MAM não é removida nem distorcida por este script.
+- A Academia da Cachaça é tratada separadamente como parceira formal com vínculo societário familiar, sem afirmar composição societária idêntica.
 
 ## Resumo
 - HTML analisados: **116**

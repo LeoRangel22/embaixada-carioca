@@ -3,7 +3,8 @@
 
 Scope:
 - Standardize all feijoada award language.
-- Preserve the confirmed institutional relationship with Cantina do MAM.
+- Preserve the confirmed common ownership between Embaixada Carioca and
+  Cantina do MAM.
 - Fix common EN portunhol fragments detected in previous scripts.
 - Standardize Instagram follower claims to 84K/84 mil.
 - Strip review/rating nodes from JSON-LD to avoid review-snippet regressions.
@@ -92,8 +93,11 @@ TEXT_REPLACEMENTS: list[tuple[str, str, str]] = [
     (r"\+100\s+mil", "84 mil", "followers-generic-100mil-to-84mil"),
 ]
 
-# The relationship with Cantina do MAM was confirmed by the owner on
-# 2026-08-23. This maintenance script must not delete or rewrite that claim.
+# The owner confirmed on 2026-08-23 that Embaixada Carioca and Cantina do MAM
+# have the same shareholders. Academia da Cachaça is a separate family business
+# connected to Embaixada Carioca through a formal partnership and overlapping
+# ownership; it must not be described as having the same shareholder structure.
+# This maintenance script must not delete or distort either relationship.
 CLAIM_PATTERNS: list[tuple[str, str]] = []
 
 FORBIDDEN_AFTER = [
@@ -573,7 +577,8 @@ def write_report(results: list[FileResult], remaining: dict[str, list[str]], wor
         "- Nenhum canonical/hreflang foi alterado.",
         "- Nenhum AggregateRating, Rating ou Review foi adicionado.",
         "- JSON-LD com `review`, `reviewRating` ou `aggregateRating` foi limpo quando encontrado.",
-        "- A relação institucional confirmada com a Cantina do MAM não é removida nem reescrita por este script.",
+        "- A composição societária comum confirmada entre Embaixada Carioca e Cantina do MAM não é removida nem distorcida por este script.",
+        "- A Academia da Cachaça é tratada separadamente como parceira formal com vínculo societário familiar, sem afirmar composição societária idêntica.",
         "",
         "## Resumo",
         f"- HTML analisados: **{len(results)}**",

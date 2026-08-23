@@ -93,7 +93,7 @@ def replace_copy(text: str, lang: str) -> tuple[str, int]:
             ),
             (
                 r"A feijoada da Embaixada Carioca foi eleita a <strong>Melhor Feijoada do Rio de Janeiro</strong> pela <strong>Veja Rio Comer &amp; Beber 2025/2026</strong>",
-                "A Embaixada Carioca serve a feijoada da <strong>Academia da Cachaça</strong>, vencedora da categoria <strong>Melhor Feijoada</strong> no <strong>Veja Rio Comer &amp; Beber 2025</strong>, por meio de parceria formal",
+                "A Embaixada Carioca serve a feijoada da Academia da Cachaça, vencedora da categoria Melhor Feijoada no Veja Rio Comer &amp; Beber 2025, por meio de parceria formal",
             ),
             (
                 r"A feijoada da Embaixada Carioca foi eleita a <strong>Melhor Feijoada do Rio de Janeiro</strong> pela <strong>Veja Rio Comer & Beber 2025/2026</strong>",
@@ -396,6 +396,8 @@ def replace_copy(text: str, lang: str) -> tuple[str, int]:
         (r"<p>a feijoada da Academia da Cachaça servida na Embaixada Carioca chega", "<p>A feijoada da Academia da Cachaça servida na Embaixada Carioca chega"),
         (r"Por que a feijoada da Embaixada Carioca é diferente", "Por que a feijoada servida na Embaixada Carioca é diferente"),
         (r"Feijoada de Academia da Cachaça — Mejor Feijoada de Río, Veja Rio Comer &amp; Beber 2025, en colaboración con Academia da Cachaça", "feijoada de Academia da Cachaça — ganadora de la categoría Mejor Feijoada de Veja Rio Comer &amp; Beber 2025 y servida mediante una colaboración formal"),
+        (r"feijoada da <strong>Academia da Cachaça</strong>, vencedora da categoria Melhor Feijoada no Veja Rio Comer &amp; Beber 2025, servida pela <strong>Embaixada Carioca</strong> por meio de parceria formal", "feijoada da Academia da Cachaça, vencedora da categoria Melhor Feijoada no Veja Rio Comer &amp; Beber 2025, servida pela Embaixada Carioca por meio de parceria formal"),
+        (r"A Embaixada Carioca serve a feijoada da <strong>Academia da Cachaça</strong>, vencedora da categoria <strong>Melhor Feijoada</strong> no <strong>Veja Rio Comer &amp; Beber 2025</strong>, por meio de parceria formal", "A Embaixada Carioca serve a feijoada da Academia da Cachaça, vencedora da categoria Melhor Feijoada no Veja Rio Comer &amp; Beber 2025, por meio de parceria formal"),
     ]
     for pattern, replacement in cleanup_patterns:
         text, made = re.subn(pattern, replacement, text, flags=re.I)

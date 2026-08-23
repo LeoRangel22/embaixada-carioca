@@ -11,8 +11,8 @@ Status geral: **PASS**
 
 ## Resultado
 
-- Arquivos HTML alterados: **1**
-- Substituições editoriais: **2**
+- Arquivos HTML alterados: **3**
+- Substituições editoriais: **7**
 - Awards indevidos removidos de Restaurant/LocalBusiness/Organization: **0**
 - Awards de Recipe/MenuItem/Product normalizados: **2**
 - Blocos JSON-LD alterados: **0**
@@ -22,4 +22,6 @@ Status geral: **PASS**
 
 ## Arquivos alterados
 
-- `feijoada-morro-da-urca.html`
+- `index.html`
+- `restaurante-com-vista-rio-de-janeiro.html`
+- `sunset-por-do-sol-rio-de-janeiro.html`

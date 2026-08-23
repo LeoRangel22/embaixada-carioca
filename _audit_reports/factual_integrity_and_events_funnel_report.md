@@ -21,6 +21,7 @@
 
 ## Proteções factuais
 
-- Nenhuma alegação sobre Cantina do MAM ou composição societária foi adicionada.
+- A composição societária comum confirmada entre Embaixada Carioca e Cantina do MAM foi registrada como fato validado, sem divulgação de percentuais.
+- A relação com a Academia da Cachaça permanece descrita separadamente como parceria formal com vínculo societário familiar.
 - Nenhuma capacidade fixa foi mantida sem confirmação documental.
 - Nenhum `Review`, `Rating` ou `AggregateRating` foi adicionado ao JSON-LD.
