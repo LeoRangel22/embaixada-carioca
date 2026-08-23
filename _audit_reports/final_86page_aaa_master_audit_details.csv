@@ -1,8 +1,8 @@
 page,kind,status,overall_score,score_language,score_seo,score_geo_aio_sai,score_ux_conversion,score_design_brand,score_contrast_readability,score_images_performance,score_technical_integrity,failures
 404.html,utility,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-almoco-morro-da-urca.html,lunch,WARN,9.7,10.0,10.0,10.0,10.0,10.0,10.0,7.5,10.0,images_performance:lunch_photos_or_not_lunch
+almoco-morro-da-urca.html,lunch,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 almoco.html,lunch,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-avaliacoes-embaixada-carioca.html,territory,WARN,7.8,10.0,10.0,10.0,5.7,5.0,1.7,10.0,10.0,ux_conversion:top_nav_or_utility;language_switcher_or_utility;reviews_or_utility | design_brand:design_lock_or_closeout_or_utility;logo_or_utility;button_hierarchy_or_utility | contrast_readability:contrast_lock_or_utility;visual_reality_fix_or_utility;webkit_reset_or_utility;dark_text_light_rule_or_utility;light_card_dark_text_rule_or_utility
+avaliacoes-embaixada-carioca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 cafe-da-manha-com-vista-rio-de-janeiro.html,breakfast,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 cafe-da-manha-pao-de-acucar.html,breakfast,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 cafe-da-manha.html,breakfast,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
@@ -10,7 +10,7 @@ caipirinha-com-vista-rio.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 cardapio.html,menu,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 como-chegar.html,access,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 contato.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-en/almoco-morro-da-urca.html,lunch,WARN,9.7,10.0,10.0,10.0,10.0,10.0,10.0,7.5,10.0,images_performance:lunch_photos_or_not_lunch
+en/almoco-morro-da-urca.html,lunch,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/almoco.html,lunch,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/breakfast-with-a-view-rio-de-janeiro.html,breakfast,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/cafe-da-manha-pao-de-acucar.html,breakfast,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
@@ -19,10 +19,10 @@ en/caipirinha-com-vista-rio.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10
 en/cardapio.html,menu,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/contato.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/entardecer.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-en/eventos-corporativos.html,events,WARN,8.2,10.0,10.0,10.0,7.1,6.7,1.7,10.0,10.0,ux_conversion:language_switcher_or_utility;reviews_or_utility | design_brand:design_lock_or_closeout_or_utility;button_hierarchy_or_utility | contrast_readability:contrast_lock_or_utility;visual_reality_fix_or_utility;webkit_reset_or_utility;dark_text_light_rule_or_utility;light_card_dark_text_rule_or_utility
+en/eventos-corporativos.html,events,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/eventos.html,events,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/feijoada-com-vista-rio-de-janeiro.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-en/feijoada.html,territory,WARN,9.6,10.0,10.0,10.0,10.0,10.0,6.7,10.0,10.0,contrast_readability:visual_reality_fix_or_utility;light_card_dark_text_rule_or_utility
+en/feijoada.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/gastronomia-carioca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/guia-do-rio.html,guide,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/how-to-get-there.html,access,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
@@ -33,16 +33,16 @@ en/parque-bondinho.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,1
 en/por-do-sol-morro-da-urca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/restaurant-at-sugarloaf.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/restaurant-at-urca-hill.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-en/restaurante-com-vista-rio-de-janeiro.html,territory,WARN,9.6,10.0,10.0,10.0,10.0,10.0,6.7,10.0,10.0,contrast_readability:visual_reality_fix_or_utility;light_card_dark_text_rule_or_utility
+en/restaurante-com-vista-rio-de-janeiro.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/restaurants-near-sugarloaf-mountain.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-en/reviews-embaixada-carioca.html,territory,WARN,7.8,10.0,10.0,10.0,5.7,5.0,1.7,10.0,10.0,ux_conversion:top_nav_or_utility;language_switcher_or_utility;reviews_or_utility | design_brand:design_lock_or_closeout_or_utility;logo_or_utility;button_hierarchy_or_utility | contrast_readability:contrast_lock_or_utility;visual_reality_fix_or_utility;webkit_reset_or_utility;dark_text_light_rule_or_utility;light_card_dark_text_rule_or_utility
+en/reviews-embaixada-carioca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/roteiro-meio-dia-urca-pao-de-acucar.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/sugarloaf-cable-car-park.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/sugarloaf-cable-car-restaurant.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/sunset.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 en/where-to-eat-near-sugarloaf.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 entardecer.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-es/almoco-morro-da-urca.html,lunch,WARN,9.7,10.0,10.0,10.0,10.0,10.0,10.0,7.5,10.0,images_performance:lunch_photos_or_not_lunch
+es/almoco-morro-da-urca.html,lunch,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/almoco.html,lunch,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/atardecer.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/cafe-da-manha-pao-de-acucar.html,breakfast,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
@@ -54,10 +54,10 @@ es/contato.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/desayuno-con-vista-rio-de-janeiro.html,breakfast,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/donde-comer-cerca-del-pan-de-azucar.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/entardecer.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-es/eventos-corporativos.html,events,WARN,8.2,10.0,10.0,10.0,7.1,6.7,1.7,10.0,10.0,ux_conversion:language_switcher_or_utility;reviews_or_utility | design_brand:design_lock_or_closeout_or_utility;button_hierarchy_or_utility | contrast_readability:contrast_lock_or_utility;visual_reality_fix_or_utility;webkit_reset_or_utility;dark_text_light_rule_or_utility;light_card_dark_text_rule_or_utility
+es/eventos-corporativos.html,events,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/eventos.html,events,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/feijoada-com-vista-rio-de-janeiro.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-es/feijoada.html,territory,WARN,9.6,10.0,10.0,10.0,10.0,10.0,6.7,10.0,10.0,contrast_readability:visual_reality_fix_or_utility;light_card_dark_text_rule_or_utility
+es/feijoada.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/gastronomia-carioca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/guia-do-rio.html,guide,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/morro-da-urca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
@@ -66,21 +66,21 @@ es/o-que-fazer-depois-do-bondinho-pao-de-acucar.html,territory,PASS,10.0,10.0,10
 es/parque-bondinho-pan-de-azucar.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/parque-bondinho.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/por-do-sol-morro-da-urca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-es/resenas-embaixada-carioca.html,territory,WARN,7.8,10.0,10.0,10.0,5.7,5.0,1.7,10.0,10.0,ux_conversion:top_nav_or_utility;language_switcher_or_utility;reviews_or_utility | design_brand:design_lock_or_closeout_or_utility;logo_or_utility;button_hierarchy_or_utility | contrast_readability:contrast_lock_or_utility;visual_reality_fix_or_utility;webkit_reset_or_utility;dark_text_light_rule_or_utility;light_card_dark_text_rule_or_utility
+es/resenas-embaixada-carioca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/restaurante-bondinho-pan-de-azucar.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-es/restaurante-com-vista-rio-de-janeiro.html,territory,WARN,9.6,10.0,10.0,10.0,10.0,10.0,6.7,10.0,10.0,contrast_readability:visual_reality_fix_or_utility;light_card_dark_text_rule_or_utility
+es/restaurante-com-vista-rio-de-janeiro.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/restaurante-morro-da-urca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/restaurante-pan-de-azucar.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/restaurantes-cerca-del-pan-de-azucar.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 es/roteiro-meio-dia-urca-pao-de-acucar.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-eventos-corporativos.html,events,WARN,8.2,10.0,10.0,10.0,7.1,6.7,1.7,10.0,10.0,ux_conversion:language_switcher_or_utility;reviews_or_utility | design_brand:design_lock_or_closeout_or_utility;button_hierarchy_or_utility | contrast_readability:contrast_lock_or_utility;visual_reality_fix_or_utility;webkit_reset_or_utility;dark_text_light_rule_or_utility;light_card_dark_text_rule_or_utility
+eventos-corporativos.html,events,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 eventos.html,events,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 feijoada-com-vista-rio-de-janeiro.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-feijoada-morro-da-urca.html,territory,WARN,7.4,10.0,10.0,10.0,5.7,1.7,1.7,10.0,10.0,ux_conversion:top_nav_or_utility;language_switcher_or_utility;reviews_or_utility | design_brand:design_lock_or_closeout_or_utility;palette_present_or_utility;typography_or_utility;logo_or_utility;button_hierarchy_or_utility | contrast_readability:contrast_lock_or_utility;visual_reality_fix_or_utility;webkit_reset_or_utility;dark_text_light_rule_or_utility;light_card_dark_text_rule_or_utility
-feijoada.html,territory,WARN,9.6,10.0,10.0,10.0,10.0,10.0,6.7,10.0,10.0,contrast_readability:visual_reality_fix_or_utility;light_card_dark_text_rule_or_utility
+feijoada-morro-da-urca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
+feijoada.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 gastronomia-carioca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 guia-do-rio.html,guide,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-index.html,home,WARN,9.8,10.0,10.0,10.0,10.0,8.3,10.0,10.0,10.0,design_brand:typography_or_utility
+index.html,home,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 morro-da-urca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 nossa-visao.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 o-que-fazer-depois-do-bondinho-pao-de-acucar.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
@@ -90,7 +90,7 @@ parque-bondinho-pao-de-acucar.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,
 parque-bondinho.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 por-do-sol-morro-da-urca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 restaurante-bondinho-pao-de-acucar.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
-restaurante-com-vista-rio-de-janeiro.html,territory,WARN,9.6,10.0,10.0,10.0,10.0,10.0,6.7,10.0,10.0,contrast_readability:visual_reality_fix_or_utility;light_card_dark_text_rule_or_utility
+restaurante-com-vista-rio-de-janeiro.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 restaurante-morro-da-urca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 restaurante-pao-de-acucar.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,
 restaurante-urca.html,territory,PASS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,

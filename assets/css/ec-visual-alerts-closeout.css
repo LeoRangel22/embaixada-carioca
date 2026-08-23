@@ -1,0 +1,258 @@
+/* Embaixada Carioca — fechamento visual das páginas editoriais especiais. */
+:root {
+  --ec-blue: #00405a;
+  --ec-blue-deep: #00202e;
+  --ec-green: #335d4a;
+  --ec-yellow: #f59b1e;
+  --ec-sand: #ede2c9;
+  --ec-paper: #f6efde;
+  --ec-gray: #485156;
+  --ec-max: 1180px;
+  --ec-gutter: clamp(20px, 5vw, 64px);
+}
+
+html { scroll-behavior: smooth; }
+body.ec-aaa-visual-page {
+  margin: 0;
+  overflow-x: clip;
+  background: var(--ec-paper);
+  color: var(--ec-blue);
+  font-family: Catamaran, Verdana, system-ui, sans-serif;
+}
+body.ec-aaa-visual-page a:focus-visible,
+body.ec-aaa-visual-page button:focus-visible,
+body.ec-aaa-visual-page summary:focus-visible {
+  outline: 3px solid var(--ec-yellow);
+  outline-offset: 4px;
+}
+.ec-skip-link {
+  position: fixed;
+  top: 8px;
+  left: 12px;
+  z-index: 1000;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: var(--ec-yellow);
+  color: var(--ec-blue-deep);
+  font-weight: 900;
+  transform: translateY(-160%);
+}
+.ec-skip-link:focus { transform: none; }
+
+nav.top.ec-aaa-top {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 200;
+  border: 0 !important;
+  outline: 0 !important;
+  background: rgba(0, 32, 46, .92) !important;
+  box-shadow: 0 12px 32px rgba(0, 20, 30, .18) !important;
+  backdrop-filter: blur(14px);
+}
+.ec-aaa-nav {
+  width: 100%;
+  max-width: 1440px;
+  height: 86px;
+  margin: 0 auto;
+  padding: 0 var(--ec-gutter);
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 1.8vw, 28px);
+}
+.ec-aaa-nav .brand {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ec-paper);
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .18em;
+  line-height: 1.15;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.ec-aaa-nav .brand img { width: 50px; height: 50px; object-fit: contain; }
+.ec-aaa-nav .links {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(14px, 1.6vw, 26px);
+  min-width: 0;
+}
+.ec-aaa-nav .links a {
+  color: rgba(246, 239, 222, .92);
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .11em;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.ec-aaa-nav .links a:hover { color: var(--ec-yellow); }
+.ec-nav-rating {
+  display: inline-flex;
+  flex-direction: column;
+  color: var(--ec-paper);
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.05;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.ec-nav-rating small { color: var(--ec-yellow); font-size: 9px; letter-spacing: .08em; }
+.ec-lang-switcher { position: relative; flex: 0 0 auto; color: var(--ec-paper); }
+.ec-lang-switcher summary {
+  min-width: 48px;
+  min-height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(246, 239, 222, .35);
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  list-style: none;
+}
+.ec-lang-switcher summary::-webkit-details-marker { display: none; }
+.ec-lang-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 170px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 64, 90, .14);
+  border-radius: 16px;
+  background: #fffaf0;
+  box-shadow: 0 18px 42px rgba(0, 32, 46, .2);
+}
+.ec-lang-menu a {
+  display: block;
+  padding: 11px 14px;
+  color: var(--ec-blue);
+  font-weight: 800;
+  text-decoration: none;
+}
+.ec-lang-menu a:hover { background: var(--ec-sand); }
+.ec-aaa-nav .btn.ec-nav-cta {
+  flex: 0 0 auto;
+  min-height: 48px;
+  padding: 0 20px;
+  border: 1px solid var(--ec-yellow) !important;
+  border-radius: 999px;
+  background: var(--ec-yellow) !important;
+  color: var(--ec-blue-deep) !important;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+body.ec-reviews-page .hero { padding-top: 172px !important; }
+body.ec-reviews-page main { min-height: 55vh; }
+body.ec-reviews-page .answer,
+body.ec-reviews-page .card {
+  color: var(--ec-gray) !important;
+  -webkit-text-fill-color: currentColor !important;
+}
+body.ec-reviews-page .answer h2,
+body.ec-reviews-page .card strong { color: var(--ec-green) !important; }
+
+body.ec-standalone-feijoada main {
+  max-width: 1120px !important;
+  padding: 142px var(--ec-gutter) 80px !important;
+}
+body.ec-standalone-feijoada article { max-width: 900px; margin: 0 auto; }
+body.ec-standalone-feijoada h1 {
+  max-width: 820px;
+  font-size: clamp(42px, 7vw, 78px) !important;
+  line-height: .98 !important;
+  letter-spacing: -.035em;
+}
+body.ec-standalone-feijoada h2 {
+  margin-top: clamp(42px, 7vw, 72px) !important;
+  font-size: clamp(28px, 4vw, 46px) !important;
+  line-height: 1.05 !important;
+}
+body.ec-standalone-feijoada .hero,
+body.ec-standalone-feijoada .ficha,
+body.ec-standalone-feijoada details {
+  border: 1px solid rgba(0, 64, 90, .14) !important;
+  border-radius: 24px !important;
+  background: #fffaf0 !important;
+  box-shadow: 0 18px 48px rgba(0, 32, 46, .08);
+}
+body.ec-standalone-feijoada .hero { padding: clamp(24px, 4vw, 44px) !important; }
+body.ec-standalone-feijoada .cta {
+  border-radius: 999px !important;
+  background: var(--ec-yellow) !important;
+  color: var(--ec-blue-deep) !important;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 12px;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+body.ec-standalone-feijoada .cta-secondary { background: transparent !important; color: var(--ec-blue) !important; }
+.ec-feijoada-photo {
+  margin: 34px 0 18px;
+  overflow: hidden;
+  border-radius: 28px;
+  background: var(--ec-blue);
+  box-shadow: 0 22px 52px rgba(0, 32, 46, .16);
+}
+.ec-feijoada-photo img { display: block; width: 100%; max-height: 560px; object-fit: cover; }
+.ec-feijoada-photo figcaption { padding: 14px 20px; color: var(--ec-paper); font-weight: 700; }
+
+body.ec-corporate-events-page .hero { min-height: 88svh; }
+body.ec-corporate-events-page .hero .wrap { padding-top: 176px; }
+body.ec-corporate-events-page .card,
+body.ec-corporate-events-page .format,
+body.ec-corporate-events-page .qa,
+body.ec-corporate-events-page .gallery figure {
+  color: var(--ec-gray) !important;
+  -webkit-text-fill-color: currentColor !important;
+}
+
+.ec-lunch-gallery { padding: 72px 0; background: var(--ec-paper); }
+.ec-lunch-gallery .wrap { max-width: 1120px; margin: 0 auto; padding: 0 var(--ec-gutter); }
+.ec-lunch-gallery h2 { margin: 0 0 28px; color: var(--ec-blue) !important; text-align: center; }
+.ec-lunch-gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.ec-lunch-gallery figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(0, 64, 90, .12);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 16px 38px rgba(0, 32, 46, .1);
+}
+.ec-lunch-gallery img { display: block; width: 100%; height: 280px; object-fit: cover; }
+.ec-lunch-gallery figcaption { padding: 16px 18px; color: var(--ec-gray) !important; font-weight: 750; }
+
+@media (max-width: 1180px) {
+  .ec-nav-rating { display: none; }
+}
+@media (max-width: 900px) {
+  .ec-aaa-nav { height: 74px; gap: 10px; }
+  .ec-aaa-nav .links { display: none; }
+  .ec-aaa-nav .brand { margin-right: auto; }
+  .ec-aaa-nav .brand span { display: none; }
+  .ec-aaa-nav .brand img { width: 44px; height: 44px; }
+  .ec-aaa-nav .btn.ec-nav-cta { min-height: 44px; padding: 0 15px; font-size: 9px; }
+  body.ec-reviews-page .hero { padding-top: 138px !important; }
+  body.ec-corporate-events-page .hero .wrap { padding-top: 142px; }
+  .ec-lunch-gallery-grid { grid-template-columns: 1fr; }
+  .ec-lunch-gallery img { height: min(70vw, 360px); }
+}
+@media (max-width: 520px) {
+  .ec-lang-switcher summary { min-width: 42px; min-height: 40px; }
+  .ec-aaa-nav .btn.ec-nav-cta { max-width: 154px; white-space: normal; text-align: center; line-height: 1.1; }
+  body.ec-standalone-feijoada main { padding-top: 116px !important; }
+}

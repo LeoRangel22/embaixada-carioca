@@ -1156,8 +1156,9 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 }
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","url":"https://www.embaixadacarioca.com/almoco-morro-da-urca.html","speakable":{"@type":"SpeakableSpecification","cssSelector":["h1",".hero-lead","h2"]}}</script>
+<link href="/assets/css/ec-visual-alerts-closeout.css?v=20260823" rel="stylesheet"/>
 </head>
-<body>
+<body class="ec-aaa-visual-page ec-existing-layout">
 <a class="skip-nav" href="#conteudo-principal">Pular para o conteúdo principal</a><!-- NAV -->
 <nav aria-label="Navegação principal" class="top" id="topnav">
 <div class="nav-inner">
@@ -1218,7 +1219,7 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 <!-- /EC Hero Summary In Side Frame -->
 </header>
 <main id="conteudo-principal">
-<section style="padding: 4rem 0; background: var(--areia-pale);">
+<section class="ec-lunch-light-content" id="ec-lunch-light-content" style="padding: 4rem 0; background: var(--areia-pale);">
 <div class="wrap" style="max-width: 800px; margin: 0 auto;">
 <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 3rem;">
 <h2 style="color: var(--azul-escuro); margin-bottom: 1rem; font-size: 1.8rem;">A Resposta Rápida</h2>
@@ -1252,25 +1253,7 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 </div>
 </div>
 </section>
-<section style="padding: 3rem 0; background: var(--areia-pale);">
-<div class="wrap" style="max-width: 900px; margin: 0 auto;">
-<h2 style="color: var(--azul-escuro); margin-bottom: 1.5rem; font-size: 1.8rem; text-align: center;">Fotos do Restaurante</h2>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-<div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-<picture>
-<source srcset="../../assets/fotos/salao-almoco-02.webp" type="image/webp"/>
-<img alt="Salão da Embaixada Carioca lotado no horário do almoço" decoding="async" loading="lazy" src="../../assets/fotos/salao-almoco-02.jpg" style="width: 100%; height: 250px; object-fit: cover; display: block;"/>
-</picture>
-</div>
-<div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-<picture>
-<source srcset="../../assets/fotos/salao-pao-de-acucar.webp" type="image/webp"/>
-<img alt="Restaurante Embaixada Carioca com Pão de Açúcar ao fundo" decoding="async" loading="lazy" src="../../assets/fotos/salao-pao-de-acucar.jpg" style="width: 100%; height: 250px; object-fit: cover; display: block;"/>
-</picture>
-</div>
-</div>
-</div>
-</section>
+<section class="ec-lunch-gallery"><div class="wrap"><h2>Pratos reais do almoço</h2><div class="ec-lunch-gallery-grid"><figure><img alt="Almoço completo para compartilhar, com pratos e acompanhamentos da casa." decoding="async" loading="lazy" src="/assets/fabio-almoco-mesa-completa.webp"/><figcaption>Almoço completo para compartilhar, com pratos e acompanhamentos da casa.</figcaption></figure><figure><img alt="Bobó de camarão — especialidade brasileira servida no almoço." decoding="async" loading="lazy" src="/assets/bobo-camarao-real.webp"/><figcaption>Bobó de camarão — especialidade brasileira servida no almoço.</figcaption></figure><figure><img alt="Salmão ao molho de maracujá com o Pão de Açúcar em primeiro plano." decoding="async" loading="lazy" src="/assets/fabio-almoco-salmao-pao-acucar.webp"/><figcaption>Salmão ao molho de maracujá com o Pão de Açúcar em primeiro plano.</figcaption></figure></div></div></section>
 <!-- EC Sprint 5 Quality FAQ -->
 <section class="ec-sprint5-faq"><div class="wrap"><h2>Perguntas úteis antes da visita</h2><details><summary>A Embaixada Carioca fica dentro do Parque Bondinho?</summary><p>Sim. Ela fica no Morro da Urca, a primeira parada do Parque Bondinho Pão de Açúcar, o que torna a visita prática para quem já está planejando o passeio.</p></details><details><summary>Preciso planejar o acesso antes de ir?</summary><p>Sim. A maioria dos visitantes chega pelo Bondinho com ingresso do parque. A trilha del Morro da Urca pode ser alternativa gratuita quando aberta e adequada ao visitante.</p></details><details><summary>É melhor para café, almoço ou drinks?</summary><p>Funciona nos três momentos. O café é ideal para começar cedo com vista, o almoço para comida brasileira e a tarde para caipirinhas, chope e uma pausa com vista.</p></details><details><summary>Grupos devem reservar?</summary><p>Sim. A reserva é recomendada para grupos, fins de semana, feriados e dias de alto fluxo turístico para organizar melhor a visita.</p></details></div></section>
 <!-- /EC Sprint 5 Quality FAQ -->
@@ -1675,5 +1658,21 @@ html body main .corporate-section a {
 <script defer src="/assets/bondinho-ticket-notice.js"></script>
 <script defer src="/assets/menuitem-schema-enhancer.js"></script>
 <script defer src="/assets/internal-page-contrast-rescue.js"></script>
+<!-- EC Real Visual Alerts Closeout -->
+<style id="ec-visual-readability-reality-fix">
+/* EC AAA Closeout Design Lock — final, scoped contrast layer. */
+:root{--ec-vr-blue:#00405a;--ec-vr-green:#335d4a;--ec-vr-yellow:#f59b1e;--ec-vr-paper:#f6efde;--ec-vr-gray:#485156;}
+html body.ec-aaa-visual-page main *{-webkit-text-fill-color:currentColor!important;}
+html body.ec-aaa-visual-page{font-family:Catamaran,Verdana,system-ui,sans-serif!important;}
+html body.ec-aaa-visual-page main :is(.card,.answer,.ficha,.format,.qa,.menu-item,.gallery figure,details){color:var(--ec-vr-gray)!important;}
+html body.ec-aaa-visual-page main :is(.card,.answer,.ficha,.format,.qa,.menu-item,.gallery figure,details) :is(h1,h2,h3,h4,strong,summary){color:var(--ec-vr-blue)!important;}
+html body.ec-aaa-visual-page main :is(.dark,.contact) :is(p,li,span,small,.lede){color:rgba(246,239,222,.90)!important;}
+html body.ec-aaa-visual-page main :is(.light-section,.paper-section,.section-paper,.bg-paper,.gallery-section,.ec-lunch-gallery) :is(p,li,span,small,figcaption){color:var(--ec-vr-gray)!important;}
+html body.ec-aaa-visual-page main #ec-lunch-light-content{background:var(--ec-vr-paper)!important;color:var(--ec-vr-gray)!important;}
+html body.ec-aaa-visual-page main #ec-lunch-light-content :is(h1,h2,h3,h4,h5,h6){color:var(--ec-vr-blue)!important;-webkit-text-fill-color:var(--ec-vr-blue)!important;}
+html body.ec-aaa-visual-page main #ec-lunch-light-content :is(p,li,span,small,strong){color:var(--ec-vr-gray)!important;-webkit-text-fill-color:var(--ec-vr-gray)!important;}
+html body.ec-aaa-visual-page main a.btn[href*="tagme"],html body.ec-aaa-visual-page main a.btn[href*="reserv"],html body.ec-aaa-visual-page nav.top a.ec-nav-cta{background:var(--ec-vr-yellow)!important;border-color:var(--ec-vr-yellow)!important;color:var(--ec-vr-blue)!important;}
+</style>
+<!-- /EC Real Visual Alerts Closeout -->
 </body>
 </html>

@@ -2704,7 +2704,7 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
   ]
 }
 </script></head>
-<body data-screen-label="Lunch"><!-- NAV -->
+<body data-screen-label="Lunch" class="ec-aaa-visual-page ec-existing-layout"><!-- NAV -->
 <nav aria-label="Navegação principal" class="top" id="topnav">
 <div class="nav-inner">
 <a aria-label="Embaixada Carioca · início" class="brand-mark" href="/">
@@ -3476,7 +3476,7 @@ footer.foot {
 <main id="main-content">
 
 <div aria-hidden="true" class="page-hero-overlay"></div>
-<section class="hero-internal" style="background-image: url('assets/hero.webp'); background-position: center 60%;">
+<section class="hero-internal" style="background-image: url('/assets/hero.webp'); background-position: center 60%;">
   <div class="wrap">
     <div class="hero-content">
       <div class="eyebrow">At 227 meters of altitude</div>
@@ -3502,7 +3502,7 @@ footer.foot {
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
       <!-- Breakfast -->
       <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); display: flex; flex-direction: column;">
-        <img src="assets/cafe-manha-vista-pao-acucar.webp" alt="Café da manhã com vista para o Pão de Açúcar" style="width: 100%; height: 220px; object-fit: cover;">
+        <img src="/assets/cafe-manha-vista-pao-acucar.webp" alt="Café da manhã com vista para o Pão de Açúcar" style="width: 100%; height: 220px; object-fit: cover;">
         <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
           <h3 style="color: var(--azul1); font-size: 1.5rem; margin-bottom: 1rem;">Breakfast</h3>
           <p style="color: var(--cinza1); margin-bottom: 1.5rem; flex-grow: 1;">Start the day with a complete breakfast while the sun illuminates Guanabara Bay and Sugarloaf Mountain.</p>
@@ -3512,7 +3512,7 @@ footer.foot {
       
       <!-- Almoço -->
       <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); display: flex; flex-direction: column;">
-        <img src="assets/prato-principal-vista-pao-acucar.webp" alt="Almoço com vista no Rio de Janeiro" style="width: 100%; height: 220px; object-fit: cover;">
+        <img src="/assets/prato-principal-vista-pao-acucar.webp" alt="Almoço com vista no Rio de Janeiro" style="width: 100%; height: 220px; object-fit: cover;">
         <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
           <h3 style="color: var(--azul1); font-size: 1.5rem; margin-bottom: 1rem;">Brazilian Lunch</h3>
           <p style="color: var(--cinza1); margin-bottom: 1.5rem; flex-grow: 1;">Grilled picanha, shrimp bobó, and our award-winning feijoada served with the most spectacular view in the city.</p>
@@ -3522,7 +3522,7 @@ footer.foot {
       
       <!-- Entardecer -->
       <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); display: flex; flex-direction: column;">
-        <img src="assets/cocktails-vista.webp" alt="Sunset cocktails with a view" style="width: 100%; height: 220px; object-fit: cover;">
+        <img src="/assets/cocktails-vista.webp" alt="Sunset cocktails with a view" style="width: 100%; height: 220px; object-fit: cover;">
         <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
           <h3 style="color: var(--azul1); font-size: 1.5rem; margin-bottom: 1rem;">Sunset & Drinks</h3>
           <p style="color: var(--cinza1); margin-bottom: 1.5rem; flex-grow: 1;">Rio's most famous sunset accompanied by cold draft beer, award-winning caipirinhas, and live music.</p>
@@ -3547,7 +3547,7 @@ footer.foot {
         <a class="btn" href="https://go.tagme.com.br/embaixadacarioca" style="background: var(--amarelo); color: white; border: none;">Secure my table with a view</a>
       </div>
       <div style="border-radius: 12px; overflow: hidden;">
-        <img src="assets/banda-jazz-terraco-pao-acucar-wide.webp" alt="Terraço da Embaixada Carioca com vista frontal para o Pão de Açúcar" style="width: 100%; height: auto; display: block;">
+        <img src="/assets/banda-jazz-terraco-pao-acucar-wide.webp" alt="Terraço da Embaixada Carioca com vista frontal para o Pão de Açúcar" style="width: 100%; height: auto; display: block;">
       </div>
     </div>
   </div>
@@ -3706,5 +3706,21 @@ html body main .corporate-section a {
 <script defer src="/assets/bondinho-ticket-notice.js"></script>
 <script defer src="/assets/menuitem-schema-enhancer.js"></script>
 <script defer src="/assets/internal-page-contrast-rescue.js"></script>
+<!-- EC Real Visual Alerts Closeout -->
+<style id="ec-visual-readability-reality-fix">
+/* EC AAA Closeout Design Lock — final, scoped contrast layer. */
+:root{--ec-vr-blue:#00405a;--ec-vr-green:#335d4a;--ec-vr-yellow:#f59b1e;--ec-vr-paper:#f6efde;--ec-vr-gray:#485156;}
+html body.ec-aaa-visual-page main *{-webkit-text-fill-color:currentColor!important;}
+html body.ec-aaa-visual-page{font-family:Catamaran,Verdana,system-ui,sans-serif!important;}
+html body.ec-aaa-visual-page main :is(.card,.answer,.ficha,.format,.qa,.menu-item,.gallery figure,details){color:var(--ec-vr-gray)!important;}
+html body.ec-aaa-visual-page main :is(.card,.answer,.ficha,.format,.qa,.menu-item,.gallery figure,details) :is(h1,h2,h3,h4,strong,summary){color:var(--ec-vr-blue)!important;}
+html body.ec-aaa-visual-page main :is(.dark,.contact) :is(p,li,span,small,.lede){color:rgba(246,239,222,.90)!important;}
+html body.ec-aaa-visual-page main :is(.light-section,.paper-section,.section-paper,.bg-paper,.gallery-section,.ec-lunch-gallery) :is(p,li,span,small,figcaption){color:var(--ec-vr-gray)!important;}
+html body.ec-aaa-visual-page main #ec-lunch-light-content{background:var(--ec-vr-paper)!important;color:var(--ec-vr-gray)!important;}
+html body.ec-aaa-visual-page main #ec-lunch-light-content :is(h1,h2,h3,h4,h5,h6){color:var(--ec-vr-blue)!important;-webkit-text-fill-color:var(--ec-vr-blue)!important;}
+html body.ec-aaa-visual-page main #ec-lunch-light-content :is(p,li,span,small,strong){color:var(--ec-vr-gray)!important;-webkit-text-fill-color:var(--ec-vr-gray)!important;}
+html body.ec-aaa-visual-page main a.btn[href*="tagme"],html body.ec-aaa-visual-page main a.btn[href*="reserv"],html body.ec-aaa-visual-page nav.top a.ec-nav-cta{background:var(--ec-vr-yellow)!important;border-color:var(--ec-vr-yellow)!important;color:var(--ec-vr-blue)!important;}
+</style>
+<!-- /EC Real Visual Alerts Closeout -->
 </body>
 </html>
