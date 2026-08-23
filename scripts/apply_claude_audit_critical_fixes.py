@@ -3,7 +3,7 @@
 
 Scope:
 - Standardize all feijoada award language.
-- Remove/neutralize unverified institutional claims involving Cantina do MAM.
+- Preserve the confirmed institutional relationship with Cantina do MAM.
 - Fix common EN portunhol fragments detected in previous scripts.
 - Standardize Instagram follower claims to 84K/84 mil.
 - Strip review/rating nodes from JSON-LD to avoid review-snippet regressions.
@@ -36,9 +36,9 @@ HTML_FILES = sorted(
 WORKFLOW_DIR = ROOT / ".github" / "workflows"
 JSONLD_RE = re.compile(r'(<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>)(.*?)(</script>)', re.I | re.S)
 
-PT_AWARD = "Melhor Feijoada do Rio de Janeiro — Veja Rio Comer & Beber 2025/2026"
-EN_AWARD = "Best Feijoada in Rio de Janeiro — Veja Rio Comer & Beber 2025/2026"
-ES_AWARD = "Mejor Feijoada de Río de Janeiro — Veja Rio Comer & Beber 2025/2026"
+PT_AWARD = "Feijoada da Academia da Cachaça — Melhor Feijoada, Veja Rio Comer & Beber 2025 — servida na Embaixada Carioca por meio de parceria formal"
+EN_AWARD = "Academia da Cachaça's feijoada — Best Feijoada, Veja Rio Comer & Beber 2025 — served at Embaixada Carioca through a formal partnership"
+ES_AWARD = "Feijoada de Academia da Cachaça — Mejor Feijoada, Veja Rio Comer & Beber 2025 — servida en Embaixada Carioca mediante una colaboración formal"
 
 TEXT_REPLACEMENTS: list[tuple[str, str, str]] = [
     (r"Melhor\s+Feijoada\s+do\s+Brasil", "Melhor Feijoada do Rio de Janeiro", "award-pt-brasil-to-rio"),
@@ -92,25 +92,9 @@ TEXT_REPLACEMENTS: list[tuple[str, str, str]] = [
     (r"\+100\s+mil", "84 mil", "followers-generic-100mil-to-84mil"),
 ]
 
-# Longer, specific institutional claims: neutralize only if found.
-CLAIM_PATTERNS: list[tuple[str, str]] = [
-    (
-        r"<section\b(?:(?!</section>).)*Cantina\s+do\s+MAM(?:(?!</section>).)*</section>",
-        "",
-    ),
-    (
-        r"<!--\s*Cantina\s+do\s+MAM.*?-->\s*<div\b.*?@cantinadomam\s*</a>\s*</div></div>",
-        "",
-    ),
-    (
-        r"A\s+Embaixada\s+Carioca\s+faz\s+parte\s+do\s+Academia\s+da\s+Cachaça,\s+que\s+inclui\s+também\s+a\s+Academia\s+da\s+Cachaça\s*\([^)]*\)\s+e\s+a\s+Cantina\s+do\s+MAM\s*\([^)]*\),?\s+no\s+Museu\s+de\s+Arte\s+Moderna\.?",
-        "A Embaixada Carioca fica no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar, com gastronomia brasileira, feijoada premiada da Academia da Cachaça e vista para o Pão de Açúcar.",
-    ),
-    (
-        r"Embaixada\s+Carioca\s+is\s+part\s+of\s+Academia\s+da\s+Cachaça,\s+which\s+also\s+includes\s+Academia\s+da\s+Cachaça\s*\([^)]*\)\s+and\s+Cantina\s+do\s+MAM\s*\([^)]*\),?\s+at\s+the\s+Museum\s+of\s+Modern\s+Art\.?",
-        "Embaixada Carioca is located at Morro da Urca inside Sugarloaf Cable Car Park, serving Brazilian food, the award-winning Academia da Cachaça feijoada and views of Sugarloaf Mountain.",
-    ),
-]
+# The relationship with Cantina do MAM was confirmed by the owner on
+# 2026-08-23. This maintenance script must not delete or rewrite that claim.
+CLAIM_PATTERNS: list[tuple[str, str]] = []
 
 FORBIDDEN_AFTER = [
     "Prazeres da Mesa",
@@ -118,7 +102,6 @@ FORBIDDEN_AFTER = [
     "Best Feijoada in Brazil",
     "Melhor Feijoada do Brasil",
     "one of the best in the city",
-    "Cantina do MAM",
     "100K seguidores",
     "100 mil seguidores",
     "+100K",
@@ -517,6 +500,15 @@ def apply_text_fixes(source: str, path: Path) -> tuple[str, int, list[str]]:
             count_total += count
             notes.append(f"unverified-cantina-claim-removed:{count}")
 
+    # Final factual guard. Older replacement rules above intentionally keep
+    # matching legacy text, but their output must converge on the official
+    # 2025 attribution before any file is written.
+    year_count = updated.count("2025/2026")
+    if year_count:
+        updated = updated.replace("2025/2026", "2025")
+        count_total += year_count
+        notes.append(f"award-year-official-2025:{year_count}")
+
     return updated, count_total, notes
 
 
@@ -570,7 +562,7 @@ def write_report(results: list[FileResult], remaining: dict[str, list[str]], wor
         f"Status geral: **{status}**",
         "",
         "## Objetivo",
-        "Atuar sobre os pontos críticos do relatório Claude: padronização do prêmio da feijoada, remoção de alegações institucionais não verificadas, limpeza de portunhol técnico, padronização de seguidores e blindagem contra retorno de review/rating em JSON-LD.",
+        "Atuar sobre os pontos críticos do relatório Claude: atribuição oficial do prêmio da feijoada à Academia da Cachaça, preservação da parceria institucional confirmada, limpeza de portunhol técnico, padronização de seguidores e blindagem contra retorno de review/rating em JSON-LD.",
         "",
         "## Formulações canônicas aplicadas",
         f"- PT: `{PT_AWARD}`",
@@ -581,7 +573,7 @@ def write_report(results: list[FileResult], remaining: dict[str, list[str]], wor
         "- Nenhum canonical/hreflang foi alterado.",
         "- Nenhum AggregateRating, Rating ou Review foi adicionado.",
         "- JSON-LD com `review`, `reviewRating` ou `aggregateRating` foi limpo quando encontrado.",
-        "- Alegações envolvendo Cantina do MAM foram neutralizadas se presentes no HTML.",
+        "- A relação institucional confirmada com a Cantina do MAM não é removida nem reescrita por este script.",
         "",
         "## Resumo",
         f"- HTML analisados: **{len(results)}**",

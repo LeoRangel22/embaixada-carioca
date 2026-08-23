@@ -3,23 +3,23 @@
 Status geral: **PASS**
 
 ## Objetivo
-Atuar sobre os pontos críticos do relatório Claude: padronização do prêmio da feijoada, remoção de alegações institucionais não verificadas, limpeza de portunhol técnico, padronização de seguidores e blindagem contra retorno de review/rating em JSON-LD.
+Atuar sobre os pontos críticos do relatório Claude: atribuição oficial do prêmio da feijoada à Academia da Cachaça, preservação da parceria institucional confirmada, limpeza de portunhol técnico, padronização de seguidores e blindagem contra retorno de review/rating em JSON-LD.
 
 ## Formulações canônicas aplicadas
-- PT: `Melhor Feijoada do Rio de Janeiro — Veja Rio Comer & Beber 2025/2026`
-- EN: `Best Feijoada in Rio de Janeiro — Veja Rio Comer & Beber 2025/2026`
-- ES: `Mejor Feijoada de Río de Janeiro — Veja Rio Comer & Beber 2025/2026`
+- PT: `Feijoada da Academia da Cachaça — Melhor Feijoada, Veja Rio Comer & Beber 2025 — servida na Embaixada Carioca por meio de parceria formal`
+- EN: `Academia da Cachaça's feijoada — Best Feijoada, Veja Rio Comer & Beber 2025 — served at Embaixada Carioca through a formal partnership`
+- ES: `Feijoada de Academia da Cachaça — Mejor Feijoada, Veja Rio Comer & Beber 2025 — servida en Embaixada Carioca mediante una colaboración formal`
 
 ## Guardrails
 - Nenhum canonical/hreflang foi alterado.
 - Nenhum AggregateRating, Rating ou Review foi adicionado.
 - JSON-LD com `review`, `reviewRating` ou `aggregateRating` foi limpo quando encontrado.
-- Alegações envolvendo Cantina do MAM foram neutralizadas se presentes no HTML.
+- A relação institucional confirmada com a Cantina do MAM não é removida nem reescrita por este script.
 
 ## Resumo
 - HTML analisados: **116**
-- Arquivos alterados: **1**
-- Substituições textuais: **1**
+- Arquivos alterados: **2**
+- Substituições textuais: **8**
 - Nós/campos JSON-LD de rating/review removidos: **0**
 - Workflows encontrados: **32**
 
@@ -66,4 +66,5 @@ Nenhuma ocorrência dos termos críticos monitorados.
 
 | Arquivo | Changed | Substituições | JSON-LD rating/review removidos | Notas |
 |---|---:|---:|---:|---|
-| `en/gastronomia-carioca.html` | True | 1 | 0 | language-block-rewritten:1 |
+| `feijoada-morro-da-urca.html` | True | 6 | 0 | award-pt-source-corrected:3; award-year-official-2025:3 |
+| `index.html` | True | 2 | 0 | award-pt-source-corrected:1; award-year-official-2025:1 |
