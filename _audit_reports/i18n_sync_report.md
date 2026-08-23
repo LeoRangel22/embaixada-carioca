@@ -1,6 +1,6 @@
 # Relatório de Sincronização i18n PT/EN/ES
 
-Gerado em: 2026-08-23 00:17:26
+Gerado em: 2026-08-23 01:11:35
 
 - PT: 23 arquivos
 - EN: 31 arquivos
@@ -54,7 +54,7 @@ _Nenhuma. Todas as páginas PT têm equivalente ES._
 
 ### `parque-bondinho.html`
 
-    - Headings (h1+h2) desbalanceados: PT=12, EN=8, ES=7 (diferença > 1)
+    - Headings (h1+h2) desbalanceados: PT=12, EN=8, ES=8 (diferença > 1)
 
 ### `restaurante-com-vista-rio-de-janeiro.html`
 
