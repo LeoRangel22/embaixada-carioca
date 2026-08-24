@@ -3,6 +3,7 @@ const LEGACY_REDIRECTS = new Map([
   ["/inquiry-services-page", "/eventos.html"],
   ["/caf%C3%A9-da-manh%C3%A3-com-a-melhor-vista-do-rio", "/cafe-da-manha-com-vista-rio-de-janeiro.html"],
   ["/en/como-chegar.html", "/en/how-to-get-there.html"],
+  ["/restaurante-urca.html", "/restaurante-morro-da-urca.html"],
 ]);
 
 function redirect(requestUrl, destination) {
