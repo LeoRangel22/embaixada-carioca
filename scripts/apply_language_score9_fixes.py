@@ -135,9 +135,7 @@ REPLACEMENTS = {
     "Melhor Feijoada do Rio — Veja Rio 2025/2026": "Feijoada premiada da Academia da Cachaça — servida na Embaixada Carioca",
     "Best Feijoada in Rio — Veja Rio 2025/2026": "Award-winning feijoada from Academia da Cachaça — served at Embaixada Carioca",
     "Mejor Feijoada de Río — Veja Rio 2025/2026": "Feijoada premiada de Academia da Cachaça — servida en Embaixada Carioca",
-    "Best Feijoada in Brazil": "Award-winning feijoada from Academia da Cachaça",
-    "Mejor Feijoada de Brasil": "Feijoada premiada de Academia da Cachaça",
-    "melhor do Brasil pela Revista Veja Rio 2025/2026": "premiada pela Revista Veja Rio 2025/2026 na Academia da Cachaça",
+    "melhor do Brasil pela Revista Veja Rio 2025/2026": "Melhor Feijoada do Brasil pela revista Prazeres da Mesa em 2017 e vencedora da categoria Melhor Feijoada no Veja Rio Comer & Beber 2025, pela Academia da Cachaça",
     "conquistou o país": "marca a tradição carioca",
 }
 
@@ -159,7 +157,6 @@ FORBIDDEN = [
     "Eventos no <span", "O <strong>espacio", "Dois universos", "Do evento corporativo",
     "música ao vivo no Morro da Urca", "pôr do sol atrás do Pão de Açúcar", "pôr do sol sobre o Pão de Açúcar",
     "300+ convidados", "300+ guests", "300+ invitados",
-    "melhor do Brasil pela Revista Veja Rio",
 ]
 
 # Regexes: limpam apenas afirmações falsas de vista a partir da Embaixada/restaurante/terraço/mesa.

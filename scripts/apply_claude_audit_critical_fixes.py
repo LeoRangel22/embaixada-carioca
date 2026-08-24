@@ -37,19 +37,14 @@ HTML_FILES = sorted(
 WORKFLOW_DIR = ROOT / ".github" / "workflows"
 JSONLD_RE = re.compile(r'(<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>)(.*?)(</script>)', re.I | re.S)
 
-PT_AWARD = "Feijoada da Academia da Cachaça — Melhor Feijoada, Veja Rio Comer & Beber 2025 — servida na Embaixada Carioca por meio de parceria formal"
-EN_AWARD = "Academia da Cachaça's feijoada — Best Feijoada, Veja Rio Comer & Beber 2025 — served at Embaixada Carioca through a formal partnership"
-ES_AWARD = "Feijoada de Academia da Cachaça — Mejor Feijoada, Veja Rio Comer & Beber 2025 — servida en Embaixada Carioca mediante una colaboración formal"
+PT_AWARD = "Feijoada da Academia da Cachaça — Melhor Feijoada do Brasil, Prazeres da Mesa 2017; Melhor Feijoada, Veja Rio Comer & Beber 2025 — servida na Embaixada Carioca por meio de parceria formal"
+EN_AWARD = "Academia da Cachaça's feijoada — Best Feijoada in Brazil, Prazeres da Mesa 2017; Best Feijoada, Veja Rio Comer & Beber 2025 — served at Embaixada Carioca through a formal partnership"
+ES_AWARD = "Feijoada de Academia da Cachaça — Mejor Feijoada de Brasil, Prazeres da Mesa 2017; Mejor Feijoada, Veja Rio Comer & Beber 2025 — servida en Embaixada Carioca mediante una colaboración formal"
 
 TEXT_REPLACEMENTS: list[tuple[str, str, str]] = [
-    (r"Melhor\s+Feijoada\s+do\s+Brasil", "Melhor Feijoada do Rio de Janeiro", "award-pt-brasil-to-rio"),
-    (r"best\s+feijoada\s+in\s+Brazil", "Best Feijoada in Rio de Janeiro", "award-en-brazil-to-rio"),
-    (r"best\s+feijoada\s+of\s+Brazil", "Best Feijoada in Rio de Janeiro", "award-en-of-brazil-to-rio"),
     (r"one\s+of\s+the\s+best\s+feijoadas?\s+in\s+the\s+city", EN_AWARD, "award-en-weak-to-best"),
     (r"one\s+of\s+the\s+best\s+in\s+the\s+city", EN_AWARD, "award-en-generic-weak-to-best"),
     (r"Voted\s+by\s+Veja\s+Rio\s+as\s+one\s+of\s+the\s+best\s+in\s+the\s+city", f"Voted {EN_AWARD}", "award-en-veja-one-of-best"),
-    (r"Revista\s+Prazeres\s+da\s+Mesa", "Veja Rio Comer & Beber 2025/2026", "wrong-magazine-prazeres-to-veja"),
-    (r"Prazeres\s+da\s+Mesa", "Veja Rio Comer & Beber 2025/2026", "wrong-source-prazeres-to-veja"),
     (r"Veja\s+Rio\s+2025/2026(?!\s+Comer\s*&\s*Beber)", "Veja Rio Comer & Beber 2025/2026", "award-veja-full-name"),
     (r"O\s+sunset\s+m[aá]s\s+bonito\s+do\s+Rio\s+de\s+Janeiro", "The most beautiful sunset in Rio de Janeiro", "en-portunhol-sunset-mas"),
     (r"Servida\s+every\s+day\s+no\s+lunch", "Served daily for lunch", "en-portunhol-servida"),
@@ -101,10 +96,6 @@ TEXT_REPLACEMENTS: list[tuple[str, str, str]] = [
 CLAIM_PATTERNS: list[tuple[str, str]] = []
 
 FORBIDDEN_AFTER = [
-    "Prazeres da Mesa",
-    "best feijoada in Brazil",
-    "Best Feijoada in Brazil",
-    "Melhor Feijoada do Brasil",
     "one of the best in the city",
     "100K seguidores",
     "100 mil seguidores",
@@ -155,7 +146,7 @@ def apply_language_specific_fixes(source: str, path: Path) -> tuple[str, int, li
         replacements = [
             (
                 r"feijoada premiada da Academia da Cachaça",
-                "feijoada named Best Feijoada in Rio de Janeiro by Veja Rio Comer & Beber 2025/2026, in partnership with Academia da Cachaça",
+                EN_AWARD,
                 "award-en-academia-source-corrected",
             ),
             (
@@ -165,7 +156,7 @@ def apply_language_specific_fixes(source: str, path: Path) -> tuple[str, int, li
             ),
             (
                 r"voted Best in Brazil by Veja Rio Comer & Beber 2025/2026 Magazine",
-                "named Best Feijoada in Rio de Janeiro by Veja Rio Comer & Beber 2025/2026, in partnership with Academia da Cachaça",
+                EN_AWARD,
                 "award-en-menu-rio-not-brazil",
             ),
         ]
@@ -173,7 +164,7 @@ def apply_language_specific_fixes(source: str, path: Path) -> tuple[str, int, li
         replacements = [
             (
                 r"feijoada premiada da Academia da Cachaça",
-                "feijoada elegida Mejor Feijoada de Río de Janeiro por Veja Rio Comer & Beber 2025/2026, en colaboración con Academia da Cachaça",
+                ES_AWARD,
                 "award-es-academia-source-corrected",
             ),
             (
@@ -346,7 +337,7 @@ def apply_page_specific_language_fixes(source: str, path: Path) -> tuple[str, in
             ("A <strong>Embaixada Carioca</strong>, on Urca Hill, é um dos restaurantes mais reconhecidos de Brazilian gastronomy no Rio de Janeiro. Com feijoada premiada pela Revista Veja Rio Comer & Beber 2025/2026, vista de frente to Sugarloaf Mountain e localização no Bondinho Pão de Açúcar Park, combina gastronomia de alto nível com a experiência turística mais icônica do Rio. Open every day from 8:30 AM às 9:00 PM.", "<strong>Embaixada Carioca</strong>, on Urca Hill, serves Brazilian food inside Sugarloaf Cable Car Park with a direct view of Sugarloaf Mountain. It is open daily from 8:30 AM to 9:00 PM and serves the Best Feijoada in Rio de Janeiro — Veja Rio Comer & Beber 2025/2026, in partnership with Academia da Cachaça."),
         ],
         "en/cardapio.html": [
-            ("The famous Feijoada from Academia da Cachaça, voted Best in Brazil by Veja Rio Comer & Beber 2025/2026 Magazine.", "Embaixada Carioca's feijoada, named Best Feijoada in Rio de Janeiro by Veja Rio Comer & Beber 2025/2026, in partnership with Academia da Cachaça."),
+            ("The famous Feijoada from Academia da Cachaça, voted Best in Brazil by Veja Rio Comer & Beber 2025/2026 Magazine.", EN_AWARD + "."),
             ("Picanha grelhada no ponto, acompanhada de arroz, farofa e vinagrete.", "Grilled picanha served with rice, toasted cassava flour and vinaigrette."),
             ("Picanha grelhada para duas pessoas, acompanhada de arroz, farofa e vinagrete.", "Grilled picanha for two, served with rice, toasted cassava flour and vinaigrette."),
             ("Carne em cubos refogada, acompanhada de arroz, ovo, banana e farofa.", "Braised diced beef served with rice, egg, banana and toasted cassava flour."),
