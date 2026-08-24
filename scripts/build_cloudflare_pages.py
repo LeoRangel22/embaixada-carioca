@@ -72,7 +72,6 @@ def copy_public_site() -> None:
             "/*.js",
             "/*.json",
             "/*.xml",
-            "/*.txt",
             "/*.ico",
         ],
     }
