@@ -2,6 +2,7 @@ const LEGACY_REDIRECTS = new Map([
   ["/general-3", "/"],
   ["/inquiry-services-page", "/eventos.html"],
   ["/caf%C3%A9-da-manh%C3%A3-com-a-melhor-vista-do-rio", "/cafe-da-manha-com-vista-rio-de-janeiro.html"],
+  ["/en/como-chegar.html", "/en/how-to-get-there.html"],
 ]);
 
 function redirect(requestUrl, destination) {
