@@ -33,3 +33,6 @@ __pycache__/
 
 # Relatório local do gate de acessibilidade (publicado como artifact no CI)
 pa11y-report.json
+
+# Saída local gerada para o Cloudflare Pages
+_site/

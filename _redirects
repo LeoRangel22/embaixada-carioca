@@ -12,5 +12,9 @@
 /contato /contato.html 301
 /en/morro-da-urca /en/morro-da-urca.html 301
 
+# URLs legadas que ainda aparecem nos relatórios de cobertura do Google.
+/general-3 / 301
+/inquiry-services-page /eventos.html 301
+
 # URL legada do antigo site Wix.
 /caf%C3%A9-da-manh%C3%A3-com-a-melhor-vista-do-rio /cafe-da-manha-com-vista-rio-de-janeiro.html 301
