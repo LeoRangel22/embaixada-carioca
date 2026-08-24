@@ -1,0 +1,16 @@
+# URLs canonicas da Embaixada Carioca
+# Processado pelo Cloudflare Pages antes dos arquivos estaticos.
+
+/index.html / 301
+/en/index.html /en/ 301
+/es/index.html /es/ 301
+
+/cardapio /cardapio.html 301
+/eventos /eventos.html 301
+/feijoada /feijoada.html 301
+/nossa-visao /nossa-visao.html 301
+/contato /contato.html 301
+/en/morro-da-urca /en/morro-da-urca.html 301
+
+# URL legada do antigo site Wix.
+/caf%C3%A9-da-manh%C3%A3-com-a-melhor-vista-do-rio /cafe-da-manha-com-vista-rio-de-janeiro.html 301
