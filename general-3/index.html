@@ -100,19 +100,6 @@ html body main a.btn[href*="tagme"],html body main a.btn[href*="reserv"],nav.top
         });
       });
 
-      // Evento: Clique em link WhatsApp
-      document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]').forEach(function(el) {
-        el.addEventListener('click', function() {
-          if (typeof gtag !== 'undefined') {
-            gtag('event', 'whatsapp_click', {
-              event_category: 'conversao',
-              event_label: el.href || 'whatsapp_cta',
-              value: 1
-            });
-          }
-        });
-      });
-
       // Evento: Clique em botões CTA (Solicitar Orçamento, Reservar, etc.)
       document.querySelectorAll('.btn-cta, .ec-cta-btn, [data-cta], a[href*="tagme"], a[href*="reserva"]').forEach(function(el) {
         el.addEventListener('click', function() {

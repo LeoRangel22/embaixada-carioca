@@ -8,9 +8,10 @@
     params.event_category = params.event_category || 'conversion';
     params.transport_type = params.transport_type || 'beacon';
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push(Object.assign({ event: name }, params));
     if (typeof window.gtag === 'function') {
       try { window.gtag('event', name, params); } catch(e) {}
+    } else {
+      window.dataLayer.push(Object.assign({ event: name }, params));
     }
   }
 
@@ -18,8 +19,30 @@
     var u = (url || '').toLowerCase();
     if (u.indexOf('go.tagme.com.br') >= 0 || u.indexOf('tagme.com.br') >= 0) return 'tagme_reservation';
     if (u.indexOf('wa.me') >= 0 || u.indexOf('api.whatsapp.com') >= 0 || u.indexOf('whatsapp') >= 0) return 'whatsapp';
+    if ((u.indexOf('g.page') >= 0 && u.indexOf('review') >= 0) || u.indexOf('google.com/maps/place') >= 0 && u.indexOf('review') >= 0) return 'google_reviews';
+    if (u.indexOf('google.com/maps') >= 0 || u.indexOf('maps.google.') >= 0 || u.indexOf('maps.app.goo') >= 0) return 'google_maps';
     if (u.indexOf('mailto:') === 0) return 'email';
     if (u.indexOf('tel:') === 0) return 'phone';
+    return '';
+  }
+
+  function eventNameFor(el, url){
+    var label = normalizeLabel(
+      (el && (el.innerText || el.getAttribute('aria-label') || el.getAttribute('title') || el.getAttribute('data-analytics-label'))) || ''
+    );
+    var classes = String((el && el.className) || '');
+    var haystack = (String(url || '') + ' ' + label + ' ' + classes).toLowerCase();
+
+    if (haystack.indexOf('go.tagme.com.br') >= 0 || haystack.indexOf('reservar') >= 0 || haystack.indexOf('reserva') >= 0) return 'click_reservar';
+    if (haystack.indexOf('wa.me') >= 0 || haystack.indexOf('whatsapp') >= 0) return 'whatsapp_click';
+    if ((haystack.indexOf('g.page') >= 0 && haystack.indexOf('review') >= 0) || haystack.indexOf('google reviews') >= 0 || haystack.indexOf('avaliações no google') >= 0 || haystack.indexOf('avaliacoes no google') >= 0) return 'click_google_reviews';
+    if (haystack.indexOf('google.com/maps') >= 0 || haystack.indexOf('maps.google.') >= 0 || haystack.indexOf('maps.app.goo') >= 0) return 'click_google_maps';
+    if (haystack.indexOf('como-chegar') >= 0 || haystack.indexOf('como chegar') >= 0 || haystack.indexOf('how-to-get-there') >= 0 || haystack.indexOf('how to get') >= 0 || haystack.indexOf('como-llegar') >= 0 || haystack.indexOf('cómo llegar') >= 0 || haystack.indexOf('directions') >= 0) return 'click_como_chegar';
+    if (haystack.indexOf('cardapio') >= 0 || haystack.indexOf('cardápio') >= 0 || haystack.indexOf('/menu') >= 0) return 'click_cardapio';
+    if (haystack.indexOf('eventos') >= 0 || haystack.indexOf('events') >= 0) return 'click_eventos';
+    if (haystack.indexOf('cafe-da-manha') >= 0 || haystack.indexOf('café da manhã') >= 0 || haystack.indexOf('breakfast') >= 0 || haystack.indexOf('desayuno') >= 0) return 'click_cafe_da_manha';
+    if (haystack.indexOf('almoco') >= 0 || haystack.indexOf('almoço') >= 0 || haystack.indexOf('lunch') >= 0 || haystack.indexOf('almuerzo') >= 0) return 'click_almoco';
+    if (haystack.indexOf('lang-') >= 0 || haystack.indexOf('hreflang') >= 0 || (el && el.closest && el.closest('.lang-switcher'))) return 'click_idioma';
     return '';
   }
 
@@ -183,21 +206,36 @@
   }
 
   document.addEventListener('click', function(evt){
-    var link = evt.target && evt.target.closest ? evt.target.closest('a[href]') : null;
+    var link = evt.target && evt.target.closest ? evt.target.closest('a[href], button, [role="button"]') : null;
     if (!link) return;
     var href = link.getAttribute('href') || '';
     var type = classify(href);
-    if (!type) return;
+    var eventName = eventNameFor(link, href);
+    if (!type && !eventName) return;
 
-    pushEvent('ec_outbound_conversion_click', {
-      conversion_type: type,
-      link_url: link.href || href,
-      link_text: (link.textContent || '').trim().slice(0, 120),
-      page_path: location.pathname,
-      page_title: document.title,
-      language: document.documentElement.lang || '',
-      event_label: type + ' | ' + location.pathname
-    });
+    if (type) {
+      pushEvent('ec_outbound_conversion_click', {
+        conversion_type: type,
+        link_url: link.href || href,
+        link_text: (link.textContent || '').trim().slice(0, 120),
+        page_path: location.pathname,
+        page_title: document.title,
+        language: document.documentElement.lang || '',
+        event_label: type + ' | ' + location.pathname
+      });
+    }
+
+    if (eventName) {
+      pushEvent(eventName, {
+        link_url: link.href || href,
+        link_text: (link.textContent || '').trim().slice(0, 120),
+        page_path: location.pathname,
+        page_title: document.title,
+        language: document.documentElement.lang || '',
+        event_label: (type || eventName) + ' | ' + location.pathname,
+        analytics_version: '2026-08-24.1'
+      });
+    }
 
     if (type === 'tagme_reservation') {
       pushEvent('ec_reservation_click', {

@@ -4,10 +4,10 @@
 Auditar o conjunto completo de páginas HTML em linguagem, SEO, GEO/AIO/SAI, UX, design, marca, contraste, imagens, performance básica e integridade técnica.
 
 ## Veredito executivo
-- Total de arquivos HTML encontrados: 98
-- Páginas comerciais/conteúdo: 96
+- Total de arquivos HTML encontrados: 97
+- Páginas comerciais/conteúdo: 95
 - Páginas utilitárias: 2
-- PASS: 98
+- PASS: 97
 - WARN: 0
 - Nota geral média: 10.0/10
 - Status geral: PASS

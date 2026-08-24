@@ -3564,92 +3564,6 @@ nav.top.scrolled a.nav-rating-badge:visited {
 <!-- EC Sprint 5 Quality FAQ -->
 <section class="ec-sprint5-faq"><div class="wrap"><h2>Useful questions before visiting</h2><details><summary>Is Embaixada Carioca inside Sugarloaf Cable Car Park?</summary><p>Yes. It is located at Urca Hill, the first sUrca Hill Cable Car Park, which makes it practical for visitors already planning the attraction.</p></details><details><summary>Do I need to plan access before visiting?</summary><p>Yes. Most visitors arrive by cable car with a park ticket. The Urca Hill trail can be a free alternative when open and suitable for the visitor.</p></details><details><summary>Is it better for breakfast, lunch or drinks?</summary><p>It works for all three moments. Breakfast is best for an early scenic start, lunch for Brazilian food and afternoon for caipirinhas, draft beer and a slower view experience.</p></details><details><summary>Should groups reserve?</summary><p>Yes. Reservations are recommended for groups, weekends, holidays and high-traffic tourism days to reduce waiting time and organize the visit.</p></details></div></section>
 <!-- /EC Sprint 5 Quality FAQ -->
-<!-- EC Analytics Events v1 -->
-<script id="ec-ga4-events">
-(function(){
-  'use strict';
-
-  var EVENT_VERSION = '2026-05-19.2';
-
-  function textOf(el){
-    if (!el) return '';
-    return String(
-      el.innerText ||
-      el.getAttribute('aria-label') ||
-      el.getAttribute('title') ||
-      el.getAttribute('data-analytics-label') ||
-      ''
-    ).replace(/\s+/g, ' ').trim().slice(0, 140);
-  }
-
-  function cleanUrl(url){
-    if (!url) return '';
-    try {
-      var u = new URL(url, window.location.href);
-      var host = u.hostname.toLowerCase();
-      if (host.indexOf('wa.me') >= 0 || host.indexOf('whatsapp') >= 0) {
-        return u.origin + u.pathname;
-      }
-      return u.href.slice(0, 500);
-    } catch(e) {
-      return String(url).slice(0, 500);
-    }
-  }
-
-  function eventNameFor(el){
-    var href = String(el.href || el.getAttribute('href') || '');
-    var label = textOf(el);
-    var classes = String(el.className || '');
-    var aria = String(el.getAttribute('aria-label') || '');
-    var haystack = (href + ' ' + label + ' ' + classes + ' ' + aria).toLowerCase();
-
-    if (haystack.indexOf('go.tagme.com.br') >= 0 || haystack.indexOf('reservar') >= 0 || haystack.indexOf('reserva') >= 0) return 'click_reservar';
-    if (haystack.indexOf('wa.me') >= 0 || haystack.indexOf('whatsapp') >= 0) return 'click_whatsapp';
-    if (haystack.indexOf('google.com/maps') >= 0 || haystack.indexOf('maps.app.goo') >= 0 || haystack.indexOf('how to get there') >= 0 || haystack.indexOf('directions') >= 0) return 'click_como_chegar';
-    if (haystack.indexOf('cardapio') >= 0 || haystack.indexOf('cardápio') >= 0 || haystack.indexOf('menu') >= 0) return 'click_cardapio';
-    if (haystack.indexOf('eventos') >= 0 || haystack.indexOf('events') >= 0 || haystack.indexOf('eventos corporativos') >= 0) return 'click_eventos';
-    if (haystack.indexOf('cafe-da-manha') >= 0 || haystack.indexOf('café da manhã') >= 0 || haystack.indexOf('breakfast') >= 0 || haystack.indexOf('desayuno') >= 0) return 'click_cafe_da_manha';
-    if (haystack.indexOf('almoco') >= 0 || haystack.indexOf('almoço') >= 0 || haystack.indexOf('lunch') >= 0 || haystack.indexOf('almuerzo') >= 0) return 'click_almoco';
-    if (haystack.indexOf('lang-') >= 0 || haystack.indexOf('hreflang') >= 0 || el.closest('.lang-switcher')) return 'click_idioma';
-
-    return '';
-  }
-
-  function sendAnalyticsEvent(name, el){
-    if (!name || typeof window.gtag !== 'function') return;
-
-    if (typeof window.ecLoadGA4 === 'function') window.ecLoadGA4();
-
-    var href = String(el.href || el.getAttribute('href') || '');
-    var label = textOf(el);
-
-    window.gtag('event', name, {
-      event_category: 'site_interaction',
-      event_label: label || cleanUrl(href),
-      link_url: cleanUrl(href),
-      link_text: label,
-      page_path: window.location.pathname,
-      page_location_clean: window.location.origin + window.location.pathname,
-      page_language: document.documentElement.lang || '',
-      analytics_version: EVENT_VERSION
-    });
-  }
-
-  document.addEventListener('click', function(event){
-    var target = event.target;
-    if (!target || !target.closest) return;
-
-    var el = target.closest('a, button, [role="button"]');
-    if (!el) return;
-
-    var name = eventNameFor(el);
-    if (!name) return;
-
-    sendAnalyticsEvent(name, el);
-  }, true);
-})();
-</script>
-<!-- /EC Analytics Events v1 -->
 <!-- EC Performance Cache v1 -->
 <script id="ec-service-worker-register">
 (function(){
@@ -3804,21 +3718,7 @@ html body main a.btn[href*="tagme"],html body main a.btn[href*="reserv"],nav.top
           }
         });
       });
-
-      // Evento: Clique em link WhatsApp
-      document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]').forEach(function(el) {
-        el.addEventListener('click', function() {
-          if (typeof gtag !== 'undefined') {
-            gtag('event', 'whatsapp_click', {
-              event_category: 'conversao',
-              event_label: el.href || 'whatsapp_cta',
-              value: 1
-            });
-          }
-        });
-      });
-
-      // Evento: Clique em botões CTA (Solicitar Orçamento, Reservar, etc.)
+// Evento: Clique em botões CTA (Solicitar Orçamento, Reservar, etc.)
       document.querySelectorAll('.btn-cta, .ec-cta-btn, [data-cta], a[href*="tagme"], a[href*="reserva"]').forEach(function(el) {
         el.addEventListener('click', function() {
           if (typeof gtag !== 'undefined') {
