@@ -37,9 +37,9 @@ HTML_FILES = sorted(
 WORKFLOW_DIR = ROOT / ".github" / "workflows"
 JSONLD_RE = re.compile(r'(<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>)(.*?)(</script>)', re.I | re.S)
 
-PT_AWARD = "Feijoada da Academia da Cachaça — Melhor Feijoada do Brasil, Prazeres da Mesa 2017; Melhor Feijoada, Veja Rio Comer & Beber 2025 — servida na Embaixada Carioca por meio de parceria formal"
-EN_AWARD = "Academia da Cachaça's feijoada — Best Feijoada in Brazil, Prazeres da Mesa 2017; Best Feijoada, Veja Rio Comer & Beber 2025 — served at Embaixada Carioca through a formal partnership"
-ES_AWARD = "Feijoada de Academia da Cachaça — Mejor Feijoada de Brasil, Prazeres da Mesa 2017; Mejor Feijoada, Veja Rio Comer & Beber 2025 — servida en Embaixada Carioca mediante una colaboración formal"
+PT_AWARD = "Feijoada da Academia da Cachaça — Melhor Feijoada do Brasil, Prazeres da Mesa 2017; Melhor Feijoada do Rio, Veja Rio Comer & Beber 2025/2026 — servida na Embaixada Carioca por meio de parceria formal"
+EN_AWARD = "Academia da Cachaça's feijoada — Best Feijoada in Brazil, Prazeres da Mesa 2017; Best Feijoada in Rio de Janeiro, Veja Rio Comer & Beber 2025/2026 — served at Embaixada Carioca through a formal partnership"
+ES_AWARD = "Feijoada de Academia da Cachaça — Mejor Feijoada de Brasil, Prazeres da Mesa 2017; Mejor Feijoada de Río de Janeiro, Veja Rio Comer & Beber 2025/2026 — servida en Embaixada Carioca mediante una colaboración formal"
 
 TEXT_REPLACEMENTS: list[tuple[str, str, str]] = [
     (r"one\s+of\s+the\s+best\s+feijoadas?\s+in\s+the\s+city", EN_AWARD, "award-en-weak-to-best"),

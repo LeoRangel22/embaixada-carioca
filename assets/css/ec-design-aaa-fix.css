@@ -167,3 +167,96 @@ header.page-hero h1 {
     font-size: 16px;
   }
 }
+
+/* Home hero: keep the fixed navigation, editorial copy and conversion layer separate. */
+body[data-screen-label="Home"] .fatos-rapidos-section .home-direct-answer {
+  width: min(1120px, calc(100% - 44px));
+  margin: 24px auto 0;
+  padding: 18px 22px;
+  border: 1px solid rgba(246, 239, 222, 0.18);
+  border-radius: 12px;
+  background: rgba(246, 239, 222, 0.07);
+}
+
+body[data-screen-label="Home"] .fatos-rapidos-section .home-direct-answer p {
+  max-width: 92ch;
+  margin: 0 auto;
+  color: rgba(246, 239, 222, 0.94) !important;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+body[data-screen-label="Home"] .fatos-rapidos-section .home-direct-answer strong {
+  color: #f59b1e !important;
+}
+
+@media (min-width: 961px) {
+  body[data-screen-label="Home"] header.hero {
+    min-height: max(760px, 100svh) !important;
+  }
+
+  body[data-screen-label="Home"] header.hero .hero-content .eyebrow.hero-eyebrow {
+    top: 116px !important;
+    left: clamp(70px, 5.5vw, 118px) !important;
+    width: calc(100vw - clamp(140px, 11vw, 236px)) !important;
+    transform: none !important;
+  }
+
+  body[data-screen-label="Home"] header.hero h1 {
+    top: clamp(148px, 18vh, 176px) !important;
+    max-width: min(600px, 40vw) !important;
+    font-size: clamp(42px, 4vw, 62px) !important;
+    line-height: 0.99 !important;
+  }
+
+  body[data-screen-label="Home"] header.hero .hero-sub {
+    top: clamp(408px, 52vh, 466px) !important;
+    max-width: min(590px, 40vw) !important;
+    font-size: clamp(15px, 1vw, 17px) !important;
+    line-height: 1.48 !important;
+  }
+
+  body[data-screen-label="Home"] header.hero .hero-chips {
+    max-width: min(720px, 55vw) !important;
+  }
+
+  body[data-screen-label="Home"] header.hero .hero-chips::before {
+    display: none !important;
+    content: none !important;
+  }
+
+  body[data-screen-label="Home"] header.hero .hero-chips span {
+    order: initial !important;
+    min-height: 34px !important;
+    height: 34px !important;
+    padding: 0 13px !important;
+    font-size: 12.5px !important;
+  }
+
+  body[data-screen-label="Home"] header.hero aside.hero-side .hero-meta-card {
+    min-height: 306px !important;
+  }
+}
+
+@media (max-width: 960px) {
+  body[data-screen-label="Home"] header.hero .hero-content {
+    box-sizing: border-box !important;
+    padding-top: 104px !important;
+  }
+
+  body[data-screen-label="Home"] header.hero .hero-chips span {
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  body[data-screen-label="Home"] .fatos-rapidos-section .home-direct-answer {
+    width: min(100% - 32px, 720px);
+    padding: 16px 18px;
+  }
+
+  body[data-screen-label="Home"] .fatos-rapidos-section .home-direct-answer p {
+    font-size: 15px;
+    text-align: left;
+  }
+}

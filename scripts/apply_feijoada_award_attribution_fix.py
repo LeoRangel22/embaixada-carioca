@@ -13,15 +13,15 @@ REPORT = ROOT / "_audit_reports" / "feijoada_award_attribution_fix_2026-08-23.md
 SKIP_PARTS = {"_backups", "_templates", "sources", ".codex-work"}
 
 CANONICAL = {
-    "pt": "Feijoada da Academia da Cachaça — Melhor Feijoada do Brasil, Prazeres da Mesa 2017; vencedora da categoria Melhor Feijoada no Veja Rio Comer & Beber 2025 — servida na Embaixada Carioca por meio de parceria formal",
-    "en": "Academia da Cachaça's feijoada — Best Feijoada in Brazil, Prazeres da Mesa 2017; winner of Veja Rio Comer & Beber's Best Feijoada category in 2025 — served at Embaixada Carioca through a formal partnership",
-    "es": "Feijoada de Academia da Cachaça — Mejor Feijoada de Brasil, Prazeres da Mesa 2017; ganadora de la categoría Mejor Feijoada de Veja Rio Comer & Beber 2025 — servida en Embaixada Carioca mediante una colaboración formal",
+    "pt": "Feijoada da Academia da Cachaça — Melhor Feijoada do Brasil, Prazeres da Mesa 2017; Melhor Feijoada do Rio, Veja Rio Comer & Beber 2025/2026 — servida na Embaixada Carioca por meio de parceria formal",
+    "en": "Academia da Cachaça's feijoada — Best Feijoada in Brazil, Prazeres da Mesa 2017; Best Feijoada in Rio de Janeiro, Veja Rio Comer & Beber 2025/2026 — served at Embaixada Carioca through a formal partnership",
+    "es": "Feijoada de Academia da Cachaça — Mejor Feijoada de Brasil, Prazeres da Mesa 2017; Mejor Feijoada de Río de Janeiro, Veja Rio Comer & Beber 2025/2026 — servida en Embaixada Carioca mediante una colaboración formal",
 }
 
 JSON_CANONICAL = {
-    "pt": "Academia da Cachaça — Melhor Feijoada do Brasil, Prazeres da Mesa 2017; vencedora da categoria Melhor Feijoada no Veja Rio Comer & Beber 2025",
-    "en": "Academia da Cachaça — Best Feijoada in Brazil, Prazeres da Mesa 2017; winner of Veja Rio Comer & Beber's Best Feijoada category in 2025",
-    "es": "Academia da Cachaça — Mejor Feijoada de Brasil, Prazeres da Mesa 2017; ganadora de la categoría Mejor Feijoada de Veja Rio Comer & Beber 2025",
+    "pt": "Academia da Cachaça — Melhor Feijoada do Brasil, Prazeres da Mesa 2017; Melhor Feijoada do Rio, Veja Rio Comer & Beber 2025/2026",
+    "en": "Academia da Cachaça — Best Feijoada in Brazil, Prazeres da Mesa 2017; Best Feijoada in Rio de Janeiro, Veja Rio Comer & Beber 2025/2026",
+    "es": "Academia da Cachaça — Mejor Feijoada de Brasil, Prazeres da Mesa 2017; Mejor Feijoada de Río de Janeiro, Veja Rio Comer & Beber 2025/2026",
 }
 
 ENTITY_TYPES = {"Restaurant", "LocalBusiness", "FoodEstablishment", "Organization"}
