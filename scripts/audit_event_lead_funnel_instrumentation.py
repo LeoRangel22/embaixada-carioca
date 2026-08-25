@@ -29,6 +29,7 @@ def main() -> int:
         "all_funnel_events_present": all(event in asset for event in EVENTS),
         "event_format_group_present": "event_format_group" in asset,
         "guest_count_band_present": "guest_count_band" in asset,
+        "ga4_delivery_present": "window.gtag('event', eventName" in asset,
         "no_direct_personal_value_payload": not any(
             marker in asset
             for marker in (
@@ -48,7 +49,7 @@ def main() -> int:
         checks = {
             "form": f'id="{form_id}"' in html,
             "asset_once": html.count("/assets/event-lead-funnel.js") == 1,
-            "outbound_preserved": "ec_event_lead_outbound" in html,
+            "outbound_preserved": "wa.me/5521966837556" in html and "ec_event_lead_outbound" in asset,
         }
         page_rows.append((relative, checks, all(checks.values())))
 
@@ -90,7 +91,7 @@ def main() -> int:
             "",
             "## Validação por página",
             "",
-            "| Página | Formulário | Script único | Saída WhatsApp preservada | Status |",
+            "| Página | Formulário | Script único | Saída WhatsApp + medição preservadas | Status |",
             "|---|---:|---:|---:|---:|",
         ]
     )

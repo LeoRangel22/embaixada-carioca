@@ -27,11 +27,12 @@
 - all_funnel_events_present: **PASS**
 - event_format_group_present: **PASS**
 - guest_count_band_present: **PASS**
+- ga4_delivery_present: **PASS**
 - no_direct_personal_value_payload: **PASS**
 
 ## Validação por página
 
-| Página | Formulário | Script único | Saída WhatsApp preservada | Status |
+| Página | Formulário | Script único | Saída WhatsApp + medição preservadas | Status |
 |---|---:|---:|---:|---:|
 | `eventos.html` | PASS | PASS | PASS | **PASS** |
 | `en/eventos.html` | PASS | PASS | PASS | **PASS** |

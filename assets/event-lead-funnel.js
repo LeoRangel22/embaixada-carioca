@@ -24,6 +24,13 @@
     });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push(payload);
+    if (typeof window.gtag === 'function') {
+      var ga4Parameters = {};
+      Object.keys(payload).forEach(function (key) {
+        if (key !== 'event') ga4Parameters[key] = payload[key];
+      });
+      window.gtag('event', eventName, ga4Parameters);
+    }
   }
 
   function field(form, selectors) {
@@ -177,6 +184,12 @@
         });
       } else {
         pushEvent('ec_event_form_valid', common);
+        pushEvent('ec_event_lead_outbound', {
+          form_id: common.form_id,
+          outbound_channel: 'whatsapp',
+          event_format_group: common.event_format_group,
+          guest_count_band: common.guest_count_band
+        });
       }
     }, true);
 
