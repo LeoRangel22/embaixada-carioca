@@ -893,12 +893,6 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 (function(){
   var form=document.getElementById('ec-event-lead-form');
   if(!form)return;
-  var started=false;
-  form.addEventListener('focusin',function(){
-    if(started)return;started=true;
-    window.dataLayer=window.dataLayer||[];
-    window.dataLayer.push({event:'ec_event_form_start',form_id:'ec-event-lead-form',page_path:location.pathname});
-  });
   form.addEventListener('submit',function(event){
     event.preventDefault();
     if(!form.reportValidity())return;
@@ -1256,5 +1250,6 @@ html body main .corporate-section a {
 <link href="/assets/css/ec-light-bg-contrast-lock.css" rel="stylesheet"/>
 <link href="/assets/css/ec-wcag-final.css" rel="stylesheet"/>
 <link href="/assets/css/ec-design-aaa-fix.css?v=20260815b" rel="stylesheet"/>
+<script defer src="/assets/event-lead-funnel.js?v=20260824"></script>
 </body>
 </html>
