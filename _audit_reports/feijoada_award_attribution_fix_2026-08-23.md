@@ -5,7 +5,8 @@ Status geral: **PASS**
 
 ## Regra canônica
 
-- A vencedora da categoria Melhor Feijoada no Veja Rio Comer & Beber 2025 é a **Academia da Cachaça**.
+- A **Academia da Cachaça** recebeu o reconhecimento de Melhor Feijoada do Brasil pela Prazeres da Mesa em 2017.
+- A vencedora da categoria Melhor Feijoada / Melhor Feijoada do Rio no Veja Rio Comer & Beber 2025/2026 é a **Academia da Cachaça**.
 - A Embaixada Carioca serve essa feijoada no Morro da Urca por meio de **parceria formal**.
 - Estrutura societária e percentuais não são publicados.
 

@@ -1,51 +1,56 @@
-# GSC Indexation Cleanup — 22/08/2026
+# GSC Indexation Cleanup
 
-Status geral: **PASS COM LIMITAÇÃO DE HOSPEDAGEM**
+**Auditoria original:** 22/08/2026
+
+**Atualização operacional:** 31/08/2026
+
+**Status geral:** PASS — limitação de edge resolvida
 
 ## Fonte de decisão
 
-- Diagnóstico GA4 + Google Search Console de 20/05/2026 a 19/08/2026.
-- Verificação HTTP pública realizada em 22/08/2026.
-- Auditoria do `sitemap.xml`, canonicals, hreflang e arquivos locais do branch `master`.
+- Diagnósticos GA4 e Google Search Console.
+- Verificação HTTP pública em 31/08/2026.
+- Auditoria do `sitemap.xml`, canonicals, hreflang e branch `master`.
 
 ## Redirecionamentos verificados ao vivo
 
 | Origem | Resultado atual | Leitura |
 |---|---|---|
-| `http://www.embaixadacarioca.com/cardapio.html` | `301` para HTTPS | Corrigido no servidor do GitHub Pages |
+| `http://www.embaixadacarioca.com/cardapio.html` | `301` para HTTPS | Corrigido no Cloudflare |
 | `https://embaixadacarioca.com/` | `301` para `https://www.embaixadacarioca.com/` | Corrigido |
-| `https://embaixadacarioca.com.br/` | dois redirecionamentos permanentes até `https://www.embaixadacarioca.com/` | Corrigido |
-| `https://www.embaixadacarioca.com.br/` | dois redirecionamentos permanentes até `https://www.embaixadacarioca.com/` | Corrigido |
-| `/index.html`, `/en/index.html`, `/es/index.html` | `200`, com canonical para as raízes correspondentes | Duplicata consolidada por canonical; sem 301 no GitHub Pages |
-| `/cardapio`, `/eventos`, `/feijoada`, `/nossa-visao`, `/contato` | `200`, com canonical para a versão `.html` | Duplicata consolidada por canonical; sem 301 no GitHub Pages |
+| `https://embaixadacarioca.com.br/` | `301` para o domínio `.com` canônico | Corrigido |
+| `https://www.embaixadacarioca.com.br/` | `301` para o domínio `.com` canônico | Corrigido |
+| `/index.html` | `301` para `/` | Corrigido |
+| `/cardapio`, `/eventos` e aliases equivalentes | `301` para a versão canônica `.html` | Corrigido |
 
-## Correções aplicadas
+As limitações descritas no relatório original pertenciam ao período em que o site dependia do comportamento padrão do GitHub Pages. O domínio público agora é servido pelo Cloudflare Pages, que aplica as regras de edge.
 
-- Removidas três entradas duplicadas do sitemap:
-  - `en/feijoada.html`;
-  - `es/feijoada.html`;
-  - `en/restaurant-at-sugarloaf.html`.
-- Corrigido o cluster hreflang de `restaurante-com-vista-rio-de-janeiro.html` para apontar à contraparte inglesa existente `en/restaurante-com-vista-rio-de-janeiro.html`.
-- Removidos hreflangs EN/ES inexistentes de `feijoada-morro-da-urca.html`; a página permanece PT + `x-default` até haver traduções equivalentes reais.
-- Adicionado link editorial visível de `feijoada.html` para `feijoada-morro-da-urca.html`, eliminando a condição de página órfã.
-- Atualizados `lastmod` somente nas páginas cuja indexação/hreflang foi materialmente corrigida.
+## Correções de indexação preservadas
 
-## Estado final do sitemap
+- Entradas duplicadas removidas do sitemap.
+- Hreflang corrigido para contrapartes existentes.
+- Páginas sem tradução real não apontam para arquivos inexistentes.
+- `feijoada-morro-da-urca.html` possui link editorial e não está órfã.
+- Aliases e `index.html` consolidam por `301`, além das canonicals.
 
-- Entradas: **98**.
-- URLs únicas: **98**.
-- Duplicidades: **0**.
-- URLs sem arquivo correspondente no repositório: **0**.
-- Arquivos `.webp` tratados como páginas no sitemap principal: **0**.
-- Páginas `noindex` dentro do sitemap principal: **0**.
+## Estado atual do sitemap
 
-## Limitação conhecida
+- Entradas canônicas: **97**.
+- Duplicidades conhecidas: **0**.
+- Arquivos de imagem tratados como páginas: **0**.
+- Páginas `noindex` no sitemap principal: **0**.
+- Sitemap reenviado ao Search Console em 27/08/2026 e processado com 97 páginas.
 
-O GitHub Pages não oferece regras arbitrárias de redirecionamento por caminho. Por isso, aliases sem `.html` e os três `index.html` continuam respondendo `200`, embora os canonicals estejam corretos. Para transformá-los em `301` reais e adicionar cabeçalhos personalizados como HSTS controlado, a solução é colocar o domínio principal atrás de uma camada de edge com regras de redirecionamento, como Cloudflare, ou migrar a publicação para uma plataforma que aplique redirects de servidor.
+## Segurança e protocolo
+
+- HTTP → HTTPS: `301`.
+- HSTS: ativo em implantação gradual com `max-age=86400`.
+- Cabeçalhos de segurança: entregues pelo Cloudflare.
 
 ## Próxima ação no Search Console
 
-1. Reenviar `https://www.embaixadacarioca.com/sitemap.xml`.
-2. Solicitar indexação de `https://www.embaixadacarioca.com/feijoada-morro-da-urca.html`.
-3. Não solicitar indexação de `/index.html` ou dos aliases sem `.html`; o destino desejado é a URL canônica.
-4. Medir novamente cobertura e CTR após o recrawl, sem reescrever as palavras-ouro antes de completar 28 dias da aplicação de 11/08/2026.
+1. Monitorar o recrawl das URLs canônicas.
+2. Não solicitar indexação de `/index.html`, aliases sem `.html` ou variantes `.com.br`.
+3. Solicitar indexação apenas de páginas canônicas novas ou materialmente alteradas.
+4. Comparar cobertura e CTR depois das janelas de 14 e 28 dias dos lotes de 27/08/2026.
+5. Não reenviar o sitemap repetidamente quando não houver alteração material.

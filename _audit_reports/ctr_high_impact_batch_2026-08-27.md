@@ -49,3 +49,9 @@ Exportação do Google Search Console dos últimos 7 dias, com dados de 19 a 25 
 - Nenhuma nova página criada.
 - Titles do cluster restaurante/Bondinho publicado em 27/08 foram preservados para permitir medição limpa.
 - Revisar o efeito em 14 dias e decidir com uma janela consolidada de 28 dias.
+
+## Datas de leitura
+
+- Leitura direcional: **10/09/2026**.
+- Decisão com janela consolidada: **24/09/2026**.
+- Até essas datas, não reescrever os snippets do lote sem erro factual ou regressão técnica comprovada.

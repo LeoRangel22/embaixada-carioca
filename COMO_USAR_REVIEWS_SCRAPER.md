@@ -3,6 +3,8 @@
 **Script:** `google_reviews_scraper.py`  
 **Objetivo:** Baixar automaticamente todas as avaliações da Embaixada Carioca no Google Maps e exportar para JSON, CSV e Excel.
 
+> **Legado — 31/08/2026:** prefira `gmb_reviews_api.py` e a API oficial do Google Business Profile. Este scraper depende de serviço externo, pode sofrer limitações da interface do Google Maps e não é a fonte oficial do total atual. A referência editorial confirmada do site é 4,8 estrelas e 8.847 avaliações.
+
 ---
 
 ## Como Funciona

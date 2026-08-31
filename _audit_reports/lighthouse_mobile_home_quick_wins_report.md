@@ -18,7 +18,7 @@ Status geral: **PASS**
 - Nenhum JSON-LD foi alterado.
 - Nenhuma canonical/hreflang foi alterada.
 - Nenhuma copy editorial estratégica foi reescrita além da padronização de seguidores.
-- Cache TTL e headers de segurança foram documentados como dependentes de Cloudflare/CDN, pois GitHub Pages não aplica `_headers`.
+- O lote foi criado antes da migração do domínio público. Em 31/08/2026, Cloudflare Pages já aplica `_headers`, CSP, HSTS curto e redirecionamentos de edge.
 
 ## Resultado por página
 
@@ -28,7 +28,9 @@ Status geral: **PASS**
 | `en/index.html` | True | True | 3 | True | False |
 | `es/index.html` | True | True | 3 | True | False |
 
-## Pendências fora do GitHub Pages
-- `Use efficient cache lifetimes`: resolver com Cloudflare/CDN e cache rules para assets estáticos.
-- CSP/HSTS/COOP/X-Frame-Options: resolver em Cloudflare Pages/Workers ou outro host que permita headers HTTP reais.
+## Estado atual do edge — 31/08/2026
+- `Use efficient cache lifetimes`: continua como oportunidade de medição e ajuste fino para assets estáticos; não é mais limitação de hospedagem.
+- CSP e cabeçalhos de segurança: ativos no Cloudflare Pages.
+- HSTS: ativo em implantação gradual com `max-age=86400`.
+- HTTP, aliases, `index.html` e variantes `.com.br`: redirecionamentos permanentes ativos.
 - Compressão adicional de imagens: gerar novos assets WebP/AVIF otimizados e substituir referências após validação visual.

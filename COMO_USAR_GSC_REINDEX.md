@@ -1,7 +1,9 @@
-# Como Usar o Script de Reindexação do GSC
+# Como usar o script de inspeção de URLs do GSC
 
 **Script:** `gsc_reindex.py`  
-**Objetivo:** Verificar o status de indexação e solicitar reindexação de URLs da Embaixada Carioca diretamente via Google Search Console API.
+**Objetivo real:** Verificar o status de indexação de URLs da Embaixada Carioca pela URL Inspection API.
+
+> **Correção de documentação — 31/08/2026:** apesar do nome legado, o script não solicita reindexação. O método `urlInspection.index.inspect` apenas retorna informações da URL no índice do Google. Para páginas comuns do restaurante, use a inspeção manual do Search Console e o sitemap. A Indexing API do Google é restrita a páginas com `JobPosting` ou `BroadcastEvent` dentro de `VideoObject`.
 
 ---
 
@@ -75,9 +77,9 @@ python3 gsc_reindex.py
 
 ---
 
-## O Que o Script Faz
+## O que o script faz
 
-O script verifica e reporta o status de indexação de **3 grupos de URLs**:
+O script inspeciona e reporta o status de indexação de **3 grupos de URLs**. Ele não envia pedido de indexação:
 
 | Grupo | URLs | Descrição |
 | :--- | :---: | :--- |
@@ -99,6 +101,21 @@ O script verifica e reporta o status de indexação de **3 grupos de URLs**:
 ## Saída do Script
 
 O script gera um arquivo `relatorio_reindexacao_YYYYMMDD_HHMMSS.json` com todos os resultados para acompanhamento.
+
+O nome do arquivo de saída também é legado; interprete-o como relatório de inspeção.
+
+## Como solicitar indexação corretamente
+
+1. Confirme que a URL é canônica, indexável, está no sitemap e responde `200`.
+2. Abra a URL Inspection no Search Console.
+3. Execute o teste da URL publicada.
+4. Use “Solicitar indexação” somente para uma URL canônica nova ou materialmente alterada.
+5. Não solicite indexação de aliases, `/index.html`, variantes `.com.br` ou URLs que redirecionam.
+
+Referências oficiais:
+
+- URL Inspection API: `https://developers.google.com/webmaster-tools/v1/urlInspection.index/inspect`
+- Limites da Indexing API: `https://developers.google.com/search/apis/indexing-api/v3/quickstart`
 
 ---
 

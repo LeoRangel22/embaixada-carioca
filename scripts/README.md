@@ -4,6 +4,30 @@ Automação de manutenção e auditoria do site estático.
 
 ---
 
+## Estado operacional — 31/08/2026
+
+Este diretório contém tanto validadores atuais quanto ferramentas históricas que já modificaram o site em massa. A existência de um script não significa que ele esteja autorizado para execução automática.
+
+- Validadores somente de leitura podem rodar nos sete workflows ativos.
+- Scripts `apply_*`, `fix_*` e outros mutantes são exclusivamente manuais.
+- Trinta workflows legados de correção automática estão desativados por decisão de governança.
+- Nenhum fixer deve ser executado sem leitura do código, escopo explícito, revisão completa do diff e validação posterior.
+- Traduções, alegações factuais, schema e CSS global exigem revisão humana.
+- A documentação operacional atual está em `docs/current-site-status.md`.
+
+### Validadores de referência
+
+| Script | Finalidade atual |
+|---|---|
+| `schema_rating_guard.py --check` | Impede `Review`, `Rating`, `AggregateRating` e campos derivados no JSON-LD |
+| `schema_jsonld_duplicate_key_guard.py --check` | Detecta chaves JSON-LD duplicadas |
+| `audit_hreflang_pt_en_es.py` | Audita PT/EN/ES/x-default |
+| `validate_i18n_sync.py` | Confere paridade estrutural multilíngue |
+| `super_site_standards_seo_audit.py` | Auditoria SEO somente de leitura |
+| `validate_restaurant_search_cluster.py` | Valida o cluster restaurante/restaurantes sem reescrever snippets |
+
+---
+
 ## Convenção de Nomes
 
 | Prefixo | Finalidade |
@@ -16,7 +40,7 @@ Automação de manutenção e auditoria do site estático.
 
 ---
 
-## Scripts Ativos
+## Inventário de scripts mutantes — execução manual
 
 ### CSS / Infraestrutura Visual
 

@@ -2,13 +2,23 @@
 
 Status geral: **PASS**
 
+## Atualização operacional — 31/08/2026
+
+- Este relatório preserva o snapshot da execução original, mas as formulações factuais abaixo foram atualizadas para a realidade confirmada.
+- Google: 4,8 estrelas e 8.847 avaliações.
+- Instagram: 84 mil seguidores.
+- Schema guards atuais: PASS em 110 arquivos, sem `Review`, `Rating`, `AggregateRating` ou chaves JSON-LD duplicadas.
+- Governança atual: 7 workflows ativos e 30 legados desativados. O inventário de 32 arquivos YAML abaixo é histórico e não representa workflows ativos.
+- Embaixada Carioca e Cantina do MAM têm os mesmos sócios, conforme confirmação do responsável.
+- A relação com a Academia da Cachaça deve ser descrita como parceria formal com vínculo societário familiar, sem afirmar composição societária idêntica.
+
 ## Objetivo
 Atuar sobre os pontos críticos do relatório Claude: atribuição oficial do prêmio da feijoada à Academia da Cachaça, preservação da parceria institucional confirmada, limpeza de portunhol técnico, padronização de seguidores e blindagem contra retorno de review/rating em JSON-LD.
 
 ## Formulações canônicas aplicadas
-- PT: `Feijoada da Academia da Cachaça — Melhor Feijoada, Veja Rio Comer & Beber 2025 — servida na Embaixada Carioca por meio de parceria formal`
-- EN: `Academia da Cachaça's feijoada — Best Feijoada, Veja Rio Comer & Beber 2025 — served at Embaixada Carioca through a formal partnership`
-- ES: `Feijoada de Academia da Cachaça — Mejor Feijoada, Veja Rio Comer & Beber 2025 — servida en Embaixada Carioca mediante una colaboración formal`
+- PT: `Feijoada da Academia da Cachaça — Melhor Feijoada do Brasil, Prazeres da Mesa 2017, e Melhor Feijoada do Rio, Veja Rio Comer & Beber 2025/2026 — servida na Embaixada Carioca por meio de parceria formal`
+- EN: `Academia da Cachaça's feijoada — Best Feijoada in Brazil, Prazeres da Mesa 2017, and Best Feijoada in Rio, Veja Rio Comer & Beber 2025/2026 — served at Embaixada Carioca through a formal partnership`
+- ES: `Feijoada de Academia da Cachaça — Mejor Feijoada de Brasil, Prazeres da Mesa 2017, y Mejor Feijoada de Río, Veja Rio Comer & Beber 2025/2026 — servida en Embaixada Carioca mediante una colaboración formal`
 
 ## Guardrails
 - Nenhum canonical/hreflang foi alterado.
@@ -18,6 +28,8 @@ Atuar sobre os pontos críticos do relatório Claude: atribuição oficial do pr
 - A Academia da Cachaça é tratada separadamente como parceira formal com vínculo societário familiar, sem afirmar composição societária idêntica.
 
 ## Resumo
+
+Os números abaixo pertencem à execução que gerou este relatório e não ao inventário operacional atual.
 - HTML analisados: **116**
 - Arquivos alterados: **2**
 - Substituições textuais: **8**

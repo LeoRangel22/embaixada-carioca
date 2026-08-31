@@ -4,7 +4,7 @@ Status geral: **PASS**
 
 ## Correções aplicadas
 
-- Selo da home corrigido: removida a referência conflitante a `PRÊMIO 2024` e identificada a Academia da Cachaça como vencedora da categoria Melhor Feijoada no Veja Rio Comer & Beber 2025.
+- Selo da home corrigido: removida a referência conflitante a `PRÊMIO 2024` e identificada a Academia da Cachaça como vencedora da categoria Melhor Feijoada / Melhor Feijoada do Rio no Veja Rio Comer & Beber 2025/2026.
 - Destaque de `feijoada.html` corrigido com a mesma atribuição factual.
 - Resíduos de 8.255 avaliações substituídos pelo total informado de 8.847 nas homes PT, EN e ES.
 - `restaurante-urca.html` removida do sitemap por ser uma página alternativa cuja canonical aponta para `restaurante-morro-da-urca.html`; cinco links internos também passaram a apontar diretamente para a URL canônica.

@@ -2,6 +2,10 @@
 
 Data da verificação: 2026-08-24
 
+Atualização operacional: **31/08/2026**
+
+> O retrato atual supersede as pendências externas deste relatório: Cloudflare Pages é a hospedagem pública principal; HSTS curto está ativo; aliases, HTTP, `index.html` e `.com.br` respondem com 301; o sitemap foi reenviado em 27/08 e processado com 97 páginas. Consulte `docs/current-site-status.md`.
+
 Status geral: **PASS COM AÇÕES EXTERNAS PENDENTES**
 
 ## Resumo executivo
@@ -18,7 +22,7 @@ O diagnóstico v9 acerta a direção estratégica — conversão, distribuição
 | JSON-LD sem review/rating | Confirmado pelos guards | Preservar a proibição |
 | HTTP para HTTPS | O site publicado já responde **301** | Item do diagnóstico está desatualizado |
 | `.com.br` para `.com` | As variantes testadas já respondem **301** | Item do diagnóstico está desatualizado |
-| HSTS | Ausente no cabeçalho publicado | Ativar no Cloudflare com implantação gradual |
+| HSTS | Ativo desde a migração para Cloudflare Pages, `max-age=86400` | Monitorar antes de ampliar |
 | Home com dois Restaurant | Incorreto: havia **1 Restaurant** | Nenhuma fusão necessária |
 | Home com dois WebPage | Confirmado | Corrigido: mantido apenas o bloco mais completo |
 | `g.co/kgs/embaixadacarioca` | Não verificável como entidade oficial | Removido do `sameAs` |
@@ -56,8 +60,8 @@ O diagnóstico v9 acerta a direção estratégica — conversão, distribuição
 
 ### P0 — configuração externa
 
-1. Ativar HSTS no Cloudflare com `max-age` curto, validar todas as variantes HTTPS e ampliar gradualmente.
-2. Reenviar o sitemap no Search Console depois do deploy e solicitar validação das URLs consolidadas.
+1. **Concluído:** HSTS ativado no Cloudflare com `max-age=86400`; validar estabilidade antes de ampliar.
+2. **Concluído:** sitemap reenviado em 27/08/2026 e processado com 97 páginas; agora monitorar recrawl e URLs consolidadas.
 
 ### P1 — dados e conversão
 

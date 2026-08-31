@@ -3,6 +3,8 @@
 **Data:** 2026-08-27
 **Status geral:** PASS
 
+> **Baseline de medição:** os dados abaixo precedem as alterações publicadas em 27/08/2026. Não devem ser tratados como desempenho pós-lote. Preservar titles e descriptions até a leitura direcional de 10/09/2026 e a decisão consolidada de 24/09/2026.
+
 ## Sinais que orientaram o lote
 
 Fonte: exportação Google Search Console, últimos 28 dias, arquivo `embaixadacarioca.com-Performance-on-Search-2026-08-11.xlsx`.
@@ -43,3 +45,4 @@ Fonte: exportação Google Search Console, últimos 28 dias, arquivo `embaixadac
 - O diferencial factual deve ser expresso sem atacar ou nomear concorrentes.
 - Não criar novas páginas para essas intenções sem revisar canibalização e Search Console.
 - Titles e descriptions não devem usar `#1`, “melhor restaurante” ou equivalentes sem comprovação independente atual.
+- O diferencial factual prioritário é: único restaurante dentro do Parque Bondinho com vista direta para o Pão de Açúcar.

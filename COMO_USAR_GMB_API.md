@@ -4,6 +4,8 @@
 **API:** Google Business Profile API v4 (oficial)  
 **Objetivo:** Baixar todas as avaliações da Embaixada Carioca diretamente pela API oficial do Google, sem scraping.
 
+**Estado em 31/08/2026:** este continua sendo o método preferencial. O endpoint oficial `accounts.locations.reviews.list` retorna avaliações paginadas, média e contagem total para uma localização verificada. Acesso à API e permissões da conta continuam sendo pré-requisitos.
+
 ---
 
 ## Visão Geral do Fluxo
