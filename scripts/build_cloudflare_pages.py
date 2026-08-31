@@ -9,7 +9,7 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "_site"
 
-PUBLIC_ASSET_DIRECTORIES = ("assets", "img")
+PUBLIC_STATIC_DIRECTORIES = ("assets", "img", "lojasadm")
 PUBLIC_ROOT_SUFFIXES = {
     ".html",
     ".css",
@@ -38,7 +38,7 @@ def copy_public_site() -> None:
         elif path.name in PUBLIC_ROOT_FILES or path.suffix.lower() in PUBLIC_ROOT_SUFFIXES:
             shutil.copy2(path, OUTPUT / path.name)
 
-    for directory_name in PUBLIC_ASSET_DIRECTORIES:
+    for directory_name in PUBLIC_STATIC_DIRECTORIES:
         source = ROOT / directory_name
         if source.exists():
             shutil.copytree(source, OUTPUT / directory_name)
@@ -83,6 +83,9 @@ def copy_public_site() -> None:
 
     if not (html_store / "index.html.txt").exists():
         raise RuntimeError("Cloudflare Pages output is missing the stored home page")
+
+    if not (OUTPUT / "lojasadm" / "index.html").exists():
+        raise RuntimeError("Cloudflare Pages output is missing the lojasadm entry point")
 
     file_count = sum(1 for p in OUTPUT.rglob("*") if p.is_file())
     print(f"Cloudflare Pages output ready: {file_count} files in {OUTPUT}")
