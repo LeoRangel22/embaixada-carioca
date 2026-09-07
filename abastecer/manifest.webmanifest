@@ -1,0 +1,19 @@
+{
+  "id": "/abastecer/",
+  "name": "Embaixada Carioca — Abastecer",
+  "short_name": "Abastecer",
+  "lang": "pt-BR",
+  "start_url": "/abastecer/",
+  "scope": "/abastecer/",
+  "display": "standalone",
+  "background_color": "#f6efde",
+  "theme_color": "#00405a",
+  "icons": [
+    {
+      "src": "/abastecer/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

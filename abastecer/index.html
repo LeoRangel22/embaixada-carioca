@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#00405a">
+  <title>Embaixada Carioca | Reposição</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="/abastecer/manifest.webmanifest">
+  <link rel="icon" href="/abastecer/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/abastecer/styles.v2.6.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><img id="brandLogo" class="brand-logo" src="/abastecer/logo.svg" alt="Embaixada Carioca"><div><strong>Embaixada<br>Carioca</strong><small id="headerStatus">Carregando</small></div></div>
+    <div id="userBadge" class="user-badge hidden"><img id="userThumb" alt="Selfie do operador"><span id="userName"></span></div>
+  </header>
+
+  <div id="networkBanner" class="network hidden">Sem conexão. Mantenha a página aberta para retomar a sincronização.</div>
+
+  <main class="app-shell">
+    <section id="bootScreen" class="screen centered">
+      <div class="spinner"></div><h1>Preparando reposição</h1><p>Carregando a operação.</p><button id="retryBoot" class="secondary hidden" type="button">Tentar novamente</button>
+    </section>
+
+    <section id="checkinScreen" class="screen hidden">
+      <div>
+        <div class="eyebrow">EMBAIXADA CARIOCA · OPERAÇÃO</div>
+        <h1>Vamos abastecer?</h1>
+        <p class="lead">Identifique-se, fotografe as geladeiras e envie o pedido do local ao estoque.</p>
+
+        <label for="operatorSelect">Operador responsável</label>
+        <select id="operatorSelect">
+          <option value="">Selecione seu nome</option>
+        </select>
+
+        <div id="newOperatorBox" class="hidden">
+          <label for="newOperator">Nome completo</label>
+          <input id="newOperator" maxlength="80" autocomplete="name" placeholder="Ex.: Roberto Ferreira">
+        </div>
+
+        <div id="pinBox" class="hidden">
+          <label for="accessPin">PIN de acesso</label>
+          <input id="accessPin" type="password" inputmode="numeric" autocomplete="one-time-code" placeholder="PIN da operação">
+        </div>
+
+        <label>Selfie de confirmação</label>
+        <button id="selfieButton" class="capture-box" type="button"><span class="camera-mark">◎</span><b>Capturar selfie frontal</b></button>
+        <div id="selfiePreview" class="selfie-preview hidden">
+          <img id="selfieImage" alt="Prévia da selfie"><div><b>Selfie capturada</b><button id="replaceSelfie" class="link-button" type="button">Substituir foto</button></div>
+        </div>
+        <p class="migration-note">Primeiro acesso neste endereço? Conclua contagens pendentes no <a href="https://script.google.com/macros/s/AKfycbwEksAlApW1Ct3EcvEoQJJv3pVNWTCxOu4Zty_jZU1GnBv0ehYi4h1KpY81EssF_MoEfw/exec" target="_blank" rel="noopener">aplicativo anterior</a> antes de iniciar outra.</p>
+        <p class="privacy-note">A selfie identifica o responsável pelo turno, fica em pasta restrita aos gestores e segue a política de retenção da empresa.</p>
+      </div>
+      <button id="checkinButton" class="primary" disabled>Iniciar turno</button>
+    </section>
+
+    <section id="selectScreen" class="screen hidden">
+      <div>
+        <div class="step-row"><span>CONTAGEM DO LOCAL</span><button id="changeOperator" class="link-button">Trocar auditor</button></div>
+        <label for="locationSelect">Setor / local</label>
+        <select id="locationSelect"><option value="">Selecione o local</option></select>
+        <div id="roundProgressCard" class="round-progress hidden">
+          <div><b id="roundProgressText">0 de 0 equipamentos</b><small>Conclua o local para calcular a reposição real.</small></div>
+          <div id="roundProgressBar"><span></span></div>
+        </div>
+        <label for="fridgeSelect">Equipamento / porta</label>
+        <select id="fridgeSelect" disabled><option value="">Aguardando local</option></select>
+        <div id="planogramCard" class="hidden">
+          <div class="section-title"><span>REFERÊNCIA DAS PRATELEIRAS</span><em>PLANOGRAMA</em></div>
+          <div id="shelfList" class="shelf-list"></div>
+        </div>
+      </div>
+      <button id="resumeRound" class="secondary hidden" type="button">Sincronizar contagem</button>
+      <button id="startCapture" class="primary hidden">Fotografar geladeira</button>
+    </section>
+
+    <section id="captureScreen" class="screen hidden">
+      <div>
+        <div class="step-row"><div><h2 id="captureTitle">Geladeira</h2><p>Faça uma foto frontal e adicione ângulos apenas quando houver pontos cegos.</p></div><span>PASSO 2 DE 3</span></div>
+        <div id="photoGrid" class="photo-grid">
+          <button id="addPhoto" class="capture-box tall" type="button"><span class="camera-mark">＋</span><b>Adicionar foto</b><small id="photoLimit">até 4 fotos</small></button>
+        </div>
+      </div>
+      <div class="button-row"><button id="backToSelect" class="secondary">Voltar</button><button id="analyzeButton" class="primary grow" disabled>Analisar com IA</button></div>
+    </section>
+
+    <section id="reviewScreen" class="screen hidden">
+      <div>
+        <div class="step-row"><div><h2>Confira esta geladeira</h2><p>Corrija a quantidade visível antes de confirmar.</p></div><span>CONFERÊNCIA</span></div>
+        <div id="replenishmentSummary" class="replenishment-summary" aria-live="polite"></div>
+        <div id="deviationCard" class="warning hidden"><b>Desvio de planograma</b><p id="deviationText"></p></div>
+        <div id="itemsList" class="items-list"></div>
+        <button id="showAllSkus" class="link-button full hidden" type="button">Mostrar todos os produtos do local</button>
+      </div>
+      <div class="button-row"><button id="redoButton" class="secondary">Refazer</button><button id="saveButton" class="primary grow">Confirmar esta geladeira</button></div>
+    </section>
+
+    <section id="successScreen" class="screen centered hidden">
+      <div class="success-mark">✓</div><h1 id="successTitle">Geladeira registrada</h1><p id="successText">A contagem entrou no total deste local.</p><strong id="successSummary" class="success-summary"></strong><small id="auditIdLabel"></small>
+      <button id="nextAudit" class="primary full">Fotografar próxima geladeira</button>
+    </section>
+
+    <section id="requestScreen" class="screen hidden">
+      <div>
+        <div class="success-mark">✓</div>
+        <h1>Pedido do local pronto</h1><p class="eyebrow">EMBAIXADA CARIOCA</p>
+        <p id="requestIntro" class="lead">Todas as geladeiras foram somadas.</p>
+        <div class="request-card">
+          <div class="request-head"><div><small>PEDIDO PARA O ESTOQUE</small><b id="requestId"></b></div><strong id="requestTotal"></strong></div>
+          <h2 id="requestLocation"></h2>
+          <div id="requestItems" class="request-items"></div>
+        </div>
+        <p class="share-help">Envie ao grupo do estoque. A imagem facilita a separação e o pedido permanece registrado na planilha.</p>
+      </div>
+      <div class="request-actions">
+        <button id="shareRequest" class="primary whatsapp" type="button">Enviar pelo WhatsApp</button>
+        <div class="button-row"><button id="copyRequest" class="secondary grow" type="button">Copiar texto</button><button id="downloadRequest" class="secondary grow" type="button">Salvar imagem</button></div>
+        <div id="shareFallback" class="hidden">
+          <a id="whatsappLink" class="primary whatsapp" target="_blank" rel="noopener">Abrir WhatsApp com o pedido</a>
+          <label for="requestText">Texto para copiar e enviar ao estoque</label>
+          <textarea id="requestText" readonly rows="8" style="width:100%;font:inherit"></textarea>
+          <p>Abrir o WhatsApp não confirma o recebimento pelo estoque.</p>
+        </div>
+        <button id="newRound" class="link-button full" type="button">Iniciar contagem de outro local</button>
+      </div>
+    </section>
+  </main>
+
+  <input id="selfieInput" type="file" accept="image/*" capture="user" hidden>
+  <input id="fridgeInput" type="file" accept="image/*" capture="environment" hidden>
+
+  <div id="cameraModal" class="camera-modal hidden" role="dialog" aria-modal="true" aria-labelledby="cameraTitle">
+    <div class="camera-panel">
+      <div class="camera-heading">
+        <div><h2 id="cameraTitle">Selfie frontal</h2><p>Centralize o rosto e mantenha boa iluminação.</p></div>
+        <button id="closeCamera" class="icon-button" type="button" aria-label="Fechar câmera">×</button>
+      </div>
+      <div class="video-frame"><video id="selfieVideo" autoplay playsinline muted></video><div class="face-guide" aria-hidden="true"></div></div>
+      <p id="cameraHelp" class="camera-help">Abrindo a câmera frontal…</p>
+      <div class="camera-actions">
+        <button id="fallbackCamera" class="secondary" type="button">Câmera do aparelho</button>
+        <button id="switchCamera" class="secondary hidden" type="button">Trocar câmera</button>
+        <button id="takeSelfie" class="primary grow" type="button" disabled>Tirar selfie</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="overlay" class="overlay hidden" role="status" aria-live="polite"><div class="spinner light"></div><h2 id="overlayTitle">Processando</h2><p id="overlayText">Aguarde um instante.</p></div>
+  <div id="toast" class="toast hidden" role="alert"></div>
+  <script src="/abastecer/api.v2.6.js"></script>
+  <script src="/abastecer/app.v2.6.js"></script>
+</body>
+</html>

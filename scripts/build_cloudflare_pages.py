@@ -9,7 +9,7 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "_site"
 
-PUBLIC_STATIC_DIRECTORIES = ("assets", "img", "lojasadm")
+PUBLIC_STATIC_DIRECTORIES = ("assets", "img", "lojasadm", "abastecer")
 PUBLIC_ROOT_SUFFIXES = {
     ".html",
     ".css",
