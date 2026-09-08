@@ -1,0 +1,318 @@
+(() => {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const telas = ['bootScreen','checkinScreen','selectScreen','captureScreen','reviewScreen','successScreen','requestScreen'];
+  const DB_NAME = 'reposicao-ia';
+  const state = {
+    config:null, sessionToken:'', operador:'', checkinId:'', selfie:null,
+    fotoHorarios:[], clockOffset:0, fotos:[], local:'', geladeira:'', auditoriaId:'', rodadaId:'', rodadaLocal:'',
+    desvio:null, itens:[], meta:null, comprovanteAnalise:'', progresso:null,
+    solicitacao:null, pedidoBlob:null, mostrarTodos:false, busy:false,
+    cameraStream:null, cameraDevices:[], cameraDeviceId:'', cameraFacing:'user'
+  };
+
+  function show(id){telas.forEach(x=>$(x).classList.toggle('hidden',x!==id));window.scrollTo(0,0);}
+  function status(texto){$('headerStatus').textContent=texto;}
+  function overlay(titulo,texto){$('overlayTitle').textContent=titulo;$('overlayText').textContent=texto;$('overlay').classList.remove('hidden');}
+  function hideOverlay(){$('overlay').classList.add('hidden');}
+  let toastTimer;
+  function mensagem(msg){clearTimeout(toastTimer);$('toast').textContent=msg;$('toast').classList.remove('hidden');toastTimer=setTimeout(()=>$('toast').classList.add('hidden'),6500);}
+  function uuid(){return crypto.randomUUID?crypto.randomUUID():Date.now().toString(36)+'_'+Math.random().toString(36).slice(2)+Math.random().toString(36).slice(2);}
+
+  async function server(nome,payload){
+    try{return await window.reposicaoApi(nome,payload);}
+    catch(erro){
+      if(/sessão (expirada|inválida)/i.test(erro.message)) solicitarNovoCheckin();
+      throw erro;
+    }
+  }
+  function erroTemporario(e){const t=String((e&&e.message)||e||'').toLowerCase();return !navigator.onLine||/conex|network|tempor|indispon|timeout|tempo de resposta|servidor|ocupado|quota|429|500|502|503|504/.test(t);}
+  async function retry(fn,tentativas=3){let ultimo;for(let i=0;i<tentativas;i++){try{return await fn();}catch(e){ultimo=e;if(i<tentativas-1&&erroTemporario(e))await new Promise(r=>setTimeout(r,700*Math.pow(2,i)));else break;}}throw ultimo;}
+
+  function abrirBanco(){
+    return new Promise((resolve,reject)=>{
+      if(!('indexedDB' in window))return reject(new Error('Armazenamento local indisponível.'));
+      const req=indexedDB.open(DB_NAME,1);
+      req.onupgradeneeded=()=>{const db=req.result;if(!db.objectStoreNames.contains('drafts'))db.createObjectStore('drafts',{keyPath:'key'});if(!db.objectStoreNames.contains('outbox'))db.createObjectStore('outbox',{keyPath:'auditoriaId'});};
+      req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);
+    });
+  }
+  async function banco(store,modo,operacao){let db;try{db=await abrirBanco();return await new Promise((resolve,reject)=>{const tx=db.transaction(store,modo);const req=operacao(tx.objectStore(store));let resultado=null;req.onsuccess=()=>{resultado=req.result;};req.onerror=()=>reject(req.error);tx.oncomplete=()=>resolve(resultado);tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||new Error('Falha ao gravar no aparelho.'));});}finally{if(db)db.close();}}
+  const dbGet=async(store,key)=>{try{return await banco(store,'readonly',os=>os.get(key));}catch(e){return null;}};
+  const dbAll=async store=>{try{return await banco(store,'readonly',os=>os.getAll());}catch(e){return [];}};
+  const dbPut=(store,value)=>banco(store,'readwrite',os=>os.put(value));
+  const dbDelete=async(store,key)=>{try{return await banco(store,'readwrite',os=>os.delete(key));}catch(e){return null;}};
+
+  function dadosRascunho(){return {key:'current',updatedAt:Date.now(),operador:state.operador||nomeSelecionado(),selfie:state.selfie,fotos:state.fotos,fotoHorarios:state.fotoHorarios,local:state.local,geladeira:state.geladeira,auditoriaId:state.auditoriaId,rodadaId:state.rodadaId,rodadaLocal:state.rodadaLocal,desvio:state.desvio,itens:state.itens,meta:state.meta,comprovanteAnalise:state.comprovanteAnalise,progresso:state.progresso,solicitacao:state.solicitacao};}
+  async function salvarRascunho(){if(state.selfie||state.rodadaId)try{const d=dadosRascunho();await dbPut('drafts',d);if(d.operador)await dbPut('drafts',{...d,key:'operador:'+normalizar(d.operador)});}catch(e){mensagem('Não foi possível guardar o rascunho neste navegador. Mantenha a página aberta até confirmar.');}}
+  async function apagarRascunho(){await dbDelete('drafts','current');if(state.operador)await dbDelete('drafts','operador:'+normalizar(state.operador));}
+
+  async function boot(){
+    $('retryBoot').classList.add('hidden');
+    try{
+      state.config=await retry(()=>server('carregarAplicacao'),2);preencherOperadores();$('pinBox').classList.toggle('hidden',!state.config.authRequired);
+      const token=sessionStorage.getItem('reposicaoSessionToken')||'';
+      if(token){
+        try{
+          const resposta=await server('carregarCatalogo',token);state.sessionToken=token;state.operador=resposta.operador;state.config.catalogo=resposta.catalogo;state.config.metasLocais=resposta.metasLocais;state.clockOffset=Number(resposta.servidorAgora||Date.now())-Date.now();preencherLocais();
+          const recuperado=await restaurarRascunho(true);mostrarOperador();if(!recuperado){show('selectScreen');status('Seleção');}sincronizarPendentes();return;
+        }catch(e){sessionStorage.removeItem('reposicaoSessionToken');}
+      }
+      await restaurarRascunho(false);show('checkinScreen');status('Identificação');
+    }catch(e){mensagem('Não foi possível carregar a configuração: '+e.message);$('bootScreen').querySelector('p').textContent='Não conseguimos conectar. Verifique a internet e tente novamente.';$('retryBoot').classList.remove('hidden');}
+  }
+  function preencherOperadores(){const s=$('operatorSelect');s.innerHTML='<option value="">Selecione seu nome</option>';(state.config.operadores||[]).forEach(n=>s.appendChild(new Option(n,n)));s.appendChild(new Option('+ Cadastrar novo auditor','__novo__'));}
+  function preencherLocais(){const s=$('locationSelect');s.innerHTML='<option value="">Selecione o local</option>';Object.keys(state.config.catalogo||{}).sort().forEach(n=>s.appendChild(new Option(n,n)));}
+  function nomeSelecionado(){return $('operatorSelect').value==='__novo__'?$('newOperator').value.trim():$('operatorSelect').value;}
+  function validarCheckin(){const pinOk=$('pinBox').classList.contains('hidden')||$('accessPin').value.trim().length>=1;$('checkinButton').disabled=!(nomeSelecionado().length>=3&&state.selfie&&pinOk);}
+  function mostrarOperador(){$('userName').textContent=state.operador;if(state.selfie)$('userThumb').src=state.selfie;$('userBadge').classList.remove('hidden');}
+
+  async function restaurarRascunho(sessaoAtiva){
+    const d=(sessaoAtiva?await dbGet('drafts','operador:'+normalizar(state.operador)):null)||await dbGet('drafts','current');if(!d)return false;
+    if(!sessaoAtiva){Object.assign(state,{operador:d.operador||'',fotos:d.fotos||[],fotoHorarios:d.fotoHorarios||[],local:d.local||'',geladeira:d.geladeira||'',auditoriaId:d.auditoriaId||'',rodadaId:d.rodadaId||'',rodadaLocal:d.rodadaLocal||d.local||'',desvio:d.desvio||null,itens:d.itens||[],meta:d.meta||null,comprovanteAnalise:d.comprovanteAnalise||'',progresso:d.progresso||null,solicitacao:d.solicitacao||null});state.selfie=null;const existe=Array.from($('operatorSelect').options).some(o=>o.value===d.operador);if(existe)$('operatorSelect').value=d.operador||'';else if(d.operador){$('operatorSelect').value='__novo__';$('newOperator').value=d.operador;$('newOperatorBox').classList.remove('hidden');}if(state.selfie){$('selfieImage').src=state.selfie;$('selfiePreview').classList.remove('hidden');$('selfieButton').classList.add('hidden');}validarCheckin();return true;}
+    if(d.operador!==state.operador)return false;
+    Object.assign(state,{selfie:state.selfie||d.selfie,fotos:d.fotos||[],fotoHorarios:d.fotoHorarios||[],local:d.local||'',geladeira:d.geladeira||'',auditoriaId:d.auditoriaId||'',rodadaId:d.rodadaId||'',rodadaLocal:d.rodadaLocal||d.local||'',desvio:d.desvio||null,itens:d.itens||[],meta:d.meta||null,comprovanteAnalise:d.comprovanteAnalise||'',progresso:d.progresso||null,solicitacao:d.solicitacao||null});
+    $('locationSelect').value=state.local;carregarGeladeiras(true);$('fridgeSelect').value=d.geladeira||'';state.geladeira=d.geladeira||'';
+    if(state.solicitacao){renderPedido();show('requestScreen');status('Pedido pronto');}
+    else if(state.itens.length&&state.comprovanteAnalise){renderReview();show('reviewScreen');status('Conferência');}
+    else if(state.auditoriaId&&state.geladeira){$('captureTitle').textContent=state.geladeira;renderFotos();show('captureScreen');status('Fotografando');}
+    else{show('selectScreen');status('Contagem do local');}
+    mensagem('Contagem em andamento recuperada.');return true;
+  }
+
+  async function checkin(){
+    if($('checkinButton').disabled||state.busy)return;if(state.operador&&state.operador!==nomeSelecionado()){await salvarRascunho();limparContagemDaTela();}state.busy=true;overlay('Iniciando turno','Enviando a selfie uma única vez.');
+    try{const r=await server('abrirSessao',{operador:nomeSelecionado(),pin:$('accessPin').value,selfie:state.selfie});state.sessionToken=r.sessionToken;state.operador=r.operador;state.checkinId=r.checkinId;sessionStorage.setItem('reposicaoSessionToken',state.sessionToken);$('accessPin').value='';const c=await server('carregarCatalogo',state.sessionToken);state.config.catalogo=c.catalogo;state.config.metasLocais=c.metasLocais;state.clockOffset=Number(c.servidorAgora||Date.now())-Date.now();preencherLocais();mostrarOperador();const recuperado=await restaurarRascunho(true);if(!recuperado){show('selectScreen');status('Seleção');}sincronizarPendentes();}catch(e){mensagem(e.message);}finally{state.busy=false;hideOverlay();if(state.sessionToken)sincronizarPendentes();}
+  }
+  async function limparOperador(){
+    if(state.busy)return;
+    fecharCamera();await salvarRascunho();await dbDelete('drafts','current');
+    Object.assign(state,{sessionToken:'',operador:'',checkinId:'',selfie:null,fotos:[],fotoHorarios:[],local:'',geladeira:'',auditoriaId:'',rodadaId:'',rodadaLocal:'',desvio:null,itens:[],meta:null,comprovanteAnalise:'',progresso:null,solicitacao:null,pedidoBlob:null});
+    sessionStorage.removeItem('reposicaoSessionToken');
+    $('selfieImage').removeAttribute('src');$('userThumb').removeAttribute('src');$('userName').textContent='';
+    $('itemsList').replaceChildren();document.querySelectorAll('#photoGrid .photo').forEach(x=>x.remove());
+    $('operatorSelect').value='';$('newOperator').value='';$('accessPin').value='';$('selfieInput').value='';$('fridgeInput').value='';
+    $('newOperatorBox').classList.add('hidden');$('selfiePreview').classList.add('hidden');$('selfieButton').classList.remove('hidden');$('userBadge').classList.add('hidden');validarCheckin();show('checkinScreen');status('Identificação');
+  }
+  function limparContagemDaTela(){Object.assign(state,{fotos:[],fotoHorarios:[],local:'',geladeira:'',auditoriaId:'',rodadaId:'',rodadaLocal:'',desvio:null,itens:[],meta:null,comprovanteAnalise:'',progresso:null,solicitacao:null,pedidoBlob:null});}
+  async function atualizarLocal(){
+    if(!state.sessionToken||!state.local||!navigator.onLine||state.busy)return;
+    const local=state.local,rodadaId=state.rodadaId;
+    try{const r=await server('consultarRodada',{sessionToken:state.sessionToken,rodadaId,local});
+      if(state.local!==local||state.rodadaId!==rodadaId)return;
+      if(r.encontrada){state.progresso=r.progresso;atualizarProgresso();await salvarRascunho();}
+    }catch(e){mensagem('Não foi possível atualizar o local: '+e.message);}
+  }
+  async function finalizarLocalPeloOperador(){
+    if(state.busy)return;state.busy=true;
+    try{if((await dbAll('outbox')).some(x=>x.local===state.local&&x.operador===state.operador))throw new Error('Há contagens neste aparelho aguardando envio. Sincronize antes de gerar o pedido.');await concluirPedido();}
+    catch(e){mensagem(e.message);}
+    finally{state.busy=false;hideOverlay();}
+  }
+  function progressoInicial(local){const equipamentos=Object.keys((state.config.catalogo||{})[local]||{}).sort();return {total:equipamentos.length,concluidas:0,equipamentos,auditadas:[],faltantes:equipamentos.slice()};}
+  function atualizarProgresso(){const p=state.progresso;$('resumeRound').classList.toggle('hidden',!state.rodadaId);$('resumeRound').textContent='Atualizar contagens';$('finishLocal').classList.toggle('hidden',!(p&&p.total>0&&!p.faltantes.length));if(!p||!state.local){$('roundProgressCard').classList.add('hidden');$('locationSelect').disabled=false;return;}$('roundProgressCard').classList.remove('hidden');$('roundProgressText').textContent=p.concluidas+' de '+p.total+' equipamentos com contagem';$('roundProgressBar').firstElementChild.style.width=(p.total?Math.round(100*p.concluidas/p.total):0)+'%';$('locationSelect').disabled=false;const resumo=(p.detalhes||[]).map(d=>d.equipamento+': '+(d.capturadaEm?new Date(d.capturadaEm).toLocaleString('pt-BR')+' · '+d.operador+(d.horarioEstimado?' (horário estimado)':''):'sem contagem'));$('countTimes').textContent=resumo.join('\n');}
+  function carregarGeladeiras(restaurando=false){const local=$('locationSelect').value;if(!restaurando&&local&&state.rodadaLocal!==local){state.rodadaId=uuid();state.rodadaLocal=local;state.progresso=progressoInicial(local);state.solicitacao=null;}state.local=local;if(!restaurando)state.geladeira='';const s=$('fridgeSelect');s.innerHTML='<option value="">Selecione o equipamento</option>';const lista=(state.config.catalogo||{})[state.local];const auditadas=(state.progresso&&state.progresso.auditadas)||[];if(lista)Object.keys(lista).sort().forEach(n=>{const feita=auditadas.some(x=>normalizar(x)===normalizar(n));const o=new Option(feita?'✓ '+n:n,n);o.disabled=false;s.appendChild(o);});s.disabled=!lista;$('planogramCard').classList.add('hidden');$('startCapture').classList.add('hidden');atualizarProgresso();if(!restaurando)salvarRascunho();}
+  function renderPlanograma(){state.geladeira=$('fridgeSelect').value;if(!state.geladeira){$('planogramCard').classList.add('hidden');$('startCapture').classList.add('hidden');return;}const itens=state.config.catalogo[state.local][state.geladeira]||[];const grupos={};itens.forEach(x=>(grupos[x.prateleira]||(grupos[x.prateleira]=[])).push(x));$('shelfList').innerHTML=Object.entries(grupos).map(([p,arr])=>`<div class="shelf"><strong>PRAT. ${escapeHtml(p)}</strong><span>${arr.map(x=>escapeHtml(x.produto)).join(' · ')}<small>Referência: ${arr.reduce((s,x)=>s+Number(x.ideal||0),0)} un.</small></span></div>`).join('');$('planogramCard').classList.remove('hidden');$('startCapture').classList.remove('hidden');salvarRascunho();}
+  function iniciarCaptura(){if(!state.rodadaId){state.rodadaId=uuid();state.rodadaLocal=state.local;state.progresso=progressoInicial(state.local);}state.fotos=[];state.fotoHorarios=[];state.itens=[];state.desvio=null;state.meta=null;state.comprovanteAnalise='';state.auditoriaId=uuid();state.mostrarTodos=false;$('captureTitle').textContent=state.geladeira;renderFotos();salvarRascunho();show('captureScreen');status('Fotografando');$('fridgeInput').click();}
+  function renderFotos(){document.querySelectorAll('#photoGrid .photo').forEach(x=>x.remove());state.fotos.forEach((foto,i)=>{const d=document.createElement('div');d.className='photo';d.innerHTML=`<img alt="Foto ${i+1}" src="${foto}"><button type="button" data-index="${i}" aria-label="Excluir foto">×</button><span>Foto ${i+1}</span>`;$('photoGrid').appendChild(d);});$('addPhoto').disabled=state.fotos.length>=4;$('photoLimit').textContent=state.fotos.length+'/4 fotos';$('analyzeButton').disabled=state.fotos.length===0;}
+
+  async function processarImagem(file,tipo){if(!file||!file.type.startsWith('image/'))throw new Error('Selecione uma imagem válida.');const bitmap=await carregarBitmap(file);let w=bitmap.width,h=bitmap.height;const escala=Math.min(1,1280/Math.max(w,h));w=Math.max(1,Math.round(w*escala));h=Math.max(1,Math.round(h*escala));let qualidade=tipo==='selfie'?.66:.68,data;for(let passo=0;passo<4;passo++){const canvas=document.createElement('canvas');canvas.width=w;canvas.height=h;const ctx=canvas.getContext('2d',{alpha:false});ctx.drawImage(bitmap,0,0,w,h);data=canvas.toDataURL('image/jpeg',qualidade);if(data.length<=(tipo==='selfie'?650000:750000))break;qualidade-=.1;w=Math.round(w*.88);h=Math.round(h*.88);}if(bitmap.close)bitmap.close();return data;}
+  async function carregarBitmap(file){if('createImageBitmap' in window){try{return await createImageBitmap(file,{imageOrientation:'from-image'});}catch(e){}}const url=URL.createObjectURL(file);try{const img=new Image();await new Promise((res,rej)=>{img.onload=res;img.onerror=rej;img.src=url;});return img;}finally{URL.revokeObjectURL(url);}}
+  let cameraGeracao=0;
+  function pararCamera(){cameraGeracao++;if(state.cameraStream)state.cameraStream.getTracks().forEach(t=>t.stop());state.cameraStream=null;$('selfieVideo').srcObject=null;}
+  function fecharCamera(){pararCamera();$('cameraModal').classList.add('hidden');}
+  async function iniciarCameraSelfie(deviceId=''){
+    pararCamera();const geracao=cameraGeracao;$('takeSelfie').disabled=true;$('cameraHelp').textContent='Abrindo a câmera frontal…';
+    const video=$('selfieVideo');let stream;
+    try{
+      const vc=deviceId?{deviceId:{exact:deviceId},width:{ideal:1280},height:{ideal:1280}}:{facingMode:{exact:'user'},width:{ideal:1280},height:{ideal:1280}};
+      try{stream=await navigator.mediaDevices.getUserMedia({video:vc,audio:false});}
+      catch(e){
+        if(geracao!==cameraGeracao)return;
+        if(deviceId||!['OverconstrainedError','NotFoundError'].includes(e.name))throw e;
+        stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:'user'},width:{ideal:1280},height:{ideal:1280}},audio:false});
+      }
+      if(geracao!==cameraGeracao){stream.getTracks().forEach(t=>t.stop());return;}
+      state.cameraStream=stream;video.srcObject=stream;await video.play();
+      if(geracao!==cameraGeracao){stream.getTracks().forEach(t=>t.stop());return;}
+      const track=stream.getVideoTracks()[0],settings=track.getSettings?track.getSettings():{};
+      state.cameraDeviceId=settings.deviceId||deviceId||'';state.cameraFacing=settings.facingMode||'';
+      video.classList.toggle('mirrored',state.cameraFacing!=='environment');
+      try{state.cameraDevices=(await navigator.mediaDevices.enumerateDevices()).filter(d=>d.kind==='videoinput');}catch(e){state.cameraDevices=[];}
+      if(geracao!==cameraGeracao)return;
+      $('switchCamera').classList.toggle('hidden',state.cameraDevices.length<2);$('takeSelfie').disabled=false;
+      $('cameraHelp').textContent=state.cameraFacing==='environment'?'Câmera traseira ativa — toque em “Trocar câmera”.':state.cameraFacing==='user'?'Câmera frontal ativa.':'Confira se seu rosto aparece. Se necessário, toque em “Trocar câmera”.';
+    }catch(e){
+      if(geracao!==cameraGeracao)return;
+      pararCamera();$('cameraHelp').textContent='Use “Câmera do aparelho” e selecione a câmera frontal.';$('switchCamera').classList.add('hidden');mensagem('Não foi possível abrir a câmera. Autorize o acesso ou use a opção alternativa.');
+    }
+  }
+  async function abrirCameraSelfie(){if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){$('selfieInput').click();return;}$('cameraModal').classList.remove('hidden');await iniciarCameraSelfie();}
+  async function trocarCamera(){if(state.cameraDevices.length<2)return;const atual=Math.max(0,state.cameraDevices.findIndex(d=>d.deviceId===state.cameraDeviceId));await iniciarCameraSelfie(state.cameraDevices[(atual+1)%state.cameraDevices.length].deviceId);}
+  async function capturarSelfieAoVivo(){const video=$('selfieVideo');if(!video.videoWidth||!video.videoHeight)return;const escala=Math.min(1,960/Math.max(video.videoWidth,video.videoHeight));const canvas=document.createElement('canvas');canvas.width=Math.round(video.videoWidth*escala);canvas.height=Math.round(video.videoHeight*escala);canvas.getContext('2d',{alpha:false}).drawImage(video,0,0,canvas.width,canvas.height);state.selfie=canvas.toDataURL('image/jpeg',.68);$('selfieImage').src=state.selfie;$('selfiePreview').classList.remove('hidden');$('selfieButton').classList.add('hidden');validarCheckin();salvarRascunho();fecharCamera();}
+
+  async function analisar(){if(state.busy||!state.fotos.length)return;state.busy=true;overlay('Contando com IA','Identificando os produtos desta geladeira.');try{const r=await retry(()=>server('analisarImagens',{sessionToken:state.sessionToken,auditoriaId:state.auditoriaId,rodadaId:state.rodadaId,local:state.local,geladeira:state.geladeira,fotos:state.fotos,capturadaEm:Math.min(...state.fotoHorarios)}),1);state.auditoriaId=r.auditoriaId;state.desvio=r.desvio;state.meta=r.meta;state.comprovanteAnalise=r.comprovanteAnalise;state.itens=r.itens.map(x=>({...x,contado_humano:x.contado_ia}));state.mostrarTodos=false;renderReview();await salvarRascunho();show('reviewScreen');status('Conferência');}catch(e){mensagem((navigator.onLine?'Falha na análise: ':'Sem conexão: ')+e.message);}finally{state.busy=false;hideOverlay();}}
+  function itensVisiveis(){return state.itens.reduce((s,x)=>s+Number(x.contado_humano||0),0);}
+  function renderReview(){const total=itensVisiveis();$('replenishmentSummary').textContent=total+' unidades contadas nesta geladeira';$('deviationCard').classList.toggle('hidden',!state.desvio);$('deviationText').textContent=state.desvio||'';const visiveis=state.itens.map((x,i)=>({x,i})).filter(({x})=>state.mostrarTodos||x.planejado||Number(x.contado_humano)>0);const ocultos=state.itens.length-visiveis.length;$('showAllSkus').classList.toggle('hidden',!ocultos||state.mostrarTodos);$('itemsList').innerHTML=visiveis.map(({x,i})=>{const fora=!x.planejado&&Number(x.contado_humano)>0;return `<div class="item-card ${fora?'off-plan':''}"><div><h3>${escapeHtml(x.produto)}</h3><div class="item-meta"><span>${x.planejado?'Prat. '+escapeHtml(x.prateleira):'Não previsto nesta geladeira'}</span><span>IA: ${x.contado_ia}</span><span class="confidence ${x.confianca}">${labelConf(x.confianca)}</span></div><span class="repor ${fora?'off-plan':'complete'}">${fora?'FORA DO PLANOGRAMA':'CONTAGEM ATUAL'}</span></div><div class="counter"><button data-delta="-1" data-index="${i}" aria-label="Diminuir">−</button><input data-index="${i}" inputmode="numeric" type="number" min="0" value="${x.contado_humano}" aria-label="Quantidade atual"><button data-delta="1" data-index="${i}" aria-label="Aumentar">+</button></div></div>`;}).join('');}
+  function ajustar(i,delta){state.itens[i].contado_humano=Math.max(0,Math.min(1000000,Math.floor(Number(state.itens[i].contado_humano)||0)+delta));renderReview();salvarRascunho();}
+
+  function payloadSalvamento(){return {sessionToken:state.sessionToken,rodadaId:state.rodadaId,auditoriaId:state.auditoriaId,comprovanteAnalise:state.comprovanteAnalise,contagensFinais:state.itens.map(x=>({skuId:x.skuId,contado_humano:x.contado_humano}))};}
+  async function enfileirar(payload){await dbPut('outbox',{auditoriaId:payload.auditoriaId,rodadaId:state.rodadaId,local:state.local,geladeira:state.geladeira,operador:state.operador,criadoEm:Date.now(),payload});}
+  function progressoOtimista(){const p=state.progresso||progressoInicial(state.local);if(!p.auditadas.some(x=>normalizar(x)===normalizar(state.geladeira)))p.auditadas.push(state.geladeira);p.concluidas=p.auditadas.length;p.faltantes=p.equipamentos.filter(x=>!p.auditadas.some(y=>normalizar(y)===normalizar(x)));return p;}
+  async function salvar(){
+    if(state.busy||!state.itens.length)return;
+    if(!validarQuantidadesTela())return;
+    state.busy=true;$('saveButton').disabled=true;
+    const payload=payloadSalvamento();
+    overlay('Confirmando geladeira','Guardando a contagem antes do envio.');
+    let guardado=false;
+    try{
+      try{await enfileirar(payload);guardado=true;}catch(e){if(!navigator.onLine)throw new Error('Não foi possível guardar no aparelho. Mantenha esta tela aberta e reconecte.');}
+      if(!navigator.onLine){state.progresso=progressoOtimista();prepararDepoisDaGeladeira();mostrarSucesso(true);return;}
+      let r;
+      try{r=await retry(()=>server('salvarAuditoria',payload),2);}catch(e){
+        if(erroTemporario(e)&&guardado){state.progresso=progressoOtimista();prepararDepoisDaGeladeira();mostrarSucesso(true);return;}
+        throw e;
+      }
+      await dbDelete('outbox',payload.auditoriaId);
+      state.progresso=r.progresso;prepararDepoisDaGeladeira();
+      mostrarSucesso(false);if(r.superada)mensagem('Existe uma foto mais recente desta geladeira. Sua contagem ficou no histórico e não substituiu o total atual.');
+    }catch(e){mensagem('Não foi possível confirmar: '+e.message);}
+    finally{state.busy=false;$('saveButton').disabled=false;hideOverlay();network();}
+  }
+  function prepararDepoisDaGeladeira(){state.fotos=[];state.fotoHorarios=[];state.itens=[];state.desvio=null;state.meta=null;state.comprovanteAnalise='';state.auditoriaId='';state.geladeira='';state.mostrarTodos=false;salvarRascunho();}
+  function mostrarSucesso(pendente){const p=state.progresso||{concluidas:0,total:0,faltantes:[]};$('successTitle').textContent=pendente?'Contagem guardada':'Geladeira registrada';$('successText').textContent=pendente?'Será sincronizada quando a conexão voltar.':'A quantidade entrou no total deste local.';$('successSummary').textContent=p.concluidas+' de '+p.total+' equipamentos concluídos';$('auditIdLabel').textContent=p.faltantes.length?'Próximo: '+p.faltantes[0]:'Aguardando sincronização final';$('nextAudit').textContent=p.faltantes.length?'Fotografar próxima geladeira':'Voltar à contagem';show('successScreen');status(pendente?'Pendente de envio':'Contagem do local');salvarRascunho();}
+  async function sincronizarPendentes(){
+    if(!navigator.onLine){mensagem('Reconecte para sincronizar e gerar o pedido.');return;}
+    if(!state.sessionToken||state.busy)return;
+    state.busy=true;overlay('Sincronizando','Conferindo as contagens já registradas.');
+    try{
+      const todos=await dbAll('outbox')||[];
+      const pendentes=todos.filter(x=>x.operador===state.operador).sort((a,b)=>a.criadoEm-b.criadoEm);
+      for(const item of pendentes){
+        item.payload.sessionToken=state.sessionToken;
+        const r=await server('salvarAuditoria',item.payload);
+        await dbDelete('outbox',item.auditoriaId);
+        if(item.rodadaId===state.rodadaId){
+          state.progresso=r.progresso;
+          if(state.auditoriaId===item.auditoriaId)prepararDepoisDaGeladeira();
+        }
+      }
+      if(state.rodadaId){
+        const r=await server('consultarRodada',{sessionToken:state.sessionToken,rodadaId:state.rodadaId,local:state.local});
+        if(r.encontrada){
+          state.progresso=r.progresso;
+          if(r.solicitacao){state.solicitacao=r.solicitacao;renderPedido();show('requestScreen');status('Pedido pronto');}
+          else if(!state.itens.length&&!state.fotos.length){await proxima();}
+        }
+        await salvarRascunho();atualizarProgresso();
+      }
+    }catch(e){mensagem('Sincronização pendente: '+e.message);atualizarProgresso();}
+    finally{state.busy=false;hideOverlay();network();}
+  }
+  async function proxima(){state.geladeira='';$('locationSelect').value=state.local;carregarGeladeiras(true);show('selectScreen');status('Contagem do local');await salvarRascunho();}
+
+  function textoPedido(){const s=state.solicitacao;if(!s)return '';const linhas=['EMBAIXADA CARIOCA','📦 SOLICITAÇÃO DE REPOSIÇÃO','',`Local: ${s.local}`,`Pedido: ${s.solicitacaoId}`,`Criado em: ${new Date(s.criadoEm).toLocaleString('pt-BR')}`,`Operador: ${s.operador||state.operador}`,`Equipamentos auditados: ${s.equipamentosAuditados.length}`,''];if(s.itens.length){linhas.push('REPOR:');s.itens.forEach(x=>linhas.push(`• ${x.produto}: ${x.quantidadeSolicitada}`));linhas.push('',`TOTAL: ${s.totalUnidades} unidades`);}else linhas.push('✅ Meta do local atingida — nenhuma reposição necessária.');return linhas.join('\n');}
+  function renderPedido(){const s=state.solicitacao;if(!s)return;$('shareFallback').classList.add('hidden');$('requestId').textContent=s.solicitacaoId;$('requestLocation').textContent=s.local;$('requestTotal').textContent=s.totalUnidades+' unidades';$('requestIntro').textContent=s.itens.length?'Reposição calculada após somar todas as geladeiras.':'A meta total deste local foi atingida. Confira a distribuição entre as geladeiras.';$('requestItems').innerHTML=s.itens.length?s.itens.map(x=>`<div class="request-item"><span>${escapeHtml(x.produto)}</span><b>${x.quantidadeSolicitada}</b></div>`).join(''):'<div class="request-item"><span>Nenhum produto para repor</span><b>✓</b></div>';$('shareRequest').textContent=s.itens.length?'Enviar pelo WhatsApp':'Compartilhar confirmação';$('requestText').value=textoPedido();state.pedidoBlob=null;criarImagemPedido().then(blob=>{if(state.solicitacao===s)state.pedidoBlob=blob;}).catch(()=>{});}
+  function quebrarTexto(ctx,texto,largura){
+    const linhas=[];let linha='';
+    // Quebra também palavras longas; nenhum SKU é abreviado.
+    for(const palavra of String(texto).split(/\s+/)){
+      if(linha&&ctx.measureText(linha+' '+palavra).width>largura){linhas.push(linha);linha='';}
+      for(const letra of (linha?' ':'')+palavra){
+        if(linha&&ctx.measureText(linha+letra).width>largura){linhas.push(linha);linha='';}
+        linha+=letra;
+      }
+    }
+    if(linha)linhas.push(linha);return linhas;
+  }
+  async function criarImagemPedido(){
+    const s=state.solicitacao;if(!s)throw new Error('Nenhum pedido disponível.');
+    const logo=$('brandLogo');if(logo.decode)await logo.decode();
+    const itens=s.itens||[],w=1080,c=document.createElement('canvas'),x=c.getContext('2d');
+    x.font='800 44px system-ui';const localLinhas=quebrarTexto(x,s.local,960);
+    x.font='700 29px system-ui';const linhas=itens.map(item=>({item,nomes:quebrarTexto(x,item.produto,780)}));
+    const cabecalho=220+localLinhas.length*55,inicio=cabecalho+205;
+    const h=Math.max(760,inicio+(linhas.length?linhas.reduce((n,r)=>n+Math.max(76,r.nomes.length*38+28),0):90)+120);
+    c.width=w;c.height=h;x.fillStyle='#ffffff';x.fillRect(0,0,w,h);
+    x.fillStyle='#00405a';x.fillRect(0,0,w,cabecalho);
+    if(logo.naturalWidth)x.drawImage(logo,52,24,156,156);
+    x.fillStyle='#ede2c9';x.font='700 26px system-ui';x.fillText('EMBAIXADA CARIOCA',244,80);
+    x.font='800 42px system-ui';x.fillText('PEDIDO DE REPOSIÇÃO',244,136);
+    x.fillStyle='#ffffff';x.font='800 44px system-ui';localLinhas.forEach((linha,i)=>x.fillText(linha,60,225+i*55));
+    x.fillStyle='#536b73';x.font='600 20px system-ui';x.fillText('PEDIDO '+s.solicitacaoId,60,cabecalho+46,960);
+    x.font='500 23px system-ui';x.fillText(new Date(s.criadoEm).toLocaleString('pt-BR'),60,cabecalho+88);
+    x.fillStyle='#00405a';x.font='800 34px system-ui';x.fillText(s.totalUnidades+' UNIDADES PARA REPOR',60,cabecalho+149);
+    let y=inicio;
+    if(!linhas.length){x.fillStyle='#047857';x.font='800 36px system-ui';x.fillText('META DO LOCAL ATINGIDA',60,y+30);}
+    linhas.forEach(({item,nomes},i)=>{
+      const altura=Math.max(76,nomes.length*38+28);
+      x.fillStyle=i%2?'#ffffff':'#f6efde';x.fillRect(40,y-12,1000,altura);
+      x.fillStyle='#16343f';x.font='700 29px system-ui';nomes.forEach((n,j)=>x.fillText(n,60,y+26+j*38));
+      x.fillStyle='#00405a';x.font='900 38px system-ui';x.textAlign='right';x.fillText(String(item.quantidadeSolicitada),1020,y+30);x.textAlign='left';y+=altura;
+    });
+    x.fillStyle='#536b73';x.font='500 21px system-ui';x.fillText('Contagem consolidada do local • Quantidades em unidades',60,h-60);
+    x.fillText('Confirme o recebimento e a separação com o estoque.',60,h-28);
+    return new Promise((resolve,reject)=>c.toBlob(blob=>blob?resolve(blob):reject(new Error('Falha ao gerar imagem.')),'image/png'));
+  }
+  async function registrarEnvio(){try{await server('registrarCompartilhamento',{sessionToken:state.sessionToken,solicitacaoId:state.solicitacao.solicitacaoId});}catch(e){}}
+  async function compartilharPedido(){
+    const s=state.solicitacao;if(!s)return;
+    const texto=textoPedido();
+    try{
+      const arquivo=state.pedidoBlob?new File([state.pedidoBlob],s.solicitacaoId+'.png',{type:'image/png'}):null;
+      const dados={title:'Reposição '+s.local,text:texto};
+      if(arquivo&&navigator.canShare&&navigator.canShare({files:[arquivo]}))dados.files=[arquivo];
+      if(navigator.share){await navigator.share(dados);await registrarEnvio();mensagem('Compartilhamento concluído no aparelho. Confirme o recebimento com o estoque.');return;}
+    }catch(e){if(e.name==='AbortError')return;}
+    // Abertura não comprova envio. O link visível preserva um novo gesto do usuário.
+    $('whatsappLink').href='https://wa.me/?text='+encodeURIComponent(texto);
+    $('shareFallback').classList.remove('hidden');
+    mensagem('Toque em “Abrir WhatsApp com o pedido” ou copie o texto abaixo.');
+  }
+  async function copiarPedido(){try{await navigator.clipboard.writeText(textoPedido());mensagem('Texto do pedido copiado.');}catch(e){$('shareFallback').classList.remove('hidden');$('requestText').focus();$('requestText').select();mensagem('Selecione e copie o texto do pedido abaixo.');}}
+  async function baixarPedido(){try{if(!state.pedidoBlob)state.pedidoBlob=await criarImagemPedido();const a=document.createElement('a');a.href=URL.createObjectURL(state.pedidoBlob);a.download=state.solicitacao.solicitacaoId+'.png';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}catch(e){mensagem(e.message);}}
+  async function novaRodada(){await apagarRascunho();Object.assign(state,{fotos:[],fotoHorarios:[],local:'',geladeira:'',auditoriaId:'',rodadaId:'',rodadaLocal:'',desvio:null,itens:[],meta:null,comprovanteAnalise:'',progresso:null,solicitacao:null,pedidoBlob:null});$('locationSelect').disabled=false;$('locationSelect').value='';carregarGeladeiras(true);show('selectScreen');status('Seleção');}
+
+  async function concluirPedido(){
+    overlay('Calculando reposição','Somando as contagens confirmadas do local.');
+    state.solicitacao=await server('finalizarRodada',{sessionToken:state.sessionToken,rodadaId:state.rodadaId,local:state.local,versaoBase:state.progresso&&state.progresso.versao});
+    renderPedido();await salvarRascunho();show('requestScreen');status('Pedido pronto');
+  }
+  function validarQuantidadesTela(){
+    for(const item of state.itens){const n=Number(item.contado_humano);if(item.contado_humano===''||!Number.isSafeInteger(n)||n<0||n>1000000){mensagem('Confira a quantidade de '+item.produto+'. Use um número inteiro.');return false;}}
+    return true;
+  }
+  function solicitarNovoCheckin(){
+    state.sessionToken='';sessionStorage.removeItem('reposicaoSessionToken');
+    state.selfie=null;$('selfieImage').removeAttribute('src');$('userThumb').removeAttribute('src');
+    $('selfiePreview').classList.add('hidden');$('selfieButton').classList.remove('hidden');
+    const opt=Array.from($('operatorSelect').options).find(x=>x.value===state.operador);
+    if(opt)$('operatorSelect').value=state.operador;
+    else{$('operatorSelect').value='__novo__';$('newOperator').value=state.operador;$('newOperatorBox').classList.remove('hidden');}
+    validarCheckin();show('checkinScreen');status('Renove o turno para continuar');
+  }
+
+  function normalizar(v){return String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();}
+  function escapeHtml(v){return String(v??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
+  function labelConf(c){return c==='alta'?'Alta':c==='media'?'Média':'Baixa';}
+  async function network(){const pendentes=(await dbAll('outbox')||[]).length,b=$('networkBanner');if(!navigator.onLine){b.textContent=pendentes?`Sem conexão · ${pendentes} contagem(ns) aguardando envio`:'Sem conexão. A contagem ficará guardada no aparelho.';b.classList.remove('hidden');}else if(pendentes){b.textContent=`${pendentes} contagem(ns) aguardando sincronização`;b.classList.remove('hidden');}else b.classList.add('hidden');}
+
+  $('operatorSelect').addEventListener('change',()=>{$('newOperatorBox').classList.toggle('hidden',$('operatorSelect').value!=='__novo__');validarCheckin();});
+  $('newOperator').addEventListener('input',validarCheckin);$('accessPin').addEventListener('input',validarCheckin);
+  $('retryBoot').addEventListener('click',boot);
+  $('selfieButton').addEventListener('click',abrirCameraSelfie);$('replaceSelfie').addEventListener('click',abrirCameraSelfie);
+  $('closeCamera').addEventListener('click',fecharCamera);$('switchCamera').addEventListener('click',trocarCamera);$('takeSelfie').addEventListener('click',capturarSelfieAoVivo);
+  $('fallbackCamera').addEventListener('click',()=>{fecharCamera();$('selfieInput').click();});
+  $('selfieInput').addEventListener('change',async e=>{if(!e.target.files.length)return;try{overlay('Preparando selfie','Comprimindo a imagem no aparelho.');state.selfie=await processarImagem(e.target.files[0],'selfie');$('selfieImage').src=state.selfie;$('selfiePreview').classList.remove('hidden');$('selfieButton').classList.add('hidden');validarCheckin();salvarRascunho();}catch(x){mensagem(x.message);}finally{e.target.value='';hideOverlay();}});
+  $('checkinButton').addEventListener('click',checkin);$('changeOperator').addEventListener('click',limparOperador);
+  $('locationSelect').addEventListener('change',async()=>{await salvarRascunho();carregarGeladeiras(false);await atualizarLocal();});$('fridgeSelect').addEventListener('change',renderPlanograma);$('startCapture').addEventListener('click',iniciarCaptura);
+  $('addPhoto').addEventListener('click',()=>$('fridgeInput').click());$('fridgeInput').addEventListener('change',async e=>{if(!e.target.files.length||state.fotos.length>=4)return;try{overlay('Preparando foto','Otimizando a imagem para envio.');const capturadaEm=Date.now()+state.clockOffset;state.fotos.push(await processarImagem(e.target.files[0],'geladeira'));state.fotoHorarios.push(capturadaEm);renderFotos();salvarRascunho();}catch(x){mensagem(x.message);}finally{e.target.value='';hideOverlay();}});
+  $('photoGrid').addEventListener('click',e=>{const b=e.target.closest('.photo button');if(b){state.fotos.splice(Number(b.dataset.index),1);state.fotoHorarios.splice(Number(b.dataset.index),1);renderFotos();salvarRascunho();}});
+  $('backToSelect').addEventListener('click',()=>{show('selectScreen');status('Contagem do local');});$('analyzeButton').addEventListener('click',analisar);
+  $('itemsList').addEventListener('click',e=>{const b=e.target.closest('button[data-delta]');if(b)ajustar(Number(b.dataset.index),Number(b.dataset.delta));});
+  $('itemsList').addEventListener('input',e=>{if(e.target.matches('input[data-index]')){const i=Number(e.target.dataset.index);state.itens[i].contado_humano=e.target.value;const valido=e.target.value!==''&&Number.isSafeInteger(Number(e.target.value))&&Number(e.target.value)>=0&&Number(e.target.value)<=1000000;e.target.setCustomValidity(valido?'':'Informe uma quantidade inteira válida.');$('replenishmentSummary').textContent=itensVisiveis()+' unidades contadas nesta geladeira';salvarRascunho();}});
+  $('showAllSkus').addEventListener('click',()=>{state.mostrarTodos=true;renderReview();});$('redoButton').addEventListener('click',()=>{show('captureScreen');status('Fotografando');});$('saveButton').addEventListener('click',salvar);$('nextAudit').addEventListener('click',proxima);$('resumeRound').addEventListener('click',sincronizarPendentes);$('finishLocal').addEventListener('click',finalizarLocalPeloOperador);
+  $('shareRequest').addEventListener('click',compartilharPedido);$('copyRequest').addEventListener('click',copiarPedido);$('downloadRequest').addEventListener('click',baixarPedido);$('newRound').addEventListener('click',novaRodada);
+  addEventListener('online',()=>{network();sincronizarPendentes();});addEventListener('offline',network);network();boot();
+})();
