@@ -36,7 +36,7 @@ test('API Google preserva validação de sessão e erros operacionais',()=>{
 test('interface é direta, sem iframe e sem funções administrativas ou google.script.run',()=>{
   const html=fs.readFileSync(path.join(root,'abastecer/index.html'),'utf8');
   assert.doesNotMatch(html,/<iframe|<\?!=/);assert.match(html,/width=device-width/);assert.match(html,/noindex/);
-  for(const file of ['app.v2.6.js','api.v2.6.js'])assert.doesNotMatch(fs.readFileSync(path.join(root,'abastecer',file),'utf8'),/google\.script\.run|GEMINI_API_KEY|configurarAplicacao/);
+  for(const file of ['app.v2.7.js','api.v2.6.js'])assert.doesNotMatch(fs.readFileSync(path.join(root,'abastecer',file),'utf8'),/google\.script\.run|GEMINI_API_KEY|configurarAplicacao/);
 });
 test('política da área de abastecimento permite câmera e mantém segurança do documento',async()=>{
   const source=fs.readFileSync(path.join(root,'functions/abastecer/_middleware.js'));

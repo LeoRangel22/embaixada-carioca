@@ -50,7 +50,6 @@
         <div id="selfiePreview" class="selfie-preview hidden">
           <img id="selfieImage" alt="Prévia da selfie"><div><b>Selfie capturada</b><button id="replaceSelfie" class="link-button" type="button">Substituir foto</button></div>
         </div>
-        <p class="migration-note">Primeiro acesso neste endereço? Conclua contagens pendentes no <a href="https://script.google.com/macros/s/AKfycbwEksAlApW1Ct3EcvEoQJJv3pVNWTCxOu4Zty_jZU1GnBv0ehYi4h1KpY81EssF_MoEfw/exec" target="_blank" rel="noopener">aplicativo anterior</a> antes de iniciar outra.</p>
         <p class="privacy-note">A selfie identifica o responsável pelo turno, fica em pasta restrita aos gestores e segue a política de retenção da empresa.</p>
       </div>
       <button id="checkinButton" class="primary" disabled>Iniciar turno</button>
@@ -62,7 +61,8 @@
         <label for="locationSelect">Setor / local</label>
         <select id="locationSelect"><option value="">Selecione o local</option></select>
         <div id="roundProgressCard" class="round-progress hidden">
-          <div><b id="roundProgressText">0 de 0 equipamentos</b><small>Conclua o local para calcular a reposição real.</small></div>
+          <div><b id="roundProgressText">0 de 0 equipamentos</b><small>Vale a foto mais recente de cada equipamento, revisada e confirmada por qualquer operador.</small></div>
+          <p id="countTimes" style="white-space:pre-line;margin-top:12px;font-size:14px"></p>
           <div id="roundProgressBar"><span></span></div>
         </div>
         <label for="fridgeSelect">Equipamento / porta</label>
@@ -73,6 +73,7 @@
         </div>
       </div>
       <button id="resumeRound" class="secondary hidden" type="button">Sincronizar contagem</button>
+      <button id="finishLocal" class="primary hidden" type="button">Gerar pedido com estas contagens</button>
       <button id="startCapture" class="primary hidden">Fotografar geladeira</button>
     </section>
 
@@ -106,7 +107,7 @@
       <div>
         <div class="success-mark">✓</div>
         <h1>Pedido do local pronto</h1><p class="eyebrow">EMBAIXADA CARIOCA</p>
-        <p id="requestIntro" class="lead">Todas as geladeiras foram somadas.</p>
+        <p id="requestIntro" class="lead">As últimas contagens confirmadas do local foram somadas.</p>
         <div class="request-card">
           <div class="request-head"><div><small>PEDIDO PARA O ESTOQUE</small><b id="requestId"></b></div><strong id="requestTotal"></strong></div>
           <h2 id="requestLocation"></h2>
@@ -150,6 +151,6 @@
   <div id="overlay" class="overlay hidden" role="status" aria-live="polite"><div class="spinner light"></div><h2 id="overlayTitle">Processando</h2><p id="overlayText">Aguarde um instante.</p></div>
   <div id="toast" class="toast hidden" role="alert"></div>
   <script src="/abastecer/api.v2.6.js"></script>
-  <script src="/abastecer/app.v2.6.js"></script>
+  <script src="/abastecer/app.v2.7.js"></script>
 </body>
 </html>

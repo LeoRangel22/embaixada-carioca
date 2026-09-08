@@ -2,7 +2,7 @@
 
 URL: https://www.embaixadacarioca.com/abastecer/
 
-A interface 2.6 usa os mesmos serviços e regras operacionais da versão 2.5 do Apps Script. A alteração do Google adiciona apenas `HttpApi.gs`, sem migrar ou recriar planilhas. O endereço antigo continua funcionando para finalizar rodadas que ainda estejam salvas naquele navegador.
+A versão 2.7 compartilha a última contagem confirmada de cada equipamento entre operadores e entre os dois endereços. Não há exclusividade de rodada: outra pessoa pode fotografar e conferir o equipamento a qualquer momento.
 
 ## Publicação
 
@@ -16,9 +16,17 @@ O backend continua validando sessões, comprovantes da IA, rodadas e idempotênc
 
 ## Limites da migração
 
-IndexedDB e sessionStorage são separados por origem. Rascunhos do endereço Google não são movidos automaticamente. Finalize rodadas pendentes pelo endereço anterior antes de iniciar outra no novo endereço. O histórico já confirmado permanece na mesma planilha.
+IndexedDB e sessionStorage são separados por origem. Rascunhos do endereço Google não são movidos automaticamente. Isso não impede uma nova contagem por outra pessoa ou no novo endereço. O histórico já confirmado permanece na mesma planilha. Rascunhos são preservados por operador no aparelho; envios pendentes permanecem na fila.
 
 O manifesto permite adicionar um atalho à tela inicial. Não é introduzido um service worker de cache de fotos ou respostas operacionais. A fila e os rascunhos existentes continuam sendo usados para falhas de conexão com a página carregada.
+
+## Regra de atualização
+
+A foto mais recente, após conferência e gravação, substitui integralmente a contagem anterior daquele equipamento. O horário da captura é assinado no comprovante da análise; um envio antigo atrasado fica no histórico e não substitui uma captura posterior. Para um conjunto de fotos complementares, vale a primeira captura. Registros anteriores à atualização exibem horário estimado.
+
+A tela mostra os horários e responsáveis das contagens em uso. Gerar o pedido é uma ação explícita após completar os equipamentos. O servidor exige a mesma versão dos totais revisados e impede pedidos duplicados para o mesmo conjunto de contagens.
+
+Publicar primeiro `Code.gs`, `AppJs.html` e `Index.html` deste diretório de scripts no Apps Script, preservando `Styles.html`, `HttpApi.gs` e a implantação existente; depois publicar a interface do site. A coluna de horário da foto é acrescentada ao salvar, sem apagar o histórico.
 
 ## Verificação
 
