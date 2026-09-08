@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "mode": "check",
-  "files_checked": 110,
+  "files_checked": 111,
   "findings_count": 0,
   "files": [
     {
@@ -30,6 +30,12 @@
     },
     {
       "file": "_includes/wa-widget.html",
+      "changed": false,
+      "jsonld_blocks": 0,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "abastecer/index.html",
       "changed": false,
       "jsonld_blocks": 0,
       "invalid_blocks": 0

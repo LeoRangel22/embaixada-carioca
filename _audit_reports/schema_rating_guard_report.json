@@ -44,6 +44,12 @@
       "invalid_blocks": 0
     },
     {
+      "file": "abastecer/index.html",
+      "changed": false,
+      "jsonld_blocks": 0,
+      "invalid_blocks": 0
+    },
+    {
       "file": "almoco-morro-da-urca.html",
       "changed": false,
       "jsonld_blocks": 2,
