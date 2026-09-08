@@ -239,6 +239,195 @@ body[data-screen-label="Home"] .fatos-rapidos-section .home-direct-answer strong
   }
 }
 
+/* Home composition: normal document flow replaces fixed text coordinates.
+   Scoped to the three home pages; internal page hero layouts are unchanged. */
+html body[data-screen-label="Home"] header.hero.ec-home-flow {
+  min-height: 100svh !important;
+  height: auto !important;
+  justify-content: flex-start !important;
+  padding: 0 !important;
+}
+html body[data-screen-label="Home"] header.hero.ec-home-flow .hero-content {
+  position: relative !important;
+  inset: auto !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr) !important;
+  align-items: end !important;
+  gap: clamp(32px, 5vw, 80px) !important;
+  width: 100% !important;
+  max-width: 1440px !important;
+  height: auto !important;
+  margin: auto auto 0 !important;
+  padding: 144px clamp(24px, 5vw, 72px) 40px !important;
+}
+html body[data-screen-label="Home"] header.hero.ec-home-flow .hero-content > div:first-child {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  min-width: 0 !important;
+}
+html body[data-screen-label="Home"] header.hero.ec-home-flow .hero-content :is(.hero-eyebrow, h1, .hero-sub, .hero-chips, .hero-ctas) {
+  position: static !important;
+  inset: auto !important;
+  transform: none !important;
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  white-space: normal !important;
+}
+html body[data-screen-label="Home"] header.hero.ec-home-flow .hero-content .hero-eyebrow {
+  display: block !important;
+  line-height: 1.6 !important;
+  letter-spacing: 0.15em !important;
+  margin: 0 0 18px !important;
+}
+html body[data-screen-label="Home"] header.hero.ec-home-flow .hero-eyebrow::before,
+html body[data-screen-label="Home"] header.hero.ec-home-flow .hero-chips::before {
+  content: none !important;
+  display: none !important;
+}
+html body[data-screen-label="Home"] header.hero.ec-home-flow h1 {
+  font-size: clamp(36px, 3.6vw, 56px) !important;
+  line-height: 1.08 !important;
+  margin: 0 0 22px !important;
+}
+html body[data-screen-label="Home"] header.hero.ec-home-flow .hero-sub {
+  font-size: 17px !important;
+  line-height: 1.6 !important;
+  margin: 0 0 24px !important;
+}
+html body[data-screen-label="Home"] header.hero.ec-home-flow .hero-chips {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin: 0 0 24px !important;
+  gap: 8px !important;
+}
+html body[data-screen-label="Home"] header.hero.ec-home-flow .hero-chips span {
+  height: auto !important;
+  min-height: 34px !important;
+  white-space: normal !important;
+  padding: 7px 12px !important;
+  line-height: 1.4 !important;
+}
+html body[data-screen-label="Home"] header.hero.ec-home-flow .hero-ctas {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+}
+html body[data-screen-label="Home"] header.hero.ec-home-flow .hero-ctas .btn {
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 48px !important;
+  padding: 14px 20px !important;
+  white-space: normal !important;
+  text-align: center !important;
+  justify-content: center !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+}
+html body[data-screen-label="Home"] header.hero.ec-home-flow aside.hero-side {
+  position: static !important;
+  inset: auto !important;
+  display: block !important;
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  width: 100% !important;
+  max-width: 340px !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+  pointer-events: auto !important;
+}
+html body[data-screen-label="Home"] header.hero.ec-home-flow aside.hero-side .hero-meta-card {
+  position: static !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 20px !important;
+  gap: 12px !important;
+  background: rgba(0, 32, 46, 0.9) !important;
+}
+html body[data-screen-label="Home"] header.hero.ec-home-flow aside.hero-side .hmc .l {
+  white-space: normal !important;
+  line-height: 1.6 !important;
+  letter-spacing: 0.12em !important;
+}
+html body[data-screen-label="Home"] header.hero.ec-home-flow aside.hero-side .hmc .v {
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+}
+html body[data-screen-label="Home"] header.hero.ec-home-flow .hero-partnership {
+  margin: 0 !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  color: #f6efde !important;
+  -webkit-text-fill-color: #f6efde !important;
+}
+/* The persistent mobile navigation already includes a reservation action. */
+body[data-screen-label="Home"] .sticky-reserve-mobile {
+  display: none !important;
+}
+html body[data-screen-label="Home"] header.hero.ec-home-flow .hero-bottom-bar {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  flex-wrap: wrap !important;
+  gap: 12px 24px !important;
+  padding: 16px clamp(24px, 5vw, 72px) !important;
+  letter-spacing: 0.12em !important;
+  color: #f6efde !important;
+}
+@media (max-width: 960px) {
+  html body[data-screen-label="Home"] nav.top .nav-inner {
+    gap: 12px !important;
+    padding-inline: 20px !important;
+  }
+  html body[data-screen-label="Home"] nav#topnav.top .lang-switcher {
+    display: block !important;
+    margin-left: auto !important;
+    flex: 0 0 auto !important;
+  }
+  html body[data-screen-label="Home"] nav.top button#nav-hamburger {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 5px !important;
+    width: 44px !important;
+    height: 44px !important;
+    flex: 0 0 44px !important;
+    position: relative !important;
+    background: #00405a !important;
+    border: 1px solid #ede2c9 !important;
+    border-radius: 8px !important;
+  }
+  html body[data-screen-label="Home"] nav.top button#nav-hamburger span {
+    display: block !important;
+    width: 20px !important;
+    height: 2px !important;
+    background: #ede2c9 !important;
+  }
+  html body[data-screen-label="Home"] header.hero.ec-home-flow .hero-content {
+    grid-template-columns: minmax(0, 1fr) !important;
+    padding: 120px 24px 32px !important;
+    gap: 28px !important;
+  }
+  html body[data-screen-label="Home"] header.hero.ec-home-flow .hero-content > div:first-child,
+  html body[data-screen-label="Home"] header.hero.ec-home-flow aside.hero-side {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+  }
+  html body[data-screen-label="Home"] header.hero.ec-home-flow aside.hero-side {
+    max-width: none !important;
+  }
+  html body[data-screen-label="Home"] header.hero.ec-home-flow .hero-bottom-bar {
+    padding-right: 88px !important;
+  }
+}
+
 @media (max-width: 960px) {
   body[data-screen-label="Home"] header.hero .hero-content {
     box-sizing: border-box !important;

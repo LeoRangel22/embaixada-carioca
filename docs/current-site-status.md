@@ -1,6 +1,6 @@
 # Estado atual do site — Embaixada Carioca
 
-**Atualizado em:** 31/08/2026
+**Atualizado em:** 08/09/2026
 
 **Domínio canônico:** `https://www.embaixadacarioca.com/`
 
@@ -11,6 +11,18 @@
 Este é o documento de referência para o estado operacional atual. Relatórios datados em `_audit_reports/` registram o momento em que foram gerados e podem conter limitações já superadas.
 
 ## Arquitetura publicada
+
+### Lote de experiência de visita — 08/09/2026
+
+- Homes PT/EN/ES usam composição responsiva em fluxo, sem o logo secundário sobre o texto e sem popup automático de WhatsApp.
+- CTAs de cardápio e acesso apontam às páginas correspondentes no idioma da home; placeholders do rodapé foram substituídos por destinos úteis.
+- Removidas horas fixas/estimativa sazonal imprecisa do pôr do sol. Mantidos os horários de funcionamento já informados.
+- Prêmios contextualizados como feijoada da Academia da Cachaça servida por parceria formal. Removidas alegações amplas de exclusividade de serviço e de liderança em avaliações nas homes.
+- Barra mobile de reserva redundante ocultada; navegação e idioma mobile restaurados nas homes.
+- Instagram público confirma bloqueio de 18 anos. Origem da configuração ainda não verificada: não há sessão administrativa conectada; nenhuma configuração foi alterada.
+- Os 12 alertas editoriais de paridade já existentes continuam no backlog. Estes testes não certificam acessibilidade AAA nem paridade editorial integral.
+
+Ver relatório do lote em `_audit_reports/home_visit_experience_2026-09-08.md`.
 
 | Camada | Estado atual |
 |---|---|

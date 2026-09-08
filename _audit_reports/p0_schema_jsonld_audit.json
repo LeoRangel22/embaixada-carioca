@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "min_score": 100,
+  "min_score": 86,
   "required": [
     "Restaurant",
     "FAQPage",
@@ -22,31 +22,19 @@
       "status": "PASS",
       "score": 100,
       "found": [
-        "AdministrativeArea",
         "Answer",
         "BreadcrumbList",
         "City",
-        "ContactPoint",
-        "EntryPoint",
         "FAQPage",
-        "FoodEstablishment",
         "GeoCoordinates",
         "ImageObject",
         "ListItem",
-        "LocalBusiness",
         "LocationFeatureSpecification",
-        "Menu",
-        "MenuItem",
-        "MenuSection",
-        "Neighborhood",
-        "Offer",
         "OpeningHoursSpecification",
         "Organization",
         "PostalAddress",
         "Question",
-        "ReserveAction",
         "Restaurant",
-        "SearchAction",
         "SpeakableSpecification",
         "TouristAttraction",
         "WebPage",
@@ -55,81 +43,57 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 10
+      "blocks": 1
     },
     {
       "page": "en/index.html",
-      "status": "PASS",
-      "score": 100,
+      "status": "FAIL",
+      "score": 86,
       "found": [
-        "AdministrativeArea",
         "Answer",
-        "BreadcrumbList",
         "City",
-        "ContactPoint",
         "FAQPage",
-        "FoodEstablishment",
         "GeoCoordinates",
-        "ListItem",
-        "LocalBusiness",
-        "LocationFeatureSpecification",
-        "Menu",
-        "MenuItem",
-        "MenuSection",
-        "Neighborhood",
-        "Offer",
         "OpeningHoursSpecification",
-        "Organization",
         "PostalAddress",
         "Question",
-        "ReserveAction",
         "Restaurant",
         "SpeakableSpecification",
         "TouristAttraction",
         "WebPage",
         "WebSite"
       ],
-      "missing": [],
+      "missing": [
+        "BreadcrumbList"
+      ],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 8
+      "blocks": 1
     },
     {
       "page": "es/index.html",
-      "status": "PASS",
-      "score": 100,
+      "status": "FAIL",
+      "score": 86,
       "found": [
-        "AdministrativeArea",
         "Answer",
-        "BreadcrumbList",
         "City",
-        "ContactPoint",
         "FAQPage",
-        "FoodEstablishment",
         "GeoCoordinates",
-        "ListItem",
-        "LocalBusiness",
-        "LocationFeatureSpecification",
-        "Menu",
-        "MenuItem",
-        "MenuSection",
-        "Neighborhood",
-        "Offer",
         "OpeningHoursSpecification",
-        "Organization",
         "PostalAddress",
         "Question",
-        "ReserveAction",
         "Restaurant",
         "SpeakableSpecification",
         "TouristAttraction",
         "WebPage",
         "WebSite"
       ],
-      "missing": [],
+      "missing": [
+        "BreadcrumbList"
+      ],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 8
+      "blocks": 1
     },
     {
       "page": "almoco.html",
@@ -162,7 +126,7 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 7
+      "blocks": 1
     },
     {
       "page": "en/almoco.html",
@@ -195,7 +159,7 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 7
+      "blocks": 1
     },
     {
       "page": "es/almoco.html",
@@ -210,9 +174,9 @@
         "GeoCoordinates",
         "ListItem",
         "LocationFeatureSpecification",
+        "Menu",
         "MenuItem",
         "MenuSection",
-        "Menú",
         "Neighborhood",
         "Offer",
         "OpeningHoursSpecification",
@@ -228,7 +192,7 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 5
+      "blocks": 1
     },
     {
       "page": "cafe-da-manha.html",
@@ -260,7 +224,7 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 9
+      "blocks": 1
     },
     {
       "page": "en/cafe-da-manha.html",
@@ -292,7 +256,7 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 7
+      "blocks": 1
     },
     {
       "page": "es/cafe-da-manha.html",
@@ -324,7 +288,7 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 7
+      "blocks": 1
     },
     {
       "page": "cardapio.html",
@@ -343,6 +307,7 @@
         "MenuItem",
         "MenuSection",
         "Neighborhood",
+        "NutritionInformation",
         "Offer",
         "OpeningHoursSpecification",
         "PostalAddress",
@@ -357,7 +322,7 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 6
+      "blocks": 1
     },
     {
       "page": "restaurante-morro-da-urca.html",
@@ -387,7 +352,7 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 7
+      "blocks": 1
     },
     {
       "page": "eventos.html",
@@ -399,13 +364,17 @@
         "BreadcrumbList",
         "City",
         "FAQPage",
+        "GeoCoordinates",
         "ListItem",
         "LocationFeatureSpecification",
         "Neighborhood",
+        "OpeningHoursSpecification",
+        "Place",
         "PostalAddress",
         "Question",
         "ReserveAction",
         "Restaurant",
+        "SpeakableSpecification",
         "TouristAttraction",
         "WebPage",
         "WebSite"
@@ -413,7 +382,7 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 6
+      "blocks": 2
     },
     {
       "page": "en/eventos.html",
@@ -422,7 +391,6 @@
       "found": [
         "Answer",
         "BreadcrumbList",
-        "EventVenue",
         "FAQPage",
         "GeoCoordinates",
         "ImageObject",
@@ -430,6 +398,7 @@
         "LocationFeatureSpecification",
         "OpeningHoursSpecification",
         "Organization",
+        "Place",
         "PostalAddress",
         "Question",
         "ReserveAction",
@@ -444,7 +413,7 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 11
+      "blocks": 1
     },
     {
       "page": "es/eventos.html",
@@ -454,7 +423,6 @@
         "Answer",
         "BreadcrumbList",
         "ContactPoint",
-        "EventVenue",
         "FAQPage",
         "GeoCoordinates",
         "ImageObject",
@@ -462,6 +430,7 @@
         "LocationFeatureSpecification",
         "OpeningHoursSpecification",
         "Organization",
+        "Place",
         "PostalAddress",
         "Question",
         "ReserveAction",
@@ -476,7 +445,7 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 11
+      "blocks": 1
     },
     {
       "page": "guia-do-rio.html",
@@ -510,7 +479,7 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 6
+      "blocks": 1
     },
     {
       "page": "restaurantes-romanticos-rio-de-janeiro.html",
@@ -530,6 +499,7 @@
         "Question",
         "ReserveAction",
         "Restaurant",
+        "SpeakableSpecification",
         "TouristAttraction",
         "WebPage",
         "WebSite"
@@ -537,7 +507,7 @@
       "missing": [],
       "forbidden": [],
       "json_valid": true,
-      "blocks": 5
+      "blocks": 2
     }
   ]
 }
