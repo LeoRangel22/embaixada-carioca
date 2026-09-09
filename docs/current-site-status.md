@@ -1,6 +1,6 @@
 # Estado atual do site — Embaixada Carioca
 
-**Atualizado em:** 08/09/2026
+**Atualizado em:** 09/09/2026
 
 **Domínio canônico:** `https://www.embaixadacarioca.com/`
 
@@ -11,6 +11,14 @@
 Este é o documento de referência para o estado operacional atual. Relatórios datados em `_audit_reports/` registram o momento em que foram gerados e podem conter limitações já superadas.
 
 ## Arquitetura publicada
+
+### Lote de design interno — 09/09/2026
+
+- Base responsiva e navegação compacta estendidas a 24 páginas comerciais/editoriais PT/EN/ES.
+- Refino das aberturas de Cardápio e Café da Manhã, com fotos conferidas e textos localizados; preços e cards preservados.
+- Menu móvel funcional, troca de idioma para página equivalente e topo sólido após rolagem.
+- 144 cenários de páginas internas, 18 de homes e 48 verificações adicionais de conteúdo/rolagem aprovados localmente.
+- Detalhes e limites: `_audit_reports/inner_design_rollout_2026-09-09.md`. Não equivale a certificação AAA nem revisão editorial completa do site.
 
 ### Lote de experiência de visita — 08/09/2026
 

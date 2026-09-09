@@ -2760,8 +2760,11 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
     }
   ]
 }
-</script></head>
-<body data-screen-label="Menu"><!-- NAV -->
+</script><link rel="stylesheet" href="/assets/css/ec-design-aaa-fix.css?v=20260909-inner"/>
+<link rel="stylesheet" href="/assets/css/ec-inner-pages.css?v=20260909a"/>
+<script defer src="/assets/js/ec-inner-navigation.js?v=20260909a"></script>
+</head>
+<body data-ec-inner="20260909" data-screen-label="Menu"><!-- NAV -->
 <nav aria-label="Main navigation" class="top" id="topnav">
 <div class="nav-inner">
 <a aria-label="Embaixada Carioca · home" class="brand-mark" href="/en/">
@@ -2782,9 +2785,9 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 <div aria-label="Select language" class="lang-switcher" role="navigation">
 <button aria-expanded="false" aria-haspopup="true" aria-label="Current language: English" class="lang-current"><span class="lang-flag">🇺🇸</span><span>EN</span><span class="lang-arrow">▼</span></button>
 <div class="lang-dropdown" role="menu">
-<a class="" href="/" hreflang="pt-BR" role="menuitem"><span class="lang-flag">🇧🇷</span><span class="lang-name">Português</span></a>
-<a class="active" href="/en/" hreflang="en" role="menuitem"><span class="lang-flag">🇺🇸</span><span class="lang-name">English</span> <span class="lang-check">✓</span></a>
-<a class="" href="/es/" hreflang="es" role="menuitem"><span class="lang-flag">🇪🇸</span><span class="lang-name">Español</span></a>
+<a class="" href="/cardapio.html" hreflang="pt-BR" role="menuitem"><span class="lang-flag">🇧🇷</span><span class="lang-name">Português</span></a>
+<a class="active" href="/en/cardapio.html" hreflang="en" role="menuitem"><span class="lang-flag">🇺🇸</span><span class="lang-name">English</span> <span class="lang-check">✓</span></a>
+<a class="" href="/es/cardapio.html" hreflang="es" role="menuitem"><span class="lang-flag">🇪🇸</span><span class="lang-name">Español</span></a>
 </div>
 </div>
 <button aria-controls="nav-drawer" aria-expanded="false" aria-label="Open navigation menu" class="nav-hamburger" id="nav-hamburger"><span></span><span></span><span></span></button>
@@ -2792,37 +2795,14 @@ html body .page-hero-content .eyebrow.hero-eyebrow::before{background:#f59b1e!im
 </div>
 </nav>
 <!-- HERO SIMPLES -->
-<header class="page-hero" style="min-height: 50vh;">
-<img alt="Embaixada Carioca menu — restaurant on Urca Hill with a view of Sugarloaf Mountain, Rio de Janeiro" class="page-hero-photo" decoding="async" fetchpriority="high" sizes="100vw" src="/assets/hero.webp" srcset="/assets/hero-400w.webp 400w, /assets/hero-800w.webp 800w, /assets/hero-1200w.webp 1200w"/>
-<div aria-hidden="true" class="page-hero-overlay"></div>
-<div class="page-hero-content">
-<div class="eyebrow hero-eyebrow">Restaurant at the Cable Car · Morro da Urca · Sugarloaf Cable Car Park · Rio de Janeiro · Brazil</div>
-<div class="crumbs">
-<a href="/en/">Home</a> <span class="sep">/</span> <span class="here">Menu</span>
-</div>
-<h1>Full Menu — Embaixada Carioca, Urca Hill.</h1>
-<p class="lede">
-      From <strong>breakfast with a view of Sugarloaf Mountain</strong> to sunset with signature drinks — the menu at <strong>Embaixada Carioca</strong> celebrates Brazilian gastronomy with selected ingredients and contemporary technique. Every day, from 8:30 AM to 9:00 PM.
-    </p>
-<div aria-label="Embaixada Carioca highlights" class="hero-chips" style="display:flex;flex-wrap:wrap;gap:8px;margin:0.8rem 0 1.6rem;">
-<span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:5px 14px;font-size:0.85rem;color:#f5f0e8;white-space:nowrap;">4.8★ · 8,847 reviews</span>
-<span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:5px 14px;font-size:0.85rem;color:#f5f0e8;white-space:nowrap;">🏆 Award-winning feijoada from Academia da Cachaça — served at Embaixada Carioca</span>
-<span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:5px 14px;font-size:0.85rem;color:#f5f0e8;white-space:nowrap;">Inside Sugarloaf Cable Car Park</span>
-<span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:5px 14px;font-size:0.85rem;color:#f5f0e8;white-space:nowrap;">Open every day · 8:30 AM–9:00 PM</span>
-</div>
-<div class="ctas">
-<a class="btn lg" href="https://go.tagme.com.br/embaixadacarioca">Book a table</a>
-<a class="btn lg ghost" href="/en/eventos.html">Request event quote</a>
-</div>
-</div>
-<!-- EC Hero Summary In Side Frame -->
-<aside aria-label="Summary" class="ec-page-hero-side-frame">
-<div class="hmc"><span class="l">Today</span><span class="v">Sunset at 5:44 PM</span></div>
-<div class="hmc hero-summary-card"><span class="l">Summary</span><span class="v">From breakfast with a view of Sugarloaf Mountain to sunset with signature drinks — the menu at Embaixada Carioca celebrates Brazilian gastronomy with selected ingredients and…</span></div>
-<div class="hmc"><span class="l">View</span><span class="v">Sugarloaf Mountain in the foreground</span></div>
-</aside>
-<!-- /EC Hero Summary In Side Frame -->
-</header>
+<header class="page-hero ec-inner-hero">
+<div class="ec-inner-media"><img src="/assets/almoco-picanha-grelhada.webp" alt="Grilled beef with rice, farofa and fries on the Embaixada Carioca menu" loading="eager" fetchpriority="high" decoding="async"/></div>
+<div class="ec-inner-content">
+<p class="ec-inner-kicker">Restaurant at Sugarloaf · Morro da Urca</p>
+<h1>Brazilian flavours with a view</h1>
+<div class="ec-inner-intro"><p>From breakfast to sunset drinks, explore the flavours of Embaixada Carioca with Sugarloaf Mountain right in front of you.</p></div>
+<div class="ec-inner-actions"><a class="ec-inner-action is-primary" href="#cafe-da-manha">Explore the menu</a><a class="ec-inner-action" href="https://go.tagme.com.br/embaixadacarioca">Book a table</a></div>
+</div></header><section class="ec-inner-details"><div class="ec-inner-detail-wrap"><p>4.8★ · 8,847 reviews</p><p>Award-winning feijoada from Academia da Cachaça — served at Embaixada Carioca</p><p>Inside Sugarloaf Cable Car Park</p><p>Open every day · 8:30 AM–9:00 PM</p></div></section>
 <!-- CARDÁPIO PRINCIPAL -->
 <main id="main-content">
 <!-- BREAKFAST -->
@@ -4079,59 +4059,11 @@ footer.foot {
 </style>
 <div class="wa-widget" id="wa-widget">
 <!-- Preview do bot (aparece ao hover/clique) -->
-<div aria-label="Chat WhatsApp Embaixada Carioca" class="wa-preview" id="wa-preview" role="dialog">
-<button aria-label="Close chat" class="wa-close" id="wa-close">✕</button>
-<div class="wa-preview-header">
-<div class="wa-avatar" style="width:44px;height:44px;border-radius:50%;overflow:hidden;flex-shrink:0;"><img alt="Embaixada Carioca" decoding="async" height="44" loading="lazy" src="/assets/whatsapp-icon-official.png" style="width:100%;height:100%;object-fit:cover;" width="44"/></div>
-<div>
-<div class="wa-preview-name">Embaixada Carioca</div>
-<div class="wa-preview-status">● Online now</div>
-</div>
-</div>
-<div class="wa-preview-msg">
-      Hello! Welcome to <strong>Embaixada Carioca</strong> — the taste of Rio with a view of <strong>Sugarloaf Mountain</strong>! 🚡<br/><br/>
-      I can help with reservations, the menu, events or opening hours.
-    </div>
-<a aria-label="Start a WhatsApp conversation with Embaixada Carioca" class="wa-preview-cta" href="https://wa.me/5521966837556?text=Hi%21%20I%20found%20Embaixada%20Carioca%20through%20the%20website%20and%20would%20like%20to%20make%20a%20reservation." rel="noopener" target="_blank">💬 Start conversation</a>
-</div>
+
 <!-- Botão principal -->
-<a aria-label="Contact Embaixada Carioca on WhatsApp" class="wa-btn" href="https://wa.me/5521966837556?text=Hi%21%20I%20found%20Embaixada%20Carioca%20through%20the%20website%20and%20would%20like%20to%20make%20a%20reservation." id="wa-btn" rel="noopener" target="_blank" title="WhatsApp · +55 21 96683-7556"><span aria-hidden="true" class="wa-badge">1</span><img alt="WhatsApp support for Embaixada Carioca reservations and information" decoding="async" height="60" loading="lazy" src="/assets/whatsapp-icon-official.png" style="display:block;width:60px;height:60px;" width="60"/></a>
+<a aria-label="Contact Embaixada Carioca on WhatsApp" class="wa-btn" href="https://wa.me/5521966837556?text=Hi%21%20I%20found%20Embaixada%20Carioca%20through%20the%20website%20and%20would%20like%20to%20make%20a%20reservation." id="wa-btn" rel="noopener" target="_blank" title="WhatsApp · +55 21 96683-7556"><img alt="WhatsApp support for Embaixada Carioca reservations and information" decoding="async" height="60" loading="lazy" src="/assets/whatsapp-icon-official.png" style="display:block;width:60px;height:60px;" width="60"/></a>
 </div>
-<script>
-(function() {
-  var btn = document.getElementById('wa-btn');
-  var preview = document.getElementById('wa-preview');
-  var closeBtn = document.getElementById('wa-close');
-  var shown = false;
 
-  // Mostrar preview após 3 segundos automaticamente (uma vez por sessão)
-  if (!sessionStorage.getItem('wa_preview_shown')) {
-    setTimeout(function() {
-      if (!shown) {
-        preview.classList.add('visible');
-        shown = true;
-        sessionStorage.setItem('wa_preview_shown', '1');
-      }
-    }, 3000);
-  }
-
-  // Clique no botão abre preview (se fechado) ou segue o link
-  btn.addEventListener('click', function(e) {
-    if (!shown) {
-      e.preventDefault();
-      preview.classList.add('visible');
-      shown = true;
-    }
-  });
-
-  // Fechar preview
-  closeBtn.addEventListener('click', function(e) {
-    e.stopPropagation();
-    preview.classList.remove('visible');
-    shown = false;
-  });
-})();
-</script>
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- Service Worker Registration -->
 <script>
@@ -4170,10 +4102,10 @@ footer.foot {
 <!-- MOBILE BOTTOM NAV -->
 <nav aria-label="Quick mobile navigation" class="mobile-bottom-nav">
 <div class="mobile-bottom-nav-inner">
-<a aria-label="Lunch" class="" href="/en/almoco.html"><span class="bnav-icon">🍽️</span>Lunch</a>
-<a aria-label="Breakfast" class="" href="/en/cafe-da-manha.html"><span class="bnav-icon">☀️</span>Breakfast</a>
-<a aria-label="Menu" class="" href="/en/cardapio.html"><span class="bnav-icon">📋</span>Menu</a>
-<a aria-label="Reserve" class="bnav-reservar" href="https://go.tagme.com.br/embaixadacarioca"><span class="bnav-icon">📅</span>Reserve</a>
+<a aria-label="Lunch" class="" href="/en/almoco.html"><span class="bnav-icon"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="12" r="7"/><path d="M3 3v7m3-7v7M3 7h3M4.5 10v11"/></svg></span>Lunch</a>
+<a aria-label="Breakfast" class="" href="/en/cafe-da-manha.html"><span class="bnav-icon"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></span>Breakfast</a>
+<a aria-label="Menu" class="" href="/en/cardapio.html"><span class="bnav-icon"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6m-6 4h6m-6 4h4"/></svg></span>Menu</a>
+<a aria-label="Reserve" class="bnav-reservar" href="https://go.tagme.com.br/embaixadacarioca"><span class="bnav-icon"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 2v6m10-6v6M3 11h18m-14 5h3m4 0h3"/></svg></span>Reserve</a>
 </div>
 </nav>
 <!-- /MOBILE BOTTOM NAV -->
