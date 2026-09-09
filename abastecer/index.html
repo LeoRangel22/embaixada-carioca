@@ -9,12 +9,13 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="manifest" href="/abastecer/manifest.webmanifest">
   <link rel="icon" href="/abastecer/logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/abastecer/styles.v2.6.css">
+  <link rel="stylesheet" href="/abastecer/styles.v2.8.css">
 </head>
-<body>
+<body data-app-version="2.8.2">
   <header class="topbar">
     <div class="brand"><img id="brandLogo" class="brand-logo" src="/abastecer/logo.svg" alt="Embaixada Carioca"><div><strong>Embaixada<br>Carioca</strong><small id="headerStatus">Carregando</small></div></div>
     <div id="userBadge" class="user-badge hidden"><img id="userThumb" alt="Selfie do operador"><span id="userName"></span></div>
+    <a class="manual-link" href="https://www.embaixadacarioca.com/abastecer/manual/2.8.2/" target="_blank" rel="noopener">Como usar</a>
   </header>
 
   <div id="networkBanner" class="network hidden">Sem conexão. Mantenha a página aberta para retomar a sincronização.</div>
@@ -45,7 +46,7 @@
           <input id="accessPin" type="password" inputmode="numeric" autocomplete="one-time-code" placeholder="PIN da operação">
         </div>
 
-        <label>Selfie de confirmação</label>
+        <label>Selfie de confirmação</label><details class="context-help"><summary aria-label="Ajuda: Selfie"><span aria-hidden="true">?</span></summary><div class="help-box"><strong>Selfie</strong><p>A selfie identifica seu turno. Faça uma vez e siga para as geladeiras.</p></div></details>
         <button id="selfieButton" class="capture-box" type="button"><span class="camera-mark">◎</span><b>Capturar selfie frontal</b></button>
         <div id="selfiePreview" class="selfie-preview hidden">
           <img id="selfieImage" alt="Prévia da selfie"><div><b>Selfie capturada</b><button id="replaceSelfie" class="link-button" type="button">Substituir foto</button></div>
@@ -57,7 +58,7 @@
 
     <section id="selectScreen" class="screen hidden">
       <div>
-        <div class="step-row"><span>CONTAGEM DO LOCAL</span><button id="changeOperator" class="link-button">Trocar auditor</button></div>
+        <div class="step-row"><span>CONTAGEM DO LOCAL</span><button id="changeOperator" class="link-button">Pausar e trocar</button></div>
         <label for="locationSelect">Setor / local</label>
         <select id="locationSelect"><option value="">Selecione o local</option></select>
         <div id="roundProgressCard" class="round-progress hidden">
@@ -65,8 +66,9 @@
           <p id="countTimes" style="white-space:pre-line;margin-top:12px;font-size:14px"></p>
           <div id="roundProgressBar"><span></span></div>
         </div>
-        <label for="fridgeSelect">Equipamento / porta</label>
-        <select id="fridgeSelect" disabled><option value="">Aguardando local</option></select>
+        <h2 class="equipment-heading">Qual equipamento vai contar?</h2><details class="context-help"><summary aria-label="Ajuda: Contagem do local"><span aria-hidden="true">?</span></summary><div class="help-box"><strong>Contagem do local</strong><p>Escolha o equipamento que está à sua frente. Outra pessoa pode contar também. Vale a foto mais recente, conferida e salva.</p></div></details><div id="equipmentList" class="equipment-list"></div>
+        <label for="fridgeSelect" class="hidden">Equipamento / porta</label>
+        <select id="fridgeSelect" class="hidden" disabled><option value="">Aguardando local</option></select>
         <div id="planogramCard" class="hidden">
           <div class="section-title"><span>REFERÊNCIA DAS PRATELEIRAS</span><em>PLANOGRAMA</em></div>
           <div id="shelfList" class="shelf-list"></div>
@@ -80,6 +82,7 @@
     <section id="captureScreen" class="screen hidden">
       <div>
         <div class="step-row"><div><h2 id="captureTitle">Geladeira</h2><p>Faça uma foto frontal e adicione ângulos apenas quando houver pontos cegos.</p></div><span>PASSO 2 DE 3</span></div>
+        <details class="context-help"><summary aria-label="Ajuda: Fotografia"><span aria-hidden="true">?</span></summary><div class="help-box"><strong>Fotografia</strong><p>Mostre todas as prateleiras na foto frontal. Adicione outra foto apenas para mostrar um ponto cego.</p></div></details><button id="pauseCapture" type="button" class="pause-button">Pausar e trocar de operador</button>
         <div id="photoGrid" class="photo-grid">
           <button id="addPhoto" class="capture-box tall" type="button"><span class="camera-mark">＋</span><b>Adicionar foto</b><small id="photoLimit">até 4 fotos</small></button>
         </div>
@@ -90,6 +93,7 @@
     <section id="reviewScreen" class="screen hidden">
       <div>
         <div class="step-row"><div><h2>Confira esta geladeira</h2><p>Corrija a quantidade visível antes de confirmar.</p></div><span>CONFERÊNCIA</span></div>
+        <details class="context-help"><summary aria-label="Ajuda: Conferência"><span aria-hidden="true">?</span></summary><div class="help-box"><strong>Conferência</strong><p>Confira cada produto e ajuste com +, − ou digitando o número. Produto fora da posição também conta.</p></div></details><button id="pauseReview" type="button" class="pause-button">Pausar e trocar de operador</button>
         <div id="replenishmentSummary" class="replenishment-summary" aria-live="polite"></div>
         <div id="deviationCard" class="warning hidden"><b>Desvio de planograma</b><p id="deviationText"></p></div>
         <div id="itemsList" class="items-list"></div>
@@ -100,7 +104,8 @@
 
     <section id="successScreen" class="screen centered hidden">
       <div class="success-mark">✓</div><h1 id="successTitle">Geladeira registrada</h1><p id="successText">A contagem entrou no total deste local.</p><strong id="successSummary" class="success-summary"></strong><small id="auditIdLabel"></small>
-      <button id="nextAudit" class="primary full">Fotografar próxima geladeira</button>
+      <button id="nextAudit" class="primary full">Continuar contando</button>
+      <button id="successMore" type="button" class="secondary full hidden">Atualizar outro equipamento</button>
     </section>
 
     <section id="requestScreen" class="screen hidden">
@@ -115,7 +120,7 @@
         </div>
         <p class="share-help">Envie ao grupo do estoque. A imagem facilita a separação e o pedido permanece registrado na planilha.</p>
       </div>
-      <div class="request-actions">
+      <details class="context-help"><summary aria-label="Ajuda: Envio ao estoque"><span aria-hidden="true">?</span></summary><div class="help-box"><strong>Envio ao estoque</strong><p>Escolha o grupo no WhatsApp e envie. Peça a confirmação de recebimento; abrir o WhatsApp não envia sozinho.</p></div></details><div class="request-actions">
         <button id="shareRequest" class="primary whatsapp" type="button">Enviar pelo WhatsApp</button>
         <div class="button-row"><button id="copyRequest" class="secondary grow" type="button">Copiar texto</button><button id="downloadRequest" class="secondary grow" type="button">Salvar imagem</button></div>
         <div id="shareFallback" class="hidden">
@@ -151,6 +156,6 @@
   <div id="overlay" class="overlay hidden" role="status" aria-live="polite"><div class="spinner light"></div><h2 id="overlayTitle">Processando</h2><p id="overlayText">Aguarde um instante.</p></div>
   <div id="toast" class="toast hidden" role="alert"></div>
   <script src="/abastecer/api.v2.6.js"></script>
-  <script src="/abastecer/app.v2.7.js"></script>
+  <script src="/abastecer/app.v2.8.js"></script>
 </body>
 </html>

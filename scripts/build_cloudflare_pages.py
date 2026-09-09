@@ -23,6 +23,8 @@ PUBLIC_ROOT_FILES = {"_headers", "_redirects", "manifest.json", "version.json"}
 
 
 def copy_public_site() -> None:
+    from check_abastecer_manual import check
+    check()
     if OUTPUT.exists():
         shutil.rmtree(OUTPUT)
     OUTPUT.mkdir()

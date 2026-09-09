@@ -1,12 +1,12 @@
 /**
- * Embaixada Carioca — Reposição IA 2.7
+ * Embaixada Carioca — Reposição IA 2.8
  * Backend e servidor do frontend em Google Apps Script (V8).
  *
  * Credenciais ficam em Script Properties, nunca neste arquivo.
  */
 
 const APP = Object.freeze({
-  VERSION: '2.7.0',
+  VERSION: '2.8.2',
   MODEL_DEFAULT: 'gemini-3.6-flash',
   SHEET_CADASTROS: 'Cadastros',
   SHEET_REGISTROS: 'Registros',
