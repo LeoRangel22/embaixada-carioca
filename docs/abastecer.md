@@ -2,7 +2,7 @@
 
 URL: https://www.embaixadacarioca.com/abastecer/
 
-A versão 2.7 compartilha a última contagem confirmada de cada equipamento entre operadores e entre os dois endereços. Não há exclusividade de rodada: outra pessoa pode fotografar e conferir o equipamento a qualquer momento.
+A versão 2.8.2 compartilha a última contagem confirmada de cada equipamento entre operadores e entre os dois endereços. Não há exclusividade de rodada: outra pessoa pode fotografar e conferir o equipamento a qualquer momento.
 
 ## Publicação
 
@@ -26,7 +26,7 @@ A foto mais recente, após conferência e gravação, substitui integralmente a 
 
 A tela mostra os horários e responsáveis das contagens em uso. Gerar o pedido é uma ação explícita após completar os equipamentos. O servidor exige a mesma versão dos totais revisados e impede pedidos duplicados para o mesmo conjunto de contagens.
 
-Publicar primeiro `Code.gs`, `AppJs.html` e `Index.html` deste diretório de scripts no Apps Script, preservando `Styles.html`, `HttpApi.gs` e a implantação existente; depois publicar a interface do site. A coluna de horário da foto é acrescentada ao salvar, sem apagar o histórico.
+Publicar primeiro `Code.gs`, `AppJs.html` e `Index.html` deste diretório de scripts no Apps Script, incluindo `Styles.html`, preservando `HttpApi.gs` e a implantação existente; depois publicar a interface do site. A coluna de horário da foto é acrescentada ao salvar, sem apagar o histórico.
 
 ## Verificação
 
@@ -35,3 +35,14 @@ Publicar primeiro `Code.gs`, `AppJs.html` e `Index.html` deste diretório de scr
 Validar também os guards de JSON-LD e executar o build habitual. A câmera física, a qualidade da contagem da IA e a entrega no WhatsApp dependem do teste operacional no celular.
 
 Para reverter apenas a migração, retire o lote deste commit do site e use o endereço anterior. O arquivo `HttpApi.gs` pode permanecer publicado sem modificar a interface antiga.
+
+
+## Manual vinculado à publicação
+
+O botão Como usar abre a ajuda da mesma versão: navegação por etapa, busca por situação e dúvidas do turno. O PDF vertical de cinco páginas é o guia de leitura prévia para WhatsApp. Nenhuma consulta ao manual é obrigatória para operar.
+
+Para mudar a operação, crie uma nova pasta de versão com `conteudo.json` revisado. Gere os cinco slides com `scripts/manual/build_deck.mjs`, gere o PDF com `build_pdf.py` e feche com `release.py VERSAO DIRETORIO_BUILD`. O arquivo PPTX final deve usar o nome canônico sem o sufixo -vertical. Preserve as versões fechadas anteriores. O fechamento gera também a ajuda HTML a partir do mesmo conteúdo.
+
+O build do site rejeita alterações operacionais sem uma versão correspondente do manual, divergências de links e arquivos modificados depois do fechamento. A revisão do conteúdo continua sendo responsabilidade de quem altera o app; a verificação de arquivos não substitui a revisão semântica.
+
+A ajuda contextual usa disclosures HTML nativos, sem acesso a sessão, fotos ou rascunhos.

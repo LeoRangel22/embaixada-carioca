@@ -1,4 +1,3 @@
-<script>
 (() => {
   'use strict';
   const $ = id => document.getElementById(id);
@@ -21,7 +20,7 @@
   function uuid(){return crypto.randomUUID?crypto.randomUUID():Date.now().toString(36)+'_'+Math.random().toString(36).slice(2)+Math.random().toString(36).slice(2);}
 
   async function server(nome,payload){
-    try{return await new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(new Error('Tempo de resposta excedido. Tente novamente.')),nome==='analisarImagens'?150000:60000);const runner=google.script.run.withSuccessHandler(v=>{clearTimeout(timer);resolve(v);}).withFailureHandler(e=>{clearTimeout(timer);reject(new Error(e.message||String(e)));});payload===undefined?runner[nome]():runner[nome](payload);});}
+    try{return await window.reposicaoApi(nome,payload);}
     catch(erro){
       if(/sessão (expirada|inválida)/i.test(erro.message)) solicitarNovoCheckin();
       throw erro;
@@ -328,5 +327,3 @@
   $('equipmentList').addEventListener('click',e=>{const b=e.target.closest('button[data-equipment]');if(!b||state.busy)return;$('fridgeSelect').value=b.dataset.equipment;renderPlanograma();iniciarCaptura();});
   addEventListener('online',()=>{network();sincronizarPendentes();});addEventListener('offline',network);network();boot();
 })();
-
-</script>

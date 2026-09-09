@@ -1,0 +1,22 @@
+{
+  "version": "2.8.2",
+  "appVersion": "2.8.2",
+  "operationalDigest": "0c4015399999d535536dfe2eff471cc27f602aab30af102c0ce74643ea3b756d",
+  "contentDigest": "3803f96af135423c508c8195296d87cd61e7ad1fd033b5f4ebca3bdb6b4bec1e",
+  "files": {
+    "Manual-Embaixada-Carioca-2.8.2.pptx": "19813619f70badd691ec2ddca42476ccac6c0e129433536fe5424785665f532e",
+    "slide-2.png": "0e90aad431e44cadf262446a503c8eb43335712358fe466973d792b273380096",
+    "slide-3.png": "e54a17e530d99e63fa8ea78ee6dc892d11d7b5424b95820ff2a775a6a5a355a0",
+    "slide-1.png": "123c32636fea0615440b147efa4148f5e300439c1d340e8d26493356e5ddf7c2",
+    "foto.png": "ff25419bd2093282ea6e76b263aaff00b2f2266c302ee0ef8e13692cdebc24d6",
+    "index.html": "81e355737291b6452c71dea41c6a815e9388ba3bacf7ea151e9a19bffc157755",
+    "slide-5.png": "1b767f1ae431fd9cf8b6fd1849874cd9a57142e7f5779d77e31d1234c1fa95fd",
+    "online.js": "1aca1570e9e2fdd9e54f3a381b0b0d8bac4e6e9c5795c6bff65b409d966a0f59",
+    "online.css": "ba4ab5bbdf7de96ea1b50c89fb05aefc42eb4939a75c4d5fa34af1016aaff673",
+    "slide-4.png": "466cb48e34df9f0bc29e0937e6a4238f205572747ef649ce795cdc49611890a8",
+    "Manual-Embaixada-Carioca-2.8.2.pdf": "9a702b159db8ba424eb8d7f247a23a6d45ba4478efa5b1c40a104702deae75e8",
+    "equipe.png": "2c5ed4a6f8ff49b2b8494033e2f8d26aa112894c6579571f4a7a4ece1e55e84d",
+    "turno.png": "6d608db790ff2f84132f121ace40ddc527dcf5a4929a72710cca862d0a26ce89",
+    "conteudo.json": "3803f96af135423c508c8195296d87cd61e7ad1fd033b5f4ebca3bdb6b4bec1e"
+  }
+}
