@@ -5,6 +5,10 @@ html body[data-ec-editorial] .ec-online-menu {
   color: #00405a;
 }
 html body[data-ec-editorial] .ec-online-menu h2 { font: 600 24px/1.25 Verdana,sans-serif !important; color: #00405a !important; margin: 0 0 8px !important; }
+html body[data-ec-editorial] aside.ec-online-menu h2 { -webkit-text-fill-color: #00405a !important; text-shadow: none !important; }
+html body[data-ec-editorial] .ec-editorial-section:not(.dark):not(.feijoada-feature):not(.hero-internal):not(.contact) :is(h2,h3,p,li,.lede,strong,em,.serif) {
+  color: #00405a !important; -webkit-text-fill-color: #00405a !important; text-shadow: none !important;
+}
 html body[data-ec-editorial] .ec-online-menu p { font: 400 15px/1.6 Verdana,sans-serif !important; color: #264e5a !important; margin: 0 !important; max-width: 680px; }
 html body[data-ec-editorial] .ec-online-menu a { display: inline-flex; align-items: center; gap: 12px; min-height: 48px; padding: 12px 20px; box-sizing: border-box; border-radius: 8px; background: #00405a; color: #fffdf7 !important; -webkit-text-fill-color: #fffdf7 !important; font: 600 15px/1.5 Verdana,sans-serif; text-decoration: none; flex-shrink: 0; }
 html body[data-ec-editorial] .ec-online-menu a:focus-visible { outline: 3px solid #e59413; outline-offset: 4px; }

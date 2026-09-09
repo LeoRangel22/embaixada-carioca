@@ -14,6 +14,13 @@ def clean(node):
 for prefix,(title,description,label) in COPY.items():
  for name in ('almoco','feijoada','eventos'):
   file=ROOT/(prefix+name+'.html');text=file.read_text(encoding='utf-8')
+  def light(m):
+   classes=m.group(1).split()
+   if 'ec-editorial-section' in classes and not set(classes)&{'dark','feijoada-feature','hero-internal','contact','light-section'}:classes.append('light-section')
+   return '<section class="'+' '.join(classes)+'"'
+  text=re.sub(r'<section class="([^"]*)"',light,text)
+  # Also handle sections whose id/other attributes precede class.
+  text=re.sub(r'(<section\b[^>]*\bclass=")([^"]*)(")',lambda m:m.group(1)+m.group(2)+(' light-section' if 'ec-editorial-section' in m.group(2).split() and not set(m.group(2).split())&{'dark','feijoada-feature','hero-internal','contact','light-section'} else '')+m.group(3),text)
   def serving(m):
    notes=re.findall(r'<small>(.*?)</small>',m.group(),re.S)
    return '<div class="ec-serving-notes">'+' · '.join(x.strip() for x in notes)+'</div>' if notes else ''
