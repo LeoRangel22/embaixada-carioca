@@ -1,4 +1,19 @@
 /* Audited inner pages: one responsive opening component, no fixed text coordinates. */
+html body[data-ec-inner] section#visit-accessibility {
+  padding: 48px 24px !important; background: #f6efde !important; scroll-margin-top: 120px;
+}
+html body[data-ec-inner] #visit-accessibility > div { max-width: 900px; margin: auto; }
+html body[data-ec-inner] #visit-accessibility :is(h2,p) {
+  color: #00405a !important; -webkit-text-fill-color: #00405a !important; text-shadow: none !important;
+}
+html body[data-ec-inner] #visit-accessibility h2 { font: 600 clamp(25px,3vw,34px)/1.25 Verdana,sans-serif !important; margin: 0 0 20px !important; }
+html body[data-ec-inner] #visit-accessibility p { font: 400 16px/1.65 Verdana,sans-serif !important; margin: 0 0 18px !important; }
+html body[data-ec-inner] #visit-accessibility a {
+  display: inline-flex; min-height: 48px; align-items: center; padding: 12px 22px; box-sizing: border-box;
+  background: #00405a !important; color: #f6efde !important; -webkit-text-fill-color: #f6efde !important;
+  border-radius: 8px; font: 600 15px/1.5 Verdana,sans-serif; text-decoration: none;
+}
+html body[data-ec-inner] #visit-accessibility a:focus-visible { outline: 3px solid #e59413; outline-offset: 4px; }
 html body[data-ec-inner] nav#topnav.top {
   background: #002b3b !important;
   backdrop-filter: none !important;
