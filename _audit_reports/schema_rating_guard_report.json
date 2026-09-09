@@ -50,6 +50,30 @@
       "invalid_blocks": 0
     },
     {
+      "file": "abastecer/manual/2.8.0/index.html",
+      "changed": false,
+      "jsonld_blocks": 0,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "abastecer/manual/2.8.1/index.html",
+      "changed": false,
+      "jsonld_blocks": 0,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "abastecer/manual/2.8.2/index.html",
+      "changed": false,
+      "jsonld_blocks": 0,
+      "invalid_blocks": 0
+    },
+    {
+      "file": "abastecer/manual/index.html",
+      "changed": false,
+      "jsonld_blocks": 0,
+      "invalid_blocks": 0
+    },
+    {
       "file": "almoco-morro-da-urca.html",
       "changed": false,
       "jsonld_blocks": 2,

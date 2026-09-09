@@ -8,7 +8,7 @@ Mode: **check**
 - JSON-LD não pode conter `ratingValue`, `reviewCount`, `ratingCount`, `bestRating` ou `worstRating` ligados a avaliações externas.
 - A nota do Google pode continuar no texto visível da página, mas não no schema estruturado.
 
-Arquivos HTML verificados: **111**
+Arquivos HTML verificados: **115**
 Achados: **0**
 
 ## Arquivos alterados / verificados
@@ -18,6 +18,10 @@ Achados: **0**
 - `_includes/nav.html` — ok — blocos JSON-LD: 0 — inválidos: 0
 - `_includes/wa-widget.html` — ok — blocos JSON-LD: 0 — inválidos: 0
 - `abastecer/index.html` — ok — blocos JSON-LD: 0 — inválidos: 0
+- `abastecer/manual/2.8.0/index.html` — ok — blocos JSON-LD: 0 — inválidos: 0
+- `abastecer/manual/2.8.1/index.html` — ok — blocos JSON-LD: 0 — inválidos: 0
+- `abastecer/manual/2.8.2/index.html` — ok — blocos JSON-LD: 0 — inválidos: 0
+- `abastecer/manual/index.html` — ok — blocos JSON-LD: 0 — inválidos: 0
 - `almoco-morro-da-urca.html` — ok — blocos JSON-LD: 2 — inválidos: 0
 - `almoco.html` — ok — blocos JSON-LD: 1 — inválidos: 0
 - `avaliacoes-embaixada-carioca.html` — ok — blocos JSON-LD: 1 — inválidos: 0

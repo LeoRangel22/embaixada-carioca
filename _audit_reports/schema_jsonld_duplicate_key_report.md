@@ -2,7 +2,7 @@
 
 Status: **PASS**
 Mode: **check**
-Arquivos HTML verificados: **111**
+Arquivos HTML verificados: **115**
 Achados: **0**
 
 ## Regra
@@ -20,6 +20,10 @@ Achados: **0**
 - `_includes/nav.html` — ok — blocos JSON-LD: 0 — inválidos: 0
 - `_includes/wa-widget.html` — ok — blocos JSON-LD: 0 — inválidos: 0
 - `abastecer/index.html` — ok — blocos JSON-LD: 0 — inválidos: 0
+- `abastecer/manual/2.8.0/index.html` — ok — blocos JSON-LD: 0 — inválidos: 0
+- `abastecer/manual/2.8.1/index.html` — ok — blocos JSON-LD: 0 — inválidos: 0
+- `abastecer/manual/2.8.2/index.html` — ok — blocos JSON-LD: 0 — inválidos: 0
+- `abastecer/manual/index.html` — ok — blocos JSON-LD: 0 — inválidos: 0
 - `almoco-morro-da-urca.html` — ok — blocos JSON-LD: 2 — inválidos: 0
 - `almoco.html` — ok — blocos JSON-LD: 1 — inválidos: 0
 - `avaliacoes-embaixada-carioca.html` — ok — blocos JSON-LD: 1 — inválidos: 0
