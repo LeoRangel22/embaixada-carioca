@@ -1,0 +1,28 @@
+/* Scoped light sections: keep the existing hero, navigation and product layout. */
+/* A real page ID outranks old per-section color locks without affecting other pages. */
+html body#ec-editorial-page section.ec-reading-section.light-section :is(h2,h3,h4,p,li,span,strong,b,em,summary,figcaption,.faq-answer,.ec-kicker,.ec-fs-kicker) {
+  color: #00405a !important; -webkit-text-fill-color: #00405a !important; text-shadow: none !important;
+}
+html body[data-ec-legacy-clean] section.ec-reading-section.light-section {
+  background: #f6efde !important; color: #00405a !important;
+  padding: 44px 22px !important; margin: 0 !important;
+}
+html body[data-ec-legacy-clean] section.ec-reading-section.light-section :is(h2,h3,h4,p,li,span,strong,b,summary,figcaption,.faq-answer,.ec-kicker,.ec-fs-kicker) {
+  color: #00405a !important; -webkit-text-fill-color: #00405a !important; text-shadow: none !important;
+}
+html body[data-ec-legacy-clean] section.ec-reading-section.light-section :is(p,li,figcaption,.faq-answer,summary) { font-size: 16px !important; line-height: 1.65 !important; }
+html body[data-ec-legacy-clean] section.ec-reading-section.light-section :is(.wrap,.ec-wrap,.ec-fs-wrap,.ec-reading-wrap) { width: 100% !important; max-width: 1100px !important; margin-inline: auto !important; padding-inline: 0 !important; }
+html body[data-ec-legacy-clean] section.ec-reading-section.light-section ol { display: block !important; padding-left: 28px !important; }
+html body[data-ec-legacy-clean] section.ec-reading-section.light-section ol li { display: list-item !important; list-style: decimal outside !important; padding: 16px !important; margin: 12px 0 !important; height: auto !important; min-height: 0 !important; background: #fffdf7 !important; border: 1px solid #d7dfd9 !important; border-radius: 10px !important; }
+html body[data-ec-legacy-clean] section.ec-reading-section.light-section ol li::before { display: none !important; content: none !important; }
+html body[data-ec-legacy-clean] .ec-breakfast-photo-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; margin-top: 28px; }
+html body[data-ec-legacy-clean] .ec-breakfast-photo-grid figure { margin: 0; overflow: hidden; border: 1px solid #d7dfd9; border-radius: 12px; background: #fffdf7; }
+html body[data-ec-legacy-clean] .ec-breakfast-photo-grid img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+html body[data-ec-legacy-clean] .ec-breakfast-photo-grid figcaption { padding: 16px 20px; }
+html body[data-ec-legacy-clean] .ec-retired-anchor { display: block; height: 0; scroll-margin-top: 110px; }
+html body#ec-editorial-page .avaliacoes.ec-reading-section .mini-quotes { display: grid !important; grid-template-columns: repeat(2,minmax(0,1fr)) !important; overflow: visible !important; gap: 24px !important; }
+html body#ec-editorial-page .avaliacoes.ec-reading-section .mq { width: auto !important; min-width: 0 !important; max-width: 100% !important; height: auto !important; }
+@media(max-width:700px) {
+  html body[data-ec-legacy-clean] .ec-breakfast-photo-grid { grid-template-columns: minmax(0,1fr); gap: 20px; }
+  html body#ec-editorial-page .avaliacoes.ec-reading-section .mini-quotes { grid-template-columns: minmax(0,1fr) !important; }
+}
