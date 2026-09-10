@@ -1,0 +1,19 @@
+/* Use the existing light-section contract, not another inferred dark theme. */
+html body[data-ec-access-clean] main:is(#ec-access-main,#conteudo-principal) { background: #f6efde !important; }
+html body[data-ec-access-clean] main:is(#ec-access-main,#conteudo-principal) section { padding: 40px 22px !important; margin: 0 !important; background: #f6efde !important; }
+html body[data-ec-access-clean] main:is(#ec-access-main,#conteudo-principal) :is(h2,h3,p,li,span,strong,b,summary,.kicker) {
+  color: #00405a !important; -webkit-text-fill-color: #00405a !important; text-shadow: none !important;
+}
+html body[data-ec-access-clean] main:is(#ec-access-main,#conteudo-principal) :is(p,li,summary) { font-size: 16px !important; line-height: 1.65 !important; }
+html body[data-ec-access-clean] main:is(#ec-access-main,#conteudo-principal) :is(.wrap,.ec-fs-wrap) { width: 100% !important; max-width: 1100px !important; padding: 0 !important; margin: auto !important; }
+html body[data-ec-access-clean] main:is(#ec-access-main,#conteudo-principal) ol { display: block !important; padding-left: 28px !important; }
+html body[data-ec-access-clean] main:is(#ec-access-main,#conteudo-principal) ol li {
+  display: list-item !important; list-style: decimal outside !important; height: auto !important; min-height: 0 !important;
+  padding: 16px !important; margin: 12px 0 !important; background: #fffdf7 !important; border: 1px solid #d7dfd9 !important; border-radius: 10px;
+}
+html body[data-ec-access-clean] main:is(#ec-access-main,#conteudo-principal) ol li::before { content: none !important; display: none !important; }
+html body[data-ec-access-clean] main:is(#ec-access-main,#conteudo-principal) li strong { display: inline !important; }
+html body[data-ec-access-clean] #sticky-cta-bar { display: none !important; }
+@media(max-width:760px) {
+ html body[data-ec-access-clean] main:is(#ec-access-main,#conteudo-principal) :is(.facts,.route-grid) { grid-template-columns: minmax(0,1fr) !important; }
+}
