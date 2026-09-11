@@ -1,4 +1,5 @@
 /* Scoped light sections: keep the existing hero, navigation and product layout. */
+html body#ec-editorial-page section.gallery-section.ec-reading-section :is(figure,figcaption) { background: #fffdf7 !important; }
 /* A real page ID outranks old per-section color locks without affecting other pages. */
 html body#ec-editorial-page section.ec-reading-section.light-section :is(h2,h3,h4,p,li,span,strong,b,em,summary,figcaption,.faq-answer,.ec-kicker,.ec-fs-kicker) {
   color: #00405a !important; -webkit-text-fill-color: #00405a !important; text-shadow: none !important;
