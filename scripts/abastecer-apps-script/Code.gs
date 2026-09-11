@@ -6,7 +6,7 @@
  */
 
 const APP = Object.freeze({
-  VERSION: '2.8.2',
+  VERSION: '2.9.0',
   MODEL_DEFAULT: 'gemini-3.6-flash',
   SHEET_CADASTROS: 'Cadastros',
   SHEET_REGISTROS: 'Registros',
@@ -17,7 +17,7 @@ const APP = Object.freeze({
   SHEET_RODADAS: 'Rodadas',
   SHEET_CONTAGENS: 'Contagens',
   SHEET_SOLICITACOES: 'SolicitacoesLocais',
-  MAX_FOTOS: 4,
+  MAX_FOTOS: 6,
   MAX_BASE64_CHARS: 4800000,
   SESSION_TTL_SECONDS: 43200,
   ANALYSIS_TTL_SECONDS: 172800,
@@ -316,7 +316,10 @@ function analisarImagens(requisicao) {
       idealGeladeira: cadastrado.idealGeladeira,
       idealLocal: cadastrado.idealLocal,
       contado_ia: match ? inteiroNaoNegativo_(match.quantidade) : 0,
-      confianca: normalizarConfianca_(match && match.confianca)
+      confianca: normalizarConfianca_(match && match.confianca),
+      cobertura: match.cobertura || 'parcial',
+      evidencia: textoSeguro_(match.evidencia, 180),
+      requerConferencia: true
     };
   });
 
@@ -377,6 +380,9 @@ function salvarAuditoria(requisicao) {
   const finais = analisados.map(function(itemIa) {
     const itemHumano = recebidos[textoSeguro_(itemIa.skuId, 100)] || {};
     const possuiCorrecao = Object.prototype.hasOwnProperty.call(itemHumano, 'contado_humano');
+    if (itemIa.requerConferencia && (itemIa.planejado || itemIa.contado_ia > 0) && itemHumano.conferido !== true) {
+      throw new Error('Confira o total físico de ' + itemIa.produto + ', incluindo o fundo, antes de salvar.');
+    }
     return {
       skuId: textoSeguro_(itemIa.skuId, 100),
       produto: textoSeguro_(itemIa.produto, 160),
@@ -507,7 +513,18 @@ function consultarGeminiComRetry_(fotos, local, geladeira, itensPlanejados, skus
     'Conte o total de cada SKU visível nesta geladeira, independentemente da prateleira.',
     'Retorne exatamente uma linha para cada SKU_ID do catálogo local.',
     'Copie o SKU_ID exatamente como fornecido.',
-    'Se não enxergar um SKU, retorne quantidade 0 e confiança baixa.',
+    'Quantidade é apenas a contagem VISÍVEL, não o estoque total quando há ocultação.',
+    'Percorra cada prateleira da esquerda para a direita, da frente ao fundo e cada camada empilhada. Conte corpos, tampas e bases individualmente sem duplicar a mesma unidade.',
+    'Cruze os ângulos: as fotos de detalhe complementam a visão frontal, nunca some duas vezes a mesma lata ou garrafa.',
+    'Não use a meta, capacidade da prateleira ou quantidade típica como evidência de estoque.',
+    'A luz verde altera as cores. Leia marca, açúcar/zero e tabela nutricional; não decida somente pela cor.',
+    'Coca-Cola edição Rock in Rio pode ter visual diferente. Distinguir comum de Zero pelo texto e açúcar na tabela nutricional.',
+    'Minalba e MAMBA são marcas diferentes. Um M na tampa não identifica MAMBA. Somente atribua MAMBA quando o rótulo confirmar. Minalba comum entra em Água sem gás ou com gás conforme o rótulo.',
+    'Procure Del Valle e Mate Leão também com rótulos virados. Não confunda Guaravita com Guaraviton.',
+    'Para cada SKU, informe cobertura completa, parcial ou nao_identificado e uma evidência curta do que foi visto.',
+    'Cobertura completa exige que TODAS as unidades e toda a profundidade estejam visíveis. Havendo produtos atrás ou camadas ocultas, use parcial, mesmo reconhecendo bem a marca.',
+    'Não identificar não significa ausência: use quantidade 0, cobertura nao_identificado e confiança baixa. Explique a limitação.',
+    'Confiança alta só quando identificação e contagem completa forem inequívocas.',
     'Um produto do catálogo local fora da sua prateleira planejada também deve ser contado.',
     'Registre em desvio_planograma os produtos na prateleira errada e itens desconhecidos.',
     'Se não houver desvio de planograma, omita desvio_planograma ou retorne uma string vazia.',
@@ -518,7 +535,8 @@ function consultarGeminiComRetry_(fotos, local, geladeira, itensPlanejados, skus
   ].join('\n');
 
   const parts = [];
-  fotos.forEach(function(foto) {
+  fotos.forEach(function(foto, indice) {
+    parts.push({ text: 'FOTO ' + (indice + 1) + (indice === 0 ? ' - visão geral do equipamento' : ' - detalhe do MESMO equipamento; não duplicar unidades') });
     parts.push({ inlineData: { mimeType: 'image/jpeg', data: extrairBase64_(foto) } });
   });
 
@@ -541,9 +559,11 @@ function consultarGeminiComRetry_(fotos, local, geladeira, itensPlanejados, skus
                   enum: skusLocais.map(function(item) { return item.skuId; })
                 },
                 quantidade: { type: 'integer', minimum: 0 },
-                confianca: { type: 'string', enum: ['alta', 'media', 'baixa'] }
+                confianca: { type: 'string', enum: ['alta', 'media', 'baixa'] },
+                cobertura: { type: 'string', enum: ['completa', 'parcial', 'nao_identificado'] },
+                evidencia: { type: 'string' }
               },
-              required: ['sku_id', 'quantidade', 'confianca']
+              required: ['sku_id', 'quantidade', 'confianca', 'cobertura', 'evidencia']
             }
           }
         },
@@ -1448,6 +1468,9 @@ function validarContagemIA_(resultado, catalogo) {
     if (typeof item.quantidade !== 'number') throw new Error('Quantidade inválida retornada pela IA.');
     quantidadeValida_(item.quantidade, item.sku_id);
     if (['alta', 'media', 'baixa'].indexOf(item.confianca) < 0) throw new Error('Confiança inválida retornada pela IA.');
+    if (item.cobertura !== undefined && ['completa','parcial','nao_identificado'].indexOf(item.cobertura) < 0) throw new Error('Cobertura visual inválida.');
+    if (item.cobertura === 'nao_identificado' && item.quantidade !== 0) throw new Error('A IA atribuiu quantidade a um produto não identificado.');
+    if (item.cobertura && item.cobertura !== 'completa' && item.confianca === 'alta') item.confianca = 'baixa';
     encontrados.add(item.sku_id);
   });
   if (encontrados.size !== esperados.size) throw new Error('A IA retornou uma contagem incompleta. Tente novamente; nenhum item será assumido como zero.');
