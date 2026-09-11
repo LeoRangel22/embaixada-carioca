@@ -11,11 +11,11 @@
   <link rel="icon" href="/abastecer/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/abastecer/styles.v2.8.css">
 </head>
-<body data-app-version="2.8.2">
+<body data-app-version="2.9.0">
   <header class="topbar">
     <div class="brand"><img id="brandLogo" class="brand-logo" src="/abastecer/logo.svg" alt="Embaixada Carioca"><div><strong>Embaixada<br>Carioca</strong><small id="headerStatus">Carregando</small></div></div>
     <div id="userBadge" class="user-badge hidden"><img id="userThumb" alt="Selfie do operador"><span id="userName"></span></div>
-    <a class="manual-link" href="https://www.embaixadacarioca.com/abastecer/manual/2.8.2/" target="_blank" rel="noopener">Como usar</a>
+    <a class="manual-link" href="https://www.embaixadacarioca.com/abastecer/manual/2.9.0/" target="_blank" rel="noopener">Como usar</a>
   </header>
 
   <div id="networkBanner" class="network hidden">Sem conexão. Mantenha a página aberta para retomar a sincronização.</div>
@@ -82,9 +82,9 @@
     <section id="captureScreen" class="screen hidden">
       <div>
         <div class="step-row"><div><h2 id="captureTitle">Geladeira</h2><p>Faça uma foto frontal e adicione ângulos apenas quando houver pontos cegos.</p></div><span>PASSO 2 DE 3</span></div>
-        <details class="context-help"><summary aria-label="Ajuda: Fotografia"><span aria-hidden="true">?</span></summary><div class="help-box"><strong>Fotografia</strong><p>Mostre todas as prateleiras na foto frontal. Adicione outra foto apenas para mostrar um ponto cego.</p></div></details><button id="pauseCapture" type="button" class="pause-button">Pausar e trocar de operador</button>
+        <details class="context-help"><summary aria-label="Ajuda: Fotografia"><span aria-hidden="true">?</span></summary><div class="help-box"><strong>Fotografia</strong><p>Comece com a geladeira inteira. Adicione detalhes dos rótulos, fundo e pilhas, até seis fotos do mesmo equipamento. As imagens se complementam.</p></div></details><button id="pauseCapture" type="button" class="pause-button">Pausar e trocar de operador</button>
         <div id="photoGrid" class="photo-grid">
-          <button id="addPhoto" class="capture-box tall" type="button"><span class="camera-mark">＋</span><b>Adicionar foto</b><small id="photoLimit">até 4 fotos</small></button>
+          <button id="addPhoto" class="capture-box tall" type="button"><span class="camera-mark">＋</span><b>Adicionar foto</b><small id="photoLimit">até 6 fotos</small></button>
         </div>
       </div>
       <div class="button-row"><button id="backToSelect" class="secondary">Voltar</button><button id="analyzeButton" class="primary grow" disabled>Analisar com IA</button></div>
@@ -92,10 +92,10 @@
 
     <section id="reviewScreen" class="screen hidden">
       <div>
-        <div class="step-row"><div><h2>Confira esta geladeira</h2><p>Corrija a quantidade visível antes de confirmar.</p></div><span>CONFERÊNCIA</span></div>
-        <details class="context-help"><summary aria-label="Ajuda: Conferência"><span aria-hidden="true">?</span></summary><div class="help-box"><strong>Conferência</strong><p>Confira cada produto e ajuste com +, − ou digitando o número. Produto fora da posição também conta.</p></div></details><button id="pauseReview" type="button" class="pause-button">Pausar e trocar de operador</button>
+        <div class="step-row"><div><h2>Confira esta geladeira</h2><p>Confira o total físico, incluindo fundo e pilhas.</p></div><span>CONFERÊNCIA</span></div>
+        <details class="context-help"><summary aria-label="Ajuda: Conferência"><span aria-hidden="true">?</span></summary><div class="help-box"><strong>Conferência</strong><p>A IA mostra unidades visíveis, que podem ser só parte do estoque. Confira o fundo e as pilhas. Digite o total e toque em “Conferi o total”. Use 0 só quando não houver unidades.</p></div></details><button id="pauseReview" type="button" class="pause-button">Pausar e trocar de operador</button>
         <div id="replenishmentSummary" class="replenishment-summary" aria-live="polite"></div>
-        <div id="deviationCard" class="warning hidden"><b>Desvio de planograma</b><p id="deviationText"></p></div>
+        <div id="deviationCard" class="warning hidden"><b>Observação de posição da IA</b><p id="deviationText"></p></div>
         <div id="itemsList" class="items-list"></div>
         <button id="showAllSkus" class="link-button full hidden" type="button">Mostrar todos os produtos do local</button>
       </div>

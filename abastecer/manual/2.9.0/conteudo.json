@@ -1,0 +1,98 @@
+{
+  "version": "2.9.0",
+  "date": "10/09/2026",
+  "appUrl": "https://www.embaixadacarioca.com/abastecer/",
+  "slides": [
+    {
+      "title": "Início do turno",
+      "subtitle": "Fotografe, confira e peça só o que falta.",
+      "image": "turno.png",
+      "steps": [
+        "Selecione seu nome.",
+        "Toque em “Capturar selfie frontal”.",
+        "Com a selfie pronta, toque em “Iniciar turno”."
+      ],
+      "note": "A selfie vale para o turno. Não precisa repetir em cada geladeira."
+    },
+    {
+      "title": "Foto da geladeira",
+      "subtitle": "O local e a geladeira precisam estar certos.",
+      "image": "foto.png",
+      "steps": [
+        "Escolha o local e a geladeira.",
+        "Fotografe a geladeira inteira e os detalhes necessários.",
+        "Com as fotos prontas, toque em “Analisar com IA”."
+      ],
+      "note": "Até 6 fotos do mesmo equipamento. Mostre rótulos, fundo e pilhas."
+    },
+    {
+      "title": "Conferência",
+      "subtitle": "A foto pode mostrar só parte do estoque.",
+      "table": [
+        [
+          "Produto",
+          "Foto",
+          "Total"
+        ],
+        [
+          "Água sem gás",
+          "10",
+          "12"
+        ]
+      ],
+      "tableLabel": "EXEMPLO DE CORREÇÃO",
+      "steps": [
+        "Confira também o fundo e as unidades empilhadas.",
+        "Digite o total e toque em “Conferi o total”.",
+        "Depois, toque em “Confirmar esta geladeira”."
+      ],
+      "note": "“Não identificado” não é zero. Digite 0 somente se não houver unidades.",
+      "extra": "IA indisponível? Guarde a contagem e tente novamente com conexão."
+    },
+    {
+      "title": "Pedido do local",
+      "subtitle": "Água em outra geladeira também entra na soma.",
+      "table": [
+        [
+          "Equipamento",
+          "Águas"
+        ],
+        [
+          "Heineken Esquerda",
+          "20"
+        ],
+        [
+          "Heineken Centro",
+          "15"
+        ],
+        [
+          "Heineken Direita",
+          "10"
+        ],
+        [
+          "Total no local",
+          "45"
+        ]
+      ],
+      "tableLabel": "EXEMPLO ILUSTRATIVO",
+      "formula": "Meta 80 − total 45 = repor 35",
+      "steps": [
+        "Toque em “Conferir local e pedido”.",
+        "Confira os horários. Atualize o que estiver antigo ou sem contagem.",
+        "Toque em “Gerar pedido com estas contagens”."
+      ],
+      "note": "Vale a foto mais recente, conferida e salva, de cada equipamento."
+    },
+    {
+      "title": "Envio e pausas",
+      "subtitle": "O estoque precisa receber o pedido.",
+      "image": "equipe.png",
+      "steps": [
+        "Toque em “Enviar pelo WhatsApp”, escolha o grupo do estoque e envie. Peça a confirmação de recebimento.",
+        "Não abriu? Use “Copiar texto” ou “Salvar imagem”.",
+        "Precisou sair? Use “Pausar e trocar de operador”. Outra pessoa pode contar com o próprio nome."
+      ],
+      "note": "Para retomar seu rascunho, entre com seu nome no mesmo aparelho e endereço. “Contagem guardada” ainda aguarda envio."
+    }
+  ]
+}
