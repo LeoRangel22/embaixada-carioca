@@ -1,0 +1,47 @@
+/* Scoped to the legacy Morro da Urca hero; other page families are unchanged. */
+html body div.ec-visitor-guide-hero {
+  position: relative;
+  isolation: isolate;
+  padding: 9rem 1.5rem 4rem;
+}
+html body div.ec-visitor-guide-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 24, 35, .88), rgba(0, 24, 35, .72)),
+    url('/assets/hero.jpg') center / cover no-repeat;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 0;
+}
+html body div.ec-visitor-guide-hero > .wrap-narrow {
+  position: relative;
+  z-index: 1;
+}
+html body div.ec-visitor-guide-hero :is(h1, h2, p, strong, .lead a) {
+  color: #f6efde !important;
+  -webkit-text-fill-color: #f6efde !important;
+}
+html body div.ec-visitor-guide-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3.75rem);
+  line-height: 1.12;
+}
+html body div.page-hero.ec-visitor-guide-hero .eyebrow {
+  color: #ffb847 !important;
+  -webkit-text-fill-color: #ffb847 !important;
+}
+html body div.ec-visitor-guide-hero .answer-block {
+  background: rgba(0, 24, 35, .5) !important;
+  border-left-color: #ffb847;
+}
+html body div.ec-visitor-guide-hero .lead a {
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+html body div.ec-visitor-guide-hero a:focus-visible {
+  outline: 3px solid #ffb847;
+  outline-offset: 4px;
+}
+@media (max-width: 640px) {
+  html body div.ec-visitor-guide-hero { padding: 7rem 1.25rem 3rem; }
+}
