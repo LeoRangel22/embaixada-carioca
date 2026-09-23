@@ -6,6 +6,9 @@ on:
       - master
     paths:
       - '.github/workflows/verify-lojas-bot-wrapper.yml'
+      - 'lojas-bot/**'
+      - '_headers'
+      - 'scripts/build_cloudflare_pages.py'
 
 permissions:
   contents: read
