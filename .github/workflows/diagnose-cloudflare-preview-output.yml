@@ -1,0 +1,28 @@
+name: Diagnose Cloudflare preview output
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '.github/workflows/diagnose-cloudflare-preview-output.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check Cloudflare preview content
+        run: |
+          set +e
+          PREVIEW='https://4b3ebef7.embaixada-carioca.pages.dev'
+          for path in / /lojas-bot/ /lojas-bot/index.html /index.html /version.json /en/ /abastecer/; do
+            echo "=== $path ==="
+            curl -sS -L -D - --max-time 20 "$PREVIEW$path" -o /tmp/body || true
+            echo "bytes=$(wc -c </tmp/body 2>/dev/null || echo 0)"
+            head -c 180 /tmp/body 2>/dev/null || true
+            echo
+          done
