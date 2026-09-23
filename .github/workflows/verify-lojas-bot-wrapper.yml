@@ -54,7 +54,9 @@ jobs:
             await page.waitForTimeout(5000);
             const box=await frameEl.boundingBox();
             if(!box) throw new Error('iframe not visible');
-            console.log('wrapper OK', {status:r.status(), box, title:await page.title(), errors});
+            if(Math.abs(box.y) > 2) throw new Error('iframe top is offset/cropped: '+JSON.stringify(box));
+            if(box.height < 800) throw new Error('iframe height is unexpectedly short: '+JSON.stringify(box));
+            console.log('wrapper OK without top crop', {status:r.status(), box, title:await page.title(), errors});
             await browser.close();
           })().catch(e=>{console.error(e);process.exit(1)});
           NODE
