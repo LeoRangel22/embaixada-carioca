@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Lojas Bot | Operação</title>
+  <style>
+    :root{color-scheme:dark}
+    *{box-sizing:border-box}
+    html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#061522}
+    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    .shell{position:fixed;inset:0;background:#061522}
+    iframe{display:block;width:100%;height:100%;border:0;background:#061522}
+    .loading{position:absolute;inset:0;display:grid;place-items:center;background:#061522;color:#9fb4c8;z-index:2;transition:opacity .18s ease,visibility .18s ease}
+    .loading.hidden{opacity:0;visibility:hidden;pointer-events:none}
+    .loading-inner{display:grid;justify-items:center;gap:12px}
+    .mark{width:30px;height:30px;border:2px solid #24425c;border-top-color:#36a7ff;border-radius:50%;animation:spin .75s linear infinite}
+    .label{font-size:12px;font-weight:700;letter-spacing:.03em}
+    .fallback{position:absolute;right:14px;bottom:12px;z-index:3;font-size:10px;color:#607b92;text-decoration:none;opacity:.45}
+    .fallback:hover{opacity:1;color:#9fcbf0}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @media(prefers-reduced-motion:reduce){.mark{animation:none}}
+  </style>
+</head>
+<body>
+  <main class="shell" aria-label="Lojas Bot">
+    <div class="loading" id="loading" aria-live="polite">
+      <div class="loading-inner">
+        <span class="mark" aria-hidden="true"></span>
+        <span class="label">Abrindo Lojas Bot…</span>
+      </div>
+    </div>
+    <iframe
+      id="lojas-bot"
+      title="Lojas Bot — Operação"
+      src="https://script.google.com/macros/s/AKfycbzNGnL3nMHDHX_xLfg7g-XpvAheJsoiyflp7yMW8vSjp9z5iOAjqPZ0TX9w_XAjkDzE/exec?embed=1"
+      allow="clipboard-read; clipboard-write"
+      loading="eager">
+    </iframe>
+    <a class="fallback" href="https://script.google.com/macros/s/AKfycbzNGnL3nMHDHX_xLfg7g-XpvAheJsoiyflp7yMW8vSjp9z5iOAjqPZ0TX9w_XAjkDzE/exec" target="_blank" rel="noopener">abrir diretamente</a>
+  </main>
+  <script>
+    (function(){
+      var frame=document.getElementById('lojas-bot');
+      var loading=document.getElementById('loading');
+      function done(){ if(loading) loading.classList.add('hidden'); }
+      frame.addEventListener('load',function(){ setTimeout(done,120); });
+      setTimeout(done,12000);
+    })();
+  </script>
+</body>
+</html>
