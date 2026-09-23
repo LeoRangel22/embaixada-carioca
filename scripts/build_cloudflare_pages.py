@@ -9,7 +9,7 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "_site"
 
-PUBLIC_STATIC_DIRECTORIES = ("assets", "img", "lojasadm", "abastecer")
+PUBLIC_STATIC_DIRECTORIES = ("assets", "img", "lojasadm", "lojas-bot", "abastecer")
 PUBLIC_ROOT_SUFFIXES = {
     ".html",
     ".css",
@@ -88,6 +88,9 @@ def copy_public_site() -> None:
 
     if not (OUTPUT / "lojasadm" / "index.html").exists():
         raise RuntimeError("Cloudflare Pages output is missing the lojasadm entry point")
+
+    if not (OUTPUT / "lojas-bot" / "index.html").exists():
+        raise RuntimeError("Cloudflare Pages output is missing the lojas-bot entry point")
 
     file_count = sum(1 for p in OUTPUT.rglob("*") if p.is_file())
     print(f"Cloudflare Pages output ready: {file_count} files in {OUTPUT}")

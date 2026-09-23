@@ -1,0 +1,64 @@
+name: Verify Lojas Bot Cloudflare preview
+
+on:
+  push:
+    branches:
+      - fix/cloudflare-lojas-bot-output-20260923
+    paths:
+      - '.github/workflows/verify-lojas-bot-cloudflare-preview.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: HTTP preview check
+        run: |
+          set -euo pipefail
+          URL='https://7796c6c3.embaixada-carioca.pages.dev/lojas-bot/'
+          code="$(curl -sS -L --max-time 30 -o /tmp/wrapper.html -w '%{http_code}' "$URL")"
+          echo "code=$code bytes=$(wc -c </tmp/wrapper.html)"
+          test "$code" -eq 200
+          grep -q 'id="lojas-bot"' /tmp/wrapper.html
+          grep -q 'script.google.com/macros/s/' /tmp/wrapper.html
+      - name: Install Playwright
+        run: npm install --no-save playwright-core@1.58.2
+      - name: Chrome preview smoke
+        run: |
+          set -euo pipefail
+          export NODE_PATH="$GITHUB_WORKSPACE/node_modules"
+          export CHROME_PATH="$(command -v google-chrome-stable || command -v google-chrome)"
+          cat >/tmp/check.cjs <<'NODE'
+          const { chromium } = require('playwright-core');
+          (async()=>{
+            const browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_PATH,args:['--no-sandbox','--disable-dev-shm-usage']});
+            const page=await browser.newPage({viewport:{width:1440,height:900}});
+            const errors=[];
+            page.on('pageerror',e=>errors.push(String(e&&e.message||e)));
+            const r=await page.goto('https://7796c6c3.embaixada-carioca.pages.dev/lojas-bot/?smoke='+Date.now(),{waitUntil:'domcontentloaded',timeout:90000});
+            if(!r || r.status()!==200) throw new Error('wrapper status '+(r&&r.status()));
+            const frameEl=page.locator('#lojas-bot');
+            if(!(await frameEl.count())) throw new Error('wrapper iframe missing');
+            const box=await frameEl.boundingBox();
+            if(!box || box.y > -40) throw new Error('Apps Script top chrome is not cropped: '+JSON.stringify(box));
+            let found=false;
+            for(let n=0;n<120&&!found;n++){
+              for(const f of page.frames()){
+                try{if(await f.locator('#tela-login').count()){found=true;break;}}catch(_){}
+              }
+              if(!found) await page.waitForTimeout(500);
+            }
+            if(!found) throw new Error('Lojas Bot login DOM not found inside embedded Apps Script');
+            if(errors.length) console.log('page errors:',errors);
+            console.log('Cloudflare preview wrapper OK; embedded Lojas Bot login found.');
+            await browser.close();
+          })().catch(e=>{console.error(e);process.exit(1)});
+          NODE
+          node /tmp/check.cjs
