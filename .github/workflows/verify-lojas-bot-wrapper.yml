@@ -1,0 +1,61 @@
+name: Verify Lojas Bot wrapper
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '.github/workflows/verify-lojas-bot-wrapper.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: HTTP check
+        run: |
+          set -euo pipefail
+          for i in 1 2 3 4 5; do
+            code="$(curl -L -sS --max-time 30 -o /tmp/lojas-bot.html -w '%{http_code}' 'https://www.embaixadacarioca.com/lojas-bot/')"
+            echo "attempt=$i code=$code bytes=$(wc -c </tmp/lojas-bot.html)"
+            if [ "$code" -eq 200 ] && grep -q 'id="lojas-bot"' /tmp/lojas-bot.html; then
+              exit 0
+            fi
+            sleep 8
+          done
+          echo 'Live wrapper did not become healthy'
+          head -c 500 /tmp/lojas-bot.html || true
+          exit 1
+      - name: Install Playwright
+        run: npm install --no-save playwright-core@1.58.2
+      - name: Chrome smoke
+        run: |
+          set -euo pipefail
+          export NODE_PATH="$GITHUB_WORKSPACE/node_modules"
+          export CHROME_PATH="$(command -v google-chrome-stable || command -v google-chrome)"
+          cat >/tmp/check.cjs <<'NODE'
+          const { chromium } = require('playwright-core');
+          (async()=>{
+            const browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_PATH,args:['--no-sandbox','--disable-dev-shm-usage']});
+            const page=await browser.newPage({viewport:{width:1440,height:900}});
+            const errors=[];
+            page.on('pageerror',e=>errors.push(String(e&&e.message||e)));
+            const r=await page.goto('https://www.embaixadacarioca.com/lojas-bot/?verify='+Date.now(),{waitUntil:'domcontentloaded',timeout:90000});
+            if(!r || r.status()!==200) throw new Error('wrapper status '+(r&&r.status()));
+            const frameEl=page.locator('#lojas-bot');
+            if(!(await frameEl.count())) throw new Error('wrapper iframe missing');
+            await page.waitForTimeout(5000);
+            const box=await frameEl.boundingBox();
+            if(!box) throw new Error('iframe not visible');
+            console.log('wrapper OK', {status:r.status(), box, title:await page.title(), errors});
+            await browser.close();
+          })().catch(e=>{console.error(e);process.exit(1)});
+          NODE
+          node /tmp/check.cjs
