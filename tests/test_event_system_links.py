@@ -51,6 +51,7 @@ class EventSystemLinks(unittest.TestCase):
             page = Page(source)
             self.assertFalse(any(f.get('id', '').startswith('ec-event-lead-form') for f in page.forms))
             self.assertIn('ec-event-system-card', source)
+            self.assertNotIn('confirma o envio pelo WhatsApp', source)
             self.assertTrue(any(a.get('href', '').startswith('mailto:') for a in page.links))
             self.assertTrue(any('wa.me/' in a.get('href', '') for a in page.links))
 
