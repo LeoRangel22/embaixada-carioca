@@ -70,9 +70,19 @@ class EventSystemLinks(unittest.TestCase):
         pt = (ROOT / 'eventos.html').read_text(encoding='utf-8')
         self.assertLess(pt.index('id="event-formats"'), pt.index('id="event-gallery"'))
         self.assertLess(pt.index('id="event-gallery"'), pt.index('id="event-structure"'))
-        self.assertIn('class="ec-event-inline-link" data-event-system-link', pt)
+        self.assertIn('class="btn ec-event-step-cta" data-event-system-link', pt)
+        self.assertIn('>Abrir formulário</span></a>', pt)
         self.assertEqual(pt.count('<figure>'), 10)
+        self.assertEqual(pt.count('src="/assets/fotos/salao-entardecer-vista.webp"'), 1)
         self.assertIn('Ver mais fotos do espaço e dos eventos', pt)
+        self.assertNotIn('class="ec-featured-snippet-ol', pt)
+        self.assertNotIn('aria-label="SEO e Informações Úteis"', pt)
+        for prefix in ('', 'en/', 'es/'):
+            source = (ROOT / f'{prefix}eventos.html').read_text(encoding='utf-8')
+            mobile_quote = [a for a in Page(source).links if a.get('class') == 'bnav-reservar']
+            self.assertEqual(len(mobile_quote), 1)
+            self.assertIn('data-event-system-link', mobile_quote[0])
+            self.assertNotIn('tagme', mobile_quote[0]['href'])
         es = (ROOT / 'es/eventos.html').read_text(encoding='utf-8')
         self.assertNotIn('Solicitar cotización</a>', es)
 
