@@ -1,0 +1,27 @@
+/* Scoped handoff card: no global layout or reservation-button overrides. */
+.ec-event-system-card {
+  box-sizing: border-box; width: 100%; max-width: 720px; margin: 24px auto;
+  padding: clamp(24px, 4vw, 40px); border: 1px solid #6b8790;
+  border-radius: 20px; background: #123e4c; text-align: left;
+}
+html body .ec-event-system-card h3,
+html body .ec-event-system-card p {
+  color: #fff8eb !important; -webkit-text-fill-color: #fff8eb !important;
+  text-shadow: none;
+}
+.ec-event-system-card h3 { margin: 0 0 16px; font-size: clamp(24px, 3vw, 32px); line-height: 1.2; }
+.ec-event-system-card p { margin: 0 0 24px; font-size: 17px; line-height: 1.6; }
+html body a.ec-event-system-cta {
+  display: inline-flex; box-sizing: border-box; justify-content: center; align-items: center;
+  max-width: 100%; min-height: 48px; padding: 14px 24px; border: 1px solid #f6a51b;
+  border-radius: 12px; background: #f6a51b; color: #002c3b !important;
+  -webkit-text-fill-color: #002c3b !important; font: 700 17px/1.4 system-ui, sans-serif;
+  text-align: center; text-decoration: none; white-space: normal;
+}
+.ec-event-system-cta:hover { filter: brightness(1.08); }
+.ec-event-system-cta:focus-visible { outline: 3px solid #fff8eb; outline-offset: 5px; }
+.ec-event-system-card .ec-event-system-note { margin: 20px 0 0; font-size: 14px; }
+@media (max-width: 680px) {
+  .ec-event-system-card { border-radius: 14px; }
+  .ec-event-system-cta { width: 100%; }
+}

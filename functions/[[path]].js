@@ -39,6 +39,17 @@ export async function onRequest(context) {
   const url = new URL(context.request.url);
   const path = url.pathname;
 
+  // Fixed destination: do not forward arbitrary query strings or contact data.
+  if (path === "/formulario" || path === "/formulario.html") {
+    return new Response(null, {
+      status: 301,
+      headers: {
+        Location: "https://leorangel22.github.io/main/formulario.html?utm_source=embaixadacarioca&utm_medium=website&utm_campaign=eventos&utm_content=formulario",
+        "Cache-Control": "public, max-age=3600",
+      },
+    });
+  }
+
   if (path.startsWith("/_html/")) {
     return new Response("Not found", { status: 404 });
   }
