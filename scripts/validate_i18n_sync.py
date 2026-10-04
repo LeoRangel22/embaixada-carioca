@@ -53,6 +53,9 @@ BASE_URLS = {
 # Arquivos a ignorar (infraestrutura, não conteúdo)
 # Inclui: páginas de sistema, páginas de redirect e páginas PT-only por design estratégico
 IGNORE_FILES = {
+    # Política jurídica/operacional brasileira, publicada somente em PT-BR.
+    # Não integra as páginas comerciais multilíngues.
+    "politica-de-privacidade.html",
     "404.html",
     "offline.html",
     "contato.html",
