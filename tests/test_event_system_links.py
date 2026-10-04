@@ -61,6 +61,21 @@ class EventSystemLinks(unittest.TestCase):
         self.assertIn('https://leorangel22.github.io/main/formulario.html', source)
         self.assertIn('noindex, follow', source)
 
+    def test_events_layout_and_context(self):
+        for prefix in ('', 'en/', 'es/'):
+            source = (ROOT / f'{prefix}eventos.html').read_text(encoding='utf-8')
+            self.assertNotIn('class="ec-online-menu"', source)
+            self.assertIn('ec-events-layout.css', source)
+            self.assertLess(source.index('ec-inner-actions'), source.index('ec-inner-intro'))
+        pt = (ROOT / 'eventos.html').read_text(encoding='utf-8')
+        self.assertLess(pt.index('id="event-formats"'), pt.index('id="event-gallery"'))
+        self.assertLess(pt.index('id="event-gallery"'), pt.index('id="event-structure"'))
+        self.assertIn('class="ec-event-inline-link" data-event-system-link', pt)
+        self.assertEqual(pt.count('<figure>'), 10)
+        self.assertIn('Ver mais fotos do espaço e dos eventos', pt)
+        es = (ROOT / 'es/eventos.html').read_text(encoding='utf-8')
+        self.assertNotIn('Solicitar cotización</a>', es)
+
 
 if __name__ == '__main__':
     unittest.main()

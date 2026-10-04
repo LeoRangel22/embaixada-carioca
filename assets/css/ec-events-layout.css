@@ -1,0 +1,68 @@
+/* Event landing pages only: quote first, inspiration before operational details. */
+html body[data-ec-events][data-ec-inner] header.page-hero.ec-inner-hero {
+  min-height: 0 !important;
+}
+html body[data-ec-events][data-ec-inner] header.ec-inner-hero .ec-inner-media {
+  min-height: 390px !important;
+}
+html body[data-ec-events][data-ec-inner] header.ec-inner-hero .ec-inner-content {
+  padding: clamp(28px, 3vw, 44px) !important;
+}
+html body[data-ec-events][data-ec-inner] header.ec-inner-hero h1 {
+  font-size: clamp(30px, 3vw, 42px) !important; margin-bottom: 16px !important;
+}
+html body[data-ec-events][data-ec-inner] header.ec-inner-hero .ec-inner-actions {
+  margin: 0 0 20px !important;
+}
+html body[data-ec-events][data-ec-editorial] .ec-editorial-section {
+  padding: clamp(32px, 4vw, 52px) 0 !important;
+}
+html body[data-ec-events][data-ec-editorial] :is(.section-head,.sec-head) {
+  margin-bottom: 24px !important;
+}
+html body[data-ec-events][data-ec-editorial] #event-structure .fact {
+  padding: 20px !important;
+}
+html body[data-ec-events][data-ec-editorial] :is(#event-structure .fact,.capacity .cap) .v {
+  font-size: clamp(23px, 2.3vw, 30px) !important; line-height: 1.2 !important;
+  font-weight: 600 !important; overflow-wrap: normal !important;
+}
+html body[data-ec-events][data-ec-editorial] #event-structure .facts {
+  border: 0 !important;
+}
+html body[data-ec-events][data-ec-editorial] a.ec-event-inline-link {
+  color: #ffba53 !important; -webkit-text-fill-color: #ffba53 !important;
+  text-decoration: underline !important; text-decoration-thickness: 1px !important;
+  text-underline-offset: 5px; display: inline-block; padding-block: 4px;
+}
+html body[data-ec-events] .ec-event-gallery-more { margin-top: 24px; }
+html body[data-ec-events] .ec-event-gallery-more > summary {
+  display: list-item !important; padding: 14px 0; cursor: pointer;
+  color: #00405a !important; font: 600 16px/1.5 Verdana,sans-serif;
+  text-decoration: underline; text-underline-offset: 5px;
+}
+html body[data-ec-events] .ec-event-gallery-more > summary:focus-visible {
+  outline: 3px solid #d57b00; outline-offset: 4px;
+}
+html body[data-ec-events] .ec-event-gallery-more:not([open]) > .ec-photo-grid { display: none !important; }
+html body[data-ec-events][data-ec-editorial] .ec-event-gallery-more .ec-photo-grid { margin-top: 12px !important; }
+@media (max-width: 960px) {
+  html body[data-ec-events][data-ec-inner] header.ec-inner-hero .ec-inner-content {
+    grid-row: 1 !important; padding: 24px 22px !important;
+  }
+  html body[data-ec-events][data-ec-inner] header.ec-inner-hero .ec-inner-media {
+    grid-row: 2 !important; min-height: 0 !important; height: 220px !important;
+  }
+}
+@media (max-width: 600px) {
+  html body[data-ec-events][data-ec-inner] header.ec-inner-hero .ec-inner-actions {
+    display: flex !important; gap: 8px !important;
+  }
+  html body[data-ec-events][data-ec-inner] header.ec-inner-hero .ec-inner-actions .is-primary {
+    flex-basis: 100%;
+  }
+  html body[data-ec-events][data-ec-editorial] #event-structure .facts {
+    grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: 12px !important;
+  }
+  html body[data-ec-events][data-ec-editorial] #event-structure .fact { padding: 16px !important; }
+}
