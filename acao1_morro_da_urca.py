@@ -21,7 +21,7 @@ CONFIGS = {
                 'name': 'Qual o horário do Parque Bondinho Pão de Açúcar?',
                 'acceptedAnswer': {
                     '@type': 'Answer',
-                    'text': 'O Parque Bondinho Pão de Açúcar funciona todos os dias das 8h às 21h, com última subida às 20h. O restaurante Embaixada Carioca, localizado no Morro da Urca dentro do parque, atende das 12h às 21h.'
+                    'text': 'O Parque Bondinho Pão de Açúcar funciona todos os dias das 8h às 21h, com última subida às 20h. O restaurante Embaixada Carioca, localizado no Morro da Urca dentro do parque, atende das 8h30 às 21h, com almoço das 11h30 às 17h.'
                 }
             },
             {
@@ -61,7 +61,7 @@ CONFIGS = {
                 'name': 'Tem feijoada no Morro da Urca?',
                 'acceptedAnswer': {
                     '@type': 'Answer',
-                    'text': 'Sim! A Embaixada Carioca serve a feijoada premiada da Academia da Cachaça todos os dias no almoço, das 12h às 17h. É a única feijoada servida a 220 metros de altitude, com vista direta para o Pão de Açúcar. Eleita uma das melhores do Rio pela revista Veja Rio (Comer & Beber 2025 e 2026).'
+                    'text': 'Sim! A Embaixada Carioca serve a feijoada premiada da Academia da Cachaça todos os dias no almoço, das 11h30 às 17h. É a única feijoada servida a 220 metros de altitude, com vista direta para o Pão de Açúcar. Eleita uma das melhores do Rio pela revista Veja Rio (Comer & Beber 2025 e 2026).'
                 }
             }
         ]
@@ -77,7 +77,7 @@ CONFIGS = {
                 'name': 'What are the opening hours of Sugarloaf Mountain Park (Parque Bondinho)?',
                 'acceptedAnswer': {
                     '@type': 'Answer',
-                    'text': 'Sugarloaf Mountain Park (Parque Bondinho Pão de Açúcar) is open every day from 8am to 9pm, with the last cable car ride at 8pm. The Embaixada Carioca restaurant, located at Urca Hill inside the park, is open from 12pm to 9pm.'
+                    'text': 'Sugarloaf Mountain Park (Parque Bondinho Pão de Açúcar) is open every day from 8am to 9pm, with the last cable car ride at 8pm. The Embaixada Carioca restaurant, located at Urca Hill inside the park, is open from 8:30am to 9pm.'
                 }
             },
             {
@@ -101,7 +101,7 @@ CONFIGS = {
                 'name': 'Is there feijoada at Urca Hill?',
                 'acceptedAnswer': {
                     '@type': 'Answer',
-                    'text': 'Yes! Embaixada Carioca serves the award-winning feijoada from Academia da Cachaça every day at lunch, from 12pm to 5pm. It\'s the only feijoada served at 220 meters altitude, with a direct view of Sugarloaf Mountain. Voted one of the best in Rio by Veja Rio magazine (Comer & Beber 2025 and 2026).'
+                    'text': 'Yes! Embaixada Carioca serves the award-winning feijoada from Academia da Cachaça every day at lunch, from 11:30am to 5pm. It\'s the only feijoada served at 220 meters altitude, with a direct view of Sugarloaf Mountain. Voted one of the best in Rio by Veja Rio magazine (Comer & Beber 2025 and 2026).'
                 }
             },
             {

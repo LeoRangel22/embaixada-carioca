@@ -104,7 +104,7 @@ pages = [
                 <div class="faq-grid" style="display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 32px;">
                     <div style="border-top: 1px solid var(--rule); padding-top: 16px;">
                         <h3 style="font-size: 18px; margin-bottom: 8px;">Qual o horário do almoço?</h3>
-                        <p style="color: var(--cinza1);">Servimos almoço todos os dias, das 12h às 16h.</p>
+                        <p style="color: var(--cinza1);">Servimos almoço todos os dias, das 11h30 às 17h.</p>
                     </div>
                     <div style="border-top: 1px solid var(--rule); padding-top: 16px;">
                         <h3 style="font-size: 18px; margin-bottom: 8px;">Aceitam grupos grandes?</h3>

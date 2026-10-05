@@ -22,7 +22,7 @@ NEW_FAQS_PT = {
         },
         {
             "name": "Onde comer no Pão de Açúcar? Tem restaurante lá dentro?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Sim! A Embaixada Carioca é o único restaurante com reservas dentro do Parque Bondinho Pão de Açúcar, localizado na primeira parada do bondinho, no Morro da Urca. Serve café da manhã (8h–11h), almoço (12h–16h30) e entardecer com drinks (16h–21h), todos os dias, com vista panorâmica para o Pão de Açúcar, Baía de Guanabara e Cristo Redentor."}
+            "acceptedAnswer": {"@type": "Answer", "text": "Sim! A Embaixada Carioca é o único restaurante com reservas dentro do Parque Bondinho Pão de Açúcar, localizado na primeira parada do bondinho, no Morro da Urca. Serve café da manhã (8h30–11h30), almoço (11h30–17h) e entardecer com drinks (17h–21h), todos os dias, com vista panorâmica para o Pão de Açúcar, Baía de Guanabara e Cristo Redentor."}
         },
         {
             "name": "Dicas para visitar o Bondinho Pão de Açúcar pela primeira vez",
@@ -36,7 +36,7 @@ NEW_FAQS_PT = {
     'almoco.html': [
         {
             "name": "Onde almoçar no Pão de Açúcar? Tem restaurante no bondinho?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Sim. A Embaixada Carioca é o único restaurante com almoço dentro do Parque Bondinho Pão de Açúcar, na primeira parada do bondinho (Morro da Urca). Serve gastronomia brasileira premiada — picanha na chapa, feijoada (eleita melhor do Brasil), frutos do mar e escondidinho — com vista panorâmica para o Pão de Açúcar. Funciona de segunda a sexta das 12h às 16h e sábados e domingos das 12h às 17h. Reservas obrigatórias."}
+            "acceptedAnswer": {"@type": "Answer", "text": "Sim. A Embaixada Carioca é o único restaurante com almoço dentro do Parque Bondinho Pão de Açúcar, na primeira parada do bondinho (Morro da Urca). Serve gastronomia brasileira premiada — picanha na chapa, feijoada (eleita melhor do Brasil), frutos do mar e escondidinho — com vista panorâmica para o Pão de Açúcar. Funciona todos os dias das 11h30 às 17h. Reservas obrigatórias."}
         },
         {
             "name": "Qual o melhor restaurante com vista no Rio de Janeiro para almoço?",
@@ -78,7 +78,7 @@ NEW_FAQS_PT = {
         },
         {
             "name": "Feijoada no Pão de Açúcar — tem como almoçar com vista?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Sim! A Embaixada Carioca serve feijoada todos os dias no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar. É a única feijoada premiada do Rio de Janeiro com vista panorâmica para o Pão de Açúcar, a Baía de Guanabara e o Cristo Redentor. Funciona de segunda a sexta das 12h às 16h e sábados e domingos das 12h às 17h."}
+            "acceptedAnswer": {"@type": "Answer", "text": "Sim! A Embaixada Carioca serve feijoada todos os dias no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar. É a única feijoada premiada do Rio de Janeiro com vista panorâmica para o Pão de Açúcar, a Baía de Guanabara e o Cristo Redentor. Funciona todos os dias das 11h30 às 17h."}
         },
     ],
     'parque-bondinho.html': [
@@ -98,7 +98,7 @@ NEW_FAQS_PT = {
     'guia-do-rio.html': [
         {
             "name": "Onde comer no Rio de Janeiro com vista para o Pão de Açúcar?",
-            "acceptedAnswer": {"@type": "Answer", "text": "A Embaixada Carioca, no Morro da Urca dentro do Parque Bondinho Pão de Açúcar, é o único restaurante do Rio de Janeiro com vista direta para o Pão de Açúcar a 220 metros de altitude. Serve café da manhã (8h–11h), almoço (12h–16h30) e entardecer com drinks (16h–21h), todos os dias. Com nota 4.8 no Google e mais de 7.700 avaliações."}
+            "acceptedAnswer": {"@type": "Answer", "text": "A Embaixada Carioca, no Morro da Urca dentro do Parque Bondinho Pão de Açúcar, é o único restaurante do Rio de Janeiro com vista direta para o Pão de Açúcar a 220 metros de altitude. Serve café da manhã (8h30–11h30), almoço (11h30–17h) e entardecer com drinks (17h–21h), todos os dias. Com nota 4.8 no Google e mais de 7.700 avaliações."}
         },
         {
             "name": "Roteiro de 1 dia no Rio de Janeiro — o que fazer?",
@@ -112,7 +112,7 @@ NEW_FAQS_EN = {
     'en/index.html': [
         {
             "name": "Is there a restaurant inside Sugarloaf Mountain cable car park?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Yes! Embaixada Carioca is the only restaurant with reservations inside Parque Bondinho Pão de Açúcar (Sugarloaf Mountain cable car park), located at the first cable car stop on Urca Hill (Morro da Urca), 220 meters above sea level. It serves breakfast (8am–11am), lunch (12pm–4:30pm) and sunset drinks (4pm–9pm), every day, with panoramic views of Sugarloaf Mountain, Guanabara Bay and Christ the Redeemer."}
+            "acceptedAnswer": {"@type": "Answer", "text": "Yes! Embaixada Carioca is the only restaurant with reservations inside Parque Bondinho Pão de Açúcar (Sugarloaf Mountain cable car park), located at the first cable car stop on Urca Hill (Morro da Urca), 220 meters above sea level. It serves breakfast (8:30am–11:30am), lunch (11:30am–5pm) and sunset drinks (5pm–9pm), every day, with panoramic views of Sugarloaf Mountain, Guanabara Bay and Christ the Redeemer."}
         },
         {
             "name": "How long does a visit to Sugarloaf Mountain take?",
@@ -120,7 +120,7 @@ NEW_FAQS_EN = {
         },
         {
             "name": "Where to eat at Sugarloaf Mountain Rio de Janeiro?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Embaixada Carioca is the only restaurant inside Parque Bondinho Pão de Açúcar (Sugarloaf Mountain), at the first cable car stop on Urca Hill. It serves award-winning Brazilian cuisine — grilled picanha, award-winning feijoada, seafood and signature desserts — with panoramic views of Sugarloaf Mountain. Open every day for breakfast (8am–11am), lunch (12pm–4:30pm) and sunset drinks (4pm–9pm). Reservations required."}
+            "acceptedAnswer": {"@type": "Answer", "text": "Embaixada Carioca is the only restaurant inside Parque Bondinho Pão de Açúcar (Sugarloaf Mountain), at the first cable car stop on Urca Hill. It serves award-winning Brazilian cuisine — grilled picanha, award-winning feijoada, seafood and signature desserts — with panoramic views of Sugarloaf Mountain. Open every day for breakfast (8:30am–11:30am), lunch (11:30am–5pm) and sunset drinks (5pm–9pm). Reservations required."}
         },
         {
             "name": "Tips for visiting Sugarloaf Mountain for the first time",
@@ -162,7 +162,7 @@ NEW_FAQS_ES = {
     'es/index.html': [
         {
             "name": "¿Hay restaurante dentro del teleférico Pan de Azúcar?",
-            "acceptedAnswer": {"@type": "Answer", "text": "¡Sí! Embaixada Carioca es el único restaurante con reservas dentro del Parque Bondinho Pão de Açúcar (teleférico Pan de Azúcar), ubicado en la primera parada del teleférico en el Morro da Urca, a 220 metros de altitud. Sirve desayuno (8h–11h), almuerzo (12h–16h30) y atardecer con cócteles (16h–21h), todos los días, con vistas panorámicas al Pan de Azúcar, la Bahía de Guanabara y el Cristo Redentor."}
+            "acceptedAnswer": {"@type": "Answer", "text": "¡Sí! Embaixada Carioca es el único restaurante con reservas dentro del Parque Bondinho Pão de Açúcar (teleférico Pan de Azúcar), ubicado en la primera parada del teleférico en el Morro da Urca, a 220 metros de altitud. Sirve desayuno (8h30–11h30), almuerzo (11h30–17h) y atardecer con cócteles (17h–21h), todos los días, con vistas panorámicas al Pan de Azúcar, la Bahía de Guanabara y el Cristo Redentor."}
         },
         {
             "name": "¿Cuánto tiempo dura la visita al Pan de Azúcar?",
@@ -170,7 +170,7 @@ NEW_FAQS_ES = {
         },
         {
             "name": "¿Dónde comer en el Pan de Azúcar Río de Janeiro?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Embaixada Carioca es el único restaurante dentro del Parque Bondinho Pão de Açúcar (Pan de Azúcar), en la primera parada del teleférico en el Morro da Urca. Sirve gastronomía brasileña premiada — picanha a la parrilla, feijoada premiada, mariscos y postres de autor — con vistas panorámicas al Pan de Azúcar. Abierto todos los días para desayuno (8h–11h), almuerzo (12h–16h30) y atardecer con cócteles (16h–21h). Reservas obligatorias."}
+            "acceptedAnswer": {"@type": "Answer", "text": "Embaixada Carioca es el único restaurante dentro del Parque Bondinho Pão de Açúcar (Pan de Azúcar), en la primera parada del teleférico en el Morro da Urca. Sirve gastronomía brasileña premiada — picanha a la parrilla, feijoada premiada, mariscos y postres de autor — con vistas panorámicas al Pan de Azúcar. Abierto todos los días para desayuno (8h30–11h30), almuerzo (11h30–17h) y atardecer con cócteles (17h–21h). Reservas obligatorias."}
         },
     ],
     'es/entardecer.html': [

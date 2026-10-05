@@ -12,14 +12,14 @@ CONFIGS = {
         'block_html': '''
 <section class="horarios-box" id="horarios-pao-de-acucar" aria-label="Horários do Parque Bondinho Pão de Açúcar">
   <h2>Horário do Parque Bondinho Pão de Açúcar</h2>
-  <p>O Parque Bondinho Pão de Açúcar funciona <strong>todos os dias das 8h às 21h</strong>, com última subida às 20h. A Embaixada Carioca, o restaurante dentro do parque no Morro da Urca, atende das <strong>12h às 21h</strong>.</p>
+  <p>O Parque Bondinho Pão de Açúcar funciona <strong>todos os dias das 8h às 21h</strong>, com última subida às 20h. A Embaixada Carioca, o restaurante dentro do parque no Morro da Urca, atende das <strong>8h30 às 21h</strong>, com almoço das <strong>11h30 às 17h</strong>.</p>
   <table class="horarios-table">
     <thead>
       <tr><th>Local</th><th>Horário de funcionamento</th></tr>
     </thead>
     <tbody>
       <tr><td>Parque Bondinho Pão de Açúcar</td><td>Todos os dias · 8h às 21h (última subida 20h)</td></tr>
-      <tr><td>Embaixada Carioca (restaurante)</td><td>Todos os dias · 12h às 21h</td></tr>
+      <tr><td>Embaixada Carioca (restaurante)</td><td>Todos os dias · 8h30 às 21h</td></tr>
       <tr><td>Café da manhã</td><td>Todos os dias · 8h30 às 11h30</td></tr>
       <tr><td>Almoço e feijoada</td><td>Todos os dias · 11h30 às 17h</td></tr>
       <tr><td>Happy hour / entardecer</td><td>Todos os dias · 17h às 21h</td></tr>
@@ -44,16 +44,16 @@ CONFIGS = {
         'block_html': '''
 <section class="horarios-box" id="sugarloaf-opening-hours" aria-label="Sugarloaf Mountain Park Opening Hours">
   <h2>Sugarloaf Mountain Park Opening Hours</h2>
-  <p>Sugarloaf Mountain Park (Parque Bondinho Pão de Açúcar) is open <strong>every day from 8am to 9pm</strong>, with the last cable car at 8pm. Embaixada Carioca, the restaurant inside the park at Urca Hill, is open from <strong>12pm to 9pm</strong>.</p>
+  <p>Sugarloaf Mountain Park (Parque Bondinho Pão de Açúcar) is open <strong>every day from 8am to 9pm</strong>, with the last cable car at 8pm. Embaixada Carioca, the restaurant inside the park at Urca Hill, is open from <strong>8:30am to 9pm</strong>, with lunch from <strong>11:30am to 5pm</strong>.</p>
   <table class="horarios-table">
     <thead>
       <tr><th>Location</th><th>Opening hours</th></tr>
     </thead>
     <tbody>
       <tr><td>Sugarloaf Mountain Park (Parque Bondinho)</td><td>Every day · 8am to 9pm (last cable car 8pm)</td></tr>
-      <tr><td>Embaixada Carioca (restaurant)</td><td>Every day · 12pm to 9pm</td></tr>
+      <tr><td>Embaixada Carioca (restaurant)</td><td>Every day · 8:30am to 9pm</td></tr>
       <tr><td>Breakfast</td><td>Every day · 8:30am to 11:30am</td></tr>
-      <tr><td>Lunch and feijoada</td><td>Every day · 12pm to 5pm</td></tr>
+      <tr><td>Lunch and feijoada</td><td>Every day · 11:30am to 5pm</td></tr>
       <tr><td>Happy hour / sunset</td><td>Every day · 5pm to 9pm</td></tr>
     </tbody>
   </table>
@@ -85,7 +85,7 @@ CONFIGS = {
       <tr><td>Parque Bondinho Pan de Azúcar</td><td>Todos los días · 8h a 21h (último teleférico 20h)</td></tr>
       <tr><td>Embaixada Carioca (restaurante)</td><td>Todos los días · 12h a 21h</td></tr>
       <tr><td>Desayuno</td><td>Todos los días · 8h30 a 11h30</td></tr>
-      <tr><td>Almuerzo y feijoada</td><td>Todos los días · 12h a 17h</td></tr>
+      <tr><td>Almuerzo y feijoada</td><td>Todos los días · 11h30 a 17h</td></tr>
       <tr><td>Happy hour / atardecer</td><td>Todos los días · 17h a 21h</td></tr>
     </tbody>
   </table>
