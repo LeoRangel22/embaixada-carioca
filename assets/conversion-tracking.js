@@ -38,6 +38,9 @@
       eventos: 'click_eventos',
       cafe_da_manha: 'click_cafe_da_manha',
       almoco: 'click_almoco',
+      entardecer: 'click_entardecer',
+      planejar_visita: 'click_planejar_visita',
+      ingresso_bondinho: 'click_ingresso_bondinho',
       idioma: 'click_idioma'
     };
     if (declaredEvents[declaredIntent]) return declaredEvents[declaredIntent];
@@ -236,7 +239,7 @@
       language: document.documentElement.lang || '',
       cta_intent: intent,
       cta_position: position,
-      analytics_version: '2026-10-05.1'
+      analytics_version: '2026-10-05.p2'
     };
 
     pushEvent('ec_cta_click', Object.assign({}, common, {
@@ -254,7 +257,7 @@
     if (eventName) {
       pushEvent(eventName, Object.assign({}, common, {
         event_label: (type || eventName) + ' | ' + location.pathname,
-        analytics_version: '2026-10-05.1'
+        analytics_version: '2026-10-05.p2'
       }));
     }
 
