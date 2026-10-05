@@ -1,42 +1,42 @@
-# ============================================================
-# robots.txt — Embaixada Carioca (embaixadacarioca.com)
-# Última atualização: 2026-06-15
-# ============================================================
+# robots.txt — Embaixada Carioca
+# Atualizado em 2026-10-05.
 
-# ── Regras globais ───────────────────────────────────────────
+# Regras globais
 User-agent: *
 Allow: /
-
-# Diretórios internos e de sistema
 Disallow: /_api/
 Disallow: /_partials/
 Disallow: /api/
-
-# Diretórios de backup e desenvolvimento (não devem ser indexados)
 Disallow: /_backups/
 Disallow: /design-fix/
 
-# ── Bots de IA (permitidos para LLMs e AI Overviews) ─────────
+# OpenAI: busca no ChatGPT, navegação solicitada pelo usuário e crawler geral.
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /_backups/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /_backups/
+
 User-agent: GPTBot
 Allow: /
-Allow: /llms.txt
 Disallow: /_backups/
 
-User-agent: Claude-Web
-Allow: /
-Allow: /llms.txt
-Disallow: /_backups/
-
-User-agent: PerplexityBot
-Allow: /
-Allow: /llms.txt
-Disallow: /_backups/
-
-User-agent: Bingbot
+# Anthropic: busca no Claude, navegação solicitada pelo usuário e crawler geral.
+User-agent: Claude-SearchBot
 Allow: /
 Disallow: /_backups/
 
-# ── Googlebot ────────────────────────────────────────────────
+User-agent: Claude-User
+Allow: /
+Disallow: /_backups/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /_backups/
+
+# Google Search e experiências de IA do Google.
 User-agent: Googlebot
 Allow: /
 Disallow: /_api/
@@ -45,8 +45,19 @@ Disallow: /api/
 Disallow: /_backups/
 Disallow: /design-fix/
 
+# Controle do uso por Gemini e outros sistemas generativos do Google.
+User-agent: Google-Extended
+Allow: /
+Disallow: /_backups/
+
+# Outros mecanismos de resposta e busca.
+User-agent: PerplexityBot
+Allow: /
+Disallow: /_backups/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /_backups/
+
 Sitemap: https://www.embaixadacarioca.com/sitemap.xml
 Sitemap: https://www.embaixadacarioca.com/sitemap-images.xml
-
-# LLMs.txt — informações para IA
-# https://www.embaixadacarioca.com/llms.txt
