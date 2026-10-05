@@ -57,10 +57,10 @@
       ]
     },
     {
-      "name": "Como Chegar",
-      "short_name": "Como Chegar",
-      "description": "Acesse as orientações para chegar ao Morro da Urca",
-      "url": "/como-chegar.html",
+      "name": "Planeje sua Visita",
+      "short_name": "Planejar",
+      "description": "Organize acesso, ingresso, horário e mesa no Morro da Urca",
+      "url": "/planeje-sua-visita.html",
       "icons": [
         {
           "src": "/assets/icon-96.png",
