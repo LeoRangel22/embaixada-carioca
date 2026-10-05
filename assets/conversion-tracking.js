@@ -27,6 +27,20 @@
   }
 
   function eventNameFor(el, url){
+    var declaredIntent = el && el.getAttribute ? String(el.getAttribute('data-intent') || '').toLowerCase() : '';
+    var declaredEvents = {
+      reserva: 'click_reservar',
+      whatsapp: 'whatsapp_click',
+      google_reviews: 'click_google_reviews',
+      google_maps: 'click_google_maps',
+      como_chegar: 'click_como_chegar',
+      cardapio: 'click_cardapio',
+      eventos: 'click_eventos',
+      cafe_da_manha: 'click_cafe_da_manha',
+      almoco: 'click_almoco',
+      idioma: 'click_idioma'
+    };
+    if (declaredEvents[declaredIntent]) return declaredEvents[declaredIntent];
     var label = normalizeLabel(
       (el && (el.innerText || el.getAttribute('aria-label') || el.getAttribute('title') || el.getAttribute('data-analytics-label'))) || ''
     );
@@ -212,40 +226,42 @@
     var type = classify(href);
     var eventName = eventNameFor(link, href);
     if (!type && !eventName) return;
+    var intent = link.getAttribute('data-intent') || type || eventName;
+    var position = link.getAttribute('data-position') || 'unspecified';
+    var common = {
+      link_url: link.href || href,
+      link_text: normalizeLabel(link.textContent).slice(0, 120),
+      page_path: location.pathname,
+      page_title: document.title,
+      language: document.documentElement.lang || '',
+      cta_intent: intent,
+      cta_position: position,
+      analytics_version: '2026-10-05.1'
+    };
+
+    pushEvent('ec_cta_click', Object.assign({}, common, {
+      event_category: 'engagement',
+      event_label: intent + ' | ' + position + ' | ' + location.pathname
+    }));
 
     if (type) {
-      pushEvent('ec_outbound_conversion_click', {
+      pushEvent('ec_outbound_conversion_click', Object.assign({}, common, {
         conversion_type: type,
-        link_url: link.href || href,
-        link_text: (link.textContent || '').trim().slice(0, 120),
-        page_path: location.pathname,
-        page_title: document.title,
-        language: document.documentElement.lang || '',
         event_label: type + ' | ' + location.pathname
-      });
+      }));
     }
 
     if (eventName) {
-      pushEvent(eventName, {
-        link_url: link.href || href,
-        link_text: (link.textContent || '').trim().slice(0, 120),
-        page_path: location.pathname,
-        page_title: document.title,
-        language: document.documentElement.lang || '',
+      pushEvent(eventName, Object.assign({}, common, {
         event_label: (type || eventName) + ' | ' + location.pathname,
-        analytics_version: '2026-08-24.1'
-      });
+        analytics_version: '2026-10-05.1'
+      }));
     }
 
     if (type === 'tagme_reservation') {
-      pushEvent('ec_reservation_click', {
-        link_url: link.href || href,
-        link_text: (link.textContent || '').trim().slice(0, 120),
-        page_path: location.pathname,
-        page_title: document.title,
-        language: document.documentElement.lang || '',
+      pushEvent('ec_reservation_click', Object.assign({}, common, {
         event_label: 'TagMe reservation | ' + location.pathname
-      });
+      }));
     }
   }, true);
 
