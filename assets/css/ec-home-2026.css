@@ -155,7 +155,7 @@ h3 { font-size: clamp(1.45rem, 2.2vw, 2rem); letter-spacing: -.02em; }
 .footer-bottom a { color: #fff; }
 .mobile-actions { display: none; }
 @media (min-width: 901px) {
-  .hero-content .shell { width: min(600px, calc(100% - 80px)); margin-right: max(5vw, 40px); margin-left: auto; }
+  .hero-content.shell { width: min(600px, calc(100% - 80px)); margin-right: max(5vw, 40px); margin-left: auto; }
   .hero-content h1 { max-width: 600px; font-size: clamp(3.25rem, 4.6vw, 4.75rem); }
   .hero-copy { max-width: 570px; font-size: clamp(1.05rem, 1.45vw, 1.28rem); }
   .hero-shade { background: linear-gradient(270deg, rgba(0, 27, 39, .93) 0%, rgba(0, 32, 46, .72) 46%, rgba(0, 22, 32, .22) 72%), linear-gradient(to top, rgba(0, 30, 42, .76), transparent 50%); }
