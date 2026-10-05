@@ -57,7 +57,7 @@ VISUAL_REPLACEMENTS = {
         "Quando Todos los días": "Cuándo Todos los días",
         "Harmonização Cachaças y vinos": "Maridaje Cachaças y vinos",
         "Inauguração": "Inauguración",
-        "227 metros · sobre a Baía": "227 metros · sobre la bahía",
+        "220 metros · sobre a Baía": "220 metros · sobre la bahía",
         "★ melhor feijoada ★ PRÊMIO": "★ mejor feijoada ★ PREMIO",
         "vista panorámica mais bonita do mundo": "vista panorámica más bonita del mundo",
         "vistas panorâmicas": "vistas panorámicas",

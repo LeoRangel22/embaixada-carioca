@@ -105,7 +105,7 @@ SEMANTIC_PARAGRAPHS = {
         "html": (
             '<section id="ec-semantic-anchor" class="ec-semantic-section" aria-label="Sobre o restaurante">'
             '<p>A <strong>Embaixada Carioca</strong> é o <strong>restaurante no Morro da Urca</strong> '
-            'localizado dentro do <strong>Parque Bondinho Pão de Açúcar</strong>, a 227 metros de altitude '
+            'localizado dentro do <strong>Parque Bondinho Pão de Açúcar</strong>, a 220 metros de altitude '
             'com vista direta para o Pão de Açúcar e a Baía de Guanabara. '
             'É o único <strong>restaurante no Pão de Açúcar</strong> acessível tanto pelo bondinho quanto '
             'pela Trilha do Morro da Urca — sem precisar comprar ingresso. '
@@ -141,7 +141,7 @@ SEMANTIC_PARAGRAPHS = {
             'O <strong>café da manhã na Embaixada Carioca</strong> pode ser acessado pela Trilha do Morro '
             'da Urca sem precisar comprar ingresso do bondinho. '
             'Para quem busca <strong>onde comer no Pão de Açúcar</strong> logo pela manhã, '
-            'a Embaixada Carioca oferece o único café da manhã com vista panorâmica a 227m de altitude.</p>'
+            'a Embaixada Carioca oferece o único café da manhã com vista panorâmica a 220m de altitude.</p>'
             '</section>'
         )
     },
@@ -155,7 +155,7 @@ SEMANTIC_PARAGRAPHS = {
             'O <strong>café da manhã na Embaixada Carioca</strong> acontece das 8h30 às 11h30 '
             'com vista direta para o Pão de Açúcar e a Baía de Guanabara. '
             'Para quem quer saber <strong>onde comer no Pão de Açúcar</strong> de manhã, '
-            'a Embaixada Carioca é a única opção com café da manhã completo a 227 metros de altitude, '
+            'a Embaixada Carioca é a única opção com café da manhã completo a 220 metros de altitude, '
             'acessível pela trilha gratuita ou pelo bondinho.</p>'
             '</section>'
         )
@@ -196,7 +196,7 @@ SEMANTIC_PARAGRAPHS = {
             '<section id="ec-semantic-anchor" class="ec-semantic-section" aria-label="Onde comer no Morro da Urca">'
             '<p>Para quem busca <strong>onde comer no Morro da Urca</strong>, a '
             '<strong>Embaixada Carioca</strong> é o único <strong>restaurante no Morro da Urca</strong> '
-            'com serviço completo, localizado dentro do Parque Bondinho Pão de Açúcar a 227m de altitude. '
+            'com serviço completo, localizado dentro do Parque Bondinho Pão de Açúcar a 220m de altitude. '
             'O <strong>restaurante no Pão de Açúcar</strong> serve <strong>café da manhã no Morro da Urca</strong> '
             'todos os dias das 8h30 às 11h30 e <strong>almoço no Morro da Urca</strong> das 11h30 às 17h. '
             'O <strong>almoço na Embaixada Carioca</strong> inclui feijoada premiada pela Veja Rio '

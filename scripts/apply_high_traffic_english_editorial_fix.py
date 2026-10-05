@@ -128,8 +128,8 @@ PAGE_REPLACEMENTS = {
         ("morro da urca restaurant", "Urca Hill restaurant"),
         ("bondinho restaurant", "cable car restaurant"),
         (
-            "It is the only feijoada with a panoramic view of Rio de Janeiro, served at 227 meters altitude at Urca Hill.",
-            "It is served with a panoramic view of Rio de Janeiro, 227 metres above sea level on Urca Hill.",
+            "It is the only feijoada with a panoramic view of Rio de Janeiro, served at 220 meters altitude at Urca Hill.",
+            "It is served with a panoramic view of Rio de Janeiro, 220 metres above sea level on Urca Hill.",
         ),
         (
             "The restaurant has been operating since 2012, making it the most traditional gastronomic establishment and the one with the highest number of reviews (more than 8,255 on Google Maps) in the Sugarloaf Mountain complex.",
@@ -229,8 +229,8 @@ PAGE_REPLACEMENTS = {
             "<h3>Feijoada by <span class=\"serif\">Academia da Cachaça.</span></h3>",
         ),
         (
-            "Enjoy the most Brazilian dish of all while admiring the postcard mais famoso do Brasil, a 227 metros de altitude.",
-            "Enjoy one of Brazil's most iconic dishes while admiring its most famous postcard from 227 metres above sea level.",
+            "Enjoy the most Brazilian dish of all while admiring the postcard mais famoso do Brasil, a 220 metros de altitude.",
+            "Enjoy one of Brazil's most iconic dishes while admiring its most famous postcard from 220 metres above sea level.",
         ),
     ),
     "en/sunset.html": (

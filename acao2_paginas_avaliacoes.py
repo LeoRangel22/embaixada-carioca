@@ -244,7 +244,7 @@ PAGES = {
             },
             {
                 'q': '¿La feijoada de la Embaixada Carioca es realmente premiada?',
-                'a': 'Sí! La Embaixada Carioca sirve la feijoada de la Academia da Cachaça, elegida una de las mejores de Río de Janeiro por la revista Veja Rio (Comer & Beber 2025 y 2026). Se sirve todos los días en el almuerzo, de 12h a 17h.'
+                'a': 'Sí! La Embaixada Carioca sirve la feijoada de la Academia da Cachaça, elegida una de las mejores de Río de Janeiro por la revista Veja Rio (Comer & Beber 2025 y 2026). Se sirve todos los días en el almuerzo, de 11h30 a 17h.'
             }
         ]
     }

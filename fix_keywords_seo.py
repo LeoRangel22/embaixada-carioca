@@ -92,14 +92,14 @@ FIXES = {
     # ── EN ──────────────────────────────────────────────────────────
     'en/index.html': {
         'title': 'Restaurant at Sugarloaf Mountain Cable Car | Embaixada Carioca – Rio de Janeiro',
-        'desc':  'The only restaurant inside Parque Bondinho Pão de Açúcar, at 227m altitude on Urca Hill. Breakfast, lunch and sunset drinks with 360° views. Book your table.',
+        'desc':  'The only restaurant inside Parque Bondinho Pão de Açúcar, at 220m altitude on Urca Hill. Breakfast, lunch and sunset drinks with 360° views. Book your table.',
         'og_title': 'Restaurant at Sugarloaf Mountain Cable Car | Embaixada Carioca',
         'og_desc':  'The only restaurant inside Parque Bondinho Pão de Açúcar. Breakfast, lunch and sunset with 360° views of Sugarloaf, Guanabara Bay and Christ the Redeemer.',
         'h1_old': None, 'h1_new': None, 'alt_updates': {}
     },
     'en/almoco.html': {
         'title': 'Lunch with Sugarloaf Mountain View | Embaixada Carioca – Urca, Rio',
-        'desc':  'Award-winning Brazilian cuisine at 227m altitude inside the Sugarloaf cable car park. Lunch with panoramic views Mon–Fri 12–4pm, Sat–Sun 12–5pm. Book online.',
+        'desc':  'Award-winning Brazilian cuisine at 220m altitude inside the Sugarloaf cable car park. Lunch with panoramic views Mon–Fri 12–4pm, Sat–Sun 12–5pm. Book online.',
         'og_title': 'Lunch at Sugarloaf Mountain Cable Car | Embaixada Carioca',
         'og_desc':  'Award-winning Brazilian cuisine inside Parque Bondinho Pão de Açúcar. Lunch with panoramic views of Sugarloaf Mountain.',
         'h1_old': None, 'h1_new': None, 'alt_updates': {}
@@ -149,14 +149,14 @@ FIXES = {
     # ── ES ──────────────────────────────────────────────────────────
     'es/index.html': {
         'title': 'Restaurante en el Teleférico Pan de Azúcar | Embaixada Carioca – Río de Janeiro',
-        'desc':  'El único restaurante dentro del Parque Bondinho Pão de Açúcar, a 227m de altitud en el Morro da Urca. Desayuno, almuerzo y atardecer con vistas de 360°. Reserve su mesa.',
+        'desc':  'El único restaurante dentro del Parque Bondinho Pão de Açúcar, a 220m de altitud en el Morro da Urca. Desayuno, almuerzo y atardecer con vistas de 360°. Reserve su mesa.',
         'og_title': 'Restaurante en el Teleférico Pan de Azúcar | Embaixada Carioca',
         'og_desc':  'El único restaurante dentro del Parque Bondinho Pão de Açúcar. Desayuno, almuerzo y atardecer con vistas de 360° al Pan de Azúcar y la Bahía de Guanabara.',
         'h1_old': None, 'h1_new': None, 'alt_updates': {}
     },
     'es/almoco.html': {
         'title': 'Almuerzo con Vista al Pan de Azúcar | Embaixada Carioca – Urca, Río',
-        'desc':  'Gastronomía brasileña premiada a 227m de altitud dentro del teleférico Pan de Azúcar. Almuerzo con vistas panorámicas. Lun–Vie 12–16h, Sáb–Dom 12–17h. Reserve online.',
+        'desc':  'Gastronomía brasileña premiada a 220m de altitud dentro del teleférico Pan de Azúcar. Almuerzo con vistas panorámicas. Lun–Vie 12–16h, Sáb–Dom 12–17h. Reserve online.',
         'og_title': 'Almuerzo en el Teleférico Pan de Azúcar | Embaixada Carioca',
         'og_desc':  'Gastronomía brasileña premiada dentro del Parque Bondinho Pão de Açúcar. Almuerzo con vistas panorámicas al Pan de Azúcar.',
         'h1_old': None, 'h1_new': None, 'alt_updates': {}

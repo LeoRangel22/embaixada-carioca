@@ -47,7 +47,7 @@ PLANEJE_PT = '''
 
 <div class="guia-card">
 <h3>🍽️ Onde Comer no Pão de Açúcar — A Embaixada Carioca</h3>
-<p>A <strong>Embaixada Carioca</strong> é o ponto gastronômico central do Parque Bondinho Pão de Açúcar. Localizada na <strong>primeira parada do bondinho, no Morro da Urca</strong>, a 227 metros de altitude, é o único restaurante com reservas dentro do parque.</p>
+<p>A <strong>Embaixada Carioca</strong> é o ponto gastronômico central do Parque Bondinho Pão de Açúcar. Localizada na <strong>primeira parada do bondinho, no Morro da Urca</strong>, a 220 metros de altitude, é o único restaurante com reservas dentro do parque.</p>
 <table style="width:100%;border-collapse:collapse;margin:12px 0;font-size:0.93em;">
   <tr style="background:rgba(0,64,90,0.12);">
     <th style="padding:8px 12px;text-align:left;border-bottom:1px solid rgba(0,64,90,0.2);">Período</th>
@@ -117,7 +117,7 @@ PLANEJE_EN = '''
 
 <div class="guia-card">
 <h3>🍽️ Where to Eat at Sugarloaf Mountain — Embaixada Carioca</h3>
-<p><strong>Embaixada Carioca</strong> is the gastronomic hub of Parque Bondinho Pão de Açúcar. Located at the <strong>first cable car stop, on Urca Hill</strong>, at 227 meters altitude, it is the only restaurant with reservations inside the park.</p>
+<p><strong>Embaixada Carioca</strong> is the gastronomic hub of Parque Bondinho Pão de Açúcar. Located at the <strong>first cable car stop, on Urca Hill</strong>, at 220 meters altitude, it is the only restaurant with reservations inside the park.</p>
 <table style="width:100%;border-collapse:collapse;margin:12px 0;font-size:0.93em;">
   <tr style="background:rgba(0,64,90,0.12);">
     <th style="padding:8px 12px;text-align:left;border-bottom:1px solid rgba(0,64,90,0.2);">Period</th>
@@ -187,7 +187,7 @@ PLANEJE_ES = '''
 
 <div class="guia-card">
 <h3>🍽️ Dónde Comer en el Pan de Azúcar — Embaixada Carioca</h3>
-<p><strong>Embaixada Carioca</strong> es el hub gastronómico del Parque Bondinho Pão de Açúcar. Ubicada en la <strong>primera parada del teleférico, en el Morro da Urca</strong>, a 227 metros de altitud, es el único restaurante con reservas dentro del parque.</p>
+<p><strong>Embaixada Carioca</strong> es el hub gastronómico del Parque Bondinho Pão de Açúcar. Ubicada en la <strong>primera parada del teleférico, en el Morro da Urca</strong>, a 220 metros de altitud, es el único restaurante con reservas dentro del parque.</p>
 <table style="width:100%;border-collapse:collapse;margin:12px 0;font-size:0.93em;">
   <tr style="background:rgba(0,64,90,0.12);">
     <th style="padding:8px 12px;text-align:left;border-bottom:1px solid rgba(0,64,90,0.2);">Período</th>

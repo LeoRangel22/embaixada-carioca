@@ -21,7 +21,7 @@ CONFIGS = {
       <tr><td>Parque Bondinho Pão de Açúcar</td><td>Todos os dias · 8h às 21h (última subida 20h)</td></tr>
       <tr><td>Embaixada Carioca (restaurante)</td><td>Todos os dias · 12h às 21h</td></tr>
       <tr><td>Café da manhã</td><td>Todos os dias · 8h30 às 11h30</td></tr>
-      <tr><td>Almoço e feijoada</td><td>Todos os dias · 12h às 17h</td></tr>
+      <tr><td>Almoço e feijoada</td><td>Todos os dias · 11h30 às 17h</td></tr>
       <tr><td>Happy hour / entardecer</td><td>Todos os dias · 17h às 21h</td></tr>
     </tbody>
   </table>

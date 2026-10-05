@@ -28,17 +28,17 @@ PAGES = [
     (
         "restaurante-com-vista-rio-de-janeiro.html", "pt-BR",
         "4,8★",
-        "O único restaurante dentro do Parque Bondinho Pão de Açúcar, a 227m de altitude com vista panorâmica para o Rio. Almoço, café da manhã e happy hour. Reserve sua mesa."
+        "O único restaurante dentro do Parque Bondinho Pão de Açúcar, a 220m de altitude com vista panorâmica para o Rio. Almoço, café da manhã e happy hour. Reserve sua mesa."
     ),
     (
         "en/restaurant-at-sugarloaf.html", "en",
         "4.8★",
-        "The only restaurant inside Sugarloaf Mountain Park, 227m above sea level with panoramic views of Rio de Janeiro. Breakfast, lunch and happy hour. Book your table."
+        "The only restaurant inside Sugarloaf Mountain Park, 220m above sea level with panoramic views of Rio de Janeiro. Breakfast, lunch and happy hour. Book your table."
     ),
     (
         "es/restaurante-com-vista-rio-de-janeiro.html", "es",
         "4,8★",
-        "El único restaurante dentro del Parque Bondinho Pan de Azúcar, a 227m de altitud con vista panorámica de Río. Desayuno, almuerzo y happy hour. Reserve su mesa."
+        "El único restaurante dentro del Parque Bondinho Pan de Azúcar, a 220m de altitud con vista panorámica de Río. Desayuno, almuerzo y happy hour. Reserve su mesa."
     ),
     (
         "en/morro-da-urca.html", "en",

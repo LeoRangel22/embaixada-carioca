@@ -64,7 +64,7 @@ GLOBAL_REPLACEMENTS = {
     # Prêmio da feijoada — origem correta
     "Melhor Feijoada do Río — Veja Rio 2025/2026": "Feijoada premiada da Academia da Cachaça",
     "Melhor Feijoada do Rio — Veja Rio 2025/2026": "Feijoada premiada da Academia da Cachaça",
-    "A feijoada que conquistou o país — servida a 227m.": "A feijoada premiada da Academia da Cachaça — servida a 227m.",
+    "A feijoada que conquistou o país — servida a 220m.": "A feijoada premiada da Academia da Cachaça — servida a 220m.",
     "A feijoada da Embaixada Carioca foi eleita a Melhor Feijoada do Rio de Janeiro pela Veja Rio Comer & Beber 2025/2026. Preparada em parceria com a Academia da Cachaça": "A Embaixada Carioca serve a feijoada premiada da Academia da Cachaça, reconhecida pela Veja Rio Comer & Beber 2025/2026. Preparada em parceria com a Academia da Cachaça",
     "feijoada premiada pela Veja Rio 2025/2026": "feijoada premiada da Academia da Cachaça, servida na Embaixada Carioca",
     "premiado pela Veja Rio (Melhor Feijoada do Rio 2025/2026)": "com a feijoada premiada da Academia da Cachaça, servida na Embaixada Carioca",

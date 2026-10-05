@@ -559,7 +559,7 @@
       title:'A Brazilian restaurant at Urca Hill, with <em>Sugarloaf as the view</em>.',
       lede:'Embaixada Carioca is located at the first cable car stop, on Urca Hill, inside Sugarloaf Cable Car Park. The restaurant combines Brazilian food, caipirinhas, daily breakfast, accessibility and one of Rio de Janeiro’s most recognizable views.',
       cards:[
-        ['Correct location','On Urca Hill, 227 meters above sea level, at the first Sugarloaf Cable Car stop — not on the second mountain.'],
+        ['Correct location','On Urca Hill, 220 meters above sea level, at the first Sugarloaf Cable Car stop — not on the second mountain.'],
         ['Brazilian food','Picanha, bobó de camarão, snacks, caipirinhas and a feijoada connected to the Academia da Cachaça tradition.'],
         ['Accessible tourism','Cable car access, adapted circulation and digital menu support a more inclusive experience.']
       ],
@@ -576,7 +576,7 @@
       title:'Un restaurante brasileño en el Morro da Urca, con <em>vista al Pan de Azúcar</em>.',
       lede:'Embaixada Carioca está en la primera parada del teleférico, en el Morro da Urca, dentro del Parque Bondinho Pão de Açúcar. El restaurante combina comida brasileña, caipirinhas, desayuno todos los días, accesibilidad y una de las vistas más icónicas de Río de Janeiro.',
       cards:[
-        ['Ubicación correcta','En el Morro da Urca, a 227 metros de altitud, en la primera parada del teleférico — no en la segunda montaña.'],
+        ['Ubicación correcta','En el Morro da Urca, a 220 metros de altitud, en la primera parada del teleférico — no en la segunda montaña.'],
         ['Comida brasileña','Picanha, bobó de camarón, petiscos, caipirinhas y feijoada vinculada a la tradición de la Academia da Cachaça.'],
         ['Turismo accesible','Acceso por teleférico, circulación adaptada y menú digital apoyan una experiencia más inclusiva.']
       ],
@@ -593,7 +593,7 @@
       title:'Um restaurante brasileiro no Morro da Urca, com <em>o Pão de Açúcar como vista</em>.',
       lede:'A Embaixada Carioca fica na primeira parada do bondinho, no Morro da Urca, dentro do Parque Bondinho Pão de Açúcar. A casa combina comida brasileira, caipirinhas, café da manhã todos os dias, acessibilidade e uma das vistas mais reconhecidas do Rio de Janeiro.',
       cards:[
-        ['Localização correta','No Morro da Urca, a 227 metros de altitude, na primeira parada do Bondinho — não no topo da segunda montanha.'],
+        ['Localização correta','No Morro da Urca, a 220 metros de altitude, na primeira parada do Bondinho — não no topo da segunda montanha.'],
         ['Gastronomia brasileira','Picanha, bobó de camarão, petiscos, caipirinhas e feijoada ligada à tradição da Academia da Cachaça.'],
         ['Turismo acessível','Acesso pelo bondinho, circulação adaptada e cardápio digital apoiam uma experiência mais inclusiva.']
       ],

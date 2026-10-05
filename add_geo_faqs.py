@@ -30,7 +30,7 @@ NEW_FAQS_PT = {
         },
         {
             "name": "Café com vista no Rio de Janeiro — qual a melhor opção?",
-            "acceptedAnswer": {"@type": "Answer", "text": "O café da manhã da Embaixada Carioca, no Morro da Urca (dentro do Parque Bondinho Pão de Açúcar), é considerado o café com a melhor vista do Rio de Janeiro. Com buffet completo e opções à la carte, você toma café enquanto contempla o Pão de Açúcar, a Baía de Guanabara e o Cristo Redentor — tudo de uma varanda a 227 metros de altitude. Funciona todos os dias das 8h às 11h."}
+            "acceptedAnswer": {"@type": "Answer", "text": "O café da manhã da Embaixada Carioca, no Morro da Urca (dentro do Parque Bondinho Pão de Açúcar), é considerado o café com a melhor vista do Rio de Janeiro. Com buffet completo e opções à la carte, você toma café enquanto contempla o Pão de Açúcar, a Baía de Guanabara e o Cristo Redentor — tudo de uma varanda a 220 metros de altitude. Funciona todos os dias das 8h às 11h."}
         },
     ],
     'almoco.html': [
@@ -40,7 +40,7 @@ NEW_FAQS_PT = {
         },
         {
             "name": "Qual o melhor restaurante com vista no Rio de Janeiro para almoço?",
-            "acceptedAnswer": {"@type": "Answer", "text": "A Embaixada Carioca, no Morro da Urca dentro do Parque Bondinho Pão de Açúcar, é amplamente considerada o restaurante com a melhor vista do Rio de Janeiro para o almoço. A 227 metros de altitude, a varanda panorâmica oferece vista simultânea para o Pão de Açúcar, a Baía de Guanabara, o Cristo Redentor e a Praia Vermelha. Com nota 4.8 no Google e mais de 7.700 avaliações, é a escolha número um dos turistas e cariocas."}
+            "acceptedAnswer": {"@type": "Answer", "text": "A Embaixada Carioca, no Morro da Urca dentro do Parque Bondinho Pão de Açúcar, é amplamente considerada o restaurante com a melhor vista do Rio de Janeiro para o almoço. A 220 metros de altitude, a varanda panorâmica oferece vista simultânea para o Pão de Açúcar, a Baía de Guanabara, o Cristo Redentor e a Praia Vermelha. Com nota 4.8 no Google e mais de 7.700 avaliações, é a escolha número um dos turistas e cariocas."}
         },
         {
             "name": "Lanchonete no Morro da Urca — tem opção de almoço rápido?",
@@ -64,11 +64,11 @@ NEW_FAQS_PT = {
         },
         {
             "name": "Restaurante romântico no Rio de Janeiro com vista — qual indicar?",
-            "acceptedAnswer": {"@type": "Answer", "text": "A Embaixada Carioca, no Morro da Urca dentro do Parque Bondinho Pão de Açúcar, é o restaurante romântico mais exclusivo do Rio de Janeiro. A 227 metros de altitude, o entardecer com drinks autorais, pôr do sol sobre a Baía de Guanabara e música ao vivo cria uma atmosfera única. Ideal para jantares românticos, pedidos de casamento e aniversários especiais. Reserve com antecedência."}
+            "acceptedAnswer": {"@type": "Answer", "text": "A Embaixada Carioca, no Morro da Urca dentro do Parque Bondinho Pão de Açúcar, é o restaurante romântico mais exclusivo do Rio de Janeiro. A 220 metros de altitude, o entardecer com drinks autorais, pôr do sol sobre a Baía de Guanabara e música ao vivo cria uma atmosfera única. Ideal para jantares românticos, pedidos de casamento e aniversários especiais. Reserve com antecedência."}
         },
         {
             "name": "Happy hour com vista no Rio de Janeiro — onde ir?",
-            "acceptedAnswer": {"@type": "Answer", "text": "O happy hour da Embaixada Carioca, no Morro da Urca (Parque Bondinho Pão de Açúcar), é o mais exclusivo do Rio de Janeiro. Com drinks autorais, caipirinha com cachaça Magnífica premiada e o melhor chopp da cidade (Heineken), você curte o pôr do sol sobre a Baía de Guanabara a 227 metros de altitude. Funciona todos os dias das 16h às 21h."}
+            "acceptedAnswer": {"@type": "Answer", "text": "O happy hour da Embaixada Carioca, no Morro da Urca (Parque Bondinho Pão de Açúcar), é o mais exclusivo do Rio de Janeiro. Com drinks autorais, caipirinha com cachaça Magnífica premiada e o melhor chopp da cidade (Heineken), você curte o pôr do sol sobre a Baía de Guanabara a 220 metros de altitude. Funciona todos os dias das 16h às 21h."}
         },
     ],
     'feijoada.html': [
@@ -98,7 +98,7 @@ NEW_FAQS_PT = {
     'guia-do-rio.html': [
         {
             "name": "Onde comer no Rio de Janeiro com vista para o Pão de Açúcar?",
-            "acceptedAnswer": {"@type": "Answer", "text": "A Embaixada Carioca, no Morro da Urca dentro do Parque Bondinho Pão de Açúcar, é o único restaurante do Rio de Janeiro com vista direta para o Pão de Açúcar a 227 metros de altitude. Serve café da manhã (8h–11h), almoço (12h–16h30) e entardecer com drinks (16h–21h), todos os dias. Com nota 4.8 no Google e mais de 7.700 avaliações."}
+            "acceptedAnswer": {"@type": "Answer", "text": "A Embaixada Carioca, no Morro da Urca dentro do Parque Bondinho Pão de Açúcar, é o único restaurante do Rio de Janeiro com vista direta para o Pão de Açúcar a 220 metros de altitude. Serve café da manhã (8h–11h), almoço (12h–16h30) e entardecer com drinks (16h–21h), todos os dias. Com nota 4.8 no Google e mais de 7.700 avaliações."}
         },
         {
             "name": "Roteiro de 1 dia no Rio de Janeiro — o que fazer?",
@@ -112,7 +112,7 @@ NEW_FAQS_EN = {
     'en/index.html': [
         {
             "name": "Is there a restaurant inside Sugarloaf Mountain cable car park?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Yes! Embaixada Carioca is the only restaurant with reservations inside Parque Bondinho Pão de Açúcar (Sugarloaf Mountain cable car park), located at the first cable car stop on Urca Hill (Morro da Urca), 227 meters above sea level. It serves breakfast (8am–11am), lunch (12pm–4:30pm) and sunset drinks (4pm–9pm), every day, with panoramic views of Sugarloaf Mountain, Guanabara Bay and Christ the Redeemer."}
+            "acceptedAnswer": {"@type": "Answer", "text": "Yes! Embaixada Carioca is the only restaurant with reservations inside Parque Bondinho Pão de Açúcar (Sugarloaf Mountain cable car park), located at the first cable car stop on Urca Hill (Morro da Urca), 220 meters above sea level. It serves breakfast (8am–11am), lunch (12pm–4:30pm) and sunset drinks (4pm–9pm), every day, with panoramic views of Sugarloaf Mountain, Guanabara Bay and Christ the Redeemer."}
         },
         {
             "name": "How long does a visit to Sugarloaf Mountain take?",
@@ -130,7 +130,7 @@ NEW_FAQS_EN = {
     'en/almoco.html': [
         {
             "name": "Best restaurant with a view in Rio de Janeiro for lunch?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Embaixada Carioca, on Urca Hill inside Parque Bondinho Pão de Açúcar (Sugarloaf Mountain), is widely considered the best restaurant with a view in Rio de Janeiro for lunch. At 227 meters altitude, the panoramic terrace offers simultaneous views of Sugarloaf Mountain, Guanabara Bay, Christ the Redeemer and Praia Vermelha. Rated 4.8 on Google with over 7,700 reviews."}
+            "acceptedAnswer": {"@type": "Answer", "text": "Embaixada Carioca, on Urca Hill inside Parque Bondinho Pão de Açúcar (Sugarloaf Mountain), is widely considered the best restaurant with a view in Rio de Janeiro for lunch. At 220 meters altitude, the panoramic terrace offers simultaneous views of Sugarloaf Mountain, Guanabara Bay, Christ the Redeemer and Praia Vermelha. Rated 4.8 on Google with over 7,700 reviews."}
         },
     ],
     'en/entardecer.html': [
@@ -140,7 +140,7 @@ NEW_FAQS_EN = {
         },
         {
             "name": "Romantic restaurant in Rio de Janeiro with a view — best option?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Embaixada Carioca, on Urca Hill inside Parque Bondinho Pão de Açúcar, is the most exclusive romantic restaurant in Rio de Janeiro. At 227 meters altitude, the sunset with craft cocktails, Guanabara Bay views and live music creates a unique atmosphere. Perfect for romantic dinners, marriage proposals and special anniversaries. Book in advance."}
+            "acceptedAnswer": {"@type": "Answer", "text": "Embaixada Carioca, on Urca Hill inside Parque Bondinho Pão de Açúcar, is the most exclusive romantic restaurant in Rio de Janeiro. At 220 meters altitude, the sunset with craft cocktails, Guanabara Bay views and live music creates a unique atmosphere. Perfect for romantic dinners, marriage proposals and special anniversaries. Book in advance."}
         },
     ],
     'en/feijoada.html': [
@@ -162,7 +162,7 @@ NEW_FAQS_ES = {
     'es/index.html': [
         {
             "name": "¿Hay restaurante dentro del teleférico Pan de Azúcar?",
-            "acceptedAnswer": {"@type": "Answer", "text": "¡Sí! Embaixada Carioca es el único restaurante con reservas dentro del Parque Bondinho Pão de Açúcar (teleférico Pan de Azúcar), ubicado en la primera parada del teleférico en el Morro da Urca, a 227 metros de altitud. Sirve desayuno (8h–11h), almuerzo (12h–16h30) y atardecer con cócteles (16h–21h), todos los días, con vistas panorámicas al Pan de Azúcar, la Bahía de Guanabara y el Cristo Redentor."}
+            "acceptedAnswer": {"@type": "Answer", "text": "¡Sí! Embaixada Carioca es el único restaurante con reservas dentro del Parque Bondinho Pão de Açúcar (teleférico Pan de Azúcar), ubicado en la primera parada del teleférico en el Morro da Urca, a 220 metros de altitud. Sirve desayuno (8h–11h), almuerzo (12h–16h30) y atardecer con cócteles (16h–21h), todos los días, con vistas panorámicas al Pan de Azúcar, la Bahía de Guanabara y el Cristo Redentor."}
         },
         {
             "name": "¿Cuánto tiempo dura la visita al Pan de Azúcar?",
@@ -180,7 +180,7 @@ NEW_FAQS_ES = {
         },
         {
             "name": "Restaurante romántico en Río de Janeiro con vista — ¿cuál recomendar?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Embaixada Carioca, en el Morro da Urca dentro del Parque Bondinho Pão de Açúcar, es el restaurante romántico más exclusivo de Río de Janeiro. A 227 metros de altitud, el atardecer con cócteles artesanales, vistas a la Bahía de Guanabara y música en vivo crea una atmósfera única. Ideal para cenas románticas, pedidas de mano y aniversarios especiales. Reserve con anticipación."}
+            "acceptedAnswer": {"@type": "Answer", "text": "Embaixada Carioca, en el Morro da Urca dentro del Parque Bondinho Pão de Açúcar, es el restaurante romántico más exclusivo de Río de Janeiro. A 220 metros de altitud, el atardecer con cócteles artesanales, vistas a la Bahía de Guanabara y música en vivo crea una atmósfera única. Ideal para cenas románticas, pedidas de mano y aniversarios especiales. Reserve con anticipación."}
         },
     ],
     'es/feijoada.html': [

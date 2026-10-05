@@ -222,7 +222,7 @@ def main():
                     "name": "Where to have breakfast near Sugarloaf?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Embaixada Carioca, inside Parque Bondinho Pão de Açúcar at Morro da Urca (227m altitude), is the best place for breakfast near Sugarloaf Mountain in Rio de Janeiro."
+                        "text": "Embaixada Carioca, inside Parque Bondinho Pão de Açúcar at Morro da Urca (220m altitude), is the best place for breakfast near Sugarloaf Mountain in Rio de Janeiro."
                     }
                 },
                 {

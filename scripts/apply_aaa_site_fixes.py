@@ -65,7 +65,7 @@ GLOBAL_REPLACEMENTS = {
 EN_REPLACEMENTS = {
     "Inauguração": "Opening",
     "Altura": "Altitude",
-    "227 metros · sobre a Baía": "227 meters · above the bay",
+    "220 metros · sobre a Baía": "220 meters · above the bay",
     "sobre a Baía": "above the bay",
     "★ best feijoada ★ PRÊMIO": "★ award-winning feijoada ★",
     "PRÊMIO": "award",
@@ -118,7 +118,7 @@ EN_REPLACEMENTS = {
 ES_REPLACEMENTS = {
     "Inauguração": "Inauguración",
     "Altura": "Altitud",
-    "227 metros · sobre a Baía": "227 metros · sobre la bahía",
+    "220 metros · sobre a Baía": "220 metros · sobre la bahía",
     "sobre a Baía": "sobre la bahía",
     "★ melhor feijoada ★ PRÊMIO": "★ mejor feijoada ★ premio",
     "melhor feijoada": "mejor feijoada",
@@ -188,7 +188,7 @@ ES_REPLACEMENTS = {
 META_REPLACEMENTS = {
     "The most beautiful breakfast in Rio de Janeiro. Full buffet and à la carte with a stunning view of Sugarloaf Mountain on Urca Hill. Every day from 8am to 11am.": "Breakfast with a view of Sugarloaf Mountain on Urca Hill, served daily from 8:30 AM to 11:30 AM at Embaixada Carioca.",
     "El desayuno más bonito de Río de Janeiro. Buffet completo y à la carte con vistas al Pan de Azúcar en el Morro da Urca. Todos los días de 8h a 11h.": "Desayuno con vista al Pan de Azúcar en el Morro da Urca, servido todos los días de 8:30 a 11:30 en Embaixada Carioca.",
-    "Award-winning Brazilian cuisine at 227m altitude inside Bondinho Pão de Açúcar Park. Lunch with panoramic views Mon–Fri 12–4pm, Sat–Sun 12–5pm. Book online.": "Award-winning Brazilian cuisine at 227 meters, inside Bondinho Pão de Açúcar Park. Lunch with a view of Sugarloaf Mountain every day from 11:30 AM to 5:00 PM.",
+    "Award-winning Brazilian cuisine at 220m altitude inside Bondinho Pão de Açúcar Park. Lunch with panoramic views Mon–Fri 12–4pm, Sat–Sun 12–5pm. Book online.": "Award-winning Brazilian cuisine at 220 meters, inside Bondinho Pão de Açúcar Park. Lunch with a view of Sugarloaf Mountain every day from 11:30 AM to 5:00 PM.",
     "Corporate events, private parties and gastronomic experiences with 360° views in Rio de Janeiro. Capacity for capacity varies by format and setup on Urca Hill. Request a quote.": "Corporate events, private parties and gastronomic experiences with panoramic views in Rio de Janeiro. Capacity varies by format, setup and areas used on Urca Hill.",
 }
 
@@ -253,7 +253,7 @@ def normalize_hreflang(text: str, path: Path) -> str:
 def normalize_schema(text: str, lang: str) -> str:
     text = text.replace('"reviewCount":"7752"', f'"reviewCount":"{REVIEW_COUNT}"')
     text = text.replace('"reviewCount": "7752"', f'"reviewCount": "{REVIEW_COUNT}"')
-    text = text.replace('"opens": "12:00"', '"opens": "11:30"')
+    text = text.replace('"opens": "11:30"', '"opens": "11:30"')
     text = text.replace('"opens":"12:00"', '"opens":"11:30"')
     text = re.sub(r"\n\s*\"maximumAttendeeCapacity\"\s*:\s*300,?", "", text)
     if lang == "en":
@@ -316,7 +316,7 @@ def audit() -> list[str]:
         canonical_count = len(re.findall(r"rel=[\"']canonical[\"']", text, flags=re.I))
         if canonical_count > 1:
             issues.append(f"{rel}: canonical duplicado ({canonical_count})")
-        if '"opens": "12:00"' in text or "12 PM – 5 PM" in text:
+        if '"opens": "11:30"' in text or "12 PM – 5 PM" in text:
             issues.append(f"{rel}: horário antigo de almoço")
     return issues
 

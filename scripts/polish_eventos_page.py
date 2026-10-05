@@ -20,7 +20,7 @@ TEXT_REPLACEMENTS = [
     ('Rooms 3 + terraços panorâmicos', 'Ambientes 3 + terraços panorâmicos'),
     ('Languages PT ESP·EN multilingual equipe receptiva', 'Idiomas PT · ES · EN equipe receptiva multilíngue'),
     ('Hoje Por do sol', 'Hoje Pôr do sol'),
-    (' no alto do Morro da Urca, a 227 metros,', ' no Morro da Urca, a 227 metros,'),
+    (' no alto do Morro da Urca, a 220 metros,', ' no Morro da Urca, a 220 metros,'),
     (' — no alto do Morro da Urca, com vista', ' — no Morro da Urca, com vista'),
     (' — no alto do Morro da Urca, Rio de Janeiro.', ' — no Morro da Urca, Rio de Janeiro.'),
 ]

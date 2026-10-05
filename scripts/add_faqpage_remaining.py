@@ -12,7 +12,7 @@ FAQS = {
         "@id": "https://www.embaixadacarioca.com/cafe-da-manha-pao-de-acucar.html#faq",
         "mainEntity": [
             {"@type": "Question", "name": "Tem café da manhã no Pão de Açúcar?",
-             "acceptedAnswer": {"@type": "Answer", "text": "Sim! A Embaixada Carioca serve café da manhã na primeira parada do bondinho, no Morro da Urca (227m), com vista para o Pão de Açúcar. Funciona todos os dias das 8h30 às 11h30."}},
+             "acceptedAnswer": {"@type": "Answer", "text": "Sim! A Embaixada Carioca serve café da manhã na primeira parada do bondinho, no Morro da Urca (220m), com vista para o Pão de Açúcar. Funciona todos os dias das 8h30 às 11h30."}},
             {"@type": "Question", "name": "Precisa de ingresso do bondinho para o café da manhã no Pão de Açúcar?",
              "acceptedAnswer": {"@type": "Answer", "text": "Sim, é necessário o ingresso do Parque Bondinho Pão de Açúcar (Praça General Tibúrcio, 68, Urca). O restaurante fica na primeira estação, o Morro da Urca, sem precisar subir ao Pão de Açúcar."}},
             {"@type": "Question", "name": "Quanto custa o café da manhã no Morro da Urca?",
@@ -218,7 +218,7 @@ FAQS = {
         "@id": "https://www.embaixadacarioca.com/en/nossa-visao.html#faq",
         "mainEntity": [
             {"@type": "Question", "name": "What makes Embaixada Carioca unique?",
-             "acceptedAnswer": {"@type": "Answer", "text": "Embaixada Carioca is the only restaurant inside Parque Bondinho Pão de Açúcar, at 227 meters altitude on Morro da Urca, with panoramic views of Sugarloaf Mountain, Guanabara Bay and Rio de Janeiro."}},
+             "acceptedAnswer": {"@type": "Answer", "text": "Embaixada Carioca is the only restaurant inside Parque Bondinho Pão de Açúcar, at 220 meters altitude on Morro da Urca, with panoramic views of Sugarloaf Mountain, Guanabara Bay and Rio de Janeiro."}},
         ]
     },
     "es/nossa-visao.html": {
@@ -227,7 +227,7 @@ FAQS = {
         "@id": "https://www.embaixadacarioca.com/es/nossa-visao.html#faq",
         "mainEntity": [
             {"@type": "Question", "name": "¿Qué hace único a Embaixada Carioca?",
-             "acceptedAnswer": {"@type": "Answer", "text": "Embaixada Carioca es el único restaurante dentro del Parque Bondinho Pão de Açúcar, a 227 metros de altitud en el Morro da Urca, con vistas panorámicas al Pan de Azúcar, la Bahía de Guanabara y Río de Janeiro."}},
+             "acceptedAnswer": {"@type": "Answer", "text": "Embaixada Carioca es el único restaurante dentro del Parque Bondinho Pão de Açúcar, a 220 metros de altitud en el Morro da Urca, con vistas panorámicas al Pan de Azúcar, la Bahía de Guanabara y Río de Janeiro."}},
         ]
     },
     "en/caipirinha-com-vista-rio.html": {

@@ -61,7 +61,7 @@ CONFIGS = {
                 'name': 'Tem feijoada no Morro da Urca?',
                 'acceptedAnswer': {
                     '@type': 'Answer',
-                    'text': 'Sim! A Embaixada Carioca serve a feijoada premiada da Academia da Cachaça todos os dias no almoço, das 12h às 17h. É a única feijoada servida a 227 metros de altitude, com vista direta para o Pão de Açúcar. Eleita uma das melhores do Rio pela revista Veja Rio (Comer & Beber 2025 e 2026).'
+                    'text': 'Sim! A Embaixada Carioca serve a feijoada premiada da Academia da Cachaça todos os dias no almoço, das 12h às 17h. É a única feijoada servida a 220 metros de altitude, com vista direta para o Pão de Açúcar. Eleita uma das melhores do Rio pela revista Veja Rio (Comer & Beber 2025 e 2026).'
                 }
             }
         ]
@@ -101,7 +101,7 @@ CONFIGS = {
                 'name': 'Is there feijoada at Urca Hill?',
                 'acceptedAnswer': {
                     '@type': 'Answer',
-                    'text': 'Yes! Embaixada Carioca serves the award-winning feijoada from Academia da Cachaça every day at lunch, from 12pm to 5pm. It\'s the only feijoada served at 227 meters altitude, with a direct view of Sugarloaf Mountain. Voted one of the best in Rio by Veja Rio magazine (Comer & Beber 2025 and 2026).'
+                    'text': 'Yes! Embaixada Carioca serves the award-winning feijoada from Academia da Cachaça every day at lunch, from 12pm to 5pm. It\'s the only feijoada served at 220 meters altitude, with a direct view of Sugarloaf Mountain. Voted one of the best in Rio by Veja Rio magazine (Comer & Beber 2025 and 2026).'
                 }
             },
             {
@@ -133,7 +133,7 @@ CONFIGS = {
                 'name': '¿Cuál es el horario del Parque Bondinho Pan de Azúcar?',
                 'acceptedAnswer': {
                     '@type': 'Answer',
-                    'text': 'El Parque Bondinho Pan de Azúcar abre todos los días de 8h a 21h, con el último teleférico a las 20h. El restaurante Embaixada Carioca, ubicado en el Morro da Urca dentro del parque, atiende de 12h a 21h.'
+                    'text': 'El Parque Bondinho Pan de Azúcar abre todos los días de 8h a 21h, con el último teleférico a las 20h. El restaurante Embaixada Carioca, ubicado en el Morro da Urca dentro del parque, atiende de 8h30 a 21h, con almuerzo de 11h30 a 17h.'
                 }
             },
             {
@@ -157,7 +157,7 @@ CONFIGS = {
                 'name': '¿Hay feijoada en el Morro da Urca?',
                 'acceptedAnswer': {
                     '@type': 'Answer',
-                    'text': '¡Sí! La Embaixada Carioca sirve la feijoada premiada de la Academia da Cachaça todos los días en el almuerzo, de 12h a 17h. Es la única feijoada servida a 227 metros de altitud, con vista directa al Pan de Azúcar. Elegida una de las mejores de Río por la revista Veja Rio (Comer & Beber 2025 y 2026).'
+                    'text': '¡Sí! La Embaixada Carioca sirve la feijoada premiada de la Academia da Cachaça todos los días en el almuerzo, de 11h30 a 17h. Es la única feijoada servida a 220 metros de altitud, con vista directa al Pan de Azúcar. Elegida una de las mejores de Río por la revista Veja Rio (Comer & Beber 2025 y 2026).'
                 }
             },
             {
